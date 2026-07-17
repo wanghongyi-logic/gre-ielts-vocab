@@ -1,4 +1,4 @@
-const CACHE = "vocab-studio-v59-mobile-layout";
+const CACHE = "vocab-studio-v60-mobile-islands";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -10,10 +10,12 @@ const CORE_ASSETS = [
   "./mobile-v2.css",
   "./app.js",
   "./manifest.webmanifest",
-  "./icon.svg",
-  "./apple-touch-icon.png",
-  "./icon-192.png",
-  "./icon-512.png",
+  "./icon-192-v2.png",
+  "./icon-512-v2.png",
+  "./apple-touch-icon-v2.png",
+  "./apple-launch-1179x2556.png",
+  "./apple-launch-1206x2622.png",
+  "./apple-launch-1320x2868.png",
 ];
 
 self.addEventListener("install", (event) => {
@@ -35,7 +37,15 @@ self.addEventListener("fetch", (event) => {
   if (url.origin !== self.location.origin) return;
 
   if (request.mode === "navigate") {
-    event.respondWith(caches.match("./index.html").then((cached) => cached || fetch(request)));
+    event.respondWith(
+      fetch(request).then((response) => {
+        if (response.ok) {
+          const copy = response.clone();
+          event.waitUntil(caches.open(CACHE).then((cache) => cache.put("./index.html", copy)));
+        }
+        return response;
+      }).catch(() => caches.match("./index.html")),
+    );
     return;
   }
 

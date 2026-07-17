@@ -10,27 +10,30 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="description" content="再要你命3000全库3071词与雅思必背词538内容精学：多重记忆、近义和形近辨析、双语例句、复习清单、五词故事与随机加权测试。" />
     <link rel="manifest" href="./manifest.webmanifest" />
-    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" href="./icon-192-v2.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-v2.png" />
+    <link rel="apple-touch-startup-image" href="./apple-launch-1179x2556.png" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="./apple-launch-1206x2622.png" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="./apple-launch-1320x2868.png" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3)" />
     <link rel="stylesheet" href="./styles.css" />
     <style>
-      html.app-booting body { margin: 0; overflow: hidden; background: #f5f7fb; }
+      html.app-booting body { margin: 0; overflow: hidden; background: #0d123d; }
       html.app-booting body > :not(.app-boot-screen) { visibility: hidden !important; }
-      .app-boot-screen { position: fixed; z-index: 9999; inset: 0; display: grid; place-content: center; gap: 18px; padding: 24px; background: radial-gradient(circle at 50% 36%, #ffffff 0, #f6f6ff 44%, #eef1fb 100%); color: #171d35; text-align: center; transition: opacity .22s ease, visibility .22s ease; }
-      .app-boot-mark { display: grid; width: 62px; height: 62px; margin: 0 auto; place-items: center; border-radius: 19px; background: linear-gradient(145deg, #6b65f2, #4d4ad8); box-shadow: 0 16px 35px rgba(79, 76, 218, .24); color: #fff; font: 700 34px/1 Georgia, serif; }
+      .app-boot-screen { position: fixed; z-index: 9999; inset: 0; display: grid; place-content: center; gap: 18px; padding: 24px; background: radial-gradient(circle at 50% 36%, #243f92 0, #141e61 40%, #0b1038 100%); color: #f8f7f2; text-align: center; transition: opacity .22s ease, visibility .22s ease; }
+      .app-boot-mark { display: block; width: 72px; height: 72px; margin: 0 auto; overflow: hidden; border-radius: 21px; background: #11194c url("./icon-192-v2.png") center/cover no-repeat; box-shadow: 0 18px 42px rgba(29, 47, 137, .3); color: transparent; font-size: 0; }
       .app-boot-screen strong { font: 750 18px/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
-      .app-boot-screen span:last-child { color: #747b92; font: 500 12px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
-      .app-boot-pulse { width: 36px; height: 4px; margin: -6px auto 0; overflow: hidden; border-radius: 999px; background: #dcdef0; }
-      .app-boot-pulse::after { content: ""; display: block; width: 45%; height: 100%; border-radius: inherit; background: #5b5be6; animation: boot-slide 1s ease-in-out infinite alternate; }
+      .app-boot-screen span:last-child { color: #aebce8; font: 500 12px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
+      .app-boot-pulse { width: 36px; height: 4px; margin: -6px auto 0; overflow: hidden; border-radius: 999px; background: rgba(172,190,244,.22); }
+      .app-boot-pulse::after { content: ""; display: block; width: 45%; height: 100%; border-radius: inherit; background: #74d7ff; animation: boot-slide 1s ease-in-out infinite alternate; }
       html:not(.app-booting) .app-boot-screen { visibility: hidden; opacity: 0; pointer-events: none; }
       @keyframes boot-slide { to { transform: translateX(122%); } }
     </style>
-    <link rel="modulepreload" href="./app.js?v=59" />
-    <link rel="stylesheet" href="./theme-v2.css?v=59" />
+    <link rel="modulepreload" href="./app.js?v=60" />
+    <link rel="stylesheet" href="./theme-v2.css?v=60" />
     <link rel="stylesheet" href="./learning-test-v4.css?v=31" />
     <link rel="stylesheet" href="./ielts-preview.css?v=41" />
     <link rel="stylesheet" href="./review-integration.css?v=50" />
-    <link rel="stylesheet" href="./mobile-v2.css?v=59" />
+    <link rel="stylesheet" href="./mobile-v2.css?v=60" />
     <title>GRE & IELTS 词汇精学</title>
   </head>
   <body>
@@ -111,12 +114,18 @@
       </button>
     </nav>
 
-    <button id="mobile-immersive-button" class="mobile-immersive-button" type="button" data-action="toggle-mobile-immersive" aria-label="进入沉浸模式" aria-pressed="false">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>
-      <span>沉浸</span>
+    <nav id="mobile-command-menu" class="mobile-command-menu" aria-label="移动端快捷导航" aria-hidden="true">
+      <button type="button" data-route="learn"><span>01</span><strong>学习</strong></button>
+      <button type="button" data-route="library"><span>02</span><strong>词库</strong></button>
+      <button type="button" data-route="review"><span>03</span><strong>复习</strong></button>
+      <button type="button" data-action="switch-corpus"><span>↔</span><strong>切换词库</strong></button>
+    </nav>
+    <button id="mobile-immersive-button" class="mobile-immersive-button" type="button" data-action="toggle-mobile-menu" aria-label="打开快捷导航" aria-expanded="false" aria-controls="mobile-command-menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14"/></svg>
+      <span>导航</span>
     </button>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <script type="module" src="./app.js?v=59"></script>
+    <script type="module" src="./app.js?v=60"></script>
   </body>
 </html>
