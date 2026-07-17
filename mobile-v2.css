@@ -1379,6 +1379,19 @@
     background: rgba(255,255,255,.92);
   }
   .ielts-story-workspace .story-chain button > strong { font-size: 17px; }
+  .ielts-story-workspace .story-chain .ielts-path-role {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: #efefff;
+    color: #5658d7;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 850;
+    white-space: nowrap;
+  }
   .ielts-story-workspace .story-chain button > small { font-size: 12px; line-height: 1.5; }
   .ielts-story-workspace .story-chain button:not(:last-child)::after {
     left: 30px;

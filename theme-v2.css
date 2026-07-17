@@ -1059,6 +1059,8 @@ main { padding-top: 26px; }
 .story-chain button > span { display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid #cfd3e2; border-radius: 50%; background: #ffffff; color: var(--forest-700); font-size: 8px; }
 .story-chain button:hover > span { border-color: var(--forest-700); background: var(--forest-50); }
 .story-chain strong { margin-top: 4px; font-family: Georgia, serif; font-size: 13px; }
+.ielts-path-role { color: #6268d9; font-size: 8px; font-style: normal; font-weight: 800; }
+.ielts-story-chain button.is-primary-word > span { border-color: #7775e8; background: #efefff; color: #4f4fd5; }
 .story-chain small { max-width: 130px; overflow: hidden; color: var(--muted); font-size: 8px; text-overflow: ellipsis; white-space: nowrap; }
 
 /* Home dashboard */
