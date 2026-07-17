@@ -6,6 +6,30 @@
 .mobile-command-menu { display: none; }
 
 @media (max-width: 959px) {
+  button,
+  a,
+  input,
+  select,
+  textarea,
+  [role="button"] {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button,
+  a,
+  select,
+  [role="button"] {
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
   :root {
     --mobile-header: 60px;
     --mobile-nav: 72px;
@@ -467,10 +491,10 @@
   }
 
   body[data-route="learn"] .memory-step {
-    grid-template-columns: 34px minmax(0, 1fr) 44px;
+    grid-template-columns: 34px minmax(0, 1fr);
     grid-template-areas:
-      "num title speak"
-      "num copy speak";
+      "num title"
+      "num copy";
     gap: 2px 10px;
     min-height: 68px;
     padding: 10px 9px 10px 0;
@@ -492,13 +516,6 @@
     grid-area: copy;
     font-size: 12px;
     line-height: 1.55;
-  }
-
-  body[data-route="learn"] .memory-step .mini-speak {
-    display: grid !important;
-    grid-area: speak;
-    width: 44px;
-    height: 44px;
   }
 
   body[data-route="learn"] .section-card,
@@ -1016,6 +1033,105 @@
   }
 }
 
+/* Mobile touch + active-quiz behavior. Desktop keeps its existing mouse layout. */
+@media (max-width: 959px) {
+  input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    touch-action: manipulation;
+  }
+
+  body[data-route="review"] .review-table tbody tr,
+  body[data-route="library"] .vocab-table tbody tr {
+    touch-action: pan-y;
+  }
+
+  body[data-route="review"]:has(.review-question-workspace) .quiz-top {
+    grid-template-columns: auto minmax(0, 1fr) !important;
+    min-height: 44px;
+    padding: 8px 12px !important;
+  }
+
+  body[data-route="review"]:has(.review-question-workspace) .quiz-top-count {
+    grid-column: 1;
+    display: inline-flex;
+    align-items: center;
+    min-width: max-content;
+    font-size: 12px !important;
+  }
+
+  body[data-route="review"]:has(.review-question-workspace) .quiz-mini-track,
+  body[data-route="review"]:has(.review-question-workspace) .quiz-progress {
+    grid-column: 2;
+    width: 100%;
+  }
+
+  body[data-route="review"]:has(.review-question-workspace) .quiz-top-type,
+  body[data-route="review"]:has(.review-question-workspace) .quiz-top-exit,
+  body[data-route="review"]:has(.review-question-workspace) .test-mobile-exit {
+    display: none !important;
+  }
+
+  body[data-route="review"]:has(.review-question-workspace) .review-question-workspace {
+    grid-template-rows: minmax(0, 1fr);
+  }
+
+  body[data-route="review"]:has(.review-question-workspace) .quiz-body {
+    display: grid;
+    grid-template-rows: minmax(0, 1fr);
+    min-height: 0;
+    padding: 0 !important;
+    overflow: hidden !important;
+    overscroll-behavior: none;
+  }
+
+  body[data-route="review"]:has(.review-question-workspace) .quiz-question-pane {
+    min-height: 0;
+    padding: 16px 15px 18px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body[data-route="review"]:has(.review-question-workspace) .quiz-body.has-feedback {
+    grid-template-rows: fit-content(58%) minmax(142px, 1fr);
+  }
+
+  body[data-route="review"]:has(.review-question-workspace) .quiz-body.has-feedback .quiz-question-pane {
+    overflow: hidden;
+  }
+
+  body[data-route="review"]:has(.review-question-workspace) .test-mobile-feedback {
+    min-height: 0;
+    margin: 0 !important;
+    padding: 14px 15px calc(12px + env(safe-area-inset-bottom)) !important;
+    overflow-y: auto;
+    border-top: 1px solid #e2e5ef;
+    background: #fbfbfe;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+
+  body[data-route="review"]:has(.review-question-workspace) .test-mobile-feedback > .button {
+    position: sticky;
+    bottom: 0;
+    min-height: 48px;
+    margin-top: 12px;
+    box-shadow: 0 8px 22px rgba(40, 44, 96, .14);
+  }
+
+  @media (hover: none) {
+    body[data-route="review"] .compact-segments button:not(.is-selected):hover,
+    body[data-route="review"] .review-table tbody tr:not(.is-selected):hover,
+    body[data-route="library"] .vocab-table tbody tr:not(.is-selected):hover,
+    body[data-route="review"] .option:not(.is-selected):not(.is-correct):not(.is-wrong):hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+}
+
 @media (max-width: 959px) and (max-height: 520px) and (orientation: landscape) {
   :root {
     --mobile-header: 52px;
@@ -1221,9 +1337,12 @@
 
   body[data-route="learn"] .learning-outline {
     top: max(5px, env(safe-area-inset-top));
+    touch-action: pan-x;
   }
 
-  body[data-route="learn"] .learning-panel { display: none !important; }
+  body[data-route="learn"] .learning-outline button { touch-action: pan-x; }
+
+  body[data-route="learn"] .learning-panel,
   body[data-route="learn"] .learning-panel.is-active { display: block !important; }
 
   body[data-route="learn"] .mobile-learning-dock {
@@ -1277,7 +1396,11 @@
   body[data-route="library"] .workspace-search input {
     width: 100%;
     min-width: 0;
-    font-size: 13px;
+    font-size: 16px;
+  }
+
+  body[data-route="library"] .library-table-shell {
+    touch-action: pan-y;
   }
 
   body[data-route="review"] .review-workspace {
@@ -1311,6 +1434,7 @@
     scroll-snap-type: x proximity;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
   }
   body[data-route="review"] .review-session-builder::-webkit-scrollbar { display: none; }
   body[data-route="review"] .review-session-builder > div {
@@ -1332,12 +1456,18 @@
     flex-wrap: nowrap;
     overflow-x: auto;
     padding: 0;
+    touch-action: pan-x;
   }
   body[data-route="review"] .review-session-builder .compact-segments button {
     min-height: 34px;
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 10.5px;
+    touch-action: pan-x;
+  }
+
+  body[data-route="review"] .review-session-builder .compact-segments button:active {
+    transform: scale(.98);
   }
 
   body[data-route="review"] .list-pagination { flex: 0 0 auto; }
@@ -1348,8 +1478,10 @@
     height: auto;
     min-height: 0;
     max-height: none;
+    touch-action: pan-y;
   }
   body[data-route="review"] .review-table tbody tr { cursor: pointer; }
+  body[data-route="review"] .review-table tbody tr:active { background: #f2f2ff; }
   body[data-route="review"] .review-action-bar {
     position: static;
     flex: 0 0 auto;

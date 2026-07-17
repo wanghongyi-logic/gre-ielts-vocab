@@ -1,14 +1,19 @@
-const CACHE = "vocab-studio-v60-mobile-islands";
+const CACHE = "vocab-studio-v61-mobile-touch";
 const CORE_ASSETS = [
   "./",
   "./index.html",
   "./styles.css",
   "./theme-v2.css",
+  "./theme-v2.css?v=61",
   "./learning-test-v4.css",
+  "./learning-test-v4.css?v=61",
   "./ielts-preview.css",
   "./review-integration.css",
+  "./review-integration.css?v=61",
   "./mobile-v2.css",
+  "./mobile-v2.css?v=61",
   "./app.js",
+  "./app.js?v=61",
   "./manifest.webmanifest",
   "./icon-192-v2.png",
   "./icon-512-v2.png",

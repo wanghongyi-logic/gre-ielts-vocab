@@ -187,7 +187,9 @@
     font-weight: 650;
     cursor: pointer;
   }
-  body[data-route="review"] .compact-segments button:hover { border-color: #b8bfd0; background: #fafbff; }
+  @media (hover: hover) and (pointer: fine) {
+    body[data-route="review"] .compact-segments button:hover { border-color: #b8bfd0; background: #fafbff; }
+  }
   body[data-route="review"] .compact-segments button.is-selected {
     border-color: var(--review-primary);
     background: var(--review-primary);

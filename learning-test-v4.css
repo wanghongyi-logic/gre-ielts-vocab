@@ -378,7 +378,7 @@
   }
   body[data-route="learn"] .memory-ladder::before { display: none; }
   body[data-route="learn"] .memory-step {
-    grid-template-columns: 34px minmax(88px, 116px) minmax(0, 1fr) 30px;
+    grid-template-columns: 34px minmax(88px, 116px) minmax(0, 1fr);
     gap: 10px;
     min-height: 0;
     padding: 8px 10px;
@@ -622,7 +622,7 @@
   body[data-route="learn"] .learning-quick-actions { display: none; }
   body[data-route="learn"] .word-page .word-title { font-size: clamp(46px, 5vw, 57px); }
   body[data-route="learn"] .word-page .core-definition { font-size: clamp(15px, 1.55vw, 18px); }
-  body[data-route="learn"] .memory-step { grid-template-columns: 30px 82px minmax(0, 1fr) 27px; gap: 7px; }
+  body[data-route="learn"] .memory-step { grid-template-columns: 30px 82px minmax(0, 1fr); gap: 7px; }
   body[data-route="learn"] .memory-step > strong,
   body[data-route="learn"] .memory-step > p { font-size: 10px; }
   body[data-route="test"] .focused-quiz .question-text { font-size: clamp(23px, 2.45vw, 29px); }
