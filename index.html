@@ -15,30 +15,38 @@
     <link rel="apple-touch-startup-image" href="./apple-launch-1179x2556.png" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)" />
     <link rel="apple-touch-startup-image" href="./apple-launch-1206x2622.png" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3)" />
     <link rel="apple-touch-startup-image" href="./apple-launch-1320x2868.png" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3)" />
-    <link rel="stylesheet" href="./styles.css" />
     <style>
-      html.app-booting body { margin: 0; overflow: hidden; background: #0d123d; }
-      html.app-booting body > :not(.app-boot-screen) { visibility: hidden !important; }
+      html, body { min-height: 100%; background: #f5f7fb; }
+      html.app-booting:not(.app-returning) body { margin: 0; overflow: hidden; background: #0d123d; }
+      html.app-booting:not(.app-returning) body > :not(.app-boot-screen) { visibility: hidden !important; }
       .app-boot-screen { position: fixed; z-index: 9999; inset: 0; display: grid; place-content: center; gap: 18px; padding: 24px; background: radial-gradient(circle at 50% 36%, #243f92 0, #141e61 40%, #0b1038 100%); color: #f8f7f2; text-align: center; transition: opacity .22s ease, visibility .22s ease; }
-      .app-boot-mark { display: block; width: 72px; height: 72px; margin: 0 auto; overflow: hidden; border-radius: 21px; background: #11194c url("./icon-192-v2.png") center/cover no-repeat; box-shadow: 0 18px 42px rgba(29, 47, 137, .3); color: transparent; font-size: 0; }
+      .app-boot-mark { display: grid; width: 72px; height: 72px; margin: 0 auto; place-items: center; overflow: hidden; border: 1px solid rgba(146, 194, 255, .34); border-radius: 21px; background: linear-gradient(145deg, #253ec7, #11194c 72%); box-shadow: 0 18px 42px rgba(29, 47, 137, .3); }
+      .app-boot-mark svg { display: block; width: 52px; height: 52px; filter: drop-shadow(0 5px 9px rgba(0,0,0,.2)); }
       .app-boot-screen strong { font: 750 18px/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
       .app-boot-screen span:last-child { color: #aebce8; font: 500 12px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
       .app-boot-pulse { width: 36px; height: 4px; margin: -6px auto 0; overflow: hidden; border-radius: 999px; background: rgba(172,190,244,.22); }
       .app-boot-pulse::after { content: ""; display: block; width: 45%; height: 100%; border-radius: inherit; background: #74d7ff; animation: boot-slide 1s ease-in-out infinite alternate; }
+      html.app-returning .app-boot-screen,
       html:not(.app-booting) .app-boot-screen { visibility: hidden; opacity: 0; pointer-events: none; }
       @keyframes boot-slide { to { transform: translateX(122%); } }
     </style>
-    <link rel="modulepreload" href="./app.js?v=61" />
-    <link rel="stylesheet" href="./theme-v2.css?v=61" />
-    <link rel="stylesheet" href="./learning-test-v4.css?v=61" />
+    <script>
+      try {
+        if (localStorage.getItem("vocab-app-booted-v1") === "1") document.documentElement.classList.add("app-returning");
+      } catch {}
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="modulepreload" href="./app.js?v=62" />
+    <link rel="stylesheet" href="./theme-v2.css?v=62" />
+    <link rel="stylesheet" href="./learning-test-v4.css?v=62" />
     <link rel="stylesheet" href="./ielts-preview.css?v=41" />
-    <link rel="stylesheet" href="./review-integration.css?v=61" />
-    <link rel="stylesheet" href="./mobile-v2.css?v=61" />
+    <link rel="stylesheet" href="./review-integration.css?v=62" />
+    <link rel="stylesheet" href="./mobile-v2.css?v=62" />
     <title>GRE & IELTS 词汇精学</title>
   </head>
   <body>
     <div class="app-boot-screen" role="status" aria-live="polite">
-      <span class="app-boot-mark" aria-hidden="true">G</span>
+      <span class="app-boot-mark" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M12 16.5c8.8-3.7 16.4-2.1 20 2.2v31.8c-4.2-4.6-11.3-6.4-20-2.2V16.5Z" fill="#F7E8C8"/><path d="M52 16.5c-8.8-3.7-16.4-2.1-20 2.2v31.8c4.2-4.6 11.3-6.4 20-2.2V16.5Z" fill="#FFF4D8"/><path d="M18 25.5c4.8-1.3 8.1-.4 10 1.8M18 33c4.8-1.3 8.1-.4 10 1.8M46 25.5c-4.8-1.3-8.1-.4-10 1.8M46 33c-4.8-1.3-8.1-.4-10 1.8" stroke="#385CE8" stroke-width="2.8" stroke-linecap="round"/><path d="M9 51c9.6-4.4 17.2-2.7 23 2 5.8-4.7 13.4-6.4 23-2" stroke="#75D8FF" stroke-width="3.2" stroke-linecap="round"/></svg></span>
       <strong>正在准备完整词库</strong>
       <span class="app-boot-pulse" aria-hidden="true"></span>
       <span>首次载入后即可离线使用</span>
@@ -126,6 +134,25 @@
     </button>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <script type="module" src="./app.js?v=61"></script>
+    <script>
+      (() => {
+        if (!document.documentElement.classList.contains("app-returning")) return;
+        try {
+          const snapshot = JSON.parse(localStorage.getItem("vocab-warm-shell-v1") || "null");
+          if (snapshot && snapshot.hash === location.hash) {
+            const app = document.getElementById("app");
+            const lesson = document.getElementById("lesson-list");
+            const context = document.getElementById("context-rail");
+            if (app && snapshot.app) app.innerHTML = snapshot.app;
+            if (lesson && snapshot.lesson) lesson.innerHTML = snapshot.lesson;
+            if (context && snapshot.context) context.innerHTML = snapshot.context;
+            if (snapshot.route) document.body.dataset.route = snapshot.route;
+            if (snapshot.corpus) document.body.dataset.corpus = snapshot.corpus;
+          }
+        } catch {}
+        document.documentElement.classList.remove("app-booting");
+      })();
+    </script>
+    <script type="module" src="./app.js?v=62"></script>
   </body>
 </html>

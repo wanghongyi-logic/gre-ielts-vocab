@@ -301,6 +301,7 @@ main { padding-top: 26px; }
 .test-answer-card .feedback strong { display: block; margin-bottom: 7px; font-size: 13px; line-height: 1.4; }
 .test-answer-card .feedback p { margin: 5px 0 0; font-size: 11px; line-height: 1.55; }
 .test-mobile-feedback { display: block; }
+.test-mobile-question-actions { display: none; }
 .score-ring { background: conic-gradient(var(--forest-700) var(--score), #e4e6ef 0); }
 .practice-chip.is-active { border-color: var(--forest-700); background: var(--forest-50); color: var(--forest-700); }
 .review-start { box-shadow: 0 12px 26px rgba(91, 91, 230, 0.2); }
