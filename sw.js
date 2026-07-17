@@ -1,6 +1,5 @@
-const CACHE = "vocab-studio-v57-neural-test-flow";
-const SPEECH_CACHE = "vocab-neural-tts-v1";
-const ASSETS = [
+const CACHE = "vocab-studio-v58-offline-fast";
+const CORE_ASSETS = [
   "./",
   "./index.html",
   "./styles.css",
@@ -9,45 +8,6 @@ const ASSETS = [
   "./ielts-preview.css",
   "./review-integration.css",
   "./mobile-v2.css",
-  "./content.js",
-  "./data/helpers.js",
-  "./data/compact.js",
-  "./data/memory-packs.js",
-  "./data/set-01.js",
-  "./data/set-02.js",
-  "./data/set-03.js",
-  "./data/set-04.js",
-  "./data/sets-05-08.js",
-  "./data/sets-09-12.js",
-  "./data/sets-13-16.js",
-  "./data/sets-17-20.js",
-  "./data/sets-21-22.js",
-  "./data/sets-23-24.js",
-  "./data/set-24.js",
-  "./data/sets-25-27.js",
-  "./data/range-136-170-helpers.js",
-  "./data/sets-28-29.js",
-  "./data/sets-30-31.js",
-  "./data/set-32.js",
-  "./data/sets-33-34.js",
-  "./data/sets-35-36.js",
-  "./data/sets-37-38.js",
-  "./data/sets-39-40.js",
-  "./data/sets-41-43.js",
-  "./data/sets-44-47.js",
-  "./data/sets-48-50.js",
-  "./data/sets-51-54.js",
-  "./data/sets-55-57.js",
-  "./data/sets-58-60.js",
-  "./data/lookalike-packs-001-100.js",
-  "./data/lookalike-packs-101-200.js",
-  "./data/lookalike-packs-201-300.js",
-  "./data/lookalike-packs.js",
-  "./data/ielts-538-preview-001-005.js",
-  "./data/sets-001-3071.js",
-  "./data/lookalike-packs-001-3071.js",
-  "./data/ielts-538/index.js",
-  "./practice-engine.js",
   "./app.js",
   "./manifest.webmanifest",
   "./icon.svg",
@@ -56,197 +16,36 @@ const ASSETS = [
   "./icon-512.png",
 ];
 
-// Precache the complete module graph so the first installed version can open
-// both full corpora offline without requiring an extra online reload.
-const DATA_ASSETS = [
-  "./data/compact.js",
-  "./data/helpers.js",
-  "./data/ielts-538-preview-001-005.js",
-  "./data/ielts-538/batch-001-044.js",
-  "./data/ielts-538/batch-045-056.js",
-  "./data/ielts-538/batch-057-089.js",
-  "./data/ielts-538/batch-090-100.js",
-  "./data/ielts-538/batch-101-134.js",
-  "./data/ielts-538/batch-135-178.js",
-  "./data/ielts-538/batch-179-222.js",
-  "./data/ielts-538/batch-223-266.js",
-  "./data/ielts-538/batch-267-310.js",
-  "./data/ielts-538/batch-311-354.js",
-  "./data/ielts-538/batch-355-399.js",
-  "./data/ielts-538/batch-400-443.js",
-  "./data/ielts-538/batch-444-487.js",
-  "./data/ielts-538/batch-488-527.js",
-  "./data/ielts-538/index.js",
-  "./data/ielts-538/official-evidence.js",
-  "./data/ielts-538/quality-overrides-001-047.js",
-  "./data/ielts-538/quality-overrides-048-216.js",
-  "./data/ielts-538/quality-overrides-217-527.js",
-  "./data/ielts-538/schema.js",
-  "./data/ielts-538/source-entries.js",
-  "./data/ielts-538/source-groups.js",
-  "./data/lookalike-packs-001-100.js",
-  "./data/lookalike-packs-001-3071.js",
-  "./data/lookalike-packs-1001-1100.js",
-  "./data/lookalike-packs-1001-2000.js",
-  "./data/lookalike-packs-1001-3071.js",
-  "./data/lookalike-packs-101-200.js",
-  "./data/lookalike-packs-1101-1200.js",
-  "./data/lookalike-packs-1201-1300.js",
-  "./data/lookalike-packs-1301-1400.js",
-  "./data/lookalike-packs-1401-1500.js",
-  "./data/lookalike-packs-1501-1600.js",
-  "./data/lookalike-packs-1601-1700.js",
-  "./data/lookalike-packs-1701-1800.js",
-  "./data/lookalike-packs-1801-1900.js",
-  "./data/lookalike-packs-1901-2000.js",
-  "./data/lookalike-packs-2001-2100.js",
-  "./data/lookalike-packs-2001-3071.js",
-  "./data/lookalike-packs-201-300.js",
-  "./data/lookalike-packs-2101-2200.js",
-  "./data/lookalike-packs-2201-2300.js",
-  "./data/lookalike-packs-2301-2400.js",
-  "./data/lookalike-packs-2401-2500.js",
-  "./data/lookalike-packs-2501-2600.js",
-  "./data/lookalike-packs-2601-2700.js",
-  "./data/lookalike-packs-2701-2800.js",
-  "./data/lookalike-packs-2801-2900.js",
-  "./data/lookalike-packs-2901-3000.js",
-  "./data/lookalike-packs-3001-3071.js",
-  "./data/lookalike-packs-301-370.js",
-  "./data/lookalike-packs-301-500.js",
-  "./data/lookalike-packs-371-435.js",
-  "./data/lookalike-packs-436-500.js",
-  "./data/lookalike-packs-501-570.js",
-  "./data/lookalike-packs-501-700.js",
-  "./data/lookalike-packs-571-635.js",
-  "./data/lookalike-packs-636-700.js",
-  "./data/lookalike-packs-701-1000.js",
-  "./data/lookalike-packs-701-800.js",
-  "./data/lookalike-packs-801-900.js",
-  "./data/lookalike-packs-901-1000.js",
-  "./data/lookalike-packs.js",
-  "./data/memory-packs.js",
-  "./data/range-136-170-helpers.js",
-  "./data/set-01.js",
-  "./data/set-02.js",
-  "./data/set-03.js",
-  "./data/set-04.js",
-  "./data/set-24.js",
-  "./data/set-32.js",
-  "./data/sets-001-200.js",
-  "./data/sets-001-3071.js",
-  "./data/sets-05-08.js",
-  "./data/sets-09-12.js",
-  "./data/sets-1001-2000.js",
-  "./data/sets-1001-3071.js",
-  "./data/sets-101-107.js",
-  "./data/sets-108-114.js",
-  "./data/sets-115-121.js",
-  "./data/sets-122-127.js",
-  "./data/sets-128-134.js",
-  "./data/sets-13-16.js",
-  "./data/sets-135-140.js",
-  "./data/sets-141-150.js",
-  "./data/sets-151-160.js",
-  "./data/sets-161-170.js",
-  "./data/sets-17-20.js",
-  "./data/sets-171-180.js",
-  "./data/sets-181-190.js",
-  "./data/sets-191-200.js",
-  "./data/sets-2001-3071.js",
-  "./data/sets-201-210.js",
-  "./data/sets-201-300.js",
-  "./data/sets-21-22.js",
-  "./data/sets-211-220.js",
-  "./data/sets-221-230.js",
-  "./data/sets-23-24.js",
-  "./data/sets-231-240.js",
-  "./data/sets-241-250.js",
-  "./data/sets-25-27.js",
-  "./data/sets-251-260.js",
-  "./data/sets-261-270.js",
-  "./data/sets-271-280.js",
-  "./data/sets-28-29.js",
-  "./data/sets-281-290.js",
-  "./data/sets-291-300.js",
-  "./data/sets-30-31.js",
-  "./data/sets-301-310.js",
-  "./data/sets-301-500.js",
-  "./data/sets-311-320.js",
-  "./data/sets-321-330.js",
-  "./data/sets-33-34.js",
-  "./data/sets-331-340.js",
-  "./data/sets-341-350.js",
-  "./data/sets-35-36.js",
-  "./data/sets-351-360.js",
-  "./data/sets-361-370.js",
-  "./data/sets-37-38.js",
-  "./data/sets-371-380.js",
-  "./data/sets-381-390.js",
-  "./data/sets-39-40.js",
-  "./data/sets-391-400.js",
-  "./data/sets-401-410.js",
-  "./data/sets-41-43.js",
-  "./data/sets-411-420.js",
-  "./data/sets-421-430.js",
-  "./data/sets-431-440.js",
-  "./data/sets-44-47.js",
-  "./data/sets-441-450.js",
-  "./data/sets-451-460.js",
-  "./data/sets-461-470.js",
-  "./data/sets-471-480.js",
-  "./data/sets-48-50.js",
-  "./data/sets-481-490.js",
-  "./data/sets-491-500.js",
-  "./data/sets-501-510.js",
-  "./data/sets-501-700.js",
-  "./data/sets-51-54.js",
-  "./data/sets-511-520.js",
-  "./data/sets-521-530.js",
-  "./data/sets-531-540.js",
-  "./data/sets-541-550.js",
-  "./data/sets-55-57.js",
-  "./data/sets-551-560.js",
-  "./data/sets-561-570.js",
-  "./data/sets-571-580.js",
-  "./data/sets-58-60.js",
-  "./data/sets-581-590.js",
-  "./data/sets-591-600.js",
-  "./data/sets-601-610.js",
-  "./data/sets-61-67.js",
-  "./data/sets-611-614.js",
-  "./data/sets-68-74.js",
-  "./data/sets-701-1000.js",
-  "./data/sets-75-81.js",
-  "./data/sets-82-87.js",
-  "./data/sets-88-94.js",
-  "./data/sets-95-100.js",
-  "./data/tail-3071.js",
-];
-
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll([...new Set([...ASSETS, ...DATA_ASSETS])])));
+  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(CORE_ASSETS)));
   self.skipWaiting();
 });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((keys) => Promise.all(keys.filter((key) => key !== CACHE && key !== SPEECH_CACHE).map((key) => caches.delete(key)))),
+    caches.keys().then((keys) => Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key)))),
   );
   self.clients.claim();
 });
 
 self.addEventListener("fetch", (event) => {
-  if (event.request.method !== "GET") return;
+  const { request } = event;
+  if (request.method !== "GET") return;
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) return;
+
+  if (request.mode === "navigate") {
+    event.respondWith(caches.match("./index.html").then((cached) => cached || fetch(request)));
+    return;
+  }
+
   event.respondWith(
-    fetch(event.request)
-      .then((response) => {
-        if (response.ok) {
-          const copy = response.clone();
-          caches.open(CACHE).then((cache) => cache.put(event.request, copy));
-        }
-        return response;
-      })
-      .catch(() => caches.match(event.request)),
+    caches.match(request).then((cached) => cached || fetch(request).then((response) => {
+      if (response.ok) {
+        const copy = response.clone();
+        event.waitUntil(caches.open(CACHE).then((cache) => cache.put(request, copy)));
+      }
+      return response;
+    })),
   );
 });

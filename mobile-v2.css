@@ -219,6 +219,23 @@
     text-overflow: ellipsis;
   }
 
+  body[data-route="learn"] .mobile-learning-scope-actions {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  body[data-route="learn"] .mobile-learning-scope-actions button {
+    min-height: 42px;
+    border: 1px solid #cfd5f1;
+    border-radius: 10px;
+    background: #f4f3ff;
+    color: #4f4fd8;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
   body[data-route="learn"] .mobile-learning-dock {
     position: fixed;
     z-index: 105;
@@ -530,16 +547,18 @@
 
   body[data-route="library"] .library-toolbar {
     display: grid;
-    grid-template-columns: minmax(118px, .42fr) minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
     margin-bottom: 9px;
   }
 
   body[data-route="library"] .library-status-select,
-  body[data-route="library"] .workspace-search {
+  body[data-route="library"] .library-chapter-select {
     grid-column: auto;
     min-width: 0;
   }
+
+  body[data-route="library"] .workspace-search { grid-column: 1 / -1; min-width: 0; }
 
   body[data-route="library"] .library-toolbar select,
   body[data-route="library"] .library-toolbar input {
@@ -551,6 +570,21 @@
     justify-self: start;
     font-size: 10.5px;
   }
+
+  body[data-route="library"] .library-chapter-turn { margin-top: 0; }
+
+  body[data-route="library"] .list-pagination,
+  body[data-route="review"] .list-pagination {
+    grid-template-columns: 82px minmax(0, 1fr) 82px;
+    gap: 6px;
+    padding: 7px;
+  }
+
+  body[data-route="library"] .list-pagination button,
+  body[data-route="review"] .list-pagination button { min-height: 40px; padding: 6px 8px; font-size: 11px; }
+
+  body[data-route="library"] .list-pagination small,
+  body[data-route="review"] .list-pagination small { display: none; }
 
   body[data-route="library"] .library-table-shell {
     min-height: 0;
