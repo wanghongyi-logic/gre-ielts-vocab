@@ -1,4 +1,4 @@
-const CACHE = "vocab-studio-v58-offline-fast";
+const CACHE = "vocab-studio-v59-mobile-layout";
 const CORE_ASSETS = [
   "./",
   "./index.html",

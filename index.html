@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="app-booting">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -13,14 +13,33 @@
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./theme-v2.css?v=58" />
+    <style>
+      html.app-booting body { margin: 0; overflow: hidden; background: #f5f7fb; }
+      html.app-booting body > :not(.app-boot-screen) { visibility: hidden !important; }
+      .app-boot-screen { position: fixed; z-index: 9999; inset: 0; display: grid; place-content: center; gap: 18px; padding: 24px; background: radial-gradient(circle at 50% 36%, #ffffff 0, #f6f6ff 44%, #eef1fb 100%); color: #171d35; text-align: center; transition: opacity .22s ease, visibility .22s ease; }
+      .app-boot-mark { display: grid; width: 62px; height: 62px; margin: 0 auto; place-items: center; border-radius: 19px; background: linear-gradient(145deg, #6b65f2, #4d4ad8); box-shadow: 0 16px 35px rgba(79, 76, 218, .24); color: #fff; font: 700 34px/1 Georgia, serif; }
+      .app-boot-screen strong { font: 750 18px/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
+      .app-boot-screen span:last-child { color: #747b92; font: 500 12px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
+      .app-boot-pulse { width: 36px; height: 4px; margin: -6px auto 0; overflow: hidden; border-radius: 999px; background: #dcdef0; }
+      .app-boot-pulse::after { content: ""; display: block; width: 45%; height: 100%; border-radius: inherit; background: #5b5be6; animation: boot-slide 1s ease-in-out infinite alternate; }
+      html:not(.app-booting) .app-boot-screen { visibility: hidden; opacity: 0; pointer-events: none; }
+      @keyframes boot-slide { to { transform: translateX(122%); } }
+    </style>
+    <link rel="modulepreload" href="./app.js?v=59" />
+    <link rel="stylesheet" href="./theme-v2.css?v=59" />
     <link rel="stylesheet" href="./learning-test-v4.css?v=31" />
     <link rel="stylesheet" href="./ielts-preview.css?v=41" />
     <link rel="stylesheet" href="./review-integration.css?v=50" />
-    <link rel="stylesheet" href="./mobile-v2.css?v=58" />
+    <link rel="stylesheet" href="./mobile-v2.css?v=59" />
     <title>GRE & IELTS 词汇精学</title>
   </head>
   <body>
+    <div class="app-boot-screen" role="status" aria-live="polite">
+      <span class="app-boot-mark" aria-hidden="true">G</span>
+      <strong>正在准备完整词库</strong>
+      <span class="app-boot-pulse" aria-hidden="true"></span>
+      <span>首次载入后即可离线使用</span>
+    </div>
     <a class="skip-link" href="#main-content">跳到正文</a>
 
     <header class="app-header">
@@ -92,7 +111,12 @@
       </button>
     </nav>
 
+    <button id="mobile-immersive-button" class="mobile-immersive-button" type="button" data-action="toggle-mobile-immersive" aria-label="进入沉浸模式" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>
+      <span>沉浸</span>
+    </button>
+
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <script type="module" src="./app.js?v=58"></script>
+    <script type="module" src="./app.js?v=59"></script>
   </body>
 </html>
