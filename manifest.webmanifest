@@ -1,0 +1,28 @@
+{
+  "id": "./",
+  "name": "GRE & IELTS 词汇精学",
+  "short_name": "词汇精学",
+  "lang": "zh-CN",
+  "description": "再要你命3000全库3071词与雅思必背词538内容精学：逐词讲解、多重记忆、近义和形近辨析、统一复习、五词故事与随机加权双语测试。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "categories": ["education"],
+  "background_color": "#f5f7fb",
+  "theme_color": "#5b5be6",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

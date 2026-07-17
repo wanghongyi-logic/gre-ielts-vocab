@@ -1,0 +1,20 @@
+import {lookalikePacks2001To2100} from "./lookalike-packs-2001-2100.js";
+import {lookalikePacks2101To2200} from "./lookalike-packs-2101-2200.js";
+import {lookalikePacks2201To2300} from "./lookalike-packs-2201-2300.js";
+import {lookalikePacks2301To2400} from "./lookalike-packs-2301-2400.js";
+import {lookalikePacks2401To2500} from "./lookalike-packs-2401-2500.js";
+import {lookalikePacks2501To2600} from "./lookalike-packs-2501-2600.js";
+import {lookalikePacks2601To2700} from "./lookalike-packs-2601-2700.js";
+import {lookalikePacks2701To2800} from "./lookalike-packs-2701-2800.js";
+import {lookalikePacks2801To2900} from "./lookalike-packs-2801-2900.js";
+import {lookalikePacks2901To3000} from "./lookalike-packs-2901-3000.js";
+import {lookalikePacks3001To3071} from "./lookalike-packs-3001-3071.js";
+import {lessons2001To3071} from "./sets-2001-3071.js";
+const segments=[lookalikePacks2001To2100,lookalikePacks2101To2200,lookalikePacks2201To2300,lookalikePacks2301To2400,lookalikePacks2401To2500,lookalikePacks2501To2600,lookalikePacks2601To2700,lookalikePacks2701To2800,lookalikePacks2801To2900,lookalikePacks2901To3000,lookalikePacks3001To3071];
+const sourceByNumber=new Map(segments.flatMap(segment=>Object.values(segment)).map(pack=>[pack.number,pack]));
+const seenWords=new Set();
+export const lookalikePacks2001To3071=Object.fromEntries(lessons2001To3071.map(lesson=>{const key=seenWords.has(lesson.word)?`${lesson.word}#${lesson.number}`:lesson.word;seenWords.add(lesson.word);return[key,sourceByNumber.get(lesson.number)];}));
+const byNumber=new Map(Object.values(lookalikePacks2001To3071).map(pack=>[pack.number,pack]));
+const byWord=new Map(Object.values(lookalikePacks2001To3071).map(pack=>[pack.word,pack]).reverse());
+export function getLookalikePack2001To3071(wordOrNumber){if(typeof wordOrNumber==="number"||/^\d+$/.test(String(wordOrNumber)))return byNumber.get(Number(wordOrNumber));return byWord.get(String(wordOrNumber).trim().toLowerCase());}
+export {lookalikePacks2001To2100,lookalikePacks2101To2200,lookalikePacks2201To2300,lookalikePacks2301To2400,lookalikePacks2401To2500,lookalikePacks2501To2600,lookalikePacks2601To2700,lookalikePacks2701To2800,lookalikePacks2801To2900,lookalikePacks2901To3000,lookalikePacks3001To3071};

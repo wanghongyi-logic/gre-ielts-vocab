@@ -1,0 +1,287 @@
+/* IELTS 538 preview reuses the accepted GRE workspace and adds corpus-specific modules. */
+
+.brand-picker {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+}
+
+.corpus-switch-button {
+  display: inline-grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  place-items: center;
+  border: 1px solid #dfe3ec;
+  border-radius: 11px;
+  background: #fff;
+  color: #59647c;
+  box-shadow: 0 4px 12px rgba(28, 35, 71, .04);
+  cursor: pointer;
+}
+
+.corpus-switch-button:hover {
+  border-color: #aaaaf0;
+  background: #f3f2ff;
+  color: #5353da;
+}
+
+.corpus-switch-button svg {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+body[data-corpus="ielts"] .brand strong { color: #142347; }
+body[data-corpus="ielts"] .brand-mark { background: linear-gradient(145deg, #3c77df, #6357dc); }
+
+.ielts-source-note {
+  display: grid;
+  gap: 3px;
+  margin-bottom: 9px;
+  padding: 10px 11px;
+  border: 1px solid #e2e6f1;
+  border-radius: 10px;
+  background: #f8f9fd;
+}
+
+.ielts-source-note strong { color: #1a294a; font-size: 11px; }
+.ielts-source-note span { color: #727c92; font-size: 9px; line-height: 1.45; }
+.ielts-role-copy { margin: 7px 0 10px !important; color: #67728a; font-size: 10px !important; line-height: 1.5; }
+
+body[data-corpus="ielts"][data-route="learn"] .word-status-line > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ielts-evidence-list {
+  display: grid;
+  gap: 11px;
+}
+
+.ielts-evidence-card {
+  overflow: hidden;
+  border: 1px solid #dfe4ef;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 7px 22px rgba(26, 36, 72, .045);
+}
+
+.ielts-evidence-card > header,
+.ielts-evidence-card > footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.ielts-evidence-card > header {
+  padding: 11px 14px;
+  border-bottom: 1px solid #e8ebf3;
+  background: #f8f9fd;
+}
+
+.ielts-evidence-card > header span {
+  color: #4f55c8;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: .08em;
+}
+
+.ielts-evidence-card > header b {
+  padding: 4px 7px;
+  border: 1px solid #d5dcf2;
+  border-radius: 6px;
+  color: #69748d;
+  font-size: 8px;
+}
+
+.ielts-evidence-quote {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px 12px;
+  padding: 15px 14px;
+}
+
+.ielts-evidence-quote strong {
+  color: #152342;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(15px, 1.3vw, 19px);
+  line-height: 1.45;
+}
+
+.ielts-evidence-quote p {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #667088;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.ielts-evidence-card > footer {
+  padding: 11px 14px;
+  border-top: 1px solid #edf0f5;
+}
+
+.ielts-evidence-card > footer div { display: grid; gap: 3px; }
+.ielts-evidence-card > footer strong { color: #2b3856; font-size: 10px; }
+.ielts-evidence-card > footer small { color: #81899b; font-size: 8px; }
+.ielts-evidence-card > footer a { flex: 0 0 auto; color: #5454d7; font-size: 9px; font-weight: 800; text-decoration: none; }
+.ielts-evidence-note { margin: 0; padding: 0 14px 13px; color: #81899b; font-size: 9px; line-height: 1.5; }
+
+.ielts-morphology-panel dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+
+.ielts-morphology-panel dl > div {
+  padding: 14px;
+  border: 1px solid #e3e7f0;
+  border-radius: 11px;
+  background: #fafbfe;
+}
+
+.ielts-morphology-panel dt { color: #555bd1; font-size: 9px; font-weight: 850; }
+.ielts-morphology-panel dd { margin: 7px 0 0; color: #58647d; font-size: 11px; line-height: 1.6; }
+
+.ielts-test-preview {
+  height: 100%;
+  padding: clamp(22px, 3vw, 38px);
+  background: #f4f3ff;
+}
+
+.ielts-test-preview > div {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  min-height: 66px;
+  border-bottom: 1px solid #e0e1ef;
+}
+
+.ielts-test-preview > div > span {
+  display: grid;
+  width: 25px;
+  height: 25px;
+  place-items: center;
+  border-radius: 8px;
+  background: #fff;
+  color: #5b5be6;
+  font-size: 9px;
+}
+
+.ielts-test-preview strong { color: #172442; font-family: Georgia, serif; font-size: 15px; }
+.ielts-test-preview small { color: #7c8497; font-size: 8px; }
+.ielts-test-result { grid-template-columns: 1fr !important; }
+.ielts-test-result .test-ready-copy { align-items: flex-start; }
+
+.ielts-meaning-first {
+  display: grid;
+  gap: 7px;
+  margin: 0 0 16px;
+  padding: 16px 18px;
+  border: 1px solid #d9def8;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f8f8ff, #f3f6ff);
+}
+
+.ielts-meaning-first > span,
+.comparison-target-card > div > span {
+  color: #5b5be6;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: .09em;
+}
+
+.ielts-meaning-first > strong { color: #172442; font-size: 17px; line-height: 1.45; }
+.ielts-meaning-first > p { margin: 0; color: #37445f; font-family: Georgia, serif; font-size: 15px; line-height: 1.5; }
+.ielts-meaning-first > small { padding-top: 8px; border-top: 1px solid #e0e4f4; color: #68738b; font-size: 11px; line-height: 1.6; }
+
+.comparison-target-card {
+  display: grid;
+  grid-template-columns: minmax(180px, .72fr) minmax(260px, 1.28fr);
+  gap: 12px 18px;
+  margin-bottom: 10px;
+  padding: 16px;
+  border: 1px solid #bfc7ff;
+  border-radius: 14px;
+  background: #f5f5ff;
+}
+
+.comparison-target-card h3 { margin: 5px 0 3px; color: #172442; font-family: Georgia, serif; font-size: 24px; }
+.comparison-target-card strong { color: #3f4b65; font-size: 11px; line-height: 1.5; }
+.comparison-target-card > p { margin: 0; color: #56627b; font-size: 11px; line-height: 1.65; }
+.comparison-target-card .comparison-examples { grid-column: 1 / -1; }
+
+.comparison-rule-strip {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 0 0 12px;
+  padding: 11px 13px;
+  border-left: 3px solid #5b5be6;
+  background: #fafaff;
+  color: #5f6981;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.comparison-rule-strip strong { flex: 0 0 auto; color: #4b4fd2; }
+
+.ielts-review-mode-strip {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid #e0e4f0;
+  border-radius: 12px;
+  background: #fff;
+  overflow-x: auto;
+}
+
+.ielts-review-mode-strip > strong { margin-right: 4px; color: #27334f; font-size: 10px; white-space: nowrap; }
+.ielts-review-mode-strip > span { padding: 6px 9px; border-radius: 8px; background: #f1f2ff; color: #5358ca; font-size: 9px; font-weight: 750; white-space: nowrap; }
+
+body[data-corpus="ielts"][data-route="story"] .story-chain {
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 8px;
+}
+
+body[data-corpus="ielts"][data-route="story"] .story-chain button {
+  min-width: 0;
+  border: 1px solid #e0e4ef;
+  border-radius: 12px;
+  background: #fbfcff;
+}
+
+body[data-corpus="ielts"][data-route="story"] .story-chain button::after { display: none; }
+
+@media (min-width: 960px) {
+  body[data-corpus="ielts"][data-route="learn"] .ielts-content-nav { flex: 1 1 auto; }
+  body[data-corpus="ielts"][data-route="learn"] .learning-quick-actions { flex: 0 0 auto; }
+  body[data-corpus="ielts"][data-route="learn"] .ielts-evidence-panel.is-active,
+  body[data-corpus="ielts"][data-route="learn"] .ielts-morphology-panel.is-active { overflow: auto; }
+}
+
+@media (max-width: 959px) {
+  .brand-picker { gap: 4px; }
+  .corpus-switch-button { width: 34px; height: 34px; flex-basis: 34px; }
+  .ielts-morphology-panel dl { grid-template-columns: 1fr; }
+  .ielts-test-preview { padding: 18px; }
+}
+
+@media (max-width: 619px) {
+  .brand-picker .brand { min-width: 0; }
+  .corpus-switch-button { border-color: transparent; box-shadow: none; }
+  .ielts-evidence-card > footer { align-items: flex-start; flex-direction: column; }
+  .comparison-target-card { grid-template-columns: 1fr; }
+  .comparison-target-card .comparison-examples { grid-column: auto; }
+}

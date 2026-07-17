@@ -1,0 +1,13 @@
+import * as m01 from "./set-01.js"; import * as m02 from "./set-02.js";
+import * as m03 from "./set-03.js"; import * as m04 from "./set-04.js";
+import * as m05 from "./sets-05-08.js"; import * as m09 from "./sets-09-12.js";
+import * as m13 from "./sets-13-16.js"; import * as m17 from "./sets-17-20.js";
+import * as m21 from "./sets-21-22.js"; import * as m23 from "./sets-23-24.js";
+import * as m24 from "./set-24.js"; import * as m25 from "./sets-25-27.js";
+import * as m28 from "./sets-28-29.js"; import * as m30 from "./sets-30-31.js";
+import * as m32 from "./set-32.js"; import * as m33 from "./sets-33-34.js";
+import * as m35 from "./sets-35-36.js"; import * as m37 from "./sets-37-38.js";
+import * as m39 from "./sets-39-40.js";
+const modules=[m01,m02,m03,m04,m05,m09,m13,m17,m21,m23,m24,m25,m28,m30,m32,m33,m35,m37,m39];
+export const sets001To200=modules.flatMap(module=>Object.entries(module).filter(([name,value])=>/^set\d+$/.test(name)&&value?.id>=1&&value.id<=40&&!(value.id===24&&module===m23)).map(([,value])=>value)).sort((a,b)=>a.id-b.id);
+export const lessons001To200=sets001To200.flatMap(set=>set.lessons);

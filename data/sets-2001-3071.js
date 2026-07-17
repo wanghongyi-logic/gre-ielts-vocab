@@ -1,0 +1,28 @@
+import * as m401 from "./sets-401-410.js"; import * as m411 from "./sets-411-420.js";
+import * as m421 from "./sets-421-430.js"; import * as m431 from "./sets-431-440.js";
+import * as m441 from "./sets-441-450.js"; import * as m451 from "./sets-451-460.js";
+import * as m461 from "./sets-461-470.js"; import * as m471 from "./sets-471-480.js";
+import * as m481 from "./sets-481-490.js"; import * as m491 from "./sets-491-500.js";
+import * as m501 from "./sets-501-510.js"; import * as m511 from "./sets-511-520.js";
+import * as m521 from "./sets-521-530.js"; import * as m531 from "./sets-531-540.js";
+import * as m541 from "./sets-541-550.js"; import * as m551 from "./sets-551-560.js";
+import * as m561 from "./sets-561-570.js"; import * as m571 from "./sets-571-580.js";
+import * as m581 from "./sets-581-590.js"; import * as m591 from "./sets-591-600.js";
+import * as m601 from "./sets-601-610.js"; import * as m611 from "./sets-611-614.js";
+import {lesson3071,tail3071} from "./tail-3071.js";
+
+const modules=[m401,m411,m421,m431,m441,m451,m461,m471,m481,m491,m501,m511,m521,m531,m541,m551,m561,m571,m581,m591,m601,m611];
+export const sets2001To3070=modules.flatMap(module=>Object.entries(module).filter(([name,value])=>/^set\d+$/.test(name)&&value?.id).map(([,value])=>value)).sort((a,b)=>a.id-b.id);
+export const lessons2001To3071=[...sets2001To3070.flatMap(set=>set.lessons),lesson3071];
+export {lesson3071,tail3071};
+export * from "./sets-401-410.js"; export * from "./sets-411-420.js";
+export * from "./sets-421-430.js"; export * from "./sets-431-440.js";
+export * from "./sets-441-450.js"; export * from "./sets-451-460.js";
+export * from "./sets-461-470.js"; export * from "./sets-471-480.js";
+export * from "./sets-481-490.js"; export * from "./sets-491-500.js";
+export * from "./sets-501-510.js"; export * from "./sets-511-520.js";
+export * from "./sets-521-530.js"; export * from "./sets-531-540.js";
+export * from "./sets-541-550.js"; export * from "./sets-551-560.js";
+export * from "./sets-561-570.js"; export * from "./sets-571-580.js";
+export * from "./sets-581-590.js"; export * from "./sets-591-600.js";
+export * from "./sets-601-610.js"; export * from "./sets-611-614.js";
