@@ -1,4 +1,4 @@
-const CACHE = "vocab-studio-v63-gre100-quality";
+const CACHE = "vocab-studio-v64-gre100-relations";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -13,7 +13,7 @@ const CORE_ASSETS = [
   "./mobile-v2.css",
   "./mobile-v2.css?v=63",
   "./app.js",
-  "./app.js?v=63",
+  "./app.js?v=64",
   "./manifest.webmanifest",
   "./icon-192-v2.png",
   "./icon-512-v2.png",

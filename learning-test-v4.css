@@ -1,5 +1,111 @@
 /* Learning + Test visual system, derived from the approved ImageGen concepts. */
 
+.relation-tabs {
+  position: sticky;
+  z-index: 3;
+  top: -1px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+  margin: 0 0 14px;
+  padding: 5px;
+  border: 1px solid #e1e5ee;
+  border-radius: 13px;
+  background: rgba(247, 248, 252, .96);
+  backdrop-filter: blur(12px);
+}
+
+.relation-tab {
+  display: flex;
+  min-width: 0;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: #657089;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.relation-tab small {
+  display: inline-grid;
+  min-width: 20px;
+  height: 20px;
+  place-items: center;
+  padding-inline: 5px;
+  border-radius: 999px;
+  background: #e7eaf2;
+  color: #778198;
+  font-size: 9px;
+}
+
+.relation-tab.is-current {
+  background: #fff;
+  color: #4e55d7;
+  box-shadow: 0 3px 12px rgba(40, 47, 89, .09);
+}
+
+.relation-tab.is-current small {
+  background: #eeedff;
+  color: #4e55d7;
+}
+
+.relation-subpanel { display: none; }
+.relation-subpanel.is-active { display: block; }
+
+.relation-intro {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f5f7fb;
+}
+
+.relation-intro strong {
+  flex: 0 0 auto;
+  color: #17213a;
+  font-size: 12px;
+}
+
+.relation-intro p {
+  margin: 0;
+  color: #667187;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.equivalence-intro {
+  border-left: 3px solid #625bea;
+  background: #f3f2ff;
+}
+
+.equivalence-source {
+  display: block;
+  width: fit-content;
+  margin: -4px 0 10px;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #f0efff;
+  color: #5c58c9;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.relation-card {
+  min-width: 0;
+  box-shadow: none;
+}
+
+.relation-card > p { margin-bottom: 10px; }
+.relation-lookalike { border-color: #dfe3ee; background: #fbfcff; }
+.relation-equivalent { border-color: #dedcf8; background: #fdfdff; }
+
 @media (min-width: 960px) {
   body[data-route="learn"],
   body[data-route="test"] {
@@ -452,6 +558,10 @@
   }
   body[data-route="learn"] .panel-example-grid .example { min-height: clamp(100px, 15vh, 140px); }
   body[data-route="learn"] .comparison-stack { grid-template-columns: 1fr; gap: 10px; }
+  body[data-route="learn"] .relations-section .comparison-stack {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
 
   /* Test left rail */
   body[data-route="test"] .rail-page-heading {
@@ -631,6 +741,29 @@
 
 /* Mobile keeps the existing single-column flow but follows the merged IA. */
 @media (max-width: 959px) {
+  .relation-tabs {
+    position: static;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+  .relation-tabs::-webkit-scrollbar { display: none; }
+  .relation-tab {
+    flex: 0 0 auto;
+    min-width: max-content;
+    min-height: 44px;
+    scroll-snap-align: start;
+    font-size: 13px;
+  }
+  .relation-intro {
+    display: block;
+    padding: 12px;
+  }
+  .relation-intro strong { font-size: 14px; }
+  .relation-intro p { margin-top: 5px; font-size: 12.5px; }
+  body[data-route="learn"] .relations-section .comparison-stack { grid-template-columns: 1fr; }
+
   body[data-route="learn"] .usage-sense-stack { display: grid; gap: 18px; }
   body[data-route="learn"] .usage-sense > header {
     display: grid;
