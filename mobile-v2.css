@@ -2357,3 +2357,302 @@
     display: none !important;
   }
 }
+
+/* v68 — compact iOS-style navigation palette and tighter fixed lesson header. */
+@media (max-width: 959px) {
+  body[data-corpus="gre"][data-route="learn"] main {
+    padding-top: max(10px, calc(env(safe-area-inset-top) + 6px));
+  }
+
+  body[data-corpus="gre"][data-route="learn"] .learning-panel-stack {
+    padding-bottom: calc(118px + env(safe-area-inset-bottom));
+    scroll-padding-bottom: calc(118px + env(safe-area-inset-bottom));
+  }
+
+  body[data-corpus="gre"][data-route="learn"] #recall {
+    margin-bottom: 14px;
+  }
+
+  body[data-corpus="ielts"][data-route="learn"] #recall {
+    margin-bottom: calc(112px + env(safe-area-inset-bottom));
+  }
+
+  .mobile-learning-drawer-backdrop {
+    background: rgba(22, 27, 48, .26);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+
+  .mobile-learning-drawer {
+    top: 50%;
+    bottom: auto;
+    width: min(86vw, 344px);
+    height: auto;
+    max-height: calc(100dvh - 20px);
+    gap: 10px;
+    padding: 12px 12px max(12px, env(safe-area-inset-bottom));
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid rgba(219, 223, 235, .96);
+    border-left: 0;
+    border-radius: 0 28px 28px 0;
+    background: rgba(248, 249, 253, .985);
+    box-shadow: 24px 8px 64px rgba(24, 31, 65, .24), inset 0 1px rgba(255, 255, 255, .9);
+    transform: translate(-104%, -50%);
+    transition: transform .26s cubic-bezier(.22, .8, .2, 1), visibility .26s;
+  }
+
+  body.mobile-learning-nav-open .mobile-learning-drawer {
+    transform: translate(0, -50%);
+  }
+
+  .mobile-learning-drawer > header {
+    position: static;
+    top: auto;
+    min-height: 50px;
+    margin: 0;
+    padding: 1px 2px 10px;
+    border-bottom: 1px solid #e1e4ed;
+    background: transparent;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .mobile-learning-drawer-title {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .mobile-learning-drawer-title > div {
+    min-width: 0;
+  }
+
+  .mobile-learning-corpus-mark {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    place-items: center;
+    border-radius: 13px;
+    background: linear-gradient(145deg, #6868ed, #4d4bc9);
+    box-shadow: 0 7px 16px rgba(76, 73, 193, .22), inset 0 1px rgba(255, 255, 255, .22);
+    color: #fff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  .mobile-learning-drawer > header small {
+    font-size: 9px;
+    letter-spacing: .055em;
+  }
+
+  .mobile-learning-drawer > header strong {
+    margin-top: 1px;
+    font-size: 21px;
+    line-height: 1.12;
+  }
+
+  .mobile-learning-drawer > header > button {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+    border: 0;
+    border-radius: 13px;
+    background: #eceef5;
+    color: #6d7487;
+    box-shadow: none;
+  }
+
+  .mobile-learning-app-links {
+    gap: 4px;
+    padding: 4px;
+    border: 0;
+    border-radius: 17px;
+    background: #eceef4;
+  }
+
+  .mobile-learning-app-links button {
+    min-height: 54px;
+    gap: 3px;
+    padding: 6px 3px;
+    border-radius: 13px;
+    color: #71788b;
+  }
+
+  .mobile-learning-app-links button svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .mobile-learning-app-links button.is-current {
+    background: #fff;
+    color: #5152d2;
+    box-shadow: 0 4px 12px rgba(38, 46, 78, .09), inset 0 0 0 1px rgba(220, 223, 234, .72);
+  }
+
+  .mobile-learning-search {
+    grid-template-columns: minmax(0, 1fr) 40px;
+    height: 50px;
+    gap: 2px;
+    padding: 4px;
+    border: 1px solid #dfe2ec;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(36, 44, 77, .045);
+  }
+
+  .mobile-learning-search label {
+    height: 40px;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .mobile-learning-search label > span {
+    color: #858c9e;
+  }
+
+  .mobile-learning-search input {
+    padding-right: 4px;
+    font-size: 16px !important;
+  }
+
+  .mobile-learning-search > button {
+    display: grid;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 0;
+    place-items: center;
+    border-radius: 12px;
+    background: #5958df;
+    box-shadow: 0 5px 12px rgba(73, 70, 198, .22);
+    font-size: 0;
+  }
+
+  .mobile-learning-search > button svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.9;
+  }
+
+  .mobile-learning-content-group {
+    display: grid;
+    gap: 6px;
+  }
+
+  .mobile-learning-content-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 2px 4px 0;
+  }
+
+  .mobile-learning-content-heading strong {
+    color: #343d55;
+    font-size: 11px;
+    font-weight: 820;
+  }
+
+  .mobile-learning-content-heading small {
+    color: #969cad;
+    font-size: 9px;
+  }
+
+  .mobile-learning-content-links {
+    gap: 0;
+    padding: 5px;
+    overflow: hidden;
+    border: 1px solid #e0e3ec;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(34, 42, 74, .035);
+  }
+
+  .mobile-learning-content-links button {
+    grid-template-columns: 34px minmax(0, 1fr) 16px;
+    min-height: 44px;
+    gap: 8px;
+    padding: 4px 6px 4px 4px;
+    border-radius: 11px;
+  }
+
+  .mobile-learning-content-links button + button {
+    border-top: 1px solid #eff0f5;
+  }
+
+  .mobile-learning-content-links button svg {
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+    border-radius: 10px;
+    background: #f0f0ff;
+  }
+
+  .mobile-learning-content-links button span {
+    font-size: 12px;
+    font-weight: 720;
+  }
+
+  .mobile-learning-drawer > footer {
+    gap: 6px;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .mobile-learning-drawer > footer button {
+    min-height: 52px;
+    border-radius: 16px;
+  }
+
+  .mobile-learning-primary-action {
+    border-color: transparent;
+    background: linear-gradient(135deg, #6261e7, #5250d2);
+    box-shadow: 0 8px 18px rgba(69, 66, 186, .2);
+  }
+
+  .mobile-corpus-switch {
+    background: rgba(255, 255, 255, .86);
+    box-shadow: 0 3px 10px rgba(38, 45, 74, .035);
+  }
+
+  .mobile-learning-nav-toggle {
+    width: 25px;
+    height: 56px;
+    border-radius: 0 14px 14px 0;
+    background: rgba(255, 255, 255, .92);
+    color: #5c5bd8;
+    box-shadow: 7px 5px 17px rgba(28, 35, 72, .13);
+  }
+
+  .mobile-learning-nav-toggle::after {
+    right: 3px;
+    height: 14px;
+  }
+
+  .mobile-learning-nav-toggle svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  body.mobile-learning-nav-open .mobile-learning-nav-toggle {
+    left: min(86vw, 344px);
+    width: 25px;
+    height: 56px;
+    border-color: rgba(214, 218, 231, .95);
+    border-radius: 0 14px 14px 0;
+    background: rgba(255, 255, 255, .96);
+    color: #5a59d5;
+    transform: translate(0, -50%);
+    box-shadow: 7px 5px 18px rgba(28, 35, 72, .14);
+  }
+}
