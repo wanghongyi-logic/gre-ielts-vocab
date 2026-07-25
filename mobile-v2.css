@@ -1073,6 +1073,262 @@
   }
 }
 
+/* v66 — one pull-out navigation system for every mobile workspace. */
+@media (max-width: 959px) {
+  .sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden !important;
+    overscroll-behavior: none;
+  }
+
+  body {
+    position: fixed;
+    inset: 0;
+  }
+
+  body.mobile-immersive .app-layout,
+  body.mobile-immersive main {
+    min-height: 0;
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  body.mobile-immersive #app {
+    min-height: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body.mobile-immersive main {
+    box-sizing: border-box;
+  }
+
+  body.mobile-immersive #app {
+    position: relative;
+  }
+
+  body.mobile-immersive #app > .view {
+    min-height: 0;
+    max-height: 100%;
+  }
+
+  body[data-route="home"] #app > .home-workspace,
+  body[data-route="story"] #app > .story-workspace {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body[data-corpus="ielts"][data-route="learn"] #app > .word-page {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .mobile-immersive-button,
+  .mobile-command-menu {
+    display: none !important;
+  }
+
+  .mobile-learning-nav-toggle {
+    z-index: 148;
+    top: 50%;
+    left: 0;
+    display: grid;
+    width: 30px;
+    min-width: 0;
+    height: 70px;
+    padding: 0;
+    place-items: center;
+    border: 1px solid rgba(216, 220, 235, .92);
+    border-left: 0;
+    border-radius: 0 17px 17px 0;
+    background: rgba(255, 255, 255, .93);
+    box-shadow: 8px 6px 22px rgba(28, 35, 72, .15), inset 0 1px rgba(255, 255, 255, .9);
+    color: #5555d9;
+    transform: translateY(-50%);
+    transition: left .28s cubic-bezier(.22, .8, .2, 1), transform .28s cubic-bezier(.22, .8, .2, 1), background .18s ease, color .18s ease;
+    -webkit-backdrop-filter: blur(20px) saturate(155%);
+    backdrop-filter: blur(20px) saturate(155%);
+  }
+
+  .mobile-learning-nav-toggle::after {
+    content: "";
+    position: absolute;
+    right: 4px;
+    width: 2px;
+    height: 18px;
+    border-radius: 99px;
+    background: currentColor;
+    opacity: .18;
+  }
+
+  .mobile-learning-nav-toggle svg {
+    width: 17px;
+    height: 17px;
+    margin-left: -2px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  body.mobile-learning-nav-open .mobile-learning-nav-toggle {
+    left: min(88vw, 356px);
+    border: 1px solid rgba(255, 255, 255, .86);
+    border-radius: 17px;
+    background: #5756df;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 12px 28px rgba(55, 54, 158, .28);
+  }
+
+  body.mobile-learning-nav-open .mobile-learning-nav-toggle svg {
+    transform: rotate(180deg);
+  }
+
+  body.mobile-learning-nav-open .mobile-learning-nav-toggle::after {
+    display: none;
+  }
+
+  .mobile-learning-drawer {
+    gap: 13px;
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+    overscroll-behavior: contain;
+  }
+
+  .mobile-learning-drawer > header {
+    position: sticky;
+    z-index: 2;
+    top: calc(-1 * max(17px, env(safe-area-inset-top)));
+    margin: calc(-1 * max(17px, env(safe-area-inset-top))) -14px 0;
+    padding: max(17px, env(safe-area-inset-top)) 16px 11px;
+    background: rgba(249, 250, 254, .94);
+    -webkit-backdrop-filter: blur(18px) saturate(145%);
+    backdrop-filter: blur(18px) saturate(145%);
+  }
+
+  .mobile-learning-app-links {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .mobile-learning-app-links button {
+    min-height: 58px;
+    font-size: 10.5px;
+  }
+
+  .mobile-learning-app-links button svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .mobile-learning-drawer-scope,
+  .mobile-learning-drawer-words {
+    display: none !important;
+  }
+
+  .mobile-learning-search {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 58px;
+    gap: 7px;
+  }
+
+  .mobile-learning-search label {
+    display: grid;
+    grid-template-columns: 34px minmax(0, 1fr);
+    min-width: 0;
+    height: 48px;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #dde1ec;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(34, 42, 76, .04);
+  }
+
+  .mobile-learning-search label > span {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    color: #747b91;
+  }
+
+  .mobile-learning-search label svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .mobile-learning-search input {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    padding: 0 10px 0 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #1c243c;
+    font-size: 16px !important;
+    font-weight: 620;
+  }
+
+  .mobile-learning-search input::placeholder {
+    color: #9aa1b2;
+    font-weight: 520;
+  }
+
+  .mobile-learning-search > button {
+    min-width: 0;
+    min-height: 48px;
+    padding: 0 8px;
+    border: 0;
+    border-radius: 14px;
+    background: #5756df;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 820;
+    box-shadow: 0 7px 16px rgba(73, 71, 199, .2);
+  }
+
+  .mobile-learning-content-links {
+    padding-top: 5px;
+  }
+
+  .mobile-learning-drawer > footer {
+    padding-top: 8px;
+    border-top: 1px solid #e2e5ee;
+  }
+
+  .mobile-corpus-switch {
+    border: 1px solid #dfe2eb;
+    background: #fff;
+    color: #4d566c;
+  }
+
+  .mobile-corpus-switch svg {
+    color: #5a59dc;
+  }
+}
+
 /* GRE mobile learning workspace — fixed word card + collapsible left curriculum rail. */
 @media (max-width: 959px) {
   body[data-corpus="gre"][data-route="learn"] {
@@ -2037,5 +2293,67 @@
     bottom: -11px;
     height: 12px;
     background: #bfc5db;
+  }
+}
+
+/* v66 final cascade: the pull handle replaces every older mobile menu trigger. */
+@media (max-width: 959px) {
+  .mobile-immersive-button,
+  .mobile-command-menu {
+    display: none !important;
+  }
+
+  .mobile-learning-nav-toggle {
+    z-index: 148;
+    top: 50%;
+    right: auto;
+    left: 0;
+    display: grid;
+    width: 30px;
+    min-width: 0;
+    height: 70px;
+    padding: 0;
+    place-items: center;
+    gap: 0;
+    border: 1px solid rgba(216, 220, 235, .92);
+    border-left: 0;
+    border-radius: 0 17px 17px 0;
+    background: rgba(255, 255, 255, .93);
+    box-shadow: 8px 6px 22px rgba(28, 35, 72, .15), inset 0 1px rgba(255, 255, 255, .9);
+    color: #5555d9;
+    font-size: 0;
+    transform: translateY(-50%);
+    transition: left .28s cubic-bezier(.22, .8, .2, 1), transform .28s cubic-bezier(.22, .8, .2, 1), background .18s ease, color .18s ease;
+    -webkit-backdrop-filter: blur(20px) saturate(155%);
+    backdrop-filter: blur(20px) saturate(155%);
+  }
+
+  .mobile-learning-nav-toggle svg {
+    width: 17px;
+    height: 17px;
+    margin-left: -2px;
+  }
+
+  body.mobile-learning-nav-open .mobile-learning-nav-toggle {
+    left: min(88vw, 356px);
+    border: 1px solid rgba(255, 255, 255, .86);
+    border-radius: 17px;
+    background: #5756df;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 12px 28px rgba(55, 54, 158, .28);
+  }
+
+  body.mobile-learning-nav-open .mobile-learning-nav-toggle svg {
+    transform: rotate(180deg);
+  }
+
+  .mobile-learning-app-links {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .mobile-learning-drawer-scope,
+  .mobile-learning-drawer-words {
+    display: none !important;
   }
 }
