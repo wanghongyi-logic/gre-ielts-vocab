@@ -1,20 +1,14 @@
-const CACHE = "vocab-studio-v68-polished-mobile-navigation";
+const CACHE = "vocab-studio-v70-ielts-gre-design-sync";
 const CORE_ASSETS = [
-  "./",
   "./index.html",
-  "./styles.css",
-  "./theme-v2.css",
-  "./theme-v2.css?v=68",
-  "./learning-test-v4.css",
-  "./learning-test-v4.css?v=68",
-  "./ielts-preview.css",
-  "./review-integration.css",
-  "./review-integration.css?v=68",
-  "./mobile-v2.css",
-  "./mobile-v2.css?v=68",
-  "./app.js",
-  "./app.js?v=68",
-  "./manifest.webmanifest",
+  "./styles.css?v=70",
+  "./theme-v2.css?v=70",
+  "./learning-test-v4.css?v=70",
+  "./ielts-preview.css?v=70",
+  "./review-integration.css?v=70",
+  "./mobile-v2.css?v=70",
+  "./app.js?v=70",
+  "./manifest.webmanifest?v=70",
   "./icon-192-v2.png",
   "./icon-512-v2.png",
   "./apple-touch-icon-v2.png",
@@ -24,15 +18,24 @@ const CORE_ASSETS = [
 ];
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(CORE_ASSETS)));
-  self.skipWaiting();
+  event.waitUntil(
+    caches.open(CACHE)
+      .then((cache) => cache.addAll(CORE_ASSETS))
+      .then(() => self.skipWaiting()),
+  );
 });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((keys) => Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key)))),
+    Promise.all([
+      caches.keys().then((keys) => Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key)))),
+      self.clients.claim(),
+    ]),
   );
-  self.clients.claim();
+});
+
+self.addEventListener("message", (event) => {
+  if (event.data?.type === "SKIP_WAITING") self.skipWaiting();
 });
 
 self.addEventListener("fetch", (event) => {
@@ -43,7 +46,7 @@ self.addEventListener("fetch", (event) => {
 
   if (request.mode === "navigate") {
     event.respondWith(
-      fetch(request).then((response) => {
+      fetch(request, { cache: "no-store" }).then((response) => {
         if (response.ok) {
           const copy = response.clone();
           event.waitUntil(caches.open(CACHE).then((cache) => cache.put("./index.html", copy)));

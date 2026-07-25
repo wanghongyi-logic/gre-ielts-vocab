@@ -621,12 +621,8 @@
     display: grid;
   }
 
-  body[data-corpus="gre"][data-route="library"] .library-workspace {
+  body[data-route="library"] .library-workspace {
     grid-template-rows: auto auto auto auto minmax(0, 1fr);
-  }
-
-  body[data-corpus="ielts"][data-route="library"] .library-workspace {
-    grid-template-rows: auto auto auto minmax(0, 1fr);
   }
 
   body[data-route="library"] .library-workspace .workspace-header {
@@ -1136,14 +1132,6 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  body[data-corpus="ielts"][data-route="learn"] #app > .word-page {
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    -webkit-overflow-scrolling: touch;
-  }
-
   .mobile-immersive-button,
   .mobile-command-menu {
     display: none !important;
@@ -1329,36 +1317,36 @@
   }
 }
 
-/* GRE mobile learning workspace — fixed word card + collapsible left curriculum rail. */
+/* Shared GRE/IELTS mobile learning workspace — fixed word card + collapsible navigation rail. */
 @media (max-width: 959px) {
-  body[data-corpus="gre"][data-route="learn"] {
+  body[data-route="learn"] {
     width: 100%;
     height: 100dvh;
     overflow: hidden;
     background: #f4f6fb;
   }
 
-  body[data-corpus="gre"][data-route="learn"] .mobile-immersive-button,
-  body[data-corpus="gre"][data-route="learn"] .mobile-command-menu {
+  body[data-route="learn"] .mobile-immersive-button,
+  body[data-route="learn"] .mobile-command-menu {
     display: none !important;
   }
 
-  body[data-corpus="gre"][data-route="learn"] .app-layout,
-  body[data-corpus="gre"][data-route="learn"] main,
-  body[data-corpus="gre"][data-route="learn"] #app {
+  body[data-route="learn"] .app-layout,
+  body[data-route="learn"] main,
+  body[data-route="learn"] #app {
     width: 100%;
     min-height: 0;
     height: 100dvh;
     overflow: hidden;
   }
 
-  body[data-corpus="gre"][data-route="learn"] main {
+  body[data-route="learn"] main {
     max-width: 820px;
     padding: max(62px, calc(env(safe-area-inset-top) + 54px)) 12px calc(101px + env(safe-area-inset-bottom));
   }
 
-  body[data-corpus="gre"][data-route="learn"] .word-page,
-  body[data-corpus="gre"][data-route="learn"] .word-page.is-detail-view {
+  body[data-route="learn"] .word-page,
+  body[data-route="learn"] .word-page.is-detail-view {
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
     gap: 10px;
@@ -1367,8 +1355,8 @@
     overflow: hidden;
   }
 
-  body[data-corpus="gre"][data-route="learn"] .word-page > .word-hero,
-  body[data-corpus="gre"][data-route="learn"] .word-page.is-detail-view > .word-hero {
+  body[data-route="learn"] .word-page > .word-hero,
+  body[data-route="learn"] .word-page.is-detail-view > .word-hero {
     position: relative;
     z-index: 2;
     grid-row: 1;
@@ -1381,59 +1369,59 @@
     box-shadow: 0 8px 26px rgba(31, 41, 82, .065);
   }
 
-  body[data-corpus="gre"][data-route="learn"] .word-page .word-line {
+  body[data-route="learn"] .word-page .word-line {
     align-items: center;
     gap: 9px;
   }
 
-  body[data-corpus="gre"][data-route="learn"] .word-page .word-title {
+  body[data-route="learn"] .word-page .word-title {
     overflow: hidden;
     font-size: clamp(40px, 12vw, 57px);
     line-height: .96;
     text-overflow: ellipsis;
   }
 
-  body[data-corpus="gre"][data-route="learn"] .word-page .speak-button {
+  body[data-route="learn"] .word-page .speak-button {
     width: 42px;
     height: 42px;
     flex: 0 0 42px;
   }
 
-  body[data-corpus="gre"][data-route="learn"] .word-page .pronunciation {
+  body[data-route="learn"] .word-page .pronunciation {
     gap: 5px 9px;
     margin-top: 8px;
     font-size: 11.5px;
   }
 
-  body[data-corpus="gre"][data-route="learn"] .word-page .pronunciation strong { font-size: 13.5px; }
-  body[data-corpus="gre"][data-route="learn"] .word-page .core-definition {
+  body[data-route="learn"] .word-page .pronunciation strong { font-size: 13.5px; }
+  body[data-route="learn"] .word-page .core-definition {
     margin-top: 9px;
     font-size: clamp(15px, 4.35vw, 18px);
     line-height: 1.38;
   }
-  body[data-corpus="gre"][data-route="learn"] .word-page .core-cn {
+  body[data-route="learn"] .word-page .core-cn {
     margin-top: 4px;
     font-size: 13.5px;
     line-height: 1.5;
   }
 
-  body[data-corpus="gre"][data-route="learn"] .word-status-line {
+  body[data-route="learn"] .word-status-line {
     gap: 7px;
     margin-top: 9px;
     padding-top: 8px;
     font-size: 9.5px;
   }
 
-  body[data-corpus="gre"][data-route="learn"] .word-topbar,
-  body[data-corpus="gre"][data-route="learn"] .mobile-stepper,
-  body[data-corpus="gre"][data-route="learn"] .mobile-learning-scope,
-  body[data-corpus="gre"][data-route="learn"] .learning-outline,
-  body[data-corpus="gre"][data-route="learn"] .word-page > .rating-panel,
-  body[data-corpus="gre"][data-route="learn"] .word-page > .page-actions {
+  body[data-route="learn"] .word-topbar,
+  body[data-route="learn"] .mobile-stepper,
+  body[data-route="learn"] .mobile-learning-scope,
+  body[data-route="learn"] .learning-outline,
+  body[data-route="learn"] .word-page > .rating-panel,
+  body[data-route="learn"] .word-page > .page-actions {
     display: none !important;
   }
 
-  body[data-corpus="gre"][data-route="learn"] .learning-panel-stack {
+  body[data-route="learn"] .learning-panel-stack {
     grid-row: 2;
     display: block;
     min-width: 0;
@@ -1448,9 +1436,9 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  body[data-corpus="gre"][data-route="learn"] .learning-panel-stack::-webkit-scrollbar { display: none; }
-  body[data-corpus="gre"][data-route="learn"] .learning-panel,
-  body[data-corpus="gre"][data-route="learn"] .learning-panel.is-active {
+  body[data-route="learn"] .learning-panel-stack::-webkit-scrollbar { display: none; }
+  body[data-route="learn"] .learning-panel,
+  body[data-route="learn"] .learning-panel.is-active {
     display: block !important;
     height: auto;
     min-height: 0;
@@ -1458,12 +1446,12 @@
     overflow: visible;
     scroll-margin-top: 8px;
   }
-  body[data-corpus="gre"][data-route="learn"] .learning-memory-panel {
+  body[data-route="learn"] .learning-memory-panel {
     border: 0;
     background: transparent;
     box-shadow: none;
   }
-  body[data-corpus="gre"][data-route="learn"] .learning-memory-panel > .anchor-card { margin-top: 0; }
+  body[data-route="learn"] .learning-memory-panel > .anchor-card { margin-top: 0; }
 
   .mobile-learning-nav-toggle {
     position: fixed;
@@ -2360,21 +2348,17 @@
 
 /* v68 — compact iOS-style navigation palette and tighter fixed lesson header. */
 @media (max-width: 959px) {
-  body[data-corpus="gre"][data-route="learn"] main {
+  body[data-route="learn"] main {
     padding-top: max(10px, calc(env(safe-area-inset-top) + 6px));
   }
 
-  body[data-corpus="gre"][data-route="learn"] .learning-panel-stack {
+  body[data-route="learn"] .learning-panel-stack {
     padding-bottom: calc(118px + env(safe-area-inset-bottom));
     scroll-padding-bottom: calc(118px + env(safe-area-inset-bottom));
   }
 
-  body[data-corpus="gre"][data-route="learn"] #recall {
+  body[data-route="learn"] #recall {
     margin-bottom: 14px;
-  }
-
-  body[data-corpus="ielts"][data-route="learn"] #recall {
-    margin-bottom: calc(112px + env(safe-area-inset-bottom));
   }
 
   .mobile-learning-drawer-backdrop {
