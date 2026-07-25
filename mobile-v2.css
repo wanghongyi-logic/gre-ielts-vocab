@@ -571,6 +571,22 @@
     line-height: 1.65;
   }
 
+  body[data-route="learn"] .grammar-flag {
+    align-items: flex-start;
+    font-size: 13px;
+  }
+
+  body[data-route="learn"] .lookalike-notes p {
+    grid-template-columns: 72px minmax(0, 1fr);
+    font-size: 13px;
+    line-height: 1.62;
+  }
+
+  body[data-route="learn"] .paired-relation-example > small,
+  body[data-route="learn"] .relation-empty p {
+    font-size: 12.5px;
+  }
+
   body[data-route="learn"] .phrase-trigger,
   body[data-route="learn"] .comparison-card,
   body[data-route="learn"] .example-card { min-height: 56px; }
