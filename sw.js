@@ -1,14 +1,14 @@
-const CACHE = "vocab-studio-v74-gre-content-300-500";
+const CACHE = "vocab-studio-v75-gre-content-501-1000";
 const CORE_ASSETS = [
   "./index.html",
-  "./styles.css?v=74",
-  "./theme-v2.css?v=74",
-  "./learning-test-v4.css?v=74",
-  "./ielts-preview.css?v=74",
-  "./review-integration.css?v=74",
-  "./mobile-v2.css?v=74",
-  "./app.js?v=74",
-  "./manifest.webmanifest?v=74",
+  "./styles.css?v=75",
+  "./theme-v2.css?v=75",
+  "./learning-test-v4.css?v=75",
+  "./ielts-preview.css?v=75",
+  "./review-integration.css?v=75",
+  "./mobile-v2.css?v=75",
+  "./app.js?v=75",
+  "./manifest.webmanifest?v=75",
   "./icon-192-v2.png",
   "./icon-512-v2.png",
   "./apple-touch-icon-v2.png",
