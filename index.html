@@ -39,6 +39,15 @@
       .offline-cache-progress > i { display: block; height: 5px; overflow: hidden; border-radius: 999px; background: rgba(185,201,255,.18); }
       .offline-cache-progress > i > b { display: block; width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #6868ed, #70d8ff); transition: width .18s ease; }
       .offline-cache-progress small { overflow: hidden; color: #aebce8; font: 500 10px/1.3 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; text-overflow: ellipsis; white-space: nowrap; }
+      .neural-voice-progress { position: fixed; z-index: 9997; top: max(12px, env(safe-area-inset-top)); left: 50%; display: grid; width: min(390px, calc(100vw - 24px)); gap: 7px; padding: 11px 13px; border: 1px solid rgba(212,222,251,.92); border-radius: 16px; background: rgba(29,35,83,.95); box-shadow: 0 14px 36px rgba(10,18,57,.24); color: #f8f9ff; opacity: 0; pointer-events: none; transform: translate(-50%, -14px); transition: top .2s ease, opacity .2s ease, transform .2s ease; -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); }
+      html.neural-voice-active .neural-voice-progress { opacity: 1; transform: translate(-50%, 0); }
+      html.offline-cache-active.neural-voice-active .neural-voice-progress { top: calc(max(12px, env(safe-area-inset-top)) + 76px); }
+      .neural-voice-progress > div { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+      .neural-voice-progress strong { font: 750 12px/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
+      .neural-voice-progress output { color: #9be5ff; font: 800 12px/1 -apple-system, BlinkMacSystemFont, sans-serif; }
+      .neural-voice-progress > i { display: block; height: 5px; overflow: hidden; border-radius: 999px; background: rgba(185,201,255,.18); }
+      .neural-voice-progress > i > b { display: block; width: 1%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #7772ff, #76dcff); transition: width .18s ease; }
+      .neural-voice-progress small { overflow: hidden; color: #c1c9e7; font: 500 10px/1.3 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; text-overflow: ellipsis; white-space: nowrap; }
     </style>
     <script>
       try {
@@ -58,7 +67,7 @@
     <script>
       (() => {
         if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
-        const build = "78";
+        const build = "79";
         const reloadKey = `vocab-sw-reloaded-${build}`;
         const offlineReadyKey = `vocab-offline-ready-${build}`;
         const hadController = Boolean(navigator.serviceWorker.controller);
@@ -224,7 +233,7 @@
       })();
     </script>
     <link rel="stylesheet" href="./styles.css?v=77" />
-    <link rel="modulepreload" href="./app.js?v=78" />
+    <link rel="modulepreload" href="./app.js?v=79" />
     <link rel="stylesheet" href="./theme-v2.css?v=77" />
     <link rel="stylesheet" href="./learning-test-v4.css?v=77" />
     <link rel="stylesheet" href="./ielts-preview.css?v=77" />
@@ -243,6 +252,11 @@
       <div><strong>正在准备离线新版</strong><output>0%</output></div>
       <i role="progressbar" aria-label="新版缓存进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><b></b></i>
       <small>当前版本可继续使用</small>
+    </aside>
+    <aside class="neural-voice-progress" role="status" aria-live="polite" aria-label="高清离线语音准备进度">
+      <div><strong>正在准备高清离线语音</strong><output>1%</output></div>
+      <i role="progressbar" aria-label="高清离线语音准备进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="1"><b></b></i>
+      <small>首次约 93 MB，之后离线使用</small>
     </aside>
     <a class="skip-link" href="#main-content">跳到正文</a>
 
@@ -346,6 +360,6 @@
         } catch {}
       })();
     </script>
-    <script type="module" src="./app.js?v=78"></script>
+    <script type="module" src="./app.js?v=79"></script>
   </body>
 </html>

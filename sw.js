@@ -1,6 +1,7 @@
-const BUILD = "78";
+const BUILD = "79";
 const CACHE_PREFIX = "vocab-studio-";
 const CACHE = `vocab-studio-v${BUILD}-incremental`;
+const NEURAL_VOICE_CACHE = "vocab-neural-voice-kokoro-82m-q8-v1";
 const READY_MARKER = `./__offline-ready__?build=${BUILD}`;
 const FETCH_ATTEMPTS = 2;
 const CACHE_WORKERS = 3;
@@ -322,6 +323,19 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET") return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
+
+  if (url.pathname.includes("/tts/")) {
+    event.respondWith(
+      caches.open(NEURAL_VOICE_CACHE).then(async (cache) => {
+        const cached = await cache.match(request);
+        if (cached) return cached;
+        const response = await fetch(request);
+        if (response.ok) event.waitUntil(cache.put(request, response.clone()));
+        return response;
+      }),
+    );
+    return;
+  }
 
   if (request.mode === "navigate") {
     event.respondWith(
