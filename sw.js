@@ -1,4 +1,4 @@
-const BUILD = "84";
+const BUILD = "85";
 const CACHE_PREFIX = "vocab-studio-";
 const CACHE = `vocab-studio-v${BUILD}-incremental`;
 const NEURAL_VOICE_CACHE = "vocab-neural-voice-piper-ljspeech-int8-v1";
@@ -15,7 +15,7 @@ const STATIC_ASSETS = [
   { url: "./learning-test-v4.css?v=77", weight: 34_000 },
   { url: "./ielts-preview.css?v=77", weight: 10_000 },
   { url: "./review-integration.css?v=77", weight: 26_000 },
-  { url: "./mobile-v2.css?v=77", weight: 78_000 },
+  { url: "./mobile-v2.css?v=85", weight: 82_000 },
   { url: ASSET_MANIFEST_URL, weight: 8_000 },
   { url: "./manifest.webmanifest?v=77", weight: 4_000 },
   { url: "./icon-192-v2.png", weight: 50_000 },

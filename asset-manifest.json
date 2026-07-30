@@ -1,7 +1,7 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "generatedAt": "2026-07-30T13:10:20.344Z",
+  "generatedAt": "2026-07-30T13:27:36.560Z",
   "build": {
     "tool": "esbuild",
     "version": "0.28.1",
@@ -13,8 +13,8 @@
   "entries": {
     "runtime": {
       "path": "app.js",
-      "bytes": 164566,
-      "gzipBytes": 47797,
+      "bytes": 168959,
+      "gzipBytes": 49232,
       "assets": [
         "app.js",
         "chunks/chunk-EWNQBASX.js",
@@ -74,9 +74,9 @@
   "assets": [
     {
       "path": "app.js",
-      "bytes": 164566,
-      "gzipBytes": 47797,
-      "sha256": "95c2df1fb671e5a022c2ecd8fffa470cdafa42589c94878b77a4dcca948e6642",
+      "bytes": 168959,
+      "gzipBytes": 49232,
+      "sha256": "b0aff5c5746ab425f8844c94d5098c72082064b93ca5c7d82729bfc7aac7e782",
       "entryPoint": "app.js",
       "imports": [
         "content.js",
@@ -170,8 +170,8 @@
     }
   ],
   "totals": {
-    "bytes": 10491574,
-    "gzipBytes": 4239537
+    "bytes": 10495967,
+    "gzipBytes": 4240972
   },
   "validation": {
     "syntaxChecked": true,
