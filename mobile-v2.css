@@ -1084,6 +1084,60 @@
   }
 }
 
+@media (max-width: 959px) {
+  .mobile-learning-drawer .learning-order-control.is-mobile {
+    grid-template-columns: minmax(0, 1fr) 58px;
+    gap: 8px;
+    margin: 0;
+    padding: 10px;
+    border-color: #dfe2ed;
+    border-radius: 17px;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(36, 44, 77, .045);
+  }
+
+  .mobile-learning-drawer .learning-order-copy {
+    align-items: center;
+  }
+
+  .mobile-learning-drawer .learning-order-copy strong {
+    font-size: 12px;
+  }
+
+  .mobile-learning-drawer .learning-order-copy small {
+    max-width: 205px;
+    font-size: 9px;
+  }
+
+  .mobile-learning-drawer .learning-order-segments {
+    min-height: 48px;
+    padding: 4px;
+    border-radius: 13px;
+    touch-action: manipulation;
+  }
+
+  .mobile-learning-drawer .learning-order-segments button {
+    min-height: 40px;
+    border-radius: 10px;
+    touch-action: manipulation;
+  }
+
+  .mobile-learning-drawer .learning-order-segments button span {
+    font-size: 10px;
+  }
+
+  .mobile-learning-drawer .learning-order-segments button strong,
+  .mobile-learning-drawer .learning-order-reshuffle strong {
+    font-size: 11px;
+  }
+
+  .mobile-learning-drawer .learning-order-reshuffle {
+    min-height: 48px;
+    border-radius: 13px;
+    touch-action: manipulation;
+  }
+}
+
 /* v66 — one pull-out navigation system for every mobile workspace. */
 @media (max-width: 959px) {
   .sr-only {

@@ -846,3 +846,127 @@
   body[data-route="learn"] .usage-sense small { display: block; margin-top: 4px; color: var(--muted); font-size: 9px; }
   body[data-route="learn"] .usage-sense .phrase-grid { grid-template-columns: 1fr; margin-top: 10px; }
 }
+
+/* Stable whole-library study order: shared by GRE and IELTS learning rails. */
+.learning-order-control {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 7px;
+  margin: 0 7px 9px;
+  padding: 8px;
+  border: 1px solid #e1e4ef;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #fafbff, #f5f6fc);
+}
+
+.learning-order-copy {
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+}
+
+.learning-order-copy strong {
+  flex: 0 0 auto;
+  color: #343b53;
+  font-size: 10px;
+  font-weight: 820;
+}
+
+.learning-order-copy small {
+  overflow: hidden;
+  color: #858da3;
+  font-size: 8px;
+  line-height: 1.3;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.learning-order-segments {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3px;
+  min-width: 0;
+  padding: 3px;
+  border-radius: 9px;
+  background: #e9ebf3;
+}
+
+.learning-order-control.is-sequential .learning-order-segments { grid-column: 1 / -1; }
+
+.learning-order-segments button,
+.learning-order-reshuffle {
+  min-width: 0;
+  min-height: 30px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #72798e;
+  cursor: pointer;
+  transition: background .16s ease, color .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+
+.learning-order-segments button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 7px;
+}
+
+.learning-order-segments button span {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+}
+
+.learning-order-segments button strong,
+.learning-order-reshuffle strong {
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.learning-order-segments button.is-selected {
+  background: #fff;
+  color: #5654d8;
+  box-shadow: 0 2px 7px rgba(55, 60, 103, .11);
+}
+
+.learning-order-reshuffle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0 8px;
+  border: 1px solid #dfe2ed;
+  background: #fff;
+  color: #5654d8;
+}
+
+.learning-order-reshuffle:hover,
+.learning-order-segments button:hover { color: #4745c7; }
+.learning-order-reshuffle:active,
+.learning-order-segments button:active { transform: scale(.97); }
+.learning-order-reshuffle:focus-visible,
+.learning-order-segments button:focus-visible {
+  outline: 2px solid #6b68e8;
+  outline-offset: 2px;
+}
+
+body[data-route="learn"] .learning-pager-heading > div {
+  display: grid;
+  min-width: 0;
+  gap: 3px;
+}
+
+body[data-route="learn"] .learning-pager-heading small {
+  overflow: hidden;
+  color: #858ca0;
+  font-size: 8px;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

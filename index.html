@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-title" content="词汇精学" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="description" content="再要你命3000全库3071词与雅思必背词538内容精学：多重记忆、近义和形近辨析、双语例句、复习清单、五词故事与随机加权测试。" />
-    <link rel="manifest" href="./manifest.webmanifest?v=76" />
+    <link rel="manifest" href="./manifest.webmanifest?v=77" />
     <link rel="icon" href="./icon-192-v2.png" type="image/png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-v2.png" />
     <link rel="apple-touch-startup-image" href="./apple-launch-1179x2556.png" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)" />
@@ -23,25 +23,121 @@
       .app-boot-mark { display: grid; width: 72px; height: 72px; margin: 0 auto; place-items: center; overflow: hidden; border: 1px solid rgba(146, 194, 255, .34); border-radius: 21px; background: linear-gradient(145deg, #253ec7, #11194c 72%); box-shadow: 0 18px 42px rgba(29, 47, 137, .3); }
       .app-boot-mark svg { display: block; width: 52px; height: 52px; filter: drop-shadow(0 5px 9px rgba(0,0,0,.2)); }
       .app-boot-screen strong { font: 750 18px/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
-      .app-boot-screen span:last-child { color: #aebce8; font: 500 12px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
-      .app-boot-pulse { width: 36px; height: 4px; margin: -6px auto 0; overflow: hidden; border-radius: 999px; background: rgba(172,190,244,.22); }
-      .app-boot-pulse::after { content: ""; display: block; width: 45%; height: 100%; border-radius: inherit; background: #74d7ff; animation: boot-slide 1s ease-in-out infinite alternate; }
+      .app-boot-status { color: #aebce8; font: 500 12px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
+      .app-boot-progress { width: min(280px, 70vw); height: 6px; margin: -5px auto 0; overflow: hidden; border-radius: 999px; background: rgba(172,190,244,.2); box-shadow: inset 0 1px 2px rgba(0,0,0,.12); }
+      .app-boot-progress > span { display: block; width: 3%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #68d2ff, #9ce7ff); box-shadow: 0 0 15px rgba(116,215,255,.45); transition: width .18s ease; }
+      html.app-booting:not(.offline-cache-active) .app-boot-progress > span { width: 34%; animation: boot-progress-scan 1.15s ease-in-out infinite; }
+      @keyframes boot-progress-scan { from { transform: translateX(-110%); } to { transform: translateX(330%); } }
+      @media (prefers-reduced-motion: reduce) { html.app-booting:not(.offline-cache-active) .app-boot-progress > span { width: 18%; animation: none; } }
       html.app-returning .app-boot-screen,
       html:not(.app-booting) .app-boot-screen { visibility: hidden; opacity: 0; pointer-events: none; }
-      @keyframes boot-slide { to { transform: translateX(122%); } }
+      .offline-cache-progress { position: fixed; z-index: 9998; top: max(12px, env(safe-area-inset-top)); left: 50%; display: grid; width: min(430px, calc(100vw - 24px)); gap: 7px; padding: 11px 13px; border: 1px solid rgba(209,218,243,.9); border-radius: 16px; background: rgba(18,27,73,.94); box-shadow: 0 14px 36px rgba(10,18,57,.24); color: #f8f9ff; opacity: 0; pointer-events: none; transform: translate(-50%, -14px); transition: opacity .2s ease, transform .2s ease; -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); }
+      html.offline-cache-active .offline-cache-progress { opacity: 1; transform: translate(-50%, 0); }
+      .offline-cache-progress > div { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+      .offline-cache-progress strong { font: 750 12px/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
+      .offline-cache-progress output { color: #83ddff; font: 800 12px/1 -apple-system, BlinkMacSystemFont, sans-serif; }
+      .offline-cache-progress > i { display: block; height: 5px; overflow: hidden; border-radius: 999px; background: rgba(185,201,255,.18); }
+      .offline-cache-progress > i > b { display: block; width: 0; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #6868ed, #70d8ff); transition: width .18s ease; }
+      .offline-cache-progress small { overflow: hidden; color: #aebce8; font: 500 10px/1.3 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; text-overflow: ellipsis; white-space: nowrap; }
     </style>
     <script>
       try {
-        if (localStorage.getItem("vocab-app-booted-v1") === "1") document.documentElement.classList.add("app-returning");
+        const snapshot = JSON.parse(localStorage.getItem("vocab-warm-shell-v1") || "null");
+        if (
+          snapshot
+          && snapshot.hash === location.hash
+          && snapshot.app
+          && snapshot.lesson
+          && snapshot.context
+        ) {
+          window.__vocabWarmShellSnapshot = snapshot;
+          document.documentElement.classList.add("app-returning");
+        }
       } catch {}
     </script>
     <script>
       (() => {
         if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
-        const build = "75";
+        const build = "77";
         const reloadKey = `vocab-sw-reloaded-${build}`;
+        const offlineReadyKey = `vocab-offline-ready-${build}`;
         const hadController = Boolean(navigator.serviceWorker.controller);
         let refreshing = false;
+        let progressState = null;
+        let hideProgressTimer = 0;
+        let appReady = false;
+        let cacheReady = false;
+        let registrationStarted = false;
+        let lastUpdateCheck = 0;
+
+        const paintProgress = () => {
+          if (!progressState) return;
+          const reportedPercent = Math.max(0, Math.min(100, Number(progressState.percent) || 0));
+          const percent = progressState.type === "CACHE_READY" && !appReady
+            ? Math.min(96, reportedPercent)
+            : reportedPercent;
+          document.documentElement.classList.add("offline-cache-active");
+          const bootTitle = document.querySelector(".app-boot-screen > strong");
+          const bootStatus = document.querySelector(".app-boot-status");
+          const bootTrack = document.querySelector(".app-boot-progress");
+          const bootFill = bootTrack?.querySelector("span");
+          const updateCard = document.querySelector(".offline-cache-progress");
+          const updateTitle = updateCard?.querySelector("strong");
+          const updateOutput = updateCard?.querySelector("output");
+          const updateTrack = updateCard?.querySelector("[role='progressbar']");
+          const updateFill = updateTrack?.querySelector("b");
+          const updateStatus = updateCard?.querySelector("small");
+          const ready = progressState.type === "CACHE_READY";
+          const failed = progressState.type === "CACHE_ERROR";
+          const fullyReady = ready && appReady;
+          const title = failed ? "离线更新未完成" : fullyReady ? "离线新版已准备好" : "正在准备完整离线词库";
+          const status = failed
+            ? (progressState.message || "保留当前可用版本，联网后会自动重试")
+            : fullyReady
+              ? "全部资源已缓存，之后无需联网"
+              : ready
+                ? "离线资源已缓存，正在打开完整词库"
+              : progressState.asset
+                ? `正在缓存 ${progressState.asset} · ${progressState.completed || 0}/${progressState.total || 0}`
+                : "正在建立离线缓存";
+          if (bootTitle) bootTitle.textContent = title;
+          if (bootStatus) bootStatus.textContent = status;
+          if (bootFill) bootFill.style.width = `${Math.max(3, percent)}%`;
+          bootTrack?.setAttribute("aria-valuenow", String(percent));
+          if (updateTitle) updateTitle.textContent = title;
+          if (updateOutput) updateOutput.textContent = `${percent}%`;
+          if (updateFill) updateFill.style.width = `${percent}%`;
+          updateTrack?.setAttribute("aria-valuenow", String(percent));
+          if (updateStatus) updateStatus.textContent = status;
+          if (fullyReady || failed) {
+            clearTimeout(hideProgressTimer);
+            hideProgressTimer = window.setTimeout(() => {
+              document.documentElement.classList.remove("offline-cache-active");
+            }, failed ? 4200 : 1400);
+          }
+        };
+
+        const setProgress = (state) => {
+          progressState = state;
+          paintProgress();
+        };
+        document.addEventListener("DOMContentLoaded", paintProgress, { once: true });
+        navigator.serviceWorker.addEventListener("message", (event) => {
+          if (!["CACHE_START", "CACHE_PROGRESS", "CACHE_READY", "CACHE_ERROR"].includes(event.data?.type)) return;
+          if (event.data.type === "CACHE_READY") {
+            cacheReady = true;
+            const completedBuild = String(event.data.build || build);
+            try { localStorage.setItem(`vocab-offline-ready-${completedBuild}`, "1"); } catch {}
+            if (event.data.silent) return;
+          }
+          setProgress(event.data);
+        });
+        window.addEventListener("vocab-app-ready", () => {
+          appReady = true;
+          if (cacheReady && progressState) {
+            setProgress({ ...progressState, type: "CACHE_READY", percent: 100 });
+          }
+        }, { once: true });
 
         navigator.serviceWorker.addEventListener("controllerchange", () => {
           if (!hadController || refreshing) return;
@@ -50,55 +146,104 @@
             if (sessionStorage.getItem(reloadKey) === "1") return;
             sessionStorage.setItem(reloadKey, "1");
           } catch {}
-          location.reload();
+          window.setTimeout(() => location.reload(), 240);
         });
 
         const checkForUpdate = () => {
+          const now = Date.now();
+          if (now - lastUpdateCheck < 60_000) return;
+          lastUpdateCheck = now;
           const registration = window.__vocabServiceWorkerRegistration;
           if (registration) registration.update().catch(() => {});
         };
         window.__vocabCheckForUpdates = checkForUpdate;
 
-        navigator.serviceWorker.register(`./sw.js?v=${build}`, { updateViaCache: "none" })
-          .then((registration) => {
-            window.__vocabServiceWorkerRegistration = registration;
-            if (registration.waiting) registration.waiting.postMessage({ type: "SKIP_WAITING" });
-            registration.addEventListener("updatefound", () => {
-              const worker = registration.installing;
-              if (!worker) return;
-              worker.addEventListener("statechange", () => {
-                if (worker.state === "installed" && navigator.serviceWorker.controller) {
-                  worker.postMessage({ type: "SKIP_WAITING" });
-                }
+        const registerOfflineApp = () => {
+          if (registrationStarted) return;
+          registrationStarted = true;
+          navigator.serviceWorker.register(`./sw.js?v=${build}`, { updateViaCache: "none" })
+            .then((registration) => {
+              window.__vocabServiceWorkerRegistration = registration;
+              if (registration.waiting) {
+                cacheReady = true;
+                setProgress({ type: "CACHE_READY", percent: 100, message: "离线新版已准备好" });
+                registration.waiting.postMessage({ type: "GET_CACHE_STATUS", silentIfReady: false });
+                registration.waiting.postMessage({ type: "SKIP_WAITING" });
+              }
+              registration.addEventListener("updatefound", () => {
+                const worker = registration.installing;
+                if (!worker) return;
+                setProgress({ type: "CACHE_START", percent: 1, completed: 0, total: 15 });
+                worker.addEventListener("statechange", () => {
+                  if (worker.state === "installed" && navigator.serviceWorker.controller) {
+                    worker.postMessage({ type: "SKIP_WAITING" });
+                  }
+                  if (worker.state === "redundant") {
+                    setProgress({
+                      type: "CACHE_ERROR",
+                      percent: 0,
+                      message: "新版安装未完成，当前离线版本仍可继续使用",
+                    });
+                  }
+                });
+                worker.addEventListener("error", () => {
+                  setProgress({
+                    type: "CACHE_ERROR",
+                    percent: 0,
+                    message: "新版下载失败，当前离线版本仍可继续使用",
+                  });
+                });
               });
-            });
-            return registration.update();
-          })
-          .catch(() => {});
+              let offlineReady = false;
+              try { offlineReady = localStorage.getItem(offlineReadyKey) === "1"; } catch {}
+              if (registration.active) {
+                registration.active.postMessage({ type: "GET_CACHE_STATUS", silentIfReady: offlineReady });
+              }
+            })
+            .catch(() => {});
+        };
 
-        window.addEventListener("pageshow", checkForUpdate);
-        window.addEventListener("online", checkForUpdate);
+        // Let the visible app become interactive before downloading the next
+        // complete offline snapshot. This avoids competing with the first
+        // app bundle request while preserving one-shot full-library caching.
+        window.addEventListener("vocab-app-ready", registerOfflineApp, { once: true });
+        window.addEventListener("load", () => window.setTimeout(registerOfflineApp, 1_200), { once: true });
+
+        const scheduleUpdateCheck = () => {
+          if ("requestIdleCallback" in window) {
+            window.requestIdleCallback(checkForUpdate, { timeout: 2_500 });
+          } else {
+            window.setTimeout(checkForUpdate, 1_500);
+          }
+        };
+        window.addEventListener("load", scheduleUpdateCheck, { once: true });
+        window.addEventListener("online", scheduleUpdateCheck);
         document.addEventListener("visibilitychange", () => {
-          if (document.visibilityState === "visible") checkForUpdate();
+          if (document.visibilityState === "visible") scheduleUpdateCheck();
         });
       })();
     </script>
-    <link rel="stylesheet" href="./styles.css?v=76" />
-    <link rel="modulepreload" href="./app.js?v=76" />
-    <link rel="stylesheet" href="./theme-v2.css?v=76" />
-    <link rel="stylesheet" href="./learning-test-v4.css?v=76" />
-    <link rel="stylesheet" href="./ielts-preview.css?v=76" />
-    <link rel="stylesheet" href="./review-integration.css?v=76" />
-    <link rel="stylesheet" href="./mobile-v2.css?v=76" />
+    <link rel="stylesheet" href="./styles.css?v=77" />
+    <link rel="modulepreload" href="./app.js?v=77" />
+    <link rel="stylesheet" href="./theme-v2.css?v=77" />
+    <link rel="stylesheet" href="./learning-test-v4.css?v=77" />
+    <link rel="stylesheet" href="./ielts-preview.css?v=77" />
+    <link rel="stylesheet" href="./review-integration.css?v=77" />
+    <link rel="stylesheet" href="./mobile-v2.css?v=77" />
     <title>GRE & IELTS 词汇精学</title>
   </head>
   <body>
     <div class="app-boot-screen" role="status" aria-live="polite">
       <span class="app-boot-mark" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M12 16.5c8.8-3.7 16.4-2.1 20 2.2v31.8c-4.2-4.6-11.3-6.4-20-2.2V16.5Z" fill="#F7E8C8"/><path d="M52 16.5c-8.8-3.7-16.4-2.1-20 2.2v31.8c4.2-4.6 11.3-6.4 20-2.2V16.5Z" fill="#FFF4D8"/><path d="M18 25.5c4.8-1.3 8.1-.4 10 1.8M18 33c4.8-1.3 8.1-.4 10 1.8M46 25.5c-4.8-1.3-8.1-.4-10 1.8M46 33c-4.8-1.3-8.1-.4-10 1.8" stroke="#385CE8" stroke-width="2.8" stroke-linecap="round"/><path d="M9 51c9.6-4.4 17.2-2.7 23 2 5.8-4.7 13.4-6.4 23-2" stroke="#75D8FF" stroke-width="3.2" stroke-linecap="round"/></svg></span>
       <strong>正在准备完整词库</strong>
-      <span class="app-boot-pulse" aria-hidden="true"></span>
-      <span>首次载入后即可离线使用</span>
+      <span class="app-boot-progress" role="progressbar" aria-label="离线资源准备进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="3"><span></span></span>
+      <span class="app-boot-status">正在载入应用；随后会在后台完成离线缓存</span>
     </div>
+    <aside class="offline-cache-progress" role="status" aria-live="polite" aria-label="离线资源更新进度">
+      <div><strong>正在准备离线新版</strong><output>0%</output></div>
+      <i role="progressbar" aria-label="新版缓存进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><b></b></i>
+      <small>当前版本可继续使用</small>
+    </aside>
     <a class="skip-link" href="#main-content">跳到正文</a>
 
     <header class="app-header">
@@ -186,7 +331,7 @@
       (() => {
         if (!document.documentElement.classList.contains("app-returning")) return;
         try {
-          const snapshot = JSON.parse(localStorage.getItem("vocab-warm-shell-v1") || "null");
+          const snapshot = window.__vocabWarmShellSnapshot;
           if (snapshot && snapshot.hash === location.hash) {
             const app = document.getElementById("app");
             const lesson = document.getElementById("lesson-list");
@@ -196,11 +341,11 @@
             if (context && snapshot.context) context.innerHTML = snapshot.context;
             if (snapshot.route) document.body.dataset.route = snapshot.route;
             if (snapshot.corpus) document.body.dataset.corpus = snapshot.corpus;
+            document.documentElement.classList.remove("app-booting");
           }
         } catch {}
-        document.documentElement.classList.remove("app-booting");
       })();
     </script>
-    <script type="module" src="./app.js?v=76"></script>
+    <script type="module" src="./app.js?v=77"></script>
   </body>
 </html>
