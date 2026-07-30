@@ -377,16 +377,8 @@
 }
 
 .review-mode-option::after {
-  content: "";
-  position: absolute;
-  right: 9px;
-  bottom: 9px;
-  width: 15px;
-  height: 15px;
-  border: 1.5px solid #c5cad7;
-  border-radius: 50%;
-  background: #ffffff;
-  box-shadow: inset 0 0 0 3px #ffffff;
+  display: none;
+  content: none;
 }
 
 .review-mode-option.is-selected::after {
@@ -1711,25 +1703,34 @@
   }
 
   .review-launch-header h1 {
+    min-width: 0;
     font-size: 25px;
     text-align: left;
   }
 
   .review-corpus-switch {
-    width: 154px;
-    min-width: 154px;
+    box-sizing: border-box;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(154px, 46vw);
+    min-width: 0;
+    max-width: 100%;
     min-height: 40px;
     padding: 3px;
+    overflow: hidden;
     border: 1px solid #dfe2ed;
     border-radius: 12px;
     background: rgba(237,239,246,.9);
   }
 
   .review-corpus-switch button {
+    min-width: 0;
     min-height: 34px;
-    padding: 6px 10px;
+    padding: 6px 5px;
+    overflow: hidden;
     border-radius: 9px;
     font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .review-config-surface {
@@ -1738,7 +1739,10 @@
     padding: 8px;
     flex-direction: column;
     gap: 7px;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
     border-radius: 20px;
     background:
       radial-gradient(circle at 90% 0%, rgba(95, 93, 231, .09), transparent 27%),
@@ -1851,7 +1855,9 @@
   }
 
   .review-launch-summary {
-    position: static;
+    position: sticky;
+    z-index: 2;
+    bottom: 0;
     min-height: 64px;
     margin-top: auto;
     padding: 7px 8px;

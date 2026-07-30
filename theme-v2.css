@@ -1063,7 +1063,7 @@ main { padding-top: 26px; }
 .story-chain button:hover > span { border-color: var(--forest-700); background: var(--forest-50); }
 .story-chain strong { margin-top: 4px; font-family: Georgia, serif; font-size: 13px; }
 .ielts-path-role { color: #6268d9; font-size: 8px; font-style: normal; font-weight: 800; }
-.ielts-story-chain button.is-primary-word > span { border-color: #7775e8; background: #efefff; color: #4f4fd5; }
+.ielts-story-chain button.is-primary-word > span { border-color: #cfd3e2; background: #ffffff; color: var(--forest-700); }
 .story-chain small { max-width: 130px; overflow: hidden; color: var(--muted); font-size: 8px; text-overflow: ellipsis; white-space: nowrap; }
 
 /* Home dashboard */
@@ -2150,6 +2150,7 @@ body[data-route]:not([data-route="learn"]) .question-map-legend { font-size: 10p
 .history-trend button > small { margin-top: 2px; font-size: 7px; white-space: nowrap; }
 .history-trend button.is-current { background: #f0efff; color: #5755dc; }
 .history-trend button.is-current i { background: #dedcff; }
+.history-more-link { display: none; }
 
 .history-day-heading {
   align-items: end;
