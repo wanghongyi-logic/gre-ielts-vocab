@@ -67,7 +67,7 @@
     <script>
       (() => {
         if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
-        const build = "79";
+        const build = "80";
         const reloadKey = `vocab-sw-reloaded-${build}`;
         const offlineReadyKey = `vocab-offline-ready-${build}`;
         const hadController = Boolean(navigator.serviceWorker.controller);
@@ -233,7 +233,7 @@
       })();
     </script>
     <link rel="stylesheet" href="./styles.css?v=77" />
-    <link rel="modulepreload" href="./app.js?v=79" />
+    <link rel="modulepreload" href="./app.js?v=80" />
     <link rel="stylesheet" href="./theme-v2.css?v=77" />
     <link rel="stylesheet" href="./learning-test-v4.css?v=77" />
     <link rel="stylesheet" href="./ielts-preview.css?v=77" />
@@ -256,7 +256,7 @@
     <aside class="neural-voice-progress" role="status" aria-live="polite" aria-label="高清离线语音准备进度">
       <div><strong>正在准备高清离线语音</strong><output>1%</output></div>
       <i role="progressbar" aria-label="高清离线语音准备进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="1"><b></b></i>
-      <small>首次约 93 MB，之后离线使用</small>
+      <small>语音包约 112 MB（模型约 93 MB），之后离线使用</small>
     </aside>
     <a class="skip-link" href="#main-content">跳到正文</a>
 
@@ -360,6 +360,6 @@
         } catch {}
       })();
     </script>
-    <script type="module" src="./app.js?v=79"></script>
+    <script type="module" src="./app.js?v=80"></script>
   </body>
 </html>
