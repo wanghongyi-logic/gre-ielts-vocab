@@ -58,7 +58,7 @@
     <script>
       (() => {
         if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
-        const build = "77";
+        const build = "78";
         const reloadKey = `vocab-sw-reloaded-${build}`;
         const offlineReadyKey = `vocab-offline-ready-${build}`;
         const hadController = Boolean(navigator.serviceWorker.controller);
@@ -90,13 +90,13 @@
           const ready = progressState.type === "CACHE_READY";
           const failed = progressState.type === "CACHE_ERROR";
           const fullyReady = ready && appReady;
-          const title = failed ? "离线更新未完成" : fullyReady ? "离线新版已准备好" : "正在准备完整离线词库";
+          const title = failed ? "离线更新未完成" : fullyReady ? "离线新版已准备好" : "正在增量更新离线词库";
           const status = failed
             ? (progressState.message || "保留当前可用版本，联网后会自动重试")
             : fullyReady
               ? "全部资源已缓存，之后无需联网"
               : ready
-                ? "离线资源已缓存，正在打开完整词库"
+                ? "离线资源已缓存，正在打开词库"
               : progressState.asset
                 ? `正在缓存 ${progressState.asset} · ${progressState.completed || 0}/${progressState.total || 0}`
                 : "正在建立离线缓存";
@@ -204,8 +204,8 @@
         };
 
         // Let the visible app become interactive before downloading the next
-        // complete offline snapshot. This avoids competing with the first
-        // app bundle request while preserving one-shot full-library caching.
+        // incremental offline snapshot. This avoids competing with the first
+        // app bundle request while preserving full offline coverage.
         window.addEventListener("vocab-app-ready", registerOfflineApp, { once: true });
         window.addEventListener("load", () => window.setTimeout(registerOfflineApp, 1_200), { once: true });
 
@@ -224,7 +224,7 @@
       })();
     </script>
     <link rel="stylesheet" href="./styles.css?v=77" />
-    <link rel="modulepreload" href="./app.js?v=77" />
+    <link rel="modulepreload" href="./app.js?v=78" />
     <link rel="stylesheet" href="./theme-v2.css?v=77" />
     <link rel="stylesheet" href="./learning-test-v4.css?v=77" />
     <link rel="stylesheet" href="./ielts-preview.css?v=77" />
@@ -235,7 +235,7 @@
   <body>
     <div class="app-boot-screen" role="status" aria-live="polite">
       <span class="app-boot-mark" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M12 16.5c8.8-3.7 16.4-2.1 20 2.2v31.8c-4.2-4.6-11.3-6.4-20-2.2V16.5Z" fill="#F7E8C8"/><path d="M52 16.5c-8.8-3.7-16.4-2.1-20 2.2v31.8c4.2-4.6 11.3-6.4 20-2.2V16.5Z" fill="#FFF4D8"/><path d="M18 25.5c4.8-1.3 8.1-.4 10 1.8M18 33c4.8-1.3 8.1-.4 10 1.8M46 25.5c-4.8-1.3-8.1-.4-10 1.8M46 33c-4.8-1.3-8.1-.4-10 1.8" stroke="#385CE8" stroke-width="2.8" stroke-linecap="round"/><path d="M9 51c9.6-4.4 17.2-2.7 23 2 5.8-4.7 13.4-6.4 23-2" stroke="#75D8FF" stroke-width="3.2" stroke-linecap="round"/></svg></span>
-      <strong>正在准备完整词库</strong>
+      <strong>正在准备离线词库</strong>
       <span class="app-boot-progress" role="progressbar" aria-label="离线资源准备进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="3"><span></span></span>
       <span class="app-boot-status">正在载入应用；随后会在后台完成离线缓存</span>
     </div>
@@ -346,6 +346,6 @@
         } catch {}
       })();
     </script>
-    <script type="module" src="./app.js?v=77"></script>
+    <script type="module" src="./app.js?v=78"></script>
   </body>
 </html>

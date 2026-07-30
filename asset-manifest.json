@@ -1,0 +1,181 @@
+{
+  "kind": "vocabulary-production-assets",
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-30T10:50:15.940Z",
+  "build": {
+    "tool": "esbuild",
+    "version": "0.28.1",
+    "format": "esm",
+    "target": "es2020",
+    "minified": true,
+    "codeSplitting": true
+  },
+  "entries": {
+    "runtime": {
+      "path": "app.js",
+      "bytes": 154764,
+      "gzipBytes": 44130,
+      "assets": [
+        "app.js",
+        "chunks/chunk-EWNQBASX.js",
+        "chunks/chunk-HNNVAFRB.js",
+        "chunks/chunk-VC46IEJQ.js",
+        "chunks/chunk-ZAP2COP6.js",
+        "content.js",
+        "data/gre-equivalence-packs.js",
+        "data/ielts-538/index.js",
+        "data/lookalike-packs.js"
+      ]
+    },
+    "greLessons": {
+      "path": "content.js",
+      "bytes": 80807,
+      "gzipBytes": 37616,
+      "assets": [
+        "chunks/chunk-EWNQBASX.js",
+        "chunks/chunk-HNNVAFRB.js",
+        "chunks/chunk-VC46IEJQ.js",
+        "content.js"
+      ]
+    },
+    "greLookalikes": {
+      "path": "data/lookalike-packs.js",
+      "bytes": 1171587,
+      "gzipBytes": 480590,
+      "assets": [
+        "chunks/chunk-EWNQBASX.js",
+        "chunks/chunk-HNNVAFRB.js",
+        "chunks/chunk-VC46IEJQ.js",
+        "chunks/chunk-ZAP2COP6.js",
+        "data/lookalike-packs.js"
+      ]
+    },
+    "greEquivalence": {
+      "path": "data/gre-equivalence-packs.js",
+      "bytes": 147708,
+      "gzipBytes": 66968,
+      "assets": [
+        "chunks/chunk-HNNVAFRB.js",
+        "chunks/chunk-VC46IEJQ.js",
+        "chunks/chunk-ZAP2COP6.js",
+        "data/gre-equivalence-packs.js"
+      ]
+    },
+    "ieltsContent": {
+      "path": "data/ielts-538/index.js",
+      "bytes": 1582641,
+      "gzipBytes": 590749,
+      "assets": [
+        "chunks/chunk-VC46IEJQ.js",
+        "data/ielts-538/index.js"
+      ]
+    }
+  },
+  "assets": [
+    {
+      "path": "app.js",
+      "bytes": 154764,
+      "gzipBytes": 44130,
+      "sha256": "260b5020cfb4f9233bdf837e7d3c4209a0f74b119d05a6b578adeb77974de30a",
+      "entryPoint": "app.js",
+      "imports": [
+        "content.js",
+        "data/lookalike-packs.js",
+        "data/gre-equivalence-packs.js",
+        "data/ielts-538/index.js"
+      ]
+    },
+    {
+      "path": "chunks/chunk-EWNQBASX.js",
+      "bytes": 276113,
+      "gzipBytes": 114108,
+      "sha256": "9b9a0e93a9175ddb1d052bb5e024a9b5d786985d4066827fc4fbd991098b08d8",
+      "entryPoint": null,
+      "imports": [
+        "chunks/chunk-HNNVAFRB.js"
+      ]
+    },
+    {
+      "path": "chunks/chunk-HNNVAFRB.js",
+      "bytes": 7059231,
+      "gzipBytes": 2897113,
+      "sha256": "fab7ff587407f4309f695ca7199c39dc94eae3605b86dc1510cd679987423f53",
+      "entryPoint": null,
+      "imports": [
+        "chunks/chunk-VC46IEJQ.js"
+      ]
+    },
+    {
+      "path": "chunks/chunk-VC46IEJQ.js",
+      "bytes": 106,
+      "gzipBytes": 120,
+      "sha256": "ff9e0dca4365b7b1581e7275f3c6dbcf1474ffb874d81a3375ecf7a835dbaa6f",
+      "entryPoint": null,
+      "imports": []
+    },
+    {
+      "path": "chunks/chunk-ZAP2COP6.js",
+      "bytes": 8815,
+      "gzipBytes": 4476,
+      "sha256": "a2789d4137dafda0bd6fb6dbbd651f00029fc8917b03c091cb78faf57daf34e4",
+      "entryPoint": null,
+      "imports": []
+    },
+    {
+      "path": "content.js",
+      "bytes": 80807,
+      "gzipBytes": 37616,
+      "sha256": "4e7083ff211827bc6edd89c3108a7891be40f29c91db21f471a17e73d612b573",
+      "entryPoint": "content.js",
+      "imports": [
+        "chunks/chunk-EWNQBASX.js",
+        "chunks/chunk-HNNVAFRB.js",
+        "chunks/chunk-VC46IEJQ.js"
+      ]
+    },
+    {
+      "path": "data/gre-equivalence-packs.js",
+      "bytes": 147708,
+      "gzipBytes": 66968,
+      "sha256": "0c70709812bfdd7e0d6220c814e76f2f1d63cc7554eca79cd63218cd7dabee5c",
+      "entryPoint": "data/gre-equivalence-packs.js",
+      "imports": [
+        "chunks/chunk-ZAP2COP6.js",
+        "chunks/chunk-HNNVAFRB.js",
+        "chunks/chunk-VC46IEJQ.js"
+      ]
+    },
+    {
+      "path": "data/ielts-538/index.js",
+      "bytes": 1582641,
+      "gzipBytes": 590749,
+      "sha256": "fb5669d991472dae61a4ecd5450357641619a2c5180b33a2601cd84ad4822848",
+      "entryPoint": "data/ielts-538/index.js",
+      "imports": [
+        "chunks/chunk-VC46IEJQ.js"
+      ]
+    },
+    {
+      "path": "data/lookalike-packs.js",
+      "bytes": 1171587,
+      "gzipBytes": 480590,
+      "sha256": "fddb3e2557fec662c5201df910a638e34daba5c1f362c534ac965b199c5b9a21",
+      "entryPoint": "data/lookalike-packs.js",
+      "imports": [
+        "chunks/chunk-EWNQBASX.js",
+        "chunks/chunk-ZAP2COP6.js",
+        "chunks/chunk-HNNVAFRB.js",
+        "chunks/chunk-VC46IEJQ.js"
+      ]
+    }
+  ],
+  "totals": {
+    "bytes": 10481772,
+    "gzipBytes": 4235870
+  },
+  "validation": {
+    "syntaxChecked": true,
+    "nativeImportGraphResolved": true,
+    "generatedAssetCount": 9
+  }
+}

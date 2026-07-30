@@ -1,19 +1,20 @@
-const BUILD = "77";
+const BUILD = "78";
 const CACHE_PREFIX = "vocab-studio-";
-const CACHE = `vocab-studio-v${BUILD}-whole-library-shuffle`;
+const CACHE = `vocab-studio-v${BUILD}-incremental`;
 const READY_MARKER = `./__offline-ready__?build=${BUILD}`;
 const FETCH_ATTEMPTS = 2;
 const CACHE_WORKERS = 3;
-const CORE_ASSETS = [
+const ASSET_MANIFEST_URL = `./asset-manifest.json?v=${BUILD}`;
+const STATIC_ASSETS = [
   { url: "./index.html", weight: 24_000, reload: true },
-  { url: `./styles.css?v=${BUILD}`, weight: 38_000 },
-  { url: `./theme-v2.css?v=${BUILD}`, weight: 90_000 },
-  { url: `./learning-test-v4.css?v=${BUILD}`, weight: 34_000 },
-  { url: `./ielts-preview.css?v=${BUILD}`, weight: 10_000 },
-  { url: `./review-integration.css?v=${BUILD}`, weight: 26_000 },
-  { url: `./mobile-v2.css?v=${BUILD}`, weight: 78_000 },
-  { url: `./app.js?v=${BUILD}`, weight: 10_500_000 },
-  { url: `./manifest.webmanifest?v=${BUILD}`, weight: 4_000 },
+  { url: "./styles.css?v=77", weight: 38_000 },
+  { url: "./theme-v2.css?v=77", weight: 90_000 },
+  { url: "./learning-test-v4.css?v=77", weight: 34_000 },
+  { url: "./ielts-preview.css?v=77", weight: 10_000 },
+  { url: "./review-integration.css?v=77", weight: 26_000 },
+  { url: "./mobile-v2.css?v=77", weight: 78_000 },
+  { url: ASSET_MANIFEST_URL, weight: 8_000 },
+  { url: "./manifest.webmanifest?v=77", weight: 4_000 },
   { url: "./icon-192-v2.png", weight: 50_000 },
   { url: "./icon-512-v2.png", weight: 300_000 },
   { url: "./apple-touch-icon-v2.png", weight: 48_000 },
@@ -21,8 +22,9 @@ const CORE_ASSETS = [
   { url: "./apple-launch-1206x2622.png", weight: 550_000 },
   { url: "./apple-launch-1320x2868.png", weight: 360_000 },
 ];
-const TOTAL_WEIGHT = CORE_ASSETS.reduce((total, asset) => total + asset.weight, 0);
 let cacheJob = null;
+let coreAssetsPromise = null;
+const previousManifestPromises = new Map();
 
 function cacheKeyRequest(asset) {
   return new Request(asset.url, {
@@ -35,7 +37,7 @@ async function fetchAsset(asset) {
   for (let attempt = 0; attempt < FETCH_ATTEMPTS; attempt += 1) {
     try {
       const response = await fetch(new Request(asset.url, {
-        cache: asset.reload || attempt > 0 ? "reload" : "default",
+        cache: asset.reload || asset.networkReload || attempt > 0 ? "reload" : "default",
         credentials: "same-origin",
       }));
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -47,10 +49,113 @@ async function fetchAsset(asset) {
   throw new Error(`Unable to cache ${asset.url}: ${lastError?.message || "network error"}`);
 }
 
+async function manifestFromCache(cacheName, cache) {
+  if (!previousManifestPromises.has(cacheName)) {
+    previousManifestPromises.set(cacheName, (async () => {
+      const keys = await cache.keys();
+      const manifestRequest = keys.find((key) => new URL(key.url).pathname.endsWith("/asset-manifest.json"));
+      if (!manifestRequest) return null;
+      const response = await cache.match(manifestRequest);
+      if (!response) return null;
+      try {
+        const manifest = await response.json();
+        return manifest?.kind === "vocabulary-production-assets" ? manifest : null;
+      } catch {
+        return null;
+      }
+    })());
+  }
+  return previousManifestPromises.get(cacheName);
+}
+
+async function findReusableAsset(request, asset) {
+  const cacheNames = (await caches.keys())
+    .filter((name) => name.startsWith(CACHE_PREFIX) && name !== CACHE)
+    .reverse();
+
+  for (const cacheName of cacheNames) {
+    const previousCache = await caches.open(cacheName);
+    let response;
+
+    if (asset.sha256 && asset.path) {
+      const manifest = await manifestFromCache(cacheName, previousCache);
+      const previousAsset = manifest?.assets?.find((item) => item.path === asset.path);
+      if (previousAsset?.sha256 !== asset.sha256) continue;
+
+      response = await previousCache.match(request);
+      if (!response) {
+        const requestedPath = new URL(request.url).pathname;
+        const previousRequests = await previousCache.keys();
+        const matchingRequest = previousRequests.find(
+          (item) => new URL(item.url).pathname === requestedPath,
+        );
+        if (matchingRequest) response = await previousCache.match(matchingRequest);
+      }
+    } else {
+      response = await previousCache.match(request);
+    }
+
+    if (response) return response;
+  }
+  return undefined;
+}
+
+async function loadProductionAssets() {
+  const cache = await caches.open(CACHE);
+  const manifestAsset = STATIC_ASSETS.find((asset) => asset.url === ASSET_MANIFEST_URL);
+  const request = cacheKeyRequest(manifestAsset);
+  let response = await cache.match(request);
+
+  if (!response) {
+    response = await fetchAsset({ ...manifestAsset, reload: true });
+    await cache.put(request, response.clone());
+  }
+
+  const manifest = await response.json();
+  if (
+    manifest?.kind !== "vocabulary-production-assets"
+    || !Array.isArray(manifest.assets)
+  ) {
+    throw new Error("Invalid production asset manifest");
+  }
+
+  return manifest.assets.map((asset) => {
+    const path = String(asset.path || "").replace(/^\.?\//, "");
+    if (!path || path.includes("..")) throw new Error(`Invalid production asset path: ${path}`);
+    return {
+      url: path === "app.js" ? `./app.js?v=${BUILD}` : `./${path}`,
+      path,
+      weight: Math.max(1, Number(asset.bytes) || 1),
+      sha256: String(asset.sha256 || ""),
+      // Entry modules have stable filenames. If their manifest hash changed,
+      // bypass the HTTP cache; otherwise reuse the verified previous response.
+      networkReload: Boolean(asset.entryPoint),
+    };
+  });
+}
+
+async function getCoreAssets() {
+  if (!coreAssetsPromise) {
+    coreAssetsPromise = loadProductionAssets()
+      .then((productionAssets) => {
+        const byUrl = new Map();
+        for (const asset of [...STATIC_ASSETS, ...productionAssets]) byUrl.set(asset.url, asset);
+        return [...byUrl.values()];
+      })
+      .catch((error) => {
+        coreAssetsPromise = null;
+        throw error;
+      });
+  }
+  return coreAssetsPromise;
+}
+
 async function cacheWholeApp() {
+  const coreAssets = await getCoreAssets();
+  const totalWeight = coreAssets.reduce((total, asset) => total + asset.weight, 0);
   const cache = await caches.open(CACHE);
   const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
-  const progressByAsset = new Map(CORE_ASSETS.map((asset) => [asset.url, 0]));
+  const progressByAsset = new Map(coreAssets.map((asset) => [asset.url, 0]));
   let completed = 0;
   let lastPercent = -1;
 
@@ -59,30 +164,41 @@ async function cacheWholeApp() {
   };
   const report = (assetUrl, fraction, force = false) => {
     progressByAsset.set(assetUrl, Math.max(0, Math.min(1, fraction)));
-    const weighted = CORE_ASSETS.reduce(
+    const weighted = coreAssets.reduce(
       (total, asset) => total + asset.weight * (progressByAsset.get(asset.url) || 0),
       0,
     );
-    const percent = Math.min(100, Math.round((weighted / TOTAL_WEIGHT) * 100));
+    const percent = Math.min(100, Math.round((weighted / totalWeight) * 100));
     if (!force && percent === lastPercent) return;
     lastPercent = percent;
     notify("CACHE_PROGRESS", {
       percent,
       completed,
-      total: CORE_ASSETS.length,
+      total: coreAssets.length,
       asset: assetUrl.replace(/^\.\//, "").split("?")[0],
     });
   };
 
-  notify("CACHE_START", { percent: 0, completed: 0, total: CORE_ASSETS.length });
+  notify("CACHE_START", { percent: 0, completed: 0, total: coreAssets.length });
 
   let cursor = 0;
   const cacheNext = async () => {
-    while (cursor < CORE_ASSETS.length) {
+    while (cursor < coreAssets.length) {
       const assetIndex = cursor;
       cursor += 1;
-      const asset = CORE_ASSETS[assetIndex];
+      const asset = coreAssets[assetIndex];
       const request = cacheKeyRequest(asset);
+      const currentResponse = asset.reload ? undefined : await cache.match(request);
+      const reusableResponse = currentResponse
+        || (asset.reload ? undefined : await findReusableAsset(request, asset));
+
+      if (reusableResponse) {
+        if (!currentResponse) await cache.put(request, reusableResponse.clone());
+        completed += 1;
+        report(asset.url, 1, true);
+        continue;
+      }
+
       const response = await fetchAsset(asset);
 
       const cachePromise = cache.put(request, response.clone());
@@ -111,8 +227,8 @@ async function cacheWholeApp() {
   );
   notify("CACHE_READY", {
     percent: 100,
-    completed: CORE_ASSETS.length,
-    total: CORE_ASSETS.length,
+    completed: coreAssets.length,
+    total: coreAssets.length,
   });
 }
 
@@ -125,10 +241,11 @@ function ensureCacheJob() {
   return cacheJob;
 }
 
-async function isWholeAppCached(cache) {
+async function isWholeAppCached(cache, coreAssets = null) {
+  const assets = coreAssets || await getCoreAssets();
   const entries = await Promise.all([
     cache.match(READY_MARKER),
-    ...CORE_ASSETS.map((asset) => cache.match(cacheKeyRequest(asset))),
+    ...assets.map((asset) => cache.match(cacheKeyRequest(asset))),
   ]);
   return entries.every(Boolean);
 }
@@ -154,14 +271,18 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    Promise.all([
-      caches.keys().then((keys) => Promise.all(
-        keys
-          .filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE)
-          .map((key) => caches.delete(key)),
-      )),
-      self.clients.claim(),
-    ]),
+    caches.open(CACHE)
+      .then((cache) => isWholeAppCached(cache))
+      .then(async (ready) => {
+        if (!ready) throw new Error("Incremental cache is incomplete");
+        const keys = await caches.keys();
+        await Promise.all(
+          keys
+            .filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE)
+            .map((key) => caches.delete(key)),
+        );
+        await self.clients.claim();
+      }),
   );
 });
 
@@ -170,15 +291,16 @@ self.addEventListener("message", (event) => {
   if (event.data?.type === "GET_CACHE_STATUS") {
     event.waitUntil(
       caches.open(CACHE)
-        .then((cache) => isWholeAppCached(cache))
-        .then((ready) => {
+        .then(async (cache) => {
+          const coreAssets = await getCoreAssets();
+          const ready = await isWholeAppCached(cache, coreAssets);
           if (ready) {
             event.source?.postMessage({
               type: "CACHE_READY",
               build: BUILD,
               percent: 100,
-              completed: CORE_ASSETS.length,
-              total: CORE_ASSETS.length,
+              completed: coreAssets.length,
+              total: coreAssets.length,
               silent: Boolean(event.data?.silentIfReady),
             });
             return undefined;
