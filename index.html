@@ -67,7 +67,7 @@
     <script>
       (() => {
         if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
-        const build = "81";
+        const build = "82";
         const reloadKey = `vocab-sw-reloaded-${build}`;
         const offlineReadyKey = `vocab-offline-ready-${build}`;
         const hadController = Boolean(navigator.serviceWorker.controller);
@@ -173,6 +173,7 @@
           navigator.serviceWorker.register(`./sw.js?v=${build}`, { updateViaCache: "none" })
             .then((registration) => {
               window.__vocabServiceWorkerRegistration = registration;
+              registration.update().catch(() => {});
               if (registration.waiting) {
                 cacheReady = true;
                 setProgress({ type: "CACHE_READY", percent: 100, message: "离线新版已准备好" });
@@ -212,18 +213,13 @@
             .catch(() => {});
         };
 
-        // Let the visible app become interactive before downloading the next
-        // incremental offline snapshot. This avoids competing with the first
-        // app bundle request while preserving full offline coverage.
+        // The shell is already visible when this event fires; start the
+        // incremental update immediately so opening the app is enough.
         window.addEventListener("vocab-app-ready", registerOfflineApp, { once: true });
-        window.addEventListener("load", () => window.setTimeout(registerOfflineApp, 1_200), { once: true });
+        window.addEventListener("load", registerOfflineApp, { once: true });
 
         const scheduleUpdateCheck = () => {
-          if ("requestIdleCallback" in window) {
-            window.requestIdleCallback(checkForUpdate, { timeout: 2_500 });
-          } else {
-            window.setTimeout(checkForUpdate, 1_500);
-          }
+          window.setTimeout(checkForUpdate, 0);
         };
         window.addEventListener("load", scheduleUpdateCheck, { once: true });
         window.addEventListener("online", scheduleUpdateCheck);
@@ -233,7 +229,7 @@
       })();
     </script>
     <link rel="stylesheet" href="./styles.css?v=77" />
-    <link rel="modulepreload" href="./app.js?v=81" />
+    <link rel="modulepreload" href="./app.js?v=82" />
     <link rel="stylesheet" href="./theme-v2.css?v=77" />
     <link rel="stylesheet" href="./learning-test-v4.css?v=77" />
     <link rel="stylesheet" href="./ielts-preview.css?v=77" />
@@ -256,7 +252,7 @@
     <aside class="neural-voice-progress" role="status" aria-live="polite" aria-label="高清离线语音准备进度">
       <div><strong>正在准备高清离线语音</strong><output>1%</output></div>
       <i role="progressbar" aria-label="高清离线语音准备进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="1"><b></b></i>
-      <small>语音包约 112 MB（模型约 93 MB），之后离线使用</small>
+      <small>语音包约 50 MB，下载一次后可离线使用</small>
     </aside>
     <a class="skip-link" href="#main-content">跳到正文</a>
 
@@ -360,6 +356,6 @@
         } catch {}
       })();
     </script>
-    <script type="module" src="./app.js?v=81"></script>
+    <script type="module" src="./app.js?v=82"></script>
   </body>
 </html>

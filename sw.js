@@ -1,7 +1,9 @@
-const BUILD = "81";
+const BUILD = "82";
 const CACHE_PREFIX = "vocab-studio-";
 const CACHE = `vocab-studio-v${BUILD}-incremental`;
-const NEURAL_VOICE_CACHE = "vocab-neural-voice-kokoro-82m-q8-v1";
+const NEURAL_VOICE_CACHE = "vocab-neural-voice-piper-ljspeech-int8-v1";
+const NEURAL_AUDIO_CACHE = "vocab-neural-audio-piper-ljspeech-medium-int8-pcm-v1";
+const NEURAL_VOICE_MANIFEST = "./tts/voice-pack-manifest.json";
 const READY_MARKER = `./__offline-ready__?build=${BUILD}`;
 const FETCH_ATTEMPTS = 2;
 const CACHE_WORKERS = 3;
@@ -25,6 +27,7 @@ const STATIC_ASSETS = [
 ];
 let cacheJob = null;
 let coreAssetsPromise = null;
+let neuralVoiceCacheJob = null;
 const previousManifestPromises = new Map();
 
 function cacheKeyRequest(asset) {
@@ -242,6 +245,51 @@ function ensureCacheJob() {
   return cacheJob;
 }
 
+async function cacheNeuralVoicePack() {
+  const cache = await caches.open(NEURAL_VOICE_CACHE);
+  const manifestRequest = new Request(NEURAL_VOICE_MANIFEST, {
+    credentials: "same-origin",
+  });
+  let manifestResponse = await cache.match(manifestRequest);
+  if (!manifestResponse) {
+    manifestResponse = await fetch(new Request(NEURAL_VOICE_MANIFEST, {
+      cache: "reload",
+      credentials: "same-origin",
+    }));
+    if (!manifestResponse.ok) throw new Error(`Voice manifest HTTP ${manifestResponse.status}`);
+    await cache.put(manifestRequest, manifestResponse.clone());
+  }
+  const manifest = await manifestResponse.json();
+  if (manifest?.kind !== "vocabulary-neural-voice-pack" || !Array.isArray(manifest.assets)) {
+    throw new Error("Invalid neural voice manifest");
+  }
+
+  let cursor = 0;
+  const cacheNext = async () => {
+    while (cursor < manifest.assets.length) {
+      const asset = manifest.assets[cursor];
+      cursor += 1;
+      const path = String(asset?.path || "").replace(/^\.?\//, "");
+      if (!path || path.includes("..")) continue;
+      const request = new Request(`./tts/${path}`, { credentials: "same-origin" });
+      if (await cache.match(request)) continue;
+      const response = await fetch(new Request(request, { cache: "force-cache" }));
+      if (!response.ok) throw new Error(`Voice asset HTTP ${response.status}: ${path}`);
+      await cache.put(request, response);
+    }
+  };
+  await Promise.all([cacheNext(), cacheNext()]);
+}
+
+function ensureNeuralVoiceCacheJob() {
+  if (!neuralVoiceCacheJob) {
+    neuralVoiceCacheJob = cacheNeuralVoicePack().finally(() => {
+      neuralVoiceCacheJob = null;
+    });
+  }
+  return neuralVoiceCacheJob;
+}
+
 async function isWholeAppCached(cache, coreAssets = null) {
   const assets = coreAssets || await getCoreAssets();
   const entries = await Promise.all([
@@ -282,6 +330,15 @@ self.addEventListener("activate", (event) => {
             .filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE)
             .map((key) => caches.delete(key)),
         );
+        await Promise.all(
+          keys
+            .filter((key) => (
+              (key.startsWith("vocab-neural-voice-") && key !== NEURAL_VOICE_CACHE)
+              || (key.startsWith("vocab-neural-audio-") && key !== NEURAL_AUDIO_CACHE)
+              || key === "kitten-tts"
+            ))
+            .map((key) => caches.delete(key)),
+        );
         await self.clients.claim();
       }),
   );
@@ -289,6 +346,9 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("message", (event) => {
   if (event.data?.type === "SKIP_WAITING") self.skipWaiting();
+  if (event.data?.type === "PRELOAD_NEURAL_VOICE") {
+    event.waitUntil(ensureNeuralVoiceCacheJob().catch(() => undefined));
+  }
   if (event.data?.type === "GET_CACHE_STATUS") {
     event.waitUntil(
       caches.open(CACHE)

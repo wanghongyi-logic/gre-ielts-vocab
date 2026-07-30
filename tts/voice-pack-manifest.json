@@ -1,57 +1,52 @@
 {
   "kind": "vocabulary-neural-voice-pack",
   "schemaVersion": 1,
-  "version": "kokoro-82m-q8-v1",
-  "model": "Kokoro-82M-v1.0-ONNX",
-  "dtype": "q8",
-  "voice": "af_heart",
-  "generatedAt": "2026-07-30T11:48:39.444Z",
+  "version": "piper-ljspeech-medium-int8-v1",
+  "model": "Piper en_US-ljspeech-medium",
+  "dtype": "int8",
+  "voice": "en_US-ljspeech-medium",
+  "generatedAt": "2026-07-30T12:29:06.135Z",
   "assets": [
     {
-      "path": "models/Kokoro-82M-v1.0-ONNX/config.json",
-      "bytes": 44,
-      "sha256": "df34b4f930b23447cd4dc410fabfb42eb3f24e803e6c3f97d618fb359380a36f"
+      "path": "models/piper-voices/en/en_US/ljspeech/medium/en_US-ljspeech-medium.onnx",
+      "bytes": 19349795,
+      "sha256": "206a8403baad4df7642156918a6ebe205798290d82f24d0d0119d7afa8a2738e"
     },
     {
-      "path": "models/Kokoro-82M-v1.0-ONNX/onnx/model_quantized.onnx",
-      "bytes": 92361116,
-      "sha256": "fbae9257e1e05ffc727e951ef9b9c98418e6d79f1c9b6b13bd59f5c9028a1478"
-    },
-    {
-      "path": "models/Kokoro-82M-v1.0-ONNX/tokenizer_config.json",
-      "bytes": 113,
-      "sha256": "be1cb066d6ef6b074b3f15e6a6dd21ac88ff3cdaedf325f0aaed686c70f75d20"
-    },
-    {
-      "path": "models/Kokoro-82M-v1.0-ONNX/tokenizer.json",
-      "bytes": 3497,
-      "sha256": "77a02c8e164413299b4b4c403b14f8e0e1c1b727db4d46a09d6327b861060a34"
-    },
-    {
-      "path": "models/Kokoro-82M-v1.0-ONNX/voices/af_heart.bin",
-      "bytes": 522240,
-      "sha256": "d583ccff3cdca2f7fae535cb998ac07e9fcb90f09737b9a41fa2734ec44a8f0b"
+      "path": "models/piper-voices/en/en_US/ljspeech/medium/en_US-ljspeech-medium.onnx.json",
+      "bytes": 4972,
+      "sha256": "141d612cc0a95ed7efc1ca936b845c2364967f2e9217c5dbfcf69fc4d6c65860"
     },
     {
       "path": "neural-worker.bundle.js",
-      "bytes": 2220558,
-      "sha256": "58a52e32e9c50ba6c2c79d3f88b45c995572747db12af1c267d175219d8b2921"
+      "bytes": 154198,
+      "sha256": "21bacd25066e5b6d18aa6028d8b0623c85416561db9bf7cec0d7f723766ea5c8"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 899,
-      "sha256": "218c0b8b92bce9d4ddf8c264d9728447bebf593ca1dceeabd6fe9fd9172f58ca"
+      "bytes": 888,
+      "sha256": "b74ea409b60aafb19a7b9d6f6372978825e924e3f7acdb3aa710446b138b8472"
     },
     {
-      "path": "wasm/ort-wasm-simd-threaded.jsep.mjs",
-      "bytes": 44484,
-      "sha256": "08fb86ec433c78bfb032c5d84a68b8e8e5a8d81268fa39e24314179a5767a5b9"
+      "path": "wasm/ort-wasm-simd-threaded.mjs",
+      "bytes": 24618,
+      "sha256": "b58de73c7b47b86290578489c6b5b16ade5d237cd5f340f0776a219bb833bd04"
     },
     {
-      "path": "wasm/ort-wasm-simd-threaded.jsep.wasm",
-      "bytes": 21596019,
-      "sha256": "c46655e8a94afc45338d4cb2b840475f88e5012d524509916e505079c00bfa39"
+      "path": "wasm/ort-wasm-simd-threaded.wasm",
+      "bytes": 11241642,
+      "sha256": "704f51767fe3e11443aac6b5509c8654688e4cea3d988f96a069390b6eccbabc"
+    },
+    {
+      "path": "wasm/piper_phonemize.data",
+      "bytes": 18077249,
+      "sha256": "29f1025eb23a5b5c192cd14a6efbce4509402ff265405072ee6f7d1a09b78f8c"
+    },
+    {
+      "path": "wasm/piper_phonemize.wasm",
+      "bytes": 635212,
+      "sha256": "b777cd107a91d2bcc6a1ea46f2c26a662a7407394fe84589198aeaa83dd7a9d6"
     }
   ],
-  "totalBytes": 116748970
+  "totalBytes": 49488574
 }
