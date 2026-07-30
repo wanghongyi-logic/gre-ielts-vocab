@@ -5,7 +5,7 @@
   "model": "Kokoro-82M-v1.0-ONNX",
   "dtype": "q8",
   "voice": "af_heart",
-  "generatedAt": "2026-07-30T11:24:22.398Z",
+  "generatedAt": "2026-07-30T11:48:39.444Z",
   "assets": [
     {
       "path": "models/Kokoro-82M-v1.0-ONNX/config.json",
@@ -34,8 +34,8 @@
     },
     {
       "path": "neural-worker.bundle.js",
-      "bytes": 2220264,
-      "sha256": "f97b82839410323e2e1186236fd8ef82aab1d0c8c8066c0165ebe19dadc56bd1"
+      "bytes": 2220558,
+      "sha256": "58a52e32e9c50ba6c2c79d3f88b45c995572747db12af1c267d175219d8b2921"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -53,5 +53,5 @@
       "sha256": "c46655e8a94afc45338d4cb2b840475f88e5012d524509916e505079c00bfa39"
     }
   ],
-  "totalBytes": 116748676
+  "totalBytes": 116748970
 }

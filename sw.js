@@ -1,4 +1,4 @@
-const BUILD = "80";
+const BUILD = "81";
 const CACHE_PREFIX = "vocab-studio-";
 const CACHE = `vocab-studio-v${BUILD}-incremental`;
 const NEURAL_VOICE_CACHE = "vocab-neural-voice-kokoro-82m-q8-v1";
