@@ -67,8 +67,7 @@
     <script>
       (() => {
         if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
-        const build = "82";
-        const reloadKey = `vocab-sw-reloaded-${build}`;
+        const build = "84";
         const offlineReadyKey = `vocab-offline-ready-${build}`;
         const hadController = Boolean(navigator.serviceWorker.controller);
         let refreshing = false;
@@ -151,16 +150,12 @@
         navigator.serviceWorker.addEventListener("controllerchange", () => {
           if (!hadController || refreshing) return;
           refreshing = true;
-          try {
-            if (sessionStorage.getItem(reloadKey) === "1") return;
-            sessionStorage.setItem(reloadKey, "1");
-          } catch {}
           window.setTimeout(() => location.reload(), 240);
         });
 
         const checkForUpdate = () => {
           const now = Date.now();
-          if (now - lastUpdateCheck < 60_000) return;
+          if (now - lastUpdateCheck < 30_000) return;
           lastUpdateCheck = now;
           const registration = window.__vocabServiceWorkerRegistration;
           if (registration) registration.update().catch(() => {});
@@ -223,13 +218,14 @@
         };
         window.addEventListener("load", scheduleUpdateCheck, { once: true });
         window.addEventListener("online", scheduleUpdateCheck);
+        window.setInterval(checkForUpdate, 5 * 60_000);
         document.addEventListener("visibilitychange", () => {
           if (document.visibilityState === "visible") scheduleUpdateCheck();
         });
       })();
     </script>
     <link rel="stylesheet" href="./styles.css?v=77" />
-    <link rel="modulepreload" href="./app.js?v=83" />
+    <link rel="modulepreload" href="./app.js?v=84" />
     <link rel="stylesheet" href="./theme-v2.css?v=77" />
     <link rel="stylesheet" href="./learning-test-v4.css?v=77" />
     <link rel="stylesheet" href="./ielts-preview.css?v=77" />
@@ -356,6 +352,6 @@
         } catch {}
       })();
     </script>
-    <script type="module" src="./app.js?v=82"></script>
+    <script type="module" src="./app.js?v=84"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-const BUILD = "83";
+const BUILD = "84";
 const CACHE_PREFIX = "vocab-studio-";
 const CACHE = `vocab-studio-v${BUILD}-incremental`;
 const NEURAL_VOICE_CACHE = "vocab-neural-voice-piper-ljspeech-int8-v1";
@@ -325,6 +325,9 @@ self.addEventListener("activate", (event) => {
       .then(async (ready) => {
         if (!ready) throw new Error("Incremental cache is incomplete");
         const keys = await caches.keys();
+        const hasPreviousAppVersion = keys.some(
+          (key) => key.startsWith(CACHE_PREFIX) && key !== CACHE,
+        );
         await Promise.all(
           keys
             .filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE)
@@ -340,6 +343,19 @@ self.addEventListener("activate", (event) => {
             .map((key) => caches.delete(key)),
         );
         await self.clients.claim();
+        if (hasPreviousAppVersion) {
+          const windows = await self.clients.matchAll({
+            type: "window",
+            includeUncontrolled: true,
+          });
+          await Promise.allSettled(
+            windows.map((client) => (
+              typeof client.navigate === "function"
+                ? client.navigate(client.url)
+                : Promise.resolve()
+            )),
+          );
+        }
       }),
   );
 });
