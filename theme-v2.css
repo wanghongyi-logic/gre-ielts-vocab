@@ -1062,8 +1062,8 @@ main { padding-top: 26px; }
 .story-chain button > span { display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid #cfd3e2; border-radius: 50%; background: #ffffff; color: var(--forest-700); font-size: 8px; }
 .story-chain button:hover > span { border-color: var(--forest-700); background: var(--forest-50); }
 .story-chain strong { margin-top: 4px; font-family: Georgia, serif; font-size: 13px; }
-.ielts-path-role { color: #6268d9; font-size: 8px; font-style: normal; font-weight: 800; }
-.ielts-story-chain button.is-primary-word > span { border-color: #cfd3e2; background: #ffffff; color: var(--forest-700); }
+.ielts-path-role { color: #747b8f; font-size: 8px; font-style: normal; font-weight: 800; }
+.ielts-story-chain button.is-source-primary > span { border-color: #cfd3e2; background: #ffffff; color: var(--forest-700); }
 .story-chain small { max-width: 130px; overflow: hidden; color: var(--muted); font-size: 8px; text-overflow: ellipsis; white-space: nowrap; }
 
 /* Home dashboard */
@@ -2569,11 +2569,162 @@ body.has-hotspot-transfer { overflow: hidden; }
 .hotspot-result-error > span { background: #fff0ed; color: #dd6757; }
 .hotspot-transfer-error { margin-top: 18px; padding: 13px; border-radius: 13px; background: #fff2ef; color: #b85145; font-size: 11px; }
 
+.hotspot-qr-card {
+  display: grid;
+  width: min(100%, 286px);
+  margin: 16px auto 2px;
+  justify-items: center;
+  gap: 8px;
+}
+
+.hotspot-qr-image {
+  box-sizing: border-box;
+  display: grid;
+  width: min(100%, 264px);
+  aspect-ratio: 1;
+  padding: 6px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid #e2e4ee;
+  border-radius: 21px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(25, 31, 70, .09);
+}
+
+.hotspot-qr-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  object-fit: contain;
+  transition: opacity .15s ease;
+}
+
+.hotspot-qr-image img.is-ready { opacity: 1; }
+.hotspot-qr-image img.is-ready + [data-hotspot-qr-loading] { display: none; }
+.hotspot-qr-image [data-hotspot-qr-loading] { color: #7b8194; font-size: 11px; }
+.hotspot-qr-card figcaption { color: #73798d; font-size: 10px; font-weight: 730; }
+
+.hotspot-manual-pairing {
+  margin-top: 12px;
+  border: 1px solid #e5e7ef;
+  border-radius: 13px;
+  background: #fafbfe;
+}
+
+.hotspot-manual-pairing > summary {
+  min-height: 42px;
+  padding: 0 13px;
+  align-content: center;
+  color: #666d84;
+  font-size: 11px;
+  font-weight: 720;
+  cursor: pointer;
+}
+
+.hotspot-manual-pairing[open] { padding: 0 12px 12px; }
+.hotspot-manual-pairing[open] > summary { margin-inline: -12px; padding-inline: 25px 13px; border-bottom: 1px solid #e7e9f1; }
+.hotspot-manual-pairing .hotspot-token-field { margin-top: 12px; }
+.hotspot-scan-button { margin-top: 14px !important; }
+
+.hotspot-qr-scanner {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  display: grid;
+  padding: max(18px, env(safe-area-inset-top)) 18px max(18px, env(safe-area-inset-bottom));
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 17px;
+  background: rgba(12, 16, 36, .96);
+  color: #fff;
+}
+
+.hotspot-qr-scanner > header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 44px;
+  align-items: center;
+  gap: 12px;
+}
+
+.hotspot-qr-scanner > header strong,
+.hotspot-qr-scanner > header span { display: block; }
+.hotspot-qr-scanner > header strong { font-size: 18px; }
+.hotspot-qr-scanner > header span { margin-top: 4px; color: #b7bdd1; font-size: 11px; }
+.hotspot-qr-scanner > header button {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .08);
+  color: #fff;
+  font: 400 24px/1 system-ui, sans-serif;
+}
+
+.hotspot-camera-frame {
+  position: relative;
+  align-self: center;
+  width: min(100%, 520px);
+  max-height: 62dvh;
+  aspect-ratio: 1;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .28);
+  border-radius: 28px;
+  background: #060815;
+  box-shadow: 0 28px 72px rgba(0, 0, 0, .42);
+}
+
+.hotspot-camera-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hotspot-camera-frame > i {
+  position: absolute;
+  inset: 12%;
+  border: 2px solid rgba(255, 255, 255, .9);
+  border-radius: 22px;
+  box-shadow: 0 0 0 999px rgba(4, 7, 20, .28);
+}
+
+.hotspot-camera-frame > i::after {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  left: 10%;
+  height: 2px;
+  border-radius: 99px;
+  background: #7d7aff;
+  box-shadow: 0 0 14px rgba(125, 122, 255, .8);
+  content: "";
+  animation: hotspot-scan-line 1.8s ease-in-out infinite alternate;
+}
+
+.hotspot-qr-scanner > p {
+  margin: 0;
+  color: #c6cada;
+  font-size: 12px;
+  text-align: center;
+}
+
+.hotspot-qr-scanner.has-camera-error .hotspot-camera-frame { opacity: .34; }
+
+@keyframes hotspot-scan-line {
+  from { transform: translateY(-92px); }
+  to { transform: translateY(92px); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hotspot-transfer-overlay,
   .hotspot-transfer-dialog,
   .hotspot-role-grid button,
-  .hotspot-transfer-status i b { transition-duration: .01ms !important; }
+  .hotspot-transfer-status i b,
+  .hotspot-qr-image img { transition-duration: .01ms !important; }
+  .hotspot-camera-frame > i::after { animation: none !important; }
 }
 
 /* Library clarity and study actions */
