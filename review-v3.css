@@ -1641,3 +1641,261 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Review v3.1 — fixed workspace, denser mobile composer, clearer retrieval cue */
+.question-target-word {
+  padding: 0 .16em .05em;
+  border-radius: .22em;
+  background: linear-gradient(180deg, transparent 54%, rgba(104, 101, 235, .2) 54%);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  color: #4442c6;
+  font-weight: 820;
+  text-decoration: underline;
+  text-decoration-color: rgba(86, 84, 220, .48);
+  text-decoration-thickness: .08em;
+  text-underline-offset: .12em;
+}
+
+.review-config-surface {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 94% 2%, rgba(100, 99, 232, .07), transparent 28%),
+    #fff;
+}
+
+.review-config-section {
+  background: rgba(255,255,255,.78);
+}
+
+.review-scope-option.is-selected,
+.review-filter-option.is-selected,
+.review-mode-option.is-selected,
+.review-count-strip button.is-selected {
+  border-color: rgba(86, 86, 232, .56);
+  background: linear-gradient(145deg, #f7f7ff, #eeefff);
+  box-shadow: inset 0 0 0 1px rgba(86, 86, 232, .06), 0 7px 18px rgba(55, 56, 135, .07);
+}
+
+@media (max-width: 959px) {
+  html:has(body[data-route="review"]),
+  body[data-route="review"] {
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden !important;
+    overscroll-behavior: none;
+  }
+
+  body[data-route="review"] .app-layout,
+  body[data-route="review"] main,
+  body[data-route="review"] #app,
+  body[data-route="review"] #app > .view {
+    min-height: 0;
+    overflow: hidden !important;
+    overscroll-behavior: none;
+  }
+
+  .review-launch-workspace {
+    grid-template-rows: 46px minmax(0, 1fr);
+    gap: 8px;
+    overflow: hidden;
+  }
+
+  .review-launch-header {
+    display: flex;
+    min-height: 46px;
+    padding: 0 2px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .review-launch-header h1 {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .review-corpus-switch {
+    width: 154px;
+    min-width: 154px;
+    min-height: 40px;
+    padding: 3px;
+    border: 1px solid #dfe2ed;
+    border-radius: 12px;
+    background: rgba(237,239,246,.9);
+  }
+
+  .review-corpus-switch button {
+    min-height: 34px;
+    padding: 6px 10px;
+    border-radius: 9px;
+    font-size: 12px;
+  }
+
+  .review-config-surface {
+    display: flex;
+    min-height: 0;
+    padding: 8px;
+    flex-direction: column;
+    gap: 7px;
+    overflow: hidden !important;
+    border-radius: 20px;
+    background:
+      radial-gradient(circle at 90% 0%, rgba(95, 93, 231, .09), transparent 27%),
+      rgba(250,251,255,.98);
+    box-shadow: 0 14px 38px rgba(30,37,78,.075);
+  }
+
+  .review-config-section,
+  .review-config-section:first-child,
+  .review-config-section:nth-child(2),
+  .review-count-section,
+  .review-mode-section {
+    min-height: 0;
+    padding: 9px 10px;
+    border: 1px solid #e4e6ef;
+    border-radius: 14px;
+    background: rgba(255,255,255,.88);
+  }
+
+  .review-section-title {
+    min-height: 17px;
+    margin-bottom: 7px;
+  }
+
+  .review-section-title h2 { font-size: 12px; }
+  .review-section-title > span { font-size: 9px; }
+
+  .review-scope-grid,
+  .review-filter-grid,
+  .review-mode-grid { gap: 5px; }
+
+  .review-scope-option {
+    min-height: 54px;
+    grid-template-columns: 25px minmax(0, 1fr);
+    justify-items: stretch;
+    gap: 7px;
+    padding: 6px 7px;
+    text-align: left;
+  }
+
+  .review-scope-option > svg {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+  }
+
+  .review-scope-option strong { font-size: 11px; }
+  .review-scope-option small { font-size: 8px; }
+
+  .review-filter-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .review-filter-option {
+    min-height: 45px;
+    grid-template-columns: 18px minmax(0, 1fr);
+    justify-items: stretch;
+    align-items: center;
+    gap: 4px;
+    padding: 5px;
+    text-align: left;
+  }
+
+  .review-filter-option svg {
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+  }
+
+  .review-filter-option > span {
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  .review-filter-option > small {
+    top: 2px;
+    right: 3px;
+    font-size: 7px;
+  }
+
+  .review-count-strip {
+    gap: 4px;
+    padding: 3px;
+  }
+
+  .review-count-strip button {
+    min-height: 44px;
+    font-size: 12px;
+  }
+
+  .review-mode-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .review-mode-option {
+    min-height: 54px;
+    grid-template-columns: 1fr;
+    gap: 3px;
+    padding: 5px 3px;
+  }
+
+  .review-mode-option > svg {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+  }
+
+  .review-mode-option strong {
+    font-size: 9px;
+  }
+
+  .review-launch-summary {
+    position: static;
+    min-height: 64px;
+    margin-top: auto;
+    padding: 7px 8px;
+    border: 1px solid #dedff0;
+    border-radius: 15px;
+    background: linear-gradient(110deg, rgba(246,246,255,.98), rgba(241,246,255,.98));
+    box-shadow: 0 8px 22px rgba(42,45,100,.07);
+  }
+
+  .review-launch-summary strong { font-size: 21px; }
+  .review-launch-summary small { font-size: 8px; }
+  .review-start-button { min-height: 48px; }
+
+  .review-question-workspace,
+  .review-session-v3,
+  .review-session-v3 .focused-quiz,
+  .programmatic-question-body {
+    overflow: hidden !important;
+    overscroll-behavior: none;
+  }
+
+  .programmatic-question-scroll {
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+  }
+}
+
+@media (max-width: 959px) and (max-height: 700px) and (orientation: portrait) {
+  .review-launch-workspace { grid-template-rows: 40px minmax(0, 1fr); gap: 5px; }
+  .review-launch-header { min-height: 40px; }
+  .review-launch-header h1 { font-size: 21px; }
+  .review-corpus-switch { min-height: 36px; }
+  .review-corpus-switch button { min-height: 30px; }
+  .review-config-surface { gap: 4px; padding: 5px; }
+  .review-config-section,
+  .review-config-section:first-child,
+  .review-config-section:nth-child(2),
+  .review-count-section,
+  .review-mode-section { padding: 6px 7px; }
+  .review-section-title { margin-bottom: 4px; }
+  .review-scope-option { min-height: 44px; }
+  .review-filter-option { min-height: 39px; }
+  .review-count-strip button { min-height: 40px; }
+  .review-mode-option { min-height: 46px; }
+  .review-launch-summary { min-height: 56px; padding: 5px 7px; }
+  .review-start-button { min-height: 44px; }
+}

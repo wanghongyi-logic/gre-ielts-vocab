@@ -3543,7 +3543,7 @@ body[data-route="learn"] .word-page > .word-hero[data-card-density="standard"] >
 
   .radial-content-nav {
     position: fixed;
-    z-index: 94;
+    z-index: 120;
     top: clamp(
       calc(env(safe-area-inset-top) + 148px),
       46dvh,
@@ -3933,4 +3933,472 @@ body[data-route="learn"] .word-page > .word-hero[data-card-density="standard"] >
   .hotspot-role-grid button > span { grid-row: 1 / span 2; margin: 0; }
   .hotspot-role-grid button > strong,
   .hotspot-role-grid button > small { grid-column: 2; }
+}
+
+/* Touch-first vocabulary library */
+@media (max-width: 959px) {
+  body[data-route="learn"] .word-line-actions {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 7px;
+  }
+
+  body[data-route="learn"] .word-page .word-title {
+    min-width: 0;
+    max-width: none;
+    flex: 1 1 auto;
+  }
+
+  body[data-route="learn"] .mobile-word-favorite {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    padding: 0;
+    place-items: center;
+    border: 1px solid #d9dcef;
+    border-radius: 50%;
+    background: #f8f8ff;
+    color: #7176a0;
+    font-size: 21px;
+    touch-action: manipulation;
+  }
+
+  body[data-route="learn"] .mobile-word-favorite.is-active {
+    border-color: #d6b4e7;
+    background: #fbf2ff;
+    color: #a05dbe;
+  }
+
+  body[data-route="library"] .library-workspace {
+    display: grid;
+    min-height: 0;
+    grid-template-rows: auto auto minmax(0, 1fr);
+    gap: 0;
+  }
+
+  body[data-route="library"] .library-workspace .workspace-header {
+    min-height: 46px;
+    margin: 0;
+    padding: 0 2px 8px;
+  }
+
+  body[data-route="library"] .library-workspace .workspace-header .eyebrow {
+    margin-bottom: 2px;
+    font-size: 9px;
+  }
+
+  body[data-route="library"] .library-workspace .workspace-header h1 {
+    font-size: 27px;
+    line-height: 1.05;
+  }
+
+  body[data-route="library"] .library-chapter-turn { display: none !important; }
+
+  body[data-route="library"] .library-toolbar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin: 0 0 9px;
+  }
+
+  body[data-route="library"] .workspace-search {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    min-height: 48px;
+    padding: 0 14px;
+    border-radius: 14px;
+    background: #fff;
+  }
+
+  body[data-route="library"] .workspace-search > span { display: none; }
+
+  body[data-route="library"] .workspace-search input {
+    width: 100%;
+    min-height: 46px;
+    min-width: 0;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  body[data-route="library"] .library-chapter-select,
+  body[data-route="library"] .library-status-select {
+    grid-row: 2;
+    min-height: 46px;
+    padding: 0 11px;
+    border-radius: 13px;
+    font-size: 10px;
+  }
+
+  body[data-route="library"] .library-chapter-select { grid-column: 1; }
+  body[data-route="library"] .library-status-select { grid-column: 2; }
+
+  body[data-route="library"] .library-chapter-select select,
+  body[data-route="library"] .library-status-select select {
+    min-height: 44px;
+    font-size: 16px;
+    touch-action: manipulation;
+  }
+
+  body[data-route="library"] .library-meaning-toggle {
+    grid-column: 1;
+    grid-row: 3;
+    min-height: 44px;
+    padding: 0 11px;
+    justify-self: stretch;
+    border-radius: 12px;
+    font-size: 11px;
+    touch-action: manipulation;
+  }
+
+  body[data-route="library"] .library-toolbar .result-count {
+    grid-column: 2;
+    grid-row: 3;
+    min-height: 44px;
+    align-content: center;
+    justify-self: end;
+    padding-right: 4px;
+    font-size: 11px;
+  }
+
+  body[data-route="library"] .library-results-region {
+    display: grid;
+    min-height: 0;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 8px;
+    overflow: hidden;
+  }
+
+  body[data-route="library"] .library-results-region > .list-pagination {
+    margin: 0;
+    padding: 5px;
+    border-radius: 13px;
+    background: rgba(255,255,255,.88);
+  }
+
+  body[data-route="library"] .library-results-region > .list-pagination button {
+    min-height: 44px;
+    border-radius: 10px;
+    font-size: 12px;
+    touch-action: manipulation;
+  }
+
+  body[data-route="library"] .library-table-shell { display: none !important; }
+
+  body[data-route="library"] .mobile-vocab-list {
+    display: grid;
+    min-height: 0;
+    padding: 1px 2px calc(18px + env(safe-area-inset-bottom));
+    align-content: start;
+    gap: 9px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-padding-block: 8px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y pinch-zoom;
+  }
+
+  body[data-route="library"] .mobile-vocab-list::-webkit-scrollbar { display: none; }
+
+  .mobile-vocab-card {
+    position: relative;
+    display: grid;
+    min-height: 104px;
+    grid-template-columns: minmax(0, 1fr) 48px;
+    grid-template-areas:
+      "main favorite"
+      "meaning meaning";
+    overflow: hidden;
+    border: 1px solid #e0e3ee;
+    border-radius: 17px;
+    background: rgba(255,255,255,.97);
+    box-shadow: 0 5px 17px rgba(34, 42, 82, .055);
+  }
+
+  .mobile-vocab-card.is-favorite { border-color: #dccbea; }
+
+  .mobile-vocab-card-main {
+    display: grid;
+    min-width: 0;
+    min-height: 65px;
+    padding: 10px 3px 6px 11px;
+    grid-area: main;
+    grid-template-columns: 34px minmax(0, 1fr) auto 14px;
+    align-items: center;
+    gap: 9px;
+    border: 0;
+    background: transparent;
+    color: #172038;
+    text-align: left;
+    touch-action: manipulation;
+  }
+
+  .mobile-vocab-card-main:active { background: #f5f5ff; }
+
+  .mobile-vocab-number {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    border-radius: 11px;
+    background: #f0f1f7;
+    color: #687087;
+    font-size: 11px;
+    font-weight: 850;
+  }
+
+  .mobile-vocab-copy {
+    display: grid;
+    min-width: 0;
+    gap: 4px;
+  }
+
+  .mobile-vocab-copy > span {
+    display: flex;
+    min-width: 0;
+    align-items: baseline;
+    gap: 7px;
+  }
+
+  .mobile-vocab-copy strong {
+    overflow: hidden;
+    color: #111b35;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 650;
+    letter-spacing: -.02em;
+    line-height: 1.1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .mobile-vocab-copy em {
+    overflow: hidden;
+    color: #8a91a5;
+    font-size: 9px;
+    font-style: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .mobile-vocab-copy small {
+    overflow: hidden;
+    color: #858ca0;
+    font-size: 9.5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .mobile-vocab-card-main > .mastery-pill {
+    min-height: 24px;
+    padding: 4px 7px;
+    font-size: 8px;
+  }
+
+  .mobile-vocab-card-main > i {
+    color: #9ca2b5;
+    font-size: 19px;
+    font-style: normal;
+  }
+
+  .mobile-vocab-favorite {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    margin: 10px 4px 0 0;
+    padding: 0;
+    grid-area: favorite;
+    place-items: center;
+    border: 0;
+    border-radius: 13px;
+    background: transparent;
+    color: #9299ab;
+    font-size: 22px;
+    touch-action: manipulation;
+  }
+
+  .mobile-vocab-favorite:active { background: #f2f2fb; transform: scale(.96); }
+  .mobile-vocab-favorite.is-active { color: #a05dbe; }
+
+  .mobile-vocab-meaning {
+    display: block;
+    min-width: 0;
+    min-height: 37px;
+    margin: 0;
+    padding: 6px 13px 10px 54px;
+    grid-area: meaning;
+    overflow: hidden;
+    border: 0;
+    border-top: 1px solid #f0f1f6;
+    background: transparent;
+    color: #596176;
+    font: 500 12px/1.45 system-ui, -apple-system, sans-serif;
+    text-align: left;
+  }
+
+  button.mobile-vocab-meaning {
+    color: #6664cd;
+    font-weight: 750;
+    touch-action: manipulation;
+  }
+
+  button.mobile-vocab-meaning::before {
+    margin-right: 7px;
+    color: #8987df;
+    content: "◉";
+  }
+
+  button.mobile-vocab-meaning:active { background: #f4f3ff; }
+
+  body[data-route="library"] .empty-state {
+    min-height: 0;
+    align-self: stretch;
+    border-radius: 17px;
+  }
+}
+
+@media (max-width: 389px) {
+  .mobile-vocab-card-main {
+    grid-template-columns: 31px minmax(0, 1fr) 13px;
+    gap: 8px;
+  }
+
+  .mobile-vocab-card-main > .mastery-pill { display: none; }
+  .mobile-vocab-number { width: 31px; height: 31px; }
+  .mobile-vocab-copy strong { font-size: 18px; }
+  .mobile-vocab-meaning { padding-left: 50px; }
+}
+
+/* Touch-first learning records */
+@media (max-width: 959px) {
+  body[data-route="home"] .history-day-heading {
+    grid-template-columns: minmax(0, 1fr) minmax(138px, .58fr);
+    align-items: end;
+    gap: 12px;
+  }
+
+  body[data-route="home"] .history-day-actions {
+    display: block;
+    width: auto;
+  }
+
+  body[data-route="home"] .history-day-actions label {
+    width: 100%;
+  }
+
+  body[data-route="home"] .history-day-actions input {
+    width: 100%;
+    min-height: 46px;
+    border-radius: 13px;
+    font-size: 16px;
+  }
+
+  body[data-route="home"] .history-review-row {
+    min-height: 52px;
+    margin: 2px 0 11px;
+    padding: 6px 7px 6px 12px;
+    border-color: #dedff0;
+    border-radius: 14px;
+    background: linear-gradient(110deg, #f7f6ff, #f3f7ff);
+  }
+
+  body[data-route="home"] .history-review-row > span {
+    font-size: 11px;
+  }
+
+  body[data-route="home"] .history-review-row .button {
+    min-height: 42px;
+    padding-inline: 13px;
+    border-radius: 11px;
+    font-size: 11px;
+    touch-action: manipulation;
+  }
+
+  body[data-route="home"] .history-word-list {
+    display: grid;
+    max-height: clamp(270px, 48dvh, 540px);
+    padding: 2px;
+    align-content: start;
+    gap: 8px;
+    overflow-y: auto;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    overscroll-behavior-y: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y pinch-zoom;
+  }
+
+  body[data-route="home"] .history-word-list::-webkit-scrollbar { display: none; }
+
+  body[data-route="home"] .history-word-row {
+    grid-template-columns: 36px minmax(0, 1fr) auto 13px;
+    min-height: 72px;
+    padding: 10px;
+    gap: 9px;
+    border: 1px solid #e1e4ee;
+    border-radius: 15px;
+    background: rgba(255,255,255,.98);
+    box-shadow: 0 4px 15px rgba(34, 42, 82, .045);
+    touch-action: pan-y pinch-zoom;
+  }
+
+  body[data-route="home"] .history-word-row:last-child { border-bottom: 1px solid #e1e4ee; }
+  body[data-route="home"] .history-word-row:active { border-color: #c7c7ef; background: #f4f3ff; }
+
+  body[data-route="home"] .history-word-copy {
+    align-content: center;
+    gap: 4px;
+  }
+
+  body[data-route="home"] .history-word-copy strong {
+    font-size: 19px;
+    line-height: 1.1;
+  }
+
+  body[data-route="home"] .history-word-copy small {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  body[data-route="home"] .history-word-meta {
+    grid-column: 3;
+    grid-row: 1;
+    min-width: 60px;
+  }
+
+  body[data-route="home"] .history-word-arrow {
+    grid-column: 4;
+    grid-row: 1;
+    align-self: center;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  body[data-route="home"] .history-day-heading {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  body[data-route="home"] .history-day-actions {
+    width: min(100%, 210px);
+  }
+
+  body[data-route="home"] .history-review-row {
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 359px) {
+  body[data-route="home"] .history-word-row {
+    grid-template-columns: 33px minmax(0, 1fr) 13px;
+  }
+
+  body[data-route="home"] .history-word-meta { display: none; }
+  body[data-route="home"] .history-word-arrow { grid-column: 3; }
 }
