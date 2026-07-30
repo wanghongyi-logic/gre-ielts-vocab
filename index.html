@@ -51,6 +51,17 @@
     </style>
     <script>
       try {
+        if (!location.hash) {
+          const corpus = localStorage.getItem("vocab-last-corpus-v1") === "ielts" ? "ielts" : "gre";
+          const key = corpus === "ielts" ? "ielts-538-progress-v2" : "gre-300-progress-v4";
+          const stored = JSON.parse(localStorage.getItem(key) || "null");
+          const number = Math.max(1, Number(stored?.lastWord || 1));
+          history.replaceState(null, "", `#${corpus === "ielts" ? "ielts/" : ""}learn/${number}`);
+        }
+      } catch {}
+    </script>
+    <script>
+      try {
         const snapshot = JSON.parse(localStorage.getItem("vocab-warm-shell-v1") || "null");
         if (
           snapshot
@@ -67,7 +78,7 @@
     <script>
       (() => {
         if (!("serviceWorker" in navigator) || location.protocol === "file:" || location.hostname === "app.local") return;
-        const build = "85";
+        const build = "86";
         const offlineReadyKey = `vocab-offline-ready-${build}`;
         const hadController = Boolean(navigator.serviceWorker.controller);
         let refreshing = false;
@@ -225,12 +236,12 @@
       })();
     </script>
     <link rel="stylesheet" href="./styles.css?v=77" />
-    <link rel="modulepreload" href="./app.js?v=85" />
-    <link rel="stylesheet" href="./theme-v2.css?v=77" />
+    <link rel="modulepreload" href="./app.js?v=86" />
+    <link rel="stylesheet" href="./theme-v2.css?v=86" />
     <link rel="stylesheet" href="./learning-test-v4.css?v=77" />
     <link rel="stylesheet" href="./ielts-preview.css?v=77" />
     <link rel="stylesheet" href="./review-integration.css?v=77" />
-    <link rel="stylesheet" href="./mobile-v2.css?v=85" />
+    <link rel="stylesheet" href="./mobile-v2.css?v=86" />
     <title>GRE & IELTS 词汇精学</title>
   </head>
   <body>
@@ -325,6 +336,7 @@
       <button type="button" data-route="learn"><span>01</span><strong>学习</strong></button>
       <button type="button" data-route="library"><span>02</span><strong>词库</strong></button>
       <button type="button" data-route="review"><span>03</span><strong>复习</strong></button>
+      <button type="button" data-action="open-learning-records"><span>04</span><strong>记录</strong></button>
       <button type="button" data-action="switch-corpus"><span>↔</span><strong>切换词库</strong></button>
     </nav>
     <button id="mobile-immersive-button" class="mobile-immersive-button" type="button" data-action="toggle-mobile-menu" aria-label="打开快捷导航" aria-expanded="false" aria-controls="mobile-command-menu">
@@ -352,6 +364,6 @@
         } catch {}
       })();
     </script>
-    <script type="module" src="./app.js?v=85"></script>
+    <script type="module" src="./app.js?v=86"></script>
   </body>
 </html>
