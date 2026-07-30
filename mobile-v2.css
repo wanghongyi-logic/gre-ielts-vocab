@@ -542,8 +542,7 @@
   body[data-route="learn"] .usage-sense header p,
   body[data-route="learn"] .comparison-card > p,
   body[data-route="learn"] .lookalike-card dd,
-  body[data-route="learn"] .ielts-evidence-card p,
-  body[data-route="learn"] .ielts-morphology-panel dd {
+  body[data-route="learn"] .ielts-evidence-card p {
     font-size: 14px;
     line-height: 1.66;
   }

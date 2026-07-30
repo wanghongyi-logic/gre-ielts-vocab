@@ -135,22 +135,13 @@ body[data-corpus="ielts"][data-route="learn"] .word-status-line > span:last-chil
 .ielts-evidence-card > footer a { flex: 0 0 auto; color: #5454d7; font-size: 9px; font-weight: 800; text-decoration: none; }
 .ielts-evidence-note { margin: 0; padding: 0 14px 13px; color: #81899b; font-size: 9px; line-height: 1.5; }
 
-.ielts-morphology-panel dl {
-  display: grid;
+.ielts-comparison-panel .relation-tabs {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  margin: 0;
 }
 
-.ielts-morphology-panel dl > div {
-  padding: 14px;
-  border: 1px solid #e3e7f0;
-  border-radius: 11px;
-  background: #fafbfe;
+.ielts-sense-examples {
+  margin: 12px 0 0 40px;
 }
-
-.ielts-morphology-panel dt { color: #555bd1; font-size: 9px; font-weight: 850; }
-.ielts-morphology-panel dd { margin: 7px 0 0; color: #58647d; font-size: 11px; line-height: 1.6; }
 
 .ielts-test-preview {
   height: 100%;
@@ -267,14 +258,13 @@ body[data-corpus="ielts"][data-route="story"] .story-chain button::after { displ
 @media (min-width: 960px) {
   body[data-corpus="ielts"][data-route="learn"] .ielts-content-nav { flex: 1 1 auto; }
   body[data-corpus="ielts"][data-route="learn"] .learning-quick-actions { flex: 0 0 auto; }
-  body[data-corpus="ielts"][data-route="learn"] .ielts-evidence-panel.is-active,
-  body[data-corpus="ielts"][data-route="learn"] .ielts-morphology-panel.is-active { overflow: auto; }
+  body[data-corpus="ielts"][data-route="learn"] .ielts-evidence-panel.is-active { overflow: auto; }
 }
 
 @media (max-width: 959px) {
   .brand-picker { gap: 4px; }
   .corpus-switch-button { width: 34px; height: 34px; flex-basis: 34px; }
-  .ielts-morphology-panel dl { grid-template-columns: 1fr; }
+  .ielts-sense-examples { margin-left: 0; }
   .ielts-test-preview { padding: 18px; }
 }
 
