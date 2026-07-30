@@ -2272,3 +2272,305 @@ body[data-route]:not([data-route="learn"]) .question-map-legend { font-size: 10p
   .history-sync-card { align-items: stretch; flex-direction: column; }
   .history-sync-card > div:last-child { justify-content: flex-start; }
 }
+
+/* Same-network save transfer */
+body.has-hotspot-transfer { overflow: hidden; }
+
+.hotspot-transfer-overlay {
+  position: fixed;
+  z-index: 240;
+  inset: 0;
+  display: grid;
+  padding: 24px;
+  place-items: center;
+  background: rgba(18, 23, 46, .36);
+  opacity: 0;
+  transition: opacity .18s ease;
+  -webkit-backdrop-filter: blur(12px) saturate(115%);
+  backdrop-filter: blur(12px) saturate(115%);
+}
+
+.hotspot-transfer-overlay.is-visible { opacity: 1; }
+
+.hotspot-transfer-dialog {
+  width: min(100%, 570px);
+  max-height: min(760px, calc(100dvh - 48px));
+  overflow: hidden;
+  border: 1px solid rgba(218, 222, 236, .92);
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: 0 28px 80px rgba(21, 27, 62, .24);
+  transform: translateY(8px) scale(.985);
+  transition: transform .22s cubic-bezier(.2,.85,.25,1);
+}
+
+.hotspot-transfer-overlay.is-visible .hotspot-transfer-dialog { transform: translateY(0) scale(1); }
+
+.hotspot-transfer-dialog > header {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr) 38px;
+  min-height: 78px;
+  padding: 15px 17px;
+  align-items: center;
+  gap: 11px;
+  border-bottom: 1px solid #e8eaf1;
+  background: linear-gradient(180deg, #fff, #fbfbfe);
+}
+
+.hotspot-transfer-mark {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 15px;
+  background: #eeefff;
+  color: #5958d7;
+}
+
+.hotspot-transfer-mark svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.65;
+}
+
+.hotspot-transfer-dialog > header h2 {
+  margin: 0;
+  color: #17203e;
+  font-size: 20px;
+}
+
+.hotspot-transfer-dialog > header p {
+  margin: 3px 0 0;
+  color: #81879a;
+  font-size: 10px;
+}
+
+.hotspot-transfer-close {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid #e1e4ed;
+  border-radius: 50%;
+  background: #fff;
+  color: #6f768d;
+  font: 400 22px/1 system-ui, sans-serif;
+}
+
+.hotspot-transfer-content {
+  max-height: calc(min(760px, 100dvh - 48px) - 78px);
+  padding: 22px;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.hotspot-transfer-intro h3,
+.hotspot-step-heading h3,
+.hotspot-result h3 {
+  margin: 0;
+  color: #17203e;
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.hotspot-transfer-intro p,
+.hotspot-step-heading p,
+.hotspot-result p,
+.hotspot-wait-copy {
+  margin: 7px 0 0;
+  color: #72798f;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.hotspot-role-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 19px;
+}
+
+.hotspot-role-grid button {
+  display: grid;
+  min-height: 132px;
+  padding: 16px;
+  justify-items: start;
+  align-content: center;
+  gap: 5px;
+  border: 1px solid #dfe2ed;
+  border-radius: 18px;
+  background: #fff;
+  color: #17203e;
+  text-align: left;
+  transition: border-color .15s ease, background .15s ease, transform .15s ease;
+}
+
+.hotspot-role-grid button:hover {
+  border-color: #babcef;
+  background: #f8f8ff;
+  transform: translateY(-1px);
+}
+
+.hotspot-role-grid button > span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 4px;
+  place-items: center;
+  border-radius: 11px;
+  background: #eeefff;
+  color: #5756d4;
+  font-size: 18px;
+}
+
+.hotspot-role-grid button > strong { font-size: 15px; }
+.hotspot-role-grid button > small { color: #858b9d; font-size: 10px; }
+
+.hotspot-transfer-fallback {
+  display: flex;
+  margin-top: 18px;
+  padding-top: 14px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-top: 1px solid #eceef3;
+  color: #8a90a2;
+  font-size: 10px;
+}
+
+.hotspot-transfer-fallback button {
+  padding: 3px 2px;
+  border: 0;
+  background: transparent;
+  color: #5558c9;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.hotspot-step-heading {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  align-items: start;
+  gap: 10px;
+}
+
+.hotspot-step-heading > span {
+  display: grid;
+  width: 29px;
+  height: 29px;
+  place-items: center;
+  border-radius: 10px;
+  background: #5b5be2;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.hotspot-step-heading h3 { font-size: 16px; }
+.hotspot-step-heading p { margin-top: 3px; font-size: 10px; }
+.hotspot-step-two { margin-top: 22px; padding-top: 18px; border-top: 1px solid #eaecf2; }
+
+.hotspot-token-field {
+  display: grid;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.hotspot-token-field > span {
+  padding-left: 2px;
+  color: #697087;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.hotspot-token-field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 84px;
+  padding: 11px 12px;
+  resize: vertical;
+  border: 1px solid #dfe2ec;
+  border-radius: 13px;
+  outline: 0;
+  background: #f8f9fc;
+  color: #303750;
+  font: 500 11px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace;
+  word-break: break-all;
+}
+
+.hotspot-token-field textarea:focus {
+  border-color: #7776e8;
+  box-shadow: 0 0 0 3px rgba(91, 91, 226, .11);
+}
+
+.hotspot-inline-actions,
+.hotspot-result-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 9px;
+}
+
+.hotspot-transfer-content > .button.wide { margin-top: 12px; }
+
+.hotspot-transfer-status {
+  display: grid;
+  gap: 7px;
+  margin-top: 14px;
+  color: #656d85;
+  font-size: 10px;
+}
+
+.hotspot-transfer-status i {
+  display: block;
+  height: 5px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #ebedf4;
+}
+
+.hotspot-transfer-status i b {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #7674ea, #4ab5a8);
+  transition: width .22s ease;
+}
+
+.hotspot-result {
+  display: grid;
+  min-height: 220px;
+  padding: 18px;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.hotspot-result > span {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 14px;
+  place-items: center;
+  border-radius: 18px;
+  background: #e8f7f3;
+  color: #169889;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.hotspot-result-error > span { background: #fff0ed; color: #dd6757; }
+.hotspot-transfer-error { margin-top: 18px; padding: 13px; border-radius: 13px; background: #fff2ef; color: #b85145; font-size: 11px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hotspot-transfer-overlay,
+  .hotspot-transfer-dialog,
+  .hotspot-role-grid button,
+  .hotspot-transfer-status i b { transition-duration: .01ms !important; }
+}
