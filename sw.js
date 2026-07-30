@@ -1,4 +1,4 @@
-const BUILD = "82";
+const BUILD = "83";
 const CACHE_PREFIX = "vocab-studio-";
 const CACHE = `vocab-studio-v${BUILD}-incremental`;
 const NEURAL_VOICE_CACHE = "vocab-neural-voice-piper-ljspeech-int8-v1";
