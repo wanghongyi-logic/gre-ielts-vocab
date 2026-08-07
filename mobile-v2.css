@@ -3243,6 +3243,24 @@ body[data-route="learn"] .word-page > .word-hero {
   transition: height .18s cubic-bezier(.2, .75, .25, 1), box-shadow .18s ease;
 }
 
+body[data-route="learn"] .word-page .word-line {
+  overflow: visible;
+}
+
+body[data-route="learn"] .word-page .word-title {
+  min-width: 0;
+  max-width: none;
+  flex: 1 1 0;
+  overflow: visible;
+  padding-block: .02em .11em;
+  font-size: var(--word-title-size, clamp(46px, 5vw, 57px));
+  line-height: 1.06;
+  overflow-wrap: normal;
+  word-break: normal;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
 body[data-route="learn"] .word-page > .word-hero.is-resizing {
   user-select: none;
   transition: none;
@@ -3649,7 +3667,7 @@ body[data-route="learn"] .word-page > .word-hero[data-card-density="standard"] >
 
   .radial-content-nav {
     position: fixed;
-    z-index: 120;
+    z-index: 144;
     top: clamp(
       calc(env(safe-area-inset-top) + 148px),
       46dvh,
@@ -3869,6 +3887,12 @@ body[data-route="learn"] .word-page > .word-hero[data-card-density="standard"] >
     color: white;
     box-shadow: 0 0 0 7px rgba(91, 90, 222, .14), 0 10px 26px rgba(48, 48, 141, .27);
     transform: translate(var(--radial-x), var(--radial-y)) scale(1.12) !important;
+  }
+
+  .radial-nav-item.is-current:not(.is-target) {
+    border-color: rgba(91, 90, 222, .36);
+    background: rgba(239, 239, 255, .96);
+    box-shadow: 0 0 0 4px rgba(91, 90, 222, .08), 0 9px 26px rgba(38, 44, 91, .16);
   }
 
   .radial-content-nav.is-engaged .radial-nav-origin {
@@ -4635,4 +4659,12 @@ body[data-route="learn"] .word-page > .word-hero[data-card-density="standard"] >
 
   body[data-route="home"] .history-word-meta { display: none; }
   body[data-route="home"] .history-word-arrow { grid-column: 3; }
+}
+
+@media (max-width: 959px) {
+  /* The radial orb now owns both the drawer tap and five-way navigation on
+     every page; keep the legacy standalone menu orb out of the hit stack. */
+  .mobile-learning-nav-toggle {
+    display: none !important;
+  }
 }
