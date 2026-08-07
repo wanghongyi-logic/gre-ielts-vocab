@@ -4664,7 +4664,24 @@ body[data-route="learn"] .word-page > .word-hero[data-card-density="standard"] >
 @media (max-width: 959px) {
   /* The radial orb now owns both the drawer tap and five-way navigation on
      every page; keep the legacy standalone menu orb out of the hit stack. */
+  #mobile-immersive-button,
+  #mobile-command-menu,
   .mobile-learning-nav-toggle {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  /* This is the only global navigation trigger. It sits above route-specific
+     docks/cards and remains independently hittable while #app is rerendered. */
+  #global-radial-navigation.radial-content-nav {
+    z-index: 260;
+    pointer-events: none;
+  }
+
+  #global-radial-navigation .radial-nav-origin,
+  #global-radial-navigation.is-open .radial-nav-item {
+    pointer-events: auto;
   }
 }

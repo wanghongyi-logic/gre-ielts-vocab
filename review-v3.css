@@ -1561,6 +1561,369 @@
   }
 }
 
+/* Review v5 — persistent coverage task, correction inbox and useful stats. */
+html.review-config-updating .review-config-drawer-layer,
+html.review-config-updating .review-config-drawer {
+  animation: none !important;
+}
+
+.review-task-card {
+  overflow-anchor: none;
+}
+
+.review-task-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 24px;
+  padding-bottom: 18px;
+}
+
+.review-task-heading > div:first-child > span {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--review-plan-soft);
+  color: var(--review-plan-accent);
+  font-size: 10px;
+  font-weight: 780;
+}
+
+.review-task-heading h2 {
+  margin: 11px 0 0;
+  color: var(--review-plan-ink);
+  font-size: clamp(25px, 2.8vw, 35px);
+  font-weight: 790;
+  letter-spacing: -.042em;
+  line-height: 1.13;
+}
+
+.review-task-heading p {
+  margin: 8px 0 0;
+  color: var(--review-plan-copy);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.review-task-percent {
+  display: grid;
+  min-width: 102px;
+  justify-items: end;
+  padding-top: 7px;
+}
+
+.review-task-percent strong {
+  color: var(--review-plan-ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(40px, 5vw, 58px);
+  font-weight: 500;
+  letter-spacing: -.055em;
+  line-height: .92;
+}
+
+.review-task-percent span {
+  margin-top: 8px;
+  color: var(--review-plan-copy);
+  font-size: 10px;
+  font-weight: 720;
+}
+
+.review-task-track {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #eceef5;
+}
+
+.review-task-track > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #6e6bed, #4e55d7);
+  box-shadow: 0 0 16px rgba(79, 80, 213, .26);
+  transition: width .28s ease;
+}
+
+.review-task-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 13px 0 0;
+}
+
+.review-task-metrics > div {
+  min-width: 0;
+  padding: 11px 13px;
+  border: 1px solid #e6e8f0;
+  border-radius: 13px;
+  background: #f8f9fc;
+}
+
+.review-task-metrics dt {
+  color: #858da0;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.review-task-metrics dd {
+  margin: 4px 0 0;
+  color: var(--review-plan-ink);
+  font-size: 19px;
+  font-weight: 790;
+}
+
+.review-task-metrics dd small {
+  color: #7c8498;
+  font-size: 9px;
+  font-weight: 650;
+}
+
+.review-learning-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  margin-top: 13px;
+}
+
+.review-stat-card {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  min-width: 0;
+  min-height: 94px;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #e3e6ef;
+  border-radius: 16px;
+  background: #fff;
+  color: var(--review-plan-ink);
+  font: inherit;
+  text-align: left;
+}
+
+button.review-stat-card {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button.review-stat-card:disabled {
+  cursor: default;
+  opacity: .72;
+}
+
+.review-stat-card > span {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 12px;
+  background: #f0f1ff;
+  color: var(--review-plan-accent);
+}
+
+.review-stat-card.has-alert > span {
+  background: #fff0f1;
+  color: #cf555e;
+}
+
+.review-stat-card svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.review-stat-card small,
+.review-stat-card strong,
+.review-stat-card p {
+  display: block;
+}
+
+.review-stat-card small {
+  color: #858da0;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.review-stat-card strong {
+  margin-top: 3px;
+  font-size: 16px;
+  font-weight: 790;
+}
+
+.review-stat-card p {
+  margin: 4px 0 0;
+  overflow: hidden;
+  color: #7d8598;
+  font-size: 8px;
+  line-height: 1.35;
+}
+
+.review-stat-card > b {
+  grid-column: 1 / -1;
+  color: #cf555e;
+  font-size: 9px;
+  font-weight: 760;
+  text-align: right;
+}
+
+.review-stat-card.is-actionable:not(:disabled):hover {
+  border-color: #efb9bc;
+  background: #fffafa;
+}
+
+.review-coverage-note {
+  margin: 12px 1px 0;
+  color: #737c91;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+@media (max-width: 959px) {
+  .review-task-card {
+    padding: 15px;
+  }
+
+  .review-task-heading {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    padding-bottom: 13px;
+  }
+
+  .review-task-heading > div:first-child > span {
+    min-height: 23px;
+    padding: 4px 8px;
+    font-size: 8px;
+  }
+
+  .review-task-heading h2 {
+    margin-top: 8px;
+    font-size: clamp(20px, 5.8vw, 24px);
+    white-space: nowrap;
+  }
+
+  .review-task-heading p {
+    max-width: 230px;
+    margin-top: 5px;
+    overflow: hidden;
+    font-size: 9px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .review-task-percent {
+    min-width: 68px;
+  }
+
+  .review-task-percent strong {
+    font-size: 34px;
+  }
+
+  .review-task-percent span {
+    margin-top: 5px;
+    font-size: 8px;
+  }
+
+  .review-task-metrics {
+    gap: 6px;
+    margin-top: 9px;
+  }
+
+  .review-task-metrics > div {
+    padding: 8px 9px;
+  }
+
+  .review-task-metrics dd {
+    font-size: 15px;
+  }
+
+  .review-learning-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+    margin-top: 9px;
+  }
+
+  .review-stat-card {
+    grid-template-columns: 32px minmax(0, 1fr);
+    min-height: 70px;
+    gap: 8px;
+    padding: 9px;
+    border-radius: 13px;
+  }
+
+  .review-stat-card.is-actionable {
+    grid-column: 1 / -1;
+    grid-template-columns: 32px minmax(0, 1fr) auto;
+  }
+
+  .review-stat-card > span {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+  }
+
+  .review-stat-card svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .review-stat-card strong {
+    font-size: 14px;
+  }
+
+  .review-stat-card p {
+    max-height: 2.7em;
+  }
+
+  .review-stat-card > b {
+    grid-column: auto;
+    grid-row: 1;
+    font-size: 8px;
+  }
+
+  .review-coverage-note {
+    margin-top: 9px;
+    font-size: 8px;
+  }
+
+  .review-plan-disclosure {
+    min-height: 44px;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 389px), (max-height: 700px) and (max-width: 959px) {
+  .review-task-heading p,
+  .review-coverage-note,
+  .review-recent-card {
+    display: none;
+  }
+
+  .review-learning-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .review-stat-card,
+  .review-stat-card.is-actionable {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    min-height: 66px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .review-stat-card > span,
+  .review-stat-card p,
+  .review-stat-card > b {
+    display: none;
+  }
+}
+
 /* Compact completion state shared by GRE and IELTS rounds. */
 .review-result-v3 {
   display: grid;
