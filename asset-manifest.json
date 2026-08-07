@@ -13,8 +13,8 @@
   "entries": {
     "runtime": {
       "path": "app.js",
-      "bytes": 410447,
-      "gzipBytes": 133451,
+      "bytes": 413218,
+      "gzipBytes": 132745,
       "assets": [
         "app.js",
         "chunks/chunk-EWNQBASX.js",
@@ -74,9 +74,9 @@
   "assets": [
     {
       "path": "app.js",
-      "bytes": 410447,
-      "gzipBytes": 133451,
-      "sha256": "5a9d89a05aad851e9580c489c03b55361c3136ebded6db4b4ffb29bae51e24a4",
+      "bytes": 413218,
+      "gzipBytes": 132745,
+      "sha256": "a240381e8f87e91ebccf3d2b06ac1430fe388a2029484a8a3180a6e48480fd27",
       "entryPoint": "app.js",
       "imports": [
         "content.js",
@@ -170,8 +170,8 @@
     }
   ],
   "totals": {
-    "bytes": 10737455,
-    "gzipBytes": 4325191
+    "bytes": 10740226,
+    "gzipBytes": 4324485
   },
   "validation": {
     "syntaxChecked": true,

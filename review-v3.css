@@ -2727,6 +2727,7 @@ button.review-stat-card:disabled {
 }
 
 .review-config-drawer-scroll {
+  overflow-anchor: none;
   min-height: 0;
   padding: 12px;
   overflow-x: hidden;
