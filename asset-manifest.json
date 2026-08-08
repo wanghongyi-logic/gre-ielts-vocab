@@ -1,7 +1,7 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T13:57:11.311Z",
+  "generatedAt": "2026-08-08T15:44:19.244Z",
   "build": {
     "tool": "esbuild",
     "version": "0.28.1",
@@ -13,18 +13,23 @@
   "entries": {
     "runtime": {
       "path": "app.js",
-      "bytes": 429812,
-      "gzipBytes": 139246,
+      "bytes": 435504,
+      "gzipBytes": 141075,
       "assets": [
         "app.js",
+        "chunks/chunk-DV47KU4O.js",
         "chunks/chunk-EWNQBASX.js",
         "chunks/chunk-HNNVAFRB.js",
+        "chunks/chunk-QPJMSVWH.js",
+        "chunks/chunk-RGYE7IDV.js",
         "chunks/chunk-VC46IEJQ.js",
         "chunks/chunk-ZAP2COP6.js",
+        "chunks/chunk-ZAZVYOQ2.js",
         "content.js",
         "data/gre-equivalence-packs.js",
         "data/ielts-538/index.js",
-        "data/lookalike-packs.js"
+        "data/lookalike-packs.js",
+        "listening-feature.js"
       ]
     },
     "greLessons": {
@@ -69,21 +74,83 @@
         "chunks/chunk-VC46IEJQ.js",
         "data/ielts-538/index.js"
       ]
+    },
+    "listeningFeature": {
+      "path": "listening-feature.js",
+      "bytes": 29996,
+      "gzipBytes": 10575,
+      "assets": [
+        "chunks/chunk-DV47KU4O.js",
+        "chunks/chunk-QPJMSVWH.js",
+        "chunks/chunk-RGYE7IDV.js",
+        "chunks/chunk-VC46IEJQ.js",
+        "chunks/chunk-ZAZVYOQ2.js",
+        "listening-feature.js"
+      ]
+    },
+    "listeningEngine": {
+      "path": "listening-engine.js",
+      "bytes": 560,
+      "gzipBytes": 316,
+      "assets": [
+        "chunks/chunk-VC46IEJQ.js",
+        "chunks/chunk-ZAZVYOQ2.js",
+        "listening-engine.js"
+      ]
+    },
+    "listeningHotWords": {
+      "path": "data/ielts-listening/hot-words.js",
+      "bytes": 172,
+      "gzipBytes": 136,
+      "assets": [
+        "chunks/chunk-QPJMSVWH.js",
+        "chunks/chunk-VC46IEJQ.js",
+        "data/ielts-listening/hot-words.js"
+      ]
+    },
+    "listeningScenarioWords": {
+      "path": "data/ielts-listening/scenario-words.js",
+      "bytes": 209,
+      "gzipBytes": 148,
+      "assets": [
+        "chunks/chunk-RGYE7IDV.js",
+        "chunks/chunk-VC46IEJQ.js",
+        "data/ielts-listening/scenario-words.js"
+      ]
+    },
+    "listeningScenes": {
+      "path": "data/ielts-listening/scenarios.js",
+      "bytes": 174,
+      "gzipBytes": 137,
+      "assets": [
+        "chunks/chunk-DV47KU4O.js",
+        "chunks/chunk-VC46IEJQ.js",
+        "data/ielts-listening/scenarios.js"
+      ]
     }
   },
   "assets": [
     {
       "path": "app.js",
-      "bytes": 429812,
-      "gzipBytes": 139246,
-      "sha256": "170cd69f2676c369f555d3c53aef8a0795abd18492afe746341e2f4250e3872e",
+      "bytes": 435504,
+      "gzipBytes": 141075,
+      "sha256": "0ebb74e42a41e3f6274fe7d256c29fc94a75be28e43d8f57f983a4da21b05c82",
       "entryPoint": "app.js",
       "imports": [
         "content.js",
         "data/lookalike-packs.js",
         "data/gre-equivalence-packs.js",
-        "data/ielts-538/index.js"
+        "data/ielts-538/index.js",
+        "listening-feature.js"
       ]
+    },
+    {
+      "path": "chunks/chunk-DV47KU4O.js",
+      "bytes": 42479,
+      "gzipBytes": 13137,
+      "sha256": "51e650f86c8bc4fba5038a6b932917946e207649f2026f67f07b8aaf68f76aed",
+      "entryPoint": null,
+      "imports": []
     },
     {
       "path": "chunks/chunk-EWNQBASX.js",
@@ -106,6 +173,22 @@
       ]
     },
     {
+      "path": "chunks/chunk-QPJMSVWH.js",
+      "bytes": 245479,
+      "gzipBytes": 42661,
+      "sha256": "d95f5d1a392bef1bb592182b7d9dfdca0b8be6e365d5d8a0264c419ad187a311",
+      "entryPoint": null,
+      "imports": []
+    },
+    {
+      "path": "chunks/chunk-RGYE7IDV.js",
+      "bytes": 148371,
+      "gzipBytes": 14874,
+      "sha256": "65812039d69558aa3ba5e9d9ca00bcdc01963dc4683c959e1b7b55a39cb37603",
+      "entryPoint": null,
+      "imports": []
+    },
+    {
       "path": "chunks/chunk-VC46IEJQ.js",
       "bytes": 106,
       "gzipBytes": 120,
@@ -118,6 +201,14 @@
       "bytes": 8815,
       "gzipBytes": 4476,
       "sha256": "a2789d4137dafda0bd6fb6dbbd651f00029fc8917b03c091cb78faf57daf34e4",
+      "entryPoint": null,
+      "imports": []
+    },
+    {
+      "path": "chunks/chunk-ZAZVYOQ2.js",
+      "bytes": 23219,
+      "gzipBytes": 8517,
+      "sha256": "9fba81fcb8f9bee41c08a097645b8bc12df8897517908092c16e915299c61605",
       "entryPoint": null,
       "imports": []
     },
@@ -156,6 +247,39 @@
       ]
     },
     {
+      "path": "data/ielts-listening/hot-words.js",
+      "bytes": 172,
+      "gzipBytes": 136,
+      "sha256": "e9e0832d4103943db8fea5d54152bec901067651a755c098390cb7a18bee5c55",
+      "entryPoint": "data/ielts-listening/hot-words.js",
+      "imports": [
+        "chunks/chunk-QPJMSVWH.js",
+        "chunks/chunk-VC46IEJQ.js"
+      ]
+    },
+    {
+      "path": "data/ielts-listening/scenario-words.js",
+      "bytes": 209,
+      "gzipBytes": 148,
+      "sha256": "36107e30a3a09750cf99747238eb5cbc30b5ef149212eb3c31e5a869d703f3ac",
+      "entryPoint": "data/ielts-listening/scenario-words.js",
+      "imports": [
+        "chunks/chunk-RGYE7IDV.js",
+        "chunks/chunk-VC46IEJQ.js"
+      ]
+    },
+    {
+      "path": "data/ielts-listening/scenarios.js",
+      "bytes": 174,
+      "gzipBytes": 137,
+      "sha256": "554a984d49d2802bff4552484ed3d54ab00721fde5a32245d62982d14740723a",
+      "entryPoint": "data/ielts-listening/scenarios.js",
+      "imports": [
+        "chunks/chunk-DV47KU4O.js",
+        "chunks/chunk-VC46IEJQ.js"
+      ]
+    },
+    {
       "path": "data/lookalike-packs.js",
       "bytes": 1171587,
       "gzipBytes": 480590,
@@ -167,15 +291,40 @@
         "chunks/chunk-HNNVAFRB.js",
         "chunks/chunk-VC46IEJQ.js"
       ]
+    },
+    {
+      "path": "listening-engine.js",
+      "bytes": 560,
+      "gzipBytes": 316,
+      "sha256": "9c2ecef1b3183a5f4c1581478a63e7cc29fcb0633159613d3a9d327ee1c7683f",
+      "entryPoint": "listening-engine.js",
+      "imports": [
+        "chunks/chunk-ZAZVYOQ2.js",
+        "chunks/chunk-VC46IEJQ.js"
+      ]
+    },
+    {
+      "path": "listening-feature.js",
+      "bytes": 29996,
+      "gzipBytes": 10575,
+      "sha256": "0d17bfa69593e7a6271fdb20d377a7313344c5a9281ff3f31532c6bb8f182405",
+      "entryPoint": "listening-feature.js",
+      "imports": [
+        "chunks/chunk-DV47KU4O.js",
+        "chunks/chunk-ZAZVYOQ2.js",
+        "chunks/chunk-QPJMSVWH.js",
+        "chunks/chunk-RGYE7IDV.js",
+        "chunks/chunk-VC46IEJQ.js"
+      ]
     }
   ],
   "totals": {
-    "bytes": 10756820,
-    "gzipBytes": 4330986
+    "bytes": 11253171,
+    "gzipBytes": 4423316
   },
   "validation": {
     "syntaxChecked": true,
     "nativeImportGraphResolved": true,
-    "generatedAssetCount": 9
+    "generatedAssetCount": 18
   }
 }

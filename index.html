@@ -78,7 +78,7 @@
     <script>
       (() => {
         if (!("serviceWorker" in navigator) || location.protocol === "file:" || location.hostname === "app.local") return;
-        const build = "97";
+        const build = "98";
         const offlineReadyKey = `vocab-offline-ready-${build}`;
         const hadController = Boolean(navigator.serviceWorker.controller);
         let refreshing = false;
@@ -236,13 +236,14 @@
       })();
     </script>
     <link rel="stylesheet" href="./styles.css?v=77" />
-    <link rel="modulepreload" href="./app.js?v=97" />
+    <link rel="modulepreload" href="./app.js?v=98" />
     <link rel="stylesheet" href="./theme-v2.css?v=97" />
     <link rel="stylesheet" href="./learning-test-v4.css?v=77" />
     <link rel="stylesheet" href="./ielts-preview.css?v=77" />
     <link rel="stylesheet" href="./review-integration.css?v=77" />
     <link rel="stylesheet" href="./mobile-v2.css?v=97" />
     <link rel="stylesheet" href="./review-v3.css?v=96" />
+    <link rel="stylesheet" href="./listening-review.css?v=98" />
     <title>GRE & IELTS 词汇精学</title>
   </head>
   <body>
@@ -365,6 +366,6 @@
         } catch {}
       })();
     </script>
-    <script type="module" src="./app.js?v=97"></script>
+    <script type="module" src="./app.js?v=98"></script>
   </body>
 </html>
