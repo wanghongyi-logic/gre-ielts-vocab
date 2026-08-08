@@ -4029,6 +4029,10 @@ body[data-route="learn"] .word-page > .word-hero[data-card-density="standard"] >
     font-weight: 760;
   }
 
+  .history-sync-card .button.danger {
+    grid-column: 1 / -1;
+  }
+
   .hotspot-transfer-overlay {
     padding: 0;
     align-items: end;
@@ -4414,35 +4418,37 @@ body[data-route="learn"] .word-page > .word-hero[data-card-density="standard"] >
     gap: 4px;
   }
 
-  .mobile-vocab-copy > span {
+  .mobile-vocab-meta {
     display: flex;
     min-width: 0;
-    align-items: baseline;
+    align-items: center;
     gap: 7px;
   }
 
   .mobile-vocab-copy strong {
-    overflow: hidden;
+    min-width: 0;
+    overflow: visible;
     color: #111b35;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 20px;
     font-weight: 650;
     letter-spacing: -.02em;
-    line-height: 1.1;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    line-height: 1.12;
+    overflow-wrap: anywhere;
+    text-overflow: clip;
+    white-space: normal;
   }
 
-  .mobile-vocab-copy em {
-    overflow: hidden;
+  .mobile-vocab-meta em {
+    flex: 0 0 auto;
     color: #8a91a5;
     font-size: 9px;
     font-style: normal;
-    text-overflow: ellipsis;
     white-space: nowrap;
   }
 
-  .mobile-vocab-copy small {
+  .mobile-vocab-meta small {
+    min-width: 0;
     overflow: hidden;
     color: #858ca0;
     font-size: 9.5px;

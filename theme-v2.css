@@ -2247,6 +2247,19 @@ body[data-route]:not([data-route="learn"]) .question-map-legend { font-size: 10p
 .history-sync-card p { max-width: 620px; margin: 0; color: var(--muted); font-size: 10px; line-height: 1.7; }
 .history-sync-card > div:last-child { display: flex; flex: 0 0 auto; gap: 8px; }
 .history-sync-context .button + .button { margin-top: 8px; }
+.history-sync-card .button.danger,
+.history-sync-context .button.danger {
+  border-color: #efcaca;
+  background: #fff8f8;
+  color: #b84b4b;
+  box-shadow: none;
+}
+.history-sync-card .button.danger:hover,
+.history-sync-context .button.danger:hover {
+  border-color: #e7aaaa;
+  background: #fff1f1;
+  color: #a63838;
+}
 
 @media (min-width: 960px) {
   body[data-route="home"] {
