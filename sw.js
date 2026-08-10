@@ -1,4 +1,4 @@
-const BUILD = "102";
+const BUILD = "103";
 const CACHE_PREFIX = "vocab-studio-";
 const CACHE = `vocab-studio-v${BUILD}-incremental`;
 const NEURAL_VOICE_PROFILES = Object.freeze({
@@ -262,6 +262,12 @@ function neuralVoiceProfile(profileId) {
   return NEURAL_VOICE_PROFILES[profileId] || NEURAL_VOICE_PROFILES.standard;
 }
 
+function neuralVoiceReadyRequest(profileId, version) {
+  const safeProfileId = profileId === "hd" ? "hd" : "standard";
+  const safeVersion = encodeURIComponent(String(version || "unknown"));
+  return new Request(`./__voice-ready__?profile=${safeProfileId}&version=${safeVersion}`);
+}
+
 async function notifyNeuralVoice(type, profileId, detail = {}) {
   const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
   for (const client of clients) client.postMessage({ type, profileId, ...detail });
@@ -273,19 +279,24 @@ async function cacheNeuralVoicePack(profileId = "standard") {
   const manifestRequest = new Request(profile.manifest, {
     credentials: "same-origin",
   });
-  let manifestResponse = await cache.match(manifestRequest);
-  if (!manifestResponse) {
+  const cachedManifestResponse = await cache.match(manifestRequest);
+  let manifestResponse;
+  try {
     manifestResponse = await fetch(new Request(profile.manifest, {
       cache: "reload",
       credentials: "same-origin",
     }));
     if (!manifestResponse.ok) throw new Error(`Voice manifest HTTP ${manifestResponse.status}`);
-    await cache.put(manifestRequest, manifestResponse.clone());
+  } catch (error) {
+    if (!cachedManifestResponse) throw error;
+    manifestResponse = cachedManifestResponse;
   }
   const manifest = await manifestResponse.json();
   if (manifest?.kind !== "vocabulary-neural-voice-pack" || !Array.isArray(manifest.assets)) {
     throw new Error("Invalid neural voice manifest");
   }
+  const readyRequest = neuralVoiceReadyRequest(profileId, manifest.version);
+  await cache.delete(readyRequest);
 
   const totalBytes = manifest.assets.reduce(
     (total, asset) => total + Math.max(1, Number(asset?.bytes) || 1),
@@ -315,22 +326,41 @@ async function cacheNeuralVoicePack(profileId = "standard") {
       const path = String(asset?.path || "").replace(/^\.?\//, "");
       if (!path || path.includes("..")) continue;
       const request = new Request(`./tts/${path}`, { credentials: "same-origin" });
-      if (await cache.match(request)) {
+      const cached = await cache.match(request);
+      const expectedBytes = Math.max(1, Number(asset?.bytes) || 1);
+      const cachedBytes = Number(
+        cached?.headers.get("x-vocabulary-asset-bytes")
+        || cached?.headers.get("content-length")
+        || 0,
+      );
+      if (cached && cachedBytes === expectedBytes) {
         bytesDone += Math.max(1, Number(asset?.bytes) || 1);
         completed += 1;
         await report();
         continue;
       }
+      if (cached) await cache.delete(request);
       const response = await fetch(new Request(request, { cache: "force-cache" }));
       if (!response.ok) throw new Error(`Voice asset HTTP ${response.status}: ${path}`);
-      const expectedBytes = Math.max(1, Number(asset?.bytes) || 1);
       const reader = response.body?.getReader();
       if (!reader) {
-        await cache.put(request, response);
+        const buffer = await response.arrayBuffer();
+        if (buffer.byteLength !== expectedBytes) {
+          throw new Error(`Voice asset size mismatch: ${path}`);
+        }
+        const headers = new Headers(response.headers);
+        headers.set("content-length", String(buffer.byteLength));
+        headers.set("x-vocabulary-asset-bytes", String(buffer.byteLength));
+        await cache.put(request, new Response(buffer, {
+          status: response.status,
+          statusText: response.statusText,
+          headers,
+        }));
         bytesDone += expectedBytes;
       } else {
         let received = 0;
         const headers = new Headers(response.headers);
+        headers.set("x-vocabulary-asset-bytes", String(expectedBytes));
         const monitoredStream = new ReadableStream({
           async pull(controller) {
             const { done, value } = await reader.read();
@@ -352,7 +382,10 @@ async function cacheNeuralVoicePack(profileId = "standard") {
           statusText: response.statusText,
           headers,
         }));
-        if (received < expectedBytes) bytesDone += expectedBytes - received;
+        if (received !== expectedBytes) {
+          await cache.delete(request);
+          throw new Error(`Voice asset size mismatch: ${path}`);
+        }
       }
       completed += 1;
       await report();
@@ -362,6 +395,17 @@ async function cacheNeuralVoicePack(profileId = "standard") {
   await Promise.all([cacheNext(), cacheNext()]);
   bytesDone = totalBytes;
   completed = manifest.assets.length;
+  await cache.put(manifestRequest, new Response(JSON.stringify(manifest), {
+    headers: { "content-type": "application/json; charset=utf-8" },
+  }));
+  await cache.put(readyRequest, new Response(JSON.stringify({
+    profileId,
+    version: String(manifest.version || ""),
+    readyAt: Date.now(),
+    totalBytes,
+  }), {
+    headers: { "content-type": "application/json; charset=utf-8" },
+  }));
   await report(true);
   await notifyNeuralVoice("NEURAL_VOICE_READY", profileId, {
     percent: 100,
@@ -370,6 +414,40 @@ async function cacheNeuralVoicePack(profileId = "standard") {
     totalBytes,
     version: String(manifest.version || ""),
   });
+}
+
+async function neuralVoiceCacheStatus(profileId = "standard") {
+  const profile = neuralVoiceProfile(profileId);
+  const cache = await caches.open(profile.cache);
+  const manifestResponse = await cache.match(profile.manifest);
+  if (!manifestResponse) return { ready: false, version: "", totalBytes: 0 };
+  try {
+    const manifest = await manifestResponse.json();
+    if (manifest?.kind !== "vocabulary-neural-voice-pack" || !Array.isArray(manifest.assets)) {
+      return { ready: false, version: "", totalBytes: 0 };
+    }
+    const marker = await cache.match(neuralVoiceReadyRequest(profileId, manifest.version));
+    if (!marker) return { ready: false, version: String(manifest.version || ""), totalBytes: 0 };
+    const matches = await Promise.all(manifest.assets.map(async (asset) => {
+      const path = String(asset?.path || "").replace(/^\.?\//, "");
+      if (!path || path.includes("..")) return false;
+      const response = await cache.match(`./tts/${path}`);
+      const expectedBytes = Math.max(1, Number(asset?.bytes) || 1);
+      const cachedBytes = Number(
+        response?.headers.get("x-vocabulary-asset-bytes")
+        || response?.headers.get("content-length")
+        || 0,
+      );
+      return Boolean(response && cachedBytes === expectedBytes);
+    }));
+    return {
+      ready: matches.every(Boolean),
+      version: String(manifest.version || ""),
+      totalBytes: Number(manifest.totalBytes) || 0,
+    };
+  } catch {
+    return { ready: false, version: "", totalBytes: 0 };
+  }
 }
 
 function ensureNeuralVoiceCacheJob(profileId = "standard") {
@@ -471,6 +549,19 @@ self.addEventListener("message", (event) => {
     event.waitUntil(ensureNeuralVoiceCacheJob(profileId).catch(async (error) => {
       await notifyNeuralVoice("NEURAL_VOICE_ERROR", profileId, {
         message: error?.message || "语音包下载失败",
+      });
+    }));
+  }
+  if (event.data?.type === "GET_NEURAL_VOICE_STATUS") {
+    const profileId = event.data?.profileId === "hd" ? "hd" : "standard";
+    event.waitUntil(neuralVoiceCacheStatus(profileId).then((status) => {
+      event.source?.postMessage({
+        type: status.ready ? "NEURAL_VOICE_READY" : "NEURAL_VOICE_STATUS",
+        profileId,
+        percent: status.ready ? 100 : 0,
+        ready: status.ready,
+        version: status.version,
+        totalBytes: status.totalBytes,
       });
     }));
   }

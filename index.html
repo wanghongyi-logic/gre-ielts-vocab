@@ -78,7 +78,7 @@
     <script>
       (() => {
         if (!("serviceWorker" in navigator) || location.protocol === "file:" || location.hostname === "app.local") return;
-        const build = "102";
+        const build = "103";
         const offlineReadyKey = `vocab-offline-ready-${build}`;
         const hadController = Boolean(navigator.serviceWorker.controller);
         let refreshing = false;
@@ -236,7 +236,7 @@
       })();
     </script>
     <link rel="stylesheet" href="./styles.css?v=77" />
-    <link rel="modulepreload" href="./app.js?v=102" />
+    <link rel="modulepreload" href="./app.js?v=103" />
     <link rel="stylesheet" href="./theme-v2.css?v=102" />
     <link rel="stylesheet" href="./learning-test-v4.css?v=77" />
     <link rel="stylesheet" href="./ielts-preview.css?v=77" />
@@ -366,6 +366,6 @@
         } catch {}
       })();
     </script>
-    <script type="module" src="./app.js?v=102"></script>
+    <script type="module" src="./app.js?v=103"></script>
   </body>
 </html>
