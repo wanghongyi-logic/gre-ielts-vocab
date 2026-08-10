@@ -1,7 +1,7 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T16:57:39.620Z",
+  "generatedAt": "2026-08-10T15:30:46.423Z",
   "build": {
     "tool": "esbuild",
     "version": "0.28.1",
@@ -13,18 +13,20 @@
   "entries": {
     "runtime": {
       "path": "app.js",
-      "bytes": 435504,
-      "gzipBytes": 141075,
+      "bytes": 436470,
+      "gzipBytes": 141341,
       "assets": [
         "app.js",
-        "chunks/chunk-DV47KU4O.js",
+        "chunks/chunk-7Q67UCJS.js",
+        "chunks/chunk-AVKBJJZB.js",
         "chunks/chunk-EWNQBASX.js",
         "chunks/chunk-HNNVAFRB.js",
+        "chunks/chunk-HYM53W4U.js",
+        "chunks/chunk-O3DA37S2.js",
         "chunks/chunk-QPJMSVWH.js",
         "chunks/chunk-RGYE7IDV.js",
         "chunks/chunk-VC46IEJQ.js",
         "chunks/chunk-ZAP2COP6.js",
-        "chunks/chunk-ZAZVYOQ2.js",
         "content.js",
         "data/gre-equivalence-packs.js",
         "data/ielts-538/index.js",
@@ -77,24 +79,26 @@
     },
     "listeningFeature": {
       "path": "listening-feature.js",
-      "bytes": 45816,
-      "gzipBytes": 13814,
+      "bytes": 45640,
+      "gzipBytes": 13337,
       "assets": [
-        "chunks/chunk-DV47KU4O.js",
+        "chunks/chunk-7Q67UCJS.js",
+        "chunks/chunk-AVKBJJZB.js",
+        "chunks/chunk-HYM53W4U.js",
+        "chunks/chunk-O3DA37S2.js",
         "chunks/chunk-QPJMSVWH.js",
         "chunks/chunk-RGYE7IDV.js",
         "chunks/chunk-VC46IEJQ.js",
-        "chunks/chunk-ZAZVYOQ2.js",
         "listening-feature.js"
       ]
     },
     "listeningEngine": {
       "path": "listening-engine.js",
       "bytes": 560,
-      "gzipBytes": 316,
+      "gzipBytes": 315,
       "assets": [
+        "chunks/chunk-7Q67UCJS.js",
         "chunks/chunk-VC46IEJQ.js",
-        "chunks/chunk-ZAZVYOQ2.js",
         "listening-engine.js"
       ]
     },
@@ -118,23 +122,43 @@
         "data/ielts-listening/scenario-words.js"
       ]
     },
-    "listeningScenes": {
-      "path": "data/ielts-listening/scenarios.js",
-      "bytes": 174,
-      "gzipBytes": 137,
+    "listeningContextA": {
+      "path": "data/ielts-listening/context-scenes-001-264.js",
+      "bytes": 135,
+      "gzipBytes": 123,
       "assets": [
-        "chunks/chunk-DV47KU4O.js",
+        "chunks/chunk-O3DA37S2.js",
         "chunks/chunk-VC46IEJQ.js",
-        "data/ielts-listening/scenarios.js"
+        "data/ielts-listening/context-scenes-001-264.js"
+      ]
+    },
+    "listeningContextB": {
+      "path": "data/ielts-listening/context-scenes-265-528.js",
+      "bytes": 135,
+      "gzipBytes": 123,
+      "assets": [
+        "chunks/chunk-HYM53W4U.js",
+        "chunks/chunk-VC46IEJQ.js",
+        "data/ielts-listening/context-scenes-265-528.js"
+      ]
+    },
+    "listeningInformation": {
+      "path": "data/ielts-listening/information-scenes.js",
+      "bytes": 131,
+      "gzipBytes": 119,
+      "assets": [
+        "chunks/chunk-AVKBJJZB.js",
+        "chunks/chunk-VC46IEJQ.js",
+        "data/ielts-listening/information-scenes.js"
       ]
     }
   },
   "assets": [
     {
       "path": "app.js",
-      "bytes": 435504,
-      "gzipBytes": 141075,
-      "sha256": "0ebb74e42a41e3f6274fe7d256c29fc94a75be28e43d8f57f983a4da21b05c82",
+      "bytes": 436470,
+      "gzipBytes": 141341,
+      "sha256": "4755018cd513f7935d497d4920e352da20a1ac69e01927c1611b21b2388a9b8f",
       "entryPoint": "app.js",
       "imports": [
         "content.js",
@@ -145,10 +169,18 @@
       ]
     },
     {
-      "path": "chunks/chunk-DV47KU4O.js",
-      "bytes": 42479,
-      "gzipBytes": 13137,
-      "sha256": "51e650f86c8bc4fba5038a6b932917946e207649f2026f67f07b8aaf68f76aed",
+      "path": "chunks/chunk-7Q67UCJS.js",
+      "bytes": 23292,
+      "gzipBytes": 8542,
+      "sha256": "6b5b2369b3e6f13e172950d194455eef72ce5bf21f94ef5084f751843e93a6ab",
+      "entryPoint": null,
+      "imports": []
+    },
+    {
+      "path": "chunks/chunk-AVKBJJZB.js",
+      "bytes": 46907,
+      "gzipBytes": 8650,
+      "sha256": "c543dd70b0d92b0b4b0a79f4e756f63098096618eb878a948a55c765c5d7e61c",
       "entryPoint": null,
       "imports": []
     },
@@ -171,6 +203,22 @@
       "imports": [
         "chunks/chunk-VC46IEJQ.js"
       ]
+    },
+    {
+      "path": "chunks/chunk-HYM53W4U.js",
+      "bytes": 155635,
+      "gzipBytes": 24827,
+      "sha256": "a3dc24253421002d92878c4739ceeb75982ae3317ac35387884fbc16e59e378c",
+      "entryPoint": null,
+      "imports": []
+    },
+    {
+      "path": "chunks/chunk-O3DA37S2.js",
+      "bytes": 149767,
+      "gzipBytes": 22539,
+      "sha256": "509e9ab2f892d4bf6a8dcbbf84bd886c36314cec5fadf52b63fb726fa86ad499",
+      "entryPoint": null,
+      "imports": []
     },
     {
       "path": "chunks/chunk-QPJMSVWH.js",
@@ -201,14 +249,6 @@
       "bytes": 8815,
       "gzipBytes": 4476,
       "sha256": "a2789d4137dafda0bd6fb6dbbd651f00029fc8917b03c091cb78faf57daf34e4",
-      "entryPoint": null,
-      "imports": []
-    },
-    {
-      "path": "chunks/chunk-ZAZVYOQ2.js",
-      "bytes": 23219,
-      "gzipBytes": 8517,
-      "sha256": "9fba81fcb8f9bee41c08a097645b8bc12df8897517908092c16e915299c61605",
       "entryPoint": null,
       "imports": []
     },
@@ -247,6 +287,28 @@
       ]
     },
     {
+      "path": "data/ielts-listening/context-scenes-001-264.js",
+      "bytes": 135,
+      "gzipBytes": 123,
+      "sha256": "f0de4066250f8fd991fa61b6eebe79097eb76f0df3d1b9c30854d9f4470fc79e",
+      "entryPoint": "data/ielts-listening/context-scenes-001-264.js",
+      "imports": [
+        "chunks/chunk-O3DA37S2.js",
+        "chunks/chunk-VC46IEJQ.js"
+      ]
+    },
+    {
+      "path": "data/ielts-listening/context-scenes-265-528.js",
+      "bytes": 135,
+      "gzipBytes": 123,
+      "sha256": "d4740053957639d22a91e81542dde9b836d0f12bf7025dcff4d6a8c5019dd344",
+      "entryPoint": "data/ielts-listening/context-scenes-265-528.js",
+      "imports": [
+        "chunks/chunk-HYM53W4U.js",
+        "chunks/chunk-VC46IEJQ.js"
+      ]
+    },
+    {
       "path": "data/ielts-listening/hot-words.js",
       "bytes": 172,
       "gzipBytes": 136,
@@ -258,6 +320,17 @@
       ]
     },
     {
+      "path": "data/ielts-listening/information-scenes.js",
+      "bytes": 131,
+      "gzipBytes": 119,
+      "sha256": "6fcfc905c4f59280074637520381c1b42bf44440f21137f4a82cc46a9435b3ca",
+      "entryPoint": "data/ielts-listening/information-scenes.js",
+      "imports": [
+        "chunks/chunk-AVKBJJZB.js",
+        "chunks/chunk-VC46IEJQ.js"
+      ]
+    },
+    {
       "path": "data/ielts-listening/scenario-words.js",
       "bytes": 209,
       "gzipBytes": 148,
@@ -265,17 +338,6 @@
       "entryPoint": "data/ielts-listening/scenario-words.js",
       "imports": [
         "chunks/chunk-RGYE7IDV.js",
-        "chunks/chunk-VC46IEJQ.js"
-      ]
-    },
-    {
-      "path": "data/ielts-listening/scenarios.js",
-      "bytes": 174,
-      "gzipBytes": 137,
-      "sha256": "554a984d49d2802bff4552484ed3d54ab00721fde5a32245d62982d14740723a",
-      "entryPoint": "data/ielts-listening/scenarios.js",
-      "imports": [
-        "chunks/chunk-DV47KU4O.js",
         "chunks/chunk-VC46IEJQ.js"
       ]
     },
@@ -295,23 +357,25 @@
     {
       "path": "listening-engine.js",
       "bytes": 560,
-      "gzipBytes": 316,
-      "sha256": "9c2ecef1b3183a5f4c1581478a63e7cc29fcb0633159613d3a9d327ee1c7683f",
+      "gzipBytes": 315,
+      "sha256": "bd1fa622bbbb34fa0421b8a4f063fc6fa8f1553059921035e0e28c05cda9d19c",
       "entryPoint": "listening-engine.js",
       "imports": [
-        "chunks/chunk-ZAZVYOQ2.js",
+        "chunks/chunk-7Q67UCJS.js",
         "chunks/chunk-VC46IEJQ.js"
       ]
     },
     {
       "path": "listening-feature.js",
-      "bytes": 45816,
-      "gzipBytes": 13814,
-      "sha256": "bba00addc0526d94a1bad305f57577e72de10bd8c3b88038fc8dae69a1641afe",
+      "bytes": 45640,
+      "gzipBytes": 13337,
+      "sha256": "b0069484f8562c5c0de516e67ab539044a0b03b1939c528fc855f7a9f39bce5a",
       "entryPoint": "listening-feature.js",
       "imports": [
-        "chunks/chunk-DV47KU4O.js",
-        "chunks/chunk-ZAZVYOQ2.js",
+        "chunks/chunk-O3DA37S2.js",
+        "chunks/chunk-HYM53W4U.js",
+        "chunks/chunk-AVKBJJZB.js",
+        "chunks/chunk-7Q67UCJS.js",
         "chunks/chunk-QPJMSVWH.js",
         "chunks/chunk-RGYE7IDV.js",
         "chunks/chunk-VC46IEJQ.js"
@@ -319,12 +383,12 @@
     }
   ],
   "totals": {
-    "bytes": 11268991,
-    "gzipBytes": 4426555
+    "bytes": 11579911,
+    "gzipBytes": 4469475
   },
   "validation": {
     "syntaxChecked": true,
     "nativeImportGraphResolved": true,
-    "generatedAssetCount": 18
+    "generatedAssetCount": 22
   }
 }

@@ -218,6 +218,51 @@ body[data-corpus="listening"][data-route="review"] #app {
   letter-spacing: .08em;
 }
 
+.listening-form-card.is-exam-card {
+  border-color: #d8dff1;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(27, 40, 83, .055);
+}
+.listening-exam-prompt {
+  display: block;
+  min-height: 104px;
+  padding: clamp(22px, 3.2vw, 38px);
+  color: #17213b;
+  font: 690 clamp(19px, 2.1vw, 27px)/1.55 Georgia, "Times New Roman", serif;
+  letter-spacing: -.012em;
+}
+.listening-exam-prompt > strong {
+  display: inline-block;
+  min-width: clamp(106px, 17vw, 190px);
+  margin: 0 5px;
+  border-bottom: 2px solid #3f5fe5;
+  color: transparent;
+  line-height: 1.05;
+  user-select: none;
+}
+.listening-audio-panel.is-previewing {
+  border-color: #d8d9fb;
+  background: linear-gradient(110deg, #f9f8ff, #f3f5ff);
+}
+.listening-audio-panel.is-previewing .listening-waveform i {
+  background: #c5c8dc;
+  opacity: .52;
+}
+.listening-audio-panel.is-previewing .listening-audio-meta strong {
+  color: #5666d7;
+  letter-spacing: .08em;
+}
+.listening-audio-panel.is-previewing [data-listening-preview-countdown] {
+  color: #354fe0;
+  font-size: 14px;
+  font-weight: 850;
+}
+.listening-play-button:disabled {
+  background: #c7cce0;
+  box-shadow: none;
+  cursor: wait;
+}
+
 .listening-audio-panel {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
@@ -968,6 +1013,9 @@ body[data-corpus="listening"][data-route="review"] #app {
   .listening-question-intro p { font-size: 11px; }
   .listening-form-card { margin-bottom: 12px; border-radius: 13px; }
   .listening-form-card > header { padding: 8px 11px; }
+  .listening-form-card > header { align-items: flex-start; flex-direction: column; gap: 3px; }
+  .listening-exam-prompt { min-height: 92px; padding: 19px 15px; font-size: clamp(18px, 5vw, 22px); line-height: 1.5; }
+  .listening-exam-prompt > strong { min-width: 92px; }
   .listening-form-row { grid-template-columns: 88px minmax(0, 1fr); min-height: 40px; gap: 10px; padding: 7px 11px; }
   .listening-form-row > span { font-size: 10px; }
   .listening-form-row > strong { font-size: 12px; }
