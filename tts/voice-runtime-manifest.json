@@ -1,0 +1,39 @@
+{
+  "kind": "vocabulary-neural-voice-runtime",
+  "version": "piper-browser-runtime-v1",
+  "assets": [
+    {
+      "path": "neural-worker.bundle.js",
+      "bytes": 155613,
+      "sha256": "c136274b03e9cb41eb36fd02b9206bbaf7aaefb5a3fd70a585d960a42e5af1f2"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1148,
+      "sha256": "933318e33059e418da957703fae8cac918df599ac7babda69488330973a8b95a"
+    },
+    {
+      "path": "wasm/ort-wasm-simd-threaded.mjs",
+      "bytes": 24618,
+      "sha256": "b58de73c7b47b86290578489c6b5b16ade5d237cd5f340f0776a219bb833bd04"
+    },
+    {
+      "path": "wasm/ort-wasm-simd-threaded.wasm",
+      "bytes": 11241642,
+      "sha256": "704f51767fe3e11443aac6b5509c8654688e4cea3d988f96a069390b6eccbabc"
+    },
+    {
+      "path": "wasm/piper_phonemize.data",
+      "bytes": 18077249,
+      "sha256": "29f1025eb23a5b5c192cd14a6efbce4509402ff265405072ee6f7d1a09b78f8c"
+    },
+    {
+      "path": "wasm/piper_phonemize.wasm",
+      "bytes": 635212,
+      "sha256": "b777cd107a91d2bcc6a1ea46f2c26a662a7407394fe84589198aeaa83dd7a9d6"
+    }
+  ],
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-10T17:33:04.577Z",
+  "totalBytes": 30135482
+}

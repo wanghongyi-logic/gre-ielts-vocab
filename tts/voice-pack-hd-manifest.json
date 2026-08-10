@@ -1,0 +1,25 @@
+{
+  "kind": "vocabulary-neural-voice-pack",
+  "profileId": "hd",
+  "version": "piper-ljspeech-high-int8-v1",
+  "model": "Piper en_US-ljspeech-high",
+  "dtype": "uint8",
+  "voice": "en_US-ljspeech-high",
+  "runtimeManifest": "voice-runtime-manifest.json",
+  "runtimeVersion": "piper-browser-runtime-v1",
+  "assets": [
+    {
+      "path": "models/piper-voices/en/en_US/ljspeech/high/en_US-ljspeech-high.onnx",
+      "bytes": 38106989,
+      "sha256": "a1689bd67e93d6f2452d006f0305b36c8bb93e063a5879084a6e378024c4d008"
+    },
+    {
+      "path": "models/piper-voices/en/en_US/ljspeech/high/en_US-ljspeech-high.onnx.json",
+      "bytes": 4970,
+      "sha256": "7e1f4634af596d83cca997fb7a931ba80b70f8a316a2655ee69c55365e0ace14"
+    }
+  ],
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-10T17:33:04.577Z",
+  "totalBytes": 38111959
+}

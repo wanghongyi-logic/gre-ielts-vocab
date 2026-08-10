@@ -1,0 +1,25 @@
+{
+  "kind": "vocabulary-neural-voice-model",
+  "profileId": "standard",
+  "version": "piper-ljspeech-medium-int8-v1",
+  "model": "Piper en_US-ljspeech-medium",
+  "dtype": "uint8",
+  "voice": "en_US-ljspeech-medium",
+  "runtimeManifest": "voice-runtime-manifest.json",
+  "runtimeVersion": "piper-browser-runtime-v1",
+  "assets": [
+    {
+      "path": "models/piper-voices/en/en_US/ljspeech/medium/en_US-ljspeech-medium.onnx",
+      "bytes": 19349795,
+      "sha256": "206a8403baad4df7642156918a6ebe205798290d82f24d0d0119d7afa8a2738e"
+    },
+    {
+      "path": "models/piper-voices/en/en_US/ljspeech/medium/en_US-ljspeech-medium.onnx.json",
+      "bytes": 4972,
+      "sha256": "141d612cc0a95ed7efc1ca936b845c2364967f2e9217c5dbfcf69fc4d6c65860"
+    }
+  ],
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-10T17:33:04.577Z",
+  "totalBytes": 19354767
+}

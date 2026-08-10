@@ -1458,6 +1458,57 @@
     line-height: 1.55;
   }
 
+  .history-voice-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 11px;
+    padding: 13px 12px;
+    border-color: #dedff0;
+    border-radius: 16px;
+    background:
+      radial-gradient(circle at 0 0, rgba(100, 101, 235, .1), transparent 43%),
+      rgba(255, 255, 255, .97);
+    box-shadow: 0 7px 24px rgba(30, 39, 79, .045);
+  }
+
+  .history-voice-heading {
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .history-voice-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+  }
+
+  .history-voice-heading .rail-caption { display: none; }
+  .history-voice-heading h2 { margin: 0 0 2px; font-size: 16px; }
+  .history-voice-heading p { font-size: 10px; }
+  .voice-profile-options { gap: 7px; }
+
+  .voice-profile-option {
+    grid-template-columns: 17px minmax(0, 1fr);
+    min-height: 58px;
+    padding: 8px 9px;
+    gap: 7px;
+    border-radius: 13px;
+    touch-action: manipulation;
+  }
+
+  .voice-profile-option > em {
+    grid-column: 2;
+    justify-self: start;
+    margin-top: -1px;
+    padding: 2px 5px;
+  }
+
+  .voice-profile-option strong { font-size: 12px; }
+  .voice-profile-option small { font-size: 9px; }
+  .voice-profile-status { min-height: 28px; padding-inline: 1px; }
+  .voice-profile-status strong { font-size: 10.5px; }
+  .voice-profile-status small { font-size: 9px; }
+
   .history-sync-card {
     display: grid;
     align-items: stretch;
@@ -1541,6 +1592,10 @@
   .history-metrics article > span { font-size: 9px; }
   .history-metrics article > strong { font-size: 23px; }
   .history-metrics article > small { font-size: 8px; }
+
+  .history-voice-card { padding-inline: 10px; }
+  .voice-profile-option { padding-inline: 7px; }
+  .voice-profile-option small { max-width: 98px; }
 
   .history-trend-card,
   .history-day-card {

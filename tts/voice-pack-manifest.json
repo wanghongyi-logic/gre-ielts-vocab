@@ -1,11 +1,12 @@
 {
   "kind": "vocabulary-neural-voice-pack",
-  "schemaVersion": 1,
+  "profileId": "standard",
   "version": "piper-ljspeech-medium-int8-v1",
   "model": "Piper en_US-ljspeech-medium",
-  "dtype": "int8",
+  "dtype": "uint8",
   "voice": "en_US-ljspeech-medium",
-  "generatedAt": "2026-08-10T16:31:46.501Z",
+  "runtimeManifest": "voice-runtime-manifest.json",
+  "runtimeVersion": "piper-browser-runtime-v1",
   "assets": [
     {
       "path": "models/piper-voices/en/en_US/ljspeech/medium/en_US-ljspeech-medium.onnx",
@@ -19,13 +20,13 @@
     },
     {
       "path": "neural-worker.bundle.js",
-      "bytes": 154198,
-      "sha256": "21bacd25066e5b6d18aa6028d8b0623c85416561db9bf7cec0d7f723766ea5c8"
+      "bytes": 155613,
+      "sha256": "c136274b03e9cb41eb36fd02b9206bbaf7aaefb5a3fd70a585d960a42e5af1f2"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 888,
-      "sha256": "b74ea409b60aafb19a7b9d6f6372978825e924e3f7acdb3aa710446b138b8472"
+      "bytes": 1148,
+      "sha256": "933318e33059e418da957703fae8cac918df599ac7babda69488330973a8b95a"
     },
     {
       "path": "wasm/ort-wasm-simd-threaded.mjs",
@@ -48,5 +49,7 @@
       "sha256": "b777cd107a91d2bcc6a1ea46f2c26a662a7407394fe84589198aeaa83dd7a9d6"
     }
   ],
-  "totalBytes": 49488574
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-10T17:33:04.577Z",
+  "totalBytes": 49490249
 }

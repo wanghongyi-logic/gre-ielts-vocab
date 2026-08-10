@@ -1,9 +1,20 @@
-const BUILD = "101";
+const BUILD = "102";
 const CACHE_PREFIX = "vocab-studio-";
 const CACHE = `vocab-studio-v${BUILD}-incremental`;
-const NEURAL_VOICE_CACHE = "vocab-neural-voice-piper-ljspeech-int8-v1";
+const NEURAL_VOICE_PROFILES = Object.freeze({
+  standard: Object.freeze({
+    cache: "vocab-neural-voice-piper-ljspeech-int8-v1",
+    manifest: "./tts/voice-pack-manifest.json",
+  }),
+  hd: Object.freeze({
+    cache: "vocab-neural-voice-piper-ljspeech-high-int8-v1",
+    manifest: "./tts/voice-pack-hd-manifest.json",
+  }),
+});
+const NEURAL_VOICE_CACHE = NEURAL_VOICE_PROFILES.standard.cache;
+const NEURAL_VOICE_HD_CACHE = NEURAL_VOICE_PROFILES.hd.cache;
 const NEURAL_AUDIO_CACHE = "vocab-neural-audio-piper-ljspeech-medium-int8-pcm-v1";
-const NEURAL_VOICE_MANIFEST = "./tts/voice-pack-manifest.json";
+const NEURAL_AUDIO_HD_CACHE = "vocab-neural-audio-piper-ljspeech-high-int8-pcm-v1";
 const READY_MARKER = `./__offline-ready__?build=${BUILD}`;
 const FETCH_ATTEMPTS = 2;
 const CACHE_WORKERS = 3;
@@ -11,11 +22,11 @@ const ASSET_MANIFEST_URL = `./asset-manifest.json?v=${BUILD}`;
 const STATIC_ASSETS = [
   { url: "./index.html", weight: 24_000, reload: true },
   { url: "./styles.css?v=77", weight: 38_000 },
-  { url: "./theme-v2.css?v=97", weight: 112_000 },
+  { url: "./theme-v2.css?v=102", weight: 116_000 },
   { url: "./learning-test-v4.css?v=77", weight: 34_000 },
   { url: "./ielts-preview.css?v=77", weight: 10_000 },
   { url: "./review-integration.css?v=77", weight: 26_000 },
-  { url: "./mobile-v2.css?v=97", weight: 116_000 },
+  { url: "./mobile-v2.css?v=102", weight: 120_000 },
   { url: "./review-v3.css?v=101", weight: 82_000 },
   { url: "./listening-review.css?v=101", weight: 33_000 },
   { url: ASSET_MANIFEST_URL, weight: 8_000 },
@@ -29,7 +40,7 @@ const STATIC_ASSETS = [
 ];
 let cacheJob = null;
 let coreAssetsPromise = null;
-let neuralVoiceCacheJob = null;
+const neuralVoiceCacheJobs = new Map();
 const previousManifestPromises = new Map();
 
 function cacheKeyRequest(asset) {
@@ -247,14 +258,24 @@ function ensureCacheJob() {
   return cacheJob;
 }
 
-async function cacheNeuralVoicePack() {
-  const cache = await caches.open(NEURAL_VOICE_CACHE);
-  const manifestRequest = new Request(NEURAL_VOICE_MANIFEST, {
+function neuralVoiceProfile(profileId) {
+  return NEURAL_VOICE_PROFILES[profileId] || NEURAL_VOICE_PROFILES.standard;
+}
+
+async function notifyNeuralVoice(type, profileId, detail = {}) {
+  const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
+  for (const client of clients) client.postMessage({ type, profileId, ...detail });
+}
+
+async function cacheNeuralVoicePack(profileId = "standard") {
+  const profile = neuralVoiceProfile(profileId);
+  const cache = await caches.open(profile.cache);
+  const manifestRequest = new Request(profile.manifest, {
     credentials: "same-origin",
   });
   let manifestResponse = await cache.match(manifestRequest);
   if (!manifestResponse) {
-    manifestResponse = await fetch(new Request(NEURAL_VOICE_MANIFEST, {
+    manifestResponse = await fetch(new Request(profile.manifest, {
       cache: "reload",
       credentials: "same-origin",
     }));
@@ -266,6 +287,26 @@ async function cacheNeuralVoicePack() {
     throw new Error("Invalid neural voice manifest");
   }
 
+  const totalBytes = manifest.assets.reduce(
+    (total, asset) => total + Math.max(1, Number(asset?.bytes) || 1),
+    0,
+  );
+  let bytesDone = 0;
+  let completed = 0;
+  let lastPercent = -1;
+  const report = async (force = false) => {
+    const percent = Math.min(100, Math.round((bytesDone / totalBytes) * 100));
+    if (!force && percent === lastPercent) return;
+    lastPercent = percent;
+    await notifyNeuralVoice("NEURAL_VOICE_PROGRESS", profileId, {
+      percent,
+      completed,
+      total: manifest.assets.length,
+      bytesDone,
+      totalBytes,
+    });
+  };
+
   let cursor = 0;
   const cacheNext = async () => {
     while (cursor < manifest.assets.length) {
@@ -274,22 +315,72 @@ async function cacheNeuralVoicePack() {
       const path = String(asset?.path || "").replace(/^\.?\//, "");
       if (!path || path.includes("..")) continue;
       const request = new Request(`./tts/${path}`, { credentials: "same-origin" });
-      if (await cache.match(request)) continue;
+      if (await cache.match(request)) {
+        bytesDone += Math.max(1, Number(asset?.bytes) || 1);
+        completed += 1;
+        await report();
+        continue;
+      }
       const response = await fetch(new Request(request, { cache: "force-cache" }));
       if (!response.ok) throw new Error(`Voice asset HTTP ${response.status}: ${path}`);
-      await cache.put(request, response);
+      const expectedBytes = Math.max(1, Number(asset?.bytes) || 1);
+      const reader = response.body?.getReader();
+      if (!reader) {
+        await cache.put(request, response);
+        bytesDone += expectedBytes;
+      } else {
+        let received = 0;
+        const headers = new Headers(response.headers);
+        const monitoredStream = new ReadableStream({
+          async pull(controller) {
+            const { done, value } = await reader.read();
+            if (done) {
+              controller.close();
+              return;
+            }
+            received += value.byteLength;
+            bytesDone += value.byteLength;
+            controller.enqueue(value);
+            await report();
+          },
+          cancel(reason) {
+            return reader.cancel(reason);
+          },
+        });
+        await cache.put(request, new Response(monitoredStream, {
+          status: response.status,
+          statusText: response.statusText,
+          headers,
+        }));
+        if (received < expectedBytes) bytesDone += expectedBytes - received;
+      }
+      completed += 1;
+      await report();
     }
   };
+  await report(true);
   await Promise.all([cacheNext(), cacheNext()]);
+  bytesDone = totalBytes;
+  completed = manifest.assets.length;
+  await report(true);
+  await notifyNeuralVoice("NEURAL_VOICE_READY", profileId, {
+    percent: 100,
+    completed,
+    total: manifest.assets.length,
+    totalBytes,
+    version: String(manifest.version || ""),
+  });
 }
 
-function ensureNeuralVoiceCacheJob() {
-  if (!neuralVoiceCacheJob) {
-    neuralVoiceCacheJob = cacheNeuralVoicePack().finally(() => {
-      neuralVoiceCacheJob = null;
+function ensureNeuralVoiceCacheJob(profileId = "standard") {
+  const normalizedProfileId = profileId === "hd" ? "hd" : "standard";
+  if (!neuralVoiceCacheJobs.has(normalizedProfileId)) {
+    const job = cacheNeuralVoicePack(normalizedProfileId).finally(() => {
+      neuralVoiceCacheJobs.delete(normalizedProfileId);
     });
+    neuralVoiceCacheJobs.set(normalizedProfileId, job);
   }
-  return neuralVoiceCacheJob;
+  return neuralVoiceCacheJobs.get(normalizedProfileId);
 }
 
 async function isWholeAppCached(cache, coreAssets = null) {
@@ -338,8 +429,12 @@ self.addEventListener("activate", (event) => {
         await Promise.all(
           keys
             .filter((key) => (
-              (key.startsWith("vocab-neural-voice-") && key !== NEURAL_VOICE_CACHE)
-              || (key.startsWith("vocab-neural-audio-") && key !== NEURAL_AUDIO_CACHE)
+              (key.startsWith("vocab-neural-voice-")
+                && key !== NEURAL_VOICE_CACHE
+                && key !== NEURAL_VOICE_HD_CACHE)
+              || (key.startsWith("vocab-neural-audio-")
+                && key !== NEURAL_AUDIO_CACHE
+                && key !== NEURAL_AUDIO_HD_CACHE)
               || key === "kitten-tts"
             ))
             .map((key) => caches.delete(key)),
@@ -365,7 +460,19 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("message", (event) => {
   if (event.data?.type === "SKIP_WAITING") self.skipWaiting();
   if (event.data?.type === "PRELOAD_NEURAL_VOICE") {
-    event.waitUntil(ensureNeuralVoiceCacheJob().catch(() => undefined));
+    event.waitUntil(ensureNeuralVoiceCacheJob("standard").catch(async (error) => {
+      await notifyNeuralVoice("NEURAL_VOICE_ERROR", "standard", {
+        message: error?.message || "语音包下载失败",
+      });
+    }));
+  }
+  if (event.data?.type === "PRELOAD_NEURAL_VOICE_PROFILE") {
+    const profileId = event.data?.profileId === "hd" ? "hd" : "standard";
+    event.waitUntil(ensureNeuralVoiceCacheJob(profileId).catch(async (error) => {
+      await notifyNeuralVoice("NEURAL_VOICE_ERROR", profileId, {
+        message: error?.message || "语音包下载失败",
+      });
+    }));
   }
   if (event.data?.type === "GET_CACHE_STATUS") {
     event.waitUntil(
@@ -403,8 +510,10 @@ self.addEventListener("fetch", (event) => {
   if (url.origin !== self.location.origin) return;
 
   if (url.pathname.includes("/tts/")) {
+    const useHdCache = url.pathname.includes("/ljspeech/high/")
+      || url.pathname.endsWith("/voice-pack-hd-manifest.json");
     event.respondWith(
-      caches.open(NEURAL_VOICE_CACHE).then(async (cache) => {
+      caches.open(useHdCache ? NEURAL_VOICE_HD_CACHE : NEURAL_VOICE_CACHE).then(async (cache) => {
         const cached = await cache.match(request);
         if (cached) return cached;
         const response = await fetch(request);
