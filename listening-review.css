@@ -20,13 +20,6 @@ body[data-corpus="listening"] .header-search {
   pointer-events: none;
 }
 
-body[data-corpus="listening"] .review-corpus-switch,
-.review-corpus-switch:has([data-corpus="listening"]) {
-  grid-template-columns: repeat(3, minmax(68px, 1fr));
-  width: auto;
-  min-width: 228px;
-}
-
 body[data-corpus="listening"][data-route="review"] {
   height: 100dvh;
   overflow: hidden;
@@ -37,14 +30,6 @@ body[data-corpus="listening"][data-route="review"] .app-layout {
   height: 100dvh;
 }
 
-body[data-corpus="listening"][data-route="review"] main,
-body[data-corpus="listening"][data-route="review"] #app {
-  min-width: 0;
-  min-height: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
 .listening-workspace {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
@@ -53,6 +38,14 @@ body[data-corpus="listening"][data-route="review"] #app {
   height: 100%;
   min-height: 0;
   color: var(--listening-ink);
+}
+
+/* Listening is a third review module, not a separate application shell. */
+.review-plan-workspace.listening-workspace {
+  grid-template-rows: auto minmax(0, 1fr);
+  width: min(100%, 920px);
+  margin-inline: auto;
+  color: var(--review-plan-ink, var(--listening-ink));
 }
 
 .listening-workspace button,
@@ -372,6 +365,19 @@ body[data-corpus="listening"][data-route="review"] #app {
 .listening-feedback.is-wrong > span { background: var(--listening-danger); }
 .listening-feedback strong { display: block; color: #23304b; font-size: 13px; }
 .listening-feedback p { margin: 4px 0 0; color: #68728a; font-size: 11px; line-height: 1.5; }
+.listening-feedback-meaning {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px;
+  align-items: baseline;
+}
+.listening-feedback-meaning b {
+  color: #3e4a66;
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.listening-feedback-meaning span { color: #303b55; }
 
 .listening-action-bar {
   display: flex;
@@ -709,6 +715,7 @@ body[data-corpus="listening"][data-route="review"] #app {
 .listening-plan-actions {
   flex: 0 0 auto;
 }
+.listening-plan-actions > div:only-child { margin-left: auto; }
 
 .listening-plan-actions button:focus-visible,
 .listening-plan-option:focus-visible,
@@ -971,7 +978,6 @@ body[data-corpus="listening"][data-route="review"] #app {
     gap: 10px;
     overflow-y: auto;
   }
-  body[data-corpus="listening"][data-route="review"] main { padding: 12px 0; }
 }
 
 @media (max-width: 959px) {
@@ -981,23 +987,6 @@ body[data-corpus="listening"][data-route="review"] #app {
   }
 
   body[data-corpus="listening"] .header-search { display: none; }
-  body[data-corpus="listening"][data-route="review"] main,
-  body.mobile-immersive[data-corpus="listening"][data-route="review"] main {
-    height: 100dvh;
-    padding: max(8px, env(safe-area-inset-top)) 10px max(8px, env(safe-area-inset-bottom));
-  }
-  body[data-corpus="listening"] .review-corpus-switch,
-  .review-corpus-switch:has([data-corpus="listening"]) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    width: 178px;
-    min-width: 0;
-  }
-  body[data-corpus="listening"] .review-corpus-switch button,
-  .review-corpus-switch:has([data-corpus="listening"]) button {
-    min-height: 34px;
-    padding: 6px 5px;
-    font-size: 11px;
-  }
   .listening-workspace { gap: 7px; }
   .listening-topbar { min-height: 44px; gap: 8px; padding: 0 2px; }
   .listening-topbar-copy h1 { font-size: 23px; }
@@ -1033,7 +1022,7 @@ body[data-corpus="listening"][data-route="review"] #app {
     position: absolute;
     z-index: 3;
     right: 12px;
-    bottom: calc(12px + env(safe-area-inset-bottom));
+    bottom: 4px;
     left: 12px;
     min-height: 58px;
     padding: 7px;
@@ -1170,7 +1159,6 @@ body[data-corpus="listening"][data-route="review"] #app {
 }
 
 @media (max-width: 390px) {
-  body[data-corpus="listening"] .review-corpus-switch { width: 156px; }
   .listening-topbar-copy h1 { font-size: 20px; }
   .listening-question-scroll { padding-inline: 11px; }
   .listening-question-intro h2 { font-size: 20px; }

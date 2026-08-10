@@ -1,7 +1,7 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "generatedAt": "2026-08-10T15:30:46.423Z",
+  "generatedAt": "2026-08-10T16:31:47.226Z",
   "build": {
     "tool": "esbuild",
     "version": "0.28.1",
@@ -13,8 +13,8 @@
   "entries": {
     "runtime": {
       "path": "app.js",
-      "bytes": 436470,
-      "gzipBytes": 141341,
+      "bytes": 436632,
+      "gzipBytes": 141344,
       "assets": [
         "app.js",
         "chunks/chunk-7Q67UCJS.js",
@@ -79,8 +79,8 @@
     },
     "listeningFeature": {
       "path": "listening-feature.js",
-      "bytes": 45640,
-      "gzipBytes": 13337,
+      "bytes": 55357,
+      "gzipBytes": 18142,
       "assets": [
         "chunks/chunk-7Q67UCJS.js",
         "chunks/chunk-AVKBJJZB.js",
@@ -156,9 +156,9 @@
   "assets": [
     {
       "path": "app.js",
-      "bytes": 436470,
-      "gzipBytes": 141341,
-      "sha256": "4755018cd513f7935d497d4920e352da20a1ac69e01927c1611b21b2388a9b8f",
+      "bytes": 436632,
+      "gzipBytes": 141344,
+      "sha256": "ecddb2d26755e1f1bf54d6caeac8bbba7a948ac68e7919910ce7c43be0b430c2",
       "entryPoint": "app.js",
       "imports": [
         "content.js",
@@ -367,9 +367,9 @@
     },
     {
       "path": "listening-feature.js",
-      "bytes": 45640,
-      "gzipBytes": 13337,
-      "sha256": "b0069484f8562c5c0de516e67ab539044a0b03b1939c528fc855f7a9f39bce5a",
+      "bytes": 55357,
+      "gzipBytes": 18142,
+      "sha256": "6af8cf154d412782262dbb938f97a3b86d9b275e9d0e601d6f001adfb928ee83",
       "entryPoint": "listening-feature.js",
       "imports": [
         "chunks/chunk-O3DA37S2.js",
@@ -383,8 +383,8 @@
     }
   ],
   "totals": {
-    "bytes": 11579911,
-    "gzipBytes": 4469475
+    "bytes": 11589790,
+    "gzipBytes": 4474283
   },
   "validation": {
     "syntaxChecked": true,

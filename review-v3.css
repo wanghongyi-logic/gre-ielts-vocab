@@ -63,9 +63,9 @@
 
 .review-corpus-switch {
   display: grid;
-  grid-template-columns: repeat(2, minmax(82px, 1fr));
+  grid-template-columns: repeat(3, minmax(60px, 1fr));
   gap: 4px;
-  min-width: 190px;
+  min-width: 228px;
   padding: 4px;
   border: 1px solid #e1e4ee;
   border-radius: 13px;
@@ -2329,8 +2329,8 @@ button.review-stat-card:disabled {
 }
 
 .review-plan-workspace .review-corpus-switch {
-  grid-template-columns: repeat(2, minmax(72px, 1fr));
-  width: 168px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 228px;
   min-width: 0;
   padding: 4px;
   border: 1px solid #dfe2ec;
@@ -3197,7 +3197,7 @@ button.review-stat-card:disabled {
   }
 
   .review-plan-workspace .review-launch-header {
-    grid-template-columns: minmax(0, 1fr) 128px;
+    grid-template-columns: minmax(0, 1fr) 178px;
     min-height: 76px;
     gap: 12px;
     padding: 0 2px;
@@ -3218,15 +3218,15 @@ button.review-stat-card:disabled {
   }
 
   .review-plan-workspace .review-corpus-switch {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 128px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 178px;
     min-height: 40px;
   }
 
   .review-plan-workspace .review-corpus-switch button {
     min-height: 34px;
     padding: 6px 5px;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .review-plan-card {
@@ -4391,6 +4391,16 @@ button.review-stat-card:disabled {
   .review-plan-stats-v4 > article > span,
   .review-plan-stats-v4 > button > span {
     display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .review-plan-workspace .review-launch-header {
+    grid-template-columns: minmax(0, 1fr) 156px;
+  }
+
+  .review-plan-workspace .review-corpus-switch {
+    width: 156px;
   }
 }
 
