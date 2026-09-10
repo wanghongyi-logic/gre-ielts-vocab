@@ -3,29 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#5b5be6" />
+    <meta name="theme-color" content="#f3f6fa" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="词汇精学" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="description" content="再要你命3000全库3071词与雅思必背词538内容精学：多重记忆、近义和形近辨析、双语例句、复习清单、五词故事与随机加权测试。" />
-    <link rel="manifest" href="./manifest.webmanifest?v=77" />
+    <link rel="manifest" href="./manifest.webmanifest?v=105" />
     <link rel="icon" href="./icon-192-v2.png" type="image/png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-v2.png" />
     <link rel="apple-touch-startup-image" href="./apple-launch-1179x2556.png" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)" />
     <link rel="apple-touch-startup-image" href="./apple-launch-1206x2622.png" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3)" />
     <link rel="apple-touch-startup-image" href="./apple-launch-1320x2868.png" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3)" />
     <style>
-      html, body { min-height: 100%; background: #f5f7fb; }
-      html.app-booting:not(.app-returning) body { margin: 0; overflow: hidden; background: #0d123d; }
+      html, body { min-height: 100%; background: #f3f6fa; }
+      html.app-booting:not(.app-returning) body { margin: 0; overflow: hidden; background: #f3f6fa; }
       html.app-booting:not(.app-returning) body > :not(.app-boot-screen) { visibility: hidden !important; }
-      .app-boot-screen { position: fixed; z-index: 9999; inset: 0; display: grid; place-content: center; gap: 18px; padding: 24px; background: radial-gradient(circle at 50% 36%, #243f92 0, #141e61 40%, #0b1038 100%); color: #f8f7f2; text-align: center; transition: opacity .22s ease, visibility .22s ease; }
-      .app-boot-mark { display: grid; width: 72px; height: 72px; margin: 0 auto; place-items: center; overflow: hidden; border: 1px solid rgba(146, 194, 255, .34); border-radius: 21px; background: linear-gradient(145deg, #253ec7, #11194c 72%); box-shadow: 0 18px 42px rgba(29, 47, 137, .3); }
-      .app-boot-mark svg { display: block; width: 52px; height: 52px; filter: drop-shadow(0 5px 9px rgba(0,0,0,.2)); }
+      .app-boot-screen { position: fixed; z-index: 9999; inset: 0; display: grid; place-content: center; gap: 18px; padding: 24px; background: #f3f6fa; color: #0b1938; text-align: center; transition: opacity .22s ease, visibility .22s ease; }
+      .app-boot-mark { display: grid; width: 72px; height: 72px; margin: 0 auto; place-items: center; overflow: hidden; border: 1px solid #dde4ee; border-radius: 20px; background: #fff; box-shadow: 0 18px 48px rgba(15,31,62,.12); }
+      .app-boot-mark svg { display: block; width: 52px; height: 52px; }
       .app-boot-screen strong { font: 750 18px/1.2 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
-      .app-boot-status { color: #aebce8; font: 500 12px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
-      .app-boot-progress { width: min(280px, 70vw); height: 6px; margin: -5px auto 0; overflow: hidden; border-radius: 999px; background: rgba(172,190,244,.2); box-shadow: inset 0 1px 2px rgba(0,0,0,.12); }
-      .app-boot-progress > span { display: block; width: 3%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #68d2ff, #9ce7ff); box-shadow: 0 0 15px rgba(116,215,255,.45); transition: width .18s ease; }
+      .app-boot-status { color: #687590; font: 500 12px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
+      .app-boot-progress { width: min(280px, 70vw); height: 5px; margin: -5px auto 0; overflow: hidden; border-radius: 999px; background: #dde4ee; }
+      .app-boot-progress > span { display: block; width: 3%; height: 100%; border-radius: inherit; background: #ff5a1f; transition: width .18s ease; }
       html.app-booting:not(.offline-cache-active) .app-boot-progress > span { width: 34%; animation: boot-progress-scan 1.15s ease-in-out infinite; }
       @keyframes boot-progress-scan { from { transform: translateX(-110%); } to { transform: translateX(330%); } }
       @media (prefers-reduced-motion: reduce) { html.app-booting:not(.offline-cache-active) .app-boot-progress > span { width: 18%; animation: none; } }
@@ -76,9 +76,27 @@
       } catch {}
     </script>
     <script>
+      // Never leave a successfully rendered route hidden behind the boot layer.
+      // The main module normally signals readiness on its first animation frame;
+      // this is a defensive path for slower Safari/PWA restores.
+      const releaseRenderedApp = (deadline = Date.now() + 30_000) => {
+        const appRoot = document.querySelector("#app");
+        if (!appRoot?.childElementCount) {
+          if (Date.now() < deadline) window.setTimeout(() => releaseRenderedApp(deadline), 250);
+          return;
+        }
+        document.documentElement.classList.remove("app-booting");
+        if (!window.__vocabReadySignaled) {
+          window.__vocabReadySignaled = true;
+          window.dispatchEvent(new CustomEvent("vocab-app-ready"));
+        }
+      };
+      window.setTimeout(releaseRenderedApp, 250);
+    </script>
+    <script>
       (() => {
         if (!("serviceWorker" in navigator) || location.protocol === "file:" || location.hostname === "app.local") return;
-        const build = "103";
+        const build = "105";
         const offlineReadyKey = `vocab-offline-ready-${build}`;
         const hadController = Boolean(navigator.serviceWorker.controller);
         let refreshing = false;
@@ -236,7 +254,7 @@
       })();
     </script>
     <link rel="stylesheet" href="./styles.css?v=77" />
-    <link rel="modulepreload" href="./app.js?v=103" />
+    <link rel="modulepreload" href="./app.js?v=105" />
     <link rel="stylesheet" href="./theme-v2.css?v=102" />
     <link rel="stylesheet" href="./learning-test-v4.css?v=77" />
     <link rel="stylesheet" href="./ielts-preview.css?v=77" />
@@ -244,11 +262,15 @@
     <link rel="stylesheet" href="./mobile-v2.css?v=102" />
     <link rel="stylesheet" href="./review-v3.css?v=101" />
     <link rel="stylesheet" href="./listening-review.css?v=101" />
+    <link rel="stylesheet" href="./ui-v4.css?v=105" />
+    <link rel="stylesheet" href="./ui-v4-story-history.css?v=105" />
+    <link rel="stylesheet" href="./ui-v4-review-listening.css?v=105" />
+    <link rel="stylesheet" href="./ui-v4-mobile-final.css?v=105" />
     <title>GRE & IELTS 词汇精学</title>
   </head>
-  <body>
+  <body class="ui-v4">
     <div class="app-boot-screen" role="status" aria-live="polite">
-      <span class="app-boot-mark" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M12 16.5c8.8-3.7 16.4-2.1 20 2.2v31.8c-4.2-4.6-11.3-6.4-20-2.2V16.5Z" fill="#F7E8C8"/><path d="M52 16.5c-8.8-3.7-16.4-2.1-20 2.2v31.8c4.2-4.6 11.3-6.4 20-2.2V16.5Z" fill="#FFF4D8"/><path d="M18 25.5c4.8-1.3 8.1-.4 10 1.8M18 33c4.8-1.3 8.1-.4 10 1.8M46 25.5c-4.8-1.3-8.1-.4-10 1.8M46 33c-4.8-1.3-8.1-.4-10 1.8" stroke="#385CE8" stroke-width="2.8" stroke-linecap="round"/><path d="M9 51c9.6-4.4 17.2-2.7 23 2 5.8-4.7 13.4-6.4 23-2" stroke="#75D8FF" stroke-width="3.2" stroke-linecap="round"/></svg></span>
+      <span class="app-boot-mark" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M12 16.5c8.8-3.7 16.4-2.1 20 2.2v31.8c-4.2-4.6-11.3-6.4-20-2.2V16.5Z" fill="#FFF2EC"/><path d="M52 16.5c-8.8-3.7-16.4-2.1-20 2.2v31.8c4.2-4.6 11.3-6.4 20-2.2V16.5Z" fill="#EDF4FF"/><path d="M18 25.5c4.8-1.3 8.1-.4 10 1.8M18 33c4.8-1.3 8.1-.4 10 1.8M46 25.5c-4.8-1.3-8.1-.4-10 1.8M46 33c-4.8-1.3-8.1-.4-10 1.8" stroke="#FF5A1F" stroke-width="2.8" stroke-linecap="round"/><path d="M9 51c9.6-4.4 17.2-2.7 23 2 5.8-4.7 13.4-6.4 23-2" stroke="#2563EB" stroke-width="3.2" stroke-linecap="round"/></svg></span>
       <strong>正在准备离线词库</strong>
       <span class="app-boot-progress" role="progressbar" aria-label="离线资源准备进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="3"><span></span></span>
       <span class="app-boot-status">正在载入应用；随后会在后台完成离线缓存</span>
@@ -366,6 +388,6 @@
         } catch {}
       })();
     </script>
-    <script type="module" src="./app.js?v=103"></script>
+    <script type="module" src="./app.js?v=105"></script>
   </body>
 </html>

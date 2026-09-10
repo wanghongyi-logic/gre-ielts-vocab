@@ -1,0 +1,824 @@
+/* UI v4 — final mobile consolidation
+   Loaded after every legacy and v4 surface stylesheet.
+   Scope: phone/tablet only; preserve desktop composition and app logic. */
+
+@media (max-width: 959px) {
+  /* -----------------------------------------------------------------------
+     One viewport, one scroll owner
+     -------------------------------------------------------------------- */
+
+  body.ui-v4:is(
+    [data-route="learn"],
+    [data-route="library"],
+    [data-route="review"],
+    [data-route="story"],
+    [data-route="home"]
+  ) {
+    position: fixed;
+    inset: 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    height: 100dvh;
+    min-height: 0;
+    overflow: hidden !important;
+    overscroll-behavior: none;
+  }
+
+  body.ui-v4:is(
+    [data-route="learn"],
+    [data-route="library"],
+    [data-route="review"],
+    [data-route="story"],
+    [data-route="home"]
+  ) :is(.app-layout, main, #app, #app > .view) {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  body.ui-v4:is(
+    [data-route="learn"],
+    [data-route="library"],
+    [data-route="review"],
+    [data-route="story"],
+    [data-route="home"]
+  ) .app-layout {
+    display: block;
+    width: 100%;
+    height: 100dvh;
+    padding-top: 0;
+    overflow: hidden;
+  }
+
+  body.ui-v4:not(.mobile-immersive):is(
+    [data-route="learn"],
+    [data-route="library"],
+    [data-route="review"],
+    [data-route="story"],
+    [data-route="home"]
+  ) .app-layout {
+    padding-top: var(--v4-header, 58px);
+  }
+
+  body.ui-v4:is(
+    [data-route="learn"],
+    [data-route="library"],
+    [data-route="review"],
+    [data-route="story"],
+    [data-route="home"]
+  ) main {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: max(8px, calc(env(safe-area-inset-top) + 5px)) !important;
+    overflow: hidden !important;
+  }
+
+  body.ui-v4:not(.mobile-immersive):is(
+    [data-route="learn"],
+    [data-route="library"],
+    [data-route="review"],
+    [data-route="story"],
+    [data-route="home"]
+  ) main {
+    padding-top: 8px !important;
+  }
+
+  body.ui-v4.mobile-immersive:is(
+    [data-route="learn"],
+    [data-route="library"],
+    [data-route="review"],
+    [data-route="story"],
+    [data-route="home"]
+  ) main {
+    height: 100dvh;
+  }
+
+  body.ui-v4:is(
+    [data-route="learn"],
+    [data-route="library"],
+    [data-route="review"],
+    [data-route="story"],
+    [data-route="home"]
+  ) :is(img, svg, video, canvas, table) {
+    max-width: 100%;
+  }
+
+  /* Keep every deliberate tap surface large enough for a thumb. */
+  body.ui-v4:is(
+    [data-route="learn"],
+    [data-route="library"],
+    [data-route="review"],
+    [data-route="story"],
+    [data-route="home"]
+  ) :is(button, select, input:not([type="checkbox"]):not([type="radio"]), textarea, a[role="button"], [role="button"]) {
+    min-block-size: 44px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Drawer is independently scrollable and never extends beyond the screen. */
+  body.ui-v4 .mobile-learning-drawer {
+    box-sizing: border-box;
+    max-width: calc(100vw - 18px);
+    max-height: calc(100dvh - 18px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body.ui-v4 .mobile-learning-drawer > header > button,
+  body.ui-v4 .mobile-learning-search > button {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+  }
+
+  body.ui-v4 .mobile-learning-drawer :is(
+    header small,
+    .mobile-learning-content-heading small,
+    footer small,
+    .learning-order-copy small
+  ) {
+    font-size: 11px !important;
+    line-height: 1.35;
+  }
+
+  body.ui-v4 .mobile-learning-drawer :is(
+    .mobile-learning-app-links button,
+    .mobile-learning-content-links button,
+    .learning-order-segments button,
+    footer button
+  ) {
+    min-height: 48px;
+  }
+
+  /* -----------------------------------------------------------------------
+     Learning — fixed headword card, one internal content scroller
+     -------------------------------------------------------------------- */
+
+  body.ui-v4[data-route="learn"] main {
+    padding-right: 10px !important;
+    padding-bottom: calc(94px + env(safe-area-inset-bottom)) !important;
+    padding-left: 10px !important;
+  }
+
+  body.ui-v4[data-route="learn"] .word-page,
+  body.ui-v4[data-route="learn"] .word-page.is-detail-view {
+    display: grid !important;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 9px;
+    overflow: hidden !important;
+  }
+
+  body.ui-v4[data-route="learn"] .word-page > .word-hero,
+  body.ui-v4[data-route="learn"] .word-page.is-detail-view > .word-hero {
+    position: relative !important;
+    top: auto !important;
+    width: 100%;
+    min-width: 0;
+    margin: 0 !important;
+    flex: none;
+    transform: none !important;
+  }
+
+  body.ui-v4[data-route="learn"] .word-line {
+    min-width: 0;
+    align-items: center;
+  }
+
+  body.ui-v4[data-route="learn"] .word-title {
+    min-width: 0;
+    overflow: visible;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    line-height: 1.08;
+  }
+
+  body.ui-v4[data-route="learn"] .word-line :is(.speak-button, .mobile-word-favorite) {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+  }
+
+  body.ui-v4[data-route="learn"] .pronunciation {
+    font-size: 12px !important;
+    line-height: 1.45;
+  }
+
+  body.ui-v4[data-route="learn"] .word-status-line {
+    font-size: 11px !important;
+    line-height: 1.4;
+  }
+
+  body.ui-v4[data-route="learn"] .learning-panel-stack {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    padding-bottom: calc(34px + env(safe-area-inset-bottom));
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior-y: contain;
+    scroll-padding-bottom: calc(34px + env(safe-area-inset-bottom));
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body.ui-v4[data-route="learn"] :is(
+    .memory-workbench-heading p,
+    .memory-step > strong,
+    .memory-step > p,
+    .section-heading p,
+    .usage-sense p,
+    .relation-intro p,
+    .comparison-card > p,
+    .phrase-trigger small
+  ) {
+    font-size: 12px !important;
+  }
+
+  body.ui-v4[data-route="learn"] .memory-step > p {
+    line-height: 1.62;
+  }
+
+  body.ui-v4[data-route="learn"] .mobile-learning-dock {
+    right: max(12px, calc(env(safe-area-inset-right) + 10px));
+    bottom: max(11px, calc(env(safe-area-inset-bottom) + 9px));
+    left: max(12px, calc(env(safe-area-inset-left) + 10px));
+    min-height: 72px;
+    padding: 6px;
+    border-radius: 24px;
+  }
+
+  body.ui-v4:not(.mobile-immersive)[data-route="learn"] .mobile-learning-dock {
+    bottom: calc(70px + env(safe-area-inset-bottom));
+  }
+
+  body.ui-v4[data-route="learn"] .mobile-word-turn {
+    min-width: 44px;
+    min-height: 56px;
+  }
+
+  body.ui-v4[data-route="learn"] .mobile-dock-rating {
+    min-height: 56px;
+  }
+
+  body.ui-v4[data-route="learn"] .mobile-dock-rating strong {
+    font-size: 11px !important;
+    line-height: 1.1;
+  }
+
+  body.ui-v4[data-route="learn"] .mobile-dock-rating small {
+    font-size: 11px !important;
+    line-height: 1.12;
+  }
+
+  /* -----------------------------------------------------------------------
+     Library — fixed controls and one independently scrolling word list
+     -------------------------------------------------------------------- */
+
+  body.ui-v4[data-route="library"] main {
+    padding: max(8px, calc(env(safe-area-inset-top) + 5px)) 10px calc(10px + env(safe-area-inset-bottom)) !important;
+  }
+
+  body.ui-v4:not(.mobile-immersive)[data-route="library"] main {
+    padding-top: 8px !important;
+    padding-bottom: calc(74px + env(safe-area-inset-bottom)) !important;
+  }
+
+  body.ui-v4[data-route="library"] .library-workspace {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden !important;
+  }
+
+  body.ui-v4[data-route="library"] .library-toolbar {
+    min-width: 0;
+  }
+
+  body.ui-v4[data-route="library"] :is(
+    .library-meaning-toggle,
+    .library-toolbar .result-count,
+    .library-results-region > .list-pagination button,
+    .mobile-vocab-meta em,
+    .mobile-vocab-meta small,
+    .mobile-vocab-card-main > .mastery-pill
+  ) {
+    font-size: 11px !important;
+  }
+
+  body.ui-v4[data-route="library"] .library-meaning-toggle,
+  body.ui-v4[data-route="library"] .library-results-region > .list-pagination button,
+  body.ui-v4[data-route="library"] .mobile-vocab-meaning {
+    min-height: 44px;
+  }
+
+  body.ui-v4[data-route="library"] .mobile-vocab-list {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body.ui-v4[data-route="library"] .mobile-vocab-card,
+  body.ui-v4[data-route="library"] .mobile-vocab-card-main,
+  body.ui-v4[data-route="library"] .mobile-vocab-copy,
+  body.ui-v4[data-route="library"] .mobile-vocab-meta,
+  body.ui-v4[data-route="library"] .mobile-vocab-meaning {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  body.ui-v4[data-route="library"] .mobile-vocab-meta small {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  body.ui-v4[data-route="library"] .mobile-vocab-favorite {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+  }
+
+  /* -----------------------------------------------------------------------
+     Stories — no dead top space; prose/path live in the workspace scroller
+     -------------------------------------------------------------------- */
+
+  body.ui-v4[data-route="story"] main {
+    padding: max(8px, calc(env(safe-area-inset-top) + 5px)) 8px 0 !important;
+  }
+
+  body.ui-v4:not(.mobile-immersive)[data-route="story"] main {
+    padding-top: 8px !important;
+    padding-bottom: calc(70px + env(safe-area-inset-bottom)) !important;
+  }
+
+  body.ui-v4[data-route="story"] .story-workspace {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding-bottom: calc(104px + env(safe-area-inset-bottom));
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body.ui-v4[data-route="story"] .story-workspace > .workspace-header {
+    min-width: 0;
+    padding-top: 0;
+  }
+
+  body.ui-v4[data-route="story"] :is(
+    .story-workspace > .workspace-header .workspace-note,
+    .story-tools .button,
+    .page-actions .button,
+    .story-chain button > small,
+    .ielts-story-chain button > small,
+    .ielts-path-role
+  ) {
+    font-size: 12px !important;
+  }
+
+  body.ui-v4[data-route="story"] :is(.story-chain button, .ielts-story-chain button) {
+    min-width: 0;
+    min-height: 72px;
+  }
+
+  body.ui-v4[data-route="story"] .story-workspace > .page-actions {
+    margin-top: 18px;
+    padding-bottom: 4px;
+  }
+
+  /* -----------------------------------------------------------------------
+     Records — one clear scroller and readable compact data
+     -------------------------------------------------------------------- */
+
+  body.ui-v4[data-route="home"] main {
+    padding: max(8px, calc(env(safe-area-inset-top) + 5px)) 8px 0 !important;
+  }
+
+  body.ui-v4:not(.mobile-immersive)[data-route="home"] main {
+    padding-top: 8px !important;
+    padding-bottom: calc(70px + env(safe-area-inset-bottom)) !important;
+  }
+
+  body.ui-v4[data-route="home"] .history-workspace {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding-bottom: calc(108px + env(safe-area-inset-bottom));
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body.ui-v4[data-route="home"] .history-corpus-tabs button {
+    min-height: 44px;
+    font-size: 12px !important;
+  }
+
+  body.ui-v4[data-route="home"] .history-metrics article {
+    min-height: 86px;
+  }
+
+  body.ui-v4[data-route="home"] .history-metrics article > span,
+  body.ui-v4[data-route="home"] .history-metrics article > small {
+    overflow: visible;
+    font-size: 11px !important;
+    line-height: 1.25;
+    text-overflow: clip;
+    white-space: normal;
+  }
+
+  body.ui-v4[data-route="home"] .history-trend button {
+    min-height: 54px;
+    height: auto;
+  }
+
+  body.ui-v4[data-route="home"] .history-trend button > :is(strong, small),
+  body.ui-v4[data-route="home"] .history-more-link,
+  body.ui-v4[data-route="home"] .history-day-heading p,
+  body.ui-v4[data-route="home"] .history-review-row .button,
+  body.ui-v4[data-route="home"] .history-word-meta :is(.mastery-pill, small),
+  body.ui-v4[data-route="home"] .history-voice-heading p,
+  body.ui-v4[data-route="home"] .voice-profile-option small,
+  body.ui-v4[data-route="home"] .voice-profile-status :is(strong, small),
+  body.ui-v4[data-route="home"] .history-sync-card p,
+  body.ui-v4[data-route="home"] .history-sync-card .button {
+    font-size: 11px !important;
+  }
+
+  body.ui-v4[data-route="home"] .history-word-copy small,
+  body.ui-v4[data-route="home"] .history-sync-card p {
+    font-size: 12px !important;
+  }
+
+  body.ui-v4[data-route="home"] .history-more-link,
+  body.ui-v4[data-route="home"] .history-review-row .button,
+  body.ui-v4[data-route="home"] .history-sync-card .button {
+    min-height: 44px;
+  }
+
+  body.ui-v4[data-route="home"] :is(
+    .history-word-row,
+    .history-word-copy,
+    .history-word-meta,
+    .history-day-heading,
+    .history-review-row,
+    .history-sync-card,
+    .history-voice-card
+  ) {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  /* -----------------------------------------------------------------------
+     Review + listening — locked page, internal content scroll, floating dock
+     -------------------------------------------------------------------- */
+
+  body.ui-v4[data-route="review"] main,
+  body.ui-v4.mobile-immersive[data-route="review"] main {
+    padding: max(8px, calc(env(safe-area-inset-top) + 5px)) 10px max(8px, calc(env(safe-area-inset-bottom) + 7px)) !important;
+  }
+
+  body.ui-v4:not(.mobile-immersive)[data-route="review"] main {
+    padding-top: 8px !important;
+    padding-bottom: calc(72px + env(safe-area-inset-bottom)) !important;
+  }
+
+  body.ui-v4[data-route="review"] :is(
+    .review-launch-workspace,
+    .review-question-workspace,
+    .review-result-workspace,
+    .listening-workspace
+  ) {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  body.ui-v4[data-route="review"] .review-launch-header {
+    min-width: 0;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  body.ui-v4[data-route="review"] .review-corpus-switch button {
+    min-height: 44px;
+    font-size: 12px !important;
+  }
+
+  body.ui-v4[data-route="review"] :is(
+    .review-plan-v4-heading p,
+    .review-plan-definition dt,
+    .review-plan-definition dd,
+    .review-plan-progress-copy strong,
+    .review-paused-round p,
+    .review-ready-round p,
+    .review-plan-stats-v4 small,
+    .review-text-action,
+    .review-phase-label,
+    .programmatic-question-body .question-type,
+    .programmatic-question-hint,
+    .programmatic-question-body .spelling-answer label,
+    .programmatic-feedback > header small,
+    .programmatic-answer-detail p,
+    .programmatic-answer-detail blockquote small
+  ) {
+    font-size: 11px !important;
+  }
+
+  body.ui-v4[data-route="review"] :is(
+    .review-plan-definition dd,
+    .review-paused-round p,
+    .review-ready-round p,
+    .programmatic-question-hint,
+    .programmatic-answer-detail p,
+    .programmatic-answer-detail blockquote,
+    .programmatic-answer-detail blockquote small
+  ) {
+    line-height: 1.5;
+  }
+
+  body.ui-v4[data-route="review"] :is(
+    .review-plan-card,
+    .listening-plan-scroll,
+    .review-config-drawer-scroll
+  ) {
+    min-height: 0;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body.ui-v4[data-route="review"] .review-session-v3 .focused-quiz {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    grid-template-rows: auto minmax(0, 1fr);
+    overflow: hidden !important;
+  }
+
+  body.ui-v4[data-route="review"] .programmatic-question-body {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    grid-template-rows: minmax(0, 1fr) auto;
+    overflow: hidden !important;
+  }
+
+  body.ui-v4[data-route="review"] .programmatic-question-scroll {
+    min-height: 0;
+    padding-top: 17px;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body.ui-v4[data-route="review"] .programmatic-question-actions {
+    min-height: 68px;
+    margin: 0 10px max(10px, env(safe-area-inset-bottom));
+    padding: 6px;
+    border: 1px solid rgba(203, 213, 227, .92);
+    border-radius: 17px;
+    background: rgba(255, 255, 255, .94);
+    box-shadow: 0 12px 34px rgba(13, 28, 56, .14);
+    -webkit-backdrop-filter: blur(20px) saturate(145%);
+    backdrop-filter: blur(20px) saturate(145%);
+  }
+
+  body.ui-v4[data-route="review"] .programmatic-question-actions .button {
+    min-height: 48px;
+    font-size: 12px !important;
+  }
+
+  body.ui-v4[data-corpus="listening"][data-route="review"] .listening-stage {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    overflow: hidden !important;
+  }
+
+  body.ui-v4[data-corpus="listening"][data-route="review"] .listening-question-scroll {
+    min-height: 0;
+    padding-top: 16px;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body.ui-v4[data-corpus="listening"][data-route="review"] :is(
+    .listening-plan-intro .eyebrow,
+    .listening-plan-intro > p:last-child,
+    .listening-plan-section > p,
+    .listening-plan-option > small,
+    .listening-plan-option > b,
+    .listening-plan-preview span,
+    .listening-type-pill,
+    .listening-question-intro .eyebrow,
+    .listening-question-intro p,
+    .listening-form-card > header strong,
+    .listening-form-card > header span,
+    .listening-form-row > span
+  ) {
+    font-size: 11px !important;
+    line-height: 1.4;
+  }
+
+  body.ui-v4[data-corpus="listening"][data-route="review"] :is(
+    .listening-plan-chip-grid button,
+    .listening-plan-segments button,
+    .listening-plan-option,
+    .listening-submit-button
+  ) {
+    min-height: 44px;
+  }
+
+  body.ui-v4[data-corpus="listening"][data-route="review"] .listening-action-bar {
+    min-height: 68px;
+    margin: 0 10px max(10px, env(safe-area-inset-bottom));
+    padding: 6px;
+    border: 1px solid rgba(203, 213, 227, .92);
+    border-radius: 17px;
+    background: rgba(255, 255, 255, .94);
+    box-shadow: 0 12px 34px rgba(13, 28, 56, .14);
+    -webkit-backdrop-filter: blur(20px) saturate(145%);
+    backdrop-filter: blur(20px) saturate(145%);
+  }
+
+  body.ui-v4[data-corpus="listening"][data-route="review"] .listening-action-bar button {
+    min-height: 48px;
+    font-size: 12px !important;
+  }
+
+  body.ui-v4[data-route="review"] .review-config-drawer-head > button {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 420px) {
+  /* Narrow phones keep comfortable gutters without sacrificing the content. */
+  body.ui-v4[data-route="learn"] main,
+  body.ui-v4[data-route="library"] main,
+  body.ui-v4[data-route="review"] main {
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+  }
+
+  body.ui-v4[data-route="learn"] .word-page > .word-hero,
+  body.ui-v4[data-route="learn"] .word-page.is-detail-view > .word-hero {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+
+  body.ui-v4[data-route="learn"] .word-title {
+    font-size: var(--word-title-size, clamp(35px, 11.7vw, 51px));
+  }
+
+  body.ui-v4[data-route="learn"] .memory-step {
+    grid-template-columns: 27px minmax(74px, .31fr) minmax(0, 1fr);
+  }
+
+  body.ui-v4[data-route="learn"] .mobile-learning-dock {
+    right: max(11px, calc(env(safe-area-inset-right) + 9px));
+    left: max(11px, calc(env(safe-area-inset-left) + 9px));
+    grid-template-columns: 44px minmax(0, 1fr) 44px;
+  }
+
+  body.ui-v4[data-route="library"] .library-workspace {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  body.ui-v4[data-route="library"] .workspace-header h1 {
+    font-size: 25px;
+  }
+
+  body.ui-v4[data-route="library"] .mobile-vocab-card-main {
+    grid-template-columns: 34px minmax(0, 1fr) 14px;
+  }
+
+  body.ui-v4[data-route="story"] .story-workspace,
+  body.ui-v4[data-route="home"] .history-workspace {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  body.ui-v4[data-route="home"] .history-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.ui-v4[data-route="home"] .history-metrics article {
+    min-height: 78px;
+    border-bottom: 1px solid var(--v4-line, #dde4ed);
+  }
+
+  body.ui-v4[data-route="home"] .history-metrics article:nth-child(even) {
+    border-right: 0;
+  }
+
+  body.ui-v4[data-route="home"] .history-metrics article:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+
+  body.ui-v4[data-route="home"] .history-review-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+
+  body.ui-v4[data-route="review"] .review-launch-header {
+    grid-template-columns: minmax(0, 1fr) minmax(158px, 44vw);
+  }
+
+  body.ui-v4[data-route="review"] .review-launch-header h1 {
+    font-size: 22px;
+  }
+
+  body.ui-v4[data-route="review"] .review-plan-definition {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  body.ui-v4[data-route="review"] .review-plan-definition > div {
+    min-width: 0;
+  }
+
+  body.ui-v4[data-route="review"] .review-plan-definition dd {
+    overflow-wrap: anywhere;
+  }
+
+  body.ui-v4[data-route="review"] .programmatic-question-actions,
+  body.ui-v4[data-corpus="listening"][data-route="review"] .listening-action-bar {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  body.ui-v4[data-corpus="listening"][data-route="review"] .listening-action-bar {
+    gap: 5px;
+  }
+
+  body.ui-v4[data-corpus="listening"][data-route="review"] .listening-action-bar > div {
+    min-width: 0;
+    gap: 5px;
+  }
+
+  body.ui-v4[data-corpus="listening"][data-route="review"] .listening-action-bar button {
+    min-width: 0;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 359px) {
+  body.ui-v4[data-route="review"] .review-launch-header {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  body.ui-v4[data-route="review"] .review-corpus-switch {
+    width: 100%;
+  }
+
+  body.ui-v4[data-route="learn"] .mobile-dock-rating small {
+    display: none;
+  }
+
+  body.ui-v4[data-route="story"] .story-workspace > .workspace-header {
+    grid-template-columns: 1fr;
+  }
+
+  body.ui-v4[data-route="story"] .story-workspace > .workspace-header .workspace-note {
+    max-width: 100%;
+  }
+}
