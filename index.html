@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-title" content="词汇精学" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="description" content="再要你命3000全库3071词与雅思必背词538内容精学：多重记忆、近义和形近辨析、双语例句、复习清单、五词故事与随机加权测试。" />
-    <link rel="manifest" href="./manifest.webmanifest?v=106" />
+    <link rel="manifest" href="./manifest.webmanifest?v=107" />
     <link rel="icon" href="./icon-192-v2.png" type="image/png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-v2.png" />
     <link rel="apple-touch-startup-image" href="./apple-launch-1179x2556.png" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)" />
@@ -96,7 +96,7 @@
     <script>
       (() => {
         if (!("serviceWorker" in navigator) || location.protocol === "file:" || location.hostname === "app.local") return;
-        const build = "106";
+        const build = "107";
         const offlineReadyKey = `vocab-offline-ready-${build}`;
         const hadController = Boolean(navigator.serviceWorker.controller);
         let refreshing = false;
@@ -254,7 +254,7 @@
       })();
     </script>
     <link rel="stylesheet" href="./styles.css?v=77" />
-    <link rel="modulepreload" href="./app.js?v=106" />
+    <link rel="modulepreload" href="./app.js?v=107" />
     <link rel="stylesheet" href="./theme-v2.css?v=102" />
     <link rel="stylesheet" href="./learning-test-v4.css?v=77" />
     <link rel="stylesheet" href="./ielts-preview.css?v=77" />
@@ -267,9 +267,10 @@
     <link rel="stylesheet" href="./ui-v4-review-listening.css?v=105" />
     <link rel="stylesheet" href="./ui-v4-mobile-final.css?v=105" />
     <link rel="stylesheet" href="./review-v5.css?v=106" />
+    <link rel="stylesheet" href="./ui-v5-responsive.css?v=107" />
     <title>GRE & IELTS 词汇精学</title>
   </head>
-  <body class="ui-v4">
+  <body class="ui-v4 ui-v5">
     <div class="app-boot-screen" role="status" aria-live="polite">
       <span class="app-boot-mark" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M12 16.5c8.8-3.7 16.4-2.1 20 2.2v31.8c-4.2-4.6-11.3-6.4-20-2.2V16.5Z" fill="#FFF2EC"/><path d="M52 16.5c-8.8-3.7-16.4-2.1-20 2.2v31.8c4.2-4.6 11.3-6.4 20-2.2V16.5Z" fill="#EDF4FF"/><path d="M18 25.5c4.8-1.3 8.1-.4 10 1.8M18 33c4.8-1.3 8.1-.4 10 1.8M46 25.5c-4.8-1.3-8.1-.4-10 1.8M46 33c-4.8-1.3-8.1-.4-10 1.8" stroke="#FF5A1F" stroke-width="2.8" stroke-linecap="round"/><path d="M9 51c9.6-4.4 17.2-2.7 23 2 5.8-4.7 13.4-6.4 23-2" stroke="#2563EB" stroke-width="3.2" stroke-linecap="round"/></svg></span>
       <strong>正在准备离线词库</strong>
@@ -389,6 +390,6 @@
         } catch {}
       })();
     </script>
-    <script type="module" src="./app.js?v=106"></script>
+    <script type="module" src="./app.js?v=107"></script>
   </body>
 </html>

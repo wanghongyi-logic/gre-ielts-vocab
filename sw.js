@@ -1,4 +1,4 @@
-const BUILD = "106";
+const BUILD = "107";
 const CACHE_PREFIX = "vocab-studio-";
 const CACHE = `vocab-studio-v${BUILD}-incremental`;
 const NEURAL_VOICE_PROFILES = Object.freeze({
@@ -34,8 +34,9 @@ const STATIC_ASSETS = [
   { url: "./ui-v4-review-listening.css?v=105", weight: 81_000 },
   { url: "./ui-v4-mobile-final.css?v=105", weight: 24_000 },
   { url: "./review-v5.css?v=106", weight: 63_000 },
+  { url: "./ui-v5-responsive.css?v=107", weight: 38_000 },
   { url: ASSET_MANIFEST_URL, weight: 8_000 },
-  { url: "./manifest.webmanifest?v=106", weight: 4_000 },
+  { url: "./manifest.webmanifest?v=107", weight: 4_000 },
   { url: "./icon-192-v2.png", weight: 50_000 },
   { url: "./icon-512-v2.png", weight: 300_000 },
   { url: "./apple-touch-icon-v2.png", weight: 48_000 },
