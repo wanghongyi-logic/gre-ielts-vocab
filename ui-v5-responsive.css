@@ -23,6 +23,30 @@ body.ui-v5 {
   --v5-shadow: 0 10px 30px rgba(15, 31, 62, .075);
 }
 
+/* Search controls own their input sizing; generic form styles must not
+ * introduce a second field border or reduce the space for the query. */
+body.ui-v5 :is(.workspace-search, .header-search, .mobile-learning-search) input[type="search"] {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--v5-ink);
+  line-height: 1.4;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+body.ui-v5 .header-search input[type="search"] {
+  flex: 1 1 0;
+  height: 38px;
+}
+
 /* Listening now uses the same review workspace skeleton at every width. */
 body.ui-v5[data-corpus="listening"][data-route="review"][data-review-view] .listening-v5 {
   display: grid;
@@ -418,22 +442,107 @@ body.ui-v5[data-corpus="listening"][data-route="review"] .listening-submit-butto
 
   /* Search -------------------------------------------------------------- */
   body.ui-v5[data-route="library"] .workspace-search {
-    display: grid !important;
+    display: flex !important;
     width: 100%;
     min-width: 0;
-    grid-template-columns: minmax(0, 1fr) !important;
+    min-height: 48px;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
   }
 
   body.ui-v5[data-route="library"] .workspace-search > span {
-    display: none !important;
+    position: relative;
+    display: grid !important;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    place-items: center;
+    color: var(--v5-muted);
+    font-size: 0;
+  }
+
+  body.ui-v5[data-route="library"] .workspace-search > span::before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 11px;
+    height: 11px;
+    border: 1.7px solid currentColor;
+    border-radius: 50%;
+    content: "";
+  }
+
+  body.ui-v5[data-route="library"] .workspace-search > span::after {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    width: 6px;
+    height: 1.7px;
+    border-radius: 2px;
+    background: currentColor;
+    transform: rotate(45deg);
+    transform-origin: left center;
+    content: "";
   }
 
   body.ui-v5[data-route="library"] .workspace-search input {
     width: 100% !important;
     min-width: 0 !important;
-    grid-column: 1 / -1 !important;
+    height: 46px;
+    flex: 1 1 0;
     font-size: 16px !important;
     touch-action: manipulation;
+  }
+
+  body.ui-v5 .mobile-learning-search {
+    box-sizing: border-box;
+    width: 100%;
+    height: 54px;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr) 44px;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid var(--v5-line);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: none;
+  }
+
+  body.ui-v5 .mobile-learning-search:focus-within {
+    border-color: #f4aa8e;
+    box-shadow: 0 0 0 3px rgba(255, 90, 31, .08);
+  }
+
+  body.ui-v5 .mobile-learning-search label,
+  body.ui-v5 .mobile-learning-search:focus-within label {
+    height: 44px;
+    min-width: 0;
+    grid-template-columns: 28px minmax(0, 1fr);
+    padding: 0 4px;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  body.ui-v5 .mobile-learning-search input[type="search"] {
+    height: 44px;
+    font-weight: 500;
+  }
+
+  body.ui-v5 .mobile-learning-search > button {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+    min-height: 44px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 12px;
+    background: var(--v5-coral-soft);
+    color: #c84719;
+    box-shadow: none;
   }
 
   body.ui-v5 .mobile-learning-search input,
@@ -442,35 +551,41 @@ body.ui-v5[data-corpus="listening"][data-route="review"] .listening-submit-butto
     font-size: 16px !important;
   }
 
-  /* The collapsed navigation is an edge handle, not a floating obstruction. */
+  /* Keep the complete orb and its hit area inside the safe viewport. */
   body.ui-v5 #global-radial-navigation.radial-content-nav {
-    left: max(-30px, calc(env(safe-area-inset-left) - 30px));
-    width: 52px;
-    height: 50px;
+    left: max(4px, calc(env(safe-area-inset-left) + 4px));
+    width: 48px;
+    height: 48px;
+    overflow: visible;
   }
 
   body.ui-v5 #global-radial-navigation .radial-nav-origin {
-    width: 52px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
   }
 
   body.ui-v5 #global-radial-navigation .radial-nav-origin::before {
-    top: 4px;
+    top: 2px;
     left: 2px;
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
   }
 
   body.ui-v5 #global-radial-navigation .radial-nav-origin::after {
-    top: 16px;
-    left: 42px;
-    height: 18px;
+    display: none;
   }
 
   body.ui-v5 #global-radial-navigation .radial-nav-origin svg {
-    width: 18px;
-    height: 18px;
-    transform: translateX(10px);
+    width: 22px;
+    height: 22px;
+    transform: none;
+  }
+
+  body.ui-v5 #global-radial-navigation .radial-nav-ring {
+    top: 2px;
+    left: 2px;
+    overflow: visible;
   }
 
   /* Listening ----------------------------------------------------------- */
