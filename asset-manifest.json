@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "112",
-  "generatedAt": "2026-10-09T20:21:14.213233+00:00",
+  "releaseBuild": "113",
+  "generatedAt": "2026-10-09T20:50:38.908325+00:00",
   "build": {
     "tool": "native-esm",
     "format": "esm",
@@ -59,8 +59,8 @@
     {
       "path": "index.html",
       "bytes": 2535,
-      "gzipBytes": 1183,
-      "sha256": "dde3db3d5980df871a7198b809df1cb4d2adf8420e67fcb9d8a7bf603c09f4de",
+      "gzipBytes": 1184,
+      "sha256": "616de7bc94e610df9489d5125668dc8392c19f642d60811f1b5ebe6a54e7a3b7",
       "entryPoint": "index.html",
       "imports": []
     },
@@ -82,9 +82,9 @@
     },
     {
       "path": "gre-learning/motion.css",
-      "bytes": 1033,
-      "gzipBytes": 490,
-      "sha256": "1eadeef452ede664dd574aab1475b194a42f4110d7ec6005d540ec731b4ad685",
+      "bytes": 1181,
+      "gzipBytes": 551,
+      "sha256": "19e18e88207dca9697dd0889c9359d5cd273d1bafd6e83c8538963cb42b1a51a",
       "entryPoint": "gre-learning/motion.css",
       "imports": []
     },
@@ -133,17 +133,17 @@
     },
     {
       "path": "gre-learning/motion-artwork.js",
-      "bytes": 250399,
-      "gzipBytes": 102992,
-      "sha256": "596fd6d3c106dff16d69e6fca8241d24d6b8de1b28838959342387c5dbfc6969",
+      "bytes": 569827,
+      "gzipBytes": 249121,
+      "sha256": "79af2f3e9eac101c704a69d3ddd4a04a2abdce81eee7c2cf659cb7d39c475a82",
       "entryPoint": "gre-learning/motion-artwork.js",
       "imports": []
     },
     {
       "path": "gre-learning/motion.js",
-      "bytes": 7293,
-      "gzipBytes": 3204,
-      "sha256": "8ef4a08ab5a17cf867b1451790f0eb3caf3fe3badc741396566f8f673b93adb5",
+      "bytes": 8927,
+      "gzipBytes": 3990,
+      "sha256": "d2c062fb93934c217f705596024fc2e23aedb99ba8d8ef2f078e53b5b49961b8",
       "entryPoint": "gre-learning/motion.js",
       "imports": [
         "gre-learning/motion-artwork.js"
@@ -179,7 +179,7 @@
       "path": "gre-learning/update.js",
       "bytes": 2942,
       "gzipBytes": 1242,
-      "sha256": "54d7d183ac74312a5ef20fdacb03ec1ba1fccde5a52cdf88bba194ab05532694",
+      "sha256": "db8da8b67419ed70fcc9e632f7b38843f0bcae0da685d93266e456b60180445b",
       "entryPoint": "gre-learning/update.js",
       "imports": []
     },
@@ -363,8 +363,8 @@
     }
   ],
   "totals": {
-    "bytes": 434151,
-    "gzipBytes": 166077
+    "bytes": 755361,
+    "gzipBytes": 313054
   },
   "validation": {
     "syntaxChecked": true,

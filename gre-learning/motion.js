@@ -5,7 +5,12 @@ const descriptions = [
  ['abase','两位成人起初平等站立','其中一人用自我贬低的话讨好对方并低身恳求：这是 abase oneself 的一个例子'],
  ['abash','讲解者自信地写出算式','算式被纠正后，讲解者脸红并抬手掩嘴，露出窘迫的神情'],
  ['abate','暴雨和强风使树明显弯曲','雨势与风力逐渐减弱，但小雨和微风仍在继续'],
- ['abbreviate','同一个人使用完整称谓 Doctor Chen','称谓缩写成 Dr. Chen，所指的人和称谓含义不变']
+ ['abbreviate','同一个人使用完整称谓 Doctor Chen','称谓缩写成 Dr. Chen，所指的人和称谓含义不变'],
+ ['abdicate','戴着王冠的人仍在王位旁','这个例子中，戴冠者取下王冠放在王座上，并离开王位'],
+ ['aberrant','一组点沿同一常见模式排列','其中一个点偏离其余同类的通常模式；偏离本身不等于错误'],
+ ['abet','一人准备偷取窗口里的钱袋，梯子还在晃动','帮手扶稳梯子后，偷取钱袋的动作得以继续；画面中的帮手助成了这件坏事'],
+ ['abeyance','完整计划处于待执行状态','计划被放入待定夹，暂缓执行但仍完整保留，没有被取消'],
+ ['abhor','一盘发霉的食物靠近，人尚未作出反应','人皱眉厌恶地后缩，并竖掌拒绝，表现强烈反感']
 ];
 export const motionExamples = Object.freeze(Object.fromEntries(descriptions.map(([word,before,after],index)=>[index+1,{word,before,after,summary:`${before}；${after}。`}])));
 const defaults={x:0,y:0,sx:1,sy:1,rotate:0,ox:0,oy:0,opacity:1};
@@ -33,11 +38,20 @@ function artwork(number,id,progress) {
 }
 function scene(number,visual,suffix,phase,live=false) {
  const example=motionExamples[number],id=`meaning-${number}-${suffix}`;
- return `<svg xmlns="http://www.w3.org/2000/svg" class="meaning-motion-scene" ${live?'data-motion-stage=""':''} data-phase="${phase}" viewBox="0 0 360 200" role="img" aria-labelledby="${id}-title ${id}-desc"><title id="${id}-title">${example.word} · ${live?'词义动画':phase==='before'?'变化前':'变化后'}</title><desc id="${id}-desc">${escape(live?example.summary:example[phase])}</desc>${artwork(number,id,phase==='after'?1:0)}</svg>`;
+ return `<svg xmlns="http://www.w3.org/2000/svg" class="meaning-motion-scene" ${live?'data-motion-stage=""':''} data-phase="${phase}" viewBox="0 0 360 248" role="img" aria-labelledby="${id}-title ${id}-desc"><title id="${id}-title">${example.word} · ${live?'词义动画':phase==='before'?'变化前':'变化后'}</title><desc id="${id}-desc">${escape(live?example.summary:example[phase])}</desc>${artwork(number,id,phase==='after'?1:0)}<g class="motion-ending-word" ${live?'data-motion-ending-word=""':''} opacity="${phase==='after'?1:0}" aria-hidden="true"><rect x="0" y="200" width="360" height="48" fill="#f6f5ef"/><text x="180" y="233" text-anchor="middle" style="font-family:Georgia,serif;font-size:29px;font-weight:600;fill:#173d36;stroke:none">${escape(example.word)}</text></g></svg>`;
 }
 export function renderMeaningMotion(entry,visual) {
  const example=motionExamples[entry.number];if(!visual||!example||!motionArtwork[entry.number]||example.word!==entry.word)return '';
  return `<div class="meaning-motion" data-meaning-motion="${entry.number}"><div class="motion-live">${scene(entry.number,visual,'live','before',true)}</div><div class="motion-comparison"><figure><figcaption>变化前</figcaption>${scene(entry.number,visual,'before','before')}</figure><figure><figcaption>变化后</figcaption>${scene(entry.number,visual,'after','after')}</figure></div></div>`;
+}
+// Preserve the full cause/action/result, then reveal the English word in a dedicated footer.
+export function motionTimeline(elapsed) {
+ const cycle=((elapsed%10100)+10100)%10100;
+ const reset=cycle>=9850;
+ const progress=reset?0:Math.min(1,Math.max(0,(cycle-600)/6200));
+ const stageOpacity=cycle<9600?1:cycle<9850?1-(cycle-9600)/250:(cycle-9850)/250;
+ const wordOpacity=cycle<7000||reset?0:Math.min(1,(cycle-7000)/300);
+ return {cycle,progress,stageOpacity,wordOpacity};
 }
 // One observed illustration, one RAF, no timers or control UI. Static comparisons remain
 // readable under reduced motion; offscreen/background scenes consume no animation frames.
@@ -48,18 +62,17 @@ export function installMeaningMotion(surface,{window:win=window}={}) {
  const canRun=()=>active&&!destroyed&&visible&&!win.document?.hidden&&!media?.matches;
  function paint(progress,time=elapsed){if(!active)return;for(const {element,frames,ambient,ambientElement} of active.layers){const state=motionState(frames,progress);element.setAttribute('transform',motionTransform(state));element.setAttribute('opacity',String(state.opacity));if(ambient&&ambientElement){const phase=((time/(ambient.period||1200))+(ambient.phase||0))%1;const motion=motionState(ambient.frames,phase);ambientElement.setAttribute('transform',motionTransform(motion));ambientElement.setAttribute('opacity',String(motion.opacity));}}}
  function tick(now){frame=null;if(!canRun())return;if(previous!==null)elapsed+=Math.min(now-previous,80);previous=now;
-  // 0.6 s before, 6.2 s causal sequence, 1.1 s result. Ambient consequence motion continues.
+  // 0.6 s before, 6.2 s action, 0.2 s settled result, 0.3 s word reveal, 2.3 s word hold.
   // Brief fade masks reset,
   // avoiding a misleading reverse action (e.g. a repealed treaty becoming valid).
-  const cycle=elapsed%8400;const progress=Math.min(1,Math.max(0,(cycle-600)/6200));
-  const opacity=cycle<7900?1:cycle<8150?1-(cycle-7900)/250:(cycle-8150)/250;
-  paint(cycle>=8150?0:progress);active.stage.style.opacity=String(opacity);frame=win.requestAnimationFrame(tick);
+  const timeline=motionTimeline(elapsed);
+  paint(timeline.progress);active.stage.style.opacity=String(timeline.stageOpacity);if(active.ending)active.ending.setAttribute('opacity',String(timeline.wordOpacity));frame=win.requestAnimationFrame(tick);
  }
  function resume(){stop();if(canRun())frame=win.requestAnimationFrame(tick);}
  const observer=win.IntersectionObserver?new win.IntersectionObserver(entries=>{for(const entry of entries){if(entry.target===active?.root){visible=entry.isIntersecting;resume();}}},{threshold:0}):null;
- function cancel(){stop();observer?.disconnect();if(active){paint(0);active.stage.style.opacity='1';}active=null;elapsed=0;visible=true;}
- function refresh(){cancel();const root=surface.querySelector('[data-meaning-motion]');if(!root)return;const number=Number(root.dataset.meaningMotion),stage=root.querySelector('[data-motion-stage]');if(!motionArtwork[number]||!stage)return;active={root,stage,layers:[...stage.querySelectorAll('[data-motion-layer]')].map(element=>({element,frames:motionArtwork[number][Number(element.dataset.motionLayer)].frames||[{at:0},{at:1}],ambient:motionArtwork[number][Number(element.dataset.motionLayer)].ambient,ambientElement:element.querySelector('[data-motion-ambient]')}))};visible=!observer;observer?.observe(root);resume();}
- const visibility=()=>resume();const preference=()=>{elapsed=0;paint(0);if(active)active.stage.style.opacity='1';resume();};
+ function cancel(){stop();observer?.disconnect();if(active){paint(0);active.stage.style.opacity='1';active.ending?.setAttribute('opacity','0');}active=null;elapsed=0;visible=true;}
+ function refresh(){cancel();const root=surface.querySelector('[data-meaning-motion]');if(!root)return;const number=Number(root.dataset.meaningMotion),stage=root.querySelector('[data-motion-stage]');if(!motionArtwork[number]||!stage)return;active={root,stage,ending:stage.querySelector('[data-motion-ending-word]'),layers:[...stage.querySelectorAll('[data-motion-layer]')].map(element=>({element,frames:motionArtwork[number][Number(element.dataset.motionLayer)].frames||[{at:0},{at:1}],ambient:motionArtwork[number][Number(element.dataset.motionLayer)].ambient,ambientElement:element.querySelector('[data-motion-ambient]')}))};visible=!observer;observer?.observe(root);resume();}
+ const visibility=()=>resume();const preference=()=>{elapsed=0;paint(0);if(active){active.stage.style.opacity='1';active.ending?.setAttribute('opacity','0');}resume();};
  win.document?.addEventListener('visibilitychange',visibility);win.addEventListener('pagehide',stop);win.addEventListener('pageshow',resume);media?.addEventListener?.('change',preference);
  refresh();
  return {cancel,refresh,destroy(){cancel();destroyed=true;win.document?.removeEventListener('visibilitychange',visibility);win.removeEventListener('pagehide',stop);win.removeEventListener('pageshow',resume);media?.removeEventListener?.('change',preference);}};

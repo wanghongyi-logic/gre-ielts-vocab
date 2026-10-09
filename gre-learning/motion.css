@@ -1,6 +1,6 @@
-/* v111: every word has a semantic loop, with no playback chrome. */
+/* Semantic scene, then unobstructed English headword; no playback controls. */
 .meaning-motion{padding:0;background:#f6f5f1}
-.meaning-motion-scene{display:block;width:100%;height:auto;aspect-ratio:1.8;overflow:hidden}
+.meaning-motion-scene{display:block;width:100%;height:auto;aspect-ratio:360 / 248;overflow:hidden}
 .meaning-motion-scene text{font-family:Arial,sans-serif;font-weight:600;text-anchor:middle}
 .meaning-motion-scene [data-motion-layer]{transition:none!important;transform-box:view-box}
 .motion-controls{display:none!important}
@@ -16,3 +16,5 @@
  .motion-comparison{grid-template-columns:1fr;gap:14px}
  .motion-comparison figure+figure{border-left:0;border-top:1px solid #dce2d6;padding-top:10px}
 }
+
+.meaning-motion-scene .motion-ending-word text{font-family:Georgia,serif;font-size:29px;font-weight:600;fill:#173d36;stroke:none}
