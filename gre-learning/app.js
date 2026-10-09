@@ -2,6 +2,8 @@ import {getLearningEntries} from './content.js';
 import {escapeLearningText as escape, renderNotReady} from './render.js';
 import {resolveWordNumber, filterEntries, neighboringNumbers} from './model.js';
 import {visualMnemonics} from './visuals.js';
+import {installWordSwipe} from './swipe.js';
+import {installMeaningMotion} from './motion.js';
 const entries = getLearningEntries();
 const main = document.getElementById('word-content');
 const picker = document.getElementById('word-picker');
@@ -13,14 +15,18 @@ import {renderWordPage} from './view.js';
 let current;
 let observer;
 let speech;
+const meaningMotion = installMeaningMotion(main);
+const swipe = installWordSwipe({surface:main,navigation:document.querySelector('.word-navigation'),picker,
+  getNeighbor:direction=>neighboringNumbers(entries,current?.number)[direction],onNavigate:navigate});
 function remember() { try { return sessionStorage.getItem('gre-learning-current-v1'); } catch { return null; } }
 function navigate(number) { if (number && number !== current?.number) location.hash = `/learn/${number}`; }
 function render() {
+  meaningMotion.cancel();
   const number = resolveWordNumber(location.hash, entries, remember());
   current = entries.find(entry => entry.number === number);
   observer?.disconnect();
   window.speechSynthesis?.cancel();
-  if (!current) { main.innerHTML = renderNotReady(); return; }
+  if (!current) { main.innerHTML = renderNotReady(); swipe.cancel(); return; }
   try { sessionStorage.setItem('gre-learning-current-v1', String(number)); } catch {}
   if (location.hash !== `#/learn/${number}`) history.replaceState(null, '', `#/learn/${number}`);
   document.title = `${current.word} · 词汇精学`;
@@ -34,6 +40,7 @@ function render() {
   const speakButton = main.querySelector('[data-speak]');
   if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) { speakButton.disabled = true; speakButton.title = '此浏览器暂不支持朗读'; }
   window.scrollTo({top:0,behavior:'instant'});
+  swipe.rendered(`${current.word}，第 ${position.index + 1} 个词，共 ${entries.length} 个`);
   if ('IntersectionObserver' in window) {
     observer = new IntersectionObserver(records=>{
       const visible = records.filter(record=>record.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top)[0];
@@ -47,7 +54,7 @@ function renderResults() {
   document.getElementById('search-count').textContent = `${matches.length} 个词`;
   document.getElementById('word-results').innerHTML = matches.length ? matches.map(entry=>`<button type="button" class="word-result ${entry.number===current?.number?'is-current':''}" data-word="${entry.number}"><span class="result-number">${String(entry.number).padStart(2,'0')}</span><span><strong lang="en">${escape(entry.word)}</strong><small>${escape(entry.coreMeaningZh)}</small></span>${entry.number===current?.number?'<span class="current-dot" aria-label="当前词"></span>':''}</button>`).join('') : '<p class="search-empty">没有找到这个词，试试其他拼写或中文释义</p>';
 }
-function openPicker() { search.value='';renderResults();if(!picker.open)picker.showModal();search.focus(); }
+function openPicker() { meaningMotion.cancel();swipe.cancel();search.value='';renderResults();if(!picker.open)picker.showModal();search.focus(); }
 function closePicker() { picker.close(); }
 document.querySelector('.skip-link').addEventListener('click',event=>{event.preventDefault();main.focus();main.scrollIntoView({block:'start',behavior:'instant'});});
 document.getElementById('open-search').addEventListener('click',openPicker);
@@ -59,8 +66,8 @@ picker.addEventListener('click',event=>{
   if(button){const number=Number(button.dataset.word);closePicker();navigate(number);return;}
   if(event.target===picker){const box=picker.getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)closePicker();}
 });
-previous.addEventListener('click',()=>navigate(neighboringNumbers(entries,current?.number).previous));
-next.addEventListener('click',()=>navigate(neighboringNumbers(entries,current?.number).next));
+previous.addEventListener('click',()=>swipe.go('previous'));
+next.addEventListener('click',()=>swipe.go('next'));
 main.addEventListener('click',event=>{
   const link=event.target.closest('[data-section]');
   if(link){event.preventDefault();document.getElementById(link.dataset.section)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});return;}

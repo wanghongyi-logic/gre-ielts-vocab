@@ -1,5 +1,5 @@
 /** Public learning content only. Review questions and progress records use their existing schemas. */
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 const fields = {
   entry: ['number','word','ipa','pos','coreMeaningZh','coreEn','coreImageZh','mnemonics','usage','examples','equivalents'],
   mnemonic: ['method','textZh','original','kind'],
@@ -22,14 +22,13 @@ function list(value, label, minimum = 1) {
 export function validateEntry(entry, baselineLesson) {
   shape(entry, 'entry');
   if (!Number.isSafeInteger(entry.number) || entry.number < 1) throw new TypeError('Invalid stable number');
-  required(entry, ['word','ipa','pos','coreMeaningZh','coreImageZh'], 'entry');
-  if (entry.coreEn !== undefined && !text(entry.coreEn)) throw new TypeError('Invalid coreEn');
+  required(entry, ['word','ipa','pos','coreMeaningZh','coreEn','coreImageZh'], 'entry');
   if (baselineLesson && (baselineLesson.number !== entry.number || baselineLesson.word !== entry.word)) throw new TypeError('Baseline identity mismatch');
   list(entry.mnemonics, 'mnemonics', 2);
   if (entry.mnemonics.length > 3 || !entry.mnemonics.some(item => item.original === true)) throw new TypeError('Expected 2–3 mnemonics including an original');
   for (const item of entry.mnemonics) {
     shape(item, 'mnemonic'); required(item, ['method','textZh'], 'mnemonic');
-    if (typeof item.original !== 'boolean' || !['invented_association','etymology','semantic_image'].includes(item.kind)) throw new TypeError('Invalid mnemonic attribution');
+    if (typeof item.original !== 'boolean' || !['invented_association','etymology','semantic_image','word_family','word_components','phrase_anchor'].includes(item.kind)) throw new TypeError('Invalid mnemonic attribution');
   }
   list(entry.usage, 'usage');
   for (const item of entry.usage) {

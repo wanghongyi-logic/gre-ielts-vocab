@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "109",
-  "generatedAt": "2026-10-09T17:15:22.278590+00:00",
+  "releaseBuild": "110",
+  "generatedAt": "2026-10-09T17:56:05.459877+00:00",
   "build": {
     "tool": "native-esm",
     "format": "esm",
@@ -13,8 +13,8 @@
   "entries": {
     "runtime": {
       "path": "gre-learning/app.js",
-      "bytes": 5853,
-      "gzipBytes": 2237,
+      "bytes": 6304,
+      "gzipBytes": 2368,
       "assets": [
         "index.html",
         "manifest.webmanifest",
@@ -23,8 +23,10 @@
         "gre-learning/approved-content.js",
         "gre-learning/content.js",
         "gre-learning/model.js",
+        "gre-learning/motion.js",
         "gre-learning/render.js",
         "gre-learning/schema.js",
+        "gre-learning/swipe.js",
         "gre-learning/update.js",
         "gre-learning/view.js",
         "gre-learning/visuals.js",
@@ -55,8 +57,8 @@
     {
       "path": "index.html",
       "bytes": 2734,
-      "gzipBytes": 1232,
-      "sha256": "50d163ca05c78179963f3fc702247f5403124981f22fca2722fa40cc2ddc7f89",
+      "gzipBytes": 1231,
+      "sha256": "64aa62c5465881efaa55a1238e3c00b7d8b4229dc1c083c6cb44add4db39c745",
       "entryPoint": "index.html",
       "imports": []
     },
@@ -70,31 +72,33 @@
     },
     {
       "path": "gre-learning/learning.css",
-      "bytes": 10049,
-      "gzipBytes": 3090,
-      "sha256": "1a39cf9050b441c36b0ac56fd9e69c06010709717429ee86961a66d5d2bf3c4d",
+      "bytes": 18306,
+      "gzipBytes": 4891,
+      "sha256": "590d83c550df930bc34e1a0ccde27548a4dd4435e587ebc238227c60f507c6c7",
       "entryPoint": "gre-learning/learning.css",
       "imports": []
     },
     {
       "path": "gre-learning/app.js",
-      "bytes": 5853,
-      "gzipBytes": 2237,
-      "sha256": "b3f02ae4df42cb4df6be3650e43849ed19e655e4bd2a72f0006e0b72e3fdd042",
+      "bytes": 6304,
+      "gzipBytes": 2368,
+      "sha256": "8d3384501ea52279e9ea51ab36c93596da006afd17874cd38d45444754f758a2",
       "entryPoint": "gre-learning/app.js",
       "imports": [
         "gre-learning/content.js",
         "gre-learning/render.js",
         "gre-learning/model.js",
         "gre-learning/visuals.js",
+        "gre-learning/swipe.js",
+        "gre-learning/motion.js",
         "gre-learning/view.js"
       ]
     },
     {
       "path": "gre-learning/approved-content.js",
-      "bytes": 71045,
-      "gzipBytes": 21712,
-      "sha256": "99ec0348d208e911cb0fc2d709bb6e1e925155cc369973767bb009951c85d570",
+      "bytes": 74437,
+      "gzipBytes": 22790,
+      "sha256": "f07c02a939f17d777d9333194523d863323a498be5aa878c5947ec2a016421d8",
       "entryPoint": "gre-learning/approved-content.js",
       "imports": []
     },
@@ -118,34 +122,52 @@
       "imports": []
     },
     {
-      "path": "gre-learning/render.js",
-      "bytes": 3015,
-      "gzipBytes": 1286,
-      "sha256": "9a7bf7741041e2a621b3c9ef3c94c15d440e5e8e7a84775732b3bf06d5ec696d",
-      "entryPoint": "gre-learning/render.js",
+      "path": "gre-learning/motion.js",
+      "bytes": 8011,
+      "gzipBytes": 2880,
+      "sha256": "82454d6ad93c46573b2430a5338709047756543523c968f6b8838ad9710a97ec",
+      "entryPoint": "gre-learning/motion.js",
       "imports": []
     },
     {
+      "path": "gre-learning/render.js",
+      "bytes": 3005,
+      "gzipBytes": 1303,
+      "sha256": "34641ad56e6204d6dc5e4c03fed1dee676f3b5dc6e0079dc93ccd042cc27a2ec",
+      "entryPoint": "gre-learning/render.js",
+      "imports": [
+        "gre-learning/motion.js"
+      ]
+    },
+    {
       "path": "gre-learning/schema.js",
-      "bytes": 3469,
-      "gzipBytes": 1167,
-      "sha256": "126af81b1cc48761d38fc249f96860ed8b2cd1eeef520edc379f179103cc6c33",
+      "bytes": 3430,
+      "gzipBytes": 1177,
+      "sha256": "6190c7d98e605131c690261cade7142fff5dfb5b262c0e1b5103149d9d3e8e82",
       "entryPoint": "gre-learning/schema.js",
+      "imports": []
+    },
+    {
+      "path": "gre-learning/swipe.js",
+      "bytes": 10256,
+      "gzipBytes": 3382,
+      "sha256": "9e8b3fad8bdb38bf737cc2a1b613d065bd04d25bdfe33423a5cc862ef54cbeef",
+      "entryPoint": "gre-learning/swipe.js",
       "imports": []
     },
     {
       "path": "gre-learning/update.js",
       "bytes": 2942,
-      "gzipBytes": 1243,
-      "sha256": "f14d7f464e4a8f5d29bde4fea4912f2da18d13c8ea863556f3d00edc0dc3cfb9",
+      "gzipBytes": 1242,
+      "sha256": "79e0169967500db3845c35c3f908fd37c31eb171ef524e7254da2d2b233470e5",
       "entryPoint": "gre-learning/update.js",
       "imports": []
     },
     {
       "path": "gre-learning/view.js",
-      "bytes": 1136,
-      "gzipBytes": 670,
-      "sha256": "3ab36360e2fff1bf6a8d65563599c0ef543f95c780d48dc2058c910fb731e67a",
+      "bytes": 1284,
+      "gzipBytes": 708,
+      "sha256": "9d747849b835007941f10dc4e30f5743bc198bf3b38a51b282a611a08e1fcc2c",
       "entryPoint": "gre-learning/view.js",
       "imports": [
         "gre-learning/render.js"
@@ -162,8 +184,8 @@
     {
       "path": "gre-learning/images/1.svg",
       "bytes": 1936,
-      "gzipBytes": 823,
-      "sha256": "4990066ad4cdab1f45ea0094da74d669ed07133c7ac52c048648255adcbb3100",
+      "gzipBytes": 820,
+      "sha256": "7053212832f1a7c89814d3db0ee0b87d7c6eb7e30e55c915c60a105c2a6b4ee7",
       "entryPoint": "gre-learning/images/1.svg",
       "imports": []
     },
@@ -186,16 +208,16 @@
     {
       "path": "gre-learning/images/12.svg",
       "bytes": 2418,
-      "gzipBytes": 805,
-      "sha256": "8ce71435d68dc0bc4037ae771bc432d43305d3f52bf4a25d8fc29071085bc3f9",
+      "gzipBytes": 804,
+      "sha256": "bae8c956b6acb2714ce1b161552e78704c02909b0005dfe6afb11d3313c0cc9e",
       "entryPoint": "gre-learning/images/12.svg",
       "imports": []
     },
     {
       "path": "gre-learning/images/13.svg",
-      "bytes": 2048,
-      "gzipBytes": 840,
-      "sha256": "9000b17ca137200de23a504c81902a19ebddd06ab01d520b1b20b04e051f5af9",
+      "bytes": 2017,
+      "gzipBytes": 858,
+      "sha256": "64424b3ca1944eb9a6e47d0649571d8df537ab62b0794bf37ee06872dd1fbfcb",
       "entryPoint": "gre-learning/images/13.svg",
       "imports": []
     },
@@ -209,9 +231,9 @@
     },
     {
       "path": "gre-learning/images/15.svg",
-      "bytes": 2095,
-      "gzipBytes": 803,
-      "sha256": "fa033fd0077da87917696af2130e77787fdeaec2990975b5097853902cf7622f",
+      "bytes": 2119,
+      "gzipBytes": 814,
+      "sha256": "0b4ad97571ac59a2c0f491e9907cddeb3177af43b2f78e688774de54a3d88720",
       "entryPoint": "gre-learning/images/15.svg",
       "imports": []
     },
@@ -225,17 +247,17 @@
     },
     {
       "path": "gre-learning/images/17.svg",
-      "bytes": 2818,
-      "gzipBytes": 835,
-      "sha256": "d140761a5f67c48bd997af5d6674e859e88b8e3a19b11cf6c44e5dfc5a90d8a8",
+      "bytes": 2952,
+      "gzipBytes": 851,
+      "sha256": "f540e84f81de2017cc59731e0fdb461f028a4029929725f50d29cc8b42948bb9",
       "entryPoint": "gre-learning/images/17.svg",
       "imports": []
     },
     {
       "path": "gre-learning/images/18.svg",
       "bytes": 2505,
-      "gzipBytes": 819,
-      "sha256": "a35969b1e7b14b1f00df45391c417cb774206d0d1e64e9ebb3468423a52623bc",
+      "gzipBytes": 818,
+      "sha256": "bccddd2b93978da19789de1f42ca5149a75f05cdedf84714fe141d9ea1f43338",
       "entryPoint": "gre-learning/images/18.svg",
       "imports": []
     },
@@ -249,49 +271,49 @@
     },
     {
       "path": "gre-learning/images/2.svg",
-      "bytes": 2262,
-      "gzipBytes": 846,
-      "sha256": "be34f97dd39fa24226089389141de57fe0ebe791a2757b083016f320ba97361b",
+      "bytes": 2169,
+      "gzipBytes": 819,
+      "sha256": "b9c895d9144ae0a76178dd55699fb1e9d2d4b8b4b0676086f02862542839ae4a",
       "entryPoint": "gre-learning/images/2.svg",
       "imports": []
     },
     {
       "path": "gre-learning/images/20.svg",
-      "bytes": 2315,
-      "gzipBytes": 903,
-      "sha256": "d8254ba13017d236d2b29a2e5177a2baca11f43e2c4f4d1341f6da09a4682635",
+      "bytes": 2372,
+      "gzipBytes": 940,
+      "sha256": "68909bcffd4d8d03ea7d1514d6172843f8dbb0a82d4ac63128e5f83a546d8644",
       "entryPoint": "gre-learning/images/20.svg",
       "imports": []
     },
     {
       "path": "gre-learning/images/3.svg",
-      "bytes": 2004,
-      "gzipBytes": 795,
-      "sha256": "79c5c42adb362603b0cf3f8728cac463bba0f6f416309e6a442725662a795219",
+      "bytes": 1973,
+      "gzipBytes": 823,
+      "sha256": "3b8d57567c366dffb20820761ba772cd4ca530239e675603d1e361f69306f369",
       "entryPoint": "gre-learning/images/3.svg",
       "imports": []
     },
     {
       "path": "gre-learning/images/4.svg",
-      "bytes": 2084,
-      "gzipBytes": 725,
-      "sha256": "af80d00f0263febb9c5602019ac3401151b9dfbecd01063005f721ef8fd3ec3e",
+      "bytes": 2116,
+      "gzipBytes": 748,
+      "sha256": "1edcf63732d600dc410777e0ad6bf18c3e71e72ec3de2757a90a09e677b0fb91",
       "entryPoint": "gre-learning/images/4.svg",
       "imports": []
     },
     {
       "path": "gre-learning/images/5.svg",
-      "bytes": 1945,
+      "bytes": 1944,
       "gzipBytes": 756,
-      "sha256": "7987ce3ff0816ed24bb6d8191654369840c539a38432fe954f31f0998c2512aa",
+      "sha256": "98f968249db6f823c4812748adabc868442c78948e20032e91002540605df797",
       "entryPoint": "gre-learning/images/5.svg",
       "imports": []
     },
     {
       "path": "gre-learning/images/6.svg",
-      "bytes": 1851,
-      "gzipBytes": 773,
-      "sha256": "cd28ca16250090bd548d32dc979e5450cbfbcd1c70a505df2af517ae32e0a10d",
+      "bytes": 1910,
+      "gzipBytes": 812,
+      "sha256": "0941d31d47b38c87918143821d1d6f82a3c9a8167a7af9d756059339f99c6984",
       "entryPoint": "gre-learning/images/6.svg",
       "imports": []
     },
@@ -305,9 +327,9 @@
     },
     {
       "path": "gre-learning/images/8.svg",
-      "bytes": 2496,
-      "gzipBytes": 876,
-      "sha256": "6614432ad5c8c37d22ad5e75346f89fdbd17bb2a582e07a692164090806ce1af",
+      "bytes": 2564,
+      "gzipBytes": 910,
+      "sha256": "c91a7f444d2e21fdca03458aef9a16834f8fb41e51ede51e256cd9f477c88fb2",
       "entryPoint": "gre-learning/images/8.svg",
       "imports": []
     },
@@ -321,12 +343,12 @@
     }
   ],
   "totals": {
-    "bytes": 150917,
-    "gzipBytes": 51757
+    "bytes": 181601,
+    "gzipBytes": 61266
   },
   "validation": {
     "syntaxChecked": true,
     "nativeImportGraphResolved": true,
-    "generatedAssetCount": 32
+    "generatedAssetCount": 34
   }
 }

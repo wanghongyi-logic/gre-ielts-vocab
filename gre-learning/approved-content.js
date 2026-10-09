@@ -1,4 +1,4 @@
-export const revision = 'gre-learning-v1';
+export const revision = 'gre-learning-v110';
 export const approvedEntries = Object.freeze([
   {
     "number": 1,
@@ -6,19 +6,19 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əˈbændən/",
     "pos": "v. 及物 · v. 反身结构 · n. 不可数",
     "coreMeaningZh": "抛弃；撤离；放弃继续做某事；放任自己沉浸于；无拘无束；尽情放纵",
-    "coreImageZh": "一只手原本攥住绳子，现在彻底松开：松开一项计划，是不再坚持；松开对人的照管，是抛弃；松开对自己的约束，就成了尽情投入。共同点是撤掉原来的维系或控制。",
+    "coreImageZh": "原本在照顾、使用或坚持，现在决定不再继续：抛下需要照顾的人、撤离危险地点、放弃计划，都可以用 abandon。它强调退出原来的关系或行动，通常不是暂停一下。abandon oneself to 则是放开自我约束，任自己沉浸于某种情绪；with abandon 表示无拘无束地尽情做。",
     "mnemonics": [
       {
-        "method": "松手镜头",
-        "textZh": "把 abandon 写在一只张开的手掌上。手掌依次松开方案文件、救援绳、自控缰绳：放弃方案、抛下别人、放任自己。一个动作串起三个用法，避免把它只记成“抛弃”。",
+        "method": "拆拼联想｜乐队还在演，人被抛下",
+        "textZh": "a＋band＋on：band（乐队）把主唱抛下，自己还在 on（继续演）。记“乐队还在演，主唱被抛弃”→abandon。这里按字形拆；全词读 /əˈbændən/，末尾不读 on。",
         "original": true,
         "kind": "invented_association"
       },
       {
-        "method": "任其处置",
-        "textZh": "abandon 的历史线索是法语短语 a bandun，意思涉及“在某人掌控下、任其处置”；bandun 指管辖权。记住“交出支配权”这座桥：对物不再掌管，便可成为放弃；把自己交给情绪，便是放任。这里的 bandun 不是现代英语 band“乐队”。",
-        "original": false,
-        "kind": "etymology"
+        "method": "近音联想｜“啊，板凳！”被丢下了",
+        "textZh": "把 /əˈbændən/ 宽松联想成“啊，板凳！”：搬家车开走，唯独这张板凳被抛弃在路边。听到 abandon，想起那张没人要的板凳→抛弃。汉语只帮联想，英语末尾是 /dən/，没有“凳”的 /ŋ/。",
+        "original": true,
+        "kind": "invented_association"
       }
     ],
     "usage": [
@@ -91,7 +91,8 @@ export const approvedEntries = Object.freeze([
         "sharedSenseZh": "抛弃不再需要的方案或观念",
         "substitutionLimitZh": "jettison 有甩掉负担的色彩；discard 强调弃置不用。都不覆盖 with abandon 的名词用法。"
       }
-    ]
+    ],
+    "coreEn": "To leave someone or something behind, or stop pursuing an activity or plan; to give oneself over without restraint. As a noun, a state or manner of acting without restraint."
   },
   {
     "number": 2,
@@ -99,23 +100,17 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əˈbeɪs/",
     "pos": "v. 及物，正式",
     "coreMeaningZh": "贬低；使失去尊严或地位",
-    "coreImageZh": "一张原本与众人齐平的椅子，被人不断往下调，坐着的人只能仰头乞求认可。椅子的高度代表尊严：被人压低是 abase someone，主动把自己调低去讨好别人是 abase oneself。",
+    "coreImageZh": "使一个人的尊严、声望或地位降低。被迫卑躬屈膝地求别人，或为了讨好权威而自贬身份，都是典型情境；后一种常说 abase oneself。这里受损的是尊严或地位，比一时脸红、感到尴尬更重，也不同于正常的谦虚。",
     "mnemonics": [
       {
-        "method": "降到低处",
-        "textZh": "历史上经法语中表示“降低”的词进入英语，更早与拉丁语 bassus“低的”有关。顺着“位置低”记到“身份、尊严被压低”；不是把 a 随意解释成否定前缀。",
-        "original": false,
-        "kind": "etymology"
-      },
-      {
-        "method": "尊严电梯",
-        "textZh": "想象一部叫 ABASE 的电梯：向上写着 respect，向下写着 humiliation。有人为了讨好权贵，亲手按下最底层。记住动作方向，就能把 abase oneself 与正常礼貌、谦逊分开。",
+        "method": "英语同音｜尊严降到 a base",
+        "textZh": "abase 听起来就是 a base。base 是底部：把“尊严”放上电梯，一路降到地基 base。a＋base→abase：降低地位、贬低尊严。",
         "original": true,
         "kind": "invented_association"
       },
       {
-        "method": "一字之差两种伤",
-        "textZh": "把 abase 放在“身份高度计”旁，把 abash 放在“脸红温度计”旁：前者压低尊严，后者使人窘迫。一个人可以被贬低却毫不脸红，也可以受到夸奖而害羞，却并未被贬低。",
+        "method": "字母联想｜SE 伤自尊，SH 使害羞",
+        "textZh": "abaSE 的 SE，借 self-esteem（自尊）的首字母：自尊被压低。abaSH 的 SH，借 shy（害羞）的开头：窘得脸红。SE→贬低；SH→使窘迫。",
         "original": true,
         "kind": "invented_association"
       }
@@ -175,7 +170,8 @@ export const approvedEntries = Object.freeze([
         "sharedSenseZh": "使人或其行为变得卑下",
         "substitutionLimitZh": "debase 还常指降低纯度、价值或道德品质；abase 更集中在人及其地位、尊严。"
       }
-    ]
+    ],
+    "coreEn": "To lower someone’s dignity, standing, or reputation, including by behaving in a degrading way oneself."
   },
   {
     "number": 3,
@@ -183,19 +179,19 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əˈbæʃ/",
     "pos": "v. 及物",
     "coreMeaningZh": "使窘迫；使羞惭；使失去从容",
-    "coreImageZh": "一个人本来流畅地站在聚光灯下说话，忽然被人点破小失误，话头卡住，眼神移开。abash 拍到的是“从容突然被打断”的这一秒，而不是长期地位的下降。",
+    "coreImageZh": "使人感到羞惭或窘迫，失去原本的从容。比如当众被指出失误，一下子不知如何回应；受到热烈赞扬而难为情，也可以用 abashed。重点在人的尴尬反应，不要求真的犯错，也不表示社会地位被降低。",
     "mnemonics": [
       {
-        "method": "聚光灯卡顿",
-        "textZh": "记住三个连续动作：昂首讲话、被点名、低头卡壳。把 abash 放在第二个与第三个动作之间，它就是让自信突然打结的那一下。",
+        "method": "英语同音｜穿睡衣去 a bash",
+        "textZh": "a bash 是“一次派对”，与 abash 同音。你穿着睡衣到场，却发现人人都穿礼服，瞬间窘得脸红。a＋bash→abash：使窘迫。",
         "original": true,
         "kind": "invented_association"
       },
       {
-        "method": "真实词族·bashful 串起三种状态",
-        "textZh": "把 bashful（容易害羞的）、abashed（感到窘迫的）、unabashed（毫不难为情的）放在一起：性格容易害羞，遇事感到窘迫，或者依旧坦然。它们共享的 bash 线索确有历史联系：bashful 中的旧动词 bash 源自 abash 的早期形式，不是今天“猛击、派对”的 bash。",
+        "method": "熟词联记｜bashful 的 bash",
+        "textZh": "bashful 是“害羞的”。抓住共有的 bash：bashful 容易害羞；abash 使人窘迫；abashed 感到窘迫。见到 bash，先想那张羞红的脸。",
         "original": false,
-        "kind": "etymology"
+        "kind": "word_family"
       }
     ],
     "usage": [
@@ -253,7 +249,8 @@ export const approvedEntries = Object.freeze([
         "sharedSenseZh": "因失误或揭短而感到羞耻",
         "substitutionLimitZh": "通常比 abash 更强，涉及极度难堪或受辱。轻轻受到赞美而害羞时，换成它们会把程度写重。"
       }
-    ]
+    ],
+    "coreEn": "To make someone feel embarrassed or ashamed and less able to act confidently."
   },
   {
     "number": 4,
@@ -261,17 +258,17 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əˈbeɪt/",
     "pos": "v. 不及物／及物，正式 · v. 及物，专业用法",
     "coreMeaningZh": "减弱；减轻；使缓和；消除；减免",
-    "coreImageZh": "风力仪上的指针从红区逐渐退回黄区：风还在吹，但已没那么猛烈。这个“强度退下去”的过程就是普通义的 abate；谈消除公害或减免税款时，再由专业宾语确定具体含义。",
+    "coreImageZh": "原本很强的风势、疼痛或怒气减弱了，或采取措施让问题缓和下来，就是 abate。它说的是程度下降，普通语境中不保证已经完全消失。在消除妨害、减免税款等专业搭配里，含义可以更强，需根据宾语判断。",
     "mnemonics": [
       {
-        "method": "把势头打下去",
-        "textZh": "它经法语 abatre 进入英语，历史含义涉及击倒、降低、终止，其中 batre 表示击打。沿着“把势头打下来”这条线，记住强度从高到低。",
-        "original": false,
-        "kind": "etymology"
+        "method": "英语同音｜一口 bait，饿意减",
+        "textZh": "a bait（一份鱼饵）与 abate 同音。鱼吞下一口 bait，饥饿从十分降到六分：减轻了，还没消失。a bait→abate，减弱、减轻；尾部拼成 bate，全词 abate。",
+        "original": true,
+        "kind": "invented_association"
       },
       {
-        "method": "红区退到黄区",
-        "textZh": "为风、疼痛、怒气各装一个同样的强度表。三根指针都从九降到四，屏幕亮起 ABATE。故意把终点停在四：这能帮你记住减弱不等于归零。",
+        "method": "拆拼联想｜ATE，已经吃过了",
+        "textZh": "abATE 末尾藏着 ate（吃了）。看见 ATE，就想“已经吃了，没那么饿了”→减轻。把“饿意减轻”和 ate 绑在一起，再补开头 ab，拼回 abate。",
         "original": true,
         "kind": "invented_association"
       }
@@ -341,7 +338,8 @@ export const approvedEntries = Object.freeze([
         "sharedSenseZh": "使危害、痛苦或负担减轻",
         "substitutionLimitZh": "通常需要宾语。因此 the storm abated 不能直接换成 the storm mitigated；也不等于法律语境中彻底消除妨害。"
       }
-    ]
+    ],
+    "coreEn": "To become less intense, or make something less severe; in particular technical uses, to remove a nuisance or reduce or cancel a tax."
   },
   {
     "number": 5,
@@ -349,23 +347,17 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əˈbriːvieɪt/",
     "pos": "v. 及物",
     "coreMeaningZh": "把词或名称缩写；缩短；使简略",
-    "coreImageZh": "一张很长的姓名牌换成短牌，大家仍知道它指谁。核心是“形式变短而仍有所代表”；镜头拉远，长会议变成短会议，也属于它的较宽用法。",
+    "coreImageZh": "把较长的形式变短，尤其指把词或名称缩写成能代表完整形式的写法，例如把 Doctor 写成 Dr.。它也能表示缩短会议、过程或叙述，未必涉及字母缩写。缩写的重点是仍能认出它代表什么，而不是随意删掉几个字。",
     "mnemonics": [
       {
-        "method": "brev 的短",
-        "textZh": "中间的 brev 可追溯到拉丁语 brevis“短”。brief、brevity 与它有共同的词源联系：brief 是简短的，brevity 是简洁，abbreviate 是把形式弄短。",
+        "method": "熟词桥梁｜brief 的“短”",
+        "textZh": "abBREViate 的 brev，连到 brief（简短的）。两者同源，都有“短”的线索：brief 是短的，abbreviate 是把它缩短、缩写。拼成 ab＋brev＋iate，交界处正好两个 b。",
         "original": false,
         "kind": "etymology"
       },
       {
-        "method": "长词给自己剪发",
-        "textZh": "abbreviation 自己很长，却能戴上写着 abbr. 的短名牌。这幅“教别人缩短，先把自己的名字缩短”的画面，把动词的动作与名词的结果一起固定下来。",
-        "original": true,
-        "kind": "invented_association"
-      },
-      {
-        "method": "两把剪刀",
-        "textZh": "一把剪刀剪姓名牌，多余字母掉下来；另一把剪刀剪会议日程，时段变短。两把剪刀都贴 abbreviate，提醒你它既管缩写，也管缩短时长。",
+        "method": "字形联想｜长名字只留 ABBR",
+        "textZh": "给 abbreviate 做一张小名牌，只准留下头四个字母 ABBR，其余全部截掉。词自己示范“缩写”：abbreviate→ABBR。看清短名牌留下两个 B，再用 brev 的“短”拼回长词。",
         "original": true,
         "kind": "invented_association"
       }
@@ -435,7 +427,8 @@ export const approvedEntries = Object.freeze([
         "sharedSenseZh": "缩短一次活动、过程或文本",
         "substitutionLimitZh": "curtail 强调限制或削减，truncate 常带截去尾端、突然截断的意味。abbreviate 本身不一定说明是被迫中止，也不保证结果残缺。"
       }
-    ]
+    ],
+    "coreEn": "To make a word, name, account, or activity shorter; especially to use a shortened form that represents the full expression."
   },
   {
     "number": 6,
@@ -443,19 +436,19 @@ export const approvedEntries = Object.freeze([
     "ipa": "/ˈæbdɪkeɪt/",
     "pos": "v.",
     "coreMeaningZh": "退位；正式放弃王权或高位；放弃、推卸应承担的职责",
-    "coreImageZh": "王冠被放回宝座，戴冠的人却走下台阶。abdicate 的重心是退出本来由自己承担的位置：可以正式交出王权，也可以把本该自己扛的责任丢在原地。",
+    "coreImageZh": "最典型的是君主正式放弃王位，不再掌握原来的王权；退位可以出于自愿，也可以在压力下发生。用于 responsibility 等宾语时，则是放弃或推卸本应承担的职责，常带批评。普通人辞职通常说 resign，不能把所有“离开职位”都换成 abdicate。",
     "mnemonics": [
       {
-        "method": "说出退出的宣告",
-        "textZh": "拉丁语 abdicāre 表示放弃、辞去，包含 ab-，以及与 dīcere（说、陈述）相关的成分。把它记成在众人面前宣告“这个位置我不再承担”：王位退出，责任也可退出。",
-        "original": false,
-        "kind": "etymology"
+        "method": "熟词对照｜dedicate 献身，abdicate 抽身",
+        "textZh": "deDICATE 是献身，abDICATE 是退位、放弃职责。保留同一段 DICATE，只换开头：de 献身职责，ab 从职责中抽身。想象国王摘下王冠：abdicate。",
+        "original": true,
+        "kind": "invented_association"
       },
       {
-        "method": "王冠与责任背包",
-        "textZh": "王冠很重，国王把它摘下，是 abdicate；责任背包很重，负责人把它扔下，也是 abdicate。一个交出地位，一个丢下担当，两义由“卸下自己承担的东西”连起来。",
-        "original": true,
-        "kind": "semantic_image"
+        "method": "词根联想｜开口宣布“不当了”",
+        "textZh": "ab- 表离开；dic 连到 dictionary、dictate 里的“说”。国王开口宣布“我不当了”：说出退出王位的决定→abdicate，退位。也可指放弃本该承担的职责。",
+        "original": false,
+        "kind": "etymology"
       }
     ],
     "usage": [
@@ -515,7 +508,8 @@ export const approvedEntries = Object.freeze([
         "sharedSenseZh": "语境为逃避本职责任时，表达方向接近",
         "substitutionLimitZh": "shirk 强调躲着不做，未必彻底放弃；abdicate 可强调把责任整个丢掉"
       }
-    ]
+    ],
+    "coreEn": "To give up a throne or sovereign power; also to stop carrying out a responsibility one is expected to fulfill."
   },
   {
     "number": 7,
@@ -523,19 +517,19 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əˈberənt/；也读 /ˈæbərənt/",
     "pos": "adj.",
     "coreMeaningZh": "偏离常态的；异常的；偏离公认规范的；反常的",
-    "coreImageZh": "一排脚印沿着小路前进，突然有一串拐进草丛。aberrant 说的是偏离原本的正常路径或典型模式；先有“通常怎样”的基准，才看得出它偏了。",
+    "coreImageZh": "某种行为、结果或生物特征偏离了通常的模式或公认的规范，就可以说它是 aberrant。判断前要先看正常基准是什么：异常数据未必涉及对错，反常行为却常带负面评价。因此它适合表示“偏离常态”，不宜泛用来夸人有个性、有创意。",
     "mnemonics": [
       {
-        "method": "离开路线，走偏了",
-        "textZh": "来自拉丁语 aberrāre 的分词形式：ab- 表示离开，errāre 表示游走、走错。它与 err 有词源联系，因此最牢靠的抓手是“离开正常路线”。",
-        "original": false,
-        "kind": "etymology"
+        "method": "熟词联想｜正常路线突然 ERR",
+        "textZh": "abERRant 中间藏着 err（犯错），也像 error 的开头。路线本来笔直，走到 ERR 突然拐歪→偏离常态的、异常的。异常不一定是错误，用 ERR 帮你想到“偏离”。",
+        "original": true,
+        "kind": "invented_association"
       },
       {
-        "method": "散点图上的离队者",
-        "textZh": "把一群数据点想成排队等车的人，只有一个点跑到屋顶。你一眼看见它 aberrant，是因为它偏离队伍；屋顶高不等于表现优秀，只说明不合常态。",
+        "method": "拆拼联想｜ERR 的 ANT 走错队",
+        "textZh": "ab＋err＋ant：err 是走错，ant 是蚂蚁。一队蚂蚁向前走，偏偏这只 ant 倒着爬上天花板。err 的 ant→反常的；补上 ab，拼回 aberrant。",
         "original": true,
-        "kind": "semantic_image"
+        "kind": "invented_association"
       }
     ],
     "usage": [
@@ -595,7 +589,8 @@ export const approvedEntries = Object.freeze([
         "sharedSenseZh": "描述不寻常的人或行为时部分重合",
         "substitutionLimitZh": "eccentric 可只是古怪而有趣；aberrant 不宜随便当作讨喜的“有个性”"
       }
-    ]
+    ],
+    "coreEn": "Differing from the usual pattern or departing from accepted standards, often in a troubling way."
   },
   {
     "number": 8,
@@ -603,25 +598,19 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əˈbet/",
     "pos": "v. [及物]",
     "coreMeaningZh": "帮助、怂恿某人做坏事；助长不良行为；支持、促成",
-    "coreImageZh": "坏事正要发生，一个人不必亲手实施，也可能通过递工具、撑腰、推上一把来促成它。abet 把镜头对准这种帮助和助长，尤其常用于错误或违法行为。",
+    "coreImageZh": "通过帮忙、鼓励或提供条件，促成某人采取行动，尤其常指帮助或怂恿坏事。一个人即使没有亲手实施犯罪，提供工具、替行动撑腰也可能是在 abet。这个词不只表示口头教唆；虽也能泛指支持，日常夸人帮忙时用 help 或 support 更稳妥。",
     "mnemonics": [
       {
-        "method": "从驱使攻击到怂恿支持",
-        "textZh": "词源经盎格鲁法语 abeter，可追到表示以动物骚扰、攻击的 beter，与 bait 有词源联系。记住“在旁边驱动行动”的方向；现代 abet 不要求实际有动物或诱饵。",
-        "original": false,
-        "kind": "etymology"
-      },
-      {
-        "method": "画面边缘的第二只手",
-        "textZh": "海报中央有人在干坏事，画面边缘伸来第二只手，递上梯子。把 abet 记在这份助力上：它强调帮助和推动，不要求帮助者自己完全置身事外。",
-        "original": true,
-        "kind": "semantic_image"
-      },
-      {
-        "method": "A 递 BET 筹码",
-        "textZh": "想象 A 明知有人要作弊，还递给他一把下注用的筹码 BET，为他撑腰。A＋BET 拼出 abet；这是临时编的记忆剧情，不表示这个词源于赌博。",
+        "method": "英语同音｜a bet 给坏事撑腰",
+        "textZh": "abet 听起来就是 a bet（一次下注）。有人要作弊，你递上赌资：“干吧，我押你赢！”a＋bet→abet：帮助、怂恿坏事。",
         "original": true,
         "kind": "invented_association"
+      },
+      {
+        "method": "搭配联记｜aid and abet",
+        "textZh": "aid and abet，连着念三遍：帮助并助长。aid 是帮助，把它当路标，就能找回 abet 的“协助、助长”义。注意 abet 的 bet 是 /bet/，不同于 abate 的 /beɪt/。",
+        "original": false,
+        "kind": "phrase_anchor"
       }
     ],
     "usage": [
@@ -685,7 +674,8 @@ export const approvedEntries = Object.freeze([
         "sharedSenseZh": "谈论推动坏事发生时方向接近",
         "substitutionLimitZh": "instigate 更突出挑起、发起；abet 不要求是最初的发起者"
       }
-    ]
+    ],
+    "coreEn": "To help or encourage a person or action, especially wrongdoing."
   },
   {
     "number": 9,
@@ -693,19 +683,19 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əˈbeɪəns/",
     "pos": "n. [通常不可数]",
     "coreMeaningZh": "暂时搁置；暂停实施或生效的状态；权属或继承暂时悬而未定的状态",
-    "coreImageZh": "一份计划被夹在透明暂停夹里：纸还在，内容没有作废，只是暂时不启动。abeyance 表示这种搁置、暂不起作用的状态，往往是在等另一个问题先解决。",
+    "coreImageZh": "事情暂时放着，尚未继续执行或发挥效力，这种状态叫 abeyance，通常说 in abeyance。比如方案要等调查结果出来再决定，便可先搁置。它不表示已经永久取消，也不承诺何时恢复；在权属或继承语境里，还可表示暂时没有确定承接者。",
     "mnemonics": [
       {
-        "method": "张着嘴，等一个归属",
-        "textZh": "词源来自盎格鲁法语，早期与权属、继承的空缺有关；更早的相关成分有张口、期待之意。可以想成继承人尚未确定，众人张望等待，事情就悬在那里。",
-        "original": false,
-        "kind": "etymology"
+        "method": "中文近音｜“备”着，暂时不用",
+        "textZh": "abeyance 的重读 bey /beɪ/，近音想到“备”：方案备好了，却先搁着不用。bey→备着等→暂时搁置。全词读 /əˈbeɪəns/。",
+        "original": true,
+        "kind": "invented_association"
       },
       {
-        "method": "透明暂停夹",
-        "textZh": "把 abeyance 印在一只透明夹子上，夹住合同。你能看见合同仍然存在，却不能执行；等条件满足，再打开夹子。记的是“暂放着”的状态，不是撕毁文件。",
+        "method": "英语同音｜停在 bay，暂不出发",
+        "textZh": "bey 与 bay（海湾）同音。方案像一艘船，暂时停在 bay 等放行：没出航，也没报废→暂时悬置。拼写用 bey，再接 a＋bey＋ance＝abeyance。",
         "original": true,
-        "kind": "semantic_image"
+        "kind": "invented_association"
       }
     ],
     "usage": [
@@ -765,7 +755,8 @@ export const approvedEntries = Object.freeze([
         "sharedSenseZh": "语境为正式暂缓某类活动时有重合",
         "substitutionLimitZh": "moratorium 是禁限或暂缓的安排；abeyance 是悬置状态。不能直接把 in abeyance 换成 in moratorium"
       }
-    ]
+    ],
+    "coreEn": "A state in which something is temporarily inactive or not taking effect; also a gap in succession with no established holder of a title."
   },
   {
     "number": 10,
@@ -773,19 +764,19 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əbˈhɔːr/",
     "pos": "v. [及物]",
     "coreMeaningZh": "憎恶；极其厌恶",
-    "coreImageZh": "看到残忍的举动，人不只是皱一下眉，而是厌恶得往后缩。abhor 是这种强烈排斥和憎恶；常包含道德上的反感，但并不只限于道德话题。",
+    "coreImageZh": "对某人、某种行为或事物感到极其厌恶，强烈到难以接受。憎恶暴力、残忍等，是 abhor 的典型用法；它比普通的 dislike 强得多，语气也较正式。常有道德上的反感，但对象也可以是个人极不喜欢的事物，不必涉及道德判断。",
     "mnemonics": [
       {
-        "method": "厌恶得退缩发抖",
-        "textZh": "拉丁语 abhorrēre 由 ab-（离开）和 horrēre（毛发竖起、发抖）组成；horror 也与这个词根相连。不是普通“不喜欢”，而是强烈反感到想退开。",
+        "method": "熟词联想｜HOR 连到 horror",
+        "textZh": "abHOR 的 hor 连到 horror（恐怖、惊骇），两者同源。看到残忍之举，厌恶得退开：ab- 离开＋hor→abhor，憎恶。记住这里是“极厌恶”，不只是害怕。",
         "original": false,
         "kind": "etymology"
       },
       {
-        "method": "椅子自动后退",
-        "textZh": "想象一把会读情绪的椅子：看到无聊节目，只微微晃动；看到残忍行为，椅子猛地后退半米。那次强烈的后退就是 abhor，把“程度很深”刻进动作里。",
+        "method": "反义联想｜H 恨，D 爱",
+        "textZh": "abHor 的 H 借 Hate（憎恨），aDore 的 D 借 Dear（亲爱的）。把两个词摆在心的两端：H 恨→abhor 憎恶；D 爱→adore 喜爱。",
         "original": true,
-        "kind": "semantic_image"
+        "kind": "invented_association"
       }
     ],
     "usage": [
@@ -844,7 +835,8 @@ export const approvedEntries = Object.freeze([
         "sharedSenseZh": "上下文同时包含憎恶和轻蔑时可能接近",
         "substitutionLimitZh": "despise 的核心常是看不起；abhor 的核心是极度厌恶，不必包含优越感"
       }
-    ]
+    ],
+    "coreEn": "To feel a very strong aversion to someone or something."
   },
   {
     "number": 11,
@@ -852,20 +844,20 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əˈbaɪdɪŋ/",
     "pos": "adj.",
     "coreMeaningZh": "（感情、信念、记忆等）长久不变的；持久的",
-    "coreEn": "lasting firmly over time",
-    "coreImageZh": "日历一页页撕掉，心里的那盏灯还亮着：时间过去了，感情或信念仍留在原处。",
+    "coreEn": "Continuing over a long period, especially of a feeling, interest, belief, or memory.",
+    "coreImageZh": "一份感情、兴趣、信念或记忆经过很长时间仍然存在，可以用 abiding 形容。例如多年后仍对某项事业怀有热情，是 an abiding interest。重点是持久、经得起时间，而不是一时强烈；它也不要求内容一定美好，或保证永远不会改变。",
     "mnemonics": [
       {
-        "method": "AI 原创 · 心里的常驻客",
-        "textZh": "把记忆想成住客：有些只住一晚，abiding 那位却住了几十年，连门牌都成了他的名字。abiding memory 就是心中长住、不肯搬走的记忆。",
-        "kind": "invented_association",
-        "original": true
+        "method": "中文近音｜“拜定”了，一辈子",
+        "textZh": "abiding 的 /baɪdɪŋ/，近音想到“拜定”：拜定这位老师，敬意一辈子不变。a＋“拜定”→abiding，持久的、长久不变的。",
+        "original": true,
+        "kind": "invented_association"
       },
       {
-        "method": "词义串联 · 留下来",
-        "textZh": "abide 有“停留、持续存在”的意思；abiding 抓住“始终留着”这条线，落到感情和信念上，就是经年不变。这里记的是形容词；abide by the rules 中的 abide by 则是“遵守”。",
-        "kind": "semantic_image",
-        "original": false
+        "method": "熟词变形｜abide 留着，abiding 一直在",
+        "textZh": "abide 有“停留、持续存在”的意思；去 e 加 ing，变成 abiding。想象一份感情住下来，一直没搬走：abide→abiding，长久不变。",
+        "original": false,
+        "kind": "word_family"
       }
     ],
     "usage": [
@@ -921,20 +913,20 @@ export const approvedEntries = Object.freeze([
     "ipa": "/ˈæbdʒekt/",
     "pos": "adj.",
     "coreMeaningZh": "（处境）极其悲惨的；（失败等）彻底的；卑躬屈膝的",
-    "coreEn": "utterly wretched, or lacking dignity through extreme submission",
-    "coreImageZh": "一条向下到底的刻度：处境跌到底，是赤贫、惨败；姿态低到底，是失去尊严的屈从。",
+    "coreEn": "Extremely bad or miserable; complete and disastrous when describing failure; or markedly humble, submissive, or lacking dignity.",
+    "coreImageZh": "形容处境时，abject 表示糟到极点：abject poverty 是赤贫，abject failure 是彻底失败。形容道歉、服从等姿态时，则表示把自己放得极低，带卑微、屈从的意味。要看它修饰什么；它不是能随意放在任何形容词前的“非常”，也不只是普通的诚恳或谦虚。",
     "mnemonics": [
       {
-        "method": "AI 原创 · 地板刻度",
-        "textZh": "想象电梯只有两个“地下最底层”：一层写着“贫困、失败”，另一层写着“低头、求饶”。abject 都是低到地板，分别记住“极惨”和“极卑微”，别只背成一个“可怜的”。",
-        "kind": "invented_association",
-        "original": true
+        "method": "熟词换头｜被 reject，惨到谷底",
+        "textZh": "reJECT 是拒绝。想象申请一封封被 reject，处境惨到谷底；把 re 换成 ab→abject，极其悲惨的。JECT 不变，记“拒绝信堆成山，惨到谷底”。",
+        "original": true,
+        "kind": "invented_association"
       },
       {
-        "method": "真实词源 · 被抛到低处",
-        "textZh": "abject 可追溯到拉丁语 abicere“抛弃、扔开”，由 ab- 与表示“扔”的 jacere 构成。把“被扔到地上”的画面接到“悲惨、卑下”，但现代词义不等于“被拒绝的”。",
-        "kind": "etymology",
-        "original": false
+        "method": "词根动作｜JECT，把人抛到低处",
+        "textZh": "ject 连到 inject、eject 中的“投、扔”。abject 的历史图景是被抛下：处境低到谷底→极惨；姿态低到伏地→卑下。抓住 ject 的“抛”，再想那个最低处。",
+        "original": false,
+        "kind": "etymology"
       }
     ],
     "usage": [
@@ -1007,33 +999,27 @@ export const approvedEntries = Object.freeze([
     "word": "abjure",
     "ipa": "/əbˈdʒʊr/",
     "pos": "v. [T]",
-    "coreMeaningZh": "正式或郑重宣布放弃（信仰、主张、效忠或某种行为）",
-    "coreEn": "solemnly renounce a belief, allegiance, or practice",
-    "coreImageZh": "把旧信仰放到台前，郑重宣布“从今天起，我不再信奉它”：不只是停下来，更是明确与它决裂。",
+    "coreMeaningZh": "郑重放弃、摒弃（信仰、主张、效忠等）；戒绝、避免（某种行为）",
+    "coreEn": "To firmly reject a belief, allegiance, or practice, often solemnly; also to refrain from a particular activity.",
+    "coreImageZh": "郑重摒弃原先的信仰、效忠或立场，表示今后不再坚持；也可指戒绝某种行为，例如摒弃暴力或奢侈生活。abjure 是正式用词，常让人感到立场上的明确转变，但不要求每次都有公开宣誓仪式。它比随手放弃一件小事更郑重。",
     "mnemonics": [
       {
-        "method": "AI 原创 · 给旧信仰办退会",
-        "textZh": "脑中开一场“退会发布会”：主角摘下旧徽章，对着话筒宣布不再追随旧信仰。abjure 的记忆点是郑重划清界限；悄悄不参加一次活动，还没到这个力度。",
-        "kind": "invented_association",
-        "original": true
+        "method": "中文近音｜举手说“拒”",
+        "textZh": "jure /dʒʊr/，借“拒”作宽松近音。举起手郑重宣布：“旧主张，我拒绝再信！”jure→郑重拒绝→abjure，郑重摒弃／戒绝。英语 jure 不按汉字“拒”读。",
+        "original": true,
+        "kind": "invented_association"
       },
       {
-        "method": "真实词源 · 用誓言告别",
-        "textZh": "拉丁语 abiurare 由 ab-（离开）与 iurare（发誓）组成。记住“以誓言告别旧立场”；现代用法可以是正式、公开的放弃，不必真的宣誓。",
-        "kind": "etymology",
-        "original": false
-      },
-      {
-        "method": "AI 原创 · 一字母的方向灯",
-        "textZh": "把 abjure 与 adjure 并排：abjure 的 B 联想 Break with（与……决裂）；adjure 的 D 联想 Demand（郑重要求）。这只是人为字母提示：abjure 是自己声明放弃，adjure 是郑重要求别人做事。",
-        "kind": "invented_association",
-        "original": true
+        "method": "熟词联想｜在 jury 前宣告放弃",
+        "textZh": "jure 与 jury（陪审团）都有“发誓”的历史线索。ab- 离开＋jure 誓言：想象你在 jury 前举手，郑重放弃旧立场→abjure。",
+        "original": false,
+        "kind": "etymology"
       }
     ],
     "usage": [
       {
-        "senseZh": "正式宣布不再信奉或不再从事",
-        "explanationZh": "及物动词，直接接被放弃的信仰、忠诚、主张或行为。语气正式，常有明确否定旧立场的意味；并非任何随手放弃都适用。",
+        "senseZh": "郑重放弃信仰或立场；戒绝某种行为",
+        "explanationZh": "及物动词，直接接被摒弃的信仰、效忠、主张或行为。常带郑重否弃旧立场的意味，也可表示戒绝或避免某种行为；不要求真的公开宣誓。语气正式，并非随手放弃一件小事的通用说法。",
         "collocations": [
           {
             "phrase": "abjure a belief",
@@ -1045,7 +1031,7 @@ export const approvedEntries = Object.freeze([
           },
           {
             "phrase": "abjure violence",
-            "meaningZh": "宣布摒弃暴力"
+            "meaningZh": "摒弃暴力"
           }
         ]
       }
@@ -1083,26 +1069,20 @@ export const approvedEntries = Object.freeze([
     "ipa": "/ˈæbnəɡeɪt/",
     "pos": "v. [T]",
     "coreMeaningZh": "克己放弃（欲望、利益等）；放弃（权利、权力）；拒绝承认或承担",
-    "coreEn": "deny oneself something or relinquish a right, power, or responsibility",
-    "coreImageZh": "在“本来属于我、我想要、我该承担”的那一栏画上叉：可能是克己让出利益，也可能是推掉责任。",
+    "coreEn": "To give up a desire, interest, right, or power, or refuse to acknowledge or accept something such as a responsibility.",
+    "coreImageZh": "把自己原本拥有、追求或应承担的东西放开：可以是克制私欲、放弃个人利益，也可以是让出权利或权力。若宾语是 responsibility，则可能是在拒绝承担责任。abnegate 语气正式，是否值得赞扬取决于放弃的是什么，不能一律理解成高尚的自我牺牲。",
     "mnemonics": [
       {
-        "method": "AI 原创 · 把自己的奖品推回去",
-        "textZh": "领奖台上，奖品已经写了你的名字，你却把它推回去：“这一份我不要。”abnegate 把“拒绝”转向自己原本可享有的东西；从蛋糕、特权想到克己，再扩展到放弃权力。",
-        "kind": "invented_association",
-        "original": true
+        "method": "字母联想｜A、B 两份好处，统统 NEGATE",
+        "textZh": "A、B 两份特权摆在面前，你统统 negate（否定）：“A 不要，B 也不要。”把 AB 和 NEGATE 拼起来，就是 abnegate：放弃自己的利益、克己。",
+        "original": true,
+        "kind": "invented_association"
       },
       {
-        "method": "真实词源 · 否认与拒绝",
-        "textZh": "词源连接拉丁语 negare“否认、说不”，同族可联想到 negate。abnegate 抓住“拒绝、放弃”；不要把它等同于 negate 的“使无效、抵消”。",
-        "kind": "etymology",
-        "original": false
-      },
-      {
-        "method": "AI 原创 · 两只推开的手",
-        "textZh": "同样是推开：把自己的享受推开，可能是克己；把自己的责任推开，可能是不负责任。两幅画面共用 abnegate，能防止把这个词误记成永远褒义的“无私奉献”。",
-        "kind": "invented_association",
-        "original": true
+        "method": "拆拼联想｜给欲望关上 GATE",
+        "textZh": "abneGATE 的末尾是 gate（门）。想象零食、特权、享乐排队进门，你亲手关上 gate：“这些好处，我放弃。”gate→给欲望关门→abnegate，克己、放弃。",
+        "original": true,
+        "kind": "invented_association"
       }
     ],
     "usage": [
@@ -1168,20 +1148,20 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əˈbɑːməneɪt/",
     "pos": "v. [T]",
     "coreMeaningZh": "深恶痛绝；极其厌恶",
-    "coreEn": "regard with intense hatred or disgust",
-    "coreImageZh": "厌恶的刻度冲到红区：不仅不喜欢，还本能地想远离，可能带有强烈的道德反感。",
+    "coreEn": "To feel intense hatred or disgust toward something, often with moral disapproval.",
+    "coreImageZh": "对某种行为、观念或事物深恶痛绝，表达非常强烈的厌恶。比如极其憎恶残酷行为或教条，可以用 abominate。它是正式用词，常带道德上的谴责，但也能表达个人的极度反感；与 abhor 含义很接近，不必硬分成两种不同程度的憎恨。",
     "mnemonics": [
       {
-        "method": "AI 原创 · 厌恶警报拉满",
-        "textZh": "把情绪画成音量旋钮：dislike 在低档，abominate 一拧到底，红灯闪烁。画面里看到残酷行为，整个人立刻后退，心里响起“绝不能接受！”把极强反感固定住。",
-        "kind": "invented_association",
-        "original": true
+        "method": "拆拼联想｜竟然吃到 BOMB",
+        "textZh": "a＋bom＋in＋ate：bom 像 bomb（炸弹），in 是在里面，ate 是吃了。饭里竟有炸弹，差点吃下去，恨死投弹的人！a＋bom＋in＋ate→abominate，深恶痛绝。按字形记，bom 不多写最后那个 b。",
+        "original": true,
+        "kind": "invented_association"
       },
       {
-        "method": "词族画面 · 厌恶三连",
-        "textZh": "把同一幕剪成三帧：你 abominate（深恶痛绝）某种行为；这行为是 abominable（令人憎恶的）；你把它称为 an abomination（令人憎恶的事物）。三个词围着同一份强烈厌恶转。",
-        "kind": "semantic_image",
-        "original": false
+        "method": "熟词换头｜暴君 DOMINATE，令人憎恶",
+        "textZh": "dOMINATE 是支配。暴君想 dominate 一切，你对他深恶痛绝。保留后面的 OMINATE，把 d 换成 ab→abominate，憎恶。记“他越想支配，我越憎恶”。",
+        "original": true,
+        "kind": "invented_association"
       }
     ],
     "usage": [
@@ -1233,18 +1213,18 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əˈbʌvˌbɔːrd/",
     "pos": "adj. / adv.",
     "coreMeaningZh": "光明正大的；公开而诚实、不搞欺瞒的（也可作副词）",
-    "coreEn": "honest and open in one's dealings",
-    "coreImageZh": "交易的条件全摊在桌上，手也摆在桌面上，没有藏在桌底的小动作。",
+    "coreEn": "Honest and free from deception in the way something is done; also, in such a manner.",
+    "coreImageZh": "办事、交易或处理事情的方式诚实坦荡，没有用隐瞒或欺骗占便宜，就可以说 aboveboard。比如交易条件交代清楚、没有暗中操纵，是典型情境。它不只是“别人看得见”：公开进行的事如果仍有欺诈，也称不上 aboveboard；这个词还能作副词描述行事方式。",
     "mnemonics": [
       {
-        "method": "牌桌词源",
-        "textZh": "above 是“在上方”，board 在这里指桌面。打牌时双手留在桌面上，别人看得见动作，就不容易暗中作弊；由此抓住“公开、诚实”这个意思。",
+        "method": "熟词拆开｜双手放在桌面上",
+        "textZh": "above 是上方，board 可指桌面。打牌时双手放在桌面上，above board，动作人人看得见，没法在桌底换牌。above＋board→aboveboard，光明正大、公开诚实。",
         "original": false,
-        "kind": "etymology"
+        "kind": "word_components"
       },
       {
-        "method": "AI 原创·透明价签",
-        "textZh": "想象一家店把价签做成透明玻璃：正面是售价，背面是全部手续费，顾客从两边都看得清。这个交易敢让你把每一面都看透，就是 aboveboard。",
+        "method": "反向联想｜桌底交易，翻到桌面",
+        "textZh": "under the table 是暗中交易；反过来，把钱和账本全摆到桌面上。under→above，table→board：aboveboard，公开诚实。记住“桌底藏，桌上亮”。",
         "original": true,
         "kind": "invented_association"
       }
@@ -1296,20 +1276,20 @@ export const approvedEntries = Object.freeze([
     "ipa": "/əˈbreɪd/",
     "pos": "v.（常作及物动词）",
     "coreMeaningZh": "通过摩擦磨去表层；磨损，擦伤；引申为消磨精神、使烦躁或疲惫",
-    "coreEn": "damage or remove a surface through friction",
-    "coreImageZh": "砂纸划过木头，一层细粉落下来；留下变化的，是被摩擦的表面。",
+    "coreEn": "To wear away, roughen, or injure a surface by rubbing; figuratively, to irritate or wear someone down mentally.",
+    "coreImageZh": "物体表面因摩擦而磨损、擦伤或变粗糙，就是 abrade，例如砂纸磨木头、皮肤擦过粗糙地面。关键是摩擦作用在表面，不泛指所有损坏，也不要求一定反复磨很久。引申到精神上，它还可以表示使人烦躁、疲惫，仿佛耐心或意志受到消磨。",
     "mnemonics": [
       {
-        "method": "AI 原创·掉粉的名字",
-        "textZh": "想象一块写着 ABRADE 的木牌被砂纸来回蹭，字母没有整块断掉，而是化成细粉，一点点落在脚边。记住那堆粉：abrade 是把表层磨掉。",
+        "method": "英语同音｜a braid 把脖子擦破",
+        "textZh": "a braid（一条辫子）与 abrade 同音。粗硬的辫子甩来甩去，把脖子磨红擦破。a braid→abrade，磨损、擦伤。借 braid 的音，拼写记 rade。",
         "original": true,
         "kind": "invented_association"
       },
       {
-        "method": "拉丁词源·刮离表面",
-        "textZh": "来自拉丁语 abrādere：ab- 表“离开”，rādere 表“刮”。两部分合起来就是把一层东西“刮离”原来的表面；皮肤被擦破、岩石被磨蚀都接得上。",
+        "method": "词族联记｜abrasive 砂纸磨表面",
+        "textZh": "abrasive 是“磨蚀性的”。抓住共同的 abra：abrasive sandpaper 是砂纸；砂纸的动作是 abrade，磨去表层；磨出的损伤是 abrasion。abra→摩擦→磨损。",
         "original": false,
-        "kind": "etymology"
+        "kind": "word_family"
       }
     ],
     "usage": [
@@ -1374,27 +1354,27 @@ export const approvedEntries = Object.freeze([
     "word": "abridge",
     "ipa": "/əˈbrɪdʒ/",
     "pos": "v.（及物）",
-    "coreMeaningZh": "删节作品以缩短篇幅；限制、削减权利或自由",
-    "coreEn": "shorten a work by cutting material; restrict rights or freedoms",
-    "coreImageZh": "一把编辑剪刀有两种落点：剪书页，篇幅变短；剪权利清单，自由的范围变小。",
+    "coreMeaningZh": "删节作品以缩短篇幅；缩短时间或范围；限制、削减权利或自由",
+    "coreEn": "To shorten a work by removing material while keeping its essential meaning; more broadly, to shorten duration or reduce scope, including rights or freedoms.",
+    "coreImageZh": "把书、文章等删去部分内容，保留主要意思而缩短篇幅，叫 abridge；删节版就是 an abridged edition。它也可表示缩短时间或范围。遇到 rights、freedom 等宾语时，则是限制原有权利或自由，未必完全取消。判断的是“内容被删短”还是“可行使的范围被缩小”。",
     "mnemonics": [
       {
-        "method": "AI 原创·小说减重秤",
-        "textZh": "想象一本厚小说站上秤，编辑剪掉旁支情节，主角和主线还站在书里，重量却减了一半。abridge 是给作品做删节，留下的仍是那个故事。",
+        "method": "英语同音｜a bridge 把长路变短",
+        "textZh": "a bridge（一座桥）与 abridge 同音，连写也一模一样。原来绕河走十页路，架桥后只走三页：起终点还在，冗长绕路删掉了。a＋bridge→abridge，删节、缩短。",
         "original": true,
         "kind": "invented_association"
       },
       {
-        "method": "同源联记·abbreviate",
-        "textZh": "abridge 经法语追溯到拉丁语 abbreviāre，与 abbreviate 同源，都牵着“变短”这根线。abbreviate 常把名称缩成缩写；abridge 常把长篇作品删成节本。",
-        "original": false,
-        "kind": "etymology"
+        "method": "近词对照｜桥删短，辫子擦伤",
+        "textZh": "a BRIDGE 是桥，缩短路程→abridge 删短；a BRAID 是辫子，来回擦皮肤→abrade 磨损。记“bridge 桥删短，braid 辫擦伤”，把这两个近形词分开。",
+        "original": true,
+        "kind": "invented_association"
       }
     ],
     "usage": [
       {
         "senseZh": "删节长篇作品",
-        "explanationZh": "删除部分内容，使书、剧本或文章更短，同时保留主要内容。常以 abridged 修饰 edition 或 version。",
+        "explanationZh": "删除部分内容，使书、剧本或文章更短，同时保留主要内容。常以 abridged 修饰 edition 或 version。较宽的用法还可指缩短时间或范围；这里先掌握最典型的作品删节义。",
         "collocations": [
           {
             "phrase": "abridge a novel",
@@ -1454,20 +1434,20 @@ export const approvedEntries = Object.freeze([
     "ipa": "/ˈæb.rə.ɡeɪt/",
     "pos": "v.（及物，正式）",
     "coreMeaningZh": "正式废除法律、协议或惯例；也可指不履行职责",
-    "coreEn": "formally end a law or agreement; fail to fulfill a responsibility",
-    "coreImageZh": "一份原本有效的条约被盖上“废止”印章，从此不再按它办事。",
+    "coreEn": "To formally put an end to the force of a law or agreement; also to disregard an obligation and fail to carry it out.",
+    "coreImageZh": "使原来有效的法律、条约或协议正式失效，不再按它执行，是 abrogate 的典型意思；重点是废止效力，而不只是修改条文。若宾语是 duty 或 responsibility，则表示把本该履行的职责置之不理。这时是在说人不尽责，不能理解成那项责任已经合法免除。",
     "mnemonics": [
       {
-        "method": "AI 原创·条约退场",
-        "textZh": "想象会议桌中央的条约戴着“有效”胸牌。公章一落，胸牌变成“废止”，条约卷起纸身离开会场。abrogate 让约束正式退场。",
+        "method": "拆拼联想｜BRO 拆 GATE，门禁作废",
+        "textZh": "a＋bro＋gate：bro（哥们）把 gate（大门）拆了，还宣布“旧门禁规定作废！”a＋bro＋gate→abrogate，正式废除。这是字形联想；全词重音在开头 /ˈæb/。",
         "original": true,
         "kind": "invented_association"
       },
       {
-        "method": "近形对照·abridge / abrogate",
-        "textZh": "给同一张权利清单做两种处理：abridge 用剪刀裁窄范围；abrogate 用印章正式废止。把“剪短”和“作废”并排放，就不容易只因长得像而混淆。",
-        "original": true,
-        "kind": "semantic_image"
+        "method": "词根联想｜ROG，请求废掉旧法",
+        "textZh": "interrogate（询问）和 abrogate 共享 rog 的“询问、请求”词源线索。ab- 离开：请求让旧法退出→abrogate，废除。抓住 ab＋rog＋ate，记“请求废法”。",
+        "original": false,
+        "kind": "etymology"
       }
     ],
     "usage": [
@@ -1537,18 +1517,18 @@ export const approvedEntries = Object.freeze([
     "ipa": "/æbˈskɑːnd/",
     "pos": "v.（不及物）",
     "coreMeaningZh": "突然秘密逃走、潜逃；常为逃避追查或携款而逃",
-    "coreEn": "leave secretly to escape detection or restraint",
-    "coreImageZh": "点名时床上还有鼓起的被子，人却已悄悄从后门溜走，让别人找不到。",
+    "coreEn": "To leave secretly and hide, often to avoid being found or held accountable.",
+    "coreImageZh": "秘密离开并躲起来，常为了逃避追查或本应面对的事情，这就是 abscond。嫌疑人潜逃、有人卷款后失踪，都是典型情境；它不表示普通出门，也不要求一定偷了钱。携款潜逃说 abscond with the money，with 引出带走的东西，不能直接把钱当宾语。",
     "mnemonics": [
       {
-        "method": "AI 原创·还在上班的外套",
-        "textZh": "想象收银员的外套仍搭在椅背上，远看像人还在值班；镜头转到后门，他已经提着钱箱悄悄离开。abscond 的重点是偷偷逃走，钱箱则提醒你 abscond with。",
+        "method": "删字联想｜一秒 SECOND，E 偷溜",
+        "textZh": "SECOND 里的 E 偷偷逃走，剩下 SCOND；前面加 ab，正好 abscond。记“一秒 second，e 已潜逃”→abscond，秘密逃走。这里只拆字形，scond 不照 second 念。",
         "original": true,
         "kind": "invented_association"
       },
       {
-        "method": "词源·藏起来",
-        "textZh": "来自拉丁语 abscondere，意思是“藏起来”。沿着这条线记：abscond 不只是离开原地，而是偷偷离开，让人难以找到。",
+        "method": "词源联想｜ABS 离开，COND 藏起来",
+        "textZh": "abs- 是 ab- 的一种形式，表离开；cond 有“藏起来”的历史线索。abs＋cond＝离开后藏起来→abscond，偷偷逃走、潜逃。",
         "original": false,
         "kind": "etymology"
       }

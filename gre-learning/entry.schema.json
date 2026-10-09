@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:gre-learning:entry:v1",
+  "$id": "urn:gre-learning:entry:v2",
   "title": "GRE learning entry",
   "type": "object",
   "additionalProperties": false,
@@ -55,7 +55,10 @@
             "enum": [
               "invented_association",
               "etymology",
-              "semantic_image"
+              "semantic_image",
+              "word_family",
+              "word_components",
+              "phrase_anchor"
             ]
           }
         },
@@ -197,6 +200,7 @@
     "ipa",
     "pos",
     "coreMeaningZh",
+    "coreEn",
     "coreImageZh",
     "mnemonics",
     "usage",

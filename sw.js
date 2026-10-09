@@ -1,4 +1,4 @@
-const BUILD = "109";
+const BUILD = "110";
 const CACHE_PREFIX = "vocab-studio-";
 const CACHE = `vocab-studio-v${BUILD}-incremental`;
 const NEURAL_VOICE_PROFILES = Object.freeze({
@@ -21,10 +21,10 @@ const CACHE_WORKERS = 3;
 const ASSET_MANIFEST_URL = `./asset-manifest.json?v=${BUILD}`;
 const STATIC_ASSETS = [
   { url: "./index.html", weight: 5_000, reload: true },
-  { url: "./gre-learning/learning.css?v=109", weight: 10_000 },
-  { url: "./gre-learning/update.js?v=109", weight: 4_000 },
+  { url: "./gre-learning/learning.css?v=110", weight: 10_000 },
+  { url: "./gre-learning/update.js?v=110", weight: 4_000 },
   { url: ASSET_MANIFEST_URL, weight: 8_000 },
-  { url: "./manifest.webmanifest?v=109", weight: 1_000 },
+  { url: "./manifest.webmanifest?v=110", weight: 1_000 },
   { url: "./icon-192-v2.png", weight: 50_000 },
   { url: "./icon-512-v2.png", weight: 300_000 },
 ];
