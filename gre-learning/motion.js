@@ -1,9 +1,9 @@
 import {motionArtwork} from './motion-artwork.js';
 const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const descriptions = [
- ['abandon','工人正在把桥建到一半','工人主动放下工具离开，桥的缺口留着无人继续施工'],
+ ['abandon','绘图者正在桌前设计一个尚未完成的项目','绘图者主动放下笔并离开，未完成的项目留在桌上'],
  ['abase','两位成人起初平等站立','其中一人用自我贬低的话讨好对方并低身恳求：这是 abase oneself 的一个例子'],
- ['abash','讲解者自信地写出算式','错误被当众指出并改正，讲解者脸红、目光移开、话语停顿'],
+ ['abash','讲解者自信地写出算式','算式被纠正后，讲解者脸红并抬手掩嘴，露出窘迫的神情'],
  ['abate','暴雨和强风使树明显弯曲','雨势与风力逐渐减弱，但小雨和微风仍在继续'],
  ['abbreviate','同一个人使用完整称谓 Doctor Chen','称谓缩写成 Dr. Chen，所指的人和称谓含义不变']
 ];
@@ -14,6 +14,7 @@ export function motionState(frames,progress) {
   let left=frames[0],right=frames[frames.length-1];
   for(let i=1;i<frames.length;i++){if(progress<=frames[i].at){left=frames[i-1];right=frames[i];break;}}
   let t=Math.max(0,Math.min(1,(progress-left.at)/(right.at-left.at||1)));t=t*t*(3-2*t);
+  if(right.step===true)t=progress<right.at?0:1;
   return Object.fromEntries(Object.entries(defaults).map(([key,value])=>[key,(left[key]??value)+((right[key]??value)-(left[key]??value))*t]));
 }
 export function motionTransform(state) {return `translate(${state.x} ${state.y}) translate(${state.ox} ${state.oy}) rotate(${state.rotate}) scale(${state.sx} ${state.sy}) translate(${-state.ox} ${-state.oy})`;}

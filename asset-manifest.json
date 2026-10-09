@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "111",
-  "generatedAt": "2026-10-09T18:37:53.223734+00:00",
+  "releaseBuild": "112",
+  "generatedAt": "2026-10-09T20:21:14.213233+00:00",
   "build": {
     "tool": "native-esm",
     "format": "esm",
@@ -60,7 +60,7 @@
       "path": "index.html",
       "bytes": 2535,
       "gzipBytes": 1183,
-      "sha256": "a544c289f05779f03481db2bdbd9764f47c9d9700d74044c799951cdd909a7fb",
+      "sha256": "dde3db3d5980df871a7198b809df1cb4d2adf8420e67fcb9d8a7bf603c09f4de",
       "entryPoint": "index.html",
       "imports": []
     },
@@ -133,17 +133,17 @@
     },
     {
       "path": "gre-learning/motion-artwork.js",
-      "bytes": 26708,
-      "gzipBytes": 4338,
-      "sha256": "afe2779e6cc9280b185052c33fb9997309665502f9bda09a7ca77381372656f2",
+      "bytes": 250399,
+      "gzipBytes": 102992,
+      "sha256": "596fd6d3c106dff16d69e6fca8241d24d6b8de1b28838959342387c5dbfc6969",
       "entryPoint": "gre-learning/motion-artwork.js",
       "imports": []
     },
     {
       "path": "gre-learning/motion.js",
-      "bytes": 7227,
-      "gzipBytes": 3184,
-      "sha256": "bd9ee6d669bc0ed3fc9aebfc94911e68811fb1d4c42ad7d30917105301f6f8b7",
+      "bytes": 7293,
+      "gzipBytes": 3204,
+      "sha256": "8ef4a08ab5a17cf867b1451790f0eb3caf3fe3badc741396566f8f673b93adb5",
       "entryPoint": "gre-learning/motion.js",
       "imports": [
         "gre-learning/motion-artwork.js"
@@ -179,7 +179,7 @@
       "path": "gre-learning/update.js",
       "bytes": 2942,
       "gzipBytes": 1242,
-      "sha256": "9f43dd5fba43f3f58e5c9e34fba31f20fd023b1d2c6b8f6e0310caa3b979c164",
+      "sha256": "54d7d183ac74312a5ef20fdacb03ec1ba1fccde5a52cdf88bba194ab05532694",
       "entryPoint": "gre-learning/update.js",
       "imports": []
     },
@@ -363,8 +363,8 @@
     }
   ],
   "totals": {
-    "bytes": 210394,
-    "gzipBytes": 67403
+    "bytes": 434151,
+    "gzipBytes": 166077
   },
   "validation": {
     "syntaxChecked": true,
