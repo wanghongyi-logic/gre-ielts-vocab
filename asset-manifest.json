@@ -1,394 +1,332 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "generatedAt": "2026-09-12T07:09:21.870Z",
+  "releaseBuild": "109",
+  "generatedAt": "2026-10-09T17:15:22.278590+00:00",
   "build": {
-    "tool": "esbuild",
-    "version": "0.28.1",
+    "tool": "native-esm",
     "format": "esm",
     "target": "es2020",
-    "minified": true,
+    "minified": false,
     "codeSplitting": true
   },
   "entries": {
     "runtime": {
-      "path": "app.js",
-      "bytes": 452458,
-      "gzipBytes": 146954,
+      "path": "gre-learning/app.js",
+      "bytes": 5853,
+      "gzipBytes": 2237,
       "assets": [
-        "app.js",
-        "chunks/chunk-7Q67UCJS.js",
-        "chunks/chunk-AVKBJJZB.js",
-        "chunks/chunk-EWNQBASX.js",
-        "chunks/chunk-HNNVAFRB.js",
-        "chunks/chunk-HYM53W4U.js",
-        "chunks/chunk-O3DA37S2.js",
-        "chunks/chunk-QPJMSVWH.js",
-        "chunks/chunk-RGYE7IDV.js",
-        "chunks/chunk-VC46IEJQ.js",
-        "chunks/chunk-ZAP2COP6.js",
-        "content.js",
-        "data/gre-equivalence-packs.js",
-        "data/ielts-538/index.js",
-        "data/lookalike-packs.js",
-        "listening-feature.js"
-      ]
-    },
-    "greLessons": {
-      "path": "content.js",
-      "bytes": 80807,
-      "gzipBytes": 37616,
-      "assets": [
-        "chunks/chunk-EWNQBASX.js",
-        "chunks/chunk-HNNVAFRB.js",
-        "chunks/chunk-VC46IEJQ.js",
-        "content.js"
-      ]
-    },
-    "greLookalikes": {
-      "path": "data/lookalike-packs.js",
-      "bytes": 1171587,
-      "gzipBytes": 480590,
-      "assets": [
-        "chunks/chunk-EWNQBASX.js",
-        "chunks/chunk-HNNVAFRB.js",
-        "chunks/chunk-VC46IEJQ.js",
-        "chunks/chunk-ZAP2COP6.js",
-        "data/lookalike-packs.js"
-      ]
-    },
-    "greEquivalence": {
-      "path": "data/gre-equivalence-packs.js",
-      "bytes": 147708,
-      "gzipBytes": 66968,
-      "assets": [
-        "chunks/chunk-HNNVAFRB.js",
-        "chunks/chunk-VC46IEJQ.js",
-        "chunks/chunk-ZAP2COP6.js",
-        "data/gre-equivalence-packs.js"
-      ]
-    },
-    "ieltsContent": {
-      "path": "data/ielts-538/index.js",
-      "bytes": 1582641,
-      "gzipBytes": 590749,
-      "assets": [
-        "chunks/chunk-VC46IEJQ.js",
-        "data/ielts-538/index.js"
-      ]
-    },
-    "listeningFeature": {
-      "path": "listening-feature.js",
-      "bytes": 57278,
-      "gzipBytes": 18787,
-      "assets": [
-        "chunks/chunk-7Q67UCJS.js",
-        "chunks/chunk-AVKBJJZB.js",
-        "chunks/chunk-HYM53W4U.js",
-        "chunks/chunk-O3DA37S2.js",
-        "chunks/chunk-QPJMSVWH.js",
-        "chunks/chunk-RGYE7IDV.js",
-        "chunks/chunk-VC46IEJQ.js",
-        "listening-feature.js"
-      ]
-    },
-    "listeningEngine": {
-      "path": "listening-engine.js",
-      "bytes": 560,
-      "gzipBytes": 315,
-      "assets": [
-        "chunks/chunk-7Q67UCJS.js",
-        "chunks/chunk-VC46IEJQ.js",
-        "listening-engine.js"
-      ]
-    },
-    "listeningHotWords": {
-      "path": "data/ielts-listening/hot-words.js",
-      "bytes": 172,
-      "gzipBytes": 136,
-      "assets": [
-        "chunks/chunk-QPJMSVWH.js",
-        "chunks/chunk-VC46IEJQ.js",
-        "data/ielts-listening/hot-words.js"
-      ]
-    },
-    "listeningScenarioWords": {
-      "path": "data/ielts-listening/scenario-words.js",
-      "bytes": 209,
-      "gzipBytes": 148,
-      "assets": [
-        "chunks/chunk-RGYE7IDV.js",
-        "chunks/chunk-VC46IEJQ.js",
-        "data/ielts-listening/scenario-words.js"
-      ]
-    },
-    "listeningContextA": {
-      "path": "data/ielts-listening/context-scenes-001-264.js",
-      "bytes": 135,
-      "gzipBytes": 123,
-      "assets": [
-        "chunks/chunk-O3DA37S2.js",
-        "chunks/chunk-VC46IEJQ.js",
-        "data/ielts-listening/context-scenes-001-264.js"
-      ]
-    },
-    "listeningContextB": {
-      "path": "data/ielts-listening/context-scenes-265-528.js",
-      "bytes": 135,
-      "gzipBytes": 123,
-      "assets": [
-        "chunks/chunk-HYM53W4U.js",
-        "chunks/chunk-VC46IEJQ.js",
-        "data/ielts-listening/context-scenes-265-528.js"
-      ]
-    },
-    "listeningInformation": {
-      "path": "data/ielts-listening/information-scenes.js",
-      "bytes": 131,
-      "gzipBytes": 119,
-      "assets": [
-        "chunks/chunk-AVKBJJZB.js",
-        "chunks/chunk-VC46IEJQ.js",
-        "data/ielts-listening/information-scenes.js"
+        "index.html",
+        "manifest.webmanifest",
+        "gre-learning/learning.css",
+        "gre-learning/app.js",
+        "gre-learning/approved-content.js",
+        "gre-learning/content.js",
+        "gre-learning/model.js",
+        "gre-learning/render.js",
+        "gre-learning/schema.js",
+        "gre-learning/update.js",
+        "gre-learning/view.js",
+        "gre-learning/visuals.js",
+        "gre-learning/images/1.svg",
+        "gre-learning/images/10.svg",
+        "gre-learning/images/11.svg",
+        "gre-learning/images/12.svg",
+        "gre-learning/images/13.svg",
+        "gre-learning/images/14.svg",
+        "gre-learning/images/15.svg",
+        "gre-learning/images/16.svg",
+        "gre-learning/images/17.svg",
+        "gre-learning/images/18.svg",
+        "gre-learning/images/19.svg",
+        "gre-learning/images/2.svg",
+        "gre-learning/images/20.svg",
+        "gre-learning/images/3.svg",
+        "gre-learning/images/4.svg",
+        "gre-learning/images/5.svg",
+        "gre-learning/images/6.svg",
+        "gre-learning/images/7.svg",
+        "gre-learning/images/8.svg",
+        "gre-learning/images/9.svg"
       ]
     }
   },
   "assets": [
     {
-      "path": "app.js",
-      "bytes": 452458,
-      "gzipBytes": 146954,
-      "sha256": "2afa0dde13c950d82a57208ce61fb8c7071c4622a362dfa9165636f9bd6c42d3",
-      "entryPoint": "app.js",
-      "imports": [
-        "content.js",
-        "data/lookalike-packs.js",
-        "data/gre-equivalence-packs.js",
-        "data/ielts-538/index.js",
-        "listening-feature.js"
-      ]
-    },
-    {
-      "path": "chunks/chunk-7Q67UCJS.js",
-      "bytes": 23292,
-      "gzipBytes": 8542,
-      "sha256": "6b5b2369b3e6f13e172950d194455eef72ce5bf21f94ef5084f751843e93a6ab",
-      "entryPoint": null,
+      "path": "index.html",
+      "bytes": 2734,
+      "gzipBytes": 1232,
+      "sha256": "50d163ca05c78179963f3fc702247f5403124981f22fca2722fa40cc2ddc7f89",
+      "entryPoint": "index.html",
       "imports": []
     },
     {
-      "path": "chunks/chunk-AVKBJJZB.js",
-      "bytes": 46907,
-      "gzipBytes": 8650,
-      "sha256": "c543dd70b0d92b0b4b0a79f4e756f63098096618eb878a948a55c765c5d7e61c",
-      "entryPoint": null,
+      "path": "manifest.webmanifest",
+      "bytes": 642,
+      "gzipBytes": 351,
+      "sha256": "4fb0713fe2794b661f741c27deb8b1babd2a2844e582e09fe293090d437af47a",
+      "entryPoint": "manifest.webmanifest",
       "imports": []
     },
     {
-      "path": "chunks/chunk-EWNQBASX.js",
-      "bytes": 276113,
-      "gzipBytes": 114108,
-      "sha256": "9b9a0e93a9175ddb1d052bb5e024a9b5d786985d4066827fc4fbd991098b08d8",
-      "entryPoint": null,
-      "imports": [
-        "chunks/chunk-HNNVAFRB.js"
-      ]
-    },
-    {
-      "path": "chunks/chunk-HNNVAFRB.js",
-      "bytes": 7059231,
-      "gzipBytes": 2897113,
-      "sha256": "fab7ff587407f4309f695ca7199c39dc94eae3605b86dc1510cd679987423f53",
-      "entryPoint": null,
-      "imports": [
-        "chunks/chunk-VC46IEJQ.js"
-      ]
-    },
-    {
-      "path": "chunks/chunk-HYM53W4U.js",
-      "bytes": 155635,
-      "gzipBytes": 24827,
-      "sha256": "a3dc24253421002d92878c4739ceeb75982ae3317ac35387884fbc16e59e378c",
-      "entryPoint": null,
+      "path": "gre-learning/learning.css",
+      "bytes": 10049,
+      "gzipBytes": 3090,
+      "sha256": "1a39cf9050b441c36b0ac56fd9e69c06010709717429ee86961a66d5d2bf3c4d",
+      "entryPoint": "gre-learning/learning.css",
       "imports": []
     },
     {
-      "path": "chunks/chunk-O3DA37S2.js",
-      "bytes": 149767,
-      "gzipBytes": 22539,
-      "sha256": "509e9ab2f892d4bf6a8dcbbf84bd886c36314cec5fadf52b63fb726fa86ad499",
-      "entryPoint": null,
+      "path": "gre-learning/app.js",
+      "bytes": 5853,
+      "gzipBytes": 2237,
+      "sha256": "b3f02ae4df42cb4df6be3650e43849ed19e655e4bd2a72f0006e0b72e3fdd042",
+      "entryPoint": "gre-learning/app.js",
+      "imports": [
+        "gre-learning/content.js",
+        "gre-learning/render.js",
+        "gre-learning/model.js",
+        "gre-learning/visuals.js",
+        "gre-learning/view.js"
+      ]
+    },
+    {
+      "path": "gre-learning/approved-content.js",
+      "bytes": 71045,
+      "gzipBytes": 21712,
+      "sha256": "99ec0348d208e911cb0fc2d709bb6e1e925155cc369973767bb009951c85d570",
+      "entryPoint": "gre-learning/approved-content.js",
       "imports": []
     },
     {
-      "path": "chunks/chunk-QPJMSVWH.js",
-      "bytes": 245479,
-      "gzipBytes": 42661,
-      "sha256": "d95f5d1a392bef1bb592182b7d9dfdca0b8be6e365d5d8a0264c419ad187a311",
-      "entryPoint": null,
+      "path": "gre-learning/content.js",
+      "bytes": 671,
+      "gzipBytes": 333,
+      "sha256": "3bb370a75f69bcfff1acde54ebd6c0438b325d4b38b2933224a4d4a180c26320",
+      "entryPoint": "gre-learning/content.js",
+      "imports": [
+        "gre-learning/approved-content.js",
+        "gre-learning/schema.js"
+      ]
+    },
+    {
+      "path": "gre-learning/model.js",
+      "bytes": 691,
+      "gzipBytes": 346,
+      "sha256": "62a63f1c81135c717aa1f0b7c4b75a5b0dbf9d12efdfd16db28c35bf85ee900e",
+      "entryPoint": "gre-learning/model.js",
       "imports": []
     },
     {
-      "path": "chunks/chunk-RGYE7IDV.js",
-      "bytes": 148371,
-      "gzipBytes": 14874,
-      "sha256": "65812039d69558aa3ba5e9d9ca00bcdc01963dc4683c959e1b7b55a39cb37603",
-      "entryPoint": null,
+      "path": "gre-learning/render.js",
+      "bytes": 3015,
+      "gzipBytes": 1286,
+      "sha256": "9a7bf7741041e2a621b3c9ef3c94c15d440e5e8e7a84775732b3bf06d5ec696d",
+      "entryPoint": "gre-learning/render.js",
       "imports": []
     },
     {
-      "path": "chunks/chunk-VC46IEJQ.js",
-      "bytes": 106,
-      "gzipBytes": 120,
-      "sha256": "ff9e0dca4365b7b1581e7275f3c6dbcf1474ffb874d81a3375ecf7a835dbaa6f",
-      "entryPoint": null,
+      "path": "gre-learning/schema.js",
+      "bytes": 3469,
+      "gzipBytes": 1167,
+      "sha256": "126af81b1cc48761d38fc249f96860ed8b2cd1eeef520edc379f179103cc6c33",
+      "entryPoint": "gre-learning/schema.js",
       "imports": []
     },
     {
-      "path": "chunks/chunk-ZAP2COP6.js",
-      "bytes": 8815,
-      "gzipBytes": 4476,
-      "sha256": "a2789d4137dafda0bd6fb6dbbd651f00029fc8917b03c091cb78faf57daf34e4",
-      "entryPoint": null,
+      "path": "gre-learning/update.js",
+      "bytes": 2942,
+      "gzipBytes": 1243,
+      "sha256": "f14d7f464e4a8f5d29bde4fea4912f2da18d13c8ea863556f3d00edc0dc3cfb9",
+      "entryPoint": "gre-learning/update.js",
       "imports": []
     },
     {
-      "path": "content.js",
-      "bytes": 80807,
-      "gzipBytes": 37616,
-      "sha256": "4e7083ff211827bc6edd89c3108a7891be40f29c91db21f471a17e73d612b573",
-      "entryPoint": "content.js",
+      "path": "gre-learning/view.js",
+      "bytes": 1136,
+      "gzipBytes": 670,
+      "sha256": "3ab36360e2fff1bf6a8d65563599c0ef543f95c780d48dc2058c910fb731e67a",
+      "entryPoint": "gre-learning/view.js",
       "imports": [
-        "chunks/chunk-EWNQBASX.js",
-        "chunks/chunk-HNNVAFRB.js",
-        "chunks/chunk-VC46IEJQ.js"
+        "gre-learning/render.js"
       ]
     },
     {
-      "path": "data/gre-equivalence-packs.js",
-      "bytes": 147708,
-      "gzipBytes": 66968,
-      "sha256": "0c70709812bfdd7e0d6220c814e76f2f1d63cc7554eca79cd63218cd7dabee5c",
-      "entryPoint": "data/gre-equivalence-packs.js",
-      "imports": [
-        "chunks/chunk-ZAP2COP6.js",
-        "chunks/chunk-HNNVAFRB.js",
-        "chunks/chunk-VC46IEJQ.js"
-      ]
+      "path": "gre-learning/visuals.js",
+      "bytes": 4261,
+      "gzipBytes": 1886,
+      "sha256": "dffb6a5a6c4850f3384da9a4436222ff8b0516486e9215029dfab26c5018682d",
+      "entryPoint": "gre-learning/visuals.js",
+      "imports": []
     },
     {
-      "path": "data/ielts-538/index.js",
-      "bytes": 1582641,
-      "gzipBytes": 590749,
-      "sha256": "fb5669d991472dae61a4ecd5450357641619a2c5180b33a2601cd84ad4822848",
-      "entryPoint": "data/ielts-538/index.js",
-      "imports": [
-        "chunks/chunk-VC46IEJQ.js"
-      ]
+      "path": "gre-learning/images/1.svg",
+      "bytes": 1936,
+      "gzipBytes": 823,
+      "sha256": "4990066ad4cdab1f45ea0094da74d669ed07133c7ac52c048648255adcbb3100",
+      "entryPoint": "gre-learning/images/1.svg",
+      "imports": []
     },
     {
-      "path": "data/ielts-listening/context-scenes-001-264.js",
-      "bytes": 135,
-      "gzipBytes": 123,
-      "sha256": "f0de4066250f8fd991fa61b6eebe79097eb76f0df3d1b9c30854d9f4470fc79e",
-      "entryPoint": "data/ielts-listening/context-scenes-001-264.js",
-      "imports": [
-        "chunks/chunk-O3DA37S2.js",
-        "chunks/chunk-VC46IEJQ.js"
-      ]
+      "path": "gre-learning/images/10.svg",
+      "bytes": 2051,
+      "gzipBytes": 819,
+      "sha256": "4ee9ff178ca9df50a1b6cb85df51c928d36f70f8a9dee05b449794553e1789c1",
+      "entryPoint": "gre-learning/images/10.svg",
+      "imports": []
     },
     {
-      "path": "data/ielts-listening/context-scenes-265-528.js",
-      "bytes": 135,
-      "gzipBytes": 123,
-      "sha256": "d4740053957639d22a91e81542dde9b836d0f12bf7025dcff4d6a8c5019dd344",
-      "entryPoint": "data/ielts-listening/context-scenes-265-528.js",
-      "imports": [
-        "chunks/chunk-HYM53W4U.js",
-        "chunks/chunk-VC46IEJQ.js"
-      ]
+      "path": "gre-learning/images/11.svg",
+      "bytes": 3286,
+      "gzipBytes": 910,
+      "sha256": "6a8bcb89a625d8b82d09b45f9d6deb4b10d6862f7d76bb2558ce5994e87909e9",
+      "entryPoint": "gre-learning/images/11.svg",
+      "imports": []
     },
     {
-      "path": "data/ielts-listening/hot-words.js",
-      "bytes": 172,
-      "gzipBytes": 136,
-      "sha256": "e9e0832d4103943db8fea5d54152bec901067651a755c098390cb7a18bee5c55",
-      "entryPoint": "data/ielts-listening/hot-words.js",
-      "imports": [
-        "chunks/chunk-QPJMSVWH.js",
-        "chunks/chunk-VC46IEJQ.js"
-      ]
+      "path": "gre-learning/images/12.svg",
+      "bytes": 2418,
+      "gzipBytes": 805,
+      "sha256": "8ce71435d68dc0bc4037ae771bc432d43305d3f52bf4a25d8fc29071085bc3f9",
+      "entryPoint": "gre-learning/images/12.svg",
+      "imports": []
     },
     {
-      "path": "data/ielts-listening/information-scenes.js",
-      "bytes": 131,
-      "gzipBytes": 119,
-      "sha256": "6fcfc905c4f59280074637520381c1b42bf44440f21137f4a82cc46a9435b3ca",
-      "entryPoint": "data/ielts-listening/information-scenes.js",
-      "imports": [
-        "chunks/chunk-AVKBJJZB.js",
-        "chunks/chunk-VC46IEJQ.js"
-      ]
+      "path": "gre-learning/images/13.svg",
+      "bytes": 2048,
+      "gzipBytes": 840,
+      "sha256": "9000b17ca137200de23a504c81902a19ebddd06ab01d520b1b20b04e051f5af9",
+      "entryPoint": "gre-learning/images/13.svg",
+      "imports": []
     },
     {
-      "path": "data/ielts-listening/scenario-words.js",
-      "bytes": 209,
-      "gzipBytes": 148,
-      "sha256": "36107e30a3a09750cf99747238eb5cbc30b5ef149212eb3c31e5a869d703f3ac",
-      "entryPoint": "data/ielts-listening/scenario-words.js",
-      "imports": [
-        "chunks/chunk-RGYE7IDV.js",
-        "chunks/chunk-VC46IEJQ.js"
-      ]
+      "path": "gre-learning/images/14.svg",
+      "bytes": 1743,
+      "gzipBytes": 777,
+      "sha256": "128a48db7a1f2f8a7a819060c665a7f925047c762b66bbb126460c7e379c2349",
+      "entryPoint": "gre-learning/images/14.svg",
+      "imports": []
     },
     {
-      "path": "data/lookalike-packs.js",
-      "bytes": 1171587,
-      "gzipBytes": 480590,
-      "sha256": "fddb3e2557fec662c5201df910a638e34daba5c1f362c534ac965b199c5b9a21",
-      "entryPoint": "data/lookalike-packs.js",
-      "imports": [
-        "chunks/chunk-EWNQBASX.js",
-        "chunks/chunk-ZAP2COP6.js",
-        "chunks/chunk-HNNVAFRB.js",
-        "chunks/chunk-VC46IEJQ.js"
-      ]
+      "path": "gre-learning/images/15.svg",
+      "bytes": 2095,
+      "gzipBytes": 803,
+      "sha256": "fa033fd0077da87917696af2130e77787fdeaec2990975b5097853902cf7622f",
+      "entryPoint": "gre-learning/images/15.svg",
+      "imports": []
     },
     {
-      "path": "listening-engine.js",
-      "bytes": 560,
-      "gzipBytes": 315,
-      "sha256": "bd1fa622bbbb34fa0421b8a4f063fc6fa8f1553059921035e0e28c05cda9d19c",
-      "entryPoint": "listening-engine.js",
-      "imports": [
-        "chunks/chunk-7Q67UCJS.js",
-        "chunks/chunk-VC46IEJQ.js"
-      ]
+      "path": "gre-learning/images/16.svg",
+      "bytes": 2110,
+      "gzipBytes": 800,
+      "sha256": "f7af0f7c0a8768ffab69536ca736c8476f1704f7ab802bb38cb50495dccb6680",
+      "entryPoint": "gre-learning/images/16.svg",
+      "imports": []
     },
     {
-      "path": "listening-feature.js",
-      "bytes": 57278,
-      "gzipBytes": 18787,
-      "sha256": "d6af0464ddadae6482b8b8944a68f6f5df82a7c5c06f538facebe453c258df31",
-      "entryPoint": "listening-feature.js",
-      "imports": [
-        "chunks/chunk-O3DA37S2.js",
-        "chunks/chunk-HYM53W4U.js",
-        "chunks/chunk-AVKBJJZB.js",
-        "chunks/chunk-7Q67UCJS.js",
-        "chunks/chunk-QPJMSVWH.js",
-        "chunks/chunk-RGYE7IDV.js",
-        "chunks/chunk-VC46IEJQ.js"
-      ]
+      "path": "gre-learning/images/17.svg",
+      "bytes": 2818,
+      "gzipBytes": 835,
+      "sha256": "d140761a5f67c48bd997af5d6674e859e88b8e3a19b11cf6c44e5dfc5a90d8a8",
+      "entryPoint": "gre-learning/images/17.svg",
+      "imports": []
+    },
+    {
+      "path": "gre-learning/images/18.svg",
+      "bytes": 2505,
+      "gzipBytes": 819,
+      "sha256": "a35969b1e7b14b1f00df45391c417cb774206d0d1e64e9ebb3468423a52623bc",
+      "entryPoint": "gre-learning/images/18.svg",
+      "imports": []
+    },
+    {
+      "path": "gre-learning/images/19.svg",
+      "bytes": 2271,
+      "gzipBytes": 830,
+      "sha256": "edec25a99298e9504b2395452ec51994e6ee1acc6b68b6cc19c2abf08a9b3678",
+      "entryPoint": "gre-learning/images/19.svg",
+      "imports": []
+    },
+    {
+      "path": "gre-learning/images/2.svg",
+      "bytes": 2262,
+      "gzipBytes": 846,
+      "sha256": "be34f97dd39fa24226089389141de57fe0ebe791a2757b083016f320ba97361b",
+      "entryPoint": "gre-learning/images/2.svg",
+      "imports": []
+    },
+    {
+      "path": "gre-learning/images/20.svg",
+      "bytes": 2315,
+      "gzipBytes": 903,
+      "sha256": "d8254ba13017d236d2b29a2e5177a2baca11f43e2c4f4d1341f6da09a4682635",
+      "entryPoint": "gre-learning/images/20.svg",
+      "imports": []
+    },
+    {
+      "path": "gre-learning/images/3.svg",
+      "bytes": 2004,
+      "gzipBytes": 795,
+      "sha256": "79c5c42adb362603b0cf3f8728cac463bba0f6f416309e6a442725662a795219",
+      "entryPoint": "gre-learning/images/3.svg",
+      "imports": []
+    },
+    {
+      "path": "gre-learning/images/4.svg",
+      "bytes": 2084,
+      "gzipBytes": 725,
+      "sha256": "af80d00f0263febb9c5602019ac3401151b9dfbecd01063005f721ef8fd3ec3e",
+      "entryPoint": "gre-learning/images/4.svg",
+      "imports": []
+    },
+    {
+      "path": "gre-learning/images/5.svg",
+      "bytes": 1945,
+      "gzipBytes": 756,
+      "sha256": "7987ce3ff0816ed24bb6d8191654369840c539a38432fe954f31f0998c2512aa",
+      "entryPoint": "gre-learning/images/5.svg",
+      "imports": []
+    },
+    {
+      "path": "gre-learning/images/6.svg",
+      "bytes": 1851,
+      "gzipBytes": 773,
+      "sha256": "cd28ca16250090bd548d32dc979e5450cbfbcd1c70a505df2af517ae32e0a10d",
+      "entryPoint": "gre-learning/images/6.svg",
+      "imports": []
+    },
+    {
+      "path": "gre-learning/images/7.svg",
+      "bytes": 2058,
+      "gzipBytes": 724,
+      "sha256": "d97ef76844b0a3e23f721497edcf9cb95a27b94824276c1de2cf518ccf1ddc17",
+      "entryPoint": "gre-learning/images/7.svg",
+      "imports": []
+    },
+    {
+      "path": "gre-learning/images/8.svg",
+      "bytes": 2496,
+      "gzipBytes": 876,
+      "sha256": "6614432ad5c8c37d22ad5e75346f89fdbd17bb2a582e07a692164090806ce1af",
+      "entryPoint": "gre-learning/images/8.svg",
+      "imports": []
+    },
+    {
+      "path": "gre-learning/images/9.svg",
+      "bytes": 2113,
+      "gzipBytes": 745,
+      "sha256": "2f2579a7277138d3b619660cd329d41d46cf9de14731d1f471812e87070170d1",
+      "entryPoint": "gre-learning/images/9.svg",
+      "imports": []
     }
   ],
   "totals": {
-    "bytes": 11607537,
-    "gzipBytes": 4480538
+    "bytes": 150917,
+    "gzipBytes": 51757
   },
   "validation": {
     "syntaxChecked": true,
     "nativeImportGraphResolved": true,
-    "generatedAssetCount": 22
+    "generatedAssetCount": 32
   }
 }

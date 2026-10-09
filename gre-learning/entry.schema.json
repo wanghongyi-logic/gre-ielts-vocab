@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:gre-learning:entry:v1",
+  "title": "GRE learning entry",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "word": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ipa": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pos": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coreMeaningZh": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coreEn": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coreImageZh": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mnemonics": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "method": {
+            "type": "string",
+            "minLength": 1
+          },
+          "textZh": {
+            "type": "string",
+            "minLength": 1
+          },
+          "original": {
+            "type": "boolean"
+          },
+          "kind": {
+            "enum": [
+              "invented_association",
+              "etymology",
+              "semantic_image"
+            ]
+          }
+        },
+        "required": [
+          "method",
+          "textZh",
+          "original",
+          "kind"
+        ]
+      },
+      "maxItems": 3,
+      "contains": {
+        "properties": {
+          "original": {
+            "const": true
+          }
+        },
+        "required": [
+          "original"
+        ]
+      }
+    },
+    "usage": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "senseZh": {
+            "type": "string",
+            "minLength": 1
+          },
+          "explanationZh": {
+            "type": "string",
+            "minLength": 1
+          },
+          "collocations": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "phrase": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "meaningZh": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "usageZh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "phrase",
+                "meaningZh"
+              ]
+            }
+          }
+        },
+        "required": [
+          "senseZh",
+          "collocations"
+        ]
+      },
+      "contains": {
+        "properties": {
+          "collocations": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "examples": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "textEn": {
+            "type": "string",
+            "minLength": 1
+          },
+          "translationZh": {
+            "type": "string",
+            "minLength": 1
+          },
+          "explanationZh": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "textEn",
+          "translationZh"
+        ]
+      }
+    },
+    "equivalents": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "word": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sharedSenseZh": {
+            "type": "string",
+            "minLength": 1
+          },
+          "distinctionZh": {
+            "type": "string",
+            "minLength": 1
+          },
+          "substitutionLimitZh": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "word",
+          "sharedSenseZh",
+          "substitutionLimitZh"
+        ]
+      }
+    }
+  },
+  "required": [
+    "number",
+    "word",
+    "ipa",
+    "pos",
+    "coreMeaningZh",
+    "coreImageZh",
+    "mnemonics",
+    "usage",
+    "examples",
+    "equivalents"
+  ]
+}

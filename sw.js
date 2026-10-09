@@ -1,4 +1,4 @@
-const BUILD = "108";
+const BUILD = "109";
 const CACHE_PREFIX = "vocab-studio-";
 const CACHE = `vocab-studio-v${BUILD}-incremental`;
 const NEURAL_VOICE_PROFILES = Object.freeze({
@@ -20,29 +20,13 @@ const FETCH_ATTEMPTS = 2;
 const CACHE_WORKERS = 3;
 const ASSET_MANIFEST_URL = `./asset-manifest.json?v=${BUILD}`;
 const STATIC_ASSETS = [
-  { url: "./index.html", weight: 24_000, reload: true },
-  { url: "./styles.css?v=77", weight: 38_000 },
-  { url: "./theme-v2.css?v=102", weight: 116_000 },
-  { url: "./learning-test-v4.css?v=77", weight: 34_000 },
-  { url: "./ielts-preview.css?v=77", weight: 10_000 },
-  { url: "./review-integration.css?v=77", weight: 26_000 },
-  { url: "./mobile-v2.css?v=102", weight: 120_000 },
-  { url: "./review-v3.css?v=101", weight: 82_000 },
-  { url: "./listening-review.css?v=101", weight: 33_000 },
-  { url: "./ui-v4.css?v=105", weight: 74_000 },
-  { url: "./ui-v4-story-history.css?v=105", weight: 53_000 },
-  { url: "./ui-v4-review-listening.css?v=105", weight: 81_000 },
-  { url: "./ui-v4-mobile-final.css?v=105", weight: 24_000 },
-  { url: "./review-v5.css?v=106", weight: 63_000 },
-  { url: "./ui-v5-responsive.css?v=108", weight: 42_000 },
+  { url: "./index.html", weight: 5_000, reload: true },
+  { url: "./gre-learning/learning.css?v=109", weight: 10_000 },
+  { url: "./gre-learning/update.js?v=109", weight: 4_000 },
   { url: ASSET_MANIFEST_URL, weight: 8_000 },
-  { url: "./manifest.webmanifest?v=108", weight: 4_000 },
+  { url: "./manifest.webmanifest?v=109", weight: 1_000 },
   { url: "./icon-192-v2.png", weight: 50_000 },
   { url: "./icon-512-v2.png", weight: 300_000 },
-  { url: "./apple-touch-icon-v2.png", weight: 48_000 },
-  { url: "./apple-launch-1179x2556.png", weight: 530_000 },
-  { url: "./apple-launch-1206x2622.png", weight: 550_000 },
-  { url: "./apple-launch-1320x2868.png", weight: 360_000 },
 ];
 let cacheJob = null;
 let coreAssetsPromise = null;
@@ -55,6 +39,15 @@ function cacheKeyRequest(asset) {
   });
 }
 
+async function verifyAssetResponse(response, asset) {
+  if (!asset.sha256) return response;
+  const bytes = await response.clone().arrayBuffer();
+  const digest = await crypto.subtle.digest("SHA-256", bytes);
+  const actual = Array.from(new Uint8Array(digest), byte => byte.toString(16).padStart(2, "0")).join("");
+  if (actual !== asset.sha256) throw new Error(`Asset integrity mismatch: ${asset.path || asset.url}`);
+  return response;
+}
+
 async function fetchAsset(asset) {
   let lastError;
   for (let attempt = 0; attempt < FETCH_ATTEMPTS; attempt += 1) {
@@ -64,7 +57,7 @@ async function fetchAsset(asset) {
         credentials: "same-origin",
       }));
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response;
+      return await verifyAssetResponse(response, asset);
     } catch (error) {
       lastError = error;
     }
@@ -138,6 +131,7 @@ async function loadProductionAssets() {
   if (
     manifest?.kind !== "vocabulary-production-assets"
     || !Array.isArray(manifest.assets)
+    || String(manifest.releaseBuild) !== BUILD
   ) {
     throw new Error("Invalid production asset manifest");
   }
@@ -145,8 +139,10 @@ async function loadProductionAssets() {
   return manifest.assets.map((asset) => {
     const path = String(asset.path || "").replace(/^\.?\//, "");
     if (!path || path.includes("..")) throw new Error(`Invalid production asset path: ${path}`);
+    const staticAsset = STATIC_ASSETS.find(item => item.url.split("?")[0] === `./${path}`);
     return {
-      url: path === "app.js" ? `./app.js?v=${BUILD}` : `./${path}`,
+      ...staticAsset,
+      url: staticAsset?.url || (path === "app.js" ? `./app.js?v=${BUILD}` : `./${path}`),
       path,
       weight: Math.max(1, Number(asset.bytes) || 1),
       sha256: String(asset.sha256 || ""),
@@ -212,9 +208,13 @@ async function cacheWholeApp() {
       const asset = coreAssets[assetIndex];
       const request = cacheKeyRequest(asset);
       const currentResponse = asset.reload ? undefined : await cache.match(request);
-      const reusableResponse = currentResponse
+      let reusableResponse = currentResponse
         || (asset.reload ? undefined : await findReusableAsset(request, asset));
 
+      if (reusableResponse) {
+        try { await verifyAssetResponse(reusableResponse, asset); }
+        catch { reusableResponse = undefined; }
+      }
       if (reusableResponse) {
         if (!currentResponse) await cache.put(request, reusableResponse.clone());
         completed += 1;
@@ -478,7 +478,10 @@ async function isWholeAppCached(cache, coreAssets = null) {
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    ensureCacheJob()
+    caches.open(CACHE)
+      .then(async cache => {
+        if (!(await isWholeAppCached(cache))) await ensureCacheJob();
+      })
       .then(() => self.skipWaiting())
       .catch(async (error) => {
         const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
@@ -489,7 +492,6 @@ self.addEventListener("install", (event) => {
             message: "离线资源准备失败，保留当前可用版本",
           });
         }
-        await caches.delete(CACHE);
         throw error;
       }),
   );
@@ -502,47 +504,28 @@ self.addEventListener("activate", (event) => {
       .then(async (ready) => {
         if (!ready) throw new Error("Incremental cache is incomplete");
         const keys = await caches.keys();
-        const hasPreviousAppVersion = keys.some(
-          (key) => key.startsWith(CACHE_PREFIX) && key !== CACHE,
-        );
         await Promise.all(
           keys
             .filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE)
             .map((key) => caches.delete(key)),
         );
-        await Promise.all(
-          keys
-            .filter((key) => (
-              (key.startsWith("vocab-neural-voice-")
-                && key !== NEURAL_VOICE_CACHE
-                && key !== NEURAL_VOICE_HD_CACHE)
-              || (key.startsWith("vocab-neural-audio-")
-                && key !== NEURAL_AUDIO_CACHE
-                && key !== NEURAL_AUDIO_HD_CACHE)
-              || key === "kitten-tts"
-            ))
-            .map((key) => caches.delete(key)),
-        );
         await self.clients.claim();
-        if (hasPreviousAppVersion) {
-          const windows = await self.clients.matchAll({
-            type: "window",
-            includeUncontrolled: true,
-          });
-          await Promise.allSettled(
-            windows.map((client) => (
-              typeof client.navigate === "function"
-                ? client.navigate(client.url)
-                : Promise.resolve()
-            )),
-          );
-        }
+        const windows = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
+        for (const client of windows) client.postMessage({ type: "APP_ACTIVATED", build: BUILD });
       }),
   );
 });
 
 self.addEventListener("message", (event) => {
-  if (event.data?.type === "SKIP_WAITING") self.skipWaiting();
+  if (event.data?.type === "GET_BUILD") {
+    const target = event.ports?.[0] || event.source;
+    target?.postMessage({ type: "APP_BUILD", build: BUILD });
+  }
+  if (event.data?.type === "SKIP_WAITING") {
+    event.waitUntil(caches.open(CACHE).then(async cache => {
+      if (await isWholeAppCached(cache)) await self.skipWaiting();
+    }));
+  }
   if (event.data?.type === "PRELOAD_NEURAL_VOICE") {
     event.waitUntil(ensureNeuralVoiceCacheJob("standard").catch(async (error) => {
       await notifyNeuralVoice("NEURAL_VOICE_ERROR", "standard", {
