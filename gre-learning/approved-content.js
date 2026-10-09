@@ -1,4 +1,4 @@
-export const revision = 'gre-learning-v110';
+export const revision = 'gre-learning-v111';
 export const approvedEntries = Object.freeze([
   {
     "number": 1,
@@ -78,18 +78,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "forsake / desert",
-        "sharedSenseZh": "抛下某人、某地或原来的忠诚对象",
-        "substitutionLimitZh": "desert 常突出违背责任；forsake 较书面，常涉及曾珍视的人或事。撤离危险地点不一定含背叛，不能一律换成 desert。"
+        "comparisonZh": "说“抛弃家人”时三者接近：desert 更突出失责，forsake 更书面，常带舍弃旧日珍视之人的意味。若只是撤离危险建筑，abandon 不必含有背叛。"
       },
       {
         "word": "relinquish",
-        "sharedSenseZh": "放弃权利、控制或占有",
-        "substitutionLimitZh": "relinquish 重在交出或放手，不一定像 abandon 那样完全不再照管；abandon a project 不能仅凭“放弃”就机械替换。"
+        "comparisonZh": "放弃控制权时，relinquish 与 abandon 接近，但更突出交出、不再持有；说 abandon a project 则重在不再继续做，未必把项目交给别人。"
       },
       {
         "word": "jettison / discard",
-        "sharedSenseZh": "抛弃不再需要的方案或观念",
-        "substitutionLimitZh": "jettison 有甩掉负担的色彩；discard 强调弃置不用。都不覆盖 with abandon 的名词用法。"
+        "comparisonZh": "丢掉无用方案时三者接近：jettison 像甩掉负担，discard 像弃置不用，abandon 则重在不再推进。描述抛弃需要照顾的人时，jettison 和 discard 会带上把人当累赘或物品的色彩。"
       }
     ],
     "coreEn": "To leave someone or something behind, or stop pursuing an activity or plan; to give oneself over without restraint. As a noun, a state or manner of acting without restraint."
@@ -157,18 +154,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "demean / degrade",
-        "sharedSenseZh": "损害一个人的尊严或社会评价",
-        "substitutionLimitZh": "demean 与 abase 在自贬身份语境接近；degrade 还可指物质降解、质量下降，不能把那些用法换成 abase。"
+        "comparisonZh": "在 abase / demean oneself 中，两词都指自贬身份；degrade someone 也可说使人丧失尊严，但更突出把人降到低下地位或待遇。"
       },
       {
         "word": "humiliate / humble",
-        "sharedSenseZh": "使人受辱或挫掉傲气",
-        "substitutionLimitZh": "humiliate 更突出羞辱感；humble 可以是有益的谦逊或敬畏体验，未必含 abase 常有的屈辱。"
+        "comparisonZh": "被迫卑躬屈膝时，abase 与 humiliate 都可涉及受辱；humiliate 重在使人难堪，abase 重在贬低尊严。humble 还可写成功使人心生谦逊，未必有屈辱。"
       },
       {
         "word": "debase",
-        "sharedSenseZh": "使人或其行为变得卑下",
-        "substitutionLimitZh": "debase 还常指降低纯度、价值或道德品质；abase 更集中在人及其地位、尊严。"
+        "comparisonZh": "描述卑劣行为使人自轻自贱时，两词接近；abase oneself 重在低下姿态，debase oneself 重在降低自身的道德品质或价值。"
       }
     ],
     "coreEn": "To lower someone’s dignity, standing, or reputation, including by behaving in a degrading way oneself."
@@ -236,18 +230,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "embarrass",
-        "sharedSenseZh": "使人不好意思或不知所措",
-        "substitutionLimitZh": "最接近的一般表达；abash 更容易让人想到自信受挫后的羞怯。embarrass 的“使财务窘迫”等特殊义不属于 abash。"
+        "comparisonZh": "受到赞美而不好意思时，abash 与 embarrass 接近；abash 偏书面，突出羞怯、失去自信，embarrass 也能写叫错名字之类的一般尴尬。"
       },
       {
         "word": "disconcert / discomfit",
-        "sharedSenseZh": "使人失去从容，陷入局促",
-        "substitutionLimitZh": "disconcert 可因惊讶或意外而发生，不一定有羞惭；discomfit 偏向使人不安、难堪，也不能保证出现脸红或羞怯。"
+        "comparisonZh": "被尖锐问题问得局促时三者接近；abash 偏羞惭，disconcert 偏被打乱阵脚，discomfit 偏不安难堪。单纯被意外消息弄得慌乱，用 disconcert 更贴切。"
       },
       {
         "word": "mortify / humiliate",
-        "sharedSenseZh": "因失误或揭短而感到羞耻",
-        "substitutionLimitZh": "通常比 abash 更强，涉及极度难堪或受辱。轻轻受到赞美而害羞时，换成它们会把程度写重。"
+        "comparisonZh": "失误被当众揭穿时三者可能接近，但 mortify 往往写极度难堪，humiliate 突出受辱；若只是因赞美而害羞，换成它们就把程度或伤害写重了。"
       }
     ],
     "coreEn": "To make someone feel embarrassed or ashamed and less able to act confidently."
@@ -325,18 +316,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "subside / ebb / wane",
-        "sharedSenseZh": "某种势头或强度自行减退",
-        "substitutionLimitZh": "subside 常见于风波、疼痛平息；ebb 有退潮般回落感；wane 常指热情、影响力渐衰。这三个通常不直接接宾语，不能原样替换 abate pollution。"
+        "comparisonZh": "说风暴或疼痛平息时，subside 与 abate 接近；ebb 常写潮水般的回落，wane 常写热情、影响力渐衰。这三词的这些用法不直接带宾语，不能照搬到 abate pollution 中。"
       },
       {
         "word": "diminish / lessen",
-        "sharedSenseZh": "强度、程度或数量减少",
-        "substitutionLimitZh": "两者范围更广，也可及物或不及物；abate 往往凸显强烈现象的缓和，而不用于所有尺寸缩小。"
+        "comparisonZh": "疼痛减轻时三者接近，且都可表达“减轻疼痛”；diminish / lessen 还能泛指数量、程度变小，abate 更常写强烈或不良现象缓和，如风势减弱。"
       },
       {
         "word": "mitigate / alleviate",
-        "sharedSenseZh": "使危害、痛苦或负担减轻",
-        "substitutionLimitZh": "通常需要宾语。因此 the storm abated 不能直接换成 the storm mitigated；也不等于法律语境中彻底消除妨害。"
+        "comparisonZh": "减轻痛苦时，alleviate 与 abate 接近；减轻灾害后果时，mitigate 更突出缓和严重性。mitigate / alleviate 通常需要宾语，不能直接放进 the storm abated 的位置。"
       }
     ],
     "coreEn": "To become less intense, or make something less severe; in particular technical uses, to remove a nuisance or reduce or cancel a tax."
@@ -414,18 +402,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "shorten",
-        "sharedSenseZh": "使文字、名称或持续时间变短",
-        "substitutionLimitZh": "覆盖面最广；shorten 还可指剪短实物，不能因此认定 abbreviate 在所有场景都自然。"
+        "comparisonZh": "缩短名称或讲话时，两词接近；abbreviate 尤其适合文字缩写，shorten 范围更广。把绳子剪短用 shorten，不用 abbreviate。"
       },
       {
         "word": "abridge / condense",
-        "sharedSenseZh": "缩短叙述或文本",
-        "substitutionLimitZh": "abridge 通常删节作品并保留主要内容；condense 突出把信息压缩得更紧密。把名称写成首字母时，通常用 abbreviate，而不是把这两个词直接换入。"
+        "comparisonZh": "缩短文本时三者接近：abridge 偏删去部分内容，condense 偏浓缩表达，abbreviate 只说明变短。把 Doctor 写成 Dr. 是 abbreviate，通常不用另外两词。"
       },
       {
         "word": "curtail / truncate",
-        "sharedSenseZh": "缩短一次活动、过程或文本",
-        "substitutionLimitZh": "curtail 强调限制或削减，truncate 常带截去尾端、突然截断的意味。abbreviate 本身不一定说明是被迫中止，也不保证结果残缺。"
+        "comparisonZh": "缩短讲话或活动时三者可能接近；curtail 带限制、削减意味，truncate 突出截断或截去尾部，abbreviate 本身不说明为什么缩短、从哪里删。"
       }
     ],
     "coreEn": "To make a word, name, account, or activity shorter; especially to use a shortened form that represents the full expression."
@@ -490,23 +475,19 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "relinquish",
-        "sharedSenseZh": "语境为交出权力、控制权时，可与 abdicate 接近",
-        "substitutionLimitZh": "范围更广，也能放弃物品或主张；不自带君主退位或失职色彩"
+        "comparisonZh": "放弃王位时两词接近；abdicate 直接表达退位，relinquish 只是交出、不再持有。换到控制权或物品上，relinquish 仍自然，不必带重大失职意味。"
       },
       {
         "word": "renounce",
-        "sharedSenseZh": "语境为正式放弃王位、权利时可接近",
-        "substitutionLimitZh": "强调明确宣布不再认领；也能放弃信仰或主张，不能据此把所有 renounce 都译成退位"
+        "comparisonZh": "正式放弃王位时两词接近；renounce 突出宣布不再认领，abdicate 突出退出君主之位。王位继承人也能 renounce a claim to the throne，而无需先在位。"
       },
       {
         "word": "resign",
-        "sharedSenseZh": "语境为辞去职位时可接近",
-        "substitutionLimitZh": "普通辞职最自然；abdicate 更突出最高权位或重大职责"
+        "comparisonZh": "两词都可涉及退出职位，但君主退位通常用 abdicate，普通员工辞职用 resign。说领导 abdicate responsibility，则是在批评其放弃职责，不只是报告离职。"
       },
       {
         "word": "shirk",
-        "sharedSenseZh": "语境为逃避本职责任时，表达方向接近",
-        "substitutionLimitZh": "shirk 强调躲着不做，未必彻底放弃；abdicate 可强调把责任整个丢掉"
+        "comparisonZh": "谈逃避责任时两词接近；shirk 像躲着不做分内事，abdicate 则更像把整份职责丢下或交给别人。一次偷懒未必构成 abdicate responsibility。"
       }
     ],
     "coreEn": "To give up a throne or sovereign power; also to stop carrying out a responsibility one is expected to fulfill."
@@ -571,23 +552,19 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "anomalous",
-        "sharedSenseZh": "结果、事件或结构偏离预期模式时，常可接近",
-        "substitutionLimitZh": "偏重不合通常规律；aberrant 描述行为时更容易带规范性的负面评价"
+        "comparisonZh": "描述偏离正常模式的数据或结果时，两词接近；anomalous 侧重不合预期，aberrant 侧重偏离常态。评价人的行为时，aberrant 更容易带“走偏了”的负面意味。"
       },
       {
         "word": "atypical",
-        "sharedSenseZh": "只需表达非典型、不同于多数时可接近",
-        "substitutionLimitZh": "通常更中性；不自动带有“走偏了”的意味"
+        "comparisonZh": "描述不常见的症状时，两词可能接近；atypical 只说明非典型，aberrant 更突出偏离正常模式。一个人的爱好与多数人不同，用 atypical 更中性。"
       },
       {
         "word": "deviant",
-        "sharedSenseZh": "行为明显偏离公认规范时可接近",
-        "substitutionLimitZh": "对人的评价可能带强烈社会标签，不宜机械替换所有科学语境"
+        "comparisonZh": "描述违背社会规范的行为时，两词接近；deviant 更容易成为对人的负面标签。aberrant cells 指异常细胞，此时不宜把社会规范的意味带进来。"
       },
       {
         "word": "eccentric",
-        "sharedSenseZh": "描述不寻常的人或行为时部分重合",
-        "substitutionLimitZh": "eccentric 可只是古怪而有趣；aberrant 不宜随便当作讨喜的“有个性”"
+        "comparisonZh": "形容不寻常的举止时可能接近，但 eccentric 可以是有趣、无害的古怪，aberrant 更像偏离正常轨道。称赞某人独特的穿着时，换成 aberrant 容易变成负面评价。"
       }
     ],
     "coreEn": "Differing from the usual pattern or departing from accepted standards, often in a troubling way."
@@ -656,23 +633,19 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "assist / aid",
-        "sharedSenseZh": "句子强调给某人的行动提供帮助时可接近",
-        "substitutionLimitZh": "这两个词本身中性；abet 更容易指对不当行为的帮助或鼓励"
+        "comparisonZh": "帮助他人实施欺诈时三者可能接近，但 assist / aid 本身中性，abet 带助长不当行为的意味。帮助同学学习通常用 assist / aid，不用 abet。"
       },
       {
         "word": "encourage",
-        "sharedSenseZh": "语境为鼓励或助长某项行为时可接近",
-        "substitutionLimitZh": "encourage 范围更广；abet 往往还让人想到实际支持"
+        "comparisonZh": "助长不当行为时两词接近；encourage 侧重鼓励其去做，abet 可包括提供工具、掩护等实际支持。鼓励孩子阅读用 encourage，不带 abet 的负面倾向。"
       },
       {
         "word": "incite",
-        "sharedSenseZh": "语境为怂恿他人行动时有重合",
-        "substitutionLimitZh": "incite 更强调激起、煽动；abet 可以是在事情已经开始后提供帮助"
+        "comparisonZh": "怂恿违法行为时两词可能接近；incite 突出煽动、激起行动，abet 也能指行动开始后提供帮助。行动中提供工具，并不等于最初煽动。"
       },
       {
         "word": "instigate",
-        "sharedSenseZh": "谈论推动坏事发生时方向接近",
-        "substitutionLimitZh": "instigate 更突出挑起、发起；abet 不要求是最初的发起者"
+        "comparisonZh": "推动坏事发生时两词可能接近；instigate 突出挑起、促成开端，abet 突出帮助或鼓励。资助一项已经启动的阴谋可以是 abet，不一定是 instigate。"
       }
     ],
     "coreEn": "To help or encourage a person or action, especially wrongdoing."
@@ -737,23 +710,19 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "suspension",
-        "sharedSenseZh": "指活动、实施或效力的暂时停止时，是最直接的近义词",
-        "substitutionLimitZh": "suspension 还有停职、悬挂等义；并非每种 suspension 都是 abeyance"
+        "comparisonZh": "暂缓实施计划时，hold the plan in abeyance 与 suspend the plan 意思接近；abeyance 是搁置状态，suspension 是暂停，也能指停职，因此不能在所有搭配中直接对换。"
       },
       {
         "word": "dormancy",
-        "sharedSenseZh": "强调某物暂时不活跃时可以接近",
-        "substitutionLimitZh": "dormancy 更像自身休眠；abeyance 常是事务被搁置、等待处理"
+        "comparisonZh": "两词都可表示暂不活跃，但计划 in abeyance 常是被搁置、等待处理，dormancy 更像自身进入休眠。种子休眠通常用 dormancy，不用 abeyance。"
       },
       {
         "word": "hiatus",
-        "sharedSenseZh": "上下文只关心中断的一段时间时可接近",
-        "substitutionLimitZh": "hiatus 强调空档或间断；不一定包含等待裁决、暂缓生效"
+        "comparisonZh": "两词都涉及暂时中断；abeyance 适合尚待处理的计划或决定，hiatus 突出中断的一段时间。演出季之间的空档是 hiatus，未必有事务悬而未决。"
       },
       {
         "word": "moratorium",
-        "sharedSenseZh": "语境为正式暂缓某类活动时有重合",
-        "substitutionLimitZh": "moratorium 是禁限或暂缓的安排；abeyance 是悬置状态。不能直接把 in abeyance 换成 in moratorium"
+        "comparisonZh": "正式暂缓活动时两词可能接近，但 abeyance 是悬置状态，moratorium 是暂缓或禁限的安排。可说 in abeyance；用 moratorium 则常说 a moratorium on construction。"
       }
     ],
     "coreEn": "A state in which something is temporarily inactive or not taking effect; also a gap in succession with no established holder of a title."
@@ -817,23 +786,19 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "loathe",
-        "sharedSenseZh": "表达极深的厌恶时非常接近",
-        "substitutionLimitZh": "loathe 常让人想到无法忍受、满心嫌恶；abhor 尤其适合严肃地表达强烈排斥"
+        "comparisonZh": "强烈厌恶残酷行为时，两词很接近；abhor 较正式，loathe 也自然用于讨厌某人或某项日常活动。这类语境中主要差在语气和习惯搭配，强度没有固定高低。"
       },
       {
         "word": "detest",
-        "sharedSenseZh": "表达非常憎恶某人或某事时可接近",
-        "substitutionLimitZh": "detest 也很强，不必硬排固定强度等级；abhor 常更突出厌恶退缩的感觉"
+        "comparisonZh": "强烈憎恶欺骗时，两词接近；detest 更常见于日常表达，abhor 更正式。换词通常改变语气，不意味着厌恶程度必然升高或降低。"
       },
       {
         "word": "abominate",
-        "sharedSenseZh": "严肃语境中强烈憎恶、谴责某事时可接近",
-        "substitutionLimitZh": "更书面，常带道德谴责色彩"
+        "comparisonZh": "强烈憎恶暴行时，两词很接近，也都适合严肃谴责；abominate 更少见、更书面。在这个义项上可近义替换，主要差在语体。"
       },
       {
         "word": "despise",
-        "sharedSenseZh": "上下文同时包含憎恶和轻蔑时可能接近",
-        "substitutionLimitZh": "despise 的核心常是看不起；abhor 的核心是极度厌恶，不必包含优越感"
+        "comparisonZh": "既厌恶又鄙视一个人时，两词可能接近；abhor 重在极度反感，despise 重在看不起。厌恶某种气味时，通常不换成带轻蔑意味的 despise。"
       }
     ],
     "coreEn": "To feel a very strong aversion to someone or something."
@@ -889,21 +854,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "enduring",
-        "sharedSenseZh": "持续很久的",
-        "distinctionZh": "enduring 适用范围更广，既可形容感情，也可形容影响、名声等。",
-        "substitutionLimitZh": "描述长期感情或影响时接近；abiding 通常不用于说明物品耐用。"
+        "comparisonZh": "形容长久的爱或兴趣时，两词接近；abiding 常写心中始终存在的感情，enduring 也能写作品、名声经久不衰，适用范围更广。"
       },
       {
         "word": "lasting",
-        "sharedSenseZh": "持久的",
-        "distinctionZh": "lasting 更中性，突出持续时间；abiding 常让人感到某种内在情感或信念始终存在。",
-        "substitutionLimitZh": "lasting damage 可说“长期损害”，通常不换成 abiding damage。"
+        "comparisonZh": "lasting / abiding affection 都可指长久的感情，abiding 更有始终存于心中的意味；说 lasting damage（长期损害）时，通常不换成 abiding。"
       },
       {
         "word": "steadfast",
-        "sharedSenseZh": "坚定不变的",
-        "distinctionZh": "steadfast 更重在不动摇、不改变立场，abiding 更重在历时长久。",
-        "substitutionLimitZh": "描写 faith、loyalty 时可能相近；steadfast supporter 指坚定支持者，不能直接换成 abiding supporter。"
+        "comparisonZh": "形容 faith 或 loyalty 时可能接近；abiding 重在长久存在，steadfast 重在面对压力仍不动摇。steadfast supporter 是坚定的支持者，不能照搬为 abiding supporter。"
       }
     ]
   },
@@ -976,21 +935,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "wretched",
-        "sharedSenseZh": "极其悲惨的",
-        "distinctionZh": "wretched 强調痛苦、可怜或处境恶劣，abject 还可表达彻底失败和卑屈。",
-        "substitutionLimitZh": "在 misery、poverty 语境可接近；不能用 wretched 一概替代 abject 的屈从义。"
+        "comparisonZh": "描述极度贫困或悲惨处境时，两词接近；wretched 突出痛苦可怜，abject 也可写彻底失败或卑屈。abject submission 指卑躬屈膝的屈从，仅用 wretched 会丢掉这一点。"
       },
       {
         "word": "utter",
-        "sharedSenseZh": "彻底的、完全的",
-        "distinctionZh": "utter 是程度词，突出全然如此；abject 常附带惨败、低落的负面色彩。",
-        "substitutionLimitZh": "utter failure 与 abject failure 接近；utter astonishment 中不能换成 abject。"
+        "comparisonZh": "utter failure 与 abject failure 都可写彻底失败，abject 还让人感到惨败、可悲；utter 只加强程度，也可说 utter astonishment（完全惊呆），此处不能换成 abject。"
       },
       {
         "word": "servile",
-        "sharedSenseZh": "卑躬屈膝的",
-        "distinctionZh": "servile 更突出奴性般的顺从或讨好，abject 还强调低下到失去尊严。",
-        "substitutionLimitZh": "仅在姿态或屈从语境相近；servile poverty 不表示“赤贫”。"
+        "comparisonZh": "描写卑躬屈膝的姿态时两词接近；servile 突出奴性般顺从、讨好，abject 突出低下到失去尊严。abject poverty 是赤贫，此时不含 servile 的顺从义。"
       }
     ]
   },
@@ -1045,21 +998,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "renounce",
-        "sharedSenseZh": "正式放弃、宣布不再支持",
-        "distinctionZh": "renounce 使用范围更广，也能放弃权利、要求或头衔；abjure 往往更郑重，常涉及信仰、忠诚和行为。",
-        "substitutionLimitZh": "放弃旧信仰时很接近；放弃继承权等具体权利时 renounce 更常见。"
+        "comparisonZh": "郑重放弃旧信仰时，两词接近；abjure 有更强的正式否弃、誓绝意味，renounce 也常用于放弃具体权利。放弃继承权时，renounce 更常见。"
       },
       {
         "word": "forswear",
-        "sharedSenseZh": "郑重放弃；发誓戒绝",
-        "distinctionZh": "forswear 较突出发誓不再做某事；abjure 常突出对旧信仰或立场的正式否弃。",
-        "substitutionLimitZh": "在发誓戒绝某种行为时接近；不要套用 forswear 的其他罕见义。"
+        "comparisonZh": "郑重戒绝饮酒或暴力时，两词很接近；forswear 更容易让人想到发誓不再做，abjure 也常写正式否弃旧信仰。两者在这些场景高度重合，通常可近义替换。"
       },
       {
         "word": "recant",
-        "sharedSenseZh": "公开撤回旧主张或信仰",
-        "distinctionZh": "recant 强调收回自己曾经宣称的内容；abjure 可以指放弃一种生活方式，无须先发表过声明。",
-        "substitutionLimitZh": "撤回信仰或观点时相近；recant violence 通常不能替代 abjure violence。"
+        "comparisonZh": "公开放弃旧观点时，两词可能接近；recant 重在收回自己曾表达的主张，abjure 重在不再信奉或实践。abjure violence 是戒绝暴力，不是撤回一项言论。"
       }
     ]
   },
@@ -1124,21 +1071,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "relinquish",
-        "sharedSenseZh": "放弃或交出原有的权利、权力",
-        "distinctionZh": "relinquish 重点是停止持有或控制；abnegate 还可突出克己、自我否定。",
-        "substitutionLimitZh": "放弃权力、要求时接近；relinquish one’s grip 指松开手，通常不用 abnegate。"
+        "comparisonZh": "放弃权力或权利时，两词接近；abnegate 更正式，也可带克己意味，relinquish 只强调停止持有或控制。relinquish one’s grip 是松开手，此处通常不用 abnegate。"
       },
       {
         "word": "forgo",
-        "sharedSenseZh": "自愿不要本可享有的东西",
-        "distinctionZh": "forgo 多指不去享受或获得，既可以是一时选择，也可以是长期放弃；abnegate 更正式，可能带克己意味。",
-        "substitutionLimitZh": "在放弃享受、利益时接近；否认责任的 abnegate 不能机械换成 forgo。"
+        "comparisonZh": "放弃本可享有的利益时，两词接近；forgo 也能写一次性的选择，如不吃甜点，abnegate 更郑重，常让人想到克己。说否认、推卸责任时，则不能用 forgo 表达。"
       },
       {
         "word": "renounce",
-        "sharedSenseZh": "明确放弃权利、要求等",
-        "distinctionZh": "renounce 常突出宣布放弃；abnegate 不一定强调公开声明，也能指自我克制。",
-        "substitutionLimitZh": "abnegate responsibility 可指推卸责任，不能一概理解成 renounce 所强调的正式宣布放弃。"
+        "comparisonZh": "放弃权利时，两词接近；renounce 更突出明确声明放弃，abnegate 也可带自我克制意味。abnegate responsibility 还可批评人推卸责任，不能只理解为一次正式声明。"
       }
     ]
   },
@@ -1189,21 +1130,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "abhor",
-        "sharedSenseZh": "极其厌恶、憎恶",
-        "distinctionZh": "abhor 同样正式，常有强烈反感或道德上的排斥，两者在很多语境中很接近。",
-        "substitutionLimitZh": "描述对残酷行为的厌恶时可互换；都不能弱化成普通的不喜欢。"
+        "comparisonZh": "强烈憎恶残酷行为时，两词很接近，也都可表达严肃的道德排斥；abominate 更少见、更书面。在这个义项上可近义替换，主要改变语体。"
       },
       {
         "word": "detest",
-        "sharedSenseZh": "非常讨厌、憎恶",
-        "distinctionZh": "detest 更常用于日常表达强烈讨厌，abominate 更书面、更少见。",
-        "substitutionLimitZh": "很多厌恶对象都能互换，但替换后语体庄重程度不同。"
+        "comparisonZh": "憎恶欺诈时，两词接近；detest 也自然用于日常的强烈讨厌，abominate 更庄重、少见。把 detest getting up early 换成 abominate，会使口吻格外郑重。"
       },
       {
         "word": "loathe",
-        "sharedSenseZh": "极度厌恶",
-        "distinctionZh": "loathe 常让人感到强烈的嫌恶甚至恶心；abominate 可带更庄重的谴责语气。",
-        "substitutionLimitZh": "两者语义很近；必须与 reluctant 的形容词 loath 区分，be loath to 不是“憎恨做某事”。"
+        "comparisonZh": "极度厌恶某种行为时，两词接近；loathe 更容易带满心嫌恶的感觉，也常用于日常对象，abominate 则更书面，常适合庄重的谴责。"
       }
     ]
   },
@@ -1258,15 +1193,11 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "honest",
-        "sharedSenseZh": "诚实、不欺骗",
-        "distinctionZh": "honest 范围更广，可说一个人不撒谎；aboveboard 尤其关乎做事过程公开、没有暗箱操作。",
-        "substitutionLimitZh": "评价交易是否诚实时可以接近；an honest mistake 指无心之失，不能换成 aboveboard mistake。"
+        "comparisonZh": "评价一笔交易诚实、没有欺诈时，两词接近；aboveboard 更突出过程公开、没有暗箱操作。an honest mistake 是无心之失，此处不能换成 aboveboard。"
       },
       {
         "word": "straightforward",
-        "sharedSenseZh": "坦诚、不耍手段",
-        "distinctionZh": "straightforward 形容人或交往方式时可指直率坦诚，也常指事情简单易懂；aboveboard 不表示简单。",
-        "substitutionLimitZh": "描述坦诚的 dealings 时可能接近；a straightforward calculation 的“简单”义不能互换。"
+        "comparisonZh": "描述坦诚、不耍手段的交往时，两词可能接近；aboveboard 重在公开正当，straightforward 重在直率。后者还可说计算简单易懂，aboveboard 不表达“简单”。"
       }
     ]
   },
@@ -1331,21 +1262,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "erode",
-        "sharedSenseZh": "磨蚀、逐渐损耗",
-        "distinctionZh": "erode 可概括风、水等造成的侵蚀，也常写信心或权力逐渐减弱；abrade 更明确地突出摩擦表面。",
-        "substitutionLimitZh": "岩石表面被磨损时可接近；侵蚀机制不明，或说社会信任下降时，不宜直接换成 abrade。"
+        "comparisonZh": "岩石表面被摩擦磨损时，两词接近；abrade 明确指向表面摩擦，erode 可泛指风、水等侵蚀。若只说土壤被水冲走，erode 更合适，不必有摩擦磨去表层的过程。"
       },
       {
         "word": "scrape",
-        "sharedSenseZh": "刮擦，擦伤",
-        "distinctionZh": "scrape 可只描述刮的动作，或刮掉附着物；abrade 突出表面被摩擦磨损。",
-        "substitutionLimitZh": "皮肤被刮伤时可接近；scrape mud off a boot 是刮掉泥，不一定磨损靴子。"
+        "comparisonZh": "刮伤皮肤时，两词可能接近；abrade 突出表层被摩擦损伤，scrape 也可只指刮的动作。scrape mud off a boot 是刮掉泥，未必把靴子磨损。"
       },
       {
         "word": "chafe",
-        "sharedSenseZh": "摩擦使皮肤疼痛或受损",
-        "distinctionZh": "chafe 常用于鞋、衣物摩擦皮肤而使其红肿疼痛；abrade 更强调表层受损或被磨去。",
-        "substitutionLimitZh": "衣领磨伤皮肤时可接近；chafe at restrictions 表示对限制感到恼火，不能照搬 abrade。"
+        "comparisonZh": "衣领磨伤皮肤时，两词接近；chafe 突出反复摩擦引起红肿疼痛，abrade 更强调表层受损、被磨去。皮肤发红但没有明显擦破时，chafe 更贴切。"
       }
     ]
   },
@@ -1410,21 +1335,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "condense",
-        "sharedSenseZh": "压缩文本篇幅",
-        "distinctionZh": "condense 强调把内容表达得更紧凑，可通过改写浓缩；abridge 常通过删去部分内容形成节本。",
-        "substitutionLimitZh": "压缩文章时可接近；condense 还有气体凝结的意思，abridge 没有。"
+        "comparisonZh": "缩短文章时，两词接近；abridge 通常删去部分内容形成节本，condense 可通过改写把相同信息表达得更紧凑。强调保留信息、压缩措辞时，condense 更贴切。"
       },
       {
         "word": "curtail",
-        "sharedSenseZh": "缩减、限制",
-        "distinctionZh": "curtail 更广，可限制活动、开支或自由；abridge 的典型对象是作品与权利。",
-        "substitutionLimitZh": "限制自由或权利时很接近；curtail spending 通常不能直接换成 abridge spending。"
+        "comparisonZh": "限制自由或权利时，两词接近；curtail 还常指削减开支、缩短活动，abridge 则典型地用于作品和权利。curtail spending 通常不直接换成 abridge spending。"
       },
       {
         "word": "truncate",
-        "sharedSenseZh": "截短内容",
-        "distinctionZh": "truncate 突出截去一段，常使人想到结尾被截断；abridge 指有选择地删节，不要求只剪结尾。",
-        "substitutionLimitZh": "只说文本被缩短时可能接近；强调保留主线的完整节本时，truncate 会改变重点。"
+        "comparisonZh": "文本变短时两词可能接近，但 abridge 是有选择地删节，truncate 像截掉一段，常让人想到结尾被截断。要表达保留主线的完整节本，用 truncate 会改变重点。"
       }
     ]
   },
@@ -1493,21 +1412,15 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "repeal",
-        "sharedSenseZh": "正式废除法律",
-        "distinctionZh": "repeal 特别适合立法废法；abrogate 的对象还可包括协议和惯例。",
-        "substitutionLimitZh": "废除法律时很接近；谈弃职责于不顾，不能把 abrogate one's duty 换成 repeal one's duty。"
+        "comparisonZh": "正式废除法律时，两词接近；repeal 尤其适合由立法程序撤销法律，abrogate 也可用于协议、惯例。废止双方协议时，通常不直接套用 repeal。"
       },
       {
         "word": "rescind",
-        "sharedSenseZh": "正式撤销协议或决定",
-        "distinctionZh": "rescind 常用于收回决定、命令、提议或取消合同；abrogate 常突出终止原有规则或协议的效力。",
-        "substitutionLimitZh": "取消协议时可能接近；收回一项 offer 通常用 rescind，更自然。"
+        "comparisonZh": "取消协议时，两词可能接近；abrogate 突出废止既有规则或约定，rescind 也常写收回决定、命令或提议。撤回一项 offer 通常用 rescind。"
       },
       {
         "word": "annul",
-        "sharedSenseZh": "使协议或法律失效",
-        "distinctionZh": "annul 强调宣告无效；abrogate 强调正式废止原来适用的规则或约定。",
-        "substitutionLimitZh": "法律文本作废时可接近；annul a marriage 有专门含义，不宜换成 abrogate。"
+        "comparisonZh": "使法律或协议失效时，两词可能接近；abrogate 重在正式废止，annul 重在宣告无效。annul a marriage 有特定含义，不能当作一般“废止”换成 abrogate。"
       }
     ]
   },
@@ -1572,15 +1485,11 @@ export const approvedEntries = Object.freeze([
     "equivalents": [
       {
         "word": "decamp",
-        "sharedSenseZh": "突然离开、逃走",
-        "distinctionZh": "decamp 可以只是匆忙离开，也有撤营之义；abscond 更突出秘密逃离、躲避发现。",
-        "substitutionLimitZh": "突然溜走或携款逃跑时可接近；普通撤营不宜换成 abscond。"
+        "comparisonZh": "突然溜走、携款逃跑时，两词可能接近；abscond 突出秘密逃离以免被发现，decamp 也能只是匆忙离开。部队撤营用 decamp，不必有潜逃意味。"
       },
       {
         "word": "flee",
-        "sharedSenseZh": "逃离",
-        "distinctionZh": "flee 常突出躲避危险或追赶，不必秘密进行；abscond 强调悄悄离开。",
-        "substitutionLimitZh": "只有语境已交代潜逃时才接近；flee a fire 不能照搬 abscond，且 flee 可直接接逃离的对象。"
+        "comparisonZh": "逃避追捕时两词可能接近，但 flee 不必秘密行动，abscond 突出潜逃。逃离火灾可说 flee a fire；abscond 既不适合这个重点，也不能这样直接接宾语。"
       }
     ]
   }

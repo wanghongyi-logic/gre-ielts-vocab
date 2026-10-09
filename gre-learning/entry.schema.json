@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:gre-learning:entry:v2",
+  "$id": "urn:gre-learning:entry:v3",
   "title": "GRE learning entry",
   "type": "object",
   "additionalProperties": false,
@@ -168,29 +168,20 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
+        "required": [
+          "word",
+          "comparisonZh"
+        ],
         "properties": {
           "word": {
             "type": "string",
             "minLength": 1
           },
-          "sharedSenseZh": {
-            "type": "string",
-            "minLength": 1
-          },
-          "distinctionZh": {
-            "type": "string",
-            "minLength": 1
-          },
-          "substitutionLimitZh": {
+          "comparisonZh": {
             "type": "string",
             "minLength": 1
           }
-        },
-        "required": [
-          "word",
-          "sharedSenseZh",
-          "substitutionLimitZh"
-        ]
+        }
       }
     }
   },

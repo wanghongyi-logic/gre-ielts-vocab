@@ -1,18 +1,19 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
- <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
  <meta name="theme-color" content="#f6f5f1"><meta name="description" content="用画面、联想和真实语境学习 GRE 词汇。">
- <title>词汇精学</title><link rel="icon" href="./icon-192-v2.png"><link rel="manifest" href="./manifest.webmanifest?v=110">
- <link rel="stylesheet" href="./gre-learning/learning.css?v=110">
+ <title>词汇精学</title><link rel="icon" href="./icon-192-v2.png"><link rel="manifest" href="./manifest.webmanifest?v=111">
+ <link rel="stylesheet" href="./gre-learning/learning.css?v=111">
+ <link rel="stylesheet" href="./gre-learning/motion.css?v=111">
 </head>
 <body>
  <a class="skip-link" href="#word-content">跳到学习内容</a>
- <header class="site-header"><a class="brand" href="#/learn/1">词汇精学<span>GRE</span></a><button class="icon-button" id="open-search" type="button" aria-label="查找单词" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></button></header>
- <main id="word-content" tabindex="-1"><p class="initial-status" role="status">正在打开学习内容…</p></main>
- <nav class="word-navigation" aria-label="切换单词"><button id="previous-word" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7M7 12h14"/></svg><span>上一个词</span></button><button class="word-counter" id="word-counter" type="button" aria-label="打开单词目录">— / 20</button><button id="next-word" type="button" disabled><span>下一个词</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5 7 7-7 7M3 12h14"/></svg></button></nav>
+ <header class="site-header"><a class="brand" href="#/learn/1">词汇精学<span>GRE</span></a><div class="header-tools"><button class="word-counter" id="word-counter" type="button" aria-label="打开单词目录" aria-haspopup="dialog">— / 20</button><button class="icon-button" id="open-search" type="button" aria-label="查找单词" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></button></div></header>
+ <main id="word-content" tabindex="-1" aria-keyshortcuts="ArrowLeft ArrowRight"><p class="initial-status" role="status">正在打开学习内容…</p></main>
+
  <dialog id="word-picker" aria-labelledby="picker-title"><div class="picker-heading"><h2 id="picker-title">选择一个词</h2><button class="icon-button" id="close-search" type="button" aria-label="关闭单词目录"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input id="word-search" type="search" placeholder="搜索英文或中文释义" autocomplete="off" aria-label="搜索英文或中文释义"></label><p id="search-count" class="search-count" aria-live="polite"></p><div id="word-results" class="word-results"></div></dialog>
  <div class="update-status" id="update-status" role="status" hidden></div><div id="speech-status" class="sr-only" role="status"></div>
  <script type="module">import('./gre-learning/app.js').catch(()=>{document.getElementById('word-content').innerHTML='<div class="initial-status"><p>学习内容暂时无法打开</p><button type="button" onclick="location.reload()">重新打开</button></div>';});</script>
- <script src="./gre-learning/update.js?v=110" defer></script>
+ <script src="./gre-learning/update.js?v=111" defer></script>
 </body></html>

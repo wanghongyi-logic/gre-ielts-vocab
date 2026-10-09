@@ -1,0 +1,18 @@
+/* v111: every word has a semantic loop, with no playback chrome. */
+.meaning-motion{padding:0;background:#f6f5f1}
+.meaning-motion-scene{display:block;width:100%;height:auto;aspect-ratio:1.8;overflow:hidden}
+.meaning-motion-scene text{font-family:Arial,sans-serif;font-weight:600;text-anchor:middle}
+.meaning-motion-scene [data-motion-layer]{transition:none!important;transform-box:view-box}
+.motion-controls{display:none!important}
+.motion-comparison{display:none}
+@media(prefers-reduced-motion:reduce){
+ .motion-live{display:none}
+ .motion-comparison{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:10px}
+ .motion-comparison figure{margin:0;min-width:0}
+ .motion-comparison figcaption{padding:4px 0 8px;font-size:12px;color:var(--muted)}
+ .motion-comparison figure+figure{border-left:1px solid #dce2d6}
+}
+@media(prefers-reduced-motion:reduce) and (max-width:599px){
+ .motion-comparison{grid-template-columns:1fr;gap:14px}
+ .motion-comparison figure+figure{border-left:0;border-top:1px solid #dce2d6;padding-top:10px}
+}

@@ -1,12 +1,12 @@
 /** Public learning content only. Review questions and progress records use their existing schemas. */
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 const fields = {
   entry: ['number','word','ipa','pos','coreMeaningZh','coreEn','coreImageZh','mnemonics','usage','examples','equivalents'],
   mnemonic: ['method','textZh','original','kind'],
   usage: ['senseZh','explanationZh','collocations'],
   collocation: ['phrase','meaningZh','usageZh'],
   example: ['textEn','translationZh','explanationZh'],
-  equivalent: ['word','sharedSenseZh','distinctionZh','substitutionLimitZh']
+  equivalent: ['word','comparisonZh']
 };
 const text = value => typeof value === 'string' && value.trim().length > 0;
 function shape(value, name) {
@@ -42,7 +42,7 @@ export function validateEntry(entry, baselineLesson) {
     shape(item, 'example'); required(item, ['textEn','translationZh'], 'example');
   }
   list(entry.equivalents, 'equivalents');
-  for (const item of entry.equivalents) { shape(item, 'equivalent'); if (item.distinctionZh !== undefined && !text(item.distinctionZh)) throw new TypeError('Invalid distinction'); required(item, ['word','sharedSenseZh','substitutionLimitZh'], 'equivalent'); }
+  for (const item of entry.equivalents) { shape(item, 'equivalent'); required(item, ['word','comparisonZh'], 'equivalent'); }
   if (!entry.usage.some(item => item.collocations.length)) throw new TypeError('Missing collocations');
   return entry;
 }
