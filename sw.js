@@ -1,29 +1,58 @@
 /* GRE new-standard release. Shell installation is atomic; lesson downloads are separate. */
-const BUILD='118';
+const BUILD='119';
 // BEGIN GENERATED RELEASE POLICY
-// Stable IDs identify progress/history; their order here defines the learning sequence.
+// Stable IDs identify progress/history; display ordinals never replace stored IDs.
 const STANDARD_VERSION = 'gre-deep-20261010-v1';
 const APPROVED_SEQUENCE = Object.freeze([175,176,177,178,179,180,181,182,183,184]);
+const STORYBOOK_SAMPLE_SEQUENCE = Object.freeze([175,176,177,178,179]);
+function validateStoryMedia(media) {
+ if(!media||!Number.isSafeInteger(media.width)||media.width<=0||!Number.isSafeInteger(media.height)||media.height<=0||!Number.isFinite(media.durationMs)||media.durationMs<=0||typeof media.alt!=='string'||!media.alt.trim())throw new Error('Storybook media metadata missing');
+ for(const [kind,extensions] of [['poster',/\.(png|webp|jpe?g|avif)$/i],['video',/\.(mp4|webm)$/i]]){
+  const ref=media[kind];
+  if(!ref||typeof ref.url!=='string'||!/^story-media\/(?:[A-Za-z0-9_-]+\/)*[A-Za-z0-9_.-]+$/.test(ref.url)||!extensions.test(ref.url)||!/^[a-f0-9]{64}$/.test(ref.sha256)||!ref.url.split('/').at(-1).includes(ref.sha256)||!Number.isSafeInteger(ref.bytes)||ref.bytes<=0)throw new Error('Storybook media integrity reference missing');
+ }
+ if(media.poster.url===media.video.url)throw new Error('Storybook poster and video must be distinct');
+ return media;
+}
 function gateCatalog(raw) {
  if(raw.schema!==1||!Array.isArray(raw.units)||!Array.isArray(raw.entries))throw new Error('Unsupported catalog');
  const policy=raw.learningRelease;
  if(!policy||policy.standardVersion!==STANDARD_VERSION||policy.batchSize!==10||!Array.isArray(policy.approvedIds))throw new Error('New-standard release approval missing');
- if(policy.approvedIds.length && policy.status!=='approved')throw new Error('Batch review not approved');
- if(policy.approvedIds.length%10!==0||policy.approvedIds.some((id,i)=>id!==APPROVED_SEQUENCE[i]))throw new Error('Only complete approved batches may be released');
+ if(policy.approvedIds.length&&policy.status!=='approved')throw new Error('Batch review not approved');
+ const sample=policy.sampleMode==='storybook-first-five';
+ if(policy.sampleMode!==undefined&&!sample)throw new Error('Unsupported sample mode');
+ if(sample){
+  if(typeof raw.preview!=='boolean')throw new Error('Storybook preview state must be explicit');
+  if(policy.approvedIds.length!==5||policy.approvedIds.some((id,i)=>id!==STORYBOOK_SAMPLE_SEQUENCE[i]))throw new Error('Storybook sample must be exactly the first five stable IDs');
+  if(policy.mediaStatus!=='approved'&&!(raw.preview===true&&policy.mediaStatus==='pending'))throw new Error('Storybook media review not approved');
+ }else if(policy.approvedIds.length%10!==0||policy.approvedIds.some((id,i)=>id!==APPROVED_SEQUENCE[i]))throw new Error('Only complete approved batches may be released');
  const seen=new Set();
  for(const entry of raw.entries){if(seen.has(entry.number))throw new Error('Duplicate canonical ID');seen.add(entry.number);}
  const entries=policy.approvedIds.map((id,i)=>{
   const entry=raw.entries.find(item=>item.number===id);
   if(!entry||entry.standardVersion!==STANDARD_VERSION||entry.reviewStatus!=='approved'||entry.textApproved!==true||entry.artApproved!==true||entry.displayOrdinal!==i+1)throw new Error('Lesson is not new-standard approved');
-  if(!raw.units[entry.unit]||!entry.art?.sha256)throw new Error('Approved lesson assets missing');
+  const unit=raw.units[entry.unit];
+  if(!Number.isSafeInteger(entry.unit)||entry.unit<0||!unit||typeof unit.url!=='string'||!/^units\/[A-Za-z0-9_-]+\.json$/.test(unit.url)||!/^[a-f0-9]{64}$/.test(unit.sha256)||!unit.url.endsWith('-'+unit.sha256+'.json')||!Number.isSafeInteger(unit.bytes)||unit.bytes<=0||!/^[a-f0-9]{64}$/.test(entry.art?.sha256)||!Number.isSafeInteger(entry.art?.bytes)||entry.art.bytes<=0)throw new Error('Approved lesson assets missing');
+  if(sample&&(policy.mediaStatus==='approved'||entry.storyMedia))validateStoryMedia(entry.storyMedia);
   return entry;
  });
+ const integrityRefs=new Map(),digestBytes=new Map();
+ for(const entry of entries){
+  const refs=[raw.units[entry.unit],...(entry.storyMedia?[entry.storyMedia.poster,entry.storyMedia.video]:[])];
+  for(const ref of refs){
+   const prior=integrityRefs.get(ref.url);
+   if(prior&&(prior.sha256!==ref.sha256||prior.bytes!==ref.bytes))throw new Error('Conflicting integrity declarations for one asset URL');
+   if(digestBytes.has(ref.sha256)&&digestBytes.get(ref.sha256)!==ref.bytes)throw new Error('Conflicting byte counts for one content hash');
+   integrityRefs.set(ref.url,ref);
+   digestBytes.set(ref.sha256,ref.bytes);
+  }
+ }
  if(raw.publishedCount!==entries.length||raw.authoredCount!==entries.length||raw.libraryTarget!==4679)throw new Error('Incorrect published lesson count');
  return {...raw,entries};
 }
 // END GENERATED RELEASE POLICY
 // Generated by build-shell.mjs; SW is intentionally outside this non-cyclic hash list.
-const SHELL_ASSETS = [{"url":"index.html","bytes":2611,"sha256":"17fe0b9fa1d399a2ea416f2b0bcfdeee595be59ef0cee07dd190dbfa23aa0a75"},{"url":"manifest.webmanifest","bytes":642,"sha256":"4fb0713fe2794b661f741c27deb8b1babd2a2844e582e09fe293090d437af47a"},{"url":"icon-192-v2.png","bytes":47430,"sha256":"6e52c5115cb2e79148cf5e9df857568936987d1a9211907b9ccb10267970575b"},{"url":"gre-learning/learning.css","bytes":17612,"sha256":"9f556eea850b3ea0114a724b0354e2b48514927bb19a160b4c82423673e2b4dc"},{"url":"gre-learning/motion.css","bytes":1196,"sha256":"0181252a386847b5fca369573b38b132c1b6309662078709806e70e990dc19b5"},{"url":"gre-learning/update.js","bytes":2647,"sha256":"cd2756a418e92045fe74f46b9e3b5f9f7db90271531e18c1e365b05b0b0537e6"},{"url":"gre-learning/app.js","bytes":8114,"sha256":"e75d8e5a977237cc883b9afc40a2f6b0e5cfeaa3b9bc5bbdf5e48abefec8add5"},{"url":"gre-learning/catalog.json","bytes":3694,"sha256":"f80ed992ebd414a115b0889f537b2f790168326b8aef616e72b7539842f693d9"},{"url":"gre-learning/lesson-loader.js","bytes":5486,"sha256":"4db7a98fcce8658c908c229f37c23f09087527ff5f76f949a43a0157691b53ce"},{"url":"gre-learning/schema.js","bytes":4377,"sha256":"d0ba9acfa22802557f35b3e27aaba00be662bd29eec0fe737e823794027e0c37"},{"url":"gre-learning/render.js","bytes":3744,"sha256":"f30225576b9d70d08df7a65f8c3d17b61d4de1d49989f11be297e17ea5b11341"},{"url":"gre-learning/model.js","bytes":691,"sha256":"62a63f1c81135c717aa1f0b7c4b75a5b0dbf9d12efdfd16db28c35bf85ee900e"},{"url":"gre-learning/swipe.js","bytes":13549,"sha256":"fda18727d81bd0c90a5b07eddaec037130088d36347bdffa895b080873f9a903"},{"url":"gre-learning/motion.js","bytes":9296,"sha256":"11658380458992bc1754740baeb511b78eb897c4c09e392fdf86360e1c7e97b7"},{"url":"gre-learning/view.js","bytes":812,"sha256":"a45a33171f5883db7de7db591b1f521c4f6625e41347b6dc65ea6927968b7ad1"},{"url":"gre-learning/motion-tracks.js","bytes":12138,"sha256":"c4fa72ae0cc4d0e91c458cd7174ba4a1ba23a7d935f352fc8cbeb583391b10fd"},{"url":"gre-learning/release-policy.js","bytes":1643,"sha256":"e007be924e2b3a1f78469ef0203bbe7609766a5194f204f84a533f0c413ee731"},{"url":"gre-learning/mobile-learning.css","bytes":4719,"sha256":"66f9c974dfabbcc59e2597ab246d0d588cc1d81a8cfbf919d14179d31ed4f622"},{"url":"gre-learning/scene-glosses.js","bytes":444,"sha256":"e7baf9bffd648cae68c77829dd4aabf0d39cb6a8c07c90e2fba0d4e4b2b704fb"},{"url":"icon-512-v2.png","bytes":298790,"sha256":"65508f5707903f370f3f89402f5c48ade1d4c70b4fdd1ac8dff532f396c0a9ff"}];
+const SHELL_ASSETS = [{"url":"index.html","bytes":3462,"sha256":"4acc4239f0e8f9a9299f3ca57463feef267a52f1e6ad3ffbb0524edf441faadb"},{"url":"manifest.webmanifest","bytes":642,"sha256":"4fb0713fe2794b661f741c27deb8b1babd2a2844e582e09fe293090d437af47a"},{"url":"icon-192-v2.png","bytes":47430,"sha256":"6e52c5115cb2e79148cf5e9df857568936987d1a9211907b9ccb10267970575b"},{"url":"gre-learning/update.js","bytes":2647,"sha256":"f553d63b3ea5f0a302dbecfdeb3d3e1e514f45037226920f24b89862642941f0"},{"url":"gre-learning/app.js","bytes":7814,"sha256":"f032cd971cf3ec73914e1346aff48a616cafcbe412d586e36ec74fb49876348e"},{"url":"gre-learning/catalog.json","bytes":7507,"sha256":"98f35245de7db4fc4854c8309ed9ab14a9208852b966d9d7499ee6079546778b"},{"url":"gre-learning/lesson-loader.js","bytes":7816,"sha256":"17c76480a2d055e33c551d46a67d49a0386458cc9ce8b1f327adf72b6494acd7"},{"url":"gre-learning/schema.js","bytes":4377,"sha256":"d0ba9acfa22802557f35b3e27aaba00be662bd29eec0fe737e823794027e0c37"},{"url":"gre-learning/render.js","bytes":3744,"sha256":"f30225576b9d70d08df7a65f8c3d17b61d4de1d49989f11be297e17ea5b11341"},{"url":"gre-learning/model.js","bytes":691,"sha256":"62a63f1c81135c717aa1f0b7c4b75a5b0dbf9d12efdfd16db28c35bf85ee900e"},{"url":"gre-learning/swipe.js","bytes":13549,"sha256":"fda18727d81bd0c90a5b07eddaec037130088d36347bdffa895b080873f9a903"},{"url":"gre-learning/motion.js","bytes":9296,"sha256":"11658380458992bc1754740baeb511b78eb897c4c09e392fdf86360e1c7e97b7"},{"url":"gre-learning/view.js","bytes":5367,"sha256":"00ab7b2c329de7c6560deb483a6681059aac49aec522779d1fada4231a77e8dc"},{"url":"gre-learning/motion-tracks.js","bytes":12138,"sha256":"c4fa72ae0cc4d0e91c458cd7174ba4a1ba23a7d935f352fc8cbeb583391b10fd"},{"url":"gre-learning/release-policy.js","bytes":4291,"sha256":"abb123fc2eab24cb0efcbde051b33ea86cfc9cae20d85aec1ef73d85f80a9f57"},{"url":"gre-learning/scene-glosses.js","bytes":444,"sha256":"e7baf9bffd648cae68c77829dd4aabf0d39cb6a8c07c90e2fba0d4e4b2b704fb"},{"url":"icon-512-v2.png","bytes":298790,"sha256":"65508f5707903f370f3f89402f5c48ade1d4c70b4fdd1ac8dff532f396c0a9ff"},{"url":"gre-learning/story-media.js","bytes":5263,"sha256":"504c62425c5414a2273a0281908f789a35984cda2cf3b82d4343ed960d2e0bf8"},{"url":"gre-learning/storybook.css","bytes":17574,"sha256":"15fd2e2bf66bb4dd75fd489d576fd4b1d5c663221dedd67a2f2f67d6997a5b94"}];
 const scope=new URL('./',self.location.href);
 const SHELL_PREFIX='gre-scalable-shell-'+encodeURIComponent(scope.pathname)+'-';
 const SHELL=SHELL_PREFIX+BUILD;
@@ -48,10 +77,10 @@ async function shellResponse(ref,{repair=true,requirePersistence=false}={}){
  return response;
 }
 async function catalog({repair=true}={}){
- if(!catalogPromise){catalogPromise=(async()=>{const response=await shellResponse(shellRef(resolve('gre-learning/catalog.json')),{repair});return gateCatalog(await response.json());})();catalogPromise.catch(()=>{catalogPromise=null;});}
+ if(!catalogPromise){catalogPromise=(async()=>{const response=await shellResponse(shellRef(resolve('gre-learning/catalog.json')),{repair});const raw=await response.json();if(raw.preview===true)throw new Error('Preview catalog cannot be installed');return gateCatalog(raw);})();catalogPromise.catch(()=>{catalogPromise=null;});}
  return catalogPromise;
 }
-const pairRefs=(entry,data)=>[data.units[entry.unit],{...entry.art,url:`art-units/${entry.number}-${entry.art.sha256}.json`}];
+const pairRefs=(entry,data)=>[data.units[entry.unit],...(data.learningRelease.sampleMode==='storybook-first-five'?[entry.storyMedia.poster,entry.storyMedia.video]:[{...entry.art,url:`art-units/${entry.number}-${entry.art.sha256}.json`}])];
 async function refs(){const data=await catalog();const map=new Map();for(const entry of data.entries)for(const ref of pairRefs(entry,data))map.set(resolve('gre-learning/'+ref.url),ref);return map;}
 async function broadcast(data){for(const client of await self.clients.matchAll({type:'window',includeUncontrolled:true})){const url=new URL(client.url);if(url.origin===scope.origin&&url.pathname.startsWith(scope.pathname)&&!excluded(url))client.postMessage(data);}}
 self.addEventListener('install',event=>event.waitUntil((async()=>{
@@ -60,10 +89,19 @@ self.addEventListener('install',event=>event.waitUntil((async()=>{
  const manifest=await response.json();
  if(manifest.build!==BUILD)throw new Error('Shell build mismatch');
  if(JSON.stringify(manifest.assets)!==JSON.stringify(SHELL_ASSETS))throw new Error('Untrusted shell manifest');
+ // Reject an internal preview before writing even one shell file. This also keeps
+ // an accidental same-build development install from overwriting the old shell.
+ const catalogRef=shellRef(resolve('gre-learning/catalog.json'));
+ const catalogResponse=await fetch(resolve('gre-learning/catalog.json'),{cache:'reload'});
+ await verify(catalogResponse,catalogRef);
+ const candidateCatalog=await catalogResponse.json();
+ if(candidateCatalog.preview===true)throw new Error('Preview catalog cannot be installed');
+ gateCatalog(candidateCatalog);
  // New builds and same-build repairs share this verified path. Failed repairs keep every
  // still-valid asset and the preceding complete generation. Partial caches never mean ready.
  for(const ref of SHELL_ASSETS)await shellResponse(ref,{requirePersistence:true});
  if(!await shellReady())throw new Error('Incomplete shell');
+ await catalog({repair:false}); // Validate sample approval before committing an install-ready marker.
  await(await caches.open(SHELL)).put(resolve('__shell_ready__'),new Response(BUILD));
 })()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{
@@ -81,17 +119,17 @@ async function unitResponse(request,ref){let cache,cached;try{cache=await caches
 }
 self.addEventListener('fetch',event=>{
  const request=event.request,url=new URL(request.url);if(request.method!=='GET'||url.origin!==scope.origin||!url.pathname.startsWith(scope.pathname)||excluded(url))return;
- if(/\/gre-learning\/(units|art-units)\//.test(url.pathname)){
+ if(/\/gre-learning\/(units|art-units|story-media)\//.test(url.pathname)){
   event.respondWith((async()=>{const ref=(await refs()).get(url.href);if(!ref)return new Response('Unknown lesson unit',{status:404});try{return await unitResponse(request,ref);}catch{return new Response('Lesson unavailable offline or failed integrity validation',{status:503});}})());return;
  }
  event.respondWith((async()=>{const assetURL=new URL(request.url);assetURL.search='';const key=request.mode==='navigate'?resolve('index.html'):assetURL.href;const ref=shellRef(key);if(!ref)return fetch(request);try{return await shellResponse(ref);}catch{return new Response('Verified application shell unavailable; reconnect and retry',{status:503,headers:{'Content-Type':'text/plain; charset=utf-8'}});}})());
 });
-async function lessonStatus(){let cache;try{cache=await caches.open(UNITS);}catch{}const shellIsReady=await shellReady();let data;try{data=await catalog({repair:false});}catch{return {type:'LESSON_STATUS',build:BUILD,shellReady:false,readyIds:[],readyCount:0,availableCount:null,libraryTarget:4679,wholeTargetReady:false,error:'Verified lesson index unavailable'};}const ready=[],checked=new Map();const check=ref=>{const url=resolve('gre-learning/'+ref.url);if(!checked.has(url))checked.set(url,(async()=>{try{await verify(await cache?.match(url),ref);return true;}catch{return false;}})());return checked.get(url);};for(const entry of data.entries){let complete=true;for(const ref of pairRefs(entry,data)){if(!await check(ref)){complete=false;break;}}if(complete)ready.push(entry.number);}return {type:'LESSON_STATUS',build:BUILD,shellReady:shellIsReady,readyIds:ready,readyCount:ready.length,availableCount:data.entries.length,libraryTarget:data.libraryTarget,wholeTargetReady:shellIsReady&&ready.length===data.libraryTarget};}
+async function lessonStatus(){let cache;try{cache=await caches.open(UNITS);}catch{}const shellIsReady=await shellReady();let data;try{data=await catalog({repair:false});}catch{return {type:'LESSON_STATUS',build:BUILD,shellReady:false,readyIds:[],readyCount:0,availableCount:null,libraryTarget:4679,wholeTargetReady:false,error:'Verified lesson index unavailable'};}const ready=[],checked=new Map();const check=ref=>{const url=resolve('gre-learning/'+ref.url),key=url+'|'+ref.sha256+'|'+ref.bytes;if(!checked.has(key))checked.set(key,(async()=>{try{await verify(await cache?.match(url),ref);return true;}catch{return false;}})());return checked.get(key);};for(const entry of data.entries){let complete=true;for(const ref of pairRefs(entry,data)){if(!await check(ref)){complete=false;break;}}if(complete)ready.push(entry.number);}return {type:'LESSON_STATUS',build:BUILD,shellReady:shellIsReady,readyIds:ready,readyCount:ready.length,availableCount:data.entries.length,libraryTarget:data.libraryTarget,wholeTargetReady:shellIsReady&&ready.length===data.libraryTarget};}
 self.addEventListener('message',event=>{
  const type=event.data?.type;
  if(type==='GET_BUILD'){event.ports[0]?.postMessage({type:'APP_BUILD',build:BUILD});return;}
  if(type==='SKIP_WAITING'){self.skipWaiting();return;}
  if(type==='GET_LESSON_STATUS')event.waitUntil(lessonStatus().then(value=>event.ports[0]?.postMessage(value)));
- // Explicit request only, with progress on fully verified text+art pairs. A partial download is never ready.
+ // Explicit request only, with progress on fully verified text+art or text+poster+video sets. A partial download is never ready.
  if(type==='DOWNLOAD_LESSONS')event.waitUntil((async()=>{const data=await catalog();const requested=[...new Set(event.data.ids||[])].slice(0,data.entries.length);let completed=0;for(const id of requested){const entry=data.entries.find(item=>item.number===id);if(!entry)continue;try{for(const ref of pairRefs(entry,data)){const url=resolve('gre-learning/'+ref.url);await unitResponse(new Request(url),ref);await verify(await(await caches.open(UNITS)).match(url),ref);}completed++;event.ports[0]?.postMessage({type:'LESSON_DOWNLOAD_PROGRESS',completed,requested:requested.length});}catch{event.ports[0]?.postMessage({type:'LESSON_DOWNLOAD_ERROR',number:id,completed});}}event.ports[0]?.postMessage(await lessonStatus());})());
 });

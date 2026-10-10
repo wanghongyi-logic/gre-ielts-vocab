@@ -1,6 +1,6 @@
 (() => {
   if (!('serviceWorker' in navigator) || location.protocol === 'file:' || location.hostname === 'app.local') return;
-  const build = '118';
+  const build = '119';
   let refreshing = false;
   let lastUpdateCheck = 0;
   let registration;
