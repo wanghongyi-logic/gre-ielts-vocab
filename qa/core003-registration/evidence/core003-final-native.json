@@ -1,0 +1,243 @@
+{
+  "status": "STAGED_INPUTS_ONLY_NOT_RELEASE_APPROVAL",
+  "preparedAt": "2026-10-10T10:13:27.151711+00:00",
+  "newIds": [
+    1287,
+    2207,
+    516,
+    3537,
+    419
+  ],
+  "entries": [
+    {
+      "number": 1287,
+      "word": "insular",
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 5000,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240,
+          "reason": "Native page-paper opacity separates the completed refusal from the next presentation; no in-story reopening or acceptance. The video holds the closed gate throughout its end."
+        },
+        "alt": "友善的来访者举着混种多色花卉的方案，棕发青年守着熟悉的红花行列，把小门关上，说“只按我们这儿的老办法。”，拒绝外来的新想法。",
+        "poster": {
+          "url": "story-media/1287-4c2c4e93de7c93b608429725288ed69bf58c57cf584aa4bc296a0fe6643e94c7.webp",
+          "bytes": 307178,
+          "sha256": "4c2c4e93de7c93b608429725288ed69bf58c57cf584aa4bc296a0fe6643e94c7"
+        },
+        "video": {
+          "url": "story-media/1287-b44eb122fb8a9a71b8728277febeb0a477d4191d60aac14ab6b24cd5ef4dbc85.mp4",
+          "bytes": 222812,
+          "sha256": "b44eb122fb8a9a71b8728277febeb0a477d4191d60aac14ab6b24cd5ef4dbc85"
+        },
+        "stages": [
+          {
+            "speaker": "left",
+            "anchor": {
+              "x": 0.43,
+              "y": 0.12
+            },
+            "id": "observe",
+            "startMs": 0,
+            "endMs": 1480,
+            "text": ""
+          },
+          {
+            "speaker": "left",
+            "anchor": {
+              "x": 0.43,
+              "y": 0.12
+            },
+            "id": "refuse",
+            "startMs": 1480,
+            "endMs": 4640,
+            "text": "只按我们这儿的老办法。"
+          },
+          {
+            "speaker": "left",
+            "anchor": {
+              "x": 0.43,
+              "y": 0.12
+            },
+            "id": "reset",
+            "startMs": 4640,
+            "endMs": 5000,
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.43,
+            "y": 0.12
+          },
+          "text": ""
+        }
+      }
+    },
+    {
+      "number": 2207,
+      "word": "shackle",
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 5600,
+        "resetTransition": {
+          "type": "none",
+          "reason": "The entire character relaxes back to the exact opening full-body pose while cart, chain, shackle and post remain fixed; no unfastening or transport."
+        },
+        "alt": "棕发青年握住小车把手，用力推了两次；小车被链条和固定柱上的金属扣环拴住，始终不能向前。他低头看见束缚，随后放松下来。",
+        "poster": {
+          "url": "story-media/2207-f14d4c2b7359cb31ee50d9fc27afa165cc4236b32eac6dc72833a685ab7ceaa4.webp",
+          "bytes": 320456,
+          "sha256": "f14d4c2b7359cb31ee50d9fc27afa165cc4236b32eac6dc72833a685ab7ceaa4"
+        },
+        "video": {
+          "url": "story-media/2207-e408e0e4a2717808a9e137a42a414fa5fc13e76b817464cfc04e55d68c9a0d35.mp4",
+          "bytes": 302492,
+          "sha256": "e408e0e4a2717808a9e137a42a414fa5fc13e76b817464cfc04e55d68c9a0d35"
+        },
+        "stages": [
+          {
+            "speaker": "left",
+            "anchor": {
+              "x": 0.43,
+              "y": 0.12
+            },
+            "id": "try-push",
+            "startMs": 0,
+            "endMs": 5600,
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.43,
+            "y": 0.12
+          },
+          "text": ""
+        }
+      }
+    },
+    {
+      "number": 516,
+      "word": "cumbersome",
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 6800,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Full redrawn carpet-handling sequence returns to the exact opening image; the carpet is not carried through the doorway. No camera or fade reset."
+        },
+        "alt": "棕发青年双手托着又长又粗的地毯卷，在窄门前费力调整角度；笨重的地毯不好搬动，他没有穿过门框。",
+        "poster": {
+          "url": "story-media/516-0da54fc00b556995934602afd6157ed3b3312b172f329bbe3d08360bc37037be.webp",
+          "bytes": 265456,
+          "sha256": "0da54fc00b556995934602afd6157ed3b3312b172f329bbe3d08360bc37037be"
+        },
+        "video": {
+          "url": "story-media/516-68ad1cf6b4f0a93bed884725331d33f94107c0ee21f5be1d3079e2c7a921963b.mp4",
+          "bytes": 318437,
+          "sha256": "68ad1cf6b4f0a93bed884725331d33f94107c0ee21f5be1d3079e2c7a921963b"
+        }
+      }
+    },
+    {
+      "number": 3537,
+      "word": "dogmatic",
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 9200,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Full redrawn refusal sequence returns to the exact opening image; native dialogue clears during the return phase. No camera or fade reset."
+        },
+        "alt": "同伴拿着宽路方案说推车也能过，棕发青年摆手拒绝，转向现有的花圃坚持“只能这样！”，不愿考虑对方的理由。",
+        "poster": {
+          "url": "story-media/3537-a7f0a006824de56089da9b7c1a32cc549cb9cf26ce52a5047c6015bbd2dd87b4.webp",
+          "bytes": 366928,
+          "sha256": "a7f0a006824de56089da9b7c1a32cc549cb9cf26ce52a5047c6015bbd2dd87b4"
+        },
+        "video": {
+          "url": "story-media/3537-501a570d5260e4c21c2496826a247ba5d6583e9260d8588ab2dfa6d6d2c67e7c.mp4",
+          "bytes": 299473,
+          "sha256": "501a570d5260e4c21c2496826a247ba5d6583e9260d8588ab2dfa6d6d2c67e7c"
+        },
+        "stages": [
+          {
+            "id": "practical-alternative",
+            "speaker": "right",
+            "anchor": {
+              "x": 0.54,
+              "y": 0.12
+            },
+            "startMs": 0,
+            "endMs": 2800,
+            "text": "这条宽路，推车也能过。"
+          },
+          {
+            "id": "refuse-reasons",
+            "speaker": "left",
+            "anchor": {
+              "x": 0.36,
+              "y": 0.12
+            },
+            "startMs": 2800,
+            "endMs": 7000,
+            "text": "只能这样！"
+          },
+          {
+            "id": "return",
+            "speaker": "left",
+            "anchor": {
+              "x": 0.36,
+              "y": 0.12
+            },
+            "startMs": 7000,
+            "endMs": 9200,
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "right",
+          "anchor": {
+            "x": 0.54,
+            "y": 0.12
+          },
+          "text": "这条宽路，推车也能过。"
+        }
+      }
+    },
+    {
+      "number": 419,
+      "word": "conducive",
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 8960,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Full redrawn cels return to the exact opening image; conducive explicitly reopens the window and restores page flutter. No camera or fade reset."
+        },
+        "alt": "敞开的窗让风吹动书页。棕发青年拉下窗扇，书页平稳后在一直亮着的灯下读书；随后重新开窗，回到起始场景。",
+        "poster": {
+          "url": "story-media/419-5c1812dd41510e51a709abd00ada6908d8a43e284666e7a81aa9360706a117d3.webp",
+          "bytes": 291316,
+          "sha256": "5c1812dd41510e51a709abd00ada6908d8a43e284666e7a81aa9360706a117d3"
+        },
+        "video": {
+          "url": "story-media/419-beaebbd69d4ae47bc37740c8e7f9cd486437cfb8ccfe4fa0e3b66f26ad79bd33.mp4",
+          "bytes": 497213,
+          "sha256": "beaebbd69d4ae47bc37740c8e7f9cd486437cfb8ccfe4fa0e3b66f26ad79bd33"
+        }
+      }
+    }
+  ],
+  "nativeDescriptorPolicy": "Artist JSON with exactly three root-authorized metadata changes:516/3537 scene-specific reset reasons and3537 alt ownership wording. Additionally3537 opening/right stage and poster anchor x .70→.60 after reviewer observed320px clipping. No media bytes, dialogue text/timing or other fields changed. Final integrated mobile containment review pending."
+}

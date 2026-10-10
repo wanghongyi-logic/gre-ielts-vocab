@@ -12,7 +12,7 @@ const entries=catalog.entries;
 document.getElementById('release-summary').textContent=`词汇学习 · 已收录 ${entries.length} 词`;
 const loader=new LessonLoader(catalog);
 const main=document.getElementById('word-content'),picker=document.getElementById('word-picker'),search=document.getElementById('word-search'),counter=document.getElementById('word-counter');
-const bookmarks=installBookmarkNavigation({surface:main,picker,onLayoutChange:()=>swipe.cancel()});
+const bookmarks=installBookmarkNavigation({surface:main,picker});
 let motion=installStoryMedia(main,{picker});
 const pages=installPreparedPages({loader,entries,picker});
 const swipe=installWordSwipe({surface:main,hintHost:main.parentNode,picker,getNeighbor:direction=>neighboringNumbers(entries,selectedNumber)[direction],getPrepared:direction=>pages.get(neighboringNumbers(entries,selectedNumber)[direction]),prepareNeighbor:direction=>pages.prepare(neighboringNumbers(entries,selectedNumber)[direction]),onNavigate:navigate,onTurnActivity:active=>motion.setTurning(active)});

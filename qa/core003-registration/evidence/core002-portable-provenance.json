@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "scope": "Portable full-content derivatives of accepted evidence; only source-location fields removed. Original digests are provenance, not a claim that derivative bytes equal originals. All test results, measurements, file/media digests and policies are retained unchanged.",
+  "files": {
+    "core002-manifest.json": {
+      "originalAcceptedSha256": "6b83929e6e7d55134740a6f5ef75a2af3853606144537b91544f10c55e853e1f",
+      "portableDerivativeSha256": "af64bd2b7f33a909531fe1d75e9fa5f137a8a373eeaac0053337c20fffa75f34",
+      "removedLocationFields": 87,
+      "allRemainingJsonValuesDeepEqual": true
+    },
+    "core002-approved-suite.json": {
+      "originalAcceptedSha256": "a8c6cd6af637d92b6de4905279ffbc0d3cc64b80c43b87efc5c75a8d4834ceff",
+      "portableDerivativeSha256": "689b76b940b04256aba06c7f9616af1203113b995337511a65c0292254021f0a",
+      "removedLocationFields": 1,
+      "allRemainingJsonValuesDeepEqual": true
+    }
+  }
+}

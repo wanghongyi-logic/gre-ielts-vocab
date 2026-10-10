@@ -10,16 +10,32 @@ export function installContents({main,picker,search,entries,getSelected,navigate
  const count=doc.getElementById('search-count');
  const returnWord=doc.getElementById('contents-return-word');
  let saved=null,restoreFrame=0,turn=null;
- // A viewport-sized paper impression owns the visual handoff. Snapshot once;
- // only compositor transforms run during the turn (no per-frame layout reads).
- function settleTurn(runRoute=true){if(!turn)return;const previous=turn;turn=null;previous.animation?.cancel();win.cancelAnimationFrame(previous.frame);win.clearTimeout(previous.timer);previous.paper.remove();main.removeAttribute('data-contents-turning');onTransition(false);previous.done?.();previous.resolve?.();if(runRoute&&previous.route)previous.route();}
+ // Opening keeps the real reading surface (and its video layer) until it has
+ // moved offscreen. Returning can use an impression of the video-free contents.
+ function settleTurn(runRoute=true){if(!turn)return;const previous=turn;turn=null;previous.cleanup?.();previous.animation?.cancel();win.cancelAnimationFrame(previous.frame);win.clearTimeout(previous.timer);if(!previous.cleanup)previous.paper.remove();main.removeAttribute('data-contents-turning');onTransition(false);previous.done?.();previous.resolve?.();if(runRoute&&previous.route)previous.route();}
  function transition(change,done){
   settleTurn();
   const source=picker.open?picker:main;
   const reduced=win.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
   const rect=source.getBoundingClientRect();
-  let paper;
-  if(!reduced&&source.children.length&&rect.width){
+  let paper,cleanup;
+  if(!reduced&&source===main&&source.children.length&&rect.width){
+   // Do not replace a composited video with a never-painted canvas and hide its
+   // original in the same task. Keep this exact DOM/video at its viewport rect;
+   // the prepared contents enters normal flow underneath it. No reparenting,
+   // decoder reload, poster swap, duplicate media or snapshot allocation.
+   const properties=['left','top','width','max-width','margin'];
+   const styles=properties.map(name=>[name,main.style.getPropertyValue(name),main.style.getPropertyPriority(name)]);
+   paper=main;main.classList.add('contents-live-turn');
+   Object.assign(main.style,{left:`${rect.left}px`,top:`${rect.top}px`,width:`${rect.width}px`,maxWidth:'none',margin:'0'});
+   cleanup=()=>{
+    // Hide only once the live leaf has cleared (or an explicit interrupt takes
+    // over), before canceling its transform or restoring its document geometry.
+    main.hidden=true;main.classList.remove('contents-live-turn');
+    for(const [name,value,priority] of styles){if(value)main.style.setProperty(name,value,priority);else main.style.removeProperty(name);}
+    if(!main.style.cssText)main.removeAttribute('style');
+   };
+  }else if(!reduced&&source.children.length&&rect.width){
    paper=doc.createElement('div');paper.className='contents-paper-turn';paper.inert=true;paper.setAttribute('aria-hidden','true');
    // Read each section/row once, before attachment. Offscreen branches are
    // shallow geometry placeholders; their text/media descendants are never cloned.
@@ -47,14 +63,15 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   main.setAttribute('data-contents-turning','');onTransition(true);change();
   if(!paper){main.removeAttribute('data-contents-turning');onTransition(false);done?.();return;}
   const direction=picker.open?1:-1;
-  const state=turn={paper,done,frame:0,animation:null,timer:0};
+  const state=turn={paper,cleanup,done,frame:0,animation:null,timer:0};
   state.finished=new Promise(resolve=>{state.resolve=resolve;});
-  // A complete outgoing paper is already above the new layout before it paints.
-  // Give the destination one paint at frame zero before revealing it.
+  // The original reading video remains displayed above the destination, or the
+  // outgoing video-free directory is impressed above it. Give the prepared
+  // destination one paint at frame zero before revealing it.
   state.frame=win.requestAnimationFrame(()=>{state.frame=win.requestAnimationFrame(()=>{
    if(turn!==state)return;
    if(!paper.animate){settleTurn();return;}
-   state.animation=paper.animate([{transform:'translateX(0)'},{transform:`translateX(${direction*103}%)`}],{duration:360,easing:'cubic-bezier(.32,.05,.2,1)',fill:'forwards'});
+   state.animation=paper.animate([{transform:'translateX(0)'},{transform:`translateX(${direction*103}${cleanup?'vw':'%'})`}],{duration:360,easing:'cubic-bezier(.32,.05,.2,1)',fill:'forwards'});
    state.animation.finished.then(()=>{if(turn===state)settleTurn();},()=>{});
    state.timer=win.setTimeout(()=>{if(turn===state)settleTurn();},650);
   });});
@@ -97,7 +114,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   saved={number:selected?.number,hash:readingHash(selected?.number),...position,focus:doc.activeElement,title:doc.title,ready:getSelected()!=null};
   search.value='';renderResults();
   transition(()=>{
-  main.hidden=true;main.inert=true;
+  main.hidden=!main.classList.contains('contents-live-turn');main.inert=true;
   doc.body.classList.add('is-contents-open');
   picker.show();
   doc.title='目录 · 单词故事';

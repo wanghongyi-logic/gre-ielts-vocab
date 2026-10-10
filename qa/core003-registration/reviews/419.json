@@ -1,0 +1,25 @@
+{
+  "videoSha256": "beaebbd69d4ae47bc37740c8e7f9cd486437cfb8ccfe4fa0e3b66f26ad79bd33",
+  "posterSha256": "5c1812dd41510e51a709abd00ada6908d8a43e284666e7a81aa9360706a117d3",
+  "geometrySha256": "7f0f27e6342cc6f17971787a00a014d5bb93c1c69354cb0f9940cef6b498265b",
+  "nativeDialogueSha256": "eeed18b0159dd2675847b5e77f700c4d40f9c442cb4115ea143dcf78bc0011b6",
+  "nativePresentationSha256": "31523210304d3d83cdfff28131d52a5012f1046d9a4d1d9a95c0b48ecbc9eada",
+  "reviewed": {
+    "allOrderedPoses": true,
+    "contactAndAnatomy": true,
+    "fixedCameraAndProps": true,
+    "completeLoopAndMeaning": true,
+    "celContactWitnesses": true,
+    "sceneSpecificGeometry": true,
+    "articulatedBodyGeometry": true
+  },
+  "componentEvidence": {
+    "path": "qa/core003-registration/reviews/419-component-review.md",
+    "sha256": "56e2981e7b04a722d43568b0220fdcbdf720fd8a0a699ea64021ad890aa7a72c"
+  },
+  "scope": "Independent exact-media component acceptance with explicitly documented visible-proxy/articulation scopes. Numerical mutations, native integrated-layout and release gates remain separate.",
+  "nativePresentationEvidence": {
+    "path": "qa/core003-registration/reviews/native-metadata-addendum.md",
+    "sha256": "8fbc83664c997896824bb5cdc820ab0c2c591bf3f7934851845fb72f5122f651"
+  }
+}
