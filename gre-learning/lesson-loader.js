@@ -93,5 +93,9 @@ export class LessonLoader {
    if(this.prefetchController===controller)this.prefetchController=null;
   },250);
  }
+ retainMedia(numbers){
+  const hashes=new Set();for(const number of numbers){const refs=this.index.get(number)?.storyMedia;if(refs){hashes.add(refs.poster.sha256);hashes.add(refs.video.sha256);}}
+  for(const [hash,url] of this.mediaCache)if(!hashes.has(hash)){URL.revokeObjectURL(url);this.mediaCache.delete(hash);}
+ }
  destroy(){this.cancel();this.cache.clear();this.bytes=0;for(const url of this.mediaCache.values())URL.revokeObjectURL(url);this.mediaCache.clear();}
 }

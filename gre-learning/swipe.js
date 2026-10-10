@@ -32,7 +32,7 @@ export function paperViewportBounds(rect,{left=0,top=0,width,height},safeTop=0){
 }
 
 const INTERACTIVE='video[controls],audio[controls],a,button,input,textarea,select,option,summary,label,[contenteditable]:not([contenteditable="false"]),[role="button"],[role="link"],[role="slider"],[role="textbox"],[data-no-swipe],dialog';
-export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate,onTurnActivity=()=>{},window:win=window,document:doc=document}) {
+export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepared=()=>null,prepareNeighbor=null,onNavigate,onTurnActivity=()=>{},window:win=window,document:doc=document}) {
   const feedback=doc.createElement('div');
   feedback.className='swipe-feedback';feedback.hidden=true;feedback.setAttribute('aria-hidden','true');
   const label=doc.createElement('span');label.className='swipe-label';
@@ -60,6 +60,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
   syncSafeArea();
   const pointers=new Set();
   let gesture=null,pointerId=null,phase='idle',timer=null,frame=null,pressTimer=null,suppressUntil=0,enterDirection=null;
+  let pendingTurn=0;
   let paper=null,paperFace=null,paperFold=null,paperShadow=null,paperProgress=0,paperDirection=null,focusAfterTurn=false;
   const motionPreference=win.matchMedia?.('(prefers-reduced-motion: reduce)');
   const reduced=()=>Boolean(motionPreference?.matches);
@@ -79,7 +80,10 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
   // Videos are painted once onto canvas so the impression cannot start playback.
   function makePaper(direction) {
     if(reduced())return;
-    if(paper){paperDirection=direction;paper.dataset.direction=direction;return;}
+    if(paper&&paperDirection===direction)return true;
+    if(paper){paper.remove();paper=null;surface.style.removeProperty('opacity');}
+    const destination=getPrepared(direction);
+    if(!destination)return false;
     const article=surface.querySelector('.reading-layout');
     if(!article)return;
     const rect=article.getBoundingClientRect(),v=syncSafeArea();
@@ -90,6 +94,10 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
     paper=doc.createElement('div');paper.className='paper-turn';
     paper.setAttribute('aria-hidden','true');paper.inert=true;paper.dataset.direction=direction;
     Object.assign(paper.style,{left:`${left}px`,top:`${top}px`,width:`${width}px`,height:`${height}px`});
+    const underneath=doc.createElement('div');underneath.className='paper-turn-underneath';
+    underneath.append(destination.root);paper.append(underneath);
+    Object.assign(destination.root.style,{width:`${rect.width}px`,position:'absolute',top:'0',left:`${rect.left-left}px`});
+    paper.dataset.destination=String(destination.number);
     paperFace=doc.createElement('div');paperFace.className='paper-turn-face';
     const impression=article.cloneNode(true);
     impression.querySelectorAll('[id]').forEach(node=>node.removeAttribute('id'));
@@ -107,7 +115,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
     paperShadow=doc.createElement('div');paperShadow.className='paper-turn-shadow';
     paperFold=doc.createElement('div');paperFold.className='paper-turn-fold';
     paper.append(paperFace,paperShadow,paperFold);doc.body.append(paper);
-    paperDirection=direction;surface.style.opacity='0';
+    paperDirection=direction;surface.style.opacity='0';return true;
   }
   function paintPaper(progress,direction=paperDirection) {
     paperProgress=progress;
@@ -136,7 +144,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
     feedback.hidden=true;feedback.classList.remove('is-ready','is-boundary');onTurnActivity(false);
   }
   function reset() {
-    clearTimer();gesture=null;touchId=null;phase='idle';enterDirection=null;focusAfterTurn=false;releaseCapture();cleanStyle();syncSafeArea();
+    pendingTurn++;clearTimer();gesture=null;touchId=null;phase='idle';enterDirection=null;focusAfterTurn=false;releaseCapture();cleanStyle();syncSafeArea();
   }
   function animatePaper(target,duration,complete) {
     const from=paperProgress,start=win.performance.now();
@@ -156,20 +164,34 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
     animatePaper(0,260,reset);
   }
   function go(direction) {
+    if(phase==='preparing')reset();
     if(phase!=='idle'||blocked()||surface.hasAttribute('aria-busy')) return false;
     const number=getNeighbor(direction);
     if(!number)return false;
     clearTimer();gesture=null;touchId=null;releaseCapture();feedback.hidden=true;
     focusAfterTurn=surface.contains(doc.activeElement);
-    enterDirection=direction;phase='leaving';
-    if(reduced()){onNavigate(number);return true;}
-    makePaper(direction);surface.classList.remove('is-swiping');surface.classList.add('is-swipe-settling');
-    // Finish the physical turn before changing routes. The blank reverse is held
-    // while the destination loads, avoiding a flash of the outgoing page.
-    animatePaper(1,Math.max(180,440*(1-paperProgress)),()=>onNavigate(number));
+    const token=++pendingTurn;
+    function commit(){
+      if(token!==pendingTurn)return;
+      if(blocked()||selected()||getNeighbor(direction)!==number){reset();return;}
+      enterDirection=direction;phase='leaving';
+      if(reduced()){onTurnActivity(true);onNavigate(number);return;}
+      if(!makePaper(direction)){reset();return;}
+      surface.classList.remove('is-swiping');surface.classList.add('is-swipe-settling');
+      animatePaper(1,Math.max(180,440*(1-paperProgress)),()=>onNavigate(number));
+    }
+    if(getPrepared(direction)){commit();return true;}
+    // Readiness is bounded by the preparation manager. Never peel onto a blank.
+    if(!prepareNeighbor){reset();return false;}
+    phase='preparing';onTurnActivity(true);feedback.hidden=false;
+    label.textContent='正在准备这一页…';
+    Promise.resolve(prepareNeighbor(direction)).then(commit).catch(()=>{
+      if(token!==pendingTurn)return;reset();status.textContent='这一页暂时无法打开，请稍后再试';
+    });
     return true;
   }
-  function loading() {
+  function loading(number) {
+    if(number!==undefined&&number!==getNeighbor(enterDirection)){reset();return;}
     if(phase!=='leaving'){reset();return;}
     clearTimer();gesture=null;touchId=null;releaseCapture();
     // Cached pages settle immediately; a slow fetch gets a quiet loading state.
@@ -184,22 +206,22 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
     surface.classList.add('is-swiping');
     const direction=gesture.direction;
     if(!reduced()){
-      makePaper(direction);
+      const ready=makePaper(direction);
       const distance=Math.abs(gesture.dx),width=gesture.width;
       const progress=gesture.available?Math.min(.88,distance/width*.95):Math.min(.045,distance/width*.12);
-      paintPaper(progress,direction);
+      if(ready)paintPaper(progress,direction);
     }
     // Feedback stays quiet until the release threshold or a book boundary.
     feedback.hidden=!(gesture.ready||!gesture.available);
     feedback.classList.toggle('is-ready',gesture.ready);feedback.classList.toggle('is-boundary',!gesture.available);
-    label.textContent=!gesture.available?(direction==='next'?'已经是最后一页':'已经是第一页'):(direction==='next'?'松手，翻到下一页':'松手，翻回上一页');
+    label.textContent=gesture.available&&!getPrepared(direction)?'正在准备这一页…':!gesture.available?(direction==='next'?'已经是最后一页':'已经是第一页'):(direction==='next'?'松手，翻到下一页':'松手，翻回上一页');
     fill.style.transform=`scaleX(${Math.min(1,Math.abs(gesture.dx)/gesture.threshold)})`;
   }
   // Keep touch and pointer streams separate: Safari emits both for one finger.
   // Touch listeners are attached to the reading surface, not a passive root target.
   let touchId=null;
   function begin({x,y,id,target}) {
-    if(phase==='returning')reset();
+    if(phase==='returning'||phase==='preparing')reset();
     if(phase!=='idle'||gesture||blocked()||surface.hasAttribute('aria-busy')||interactive(target)||selected())return;
     if(x<=SWIPE.edge||x>=win.innerWidth-SWIPE.edge)return;
     pointerId=id;
@@ -282,10 +304,11 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
   listen(win,'pointermove',move,{passive:false});listen(win,'pointerup',up);listen(win,'pointercancel',cancel);
   listen(surface,'lostpointercapture',event=>{if(event.pointerId===pointerId)snapBack();});
   listen(doc,'click',event=>{if(surface.contains(event.target)&&win.performance.now()<suppressUntil&&(event.detail>0||event.pointerType==='touch'||event.pointerType==='pen')){event.preventDefault();event.stopImmediatePropagation();}},true);
-  listen(doc,'selectionchange',()=>{if(gesture&&selected())snapBack();});
+  listen(doc,'selectionchange',()=>{if(selected()){if(gesture)snapBack();else if(phase==='preparing')reset();}});
   listen(surface,'contextmenu',()=>{if(gesture)snapBack();});
   listen(surface,'dragstart',event=>{if(gesture)event.preventDefault();});
   listen(doc,'keydown',event=>{
+    if(event.key==='Escape'&&!blocked()&&(gesture||phase!=='idle')){event.preventDefault();reset();return;}
     if(event.defaultPrevented||event.repeat||event.altKey||event.ctrlKey||event.metaKey||event.shiftKey||blocked()||interactive(event.target)||selected())return;
     const direction=event.key==='ArrowLeft'?'previous':event.key==='ArrowRight'?'next':null;
     if(direction){event.preventDefault();if(gesture)snapBack();else go(direction);}
