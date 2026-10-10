@@ -214,3 +214,12 @@ body.bookmarks-collapsed{--bookmark-gutter:28px}
 /* Secondary contents ink remains readable at small sizes on warm paper. */
 .contents-page .word-result small,.contents-page .result-number,.contents-page .search-count,.contents-page .contents-ordinal-label,.contents-page .search-field input::placeholder,.contents-page .search-empty span{color:#716b58}
 .contents-page .current-note,.contents-page .word-result.is-current .result-number{color:#95543e}
+
+/* Contents shares one continuous paper handoff with the reading leaf. */
+.contents-paper-turn{position:fixed;inset:0;z-index:19;overflow:hidden;background:var(--paper);pointer-events:none;contain:strict;will-change:transform;box-shadow:12px 0 25px #55432324,-12px 0 25px #55432318}
+.contents-paper-turn .contents-paper-impression{pointer-events:none}
+.contents-paper-turn .contents-page{max-height:none;min-height:100dvh;padding:0;border:0;border-radius:0;overflow:visible;background:var(--paper);color:var(--ink);box-shadow:none}
+.contents-paper-turn .contents-paper-impression:not(.contents-page){padding-bottom:100px;min-height:75vh}
+.contents-paper-turn .contents-return span[lang=en]{display:inline;margin-left:.7em;font-family:Georgia,serif;font-size:17px;font-style:italic}
+.contents-page[aria-busy=true] .search-count{color:var(--moss)}
+@media(prefers-reduced-motion:reduce){.contents-paper-turn{display:none}}

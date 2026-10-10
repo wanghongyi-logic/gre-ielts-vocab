@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "129",
-  "generatedAt": "2026-10-10T09:05:35.317547+00:00",
+  "releaseBuild": "130",
+  "generatedAt": "2026-10-10T09:28:27.690622+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-reviewed-order",
@@ -14,9 +14,9 @@
   "assets": [
     {
       "path": "gre-learning/app.js",
-      "bytes": 7868,
-      "gzipBytes": 2845,
-      "sha256": "43d2a50b9bd2984e7f4abe8b09b37a8fcd0053404461eb5723ca796c7a362d98",
+      "bytes": 8395,
+      "gzipBytes": 2954,
+      "sha256": "b6ecde3d991a5194db7d803b66610717ada09f30b6d33fa1f58403b4d5052d95",
       "loading": "shell"
     },
     {
@@ -30,14 +30,14 @@
       "path": "gre-learning/catalog.json",
       "bytes": 33583,
       "gzipBytes": 10356,
-      "sha256": "9e3d3ab8590ce62a527875a82daa381b4701e090c2edb4f1945b857d99bad0df",
+      "sha256": "e9b7dde1521546bf14600fa07c8ea7e52926de4f51f1a0959d8519d67356ef1d",
       "loading": "shell"
     },
     {
       "path": "gre-learning/contents.js",
-      "bytes": 5986,
-      "gzipBytes": 2302,
-      "sha256": "25baf78edca26d31b31346c8ebaab200631ae00f04fbc3c0e341259266241739",
+      "bytes": 11273,
+      "gzipBytes": 4274,
+      "sha256": "7cb791302e375cb297f7257ffb245365271c47a3206517d311e13755ca948a62",
       "loading": "shell"
     },
     {
@@ -462,16 +462,16 @@
     },
     {
       "path": "gre-learning/storybook.css",
-      "bytes": 34905,
-      "gzipBytes": 8531,
-      "sha256": "f3b48571f3e6da6cbfafa415099ba13e5f5854a6702b6bb144ac2b452d8a8137",
+      "bytes": 35826,
+      "gzipBytes": 8705,
+      "sha256": "95441f86bd58f080d4be3d225c1dc2e2531898bfb1ac7a17a72b8ef8a1d7995d",
       "loading": "shell"
     },
     {
       "path": "gre-learning/swipe.js",
-      "bytes": 21689,
-      "gzipBytes": 6987,
-      "sha256": "a5497ca6b56f2b519e143cba2cc2a9aba5c1385997e2d5dde99340586953eb6c",
+      "bytes": 21736,
+      "gzipBytes": 7005,
+      "sha256": "dd63fdc2aeb25b42167f4ca05c9d2095e1f27637b3130f8e966d087a79d66f96",
       "loading": "shell"
     },
     {
@@ -512,8 +512,8 @@
     {
       "path": "gre-learning/update.js",
       "bytes": 2647,
-      "gzipBytes": 1124,
-      "sha256": "fd9cbf6ac8f1e47cb04c9b4369ca267b266ee2ad7bdd4ff413ba5ad75b4f1b16",
+      "gzipBytes": 1123,
+      "sha256": "560d094bc707141821031f7f3dcc816132c60ec59a9b0faf163fc6b7645f871a",
       "loading": "shell"
     },
     {
@@ -553,8 +553,8 @@
     }
   ],
   "totals": {
-    "bytes": 15028124,
-    "gzipBytes": 14777628
+    "bytes": 15034906,
+    "gzipBytes": 14779900
   },
   "retainedHistoricalAssets": 212
 }

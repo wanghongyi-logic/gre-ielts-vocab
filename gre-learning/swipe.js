@@ -68,7 +68,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepare
     const selection=win.getSelection?.();
     return Boolean(selection?.toString() && (surface.contains(selection.anchorNode)||surface.contains(selection.focusNode)));
   };
-  const blocked=()=>picker.open||Boolean(doc.querySelector('dialog[open]'));
+  const blocked=()=>surface.hasAttribute('data-contents-turning')||picker.open||Boolean(doc.querySelector('dialog[open]'));
   const interactive=target=>Boolean(target?.closest?.(INTERACTIVE));
   const clearTimer=()=>{win.clearTimeout(timer);timer=null;win.cancelAnimationFrame(frame);frame=null;win.clearTimeout(pressTimer);pressTimer=null;};
   function releaseCapture() {
