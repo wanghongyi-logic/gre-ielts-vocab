@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "122",
-  "generatedAt": "2026-10-10T05:23:55.807458+00:00",
+  "releaseBuild": "123",
+  "generatedAt": "2026-10-10T05:42:08.087596+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-first-five",
@@ -30,7 +30,7 @@
       "path": "gre-learning/catalog.json",
       "bytes": 7500,
       "gzipBytes": 2869,
-      "sha256": "6b5b1d21cf26b51b6274faf3971330f30572f568ed9f5fd3a1165eb677b9b274",
+      "sha256": "19dbcde1fbe632b844850bd7f89ec53600f17b579d771f07ddf53cc64e696fe1",
       "loading": "shell"
     },
     {
@@ -168,16 +168,16 @@
     },
     {
       "path": "gre-learning/storybook.css",
-      "bytes": 25342,
-      "gzipBytes": 6400,
-      "sha256": "5e1594f2d9d1d889bda90f3d83a20a2927cc152a4b05de45707b0eac6e3672c4",
+      "bytes": 28181,
+      "gzipBytes": 6999,
+      "sha256": "4d52b791b72ebf2ecc0551740d8068445314d4ae780d01e04907c9588fea45d1",
       "loading": "shell"
     },
     {
       "path": "gre-learning/swipe.js",
-      "bytes": 18049,
-      "gzipBytes": 5962,
-      "sha256": "8907902c1bfb5d21a626912a531d45965dd6e37a2fdac02c86457671a252a659",
+      "bytes": 20176,
+      "gzipBytes": 6606,
+      "sha256": "78d8332ac4be5417f007684f9c2e483e93947b394e493260256fc656c3f07768",
       "loading": "shell"
     },
     {
@@ -191,14 +191,14 @@
       "path": "gre-learning/update.js",
       "bytes": 2647,
       "gzipBytes": 1124,
-      "sha256": "beccc3babd2c3ba72eb155f2548b9bf89825aef3542eb2350e1a26446f735a0e",
+      "sha256": "54347c30409138cd03cc784bbb6232899d9bfe9346976fc712f17f46787534a3",
       "loading": "shell"
     },
     {
       "path": "gre-learning/view.js",
-      "bytes": 4144,
-      "gzipBytes": 1701,
-      "sha256": "db8b599e2d6dc25bf9e5a241773a62ed14b4157dc299fb832ad645244009e4e2",
+      "bytes": 4068,
+      "gzipBytes": 1686,
+      "sha256": "22a46c6d541242c33cf6eede8c2c8edc4b1186c8907c91cac3e742b6ff3d26f0",
       "loading": "shell"
     },
     {
@@ -225,14 +225,14 @@
     {
       "path": "manifest.webmanifest",
       "bytes": 642,
-      "gzipBytes": 351,
-      "sha256": "4fb0713fe2794b661f741c27deb8b1babd2a2844e582e09fe293090d437af47a",
+      "gzipBytes": 349,
+      "sha256": "a14797d54dab8085da725e9c3fca00656c04305783517ca773eaeb0396b61532",
       "loading": "shell"
     }
   ],
   "totals": {
-    "bytes": 2222028,
-    "gzipBytes": 2112851
+    "bytes": 2226918,
+    "gzipBytes": 2114077
   },
   "retainedHistoricalAssets": 212
 }

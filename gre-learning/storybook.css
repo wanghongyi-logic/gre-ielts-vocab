@@ -100,3 +100,40 @@ body.bookmarks-collapsed{--bookmark-gutter:28px}
 }
 @media(max-height:480px){.bookmarks{bottom:max(8px,env(safe-area-inset-bottom))}.bookmark-list{gap:4px;max-height:calc(100dvh - 68px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}.bookmarks .bookmark{min-height:54px;padding-top:6px;padding-bottom:6px}.bookmarks .bookmark:last-child{min-height:72px}}
 @media(prefers-reduced-motion:reduce){body,.bookmarks .bookmark{transition:none}}
+
+/* One editorial rhythm for memory, usage, examples and equivalents. */
+:root{--reading-copy-size:16px;--reading-copy-leading:1.9;--reading-title-size:20px;--reading-title-leading:1.6;--reading-item-space:24px;--reading-heading-space:20px;--reading-separator:#ddd3bd}
+.mnemonics{gap:0;padding-bottom:28px}
+.mnemonic,.sense,.example,.equivalent{margin:0;padding:0 0 var(--reading-item-space);border:0;border-bottom:1px solid var(--reading-separator)}
+.mnemonic+.mnemonic,.sense+.sense,.example+.example,.equivalent+.equivalent{padding-top:var(--reading-item-space)}
+.mnemonic:last-child,.sense:last-child,.example:last-child,.equivalent:last-child{border-bottom:0;padding-bottom:0}
+.mnemonic-heading{display:block;margin:0 0 10px}
+.method-kind{font-size:15px;line-height:1.5;margin:0 0 5px}
+.mnemonic h3,.sense h3,.equivalent h3{font-size:var(--reading-title-size);line-height:var(--reading-title-leading);font-weight:500;margin:0 0 10px;color:var(--moss)}
+.mnemonic-heading h3{margin-bottom:0}
+.mnemonic>p,.sense>p,.equivalent>p,.example figcaption{font-size:var(--reading-copy-size);line-height:var(--reading-copy-leading)}
+.chapter-heading{margin-bottom:var(--reading-heading-space)}
+.chapter-heading h2{font-size:26px;line-height:1.45;font-weight:500}
+.book-chapter{padding-top:32px;padding-bottom:32px;border-color:var(--reading-separator)}
+.example blockquote{font-size:21px;line-height:1.65;margin:0 0 10px;color:var(--moss)}
+.example-note{font-size:var(--reading-copy-size);line-height:var(--reading-copy-leading);margin-top:10px}
+.collocations{margin-top:16px;margin-bottom:0}
+.collocations>div{padding:12px 0;border-color:var(--reading-separator)}
+.collocations>div:last-child{border-bottom:0;padding-bottom:0}
+.collocations dt{font-size:19px;line-height:1.6}
+.collocations dd{font-size:var(--reading-copy-size);line-height:var(--reading-copy-leading)}
+@media(min-width:760px){
+ :root{--reading-copy-size:17px;--reading-title-size:21px;--reading-item-space:28px;--reading-heading-space:24px}
+ .book-chapter{max-width:800px;margin-left:auto;margin-right:auto;padding-top:36px;padding-bottom:36px}
+ .chapter-heading h2{font-size:30px}
+ .sense,.equivalent{display:block}
+ .sense .collocations{margin-top:16px}
+ .example{max-width:none}
+ .example blockquote{font-size:23px}
+ .memory-page .mnemonics{padding-bottom:0}
+}
+
+/* Keep native status-area sampling on one opaque paper color throughout turns.
+   No top padding is added: iOS may already inset its standalone web viewport. */
+:root{background-color:var(--paper);background-image:linear-gradient(to right,var(--paper) calc(100% - var(--bookmark-gutter)),var(--desk) 0);background-attachment:fixed}
+.paper-safe-area{position:fixed;top:0;left:0;width:100%;height:env(safe-area-inset-top,0px);z-index:40;background:var(--paper);pointer-events:none;contain:paint;isolation:isolate}

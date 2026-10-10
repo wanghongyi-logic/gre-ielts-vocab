@@ -21,6 +21,16 @@ export function moveSwipe(state,{x,y,time}) {
   return {...state,dx,dy,axis,direction,available,ready,offset};
 }
 
+// DOM rectangles and fixed overlays use layout-viewport coordinates. The visible
+// viewport can move inside it when mobile browser chrome or orientation changes.
+export const paperSafeInset=(articleTop,viewportTop,inset)=>Math.max(0,Math.min(inset,articleTop-viewportTop));
+export function paperViewportBounds(rect,{left=0,top=0,width,height},safeTop=0){
+ const x=Math.max(rect.left,left),y=Math.max(rect.top,top+Math.max(0,safeTop));
+ const right=Math.min(rect.right??rect.left+rect.width,left+width);
+ const bottom=Math.min(rect.bottom,top+height);
+ return {left:x,top:y,width:Math.max(0,right-x),height:Math.max(0,bottom-y)};
+}
+
 const INTERACTIVE='video[controls],audio[controls],a,button,input,textarea,select,option,summary,label,[contenteditable]:not([contenteditable="false"]),[role="button"],[role="link"],[role="slider"],[role="textbox"],[data-no-swipe],dialog';
 export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate,onTurnActivity=()=>{},window:win=window,document:doc=document}) {
   const feedback=doc.createElement('div');
@@ -33,6 +43,21 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
   (hintHost||surface.parentNode).append(hint);
   surface.setAttribute('aria-describedby',hint.id);
   const status=doc.createElement('span');status.className='sr-only';status.setAttribute('role','status');status.setAttribute('aria-live','polite');doc.body.append(status);
+  // Permanent, empty background only: never clone or animate native status text.
+  const safeArea=doc.createElement('div');safeArea.className='paper-safe-area';
+  safeArea.setAttribute('aria-hidden','true');safeArea.inert=true;doc.body.append(safeArea);
+  const viewport=()=>{const v=win.visualViewport;return {left:v?.offsetLeft||0,top:v?.offsetTop||0,width:v?.width||win.innerWidth,height:v?.height||win.innerHeight};};
+  function syncSafeArea(){
+    const v=viewport();Object.assign(safeArea.style,{left:`${v.left}px`,top:`${v.top}px`,width:`${v.width}px`});
+    // An already-inset standalone viewport can still report a nonzero env().
+    // Paint only existing empty space, never cover text or add a second inset.
+    safeArea.style.removeProperty('height');
+    const requested=safeArea.getBoundingClientRect().height;
+    const articleTop=surface.querySelector('.reading-layout')?.getBoundingClientRect().top??v.top;
+    safeArea.style.height=`${paperSafeInset(articleTop,v.top,requested)}px`;
+    return v;
+  }
+  syncSafeArea();
   const pointers=new Set();
   let gesture=null,pointerId=null,phase='idle',timer=null,frame=null,pressTimer=null,suppressUntil=0,enterDirection=null;
   let paper=null,paperFace=null,paperFold=null,paperShadow=null,paperProgress=0,paperDirection=null,focusAfterTurn=false;
@@ -57,13 +82,14 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
     if(paper){paperDirection=direction;paper.dataset.direction=direction;return;}
     const article=surface.querySelector('.reading-layout');
     if(!article)return;
-    const rect=article.getBoundingClientRect(),top=Math.max(0,rect.top);
-    const bottom=Math.min(win.innerHeight,rect.bottom);
-    if(bottom<=top)return;
+    const rect=article.getBoundingClientRect(),v=syncSafeArea();
+    const bounds=paperViewportBounds(rect,v,safeArea.getBoundingClientRect().height);
+    const {left,top,width,height}=bounds;
+    if(!width||!height)return;
     onTurnActivity(true);
     paper=doc.createElement('div');paper.className='paper-turn';
     paper.setAttribute('aria-hidden','true');paper.inert=true;paper.dataset.direction=direction;
-    Object.assign(paper.style,{left:`${rect.left}px`,top:`${top}px`,width:`${rect.width}px`,height:`${bottom-top}px`});
+    Object.assign(paper.style,{left:`${left}px`,top:`${top}px`,width:`${width}px`,height:`${height}px`});
     paperFace=doc.createElement('div');paperFace.className='paper-turn-face';
     const impression=article.cloneNode(true);
     impression.querySelectorAll('[id]').forEach(node=>node.removeAttribute('id'));
@@ -76,7 +102,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
       try{if(original.readyState<2)throw new Error('poster');canvas.getContext('2d').drawImage(original,0,0);video.replaceWith(canvas);}
       catch{video.closest('.story-illustration')?.querySelector('.story-poster')?.style.removeProperty('opacity');video.remove();}
     });
-    Object.assign(impression.style,{position:'absolute',top:`${rect.top-top}px`,left:'0',width:`${rect.width}px`,margin:'0'});
+    Object.assign(impression.style,{position:'absolute',top:`${rect.top-top}px`,left:`${rect.left-left}px`,width:`${rect.width}px`,margin:'0'});
     paperFace.append(impression);
     paperShadow=doc.createElement('div');paperShadow.className='paper-turn-shadow';
     paperFold=doc.createElement('div');paperFold.className='paper-turn-fold';
@@ -110,7 +136,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
     feedback.hidden=true;feedback.classList.remove('is-ready','is-boundary');onTurnActivity(false);
   }
   function reset() {
-    clearTimer();gesture=null;touchId=null;phase='idle';enterDirection=null;focusAfterTurn=false;releaseCapture();cleanStyle();
+    clearTimer();gesture=null;touchId=null;phase='idle';enterDirection=null;focusAfterTurn=false;releaseCapture();cleanStyle();syncSafeArea();
   }
   function animatePaper(target,duration,complete) {
     const from=paperProgress,start=win.performance.now();
@@ -265,10 +291,13 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
     if(direction){event.preventDefault();if(gesture)snapBack();else go(direction);}
   });
   listen(win,'blur',()=>{pointers.clear();reset();});listen(win,'pagehide',()=>{pointers.clear();reset();});
-  listen(win,'resize',reset);
+  const viewportChanged=()=>{syncSafeArea();reset();};
+  listen(win,'scroll',()=>{syncSafeArea();if(paper||gesture)reset();},{passive:true});
+  listen(win,'resize',viewportChanged);listen(win,'orientationchange',viewportChanged);
+  if(win.visualViewport?.addEventListener){listen(win.visualViewport,'resize',viewportChanged);listen(win.visualViewport,'scroll',viewportChanged);}
   if(motionPreference?.addEventListener)listen(motionPreference,'change',reset);
   listen(doc,'visibilitychange',()=>{if(doc.hidden){pointers.clear();reset();}});
-  return {go,loading,rendered,cancel:reset,get busy(){return phase!=='idle';},destroy(){reset();listeners.forEach(remove=>remove());feedback.remove();hint.remove();status.remove();surface.removeAttribute('aria-describedby');}};
+  return {go,loading,rendered,cancel:reset,get busy(){return phase!=='idle';},destroy(){reset();listeners.forEach(remove=>remove());feedback.remove();hint.remove();status.remove();safeArea.remove();surface.removeAttribute('aria-describedby');}};
 }
 
 // Explicit user preference: suppress page zoom for touch-first mobile browsers.
