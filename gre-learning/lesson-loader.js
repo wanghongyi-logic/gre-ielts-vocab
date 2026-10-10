@@ -1,8 +1,9 @@
+import {gateCatalog} from './release-policy.js';
 import {validateTrackedArt} from './motion-tracks.js';
 import {validateEntry} from './schema.js';
 const abortError=()=>Object.assign(new Error('Request superseded'),{name:'AbortError'});
 export function expandCatalog(raw){
- if(raw.schema!==1||!Array.isArray(raw.units)||!Array.isArray(raw.entries))throw new Error('Unsupported catalog');
+ raw=gateCatalog(raw);
  return {...raw,entries:raw.entries.map(entry=>({...entry,unit:raw.units[entry.unit],art:{...entry.art,url:`art-units/${entry.number}-${entry.art.sha256}.json`}}))};
 }
 export class LessonLoader {

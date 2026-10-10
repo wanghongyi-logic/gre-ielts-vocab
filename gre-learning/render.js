@@ -12,5 +12,5 @@ export function renderLearningPanels(entry, { activePanel = 'memory', visual }  
   </div>`;
 }
 export function renderNotReady() {
-  return '<section class="gre-not-ready" role="status"><span aria-hidden="true">○</span><h1>新版学习内容尚未就绪</h1><p>这里将呈现核心图像、词汇助记、用法、语境例句与 GRE 等价词。</p><a href="./index.html">返回学习页</a></section>';
+  return '<section class="gre-not-ready" role="status"><span aria-hidden="true">○</span><h1>暂无可学习的单词</h1><p>内容正在准备中，请稍后再来。</p><a href="./index.html">返回学习页</a></section>';
 }

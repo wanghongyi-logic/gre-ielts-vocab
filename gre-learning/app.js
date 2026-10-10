@@ -7,6 +7,8 @@ import {installWordSwipe, installMobileZoomGuard} from './swipe.js';
 import {installMeaningMotion,setMotionLesson,renderMeaningMotion} from './motion.js';
 installMobileZoomGuard();
 const entries = catalog.entries;
+document.getElementById('release-summary').textContent = `词汇学习 · 已收录 ${entries.length} / ${catalog.libraryTarget} 词`;
+document.querySelector('.brand').href = entries.length ? `#/learn/${entries[0].number}` : '#/learn';
 const loader = new LessonLoader(catalog);
 let selectedNumber;
 let currentArt;
@@ -23,7 +25,7 @@ const meaningMotion = installMeaningMotion(main);
 const swipe = installWordSwipe({surface:main,hintHost:document.querySelector('.site-header'),picker,
   getNeighbor:direction=>neighboringNumbers(entries,selectedNumber)[direction],onNavigate:navigate});
 function remember() { try { return sessionStorage.getItem('gre-learning-current-v1'); } catch { return null; } }
-function navigate(number) { if (number && number !== selectedNumber) location.hash = `/learn/${number}`; }
+function navigate(number) { if (entries.some(entry=>entry.number===number) && number !== selectedNumber) location.hash = `/learn/${number}`; }
 async function render() {
   const generation=++renderGeneration;
   const startingHash=location.hash;
@@ -31,11 +33,11 @@ async function render() {
   const number = resolveWordNumber(startingHash, entries, remember());
   selectedNumber=number;
   const selected=entries.find(entry=>entry.number===number);
-  if(selected){const position=neighboringNumbers(entries,number);document.title=`${selected.word} · 词汇精学`;counter.textContent=`${String(position.index+1).padStart(2,'0')} / ${entries.length}`;counter.setAttribute('aria-label',`第 ${position.index+1} 个词，共 ${entries.length} 个。打开单词目录`);}
+  if(selected){const position=neighboringNumbers(entries,number);document.title=`${selected.word} · 词汇精学`;counter.textContent=`${position.index+1} / ${entries.length}`;counter.setAttribute('aria-label',`第 ${position.index+1} 个词，共 ${entries.length} 个。打开单词目录`);}
   current=null;currentArt=null;setMotionLesson(null);
   observer?.disconnect();
   window.speechSynthesis?.cancel();
-  if (!number) { loader.cancel();main.innerHTML = renderNotReady(); swipe.cancel(); return; }
+  if (!number) { loader.cancel();main.removeAttribute('aria-busy');counter.textContent='0 / 0';counter.setAttribute('aria-label','暂无可学习的单词');document.title='词汇精学';main.innerHTML = renderNotReady(); swipe.cancel(); return; }
   main.innerHTML='<p class="initial-status" role="status">正在打开学习内容…</p>';
   main.setAttribute('aria-busy','true');
   swipe.cancel();
@@ -53,7 +55,7 @@ async function render() {
   if (location.hash !== `#/learn/${number}`) history.replaceState(null, '', `#/learn/${number}`);
   document.title = `${current.word} · 词汇精学`;
   const position = neighboringNumbers(entries, number);
-  counter.textContent = `${String(position.index + 1).padStart(2, '0')} / ${entries.length}`;
+  counter.textContent = `${position.index + 1} / ${entries.length}`;
   counter.setAttribute('aria-label', `第 ${position.index + 1} 个词，共 ${entries.length} 个。打开单词目录`);
   const visual = currentArt.visual;
   main.innerHTML = renderWordPage(current, visual);
@@ -74,7 +76,7 @@ async function render() {
 function renderResults() {
   const matches = filterEntries(entries, search.value);
   document.getElementById('search-count').textContent = `${matches.length} 个词`;
-  document.getElementById('word-results').innerHTML = matches.length ? matches.map(entry=>`<button type="button" class="word-result ${entry.number===current?.number?'is-current':''}" data-word="${entry.number}"><span class="result-number">${String(entry.number).padStart(2,'0')}</span><span><strong lang="en">${escape(entry.word)}</strong><small>${escape(entry.coreMeaningZh)}</small></span>${entry.number===current?.number?'<span class="current-dot" aria-label="当前词"></span>':''}</button>`).join('') : '<p class="search-empty">没有找到这个词，试试其他拼写或中文释义</p>';
+  document.getElementById('word-results').innerHTML = matches.length ? matches.map(entry=>`<button type="button" class="word-result ${entry.number===current?.number?'is-current':''}" data-word="${entry.number}"><span class="result-number">${entry.displayOrdinal}</span><span><strong lang="en">${escape(entry.word)}</strong><small>${escape(entry.coreMeaningZh)}</small></span>${entry.number===current?.number?'<span class="current-dot" aria-label="当前词"></span>':''}</button>`).join('') : '<p class="search-empty">没有找到这个词，试试其他拼写或中文释义</p>';
 }
 function openPicker() { meaningMotion.cancel();swipe.cancel();search.value='';renderResults();if(!picker.open)picker.showModal();search.focus(); }
 function closePicker() { picker.close(); }

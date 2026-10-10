@@ -1,5 +1,5 @@
-// Bounded inert retained SVG tracks for the six acceptance scenes only.
-const allowedWords={175:'avarice',176:'aver',177:'aversion',178:'avid',179:'awash',180:'awe'};
+// Bounded inert retained SVG tracks for explicitly reviewed canonical scenes only.
+const allowedWords={175:'avarice',176:'aver',177:'aversion',178:'avid',179:'awash',180:'awe',181:'awkward',182:'awning',183:'awry',184:'axiomatic'};
 const tags=new Set('g path rect circle ellipse line polyline polygon text defs clipPath linearGradient radialGradient stop'.split(' '));
 const dynamic=new Set('d transform opacity x y cx cy r rx ry width height'.split(' '));
 const attributes=new Set('d points transform opacity x y cx cy r rx ry x1 y1 x2 y2 width height fill stroke stroke-width stroke-linecap stroke-linejoin fill-rule clip-rule clip-path clipPathUnits gradientUnits gradientTransform offset stop-color stop-opacity font-family font-size font-weight text-anchor dominant-baseline'.split(' '));
