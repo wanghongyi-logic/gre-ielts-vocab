@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "120",
-  "generatedAt": "2026-10-10T04:28:49.557366+00:00",
+  "releaseBuild": "121",
+  "generatedAt": "2026-10-10T04:51:42.343152+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-first-five",
@@ -14,16 +14,16 @@
   "assets": [
     {
       "path": "gre-learning/app.js",
-      "bytes": 7830,
-      "gzipBytes": 2974,
-      "sha256": "382c70d4635e6d7275e02a054e79a85a1adf306f26bd1aea1ba8b87c78b14f03",
+      "bytes": 8054,
+      "gzipBytes": 3052,
+      "sha256": "80b661732fa8d3522f4df7472169a13027ef4305019ccf387367bf5576b56d5b",
       "loading": "shell"
     },
     {
       "path": "gre-learning/catalog.json",
-      "bytes": 7507,
-      "gzipBytes": 2825,
-      "sha256": "ce383abc6d077892b7a70b2d8e8580bd009b29aed7101d2cbaaaf08f3dbbb625",
+      "bytes": 7500,
+      "gzipBytes": 2873,
+      "sha256": "d1a8a354dbd061c3855227ea6e982ed6d604473b83f87568949d2b36ce6c09bd",
       "loading": "shell"
     },
     {
@@ -84,9 +84,9 @@
     },
     {
       "path": "gre-learning/story-media.js",
-      "bytes": 5274,
-      "gzipBytes": 1881,
-      "sha256": "4e47e74835cd3dff9de94d1b493d58034e81761c38e96a72567aba0d379ab044",
+      "bytes": 6410,
+      "gzipBytes": 2196,
+      "sha256": "0fcd838883146cbc46361f7889cafd0fde5262208da054ebfc79c7f430d23896",
       "loading": "shell"
     },
     {
@@ -104,31 +104,31 @@
       "loading": "on-demand"
     },
     {
-      "path": "gre-learning/story-media/176-67a68311a65bb0bb0be09c0370bd46d727d49b27cbede0c289bc5c7f47d93cb5.webp",
-      "bytes": 16274,
-      "gzipBytes": 16297,
-      "sha256": "67a68311a65bb0bb0be09c0370bd46d727d49b27cbede0c289bc5c7f47d93cb5",
+      "path": "gre-learning/story-media/176-086e727c6e1f3a00cf6464b9b87e32d7e0b752517a92136c9c5c6b57eb8a96c7.webp",
+      "bytes": 18216,
+      "gzipBytes": 18244,
+      "sha256": "086e727c6e1f3a00cf6464b9b87e32d7e0b752517a92136c9c5c6b57eb8a96c7",
       "loading": "on-demand"
     },
     {
-      "path": "gre-learning/story-media/176-ac8d6c17e440bc7c0b89a347b40b126d538ad90a59359ac4fa493c4a32a8d5b2.mp4",
-      "bytes": 249795,
-      "gzipBytes": 246516,
-      "sha256": "ac8d6c17e440bc7c0b89a347b40b126d538ad90a59359ac4fa493c4a32a8d5b2",
+      "path": "gre-learning/story-media/176-726f20d96f22abc0b4c5a0402d079cefd49f5941d2dbb8362ca449feff77a3bb.mp4",
+      "bytes": 204735,
+      "gzipBytes": 200843,
+      "sha256": "726f20d96f22abc0b4c5a0402d079cefd49f5941d2dbb8362ca449feff77a3bb",
       "loading": "on-demand"
     },
     {
-      "path": "gre-learning/story-media/177-175b45031aa881c80986b3c0749f6096bca4a4844fcf235a79f1b16774f039f2.mp4",
-      "bytes": 179627,
-      "gzipBytes": 177306,
-      "sha256": "175b45031aa881c80986b3c0749f6096bca4a4844fcf235a79f1b16774f039f2",
+      "path": "gre-learning/story-media/177-0871705a513d5f97f1243f520b864b3b4bf6da1d8dd555b9acef35e5ee66a2ce.webp",
+      "bytes": 59428,
+      "gzipBytes": 59466,
+      "sha256": "0871705a513d5f97f1243f520b864b3b4bf6da1d8dd555b9acef35e5ee66a2ce",
       "loading": "on-demand"
     },
     {
-      "path": "gre-learning/story-media/177-b8de87f25dc389599419df0b4ad3dec3f36af336214cb2a54cc4bc9e1e0e1de5.webp",
-      "bytes": 18812,
-      "gzipBytes": 18840,
-      "sha256": "b8de87f25dc389599419df0b4ad3dec3f36af336214cb2a54cc4bc9e1e0e1de5",
+      "path": "gre-learning/story-media/177-ab1e0264b1e7c88b672b46c1203fd8ac0c2af67ab2b9cfc66c6eea8d8e7b1ff0.mp4",
+      "bytes": 151186,
+      "gzipBytes": 148846,
+      "sha256": "ab1e0264b1e7c88b672b46c1203fd8ac0c2af67ab2b9cfc66c6eea8d8e7b1ff0",
       "loading": "on-demand"
     },
     {
@@ -146,31 +146,31 @@
       "loading": "on-demand"
     },
     {
-      "path": "gre-learning/story-media/179-0e981accb340c3dd09543eb0fa3109464b541fdd00e7be90ce82f254326ae66c.mp4",
-      "bytes": 454116,
-      "gzipBytes": 452112,
-      "sha256": "0e981accb340c3dd09543eb0fa3109464b541fdd00e7be90ce82f254326ae66c",
+      "path": "gre-learning/story-media/179-13bcfafaabca8da058c22b55bec02019c58e09fd4e1532ebee0b4bc7fe7437ca.mp4",
+      "bytes": 389492,
+      "gzipBytes": 387095,
+      "sha256": "13bcfafaabca8da058c22b55bec02019c58e09fd4e1532ebee0b4bc7fe7437ca",
       "loading": "on-demand"
     },
     {
-      "path": "gre-learning/story-media/179-aab70533974058463a85fe26c9cc5b420d9ae34120425cd2ceb4e5c9ddd898ae.webp",
-      "bytes": 43096,
-      "gzipBytes": 43129,
-      "sha256": "aab70533974058463a85fe26c9cc5b420d9ae34120425cd2ceb4e5c9ddd898ae",
+      "path": "gre-learning/story-media/179-86c63d07f88986c38fbdfd54a9299021d833d5e9ce76d3c883bdb40ed225f47e.webp",
+      "bytes": 611564,
+      "gzipBytes": 611772,
+      "sha256": "86c63d07f88986c38fbdfd54a9299021d833d5e9ce76d3c883bdb40ed225f47e",
       "loading": "on-demand"
     },
     {
       "path": "gre-learning/storybook.css",
-      "bytes": 20775,
-      "gzipBytes": 5483,
-      "sha256": "aaaff9f36c02487d94433fb13a63a61238b9a5efd249e512cfe2931b2f2d78cd",
+      "bytes": 24324,
+      "gzipBytes": 6312,
+      "sha256": "8dedba0a320fd97af5d211173bdb20997b9b00d7012701466f844eb0f124b6d6",
       "loading": "shell"
     },
     {
       "path": "gre-learning/swipe.js",
-      "bytes": 17979,
-      "gzipBytes": 5936,
-      "sha256": "83c40422270caa861272a06e45b990c4b1f7feb0aa861259c08dda73b5dd639f",
+      "bytes": 18049,
+      "gzipBytes": 5962,
+      "sha256": "8907902c1bfb5d21a626912a531d45965dd6e37a2fdac02c86457671a252a659",
       "loading": "shell"
     },
     {
@@ -183,15 +183,15 @@
     {
       "path": "gre-learning/update.js",
       "bytes": 2647,
-      "gzipBytes": 1123,
-      "sha256": "a026cfffd13f515bffaf0c5852dadd804520ece6f1c238a879ce52649c75aeb2",
+      "gzipBytes": 1124,
+      "sha256": "e34b98ed1bdd8744791712049a9244e7b3572b0c72e91f8f877573a3195bf006",
       "loading": "shell"
     },
     {
       "path": "gre-learning/view.js",
-      "bytes": 4592,
-      "gzipBytes": 1841,
-      "sha256": "76bb749f66f5c833f28a47803b0a6cf7f0d75f0e3479a2ff3913d44b355e1910",
+      "bytes": 4583,
+      "gzipBytes": 1838,
+      "sha256": "f1b4302ee42046b5fba3babb828b621942699b010021c4e45408749fbc28db29",
       "loading": "shell"
     },
     {
@@ -210,9 +210,9 @@
     },
     {
       "path": "index.html",
-      "bytes": 3462,
-      "gzipBytes": 1554,
-      "sha256": "4acc4239f0e8f9a9299f3ca57463feef267a52f1e6ad3ffbb0524edf441faadb",
+      "bytes": 2781,
+      "gzipBytes": 1333,
+      "sha256": "2d432ed08fb739ba7d1b27ec7fe519250426344d043caa488f5b210d4f95e495",
       "loading": "shell"
     },
     {
@@ -224,8 +224,8 @@
     }
   ],
   "totals": {
-    "bytes": 1984513,
-    "gzipBytes": 1882485
+    "bytes": 2461696,
+    "gzipBytes": 2355624
   },
   "retainedHistoricalAssets": 212
 }

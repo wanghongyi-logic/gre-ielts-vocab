@@ -22,7 +22,7 @@ export function moveSwipe(state,{x,y,time}) {
 }
 
 const INTERACTIVE='video[controls],audio[controls],a,button,input,textarea,select,option,summary,label,[contenteditable]:not([contenteditable="false"]),[role="button"],[role="link"],[role="slider"],[role="textbox"],[data-no-swipe],dialog';
-export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate,window:win=window,document:doc=document}) {
+export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate,onTurnActivity=()=>{},window:win=window,document:doc=document}) {
   const feedback=doc.createElement('div');
   feedback.className='swipe-feedback';feedback.hidden=true;feedback.setAttribute('aria-hidden','true');
   const label=doc.createElement('span');label.className='swipe-label';
@@ -60,6 +60,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
     const rect=article.getBoundingClientRect(),top=Math.max(0,rect.top);
     const bottom=Math.min(win.innerHeight,rect.bottom);
     if(bottom<=top)return;
+    onTurnActivity(true);
     paper=doc.createElement('div');paper.className='paper-turn';
     paper.setAttribute('aria-hidden','true');paper.inert=true;paper.dataset.direction=direction;
     Object.assign(paper.style,{left:`${rect.left}px`,top:`${top}px`,width:`${rect.width}px`,height:`${bottom-top}px`});
@@ -106,7 +107,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
     paper?.remove();paper=null;paperFace=null;paperFold=null;paperShadow=null;paperProgress=0;paperDirection=null;
     surface.classList.remove('is-swiping','is-swipe-settling');
     surface.style.removeProperty('transform');surface.style.removeProperty('opacity');surface.style.removeProperty('transition');
-    feedback.hidden=true;feedback.classList.remove('is-ready','is-boundary');
+    feedback.hidden=true;feedback.classList.remove('is-ready','is-boundary');onTurnActivity(false);
   }
   function reset() {
     clearTimer();gesture=null;touchId=null;phase='idle';enterDirection=null;focusAfterTurn=false;releaseCapture();cleanStyle();

@@ -48,3 +48,55 @@
 @media(max-width:359px){.memory-page{padding-left:21px;padding-right:21px}}
 
 .paper-turn.is-loading:after{content:'正在翻开这一页…';position:absolute;inset:0;display:grid;place-items:center;font-size:16px;color:var(--muted)}
+
+/* Book-edge navigation. The exposed gutter belongs to the binding, not the text.
+   It remains outside both the reading sheet and the disposable turning impression. */
+:root{--bookmark-gutter:44px;background:var(--desk)}
+body{width:calc(100% - var(--bookmark-gutter));padding:0;background:var(--paper);box-shadow:2px 0 0 #d6ccb8,5px 0 0 #e7decd,7px 0 12px #5042280d;min-height:100vh}
+.site-header{height:48px;max-width:1120px;padding:2px 22px 0;border:0;justify-content:flex-end;background:var(--paper)}
+.header-tools{gap:3px;color:var(--muted)}
+.word-counter{font-size:15px;letter-spacing:.07em;padding:8px;min-height:44px}
+.icon-button{width:44px;height:44px}
+.site-header .icon-button svg{width:19px;height:19px}
+#word-content{padding-bottom:max(32px,env(safe-area-inset-bottom));min-height:calc(100vh - 48px)}
+.reading-layout{padding:0}
+.bookmarks{left:auto;right:0;top:auto;bottom:max(24px,env(safe-area-inset-bottom));transform:none;width:44px;height:auto;padding:0;display:flex;flex-direction:column;gap:9px;border:0;border-radius:0;background:none;box-shadow:none}
+.bookmarks a{flex:none;width:44px;min-height:76px;max-width:none;padding:10px 10px 10px 7px;writing-mode:vertical-rl;text-orientation:upright;letter-spacing:.12em;gap:0;font-size:15px;line-height:1.5;font-family:var(--serif);color:#6b674f;background:#e5ddc8;border:1px solid #cec2a8;border-left:0;border-radius:0 5px 5px 0;box-shadow:1px 2px 2px #5042280b;transition:background .16s,color .16s}
+.bookmarks a:last-child{min-height:91px}
+.bookmarks a+a:before,.bookmarks a.is-current:after{content:none}
+.bookmarks a.is-current{background:#d4dbc5;color:#394d30;border-color:#b0bd9b}
+.bookmarks a:hover{background:#eee5d0}
+.bookmarks a:focus-visible{outline-offset:-4px;outline:2px solid var(--terra)}
+.book-chapter{scroll-margin-top:18px}
+.swipe-feedback{bottom:18px;max-width:calc(100vw - 76px);left:calc((100% - var(--bookmark-gutter))/2)}
+.update-status{bottom:18px;max-width:calc(100vw - 76px);left:calc((100% - var(--bookmark-gutter))/2)}
+.paper-turn{box-shadow:2px 0 0 #d6ccb880}
+@media(max-width:759px){
+ .word-hero{padding-top:12px}
+ .story-illustration{width:min(100%,320px)}
+ .word-hero,.scene-opening,.memory-page,.book-continuation{padding-left:22px;padding-right:22px}
+ .memory-page .scene-opening{padding:0}
+ .word-hero h1{font-size:54px}
+}
+@media(max-width:359px){
+ .site-header{padding-right:16px}
+ .word-hero,.scene-opening,.memory-page,.book-continuation{padding-left:18px;padding-right:18px}
+ .memory-page .scene-opening{padding:0}
+ .word-hero h1{font-size:50px}
+}
+@media(min-width:760px){
+ :root{--bookmark-gutter:0px}
+ body{width:auto;padding:0 62px 0 24px;background:var(--desk);box-shadow:none}
+ .site-header{height:60px;padding:8px 24px 0;background:var(--paper);margin-top:28px;border:1px solid #c9bea7;border-bottom:0;border-radius:2px 2px 0 0}
+ .reading-layout{max-width:1120px}
+ .book-spread{margin-top:0;border-top:0;border-radius:0 0 2px 2px}
+ .bookmarks{right:max(18px,calc((100vw - 1120px - 86px)/2 + 18px));bottom:48px}
+ .word-counter{font-size:16px}
+ .swipe-feedback,.update-status{left:calc(50% - 19px)}
+}
+@media(prefers-reduced-motion:reduce){.bookmarks a{transition:none}}
+
+/* Progress belongs inside the directory, never between the illustrated pages. */
+.spread-pagination{display:none}
+.site-header .icon-button{display:flex;width:auto;gap:9px;min-height:44px;padding:0 2px;font-size:15px;letter-spacing:.04em}
+#word-picker .word-counter{display:block;min-height:0;padding:9px 0 0;font-size:15px;color:var(--muted);pointer-events:none}

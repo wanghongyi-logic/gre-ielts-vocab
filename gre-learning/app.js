@@ -11,7 +11,7 @@ document.getElementById('release-summary').textContent=`词汇学习 · 已收�
 const loader=new LessonLoader(catalog);
 const main=document.getElementById('word-content'),picker=document.getElementById('word-picker'),search=document.getElementById('word-search'),counter=document.getElementById('word-counter');
 const motion=installStoryMedia(main,{picker});
-const swipe=installWordSwipe({surface:main,hintHost:document.querySelector('.site-header'),picker,getNeighbor:direction=>neighboringNumbers(entries,selectedNumber)[direction],onNavigate:navigate});
+const swipe=installWordSwipe({surface:main,hintHost:document.querySelector('.site-header'),picker,getNeighbor:direction=>neighboringNumbers(entries,selectedNumber)[direction],onNavigate:navigate,onTurnActivity:active=>motion.setTurning(active)});
 let selectedNumber,current,currentMedia,speech,renderGeneration=0,sectionObserver;
 function remember(){try{return sessionStorage.getItem('gre-learning-current-v1');}catch{return null;}}
 function navigate(number){if(entries.some(entry=>entry.number===number)&&number!==selectedNumber)location.hash=`/learn/${number}`;}
@@ -36,13 +36,16 @@ async function render(){
   swipe.cancel();main.removeAttribute('aria-busy');main.innerHTML=`<div class="initial-status" role="status"><p>${navigator.onLine===false?'这一页尚未下载，请联网后重试':'这一页暂时无法打开，请重试'}</p><button type="button" data-retry>重试</button></div>`;return;
  }
  if(generation!==renderGeneration||location.hash!==startingHash||selectedNumber!==number)return;
+ const prepared=document.createElement('div');prepared.innerHTML=renderWordPage(loaded.entry,loaded.media,position);
+ await motion.refresh(loaded.media,{root:prepared});
+ if(generation!==renderGeneration||location.hash!==startingHash||selectedNumber!==number)return;
  current=loaded.entry;currentMedia=loaded.media;main.removeAttribute('aria-busy');
  try{sessionStorage.setItem('gre-learning-current-v1',String(number));}catch{}
  if(location.hash!==`#/learn/${number}`)history.replaceState(null,'',`#/learn/${number}`);
- main.innerHTML=renderWordPage(current,currentMedia,position);motion.refresh(currentMedia);loader.prefetchAdjacent(number);watchChapters();
+ main.replaceChildren(...prepared.childNodes);loader.prefetchAdjacent(number);watchChapters();
  const speakButton=main.querySelector('[data-speak]');
  if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window)){speakButton.disabled=true;speakButton.title='此浏览器暂不支持朗读';}
- window.scrollTo({top:0,behavior:'instant'});swipe.rendered(`${current.word}，第 ${position.index+1} 个词，共 ${entries.length} 个`);
+ window.scrollTo({top:0,behavior:'instant'});swipe.rendered(`${current.word}，第 ${position.index+1} 个词，共 ${entries.length} 个`);motion.activate();
 }
 function renderResults(){const matches=filterEntries(entries,search.value);document.getElementById('search-count').textContent=`${matches.length} 个词`;document.getElementById('word-results').innerHTML=matches.length?matches.map(entry=>`<button type="button" class="word-result ${entry.number===selectedNumber?'is-current':''}" data-word="${entry.number}"><span class="result-number">${String(entry.displayOrdinal).padStart(2,'0')}</span><span><strong lang="en">${escape(entry.word)}</strong><small>${escape(entry.coreMeaningZh)}</small></span>${entry.number===selectedNumber?'<span class="current-dot" aria-label="当前词"></span>':''}</button>`).join(''):'<p class="search-empty">没有找到这个词，试试其他拼写或中文释义</p>';}
 function openPicker(){swipe.cancel();search.value='';renderResults();if(!picker.open)picker.showModal();motion.sync();search.focus();}
@@ -61,5 +64,5 @@ document.addEventListener('click',event=>{
 });
 window.addEventListener('hashchange',render);
 window.addEventListener('pagehide',()=>{window.speechSynthesis?.cancel();loader.cancel();motion.cancel();sectionObserver?.disconnect();renderGeneration++;});
-window.addEventListener('pageshow',event=>{if(event.persisted){if(!current)render();else{motion.refresh(currentMedia);watchChapters();}}});
+window.addEventListener('pageshow',event=>{if(event.persisted)render();});
 render();window.dispatchEvent(new Event('vocab-app-ready'));
