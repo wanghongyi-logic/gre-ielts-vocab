@@ -153,7 +153,7 @@
     },
     "equivalents": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 0,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -242,6 +242,38 @@
               "kind": "word_family"
             }
           ]
+        }
+      }
+    }
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "number": {
+            "const": 182
+          },
+          "word": {
+            "const": "awning"
+          }
+        },
+        "required": [
+          "number",
+          "word"
+        ]
+      },
+      "then": {
+        "properties": {
+          "equivalents": {
+            "minItems": 0
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "equivalents": {
+            "minItems": 1
+          }
         }
       }
     }

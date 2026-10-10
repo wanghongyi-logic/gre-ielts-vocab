@@ -1,4 +1,4 @@
-import {gateCatalog} from './release-policy.js';
+import {gateCatalog,isStorybookCatalog} from './release-policy.js';
 import {validateTrackedArt} from './motion-tracks.js';
 import {validateEntry} from './schema.js';
 const abortError=()=>Object.assign(new Error('Request superseded'),{name:'AbortError'});
@@ -63,7 +63,7 @@ export class LessonLoader {
  }
  async pair(number,signal,priority='high') {
   const meta=this.index.get(Number(number));if(!meta)throw new Error('Lesson is not reviewed and ready');
-  if(this.catalog.learningRelease.sampleMode==='storybook-first-five') {
+  if(isStorybookCatalog(this.catalog)) {
    const refs=meta.storyMedia;
    const [unit,posterURL,videoURL]=await Promise.all([this.resource(meta.unit,signal,priority),refs?this.mediaResource(refs.poster,signal,priority):null,refs?this.mediaResource(refs.video,signal,priority):null]);
    const entry=unit.entries?.find(item=>item.number===meta.number);

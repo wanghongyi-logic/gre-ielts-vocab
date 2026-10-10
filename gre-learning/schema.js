@@ -45,7 +45,9 @@ export function validateEntry(entry, baselineLesson) {
     if (item.explanationZh !== undefined && !text(item.explanationZh)) throw new TypeError('Invalid example explanation');
     shape(item, 'example'); required(item, ['textEn','translationZh'], 'example');
   }
-  list(entry.equivalents, 'equivalents');
+  // Qualified editorial exception: no verified GRE equivalent pair for awning.
+  const reviewedEmptyEquivalents=entry.number===182&&entry.word==='awning';
+  list(entry.equivalents, 'equivalents', reviewedEmptyEquivalents?0:1);
   for (const item of entry.equivalents) { shape(item, 'equivalent'); required(item, ['word','comparisonZh'], 'equivalent'); }
   if (!entry.usage.some(item => item.collocations.length)) throw new TypeError('Missing collocations');
   return entry;

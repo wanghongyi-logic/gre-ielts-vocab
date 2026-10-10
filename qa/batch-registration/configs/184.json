@@ -1,0 +1,67 @@
+{
+  "asset": 184,
+  "width": 512,
+  "height": 512,
+  "fps": 25,
+  "frames": 144,
+  "thresholds": {
+    "maxAdjacentContactDxPx": 3.0,
+    "maxAdjacentSoleDyPx": 2.0,
+    "maxAdjacentSoleWidthDeltaPx": 6.0,
+    "maxBodyHeightRangeRatio": 0.03
+  },
+  "footRois": {},
+  "contactDetector": "no_visible_contacts_v1",
+  "backgroundReferences": {},
+  "staticAnchors": [
+    {
+      "id": "solid-counter",
+      "roi": [
+        170,
+        370,
+        260,
+        430
+      ],
+      "maxMeanAbsoluteRgbError": 1.0,
+      "minDarkContourIoU": 0.985,
+      "enabledAllFrames": true
+    },
+    {
+      "id": "window",
+      "roi": [
+        40,
+        32,
+        91,
+        102
+      ],
+      "maxMeanAbsoluteRgbError": 1.0,
+      "minDarkContourIoU": 0.985,
+      "enabledAllFrames": true
+    }
+  ],
+  "actionRois": [
+    {
+      "id": "meaningful-gesture",
+      "roi": [
+        210,
+        161,
+        440,
+        324
+      ],
+      "minPeakMeanRgbChange": 1.0
+    }
+  ],
+  "bodyRois": {},
+  "visualReviewOnly": [
+    "Complete character anatomy, proportions and meaningful gesture trajectory; the torso/head pose is not a numeric height proxy.",
+    "Lower body and feet genuinely hidden by solid-front counter in every pose; no numerical foot pass claimed."
+  ],
+  "reviewedExceptions": [],
+  "video": "gre-learning/story-media/184-b78516cb540ad6d3aff23420424ff87948175b8ea756d10dad80c02f931297f0.mp4",
+  "videoSha256": "b78516cb540ad6d3aff23420424ff87948175b8ea756d10dad80c02f931297f0",
+  "poster": "gre-learning/story-media/184-6020b1937b89777924df8da8dd01a0525f00d824785d0e0fb160ce4113ac8b57.webp",
+  "posterSha256": "6020b1937b89777924df8da8dd01a0525f00d824785d0e0fb160ce4113ac8b57",
+  "reviewEvidence": "qa/batch-registration/reviews/184.json",
+  "contactVisibility": "fully_occluded_by_solid_counter",
+  "reviewEvidenceSha256": "049b870cfc7d18c75fad803f02448b7ef65f31ba07b2d48a27ab8985a858723b"
+}

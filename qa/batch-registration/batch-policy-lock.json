@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "immutableLegacyFiles": {
+    "qa/registration/test_phase_guard.py": "e00d2af4eddd229b9347fb8b23daae5f0c9ff5515eb2ff40e48f63d410a31ef3",
+    "qa/registration/179-motion-review.json": "f60d3eedadc40273ac739e6d4811cbd9fcd01c56994d3bf3bb961e18cc7312b5",
+    "qa/registration/phase_guard.py": "3221e018dd14d1af942d93ab3e30f0a2dfcb99aadb5e8eb7726847fa2e6fc64f",
+    "qa/registration/README.md": "4ab237224ee9c97f045130253e09135a54636c0fc0012a22a74c0e9f60cbce81",
+    "qa/registration/check.py": "f2fc22f3f27349ea1b2c06b71be4487484e3ee31f286bec9564d96b20334eba7",
+    "qa/registration/policy-lock.json": "becc28968613211f05c459b907c49d18d51519a3143c03aab7f1cd7996de5a42",
+    "qa/registration/requirements.txt": "21aa828e3ee8b30490bd0ed1456dfb5cd8ab0531e453179fa1c3f3f8616bccdc",
+    "qa/registration/test_guard.py": "53aac63f6966e5202478afe9aae54e8b99d4d57aca9b1fa6d9a0e85eff69ae4f",
+    "qa/registration/configs/176.json": "915bdf686607332dc1aa0d8ef0de56af4477adf2eeed58703bf8c0fdbf5fb3d5",
+    "qa/registration/configs/175.json": "36dffb8b26bf0e2f64b7e24f61d5f9312e99e08014caaa37180ee1bf9efe129a",
+    "qa/registration/configs/177.json": "df74879e4b082164416fbee4de9235e25b9ad30405179b9c6d079a8e43ee3ead",
+    "qa/registration/configs/178.json": "7e077ba13b258bf3cc6e0e6fd4db330a50a0403cf8a23d675d1066b9bfe142d1",
+    "qa/registration/configs/179.json": "5b981932f4afaaa325abc1ddf72bb84f7ebc497974c47920064e363f5135955c"
+  },
+  "extensionFiles": {
+    "qa/batch-registration/background_contact.py": "f2cdceec79999706386c3c47259365b9f070f26044f908ef139b052f7a694f86",
+    "qa/batch-registration/check_batch.py": "c45934f0f428e83e8bb577232c88e723900075fd7a93d2c3fdd278d9294c259a",
+    "qa/batch-registration/test_batch.py": "83d5e0253d9e28823ae35a66dde1e895e5ff80e6fb17bbb6eeb8ef5d5126aaef"
+  },
+  "scenes": {
+    "180": "d551c00b6da61ea6dca6a906931c7ded37bfad871edccdda7a63eee3533399ab",
+    "181": "e9e9b994f44316310edb6511dfbe301d2b45c66282d6f25acfda77058ee9b394",
+    "182": "18c4a088e3c1d4813783ff7f02ce129c235c7a34fd06fd4926f1e0a5bac1692b",
+    "183": "df63c0095423c0358c72bcd797f5fd3185172f33ef150d69aff2e7c15c329354",
+    "184": "6db3d1155abb6cd86c2f5bdbcbaece68253f30fd940fc2773bfe8b3d08ed2b55"
+  }
+}

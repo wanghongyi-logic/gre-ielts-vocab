@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "videoSha256": "abf4a568e934c2b40db8c4312642ef0cc0ecdd8af202081864e6f8596dea94c6",
+  "geometrySha256": "b782c63b3ff381a1e7dc1ae184a4c4e7c96712100dd2060ec3669d516e1f47da",
+  "reviewed": {
+    "allOrderedPoses": true,
+    "contactAndAnatomy": true,
+    "fixedCameraAndProps": true,
+    "completeLoopAndMeaning": true
+  },
+  "status": "accepted-exact-component-media",
+  "reviewDate": "2026-10-10",
+  "reviewReportSha256": "09a30f5b9787c8fa4214dbe5a16c2ea7d9e99cdf651beafa278afe42534495ab",
+  "limitations": "Ordered poses, mobile snapshots and playback telemetry support component review. Integrated-app text and bundle review remain separate release requirements."
+}
