@@ -137,3 +137,13 @@ body.bookmarks-collapsed{--bookmark-gutter:28px}
    No top padding is added: iOS may already inset its standalone web viewport. */
 :root{background-color:var(--paper);background-image:linear-gradient(to right,var(--paper) calc(100% - var(--bookmark-gutter)),var(--desk) 0);background-attachment:fixed}
 .paper-safe-area{position:fixed;top:0;left:0;width:100%;height:env(safe-area-inset-top,0px);z-index:40;background:var(--paper);pointer-events:none;contain:paint;isolation:isolate}
+
+/* Long headwords fit the available book column without orphan letters. Existing
+   short headings retain their exact markup and styles. */
+.word-hero.has-long-headword{container-type:inline-size}
+.word-hero .long-headword{min-height:80.56px;font-size:min(76px,calc(100cqi / var(--headword-fit)));white-space:nowrap;overflow-wrap:normal}
+@media(max-width:759px){.word-hero .long-headword{min-height:57.24px;font-size:min(54px,calc(100cqi / var(--headword-fit)))}}
+@media(max-width:340px){.word-hero .long-headword{min-height:53px;font-size:min(50px,calc(100cqi / var(--headword-fit)))}}
+
+/* Silent dialogue stages keep their reserved band but show no empty outline. */
+.story-dialogue:empty{visibility:hidden}

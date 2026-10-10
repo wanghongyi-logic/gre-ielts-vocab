@@ -4,7 +4,7 @@ import {validateEntry} from './schema.js';
 const abortError=()=>Object.assign(new Error('Request superseded'),{name:'AbortError'});
 export function expandCatalog(raw){
  raw=gateCatalog(raw);
- return {...raw,entries:raw.entries.map(entry=>({...entry,unit:raw.units[entry.unit],art:{...entry.art,url:`art-units/${entry.number}-${entry.art.sha256}.json`}}))};
+ return {...raw,entries:raw.entries.map(entry=>({...entry,unit:raw.units[entry.unit],...(entry.art?{art:{...entry.art,url:`art-units/${entry.number}-${entry.art.sha256}.json`}}:{})}))};
 }
 export class LessonLoader {
  constructor(catalog,{baseURL=new URL('./',import.meta.url),fetcher=globalThis.fetch.bind(globalThis),crypto=globalThis.crypto,cacheStorage=globalThis.caches,maxEntries=8,maxBytes=2*1024*1024,setTimer=globalThis.setTimeout.bind(globalThis),clearTimer=globalThis.clearTimeout.bind(globalThis)}={}) {

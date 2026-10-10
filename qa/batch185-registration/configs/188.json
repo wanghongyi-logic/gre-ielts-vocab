@@ -1,0 +1,81 @@
+{
+  "asset": 188,
+  "width": 512,
+  "height": 512,
+  "fps": 25,
+  "frames": 256,
+  "thresholds": {
+    "maxAdjacentContactDxPx": 3.0,
+    "maxAdjacentSoleDyPx": 2.0,
+    "maxAdjacentSoleWidthDeltaPx": 6.0,
+    "maxBodyHeightRangeRatio": 0.03
+  },
+  "visibleFootNames": [],
+  "nativeOverlayRegions": [],
+  "footRois": {},
+  "contactDetector": "no_visible_contacts_v1",
+  "backgroundReferences": {},
+  "staticAnchors": [
+    {
+      "id": "solid-counter",
+      "roi": [
+        100,
+        400,
+        185,
+        446
+      ],
+      "maxMeanAbsoluteRgbError": 1.0,
+      "minDarkContourIoU": 0.985,
+      "enabledAllFrames": true
+    },
+    {
+      "id": "window-frame",
+      "roi": [
+        42,
+        35,
+        59,
+        91
+      ],
+      "maxMeanAbsoluteRgbError": 1.0,
+      "minDarkContourIoU": 0.985,
+      "enabledAllFrames": true
+    }
+  ],
+  "actionRois": [
+    {
+      "id": "friend-banter",
+      "roi": [
+        60,
+        98,
+        271,
+        347
+      ],
+      "minPeakMeanRgbChange": 1.0
+    },
+    {
+      "id": "crowned-reply",
+      "roi": [
+        274,
+        70,
+        435,
+        345
+      ],
+      "minPeakMeanRgbChange": 1.0
+    }
+  ],
+  "bodyRois": {},
+  "visualReviewOnly": [
+    "Complete character anatomy, proportions and meaningful gesture trajectory; the torso/head pose is not a numeric height proxy.",
+    "Lower body and feet genuinely hidden by solid-front counter in every pose; no numerical foot pass claimed."
+  ],
+  "reviewedExceptions": [],
+  "video": "gre-learning/story-media/188-accf52a0a1d87c152db607cbf80b3fb739850187b0a68f59bca1443d367b3c38.mp4",
+  "videoSha256": "accf52a0a1d87c152db607cbf80b3fb739850187b0a68f59bca1443d367b3c38",
+  "poster": "gre-learning/story-media/188-3f28d741b484e54b335cad4c3fe0c5f781f84c69966bea39611b0459aca05193.webp",
+  "posterSha256": "3f28d741b484e54b335cad4c3fe0c5f781f84c69966bea39611b0459aca05193",
+  "nativeDialogueSha256": "48484db209ed96958830d09c0834e66e2348ae13f0fc7a4abc502f633e2e3bc8",
+  "reviewEvidence": "qa/batch185-registration/reviews/188.json",
+  "contactVisibility": "fully_occluded_by_solid_counter",
+  "reviewEvidenceSha256": "b0b66c94dcdd9354eb7b2b80a2dc8216fd7527729b31e7ce00f33caab3254c2f",
+  "nativeDialoguePlacement": "separate band outside artwork"
+}

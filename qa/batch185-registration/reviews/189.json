@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "videoSha256": "2cd052e419b430e5bed074c3ef31103eee2c29a1b4d15e658394f3988ac9caf3",
+  "geometrySha256": "2d15ccdaa6dff2807277d627b2daaf14ee2d9a1bf898aa2bc05aa17c91a0b33e",
+  "reviewed": {
+    "allOrderedPoses": true,
+    "contactAndAnatomy": true,
+    "fixedCameraAndProps": true,
+    "completeLoopAndMeaning": true,
+    "stationaryShoesInEveryPose": true,
+    "outerShoeLandmarksWithVisualContours189": true
+  },
+  "status": "accepted-exact-component-media",
+  "nativeDialogueSha256": "eeed18b0159dd2675847b5e77f700c4d40f9c442cb4115ea143dcf78bc0011b6",
+  "nativeDialogueScope": "Final integrated stages, poster text and anchors are identity-bound; layout and timing behavior are separately reviewed.",
+  "reviewDate": "2026-10-10",
+  "reviewReportSha256": "a5aa0afbdc7407ac70b10a21764e96320a37ca3eec976e284dc83d1aa02fc204",
+  "limitations": "Ordered poses, snapshots and foreground rate-1 playback telemetry support component review. Stationary shoe outer landmarks are numerical checks; complete shoe contour and anatomy remain visual-review-only. No ground-contact claim."
+}

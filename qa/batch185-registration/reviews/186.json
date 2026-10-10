@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "videoSha256": "66414a6c2ab90d2e1db9d2be71960881a297512a1910e7e216db53fa9dc11430",
+  "geometrySha256": "1516b5230baefc389d0deb45c9c1723b0e4b701616140c9859a1645b402fdbc4",
+  "reviewed": {
+    "allOrderedPoses": true,
+    "contactAndAnatomy": true,
+    "fixedCameraAndProps": true,
+    "completeLoopAndMeaning": true
+  },
+  "status": "accepted-exact-component-media",
+  "reviewDate": "2026-10-10",
+  "reviewReportSha256": "b009051337e0cc9878daa7b48e589a6e1ad5b82ced012d1069fb343f3152824d",
+  "limitations": "Ordered poses, snapshots and foreground rate-1 playback telemetry support component review. Native dialogue and integrated-app behavior require separate release review.",
+  "nativeDialogueSha256": "17c50752d52fa62606823c5c8cb53c3e6c97be768afe1faccac3156c8002e9fb",
+  "nativeDialogueScope": "Final integrated stages, poster text and anchors are identity-bound; layout and timing behavior are separately reviewed.",
+  "integratedNativeAnchorAdjustmentRecordSha256": "34d68cce2cf11f8915bee64b3c014df0fc3a82bb7e0b30be9a292ddfd26bee8b"
+}
