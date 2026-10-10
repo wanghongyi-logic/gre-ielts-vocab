@@ -57,6 +57,12 @@ export function gateCatalog(raw) {
    digestBytes.set(ref.sha256,ref.bytes);
   }
  }
- if(raw.publishedCount!==entries.length||raw.authoredCount!==entries.length||raw.libraryTarget!==4679)throw new Error('Incorrect published lesson count');
+ let libraryTarget=4679;
+ if(Object.hasOwn(policy,'libraryPlan')){
+  const plan=policy.libraryPlan;
+  if(!ordered||!plan||typeof plan!=='object'||Array.isArray(plan)||Object.keys(plan).length!==2||plan.version!=='canonical-4731-20261010-v1'||plan.sha256!=='cf9a48c71ebcb346315c78c2da6bcda089e24473ae0f1caef86f7805bf9caa3c')throw new Error('Unsupported approved library plan');
+  libraryTarget=4731;
+ }
+ if(raw.publishedCount!==entries.length||raw.authoredCount!==entries.length||raw.libraryTarget!==libraryTarget)throw new Error('Incorrect published lesson count');
  return {...raw,entries};
 }

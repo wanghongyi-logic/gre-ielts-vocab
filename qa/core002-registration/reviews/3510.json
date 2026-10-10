@@ -1,0 +1,19 @@
+{
+  "videoSha256": "09aeeaa2b4637818753f74a02cbeb91463aa297de87d94ce313872ec76fab3ae",
+  "posterSha256": "5b3da4c21fed4a5e579637bd5b1b01fd9965a8e1c1c4afa8b53a4a35a4e886bb",
+  "geometrySha256": "41353160bf166cf45872c0ff5252adb082b7b81a8f9a23634400ed5c65628d8f",
+  "nativeDialogueSha256": "15707201ee59445512fdfbdea9aeb14326e53c6aac13643fad368f5f7cc5ecb7",
+  "reviewed": {
+    "allOrderedPoses": true,
+    "contactAndAnatomy": true,
+    "fixedCameraAndProps": true,
+    "completeLoopAndMeaning": true,
+    "celContactWitnesses": true,
+    "staticShoeWitnesses": true
+  },
+  "componentEvidence": {
+    "path": "qa/core002-registration/reviews/3510-component-review.md",
+    "sha256": "7b189c466876f6f035e9cfa21ecbf5223e9f8d0ec526e9b8d3cc9f9501f1abdb"
+  },
+  "scope": "Independent exact-media component review; numerical geometry/mutation and integrated-page layout remain separate gates."
+}
