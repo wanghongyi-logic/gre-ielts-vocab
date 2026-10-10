@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "videoSha256": "2804634a136e268bdec9f503f7d6c37b65e950f6cca6c499dfc562d6834c3d15",
+  "phasePlanSha256": "e56dc2792c7de0a707955942541396c4d5a7a3ae59eda6aa79bc80a78a1737a0",
+  "status": "accepted-exact-media-and-phase-plan",
+  "reviewed": {
+    "visibleLiftAndLanding": true,
+    "completeCharacterPoseAnatomy": true,
+    "stationarySceneAnchors": true,
+    "phaseBoundariesAndLoopReviewed": true
+  },
+  "reviewDate": "2026-10-10",
+  "reviewReportSha256": "39e87ecead3c788e50f1b02b9a48c41935f216af9a9f43699932b0674693432e",
+  "reviewMethods": [
+    "All 15 ordered poses",
+    "Desktop and 390px actual-page snapshots",
+    "Two foreground rate-1 loops with playback telemetry",
+    "Exact decoded first-frame poster check"
+  ],
+  "limitations": "Snapshots, ordered poses and playback telemetry do not constitute continuous human-like video observation. Stylized discrete held poses remain. Water shows visible ripples; no distinct shoe-thrown splash plume is claimed.",
+  "scope": "Complete redrawn character cels, including every leg and foot, over stationary authored background. Moving feet are visual-review-only during exact labelled intervals; planted and landing targets remain numerically checked."
+}

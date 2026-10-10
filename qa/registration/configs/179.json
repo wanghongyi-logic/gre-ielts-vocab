@@ -1,30 +1,14 @@
 {
   "asset": 179,
-  "width": 768,
-  "height": 768,
-  "fps": 24,
-  "frames": 96,
-  "metricScaleTo312": 0.40625,
-  "footRois": {
-    "combinedShoes": [
-      442,
-      388,
-      552,
-      455
-    ]
-  },
-  "bodyRois": {
-    "seatedCharacter": [
-      440,
-      80,
-      640,
-      455
-    ]
-  },
-  "video": "gre-learning/story-media/179-017b1d855385aaebfe4b88d769e90289ab98688a5457b538db652f84c0f6fd9a.mp4",
-  "videoSha256": "017b1d855385aaebfe4b88d769e90289ab98688a5457b538db652f84c0f6fd9a",
-  "poster": "gre-learning/story-media/179-d1acfd096ec164613fefca6a8699707bb94392e65a660f066c093491fbf52809.webp",
-  "posterSha256": "d1acfd096ec164613fefca6a8699707bb94392e65a660f066c093491fbf52809",
+  "width": 512,
+  "height": 512,
+  "fps": 25,
+  "frames": 144,
+  "metricScaleTo312": 0.609375,
+  "video": "gre-learning/story-media/179-2804634a136e268bdec9f503f7d6c37b65e950f6cca6c499dfc562d6834c3d15.mp4",
+  "videoSha256": "2804634a136e268bdec9f503f7d6c37b65e950f6cca6c499dfc562d6834c3d15",
+  "poster": "gre-learning/story-media/179-d061125c2b55f6b06438af0568d63a20705fad8cef4f23e623085b986502c6e7.webp",
+  "posterSha256": "d061125c2b55f6b06438af0568d63a20705fad8cef4f23e623085b986502c6e7",
   "posterMustEqualDecodedFrame0": true,
   "thresholds": {
     "maxAdjacentContactDxPx": 3.0,
@@ -34,6 +18,240 @@
   },
   "reviewedExceptions": [],
   "visualReviewOnly": [
-    "Shoes overlap in projection; combined contact ROI is measured. Individual shoe anatomy, bench, water, framing and narrative remain visual-review gates."
-  ]
+    "Foot/ankle anatomy, trajectory and visible lift/landing during intentional movement; torso/head proportion during leaning; narrative fluidity. No skeletal tracking claim."
+  ],
+  "motionProfile": {
+    "type": "reviewed_179_foot_motion_v1",
+    "contactDetector": "cream_component_v1",
+    "phases": [
+      {
+        "id": "initial-contact",
+        "startFrame": 0,
+        "endFrame": 21,
+        "feet": {
+          "screenLeft": {
+            "state": "planted",
+            "roi": [
+              287,
+              285,
+              350,
+              359
+            ],
+            "expectedContact": {
+              "contactX": 314.5,
+              "soleY": 347.5,
+              "soleWidth": 31
+            }
+          },
+          "screenRight": {
+            "state": "planted",
+            "roi": [
+              335,
+              292,
+              396,
+              360
+            ],
+            "expectedContact": {
+              "contactX": 354.25,
+              "soleY": 351,
+              "soleWidth": 33.5
+            }
+          }
+        }
+      },
+      {
+        "id": "lift",
+        "startFrame": 22,
+        "endFrame": 33,
+        "feet": {
+          "screenLeft": {
+            "state": "intentional_motion",
+            "reason": "lift",
+            "departedContactPhase": "initial-contact",
+            "landingContactPhase": "settled-contact"
+          },
+          "screenRight": {
+            "state": "intentional_motion",
+            "reason": "lift",
+            "departedContactPhase": "initial-contact",
+            "landingContactPhase": "settled-contact"
+          }
+        }
+      },
+      {
+        "id": "airborne",
+        "startFrame": 34,
+        "endFrame": 69,
+        "feet": {
+          "screenLeft": {
+            "state": "intentional_motion",
+            "reason": "airborne",
+            "departedContactPhase": "initial-contact",
+            "landingContactPhase": "settled-contact"
+          },
+          "screenRight": {
+            "state": "intentional_motion",
+            "reason": "airborne",
+            "departedContactPhase": "initial-contact",
+            "landingContactPhase": "settled-contact"
+          }
+        }
+      },
+      {
+        "id": "shoe-sweep",
+        "startFrame": 70,
+        "endFrame": 87,
+        "feet": {
+          "screenLeft": {
+            "state": "intentional_motion",
+            "reason": "water_sweep",
+            "departedContactPhase": "initial-contact",
+            "landingContactPhase": "settled-contact"
+          },
+          "screenRight": {
+            "state": "intentional_motion",
+            "reason": "airborne",
+            "departedContactPhase": "initial-contact",
+            "landingContactPhase": "settled-contact"
+          }
+        }
+      },
+      {
+        "id": "kick-lift-ripples",
+        "startFrame": 88,
+        "endFrame": 95,
+        "feet": {
+          "screenLeft": {
+            "state": "intentional_motion",
+            "reason": "airborne",
+            "departedContactPhase": "initial-contact",
+            "landingContactPhase": "settled-contact"
+          },
+          "screenRight": {
+            "state": "intentional_motion",
+            "reason": "airborne",
+            "departedContactPhase": "initial-contact",
+            "landingContactPhase": "settled-contact"
+          }
+        }
+      },
+      {
+        "id": "landing-settle",
+        "startFrame": 96,
+        "endFrame": 103,
+        "feet": {
+          "screenLeft": {
+            "state": "intentional_motion",
+            "reason": "settling",
+            "departedContactPhase": "initial-contact",
+            "landingContactPhase": "settled-contact"
+          },
+          "screenRight": {
+            "state": "intentional_motion",
+            "reason": "settling",
+            "departedContactPhase": "initial-contact",
+            "landingContactPhase": "settled-contact"
+          }
+        }
+      },
+      {
+        "id": "settled-contact",
+        "startFrame": 104,
+        "endFrame": 119,
+        "feet": {
+          "screenLeft": {
+            "state": "planted",
+            "roi": [
+              287,
+              285,
+              350,
+              359
+            ],
+            "expectedContact": {
+              "contactX": 313.75,
+              "soleY": 345,
+              "soleWidth": 30.5
+            }
+          },
+          "screenRight": {
+            "state": "planted",
+            "roi": [
+              335,
+              292,
+              396,
+              360
+            ],
+            "expectedContact": {
+              "contactX": 352.75,
+              "soleY": 349.5,
+              "soleWidth": 31.5
+            }
+          }
+        }
+      },
+      {
+        "id": "return-contact",
+        "startFrame": 120,
+        "endFrame": 143,
+        "feet": {
+          "screenLeft": {
+            "state": "planted",
+            "roi": [
+              287,
+              285,
+              350,
+              359
+            ],
+            "expectedContact": {
+              "contactX": 316,
+              "soleY": 346,
+              "soleWidth": 31
+            }
+          },
+          "screenRight": {
+            "state": "planted",
+            "roi": [
+              335,
+              292,
+              396,
+              360
+            ],
+            "expectedContact": {
+              "contactX": 356,
+              "soleY": 350,
+              "soleWidth": 33
+            }
+          }
+        }
+      }
+    ],
+    "staticAnchors": [
+      {
+        "id": "pipe",
+        "roi": [
+          65,
+          105,
+          121,
+          219
+        ],
+        "maxMeanAbsoluteRgbError": 1.0,
+        "minDarkContourIoU": 0.985,
+        "enabledAllFrames": true
+      },
+      {
+        "id": "bench",
+        "roi": [
+          457,
+          274,
+          489,
+          328
+        ],
+        "maxMeanAbsoluteRgbError": 1.0,
+        "minDarkContourIoU": 0.985,
+        "enabledAllFrames": true
+      }
+    ],
+    "reviewEvidence": "qa/registration/179-motion-review.json",
+    "reviewEvidenceSha256": "f60d3eedadc40273ac739e6d4811cbd9fcd01c56994d3bf3bb961e18cc7312b5"
+  }
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Hash-bound decoded-video contact guard. Natural redrawing is allowed; visual QA remains required."""
-import argparse,hashlib,json,subprocess,sys
+import argparse,hashlib,json,subprocess,sys,importlib.util
 from pathlib import Path
 import numpy as np
 from PIL import Image
@@ -48,8 +48,8 @@ def check_scene(root,config_path,policy):
  root=Path(root).resolve();cp=Path(config_path);c=json.loads(cp.read_text());n=str(c.get('asset','unknown'));fail=[]
  if n not in policy.get('scenes',{}):return {'asset':n,'status':'FAIL','failures':[{'check':'unknown_unreviewed_scene'}]}
  if digest(cp)!=policy['scenes'][n]:fail.append({'check':'unreviewed_config_or_thresholds'})
- required=['footRois','frames','fps','width','height','video','videoSha256','poster','posterSha256','thresholds']
- if any(k not in c for k in required) or not c.get('footRois'):return {'asset':n,'status':'FAIL','failures':fail+[{'check':'missing_required_scene_config'}]}
+ required=['frames','fps','width','height','video','videoSha256','poster','posterSha256','thresholds']
+ if any(k not in c for k in required) or (not c.get('motionProfile') and not c.get('footRois')):return {'asset':n,'status':'FAIL','failures':fail+[{'check':'missing_required_scene_config'}]}
  catalogPath=root/'gre-learning/catalog.json'
  if catalogPath.exists():
   entries=json.loads(catalogPath.read_text()).get('entries',[]);entry=next((e for e in entries if e.get('number')==c['asset']),None)
@@ -63,7 +63,15 @@ def check_scene(root,config_path,policy):
  a=decode(video,c['width'],c['height'])
  if len(a)!=c['frames']:fail.append({'check':'frame_count','actual':len(a),'expected':c['frames']})
  if c.get('posterMustEqualDecodedFrame0') and not np.array_equal(np.array(Image.open(poster).convert('RGB')),a[0]):fail.append({'check':'poster_not_decoded_frame0'})
- bad,used,summary=evaluate_frames(a,c);fail+=bad
+ if c.get('motionProfile'):
+  modulePath=HERE/'phase_guard.py'
+  if policy.get('guardModules',{}).get('phase_guard.py')!=digest(modulePath):fail.append({'check':'phase_guard_code_hash_mismatch'})
+  evidencePath=contained(root,c['motionProfile']['reviewEvidence'])
+  if digest(evidencePath)!=c['motionProfile']['reviewEvidenceSha256']:fail.append({'check':'motion_review_evidence_hash_mismatch'})
+  evidence=json.loads(evidencePath.read_text());spec=importlib.util.spec_from_file_location('phase_guard',modulePath);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+  bad,used,summary=module.evaluate_motion(a,c,evidence)
+ else:bad,used,summary=evaluate_frames(a,c)
+ fail+=bad
  return {'asset':c['asset'],'status':'FAIL' if fail else 'PASS','videoSha256':digest(video),'configSha256':digest(cp),'decodedFrames':len(a),'failures':fail,'reviewedExceptionsUsed':used,'measurements':summary,'visualReviewOnly':c['visualReviewOnly'],'naturalRedrawAllowed':True}
 def main():
  p=argparse.ArgumentParser();p.add_argument('--root',type=Path,default=HERE.parents[1]);p.add_argument('--scene',action='append');p.add_argument('--report',type=Path);args=p.parse_args();policy=json.loads((HERE/'policy-lock.json').read_text());reports=[]
@@ -73,6 +81,8 @@ def main():
  else:
   active={str(e['number']) for e in json.loads(catalogPath.read_text()).get('entries',[]) if e.get('storyMedia')}
   for unknown in active-set(policy['scenes']):reports.append({'asset':unknown,'status':'FAIL','failures':[{'check':'unknown_catalog_scene_without_reviewed_roi_config'}]})
+ for moduleName,expected in policy.get('guardModules',{}).items():
+  if digest(contained(HERE,moduleName))!=expected:reports.append({'status':'FAIL','failures':[{'check':'guard_module_hash_mismatch','module':moduleName}]})
  for n in args.scene or sorted(policy['scenes']):
   try:reports.append(check_scene(args.root,HERE/'configs'/f'{n}.json',policy))
   except Exception as e:reports.append({'asset':n,'status':'FAIL','failures':[{'check':'missing_unreviewed_or_unreadable_scene','detail':str(e)}]})
