@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "videoSha256": "1915c116f67779259c9433a5c5e950ec7f3200d8c665b096bff2480dd5df0e3c",
+  "geometrySha256": "8bae566be5581aead432566f5f5147d2af2627c90ca65ee852691825c62afa79",
+  "reviewed": {
+    "allOrderedPoses": true,
+    "contactAndAnatomy": true,
+    "fixedCameraAndProps": true,
+    "completeLoopAndMeaning": true,
+    "genuineOcclusionInEveryPose": true
+  },
+  "status": "accepted-exact-component-media",
+  "nativeDialogueSha256": "eeed18b0159dd2675847b5e77f700c4d40f9c442cb4115ea143dcf78bc0011b6",
+  "reviewDate": "2026-10-10",
+  "reviewReportSha256": "80512a75204216baed3e7a56f225b330b7ec05e7912aacb2c359984d5f92b764",
+  "limitations": "Ordered poses, snapshots and foreground playback telemetry support review, with discrete held poses. Declared partial-shoe and genuine-occlusion scopes remain explicit; full anatomy, mechanism contact contours and meaning remain visual-review-only."
+}

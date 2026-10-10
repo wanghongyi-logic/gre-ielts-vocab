@@ -8,7 +8,7 @@ const fields = {
   usage: ['senseZh','explanationZh','collocations'],
   collocation: ['phrase','meaningZh','usageZh'],
   example: ['textEn','translationZh','explanationZh'],
-  equivalent: ['word','comparisonZh']
+  equivalent: ['word','comparisonZh','source']
 };
 const text = value => typeof value === 'string' && value.trim().length > 0;
 function shape(value, name) {
@@ -48,7 +48,7 @@ export function validateEntry(entry, baselineLesson) {
   // Qualified editorial exception: no verified GRE equivalent pair for awning.
   const reviewedEmptyEquivalents=entry.number===182&&entry.word==='awning';
   list(entry.equivalents, 'equivalents', reviewedEmptyEquivalents?0:1);
-  for (const item of entry.equivalents) { shape(item, 'equivalent'); required(item, ['word','comparisonZh'], 'equivalent'); }
+  for (const item of entry.equivalents) { shape(item, 'equivalent'); required(item, ['word','comparisonZh'], 'equivalent'); if (Object.hasOwn(item,'source') && item.source !== 'zhangwei_dedicated_2021') throw new TypeError('Invalid equivalent source'); }
   if (!entry.usage.some(item => item.collocations.length)) throw new TypeError('Missing collocations');
   return entry;
 }

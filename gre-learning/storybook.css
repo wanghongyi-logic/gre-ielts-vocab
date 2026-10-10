@@ -147,3 +147,6 @@ body.bookmarks-collapsed{--bookmark-gutter:28px}
 
 /* Silent dialogue stages keep their reserved band but show no empty outline. */
 .story-dialogue:empty{visibility:hidden}
+
+/* Pair-specific source mark; absent metadata leaves existing layout unchanged. */
+.equivalent-source{display:inline-block;margin-inline-start:.45em;padding:0 .24em;border:1px solid currentColor;border-radius:2px;font-size:.6em;font-weight:500;line-height:1.25;vertical-align:.12em;color:var(--ink-muted,#6f765e);white-space:nowrap}

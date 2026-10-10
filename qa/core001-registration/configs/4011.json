@@ -1,0 +1,81 @@
+{
+  "asset": 4011,
+  "width": 512,
+  "height": 512,
+  "fps": 25,
+  "frames": 216,
+  "thresholds": {
+    "maxAdjacentContactDxPx": 3.0,
+    "maxAdjacentSoleDyPx": 2.0,
+    "maxAdjacentSoleWidthDeltaPx": 6.0,
+    "maxBodyHeightRangeRatio": 0.03
+  },
+  "visibleFootNames": [],
+  "nativeOverlayRegions": [],
+  "footRois": {},
+  "contactDetector": "no_visible_contacts_v1",
+  "contactVisibility": "fully_occluded_by_solid_counter",
+  "occlusionAnchor": "solid-counter",
+  "backgroundReferences": {},
+  "staticAnchors": [
+    {
+      "id": "solid-counter",
+      "roi": [
+        115,
+        424,
+        188,
+        449
+      ],
+      "maxMeanAbsoluteRgbError": 1.0,
+      "minDarkContourIoU": 0.985,
+      "enabledAllFrames": true
+    },
+    {
+      "id": "bread",
+      "roi": [
+        48,
+        302,
+        115,
+        341
+      ],
+      "maxMeanAbsoluteRgbError": 1.0,
+      "minDarkContourIoU": 0.985,
+      "enabledAllFrames": true
+    }
+  ],
+  "actionRois": [
+    {
+      "id": "tiny-crumb-pinch",
+      "roi": [
+        252,
+        219,
+        373,
+        351
+      ],
+      "minPeakMeanRgbChange": 1.0
+    },
+    {
+      "id": "reaction",
+      "roi": [
+        271,
+        57,
+        437,
+        228
+      ],
+      "minPeakMeanRgbChange": 1.0
+    }
+  ],
+  "bodyRois": {},
+  "visualReviewOnly": [
+    "Complete character anatomy, proportions and meaningful gesture trajectory.",
+    "Lower bodies are genuinely hidden behind an opaque table; no numerical foot pass is claimed."
+  ],
+  "footMeasurementModes": {},
+  "nativeDialogueSha256": "eeed18b0159dd2675847b5e77f700c4d40f9c442cb4115ea143dcf78bc0011b6",
+  "reviewEvidence": "qa/core001-registration/reviews/4011.json",
+  "video": "gre-learning/story-media/4011-1915c116f67779259c9433a5c5e950ec7f3200d8c665b096bff2480dd5df0e3c.mp4",
+  "videoSha256": "1915c116f67779259c9433a5c5e950ec7f3200d8c665b096bff2480dd5df0e3c",
+  "poster": "gre-learning/story-media/4011-91448b589dbca93d47c511ae554f88e0fb7a4dbff6d8e8181f45bcf211c5757a.webp",
+  "posterSha256": "91448b589dbca93d47c511ae554f88e0fb7a4dbff6d8e8181f45bcf211c5757a",
+  "reviewEvidenceSha256": "dd53744dd81dd9076b81f97acef421ea38de7741635526e35f924d12e672f89c"
+}

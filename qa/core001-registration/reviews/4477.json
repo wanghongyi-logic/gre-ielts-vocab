@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "videoSha256": "00814cd85bbd5ac35dba853eca41bc1e55cc7c3939638f4160bd0f10aec8e06e",
+  "geometrySha256": "3035484d043ec3152cc9973a24ecdd12e6d6e1e5693699bc01c4fdbf3cddab74",
+  "reviewed": {
+    "allOrderedPoses": true,
+    "contactAndAnatomy": true,
+    "fixedCameraAndProps": true,
+    "completeLoopAndMeaning": true,
+    "partialFarShoeEvidence": true
+  },
+  "status": "accepted-exact-component-media",
+  "reviewDate": "2026-10-10",
+  "reviewReportSha256": "1dbd65e5f34f8d332fe674725d5f7116d2d8b071c64eb1789fde4847da826129",
+  "limitations": "Ordered poses, snapshots and foreground playback telemetry support review; discrete held-pose animation remains. Far-shoe evidence is explicitly partial and full contours remain visual-review-only.",
+  "nativeDialogueSha256": "eeed18b0159dd2675847b5e77f700c4d40f9c442cb4115ea143dcf78bc0011b6"
+}
