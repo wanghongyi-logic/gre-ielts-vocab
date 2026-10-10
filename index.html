@@ -6,11 +6,12 @@
  <title>词汇精学</title><link rel="icon" href="./icon-192-v2.png"><link rel="manifest" href="./manifest.webmanifest">
  <link rel="stylesheet" href="./gre-learning/learning.css">
  <link rel="stylesheet" href="./gre-learning/motion.css">
+ <link rel="stylesheet" href="./gre-learning/mobile-learning.css">
 </head>
 <body>
- <aside id="release-summary" aria-label="词汇学习进度" style="padding:6px 18px;font:12px/1.5 sans-serif;background:#e5eadb">词汇学习</aside>
+ <aside id="release-summary" aria-label="词汇学习进度" class="sr-only">词汇学习</aside>
  <a class="skip-link" href="#word-content">跳到学习内容</a>
- <header class="site-header"><a class="brand" href="#/learn">词汇精学<span>GRE</span></a><div class="header-tools"><button class="word-counter" id="word-counter" type="button" aria-label="打开单词目录" aria-haspopup="dialog">— / —</button><button class="icon-button" id="open-search" type="button" aria-label="查找单词" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></button></div></header>
+ <header class="site-header"><div class="header-tools"><button class="word-counter" id="word-counter" type="button" aria-label="打开单词目录" aria-haspopup="dialog">— / —</button><button class="icon-button" id="open-search" type="button" aria-label="查找单词" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></button></div></header>
  <main id="word-content" tabindex="-1" aria-keyshortcuts="ArrowLeft ArrowRight"><p class="initial-status" role="status">正在打开学习内容…</p></main>
 
  <dialog id="word-picker" aria-labelledby="picker-title"><div class="picker-heading"><h2 id="picker-title">选择一个词</h2><button class="icon-button" id="close-search" type="button" aria-label="关闭单词目录"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input id="word-search" type="search" placeholder="搜索英文或中文释义" autocomplete="off" aria-label="搜索英文或中文释义"></label><p id="search-count" class="search-count" aria-live="polite"></p><div id="word-results" class="word-results"></div></dialog>

@@ -8,7 +8,7 @@ import {installMeaningMotion,setMotionLesson,renderMeaningMotion} from './motion
 installMobileZoomGuard();
 const entries = catalog.entries;
 document.getElementById('release-summary').textContent = `词汇学习 · 已收录 ${entries.length} / ${catalog.libraryTarget} 词`;
-document.querySelector('.brand').href = entries.length ? `#/learn/${entries[0].number}` : '#/learn';
+
 const loader = new LessonLoader(catalog);
 let selectedNumber;
 let currentArt;
@@ -19,7 +19,6 @@ const search = document.getElementById('word-search');
 const counter = document.getElementById('word-counter');
 import {renderWordPage} from './view.js';
 let current;
-let observer;
 let speech;
 const meaningMotion = installMeaningMotion(main);
 const swipe = installWordSwipe({surface:main,hintHost:document.querySelector('.site-header'),picker,
@@ -35,7 +34,6 @@ async function render() {
   const selected=entries.find(entry=>entry.number===number);
   if(selected){const position=neighboringNumbers(entries,number);document.title=`${selected.word} · 词汇精学`;counter.textContent=`${position.index+1} / ${entries.length}`;counter.setAttribute('aria-label',`第 ${position.index+1} 个词，共 ${entries.length} 个。打开单词目录`);}
   current=null;currentArt=null;setMotionLesson(null);
-  observer?.disconnect();
   window.speechSynthesis?.cancel();
   if (!number) { loader.cancel();main.removeAttribute('aria-busy');counter.textContent='0 / 0';counter.setAttribute('aria-label','暂无可学习的单词');document.title='词汇精学';main.innerHTML = renderNotReady(); swipe.cancel(); return; }
   main.innerHTML='<p class="initial-status" role="status">正在打开学习内容…</p>';
@@ -65,13 +63,7 @@ async function render() {
   if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) { speakButton.disabled = true; speakButton.title = '此浏览器暂不支持朗读'; }
   window.scrollTo({top:0,behavior:'instant'});
   swipe.rendered(`${current.word}，第 ${position.index + 1} 个词，共 ${entries.length} 个`);
-  if ('IntersectionObserver' in window) {
-    observer = new IntersectionObserver(records=>{
-      const visible = records.filter(record=>record.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top)[0];
-      if (visible) main.querySelectorAll('[data-section]').forEach(link=>{if(link.dataset.section===visible.target.id)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
-    },{rootMargin:'-115px 0px -55% 0px',threshold:0});
-    main.querySelectorAll('[data-learning-panel]').forEach(section=>observer.observe(section));
-  }
+
 }
 function renderResults() {
   const matches = filterEntries(entries, search.value);
