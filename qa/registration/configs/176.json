@@ -1,0 +1,50 @@
+{
+  "asset": 176,
+  "width": 312,
+  "height": 312,
+  "fps": 25,
+  "footRois": {
+    "leftPerson": [
+      52,
+      272,
+      145,
+      299
+    ],
+    "rightPerson": [
+      184,
+      271,
+      260,
+      299
+    ]
+  },
+  "videoSha256": "726f20d96f22abc0b4c5a0402d079cefd49f5941d2dbb8362ca449feff77a3bb",
+  "posterSha256": "086e727c6e1f3a00cf6464b9b87e32d7e0b752517a92136c9c5c6b57eb8a96c7",
+  "posterMustEqualDecodedFrame0": false,
+  "frames": 222,
+  "video": "gre-learning/story-media/176-726f20d96f22abc0b4c5a0402d079cefd49f5941d2dbb8362ca449feff77a3bb.mp4",
+  "poster": "gre-learning/story-media/176-086e727c6e1f3a00cf6464b9b87e32d7e0b752517a92136c9c5c6b57eb8a96c7.webp",
+  "bodyRois": {
+    "mainCharacter": [
+      48,
+      0,
+      148,
+      303
+    ],
+    "rightCharacter": [
+      182,
+      40,
+      268,
+      303
+    ]
+  },
+  "thresholds": {
+    "maxAdjacentContactDxPx": 3.0,
+    "maxAdjacentSoleDyPx": 2.0,
+    "maxAdjacentSoleWidthDeltaPx": 6.0,
+    "maxBodyHeightRangeRatio": 0.03
+  },
+  "reviewedExceptions": [],
+  "visualReviewOnly": [
+    "Narrative meaning, anatomy, face/hand/prop continuity, camera framing and expressive contour changes; numeric contacts supplement visual review."
+  ]
+}

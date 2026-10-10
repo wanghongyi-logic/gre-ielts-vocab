@@ -1,0 +1,39 @@
+{
+  "asset": 179,
+  "width": 768,
+  "height": 768,
+  "fps": 24,
+  "frames": 96,
+  "metricScaleTo312": 0.40625,
+  "footRois": {
+    "combinedShoes": [
+      442,
+      388,
+      552,
+      455
+    ]
+  },
+  "bodyRois": {
+    "seatedCharacter": [
+      440,
+      80,
+      640,
+      455
+    ]
+  },
+  "video": "gre-learning/story-media/179-017b1d855385aaebfe4b88d769e90289ab98688a5457b538db652f84c0f6fd9a.mp4",
+  "videoSha256": "017b1d855385aaebfe4b88d769e90289ab98688a5457b538db652f84c0f6fd9a",
+  "poster": "gre-learning/story-media/179-d1acfd096ec164613fefca6a8699707bb94392e65a660f066c093491fbf52809.webp",
+  "posterSha256": "d1acfd096ec164613fefca6a8699707bb94392e65a660f066c093491fbf52809",
+  "posterMustEqualDecodedFrame0": true,
+  "thresholds": {
+    "maxAdjacentContactDxPx": 3.0,
+    "maxAdjacentSoleDyPx": 2.0,
+    "maxAdjacentSoleWidthDeltaPx": 6.0,
+    "maxBodyHeightRangeRatio": 0.03
+  },
+  "reviewedExceptions": [],
+  "visualReviewOnly": [
+    "Shoes overlap in projection; combined contact ROI is measured. Individual shoe anatomy, bench, water, framing and narrative remain visual-review gates."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "asset": 177,
+  "width": 312,
+  "height": 312,
+  "fps": 25,
+  "footRois": {
+    "front": [
+      127,
+      290,
+      189,
+      312
+    ]
+  },
+  "videoSha256": "ab1e0264b1e7c88b672b46c1203fd8ac0c2af67ab2b9cfc66c6eea8d8e7b1ff0",
+  "posterSha256": "0871705a513d5f97f1243f520b864b3b4bf6da1d8dd555b9acef35e5ee66a2ce",
+  "posterMustEqualDecodedFrame0": false,
+  "frames": 144,
+  "video": "gre-learning/story-media/177-ab1e0264b1e7c88b672b46c1203fd8ac0c2af67ab2b9cfc66c6eea8d8e7b1ff0.mp4",
+  "poster": "gre-learning/story-media/177-0871705a513d5f97f1243f520b864b3b4bf6da1d8dd555b9acef35e5ee66a2ce.webp",
+  "bodyRois": {
+    "mainCharacter": [
+      76,
+      0,
+      191,
+      312
+    ]
+  },
+  "thresholds": {
+    "maxAdjacentContactDxPx": 3.0,
+    "maxAdjacentSoleDyPx": 2.0,
+    "maxAdjacentSoleWidthDeltaPx": 6.0,
+    "maxBodyHeightRangeRatio": 0.03
+  },
+  "reviewedExceptions": [
+    {
+      "id": "177-existing-narrative-reset-v121",
+      "asset": 177,
+      "videoSha256": "ab1e0264b1e7c88b672b46c1203fd8ac0c2af67ab2b9cfc66c6eea8d8e7b1ff0",
+      "foot": "front",
+      "fromFrame": 143,
+      "toFrame": 0,
+      "maxContactDxPx": 3.0,
+      "maxSoleDyPx": 3.0,
+      "rationale": "Existing approved narrative final-pose to initial-pose reset, with declared reset transition. Exact unchanged video only; internal transitions retain strict global limits."
+    }
+  ],
+  "visualReviewOnly": [
+    "Narrative meaning, anatomy, face/hand/prop continuity, camera framing and expressive contour changes; numeric contacts supplement visual review.",
+    "Rear shoe partly overlaps front shoe/table; front shoe is numeric contact proxy, rear shoe reviewed visually."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "asset": 178,
+  "width": 312,
+  "height": 312,
+  "fps": 25,
+  "footRois": {
+    "left": [
+      63,
+      284,
+      110,
+      309
+    ],
+    "right": [
+      111,
+      281,
+      174,
+      307
+    ]
+  },
+  "videoSha256": "d19d4f94d0b9f8d9788e1e8020e75c4bd41c2f820b58deacc9842e18c9eac74e",
+  "posterSha256": "95fdd0e8ad43fba8c71bbad2bf8e2dc80d9d1dd7f8d9be7a996760553170cb85",
+  "posterMustEqualDecodedFrame0": true,
+  "frames": 172,
+  "video": "gre-learning/story-media/178-d19d4f94d0b9f8d9788e1e8020e75c4bd41c2f820b58deacc9842e18c9eac74e.mp4",
+  "poster": "gre-learning/story-media/178-95fdd0e8ad43fba8c71bbad2bf8e2dc80d9d1dd7f8d9be7a996760553170cb85.webp",
+  "bodyRois": {
+    "mainCharacter": [
+      57,
+      0,
+      196,
+      309
+    ]
+  },
+  "thresholds": {
+    "maxAdjacentContactDxPx": 3.0,
+    "maxAdjacentSoleDyPx": 2.0,
+    "maxAdjacentSoleWidthDeltaPx": 6.0,
+    "maxBodyHeightRangeRatio": 0.03
+  },
+  "reviewedExceptions": [],
+  "visualReviewOnly": [
+    "Narrative meaning, anatomy, face/hand/prop continuity, camera framing and expressive contour changes; numeric contacts supplement visual review."
+  ]
+}

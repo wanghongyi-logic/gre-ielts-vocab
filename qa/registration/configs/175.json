@@ -1,0 +1,56 @@
+{
+  "asset": 175,
+  "width": 312,
+  "height": 312,
+  "fps": 25,
+  "footRois": {
+    "left": [
+      119,
+      279,
+      160,
+      302
+    ],
+    "right": [
+      161,
+      275,
+      213,
+      299
+    ]
+  },
+  "videoSha256": "9ada9463e3c9612e669416638afc17d94617d01cb9500b35b06df5b4a2960928",
+  "posterSha256": "165d22296abdceb8847204458f1e0b71b995af1085f19ec9d716db4cfcc1ceef",
+  "posterMustEqualDecodedFrame0": false,
+  "frames": 169,
+  "video": "gre-learning/story-media/175-9ada9463e3c9612e669416638afc17d94617d01cb9500b35b06df5b4a2960928.mp4",
+  "poster": "gre-learning/story-media/175-165d22296abdceb8847204458f1e0b71b995af1085f19ec9d716db4cfcc1ceef.webp",
+  "bodyRois": {
+    "mainCharacter": [
+      112,
+      0,
+      213,
+      307
+    ]
+  },
+  "thresholds": {
+    "maxAdjacentContactDxPx": 3.0,
+    "maxAdjacentSoleDyPx": 2.0,
+    "maxAdjacentSoleWidthDeltaPx": 6.0,
+    "maxBodyHeightRangeRatio": 0.03
+  },
+  "reviewedExceptions": [
+    {
+      "id": "175-existing-narrative-reset-v121",
+      "asset": 175,
+      "videoSha256": "9ada9463e3c9612e669416638afc17d94617d01cb9500b35b06df5b4a2960928",
+      "foot": "left",
+      "fromFrame": 168,
+      "toFrame": 0,
+      "maxContactDxPx": 3.5,
+      "maxSoleDyPx": 2.0,
+      "rationale": "Existing approved narrative final-pose to initial-pose reset, with declared reset transition. Exact unchanged video only; internal transitions retain strict global limits."
+    }
+  ],
+  "visualReviewOnly": [
+    "Narrative meaning, anatomy, face/hand/prop continuity, camera framing and expressive contour changes; numeric contacts supplement visual review."
+  ]
+}
