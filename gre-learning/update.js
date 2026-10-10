@@ -1,6 +1,6 @@
 (() => {
   if (!('serviceWorker' in navigator) || location.protocol === 'file:' || location.hostname === 'app.local') return;
-  const build = '113';
+  const build = '114';
   let refreshing = false;
   let lastUpdateCheck = 0;
   let registration;
@@ -33,11 +33,7 @@
   navigator.serviceWorker.addEventListener('controllerchange',inspectController);
   navigator.serviceWorker.addEventListener('message',event=>{
     const data=event.data||{};
-    if(data.type==='APP_ACTIVATED'&&event.source===navigator.serviceWorker.controller)reloadForBuild(data.build);
-    if(data.type==='CACHE_START')show('正在准备离线学习…');
-    if(data.type==='CACHE_PROGRESS')show(`正在准备离线学习 ${Math.round(Number(data.percent)||0)}%`);
-    if(data.type==='CACHE_READY')show('已可离线学习',true);
-    if(data.type==='CACHE_ERROR')show('更新暂未完成，联网后会自动重试',true);
+    if(data.type==='SHELL_READY' && event.source===navigator.serviceWorker.controller)show('离线页面已就绪；仅已下载的词可离线打开',true);
   });
   navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(value=>{
     registration=value;checkForUpdate(true);

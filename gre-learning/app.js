@@ -1,11 +1,16 @@
-import {getLearningEntries} from './content.js';
+import {LessonLoader,expandCatalog} from './lesson-loader.js';
+const catalog=expandCatalog(await fetch(new URL('./catalog.json',import.meta.url),{cache:'no-cache'}).then(response=>{if(!response.ok)throw new Error('Lesson index unavailable');return response.json();}));
 import {escapeLearningText as escape, renderNotReady} from './render.js';
 import {resolveWordNumber, filterEntries, neighboringNumbers} from './model.js';
-import {visualMnemonics} from './visuals.js';
+
 import {installWordSwipe, installMobileZoomGuard} from './swipe.js';
-import {installMeaningMotion} from './motion.js';
+import {installMeaningMotion,setMotionLesson,renderMeaningMotion} from './motion.js';
 installMobileZoomGuard();
-const entries = getLearningEntries();
+const entries = catalog.entries;
+const loader = new LessonLoader(catalog);
+let selectedNumber;
+let currentArt;
+let renderGeneration=0;
 const main = document.getElementById('word-content');
 const picker = document.getElementById('word-picker');
 const search = document.getElementById('word-search');
@@ -16,25 +21,44 @@ let observer;
 let speech;
 const meaningMotion = installMeaningMotion(main);
 const swipe = installWordSwipe({surface:main,hintHost:document.querySelector('.site-header'),picker,
-  getNeighbor:direction=>neighboringNumbers(entries,current?.number)[direction],onNavigate:navigate});
+  getNeighbor:direction=>neighboringNumbers(entries,selectedNumber)[direction],onNavigate:navigate});
 function remember() { try { return sessionStorage.getItem('gre-learning-current-v1'); } catch { return null; } }
-function navigate(number) { if (number && number !== current?.number) location.hash = `/learn/${number}`; }
-function render() {
+function navigate(number) { if (number && number !== selectedNumber) location.hash = `/learn/${number}`; }
+async function render() {
+  const generation=++renderGeneration;
+  const startingHash=location.hash;
   meaningMotion.cancel();
-  const number = resolveWordNumber(location.hash, entries, remember());
-  current = entries.find(entry => entry.number === number);
+  const number = resolveWordNumber(startingHash, entries, remember());
+  selectedNumber=number;
+  const selected=entries.find(entry=>entry.number===number);
+  if(selected){const position=neighboringNumbers(entries,number);document.title=`${selected.word} · 词汇精学`;counter.textContent=`${String(position.index+1).padStart(2,'0')} / ${entries.length}`;counter.setAttribute('aria-label',`第 ${position.index+1} 个词，共 ${entries.length} 个。打开单词目录`);}
+  current=null;currentArt=null;setMotionLesson(null);
   observer?.disconnect();
   window.speechSynthesis?.cancel();
-  if (!current) { main.innerHTML = renderNotReady(); swipe.cancel(); return; }
+  if (!number) { loader.cancel();main.innerHTML = renderNotReady(); swipe.cancel(); return; }
+  main.innerHTML='<p class="initial-status" role="status">正在打开学习内容…</p>';
+  main.setAttribute('aria-busy','true');
+  swipe.cancel();
+  let loaded;
+  try { loaded=await loader.select(number); } catch(error) {
+    if(generation!==renderGeneration||location.hash!==startingHash||selectedNumber!==number||error.name==='AbortError')return;
+    main.removeAttribute('aria-busy');
+    main.innerHTML=`<div class="initial-status" role="status"><p>${navigator.onLine===false?'此词尚未下载，请联网后重试':'学习内容暂时无法打开，请重试'}</p><button type="button" data-retry>重试</button></div>`;
+    return;
+  }
+  if(generation!==renderGeneration||location.hash!==startingHash||selectedNumber!==number)return;
+  current=loaded.entry;currentArt=loaded.art;setMotionLesson(currentArt);
+  main.removeAttribute('aria-busy');
   try { sessionStorage.setItem('gre-learning-current-v1', String(number)); } catch {}
   if (location.hash !== `#/learn/${number}`) history.replaceState(null, '', `#/learn/${number}`);
   document.title = `${current.word} · 词汇精学`;
   const position = neighboringNumbers(entries, number);
   counter.textContent = `${String(position.index + 1).padStart(2, '0')} / ${entries.length}`;
   counter.setAttribute('aria-label', `第 ${position.index + 1} 个词，共 ${entries.length} 个。打开单词目录`);
-  const visual = visualMnemonics[number];
+  const visual = currentArt.visual;
   main.innerHTML = renderWordPage(current, visual);
   meaningMotion.refresh();
+  loader.prefetchAdjacent(number);
   const speakButton = main.querySelector('[data-speak]');
   if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) { speakButton.disabled = true; speakButton.title = '此浏览器暂不支持朗读'; }
   window.scrollTo({top:0,behavior:'instant'});
@@ -66,6 +90,7 @@ picker.addEventListener('click',event=>{
   if(event.target===picker){const box=picker.getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)closePicker();}
 });
 main.addEventListener('click',event=>{
+  if(event.target.closest('[data-retry]')){render();return;}
   const link=event.target.closest('[data-section]');
   if(link){event.preventDefault();document.getElementById(link.dataset.section)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});return;}
   const button=event.target.closest('[data-speak]');
@@ -80,6 +105,16 @@ main.addEventListener('click',event=>{
   window.speechSynthesis.speak(speech);
 });
 window.addEventListener('hashchange',render);
-window.addEventListener('pagehide',()=>window.speechSynthesis?.cancel());
+const preference=matchMedia('(prefers-reduced-motion: reduce)');
+function replaceMotionBranch(){
+  if(!current||!currentArt)return;
+  const root=main.querySelector('[data-meaning-motion]');if(!root)return;
+  const x=window.scrollX,y=window.scrollY;meaningMotion.cancel();
+  root.outerHTML=renderMeaningMotion(current,currentArt.visual);meaningMotion.refresh();
+  window.scrollTo({left:x,top:y,behavior:'instant'});
+}
+preference.addEventListener('change',replaceMotionBranch);
+window.addEventListener('pagehide',()=>{window.speechSynthesis?.cancel();loader.cancel();renderGeneration++;});
+window.addEventListener('pageshow',event=>{if(event.persisted&&!current)render();});
 render();
 window.dispatchEvent(new Event('vocab-app-ready'));

@@ -13,7 +13,7 @@
  .motion-comparison figure+figure{border-left:1px solid #dce2d6}
 }
 @media(prefers-reduced-motion:reduce) and (max-width:599px){
- .motion-comparison{grid-template-columns:1fr;gap:14px}
+ .motion-comparison{grid-template-columns:1fr;gap:14px;padding:10px 0}
  .motion-comparison figure+figure{border-left:0;border-top:1px solid #dce2d6;padding-top:10px}
 }
 

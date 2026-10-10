@@ -1,24 +1,15 @@
-import {motionArtwork} from './motion-artwork.js';
+// Only the selected, integrity-checked inert scene is retained by the renderer.
+const motionArtwork=Object.create(null);
+const motionExamples=Object.create(null);
+export function setMotionLesson(art){for(const key of Object.keys(motionArtwork))delete motionArtwork[key];for(const key of Object.keys(motionExamples))delete motionExamples[key];if(art){motionArtwork[art.number]=art.layers;motionExamples[art.number]=art.example;}}
 const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const descriptions = [
- ['abandon','绘图者正在桌前设计一个尚未完成的项目','绘图者主动放下笔并离开，未完成的项目留在桌上'],
- ['abase','两位成人起初平等站立','其中一人用自我贬低的话讨好对方并低身恳求：这是 abase oneself 的一个例子'],
- ['abash','讲解者自信地写出算式','算式被纠正后，讲解者脸红并抬手掩嘴，露出窘迫的神情'],
- ['abate','暴雨和强风使树明显弯曲','雨势与风力逐渐减弱，但小雨和微风仍在继续'],
- ['abbreviate','同一个人使用完整称谓 Doctor Chen','称谓缩写成 Dr. Chen，所指的人和称谓含义不变'],
- ['abdicate','戴着王冠的人仍在王位旁','这个例子中，戴冠者取下王冠放在王座上，并离开王位'],
- ['aberrant','一组点沿同一常见模式排列','其中一个点偏离其余同类的通常模式；偏离本身不等于错误'],
- ['abet','一人准备偷取窗口里的钱袋，梯子还在晃动','帮手扶稳梯子后，偷取钱袋的动作得以继续；画面中的帮手助成了这件坏事'],
- ['abeyance','完整计划处于待执行状态','计划被放入待定夹，暂缓执行但仍完整保留，没有被取消'],
- ['abhor','一盘发霉的食物靠近，人尚未作出反应','人皱眉厌恶地后缩，并竖掌拒绝，表现强烈反感']
-];
-export const motionExamples = Object.freeze(Object.fromEntries(descriptions.map(([word,before,after],index)=>[index+1,{word,before,after,summary:`${before}；${after}。`}])));
+export {motionExamples};
 const defaults={x:0,y:0,sx:1,sy:1,rotate:0,ox:0,oy:0,opacity:1};
 // All intermediate poses are rigid transforms of coherent objects. No interpolated limb paths.
 export function motionState(frames,progress) {
   let left=frames[0],right=frames[frames.length-1];
   for(let i=1;i<frames.length;i++){if(progress<=frames[i].at){left=frames[i-1];right=frames[i];break;}}
-  let t=Math.max(0,Math.min(1,(progress-left.at)/(right.at-left.at||1)));t=t*t*(3-2*t);
+  let t=Math.max(0,Math.min(1,(progress-left.at)/(right.at-left.at||1)));t=right.easing==='quadratic-in'?t*t:t*t*(3-2*t);
   if(right.step===true)t=progress<right.at?0:1;
   return Object.fromEntries(Object.entries(defaults).map(([key,value])=>[key,(left[key]??value)+((right[key]??value)-(left[key]??value))*t]));
 }
@@ -40,9 +31,9 @@ function scene(number,visual,suffix,phase,live=false) {
  const example=motionExamples[number],id=`meaning-${number}-${suffix}`;
  return `<svg xmlns="http://www.w3.org/2000/svg" class="meaning-motion-scene" ${live?'data-motion-stage=""':''} data-phase="${phase}" viewBox="0 0 360 248" role="img" aria-labelledby="${id}-title ${id}-desc"><title id="${id}-title">${example.word} · ${live?'词义动画':phase==='before'?'变化前':'变化后'}</title><desc id="${id}-desc">${escape(live?example.summary:example[phase])}</desc>${artwork(number,id,phase==='after'?1:0)}<g class="motion-ending-word" ${live?'data-motion-ending-word=""':''} opacity="${phase==='after'?1:0}" aria-hidden="true"><rect x="0" y="200" width="360" height="48" fill="#f6f5ef"/><text x="180" y="233" text-anchor="middle" style="font-family:Georgia,serif;font-size:29px;font-weight:600;fill:#173d36;stroke:none">${escape(example.word)}</text></g></svg>`;
 }
-export function renderMeaningMotion(entry,visual) {
+export function renderMeaningMotion(entry,visual,{reduced=globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches??false}={}) {
  const example=motionExamples[entry.number];if(!visual||!example||!motionArtwork[entry.number]||example.word!==entry.word)return '';
- return `<div class="meaning-motion" data-meaning-motion="${entry.number}"><div class="motion-live">${scene(entry.number,visual,'live','before',true)}</div><div class="motion-comparison"><figure><figcaption>变化前</figcaption>${scene(entry.number,visual,'before','before')}</figure><figure><figcaption>变化后</figcaption>${scene(entry.number,visual,'after','after')}</figure></div></div>`;
+ return `<div class="meaning-motion" data-meaning-motion="${entry.number}">${reduced?`<div class="motion-comparison"><figure><figcaption>变化前</figcaption>${scene(entry.number,visual,'before','before')}</figure><figure><figcaption>变化后</figcaption>${scene(entry.number,visual,'after','after')}</figure></div>`:`<div class="motion-live">${scene(entry.number,visual,'live','before',true)}</div>`}</div>`;
 }
 // Preserve the full cause/action/result, then reveal the English word in a dedicated footer.
 export function motionTimeline(elapsed) {
