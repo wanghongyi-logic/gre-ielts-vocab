@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:gre-learning:entry:v3",
+  "$id": "urn:gre-learning:entry:v4",
   "title": "GRE learning entry",
   "type": "object",
   "additionalProperties": false,
@@ -35,7 +35,6 @@
     },
     "mnemonics": {
       "type": "array",
-      "minItems": 2,
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -69,17 +68,7 @@
           "kind"
         ]
       },
-      "maxItems": 3,
-      "contains": {
-        "properties": {
-          "original": {
-            "const": true
-          }
-        },
-        "required": [
-          "original"
-        ]
-      }
+      "maxItems": 3
     },
     "usage": {
       "type": "array",
@@ -197,5 +186,64 @@
     "usage",
     "examples",
     "equivalents"
+  ],
+  "anyOf": [
+    {
+      "properties": {
+        "mnemonics": {
+          "minItems": 2,
+          "contains": {
+            "properties": {
+              "original": {
+                "const": true
+              }
+            },
+            "required": [
+              "original"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "number": {
+          "const": 175
+        },
+        "word": {
+          "const": "avarice"
+        },
+        "mnemonics": {
+          "const": [
+            {
+              "method": "拼写联想｜avaRICE，米仓满了还要抢",
+              "textZh": "抓住词尾 RICE（米）：米商的仓库已经塞满，他还把别人待售的米袋往怀里抢，眼里想的全是钱。米越囤越多，贪心没有尽头。这里借拼写记忆；词尾读 /rɪs/。",
+              "original": false,
+              "kind": "invented_association"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "properties": {
+        "number": {
+          "const": 176
+        },
+        "word": {
+          "const": "aver"
+        },
+        "mnemonics": {
+          "const": [
+            {
+              "method": "熟词联想｜VERy sure，aVER",
+              "textZh": "very 和 aver 同出表示“真实”的词根。借 very sure（非常肯定）记 aVER：别人再三追问，他依然直视对方说“我确定，就是这样”——郑重断言。",
+              "original": false,
+              "kind": "word_family"
+            }
+          ]
+        }
+      }
+    }
   ]
 }

@@ -1,3 +1,4 @@
+import {validateTrackedArt} from './motion-tracks.js';
 import {validateEntry} from './schema.js';
 const abortError=()=>Object.assign(new Error('Request superseded'),{name:'AbortError'});
 export function expandCatalog(raw){
@@ -25,7 +26,7 @@ export class LessonLoader {
   if(hash!==key)throw new Error('Lesson integrity mismatch');
   if(signal?.aborted)throw abortError();
   const data=JSON.parse(new TextDecoder().decode(bytes));
-  if(data.schema!==1)throw new Error('Unsupported lesson schema');
+  if(data.schema!==1){if(data.schema!==2||!ref.url.startsWith('art-units/')||bytes.byteLength>2*1024*1024)throw new Error('Unsupported lesson schema');validateTrackedArt(data);}
   // First-load requests can finish before service-worker control. Persist verified bytes too.
   // Quota/private-mode failures affect offline availability, never successful live rendering.
   if(this.cacheStorage){try{const disk=await this.cacheStorage.open('gre-scalable-verified-units-v1');await disk.put(url.href,new Response(bytes,{headers:{'Content-Type':'application/json'}}));}catch{}}
@@ -42,7 +43,7 @@ export class LessonLoader {
   const meta=this.index.get(Number(number));if(!meta)throw new Error('Lesson is not reviewed and ready');
   const [unit,art]=await Promise.all([this.resource(meta.unit,signal,priority),this.resource(meta.art,signal,priority)]);
   const entry=unit.entries?.find(entry=>entry.number===meta.number);
-  if(!entry||entry.word!==meta.word||art.number!==meta.number||art.word!==meta.word||art.example?.word!==meta.word||!Array.isArray(art.layers))throw new Error('Incompatible lesson and artwork');
+  if(!entry||entry.word!==meta.word||art.number!==meta.number||art.word!==meta.word||art.example?.word!==meta.word||(art.schema===2?!Array.isArray(art.nodes):!Array.isArray(art.layers)))throw new Error('Incompatible lesson and artwork');
   validateEntry(entry);
   return {entry,art};
  }
