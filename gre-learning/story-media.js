@@ -49,8 +49,8 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
   cancel();mediaFailed=false;autoplayBlocked=false;media=nextMedia;video=surface.querySelector('[data-story-video]');if(!video)return;
   figure=video.closest('.story-illustration');toggle=figure.querySelector('[data-motion-toggle]');userPaused=pausedByMedia.get(media?.video?.sha256||media?.videoURL)||false;visible=true;
   const ownGeneration=generation;
-  toggle.addEventListener('click',()=>{if(ownGeneration!==generation)return;userPaused=!userPaused;if(!userPaused)autoplayBlocked=false;pausedByMedia.set(media?.video?.sha256||media?.videoURL,userPaused);sync();});
-  video.addEventListener('error',()=>{if(ownGeneration!==generation)return;mediaFailed=true;userPaused=true;video.pause();showPoster();toggle.hidden=true;stopFrame();});
+  toggle?.addEventListener('click',()=>{if(ownGeneration!==generation)return;userPaused=!userPaused;if(!userPaused)autoplayBlocked=false;pausedByMedia.set(media?.video?.sha256||media?.videoURL,userPaused);sync();});
+  video.addEventListener('error',()=>{if(ownGeneration!==generation)return;mediaFailed=true;userPaused=true;video.pause();showPoster();if(toggle)toggle.hidden=true;stopFrame();});
   if('IntersectionObserver' in win){observer=new win.IntersectionObserver(records=>{if(ownGeneration!==generation)return;visible=records.some(item=>item.isIntersecting);sync();},{threshold:.05});observer.observe(figure);}
   sync();
  }

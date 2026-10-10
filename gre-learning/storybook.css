@@ -11,3 +11,40 @@
 @media(min-width:760px){.book-spread{grid-template-rows:auto auto auto}.opening-page{display:contents}.word-hero{grid-column:1;grid-row:1;align-self:center;padding:24px 39px 0}.word-hero h1{font-size:76px}.story-illustration{grid-column:1;grid-row:2;max-width:350px;align-self:center;margin:0 auto 26px}.scene-opening{grid-column:2;grid-row:1;padding:33px 35px 12px}.scene-opening .word-meaning{font-size:24px}.scene-opening .english-meaning{font-size:18px;margin-bottom:16px}.scene-lead{font-size:16px;line-height:1.9}.memory-page{grid-column:2;grid-row:2;align-self:center;padding:18px 35px 30px}.mnemonic>p{font-size:17px;line-height:1.9}.mnemonic h3{font-size:21px}.spread-pagination{grid-row:3}.book-spread:after{content:'';position:absolute;inset:6px;pointer-events:none;border:1px solid #d9cdb64d}.word-hero:after{content:'';display:block;width:35px;margin-top:21px;border-bottom:1px solid #b8ab89}.mnemonic-marker{font-size:12px}.book-continuation{margin-top:32px}}
 .example-note,.collocations dd{font-size:16px}
 .story-dialogue-band{padding:0}.story-dialogue{position:absolute;top:3px;left:calc(var(--dialogue-x,.34)*100%);transform:translateX(-50%);margin:0}.story-dialogue:after{left:calc(50% - 5px)}
+
+/* A shallow, curved paper reverse follows the hand without shrinking the text. */
+.paper-turn{position:fixed;z-index:15;overflow:hidden;pointer-events:none;background:var(--paper);isolation:isolate;contain:layout paint style}
+.paper-turn-face{position:absolute;inset:0;overflow:hidden;background:var(--paper);will-change:clip-path}
+.paper-turn-fold{position:absolute;top:0;height:100%;background:linear-gradient(90deg,#e4d7bd 0%,#faf1de 5%,#fffaf0 42%,#fcf5e6 80%,#deceb0 100%);border-radius:var(--paper-bow) 9% 9% var(--paper-bow)/1% 35% 35% 1%;clip-path:polygon(0 1%,84% 0,100% 1.5%,100% 98.5%,10% 100%,0 99%);box-shadow:-1px 0 1px #fffdf5aa,2px 0 3px #6b573222;transform-origin:right center;will-change:left,width,transform;opacity:0}
+.paper-turn[data-direction=previous] .paper-turn-fold{background:linear-gradient(270deg,#e4d7bd 0%,#faf1de 5%,#fffaf0 42%,#fcf5e6 80%,#deceb0 100%);border-radius:9% var(--paper-bow) var(--paper-bow) 9%/35% 1% 1% 35%;clip-path:polygon(16% 0,100% 1%,100% 99%,90% 100%,0 98.5%,0 1.5%);transform-origin:left center;box-shadow:1px 0 1px #fffdf5aa,-2px 0 3px #6b573222}
+.paper-turn-shadow{position:absolute;top:0;bottom:0;width:9%;background:linear-gradient(90deg,#554323,transparent);filter:blur(5px);transform:translateX(-8%);will-change:left,opacity;opacity:0}
+.paper-turn[data-direction=previous] .paper-turn-shadow{transform:translateX(-92%);background:linear-gradient(270deg,#554323,transparent)}
+#word-content.is-swiping{user-select:none;-webkit-user-select:none;cursor:grabbing}
+#word-content.is-swipe-settling{pointer-events:none}
+.swipe-feedback{pointer-events:none;min-width:0;font-size:12px;border:0;background:#faf5e9ed;box-shadow:0 2px 12px #5343260c}
+.swipe-feedback .swipe-track{display:none}
+@media(prefers-reduced-motion:reduce){.paper-turn{display:none!important}}
+
+/* One media stage and one reading rhythm for every word in this book. */
+.story-illustration{width:min(100%,320px);max-width:320px;margin:9px auto 0;aspect-ratio:auto}
+.story-dialogue-band{height:58px;min-height:58px}
+.illustration-art{aspect-ratio:1;width:100%;overflow:hidden}
+.story-poster,.story-video{inset:0;width:100%;height:100%;object-fit:contain;object-position:center}
+.memory-page{padding:3px 26px 0}
+.memory-page .scene-opening{padding:0}
+.memory-page .mnemonics{margin-top:27px}
+.spread-pagination{justify-content:center;padding-top:26px}
+@media(max-width:759px){.word-hero{min-height:144px}.opening-page{padding-bottom:0}}
+@media(min-width:760px){
+ .book-spread{grid-template-rows:auto auto;align-items:start}
+ .opening-page{display:block;grid-column:1;grid-row:1;padding-bottom:26px;min-width:0}
+ .word-hero{min-height:188px;padding:24px 39px 0}
+ .story-illustration{width:min(100%,350px);max-width:350px;margin:0 auto}
+ .memory-page{grid-column:2;grid-row:1;align-self:start;padding:33px 35px 30px}
+ .memory-page .scene-opening{padding:0}
+ .memory-page .mnemonics{margin-top:30px}
+ .spread-pagination{grid-row:2;padding:13px 0}
+}
+@media(max-width:359px){.memory-page{padding-left:21px;padding-right:21px}}
+
+.paper-turn.is-loading:after{content:'正在翻开这一页…';position:absolute;inset:0;display:grid;place-items:center;font-size:16px;color:var(--muted)}

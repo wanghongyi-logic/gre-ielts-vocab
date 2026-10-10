@@ -29,11 +29,11 @@ async function render(){
  const selected=entries.find(entry=>entry.number===number),position={...neighboringNumbers(entries,number),total:entries.length};
  if(selected){document.title=`${selected.word} · 单词故事`;counter.textContent=`${position.index+1} / ${entries.length}`;counter.setAttribute('aria-label',`第 ${position.index+1} 个词，共 ${entries.length} 个。打开单词目录`);}
  if(!number){loader.cancel();main.removeAttribute('aria-busy');main.innerHTML=renderNotReady();swipe.cancel();return;}
- main.innerHTML='<p class="initial-status" role="status">正在翻开这一页…</p>';main.setAttribute('aria-busy','true');swipe.cancel();
+ main.innerHTML='<p class="initial-status" role="status">正在翻开这一页…</p>';main.setAttribute('aria-busy','true');swipe.loading();
  let loaded;
  try{loaded=await loader.select(number);}catch(error){
   if(generation!==renderGeneration||location.hash!==startingHash||selectedNumber!==number||error.name==='AbortError')return;
-  main.removeAttribute('aria-busy');main.innerHTML=`<div class="initial-status" role="status"><p>${navigator.onLine===false?'这一页尚未下载，请联网后重试':'这一页暂时无法打开，请重试'}</p><button type="button" data-retry>重试</button></div>`;return;
+  swipe.cancel();main.removeAttribute('aria-busy');main.innerHTML=`<div class="initial-status" role="status"><p>${navigator.onLine===false?'这一页尚未下载，请联网后重试':'这一页暂时无法打开，请重试'}</p><button type="button" data-retry>重试</button></div>`;return;
  }
  if(generation!==renderGeneration||location.hash!==startingHash||selectedNumber!==number)return;
  current=loaded.entry;currentMedia=loaded.media;main.removeAttribute('aria-busy');

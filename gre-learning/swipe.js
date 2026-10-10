@@ -21,7 +21,7 @@ export function moveSwipe(state,{x,y,time}) {
   return {...state,dx,dy,axis,direction,available,ready,offset};
 }
 
-const INTERACTIVE='a,button,input,textarea,select,option,summary,label,[contenteditable]:not([contenteditable="false"]),[role="button"],[role="link"],[role="slider"],[role="textbox"],[data-no-swipe],dialog';
+const INTERACTIVE='video[controls],audio[controls],a,button,input,textarea,select,option,summary,label,[contenteditable]:not([contenteditable="false"]),[role="button"],[role="link"],[role="slider"],[role="textbox"],[data-no-swipe],dialog';
 export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate,window:win=window,document:doc=document}) {
   const feedback=doc.createElement('div');
   feedback.className='swipe-feedback';feedback.hidden=true;feedback.setAttribute('aria-hidden','true');
@@ -35,7 +35,9 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
   const status=doc.createElement('span');status.className='sr-only';status.setAttribute('role','status');status.setAttribute('aria-live','polite');doc.body.append(status);
   const pointers=new Set();
   let gesture=null,pointerId=null,phase='idle',timer=null,frame=null,pressTimer=null,suppressUntil=0,enterDirection=null;
-  const reduced=()=>win.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  let paper=null,paperFace=null,paperFold=null,paperShadow=null,paperProgress=0,paperDirection=null,focusAfterTurn=false;
+  const motionPreference=win.matchMedia?.('(prefers-reduced-motion: reduce)');
+  const reduced=()=>Boolean(motionPreference?.matches);
   const selected=()=>{
     const selection=win.getSelection?.();
     return Boolean(selection?.toString() && (surface.contains(selection.anchorNode)||surface.contains(selection.focusNode)));
@@ -47,60 +49,131 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
     const id=pointerId;pointerId=null;
     if(id!==null && surface.hasPointerCapture?.(id)) {try{surface.releasePointerCapture(id);}catch{}}
   }
+  // The reading layout never scales or slides. A disposable, inert impression of
+  // the visible paper peels away; a curved reverse and its shadow follow the hand.
+  // Videos are painted once onto canvas so the impression cannot start playback.
+  function makePaper(direction) {
+    if(reduced())return;
+    if(paper){paperDirection=direction;paper.dataset.direction=direction;return;}
+    const article=surface.querySelector('.reading-layout');
+    if(!article)return;
+    const rect=article.getBoundingClientRect(),top=Math.max(0,rect.top);
+    const bottom=Math.min(win.innerHeight,rect.bottom);
+    if(bottom<=top)return;
+    paper=doc.createElement('div');paper.className='paper-turn';
+    paper.setAttribute('aria-hidden','true');paper.inert=true;paper.dataset.direction=direction;
+    Object.assign(paper.style,{left:`${rect.left}px`,top:`${top}px`,width:`${rect.width}px`,height:`${bottom-top}px`});
+    paperFace=doc.createElement('div');paperFace.className='paper-turn-face';
+    const impression=article.cloneNode(true);
+    impression.querySelectorAll('[id]').forEach(node=>node.removeAttribute('id'));
+    impression.removeAttribute('aria-labelledby');
+    const originals=article.querySelectorAll('video');
+    impression.querySelectorAll('video').forEach((video,index)=>{
+      const original=originals[index],canvas=doc.createElement('canvas');
+      canvas.className=video.className;canvas.style.cssText=video.style.cssText;
+      canvas.width=original.videoWidth||1;canvas.height=original.videoHeight||1;
+      try{if(original.readyState<2)throw new Error('poster');canvas.getContext('2d').drawImage(original,0,0);video.replaceWith(canvas);}
+      catch{video.closest('.story-illustration')?.querySelector('.story-poster')?.style.removeProperty('opacity');video.remove();}
+    });
+    Object.assign(impression.style,{position:'absolute',top:`${rect.top-top}px`,left:'0',width:`${rect.width}px`,margin:'0'});
+    paperFace.append(impression);
+    paperShadow=doc.createElement('div');paperShadow.className='paper-turn-shadow';
+    paperFold=doc.createElement('div');paperFold.className='paper-turn-fold';
+    paper.append(paperFace,paperShadow,paperFold);doc.body.append(paper);
+    paperDirection=direction;surface.style.opacity='0';
+  }
+  function paintPaper(progress,direction=paperDirection) {
+    paperProgress=progress;
+    if(!paper)return;
+    paperDirection=direction;paper.dataset.direction=direction;
+    // Bow is strongest halfway through the turn, flat at both resting poses.
+    const bend=Math.sin(Math.PI*progress),edge=100-progress*112;
+    const curl=Math.min(23,progress*55)*Math.pow(Math.max(0,1-progress),.45);
+    const bow=3.4*bend,flip=x=>direction==='next'?x:100-x;
+    const crease=edge-bow;
+    const points=[[flip(0),0],[flip(crease),0],[flip(crease),100],[flip(0),100]];
+    paperFace.style.clipPath=`polygon(${points.map(([x,y])=>`${x}% ${y}%`).join(',')})`;
+    paperFold.style.width=`${curl}%`;
+    paperFold.style.left=`${direction==='next'?edge-curl:100-edge}%`;
+    paperFold.style.transform=`skewY(${(direction==='next'?-1:1)*bend*2.3}deg)`;
+    paperFold.style.opacity=String(Math.min(1,progress*18)*(1-Math.max(0,(progress-.9)*10)));
+    paperShadow.style.left=`${flip(edge)}%`;
+    paperShadow.style.opacity=String(bend*.23);
+    paper.style.setProperty('--paper-bow',`${bow*3}px`);
+    paper.dataset.progress=progress.toFixed(3);
+  }
   function cleanStyle() {
+    paper?.remove();paper=null;paperFace=null;paperFold=null;paperShadow=null;paperProgress=0;paperDirection=null;
     surface.classList.remove('is-swiping','is-swipe-settling');
     surface.style.removeProperty('transform');surface.style.removeProperty('opacity');surface.style.removeProperty('transition');
     feedback.hidden=true;feedback.classList.remove('is-ready','is-boundary');
   }
   function reset() {
-    clearTimer();gesture=null;touchId=null;phase='idle';enterDirection=null;releaseCapture();cleanStyle();
+    clearTimer();gesture=null;touchId=null;phase='idle';enterDirection=null;focusAfterTurn=false;releaseCapture();cleanStyle();
+  }
+  function animatePaper(target,duration,complete) {
+    const from=paperProgress,start=win.performance.now();
+    function tick(now){
+      const t=Math.min(1,(now-start)/duration);
+      const eased=target===0?1-Math.pow(1-t,3):t*t*(3-2*t);
+      paintPaper(from+(target-from)*eased);
+      if(t<1)frame=win.requestAnimationFrame(tick);else{frame=null;complete();}
+    }
+    frame=win.requestAnimationFrame(tick);
   }
   function snapBack() {
     const wasDragging=gesture?.axis==='horizontal';
-    clearTimer();gesture=null;releaseCapture();feedback.hidden=true;
-    if(!wasDragging||reduced()){reset();return;}
+    clearTimer();gesture=null;touchId=null;releaseCapture();feedback.hidden=true;
+    if(!wasDragging||reduced()||!paper){reset();return;}
     phase='returning';surface.classList.remove('is-swiping');surface.classList.add('is-swipe-settling');
-    surface.style.transition='transform 220ms cubic-bezier(.2,.75,.25,1)';surface.style.transform='translateX(0)';
-    timer=win.setTimeout(reset,230);
+    animatePaper(0,260,reset);
   }
   function go(direction) {
-    if(phase!=='idle'||blocked()) return false;
+    if(phase!=='idle'||blocked()||surface.hasAttribute('aria-busy')) return false;
     const number=getNeighbor(direction);
     if(!number)return false;
-    clearTimer();gesture=null;releaseCapture();feedback.hidden=true;
+    clearTimer();gesture=null;touchId=null;releaseCapture();feedback.hidden=true;
+    focusAfterTurn=surface.contains(doc.activeElement);
     enterDirection=direction;phase='leaving';
     if(reduced()){onNavigate(number);return true;}
-    surface.classList.remove('is-swiping');surface.classList.add('is-swipe-settling');
-    surface.style.transition='transform 160ms cubic-bezier(.4,0,1,1), opacity 160ms ease';
-    surface.style.transform=`translateX(${(direction==='next'?-1:1)*Math.min(win.innerWidth*.55,260)}px)`;
-    surface.style.opacity='0';
-    timer=win.setTimeout(()=>{timer=null;onNavigate(number);},165);
+    makePaper(direction);surface.classList.remove('is-swiping');surface.classList.add('is-swipe-settling');
+    // Finish the physical turn before changing routes. The blank reverse is held
+    // while the destination loads, avoiding a flash of the outgoing page.
+    animatePaper(1,Math.max(180,440*(1-paperProgress)),()=>onNavigate(number));
     return true;
   }
+  function loading() {
+    if(phase!=='leaving'){reset();return;}
+    clearTimer();gesture=null;touchId=null;releaseCapture();
+    // Cached pages settle immediately; a slow fetch gets a quiet loading state.
+    if(paper)timer=win.setTimeout(()=>{paper?.classList.add('is-loading');},180);
+  }
   function rendered(announcement) {
-    const direction=phase==='leaving'?enterDirection:null;
+    const focus=focusAfterTurn;
     reset();status.textContent=announcement;
-    if(!direction||reduced())return;
-    phase='entering';surface.classList.add('is-swipe-settling');surface.style.transition='none';
-    surface.style.transform=`translateX(${direction==='next'?36:-36}px)`;surface.style.opacity='0';
-    // Two frames preserve the initial pose even when the new DOM paints in this frame.
-    frame=win.requestAnimationFrame(()=>{frame=win.requestAnimationFrame(()=>{
-      surface.style.transition='transform 200ms cubic-bezier(.2,.75,.25,1), opacity 180ms ease';
-      surface.style.transform='translateX(0)';surface.style.opacity='1';timer=win.setTimeout(reset,210);
-    });});
+    if(focus)surface.focus({preventScroll:true});
   }
   function draw() {
-    surface.classList.add('is-swiping');surface.style.transform=`translateX(${gesture.offset}px)`;
-    feedback.hidden=false;feedback.classList.toggle('is-ready',gesture.ready);feedback.classList.toggle('is-boundary',!gesture.available);
-    const next=gesture.direction==='next';
-    label.textContent=!gesture.available?(next?'已经是最后一个词':'已经是第一个词'):gesture.ready?(next?'松手，切换下一个词':'松手，切换上一个词'):(next?'继续向左滑动 · 下一个词':'继续向右滑动 · 上一个词');
+    surface.classList.add('is-swiping');
+    const direction=gesture.direction;
+    if(!reduced()){
+      makePaper(direction);
+      const distance=Math.abs(gesture.dx),width=gesture.width;
+      const progress=gesture.available?Math.min(.88,distance/width*.95):Math.min(.045,distance/width*.12);
+      paintPaper(progress,direction);
+    }
+    // Feedback stays quiet until the release threshold or a book boundary.
+    feedback.hidden=!(gesture.ready||!gesture.available);
+    feedback.classList.toggle('is-ready',gesture.ready);feedback.classList.toggle('is-boundary',!gesture.available);
+    label.textContent=!gesture.available?(direction==='next'?'已经是最后一页':'已经是第一页'):(direction==='next'?'松手，翻到下一页':'松手，翻回上一页');
     fill.style.transform=`scaleX(${Math.min(1,Math.abs(gesture.dx)/gesture.threshold)})`;
   }
   // Keep touch and pointer streams separate: Safari emits both for one finger.
   // Touch listeners are attached to the reading surface, not a passive root target.
   let touchId=null;
   function begin({x,y,id,target}) {
-    if(phase!=='idle'||gesture||blocked()||interactive(target)||selected())return;
+    if(phase==='returning')reset();
+    if(phase!=='idle'||gesture||blocked()||surface.hasAttribute('aria-busy')||interactive(target)||selected())return;
     if(x<=SWIPE.edge||x>=win.innerWidth-SWIPE.edge)return;
     pointerId=id;
     gesture=startSwipe({x,y,width:Math.min(surface.clientWidth||win.innerWidth,win.innerWidth),time:win.performance.now(),previous:getNeighbor('previous'),next:getNeighbor('next')});
@@ -135,11 +208,12 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
     if(wasDragging&&gesture.ready&&!blocked()&&!selected()){const direction=gesture.direction;go(direction);}else snapBack();
   }
   function down(event) {
-    if(event.pointerType!=='pen'||event.isPrimary===false||event.button>0||pointers.size)return;
+    if(phase==='idle'&&!gesture)suppressUntil=0;
+    if(!['pen','mouse'].includes(event.pointerType)||event.isPrimary===false||event.button>0||pointers.size)return;
     begin({x:event.clientX,y:event.clientY,id:event.pointerId,target:event.target});
   }
   function move(event) {
-    if(!gesture||event.pointerType!=='pen'||event.pointerId!==pointerId)return;
+    if(!gesture||!['pen','mouse'].includes(event.pointerType)||event.pointerId!==pointerId)return;
     drag(event.clientX,event.clientY,event);
     // Capture is an enhancement; window listeners still work if capture fails.
     if(gesture?.axis==='horizontal'&&!surface.hasPointerCapture?.(pointerId)) {
@@ -148,7 +222,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
   }
   function up(event) {
     pointers.delete(event.pointerId);
-    if(event.pointerType==='pen'&&event.pointerId===pointerId)finish(event.clientX,event.clientY);
+    if(['pen','mouse'].includes(event.pointerType)&&event.pointerId===pointerId)finish(event.clientX,event.clientY);
   }
   function cancel(event) {pointers.delete(event.pointerId);if(event.pointerId===pointerId)snapBack();}
   function touchStart(event) {
@@ -180,9 +254,10 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
   listen(win,'pointerdown',event=>{if(event.pointerType==='pen'){pointers.add(event.pointerId);if(pointers.size>1)snapBack();}});
   listen(win,'pointermove',move,{passive:false});listen(win,'pointerup',up);listen(win,'pointercancel',cancel);
   listen(surface,'lostpointercapture',event=>{if(event.pointerId===pointerId)snapBack();});
-  listen(doc,'click',event=>{if(win.performance.now()<suppressUntil&&(event.detail>0||event.pointerType==='touch'||event.pointerType==='pen')){event.preventDefault();event.stopImmediatePropagation();}},true);
+  listen(doc,'click',event=>{if(surface.contains(event.target)&&win.performance.now()<suppressUntil&&(event.detail>0||event.pointerType==='touch'||event.pointerType==='pen')){event.preventDefault();event.stopImmediatePropagation();}},true);
   listen(doc,'selectionchange',()=>{if(gesture&&selected())snapBack();});
   listen(surface,'contextmenu',()=>{if(gesture)snapBack();});
+  listen(surface,'dragstart',event=>{if(gesture)event.preventDefault();});
   listen(doc,'keydown',event=>{
     if(event.defaultPrevented||event.repeat||event.altKey||event.ctrlKey||event.metaKey||event.shiftKey||blocked()||interactive(event.target)||selected())return;
     const direction=event.key==='ArrowLeft'?'previous':event.key==='ArrowRight'?'next':null;
@@ -190,8 +265,9 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,onNavigate
   });
   listen(win,'blur',()=>{pointers.clear();reset();});listen(win,'pagehide',()=>{pointers.clear();reset();});
   listen(win,'resize',reset);
+  if(motionPreference?.addEventListener)listen(motionPreference,'change',reset);
   listen(doc,'visibilitychange',()=>{if(doc.hidden){pointers.clear();reset();}});
-  return {go,rendered,cancel:reset,get busy(){return phase!=='idle';},destroy(){reset();listeners.forEach(remove=>remove());feedback.remove();hint.remove();status.remove();surface.removeAttribute('aria-describedby');}};
+  return {go,loading,rendered,cancel:reset,get busy(){return phase!=='idle';},destroy(){reset();listeners.forEach(remove=>remove());feedback.remove();hint.remove();status.remove();surface.removeAttribute('aria-describedby');}};
 }
 
 // Explicit user preference: suppress page zoom for touch-first mobile browsers.
