@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "149",
-  "authoredCount": 80,
-  "publishedCount": 80,
+  "release": "150",
+  "authoredCount": 85,
+  "publishedCount": 85,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -87,7 +87,12 @@
       2513,
       1198,
       4596,
-      2336
+      2336,
+      2322,
+      1828,
+      293,
+      1526,
+      3573
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -217,6 +222,11 @@
       "url": "units/core013-text-approved-f84356190c116d3cd88944dbd6b49e6ad54b2a73a683332464caabd95565ba9a.json",
       "sha256": "f84356190c116d3cd88944dbd6b49e6ad54b2a73a683332464caabd95565ba9a",
       "bytes": 17865
+    },
+    {
+      "url": "units/core014-text-approved-c227e83783635b8a329c11ba9108fe1cfc38c6ea07b643b7abf8f87f395b7836.json",
+      "sha256": "c227e83783635b8a329c11ba9108fe1cfc38c6ea07b643b7abf8f87f395b7836",
+      "bytes": 17245
     }
   ],
   "entries": [
@@ -4868,6 +4878,659 @@
           "url": "story-media/2336-3f0eb401e33f9b39aacb460dd2121b27fc287a3929013c67b0c636c2bf559849.webp",
           "sha256": "3f0eb401e33f9b39aacb460dd2121b27fc287a3929013c67b0c636c2bf559849",
           "bytes": 579360
+        }
+      }
+    },
+    {
+      "number": 2322,
+      "word": "stalwart",
+      "coreMeaningZh": "坚定可靠的；强壮的；忠实骨干",
+      "unit": 24,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 81,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8800,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "剧社连着几场演出没卖出多少票，老成员仍每周来搭台、排练。stalwart 在这里指坚定可靠、困难时仍支持大家；作名词也可指这样的忠实骨干。",
+        "video": {
+          "url": "story-media/2322-a57adbfcb1ef2ac2599c302bff1d9dc999a20e5c790e5bcc677a2c5d584616eb.mp4",
+          "sha256": "a57adbfcb1ef2ac2599c302bff1d9dc999a20e5c790e5bcc677a2c5d584616eb",
+          "bytes": 1121077
+        },
+        "poster": {
+          "url": "story-media/2322-e531e70f582a83a41b5949ed00a4d2e563d7d444273cc16e0cac7bc5e975206c.png",
+          "sha256": "e531e70f582a83a41b5949ed00a4d2e563d7d444273cc16e0cac7bc5e975206c",
+          "bytes": 1381820
+        },
+        "staticPoster": {
+          "url": "story-media/2322-581f628123fa7a7af87fc96970f777fe2721ecc1fce6270ed13877ea7001f74c.png",
+          "sha256": "581f628123fa7a7af87fc96970f777fe2721ecc1fce6270ed13877ea7001f74c",
+          "bytes": 1357879
+        },
+        "stages": [
+          {
+            "id": "F01-0",
+            "startMs": 0,
+            "endMs": 1000,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F02-1",
+            "startMs": 1000,
+            "endMs": 2720,
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "今晚人也不多。"
+          },
+          {
+            "id": "F03-2",
+            "startMs": 2720,
+            "endMs": 3400,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F04-3",
+            "startMs": 3400,
+            "endMs": 5800,
+            "speaker": "woman",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "我来帮忙，接着排练。"
+          },
+          {
+            "id": "F05-4",
+            "startMs": 5800,
+            "endMs": 6800,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F06-5",
+            "startMs": 6800,
+            "endMs": 8800,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "woman",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "text": "我来帮忙，接着排练。"
+        }
+      }
+    },
+    {
+      "number": 1828,
+      "word": "predilection",
+      "coreMeaningZh": "偏爱；特别喜好",
+      "unit": 24,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 82,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "糖盒里口味很多，她每次都先挑柠檬味；别的糖还堆着，柠檬味已经空了。predilection 指对某类事物一贯的偏爱，不只是这一次随手作出的选择。",
+        "video": {
+          "url": "story-media/1828-ba52c2cd118edd2c2844f911a60a7230514e13d62ee66c732654c28ebbd74e1c.mp4",
+          "sha256": "ba52c2cd118edd2c2844f911a60a7230514e13d62ee66c732654c28ebbd74e1c",
+          "bytes": 1120422
+        },
+        "poster": {
+          "url": "story-media/1828-dfdecd39f7b06302cc8960433059a70bc349b6adc1af4641231ad29b822cb0c9.png",
+          "sha256": "dfdecd39f7b06302cc8960433059a70bc349b6adc1af4641231ad29b822cb0c9",
+          "bytes": 819813
+        },
+        "staticPoster": {
+          "url": "story-media/1828-24ec9a4bf34ca2f587bb6be673da382460ae3d683c44deca684bb1b7bacebcab.png",
+          "sha256": "24ec9a4bf34ca2f587bb6be673da382460ae3d683c44deca684bb1b7bacebcab",
+          "bytes": 790780
+        },
+        "stages": [
+          {
+            "id": "F01-0",
+            "startMs": 0,
+            "endMs": 1280,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F02-1",
+            "startMs": 1280,
+            "endMs": 2360,
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "你还是选柠檬味。"
+          },
+          {
+            "id": "F03-2",
+            "startMs": 2360,
+            "endMs": 3360,
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "你还是选柠檬味。"
+          },
+          {
+            "id": "F04-3",
+            "startMs": 3360,
+            "endMs": 4360,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F05-4",
+            "startMs": 4360,
+            "endMs": 5360,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F06-5",
+            "startMs": 5360,
+            "endMs": 6280,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F07-6",
+            "startMs": 6280,
+            "endMs": 8000,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "text": "你还是选柠檬味。"
+        }
+      }
+    },
+    {
+      "number": 293,
+      "word": "callow",
+      "coreMeaningZh": "年轻而缺乏经验的；稚嫩的",
+      "unit": 24,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 83,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "刚入职的年轻人还没听完问题就自信地给答案，顾客一追问实际步骤，他却答不上来。callow 指年轻而缺乏经验、处事不成熟，重点并非单纯年龄小。",
+        "video": {
+          "url": "story-media/293-800ee4705550822e55b6a6a835719d90ce4f0c32f9a0a1f2e033ce5337904b8b.mp4",
+          "sha256": "800ee4705550822e55b6a6a835719d90ce4f0c32f9a0a1f2e033ce5337904b8b",
+          "bytes": 1270324
+        },
+        "poster": {
+          "url": "story-media/293-3cc96b8921aa296e5817394f1db651630cc7061b8d71bc165959efb3c8dbd837.png",
+          "sha256": "3cc96b8921aa296e5817394f1db651630cc7061b8d71bc165959efb3c8dbd837",
+          "bytes": 959313
+        },
+        "staticPoster": {
+          "url": "story-media/293-7de679783337b4ed9bf8cd1d61dc62ab227052ad654c1fe0bde579288805d72e.png",
+          "sha256": "7de679783337b4ed9bf8cd1d61dc62ab227052ad654c1fe0bde579288805d72e",
+          "bytes": 955341
+        },
+        "stages": [
+          {
+            "id": "F01-0",
+            "startMs": 0,
+            "endMs": 800,
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F02-1",
+            "startMs": 800,
+            "endMs": 2000,
+            "speaker": "assistant",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "这个我都懂！"
+          },
+          {
+            "id": "F03-2",
+            "startMs": 2000,
+            "endMs": 3400,
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "那第一步怎么装？"
+          },
+          {
+            "id": "F04-3",
+            "startMs": 3400,
+            "endMs": 4480,
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F05-4",
+            "startMs": 4480,
+            "endMs": 5480,
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F06-5",
+            "startMs": 5480,
+            "endMs": 6680,
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F07-6",
+            "startMs": 6680,
+            "endMs": 8000,
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "assistant",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "text": ""
+        }
+      }
+    },
+    {
+      "number": 1526,
+      "word": "modicum",
+      "coreMeaningZh": "少量；一点点",
+      "unit": 24,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 84,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8800,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "拼装小模型时，同伴只示范了一步，初学者便能继续。这里不必是高手，只需要 a modicum of skill：一点技巧，少量就够。",
+        "video": {
+          "url": "story-media/1526-e3cbc404519ab6f1fcd2808a7067dfb41876648f984d299f79bc1fb27a04f624.mp4",
+          "sha256": "e3cbc404519ab6f1fcd2808a7067dfb41876648f984d299f79bc1fb27a04f624",
+          "bytes": 1921004
+        },
+        "poster": {
+          "url": "story-media/1526-4ea043df68fdfb84a3c8fa5eed61a583cca8c4006cbb068543227f6c58ec8e9d.png",
+          "sha256": "4ea043df68fdfb84a3c8fa5eed61a583cca8c4006cbb068543227f6c58ec8e9d",
+          "bytes": 1020330
+        },
+        "staticPoster": {
+          "url": "story-media/1526-265a5713dd79f1261330e0031a1761c7cf6532e4442cd296b163fe86f1d3b35a.png",
+          "sha256": "265a5713dd79f1261330e0031a1761c7cf6532e4442cd296b163fe86f1d3b35a",
+          "bytes": 1008017
+        },
+        "stages": [
+          {
+            "id": "F01-0",
+            "startMs": 0,
+            "endMs": 880,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F02-1",
+            "startMs": 880,
+            "endMs": 1560,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F03-r3-2",
+            "startMs": 1560,
+            "endMs": 2280,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F04-3",
+            "startMs": 2280,
+            "endMs": 3040,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F05-4",
+            "startMs": 3040,
+            "endMs": 3840,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F06-5",
+            "startMs": 3840,
+            "endMs": 4720,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F07-6",
+            "startMs": 4720,
+            "endMs": 5520,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F07b-7",
+            "startMs": 5520,
+            "endMs": 6200,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F08-8",
+            "startMs": 6200,
+            "endMs": 7000,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F09-9",
+            "startMs": 7000,
+            "endMs": 8800,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "text": ""
+        }
+      }
+    },
+    {
+      "number": 3573,
+      "word": "elusive",
+      "coreMeaningZh": "难以找到或抓住的；难以理解或获得的",
+      "unit": 24,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 85,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "摄影师刚在枝头发现一只小鸟，还没对好焦，它又钻进树叶间，只剩晃动的枝条。elusive 就是这样难以找到或抓住，不一定是它故意躲藏。",
+        "video": {
+          "url": "story-media/3573-6ee59f0de3d66158b6ee3ea166518c5e18da41fe11130bd09394983965402a53.mp4",
+          "sha256": "6ee59f0de3d66158b6ee3ea166518c5e18da41fe11130bd09394983965402a53",
+          "bytes": 1565647
+        },
+        "poster": {
+          "url": "story-media/3573-0cf9fbf339d34f797ca9b46595f53bb37e8bf7581407d08109c234396bd86a1c.png",
+          "sha256": "0cf9fbf339d34f797ca9b46595f53bb37e8bf7581407d08109c234396bd86a1c",
+          "bytes": 1118974
+        },
+        "staticPoster": {
+          "url": "story-media/3573-dc596ffdbf3e180bb2a2f90c985a35f5102505d6d24bca6d01da1b3288004f03.png",
+          "sha256": "dc596ffdbf3e180bb2a2f90c985a35f5102505d6d24bca6d01da1b3288004f03",
+          "bytes": 1122834
+        },
+        "stages": [
+          {
+            "id": "F01",
+            "startMs": 0,
+            "endMs": 1360,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F02",
+            "startMs": 1360,
+            "endMs": 2120,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F03",
+            "startMs": 2120,
+            "endMs": 2680,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F04",
+            "startMs": 2680,
+            "endMs": 3080,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F05",
+            "startMs": 3080,
+            "endMs": 3520,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F06",
+            "startMs": 3520,
+            "endMs": 4280,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F07",
+            "startMs": 4280,
+            "endMs": 5520,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F08",
+            "startMs": 5520,
+            "endMs": 8000,
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "text": ""
         }
       }
     }
