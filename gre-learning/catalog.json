@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "146",
-  "authoredCount": 65,
-  "publishedCount": 65,
+  "release": "147",
+  "authoredCount": 70,
+  "publishedCount": 70,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -72,7 +72,12 @@
       854,
       1609,
       725,
-      2569
+      2569,
+      617,
+      404,
+      4566,
+      2924,
+      4198
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -187,6 +192,11 @@
       "url": "units/fungible-user-correction-7c7f0b233cbe2ed69a6ed003e6d296b40c14c91f545be086a118afd164d4f1a9.json",
       "sha256": "7c7f0b233cbe2ed69a6ed003e6d296b40c14c91f545be086a118afd164d4f1a9",
       "bytes": 19703
+    },
+    {
+      "url": "units/core011-text-approved-992e1a549cf5f49f4f28ba4e7db17735c69e3b122940a7b99318884a0934bbd3.json",
+      "sha256": "992e1a549cf5f49f4f28ba4e7db17735c69e3b122940a7b99318884a0934bbd3",
+      "bytes": 18704
     }
   ],
   "entries": [
@@ -3258,6 +3268,438 @@
           "bytes": 797272,
           "sha256": "4bde34df57ea22e0a0e48640322713067250bd2648e3777ff83bdede2954e3e1"
         }
+      }
+    },
+    {
+      "number": 617,
+      "word": "diatribe",
+      "coreMeaningZh": "激烈的长篇抨击；痛斥之辞",
+      "unit": 21,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 66,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 10000,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "会议上的人把建议拍在桌上，接着长篇怒斥，男孩几次张口都插不进话。diatribe 指尖刻、带敌意的长篇抨击，重点不只是一次发火。",
+        "stages": [
+          {
+            "id": "diatribe-1",
+            "startMs": 0,
+            "endMs": 1520,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "diatribe-2",
+            "startMs": 1520,
+            "endMs": 3600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "这建议简直荒唐！"
+          },
+          {
+            "id": "diatribe-3",
+            "startMs": 3600,
+            "endMs": 4600,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "可是，我……"
+          },
+          {
+            "id": "diatribe-4",
+            "startMs": 4600,
+            "endMs": 6200,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "diatribe-5",
+            "startMs": 6200,
+            "endMs": 7400,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "可是，我……"
+          },
+          {
+            "id": "diatribe-6",
+            "startMs": 7400,
+            "endMs": 10000,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "text": ""
+        },
+        "video": {
+          "url": "story-media/617-5e46881f75b46f1b395307544ac2f111d57250a6b56ec88a2d5b43f9b51b90ef.mp4",
+          "sha256": "5e46881f75b46f1b395307544ac2f111d57250a6b56ec88a2d5b43f9b51b90ef",
+          "bytes": 1381516
+        },
+        "poster": {
+          "url": "story-media/617-5e872af72c7ab51fe2c414886a513efcd09cf21ba06beec80f90e06d03555a0f.png",
+          "sha256": "5e872af72c7ab51fe2c414886a513efcd09cf21ba06beec80f90e06d03555a0f",
+          "bytes": 1122548
+        },
+        "waitForPresentedFrame": true
+      }
+    },
+    {
+      "number": 404,
+      "word": "compunction",
+      "coreMeaningZh": "内疚；良心上的不安或顾忌",
+      "unit": 21,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 67,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6000,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "手指已伸向发送键，想到这句谎话会冤枉朋友，男孩心里一紧，收回了手。compunction 是做错事时或之前的良心不安，这里让他及时止步。",
+        "video": {
+          "url": "story-media/404-9e3b9c5707c3ef31f313b8e6549b7f416201047e9a1b3877721d6cf26cee3c71.mp4",
+          "sha256": "9e3b9c5707c3ef31f313b8e6549b7f416201047e9a1b3877721d6cf26cee3c71",
+          "bytes": 458935
+        },
+        "poster": {
+          "url": "story-media/404-d8f26332480e66c6e780ccb2ad70de44b35b9d0bfc811a3fa217e2911196bc11.png",
+          "sha256": "d8f26332480e66c6e780ccb2ad70de44b35b9d0bfc811a3fa217e2911196bc11",
+          "bytes": 1006965
+        },
+        "stages": [
+          {
+            "id": "consider-lie",
+            "startMs": 0,
+            "endMs": 1600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.43,
+              "y": 0.12
+            },
+            "text": "就说是他弄坏的……"
+          },
+          {
+            "id": "conscience",
+            "startMs": 1600,
+            "endMs": 4300,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.43,
+              "y": 0.12
+            },
+            "text": "可这会冤枉他。"
+          },
+          {
+            "id": "unsent-silent-hold",
+            "startMs": 4300,
+            "endMs": 6000,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.43,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.43,
+            "y": 0.12
+          },
+          "text": "就说是他弄坏的……"
+        },
+        "waitForPresentedFrame": true
+      }
+    },
+    {
+      "number": 4566,
+      "word": "unassuming",
+      "coreMeaningZh": "谦逊低调的；朴实不张扬的",
+      "unit": 21,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 68,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6400,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "领奖合影时，获奖者不往中央挤，而是把一起做事的伙伴请到身边。unassuming 指谦逊、不摆架子，并非没有自信或不值得获奖。",
+        "video": {
+          "url": "story-media/4566-00f26ad99e79a4121e45196d60d7627ff48c45068895316a135cc0a8386bfa4d.mp4",
+          "sha256": "00f26ad99e79a4121e45196d60d7627ff48c45068895316a135cc0a8386bfa4d",
+          "bytes": 475473
+        },
+        "poster": {
+          "url": "story-media/4566-a584031df9c265451f499ca07ca67d0aa1c7ac0d94200b63269f137f56213d5a.png",
+          "sha256": "a584031df9c265451f499ca07ca67d0aa1c7ac0d94200b63269f137f56213d5a",
+          "bytes": 885703
+        },
+        "waitForPresentedFrame": true
+      }
+    },
+    {
+      "number": 2924,
+      "word": "lionize",
+      "coreMeaningZh": "把……捧为名人；热烈追捧",
+      "unit": 21,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 69,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative restart H -> A, no blank/white transition."
+        },
+        "stages": [
+          {
+            "id": "A",
+            "startMs": 0,
+            "endMs": 800,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "B",
+            "startMs": 800,
+            "endMs": 1760,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "C",
+            "startMs": 1760,
+            "endMs": 2400,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "D",
+            "startMs": 2400,
+            "endMs": 3440,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "能给我签个名吗？"
+          },
+          {
+            "id": "E",
+            "startMs": 3440,
+            "endMs": 4240,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "能给我签个名吗？"
+          },
+          {
+            "id": "F",
+            "startMs": 4240,
+            "endMs": 5200,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "G",
+            "startMs": 5200,
+            "endMs": 6080,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "H",
+            "startMs": 6080,
+            "endMs": 8000,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "right",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "text": "能给我签个名吗？"
+        },
+        "alt": "新作获奖后，原本无人注意的作家走进书店，大家围上来鼓掌、请他签名。lionize 就是把某人当名人般追捧，超过一般的礼貌赞许。",
+        "video": {
+          "url": "story-media/2924-d3fffd45f47409210812567a199c00a5d03f58ed05217e202697fb629c1c54a4.mp4",
+          "sha256": "d3fffd45f47409210812567a199c00a5d03f58ed05217e202697fb629c1c54a4",
+          "bytes": 1374785
+        },
+        "poster": {
+          "url": "story-media/2924-31aa04b679fbafd2f411bc6eb32affd6278b5328752e474db0da513c14438178.png",
+          "sha256": "31aa04b679fbafd2f411bc6eb32affd6278b5328752e474db0da513c14438178",
+          "bytes": 970360
+        },
+        "staticPoster": {
+          "url": "story-media/2924-e3c0b75c572ff3da9dac9820e82d9e2bf6affe0f2b614c054555ec4e17507d89.png",
+          "bytes": 1033633,
+          "sha256": "e3c0b75c572ff3da9dac9820e82d9e2bf6affe0f2b614c054555ec4e17507d89"
+        },
+        "waitForPresentedFrame": true
+      }
+    },
+    {
+      "number": 4198,
+      "word": "preachy",
+      "coreMeaningZh": "爱说教的；说教味浓的",
+      "unit": 21,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 70,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7800,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "大家刚准备分享蛋糕，同伴却开始没完没了地训人该怎样节制和做人。preachy 指爱说教、把道理讲得令人厌烦，并非一切劝告都如此。",
+        "video": {
+          "url": "story-media/4198-16365406ca1ed2032578b5dc5cbdd06e333f904c4c023dd6ac08f5c42b284aa2.mp4",
+          "sha256": "16365406ca1ed2032578b5dc5cbdd06e333f904c4c023dd6ac08f5c42b284aa2",
+          "bytes": 654254
+        },
+        "poster": {
+          "url": "story-media/4198-46a7849f624beaa8ece60d5eea049fd48a1c43a3f73585f4ce53919f00f06ae9.png",
+          "sha256": "46a7849f624beaa8ece60d5eea049fd48a1c43a3f73585f4ce53919f00f06ae9",
+          "bytes": 1103066
+        },
+        "stages": [
+          {
+            "id": "sharing-silence",
+            "startMs": 0,
+            "endMs": 1400,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "lecture-restraint",
+            "startMs": 1400,
+            "endMs": 2600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "吃东西要懂节制……"
+          },
+          {
+            "id": "lecture-morality",
+            "startMs": 2600,
+            "endMs": 6600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "做人更应该自律。"
+          },
+          {
+            "id": "ending-silence",
+            "startMs": 6600,
+            "endMs": 7800,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "text": ""
+        },
+        "waitForPresentedFrame": true
       }
     }
   ],

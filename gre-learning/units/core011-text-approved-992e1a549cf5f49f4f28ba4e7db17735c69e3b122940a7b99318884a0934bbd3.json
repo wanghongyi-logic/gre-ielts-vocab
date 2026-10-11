@@ -1,0 +1,384 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 617,
+      "word": "diatribe",
+      "ipa": "/ˈdaɪətraɪb/",
+      "pos": "n.",
+      "coreMeaningZh": "激烈的长篇抨击；痛斥之辞",
+      "coreEn": "A sustained, angry attack on someone or something, expressed in speech or writing.",
+      "coreImageZh": "会议上的人把建议拍在桌上，接着长篇怒斥，男孩几次张口都插不进话。diatribe 指尖刻、带敌意的长篇抨击，重点不只是一次发火。",
+      "usage": [
+        {
+          "senseZh": "带着敌意，长篇攻击",
+          "explanationZh": "通常是可数名词，指一场讲话或一篇文字中的激烈抨击。这个词强调攻击性和尖刻的语气，并不评价论据是否充分，也不能据此断定批评内容失实。",
+          "collocations": [
+            {
+              "phrase": "a bitter diatribe",
+              "meaningZh": "尖刻的长篇抨击"
+            },
+            {
+              "phrase": "launch a diatribe against someone",
+              "meaningZh": "对某人发起长篇痛斥"
+            }
+          ]
+        },
+        {
+          "senseZh": "口头和书面都能用",
+          "explanationZh": "against 常引出被攻击的人或事；about 可以引出抨击所谈的话题。文章、社论也能是 diatribe，并不限定为当面吵架。复数 diatribes 可指多篇或多次这样的抨击。",
+          "collocations": [
+            {
+              "phrase": "a diatribe against the policy",
+              "meaningZh": "猛烈抨击该政策的言辞"
+            },
+            {
+              "phrase": "a diatribe about taxes",
+              "meaningZh": "围绕税收的长篇怒斥"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He launched a bitter diatribe against the younger generation.",
+          "translationZh": "他对年轻一代发起了尖刻的长篇抨击。",
+          "explanationZh": "against 引出被攻击的对象；bitter 加重尖刻的语气，launched 表示开始发难。"
+        },
+        {
+          "textEn": "The article is a diatribe against mainstream media.",
+          "translationZh": "这篇文章是对主流媒体的激烈抨击。",
+          "explanationZh": "article 表明抨击可以用书面形式表达；这里不是泛指一篇批评文章，而是突出其强烈的攻击性。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rant",
+          "comparisonZh": "作名词、指一通激动而带怒气的责骂时相近。rant 更容易强调情绪失控、令人厌烦的抱怨；diatribe 更明确地突出尖刻攻击，也常用于书面抨击。rant 还可作动词，不能直接拿动词用法替换这个名词。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "tirade",
+          "comparisonZh": "都可指长篇怒斥，常接 against。tirade 尤其常用于口头的一通责骂；diatribe 明确涵盖讲话和文字。二者都不是普通的建设性批评，但并不必然意味着所说内容错误。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "DIAry + TRIBE",
+          "textZh": "diary（日记）留下 DIA，接上 TRIBE（部落），拼成 diatribe。冒险者的日记整整三页都在怒斥一个虚构部落的苛刻规矩：日记写成了长篇抨击。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "Describe, no diatribe",
+          "textZh": "“Just describe, no diatribe!”本来只请他 describe（描述）停车新规，他却拍桌大骂，讲了十分钟。用结尾的押韵记住：describe 是描述，diatribe 是长篇痛斥。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 404,
+      "word": "compunction",
+      "ipa": "/kəmˈpʌŋkʃn/",
+      "pos": "n.",
+      "coreMeaningZh": "内疚；良心上的不安或顾忌",
+      "coreEn": "An uneasy feeling of conscience about something one has done or is considering doing.",
+      "coreImageZh": "手指已伸向发送键，想到这句谎话会冤枉朋友，男孩心里一紧，收回了手。compunction 是做错事时或之前的良心不安，这里让他及时止步。",
+      "usage": [
+        {
+          "senseZh": "做了或想做某事，心里过意不去",
+          "explanationZh": "正式用语，通常不可数；美式英语也常见复数 compunctions。可以指事后的内疚，也可以指行动前的道德顾忌，因此不宜一律译成已经做错后的悔恨。",
+          "collocations": [
+            {
+              "phrase": "feel compunction",
+              "meaningZh": "感到良心不安"
+            },
+            {
+              "phrase": "compunction about lying",
+              "meaningZh": "对说谎的良心顾忌"
+            }
+          ]
+        },
+        {
+          "senseZh": "常出现在否定表达中",
+          "explanationZh": "have no compunction about doing something 和 without compunction 常表示做某事毫无愧疚或顾忌。它说的是内心是否过意不去，不是技术上有没有障碍；没有顾忌也不自动证明行为违法。",
+          "collocations": [
+            {
+              "phrase": "without compunction",
+              "meaningZh": "毫无愧疚地"
+            },
+            {
+              "phrase": "have no compunction about refusing",
+              "meaningZh": "对拒绝毫无顾忌"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He had lied to her without compunction.",
+          "translationZh": "他骗了她，却毫无愧疚。",
+          "explanationZh": "without 否定的是良心上的不安；had lied 说明说谎发生在所叙述的过去时点之前。"
+        },
+        {
+          "textEn": "She felt no compunction about leaving her job.",
+          "translationZh": "她对辞去工作并不感到过意不去。",
+          "explanationZh": "about 后接 leaving，说明不安针对的事情。辞职本身未必是过错，句子只是说她没有内疚或道德顾忌。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "scruple",
+          "comparisonZh": "都可指行动前觉得“不太对”的顾忌。scruple 更突出基于原则对行为正当性的疑虑，常用复数 scruples；compunction 更突出良心被刺痛的不安，也能谈已经做过的事。"
+        },
+        {
+          "word": "remorse",
+          "comparisonZh": "谈做错事后的内疚时接近。remorse 往往是对既往过错深切而持续的自责；compunction 也可只是行动前一阵良心不安，不能把所有 no compunction about doing 都理解成事后后悔。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "PUNCTURE 刺良心",
+          "textZh": "puncture 是“刺穿”；它与 compunction 同源，都连着“刺”。谎话刚出口，良心像被针扎了一下，心里过意不去：这阵内疚就是 compunction。",
+          "original": true,
+          "kind": "etymology"
+        },
+        {
+          "method": "FUNCTION 良心功能",
+          "textZh": "FUNCTION（功能）的 F 换成 P，前面加 COM，拼出 COMPUNCTION。想象机器人启动“良心功能”：刚想诬赖朋友，心里就过意不去，把指责收了回去。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 4566,
+      "word": "unassuming",
+      "ipa": "/ˌʌnəˈsuːmɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "谦逊低调的；朴实不张扬的",
+      "coreEn": "Not seeking attention or making a show of importance; also plain and unobtrusive in appearance.",
+      "coreImageZh": "领奖合影时，获奖者不往中央挤，而是把一起做事的伙伴请到身边。unassuming 指谦逊、不摆架子，并非没有自信或不值得获奖。",
+      "usage": [
+        {
+          "senseZh": "有本事，也不摆架子",
+          "explanationZh": "通常带赞许，形容人或其举止不刻意引人注意，不炫耀地位、能力。它不等于没有自信，也不说明此人能力一般；成就很高的人仍可十分 unassuming。",
+          "collocations": [
+            {
+              "phrase": "an unassuming manner",
+              "meaningZh": "谦逊低调的举止"
+            },
+            {
+              "phrase": "an unassuming person",
+              "meaningZh": "不张扬的人"
+            }
+          ]
+        },
+        {
+          "senseZh": "外观朴实，不招摇",
+          "explanationZh": "也可形容房屋、场所等外观平实、不显眼。这里不是说建筑会谦虚，也不表示内部质量差；外表不起眼的地方可能藏着出色的东西。",
+          "collocations": [
+            {
+              "phrase": "an unassuming home",
+              "meaningZh": "朴实的住宅"
+            },
+            {
+              "phrase": "an unassuming building",
+              "meaningZh": "不起眼的建筑"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She did some wonderful work in a quiet and unassuming way.",
+          "translationZh": "她安静而低调地做出了很出色的工作。",
+          "explanationZh": "wonderful 与 unassuming 并不矛盾：前者评价成果，后者评价她不张扬的做事方式。"
+        },
+        {
+          "textEn": "They lived in an unassuming home.",
+          "translationZh": "他们住在一所朴实的住宅里。",
+          "explanationZh": "unassuming 修饰 home，转而描述外观平实，不是在评价主人的能力或经济状况。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "modest",
+          "comparisonZh": "形容人不炫耀成就、举止谦逊时很接近。modest 还可指数量或规模不大，如 a modest increase；unassuming 的重点是不张扬，不能替换这种数量义。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "unpretentious",
+          "comparisonZh": "形容人或场所朴实、不装腔作势时重合。unpretentious 更突出没有刻意装出的派头；unassuming 更突出不抢眼、不把自己摆在重要位置。两者都不等于简陋或无能。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "UN + ASSUME",
+          "textZh": "借 assume（认为）联想“不把自己想成大人物”。assume 去 e 加 -ing，前面加 un-，就是 unassuming。获奖后仍和大家排队，不摆架子。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "俺啊，署名",
+          "textZh": "“俺啊，署名小点就行。”作家把封面上的大名缩成一行小字，不想抢眼。借前四个字的近音，记 unassuming。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 2924,
+      "word": "lionize",
+      "ipa": "/ˈlaɪənaɪz/",
+      "pos": "v.",
+      "coreMeaningZh": "把……捧为名人；热烈追捧",
+      "coreEn": "To give someone the admiration and attention accorded to a celebrated or important person.",
+      "coreImageZh": "新作获奖后，原本无人注意的作家走进书店，大家围上来鼓掌、请他签名。lionize 就是把某人当名人般追捧，超过一般的礼貌赞许。",
+      "usage": [
+        {
+          "senseZh": "像对待大人物一样追捧",
+          "explanationZh": "正式及物动词，通常以人为宾语，强调给予名人式的关注、赞誉或礼遇。可以是实至名归，也可能带批评，暗示被捧得过高；不能看到 lionize 就断定对方一定不值得赞扬。",
+          "collocations": [
+            {
+              "phrase": "lionize a writer",
+              "meaningZh": "把一位作家捧为名人"
+            },
+            {
+              "phrase": "be lionized by the press",
+              "meaningZh": "受到媒体热烈追捧"
+            }
+          ]
+        },
+        {
+          "senseZh": "常用被动，说明因何或以何身份受捧",
+          "explanationZh": "be lionized as 后接被赋予的角色，for 后可接受到赞誉的原因。区别于泛泛地喜欢：默默欣赏一个人，不一定已经构成把他当名人追捧。英式拼写也可用 lionise。",
+          "collocations": [
+            {
+              "phrase": "be lionized as a hero",
+              "meaningZh": "被当作英雄追捧"
+            },
+            {
+              "phrase": "be lionized for an achievement",
+              "meaningZh": "因一项成就而受追捧"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She was lionized everywhere after her novel won the Pulitzer Prize.",
+          "translationZh": "她的小说获得普利策奖后，她走到哪里都受到追捧。",
+          "explanationZh": "was lionized 是被动式，焦点在她获得的名人式待遇；after 给出这种关注随之而来的背景。"
+        },
+        {
+          "textEn": "The press began to lionize him enthusiastically.",
+          "translationZh": "媒体开始热情地追捧他。",
+          "explanationZh": "the press 是施加关注的一方，him 是被捧的对象；不宜把 lionize 理解成他自己开始出名的非及物动作。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "eulogize",
+          "comparisonZh": "在高度赞颂某人时有交集。eulogize 侧重用言辞或文字称颂，常见于追悼语境，但也能赞颂在世者；lionize 侧重给人名人式礼遇和追捧，可以通过采访、邀约等行动体现。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "celebrate",
+          "comparisonZh": "在公开赞誉某人的意义上相近；lionize 更突出把人当重要名流来追捧。celebrate 还能指庆祝节日、生日或胜利，不能把 celebrate a birthday 换成 lionize a birthday。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "LION 捧成名人",
+          "textZh": "lion 除了“狮子”，也能比喻备受瞩目的名人；加 -ize，就是把人当名人追捧。作家获奖后，众人像迎接狮王一样铺红毯、争着请他签名：lionize。",
+          "original": true,
+          "kind": "etymology"
+        },
+        {
+          "method": "LION EYES",
+          "textZh": "lion eyes（狮子的眼睛）连读，近似 lionize /ˈlaɪənaɪz/。想象狮子粉丝双眼闪亮，围着歌手欢呼、索要签名，把他捧成大明星。借 eyes 记声音，结尾仍拼 -ize。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 4198,
+      "word": "preachy",
+      "ipa": "/ˈpriːtʃi/",
+      "pos": "adj.",
+      "coreMeaningZh": "爱说教的；说教味浓的",
+      "coreEn": "Giving moral advice in an overbearing or tiresome way.",
+      "coreImageZh": "大家刚准备分享蛋糕，同伴却开始没完没了地训人该怎样节制和做人。preachy 指爱说教、把道理讲得令人厌烦，并非一切劝告都如此。",
+      "usage": [
+        {
+          "senseZh": "建议变成了训话",
+          "explanationZh": "非正式，通常带贬义，评价说话的人、语气或表达方式太爱教别人怎样做人。不是所有劝告都 preachy；关键是听来生硬、居高临下或说教过头，也不限定于宗教讲话。",
+          "collocations": [
+            {
+              "phrase": "a preachy tone",
+              "meaningZh": "说教腔"
+            },
+            {
+              "phrase": "sound preachy",
+              "meaningZh": "听起来像在训人"
+            }
+          ]
+        },
+        {
+          "senseZh": "故事被直白的道德训诫挤满",
+          "explanationZh": "可形容电影、小说、文章等，批评其把道理硬塞给受众。作品有社会关怀或道德主题，并不自动等于 preachy；这个词评价的是表达方式造成的说教感。",
+          "collocations": [
+            {
+              "phrase": "a preachy novel",
+              "meaningZh": "说教味浓的小说"
+            },
+            {
+              "phrase": "a preachy message",
+              "meaningZh": "生硬说教的信息"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We were put off by the speaker's preachy tone.",
+          "translationZh": "演讲者那种说教的口气让我们反感。",
+          "explanationZh": "be put off by 表示因某事产生反感；preachy 在这里评价语气，不表示听众一定反对讲话内容。"
+        },
+        {
+          "textEn": "How do you address social issues without being preachy?",
+          "translationZh": "怎样才能讨论社会问题，又不显得说教？",
+          "explanationZh": "without being 把讨论内容与表达方式分开：关心社会问题可以成立，同时避免居高临下地训人。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "didactic",
+          "comparisonZh": "指作品或讲话过分训诫、说教时接近。didactic 也可中性地指以教学为目的，如教学性作品；preachy 通常是对说教味的负面评价，不能覆盖所有中性的教育用途。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "moralizing",
+          "comparisonZh": "修饰 tone、remarks 等、指热衷评判对错和教人做人时相近。moralizing 更直接点出道德评说的内容；preachy 着重这种表达让人觉得被训教。moralizing 还可作名词或动词形式，替换时要看句法。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "PREACH + Y",
+          "textZh": "preach 是“布道、劝诫”，加 -y 成为 preachy。朋友本来只提醒“别浪费”，却接着滔滔不绝地教你做人：劝告变成令人厌烦的说教。",
+          "original": true,
+          "kind": "word_components"
+        },
+        {
+          "method": "PEACH 训人",
+          "textZh": "PEACH（桃子）在 P 后加 R，末尾加 Y，就是 PREACHY。盘里的桃子竖起小手，没完没了地训你“好孩子应该怎么吃饭”：这颗桃子真爱说教。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    }
+  ]
+}

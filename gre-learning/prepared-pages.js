@@ -30,16 +30,22 @@ export function installPreparedPages({loader,entries,picker,window:win=window,do
     if(!poster)throw new Error('Page poster missing');
     await Promise.race([poster.decode(),new Promise((_,reject)=>controller.signal.addEventListener('abort',()=>reject(new DOMException('Cancelled','AbortError')),{once:true}))]);
     if(!poster.naturalWidth||controller.signal.aborted)throw new Error('Page poster unavailable');
+    if(loaded.media?.staticPosterURL){
+     const fallback=doc.createElement('img');fallback.src=loaded.media.staticPosterURL;await fallback.decode();
+     if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');page.staticPosterImage=fallback;
+    }
     // The visible preparation is always the authored frame-zero poster. A video
     // decoder may fail without turning this real, verified page into a blank.
     page.motion=installStoryMedia(root,{picker,window:win,document:doc});
     await page.motion.refresh(loaded.media,{root});
     if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
+    if(!page.motion.prepareStaticPoster()){
     root.querySelectorAll('video').forEach(video=>{video.pause();video.style.opacity='0';});
-    root.querySelectorAll('.story-poster').forEach(image=>image.style.opacity='1');
+    root.querySelectorAll('.story-poster').forEach(image=>{image.style.opacity='1';if(loaded.media?.waitForPresentedFrame)image.style.removeProperty('clip-path');});
     root.querySelectorAll('.story-illustration').forEach(figure=>figure.classList.remove('is-playing'));
-    const dialogue=root.querySelector('[data-story-dialogue]');const first=loaded.media?.posterDialogue;
+    const dialogue=root.querySelector('[data-story-dialogue]');const first=loaded.media?.staticPoster?loaded.media.stages?.[0]:loaded.media?.posterDialogue;
     if(dialogue&&first){dialogue.textContent=first.text;dialogue.className='story-dialogue speaker-'+first.speaker;dialogue.style.setProperty('--dialogue-x',String(first.anchor.x));}
+    }
     page.ready=true;return page;
    }catch(error){if(pages.get(number)===page)dispose(page);throw error;}
    finally{win.clearTimeout(timer);loader.retainMedia?.(retained);}

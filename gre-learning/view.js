@@ -10,6 +10,7 @@ function method(item){
  return `<article class="mnemonic"><div class="mnemonic-heading"><div><h3>${escape(title)}</h3></div></div><p>${escape(item.textZh)}</p></article>`;
 }
 function artwork(entry,media){
+ if(media?.staticPoster)media={...media,posterDialogue:media.stages?.[0]||media.posterDialogue};
  if(!media)return '<div class="story-illustration illustration-pending" aria-hidden="true"></div>';
  // Courteous alone preserves its originally approved art-overlay dialogue position.
  if(entry.number===2819&&media.posterDialogue?.placement?.mode==='courteous-original-art-overlay'){

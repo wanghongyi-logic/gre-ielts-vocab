@@ -2,6 +2,7 @@
 // A page is prepared paused, revealed with a decoded first frame, then activated.
 export function installStoryMedia(surface,{picker,window:win=window,document:doc=document}={}) {
  let video=null,figure=null,observer=null,media=null,frame=null,activationFrame=null,prepareCancel=null;
+ let presented=false,presentationRequest=null,presentationTarget=null,presentationPaint=null;
  let generation=0,playAttempt=0,visible=true,turning=false,activated=false,ready=false,failed=false,blocked=false,firstPass=true,lastTime=0;
  const preference=win.matchMedia('(prefers-reduced-motion: reduce)'),connection=win.navigator?.connection;
  const staticMode=()=>preference.matches||Boolean(connection?.saveData);
@@ -23,13 +24,46 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
   if(bubble.textContent!==stage.text)bubble.textContent=stage.text;
   bubble.className='story-dialogue speaker-'+stage.speaker;bubble.style.setProperty('--dialogue-x',String(stage.anchor.x));
  }
+ function waitForFrame(){return Boolean(media?.waitForPresentedFrame&&media?.resetTransition?.type==='none');}
+ function cancelPresentation(){
+  if(presentationRequest!==null)presentationTarget?.cancelVideoFrameCallback?.(presentationRequest);
+  if(presentationPaint!==null)win.cancelAnimationFrame(presentationPaint);
+  presentationRequest=null;presentationTarget=null;presentationPaint=null;
+ }
+ function requestPresentation(){
+  if(!waitForFrame()||presented||presentationRequest!==null||presentationPaint!==null||typeof video?.requestVideoFrameCallback!=='function')return;
+  const token=generation,target=video;presentationTarget=target;
+  presentationRequest=target.requestVideoFrameCallback((_now,details)=>{
+   if(token!==generation||target!==video)return;
+   presentationRequest=null;presentationTarget=null;
+   if(!(details?.presentedFrames>0)){requestPresentation();return;}
+   presentationPaint=win.requestAnimationFrame(()=>{
+    if(token!==generation||target!==video)return;presentationPaint=null;
+    presented=true;if(mayPlay()&&!target.paused)paintFrame();
+   });
+  });
+ }
+ function posterSource(staticFallback=false){
+  if(!media?.staticPosterURL)return;
+  const image=figure?.querySelector('.story-poster'),src=staticFallback?media.staticPosterURL:media.posterURL;
+  if(image&&image.getAttribute('src')!==src)image.setAttribute('src',src);
+ }
+ function prepareStaticPoster(){
+  if(media?.staticPosterURL&&(staticMode()||failed||blocked)){showPoster();return true;}return false;
+ }
  function showPoster(){
-  stopFrame();figure?.classList.remove('is-playing');
+  if(waitForFrame())figure?.querySelector('.story-poster')?.style.removeProperty('clip-path');
+  posterSource(true);stopFrame();figure?.classList.remove('is-playing');
   if(video)video.style.opacity='0';
   figure?.querySelector('.story-poster')?.style.removeProperty('opacity');dialogue(0,true);
  }
  function paintFrame(){
   if(!video)return;
+  posterSource(false);
+  if(waitForFrame()&&!presented&&typeof video.requestVideoFrameCallback==='function'){
+   video.style.opacity='1';figure?.classList.add('is-playing');
+   figure?.querySelector('.story-poster')?.style.setProperty('opacity','1');dialogue(0);return;
+  }
   const time=video.currentTime*1000,duration=Number.isFinite(video.duration)?video.duration*1000:media?.durationMs;
   if(time+150<lastTime)firstPass=false;
   lastTime=time;
@@ -37,7 +71,9 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
   // Retain authored loop resets, but never fade a newly entered page from blank.
   const opacity=media?.resetTransition?.type==='none'?1:Math.max(0,Math.min(1,firstPass?1:time/into,(duration-time)/out));
   figure?.classList.add('is-playing');video.style.opacity=String(Number.isFinite(opacity)?opacity:1);
-  figure?.querySelector('.story-poster')?.style.setProperty('opacity','0');dialogue(time);
+  const underlay=waitForFrame()&&typeof video.requestVideoFrameCallback!=='function',poster=figure?.querySelector('.story-poster');
+  poster?.style.setProperty('opacity',underlay?'1':'0');
+  if(waitForFrame()){if(underlay)poster?.style.setProperty('clip-path','inset(5% 0 4%)');else poster?.style.removeProperty('clip-path');}dialogue(time);
  }
  function frameTick(){
   frame=null;if(!mayPlay()||video.paused)return;
@@ -48,8 +84,9 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
   if(!video)return;
   if(failed||blocked||staticMode()){video.pause();showPoster();return;}
   if(!mayPlay()){video.pause();stopFrame();return;}
+  requestPresentation();
   const token=generation,target=video;
-  target.muted=true;
+  posterSource(false);target.muted=true;
   target.play().then(()=>{
    if(token!==generation||target!==video){target.pause();return;}
    if(attempt!==playAttempt)return;
@@ -59,11 +96,11 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
    if(token!==generation||target!==video||attempt!==playAttempt)return;
    // A visibility/turn pause can reject an in-flight play without autoplay denial.
    if(!mayPlay())return;
-   blocked=true;target.pause();showPoster();
+   blocked=true;cancelPresentation();target.pause();showPoster();
   });
  }
  function cancel(){
-  generation++;playAttempt++;activated=false;ready=false;
+  generation++;playAttempt++;activated=false;ready=false;presented=false;cancelPresentation();
   observer?.disconnect();observer=null;stopFrame();
   if(activationFrame!==null)win.cancelAnimationFrame(activationFrame);activationFrame=null;
   prepareCancel?.();prepareCancel=null;video?.pause();video=null;figure=null;media=null;
@@ -72,7 +109,7 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
   cancel();media=nextMedia;failed=false;blocked=false;firstPass=true;lastTime=0;visible=true;
   video=root.querySelector('[data-story-video]');if(!video)return false;
   const target=video,token=generation;
-  figure=target.closest('.story-illustration');target.autoplay=false;target.removeAttribute('autoplay');target.muted=true;target.pause();
+  figure=target.closest('.story-illustration');posterSource(false);target.autoplay=false;target.removeAttribute('autoplay');target.muted=true;target.pause();
   target.addEventListener('error',()=>{if(token!==generation||target!==video)return;failed=true;target.pause();showPoster();});
   const decoded=await new Promise(resolve=>{
    let done=false,timer=null;
@@ -109,5 +146,5 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
  }
  function setTurning(value){turning=Boolean(value);sync();}
  const visibility=()=>sync();doc.addEventListener('visibilitychange',visibility);preference.addEventListener('change',visibility);connection?.addEventListener?.('change',visibility);picker?.addEventListener('close',visibility);
- return {refresh,activate,setTurning,cancel,sync,destroy(){cancel();doc.removeEventListener('visibilitychange',visibility);preference.removeEventListener('change',visibility);connection?.removeEventListener?.('change',visibility);picker?.removeEventListener('close',visibility);}};
+ return {refresh,activate,setTurning,cancel,sync,prepareStaticPoster,destroy(){cancel();doc.removeEventListener('visibilitychange',visibility);preference.removeEventListener('change',visibility);connection?.removeEventListener?.('change',visibility);picker?.removeEventListener('close',visibility);}};
 }

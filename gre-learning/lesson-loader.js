@@ -65,11 +65,11 @@ export class LessonLoader {
   const meta=this.index.get(Number(number));if(!meta)throw new Error('Lesson is not reviewed and ready');
   if(isStorybookCatalog(this.catalog)) {
    const refs=meta.storyMedia;
-   const [unit,posterURL,videoURL]=await Promise.all([this.resource(meta.unit,signal,priority),refs?this.mediaResource(refs.poster,signal,priority):null,refs?this.mediaResource(refs.video,signal,priority):null]);
+   const [unit,posterURL,videoURL,staticPosterURL]=await Promise.all([this.resource(meta.unit,signal,priority),refs?this.mediaResource(refs.poster,signal,priority):null,refs?this.mediaResource(refs.video,signal,priority):null,refs?.staticPoster?this.mediaResource(refs.staticPoster,signal,priority):null]);
    const entry=unit.entries?.find(item=>item.number===meta.number);
    if(!entry||entry.word!==meta.word)throw new Error('Incompatible lesson');
    validateEntry(entry);
-   return {entry,media:refs?{...refs,posterURL,videoURL}:null};
+   return {entry,media:refs?{...refs,posterURL,videoURL,...(refs.staticPoster?{staticPosterURL}:{} )}:null};
   }
   const [unit,art]=await Promise.all([this.resource(meta.unit,signal,priority),this.resource(meta.art,signal,priority)]);
   const entry=unit.entries?.find(entry=>entry.number===meta.number);
@@ -94,7 +94,7 @@ export class LessonLoader {
   },250);
  }
  retainMedia(numbers){
-  const hashes=new Set();for(const number of numbers){const refs=this.index.get(number)?.storyMedia;if(refs){hashes.add(refs.poster.sha256);hashes.add(refs.video.sha256);}}
+  const hashes=new Set();for(const number of numbers){const refs=this.index.get(number)?.storyMedia;if(refs){hashes.add(refs.poster.sha256);hashes.add(refs.video.sha256);if(refs.staticPoster)hashes.add(refs.staticPoster.sha256);}}
   for(const [hash,url] of this.mediaCache)if(!hashes.has(hash)){URL.revokeObjectURL(url);this.mediaCache.delete(hash);}
  }
  destroy(){this.cancel();this.cache.clear();this.bytes=0;for(const url of this.mediaCache.values())URL.revokeObjectURL(url);this.mediaCache.clear();}

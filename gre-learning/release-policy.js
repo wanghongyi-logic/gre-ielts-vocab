@@ -10,8 +10,10 @@ export function isStorybookCatalog(raw) {
  return mode==='storybook-first-five'||mode===STORYBOOK_BATCH_MODE||mode===STORYBOOK_ORDERED_MODE;
 }
 function validateStoryMedia(media) {
+ if(media&&Object.hasOwn(media,'waitForPresentedFrame')&&typeof media.waitForPresentedFrame!=='boolean')throw new Error('Invalid poster underlay flag');
+ if(media&&Object.hasOwn(media,'staticPoster')&&(!media.staticPoster||typeof media.staticPoster!=='object'||Array.isArray(media.staticPoster)))throw new Error('Invalid optional static poster');
  if(!media||!Number.isSafeInteger(media.width)||media.width<=0||!Number.isSafeInteger(media.height)||media.height<=0||!Number.isFinite(media.durationMs)||media.durationMs<=0||typeof media.alt!=='string'||!media.alt.trim())throw new Error('Storybook media metadata missing');
- for(const [kind,extensions] of [['poster',/\.(png|webp|jpe?g|avif)$/i],['video',/\.(mp4|webm)$/i]]){
+ for(const [kind,extensions] of [['poster',/\.(png|webp|jpe?g|avif)$/i],['video',/\.(mp4|webm)$/i],...(media.staticPoster?[['staticPoster',/\.(png|webp|jpe?g|avif)$/i]]:[])]){
   const ref=media[kind];
   if(!ref||typeof ref.url!=='string'||!/^story-media\/(?:[A-Za-z0-9_-]+\/)*[A-Za-z0-9_.-]+$/.test(ref.url)||!extensions.test(ref.url)||!/^[a-f0-9]{64}$/.test(ref.sha256)||!ref.url.split('/').at(-1).includes(ref.sha256)||!Number.isSafeInteger(ref.bytes)||ref.bytes<=0)throw new Error('Storybook media integrity reference missing');
  }
@@ -48,7 +50,7 @@ export function gateCatalog(raw) {
  });
  const integrityRefs=new Map(),digestBytes=new Map();
  for(const entry of entries){
-  const refs=[raw.units[entry.unit],...(entry.storyMedia?[entry.storyMedia.poster,entry.storyMedia.video]:[])];
+  const refs=[raw.units[entry.unit],...(entry.storyMedia?[entry.storyMedia.poster,entry.storyMedia.video,...(entry.storyMedia.staticPoster?[entry.storyMedia.staticPoster]:[])]:[])];
   for(const ref of refs){
    const prior=integrityRefs.get(ref.url);
    if(prior&&(prior.sha256!==ref.sha256||prior.bytes!==ref.bytes))throw new Error('Conflicting integrity declarations for one asset URL');
