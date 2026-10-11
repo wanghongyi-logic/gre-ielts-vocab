@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "140",
-  "authoredCount": 50,
-  "publishedCount": 50,
+  "release": "141",
+  "authoredCount": 55,
+  "publishedCount": 55,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -57,7 +57,12 @@
       357,
       1364,
       2819,
-      2530
+      2530,
+      3683,
+      2718,
+      2597,
+      4623,
+      4002
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -122,6 +127,11 @@
       "url": "units/core007-378ce7d511e4906bf0fd42bbb75716fd421a91dfa9a0325105a7bf0c99ddb461.json",
       "sha256": "378ce7d511e4906bf0fd42bbb75716fd421a91dfa9a0325105a7bf0c99ddb461",
       "bytes": 15421
+    },
+    {
+      "url": "units/core008-f2471f6a3870aeb96192a6fad794aa62720d97e34e021ba58352b716a29512bb.json",
+      "bytes": 15883,
+      "sha256": "f2471f6a3870aeb96192a6fad794aa62720d97e34e021ba58352b716a29512bb"
     }
   ],
   "entries": [
@@ -2576,6 +2586,166 @@
           "url": "story-media/2530-a794c6d354deb1808827fb0ad5b8adbb5473528ca33833e4ff0072a31fdf7f34.webp",
           "bytes": 306110,
           "sha256": "a794c6d354deb1808827fb0ad5b8adbb5473528ca33833e4ff0072a31fdf7f34"
+        }
+      }
+    },
+    {
+      "number": 3683,
+      "word": "flagrant",
+      "coreMeaningZh": "明目张胆而恶劣的；明显得令人无法容忍的",
+      "unit": 11,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 51,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 7200,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "禁止倒垃圾的牌子就在眼前，男孩仍把垃圾倒在地上。flagrant 指错误或恶行明显而严重，令人无法忽视；不只是普通的“显眼”。",
+        "video": {
+          "url": "story-media/3683-1946efeceb08b72835ff6278180be7667a691c8d80a9be9196d4e0eb61e13737.mp4",
+          "bytes": 479190,
+          "sha256": "1946efeceb08b72835ff6278180be7667a691c8d80a9be9196d4e0eb61e13737"
+        },
+        "poster": {
+          "url": "story-media/3683-7af61ae4d20ea77479ece313838de5ae4b7e1c2545a5d1477a4b60b41f5a5df9.webp",
+          "bytes": 298982,
+          "sha256": "7af61ae4d20ea77479ece313838de5ae4b7e1c2545a5d1477a4b60b41f5a5df9"
+        }
+      }
+    },
+    {
+      "number": 2718,
+      "word": "anachronistic",
+      "coreMeaningZh": "与所处时代不符的；被放错历史时期的",
+      "unit": 11,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 52,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 7200,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "古埃及画中的法老竟拿着智能手机，男孩指向这个不合年代的细节。anachronistic 指事物与所处时代不符，也可形容现实中显得过时的制度或习惯。",
+        "video": {
+          "url": "story-media/2718-c397a6aed7869194df93b4d48c4652c6ac447ad3e0d5f873bf5bd456665d48ab.mp4",
+          "bytes": 218256,
+          "sha256": "c397a6aed7869194df93b4d48c4652c6ac447ad3e0d5f873bf5bd456665d48ab"
+        },
+        "poster": {
+          "url": "story-media/2718-26fb68484032f8340f6a58126d36e4612a3e3ffc8b1484d7b4ca3cf558f0be0a.webp",
+          "bytes": 271564,
+          "sha256": "26fb68484032f8340f6a58126d36e4612a3e3ffc8b1484d7b4ca3cf558f0be0a"
+        }
+      }
+    },
+    {
+      "number": 2597,
+      "word": "venerate",
+      "coreMeaningZh": "崇敬；怀着深切敬意尊奉",
+      "unit": 11,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 53,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 6400.0,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "男孩郑重放下枝叶，收回手后向神像鞠躬。venerate 是怀着深切敬意崇敬、尊奉；对象也可以是先贤或传统，不限于宗教。",
+        "video": {
+          "url": "story-media/2597-f6a6999d97f1688a7e90e3ef591f7b4329bf5b909b3363ac5235cc1cb00fcefa.mp4",
+          "bytes": 424839,
+          "sha256": "f6a6999d97f1688a7e90e3ef591f7b4329bf5b909b3363ac5235cc1cb00fcefa"
+        },
+        "poster": {
+          "url": "story-media/2597-ebdb7a0291611a62a4ca54299a427dbd63a6ccb5dbb3a8c0b313dd1f6863d90b.png",
+          "bytes": 605323,
+          "sha256": "ebdb7a0291611a62a4ca54299a427dbd63a6ccb5dbb3a8c0b313dd1f6863d90b"
+        }
+      }
+    },
+    {
+      "number": 4623,
+      "word": "upheaval",
+      "coreMeaningZh": "剧变；动荡；地壳等的隆起",
+      "unit": 11,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 54,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 6400.0,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "原本平整的模型地面从下面隆起，房屋随之倾斜，整齐的布局被打乱。upheaval 可指地表隆起，也常指打乱原有秩序的剧变或动荡。",
+        "video": {
+          "url": "story-media/4623-f422e83abab9ac5a9e30552cd1e479e29acfb565630264ca7c9f3d58a24f7da0.mp4",
+          "bytes": 243235,
+          "sha256": "f422e83abab9ac5a9e30552cd1e479e29acfb565630264ca7c9f3d58a24f7da0"
+        },
+        "poster": {
+          "url": "story-media/4623-399f3a2a01786624a8bcd8848802fe6118bbee410bc375dce7a86114bcb9014f.png",
+          "bytes": 368525,
+          "sha256": "399f3a2a01786624a8bcd8848802fe6118bbee410bc375dce7a86114bcb9014f"
+        }
+      }
+    },
+    {
+      "number": 4002,
+      "word": "mendacity",
+      "coreMeaningZh": "说谎；不诚实；谎言",
+      "unit": 11,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 55,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 6400.0,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "男孩明明看见道路还满是坑洞，却举起“全部修好”的报告。mendacity 指说谎、不诚实，关键是明知事实却说假话，而非无意说错。",
+        "video": {
+          "url": "story-media/4002-b5f03bcee38656a7bc2f223245e2238eb876daca9142da92c01a21c1f2301ea0.mp4",
+          "bytes": 320235,
+          "sha256": "b5f03bcee38656a7bc2f223245e2238eb876daca9142da92c01a21c1f2301ea0"
+        },
+        "poster": {
+          "url": "story-media/4002-e042ff89d10eb580ff9f69499324612444b7405ce268f5bf4bb332c3dd21b46f.png",
+          "bytes": 606312,
+          "sha256": "e042ff89d10eb580ff9f69499324612444b7405ce268f5bf4bb332c3dd21b46f"
         }
       }
     }
