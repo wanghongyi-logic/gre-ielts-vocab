@@ -10,6 +10,15 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
  function dialogue(time,poster=false){
   const bubble=figure?.querySelector('[data-story-dialogue]');
   const stage=poster?media?.posterDialogue:media?.stages?.find(item=>time>=item.startMs&&time<item.endMs)||media?.stages?.at(-1);
+  const overlay=figure?.matches('[data-courteous-original-overlay="2819"]')?figure.querySelector('[data-courteous-dialogue]'):null;
+  if(overlay&&stage?.placement?.mode==='courteous-original-art-overlay'){
+   const p=stage.placement,x=p.x*724,y=p.y*724,w=p.width*724,h=p.height*724;
+   overlay.setAttribute('aria-label',stage.text);overlay.querySelector('[data-courteous-bubble]').setAttribute('visibility',stage.text?'visible':'hidden');
+   const tail=overlay.querySelector('[data-courteous-tail]'),rect=overlay.querySelector('[data-courteous-rect]'),text=overlay.querySelector('[data-courteous-text]');
+   tail.setAttribute('d',`M${x+w*.46} ${y+h} L${p.tailX*724} ${p.tailY*724} L${x+w*.57} ${y+h}`);
+   for(const [k,v]of Object.entries({x,y,width:w,height:h}))rect.setAttribute(k,String(v));
+   text.setAttribute('x',String(x+w/2));text.setAttribute('y',String(y+43));text.textContent=stage.text;return;
+  }
   if(!bubble||!stage)return;
   if(bubble.textContent!==stage.text)bubble.textContent=stage.text;
   bubble.className='story-dialogue speaker-'+stage.speaker;bubble.style.setProperty('--dialogue-x',String(stage.anchor.x));

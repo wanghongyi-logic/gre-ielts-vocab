@@ -221,3 +221,6 @@ body{width:calc(100% - var(--bookmark-gutter));padding:0;background:var(--paper)
 .bookmarks>.bookmark,.bookmarks>.bookmark-list{pointer-events:auto}
 .bookmark-list{max-height:calc(100dvh - 112px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}
 @media(max-height:480px){.bookmarks{gap:14px}.bookmark-list{max-height:calc(100dvh - 92px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}}
+
+/* Courteous2819 only: preserve original bubble/tail positions over pure art. */
+[data-courteous-original-overlay="2819"] .courteous-original-overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}

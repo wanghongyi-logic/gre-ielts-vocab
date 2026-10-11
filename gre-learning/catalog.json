@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "release": "141",
+  "release": "142",
   "authoredCount": 55,
   "publishedCount": 55,
   "libraryTarget": 4731,
@@ -129,9 +129,9 @@
       "bytes": 15421
     },
     {
-      "url": "units/core008-f2471f6a3870aeb96192a6fad794aa62720d97e34e021ba58352b716a29512bb.json",
-      "bytes": 15883,
-      "sha256": "f2471f6a3870aeb96192a6fad794aa62720d97e34e021ba58352b716a29512bb"
+      "url": "units/core008-artrepair-ee748b283c1aae6a6283270e5cb49c0e5eae210f23487037716f17566da52360.json",
+      "bytes": 15880,
+      "sha256": "ee748b283c1aae6a6283270e5cb49c0e5eae210f23487037716f17566da52360"
     }
   ],
   "entries": [
@@ -2117,23 +2117,20 @@
       "storyMedia": {
         "width": 512,
         "height": 512,
-        "durationMs": 7400,
+        "durationMs": 4160,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240,
-          "reason": "Unchanged native reset after clearly held full root removal; no opaque reset is baked into video."
+          "type": "none"
         },
         "alt": "棕发青年抓住杂草的茎，把相连的整套根系从土壤表面完整拔出；原处土里不再留根，旁边的花仍然生长。",
         "poster": {
-          "url": "story-media/3649-92c4130180741e3847ab3b872a7ffc24c85ad37d65e3cd4218676544d4e1f087.webp",
-          "bytes": 361074,
-          "sha256": "92c4130180741e3847ab3b872a7ffc24c85ad37d65e3cd4218676544d4e1f087"
+          "url": "story-media/3649-7b0138873e17e05d52196ad4ad7f513bb9fbae73a649ac4a06b551e5eabebc9c.webp",
+          "sha256": "7b0138873e17e05d52196ad4ad7f513bb9fbae73a649ac4a06b551e5eabebc9c",
+          "bytes": 368596
         },
         "video": {
-          "url": "story-media/3649-737900e42aa61dc333c09e4a30934a079a29f6a301473dd169e501e75a9441d3.mp4",
-          "bytes": 2528810,
-          "sha256": "737900e42aa61dc333c09e4a30934a079a29f6a301473dd169e501e75a9441d3"
+          "url": "story-media/3649-53339509b49f26faa4d8100319d2d3239ed6d9392cdca70e62881c7142761ad0.mp4",
+          "sha256": "53339509b49f26faa4d8100319d2d3239ed6d9392cdca70e62881c7142761ad0",
+          "bytes": 269030
         }
       }
     },
@@ -2152,21 +2149,18 @@
         "height": 512,
         "durationMs": 6160,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240,
-          "reason": "Unchanged native runtime paper fade after a clear held result; no encoded reversal or opaque reset."
+          "type": "none"
         },
         "alt": "棕发青年轻抬双手松开制动，小店上方的两个可见绳鼓转动，分别放出吊绳，让过分华丽的大招牌下降；他拉下控制绳制动，招牌停在小店门口，庞大的排场挡住了入口。",
         "poster": {
-          "url": "story-media/1053-d0387139ca1516bb83773dc4a00649e280aeb45e9b04dabc8576aeec4de3dcb7.webp",
-          "bytes": 368494,
-          "sha256": "d0387139ca1516bb83773dc4a00649e280aeb45e9b04dabc8576aeec4de3dcb7"
+          "url": "story-media/1053-afaee89d6486804a617a98d307f821b55b4ac28148333c49ced0ba54d8727a62.webp",
+          "sha256": "afaee89d6486804a617a98d307f821b55b4ac28148333c49ced0ba54d8727a62",
+          "bytes": 370544
         },
         "video": {
-          "url": "story-media/1053-2829b11fd61531bf5d94e1ca5d6ccf6d4a6983ea3b467ac6f3d522540fadeeb8.mp4",
-          "bytes": 1770359,
-          "sha256": "2829b11fd61531bf5d94e1ca5d6ccf6d4a6983ea3b467ac6f3d522540fadeeb8"
+          "url": "story-media/1053-8558a43e8cdaf205102b07c82f87de04b925e4e474510d5353eb203c2cda9f39.mp4",
+          "sha256": "8558a43e8cdaf205102b07c82f87de04b925e4e474510d5353eb203c2cda9f39",
+          "bytes": 461608
         }
       }
     },
@@ -2249,23 +2243,20 @@
       "storyMedia": {
         "width": 512,
         "height": 512,
-        "durationMs": 5640,
+        "durationMs": 7280,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240,
-          "reason": "Clear held result; unchanged native reset."
+          "type": "none"
         },
         "alt": "青年逐步凑近窥看已经被护在胸前的私人日记；主人保持双手护住合着的日记，皱眉把头转开，明确不愿被窥探。",
         "video": {
-          "url": "story-media/4253-313dd892138fa40d02204220ab07bd0c4a1e6394b1df85cc9cc9f98860a03327.mp4",
-          "bytes": 300045,
-          "sha256": "313dd892138fa40d02204220ab07bd0c4a1e6394b1df85cc9cc9f98860a03327"
+          "url": "story-media/4253-e4cd31cd928f922ff2633144c75a503eebe1c04a875362cdc5974d8c295ae078.mp4",
+          "sha256": "e4cd31cd928f922ff2633144c75a503eebe1c04a875362cdc5974d8c295ae078",
+          "bytes": 453069
         },
         "poster": {
-          "url": "story-media/4253-566b8cda59e400df1f238aa2d8ade699c8970dea0fe1eac12c22fd2bd0cac199.webp",
-          "bytes": 280652,
-          "sha256": "566b8cda59e400df1f238aa2d8ade699c8970dea0fe1eac12c22fd2bd0cac199"
+          "url": "story-media/4253-f12c0fc7ee4e2162f669c419cc88e396230e7139553a86dd098834e354505589.webp",
+          "sha256": "f12c0fc7ee4e2162f669c419cc88e396230e7139553a86dd098834e354505589",
+          "bytes": 281990
         }
       }
     },
@@ -2280,23 +2271,21 @@
       "artApproved": true,
       "displayOrdinal": 41,
       "storyMedia": {
-        "width": 512,
-        "height": 512,
+        "width": 724,
+        "height": 724,
         "durationMs": 8000,
         "video": {
-          "url": "story-media/1731-93817290e2b218e3d4873795db7fdf94a843922a31503fb05ab293a01ea36923.mp4",
-          "bytes": 404143,
-          "sha256": "93817290e2b218e3d4873795db7fdf94a843922a31503fb05ab293a01ea36923"
+          "url": "story-media/1731-765eef4d4ee2dd4454cfa3a8b484f2fb09986f54e07ed5f7fc67a9911ba5c74b.mp4",
+          "sha256": "765eef4d4ee2dd4454cfa3a8b484f2fb09986f54e07ed5f7fc67a9911ba5c74b",
+          "bytes": 909270
         },
         "poster": {
-          "url": "story-media/1731-82fb7406483d406a47e8e302fe49d8816feac86b657bda2c115db06557b4a185.webp",
-          "bytes": 202148,
-          "sha256": "82fb7406483d406a47e8e302fe49d8816feac86b657bda2c115db06557b4a185"
+          "url": "story-media/1731-800d6343a0984bed2b4fd51481d93ae4e3afd7d8393d56c54559845f888260aa.webp",
+          "sha256": "800d6343a0984bed2b4fd51481d93ae4e3afd7d8393d56c54559845f888260aa",
+          "bytes": 237108
         },
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "日期一天天变化，车票上的目的地也不断更换，人物始终在旅途中。peripatetic 描述这种辗转各地的生活或巡回工作的方式，不只是偶尔出一趟门。"
       }
@@ -2312,23 +2301,21 @@
       "artApproved": true,
       "displayOrdinal": 42,
       "storyMedia": {
-        "width": 512,
-        "height": 512,
-        "durationMs": 6520,
+        "width": 724,
+        "height": 724,
+        "durationMs": 5600,
         "video": {
-          "url": "story-media/1232-2f4cac9bbd2d6f27122f03b9dc90da81c4190b2cd2b0ba4c88fd2c3c065bf263.mp4",
-          "bytes": 127854,
-          "sha256": "2f4cac9bbd2d6f27122f03b9dc90da81c4190b2cd2b0ba4c88fd2c3c065bf263"
+          "url": "story-media/1232-7b8779c27b6ea122871a2abbd8f5abfa3e6a54ded8473f56ee4ff7c7a2915257.mp4",
+          "sha256": "7b8779c27b6ea122871a2abbd8f5abfa3e6a54ded8473f56ee4ff7c7a2915257",
+          "bytes": 386745
         },
         "poster": {
-          "url": "story-media/1232-25ef6753a052e9379f2b3091dcac70b30e15457b83e27efa916c40ddd66a6d7e.webp",
-          "bytes": 168298,
-          "sha256": "25ef6753a052e9379f2b3091dcac70b30e15457b83e27efa916c40ddd66a6d7e"
+          "url": "story-media/1232-77ebba0ed6aa125504a1bbda75837ef4e5f6d0e43e25cc0cc93816697d5df229.webp",
+          "sha256": "77ebba0ed6aa125504a1bbda75837ef4e5f6d0e43e25cc0cc93816697d5df229",
+          "bytes": 201510
         },
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "人物在“正式指控”的纸页上写下内容。indict 指正式指控某人涉嫌犯罪；提出指控还不等于已经证明有罪。它也可引申为指责某人或某事有过错。"
       }
@@ -2344,23 +2331,21 @@
       "artApproved": true,
       "displayOrdinal": 43,
       "storyMedia": {
-        "width": 512,
-        "height": 512,
-        "durationMs": 6600,
+        "width": 724,
+        "height": 724,
+        "durationMs": 6400,
         "video": {
-          "url": "story-media/4020-8792b25f7c2962d3d6bf069c513bca9b9669a06bd1fca4096d71c17917f05f9b.mp4",
-          "bytes": 151568,
-          "sha256": "8792b25f7c2962d3d6bf069c513bca9b9669a06bd1fca4096d71c17917f05f9b"
+          "url": "story-media/4020-329fb3647ec662d47f39a205a4c10566455a75a65130f57f9e5bdec4a63c3f40.mp4",
+          "sha256": "329fb3647ec662d47f39a205a4c10566455a75a65130f57f9e5bdec4a63c3f40",
+          "bytes": 1161369
         },
         "poster": {
-          "url": "story-media/4020-e190026240b8a1c4d3bc28cb4502b50d622b9fbb65445cbc79b5ede995c18303.webp",
-          "bytes": 239838,
-          "sha256": "e190026240b8a1c4d3bc28cb4502b50d622b9fbb65445cbc79b5ede995c18303"
+          "url": "story-media/4020-ef559c7c0d453b2b4ceff64b303a05184961e8978aa5c0b273fa553a5c3f1f12.webp",
+          "sha256": "ef559c7c0d453b2b4ceff64b303a05184961e8978aa5c0b273fa553a5c3f1f12",
+          "bytes": 311914
         },
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "鼓声不断的排练室，门牌却写着“安静的房间”。名字没有拼错，却与实际情况不相称；misnomer 指的正是这种错误或不恰当的名称。"
       }
@@ -2376,23 +2361,21 @@
       "artApproved": true,
       "displayOrdinal": 44,
       "storyMedia": {
-        "width": 512,
-        "height": 512,
-        "durationMs": 6600,
+        "width": 724,
+        "height": 724,
+        "durationMs": 5600,
         "video": {
-          "url": "story-media/860-1e60f20cee2d84e9bae86913dd79e1205e63c6dc4bdbb761dc2cc61aee768d1c.mp4",
-          "bytes": 150777,
-          "sha256": "1e60f20cee2d84e9bae86913dd79e1205e63c6dc4bdbb761dc2cc61aee768d1c"
+          "url": "story-media/860-cf53a8935622709e05190fff98d6fc1cfed0cccbc51709c73640a3647174b134.mp4",
+          "sha256": "cf53a8935622709e05190fff98d6fc1cfed0cccbc51709c73640a3647174b134",
+          "bytes": 467710
         },
         "poster": {
-          "url": "story-media/860-d1a7f24080b1740314533622a3ef8d52183635c5f1fe803b58488f5d9e6c9d0e.webp",
-          "bytes": 145272,
-          "sha256": "d1a7f24080b1740314533622a3ef8d52183635c5f1fe803b58488f5d9e6c9d0e"
+          "url": "story-media/860-5f59692389d24a7ec0fed415c1370a95ac0304cc6639f5920490c02ce27bca7a.webp",
+          "sha256": "5f59692389d24a7ec0fed415c1370a95ac0304cc6639f5920490c02ce27bca7a",
+          "bytes": 221718
         },
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "清风吹来，人物露出灿烂笑容，精神一振，兴奋地张开双臂。exhilarate 是使人兴奋愉快、精神振奋，比只是觉得舒服更有活力。"
       }
@@ -2408,23 +2391,21 @@
       "artApproved": true,
       "displayOrdinal": 45,
       "storyMedia": {
-        "width": 512,
-        "height": 512,
-        "durationMs": 6600,
+        "width": 724,
+        "height": 724,
+        "durationMs": 6400,
         "video": {
-          "url": "story-media/4103-e4127c3b12f52c81f8ba7a873e525c26b9d5b524802b9e5c4ebf6e6e1022a715.mp4",
-          "bytes": 257498,
-          "sha256": "e4127c3b12f52c81f8ba7a873e525c26b9d5b524802b9e5c4ebf6e6e1022a715"
+          "url": "story-media/4103-4b8adae9c4eb876b0d27c3a2dc4febd0e5ff1d150c497d60edea63e173d2c958.mp4",
+          "sha256": "4b8adae9c4eb876b0d27c3a2dc4febd0e5ff1d150c497d60edea63e173d2c958",
+          "bytes": 768724
         },
         "poster": {
-          "url": "story-media/4103-eec4ca6d7d8d7c8530bf4f5c36034c9fa8d1c8f5685e9024e3b4072f1d289922.webp",
-          "bytes": 200484,
-          "sha256": "eec4ca6d7d8d7c8530bf4f5c36034c9fa8d1c8f5685e9024e3b4072f1d289922"
+          "url": "story-media/4103-ff547c72221cf5001fdc0e813a7e8256dac6d6d93f75a489c476d5b44bbfda61.webp",
+          "sha256": "ff547c72221cf5001fdc0e813a7e8256dac6d6d93f75a489c476d5b44bbfda61",
+          "bytes": 263148
         },
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "厚绒地毯、金边座椅和华丽吊灯铺陈在同一座大厅里，处处透着富丽与丰足。opulent 描述这种奢华气派，也可形容富裕或充裕丰盛。"
       }
@@ -2442,22 +2423,20 @@
       "storyMedia": {
         "width": 512,
         "height": 512,
-        "durationMs": 6800,
+        "durationMs": 6120,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "男孩的歌声被咳嗽打断，显出身体的不适。malady 指疾病；也可把社会或制度的严重问题比作“弊病”。",
         "video": {
-          "url": "story-media/3985-5738f30d9bf0fb2d3b80243c09434751cac0fe32bb5da29e21403555843a9670.mp4",
-          "bytes": 214867,
-          "sha256": "5738f30d9bf0fb2d3b80243c09434751cac0fe32bb5da29e21403555843a9670"
+          "url": "story-media/3985-f8801d6c34de1851fd504b678e9f70f789226cc7327acff37182b9dce0d81056.mp4",
+          "sha256": "f8801d6c34de1851fd504b678e9f70f789226cc7327acff37182b9dce0d81056",
+          "bytes": 223166
         },
         "poster": {
-          "url": "story-media/3985-096484b1a731ef09388f3fe4ce1d9e974c0a69be6940eb708b552d3206cadc10.webp",
-          "bytes": 250178,
-          "sha256": "096484b1a731ef09388f3fe4ce1d9e974c0a69be6940eb708b552d3206cadc10"
+          "url": "story-media/3985-0d40169cb2f59b6bf355c6fc679746d714d416275ccee3b1dbe5ccfb805a8847.webp",
+          "sha256": "0d40169cb2f59b6bf355c6fc679746d714d416275ccee3b1dbe5ccfb805a8847",
+          "bytes": 126770
         }
       }
     },
@@ -2474,22 +2453,20 @@
       "storyMedia": {
         "width": 512,
         "height": 512,
-        "durationMs": 7000,
+        "durationMs": 6400,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "有人走近时，男孩把手中的卡片藏到桌下，等对方离开才重新拿出来。clandestine 强调刻意避人耳目、秘密进行，并不必然表示违法。",
         "video": {
-          "url": "story-media/357-14df1caac55032c82605d15f3d7a40aa3951ecf3ac6aa3018bfc0825cd902ca6.mp4",
-          "bytes": 259160,
-          "sha256": "14df1caac55032c82605d15f3d7a40aa3951ecf3ac6aa3018bfc0825cd902ca6"
+          "url": "story-media/357-1c8fa2dcd8fbbd3bb5cffa229cd450122d7776bf31ce8824af898dea3b449f96.mp4",
+          "sha256": "1c8fa2dcd8fbbd3bb5cffa229cd450122d7776bf31ce8824af898dea3b449f96",
+          "bytes": 316179
         },
         "poster": {
-          "url": "story-media/357-c79400f7d03ab321e9f441e975749cfbca446175ee28acf99214f9aea50b9366.webp",
-          "bytes": 244052,
-          "sha256": "c79400f7d03ab321e9f441e975749cfbca446175ee28acf99214f9aea50b9366"
+          "url": "story-media/357-effc59d3b6d4063a45488ed03a65587d571e90d5586fcf6829d6b2446429aff1.webp",
+          "sha256": "effc59d3b6d4063a45488ed03a65587d571e90d5586fcf6829d6b2446429aff1",
+          "bytes": 123196
         }
       }
     },
@@ -2506,22 +2483,20 @@
       "storyMedia": {
         "width": 512,
         "height": 512,
-        "durationMs": 7200.0,
+        "durationMs": 3240,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "一条绳子绕成复杂的结，男孩拉了拉，仍找不到轻易解开的办法。knotty 本义是多结的，形容问题时就是复杂、棘手，难以理清。",
         "video": {
-          "url": "story-media/1364-b5410264fb9df819e479453df29197b227eec6577b1e2bc5cda396e5b0bdca9b.mp4",
-          "bytes": 182618,
-          "sha256": "b5410264fb9df819e479453df29197b227eec6577b1e2bc5cda396e5b0bdca9b"
+          "url": "story-media/1364-a62f352b5011a0f2b3db593c69c3cd42a5bae78e0a57661dec5b7866c62b6c8e.mp4",
+          "sha256": "a62f352b5011a0f2b3db593c69c3cd42a5bae78e0a57661dec5b7866c62b6c8e",
+          "bytes": 263819
         },
         "poster": {
-          "url": "story-media/1364-36601e33232511f7b4452f37144a408af03553fe2ce1b8a680ab384b952aadc4.webp",
-          "bytes": 291346,
-          "sha256": "36601e33232511f7b4452f37144a408af03553fe2ce1b8a680ab384b952aadc4"
+          "url": "story-media/1364-acc4ed7b47e509617a49f13ebfbe2ee1232b418a7752895a7e1fd8a60645ceec.png",
+          "sha256": "acc4ed7b47e509617a49f13ebfbe2ee1232b418a7752895a7e1fd8a60645ceec",
+          "bytes": 610592
         }
       }
     },
@@ -2536,24 +2511,141 @@
       "artApproved": true,
       "displayOrdinal": 49,
       "storyMedia": {
-        "width": 512,
-        "height": 512,
-        "durationMs": 7200.0,
+        "width": 768,
+        "height": 768,
+        "durationMs": 7320,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "男孩先询问并等待回应，得到同意后才轻轻拉开帘子。courteous 是言行礼貌、顾及他人感受；关键在尊重对方，不只是动作轻。",
         "video": {
-          "url": "story-media/2819-5d4e9b61eec808bdfa69a32eb2b1c7b8a3d4e08d3689193d82a6e9c43dedb8e4.mp4",
-          "bytes": 210083,
-          "sha256": "5d4e9b61eec808bdfa69a32eb2b1c7b8a3d4e08d3689193d82a6e9c43dedb8e4"
+          "url": "story-media/2819-bc811758f6a262c0cd8be3151db1fdc6ae81110604420b6125297671db467f9a.mp4",
+          "sha256": "bc811758f6a262c0cd8be3151db1fdc6ae81110604420b6125297671db467f9a",
+          "bytes": 402429
         },
         "poster": {
-          "url": "story-media/2819-5f1e5e07deb3860a8020fd7a503ce0b2a08c78010c8f6c970e7f9f18083738bd.webp",
-          "bytes": 274130,
-          "sha256": "5f1e5e07deb3860a8020fd7a503ce0b2a08c78010c8f6c970e7f9f18083738bd"
+          "url": "story-media/2819-f8626953bcc7295647b9ba57fbba42ef927cc2eb02bb52e0724ec19fa46f2c91.webp",
+          "sha256": "f8626953bcc7295647b9ba57fbba42ef927cc2eb02bb52e0724ec19fa46f2c91",
+          "bytes": 111494
+        },
+        "stages": [
+          {
+            "id": "ask",
+            "startMs": 0,
+            "endMs": 1280,
+            "text": "May I?",
+            "speaker": "left",
+            "anchor": {
+              "x": 0.20027624309392264,
+              "y": 0.016574585635359115
+            },
+            "placement": {
+              "mode": "courteous-original-art-overlay",
+              "x": 0.03314917127071823,
+              "y": 0.016574585635359115,
+              "width": 0.3342541436464088,
+              "height": 0.09116022099447514,
+              "tailX": 0.255524861878453,
+              "tailY": 0.23756906077348067
+            }
+          },
+          {
+            "id": "wait",
+            "startMs": 1280,
+            "endMs": 2200,
+            "text": "",
+            "speaker": "left",
+            "anchor": {
+              "x": 0.20027624309392264,
+              "y": 0.016574585635359115
+            },
+            "placement": {
+              "mode": "courteous-original-art-overlay",
+              "x": 0.03314917127071823,
+              "y": 0.016574585635359115,
+              "width": 0.3342541436464088,
+              "height": 0.09116022099447514,
+              "tailX": 0.255524861878453,
+              "tailY": 0.23756906077348067
+            }
+          },
+          {
+            "id": "consent",
+            "startMs": 2200,
+            "endMs": 2640,
+            "text": "Yes",
+            "speaker": "right",
+            "anchor": {
+              "x": 0.7486187845303868,
+              "y": 0.016574585635359115
+            },
+            "placement": {
+              "mode": "courteous-original-art-overlay",
+              "x": 0.6712707182320442,
+              "y": 0.016574585635359115,
+              "width": 0.15469613259668508,
+              "height": 0.09116022099447514,
+              "tailX": 0.7596685082872928,
+              "tailY": 0.23756906077348067
+            }
+          },
+          {
+            "id": "reach-pull-return",
+            "startMs": 2640,
+            "endMs": 6320,
+            "text": "",
+            "speaker": "left",
+            "anchor": {
+              "x": 0.20027624309392264,
+              "y": 0.016574585635359115
+            },
+            "placement": {
+              "mode": "courteous-original-art-overlay",
+              "x": 0.03314917127071823,
+              "y": 0.016574585635359115,
+              "width": 0.3342541436464088,
+              "height": 0.09116022099447514,
+              "tailX": 0.255524861878453,
+              "tailY": 0.23756906077348067
+            }
+          },
+          {
+            "id": "restart",
+            "startMs": 6320,
+            "endMs": 7320,
+            "text": "May I?",
+            "speaker": "left",
+            "anchor": {
+              "x": 0.20027624309392264,
+              "y": 0.016574585635359115
+            },
+            "placement": {
+              "mode": "courteous-original-art-overlay",
+              "x": 0.03314917127071823,
+              "y": 0.016574585635359115,
+              "width": 0.3342541436464088,
+              "height": 0.09116022099447514,
+              "tailX": 0.255524861878453,
+              "tailY": 0.23756906077348067
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "May I?",
+          "speaker": "left",
+          "anchor": {
+            "x": 0.20027624309392264,
+            "y": 0.016574585635359115
+          },
+          "placement": {
+            "mode": "courteous-original-art-overlay",
+            "x": 0.03314917127071823,
+            "y": 0.016574585635359115,
+            "width": 0.3342541436464088,
+            "height": 0.09116022099447514,
+            "tailX": 0.255524861878453,
+            "tailY": 0.23756906077348067
+          }
         }
       }
     },
@@ -2568,24 +2660,98 @@
       "artApproved": true,
       "displayOrdinal": 50,
       "storyMedia": {
-        "width": 512,
-        "height": 512,
-        "durationMs": 7200.0,
+        "width": 768,
+        "height": 768,
+        "durationMs": 7520,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "对方刚开口，男孩就带着敌意接连打断，处处顶撞。truculent 指好争吵、凶横挑衅的态度；不一定真的动手，也不是普通的意见不同。",
         "video": {
-          "url": "story-media/2530-0d7428a4e1c88600a49b025b3d70e38598f227dfdaa87e2a94135cf1d37c2e96.mp4",
-          "bytes": 311943,
-          "sha256": "0d7428a4e1c88600a49b025b3d70e38598f227dfdaa87e2a94135cf1d37c2e96"
+          "url": "story-media/2530-2e7fb6f7e582d4eff9c3c1043ad706adf8e1dd78d31c171a9616aa3b68d0308c.mp4",
+          "sha256": "2e7fb6f7e582d4eff9c3c1043ad706adf8e1dd78d31c171a9616aa3b68d0308c",
+          "bytes": 614192
         },
         "poster": {
-          "url": "story-media/2530-a794c6d354deb1808827fb0ad5b8adbb5473528ca33833e4ff0072a31fdf7f34.webp",
-          "bytes": 306110,
-          "sha256": "a794c6d354deb1808827fb0ad5b8adbb5473528ca33833e4ff0072a31fdf7f34"
+          "url": "story-media/2530-df40159d03f37dfea3b758ce42d8ee73bb5b577eee886070e0ce9bcbb7351240.webp",
+          "sha256": "df40159d03f37dfea3b758ce42d8ee73bb5b577eee886070e0ce9bcbb7351240",
+          "bytes": 152150
+        },
+        "stages": [
+          {
+            "id": "peer-starts",
+            "startMs": 0,
+            "endMs": 1200,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.73,
+              "y": 0.12
+            },
+            "text": "I think…"
+          },
+          {
+            "id": "first-interruption",
+            "startMs": 1200,
+            "endMs": 2400,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.28,
+              "y": 0.12
+            },
+            "text": "Wrong!"
+          },
+          {
+            "id": "peer-resumes",
+            "startMs": 2400,
+            "endMs": 3300,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.73,
+              "y": 0.12
+            },
+            "text": "But…"
+          },
+          {
+            "id": "second-interruption",
+            "startMs": 3300,
+            "endMs": 4700,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.28,
+              "y": 0.12
+            },
+            "text": "Nonsense!"
+          },
+          {
+            "id": "settle",
+            "startMs": 4700,
+            "endMs": 5500,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.73,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "restart",
+            "startMs": 5500,
+            "endMs": 7520,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.73,
+              "y": 0.12
+            },
+            "text": "I think…"
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "right",
+          "anchor": {
+            "x": 0.73,
+            "y": 0.12
+          },
+          "text": "I think…"
         }
       }
     },
@@ -2600,24 +2766,22 @@
       "artApproved": true,
       "displayOrdinal": 51,
       "storyMedia": {
-        "width": 512,
-        "height": 512,
-        "durationMs": 7200,
+        "width": 768,
+        "height": 768,
+        "durationMs": 6000,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "禁止倒垃圾的牌子就在眼前，男孩仍把垃圾倒在地上。flagrant 指错误或恶行明显而严重，令人无法忽视；不只是普通的“显眼”。",
         "video": {
-          "url": "story-media/3683-1946efeceb08b72835ff6278180be7667a691c8d80a9be9196d4e0eb61e13737.mp4",
-          "bytes": 479190,
-          "sha256": "1946efeceb08b72835ff6278180be7667a691c8d80a9be9196d4e0eb61e13737"
+          "url": "story-media/3683-8da8f9aaaf875d20cbda7a04421edd10e3c19a00099a7a056a68036a98d7272f.mp4",
+          "sha256": "8da8f9aaaf875d20cbda7a04421edd10e3c19a00099a7a056a68036a98d7272f",
+          "bytes": 521925
         },
         "poster": {
-          "url": "story-media/3683-7af61ae4d20ea77479ece313838de5ae4b7e1c2545a5d1477a4b60b41f5a5df9.webp",
-          "bytes": 298982,
-          "sha256": "7af61ae4d20ea77479ece313838de5ae4b7e1c2545a5d1477a4b60b41f5a5df9"
+          "url": "story-media/3683-11d66069d857de01bc8506cafce331561aced287bba04559512d855fa826e753.webp",
+          "sha256": "11d66069d857de01bc8506cafce331561aced287bba04559512d855fa826e753",
+          "bytes": 177462
         }
       }
     },
@@ -2632,24 +2796,22 @@
       "artApproved": true,
       "displayOrdinal": 52,
       "storyMedia": {
-        "width": 512,
-        "height": 512,
-        "durationMs": 7200,
+        "width": 768,
+        "height": 768,
+        "durationMs": 6400,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "古埃及画中的法老竟拿着智能手机，男孩指向这个不合年代的细节。anachronistic 指事物与所处时代不符，也可形容现实中显得过时的制度或习惯。",
         "video": {
-          "url": "story-media/2718-c397a6aed7869194df93b4d48c4652c6ac447ad3e0d5f873bf5bd456665d48ab.mp4",
-          "bytes": 218256,
-          "sha256": "c397a6aed7869194df93b4d48c4652c6ac447ad3e0d5f873bf5bd456665d48ab"
+          "url": "story-media/2718-56453ec1965ba2228a4c6cce78df263382040fe1c0bebbff96cb0e4a409c54e6.mp4",
+          "sha256": "56453ec1965ba2228a4c6cce78df263382040fe1c0bebbff96cb0e4a409c54e6",
+          "bytes": 369011
         },
         "poster": {
-          "url": "story-media/2718-26fb68484032f8340f6a58126d36e4612a3e3ffc8b1484d7b4ca3cf558f0be0a.webp",
-          "bytes": 271564,
-          "sha256": "26fb68484032f8340f6a58126d36e4612a3e3ffc8b1484d7b4ca3cf558f0be0a"
+          "url": "story-media/2718-cb2435b7e19735600903b747f789b8d0a76b6910f2d343d6b2cb0bdc6a893dcd.webp",
+          "sha256": "cb2435b7e19735600903b747f789b8d0a76b6910f2d343d6b2cb0bdc6a893dcd",
+          "bytes": 112594
         }
       }
     },
@@ -2664,24 +2826,22 @@
       "artApproved": true,
       "displayOrdinal": 53,
       "storyMedia": {
-        "width": 512,
-        "height": 512,
-        "durationMs": 6400.0,
+        "width": 724,
+        "height": 724,
+        "durationMs": 6000,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
-        "alt": "男孩郑重放下枝叶，收回手后向神像鞠躬。venerate 是怀着深切敬意崇敬、尊奉；对象也可以是先贤或传统，不限于宗教。",
+        "alt": "男孩双手捧着枝叶，郑重地向神像鞠躬。venerate 是怀着深切敬意崇敬、尊奉；对象也可以是先贤或传统，不限于宗教。",
         "video": {
-          "url": "story-media/2597-f6a6999d97f1688a7e90e3ef591f7b4329bf5b909b3363ac5235cc1cb00fcefa.mp4",
-          "bytes": 424839,
-          "sha256": "f6a6999d97f1688a7e90e3ef591f7b4329bf5b909b3363ac5235cc1cb00fcefa"
+          "url": "story-media/2597-2a0e24ba73b4288675c456bc197434e0377ca1204034211bfccdc93a2c0ecdcd.mp4",
+          "sha256": "2a0e24ba73b4288675c456bc197434e0377ca1204034211bfccdc93a2c0ecdcd",
+          "bytes": 472946
         },
         "poster": {
-          "url": "story-media/2597-ebdb7a0291611a62a4ca54299a427dbd63a6ccb5dbb3a8c0b313dd1f6863d90b.png",
-          "bytes": 605323,
-          "sha256": "ebdb7a0291611a62a4ca54299a427dbd63a6ccb5dbb3a8c0b313dd1f6863d90b"
+          "url": "story-media/2597-2588101f1eabb258ab7e7ed5f265b2637b94d99c8546549e895e4bfe5bb54b30.webp",
+          "sha256": "2588101f1eabb258ab7e7ed5f265b2637b94d99c8546549e895e4bfe5bb54b30",
+          "bytes": 272870
         }
       }
     },
@@ -2696,24 +2856,22 @@
       "artApproved": true,
       "displayOrdinal": 54,
       "storyMedia": {
-        "width": 512,
-        "height": 512,
-        "durationMs": 6400.0,
+        "width": 724,
+        "height": 724,
+        "durationMs": 6800,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "原本平整的模型地面从下面隆起，房屋随之倾斜，整齐的布局被打乱。upheaval 可指地表隆起，也常指打乱原有秩序的剧变或动荡。",
         "video": {
-          "url": "story-media/4623-f422e83abab9ac5a9e30552cd1e479e29acfb565630264ca7c9f3d58a24f7da0.mp4",
-          "bytes": 243235,
-          "sha256": "f422e83abab9ac5a9e30552cd1e479e29acfb565630264ca7c9f3d58a24f7da0"
+          "url": "story-media/4623-e19b9d7f143ea5067c13e4049521e6ccd57e488bd3792e9ce0d9cbc49d4d8a74.mp4",
+          "sha256": "e19b9d7f143ea5067c13e4049521e6ccd57e488bd3792e9ce0d9cbc49d4d8a74",
+          "bytes": 693484
         },
         "poster": {
-          "url": "story-media/4623-399f3a2a01786624a8bcd8848802fe6118bbee410bc375dce7a86114bcb9014f.png",
-          "bytes": 368525,
-          "sha256": "399f3a2a01786624a8bcd8848802fe6118bbee410bc375dce7a86114bcb9014f"
+          "url": "story-media/4623-5155caec8e6a190cca9ae3446860432891028f1e218aa59e8384e3be44eab040.webp",
+          "sha256": "5155caec8e6a190cca9ae3446860432891028f1e218aa59e8384e3be44eab040",
+          "bytes": 246206
         }
       }
     },
@@ -2730,22 +2888,20 @@
       "storyMedia": {
         "width": 512,
         "height": 512,
-        "durationMs": 6400.0,
+        "durationMs": 5640,
         "resetTransition": {
-          "type": "paper-fade",
-          "fadeOutMs": 360,
-          "fadeInMs": 240
+          "type": "none"
         },
         "alt": "男孩明明看见道路还满是坑洞，却举起“全部修好”的报告。mendacity 指说谎、不诚实，关键是明知事实却说假话，而非无意说错。",
         "video": {
-          "url": "story-media/4002-b5f03bcee38656a7bc2f223245e2238eb876daca9142da92c01a21c1f2301ea0.mp4",
-          "bytes": 320235,
-          "sha256": "b5f03bcee38656a7bc2f223245e2238eb876daca9142da92c01a21c1f2301ea0"
+          "url": "story-media/4002-bed3a172695d4a49b0c3e57d7d205007dfa047dcc9c8f1098075eacd08ae79fb.mp4",
+          "sha256": "bed3a172695d4a49b0c3e57d7d205007dfa047dcc9c8f1098075eacd08ae79fb",
+          "bytes": 245604
         },
         "poster": {
-          "url": "story-media/4002-e042ff89d10eb580ff9f69499324612444b7405ce268f5bf4bb332c3dd21b46f.png",
-          "bytes": 606312,
-          "sha256": "e042ff89d10eb580ff9f69499324612444b7405ce268f5bf4bb332c3dd21b46f"
+          "url": "story-media/4002-7c796abc8c7e7fdbbb215b36d58500dfc9446f1ac13e30d265b84355b6489c32.webp",
+          "sha256": "7c796abc8c7e7fdbbb215b36d58500dfc9446f1ac13e30d265b84355b6489c32",
+          "bytes": 150512
         }
       }
     }
