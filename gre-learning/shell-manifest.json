@@ -1,1 +1,115 @@
-{"build":"131","assets":[{"url":"index.html","bytes":3256,"sha256":"ea86d717d7588786a37c6de861b5534ad1e2fe018320fdc9eb11b1b64a05ee39"},{"url":"manifest.webmanifest","bytes":642,"sha256":"a14797d54dab8085da725e9c3fca00656c04305783517ca773eaeb0396b61532"},{"url":"icon-192-v2.png","bytes":47430,"sha256":"6e52c5115cb2e79148cf5e9df857568936987d1a9211907b9ccb10267970575b"},{"url":"gre-learning/update.js","bytes":2647,"sha256":"be4cf017f1cbd64bda45a70232c91ebc948ef8cabbfe7eb0a3bb0f77ae9b698c"},{"url":"gre-learning/app.js","bytes":8361,"sha256":"46876fcca219b614dbee9f32611cab67e8a23e54a350c993055709b2e51067ef"},{"url":"gre-learning/catalog.json","bytes":40447,"sha256":"5d4809c29d1e3d8ae90f7c763aa10ac27108b42163f9b0dbb2c5c07c749ed451"},{"url":"gre-learning/lesson-loader.js","bytes":8142,"sha256":"49cc525cf53eba3f97faec295bb231d13fa6aecd3d8983e894b2fec8fa07c750"},{"url":"gre-learning/schema.js","bytes":4701,"sha256":"54b7754ba4706802e4dbd5ba472c8405883543c7379c83f6ace232394dc369c3"},{"url":"gre-learning/render.js","bytes":3744,"sha256":"f30225576b9d70d08df7a65f8c3d17b61d4de1d49989f11be297e17ea5b11341"},{"url":"gre-learning/model.js","bytes":691,"sha256":"62a63f1c81135c717aa1f0b7c4b75a5b0dbf9d12efdfd16db28c35bf85ee900e"},{"url":"gre-learning/swipe.js","bytes":21736,"sha256":"dd63fdc2aeb25b42167f4ca05c9d2095e1f27637b3130f8e966d087a79d66f96"},{"url":"gre-learning/motion.js","bytes":9296,"sha256":"11658380458992bc1754740baeb511b78eb897c4c09e392fdf86360e1c7e97b7"},{"url":"gre-learning/view.js","bytes":4516,"sha256":"ab27638e11a36bdb3356b4c0ea8cb7bc2b0b407e41a85af489e89664a3ce2f1e"},{"url":"gre-learning/motion-tracks.js","bytes":12138,"sha256":"c4fa72ae0cc4d0e91c458cd7174ba4a1ba23a7d935f352fc8cbeb583391b10fd"},{"url":"gre-learning/release-policy.js","bytes":6278,"sha256":"e6bc3cca7a36c7789b664399cc9aaa66cab458a9e6315260821bdfd724b37bb0"},{"url":"gre-learning/scene-glosses.js","bytes":1262,"sha256":"6e3febf82470fe2f1342672ed35832a7dfafa17069e211914243a623e7eeb8f0"},{"url":"icon-512-v2.png","bytes":298790,"sha256":"65508f5707903f370f3f89402f5c48ade1d4c70b4fdd1ac8dff532f396c0a9ff"},{"url":"gre-learning/story-media.js","bytes":6410,"sha256":"0fcd838883146cbc46361f7889cafd0fde5262208da054ebfc79c7f430d23896"},{"url":"gre-learning/storybook.css","bytes":35575,"sha256":"2d2928580b7f2f087ff9457e7256e915684b48a66334b7e6cea89826760f3585"},{"url":"gre-learning/bookmark-navigation.js","bytes":4131,"sha256":"f9b5db730ffcca7fb6f3eb3ef5e5930464e01779c46cd568b472b617727fa541"},{"url":"gre-learning/contents.js","bytes":12656,"sha256":"2bbc3e524b1ecb5d8c7c00df95dcc5ef4346b4dbd9891258c42b80f0eed6a1dd"},{"url":"gre-learning/prepared-pages.js","bytes":4029,"sha256":"4b2908f2457ddd6fbe26209655917be060f1bb45ec76101b3ebddf24554cef6b"}]}
+{
+  "build": "132",
+  "assets": [
+    {
+      "url": "index.html",
+      "bytes": 3256,
+      "sha256": "ea86d717d7588786a37c6de861b5534ad1e2fe018320fdc9eb11b1b64a05ee39"
+    },
+    {
+      "url": "manifest.webmanifest",
+      "bytes": 642,
+      "sha256": "a14797d54dab8085da725e9c3fca00656c04305783517ca773eaeb0396b61532"
+    },
+    {
+      "url": "icon-192-v2.png",
+      "bytes": 47430,
+      "sha256": "6e52c5115cb2e79148cf5e9df857568936987d1a9211907b9ccb10267970575b"
+    },
+    {
+      "url": "gre-learning/update.js",
+      "bytes": 2647,
+      "sha256": "27016069fd17b49c6c17b310d4581559f82cac1f8da8d2149c8b43fc03c3968c"
+    },
+    {
+      "url": "gre-learning/app.js",
+      "bytes": 8361,
+      "sha256": "46876fcca219b614dbee9f32611cab67e8a23e54a350c993055709b2e51067ef"
+    },
+    {
+      "url": "gre-learning/catalog.json",
+      "bytes": 69070,
+      "sha256": "5e60772783ead9b9e1ea69ee3e69199e0b588cdb7505dfcbfbce54b4f27a4675"
+    },
+    {
+      "url": "gre-learning/lesson-loader.js",
+      "bytes": 8142,
+      "sha256": "49cc525cf53eba3f97faec295bb231d13fa6aecd3d8983e894b2fec8fa07c750"
+    },
+    {
+      "url": "gre-learning/schema.js",
+      "bytes": 4701,
+      "sha256": "54b7754ba4706802e4dbd5ba472c8405883543c7379c83f6ace232394dc369c3"
+    },
+    {
+      "url": "gre-learning/render.js",
+      "bytes": 3744,
+      "sha256": "f30225576b9d70d08df7a65f8c3d17b61d4de1d49989f11be297e17ea5b11341"
+    },
+    {
+      "url": "gre-learning/model.js",
+      "bytes": 691,
+      "sha256": "62a63f1c81135c717aa1f0b7c4b75a5b0dbf9d12efdfd16db28c35bf85ee900e"
+    },
+    {
+      "url": "gre-learning/swipe.js",
+      "bytes": 21736,
+      "sha256": "dd63fdc2aeb25b42167f4ca05c9d2095e1f27637b3130f8e966d087a79d66f96"
+    },
+    {
+      "url": "gre-learning/motion.js",
+      "bytes": 9296,
+      "sha256": "11658380458992bc1754740baeb511b78eb897c4c09e392fdf86360e1c7e97b7"
+    },
+    {
+      "url": "gre-learning/view.js",
+      "bytes": 4516,
+      "sha256": "ab27638e11a36bdb3356b4c0ea8cb7bc2b0b407e41a85af489e89664a3ce2f1e"
+    },
+    {
+      "url": "gre-learning/motion-tracks.js",
+      "bytes": 12138,
+      "sha256": "c4fa72ae0cc4d0e91c458cd7174ba4a1ba23a7d935f352fc8cbeb583391b10fd"
+    },
+    {
+      "url": "gre-learning/release-policy.js",
+      "bytes": 6278,
+      "sha256": "e6bc3cca7a36c7789b664399cc9aaa66cab458a9e6315260821bdfd724b37bb0"
+    },
+    {
+      "url": "gre-learning/scene-glosses.js",
+      "bytes": 1262,
+      "sha256": "6e3febf82470fe2f1342672ed35832a7dfafa17069e211914243a623e7eeb8f0"
+    },
+    {
+      "url": "icon-512-v2.png",
+      "bytes": 298790,
+      "sha256": "65508f5707903f370f3f89402f5c48ade1d4c70b4fdd1ac8dff532f396c0a9ff"
+    },
+    {
+      "url": "gre-learning/story-media.js",
+      "bytes": 6410,
+      "sha256": "0fcd838883146cbc46361f7889cafd0fde5262208da054ebfc79c7f430d23896"
+    },
+    {
+      "url": "gre-learning/storybook.css",
+      "bytes": 35575,
+      "sha256": "2d2928580b7f2f087ff9457e7256e915684b48a66334b7e6cea89826760f3585"
+    },
+    {
+      "url": "gre-learning/bookmark-navigation.js",
+      "bytes": 4131,
+      "sha256": "f9b5db730ffcca7fb6f3eb3ef5e5930464e01779c46cd568b472b617727fa541"
+    },
+    {
+      "url": "gre-learning/contents.js",
+      "bytes": 12656,
+      "sha256": "2bbc3e524b1ecb5d8c7c00df95dcc5ef4346b4dbd9891258c42b80f0eed6a1dd"
+    },
+    {
+      "url": "gre-learning/prepared-pages.js",
+      "bytes": 4029,
+      "sha256": "4b2908f2457ddd6fbe26209655917be060f1bb45ec76101b3ebddf24554cef6b"
+    }
+  ]
+}
