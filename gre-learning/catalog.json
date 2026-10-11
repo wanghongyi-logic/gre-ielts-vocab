@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "150",
-  "authoredCount": 85,
-  "publishedCount": 85,
+  "release": "151",
+  "authoredCount": 90,
+  "publishedCount": 90,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -92,7 +92,12 @@
       1828,
       293,
       1526,
-      3573
+      3573,
+      1940,
+      2742,
+      2140,
+      1704,
+      3387
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -227,6 +232,11 @@
       "url": "units/core014-text-approved-c227e83783635b8a329c11ba9108fe1cfc38c6ea07b643b7abf8f87f395b7836.json",
       "sha256": "c227e83783635b8a329c11ba9108fe1cfc38c6ea07b643b7abf8f87f395b7836",
       "bytes": 17245
+    },
+    {
+      "url": "units/core015-text-approved-be575a6384b37b3843f1d037da1f69abd2574b0d4987fc4b21ffcbb3f9f799b8.json",
+      "sha256": "be575a6384b37b3843f1d037da1f69abd2574b0d4987fc4b21ffcbb3f9f799b8",
+      "bytes": 17814
     }
   ],
   "entries": [
@@ -5531,6 +5541,604 @@
             "y": 0.12
           },
           "text": ""
+        }
+      }
+    },
+    {
+      "number": 1940,
+      "word": "quixotic",
+      "coreMeaningZh": "理想美好却不切实际的；异想天开的",
+      "unit": 25,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 86,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7600,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "志愿者想独自清理整片海洋，拿着一个小网兜站在海边。愿望美好，工具和规模却完全不相称：quixotic，有理想却不切实际。",
+        "video": {
+          "url": "story-media/1940-c324a721c10f6203606ec2333503a877aa4987a53fa67d552c3eb3f17d6de235.mp4",
+          "sha256": "c324a721c10f6203606ec2333503a877aa4987a53fa67d552c3eb3f17d6de235",
+          "bytes": 863041
+        },
+        "poster": {
+          "url": "story-media/1940-4a9af80c998803df22c1bda09171e0798e4f4414d047abd27709253bd273a569.png",
+          "sha256": "4a9af80c998803df22c1bda09171e0798e4f4414d047abd27709253bd273a569",
+          "bytes": 1031150
+        },
+        "staticPoster": {
+          "url": "story-media/1940-91481285fccfb4343da9f84e95e09268640e7bb60b8bf8ea3196d0d83190b13f.png",
+          "sha256": "91481285fccfb4343da9f84e95e09268640e7bb60b8bf8ea3196d0d83190b13f",
+          "bytes": 1042797
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1200,
+            "endMs": 4000,
+            "text": "我一个人，要把整片海洋清干净！",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 4000,
+            "endMs": 5800,
+            "text": "我一个人，要把整片海洋清干净！",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 5800,
+            "endMs": 7600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "我一个人，要把整片海洋清干净！",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      }
+    },
+    {
+      "number": 2742,
+      "word": "austere",
+      "coreMeaningZh": "极其简朴的；清苦的；严肃冷峻的",
+      "unit": 25,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 87,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7000,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "旅人推开房门，屋里只有窄床、木椅和一张空桌，没有摆饰，也没有供人消遣的东西。这就是 austere 的房间：极其简朴，少有舒适与享受。",
+        "video": {
+          "url": "story-media/2742-254c2d497e2b26fa75dba04b5ca802d7d477cbc96d319869173bde6f8ecca277.mp4",
+          "sha256": "254c2d497e2b26fa75dba04b5ca802d7d477cbc96d319869173bde6f8ecca277",
+          "bytes": 913086
+        },
+        "poster": {
+          "url": "story-media/2742-e68d0e34ebbac1caa05ae59ad585f902795609e5f59282aefd289c2f5c41df20.png",
+          "sha256": "e68d0e34ebbac1caa05ae59ad585f902795609e5f59282aefd289c2f5c41df20",
+          "bytes": 1291524
+        },
+        "staticPoster": {
+          "url": "story-media/2742-05b42ab5ec0ad43caa1aacbb117b6043c328356cd05feade24f6877b2471ef5d.png",
+          "sha256": "05b42ab5ec0ad43caa1aacbb117b6043c328356cd05feade24f6877b2471ef5d",
+          "bytes": 1321616
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1200,
+            "endMs": 1760,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 1760,
+            "endMs": 2640,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 2640,
+            "endMs": 3360,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 3360,
+            "endMs": 4560,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 4560,
+            "endMs": 7000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      }
+    },
+    {
+      "number": 2140,
+      "word": "sanguine",
+      "coreMeaningZh": "乐观而有信心的；血红色的；面色红润的",
+      "unit": 25,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 88,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 10000,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "模型第一次试飞失败，伙伴垂下肩膀，制作人却捡起飞机，指着可修好的机翼，仍相信下一次会成功。sanguine 是这份乐观的信心，并不保证结果一定如愿。",
+        "video": {
+          "url": "story-media/2140-74a209fd3e111c5dae63ae6be1be6cd72739d35ec887e241ed1596b90a2b7a3e.mp4",
+          "sha256": "74a209fd3e111c5dae63ae6be1be6cd72739d35ec887e241ed1596b90a2b7a3e",
+          "bytes": 1513960
+        },
+        "poster": {
+          "url": "story-media/2140-ca6f26918a00150425f11a4420c18d2f9a94ca8efce4bd1f5e2eebef0197c6d7.png",
+          "sha256": "ca6f26918a00150425f11a4420c18d2f9a94ca8efce4bd1f5e2eebef0197c6d7",
+          "bytes": 1526027
+        },
+        "staticPoster": {
+          "url": "story-media/2140-08153e76e7b981665e6a944c4d7f81c40213e04c8fea600e7e07cc724d52a0ec.png",
+          "sha256": "08153e76e7b981665e6a944c4d7f81c40213e04c8fea600e7e07cc724d52a0ec",
+          "bytes": 1543899
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 200,
+            "endMs": 1600,
+            "text": "第一次试飞就失败了。",
+            "speaker": "girl",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 1600,
+            "endMs": 2400,
+            "text": "第一次试飞就失败了。",
+            "speaker": "girl",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 2400,
+            "endMs": 2800,
+            "text": "第一次试飞就失败了。",
+            "speaker": "girl",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 2800,
+            "endMs": 3200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 3200,
+            "endMs": 4000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 4000,
+            "endMs": 4800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 4800,
+            "endMs": 5600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-8",
+            "startMs": 5600,
+            "endMs": 6000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-9",
+            "startMs": 6000,
+            "endMs": 9600,
+            "text": "机翼能修好，下次会飞起来的！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-10",
+            "startMs": 9600,
+            "endMs": 10000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "机翼能修好，下次会飞起来的！",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      }
+    },
+    {
+      "number": 1704,
+      "word": "paucity",
+      "coreMeaningZh": "少量；数量不足；缺乏",
+      "unit": 25,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 89,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6800,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "十个人等着开工，桌上却只有两把工具，多数人只能空手站着。a paucity of tools 就是工具太少，数量不足。",
+        "video": {
+          "url": "story-media/1704-3c25210a2d89799fe94aee0698592fa3393e0370553737eae2a99cec1c482dbd.mp4",
+          "sha256": "3c25210a2d89799fe94aee0698592fa3393e0370553737eae2a99cec1c482dbd",
+          "bytes": 1355401
+        },
+        "poster": {
+          "url": "story-media/1704-6ee9dac6a6a0c36c9541225f8c72aeb508afbe62ac6a36f888b257c596c09f1f.png",
+          "sha256": "6ee9dac6a6a0c36c9541225f8c72aeb508afbe62ac6a36f888b257c596c09f1f",
+          "bytes": 1446574
+        },
+        "staticPoster": {
+          "url": "story-media/1704-33935eef7da537e05f06a4a3a0863a9676bdc446d3d6a2f7ca1725385245f0f6.png",
+          "sha256": "33935eef7da537e05f06a4a3a0863a9676bdc446d3d6a2f7ca1725385245f0f6",
+          "bytes": 1452614
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1200,
+            "endMs": 2480,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 2480,
+            "endMs": 2500,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 2500,
+            "endMs": 4700,
+            "text": "十个人，只有两把工具。",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 4700,
+            "endMs": 4720,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 4720,
+            "endMs": 5320,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 5320,
+            "endMs": 6800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "十个人，只有两把工具。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      }
+    },
+    {
+      "number": 3387,
+      "word": "concoct",
+      "coreMeaningZh": "调制；配制；编造；构想出",
+      "unit": 25,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 90,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 14000,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated story restart after settled result"
+        },
+        "waitForPresentedFrame": true,
+        "alt": "调饮师把几种果汁倒入壶中搅拌，调出一种新饮料。concoct 是把不同材料调配成东西；说故事时也可指拼凑细节，编造一套说辞。",
+        "video": {
+          "url": "story-media/3387-f9b8431e292939103e889272bcdeb77fb738696b758eb672084e47ef2a57b267.mp4",
+          "sha256": "f9b8431e292939103e889272bcdeb77fb738696b758eb672084e47ef2a57b267",
+          "bytes": 2738423
+        },
+        "poster": {
+          "url": "story-media/3387-b418a8cd993ce79a2818857b903fb67f91d813dd7ee2662c31e3cceea3556aa7.png",
+          "sha256": "b418a8cd993ce79a2818857b903fb67f91d813dd7ee2662c31e3cceea3556aa7",
+          "bytes": 1339155
+        },
+        "staticPoster": {
+          "url": "story-media/3387-eba80ad9abf8522c25997c6fdc903dccd6c7a4fe3f1b1968e0a19abec08890f6.png",
+          "sha256": "eba80ad9abf8522c25997c6fdc903dccd6c7a4fe3f1b1968e0a19abec08890f6",
+          "bytes": 1398618
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 80,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 80,
+            "endMs": 1760,
+            "text": "把这几种果汁调在一起。",
+            "speaker": "adult",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 1760,
+            "endMs": 11480,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 11480,
+            "endMs": 13960,
+            "text": "新的果汁配好了。",
+            "speaker": "adult",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 13960,
+            "endMs": 14000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "新的果汁配好了。",
+          "speaker": "adult",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
         }
       }
     }
