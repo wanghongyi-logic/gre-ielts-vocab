@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "132",
-  "generatedAt": "2026-10-10T20:45:27.638627+00:00",
+  "releaseBuild": "133",
+  "generatedAt": "2026-10-11T01:25:38.516502+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-reviewed-order",
@@ -29,8 +29,8 @@
     {
       "path": "gre-learning/catalog.json",
       "bytes": 69070,
-      "gzipBytes": 14644,
-      "sha256": "5e60772783ead9b9e1ea69ee3e69199e0b588cdb7505dfcbfbce54b4f27a4675",
+      "gzipBytes": 14647,
+      "sha256": "0420baa250f26627199190faf320c01624239df65adde88ba0ff3ce7cd602c87",
       "loading": "shell"
     },
     {
@@ -664,6 +664,13 @@
       "loading": "on-demand"
     },
     {
+      "path": "gre-learning/units/core004-6e2d249bc9a2d0ef2f3d4c0575dbbff52ce34dcc86ea11af013f2ce9dd45a2de.json",
+      "bytes": 15924,
+      "gzipBytes": 7157,
+      "sha256": "6e2d249bc9a2d0ef2f3d4c0575dbbff52ce34dcc86ea11af013f2ce9dd45a2de",
+      "loading": "on-demand"
+    },
+    {
       "path": "gre-learning/units/core004-c28470f4f9f4d4d4705b8fe0e677938d7c0e1ae092a31d3eaef0611c7ac08049.json",
       "bytes": 16067,
       "gzipBytes": 7230,
@@ -674,7 +681,7 @@
       "path": "gre-learning/update.js",
       "bytes": 2647,
       "gzipBytes": 1124,
-      "sha256": "27016069fd17b49c6c17b310d4581559f82cac1f8da8d2149c8b43fc03c3968c",
+      "sha256": "658e452d068375a7769182289ef27882e54d9ff7c9d8a5ce697d4f0e1e83fe35",
       "loading": "shell"
     },
     {
@@ -714,8 +721,8 @@
     }
   ],
   "totals": {
-    "bytes": 21844686,
-    "gzipBytes": 21490795
+    "bytes": 21860610,
+    "gzipBytes": 21497955
   },
   "retainedHistoricalAssets": 212
 }
