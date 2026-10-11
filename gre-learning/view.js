@@ -2,9 +2,12 @@ import {sceneGlosses} from './scene-glosses.js';
 const escape = value => String(value??'').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const speakIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 5-5 4H2v6h3l5 4V5ZM14 8c2 2 2 6 0 8M18 5c4 4 4 10 0 14"/></svg>';
 function paragraphs(text){return text.split(/(?<=[。！？])(?=[^”’])/).filter(Boolean);}
+// Strip only reviewed legacy method-type labels; preserve cue-first titles in full.
+const legacyMethodKinds = new Set(["动作联想","同族联想","同源联想","声音对照","声音联想","声音顺序","字形联想","实物联想","对话联想","局部近音","形近联想","押韵联想","拼写联想","构词串义","熟词同源","熟词对照","熟词拆解","熟词联想","短语联想","词干记忆","词族串义","词根动作","词根联想","近音联想"]);
 function method(item){
- const [kind,...title]=item.method.split('｜');
- return `<article class="mnemonic"><div class="mnemonic-heading"><div><p class="method-kind">${escape(kind)}</p><h3>${escape(title.join('｜')||kind)}</h3></div></div><p>${escape(item.textZh)}</p></article>`;
+ const [prefix,...rest]=item.method.split('｜');
+ const title=legacyMethodKinds.has(prefix)&&rest.join('｜')?rest.join('｜'):item.method;
+ return `<article class="mnemonic"><div class="mnemonic-heading"><div><h3>${escape(title)}</h3></div></div><p>${escape(item.textZh)}</p></article>`;
 }
 function artwork(entry,media){
  if(!media)return '<div class="story-illustration illustration-pending" aria-hidden="true"></div>';

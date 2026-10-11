@@ -221,3 +221,6 @@ body{width:calc(100% - var(--bookmark-gutter));padding:0;background:var(--paper)
 .bookmarks>.bookmark,.bookmarks>.bookmark-list{pointer-events:auto}
 .bookmark-list{max-height:calc(100dvh - 112px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}
 @media(max-height:480px){.bookmarks{gap:14px}.bookmark-list{max-height:calc(100dvh - 92px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}}
+
+/* Keep mnemonic cues readable without shrinking long titles. */
+.mnemonic-heading h3 { text-wrap: balance; }
