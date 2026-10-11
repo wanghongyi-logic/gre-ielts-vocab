@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "release": "145",
+  "release": "146",
   "authoredCount": 65,
   "publishedCount": 65,
   "libraryTarget": 4731,
@@ -182,6 +182,11 @@
       "url": "units/core010-text-approved-286f58cbc19a5390cc5c77c537ca27e3df1f97b1ecd68caaf7969cf4c5c49029.json",
       "sha256": "286f58cbc19a5390cc5c77c537ca27e3df1f97b1ecd68caaf7969cf4c5c49029",
       "bytes": 19123
+    },
+    {
+      "url": "units/fungible-user-correction-7c7f0b233cbe2ed69a6ed003e6d296b40c14c91f545be086a118afd164d4f1a9.json",
+      "sha256": "7c7f0b233cbe2ed69a6ed003e6d296b40c14c91f545be086a118afd164d4f1a9",
+      "bytes": 19703
     }
   ],
   "entries": [
@@ -3049,7 +3054,7 @@
       "number": 3719,
       "word": "fungible",
       "coreMeaningZh": "可由同种等量或等值之物互相替代的",
-      "unit": 18,
+      "unit": 20,
       "standardVersion": "gre-deep-20261010-v1",
       "reviewStatus": "approved",
       "textApproved": true,
