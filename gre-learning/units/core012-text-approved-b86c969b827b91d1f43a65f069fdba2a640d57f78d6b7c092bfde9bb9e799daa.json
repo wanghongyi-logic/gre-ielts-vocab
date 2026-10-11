@@ -1,0 +1,357 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4421,
+      "word": "sketchy",
+      "ipa": "/ˈsketʃi/",
+      "pos": "adj.",
+      "coreMeaningZh": "粗略的；细节不足的；可疑的",
+      "coreEn": "Giving too little detail to be complete or clear; informally, seeming unreliable or unsafe.",
+      "coreImageZh": "旅行计划只有“出发、到达、游玩”，追问时间、地点时，对方却答不上来。sketchy 在这里指粗略、不完整，还缺少足够细节。",
+      "usage": [
+        {
+          "senseZh": "只有轮廓，缺少关键细节",
+          "explanationZh": "可形容说明、笔记、信息或了解程度。重点不只是篇幅短，而是内容不完整、不够清楚，难以据此作判断。",
+          "collocations": [
+            {
+              "phrase": "sketchy details",
+              "meaningZh": "不完整的细节"
+            },
+            {
+              "phrase": "a sketchy account",
+              "meaningZh": "粗略的叙述"
+            },
+            {
+              "phrase": "a sketchy understanding",
+              "meaningZh": "粗浅的了解"
+            }
+          ]
+        },
+        {
+          "senseZh": "让人觉得不可靠或有风险",
+          "explanationZh": "非正式用法，尤见于北美英语。可评价人物、计划、地区等；这是说话者的疑虑，并不等于已证实违法。",
+          "collocations": [
+            {
+              "phrase": "a sketchy neighborhood",
+              "meaningZh": "让人觉得不安全的街区"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The details about the accident are still a little sketchy.",
+          "translationZh": "有关这次事故的细节仍然不太清楚。",
+          "explanationZh": "still 表示信息尚不充分；这里并没有说事故本身可疑。"
+        },
+        {
+          "textEn": "He gave us a very sketchy account of his visit.",
+          "translationZh": "他向我们极其粗略地讲了讲这次访问。",
+          "explanationZh": "account 是叙述；sketchy 表示漏掉了许多细节，不只是讲得简短。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rudimentary",
+          "comparisonZh": "说了解尚浅、只掌握基本内容时有交集。rudimentary 侧重初级、基础，sketchy 侧重零散、不完整；rudimentary training 可以是一套完整的入门培训，并不一定是细节缺失的 sketchy training。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "vague",
+          "comparisonZh": "说说明或记忆不清楚时接近。vague 强调模糊、不明确，sketchy 强调细节不足；一段叙述可能只给少数准确事实，仍然 sketchy，却未必句句 vague。两者通常都能修饰 idea、description。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "SKETCH + Y",
+          "textZh": "sketch 是草图，加 y 得到 sketchy。人物只画了轮廓，五官还空着；一份 sketchy account 也这样，只交代大概，关键细节还没补全。",
+          "original": false,
+          "kind": "word_family"
+        },
+        {
+          "method": "sketchy：可信吗？",
+          "textZh": "卖家只给一张模糊草图，追问商品型号和来历，他一直回避。你觉得这笔交易有点 sketchy：这里不只说资料粗略，还表示“可疑、不太可靠”。",
+          "original": true,
+          "kind": "semantic_image"
+        }
+      ]
+    },
+    {
+      "number": 3540,
+      "word": "dovish",
+      "ipa": "/ˈdʌvɪʃ/",
+      "pos": "adj.",
+      "coreMeaningZh": "鸽派的；主张和平协商的；（货币政策）偏宽松的",
+      "coreEn": "Favoring negotiation and compromise over force; in monetary policy, favoring easier conditions to support employment and growth.",
+      "coreImageZh": "会议桌上，代表把动武方案放到一边，递出谈判邀请。dovish 形容倾向协商缓和、避免冲突的立场，并不等于害怕或必然退让。",
+      "usage": [
+        {
+          "senseZh": "倾向和谈，避免动武",
+          "explanationZh": "常用于政治、外交报道，修饰人物、立场或政策；与 hawkish（鹰派的、主张强硬手段的）相对。并不表示这个人在所有问题上都软弱。",
+          "collocations": [
+            {
+              "phrase": "a dovish politician",
+              "meaningZh": "鸽派政治人物"
+            },
+            {
+              "phrase": "a dovish stance",
+              "meaningZh": "主张和谈的立场"
+            }
+          ]
+        },
+        {
+          "senseZh": "货币政策上倾向宽松",
+          "explanationZh": "经济报道中，指较重视就业、增长，倾向较低利率等宽松政策。读到央行语境时，不能照搬成“反对战争”。",
+          "collocations": [
+            {
+              "phrase": "dovish remarks",
+              "meaningZh": "偏向宽松政策的言论"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He is a dovish politician who was one of the signers of a model peace treaty.",
+          "translationZh": "他是一位鸽派政治人物，也是某份示范性和平条约的签署者之一。",
+          "explanationZh": "签署和平条约的行为帮助解释 dovish：倾向用协商解决政治冲突。"
+        },
+        {
+          "textEn": "With the jobless rate in double digits, the same dovish remarks can be expected from other Federal Reserve officials.",
+          "translationZh": "失业率达到两位数，预计其他美联储官员也会发表类似的鸽派言论。",
+          "explanationZh": "这里是货币政策语境；高失业率使官员更可能倾向宽松政策，而不是在讨论军事行动。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "pacific",
+          "comparisonZh": "描写爱好和平、避免冲突的态度时接近。pacific 较文学化，通常放在名词前，可泛指和平的性情；dovish 更常用于政治、外交立场。央行政策的 dovish 不能直接换成 pacific。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "conciliatory",
+          "comparisonZh": "说愿意缓和矛盾、寻求妥协的态度时有交集。conciliatory 强调安抚对方、促成和解，家庭或工作争执也能用；dovish 更专指政治上偏向和平协商，或经济政策上偏向宽松。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "DOVE 和平鸽",
+          "textZh": "dove 是鸽子，也指鸽派人士；去掉末尾 e，加 -ish，得到 dovish。和平鸽落在谈判桌上：有冲突，先协商。",
+          "original": false,
+          "kind": "word_family"
+        },
+        {
+          "method": "LOVE PEACE",
+          "textZh": "love /lʌv/ 的 /l/ 换成 /d/，再接 /ɪʃ/，就是 dovish /ˈdʌvɪʃ/。代表说着“love peace”，把动武方案换成谈判邀请。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 1839,
+      "word": "presage",
+      "ipa": "/ˈpresɪdʒ/; /prɪˈseɪdʒ/",
+      "pos": "v.; n.",
+      "coreMeaningZh": "预示；成为……的先兆；征兆",
+      "coreEn": "To indicate that an event is likely to follow; also a sign of a future event.",
+      "coreImageZh": "厚云压过屋顶，女孩看见后拿起雨伞，雨却还没下。presage 指成为某事将发生的预兆：迹象在前，事件在后。",
+      "usage": [
+        {
+          "senseZh": "眼前迹象预示后面的事情",
+          "explanationZh": "较文学化。常作及物动词，主语是迹象、事件或变化，宾语是随后可能发生的事。多见于坏事，也可预示好事；表示预兆，不等于造成结果。",
+          "collocations": [
+            {
+              "phrase": "presage rain",
+              "meaningZh": "预示将要下雨"
+            },
+            {
+              "phrase": "presage a recession",
+              "meaningZh": "预示经济衰退"
+            }
+          ]
+        },
+        {
+          "senseZh": "某件事的先兆",
+          "explanationZh": "作名词时可接 of，引出被预示的事件。名词常读 /ˈpresɪdʒ/，也有 /prɪˈseɪdʒ/ 的读法；动词两种读音都可，不宜把重音位置当作严格的词性分界。",
+          "collocations": [
+            {
+              "phrase": "a presage of spring",
+              "meaningZh": "春天的先兆"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Heavy clouds were forming, presaging rain.",
+          "translationZh": "厚重的云层正在聚集，预示着雨将来临。",
+          "explanationZh": "presaging 是现在分词，补充说明云层所显示的征兆；当时雨还没有到来。"
+        },
+        {
+          "textEn": "The sight of the first robin is always a welcome presage of spring.",
+          "translationZh": "看到第一只知更鸟，总是令人欣喜的春天先兆。",
+          "explanationZh": "名词 presage 接 of spring；welcome 说明先兆也可以指向好事。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "portend",
+          "comparisonZh": "用迹象预示将来的事件时很接近，两者都能直接接事件名词。portend 常带不祥、警示意味，presage 也常用于坏事，但可说 a welcome presage of spring。presage 还能作名词，不能在这个位置直接换成动词 portend。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "foreshadow",
+          "comparisonZh": "说某事是后来事件的先兆时常可替换，二者都可及物。foreshadow 强调较早出现的预示；presage 较文学化，也可作名词。两者都不自动意味着前一事件造成了后一事件。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "MESSAGE 提前来",
+          "textZh": "message 的开头 MES 换成 PRE，就得到 presage。乌云像发来一条提前的消息：“雨快到了。”声音也可借 message：把开头 /m/ 换成 /pr/，读 /ˈpresɪdʒ/。这是音形联想，不是词源。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "PRE + SAY",
+          "textZh": "pre- 提醒“在前”，say 提醒 /seɪ/：花苞提前开口说“花快开了”。连成 /prɪˈseɪdʒ/，末尾带 /dʒ/，是 presage 的另一种读音；征兆先替将来的事说一声。",
+          "original": false,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "word": "abstemious",
+      "ipa": "/əbˈstiːmiəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "饮食有节制的；有节制的",
+      "coreEn": "Deliberately restrained in eating, drinking alcohol, or other pleasures.",
+      "coreImageZh": "自助餐台上满是甜点和酒，客人只取适量食物，吃够后放下餐具，谢绝续杯。abstemious 指吃喝有节制，并不要求滴酒不沾。",
+      "usage": [
+        {
+          "senseZh": "面对饮食享受，主动不过量",
+          "explanationZh": "正式用语，常形容人、习惯或饮食方式。重点是有节制，不是因为买不起，也不必表示滴酒不沾或完全禁食。",
+          "collocations": [
+            {
+              "phrase": "an abstemious eater",
+              "meaningZh": "饮食有节制的人"
+            },
+            {
+              "phrase": "abstemious habits",
+              "meaningZh": "有节制的生活习惯"
+            },
+            {
+              "phrase": "an abstemious diet",
+              "meaningZh": "节制的饮食"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She is known as an abstemious eater and drinker.",
+          "translationZh": "大家都知道，她吃喝很有节制。",
+          "explanationZh": "eater and drinker 把节制明确落在饮食上；没有说她完全不吃不喝。"
+        },
+        {
+          "textEn": "He was a hard-working man with abstemious habits.",
+          "translationZh": "他工作勤奋，生活习惯也很有节制。",
+          "explanationZh": "with abstemious habits 描述一贯的生活方式，不只是某一顿饭吃得少。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "moderate",
+          "comparisonZh": "形容饮酒不过量时接近，例如两者都能修饰 drinker。moderate 比较日常，强调适度；abstemious 更正式，更突出主动克制饮食享受。moderate 还可说中等水平、温和观点，这些意思不换成 abstemious。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "temperate",
+          "comparisonZh": "说人在欲望和行为上有节制时有交集。temperate 范围更广，可指行为冷静自制；abstemious 尤其使人想到吃喝上的克制。temperate climate 是温和气候，不可换成 abstemious。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ABS + TEM + IOUS",
+          "textZh": "按词源线索记：abs- 表“离开”，tem- 是拉丁语中与酒有关的词干，-ious 是形容词尾。喝过一小杯后，把酒杯移开，谢绝续杯：abstemious，吃喝有节制。",
+          "original": true,
+          "kind": "etymology"
+        },
+        {
+          "method": "AbstEmIOUs",
+          "textZh": "abstemious 的元音按 A、E、I、O、U 排列，各出现一次。把它们想成五道菜，每道只取一小份，按顺序取完便停。",
+          "original": false,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 1373,
+      "word": "lambaste",
+      "ipa": "/læmˈbeɪst/; /læmˈbæst/",
+      "pos": "v.",
+      "coreMeaningZh": "痛斥；严厉批评",
+      "coreEn": "To criticize someone or something very harshly, often in public.",
+      "coreImageZh": "赛后，教练指着回放中一再出现的失误，当众严厉批评队员。lambaste 指猛烈、尖锐地抨击，远重于普通地指出错误。",
+      "usage": [
+        {
+          "senseZh": "措辞强烈地批评人或事",
+          "explanationZh": "及物动词，也拼作 lambast。可直接接人、表现、政策等，用 for 引出批评缘由。比普通的 criticize 强烈，常有当众痛斥的意味；旧义也可指痛打。",
+          "collocations": [
+            {
+              "phrase": "lambaste someone for something",
+              "meaningZh": "因某事痛斥某人"
+            },
+            {
+              "phrase": "lambaste a performance",
+              "meaningZh": "严厉批评一次表现"
+            },
+            {
+              "phrase": "lambaste a law",
+              "meaningZh": "猛烈抨击一项法律"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The coach lambasted the team for its poor play.",
+          "translationZh": "教练因全队表现不佳而严厉训斥了他们。",
+          "explanationZh": "for its poor play 交代痛斥缘由；lambasted 的力度明显强于普通地指出问题。"
+        },
+        {
+          "textEn": "His first novel was well and truly lambasted by the critics.",
+          "translationZh": "他的第一部小说遭到了评论家们毫不留情的抨击。",
+          "explanationZh": "被动结构 was lambasted 把小说放在句首；well and truly 加重语气，表示确实遭到了狠狠的批评。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "denounce",
+          "comparisonZh": "公开严厉批评政策或行为时接近，均可直接接被批评对象，也可用 for 引出原因。denounce 常突出谴责某事错误、不正当，lambaste 更突出言辞猛烈。denounce 另有向当局告发的意思，不能直接用 lambaste 代替。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "criticize",
+          "comparisonZh": "都能表示批评人或事，也能接 for 说明原因。criticize 是宽泛的常用词，力度可轻可重；lambaste 本身就很猛烈。只想客观指出一点小问题时，用 lambaste 容易夸大语气。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "TASTE 尝后痛批",
+          "textZh": "把 TASTE 的 T 换成 LAMB，正好拼成 LAMBASTE。食评人尝一口 lamb（羊肉），嫌 taste 太差，随后发文痛批餐厅。读 /læmˈbeɪst/ 时，b 要发音。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "criticize / lambaste",
+          "textZh": "读完报告，说“证据还可以补充”是在 criticize；拍着报告痛斥“漏洞百出，结论毫无根据”，便是在 lambaste。记住从指出问题到猛烈抨击的力度差别。",
+          "original": true,
+          "kind": "semantic_image"
+        }
+      ]
+    }
+  ]
+}

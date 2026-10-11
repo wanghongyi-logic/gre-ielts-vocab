@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "147",
-  "authoredCount": 70,
-  "publishedCount": 70,
+  "release": "148",
+  "authoredCount": 75,
+  "publishedCount": 75,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -77,7 +77,12 @@
       404,
       4566,
       2924,
-      4198
+      4198,
+      4421,
+      3540,
+      1839,
+      24,
+      1373
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -197,6 +202,11 @@
       "url": "units/core011-text-approved-992e1a549cf5f49f4f28ba4e7db17735c69e3b122940a7b99318884a0934bbd3.json",
       "sha256": "992e1a549cf5f49f4f28ba4e7db17735c69e3b122940a7b99318884a0934bbd3",
       "bytes": 18704
+    },
+    {
+      "url": "units/core012-text-approved-b86c969b827b91d1f43a65f069fdba2a640d57f78d6b7c092bfde9bb9e799daa.json",
+      "sha256": "b86c969b827b91d1f43a65f069fdba2a640d57f78d6b7c092bfde9bb9e799daa",
+      "bytes": 17281
     }
   ],
   "entries": [
@@ -3700,6 +3710,491 @@
           "text": ""
         },
         "waitForPresentedFrame": true
+      }
+    },
+    {
+      "number": 4421,
+      "word": "sketchy",
+      "coreMeaningZh": "粗略的；细节不足的；可疑的",
+      "unit": 22,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 71,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "旅行计划只有“出发、到达、游玩”，追问时间、地点时，对方却答不上来。sketchy 在这里指粗略、不完整，还缺少足够细节。",
+        "video": {
+          "url": "story-media/4421-d4ae5a782b5523bfbc222af40ae8f5b906ae2137854d070542b54977fc7dc650.mp4",
+          "sha256": "d4ae5a782b5523bfbc222af40ae8f5b906ae2137854d070542b54977fc7dc650",
+          "bytes": 1561398
+        },
+        "poster": {
+          "url": "story-media/4421-8eaba08454f290b768443c677dce105815d40e46d38b06472554d7a7f317a8a8.webp",
+          "sha256": "8eaba08454f290b768443c677dce105815d40e46d38b06472554d7a7f317a8a8",
+          "bytes": 638250
+        },
+        "staticPoster": {
+          "url": "story-media/4421-bcc3965ed2a8d64696e60b35bbc8016b1a51adceb70cb5e7779147b18dcde7c9.webp",
+          "sha256": "bcc3965ed2a8d64696e60b35bbc8016b1a51adceb70cb5e7779147b18dcde7c9",
+          "bytes": 622714
+        },
+        "waitForPresentedFrame": true,
+        "stages": [
+          {
+            "id": "F01",
+            "startMs": 0,
+            "endMs": 1000,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.31,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F02",
+            "startMs": 1000,
+            "endMs": 2000,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.31,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F03",
+            "startMs": 2000,
+            "endMs": 3120,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.31,
+              "y": 0.12
+            },
+            "text": "几点出发？"
+          },
+          {
+            "id": "F04",
+            "startMs": 3120,
+            "endMs": 3880,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.31,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F04b",
+            "startMs": 3880,
+            "endMs": 4200,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.31,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F05",
+            "startMs": 4200,
+            "endMs": 5200,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.31,
+              "y": 0.12
+            },
+            "text": "住在哪里？"
+          },
+          {
+            "id": "F06",
+            "startMs": 5200,
+            "endMs": 6200,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.74,
+              "y": 0.12
+            },
+            "text": "还没想好……"
+          },
+          {
+            "id": "F07",
+            "startMs": 6200,
+            "endMs": 8000,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.31,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.31,
+            "y": 0.12
+          },
+          "text": "住在哪里？"
+        }
+      }
+    },
+    {
+      "number": 3540,
+      "word": "dovish",
+      "coreMeaningZh": "鸽派的；主张和平协商的；（货币政策）偏宽松的",
+      "unit": 22,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 72,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8200,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "会议桌上，代表把动武方案放到一边，递出谈判邀请。dovish 形容倾向协商缓和、避免冲突的立场，并不等于害怕或必然退让。",
+        "video": {
+          "url": "story-media/3540-72aedd7ab29a78a31ed6427dd2e4b9c51efcef037075ff70e3b016fd49172ca7.mp4",
+          "sha256": "72aedd7ab29a78a31ed6427dd2e4b9c51efcef037075ff70e3b016fd49172ca7",
+          "bytes": 1558125
+        },
+        "poster": {
+          "url": "story-media/3540-f79e61b2a2e168edd029f86bd75c2409d6e576fdeac7ee6faa02ceeb31f3ed83.webp",
+          "sha256": "f79e61b2a2e168edd029f86bd75c2409d6e576fdeac7ee6faa02ceeb31f3ed83",
+          "bytes": 605558
+        },
+        "staticPoster": {
+          "url": "story-media/3540-12ef139c67f4da9308f97a1000aafdfc98c608bced8315466e4ffde2468a4c68.webp",
+          "sha256": "12ef139c67f4da9308f97a1000aafdfc98c608bced8315466e4ffde2468a4c68",
+          "bytes": 638320
+        },
+        "waitForPresentedFrame": true,
+        "stages": [
+          {
+            "id": "F01",
+            "startMs": 0,
+            "endMs": 1000,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.36,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F02",
+            "startMs": 1000,
+            "endMs": 1720,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.36,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F03",
+            "startMs": 1720,
+            "endMs": 2480,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.36,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F04a",
+            "startMs": 2480,
+            "endMs": 2840,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.36,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F04b",
+            "startMs": 2840,
+            "endMs": 3200,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.36,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F05",
+            "startMs": 3200,
+            "endMs": 4120,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.36,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F06",
+            "startMs": 4120,
+            "endMs": 5200,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.36,
+              "y": 0.12
+            },
+            "text": "先谈判，别动武。"
+          },
+          {
+            "id": "F07",
+            "startMs": 5200,
+            "endMs": 6400,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.36,
+              "y": 0.12
+            },
+            "text": "先谈判，别动武。"
+          },
+          {
+            "id": "F08",
+            "startMs": 6400,
+            "endMs": 8200,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.36,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.36,
+            "y": 0.12
+          },
+          "text": "先谈判，别动武。"
+        }
+      }
+    },
+    {
+      "number": 1839,
+      "word": "presage",
+      "coreMeaningZh": "预示；成为……的先兆；征兆",
+      "unit": 22,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 73,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7800,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "厚云压过屋顶，女孩看见后拿起雨伞，雨却还没下。presage 指成为某事将发生的预兆：迹象在前，事件在后。",
+        "video": {
+          "url": "story-media/1839-310486f10d6cea87ea5ff58df6dea8b0bdc715159fa9815a6fe17c68c43f1041.mp4",
+          "sha256": "310486f10d6cea87ea5ff58df6dea8b0bdc715159fa9815a6fe17c68c43f1041",
+          "bytes": 1593715
+        },
+        "poster": {
+          "url": "story-media/1839-59d6b67fd68411e69ed280e647214918c7e418736f738730b7962a3ca33ac197.webp",
+          "sha256": "59d6b67fd68411e69ed280e647214918c7e418736f738730b7962a3ca33ac197",
+          "bytes": 654280
+        },
+        "staticPoster": {
+          "url": "story-media/1839-7306e76c3ccf99d7e3756c58a307c2a643d47013cc93e3c66660d9e92d97e4c1.webp",
+          "sha256": "7306e76c3ccf99d7e3756c58a307c2a643d47013cc93e3c66660d9e92d97e4c1",
+          "bytes": 841742
+        },
+        "waitForPresentedFrame": true
+      }
+    },
+    {
+      "number": 24,
+      "word": "abstemious",
+      "coreMeaningZh": "饮食有节制的；有节制的",
+      "unit": 22,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 74,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "自助餐台上满是甜点和酒，客人只取适量食物，吃够后放下餐具，谢绝续杯。abstemious 指吃喝有节制，并不要求滴酒不沾。",
+        "video": {
+          "url": "story-media/24-2172febbad069e22d21fe988c229c84fb6cca0d90ae3dce9e4899a45c93f84af.mp4",
+          "sha256": "2172febbad069e22d21fe988c229c84fb6cca0d90ae3dce9e4899a45c93f84af",
+          "bytes": 1423480
+        },
+        "poster": {
+          "url": "story-media/24-c2a947c4315843c8e2fd5e444deb0ec9065061ad7061557afd2dad82b4f67b9f.webp",
+          "sha256": "c2a947c4315843c8e2fd5e444deb0ec9065061ad7061557afd2dad82b4f67b9f",
+          "bytes": 620042
+        },
+        "staticPoster": {
+          "url": "story-media/24-dc3e18e3d3eaed60553341c58690c3296ac66cd6a132bca4e03929e339b8860a.webp",
+          "sha256": "dc3e18e3d3eaed60553341c58690c3296ac66cd6a132bca4e03929e339b8860a",
+          "bytes": 609814
+        },
+        "waitForPresentedFrame": true
+      }
+    },
+    {
+      "number": 1373,
+      "word": "lambaste",
+      "coreMeaningZh": "痛斥；严厉批评",
+      "unit": 22,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 75,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "赛后，教练指着回放中一再出现的失误，当众严厉批评队员。lambaste 指猛烈、尖锐地抨击，远重于普通地指出错误。",
+        "video": {
+          "url": "story-media/1373-f1466bee7825e4b2f1ea704e16c407d928e2bd4d301d72a5acfb712472db7afa.mp4",
+          "sha256": "f1466bee7825e4b2f1ea704e16c407d928e2bd4d301d72a5acfb712472db7afa",
+          "bytes": 1325994
+        },
+        "poster": {
+          "url": "story-media/1373-536e6bef7a0e239dc1b9e8ed64bb7b9013af23c07957efe50ed024cac19c4263.webp",
+          "sha256": "536e6bef7a0e239dc1b9e8ed64bb7b9013af23c07957efe50ed024cac19c4263",
+          "bytes": 588910
+        },
+        "staticPoster": {
+          "url": "story-media/1373-b60323a3150f5f70aaed60ee9cff170a4fd320023b867970fc073fb6fda36862.webp",
+          "sha256": "b60323a3150f5f70aaed60ee9cff170a4fd320023b867970fc073fb6fda36862",
+          "bytes": 573466
+        },
+        "waitForPresentedFrame": true,
+        "stages": [
+          {
+            "id": "F01",
+            "startMs": 0,
+            "endMs": 1000,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F02",
+            "startMs": 1000,
+            "endMs": 1800,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F03",
+            "startMs": 1800,
+            "endMs": 2600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F04",
+            "startMs": 2600,
+            "endMs": 3720,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "同样的失误一再发生！"
+          },
+          {
+            "id": "F05",
+            "startMs": 3720,
+            "endMs": 4800,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "太不像话了！"
+          },
+          {
+            "id": "F06",
+            "startMs": 4800,
+            "endMs": 5800,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "太不像话了！"
+          },
+          {
+            "id": "F07",
+            "startMs": 5800,
+            "endMs": 6600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F08",
+            "startMs": 6600,
+            "endMs": 8000,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "text": "太不像话了！"
+        }
       }
     }
   ],
