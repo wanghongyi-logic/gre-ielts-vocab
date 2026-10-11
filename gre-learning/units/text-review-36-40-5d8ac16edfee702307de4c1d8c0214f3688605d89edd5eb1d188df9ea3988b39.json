@@ -1,0 +1,409 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 3649,
+      "word": "extirpate",
+      "ipa": "/ˈekstərpeɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "根除；彻底清除或消灭；连根拔起",
+      "coreEn": "To remove or destroy something completely, including by pulling it up with its roots.",
+      "usage": [
+        {
+          "senseZh": "把扎根的问题彻底清除",
+          "explanationZh": "正式用语，通常是及物动词，直接接要清除的事物。可用于罪恶、偏见、疾病等，强调彻底去掉，强于暂时压制或减轻。它表达清除的结果或目标，但不保证以后永远不会重新出现。",
+          "collocations": [
+            {
+              "phrase": "extirpate prejudice",
+              "meaningZh": "根除偏见"
+            },
+            {
+              "phrase": "extirpate disease",
+              "meaningZh": "消灭疾病"
+            },
+            {
+              "phrase": "extirpate criminal activity",
+              "meaningZh": "根除犯罪活动"
+            }
+          ]
+        },
+        {
+          "senseZh": "使某个地区的物种消失；连根拔除",
+          "explanationZh": "描述动植物时，常说明它们从哪个地区消失。在生态语境中，一个物种在当地被清除，不等于它已在全世界灭绝。本词也能按字面表示连根拔起；医学中另有手术切除义。",
+          "collocations": [
+            {
+              "phrase": "be extirpated from an area",
+              "meaningZh": "从某一地区消失或被彻底清除"
+            },
+            {
+              "phrase": "extirpate weeds",
+              "meaningZh": "连根拔除杂草"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Many species have been extirpated from the area.",
+          "translationZh": "许多物种已从这一地区消失。",
+          "explanationZh": "被动结构说明这些物种在这个地区已不复存在；句子没有说它们在地球上完全灭绝，也没有交代消失的具体原因。"
+        },
+        {
+          "textEn": "Rather, we go all out and try to extirpate criminal activity.",
+          "translationZh": "相反，我们竭尽全力，试图根除犯罪活动。",
+          "explanationZh": "目标是把犯罪活动彻底消除，而非只减少一些。句中的“试图”保留了努力与成功之间的区别。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "eliminate",
+          "comparisonZh": "都可指消除某物。eliminate 用途更广，可以删除一个选项、排除一种可能或淘汰参赛者；extirpate 更强调彻底清除已经存在或扎根的事物，语气也更正式。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "eradicate",
+          "comparisonZh": "在根除疾病、偏见等顽固问题时高度接近，两词都有连根去除的形象。extirpate 还常出现在某地物种被清除的语境；能否互换要看对象和地域范围，不能把局部消失改读成全球灭绝。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "字形联想｜TRIP",
+          "textZh": "路上的树根把人 trip（绊倒），干脆连根拔净。把 TRIP 的 r、i 调换成 TIRP，放进 EX–TIRP–ATE，就记住 extirpate：连根清除。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "近音联想｜X 特派",
+          "textZh": "胸前带 X 的特派除草队员，把杂草连根拔净，一棵不留。借“X 特派”的近音记 extirpate：连根清除。整词读 /ˈekstərpeɪt/。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "coreImageZh": "杂草连着地下的根被整株拔出，清除的不只是露在外面的部分。extirpate 强调彻底去除，也可指根除偏见、疾病等顽固问题。"
+    },
+    {
+      "number": 1053,
+      "word": "grandiose",
+      "ipa": "/ˈɡrændioʊs/",
+      "pos": "adj.",
+      "coreMeaningZh": "宏大壮观的；浮夸、排场过大或不切实际的",
+      "coreEn": "Very large and impressive in scale; often excessively elaborate or ambitious in a way that seems showy or unrealistic.",
+      "usage": [
+        {
+          "senseZh": "计划或主张过于宏大，显得浮夸",
+          "explanationZh": "现代常带批评意味，形容计划、梦想、主张等声势很大，却铺张、夸张或难以实现。不能只见“大”就选这个词；这里通常还有说话者对排场或可行性的保留。",
+          "collocations": [
+            {
+              "phrase": "grandiose plans",
+              "meaningZh": "宏大得不切实际的计划"
+            },
+            {
+              "phrase": "grandiose claims",
+              "meaningZh": "夸大的宣称"
+            },
+            {
+              "phrase": "a grandiose scheme",
+              "meaningZh": "过分宏大的方案"
+            }
+          ]
+        },
+        {
+          "senseZh": "建筑或工程规模非凡，也可能只是壮观",
+          "explanationZh": "本词也有规模宏伟、给人强烈印象的中性或赞赏用法。遇到建筑、工程等，需看上下文是在称赞气势，还是批评铺张；不能一律译成“华而不实”。",
+          "collocations": [
+            {
+              "phrase": "grandiose buildings",
+              "meaningZh": "宏伟或排场很大的建筑"
+            },
+            {
+              "phrase": "grandiose hydroelectric projects",
+              "meaningZh": "规模宏大的水电工程"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They did not believe his grandiose claims.",
+          "translationZh": "他们不相信他那些夸大的说法。",
+          "explanationZh": "与“宣称”搭配，本词强调把事情说得过于宏大、重要。别人不相信这些说法，也强化了“浮夸”的批评意味。"
+        },
+        {
+          "textEn": "The grandiose scheme for a journey across the desert came to nothing.",
+          "translationZh": "那个穿越沙漠的宏大计划最终落了空。",
+          "explanationZh": "计划未能实现的结局，支持把本词理解为“宏大而不切实际”；不是在赞赏一次成功完成的壮举。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "pretentious",
+          "comparisonZh": "批评故作重要、夸大价值或排场时相近。pretentious 着眼于摆出与实际不相称的姿态；grandiose 特别突出宏大规模或雄心过度。grandiose 的单纯“壮观”义不能机械换成 pretentious。"
+        },
+        {
+          "word": "pompous",
+          "comparisonZh": "描述言辞或举止浮夸、自命不凡时可以接近。pompous 常落在人显得端架子、说话过分郑重；grandiose 还可直接形容不切实际的大计划和大工程。"
+        },
+        {
+          "word": "imposing",
+          "comparisonZh": "在“气势宏伟、令人印象深刻”的义项上接近。imposing 本身不要求浮夸或难以实现；若句子正在批评空洞的大话，就不能仅因它有“大气”之意而替换 grandiose。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "熟词联想｜GRANDiose",
+          "textZh": "GRANDiose 开头完整的 GRAND 就是“宏大的、壮丽的”。把视线从小门移到高耸的大殿：这个 GRAND 带回 grandiose 的宏大气派；语境若在批评它，就要读出“铺张、浮夸”。",
+          "original": false,
+          "kind": "word_family"
+        },
+        {
+          "method": "拼写联想｜GRAND + iOS",
+          "textZh": "把 grandiose 的拼写看成 GRAND + iOS + e。一个只会报时的 iOS 小应用，却租下体育馆、铺满红毯来办发布会：如此大摆排场，就是 grandiose 的“浮夸”。这里只借拼写，iOS 不按字母名读进本词。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "coreImageZh": "小店上方巨大的金色招牌降下来，排场大得连店门都被挡住了。这里的 grandiose 带着批评意味：一味追求宏大，显得浮夸、不切实际。"
+    },
+    {
+      "number": 478,
+      "word": "corroborate",
+      "ipa": "/kəˈrɑːbəreɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "佐证；用证据印证，使某个说法更可信",
+      "coreEn": "To add evidence or information that supports an account, claim, or finding and makes it more credible.",
+      "usage": [
+        {
+          "senseZh": "证据为已有说法提供支持",
+          "explanationZh": "正式用语，常以文件、记录、数据或证人为主语，以证词、报道、调查结果等为宾语。重点是已有说法获得额外支持；得到佐证不自动等于已被无可争议地证明。",
+          "collocations": [
+            {
+              "phrase": "corroborate a story",
+              "meaningZh": "印证一种说法或叙述"
+            },
+            {
+              "phrase": "corroborate testimony",
+              "meaningZh": "佐证证词"
+            },
+            {
+              "phrase": "corroborate the findings",
+              "meaningZh": "为研究或调查结果提供佐证"
+            }
+          ]
+        },
+        {
+          "senseZh": "常见被动结构与证据表达",
+          "explanationZh": "说某个叙述得到谁或什么印证时，常用被动结构并接 by。通常直接说明被支持的内容；另有省略宾语的用法。注意与 collaborate（合作）区别：共同做事本身不等于提供佐证。",
+          "collocations": [
+            {
+              "phrase": "be corroborated by independent evidence",
+              "meaningZh": "得到独立证据的印证"
+            },
+            {
+              "phrase": "corroborating evidence",
+              "meaningZh": "佐证性证据"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Did the witnesses corroborate the story?",
+          "translationZh": "证人们是否印证了这一说法？",
+          "explanationZh": "宾语是已有的叙述，证人是提供支持的一方。这里的“故事”可以指对事件经过的说法；重点是证人的信息能否与它相互印证。"
+        },
+        {
+          "textEn": "The evidence was corroborated by two independent witnesses.",
+          "translationZh": "这项证据得到了两名独立证人的印证。",
+          "explanationZh": "被动结构把获得支持的证据放在前面；两名独立证人是提供进一步支持的人。这里的“印证”仍不自动意味着所有疑点都已消除。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "confirm",
+          "comparisonZh": "在使说法更确定、更可信时相近。confirm 范围较广，可表示确认安排、身份或事实；corroborate 更集中于用证据或信息支持已有说法。确认预约时通常不换成 corroborate。"
+        },
+        {
+          "word": "substantiate",
+          "comparisonZh": "两者都可通过证据支持主张。substantiate 着眼于拿出实质依据，使主张站得住；corroborate 更突出补充支持、相互印证。它们不是“绝对证明”与“毫无证明”的二分，具体证据力度仍看语境。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "近音联想｜co-robber ate",
+          "textZh": "借 co-robber ate（同伙吃过饭）的近音记 corroborate：co- 像 co-worker 里的“共同”，robber 是抢劫者，ate 是“吃过”。同伙说那晚在饭店吃饭，付款时间和店内录像都对得上，为他的说法提供了佐证。整词读 /kəˈrɑːbəreɪt/，开头轻读。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "字形联想｜ROBOt",
+          "textZh": "corROBOrate 中藏着 ROBO，正好是 ROBOt（机器人）的前四个字母。证人说“红车经过”，机器人随即放出自己录下的红车画面。独立录像为证词补上支持：corroborate，提供佐证。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "coreImageZh": "男孩说红车经过石桥，机器人屏幕上播放的录像也记录了这一幕。额外证据让原来的说法更可信，这就是 corroborate：提供佐证。"
+    },
+    {
+      "number": 1608,
+      "word": "obeisance",
+      "ipa": "/oʊˈbeɪsəns/",
+      "pos": "n.",
+      "coreMeaningZh": "敬意、恭顺或臣服；表示敬意或臣服的鞠躬、屈膝礼",
+      "coreEn": "Respect or submission shown to someone regarded as important or superior; also a bow or similar gesture expressing that attitude.",
+      "usage": [
+        {
+          "senseZh": "表示恭敬或顺从的态度",
+          "explanationZh": "正式用语。表示敬意、恭顺时通常不可数，常与 pay 或 make 搭配，后接 to 引出对象。它可能是郑重致敬，也可能在批评过分顺从权威；是否带贬义要看上下文。",
+          "collocations": [
+            {
+              "phrase": "pay obeisance to someone",
+              "meaningZh": "向某人表示敬意或臣服"
+            },
+            {
+              "phrase": "make obeisance to someone",
+              "meaningZh": "向某人致敬、行礼"
+            },
+            {
+              "phrase": "absolute obeisance",
+              "meaningZh": "绝对的恭顺或臣服"
+            }
+          ]
+        },
+        {
+          "senseZh": "一个具体的行礼动作",
+          "explanationZh": "指低头、躬身或屈膝等具体动作时可数，可以说一次深深的行礼，也可以用复数。普通的弯腰捡东西不算，动作必须在表达尊敬或臣服。",
+          "collocations": [
+            {
+              "phrase": "make a deep obeisance",
+              "meaningZh": "深深地躬身行礼"
+            },
+            {
+              "phrase": "make a low obeisance",
+              "meaningZh": "俯身作礼"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "After making his obeisances he approached the altar.",
+          "translationZh": "他行礼致敬后，走近了祭坛。",
+          "explanationZh": "复数指具体的致敬动作；句子只说先行礼后靠近祭坛，没有限定必须跪下或必须行几次礼。"
+        },
+        {
+          "textEn": "The players paid obeisance to their coach.",
+          "translationZh": "队员们向教练表示敬意。",
+          "explanationZh": "这里用不可数形式表达致敬，教练是接受敬意的对象；句子本身没有规定必须鞠躬或屈膝。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "deference",
+          "comparisonZh": "表示尊重他人地位、判断或意愿而谦让、顺从时相近。deference 更偏态度或让对方作主；obeisance 还可特指一个鞠躬、屈膝的礼节动作。"
+        },
+        {
+          "word": "homage",
+          "comparisonZh": "表示敬意、致敬时相近。homage 可通过赞美、纪念作品等表达，不必包含服从；obeisance 常更显正式恭顺，也可落到具体的躬身行礼。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "同源联想｜OBEY",
+          "textZh": "OBEI 听起来像 obey（服从），两词也确实同源，-ance 是名词结尾。把恭顺变成一个低头行礼的动作，就是 obeisance：表示恭敬或臣服，也指这样的躬身礼。拼写连起来看 OBEI-s-ANCE。",
+          "original": false,
+          "kind": "word_family"
+        },
+        {
+          "method": "字形联想｜dANCE",
+          "textZh": "obeisANCE 的结尾 ANCE 和 dANCE（舞蹈）相同。舞者结束舞步，面向老师低头躬身，郑重致敬：舞毕行这一礼，就是 obeisance。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "coreImageZh": "人物面向老师，郑重地低头躬身。这不是普通的弯腰，而是在行礼致敬；obeisance 既可指这种礼节，也可指恭敬或臣服的态度。"
+    },
+    {
+      "number": 4253,
+      "word": "prying",
+      "ipa": "/ˈpraɪɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "爱窥探、好打听别人私事的；带刺探意味的",
+      "coreEn": "Trying to learn about other people’s private affairs in an intrusive or unwelcome way.",
+      "usage": [
+        {
+          "senseZh": "好奇越过了别人的隐私边界",
+          "explanationZh": "通常带批评意味，可以形容人、问题或窥探的目光。重点在于打听不该过问的私事、使人不舒服，而非单纯好奇或善于观察。一次冒犯性的追问也可以是 prying，不要求长期如此。",
+          "collocations": [
+            {
+              "phrase": "prying eyes",
+              "meaningZh": "窥探的目光"
+            },
+            {
+              "phrase": "prying questions",
+              "meaningZh": "打探隐私的问题"
+            },
+            {
+              "phrase": "prying neighbors",
+              "meaningZh": "爱打听私事的邻居"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容词与动词形式要分清",
+          "explanationZh": "本词也是 pry 的 -ing 形式；接 into 引出私事时，是“窥探、打听”的动词用法。pry 另有“撬开”的意思，因此不能把所有 prying 都解释成人爱管闲事；要看它是在修饰人或问题，还是描述一个动作。",
+          "collocations": [
+            {
+              "phrase": "prying into private lives",
+              "meaningZh": "窥探他人的私生活"
+            },
+            {
+              "phrase": "away from prying eyes",
+              "meaningZh": "避开窥探的目光"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She tried to escape the prying eyes of her neighbors.",
+          "translationZh": "她试图避开邻居们窥探的目光。",
+          "explanationZh": "形容词把邻居的目光写成令人不自在的窥视；她想躲开这些目光，也把本词带有的隐私被打扰感写了出来。"
+        },
+        {
+          "textEn": "I ignored David’s prying questions.",
+          "translationZh": "我没有理会戴维那些打探隐私的问题。",
+          "explanationZh": "本词直接修饰问题，说明提问带有打听私事的冒犯感。说话人不予理会的反应，也让这种提问不受欢迎的意味更清楚。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "inquisitive",
+          "comparisonZh": "在过分打听别人私事的语境里接近。inquisitive 也能正面形容求知欲强、爱研究；prying 通常有令人反感、侵犯隐私的意味，不能拿来赞扬孩子爱学习。"
+        },
+        {
+          "word": "intrusive",
+          "comparisonZh": "描述问题或观察侵犯私人空间时接近。intrusive 的范围更广，也可指不受欢迎的干预或打扰；prying 更聚焦想弄清别人的私事。"
+        },
+        {
+          "word": "nosy",
+          "comparisonZh": "指爱管闲事、好打听时很接近。nosy 更口语化，常直接评价一个人；prying 也常用于问题和窥探的目光。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "spYING 窥探私信",
+          "textZh": "prYING 和 spYING（暗中窥探）押韵，尾部 YING 都读 /aɪɪŋ/。邻居像 spy（间谍）一样，隔着窗帘缝盯着你拆私人信件；把别人私事当情报来探，就是 prying 的窥探劲儿。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "PRYing 撬开日记",
+          "textZh": "prying 是 pry 的 -ing 形式；pry 另有“撬开”之义。把越界的好奇心想成撬棍：别人已经合上日记，你还想把封面撬开偷看。这种硬往隐私里钻的劲儿，就是 prying 的“爱窥探、好打听”。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "coreImageZh": "男孩凑近想偷看别人的日记，对方把脸转开，表示不愿被打扰。prying 指好奇越过隐私边界，带着窥探、打听别人私事的意味。"
+    }
+  ]
+}
