@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "136",
-  "authoredCount": 35,
-  "publishedCount": 35,
+  "release": "137",
+  "authoredCount": 40,
+  "publishedCount": 40,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -42,7 +42,12 @@
       1132,
       2672,
       4424,
-      95
+      95,
+      3649,
+      1053,
+      478,
+      1608,
+      4253
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -92,6 +97,11 @@
       "url": "units/core004-4800144cfb72ec5386009113239a75ca6c830d490f8f4d3b629f76f94b513f7c.json",
       "bytes": 15887,
       "sha256": "4800144cfb72ec5386009113239a75ca6c830d490f8f4d3b629f76f94b513f7c"
+    },
+    {
+      "url": "units/core005-987668ca8ef60aff22e389a8855650547f8d72d5c3eefcf8cee7f8ab859d5bf0.json",
+      "bytes": 16224,
+      "sha256": "987668ca8ef60aff22e389a8855650547f8d72d5c3eefcf8cee7f8ab859d5bf0"
     }
   ],
   "entries": [
@@ -2061,6 +2071,171 @@
             "y": 0.12
           },
           "text": "泥泞难走"
+        }
+      }
+    },
+    {
+      "number": 3649,
+      "word": "extirpate",
+      "coreMeaningZh": "根除；彻底清除或消灭；连根拔起",
+      "unit": 8,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 36,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 7400,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240,
+          "reason": "Unchanged native reset after clearly held full root removal; no opaque reset is baked into video."
+        },
+        "alt": "棕发青年抓住杂草的茎，把相连的整套根系从土壤表面完整拔出；原处土里不再留根，旁边的花仍然生长。",
+        "poster": {
+          "url": "story-media/3649-92c4130180741e3847ab3b872a7ffc24c85ad37d65e3cd4218676544d4e1f087.webp",
+          "bytes": 361074,
+          "sha256": "92c4130180741e3847ab3b872a7ffc24c85ad37d65e3cd4218676544d4e1f087"
+        },
+        "video": {
+          "url": "story-media/3649-737900e42aa61dc333c09e4a30934a079a29f6a301473dd169e501e75a9441d3.mp4",
+          "bytes": 2528810,
+          "sha256": "737900e42aa61dc333c09e4a30934a079a29f6a301473dd169e501e75a9441d3"
+        }
+      }
+    },
+    {
+      "number": 1053,
+      "word": "grandiose",
+      "coreMeaningZh": "宏大壮观的；浮夸、排场过大或不切实际的",
+      "unit": 8,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 37,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 6160,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240,
+          "reason": "Unchanged native runtime paper fade after a clear held result; no encoded reversal or opaque reset."
+        },
+        "alt": "棕发青年轻抬双手松开制动，小店上方的两个可见绳鼓转动，分别放出吊绳，让过分华丽的大招牌下降；他拉下控制绳制动，招牌停在小店门口，庞大的排场挡住了入口。",
+        "poster": {
+          "url": "story-media/1053-d0387139ca1516bb83773dc4a00649e280aeb45e9b04dabc8576aeec4de3dcb7.webp",
+          "bytes": 368494,
+          "sha256": "d0387139ca1516bb83773dc4a00649e280aeb45e9b04dabc8576aeec4de3dcb7"
+        },
+        "video": {
+          "url": "story-media/1053-2829b11fd61531bf5d94e1ca5d6ccf6d4a6983ea3b467ac6f3d522540fadeeb8.mp4",
+          "bytes": 1770359,
+          "sha256": "2829b11fd61531bf5d94e1ca5d6ccf6d4a6983ea3b467ac6f3d522540fadeeb8"
+        }
+      }
+    },
+    {
+      "number": 478,
+      "word": "corroborate",
+      "coreMeaningZh": "佐证；用证据印证，使某个说法更可信",
+      "unit": 8,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 38,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 6480,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240,
+          "reason": "Clear held result; unchanged native reset."
+        },
+        "alt": "男孩的说法描绘红车经过蓝旗石桥；机器人稳稳举着的显示屏播放另行录下的对应画面，给已有说法补充佐证。",
+        "video": {
+          "url": "story-media/478-5173aec0cc549949bd02d21a77a68d0fec487dc0e2feadab0dbec52aacc335d9.mp4",
+          "bytes": 184560,
+          "sha256": "5173aec0cc549949bd02d21a77a68d0fec487dc0e2feadab0dbec52aacc335d9"
+        },
+        "poster": {
+          "url": "story-media/478-440c86698962a32fc639bdddba4b5104caf57b687df3cf4df7ac98d6ab6a03c9.webp",
+          "bytes": 315140,
+          "sha256": "440c86698962a32fc639bdddba4b5104caf57b687df3cf4df7ac98d6ab6a03c9"
+        }
+      }
+    },
+    {
+      "number": 1608,
+      "word": "obeisance",
+      "coreMeaningZh": "敬意、恭顺或臣服；表示敬意或臣服的鞠躬、屈膝礼",
+      "unit": 8,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 39,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 4520,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240,
+          "reason": "Held final result; unchanged native paper reset only."
+        },
+        "alt": "青年已面向端坐的老师，双脚原地站稳，郑重低头躬身行礼，老师安静接受敬意。",
+        "video": {
+          "url": "story-media/1608-acdff1c9ced78c6d5aa135dc5ae68052d7ec950464036b3bdce1be0bc62332b7.mp4",
+          "bytes": 214583,
+          "sha256": "acdff1c9ced78c6d5aa135dc5ae68052d7ec950464036b3bdce1be0bc62332b7"
+        },
+        "poster": {
+          "url": "story-media/1608-7dffa89d480559ea592fdc5ef8d486a75926d1c057a97a2b74312addf372c4b9.webp",
+          "bytes": 306846,
+          "sha256": "7dffa89d480559ea592fdc5ef8d486a75926d1c057a97a2b74312addf372c4b9"
+        }
+      }
+    },
+    {
+      "number": 4253,
+      "word": "prying",
+      "coreMeaningZh": "爱窥探、好打听别人私事的；带刺探意味的",
+      "unit": 8,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 40,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 5640,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240,
+          "reason": "Clear held result; unchanged native reset."
+        },
+        "alt": "青年逐步凑近窥看已经被护在胸前的私人日记；主人保持双手护住合着的日记，皱眉把头转开，明确不愿被窥探。",
+        "video": {
+          "url": "story-media/4253-313dd892138fa40d02204220ab07bd0c4a1e6394b1df85cc9cc9f98860a03327.mp4",
+          "bytes": 300045,
+          "sha256": "313dd892138fa40d02204220ab07bd0c4a1e6394b1df85cc9cc9f98860a03327"
+        },
+        "poster": {
+          "url": "story-media/4253-566b8cda59e400df1f238aa2d8ade699c8970dea0fe1eac12c22fd2bd0cac199.webp",
+          "bytes": 280652,
+          "sha256": "566b8cda59e400df1f238aa2d8ade699c8970dea0fe1eac12c22fd2bd0cac199"
         }
       }
     }
