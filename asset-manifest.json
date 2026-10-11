@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "135",
-  "generatedAt": "2026-10-11T01:59:30.182891+00:00",
+  "releaseBuild": "136",
+  "generatedAt": "2026-10-11T02:12:08.511337+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-reviewed-order",
@@ -29,8 +29,8 @@
     {
       "path": "gre-learning/catalog.json",
       "bytes": 69070,
-      "gzipBytes": 14644,
-      "sha256": "4a97170872098dce26b8b1df24f0c1718d1341f8059915dad7c9a701efee0a73",
+      "gzipBytes": 14647,
+      "sha256": "4b32119d5caea2dc304fa1afcd11ced08521fb09e5221f015d72e88952495b89",
       "loading": "shell"
     },
     {
@@ -602,9 +602,9 @@
     },
     {
       "path": "gre-learning/storybook.css",
-      "bytes": 35686,
-      "gzipBytes": 8756,
-      "sha256": "42b3290a616772d978ad712e14c38c8e0dfb1c022fde559e627d7643a2594a8a",
+      "bytes": 35575,
+      "gzipBytes": 8719,
+      "sha256": "2d2928580b7f2f087ff9457e7256e915684b48a66334b7e6cea89826760f3585",
       "loading": "shell"
     },
     {
@@ -664,6 +664,13 @@
       "loading": "on-demand"
     },
     {
+      "path": "gre-learning/units/core004-4800144cfb72ec5386009113239a75ca6c830d490f8f4d3b629f76f94b513f7c.json",
+      "loading": "on-demand",
+      "bytes": 15887,
+      "gzipBytes": 7130,
+      "sha256": "4800144cfb72ec5386009113239a75ca6c830d490f8f4d3b629f76f94b513f7c"
+    },
+    {
       "path": "gre-learning/units/core004-6e2d249bc9a2d0ef2f3d4c0575dbbff52ce34dcc86ea11af013f2ce9dd45a2de.json",
       "bytes": 15924,
       "gzipBytes": 7157,
@@ -695,7 +702,7 @@
       "path": "gre-learning/update.js",
       "bytes": 2647,
       "gzipBytes": 1124,
-      "sha256": "a5e44a2665975e80d1685bc26f082a77565d2b2826dabe824637d7d7eb24a55a",
+      "sha256": "36fb10e6f7857a4585daedd2de59ce254983c1269f577a92518b737b7b28c368",
       "loading": "shell"
     },
     {
@@ -735,8 +742,8 @@
     }
   ],
   "totals": {
-    "bytes": 21893216,
-    "gzipBytes": 21512607
+    "bytes": 21908992,
+    "gzipBytes": 21519703
   },
   "retainedHistoricalAssets": 212
 }
