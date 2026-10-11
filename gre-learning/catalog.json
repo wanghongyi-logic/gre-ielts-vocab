@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "138",
-  "authoredCount": 45,
-  "publishedCount": 45,
+  "release": "139",
+  "authoredCount": 50,
+  "publishedCount": 50,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -52,7 +52,12 @@
       1232,
       4020,
       860,
-      4103
+      4103,
+      3985,
+      357,
+      1364,
+      2819,
+      2530
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -112,6 +117,11 @@
       "url": "units/core006-ff962284a1e47d95a130a9d406b9f18bbe9ddc793a0670cb4a773abc8a1187ad.json",
       "bytes": 15239,
       "sha256": "ff962284a1e47d95a130a9d406b9f18bbe9ddc793a0670cb4a773abc8a1187ad"
+    },
+    {
+      "url": "units/core007-2395c7cfcfea212348fdfb076173fca04bf4ab7b806ff94aba3c175142f01cbd.json",
+      "bytes": 15441,
+      "sha256": "2395c7cfcfea212348fdfb076173fca04bf4ab7b806ff94aba3c175142f01cbd"
     }
   ],
   "entries": [
@@ -2407,6 +2417,166 @@
           "fadeInMs": 240
         },
         "alt": "厚绒地毯、金边座椅和华丽吊灯铺陈在同一座大厅里，处处透着富丽与丰足。opulent 描述这种奢华气派，也可形容富裕或充裕丰盛。"
+      }
+    },
+    {
+      "number": 3985,
+      "word": "malady",
+      "coreMeaningZh": "疾病；严重弊病、社会问题",
+      "unit": 10,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 46,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 6800,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "男孩的歌声被咳嗽打断，显出身体的不适。malady 指疾病；也可把社会或制度的严重问题比作“弊病”。",
+        "video": {
+          "url": "story-media/3985-5738f30d9bf0fb2d3b80243c09434751cac0fe32bb5da29e21403555843a9670.mp4",
+          "bytes": 214867,
+          "sha256": "5738f30d9bf0fb2d3b80243c09434751cac0fe32bb5da29e21403555843a9670"
+        },
+        "poster": {
+          "url": "story-media/3985-096484b1a731ef09388f3fe4ce1d9e974c0a69be6940eb708b552d3206cadc10.webp",
+          "bytes": 250178,
+          "sha256": "096484b1a731ef09388f3fe4ce1d9e974c0a69be6940eb708b552d3206cadc10"
+        }
+      }
+    },
+    {
+      "number": 357,
+      "word": "clandestine",
+      "coreMeaningZh": "秘密进行的；暗中保持的",
+      "unit": 10,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 47,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 7000,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "有人走近时，男孩把手中的卡片藏到桌下，等对方离开才重新拿出来。clandestine 强调刻意避人耳目、秘密进行，并不必然表示违法。",
+        "video": {
+          "url": "story-media/357-14df1caac55032c82605d15f3d7a40aa3951ecf3ac6aa3018bfc0825cd902ca6.mp4",
+          "bytes": 259160,
+          "sha256": "14df1caac55032c82605d15f3d7a40aa3951ecf3ac6aa3018bfc0825cd902ca6"
+        },
+        "poster": {
+          "url": "story-media/357-c79400f7d03ab321e9f441e975749cfbca446175ee28acf99214f9aea50b9366.webp",
+          "bytes": 244052,
+          "sha256": "c79400f7d03ab321e9f441e975749cfbca446175ee28acf99214f9aea50b9366"
+        }
+      }
+    },
+    {
+      "number": 1364,
+      "word": "knotty",
+      "coreMeaningZh": "复杂难解的、棘手的；多结的、多节疤的",
+      "unit": 10,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 48,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 7200.0,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "一条绳子绕成复杂的结，男孩拉了拉，仍找不到轻易解开的办法。knotty 本义是多结的，形容问题时就是复杂、棘手，难以理清。",
+        "video": {
+          "url": "story-media/1364-b5410264fb9df819e479453df29197b227eec6577b1e2bc5cda396e5b0bdca9b.mp4",
+          "bytes": 182618,
+          "sha256": "b5410264fb9df819e479453df29197b227eec6577b1e2bc5cda396e5b0bdca9b"
+        },
+        "poster": {
+          "url": "story-media/1364-36601e33232511f7b4452f37144a408af03553fe2ce1b8a680ab384b952aadc4.webp",
+          "bytes": 291346,
+          "sha256": "36601e33232511f7b4452f37144a408af03553fe2ce1b8a680ab384b952aadc4"
+        }
+      }
+    },
+    {
+      "number": 2819,
+      "word": "courteous",
+      "coreMeaningZh": "有礼貌的；谦恭而体贴的",
+      "unit": 10,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 49,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 7200.0,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "男孩先询问并等待回应，得到同意后才轻轻拉开帘子。courteous 是言行礼貌、顾及他人感受；关键在尊重对方，不只是动作轻。",
+        "video": {
+          "url": "story-media/2819-5d4e9b61eec808bdfa69a32eb2b1c7b8a3d4e08d3689193d82a6e9c43dedb8e4.mp4",
+          "bytes": 210083,
+          "sha256": "5d4e9b61eec808bdfa69a32eb2b1c7b8a3d4e08d3689193d82a6e9c43dedb8e4"
+        },
+        "poster": {
+          "url": "story-media/2819-5f1e5e07deb3860a8020fd7a503ce0b2a08c78010c8f6c970e7f9f18083738bd.webp",
+          "bytes": 274130,
+          "sha256": "5f1e5e07deb3860a8020fd7a503ce0b2a08c78010c8f6c970e7f9f18083738bd"
+        }
+      }
+    },
+    {
+      "number": 2530,
+      "word": "truculent",
+      "coreMeaningZh": "好争吵的、凶横好斗的；言辞尖刻的",
+      "unit": 10,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 50,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 7200.0,
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "对方刚开口，男孩就带着敌意接连打断，处处顶撞。truculent 指好争吵、凶横挑衅的态度；不一定真的动手，也不是普通的意见不同。",
+        "video": {
+          "url": "story-media/2530-0d7428a4e1c88600a49b025b3d70e38598f227dfdaa87e2a94135cf1d37c2e96.mp4",
+          "bytes": 311943,
+          "sha256": "0d7428a4e1c88600a49b025b3d70e38598f227dfdaa87e2a94135cf1d37c2e96"
+        },
+        "poster": {
+          "url": "story-media/2530-a794c6d354deb1808827fb0ad5b8adbb5473528ca33833e4ff0072a31fdf7f34.webp",
+          "bytes": 306110,
+          "sha256": "a794c6d354deb1808827fb0ad5b8adbb5473528ca33833e4ff0072a31fdf7f34"
+        }
       }
     }
   ],
