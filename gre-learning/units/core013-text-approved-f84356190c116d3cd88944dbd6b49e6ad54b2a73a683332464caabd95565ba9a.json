@@ -1,0 +1,382 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4467,
+      "word": "stale",
+      "ipa": "/steɪl/",
+      "pos": "adj.",
+      "coreMeaningZh": "不新鲜的；陈腐乏味的",
+      "coreEn": "Having lost freshness, or having become dull through age, repetition, or overfamiliarity.",
+      "coreImageZh": "刚开口的故事，听众已能接出结尾；桌上的旧面包也失了新鲜。stale 把两者连起来：不再新鲜，或因反复出现而陈旧乏味。",
+      "usage": [
+        {
+          "senseZh": "食物或空气失去新鲜感",
+          "explanationZh": "常说面包、蛋糕放久了不新鲜，或空气、烟味陈闷难闻。stale 本身不等于已经腐烂、发霉；翻译时要看对象，不能一律说“腐败的”。",
+          "collocations": [
+            {
+              "phrase": "stale bread",
+              "meaningZh": "不新鲜的面包"
+            },
+            {
+              "phrase": "stale air",
+              "meaningZh": "污浊陈闷的空气"
+            }
+          ]
+        },
+        {
+          "senseZh": "说得太多，做得太久，失去新意",
+          "explanationZh": "可形容笑话、情节、消息或例行工作因陈旧、反复出现而乏味。人感到 stale 时，则是长期做同样的事而失去活力或创意；并非在说这个人年龄大。",
+          "collocations": [
+            {
+              "phrase": "stale jokes",
+              "meaningZh": "老掉牙的笑话"
+            },
+            {
+              "phrase": "feel stale",
+              "meaningZh": "感到倦怠、缺乏新意"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "This bread's going stale.",
+          "translationZh": "这面包正在变得不新鲜。",
+          "explanationZh": "go 在这里表示进入某种状态，going stale 是逐渐失去新鲜度，不必推断面包已经发霉。"
+        },
+        {
+          "textEn": "Their marriage had gone stale.",
+          "translationZh": "他们的婚姻生活已经变得平淡乏味。",
+          "explanationZh": "把“不新鲜”转到关系上，强调失去新鲜感和活力；并不是断言婚姻已经结束。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "banal",
+          "comparisonZh": "评价话语、故事或观点平庸乏味时相近。banal 强调寻常、缺乏新意；stale 往往多一层“说过太多次或放得太久”的意味。食物不新鲜的 stale bread 不能替换成 banal bread。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "hackneyed",
+          "comparisonZh": "形容笑话、措辞或情节因反复使用而陈腐时很接近。hackneyed 尤其突出用滥了；stale 的范围还包括食物不新鲜、空气陈闷和人的倦怠，这些用法不能照搬 hackneyed。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "sTALE 老故事",
+          "textZh": "stale 比 tale（故事）前面多一个 s。同一则 tale 讲到第十遍，听众抢先说出结尾：故事已经 stale，老掉牙了。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "STAY 久放变陈",
+          "textZh": "stay /steɪ/ 后面接一个 /l/，就是 stale /steɪl/。面包一直 stay 在桌上，放久了变干、不新鲜：stay too long，变成 stale。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 2513,
+      "word": "transient",
+      "ipa": "/ˈtrænʃənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "短暂的；暂时停留的",
+      "coreEn": "Lasting only briefly, or staying in a place for a short time before moving on.",
+      "coreImageZh": "旅客在车站长椅上稍坐，车一到就提包离开。transient 指短暂、不会长久停留；这里的旅客只是暂时停驻。",
+      "usage": [
+        {
+          "senseZh": "存在不久，很快过去",
+          "explanationZh": "较正式，可形容感受、状态、影响或现象持续时间短；具体长短随语境而定。",
+          "collocations": [
+            {
+              "phrase": "a transient feeling",
+              "meaningZh": "短暂的感受"
+            },
+            {
+              "phrase": "transient effects",
+              "meaningZh": "短暂的影响"
+            }
+          ]
+        },
+        {
+          "senseZh": "只在某地短暂停留",
+          "explanationZh": "修饰人口、旅客或工人时，强调停留或工作一阵便离开。transient population 不是只说人数少，也不一定意味着某个人无家可归。",
+          "collocations": [
+            {
+              "phrase": "a transient population",
+              "meaningZh": "流动人口"
+            },
+            {
+              "phrase": "transient visitors",
+              "meaningZh": "短暂停留的访客"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "In most cases, pain is transient.",
+          "translationZh": "大多数情况下，疼痛是短暂的。",
+          "explanationZh": "in most cases 限定判断的范围；transient 说明持续时间短，并没有评价疼痛的强弱。"
+        },
+        {
+          "textEn": "She had transient thoughts of quitting her job and going back to school.",
+          "translationZh": "她曾短暂地动过辞职回学校读书的念头。",
+          "explanationZh": "transient 修饰 thoughts：念头没有持续很久，并不说明她真的辞了职。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "temporary",
+          "comparisonZh": "形容非永久的状态、工作或住处时重合。temporary 强调暂时安排、不会一直持续，期限未必特别短；transient 更突出很快过去或短暂停留。temporary replacement 可以是暂时代任，不能仅凭这个词断定此人是四处流动的。"
+        },
+        {
+          "word": "ephemeral",
+          "comparisonZh": "形容生命、流行、快乐等持续不久时接近。ephemeral 往往更突出存在期极短，带稍纵即逝的感受；transient 还常说人口或访客短暂停留，不宜把 transient guests 直接理解为生命短暂的宾客。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "TRANSIT 中转不停留",
+          "textZh": "机场的 TRANSIT（中转）旅客刚坐下，下一班飞机就到了。他只是 transient，短暂停留。transit 与 transient 同源，都连着“经过”。",
+          "original": false,
+          "kind": "etymology"
+        },
+        {
+          "method": "转瞬",
+          "textZh": "把 transient /ˈtrænʃənt/ 和“转瞬”联在一起：流星划过夜空，转瞬消失，那道光是 transient，短暂的。中文只作近音提示，末尾 /t/ 别丢。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 1198,
+      "word": "improvise",
+      "ipa": "/ˈɪmprəvaɪz/",
+      "pos": "v.",
+      "coreMeaningZh": "即兴创作或表演；临时凑成、应变",
+      "coreEn": "To create or perform as one goes, or to make something using what is available without advance preparation.",
+      "coreImageZh": "野餐没带桌子，大家就把木板架在两个结实的箱子上。improvise 指未经事先准备，利用眼前条件临场想办法，不等于粗制滥造。",
+      "usage": [
+        {
+          "senseZh": "边说边编，边演边创作",
+          "explanationZh": "可及物也可不及物。即兴说话、演奏并非事先写定每个词或音符，但仍可能依靠多年训练，不能把 improvise 等同于毫无技巧地乱来。",
+          "collocations": [
+            {
+              "phrase": "improvise a speech",
+              "meaningZh": "即兴讲话"
+            },
+            {
+              "phrase": "improvise on a melody",
+              "meaningZh": "围绕一段旋律即兴演奏"
+            }
+          ]
+        },
+        {
+          "senseZh": "缺少所需物品，用手边材料应变",
+          "explanationZh": "可接凑成的东西作宾语，并用 out of 或 with 交代材料。重点是利用现有条件临时应变。",
+          "collocations": [
+            {
+              "phrase": "improvise a meal",
+              "meaningZh": "用现有食材临时做一餐"
+            },
+            {
+              "phrase": "improvise a shelter",
+              "meaningZh": "临时搭个遮蔽处"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Good jazz musicians know how to improvise.",
+          "translationZh": "优秀的爵士乐手懂得如何即兴演奏。",
+          "explanationZh": "这里不带宾语，强调即兴演奏的能力；即兴和专业训练并不矛盾。"
+        },
+        {
+          "textEn": "We improvised some shelves out of planks of wood and bricks.",
+          "translationZh": "我们用木板和砖头临时搭了几个架子。",
+          "explanationZh": "shelves 是临时搭成的东西，out of 后的木板和砖头是手头可用的材料。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "extemporize",
+          "comparisonZh": "在即兴讲话、创作音乐或表演时很接近，两者都可及物或不及物。extemporize 较正式，常见于言语和表演；日常说用现成材料临时搭架子，improvise 更自然、适用更广。"
+        },
+        {
+          "word": "devise",
+          "comparisonZh": "在想出办法、构造方案时有交集。devise 可以经过周密思考，重点是想出新组合或方法；improvise 则突出当场应变或未经预先准备。临时想出方案可以兼具两者，预先设计不一定是 improvising。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "IMPROVE 临场救场",
+          "textZh": "improve（改善）的末尾 e 前插入 is，就成了 improvise。现场缺了鼓，乐手倒扣水桶现编节奏：为了 improve 效果，当场 improvise。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "reVISE / improVISE",
+          "textZh": "拿着旧稿修改，是 revise；临时上台，没备稿就边想边说，是 improvise。两词的 VISE 都读 /vaɪz/，别把 improvise 读成 improve 的 /uːv/。",
+          "original": false,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 4596,
+      "word": "unflinching",
+      "ipa": "/ʌnˈflɪntʃɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "毫不退缩的；坚定不移的",
+      "coreEn": "Remaining firm in the face of fear, pain, pressure, or an uncomfortable truth.",
+      "coreImageZh": "同伴怕受责难而低头，目击者仍直视询问者，把事实说完。unflinching 指面对压力或危险仍不退缩，并非感觉不到害怕。",
+      "usage": [
+        {
+          "senseZh": "遇到压力或危险，仍然坚定",
+          "explanationZh": "常修饰勇气、决心、忠诚或支持，强调不因困难、恐惧而退缩。不是保证内心毫无害怕，也不必表现为身体完全不动。",
+          "collocations": [
+            {
+              "phrase": "unflinching courage",
+              "meaningZh": "毫不退缩的勇气"
+            },
+            {
+              "phrase": "unflinching loyalty",
+              "meaningZh": "坚定不移的忠诚"
+            }
+          ]
+        },
+        {
+          "senseZh": "面对难受的事实，也不回避",
+          "explanationZh": "可形容诚实、目光或对事件的审视，突出不躲闪、不粉饰。形容报道、描写时，强调直面令人不安的事实。",
+          "collocations": [
+            {
+              "phrase": "unflinching honesty",
+              "meaningZh": "毫不回避的诚实"
+            },
+            {
+              "phrase": "an unflinching look at reality",
+              "meaningZh": "对现实毫不回避的审视"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was unflinching in his determination to see that justice was done.",
+          "translationZh": "他要确保正义得到伸张，这份决心坚定不移。",
+          "explanationZh": "in his determination 指出坚定体现在哪一方面；unflinching 不只是描述他外表镇定。"
+        },
+        {
+          "textEn": "The battalions continued to advance with unflinching courage.",
+          "translationZh": "各营以毫不退缩的勇气继续前进。",
+          "explanationZh": "with 引出伴随行动的品质；continued to advance 把不退缩落实为持续向前。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "steadfast",
+          "comparisonZh": "形容忠诚、决心或立场坚定时很接近。steadfast 更一般地强调态度和目标持久不变；unflinching 更突出面对威胁、痛苦或难堪事实也不退缩。steadfast in a belief 不必自带危险情境。"
+        },
+        {
+          "word": "unwavering",
+          "comparisonZh": "修饰 support、commitment 等时常可替换，均表示不动摇。unwavering 侧重没有减弱或摇摆；unflinching 侧重不畏缩、不回避。描述直视苦难的镜头时，unflinching 比 unwavering 更能表达勇于正视。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "FLY + INCH",
+          "textZh": "fly（苍蝇）去掉 y，再接 inch（英寸），拼成 flinch。苍蝇扑脸，人猛地后缩一寸：flinch，缩一下。加上 un-（不）和 -ing：证人面对威胁也不退缩，unflinching。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "PINCH / FLINCH",
+          "textZh": "pinch /pɪntʃ/（捏）和 flinch /flɪntʃ/（猛地缩）押韵。想象被捏时你缩了一下；unflinching 把“不缩”带到态度上，压力再大也不改口说假话。",
+          "original": false,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 2336,
+      "word": "stifle",
+      "ipa": "/ˈstaɪfl/",
+      "pos": "v.",
+      "coreMeaningZh": "抑制；扼杀；使窒息",
+      "coreEn": "To hold back expression or development, or to make breathing difficult or impossible.",
+      "coreImageZh": "美术课上，老师擦掉学生新画的花纹，只准照着统一模板画；学生收起草图，不再尝试。stifle 在这里指压制、扼杀创造力，让本来能发展出来的东西受到阻碍。",
+      "usage": [
+        {
+          "senseZh": "把声音、情绪或发展压下去",
+          "explanationZh": "通常及物，宾语可为哈欠、笑声、异议或创造力。既能说个人忍住某种反应，也能说规则、压力压制他人表达和发展。",
+          "collocations": [
+            {
+              "phrase": "stifle a yawn",
+              "meaningZh": "忍住哈欠"
+            },
+            {
+              "phrase": "stifle creativity",
+              "meaningZh": "扼杀创造力"
+            },
+            {
+              "phrase": "stifle dissent",
+              "meaningZh": "压制异议"
+            }
+          ]
+        },
+        {
+          "senseZh": "闷得透不过气；使人窒息",
+          "explanationZh": "可及物或不及物。热、烟雾或不通风的环境使人难以呼吸时可用；具体语境决定是憋闷还是严重窒息。",
+          "collocations": [
+            {
+              "phrase": "stifle in the heat",
+              "meaningZh": "热得透不过气"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She managed to stifle a yawn.",
+          "translationZh": "她设法忍住了一个哈欠。",
+          "explanationZh": "managed to 表示成功做到；stifle 把自然冒出的反应压了回去。"
+        },
+        {
+          "textEn": "Too many regulations stifle innovation.",
+          "translationZh": "过多的规章会扼杀创新。",
+          "explanationZh": "这里把“压住”用于发展：限制太多，新想法难以成长或付诸实践。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "shackle",
+          "comparisonZh": "说规则束缚人或机构、压制自由发展时相近，两者都可及物。shackle 带“上镣铐”的束缚感，常把受限制的人或机构作宾语；stifle 更侧重压住表达、活力或发展。忍住哈欠的 stifle a yawn 不宜换成 shackle。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "suppress",
+          "comparisonZh": "在压制异议、忍住笑声或情绪时常可替换。suppress 也常指隐瞒消息、镇压活动；stifle 另有闷得难以呼吸的用法。说 stifle in a hot room 时，不能把这个不及物结构直接换成 suppress。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "STYLE 只准一种",
+          "textZh": "美术课只准一种 style，谁画出新花样就被擦掉：管死风格，扼杀创造力。读 style /staɪl/，在 /l/ 前加一个 /f/，带回 stifle /ˈstaɪfl/。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "RIFLE 压住枪声",
+          "textZh": "rifle（步枪）把开头 R 换成 ST，就是 stifle。电影里步枪刚响，剪辑师就把那段声音压下去：stifle，压住声音。两词的 -ifle 都读 /aɪfl/。",
+          "kind": "invented_association",
+          "original": false
+        }
+      ]
+    }
+  ]
+}

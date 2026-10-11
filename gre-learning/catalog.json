@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "148",
-  "authoredCount": 75,
-  "publishedCount": 75,
+  "release": "149",
+  "authoredCount": 80,
+  "publishedCount": 80,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -82,7 +82,12 @@
       3540,
       1839,
       24,
-      1373
+      1373,
+      4467,
+      2513,
+      1198,
+      4596,
+      2336
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -207,6 +212,11 @@
       "url": "units/core012-text-approved-b86c969b827b91d1f43a65f069fdba2a640d57f78d6b7c092bfde9bb9e799daa.json",
       "sha256": "b86c969b827b91d1f43a65f069fdba2a640d57f78d6b7c092bfde9bb9e799daa",
       "bytes": 17281
+    },
+    {
+      "url": "units/core013-text-approved-f84356190c116d3cd88944dbd6b49e6ad54b2a73a683332464caabd95565ba9a.json",
+      "sha256": "f84356190c116d3cd88944dbd6b49e6ad54b2a73a683332464caabd95565ba9a",
+      "bytes": 17865
     }
   ],
   "entries": [
@@ -4194,6 +4204,670 @@
             "y": 0.12
           },
           "text": "太不像话了！"
+        }
+      }
+    },
+    {
+      "number": 4467,
+      "word": "stale",
+      "coreMeaningZh": "不新鲜的；陈腐乏味的",
+      "unit": 23,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 76,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7600,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative replay; no transition effect."
+        },
+        "alt": "刚开口的故事，听众已能接出结尾；桌上的旧面包也失了新鲜。stale 把两者连起来：不再新鲜，或因反复出现而陈旧乏味。",
+        "waitForPresentedFrame": true,
+        "stages": [
+          {
+            "id": "F01",
+            "startMs": 0,
+            "endMs": 1000,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.32,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F02",
+            "startMs": 1000,
+            "endMs": 2120,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.72,
+              "y": 0.12
+            },
+            "text": "后来，钥匙……"
+          },
+          {
+            "id": "F03",
+            "startMs": 2120,
+            "endMs": 3200,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.32,
+              "y": 0.12
+            },
+            "text": "又被锁在屋里了。"
+          },
+          {
+            "id": "F04",
+            "startMs": 3200,
+            "endMs": 4320,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.32,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F05",
+            "startMs": 4320,
+            "endMs": 5400,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.32,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F06",
+            "startMs": 5400,
+            "endMs": 6320,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.32,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F07",
+            "startMs": 6320,
+            "endMs": 7600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.32,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.32,
+            "y": 0.12
+          },
+          "text": "又被锁在屋里了。"
+        },
+        "video": {
+          "url": "story-media/4467-028fd410d487b5768299440729c238e45e043a7922cff87d6887d2843ca467ef.mp4",
+          "sha256": "028fd410d487b5768299440729c238e45e043a7922cff87d6887d2843ca467ef",
+          "bytes": 1769953
+        },
+        "poster": {
+          "url": "story-media/4467-f0eb89560c5c9fce21e904772473015ecc06846d9ac0c785577a091658a6f649.webp",
+          "sha256": "f0eb89560c5c9fce21e904772473015ecc06846d9ac0c785577a091658a6f649",
+          "bytes": 773020
+        },
+        "staticPoster": {
+          "url": "story-media/4467-c741fa3311b3b11c56cb941b2fa53a13c292f0822d6d686bcedb986b1bce211f.webp",
+          "sha256": "c741fa3311b3b11c56cb941b2fa53a13c292f0822d6d686bcedb986b1bce211f",
+          "bytes": 745070
+        }
+      }
+    },
+    {
+      "number": 2513,
+      "word": "transient",
+      "coreMeaningZh": "短暂的；暂时停留的",
+      "unit": 23,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 77,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7600,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative replay; no transition effect."
+        },
+        "alt": "旅客在车站长椅上稍坐，车一到就提包离开。transient 指短暂、不会长久停留；这里的旅客只是暂时停驻。",
+        "waitForPresentedFrame": true,
+        "stages": [
+          {
+            "id": "F01",
+            "startMs": 0,
+            "endMs": 1000,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F02",
+            "startMs": 1000,
+            "endMs": 1800,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F03",
+            "startMs": 1800,
+            "endMs": 2680,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F04",
+            "startMs": 2680,
+            "endMs": 3560,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F05",
+            "startMs": 3560,
+            "endMs": 4440,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F06",
+            "startMs": 4440,
+            "endMs": 5440,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F07",
+            "startMs": 5440,
+            "endMs": 6160,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F08",
+            "startMs": 6160,
+            "endMs": 6720,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F09-v3",
+            "startMs": 6720,
+            "endMs": 7600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.3,
+            "y": 0.12
+          },
+          "text": ""
+        },
+        "video": {
+          "url": "story-media/2513-f439fe756c31ac067bf6cec8410871e4b743dd4285da57f4dbb2fab67a1101d6.mp4",
+          "sha256": "f439fe756c31ac067bf6cec8410871e4b743dd4285da57f4dbb2fab67a1101d6",
+          "bytes": 1892046
+        },
+        "poster": {
+          "url": "story-media/2513-d92a23a5b3ce4d3f869e7afb543ed92c8abd56311fbaf8080ca6722f09c4f5f5.webp",
+          "sha256": "d92a23a5b3ce4d3f869e7afb543ed92c8abd56311fbaf8080ca6722f09c4f5f5",
+          "bytes": 694060
+        },
+        "staticPoster": {
+          "url": "story-media/2513-f97aa65ac2933dfde7729d676b3902338279824a78b34803f58fe929bb410755.webp",
+          "sha256": "f97aa65ac2933dfde7729d676b3902338279824a78b34803f58fe929bb410755",
+          "bytes": 735664
+        }
+      }
+    },
+    {
+      "number": 1198,
+      "word": "improvise",
+      "coreMeaningZh": "即兴创作或表演；临时凑成、应变",
+      "unit": 23,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 78,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative replay; no transition effect."
+        },
+        "alt": "野餐没带桌子，大家就把木板架在两个结实的箱子上。improvise 指未经事先准备，利用眼前条件临场想办法，不等于粗制滥造。",
+        "waitForPresentedFrame": true,
+        "stages": [
+          {
+            "id": "F01",
+            "startMs": 0,
+            "endMs": 1200,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "没带桌子，怎么办？"
+          },
+          {
+            "id": "F02",
+            "startMs": 1200,
+            "endMs": 2400,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "这块木板能用！"
+          },
+          {
+            "id": "F03",
+            "startMs": 2400,
+            "endMs": 3400,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F04",
+            "startMs": 3400,
+            "endMs": 4600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F05",
+            "startMs": 4600,
+            "endMs": 5600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F06",
+            "startMs": 5600,
+            "endMs": 6600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F07",
+            "startMs": 6600,
+            "endMs": 8000,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.3,
+            "y": 0.12
+          },
+          "text": ""
+        },
+        "video": {
+          "url": "story-media/1198-163f461066b27566096aee89342d345ad1aa5465ad0c5c05af7ce3ef3de1cf2c.mp4",
+          "sha256": "163f461066b27566096aee89342d345ad1aa5465ad0c5c05af7ce3ef3de1cf2c",
+          "bytes": 1765179
+        },
+        "poster": {
+          "url": "story-media/1198-f6acec81bc6e9ee053139de304c274d8101f401b2660bf10dda2dc1a6b410ae7.webp",
+          "sha256": "f6acec81bc6e9ee053139de304c274d8101f401b2660bf10dda2dc1a6b410ae7",
+          "bytes": 743214
+        },
+        "staticPoster": {
+          "url": "story-media/1198-e2d07e1488c5f13f312e00ccae4533d7726a5cf4ff7c5cdd80f05e9346f6f73f.webp",
+          "sha256": "e2d07e1488c5f13f312e00ccae4533d7726a5cf4ff7c5cdd80f05e9346f6f73f",
+          "bytes": 749802
+        }
+      }
+    },
+    {
+      "number": 4596,
+      "word": "unflinching",
+      "coreMeaningZh": "毫不退缩的；坚定不移的",
+      "unit": 23,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 79,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7800,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative replay; no transition effect."
+        },
+        "alt": "同伴怕受责难而低头，目击者仍直视询问者，把事实说完。unflinching 指面对压力或危险仍不退缩，并非感觉不到害怕。",
+        "waitForPresentedFrame": true,
+        "stages": [
+          {
+            "id": "F01",
+            "startMs": 0,
+            "endMs": 800,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F02",
+            "startMs": 800,
+            "endMs": 2120,
+            "speaker": "right",
+            "anchor": {
+              "x": 0.69,
+              "y": 0.12
+            },
+            "text": "你确定看清了？"
+          },
+          {
+            "id": "F03",
+            "startMs": 2120,
+            "endMs": 3120,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F04",
+            "startMs": 3120,
+            "endMs": 3920,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F05",
+            "startMs": 3920,
+            "endMs": 5720,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": "我看清了，事实就是这样。"
+          },
+          {
+            "id": "F06",
+            "startMs": 5720,
+            "endMs": 6600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F07",
+            "startMs": 6600,
+            "endMs": 7800,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "text": "我看清了，事实就是这样。"
+        },
+        "video": {
+          "url": "story-media/4596-50e901ab3697bfad6862cd301505b1e24e9cbdb46368d74a8c6c258892d31aa4.mp4",
+          "sha256": "50e901ab3697bfad6862cd301505b1e24e9cbdb46368d74a8c6c258892d31aa4",
+          "bytes": 1356638
+        },
+        "poster": {
+          "url": "story-media/4596-8fe94a7e6a5b6c3060ef328dd800ca587e9aa397979424c617af847001d06768.webp",
+          "sha256": "8fe94a7e6a5b6c3060ef328dd800ca587e9aa397979424c617af847001d06768",
+          "bytes": 673144
+        },
+        "staticPoster": {
+          "url": "story-media/4596-666864066db259a64a219e4dc85cef21f302bc3899e6bebe6065cc36edfd52ed.webp",
+          "sha256": "666864066db259a64a219e4dc85cef21f302bc3899e6bebe6065cc36edfd52ed",
+          "bytes": 685100
+        }
+      }
+    },
+    {
+      "number": 2336,
+      "word": "stifle",
+      "coreMeaningZh": "抑制；扼杀；使窒息",
+      "unit": 23,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 80,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8400,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated narrative replay; no transition effect."
+        },
+        "alt": "美术课上，老师擦掉学生新画的花纹，只准照着统一模板画；学生收起草图，不再尝试。stifle 在这里指压制、扼杀创造力，让本来能发展出来的东西受到阻碍。",
+        "waitForPresentedFrame": true,
+        "stages": [
+          {
+            "id": "F01",
+            "startMs": 0,
+            "endMs": 1000,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F02",
+            "startMs": 1000,
+            "endMs": 1800,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F03",
+            "startMs": 1800,
+            "endMs": 2800,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F03b",
+            "startMs": 2800,
+            "endMs": 3600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F04",
+            "startMs": 3600,
+            "endMs": 4400,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F05",
+            "startMs": 4400,
+            "endMs": 5600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": "都照这个画。"
+          },
+          {
+            "id": "F06",
+            "startMs": 5600,
+            "endMs": 6600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F07",
+            "startMs": 6600,
+            "endMs": 7600,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          },
+          {
+            "id": "F08",
+            "startMs": 7600,
+            "endMs": 8400,
+            "speaker": "left",
+            "anchor": {
+              "x": 0.3,
+              "y": 0.12
+            },
+            "text": ""
+          }
+        ],
+        "posterDialogue": {
+          "speaker": "left",
+          "anchor": {
+            "x": 0.3,
+            "y": 0.12
+          },
+          "text": "都照这个画。"
+        },
+        "video": {
+          "url": "story-media/2336-f150ef7ff5ed8efc2888d019686126390d142a56e4251bcbf689f15b6a69359b.mp4",
+          "sha256": "f150ef7ff5ed8efc2888d019686126390d142a56e4251bcbf689f15b6a69359b",
+          "bytes": 1713456
+        },
+        "poster": {
+          "url": "story-media/2336-fb8b32f896ebc0562449e300a98cfe797c9e45a50a092aebe037acd84ced8a7d.webp",
+          "sha256": "fb8b32f896ebc0562449e300a98cfe797c9e45a50a092aebe037acd84ced8a7d",
+          "bytes": 593348
+        },
+        "staticPoster": {
+          "url": "story-media/2336-3f0eb401e33f9b39aacb460dd2121b27fc287a3929013c67b0c636c2bf559849.webp",
+          "sha256": "3f0eb401e33f9b39aacb460dd2121b27fc287a3929013c67b0c636c2bf559849",
+          "bytes": 579360
         }
       }
     }
