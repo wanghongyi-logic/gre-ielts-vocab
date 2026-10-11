@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "142",
-  "authoredCount": 55,
-  "publishedCount": 55,
+  "release": "143",
+  "authoredCount": 60,
+  "publishedCount": 60,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -62,7 +62,12 @@
       2718,
       2597,
       4623,
-      4002
+      4002,
+      2545,
+      1341,
+      1397,
+      3719,
+      625
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -132,6 +137,11 @@
       "url": "units/core008-artrepair-ee748b283c1aae6a6283270e5cb49c0e5eae210f23487037716f17566da52360.json",
       "bytes": 15880,
       "sha256": "ee748b283c1aae6a6283270e5cb49c0e5eae210f23487037716f17566da52360"
+    },
+    {
+      "url": "units/core009-e09971135e27875ceb127d751c7a1ff6a54f93574c1cea1c569a0bca2d45121c.json",
+      "sha256": "e09971135e27875ceb127d751c7a1ff6a54f93574c1cea1c569a0bca2d45121c",
+      "bytes": 20890
     }
   ],
   "entries": [
@@ -2902,6 +2912,156 @@
           "url": "story-media/4002-7c796abc8c7e7fdbbb215b36d58500dfc9446f1ac13e30d265b84355b6489c32.webp",
           "sha256": "7c796abc8c7e7fdbbb215b36d58500dfc9446f1ac13e30d265b84355b6489c32",
           "bytes": 150512
+        }
+      }
+    },
+    {
+      "number": 2545,
+      "word": "ubiquitous",
+      "coreMeaningZh": "到处可见的；似乎无所不在的",
+      "unit": 12,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 56,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6000,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "厨房、客厅、卧室都有蚊子飞舞，连男孩身边也躲不开。ubiquitous 指到处可见、仿佛无所不在，强调分布广，并非只在一处数量多。",
+        "video": {
+          "url": "story-media/2545-a0450445b45a0885cc0d49821e26a678bb4d4cc283cd1ba4ba5718ee1e0a31bc.mp4",
+          "sha256": "a0450445b45a0885cc0d49821e26a678bb4d4cc283cd1ba4ba5718ee1e0a31bc",
+          "bytes": 770386
+        },
+        "poster": {
+          "url": "story-media/2545-d0f470a99ea62b853449fbec12e3de6b08787542b1d605ca9b9b03306f848a90.webp",
+          "sha256": "d0f470a99ea62b853449fbec12e3de6b08787542b1d605ca9b9b03306f848a90",
+          "bytes": 282746
+        }
+      }
+    },
+    {
+      "number": 1341,
+      "word": "jejune",
+      "coreMeaningZh": "幼稚浅薄的；内容空洞而乏味的",
+      "unit": 12,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 57,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 11200,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "男孩一张张展示报告，纸上却只有反复出现的 JUNE，读者失望地低下头。jejune 可形容内容空洞乏味，也可指想法幼稚浅薄；这里缺少的是实质内容。",
+        "video": {
+          "url": "story-media/1341-6642ccbe64ca84f1c6506d5cee8fadd8551023c56173094e9325145ed8acfe9e.mp4",
+          "sha256": "6642ccbe64ca84f1c6506d5cee8fadd8551023c56173094e9325145ed8acfe9e",
+          "bytes": 1278398
+        },
+        "poster": {
+          "url": "story-media/1341-8021584009d96b2fee4b1e4de0c821337988d2c4b7a4fa44e61702d414f2737d.webp",
+          "sha256": "8021584009d96b2fee4b1e4de0c821337988d2c4b7a4fa44e61702d414f2737d",
+          "bytes": 149414
+        }
+      }
+    },
+    {
+      "number": 1397,
+      "word": "lethargic",
+      "coreMeaningZh": "无精打采的；倦怠而反应迟缓的",
+      "unit": 12,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 58,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 8000,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "男孩醒着，却没精打采地靠在椅子里，端起杯子也缓慢无力。lethargic 是缺乏精力、无精打采而反应迟缓，不只是做事谨慎或动作轻柔。",
+        "video": {
+          "url": "story-media/1397-7f726894f0a3266d82a83ee5a36ef30d2948efe453d5f27cfb3934a8bc573a56.mp4",
+          "sha256": "7f726894f0a3266d82a83ee5a36ef30d2948efe453d5f27cfb3934a8bc573a56",
+          "bytes": 297773
+        },
+        "poster": {
+          "url": "story-media/1397-90f26bf6cb746f0e81d2e9000efdffe619eacf6b95d6334d4507b24921d79830.png",
+          "sha256": "90f26bf6cb746f0e81d2e9000efdffe619eacf6b95d6334d4507b24921d79830",
+          "bytes": 568988
+        }
+      }
+    },
+    {
+      "number": 3719,
+      "word": "fungible",
+      "coreMeaningZh": "可由同种等量或等值之物互相替代的",
+      "unit": 12,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 59,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 10360,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "票价仍是十元，男孩把托盘里的十元钞票换成另一张，支付作用并不改变。fungible 指可用同种等量或等值之物互相替代，关键是换了个体仍能顶上同一作用。",
+        "video": {
+          "url": "story-media/3719-c561ba36eb63f1f2a756882613c5d2207ac81aef93335371f940d7126dde9d4b.mp4",
+          "sha256": "c561ba36eb63f1f2a756882613c5d2207ac81aef93335371f940d7126dde9d4b",
+          "bytes": 617275
+        },
+        "poster": {
+          "url": "story-media/3719-37b9fac10e6a07a5e45d8a3d1632da84281f32faa7aff335fec62acce972ade3.png",
+          "sha256": "37b9fac10e6a07a5e45d8a3d1632da84281f32faa7aff335fec62acce972ade3",
+          "bytes": 559432
+        }
+      }
+    },
+    {
+      "number": 625,
+      "word": "dilatory",
+      "coreMeaningZh": "拖拉迟缓的；造成或意在造成拖延的",
+      "unit": 12,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 60,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 11500,
+        "resetTransition": {
+          "type": "none"
+        },
+        "alt": "作业早已完成，提交按钮也准备好了，男孩却把手收回，磨蹭到超过截止时间。dilatory 指拖拉迟缓，或意在造成拖延；这里拖住事情的是人，而非电脑故障。",
+        "video": {
+          "url": "story-media/625-e4eca4f3cd6ccff20a60487cc14d318dc81b3f0fe7813b5f098c806f0a13a3ad.mp4",
+          "sha256": "e4eca4f3cd6ccff20a60487cc14d318dc81b3f0fe7813b5f098c806f0a13a3ad",
+          "bytes": 2493987
+        },
+        "poster": {
+          "url": "story-media/625-bc87d4404b7f8cc3b89c7cd57350e7d9aafe383b0c2c7d863d36ba0fc2cb03b4.png",
+          "sha256": "bc87d4404b7f8cc3b89c7cd57350e7d9aafe383b0c2c7d863d36ba0fc2cb03b4",
+          "bytes": 2664756
         }
       }
     }

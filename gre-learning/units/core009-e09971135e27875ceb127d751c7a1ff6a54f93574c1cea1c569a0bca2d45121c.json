@@ -1,0 +1,397 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 2545,
+      "word": "ubiquitous",
+      "ipa": "/juːˈbɪkwɪtəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "到处可见的；似乎无所不在的",
+      "coreEn": "Found, or seeming to be found, in nearly every place within the context being discussed.",
+      "usage": [
+        {
+          "senseZh": "在某个范围里到处可见",
+          "explanationZh": "强调分布广、经常遇见，通常不是严密断言宇宙中每个角落都有。可以形容技术、广告、物品或某人的频繁露面；既可中性陈述，也可略带幽默或厌烦。",
+          "collocations": [
+            {
+              "phrase": "ubiquitous advertising",
+              "meaningZh": "随处可见的广告"
+            },
+            {
+              "phrase": "become ubiquitous",
+              "meaningZh": "变得到处可见"
+            }
+          ]
+        },
+        {
+          "senseZh": "反复出现，仿佛总在场",
+          "explanationZh": "常置于名词前。形容一个明星时，可以指其影像或报道处处出现，不是说这个人能同时站在所有地方。与 universal 的“人人适用”义不同。",
+          "collocations": [
+            {
+              "phrase": "a ubiquitous presence",
+              "meaningZh": "无处不在般的存在"
+            },
+            {
+              "phrase": "ubiquitous technology",
+              "meaningZh": "普遍存在的技术"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Blue is derived from the ubiquitous indigo plant.",
+          "translationZh": "蓝色染料取自随处可见的靛蓝植物。",
+          "explanationZh": "ubiquitous 修饰植物的分布；derived from 表明来源。这里的 blue 在染色语境下理解为蓝色染料。"
+        },
+        {
+          "textEn": "The ubiquitous portraits of the president usually showed him in military uniform.",
+          "translationZh": "那些随处可见的总统肖像通常画着他身穿军装的样子。",
+          "explanationZh": "到处出现的是肖像；usually 修饰肖像如何呈现总统，并不是说总统本人无处不在。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "omnipresent",
+          "comparisonZh": "两词都可形容仿佛到处都有的事物。omnipresent 更直接说“处处在场”，也常见于神学语境；ubiquitous 常写日常事物的广泛分布，不一定逐处核实。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "universal",
+          "comparisonZh": "在广泛存在、到处发生的意思上相近。universal 还可指适用于所有人或全部情况；一条原则普遍适用，不等于它到处可见，不能一律换成 ubiquitous。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "QUIT 每个窗口都有",
+          "textZh": "想象同时打开游戏、画图和练习软件，每个窗口都出现同一个 QUIT（退出）键：切到哪里都看得见。ubiQUITous 中完整藏着 QUIT，声音也有 /kwɪt/ 这一段。用这个“到处都有的键”记住 ubiquitous。这里只借局部字形和声音，不是词源，重音仍在 /bɪ/。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "mosQUITO 满屋嗡嗡响",
+          "textZh": "ubiQUITOus 和 mosQUITO（蚊子）共有 QUITO 五个字母。想象闷热的一晚，客厅、卧室、厨房都嗡嗡作响，你走到哪儿都遇见蚊子：它们真是 ubiquitous，仿佛无处不在。这里只借拼写；两词这段的读音不同，不照 mosquito 来读 ubiquitous。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "coreImageZh": "厨房、客厅、卧室都有蚊子飞舞，连男孩身边也躲不开。ubiquitous 指到处可见、仿佛无所不在，强调分布广，并非只在一处数量多。"
+    },
+    {
+      "number": 1341,
+      "word": "jejune",
+      "ipa": "/dʒɪˈdʒuːn/",
+      "pos": "adj.",
+      "coreMeaningZh": "幼稚浅薄的；内容空洞而乏味的",
+      "coreEn": "Lacking mature thought or satisfying substance, and often dull for that reason.",
+      "usage": [
+        {
+          "senseZh": "判断过于简单，缺乏成熟思考",
+          "explanationZh": "正式且带批评意味，常评价评论、观点或论证。重点不是年龄小，而是想法缺少经验、细节或深度；简单清楚的表达本身不等于 jejune。",
+          "collocations": [
+            {
+              "phrase": "jejune generalizations",
+              "meaningZh": "幼稚的概括"
+            },
+            {
+              "phrase": "a jejune argument",
+              "meaningZh": "浅薄的论证"
+            }
+          ]
+        },
+        {
+          "senseZh": "内容贫乏，读来或听来没滋味",
+          "explanationZh": "可形容演讲、文章或谈话，强调没有值得咀嚼的内容。不只是音量小或语速慢，也不必然表示观点错误。更早的营养不足义仍见词典，但这里主要学习思想和表达的评价义。",
+          "collocations": [
+            {
+              "phrase": "jejune prose",
+              "meaningZh": "空洞乏味的文字"
+            },
+            {
+              "phrase": "jejune remarks",
+              "meaningZh": "浅薄无味的评论"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He made jejune generalizations about how all students were lazy and never did any work.",
+          "translationZh": "他作出了幼稚的笼统判断，说所有学生都懒惰、从来不做任何功课。",
+          "explanationZh": "about 后是受批评的概括内容；all 与 never 把复杂群体一概而论，体现 jejune 的浅薄。例句并不赞同该说法。"
+        },
+        {
+          "textEn": "She made jejune remarks about life and art.",
+          "translationZh": "她就生活和艺术发表了一些浅薄无味的评论。",
+          "explanationZh": "remarks 指评论；只凭此句无法判定她年龄小，或评论在事实层面一定错误。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "vapid",
+          "comparisonZh": "两者在内容空洞、乏味上重合。vapid 强调缺乏生气或智趣；jejune 还可突出判断幼稚、思想未成熟，不能把这层差别抹掉。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "naive",
+          "comparisonZh": "在想法过于简单、缺少经验时相近。naive 还可表示天真、不谙世故；jejune 更常是对思想或表达贫乏的贬评，未必有单纯无邪的意味。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "JUNE 总结只写月份",
+          "textZh": "JUNE（六月）是 jeJUNE 的最后四个字母，也同读 /dʒuːn/。想象交来一份六月总结：第一页写 JUNE，第二页仍是 JUNE，翻到最后还是 JUNE；本该交代的经历、结果和想法全没有。字数不少，内容却空洞乏味，这份总结就是 jejune。这里只借 JUNE 的音形，不是说六月本身乏味，也不是词源。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "tUNE 哼歌就当难题没了",
+          "textZh": "jejUNE 和 tUNE（曲调）共有词尾 UNE，也同有 /uːn/ 这段声音。想象有人被问到该怎样解决眼前的难题，不分析原因，也不提办法，只跟着轻快的 tune 唱：“笑一笑，所有难题都跑掉。”他真把这句歌词当作答案，这种过分简单、幼稚的判断就是 jejune。这里只借词尾音形；幼稚的是他的判断，不是音乐本身，也不是词源。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "coreImageZh": "男孩一张张展示报告，纸上却只有反复出现的 JUNE，读者失望地低下头。jejune 可形容内容空洞乏味，也可指想法幼稚浅薄；这里缺少的是实质内容。"
+    },
+    {
+      "number": 1397,
+      "word": "lethargic",
+      "ipa": "/ləˈθɑːrdʒɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "无精打采的；倦怠而反应迟缓的",
+      "coreEn": "Having little energy or enthusiasm, often with unusually slow activity or response.",
+      "usage": [
+        {
+          "senseZh": "身体或精神提不起劲",
+          "explanationZh": "可形容人或动物缺少活力，常伴行动迟缓或困倦；不等于主动偷懒，也不能只凭这个词推断病因。",
+          "collocations": [
+            {
+              "phrase": "feel lethargic",
+              "meaningZh": "感到无精打采"
+            },
+            {
+              "phrase": "a lethargic patient",
+              "meaningZh": "倦怠无力的病人"
+            }
+          ]
+        },
+        {
+          "senseZh": "集体或活动缺乏积极反应",
+          "explanationZh": "也可评价机构、团队或观众反应冷淡、行动迟缓。与 dilatory 相比，lethargic 突出缺少活力或热情；dilatory 突出办事拖延。",
+          "collocations": [
+            {
+              "phrase": "a lethargic response",
+              "meaningZh": "迟缓而缺乏积极性的反应"
+            },
+            {
+              "phrase": "a lethargic performance",
+              "meaningZh": "缺乏活力的表现"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The weather made her lethargic.",
+          "translationZh": "这天气让她无精打采。",
+          "explanationZh": "make + 人 + 形容词，表示使某人处于某种状态；词本身没有把无力归咎于懒惰。"
+        },
+        {
+          "textEn": "The legislature was lethargic in considering the bill.",
+          "translationZh": "立法机构在审议这项法案时行动迟缓、缺乏积极性。",
+          "explanationZh": "这里把人的倦怠感用于机构，强调审议缺少积极行动，并没有说议员都快睡着了。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "somnolent",
+          "comparisonZh": "在昏昏欲睡、活动迟缓的语境中相近。somnolent 更直接指困倦，也能指令人困倦；lethargic 常指缺少精力，即使没有睡意也能用。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "slumberous",
+          "comparisonZh": "在困倦昏沉的描写中重合。slumberous 围绕睡意或睡眠般的静态，也可指催眠的；lethargic 评价机构行动迟缓时，通常不宜机械替换。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "listless",
+          "comparisonZh": "两者都能描述没精神、没兴致。listless 较突出兴趣和热情不足；lethargic 也很自然地突出动作、反应或体力的迟缓。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "chARGe 一格电没精神",
+          "textZh": "lethARGic 和 chARGe（充电）共有 ARG，美式读音也共有 /ɑːrdʒ/。想象自己像只剩一格电的手机，坐在椅子上连起身都提不起劲，脑中只闪着“该 charge 了”：这种没精力的状态就是 lethargic。这是局部音形联想和低电量比喻，不是词源。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "maGIC 抽走活力",
+          "textZh": "letharGIC 和 maGIC（魔法）都以 GIC 结尾，这一段都读 /dʒɪk/。想象童话里一道 magic 抽走了主角的活力：他仍能走路、说话，却慢吞吞地挪步，连端起杯子都提不起劲。这种无精打采、反应迟缓的状态就是 lethargic。这里只借词尾音形编故事，不是词源。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "coreImageZh": "男孩醒着，却没精打采地靠在椅子里，端起杯子也缓慢无力。lethargic 是缺乏精力、无精打采而反应迟缓，不只是做事谨慎或动作轻柔。"
+    },
+    {
+      "number": 3719,
+      "word": "fungible",
+      "ipa": "/ˈfʌndʒəbl/",
+      "pos": "adj.",
+      "coreMeaningZh": "可由同种等量或等值之物互相替代的",
+      "coreEn": "Interchangeable with another equivalent unit of the same kind for the purpose at hand.",
+      "usage": [
+        {
+          "senseZh": "钱或标准化商品可等量等值替换",
+          "explanationZh": "常见于经济、商业和法律语境，关键是不要求某个特定个体。相同币种面额的普通钞票可以替换；签名纪念钞若按收藏品交易，就不能只按面额看待。商品也须满足约定的数量和品质。",
+          "collocations": [
+            {
+              "phrase": "fungible goods",
+              "meaningZh": "可由同类等值品替代的货物"
+            },
+            {
+              "phrase": "fungible commodities",
+              "meaningZh": "可互换的标准化商品"
+            }
+          ]
+        },
+        {
+          "senseZh": "引申为某一用途上互换",
+          "explanationZh": "可扩大到资源、角色等能够互相顶替的情况，但必须说明适用语境。一般的“可以买卖”并不足以构成 fungible，能卖掉的独特作品仍可能无法等同替代。",
+          "collocations": [
+            {
+              "phrase": "fungible resources",
+              "meaningZh": "可相互替用的资源"
+            },
+            {
+              "phrase": "treat workers as fungible",
+              "meaningZh": "把员工当作可随意互换的人员"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Oil, wheat, and lumber are fungible commodities.",
+          "translationZh": "石油、小麦和木材属于可由同类商品相互替代的大宗商品。",
+          "explanationZh": "互换以符合约定的品级和数量为前提，并不是说任意一块木材都能替代任意一桶油。"
+        },
+        {
+          "textEn": "Cryptocurrency, like other forms of money, is fungible.",
+          "translationZh": "加密货币与其他形式的货币一样，具有可互换性。",
+          "explanationZh": "词典用货币单位说明等值替换；此句不应外推成“所有数字代币都可互换”，例如非同质化代币强调特定身份。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "interchangeable",
+          "comparisonZh": "最贴近核心义：在相关用途上可以相互替换。interchangeable 的适用范围较广，零件或语境中的词语也能用；fungible 常带同类单位等量、等值而不在意个体身份的意味。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "substitutable",
+          "comparisonZh": "都涉及替换，但 substitutable 单说能够替代；fungible 更突出同类等值单位可互换，不是只要找到一个替代方案就够了。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "FUNds 换张钞票也一样",
+          "textZh": "FUNgible 与 FUNds（资金）都有开头 FUN。借朋友十元，还钱时交给他另一张普通十元钞票，金额和支付作用不变，他不需要找回原来那张。资金的这个“换一张也一样”接回 fungible。这里只借字形，不说 fund 是它的词源。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "FUNCTION 换电池照样亮",
+          "textZh": "fungible 与 function（功能、作用）的历史来源都连到拉丁语 fungi，意为履行、执行。想象一盒规格、状态完全相同的新电池，手电筒用其中哪一节都一样亮：另一节能顶上同一作用，这些电池在这个用途上便是 fungible。用同源的功能线索记“可以互换”，不是声称所有功能近似的物品都等值。",
+          "original": true,
+          "kind": "etymology"
+        }
+      ],
+      "coreImageZh": "票价仍是十元，男孩把托盘里的十元钞票换成另一张，支付作用并不改变。fungible 指可用同种等量或等值之物互相替代，关键是换了个体仍能顶上同一作用。"
+    },
+    {
+      "number": 625,
+      "word": "dilatory",
+      "ipa": "/ˈdɪlətɔːri/",
+      "pos": "adj.",
+      "coreMeaningZh": "拖拉迟缓的；造成或意在造成拖延的",
+      "coreEn": "Slow in taking required action, or used to put off progress or a decision.",
+      "usage": [
+        {
+          "senseZh": "该行动时迟迟不办",
+          "explanationZh": "正式且多含批评，常用 dilatory in doing something。迟缓可以是拖拉、疏忽或欠缺积极性造成的，未必总是蓄意阻挠。",
+          "collocations": [
+            {
+              "phrase": "be dilatory in replying",
+              "meaningZh": "迟迟不回复"
+            },
+            {
+              "phrase": "a dilatory response",
+              "meaningZh": "拖拖拉拉的回应"
+            }
+          ]
+        },
+        {
+          "senseZh": "用某种办法拖延进程",
+          "explanationZh": "形容策略或程序时，常指为了争取时间或阻止决定而拖延。关注的是事情被延后，并不必然意味着执行这种策略的人动作慢或没有精力。",
+          "collocations": [
+            {
+              "phrase": "dilatory tactics",
+              "meaningZh": "拖延战术"
+            },
+            {
+              "phrase": "dilatory procedures",
+              "meaningZh": "拖延进程的程序"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The government has been dilatory in dealing with the problem of unemployment.",
+          "translationZh": "政府在处理失业问题上一直拖拖拉拉。",
+          "explanationZh": "dilatory in dealing with 点明迟缓发生在哪件事上；句子批评行动不够及时。"
+        },
+        {
+          "textEn": "the homeowner is claiming that local firefighters were dilatory in responding to the call",
+          "translationZh": "房主声称，当地消防员对这次求助的响应不够及时。",
+          "explanationZh": "is claiming 把评价归于房主，是一项说法而非经例句证实的事实。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sluggish",
+          "comparisonZh": "在行动和反应过慢时相近。sluggish 还可描述交通、水流或经济等运转迟缓；dilatory 常聚焦该办的事迟迟不办或故意延后。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "remiss",
+          "comparisonZh": "当疏忽职责造成拖延时可以接近。remiss 的重点是欠缺应有的注意或责任心；疏忽也可能造成错误而非延误，所以并非所有 remiss 都是 dilatory。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "laggard",
+          "comparisonZh": "作形容词时都能批评进展迟缓；laggard 更突出落后于同类或他人。作名词的 laggard 指落后者，不能直接替换形容词 dilatory。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "sTORY 讲故事拖正事",
+          "textZh": "dilaTORY 和 sTORY 共有 TORY 字母，美式读音共有 /tɔːri/。想象有人本该交报告，却不停说“再听我讲个 story”，一个故事接一个，直到下班仍没交。这种拿讲故事拖延正事的做法就是 dilatory。只借局部音形，单词主重音仍在开头 /dɪ/。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "LATE 磨蹭到错过截止",
+          "textZh": "diLATory 和 LATE（迟到的、晚的）共有 LAT 三个字母。想象作业早已写好，却把“提交”按钮留到一会儿再点；磨蹭到截止时间过去，屏幕亮起 LATE。明明该办却迟迟不办，就是 dilatory。这里只借字母联想；dilatory 仍读 /ˈdɪlətɔːri/，不是把中间读成 late 的 /leɪt/。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "coreImageZh": "作业早已完成，提交按钮也准备好了，男孩却把手收回，磨蹭到超过截止时间。dilatory 指拖拉迟缓，或意在造成拖延；这里拖住事情的是人，而非电脑故障。"
+    }
+  ]
+}
