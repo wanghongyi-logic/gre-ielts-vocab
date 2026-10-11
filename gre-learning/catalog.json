@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "137",
-  "authoredCount": 40,
-  "publishedCount": 40,
+  "release": "138",
+  "authoredCount": 45,
+  "publishedCount": 45,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -47,7 +47,12 @@
       1053,
       478,
       1608,
-      4253
+      4253,
+      1731,
+      1232,
+      4020,
+      860,
+      4103
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -102,6 +107,11 @@
       "url": "units/core005-987668ca8ef60aff22e389a8855650547f8d72d5c3eefcf8cee7f8ab859d5bf0.json",
       "bytes": 16224,
       "sha256": "987668ca8ef60aff22e389a8855650547f8d72d5c3eefcf8cee7f8ab859d5bf0"
+    },
+    {
+      "url": "units/core006-ff962284a1e47d95a130a9d406b9f18bbe9ddc793a0670cb4a773abc8a1187ad.json",
+      "bytes": 15239,
+      "sha256": "ff962284a1e47d95a130a9d406b9f18bbe9ddc793a0670cb4a773abc8a1187ad"
     }
   ],
   "entries": [
@@ -2237,6 +2247,166 @@
           "bytes": 280652,
           "sha256": "566b8cda59e400df1f238aa2d8ade699c8970dea0fe1eac12c22fd2bd0cac199"
         }
+      }
+    },
+    {
+      "number": 1731,
+      "word": "peripatetic",
+      "coreMeaningZh": "辗转各地的；巡回工作的；步行的",
+      "unit": 9,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 41,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 8000,
+        "video": {
+          "url": "story-media/1731-93817290e2b218e3d4873795db7fdf94a843922a31503fb05ab293a01ea36923.mp4",
+          "bytes": 404143,
+          "sha256": "93817290e2b218e3d4873795db7fdf94a843922a31503fb05ab293a01ea36923"
+        },
+        "poster": {
+          "url": "story-media/1731-82fb7406483d406a47e8e302fe49d8816feac86b657bda2c115db06557b4a185.webp",
+          "bytes": 202148,
+          "sha256": "82fb7406483d406a47e8e302fe49d8816feac86b657bda2c115db06557b4a185"
+        },
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "日期一天天变化，车票上的目的地也不断更换，人物始终在旅途中。peripatetic 描述这种辗转各地的生活或巡回工作的方式，不只是偶尔出一趟门。"
+      }
+    },
+    {
+      "number": 1232,
+      "word": "indict",
+      "coreMeaningZh": "正式指控、起诉；指责某人或某事有过错",
+      "unit": 9,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 42,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 6520,
+        "video": {
+          "url": "story-media/1232-2f4cac9bbd2d6f27122f03b9dc90da81c4190b2cd2b0ba4c88fd2c3c065bf263.mp4",
+          "bytes": 127854,
+          "sha256": "2f4cac9bbd2d6f27122f03b9dc90da81c4190b2cd2b0ba4c88fd2c3c065bf263"
+        },
+        "poster": {
+          "url": "story-media/1232-25ef6753a052e9379f2b3091dcac70b30e15457b83e27efa916c40ddd66a6d7e.webp",
+          "bytes": 168298,
+          "sha256": "25ef6753a052e9379f2b3091dcac70b30e15457b83e27efa916c40ddd66a6d7e"
+        },
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "人物在“正式指控”的纸页上写下内容。indict 指正式指控某人涉嫌犯罪；提出指控还不等于已经证明有罪。它也可引申为指责某人或某事有过错。"
+      }
+    },
+    {
+      "number": 4020,
+      "word": "misnomer",
+      "coreMeaningZh": "错误或不恰当的名称；用错名称",
+      "unit": 9,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 43,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 6600,
+        "video": {
+          "url": "story-media/4020-8792b25f7c2962d3d6bf069c513bca9b9669a06bd1fca4096d71c17917f05f9b.mp4",
+          "bytes": 151568,
+          "sha256": "8792b25f7c2962d3d6bf069c513bca9b9669a06bd1fca4096d71c17917f05f9b"
+        },
+        "poster": {
+          "url": "story-media/4020-e190026240b8a1c4d3bc28cb4502b50d622b9fbb65445cbc79b5ede995c18303.webp",
+          "bytes": 239838,
+          "sha256": "e190026240b8a1c4d3bc28cb4502b50d622b9fbb65445cbc79b5ede995c18303"
+        },
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "鼓声不断的排练室，门牌却写着“安静的房间”。名字没有拼错，却与实际情况不相称；misnomer 指的正是这种错误或不恰当的名称。"
+      }
+    },
+    {
+      "number": 860,
+      "word": "exhilarate",
+      "coreMeaningZh": "使兴奋愉快；使精神振奋",
+      "unit": 9,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 44,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 6600,
+        "video": {
+          "url": "story-media/860-1e60f20cee2d84e9bae86913dd79e1205e63c6dc4bdbb761dc2cc61aee768d1c.mp4",
+          "bytes": 150777,
+          "sha256": "1e60f20cee2d84e9bae86913dd79e1205e63c6dc4bdbb761dc2cc61aee768d1c"
+        },
+        "poster": {
+          "url": "story-media/860-d1a7f24080b1740314533622a3ef8d52183635c5f1fe803b58488f5d9e6c9d0e.webp",
+          "bytes": 145272,
+          "sha256": "d1a7f24080b1740314533622a3ef8d52183635c5f1fe803b58488f5d9e6c9d0e"
+        },
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "清风吹来，人物露出灿烂笑容，精神一振，兴奋地张开双臂。exhilarate 是使人兴奋愉快、精神振奋，比只是觉得舒服更有活力。"
+      }
+    },
+    {
+      "number": 4103,
+      "word": "opulent",
+      "coreMeaningZh": "奢华的、富丽的；富裕的；丰盛充裕的",
+      "unit": 9,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 45,
+      "storyMedia": {
+        "width": 512,
+        "height": 512,
+        "durationMs": 6600,
+        "video": {
+          "url": "story-media/4103-e4127c3b12f52c81f8ba7a873e525c26b9d5b524802b9e5c4ebf6e6e1022a715.mp4",
+          "bytes": 257498,
+          "sha256": "e4127c3b12f52c81f8ba7a873e525c26b9d5b524802b9e5c4ebf6e6e1022a715"
+        },
+        "poster": {
+          "url": "story-media/4103-eec4ca6d7d8d7c8530bf4f5c36034c9fa8d1c8f5685e9024e3b4072f1d289922.webp",
+          "bytes": 200484,
+          "sha256": "eec4ca6d7d8d7c8530bf4f5c36034c9fa8d1c8f5685e9024e3b4072f1d289922"
+        },
+        "resetTransition": {
+          "type": "paper-fade",
+          "fadeOutMs": 360,
+          "fadeInMs": 240
+        },
+        "alt": "厚绒地毯、金边座椅和华丽吊灯铺陈在同一座大厅里，处处透着富丽与丰足。opulent 描述这种奢华气派，也可形容富裕或充裕丰盛。"
       }
     }
   ],
