@@ -88,15 +88,18 @@ export function installContents({main,picker,search,entries,getSelected,navigate
  const readingPositions=new Map();
  // Hash history must not race the book's explicit reading-position restore.
  if(win.history&&'scrollRestoration' in win.history)win.history.scrollRestoration='manual';
- const isRoute=hash=>/^#\/?contents\/?$/.test(hash);
+ const isRoute=hash=>/^#\/?(?:contents|settings)\/?$/.test(hash);
+ const isSettings=()=>/^#\/?settings\/?$/.test(win.location.hash);
+ function syncLeaf(){const settings=isSettings();title.textContent=settings?'设置':'目录';const leaf=doc.getElementById('offline-settings');if(leaf){leaf.hidden=!settings;if(settings)leaf.querySelector('details').open=true;}search.closest('.search-field').hidden=settings;doc.querySelector('.contents-list-heading').hidden=settings;results.hidden=settings;opener.setAttribute('aria-expanded',String(picker.open&&!settings));const settingTab=doc.getElementById('open-settings');settingTab?.setAttribute('aria-expanded',String(picker.open&&settings));settingTab?.classList.toggle('is-current',picker.open&&settings);if(picker.open)doc.title=(settings?'设置':'目录')+' · 单词故事';}
  const readingHash=number=>`#/learn/${number}`;
  const currentEntry=()=>entries.find(entry=>entry.number===getSelected())||entries[0];
  function captureReading(){const number=getSelected();if(number!=null&&!picker.open&&win.location.hash===readingHash(number))readingPositions.set(number,{scrollX:win.scrollX,scrollY:win.scrollY});}
  win.addEventListener('scroll',captureReading,{passive:true});
  function renderResults(){
+  syncLeaf();
   const selected=currentEntry(),matches=filterEntries(entries,search.value),filtered=Boolean(search.value.trim());
   if(saved&&!saved.ready&&getSelected()!=null){saved.number=selected.number;saved.hash=readingHash(selected.number);saved.title=`${selected.word} · 单词故事`;saved.ready=true;}
-  if(picker.open)doc.title='目录 · 单词故事';
+  if(picker.open)doc.title=(isSettings()?'设置':'目录')+' · 单词故事';
   count.textContent=filtered?`找到 ${matches.length} 个词`:`${entries.length} 个词 · 按阅读顺序`;
   returnWord.textContent=selected?selected.word:'';
   returnButton.setAttribute('aria-label',selected?`继续阅读 ${selected.word}`:'返回阅读');
@@ -117,8 +120,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   main.hidden=!main.classList.contains('contents-live-turn');main.inert=true;
   doc.body.classList.add('is-contents-open');
   picker.show();
-  doc.title='目录 · 单词故事';
-  opener.setAttribute('aria-expanded','true');
+  syncLeaf();
   win.scrollTo({top:0,left:0,behavior:'instant'});
   title.focus({preventScroll:true});
   onOpen();
@@ -132,7 +134,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   main.hidden=false;main.inert=false;
   doc.body.classList.remove('is-contents-open');
   picker.close();
-  opener.setAttribute('aria-expanded','false');
+  opener.setAttribute('aria-expanded','false');doc.getElementById('open-settings')?.setAttribute('aria-expanded','false');doc.getElementById('open-settings')?.classList.remove('is-current');
   if(restore&&snapshot?.title)doc.title=snapshot.title;
   if(restore&&snapshot){
    win.scrollTo({left:snapshot.scrollX,top:snapshot.scrollY,behavior:'instant'});
@@ -148,10 +150,10 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   if(animate)transition(change,()=>onClose({restored:Boolean(restore&&snapshot)}));else change();
   return Boolean(restore&&snapshot);
  }
- function open(){captureReading();if(picker.open){title.focus({preventScroll:true});return;}win.location.hash='/contents';}
+ function open(){captureReading();if(picker.open&&!isSettings()){title.focus({preventScroll:true});return;}win.location.hash='/contents';}
  function close(){if(picker.open)win.location.hash=saved?.hash||readingHash(currentEntry()?.number);}
  function syncRoute(){
-  if(isRoute(win.location.hash)){picker.removeAttribute('aria-busy');if(picker.open)count.textContent=search.value.trim()?`找到 ${filterEntries(entries,search.value).length} 个词`:`${entries.length} 个词 · 按阅读顺序`;show();return {contents:true,restored:false};}
+  if(isRoute(win.location.hash)){syncLeaf();picker.removeAttribute('aria-busy');if(picker.open)count.textContent=search.value.trim()?`找到 ${filterEntries(entries,search.value).length} 个词`:`${entries.length} 个词 · 按阅读顺序`;show();return {contents:true,restored:false};}
   const match=/^#\/?(?:learn\/)?(\d+)$/.exec(win.location.hash);
   const same=Boolean(saved&&Number(match?.[1])===saved.number&&getSelected()===saved.number);
   const restored=picker.open&&same?hide():false;

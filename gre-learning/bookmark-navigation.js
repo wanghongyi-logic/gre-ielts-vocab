@@ -18,9 +18,10 @@ export function installBookmarkNavigation({surface,picker,window:win=window,docu
  doc.body.classList.remove('bookmarks-collapsed');nav.classList.remove('is-collapsed');
  const reduced=()=>win.matchMedia('(prefers-reduced-motion: reduce)').matches;
  function paint(){
-  const inDirectory=picker.open;
+  const inSettings=picker.open&&/^#\/?settings\/?$/.test(win.location.hash),inDirectory=picker.open&&!inSettings;
+  const settings=doc.getElementById('open-settings');settings?.classList.toggle('is-current',inSettings);settings?.setAttribute('aria-expanded',String(inSettings));
   directory.classList.toggle('is-current',inDirectory);directory.setAttribute('aria-expanded',String(inDirectory));
-  links.forEach(link=>{const active=!inDirectory&&link.dataset.section===reading;link.classList.toggle('is-current',active);if(active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
+  links.forEach(link=>{const active=!picker.open&&link.dataset.section===reading;link.classList.toggle('is-current',active);if(active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
  }
  function position(){return sectionAtPosition(sections.map(element=>({id:element.id,top:element.getBoundingClientRect().top+win.scrollY})),{scrollY:win.scrollY,height:win.innerHeight,scrollHeight:doc.documentElement.scrollHeight});}
  function update(){frame=0;if(suspended)return;reading=pending?.id||position()||'word-title';paint();}

@@ -30,17 +30,19 @@ export function installPreparedPages({loader,entries,picker,window:win=window,do
     page.root=root;page.loaded=loaded;
     root.querySelectorAll('[id]').forEach(node=>{node.dataset.preparedId=node.id;node.id=`prepared-${number}-${node.id}`;});
     const poster=root.querySelector('.story-poster');
-    if(!poster)throw new Error('Page poster missing');
-    await Promise.race([poster.decode(),new Promise((_,reject)=>controller.signal.addEventListener('abort',()=>reject(new DOMException('Cancelled','AbortError')),{once:true}))]);
-    if(!poster.naturalWidth||controller.signal.aborted)throw new Error('Page poster unavailable');
+    if(poster){
+    await Promise.race([poster.decode().catch(()=>{}),new Promise((_,reject)=>controller.signal.addEventListener('abort',()=>reject(new DOMException('Cancelled','AbortError')),{once:true}))]);
+    if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');if(!poster.naturalWidth)poster.remove();
+    }
     if(loaded.media?.staticPosterURL){
-     const fallback=doc.createElement('img');fallback.src=loaded.media.staticPosterURL;await fallback.decode();
+     const fallback=doc.createElement('img');fallback.src=loaded.media.staticPosterURL;await fallback.decode().catch(()=>{});
      if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');page.staticPosterImage=fallback;
     }
     // The visible preparation is always the authored frame-zero poster. A video
     // decoder may fail without turning this real, verified page into a blank.
     page.motion=installStoryMedia(root,{picker,window:win,document:doc});
-    await page.motion.refresh(loaded.media,{root});
+    const mediaReady=await page.motion.refresh(loaded.media,{root});
+    if(!mediaReady&&!root.querySelector('.story-poster')){root.querySelector('.story-illustration')?.remove();root.querySelector('.reading-layout')?.classList.add('text-only-reading');}
     if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
     if(!page.motion.prepareStaticPoster()){
     root.querySelectorAll('video').forEach(video=>{video.pause();video.style.opacity='0';});
@@ -58,5 +60,5 @@ export function installPreparedPages({loader,entries,picker,window:win=window,do
  function adjacent(number){keep(number);const position=neighboringNumbers(entries,number);for(const id of [position.next,position.previous].filter(Boolean))prepare(id,'low').catch(()=>{});}
  function get(number){const page=pages.get(number);return page?.ready?page:null;}
  function take(number){const page=get(number);if(page)pages.delete(number);return page;}
- return {prepare,get,take,adjacent,keep,destroy(){for(const page of [...pages.values()])dispose(page);}};
+ return {prepare,get,take,adjacent,keep,destroy(){const retiring=[...pages.values()];for(const page of retiring)dispose(page);return Promise.allSettled(retiring.map(page=>page.promise));}};
 }

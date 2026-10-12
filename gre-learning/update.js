@@ -1,6 +1,6 @@
 (() => {
   if (!('serviceWorker' in navigator) || location.protocol === 'file:' || location.hostname === 'app.local') return;
-  const build = '166';
+  const build = '166-offline200-v8';
   let refreshing = false;
   let lastUpdateCheck = 0;
   let registration;
@@ -33,7 +33,7 @@
   navigator.serviceWorker.addEventListener('controllerchange',inspectController);
   navigator.serviceWorker.addEventListener('message',event=>{
     const data=event.data||{};
-    if(data.type==='SHELL_READY' && event.source===navigator.serviceWorker.controller)show('离线页面已就绪；仅已下载的词可离线打开',true);
+    if(data.type==='SHELL_READY' && event.source===navigator.serviceWorker.controller)show('本册文字已可离线阅读',true);
   });
   navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(value=>{
     registration=value;checkForUpdate(true);

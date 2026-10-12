@@ -1,3 +1,4 @@
+import {installOfflineManager} from './offline-manager.js';
 import {LessonLoader,expandCatalog} from './lesson-loader.js';
 import {escapeLearningText as escape,renderNotReady} from './render.js';
 import {resolveWordNumber,filterEntries,neighboringNumbers} from './model.js';
@@ -8,6 +9,7 @@ import {installStoryMedia} from './story-media.js';
 import {installBookmarkNavigation} from './bookmark-navigation.js';
 const catalog=expandCatalog(await fetch(new URL('./catalog.json',import.meta.url),{cache:'no-cache'}).then(response=>{if(!response.ok)throw new Error('Lesson index unavailable');return response.json();}));
 installMobileZoomGuard();
+installOfflineManager(catalog);
 const entries=catalog.entries;
 document.getElementById('release-summary').textContent=`词汇学习 · 已收录 ${entries.length} 词`;
 const loader=new LessonLoader(catalog);
@@ -73,6 +75,7 @@ document.addEventListener('click',event=>{
  button.classList.add('is-speaking');speech.onend=()=>button.classList.remove('is-speaking');speech.onerror=()=>{button.classList.remove('is-speaking');document.getElementById('speech-status').textContent='朗读暂不可用，请稍后再试';};window.speechSynthesis.speak(speech);
 });
 function route(){if(contents.deferRoute(route))return;const state=contents.syncRoute();if(state.contents&&current)return;if(state.restored&&current){renderGeneration++;main.removeAttribute('aria-busy');pages.adjacent(selectedNumber);if(pendingSection){const section=pendingSection;pendingSection=null;requestAnimationFrame(()=>bookmarks.navigate(section));}return;}render();}
+window.addEventListener('gre-clear-library',event=>{const settled=(async()=>{renderGeneration++;swipe.cancel();loader.cancel();motion.destroy();window.speechSynthesis?.cancel();const pending=pages.destroy();main.querySelectorAll('video').forEach(video=>{video.pause();video.removeAttribute('src');video.load();});await pending;loader.destroy();})();event.detail.waits.push(settled);});
 window.addEventListener('hashchange',route);
 window.addEventListener('pagehide',event=>{window.speechSynthesis?.cancel();loader.cancel();pages.destroy();if(event.persisted)motion.setTurning(true);else motion.cancel();bookmarks.suspend();renderGeneration++;});
 window.addEventListener('pageshow',event=>{if(!event.persisted)return;if(contents.isRoute(location.hash)!==picker.open){route();return;}if(current&&(contents.isRoute(location.hash)||resolveWordNumber(location.hash,entries,remember())===selectedNumber)){main.removeAttribute('aria-busy');watchChapters();motion.setTurning(false);pages.adjacent(selectedNumber);}else route();});
