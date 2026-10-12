@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "160",
-  "authoredCount": 150,
-  "publishedCount": 150,
+  "release": "161",
+  "authoredCount": 160,
+  "publishedCount": 160,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -157,7 +157,17 @@
       1176,
       2512,
       1360,
-      1121
+      1121,
+      538,
+      247,
+      2396,
+      2159,
+      993,
+      1577,
+      521,
+      744,
+      660,
+      1849
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -357,6 +367,16 @@
       "url": "units/core027-text-candidate-b4b0bdee95c10d01d270ef5b5adb20f2f4ca50a0ac773ec0179841e35b9c3253.json",
       "sha256": "b4b0bdee95c10d01d270ef5b5adb20f2f4ca50a0ac773ec0179841e35b9c3253",
       "bytes": 19200
+    },
+    {
+      "url": "units/core028-text-candidate-04945fe358d9945e22e52f3e0d26e808a91a6e804e682f2a46772dc47f516856.json",
+      "sha256": "04945fe358d9945e22e52f3e0d26e808a91a6e804e682f2a46772dc47f516856",
+      "bytes": 17020
+    },
+    {
+      "url": "units/core029-text-candidate-56e10619879cf65742347e4d606fcc8dbf71ee615354a71f0c72ff8607b36fdc.json",
+      "sha256": "56e10619879cf65742347e4d606fcc8dbf71ee615354a71f0c72ff8607b36fdc",
+      "bytes": 17803
     }
   ],
   "entries": [
@@ -12963,6 +12983,639 @@
           {
             "startMs": 5720,
             "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-4"
+          }
+        ]
+      }
+    },
+    {
+      "number": 538,
+      "word": "debacle",
+      "coreMeaningZh": "惨败；彻底失败的局面",
+      "unit": 38,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 151,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6400.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6400,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩自信地演示模型桥，放开小车后，薄弱支撑倒下，两段桥面连同小车塌进模型底座；整场演示彻底失败，他沮丧地看着残局。",
+        "video": {
+          "url": "story-media/538-video-e949a0dece139cf7814cf4d3a0cce2b9c659c3742fa6a625bf32e9855821051b.mp4",
+          "sha256": "e949a0dece139cf7814cf4d3a0cce2b9c659c3742fa6a625bf32e9855821051b",
+          "bytes": 1007291
+        },
+        "poster": {
+          "url": "story-media/538-poster-21338b206ca37d06fc6c4a49b6c64f0db231bfb0c38582b33ded805349cfd66f.png",
+          "sha256": "21338b206ca37d06fc6c4a49b6c64f0db231bfb0c38582b33ded805349cfd66f",
+          "bytes": 1071322
+        },
+        "staticPoster": {
+          "url": "story-media/538-staticPoster-7a91f1dcb77295d99fbb6c553554d04a5a373171ea13a7e9d9ba16ea329662dc.png",
+          "sha256": "7a91f1dcb77295d99fbb6c553554d04a5a373171ea13a7e9d9ba16ea329662dc",
+          "bytes": 1180059
+        }
+      }
+    },
+    {
+      "number": 247,
+      "word": "boon",
+      "coreMeaningZh": "大有帮助的事物；恩惠",
+      "unit": 38,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 152,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6000,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6000,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩望着干旱的菜地；及时的小雨使土壤逐渐变湿，给缺水的菜苗带来帮助，他露出宽慰的微笑。",
+        "video": {
+          "url": "story-media/247-video-b9d5a11b1c85f0837f353e82bc4c6576ec8f38ec6d705386535ef56f48a0900c.mp4",
+          "sha256": "b9d5a11b1c85f0837f353e82bc4c6576ec8f38ec6d705386535ef56f48a0900c",
+          "bytes": 682034
+        },
+        "poster": {
+          "url": "story-media/247-poster-51dd1d7d278170b05460985cd9fd2e2688dfa5187a24524b3b0144e9837ede63.png",
+          "sha256": "51dd1d7d278170b05460985cd9fd2e2688dfa5187a24524b3b0144e9837ede63",
+          "bytes": 1225074
+        },
+        "staticPoster": {
+          "url": "story-media/247-staticPoster-2b860b5d2d7344cef1d305c23ea735b48a06781b2d2ff62789bbf6fd23988f53.png",
+          "sha256": "2b860b5d2d7344cef1d305c23ea735b48a06781b2d2ff62789bbf6fd23988f53",
+          "bytes": 1240366
+        }
+      }
+    },
+    {
+      "number": 2396,
+      "word": "sullen",
+      "coreMeaningZh": "愠怒而沉默的；阴沉的",
+      "unit": 38,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 153,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "同伴友善地递来球，男孩仍紧抱双臂、沉着脸转开头，闷闷不乐地拒绝交流；同伴收回球。",
+        "video": {
+          "url": "story-media/2396-video-be7665e9cdd6df9ea530c3edc6160f5f3a16d9d25374bf1f24dd21238ef79472.mp4",
+          "sha256": "be7665e9cdd6df9ea530c3edc6160f5f3a16d9d25374bf1f24dd21238ef79472",
+          "bytes": 775990
+        },
+        "poster": {
+          "url": "story-media/2396-poster-c1da1c015893c353c085915c018ac9ebba7b1584134bcca72a245c365ee8ecfc.png",
+          "sha256": "c1da1c015893c353c085915c018ac9ebba7b1584134bcca72a245c365ee8ecfc",
+          "bytes": 1205906
+        },
+        "staticPoster": {
+          "url": "story-media/2396-staticPoster-bfc060ef4842ad8b149e25b19f847d99b15a0f2272b72840185b7e21fa6ac144.png",
+          "sha256": "bfc060ef4842ad8b149e25b19f847d99b15a0f2272b72840185b7e21fa6ac144",
+          "bytes": 1222708
+        }
+      }
+    },
+    {
+      "number": 2159,
+      "word": "schism",
+      "coreMeaningZh": "组织、派别内部的分裂",
+      "unit": 38,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 154,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 7000,
+          "text": "We’ll form our own group.",
+          "speaker": "blue-boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "We’ll form our own group."
+          ]
+        },
+        "alt": "同一社团的四名成员因屋顶方案不合，两名带头者各自拿起尖顶与圆顶模型，转向各自的支持者，形成互不交流的两派。",
+        "video": {
+          "url": "story-media/2159-video-ee3eb01daa0a38378d036396cd1d3431ae324c44aacd3f4d9655889f63314f95.mp4",
+          "sha256": "ee3eb01daa0a38378d036396cd1d3431ae324c44aacd3f4d9655889f63314f95",
+          "bytes": 913075
+        },
+        "poster": {
+          "url": "story-media/2159-poster-8a243c68bdd10cb8e30dea4e023e314cd5088f32db62cc8c5a2443fea3b15109.png",
+          "sha256": "8a243c68bdd10cb8e30dea4e023e314cd5088f32db62cc8c5a2443fea3b15109",
+          "bytes": 1206350
+        },
+        "staticPoster": {
+          "url": "story-media/2159-staticPoster-a772949411ec6670be42f068f6d9697102aed4c9bfacd4c08f94458b5e8f5e63.png",
+          "sha256": "a772949411ec6670be42f068f6d9697102aed4c9bfacd4c08f94458b5e8f5e63",
+          "bytes": 1279273
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1320,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1320,
+            "endMs": 2920,
+            "text": "A pointed roof.",
+            "speaker": "olive-boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "A pointed roof."
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 2920,
+            "endMs": 3000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          },
+          {
+            "startMs": 3000,
+            "endMs": 6600,
+            "text": "We’ll form our own group.",
+            "speaker": "blue-boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "We’ll form our own group."
+            ],
+            "id": "stage-3"
+          },
+          {
+            "startMs": 6600,
+            "endMs": 7000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-4"
+          }
+        ]
+      }
+    },
+    {
+      "number": 993,
+      "word": "frugal",
+      "coreMeaningZh": "节俭的；简单而不奢华的",
+      "unit": 38,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 155,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6320.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6320,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩已有丰盛午餐，把剩下的两片好面包装进可重复使用的盒子并盖好，留待以后吃，避免浪费。",
+        "video": {
+          "url": "story-media/993-video-253a3b3d221a4abe0c0938e0b6abc60675bb846a409666a9699d2e632f8d3c20.mp4",
+          "sha256": "253a3b3d221a4abe0c0938e0b6abc60675bb846a409666a9699d2e632f8d3c20",
+          "bytes": 874744
+        },
+        "poster": {
+          "url": "story-media/993-poster-13d56d3f615a86c17cef7da4f34944aa13f3bb30877a7d94470cef6b093e9598.png",
+          "sha256": "13d56d3f615a86c17cef7da4f34944aa13f3bb30877a7d94470cef6b093e9598",
+          "bytes": 1222327
+        },
+        "staticPoster": {
+          "url": "story-media/993-staticPoster-a3663f36a8be39b99cbe9f8302ddaaf3828cdc55563219d75425f3eddea98282.png",
+          "sha256": "a3663f36a8be39b99cbe9f8302ddaaf3828cdc55563219d75425f3eddea98282",
+          "bytes": 1305976
+        }
+      }
+    },
+    {
+      "number": 1577,
+      "word": "negligent",
+      "coreMeaningZh": "疏忽的；未尽应有注意的",
+      "unit": 39,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 156,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 7000,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩自己打开水龙头接水，随后只顾看书，没有留意水桶；水逐渐装满并从桶沿溢出。",
+        "video": {
+          "url": "story-media/1577-video-2233e2ac1baa6fa6cf8f74effcf10f03bbfd56beb37d31c28aa6205f15ad8cdf.mp4",
+          "sha256": "2233e2ac1baa6fa6cf8f74effcf10f03bbfd56beb37d31c28aa6205f15ad8cdf",
+          "bytes": 1041130
+        },
+        "poster": {
+          "url": "story-media/1577-poster-2da78d65787cfbcbd92e0aba23310fc1c93899321d6e192e58552f189967e25f.png",
+          "sha256": "2da78d65787cfbcbd92e0aba23310fc1c93899321d6e192e58552f189967e25f",
+          "bytes": 1312835
+        },
+        "staticPoster": {
+          "url": "story-media/1577-staticPoster-015ecd936a78628c4466df25324061cee48a7b5b2d0415d6a10a621d48ca8efe.png",
+          "sha256": "015ecd936a78628c4466df25324061cee48a7b5b2d0415d6a10a621d48ca8efe",
+          "bytes": 1390812
+        }
+      }
+    },
+    {
+      "number": 521,
+      "word": "curtail",
+      "coreMeaningZh": "缩短；削减；限制",
+      "unit": 39,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 157,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6520.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6520,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "Boy already eating picnic; rain interrupts, he packs bitten sandwich among abundant food and closes basket early.",
+        "video": {
+          "url": "story-media/521-video-13ba58ad1d1f7f1993756229ffb8fa5e3a2d29d884eab6b316e3bb9a90e19de7.mp4",
+          "sha256": "13ba58ad1d1f7f1993756229ffb8fa5e3a2d29d884eab6b316e3bb9a90e19de7",
+          "bytes": 1252291
+        },
+        "poster": {
+          "url": "story-media/521-poster-afbc637a90fb7cd7b92f502fc8c7ba926830a116e4488716fe5ddf33abc3b15c.png",
+          "sha256": "afbc637a90fb7cd7b92f502fc8c7ba926830a116e4488716fe5ddf33abc3b15c",
+          "bytes": 1265777
+        },
+        "staticPoster": {
+          "url": "story-media/521-staticPoster-351ae158b2e18b537e92a9d6cdf8b3b9b93101cb024c5bf4eaecebf56765056d.png",
+          "sha256": "351ae158b2e18b537e92a9d6cdf8b3b9b93101cb024c5bf4eaecebf56765056d",
+          "bytes": 1326588
+        }
+      }
+    },
+    {
+      "number": 744,
+      "word": "ecstasy",
+      "coreMeaningZh": "狂喜；忘我的喜悦",
+      "unit": 39,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 158,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6000,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "Boy recognizes award for his handmade boat and radiates overwhelming joy, arms raised then hands to chest.",
+        "video": {
+          "url": "story-media/744-video-70689415c5eddb9e26e294b1c045c31c6418e7e1c3ad8f934e641b3cb75c5e99.mp4",
+          "sha256": "70689415c5eddb9e26e294b1c045c31c6418e7e1c3ad8f934e641b3cb75c5e99",
+          "bytes": 691312
+        },
+        "poster": {
+          "url": "story-media/744-poster-3dda70699f67a44abeb83fd6dbe711482fd11164accb73b22b96d47e404c93e1.png",
+          "sha256": "3dda70699f67a44abeb83fd6dbe711482fd11164accb73b22b96d47e404c93e1",
+          "bytes": 1143305
+        },
+        "staticPoster": {
+          "url": "story-media/744-staticPoster-f76be0760d169607544666fd9da4c273530129f7378fd6ae0956a68be1d0dbc7.png",
+          "sha256": "f76be0760d169607544666fd9da4c273530129f7378fd6ae0956a68be1d0dbc7",
+          "bytes": 1156941
+        }
+      }
+    },
+    {
+      "number": 660,
+      "word": "disgruntle",
+      "coreMeaningZh": "使不满；使不高兴",
+      "unit": 39,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 159,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6520.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6520,
+          "text": "Is that all I get?",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "Is that all I get?"
+          ]
+        },
+        "alt": "An inadequate serving changes the hopeful boy to dissatisfied; the server releases his nearly empty bowl beside a peer’s full bowl.",
+        "video": {
+          "url": "story-media/660-video-da3fedad972fd38dd0628b1f34e0fba448b395a0585ced6ae0a72d8ef65c7ee0.mp4",
+          "sha256": "da3fedad972fd38dd0628b1f34e0fba448b395a0585ced6ae0a72d8ef65c7ee0",
+          "bytes": 758144
+        },
+        "poster": {
+          "url": "story-media/660-poster-6042d5cb99cd7a9ff7673ff13790e4cdaed11d09addd5f763b9684fb80a914ed.png",
+          "sha256": "6042d5cb99cd7a9ff7673ff13790e4cdaed11d09addd5f763b9684fb80a914ed",
+          "bytes": 1208004
+        },
+        "staticPoster": {
+          "url": "story-media/660-staticPoster-c685336eb3d2aa900fddb80f4ce786edd050405e3e891c7f4229d6d201e522e8.png",
+          "sha256": "c685336eb3d2aa900fddb80f4ce786edd050405e3e891c7f4229d6d201e522e8",
+          "bytes": 1263507
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3480,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3480,
+            "endMs": 6120,
+            "text": "Is that all I get?",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "Is that all I get?"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6120,
+            "endMs": 6520,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ]
+      }
+    },
+    {
+      "number": 1849,
+      "word": "prevaricate",
+      "coreMeaningZh": "闪烁其词；支吾搪塞",
+      "unit": 39,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 160,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 10000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 10000,
+          "text": "Well… this table is rather wobbly…",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "Well… this table is rather wobbly…"
+          ]
+        },
+        "alt": "The boy spills his own juice. Asked directly whether he spilled it, he dodges by saying the table is wobbly; the spill remains visible.",
+        "video": {
+          "url": "story-media/1849-video-b8a2fe48001852ea1a2b5bbd6b9a0495775da8831a119eeab41a2bd5ce8d9ea8.mp4",
+          "sha256": "b8a2fe48001852ea1a2b5bbd6b9a0495775da8831a119eeab41a2bd5ce8d9ea8",
+          "bytes": 783104
+        },
+        "poster": {
+          "url": "story-media/1849-poster-fa3f5d632906ada90dedf5aa3de47c8507cb5772fe69969327f23ffb0896900b.png",
+          "sha256": "fa3f5d632906ada90dedf5aa3de47c8507cb5772fe69969327f23ffb0896900b",
+          "bytes": 1209375
+        },
+        "staticPoster": {
+          "url": "story-media/1849-staticPoster-0b95e08d42298524da9445a9397ec62d71ae2e10374e9b1dfa625a3e0068cce4.png",
+          "sha256": "0b95e08d42298524da9445a9397ec62d71ae2e10374e9b1dfa625a3e0068cce4",
+          "bytes": 1276503
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2440,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2440,
+            "endMs": 4960,
+            "text": "Did you spill the juice?",
+            "speaker": "adult",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "Did you spill the juice?"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 4960,
+            "endMs": 5720,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          },
+          {
+            "startMs": 5720,
+            "endMs": 8720,
+            "text": "Well… this table is rather wobbly…",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "Well… this table is rather wobbly…"
+            ],
+            "id": "stage-3"
+          },
+          {
+            "startMs": 8720,
+            "endMs": 10000,
             "text": "",
             "speaker": "center",
             "anchor": {
