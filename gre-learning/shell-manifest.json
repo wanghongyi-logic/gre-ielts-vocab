@@ -1,5 +1,5 @@
 {
-  "build": "152",
+  "build": "153",
   "assets": [
     {
       "url": "index.html",
@@ -19,7 +19,7 @@
     {
       "url": "gre-learning/update.js",
       "bytes": 2647,
-      "sha256": "f7105d04483d4754f40ff80018a6b0bbaffb2cc256238e56723bece7ff8f5c96"
+      "sha256": "d5cb89bfcaa9d75084113a1604345026c1db9cf651ff8b928b5e998aff3545bb"
     },
     {
       "url": "gre-learning/app.js",
@@ -28,8 +28,8 @@
     },
     {
       "url": "gre-learning/catalog.json",
-      "bytes": 218048,
-      "sha256": "c32af2d8648902369870ae6cae7596a8b1f1371620fd305bb9a78c4183fa8065"
+      "bytes": 240449,
+      "sha256": "90b825132b29c545cf89cca7b7e85e65bacc6148f6d77685cb502c8c3eecdcea"
     },
     {
       "url": "gre-learning/lesson-loader.js",
@@ -63,8 +63,8 @@
     },
     {
       "url": "gre-learning/view.js",
-      "bytes": 6742,
-      "sha256": "4ba99f415b3b54e9b2d6fd06747be5635fc3a67f2f4e9301c9ee8b905c0d41bd"
+      "bytes": 7144,
+      "sha256": "49d0a84ab7a888f6b36e6154759e3356d09f96a5eb7b771a95a312dab02c96c4"
     },
     {
       "url": "gre-learning/motion-tracks.js",
@@ -88,13 +88,13 @@
     },
     {
       "url": "gre-learning/story-media.js",
-      "bytes": 9697,
-      "sha256": "fdb28a2551fa9750a1fc10b631eb348eb5373aaaf1e01fc9aac4a453cf9d7686"
+      "bytes": 10222,
+      "sha256": "c730bf0ee5b564f74472813199339ad0b36043def9e841389b0e6d230189354a"
     },
     {
       "url": "gre-learning/storybook.css",
-      "bytes": 35806,
-      "sha256": "69d1f69a7e3b3c0bbe5c5f4a8662ba9db7d1c31831edc5adfae9ab3f5ea2f4c1"
+      "bytes": 36081,
+      "sha256": "cd6b33419845defae0ac0defd1627d2ecd22662f1f8726002eee868dda5ba8a1"
     },
     {
       "url": "gre-learning/bookmark-navigation.js",
@@ -108,8 +108,8 @@
     },
     {
       "url": "gre-learning/prepared-pages.js",
-      "bytes": 4486,
-      "sha256": "3f5d128fa45a5dae67c85d352fe929edfb7c6c770d29210d1964b3ab2b5563f2"
+      "bytes": 5005,
+      "sha256": "a8917c13fcb48ae0c1f166c1ce3e5d265f711a690db41a51fdb9e8f5228dc861"
     }
   ]
 }

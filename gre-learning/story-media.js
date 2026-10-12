@@ -1,3 +1,5 @@
+const hasDisplayLines = stage => Array.isArray(stage?.displayLines)&&stage.displayLines.length>=1&&stage.displayLines.length<=2&&stage.displayLines.every(line=>typeof line==='string'&&line.length>0&&!/[\r\n]/.test(line));
+const displayText = stage => hasDisplayLines(stage)?stage.displayLines.join('\n'):stage.text;
 // Playback is presentation only; the semantic poster remains the accessible image.
 // A page is prepared paused, revealed with a decoded first frame, then activated.
 export function installStoryMedia(surface,{picker,window:win=window,document:doc=document}={}) {
@@ -21,7 +23,8 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
    text.setAttribute('x',String(x+w/2));text.setAttribute('y',String(y+43));text.textContent=stage.text;return;
   }
   if(!bubble||!stage)return;
-  if(bubble.textContent!==stage.text)bubble.textContent=stage.text;
+  const text=displayText(stage);if(bubble.textContent!==text)bubble.textContent=text;
+  if(hasDisplayLines(stage))bubble.setAttribute('data-story-display-lines','true');else if(bubble.hasAttribute('data-story-display-lines'))bubble.removeAttribute('data-story-display-lines');
   bubble.className='story-dialogue speaker-'+stage.speaker;bubble.style.setProperty('--dialogue-x',String(stage.anchor.x));
  }
  function waitForFrame(){return Boolean(media?.waitForPresentedFrame&&media?.resetTransition?.type==='none');}

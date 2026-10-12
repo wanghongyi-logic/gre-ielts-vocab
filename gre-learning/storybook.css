@@ -224,3 +224,6 @@ body{width:calc(100% - var(--bookmark-gutter));padding:0;background:var(--paper)
 
 /* Courteous2819 only: preserve original bubble/tail positions over pure art. */
 [data-courteous-original-overlay="2819"] .courteous-original-overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
+
+/* Candidate153: only explicit authored native lines opt into this two-line treatment. */
+.story-dialogue[data-story-display-lines="true"]{white-space:pre-line;font-size:14px;line-height:18px;padding:4px 10px;text-align:center;width:max-content;max-width:calc(100% - 16px)}

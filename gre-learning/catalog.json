@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "152",
-  "authoredCount": 95,
-  "publishedCount": 95,
+  "release": "153",
+  "authoredCount": 100,
+  "publishedCount": 100,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -102,7 +102,12 @@
       822,
       1087,
       543,
-      3052
+      3052,
+      1179,
+      825,
+      1908,
+      2473,
+      1423
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -247,6 +252,11 @@
       "url": "units/core016-text-approved-f4d1be4512199bfa3834a52cd59cf19e55ff0a7dec2f0aa80f49af57caa668c7.json",
       "sha256": "f4d1be4512199bfa3834a52cd59cf19e55ff0a7dec2f0aa80f49af57caa668c7",
       "bytes": 18750
+    },
+    {
+      "url": "units/core017-text-approved-ec7d82ffa823c951f67a5b7fd9bb6c77ed59f32c2950b002b34cca78e408ab10.json",
+      "sha256": "ec7d82ffa823c951f67a5b7fd9bb6c77ed59f32c2950b002b34cca78e408ab10",
+      "bytes": 20911
     }
   ],
   "entries": [
@@ -6886,6 +6896,775 @@
         "posterDialogue": {
           "text": "这只纸鹤也太难看了。",
           "speaker": "friend",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      }
+    },
+    {
+      "number": 1179,
+      "word": "impenetrable",
+      "coreMeaningZh": "无法进入、穿透或看透的；难以理解的；难以捉摸的",
+      "unit": 27,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 96,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 9200,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated root-reviewed narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "密实的枝丛挡住小路，男孩伸手试着推开，却找不到能穿过去的缝隙，只好收手。impenetrable 突出阻挡严密，无法进入或穿过；也可引申为内容难懂、表情看不透。",
+        "video": {
+          "url": "story-media/1179-6cc1a5e10a9e0f0a857a93df6a2314cbe942b491844c81f6f13a50447b2d7d5d.mp4",
+          "sha256": "6cc1a5e10a9e0f0a857a93df6a2314cbe942b491844c81f6f13a50447b2d7d5d",
+          "bytes": 1693241
+        },
+        "poster": {
+          "url": "story-media/1179-6c1aca4491db9f9198f26f246f52b595eb345b1b2a1144b7cf64619038781261.png",
+          "sha256": "6c1aca4491db9f9198f26f246f52b595eb345b1b2a1144b7cf64619038781261",
+          "bytes": 1390736
+        },
+        "staticPoster": {
+          "url": "story-media/1179-079ce60ddf4abae3da043b625b894100630879e5413f0e04cdd6316af23eed6d.png",
+          "sha256": "079ce60ddf4abae3da043b625b894100630879e5413f0e04cdd6316af23eed6d",
+          "bytes": 1394842
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1800,
+            "endMs": 2600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 2600,
+            "endMs": 3400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 3400,
+            "endMs": 5200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 5200,
+            "endMs": 5600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 5600,
+            "endMs": 6400,
+            "text": "枝叶密得没有缝，根本过不去。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 6400,
+            "endMs": 7200,
+            "text": "枝叶密得没有缝，根本过不去。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 7200,
+            "endMs": 8600,
+            "text": "枝叶密得没有缝，根本过不去。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-8",
+            "startMs": 8600,
+            "endMs": 9200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      }
+    },
+    {
+      "number": 825,
+      "word": "esoteric",
+      "coreMeaningZh": "只有少数内行懂的；专门而深奥的；秘传的；小众的",
+      "unit": 27,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 97,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 12000,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated root-reviewed narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "一张复杂的机芯图让男孩犯了难，制表师却认出了结构，开始向他讲解。esoteric 指只有少数内行熟悉或理解的知识；它可以公开讲授，并不一定保密。",
+        "video": {
+          "url": "story-media/825-6320a0585afe06720ffd71c9a216e49f5a64d11b099994507090ce2d82e37a4e.mp4",
+          "sha256": "6320a0585afe06720ffd71c9a216e49f5a64d11b099994507090ce2d82e37a4e",
+          "bytes": 1306750
+        },
+        "poster": {
+          "url": "story-media/825-d8935b801bd788066a6010c5828410910d3e7b8cfd9ee27f728830f06b149427.png",
+          "sha256": "d8935b801bd788066a6010c5828410910d3e7b8cfd9ee27f728830f06b149427",
+          "bytes": 1269818
+        },
+        "staticPoster": {
+          "url": "story-media/825-265a82b5e1ed90d9a1644b75e94057f1be0a5b3285f49d824001e892bce205bc.png",
+          "sha256": "265a82b5e1ed90d9a1644b75e94057f1be0a5b3285f49d824001e892bce205bc",
+          "bytes": 1275492
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1000,
+            "endMs": 2200,
+            "text": "这张机芯图，我看不懂。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 2200,
+            "endMs": 3600,
+            "text": "这张机芯图，我看不懂。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 3600,
+            "endMs": 4000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 4000,
+            "endMs": 8500,
+            "text": "这是少数制表师才熟悉的结构。",
+            "speaker": "watchmaker",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这是少数制表师",
+              "才熟悉的结构。"
+            ]
+          },
+          {
+            "id": "stage-5",
+            "startMs": 8500,
+            "endMs": 8520,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 8520,
+            "endMs": 10000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 10000,
+            "endMs": 11200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-8",
+            "startMs": 11200,
+            "endMs": 12000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "这是少数制表师才熟悉的结构。",
+          "speaker": "watchmaker",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这是少数制表师",
+            "才熟悉的结构。"
+          ]
+        }
+      }
+    },
+    {
+      "number": 1908,
+      "word": "pseudonym",
+      "coreMeaningZh": "化名；假名；笔名",
+      "unit": 27,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 98,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 11200,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated root-reviewed narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "同一位作者把真实姓名留在证件上，给书封换上另一个署名。pseudonym 是替代真实姓名使用的化名，作家使用时通常就是笔名。",
+        "video": {
+          "url": "story-media/1908-1b2232993d42b06f4117dc6fe6c690f36d1bb81d237f94211be65da9fd1cb6f4.mp4",
+          "sha256": "1b2232993d42b06f4117dc6fe6c690f36d1bb81d237f94211be65da9fd1cb6f4",
+          "bytes": 1350840
+        },
+        "poster": {
+          "url": "story-media/1908-5fcc19f3d876fb3e170ba6e3cb13cf0ba46d96cc481d6cc762ccdb2600bc4dbc.png",
+          "sha256": "5fcc19f3d876fb3e170ba6e3cb13cf0ba46d96cc481d6cc762ccdb2600bc4dbc",
+          "bytes": 1189133
+        },
+        "staticPoster": {
+          "url": "story-media/1908-6e297d42b1c54c5256e1807c18b6a43b3af5c6a5dfa03ae8fda3db1665d2b724.png",
+          "sha256": "6e297d42b1c54c5256e1807c18b6a43b3af5c6a5dfa03ae8fda3db1665d2b724",
+          "bytes": 1227103
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 700,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 700,
+            "endMs": 3000,
+            "text": "我真名叫林安。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 3000,
+            "endMs": 3100,
+            "text": "我真名叫林安。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 3100,
+            "endMs": 3520,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 3520,
+            "endMs": 4040,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 4040,
+            "endMs": 4100,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 4100,
+            "endMs": 8500,
+            "text": "写书时，我用‘山风’这个笔名。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "写书时，",
+              "我用‘山风’这个笔名。"
+            ]
+          },
+          {
+            "id": "stage-7",
+            "startMs": 8500,
+            "endMs": 8600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-8",
+            "startMs": 8600,
+            "endMs": 9120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-9",
+            "startMs": 9120,
+            "endMs": 9640,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-10",
+            "startMs": 9640,
+            "endMs": 10320,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-11",
+            "startMs": 10320,
+            "endMs": 11200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "真实姓名：林安\n发表笔名：山风",
+          "displayLines": [
+            "真实姓名：林安",
+            "发表笔名：山风"
+          ],
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      }
+    },
+    {
+      "number": 2473,
+      "word": "tenuous",
+      "coreMeaningZh": "薄弱的；牵强的；脆弱不稳的；纤细的；稀薄的",
+      "unit": 27,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 99,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 10000,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated root-reviewed narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "两件事之间只靠一条未经证实的传闻联系着，像用一根细丝拉住两块木板。tenuous 强调联系、理由或支撑太薄弱，经不起检验；也可指实物纤细、气体稀薄。",
+        "video": {
+          "url": "story-media/2473-eedec339676212d087a8c4a0ca413db1dfa8bb6d71a0cd2ec40d7c279c90b490.mp4",
+          "sha256": "eedec339676212d087a8c4a0ca413db1dfa8bb6d71a0cd2ec40d7c279c90b490",
+          "bytes": 842365
+        },
+        "poster": {
+          "url": "story-media/2473-4686cd5235826f4f711cd6b963def2f9f3ab06d09aeb5cb3677def464b0e95c4.png",
+          "sha256": "4686cd5235826f4f711cd6b963def2f9f3ab06d09aeb5cb3677def464b0e95c4",
+          "bytes": 1134744
+        },
+        "staticPoster": {
+          "url": "story-media/2473-daf03cdeb5f9b8c15fee5ed11045324ad116b0bc6e60844b2afc3772ce139527.png",
+          "sha256": "daf03cdeb5f9b8c15fee5ed11045324ad116b0bc6e60844b2afc3772ce139527",
+          "bytes": 1162952
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 2120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 2120,
+            "endMs": 4320,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 4320,
+            "endMs": 4500,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 4500,
+            "endMs": 6600,
+            "text": "只剩这根细线连着，这连接太不牢靠了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "只剩这根细线连着，",
+              "这连接太不牢靠了。"
+            ]
+          },
+          {
+            "id": "stage-4",
+            "startMs": 6600,
+            "endMs": 8100,
+            "text": "只剩这根细线连着，这连接太不牢靠了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "只剩这根细线连着，",
+              "这连接太不牢靠了。"
+            ]
+          },
+          {
+            "id": "stage-5",
+            "startMs": 8100,
+            "endMs": 8120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 8120,
+            "endMs": 10000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "只剩这根细线连着，这连接太不牢靠了。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "只剩这根细线连着，",
+            "这连接太不牢靠了。"
+          ]
+        }
+      }
+    },
+    {
+      "number": 1423,
+      "word": "lull",
+      "coreMeaningZh": "暂时的平静或间歇；使平静、哄睡；使放松警惕",
+      "unit": 27,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 100,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 11320,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated root-reviewed narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "男孩在门廊等雨。雨势短暂减弱，他刚放松下来，雨又下大了。这段暂时的平静就是 a lull。",
+        "video": {
+          "url": "story-media/1423-eb03b2bddeb39596702ba028b775d82d0d9c2c99a86f5652c15d8a9f694b2e23.mp4",
+          "sha256": "eb03b2bddeb39596702ba028b775d82d0d9c2c99a86f5652c15d8a9f694b2e23",
+          "bytes": 1632436
+        },
+        "poster": {
+          "url": "story-media/1423-979bcce47f9f6e994f4a486a5194669e1658c31892f9125e563b5bb1b43a62f9.png",
+          "sha256": "979bcce47f9f6e994f4a486a5194669e1658c31892f9125e563b5bb1b43a62f9",
+          "bytes": 1313540
+        },
+        "staticPoster": {
+          "url": "story-media/1423-6e3dfef30c2a8bfcdbfde66040f8b6eb754a1b41b501a741435f96c339247fc6.png",
+          "sha256": "6e3dfef30c2a8bfcdbfde66040f8b6eb754a1b41b501a741435f96c339247fc6",
+          "bytes": 1289398
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 2400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 2400,
+            "endMs": 4200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 4200,
+            "endMs": 6800,
+            "text": "阵雨中出现了片刻的平静。",
+            "speaker": "narrator",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 6800,
+            "endMs": 7000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 7000,
+            "endMs": 7800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 7800,
+            "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 8000,
+            "endMs": 9400,
+            "text": "又下大了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 9400,
+            "endMs": 10500,
+            "text": "又下大了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-8",
+            "startMs": 10500,
+            "endMs": 11320,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "阵雨中出现了片刻的平静。",
+          "speaker": "narrator",
           "anchor": {
             "x": 0.5,
             "y": 0.12

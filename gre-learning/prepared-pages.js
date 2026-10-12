@@ -2,6 +2,9 @@ import {renderWordPage} from './view.js';
 import {neighboringNumbers} from './model.js';
 import {installStoryMedia} from './story-media.js';
 
+const hasDisplayLines = stage => Array.isArray(stage?.displayLines)&&stage.displayLines.length>=1&&stage.displayLines.length<=2&&stage.displayLines.every(line=>typeof line==='string'&&line.length>0&&!/[\r\n]/.test(line));
+const displayText = stage => hasDisplayLines(stage)?stage.displayLines.join('\n'):stage.text;
+
 // Only the current page and its two approved neighbours retain decoded media.
 // Preparation never mutates the active reading surface or starts playback.
 export function installPreparedPages({loader,entries,picker,window:win=window,document:doc=document}) {
@@ -44,7 +47,7 @@ export function installPreparedPages({loader,entries,picker,window:win=window,do
     root.querySelectorAll('.story-poster').forEach(image=>{image.style.opacity='1';if(loaded.media?.waitForPresentedFrame)image.style.removeProperty('clip-path');});
     root.querySelectorAll('.story-illustration').forEach(figure=>figure.classList.remove('is-playing'));
     const dialogue=root.querySelector('[data-story-dialogue]');const first=loaded.media?.staticPoster?loaded.media.stages?.[0]:loaded.media?.posterDialogue;
-    if(dialogue&&first){dialogue.textContent=first.text;dialogue.className='story-dialogue speaker-'+first.speaker;dialogue.style.setProperty('--dialogue-x',String(first.anchor.x));}
+    if(dialogue&&first){dialogue.textContent=displayText(first);if(hasDisplayLines(first))dialogue.setAttribute('data-story-display-lines','true');else if(dialogue.hasAttribute('data-story-display-lines'))dialogue.removeAttribute('data-story-display-lines');dialogue.className='story-dialogue speaker-'+first.speaker;dialogue.style.setProperty('--dialogue-x',String(first.anchor.x));}
     }
     page.ready=true;return page;
    }catch(error){if(pages.get(number)===page)dispose(page);throw error;}
