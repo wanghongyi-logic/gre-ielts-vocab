@@ -7,10 +7,9 @@ import {escapeLearningText as escape} from './render.js';
 // returning to it preserves the same word, media controller and reading spot.
 export function installContents({main,picker,search,entries,getSelected,navigate,onOpen=()=>{},onClose=()=>{},onTransition=()=>{}}) {
  const doc=main.ownerDocument,win=doc.defaultView;
- const opener=doc.getElementById('open-search'),returnButton=doc.getElementById('close-search');
+ const opener=doc.getElementById('open-search');
  const title=doc.getElementById('picker-title'),results=doc.getElementById('word-results');
  const count=doc.getElementById('search-count');
- const returnWord=doc.getElementById('contents-return-word');
  let saved=null,restoreFrame=0,leaf=null,gestureRestored=false;
  const turns=installFrontmatterTurn({main,onActivity:onTransition,window:win,document:doc});
  function preparationFailed(){win.history.replaceState(null,'',leaf==='settings'?'#/settings':'#/contents');count.textContent='这一页暂时无法打开，请再点一次重试';picker.removeAttribute('aria-busy');}
@@ -34,8 +33,6 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   if(saved&&!saved.ready&&getSelected()!=null){saved.number=selected.number;saved.hash=readingHash(selected.number);saved.title=`${selected.word} · 单词故事`;saved.ready=true;}
   if(picker.open)doc.title=(isSettings()?'设置':'目录')+' · 单词故事';
   count.textContent=filtered?`找到 ${matches.length} 个词`:`${entries.length} 个词 · 按阅读顺序`;
-  returnWord.textContent=selected?selected.word:'';
-  returnButton.setAttribute('aria-label',selected?`继续阅读 ${selected.word}`:'返回阅读');
   results.classList.toggle('is-filtered',filtered);
   results.innerHTML=matches.length?matches.map(entry=>{
    const ordinal=entry.displayOrdinal||entries.indexOf(entry)+1,isCurrent=entry.number===selected?.number;
@@ -99,7 +96,6 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   return {contents:false,restored};
  }
  opener.addEventListener('click',open);
- returnButton.addEventListener('click',close);
  search.addEventListener('input',renderResults);
  picker.addEventListener('click',event=>{
   const button=event.target.closest('[data-word]');

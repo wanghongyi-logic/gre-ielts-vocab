@@ -30,3 +30,39 @@ test('no prepared reading DOM on direct frontmatter entry skips an initial loadi
 test('pagehide drops deferred work and BFCache route resync applies the actual frontmatter hash',()=>{const h=fixture();h.open('/contents');h.open('/settings');h.win.emit('pagehide');h.drain();assert.equal(h.overlays.length,0);assert.equal(h.title.textContent,'目录');h.route();h.drain();assert.equal(h.title.textContent,'设置');assert.equal(h.host.hidden,false);});
 test('hidden-document route changes do not leave a second suspended animation',()=>{const h=fixture();h.open('/contents');h.open('/settings');h.doc.hidden=true;h.doc.emit('visibilitychange');assert.equal(h.overlays.length,0);assert.equal(h.title.textContent,'设置');assert.equal(h.picker.open,true);});
 test('the application cancels leaf work before media teardown and rechecks BFCache frontmatter',async()=>{const {readFile}=await import('node:fs/promises');const source=await readFile(new URL('../../gre-learning/app.js',import.meta.url),'utf8');assert.match(source,/renderGeneration\+\+;contents\.cancel\(\);swipe\.cancel\(\);loader\.cancel\(\);motion\.destroy\(\)/);assert.match(source,/pageshow.*contents\.isRoute\(location\.hash\)\)\{route\(\);return;/);assert.match(source,/contents\.whenSettled\(\)\.then\(\(\)=>\{if\(location\.hash===hash&&!picker\.open\)bookmarks\.navigate\(section\)/);});
+
+test('frontmatter markup and styles contain no obsolete continue-reading control',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ for(const path of ['index.html','gre-learning/contents.js','gre-learning/storybook.css','gre-learning/frontmatter-turn.css']){
+  const source=await readFile(new URL('../../'+path,import.meta.url),'utf8');
+  assert.doesNotMatch(source,/close-search|contents-return|returnButton|returnWord|继续阅读/,path);
+ }
+ const h=fixture();
+ assert.equal(h.doc.getElementById('close-search'),null);
+ assert.equal(h.picker.getAttribute('aria-describedby'),'frontmatter-swipe-hint');
+ assert.equal(h.picker.getAttribute('aria-keyshortcuts'),'Escape ArrowLeft ArrowRight');
+});
+test('both frontmatter leaves support every keyboard return without a return button',()=>{
+ for(const hash of ['/contents','/settings'])for(const key of ['Escape','ArrowLeft','ArrowRight']){
+  const h=fixture();h.opener.focus();h.win.scrollTo({top:460});h.win.emit('scroll');h.open(hash);h.drain();
+  assert.equal(h.doc.activeElement,h.title);
+  const event=h.doc.emit('keydown',{key,target:h.title});h.drain();
+  assert.equal(event.defaultPrevented,true);
+  assert.equal(h.win.location.hash,'#/learn/12');assert.equal(h.picker.open,false);
+  assert.equal(h.win.scrollY,460);assert.equal(h.doc.activeElement,h.opener);
+  assert.equal(h.main.hidden,false);assert.equal(h.main.inert,false);
+ }
+});
+test('both horizontal directions return from either frontmatter leaf without a button',()=>{
+ for(const hash of ['/contents','/settings'])for(const end of [105,365]){
+  const h=fixture();h.open(hash);h.drain();h.mouseStart();h.mouseMove(end);h.mouseEnd(end);h.drain();
+  assert.equal(h.win.location.hash,'#/learn/12');assert.equal(h.picker.open,false);
+  assert.equal(h.main.hidden,false);assert.equal(h.main.inert,false);assert.equal(h.overlays.length,0);
+ }
+});
+test('current directory row still returns to the saved reading position',()=>{
+ const h=fixture();h.win.scrollTo({top:460});h.win.emit('scroll');h.open();h.drain();
+ const row=h.make('button','current-row',h.results,'word-result');row.dataset.word='12';row.setAttribute('data-word','12');
+ h.picker.emit('click',{target:row});h.drain();
+ assert.equal(h.win.location.hash,'#/learn/12');assert.equal(h.picker.open,false);assert.equal(h.win.scrollY,460);
+});

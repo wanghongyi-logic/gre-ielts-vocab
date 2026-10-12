@@ -1,10 +1,10 @@
 {
-  "build": "166-offline200-v13",
+  "build": "166-offline200-v14",
   "assets": [
     {
       "url": "index.html",
-      "sha256": "efdcad7c4a5b0c438e3ec5cd46d5f11421529ba7c848e22eb583d421f1e94d55",
-      "bytes": 3324
+      "sha256": "52373088ff602257d434d277a8d3a9f7dae74b15c1c2ad62ebf0d0cde0ef53b8",
+      "bytes": 3089
     },
     {
       "url": "manifest.webmanifest",
@@ -18,7 +18,7 @@
     },
     {
       "url": "gre-learning/update.js",
-      "sha256": "a8515980b91115f98a621d86b49f6ecf59860898275233503f221b0466552354",
+      "sha256": "23f47d9027e5a81a8b33373db787e4c152122a485184e0ca2cd34e6f46efc1d5",
       "bytes": 2635
     },
     {
@@ -93,8 +93,8 @@
     },
     {
       "url": "gre-learning/storybook.css",
-      "sha256": "571de19994b8aa2f40bb201f10ebd4c85620a973a4383853f602f8f6eeb1502b",
-      "bytes": 49257
+      "sha256": "c02db354e4d0abeda50f15d4afa77b7cdc4e23ca8d006708dfd64df3aff22fff",
+      "bytes": 48631
     },
     {
       "url": "gre-learning/bookmark-navigation.js",
@@ -103,8 +103,8 @@
     },
     {
       "url": "gre-learning/contents.js",
-      "sha256": "0329dcfe4eab7ff29966ba6f24c84c61c26a5c45e9194093fbf531243c1779da",
-      "bytes": 16572
+      "sha256": "77b36089dd7bee42e048b330235e6daccf7e9e5ac0ff8a327659bc795d6df138",
+      "bytes": 16264
     },
     {
       "url": "gre-learning/prepared-pages.js",
@@ -383,7 +383,7 @@
     },
     {
       "url": "gre-learning/offline-preferences.js",
-      "sha256": "a7a31055402dbd63877449aa264521867b70da9f00169e57a9438b56dce199ec",
+      "sha256": "fc5f9545ff16d2db9217a35e173337d79f17c44941d7ae0554af6976e3206cae",
       "bytes": 1103
     },
     {
@@ -418,8 +418,8 @@
     },
     {
       "url": "gre-learning/frontmatter-turn.css",
-      "sha256": "0f5d16a2c5088a6ed92d9e775926613d5fa06c4f739b274cc52f6689c3885e55",
-      "bytes": 1818
+      "sha256": "026c2de0c4cb3ca942b5f99c74effd9638a871d1a4038a775b874c7cc9533807",
+      "bytes": 1672
     },
     {
       "url": "gre-learning/images/botanical-progress-bookmark.png",
