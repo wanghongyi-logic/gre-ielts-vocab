@@ -1,7 +1,7 @@
 from pathlib import Path
 import json,hashlib,re
 root=Path(__file__).resolve().parent.parent
-p=root/'gre-learning/shell-manifest.json';data=json.loads(p.read_text());data['build']='166-offline200-v11'
+p=root/'gre-learning/shell-manifest.json';data=json.loads(p.read_text());data['build']='166-offline200-v12'
 paths=[x['url'] for x in data['assets']]
 for name in ['offline-zip.js','offline-packs.js','offline-copy-worker.js','offline-manager.js','offline-preferences.js','offline-batch.js','offline-control.js','offline-releases.js','offline-releases.css']:
  path='gre-learning/'+name
