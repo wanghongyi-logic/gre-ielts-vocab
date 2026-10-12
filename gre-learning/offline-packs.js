@@ -22,13 +22,13 @@ async function locked(fn){if(navigator.locks?.request)return navigator.locks.req
 function support(){if(!navigator.storage?.getDirectory||!globalThis.indexedDB||!globalThis.crypto?.subtle)throw new Error('此浏览器不支持离线书库。请使用 HTTPS 网站上的 Safari 17 或更新版本');}
 async function recover(){const dir=await directory(),owned=new Set((await listPacks()).map(p=>p.name));for await(const [name,handle] of dir.entries())if(handle.kind==='file'&&/^pack-[0-9]+-[a-f0-9-]+\.zip$/.test(name)&&!owned.has(name))await dir.removeEntry(name);}
 const identity=files=>JSON.stringify(files.map(f=>[f.path,f.role,f.wordId,f.bytes,f.sha256]).sort((a,b)=>a[0].localeCompare(b[0])));
-async function checkExisting(parsed,catalog,options){const key=parsed.manifest.packId+'@'+parsed.manifest.version,existing=await transaction('readonly',s=>s.get(key));if(existing){if(identity(existing.files)!==identity(parsed.files))throw new Error('同一版本的内容不同，请使用新的版本号');try{const old=await(await(await directory()).getFileHandle(existing.name)).getFile();if(old.size===existing.bytes){await validatePack(old,catalog,options);return {existing,duplicate:true};}}catch{} }cancelled(options.signal);return {existing,duplicate:false};}
+async function checkExisting(parsed,catalog,options){const key=parsed.manifest.packId+'@'+parsed.manifest.version,existing=await transaction('readonly',s=>s.get(key));if(existing){if((existing.originalIdentity||identity(existing.files))!==identity(parsed.files))throw new Error('同一版本的内容不同，请使用新的版本号');if(existing.partiallyCleared)return {existing,duplicate:false};try{const old=await(await(await directory()).getFileHandle(existing.name)).getFile();if(old.size===existing.bytes){await validatePack(old,catalog,options);return {existing,duplicate:true};}}catch{} }cancelled(options.signal);return {existing,duplicate:false};}
 async function ensureSpace(bytes){const estimate=await navigator.storage.estimate?.();if(Number.isFinite(estimate?.quota)&&Number.isFinite(estimate?.usage)&&estimate.quota-estimate.usage<bytes*1.05)throw new Error('可用存储空间不足，请先释放空间');}
 // Both file import and direct download converge here. Caller holds the storage lock.
 async function finalizeStoredPack(name,file,parsed,catalog,options,checked){const {existing,duplicate}=checked||await checkExisting(parsed,catalog,options);if(duplicate)return {...existing,duplicate:true};cancelled(options.signal);const {manifest,files}=parsed,record={key:manifest.packId+'@'+manifest.version,name,packId:manifest.packId,version:manifest.version,wordIds:manifest.wordIds,files,bytes:file.size,installedAt:Date.now()};await transaction('readwrite',s=>s.put(record));if(existing?.name)await(await directory()).removeEntry(existing.name).catch(()=>{});return record;}
 const temporaryName=()=> 'pack-'+Date.now()+'-'+crypto.randomUUID()+'.zip';
 export async function importPack(file,catalog,{signal,onProgress=()=>{}}={}){
- support();return locked(async()=>{await recover();const options={signal,onProgress};cancelled(signal);const parsed=await validatePack(file,catalog,options),checked=await checkExisting(parsed,catalog,options);if(checked.duplicate)return {...checked.existing,duplicate:true};await ensureSpace(file.size);const name=temporaryName();let committed=false;try{await copy(file,name,signal,onProgress);const record=await finalizeStoredPack(name,file,parsed,catalog,options,checked);committed=record.name===name;return record;}finally{if(!committed)await(await directory()).removeEntry(name).catch(()=>{});}});
+ support();const control=createMediaControl(new URL('../',import.meta.url)),generation=await control.ticket();return locked(async()=>{await control.guard(generation,()=>{});await recover();const options={signal,onProgress};cancelled(signal);const parsed=await validatePack(file,catalog,options),checked=await checkExisting(parsed,catalog,options);if(checked.duplicate)return control.guard(generation,()=>({...checked.existing,duplicate:true}));await ensureSpace(file.size);const name=temporaryName();let committed=false;try{await copy(file,name,signal,onProgress);const record=await control.guard(generation,()=>finalizeStoredPack(name,file,parsed,catalog,options,checked));committed=record.name===name;return record;}finally{if(!committed)await(await directory()).removeEntry(name).catch(()=>{});}});
 }
 export function trustedPackageURL(descriptor,baseURL=new URL('./',import.meta.url)){
  if(!descriptor||!Number.isSafeInteger(descriptor.bytes)||descriptor.bytes<22||descriptor.bytes>=0xffffffff||typeof descriptor.url!=='string')throw new Error('无效的下载配置');const target=new URL(descriptor.url,baseURL);if(target.origin!==baseURL.origin||target.username||target.password||target.hash||(!['https:'].includes(target.protocol)&&!['localhost','127.0.0.1'].includes(target.hostname)))throw new Error('下载必须使用本站的安全地址');return target.href;
@@ -43,7 +43,7 @@ async function downloadToStorage(descriptor,name,{signal,onProgress}){
  }cancelled(signal);return entry.getFile();
 }
 export async function downloadPack(descriptor,catalog,{signal,onProgress=()=>{}}={}){
- support();trustedPackageURL(descriptor);return locked(async()=>{await recover();cancelled(signal);await ensureSpace(descriptor.bytes);const options={signal,onProgress},name=temporaryName();let committed=false;try{const file=await downloadToStorage(descriptor,name,options);const parsed=await validatePack(file,catalog,options);if(parsed.manifest.packId!==descriptor.packId||parsed.manifest.version!==descriptor.version)throw new Error('下载的书包版本与目录不一致');const record=await finalizeStoredPack(name,file,parsed,catalog,options);committed=record.name===name;return record;}finally{if(!committed)await(await directory()).removeEntry(name).catch(()=>{});}});
+ support();trustedPackageURL(descriptor);const control=createMediaControl(new URL('../',import.meta.url)),generation=await control.ticket();return locked(async()=>{await control.guard(generation,()=>{});await recover();cancelled(signal);await ensureSpace(descriptor.bytes);const options={signal,onProgress},name=temporaryName();let committed=false;try{const file=await downloadToStorage(descriptor,name,options);const parsed=await validatePack(file,catalog,options);if(parsed.manifest.packId!==descriptor.packId||parsed.manifest.version!==descriptor.version)throw new Error('下载的书包版本与目录不一致');const record=await control.guard(generation,()=>finalizeStoredPack(name,file,parsed,catalog,options));committed=record.name===name;return record;}finally{if(!committed)await(await directory()).removeEntry(name).catch(()=>{});}});
 }
 export async function deletePack(key){return locked(async()=>{const pack=await transaction('readonly',s=>s.get(key));if(!pack)return;await transaction('readwrite',s=>s.delete(key));await(await directory()).removeEntry(pack.name).catch(()=>{});});}
 export async function localAsset(ref){
@@ -68,3 +68,66 @@ export async function clearSavedResources(){return locked(()=>createMediaControl
  for await(const [name,handle] of dir.entries())if(handle.kind==='file'&&/^pack-[0-9]+-[a-f0-9-]+\.zip$/.test(name))await dir.removeEntry(name);
  verifiedSlices.clear();badSlices.clear();return packs.length;
 }));}
+
+// Selective clears physically remove media bytes. Mixed packs become compact,
+// indexed slices; the original source ZIP and its identity remain untouched.
+const mediaRoles=new Set(['video','poster','staticPoster']);
+function selectedMedia(catalog,ids,packs){
+ const selected=new Set(ids),paths=new Set(),protectedPaths=new Set();
+ for(const entry of catalog.entries)for(const ref of [entry.storyMedia?.video,entry.storyMedia?.poster,entry.storyMedia?.staticPoster].filter(Boolean)){
+  (selected.has(entry.number)?paths:protectedPaths).add('gre-learning/'+ref.url);
+ }
+ // Old media editions may have different paths. Shared current paths are kept
+ // when another word still needs them, including across overlapping packs.
+ for(const pack of packs)for(const file of pack.files)if(mediaRoles.has(file.role))(selected.has(file.wordId)?paths:protectedPaths).add(file.path);
+ for(const path of protectedPaths)paths.delete(path);
+ return paths;
+}
+async function commitPackChanges(changes){
+ const database=await db();return new Promise((resolve,reject)=>{
+  const tx=database.transaction('packs','readwrite'),store=tx.objectStore('packs');
+  tx.oncomplete=()=>resolve();tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('Index update cancelled'));
+  try{for(const {pack,replacement} of changes)replacement?store.put(replacement):store.delete(pack.key);}catch(error){tx.abort();reject(error);}
+ });
+}
+async function verifyRetainedSlices(file,files){
+ for(const entry of files){
+  if(!Number.isSafeInteger(entry.start)||entry.start<0||!Number.isSafeInteger(entry.bytes)||entry.bytes<0||entry.start+entry.bytes>file.size)throw new Error('Stored package range mismatch');
+  const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',await file.slice(entry.start,entry.start+entry.bytes).arrayBuffer())),b=>b.toString(16).padStart(2,'0')).join('');
+  if(hash!==entry.sha256)throw new Error('Stored package asset checksum failed');
+ }
+}
+export async function clearSavedWords(catalog,ids){
+ support();return locked(async()=>{
+  await recover();const packs=await listPacks(),paths=selectedMedia(catalog,ids,packs),root=new URL('../',import.meta.url),urls=[...paths].map(path=>new URL(path,root).href);
+  return createMediaControl(root).selectiveClear(urls,async()=>{
+   const dir=await directory(),changes=[],staged=[];let committed=false;
+   try{
+    for(const pack of packs){const retained=pack.files.filter(file=>!mediaRoles.has(file.role)||!paths.has(file.path));if(retained.length!==pack.files.length)changes.push({pack,retained});}
+    // Keep every original until all replacements fit, copy successfully and
+    // verify. A quota, interruption or checksum failure cannot lose other words.
+    const stagingBytes=changes.reduce((sum,change)=>sum+change.retained.reduce((n,file)=>n+file.bytes,0),0);if(stagingBytes)await ensureSpace(stagingBytes);
+    for(const change of changes){
+     const {pack,retained}=change;if(!retained.length)continue;
+     const source=await(await dir.getFileHandle(pack.name)).getFile();if(source.size!==pack.bytes)throw new Error('Stored package size mismatch');
+     const parts=[],files=[];let offset=0;
+     for(const entry of retained){
+      if(!Number.isSafeInteger(entry.start)||entry.start<0||!Number.isSafeInteger(entry.bytes)||entry.bytes<0||entry.start+entry.bytes>source.size)throw new Error('Stored package range mismatch');
+      parts.push(source.slice(entry.start,entry.start+entry.bytes));files.push({...entry,start:offset});offset+=entry.bytes;
+     }
+     const compact=new Blob(parts),name=temporaryName();staged.push(name);await copy(compact,name,undefined,()=>{});
+     const stored=await(await dir.getFileHandle(name)).getFile();await verifyRetainedSlices(stored,files);
+     change.replacement={...pack,name,files,bytes:stored.size,partiallyCleared:true,originalIdentity:pack.originalIdentity||identity(pack.files)};
+    }
+    // One index transaction makes the complete set of replacements visible.
+    if(changes.length)await commitPackChanges(changes);committed=true;
+    for(const {pack} of changes){try{await dir.removeEntry(pack.name);}catch(error){if(error.name!=='NotFoundError')throw error;}}
+    if(globalThis.caches){const cache=await caches.open('gre-scalable-verified-units-v1'),wanted=new Set(urls);for(const request of await cache.keys())if(wanted.has(request.url))await cache.delete(request);}
+    verifiedSlices.clear();badSlices.clear();
+    return {packs:changes.length,files:changes.reduce((sum,{pack,retained})=>sum+pack.files.length-retained.length,0),bytes:changes.reduce((sum,{pack,replacement})=>sum+pack.bytes-(replacement?.bytes||0),0),paths:urls};
+   }finally{
+    if(!committed)for(const name of staged)await dir.removeEntry(name).catch(()=>{});
+   }
+  });
+ });
+}

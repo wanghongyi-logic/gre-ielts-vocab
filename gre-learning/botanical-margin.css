@@ -75,8 +75,8 @@ body {background-color:var(--journal-paper);background-image:var(--journal-face)
  -webkit-mask-image:linear-gradient(transparent,#000 5%,#000 95%,transparent);
  mask-image:linear-gradient(transparent,#000 5%,#000 95%,transparent);
 }
-/* Every section has pigment on the page; the selected section remains stronger. */
-.bookmarks.botanical-margin .bookmark-list .margin-control::after {opacity:.48;}
+/* The shared selection mark below owns the visible pigment. */
+.bookmarks.botanical-margin .bookmark-list .margin-control::after {opacity:0;}
 .bookmarks.botanical-margin .bookmark-list .margin-control.is-current::after {opacity:1;}
 .bookmarks.botanical-margin .margin-art {position:absolute;left:-1px;top:0;width:32px;height:var(--margin-vine-height);z-index:-1;overflow:hidden;pointer-events:none;user-select:none;}
 .bookmarks.botanical-margin .margin-vine {position:absolute;inset:0;background:url('./botanical-vine.webp') 50% 50%/76px 100% no-repeat;pointer-events:none;}
@@ -153,3 +153,27 @@ body {background-color:var(--journal-paper);background-image:var(--journal-face)
  .bookmarks.botanical-margin #open-search .margin-icon,
  .bookmarks.botanical-margin #open-search .margin-label {transform:translateY(0);}
 }
+
+/* A single pigment mark travels between all seven controls. No idle washes. */
+.bookmarks.botanical-margin .margin-control::after,
+.bookmarks.botanical-margin .bookmark-list .margin-control::after {display:none;}
+.bookmarks.botanical-margin .margin-selection {
+ position:absolute;left:0;top:0;width:37px;height:54px;z-index:1;
+ pointer-events:none;transform-origin:50% 50%;
+}
+.bookmarks.botanical-margin .margin-selection[hidden] {display:none;}
+.bookmarks.botanical-margin .margin-selection-pigment {
+ display:block;width:100%;height:100%;pointer-events:none;
+ background:url('./botanical-sage-wash.webp') center/100% 100% no-repeat;
+ transform-origin:center;opacity:1;
+}
+@media(forced-colors:active){.bookmarks.botanical-margin .margin-selection {display:none;}}
+/* One unbroken original watercolor image across the entire margin. */
+.bookmarks.botanical-margin .margin-art {height:100%;}
+.bookmarks.botanical-margin .bookmark-list::before {display:none;content:none;}
+/* Explicitly retire every inherited 3px bookmark bar, selected or otherwise. */
+.bookmarks.botanical-margin a.margin-control::after,
+.bookmarks.botanical-margin a.margin-control.is-current::after {display:none;content:none;height:0;background:none;}
+/* Keep the continuous stem on the drawing side, clear of the fixed icon ink. */
+.bookmarks.botanical-margin .margin-art {left:-4px;width:32px;}
+.bookmarks.botanical-margin .margin-vine {background-size:48px 100%;}

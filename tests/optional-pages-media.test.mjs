@@ -38,7 +38,7 @@ function worker(){
  const key=r=>typeof r==='string'?r:r.url;
  const caches={open:async name=>{if(!maps.has(name))maps.set(name,new Map());const m=maps.get(name);return {match:async r=>m.get(key(r))?.clone(),put:async(r,s)=>m.set(key(r),s.clone()),delete:async r=>m.delete(key(r)),keys:async()=>[...m.keys()].map(url=>new Request(url))};},keys:async()=>[...maps.keys()],delete:async name=>maps.delete(name)};
  const ctx=vm.createContext({self:{location:{href:origin+'sw.js'},addEventListener:(type,fn)=>listeners[type]=fn,clients:{claim:async()=>{},matchAll:async()=>[]}},caches,crypto:webcrypto,Response,Request,URL,AbortController,DOMException,Map,Set,setTimeout,clearTimeout,fetch:async req=>{requests.push(key(req));if(fail)return new Response('failure',{status:503});return new Response(await file(key(req)));}});
- return {requests,maps,setFail:value=>fail=value,load:async()=>vm.runInContext(await readFile(new URL('sw.js',root),'utf8'),ctx),fetch:async url=>{let p;listeners.fetch({request:new Request(url),respondWith:x=>p=x});return p;},message:async data=>{const messages=[];let p;listeners.message({data,ports:[{postMessage:value=>messages.push(value)}],waitUntil:x=>p=x});await p;return messages;}};
+ return {ctx,requests,maps,setFail:value=>fail=value,load:async()=>vm.runInContext(await readFile(new URL('sw.js',root),'utf8'),ctx),fetch:async url=>{let p;listeners.fetch({request:new Request(url),respondWith:x=>p=x});return p;},message:async data=>{const messages=[];let p;listeners.message({data,ports:[{postMessage:value=>messages.push(value)}],waitUntil:x=>p=x});await p;return messages;}};
 }
 test('retired optional GET and explicit download both avoid network; clear prevents refetch',async()=>{
  const w=worker();await w.load();const meta=catalog.entries[50],url=new URL(meta.storyMedia.video.url,baseURL).href;
@@ -87,4 +87,13 @@ test('direct loader media calls cannot bypass retired hosting policy',async()=>{
  const loader=new LessonLoader(catalog,{baseURL,cacheStorage:null,fetcher:()=>{throw new Error('retired media must never fetch');}});
  for(const ref of [catalog.entries[50].storyMedia.poster,catalog.entries[50].storyMedia.video])assert.equal(await loader.mediaResource(ref,undefined,'high',true),null);
  loader.destroy();
+});
+
+test('selective first-group clear blocks automatic worker fetch but permits an explicit re-download',async()=>{
+ const w=worker();await w.load();const meta=catalog.entries[0],url=new URL(meta.storyMedia.poster.url,baseURL).href;
+ assert.equal((await w.fetch(url)).status,200);
+ w.ctx.selectedURL=url;await vm.runInContext("mediaControl.selectiveClear([selectedURL],async()=>{await(await caches.open(UNITS)).delete(selectedURL);})",w.ctx);
+ const before=w.requests.length;assert.equal((await w.fetch(url)).status,404);assert.equal(w.requests.length,before);
+ const result=await w.message({type:'DOWNLOAD_LESSONS',jobId:'explicit-after-clear',ids:[meta.number]});assert.equal(result.at(-1).completed,1);assert.ok(!result.some(message=>message.type==='LESSON_DOWNLOAD_ERROR'));
+ assert.equal((await w.fetch(url)).status,200,'saved bytes are usable despite automatic refill block');
 });

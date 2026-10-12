@@ -67,7 +67,7 @@ export class LessonLoader {
   {
    try{const cached=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(!cached)throw new Error('Not cached');const bytes=await cached.arrayBuffer();if(bytes.byteLength!==ref.bytes)throw new Error('Invalid cache');const digest=await this.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==ref.sha256)throw new Error('Invalid cache');if(signal?.aborted)throw abortError();return this.mediaControl.guard(ticket,()=>{if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);const blobURL=URL.createObjectURL(new Blob([bytes],{type:mediaType(ref)}));this.mediaCache.set(ref.sha256,blobURL);return blobURL;});}catch(error){if(signal?.aborted)throw error;}
   }
-  if(!allowNetwork||!this.hostedMediaPaths.has(ref.url))return null;
+  if(!allowNetwork||!this.hostedMediaPaths.has(ref.url)||!await this.mediaControl.automaticAllowed(url))return null;
   notifyMedia('start',ref);try{
   const {bytes}=await optionalMediaBytes(this.fetcher,url,signal,priority,this.mediaTimeoutMs);
   if(bytes.byteLength!==ref.bytes)throw new Error('Illustration byte count mismatch');

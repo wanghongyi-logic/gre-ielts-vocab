@@ -16,8 +16,10 @@ export function createMediaControl(scopeURL){
   async state(){const state=await read();announce(state,'read');return state;},
   async ticket(){const state=await api.state();return state.paused?null:state.generation;},
   async guard(generation,action){return lock(async()=>{const state=await read();announce(state,'read');if(state.paused||state.generation!==generation)throw changed();return action();});},
-  async clear(action){return lock(async()=>{const previous=await read(),state={generation:previous.generation+1,paused:true,phase:'clearing'};await write(state);publish(state);await action();const complete={...state,phase:'cleared'};await write(complete);publish(complete);return complete;});},
-  async resume(){return lock(async()=>{const previous=await read();if(!previous.paused)return previous;const state={generation:previous.generation+1,paused:false,phase:'active'};await write(state);publish(state);return state;});},
+  async clear(action){return lock(async()=>{const previous=await read(),state={...previous,generation:previous.generation+1,paused:true,phase:'clearing'};await write(state);publish(state);await action();const complete={...state,phase:'cleared'};await write(complete);publish(complete);return complete;});},
+  async automaticAllowed(url){const state=await read();return !state.paused&&!(state.blockedAutoPaths||[]).includes(new URL(url,scope).href);},
+  async selectiveClear(paths,action){return lock(async()=>{const previous=await read(),state={...previous,generation:previous.generation+1,phase:'selective-clearing',blockedAutoPaths:[...new Set([...(previous.blockedAutoPaths||[]),...paths.map(path=>new URL(path,scope).href)])]};await write(state);publish(state);try{return await action();}finally{const complete={...state,generation:state.generation+1,phase:'selective-cleared'};await write(complete);publish(complete);}});},
+  async resume(){return lock(async()=>{const previous=await read();if(!previous.paused)return previous;const state={...previous,generation:previous.generation+1,paused:false,phase:'active'};await write(state);publish(state);return state;});},
   subscribe(listener){listeners.add(listener);return()=>listeners.delete(listener);}
  };
  mediaControlInstances.set(scope,api);return api;

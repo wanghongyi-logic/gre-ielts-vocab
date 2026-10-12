@@ -1,3 +1,4 @@
+import {installMovingWatercolor} from './botanical-selection.js';
 // Illustration-only enhancement. Reading routes, downloads and media remain owned
 // by the existing app. The margin color fraction is copied from real saved state.
 export const MARGIN_ITEMS=Object.freeze({
@@ -45,4 +46,5 @@ export function installBotanicalMargin(nav){
  const geometry=()=>syncMarginGeometry(nav);geometry();
  if(win?.ResizeObserver){const observer=new win.ResizeObserver(geometry);for(const element of [nav,nav.querySelector('.bookmark-list'),settings])if(element)observer.observe(element);}
  win?.addEventListener?.('resize',geometry,{passive:true});
+ installMovingWatercolor(nav);
 }

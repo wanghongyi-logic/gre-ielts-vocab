@@ -30,4 +30,5 @@ const cached=new Map([[mediaURL,'media'],[textURL,'text'],[otherURL,'other']]);g
 disk.set('unrelated-file.txt',new Blob(['keep']));const sourceSize=clean.size;
 const {clearSavedResources}=await import(new URL('../gre-learning/offline-packs.js',import.meta.url));
 await clearSavedResources();assert.equal((await listPacks()).length,0);assert.equal(disk.size,1);assert.ok(disk.has('unrelated-file.txt'));assert.ok(!cached.has(mediaURL));assert.ok(cached.has(textURL));assert.ok(cached.has(otherURL));assert.equal(clean.size,sourceSize);
+const {createMediaControl}=await import(new URL('../gre-learning/offline-control.js',import.meta.url));await createMediaControl(new URL('../',import.meta.url)).resume();
 await importPack(clean,catalog);assert.equal(await(await localAsset(ref)).text(),data);console.log('Clear removes only owned cache media + imported packs, retains text/unrelated/original source, and permits reimport');
