@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "166-offline200-v27",
-  "generatedAt": "2026-10-12T20:07:03.175616+00:00",
+  "releaseBuild": "166-offline200-v28",
+  "generatedAt": "2026-10-12T20:21:27.925789+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-reviewed-order",
@@ -737,7 +737,7 @@
       "path": "gre-learning/update.js",
       "loading": "shell",
       "bytes": 6372,
-      "sha256": "df9b745e801cb14f005478ebd5f29c6f1a3027abc09b544f5b07abce873216c9",
+      "sha256": "56e2c4fe542410d12af49879be4222bd28edacf4c0402adbb4332093fea4df76",
       "gzipBytes": 2257
     },
     {
@@ -968,7 +968,7 @@
       "path": "gre-learning/offline-preferences.js",
       "loading": "shell",
       "bytes": 1103,
-      "sha256": "b6fe9b37f21c26a11d383e9a70b3d0ad0d76c3a9987fb24f3120314e3d45f6f3",
+      "sha256": "ac4bbc70d27eb0016def6d18fd08fe650073762c9cd5ed62ecf4ccb1bd1ebe41",
       "gzipBytes": 534
     },
     {
@@ -1387,16 +1387,16 @@
     {
       "path": "gre-learning/botanical-margin.js",
       "loading": "shell",
-      "bytes": 5551,
-      "sha256": "20574625304948063f5864555acc57e708efa2af3722c693f7d03e1cbcf18b93",
-      "gzipBytes": 2440
+      "bytes": 6137,
+      "sha256": "742c037ca020773dd1afd1284513de5f853852312e5126edfe7d94455f508fee",
+      "gzipBytes": 2639
     },
     {
       "path": "gre-learning/botanical-margin.css",
       "loading": "shell",
-      "bytes": 14078,
-      "sha256": "b84d72a06b1ef2b13389aa7bbdae141b0d006d794cf03b54cef9b7afa422d7e1",
-      "gzipBytes": 3424
+      "bytes": 18742,
+      "sha256": "1e804f3b6195e817f654a7313c8b4aa8189503ca64c463f675d31d28c2f5d510",
+      "gzipBytes": 4076
     },
     {
       "path": "gre-learning/botanical-vine.webp",
@@ -1429,14 +1429,21 @@
     {
       "path": "gre-learning/botanical-selection.js",
       "loading": "shell",
-      "bytes": 3650,
-      "sha256": "056c625516e7ba14cc93d427023ef4c691e5b272d309e39d31e571dc3f0721fc",
-      "gzipBytes": 1501
+      "bytes": 5270,
+      "sha256": "f45b543812ec6d359a1d673ff7e742e4c698359fd9d7a51377c4278439cf3b5e",
+      "gzipBytes": 2040
+    },
+    {
+      "path": "gre-learning/botanical-growth.js",
+      "loading": "shell",
+      "bytes": 2166,
+      "sha256": "ce9234b008570066628ccdee515ab723753d576533dc20c3dfd9cefdd33be862",
+      "gzipBytes": 981
     }
   ],
   "totals": {
-    "bytes": 35140140,
-    "gzipBytes": 33583403
+    "bytes": 35149176,
+    "gzipBytes": 33585774
   },
   "retainedHistoricalAssets": 212,
   "availableTextLessons": 210,

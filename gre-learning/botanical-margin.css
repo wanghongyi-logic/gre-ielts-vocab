@@ -177,3 +177,75 @@ body {background-color:var(--journal-paper);background-image:var(--journal-face)
 /* Keep the continuous stem on the drawing side, clear of the fixed icon ink. */
 .bookmarks.botanical-margin .margin-art {left:-4px;width:32px;}
 .bookmarks.botanical-margin .margin-vine {background-size:48px 100%;}
+
+/* Pigment diffusion only: the printed controls remain sharp and stationary. */
+.bookmarks.botanical-margin .margin-selection {
+ background:url('./botanical-sage-wash.webp') center/100% 100% no-repeat;
+ transform-origin:50% 50%;pointer-events:none;
+}
+.bookmarks.botanical-margin .margin-diffusion-bridge {
+ position:absolute;left:19px;top:0;width:10px;height:0;z-index:1;pointer-events:none;
+ background:url('./botanical-sage-wash.webp') center/100% 100% no-repeat;
+ -webkit-mask-image:linear-gradient(transparent,#000 30%,#000 70%,transparent);
+ mask-image:linear-gradient(transparent,#000 30%,#000 70%,transparent);
+ opacity:0;
+}
+.bookmarks.botanical-margin .margin-diffusion-bridge[hidden] {display:none;}
+@media(prefers-reduced-motion:reduce){
+ .bookmarks.botanical-margin .diffusion-source,.bookmarks.botanical-margin .margin-diffusion-bridge {display:none;}
+}
+@media(forced-colors:active){.bookmarks.botanical-margin .margin-diffusion-bridge {display:none;}}
+
+/* Original image proportions, joined at measured natural stem endpoints. */
+.bookmarks.botanical-margin .margin-art {left:-1px;width:32px;height:var(--margin-vine-height);}
+.bookmarks.botanical-margin .margin-vine {background-size:76px 100%;}
+.bookmarks.botanical-margin .bookmark-list::before,
+.bookmarks.botanical-margin .bookmark-list::after {
+ display:block;content:'';position:absolute;left:-1px;
+ top:calc(-1 * var(--margin-seam-overlap,30px));bottom:0;width:32px;
+ background:url('./botanical-vine.webp') 50% 50%/48px 100% no-repeat;
+ pointer-events:none;z-index:-1;-webkit-mask-image:none;mask-image:none;
+}
+.bookmarks.botanical-margin .bookmark-list::before {filter:grayscale(1) sepia(.3);opacity:.25;}
+.bookmarks.botanical-margin .bookmark-list::after {
+ filter:none;opacity:.8;
+ clip-path:inset(clamp(0px,calc(var(--margin-total-height,763px) * (1 - var(--margin-displayed-progress,var(--margin-saved-progress))) - var(--margin-lower-origin,413px)),100%) 0 0);
+}
+.bookmarks.botanical-margin .margin-vine-saved {
+ clip-path:inset(clamp(0px,calc(var(--margin-total-height,763px) * (1 - var(--margin-displayed-progress,var(--margin-saved-progress)))),100%) 0 0);
+}
+@media(forced-colors:active){.bookmarks.botanical-margin .bookmark-list::before,.bookmarks.botanical-margin .bookmark-list::after {display:none;}}
+.bookmarks.botanical-margin .bookmark-list::after {transition:clip-path 400ms ease;}
+@media(prefers-reduced-motion:reduce){.bookmarks.botanical-margin .bookmark-list::after {transition:none;}}
+
+/* The existing bottom back-to-top button owns this temporary watercolor sweep. */
+.bookmarks.botanical-margin.is-growing-vine .margin-vine-saved,
+.bookmarks.botanical-margin.is-growing-vine .bookmark-list::after {transition:none;}
+.bookmarks.botanical-margin .margin-growth-upper,
+.bookmarks.botanical-margin .margin-growth-lower,
+.bookmarks.botanical-margin .margin-growth-bloom {display:none;position:absolute;pointer-events:none;z-index:-1;}
+.bookmarks.botanical-margin.is-growing-vine .margin-growth-upper,
+.bookmarks.botanical-margin.is-growing-vine .margin-growth-lower {
+ display:block;left:-1px;width:32px;
+ background-image:url('./botanical-vine.webp');background-position:center;background-repeat:no-repeat;
+ filter:sepia(1) saturate(.85) brightness(1.22);opacity:var(--margin-growth-glow,0);
+ -webkit-mask-image:linear-gradient(transparent calc(var(--growth-local-front) - 14px),#000 var(--growth-local-front),transparent calc(var(--growth-local-front) + 14px));
+ mask-image:linear-gradient(transparent calc(var(--growth-local-front) - 14px),#000 var(--growth-local-front),transparent calc(var(--growth-local-front) + 14px));
+}
+.bookmarks.botanical-margin .margin-growth-upper {
+ top:0;height:var(--margin-vine-height);background-size:76px 100%;
+ --growth-local-front:calc(var(--margin-total-height) * (1 - var(--margin-displayed-progress,0)));
+}
+.bookmarks.botanical-margin .margin-growth-lower {
+ top:var(--margin-lower-origin);height:calc(var(--margin-total-height) - var(--margin-lower-origin));background-size:48px 100%;
+ --growth-local-front:calc(var(--margin-total-height) * (1 - var(--margin-displayed-progress,0)) - var(--margin-lower-origin));
+}
+.bookmarks.botanical-margin.is-growing-vine .margin-growth-bloom {
+ display:block;left:7px;top:0;width:37px;height:54px;
+ background:url('./botanical-sage-wash.webp') center/100% 100% no-repeat;opacity:var(--margin-growth-bloom,0);
+}
+@media(prefers-reduced-motion:reduce),(forced-colors:active){
+ .bookmarks.botanical-margin.is-growing-vine .margin-growth-upper,
+ .bookmarks.botanical-margin.is-growing-vine .margin-growth-lower,
+ .bookmarks.botanical-margin.is-growing-vine .margin-growth-bloom {display:none;}
+}

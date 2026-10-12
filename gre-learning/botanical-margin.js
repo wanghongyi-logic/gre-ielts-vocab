@@ -1,3 +1,4 @@
+import {installBranchGrowth} from './botanical-growth.js';
 import {installMovingWatercolor} from './botanical-selection.js';
 // Illustration-only enhancement. Reading routes, downloads and media remain owned
 // by the existing app. The margin color fraction is copied from real saved state.
@@ -21,6 +22,13 @@ export function syncMarginGeometry(nav){
  const list=nav.querySelector('.bookmark-list');if(!nav.getBoundingClientRect||!list?.getBoundingClientRect)return;
  const height=Math.max(44,list.getBoundingClientRect().top-nav.getBoundingClientRect().top-8);
  nav.style.setProperty('--margin-vine-height',`${height}px`);
+ // Match raster stem endpoints (y700/720 to y20/720), then map both
+ // image segments to one sidebar-wide saved-progress cutoff.
+ const nr=nav.getBoundingClientRect(),lr=list.getBoundingClientRect();
+ const listHeight=lr.height||320,overlap=(height+listHeight+288)/35;
+ nav.style.setProperty('--margin-seam-overlap',`${overlap}px`);
+ nav.style.setProperty('--margin-total-height',`${nr.height||height+listHeight+8}px`);
+ nav.style.setProperty('--margin-lower-origin',`${lr.top-nr.top-overlap}px`);
 }
 export function installBotanicalMargin(nav){
  if(!nav||nav.dataset.botanicalMarginReady)return;nav.dataset.botanicalMarginReady='true';
@@ -47,4 +55,5 @@ export function installBotanicalMargin(nav){
  if(win?.ResizeObserver){const observer=new win.ResizeObserver(geometry);for(const element of [nav,nav.querySelector('.bookmark-list'),settings])if(element)observer.observe(element);}
  win?.addEventListener?.('resize',geometry,{passive:true});
  installMovingWatercolor(nav);
+ installBranchGrowth(nav);
 }
