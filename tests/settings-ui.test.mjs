@@ -200,3 +200,21 @@ test('first-group clear cannot run while another group download owns the mutatio
  const [first,second]=rows(f),running=second.querySelector('button').onclick();await tick();assert.equal(first.querySelector('button').disabled,true);await first.querySelector('button').onclick();assert.equal(f.calls.selective.length,0);
  finish({wordIds:[1050]});await running;assert.equal(first.querySelector('button').disabled,false);
 });
+
+test('each committed download word updates saved count and vine immediately without storage rescan or remount',async()=>{
+ const f=fixture();f.data.total=7;let finish;f.setDownload(new Promise(resolve=>finish=resolve));const row=rows(f)[0],running=row.querySelector('button').onclick();await tick();
+ const inspections=f.calls.inspections,packNode=f.host.querySelector('[data-packs]').children[0],rail=f.doc.getElementById('open-settings');
+ f.progress({phase:'batch',completed:1,total:2});assert.equal(f.host.querySelector('[data-saved-count]').textContent,2,'transfer counters alone are not committed readiness');
+ f.progress({phase:'batch',completed:1,total:2,readyId:51,generation:99});assert.equal(f.host.querySelector('[data-saved-count]').textContent,2,'stale generation ignored');
+ f.progress({phase:'batch',completed:1,total:2,readyId:101,generation:0});assert.equal(f.host.querySelector('[data-saved-count]').textContent,2,'unrelated group ignored');
+ f.progress({phase:'batch',completed:1,total:2,readyId:51,generation:0});assert.equal(f.host.querySelector('[data-saved-count]').textContent,3);assert.equal(rail.style.values['--saved-progress'],String(3/7));
+ f.progress({phase:'batch',completed:1,total:2,readyId:51,generation:0});assert.equal(f.host.querySelector('[data-saved-count]').textContent,3,'duplicate receipt never double counts');
+ assert.equal(f.calls.inspections,inspections);assert.equal(f.host.querySelector('[data-packs]').children[0],packNode);assert.equal(row.querySelector('[data-download-progress]').hidden,false);
+ f.data.readyIds=[1,2,51];row.querySelector('[data-download-cancel]').onclick();f.progress({phase:'batch',completed:2,total:2,readyId:52,generation:0});assert.equal(f.host.querySelector('[data-saved-count]').textContent,3,'late cancelled receipt ignored');
+ finish({});await running;assert.equal(f.host.querySelector('[data-saved-count]').textContent,3);
+});
+test('uncommitted ZIP import progress never changes whole-vine saved fraction',async()=>{
+ const f=fixture();let finish;f.setPending(new Promise(resolve=>finish=resolve));const input=f.host.querySelector('input');input.files=[new Blob(['zip'])];const running=input.onchange();await tick();
+ const rail=f.doc.getElementById('open-settings'),before=rail.style.values['--saved-progress'];f.progress({phase:'batch',completed:1,total:2,readyId:51,generation:0});assert.equal(rail.style.values['--saved-progress'],before);
+ finish({});await running;
+});
