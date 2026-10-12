@@ -18,6 +18,9 @@ export function installContents({main,picker,search,entries,getSelected,navigate
  }
 
  const readingPositions=new Map();
+ // Keep the underlying reading position too when an update happens in Settings.
+ try{const position=JSON.parse(win.sessionStorage?.getItem('gre-update-position-v1'));const reading=position?.reading;if(position?.hash===win.location.hash&&Date.now()-position.at<120000&&entries.some(entry=>entry.number===reading?.number))readingPositions.set(reading.number,{scrollX:Number(reading.scrollX)||0,scrollY:Number(reading.scrollY)||0});}catch{}
+ win.addEventListener('gre-update-capture',event=>{const number=getSelected();const position=picker.open?saved:readingPositions.get(number);if(position)event.detail.reading={number:position.number??number,scrollX:position.scrollX,scrollY:position.scrollY};});
  // Hash history must not race the book's explicit reading-position restore.
  if(win.history&&'scrollRestoration' in win.history)win.history.scrollRestoration='manual';
  const isRoute=hash=>/^#\/?(?:contents|settings)\/?$/.test(hash);

@@ -21,6 +21,8 @@ const swipe=installWordSwipe({surface:main,hintHost:main.parentNode,picker,getNe
 let selectedNumber,current,currentMedia,speech,renderGeneration=0,pendingSection=null;
 let libraryRevision=0,renderedLibraryRevision=0,libraryRefreshEpoch=0,libraryRefreshJob=null;
 const contents=installContents({main,picker,search,entries,getSelected:()=>selectedNumber,navigate,prepareReading:()=>motion.prepareReveal(),onOpen:()=>{swipe.cancel();if(current){renderGeneration++;main.removeAttribute('aria-busy');pages.adjacent(selectedNumber);}bookmarks.sync();motion.sync();window.speechSynthesis?.cancel();},onClose:()=>{bookmarks.sync();motion.sync();},onTransition:active=>motion.setTurning(active)});
+window.addEventListener('gre-update-can-reload',event=>{if(swipe.busy||main.hasAttribute('aria-busy')||main.hasAttribute('data-contents-turning')||libraryRefreshJob)event.detail.blocked=true;});
+function signalRendered(){contents.whenSettled().then(()=>window.dispatchEvent(new Event('gre-app-rendered')));}
 function remember(){try{return sessionStorage.getItem('gre-learning-current-v1');}catch{return null;}}
 function navigate(number){if(entries.some(entry=>entry.number===number)&&number!==selectedNumber)location.hash=`/learn/${number}`;}
 function watchChapters(){bookmarks.refresh();}
@@ -67,6 +69,7 @@ async function render({preserveScroll=false}={}){
  watchChapters();swipe.rendered(`${current.word}，第 ${position.index+1} 个词，共 ${entries.length} 个`);if(picker.open)motion.setTurning(true);motion.activate();pages.adjacent(number);
  if(picker.open&&inContents)contents.renderResults();
  if(pendingSection){const section=pendingSection;pendingSection=null;bookmarks.navigate(section);}
+ signalRendered();
  };
  if(picker.open&&!inContents)contents.reveal(adopt);else adopt();
 }

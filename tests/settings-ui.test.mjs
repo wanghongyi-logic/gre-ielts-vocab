@@ -143,3 +143,30 @@ test('separate Release drawer refreshes a read-only list without starting any im
  const f=fixture(),drawer=f.host.querySelector('[data-release-browser]');assert.equal(f.releases,0);drawer.open=true;drawer.ontoggle();await tick();assert.equal(f.releases,1);await f.host.querySelector('[data-release-refresh]').onclick();assert.equal(f.releases,2);assert.equal(f.calls.imports,0);assert.equal(f.calls.downloads,0);assert.equal(f.host.querySelector('[data-import-progress]').hidden,true);for(const row of rows(f))assert.equal(row.querySelector('[data-download-progress]').hidden,true);
  assert.match(source,/releaseDownloads\?\.cancelPending\(\)/,'clear explicitly cancels pending metadata');
 });
+
+function updateBlocked(f){const detail={blocked:false};f.emit('gre-update-can-reload',detail);return detail.blocked;}
+test('automatic update guard tracks actual file picker/import lifecycle',async()=>{
+ const f=fixture(),input=f.host.querySelector('input');assert.equal(updateBlocked(f),false);
+ input.listeners.click();assert.equal(updateBlocked(f),true);input.listeners.cancel();assert.equal(updateBlocked(f),false);
+ let finish;f.setPending(new Promise(resolve=>finish=resolve));input.files=[new Blob(['zip'])];input.listeners.change();const running=input.onchange();await tick();assert.equal(updateBlocked(f),true);
+ finish({wordIds:[1,2]});await running;assert.equal(updateBlocked(f),false);
+});
+test('automatic update guard tracks actual download and mode activation lifecycle',async()=>{
+ const f=fixture();let finish;f.setDownload(new Promise(resolve=>finish=resolve));const running=rows(f)[0].querySelector('button').onclick();await tick();assert.equal(updateBlocked(f),true);finish({wordIds:[51,52]});await running;assert.equal(updateBlocked(f),false);
+ let activate;f.setActivation(new Promise(resolve=>activate=resolve));const changing=f.host.querySelector('.library-mode-button').onclick();await tick();assert.equal(updateBlocked(f),true);activate();await changing;assert.equal(updateBlocked(f),false);
+});
+test('automatic update guard remains set through confirmed clear reload',async()=>{const f=fixture();f.setConfirmed(true);await f.host.querySelector('[data-clear-all]').onclick();assert.equal(updateBlocked(f),true);assert.equal(f.calls.reloads,1);});
+for(const kind of ['delete','cleanup'])test(`automatic reload stays blocked through ${kind} mutation and final refresh`,async()=>{
+ const f=fixture();f.data.packs[0].ownedCurrentAssets=0;f.doc.getElementById('open-settings').onclick();await tick();f.setConfirmed(true);let finish,finishRefresh;
+ const original=f.ctx.inspectLibrary;f.ctx[kind==='delete'?'deletePack':'cleanUnusedPacks']=()=>new Promise(resolve=>finish=resolve);
+ const running=f.host.querySelector(kind==='delete'?'[data-packs]':'[data-clean]');const task=(kind==='delete'?running.querySelector('button'):running).onclick();await tick();assert.equal(updateBlocked(f),true);assert.equal(f.host.querySelector('input').disabled,true);
+ f.ctx.inspectLibrary=()=>new Promise(resolve=>finishRefresh=()=>resolve(f.data));finish(1);await tick();assert.equal(updateBlocked(f),true,'refresh is still within mutation guard');finishRefresh();await task;f.ctx.inspectLibrary=original;assert.equal(updateBlocked(f),false);assert.equal(f.host.querySelector('input').disabled,false);
+});
+for(const kind of ['delete','cleanup'])test(`${kind} failure releases reload guard and controls`,async()=>{
+ const f=fixture();f.data.packs[0].ownedCurrentAssets=0;f.doc.getElementById('open-settings').onclick();await tick();f.setConfirmed(true);f.ctx[kind==='delete'?'deletePack':'cleanUnusedPacks']=async()=>{throw new Error('storage unavailable');};const target=f.host.querySelector(kind==='delete'?'[data-packs]':'[data-clean]');await(kind==='delete'?target.querySelector('button'):target).onclick();assert.equal(updateBlocked(f),false);assert.equal(f.host.querySelector('input').disabled,false);assert.match(f.host.querySelector('[data-status]').textContent,/storage unavailable/);
+});
+test('expanded Settings drawers are captured and restored before asynchronous layout settles',async()=>{
+ const f=fixture(),selectors=['.library-page','.library-pages-downloads','[data-release-browser]','.library-packs'];for(const selector of selectors)f.host.querySelector(selector).open=true;
+ const position={};f.emit('gre-update-capture',position);for(const selector of selectors){assert.equal(position.drawers[selector],true);f.host.querySelector(selector).open=false;}
+ let resolveLibrary;f.ctx.inspectLibrary=()=>new Promise(resolve=>resolveLibrary=()=>resolve(f.data));const detail={position,waits:[]};f.emit('gre-update-restore',detail);for(const selector of selectors)assert.equal(f.host.querySelector(selector).open,true);assert.equal(detail.waits.length,1);let settled=false;const pending=Promise.all(detail.waits).then(()=>settled=true);await tick();assert.equal(settled,false);assert.equal(f.releases,1,'one bounded read restores Release list height');resolveLibrary();await pending;assert.equal(f.host.querySelector('.library-packs').hidden,false);assert.equal(settled,true);
+});
