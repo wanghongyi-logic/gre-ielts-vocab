@@ -7,7 +7,9 @@ export function leafGeometry(progress,direction,width,height,{left=0,top=0}={}) 
  // Intersect the outgoing face with the real leaf, not its possibly wider DOM
  // box. Overshoot may move the curl offscreen, but must never resurrect a strip
  // of old text beyond the fixed book edge. At p=1 the face has exactly zero area.
- const points=[[flip(0),0],[flip(edge-bow),0],[flip(edge),.24],[flip(edge+bow),.5],[flip(edge),.76],[flip(edge-bow),1],[flip(0),1]];
+ // The reverse-paper curl ends at `edge`. Bow only into the outgoing paper:
+ // edge+bow protruded beyond the curl and exposed old text on the new page.
+ const points=[[flip(0),0],[flip(edge-bow),0],[flip(edge-bow*.35),.24],[flip(edge),.5],[flip(edge-bow*.35),.76],[flip(edge-bow),1],[flip(0),1]];
  return {clip:`polygon(${points.map(([x,y])=>`${(left+clamp(x)*width).toFixed(2)}px ${(top+y*height).toFixed(2)}px`).join(',')})`,edge:flip(edge)*100,curl:Math.min(21,p*65)*Math.pow(1-p,.55),bend,opacity:Math.min(1,p*22)*Math.min(1,(1-p)*15)};
 }
 

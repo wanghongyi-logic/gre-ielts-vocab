@@ -206,7 +206,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
  doc.addEventListener('visibilitychange',()=>{if(doc.hidden)releaseGesture();});
  win.addEventListener('wheel',()=>{if(turns.interactive)cancelGesture();else turns.finish();},{passive:true});
  win.addEventListener('touchmove',()=>{if(turns.busy&&!turns.interactive)turns.finish();},{passive:true});
- picker.addEventListener('cancel',event=>{event.preventDefault();if(turns.interactive)cancelGesture();else close();});
+ picker.addEventListener('cancel',event=>{if(event.target!==picker)return;event.preventDefault();if(turns.interactive)cancelGesture();else close();});
  doc.addEventListener('keydown',event=>{
   if(event.key==='Escape'&&turns.interactive){event.preventDefault();cancelGesture();return;}
   if(event.key==='Escape'&&picker.open){event.preventDefault();close();return;}
