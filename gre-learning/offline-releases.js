@@ -84,7 +84,7 @@ export async function discoverReleaseAssets({fetcher = globalThis.fetch, signal,
 }
 const size = bytes => `${(bytes / 1024 / 1024).toFixed(1)} MB`;
 export function releaseListMessage(state) {
-  return ({loading:'正在查找可下载的书包…', empty:'最近的发布中还没有找到书包。已有 ZIP 文件仍可在上方导入。', error:'暂时无法读取书包列表。可以打开下载页，下载后在上方选择文件。', ready:''})[state];
+  return ({loading:'正在刷新…', empty:'暂无可下载资源包', error:'刷新失败，请重试', ready:''})[state];
 }
 export function mountReleaseDownloads({host, catalog, getReadyIds = () => null, fetcher = globalThis.fetch, discoveryTimeoutMs = 20000}) {
   if (!host || host.querySelector('[data-release-downloads]')) return null;
@@ -92,35 +92,35 @@ export function mountReleaseDownloads({host, catalog, getReadyIds = () => null, 
   const section = doc.createElement('section');
   section.className = 'library-quiet-section release-downloads';
   section.dataset.releaseDownloads = '';
-  section.innerHTML = '<details class="release-browser" data-release-browser><summary><span>下载 ZIP 备份</span><span class="library-disclosure-tail"><span class="library-disclosure-mark" aria-hidden="true">+</span></span></summary><div class="release-browser-body"><div class="release-heading"><span>可下载书包</span><button type="button" class="library-text-action" data-release-refresh>刷新列表</button></div><p data-release-status role="status" aria-live="polite"></p><ul data-release-list></ul><a data-release-page target="_blank" rel="noopener noreferrer">打开书包下载页 ↗</a></div></details>';
-  section.querySelector('[data-release-page]').href = RELEASES_URL;
-  const backupHost = host.querySelector('[data-backup-downloads]');
+  section.innerHTML = '<details class="release-browser" data-release-browser><summary><span>从 Release 下载</span><span class="library-disclosure-tail"><span class="library-disclosure-mark" aria-hidden="true">+</span></span></summary><div class="release-browser-body"><div class="release-heading"><button type="button" class="library-text-action" data-release-refresh>刷新列表</button></div><p data-release-status role="status" aria-live="polite"></p><ul data-release-list></ul></div></details>';
+  const backupHost = host.querySelector('[data-release-downloads-slot]');
   const anchor = host.querySelector('.library-import-feedback');
   if (backupHost) backupHost.append(section); else if (anchor) anchor.after(section); else host.append(section);
   const status = section.querySelector('[data-release-status]'), list = section.querySelector('[data-release-list]'), refresh = section.querySelector('[data-release-refresh]');
-  let assets = [], busy = false, destroyed = false, loaded = false, controller;
+  let assets = [], busy = false, destroyed = false, loaded = false, controller, epoch = 0;
   function render() {
     list.replaceChildren();
     for (const asset of assets) {
       const row = doc.createElement('li'), title = doc.createElement('strong'), info = doc.createElement('p'), actions = doc.createElement('div'), link = doc.createElement('a');
       title.textContent = `第 ${asset.range.start}–${asset.range.end} 词`;
-      const coverage = localCoverage(asset, catalog, getReadyIds());
-      info.textContent = `${size(asset.bytes)} · ${coverage ? `本机已保存 ${coverage.saved}/${coverage.total} 词` : '保存情况待确认'}`;
+      info.textContent = size(asset.bytes);
       actions.className = 'release-actions';
       link.href = asset.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = '下载 ZIP ↗';
       actions.append(link); row.append(title,info,actions); list.append(row);
     }
   }
+  function cancelPending(){epoch++;controller?.abort();controller=null;busy=false;loaded=false;refresh.disabled=false;status.textContent='';}
   async function load() {
     if (busy || destroyed) return;
-    controller?.abort(); controller = new AbortController(); busy = true; refresh.disabled = true;
+    const request=++epoch;controller?.abort();controller = new AbortController();busy = true;loaded = true;refresh.disabled = true;
     status.textContent = releaseListMessage('loading');
-    try { assets = await discoverReleaseAssets({fetcher,signal:controller.signal,timeoutMs:discoveryTimeoutMs}); if (!destroyed) status.textContent = releaseListMessage(assets.length ? 'ready':'empty'); }
-    catch (error) { if (!destroyed && error?.name !== 'AbortError') status.textContent = releaseListMessage('error') + (assets.length ? '下方仍是上次读取的列表。' : ''); }
-    finally { busy = false; if (!destroyed) { refresh.disabled = false; render(); refresh.textContent = '刷新列表'; } }
+    try { const found = await discoverReleaseAssets({fetcher,signal:controller.signal,timeoutMs:discoveryTimeoutMs});if(request!==epoch||destroyed)return;assets=found;status.textContent=releaseListMessage(assets.length?'ready':'empty'); }
+    catch(error){if(request===epoch&&!destroyed&&error?.name!=='AbortError')status.textContent=releaseListMessage('error')+(assets.length?' · 保留上次列表':'');}
+    finally{if(request===epoch&&!destroyed){busy=false;refresh.disabled=false;render();}}
   }
   refresh.onclick = load;
   const browser = section.querySelector('[data-release-browser]');
   browser.ontoggle = () => { if (browser.open && !loaded && !busy && !destroyed) { loaded = true; load(); } };
-  return {load, refreshCoverage:render, destroy(){destroyed=true;controller?.abort();section.remove();}};
+  const win=doc.defaultView;win?.addEventListener?.('pagehide',cancelPending);
+  return {load,cancelPending,refreshCoverage:render,destroy(){destroyed=true;cancelPending();win?.removeEventListener?.('pagehide',cancelPending);section.remove();}};
 }

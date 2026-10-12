@@ -38,9 +38,9 @@ test('settings has one clean resource drawer, separate import controls and no mi
  const f=fixture(),h=f.host,drawer=h.querySelector('.library-pages-downloads');
  assert.ok(h.querySelector('input'));assert.match(source,/导入文件/);assert.equal(drawer.open,false);
  assert.equal(drawer.querySelector('summary').children[0].textContent,'下载资源包');
- assert.equal(h.querySelectorAll('.library-pages-downloads').length,1);assert.equal(h.querySelector('[data-release-browser]'),null);
+ assert.equal(h.querySelectorAll('.library-pages-downloads').length,1);assert.ok(h.querySelector('[data-release-browser]'));assert.equal(h.querySelector('[data-release-browser]').open,false);
  assert.equal(drawer.querySelectorAll('details').length,0);assert.ok(drawer.querySelector('[data-pages-downloads]'));
- const release=h.querySelector('[data-release-page]');assert.equal(release.href,RELEASES_URL);assert.equal(release.getAttribute('target'),'_blank');assert.equal(release.parent,h.querySelector('.library-page'));assert.equal(drawer.querySelector('[data-release-page]'),null);assert.match(release.textContent,/从 Release 下载/);
+ const release=h.querySelector('[data-release-downloads-slot]');assert.equal(release.parent,h.querySelector('.library-page'));assert.ok(release.querySelector('[data-release-browser]'));assert.equal(drawer.querySelector('[data-release-browser]'),null);assert.equal(h.querySelector('[data-release-page]'),null);assert.match(release.querySelector('summary').children[0].textContent,/从 Release 下载/);
  for(const selector of ['[data-packs]','[data-persist]','[data-storage-retention]','[data-text-ready]'])assert.equal(drawer.querySelector(selector),null);
  assert.doesNotMatch(source,/>更多<|离线阅读帮助|已保存数量只统计|导入后可用飞行模式检查|浏览器与主屏幕应用的保存空间可能不同/);
  assert.equal(h.querySelector('[data-persist]'),null);assert.equal(h.querySelector('[data-library-progress]'),null);
@@ -48,7 +48,7 @@ test('settings has one clean resource drawer, separate import controls and no mi
  assert.equal(h.querySelector('.library-packs').hidden,false,'existing imported files remain manageable');assert.equal(h.querySelector('.library-packs').open,false);
  f.data.packs=[];f.doc.getElementById('open-settings').onclick();await tick();assert.equal(h.querySelector('.library-packs').hidden,true);
  assert.ok(h.querySelector('[data-clear-all]'));assert.equal(f.releases,0,'no release API or fake download progress in settings');
- assert.doesNotMatch(source,/downloadReleaseAsset|onImport:|data-remote|mountReleaseDownloads/);
+ assert.doesNotMatch(source,/downloadReleaseAsset|onImport:|data-remote/);
 });
 test('saved count, accessible rail and pack count use complete unique IDs',async()=>{
  const f=fixture();f.doc.getElementById('open-settings').onclick();await tick();
@@ -137,4 +137,9 @@ test('repeated mode toggles update hidden reading in place without leaving Setti
 test('failed in-place mode activation stays in Settings and releases only its locks',async()=>{
  const f=fixture();f.doc.getElementById('open-settings').onclick();await tick();let fail;f.setActivation(new Promise((_,reject)=>fail=reject));const button=f.host.querySelector('.library-mode-button'),running=button.onclick();await tick();fail(new Error('activation failed'));await running;
  assert.equal(f.ctx.location.hash,'/settings');assert.equal(f.calls.reloads,0);assert.match(f.host.querySelector('[data-mode-status]').textContent,/切换未完成/);assert.equal(button.disabled,false);assert.equal(f.host.querySelector('input').disabled,false);assert.equal(f.host.querySelector('[data-clear-all]').disabled,false);assert.equal(f.host.querySelector('[data-import-status]').textContent,'');assert.equal(f.host.querySelector('[data-status]').textContent,'');
+});
+
+test('separate Release drawer refreshes a read-only list without starting any import or Pages progress',async()=>{
+ const f=fixture(),drawer=f.host.querySelector('[data-release-browser]');assert.equal(f.releases,0);drawer.open=true;drawer.ontoggle();await tick();assert.equal(f.releases,1);await f.host.querySelector('[data-release-refresh]').onclick();assert.equal(f.releases,2);assert.equal(f.calls.imports,0);assert.equal(f.calls.downloads,0);assert.equal(f.host.querySelector('[data-import-progress]').hidden,true);for(const row of rows(f))assert.equal(row.querySelector('[data-download-progress]').hidden,true);
+ assert.match(source,/releaseDownloads\?\.cancelPending\(\)/,'clear explicitly cancels pending metadata');
 });

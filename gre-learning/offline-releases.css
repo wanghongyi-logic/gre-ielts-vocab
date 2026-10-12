@@ -4,7 +4,7 @@
   padding: 0;
   border-top: 1px solid var(--settings-rule, var(--rule));
 }
-#offline-settings .release-browser > summary { min-height: 84px; font-size: 17px; }
+#offline-settings .release-browser > summary { min-height: 64px; padding: 10px 0; font-size: 16px; }
 #offline-settings .release-browser-body { padding: 0 0 20px; }
 #offline-settings .release-heading,
 #offline-settings .release-actions {
@@ -25,15 +25,18 @@
 }
 #offline-settings .release-downloads ul { list-style: none; padding: 0; margin: 0 0 12px; }
 #offline-settings .release-downloads li {
-  display: block;
-  padding: 18px 0;
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto;
+  gap: 2px 12px;
+  padding: 12px 0;
   margin: 0;
   border: 0;
   border-top: 1px solid #e2dac6;
 }
-#offline-settings .release-downloads li strong { font-size: 17px; line-height: 1.6; font-weight: 400; }
+#offline-settings .release-downloads li strong { grid-column: 1; font-size: 15px; line-height: 1.6; font-weight: 400; }
 #offline-settings .release-downloads li p {
-  margin: 6px 0 12px;
+  grid-column: 1;
+  margin: 0;
   font-size: 14px;
   line-height: 1.7;
   color: #6d705c;
@@ -46,8 +49,8 @@
   text-underline-offset: 5px;
   font-size: 15px;
 }
-#offline-settings .release-actions { justify-content: flex-start; gap: 22px; }
+#offline-settings .release-actions { grid-column: 2; grid-row: 1 / span 2; justify-content: flex-end; gap: 0; }
 #offline-settings .release-downloads button:disabled { opacity: .45; cursor: wait; }
 @media (min-width: 760px) {
-  #offline-settings .release-browser > summary { min-height: 92px; }
+  #offline-settings .release-browser > summary { min-height: 64px; }
 }

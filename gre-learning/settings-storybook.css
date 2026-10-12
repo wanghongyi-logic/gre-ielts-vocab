@@ -170,7 +170,7 @@
   cursor: pointer;
   list-style: none;
 }
-#offline-settings .release-browser > summary { min-height: 84px; font-size: 17px; }
+#offline-settings .release-browser > summary { min-height: 64px; padding: 10px 0; font-size: 16px; }
 #offline-settings summary::-webkit-details-marker { display: none; }
 #offline-settings summary::marker { content: ''; }
 #offline-settings summary span { float: none; font: inherit; }
@@ -296,7 +296,7 @@
   #offline-settings .library-count strong { font-size: 96px; }
   #offline-settings .library-action-row { min-height: 92px; }
   #offline-settings .library-disclosure > summary { min-height: 76px; }
-  #offline-settings .release-browser > summary { min-height: 92px; }
+  #offline-settings .release-browser > summary { min-height: 64px; }
 }
 @media (max-width: 759px) {
   #word-picker:has(#offline-settings:not([hidden])) .contents-sheet { padding-left: 24px; padding-right: 66px; }

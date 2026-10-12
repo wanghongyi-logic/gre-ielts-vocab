@@ -27,8 +27,8 @@ test('empty release list, HTTP error and invalid payload are distinct from asset
  assert.deepEqual(await discoverReleaseAssets({fetcher:async()=>Response.json([])}),[]);
  await assert.rejects(discoverReleaseAssets({fetcher:async()=>new Response('',{status:403})}),/rate-limit/);
  await assert.rejects(discoverReleaseAssets({fetcher:async()=>Response.json({})}),/invalid-response/);
- assert.match(releaseListMessage('empty'),/最近的发布中还没有找到/);
- assert.match(releaseListMessage('error'),/暂时无法读取/);
+ assert.match(releaseListMessage('empty'),/暂无可下载资源包/);
+ assert.match(releaseListMessage('error'),/刷新失败/);
 });
 test('discovery rejects arbitrary assets, ignores drafts, deduplicates and sends no credentials',async()=>{
  const found=await discoverReleaseAssets({fetcher:async(endpoint,options)=>{
@@ -64,22 +64,22 @@ class Element {
  after(item){this.afterNode=item;}
  remove(){this.removed=true;}
 }
-const fixture=()=>{const doc={createElement:tag=>new Element(tag,doc)};const host=new Element('host',doc),manual=new Element('input',doc),anchor=new Element('feedback',doc);host.selectors.set('input',manual);host.selectors.set('.library-import-feedback',anchor);return {host,manual,anchor};};
-test('mount preserves file import, empty/error states and manual download page',async()=>{
+const fixture=()=>{const events={};const doc={defaultView:{addEventListener:(name,fn)=>events[name]=fn,removeEventListener:name=>delete events[name]},createElement:tag=>new Element(tag,doc)};const host=new Element('host',doc),manual=new Element('input',doc),anchor=new Element('feedback',doc);host.selectors.set('input',manual);host.selectors.set('.library-import-feedback',anchor);return {host,manual,anchor,events};};
+test('mount preserves file import and keeps empty/error states local without a page jump',async()=>{
  const {host,manual,anchor}=fixture();let fail=false;
  const ui=mountReleaseDownloads({host,catalog:{entries:[]},fetcher:async()=>{if(fail)throw Error('offline');return Response.json([]);}});
  assert.equal(host.querySelector('input'),manual);
  const section=anchor.afterNode;
- assert.equal(section.querySelector('[data-release-page]').href,'https://github.com/wanghongyi-logic/gre-ielts-vocab/releases');
- await ui.load();assert.match(section.querySelector('[data-release-status]').textContent,/最近的发布中还没有找到/);
- fail=true;await ui.load();assert.match(section.querySelector('[data-release-status]').textContent,/暂时无法读取/);
+ assert.equal(section.querySelector('[data-release-page]'),null);
+ await ui.load();assert.match(section.querySelector('[data-release-status]').textContent,/暂无可下载资源包/);
+ fail=true;await ui.load();assert.match(section.querySelector('[data-release-status]').textContent,/刷新失败/);
  ui.destroy();assert.equal(section.removed,true);
 });
 test('download rows expose only ordinary trusted ZIP links and never invoke import callbacks',async()=>{
  const {host,manual,anchor}=fixture();let imports=0;const requests=[];
  const ui=mountReleaseDownloads({host,catalog:{entries:[]},onImport:()=>{imports++;},fetcher:async(endpoint)=>{requests.push(endpoint);return Response.json([{assets:[raw,{...raw,id:2,size:128*1024*1024}]}]);}});
  await ui.load();const section=anchor.afterNode,list=section.querySelector('[data-release-list]');
- assert.match(section.html,/下载 ZIP 备份/);assert.doesNotMatch(section.html,/从 Release 导入|直接导入|CORS/);
+ assert.match(section.html,/从 Release 下载/);assert.doesNotMatch(section.html,/从 Release 导入|直接导入|CORS/);
  assert.equal(host.querySelector('input'),manual);assert.equal(list.children.length,2);
  for(const row of list.children){const actions=row.children[2];assert.equal(actions.children.length,1);const link=actions.children[0];assert.equal(link.tag,'a');assert.equal(link.href,url);assert.equal(link.target,'_blank');assert.equal(link.rel,'noopener noreferrer');assert.equal(link.onclick,undefined);assert.equal(link.textContent,'下载 ZIP ↗');}
  assert.equal(imports,0);assert.equal(requests.length,1);assert.ok(requests.every(endpoint=>endpoint.startsWith('https://api.github.com/repos/')));
@@ -112,7 +112,22 @@ test('refresh timeout recovers controls and identifies retained stale list',asyn
  const ui=mountReleaseDownloads({host,catalog:{entries:[]},discoveryTimeoutMs:10,fetcher:async()=>stall?new Promise(()=>{}):Response.json([{assets:[raw]}])});
  await ui.load();const section=anchor.afterNode,list=section.querySelector('[data-release-list]');assert.equal(list.children.length,1);
  stall=true;await ui.load();assert.equal(section.querySelector('[data-release-refresh]').disabled,false);
- assert.match(section.querySelector('[data-release-status]').textContent,/上次读取/);assert.equal(list.children.length,1);
- stall=false;await ui.load();assert.doesNotMatch(section.querySelector('[data-release-status]').textContent,/上次读取/);
+ assert.match(section.querySelector('[data-release-status]').textContent,/上次列表/);assert.equal(list.children.length,1);
+ stall=false;await ui.load();assert.doesNotMatch(section.querySelector('[data-release-status]').textContent,/上次列表/);
  ui.destroy();
+});
+
+test('opening its own Release row fetches once, then refresh retries empty/error results',async()=>{
+ const {host,anchor}=fixture();let calls=0,fail=false;const ui=mountReleaseDownloads({host,fetcher:async()=>{calls++;if(fail)throw Error('offline');return Response.json([]);}}),section=anchor.afterNode,drawer=section.querySelector('[data-release-browser]');
+ assert.equal(calls,0);drawer.open=true;drawer.ontoggle();await new Promise(r=>setImmediate(r));assert.equal(calls,1);drawer.open=false;drawer.ontoggle();drawer.open=true;drawer.ontoggle();await new Promise(r=>setImmediate(r));assert.equal(calls,1);
+ fail=true;await section.querySelector('[data-release-refresh]').onclick();assert.equal(calls,2);assert.match(section.querySelector('[data-release-status]').textContent,/刷新失败/);fail=false;await ui.load();assert.match(section.querySelector('[data-release-status]').textContent,/暂无/);ui.destroy();
+});
+test('clear cancellation and pagehide invalidate stale discovery without touching existing download links',async()=>{
+ for(const reason of ['clear','pagehide']){
+  const {host,anchor,events}=fixture();let calls=0,late,started;const began=new Promise(r=>started=r);
+  const ui=mountReleaseDownloads({host,fetcher:async()=>{calls++;if(calls===2){started();return new Promise(r=>late=r);}return Response.json([{assets:[{...raw,id:calls}]}]);}});
+  await ui.load();const section=anchor.afterNode,list=section.querySelector('[data-release-list]');assert.equal(list.children.length,1);
+  const pending=ui.load();await began;if(reason==='clear')ui.cancelPending();else events.pagehide();await pending;assert.equal(section.querySelector('[data-release-status]').textContent,'');assert.equal(section.querySelector('[data-release-refresh]').disabled,false);
+  await ui.load();const current=list.children[0];late(Response.json([]));await new Promise(r=>setImmediate(r));assert.equal(list.children[0],current,'late pre-clear response cannot replace the fresh list');assert.equal(list.children.length,1);ui.destroy();assert.equal(events.pagehide,undefined);
+ }
 });
