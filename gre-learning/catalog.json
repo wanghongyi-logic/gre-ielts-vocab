@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "154",
-  "authoredCount": 105,
-  "publishedCount": 105,
+  "release": "155",
+  "authoredCount": 110,
+  "publishedCount": 110,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -112,7 +112,12 @@
       754,
       1444,
       2964,
-      2445
+      2445,
+      1883,
+      1669,
+      981,
+      2658,
+      384
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -244,9 +249,9 @@
       "bytes": 17865
     },
     {
-      "url": "units/core014-text-approved-c227e83783635b8a329c11ba9108fe1cfc38c6ea07b643b7abf8f87f395b7836.json",
-      "sha256": "c227e83783635b8a329c11ba9108fe1cfc38c6ea07b643b7abf8f87f395b7836",
-      "bytes": 17245
+      "url": "units/core014-text-approved-dc92ef49aabe0eefa6f36eb0ce98e48e3c71ce029717854e3d0214e37dd3951a.json",
+      "sha256": "dc92ef49aabe0eefa6f36eb0ce98e48e3c71ce029717854e3d0214e37dd3951a",
+      "bytes": 17426
     },
     {
       "url": "units/core015-text-approved-be575a6384b37b3843f1d037da1f69abd2574b0d4987fc4b21ffcbb3f9f799b8.json",
@@ -267,6 +272,11 @@
       "url": "units/core018-text-approved-758cb0e4c979996fd3974c21e69b2117725d5a8c47c03737874ee6b1505a7e8c.json",
       "sha256": "758cb0e4c979996fd3974c21e69b2117725d5a8c47c03737874ee6b1505a7e8c",
       "bytes": 22413
+    },
+    {
+      "url": "units/core019-text-approved-ada08e6e1964789d669a2a07399a33d63d94d048ae3aa1b5231bc4cc0eff125c.json",
+      "sha256": "ada08e6e1964789d669a2a07399a33d63d94d048ae3aa1b5231bc4cc0eff125c",
+      "bytes": 21475
     }
   ],
   "entries": [
@@ -8413,6 +8423,802 @@
           }
         },
         "alt": "桌上的清水混进一点脏污。男孩看见水变浑，停下了伸向杯子的手。taint 写的是原本的纯净或品质受到破坏；抽象地说，丑闻也能玷污一个人的名声。"
+      }
+    },
+    {
+      "number": 1883,
+      "word": "prosaic",
+      "coreMeaningZh": "平淡乏味的；缺乏想象力的；日常普通的",
+      "unit": 29,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 106,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 11400,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Exact root-reviewed fully illustrated restart"
+        },
+        "video": {
+          "url": "story-media/1883-234d24004b756912b8a88340c49d0486ab377f38eb6635511981f3efcde156d4.mp4",
+          "sha256": "234d24004b756912b8a88340c49d0486ab377f38eb6635511981f3efcde156d4",
+          "bytes": 1587159
+        },
+        "poster": {
+          "url": "story-media/1883-f5c096742026646ca2064d7b697a56b4fb8570bae21c7e1fa2d02ed66f254dc8.png",
+          "sha256": "f5c096742026646ca2064d7b697a56b4fb8570bae21c7e1fa2d02ed66f254dc8",
+          "bytes": 1344646
+        },
+        "staticPoster": {
+          "url": "story-media/1883-ea31f4190b4838df25bfb6e43fd0675264a5bd09b4fe52ccc7bce3bb608b9e2c.png",
+          "sha256": "ea31f4190b4838df25bfb6e43fd0675264a5bd09b4fe52ccc7bce3bb608b9e2c",
+          "bytes": 1353520
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 100,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 100,
+            "endMs": 1600,
+            "text": "这趟旅行有什么精彩见闻？",
+            "speaker": "listener",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这趟旅行有什么精彩见闻？"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 1600,
+            "endMs": 2100,
+            "text": "这趟旅行有什么精彩见闻？",
+            "speaker": "listener",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这趟旅行有什么精彩见闻？"
+            ]
+          },
+          {
+            "id": "stage-3",
+            "startMs": 2100,
+            "endMs": 2120,
+            "text": "八点出发，十二点吃饭。\n六点回家。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "八点出发，十二点吃饭。",
+              "六点回家。"
+            ]
+          },
+          {
+            "id": "stage-4",
+            "startMs": 2120,
+            "endMs": 4320,
+            "text": "八点出发，十二点吃饭。\n六点回家。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "八点出发，十二点吃饭。",
+              "六点回家。"
+            ]
+          },
+          {
+            "id": "stage-5",
+            "startMs": 4320,
+            "endMs": 6600,
+            "text": "八点出发，十二点吃饭。\n六点回家。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "八点出发，十二点吃饭。",
+              "六点回家。"
+            ]
+          },
+          {
+            "id": "stage-6",
+            "startMs": 6600,
+            "endMs": 8320,
+            "text": "八点出发，十二点吃饭。\n六点回家。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "八点出发，十二点吃饭。",
+              "六点回家。"
+            ]
+          },
+          {
+            "id": "stage-7",
+            "startMs": 8320,
+            "endMs": 10600,
+            "text": "八点出发，十二点吃饭。\n六点回家。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "八点出发，十二点吃饭。",
+              "六点回家。"
+            ]
+          },
+          {
+            "id": "stage-8",
+            "startMs": 10600,
+            "endMs": 11400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "八点出发，十二点吃饭。\n六点回家。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "八点出发，十二点吃饭。",
+            "六点回家。"
+          ]
+        },
+        "alt": "朋友期待听一段精彩的旅行故事，男孩却只平平地列出几点出发、几点吃饭、几点回家。这样的叙述缺少生动细节，显得 prosaic。"
+      }
+    },
+    {
+      "number": 1669,
+      "word": "paltry",
+      "coreMeaningZh": "少得可怜的；微不足道、没什么价值的",
+      "unit": 29,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 107,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Exact root-reviewed fully illustrated restart"
+        },
+        "video": {
+          "url": "story-media/1669-f1002c93f81fd5f2dde1ddd4167b40417c089a6d9fa1f46ec3e7a61d6eae18b1.mp4",
+          "sha256": "f1002c93f81fd5f2dde1ddd4167b40417c089a6d9fa1f46ec3e7a61d6eae18b1",
+          "bytes": 1022727
+        },
+        "poster": {
+          "url": "story-media/1669-7da9cf8af870f82eb393cac056bcdc7e07491f1e235652ea89733fe120bc02b3.png",
+          "sha256": "7da9cf8af870f82eb393cac056bcdc7e07491f1e235652ea89733fe120bc02b3",
+          "bytes": 1143225
+        },
+        "staticPoster": {
+          "url": "story-media/1669-1fc0f7471afaf06c379f2b4795a6d7991d2e3af50b6dff777465281843a78795.png",
+          "sha256": "1fc0f7471afaf06c379f2b4795a6d7991d2e3af50b6dff777465281843a78795",
+          "bytes": 1150173
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1600,
+            "endMs": 2600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 2600,
+            "endMs": 3400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 3400,
+            "endMs": 4300,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 4300,
+            "endMs": 4320,
+            "text": "忙了一下午，\n就这一枚？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "忙了一下午，",
+              "就这一枚？"
+            ]
+          },
+          {
+            "id": "stage-5",
+            "startMs": 4320,
+            "endMs": 5600,
+            "text": "忙了一下午，\n就这一枚？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "忙了一下午，",
+              "就这一枚？"
+            ]
+          },
+          {
+            "id": "stage-6",
+            "startMs": 5600,
+            "endMs": 8000,
+            "text": "忙了一下午，\n就这一枚？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "忙了一下午，",
+              "就这一枚？"
+            ]
+          }
+        ],
+        "posterDialogue": {
+          "text": "忙了一下午，\n就这一枚？",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "忙了一下午，",
+            "就这一枚？"
+          ]
+        },
+        "alt": "男孩帮忙搬了一下午的箱子，最后收到的报酬却只有一枚小硬币。他看着硬币，再看看身后的大堆箱子：这点报酬实在少得可怜。"
+      }
+    },
+    {
+      "number": 981,
+      "word": "fraudulent",
+      "coreMeaningZh": "欺诈的，故意骗人的；以欺骗手段获得的",
+      "unit": 29,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 108,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 11200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Exact root-reviewed fully illustrated restart"
+        },
+        "video": {
+          "url": "story-media/981-707a0cfe971e5ec010e5d313e2a81a6bb8a2e37b7e5e5605ba9a1ef38b4a4778.mp4",
+          "sha256": "707a0cfe971e5ec010e5d313e2a81a6bb8a2e37b7e5e5605ba9a1ef38b4a4778",
+          "bytes": 2058591
+        },
+        "poster": {
+          "url": "story-media/981-e2877a37dba058b8137875889f28b8172d6b4dae2dc47d88e1d33bfd3f839145.png",
+          "sha256": "e2877a37dba058b8137875889f28b8172d6b4dae2dc47d88e1d33bfd3f839145",
+          "bytes": 1154565
+        },
+        "staticPoster": {
+          "url": "story-media/981-2e80ec2b5f6c3ae898015199cfb2ce0505d0df4ac69d3d159ba1ff5f302f7ff0.png",
+          "sha256": "2e80ec2b5f6c3ae898015199cfb2ce0505d0df4ac69d3d159ba1ff5f302f7ff0",
+          "bytes": 1247368
+        },
+        "stages": [
+          {
+            "id": "seller-thought-print-fake",
+            "startMs": 0,
+            "endMs": 3000,
+            "speaker": "right",
+            "text": "卖家心想：拿自己印的假票骗钱。",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "displayLines": [
+              "卖家心想：",
+              "拿自己印的假票骗钱。"
+            ]
+          },
+          {
+            "id": "silent-payment-and-check",
+            "startMs": 3000,
+            "endMs": 8600,
+            "speaker": "left",
+            "text": "",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.24
+            }
+          },
+          {
+            "id": "verification-invalid-number",
+            "startMs": 8600,
+            "endMs": 11200,
+            "speaker": "left",
+            "text": "核验结果：票号不存在。",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.24
+            },
+            "displayLines": [
+              "核验结果：",
+              "票号不存在。"
+            ]
+          }
+        ],
+        "posterDialogue": {
+          "text": "卖家故意出售自印假票；核验发现票号不存在。",
+          "speaker": "left",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.24
+          },
+          "displayLines": [
+            "卖家故意出售自印假票；",
+            "核验发现票号不存在。"
+          ]
+        },
+        "alt": "男孩想买一张演出票，卖家故意拿出自己印的假票收钱；核验时，票号根本不存在。这笔交易就是 fraudulent：利用假信息骗人。"
+      }
+    },
+    {
+      "number": 2658,
+      "word": "wane",
+      "coreMeaningZh": "逐渐减弱、衰退；（月亮）渐亏",
+      "unit": 29,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 109,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 12200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Exact root-reviewed fully illustrated restart"
+        },
+        "video": {
+          "url": "story-media/2658-f793dc5d8d01951b48975fe81f956ebcc278100c51ace975e392ab186234486a.mp4",
+          "sha256": "f793dc5d8d01951b48975fe81f956ebcc278100c51ace975e392ab186234486a",
+          "bytes": 1175781
+        },
+        "poster": {
+          "url": "story-media/2658-6237dda2dc1a3857d4766c6af9545155ee260af128a313fd4d9c78baa12f36b9.png",
+          "sha256": "6237dda2dc1a3857d4766c6af9545155ee260af128a313fd4d9c78baa12f36b9",
+          "bytes": 1119695
+        },
+        "staticPoster": {
+          "url": "story-media/2658-17aa2851fe483f77a4c51bc6a52bbbd4628ccdf44d455a74a6ce87269d766a40.png",
+          "sha256": "17aa2851fe483f77a4c51bc6a52bbbd4628ccdf44d455a74a6ce87269d766a40",
+          "bytes": 1131429
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 150,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 150,
+            "endMs": 1900,
+            "text": "开始玩吧！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "开始玩吧！"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 1900,
+            "endMs": 2200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 2200,
+            "endMs": 4400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 4400,
+            "endMs": 4600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 4600,
+            "endMs": 6700,
+            "text": "再来一局？",
+            "speaker": "friend",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "再来一局？"
+            ]
+          },
+          {
+            "id": "stage-6",
+            "startMs": 6700,
+            "endMs": 6800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 6800,
+            "endMs": 9600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-8",
+            "startMs": 9600,
+            "endMs": 9700,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-9",
+            "startMs": 9700,
+            "endMs": 11900,
+            "text": "好吧……再玩一局。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "好吧……再玩一局。"
+            ]
+          },
+          {
+            "id": "stage-10",
+            "startMs": 11900,
+            "endMs": 12200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "玩了很久，兴致渐渐淡了，但他们还在继续。",
+          "speaker": "narrator",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "玩了很久，兴致渐渐淡了，",
+            "但他们还在继续。"
+          ]
+        },
+        "alt": "原本兴奋地围着桌游的孩子，玩了很久后开始打哈欠，举起的手也慢慢放下。他们的热情正在减退，还没有一下子完全消失。"
+      }
+    },
+    {
+      "number": 384,
+      "word": "comity",
+      "coreMeaningZh": "相互礼让、尊重；友善和睦的相处气氛",
+      "unit": 29,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 110,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8320,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Exact root-reviewed fully illustrated restart"
+        },
+        "video": {
+          "url": "story-media/384-14145633db7017a9163cb28f1d28eb0a1a2066958443a558198964257c666bdd.mp4",
+          "sha256": "14145633db7017a9163cb28f1d28eb0a1a2066958443a558198964257c666bdd",
+          "bytes": 1017151
+        },
+        "poster": {
+          "url": "story-media/384-81349e451b85600f96aa6b5c72ee01bf09b7ae1b34a241e911f6253e55b5ee21.png",
+          "sha256": "81349e451b85600f96aa6b5c72ee01bf09b7ae1b34a241e911f6253e55b5ee21",
+          "bytes": 1320945
+        },
+        "staticPoster": {
+          "url": "story-media/384-cadc8e77dfb65124b40f86ea007122bdb681b27bfb25d29d7db1fd4f66ac1f45.png",
+          "sha256": "cadc8e77dfb65124b40f86ea007122bdb681b27bfb25d29d7db1fd4f66ac1f45",
+          "bytes": 1307124
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 80,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 80,
+            "endMs": 1720,
+            "text": "我想种花。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我想种花。"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 1720,
+            "endMs": 1800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 1800,
+            "endMs": 1840,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 1840,
+            "endMs": 3920,
+            "text": "谢谢你的建议，我更想种菜。",
+            "speaker": "girl",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "谢谢你的建议，",
+              "我更想种菜。"
+            ]
+          },
+          {
+            "id": "stage-5",
+            "startMs": 3920,
+            "endMs": 4000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 4000,
+            "endMs": 4040,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 4040,
+            "endMs": 5920,
+            "text": "好呀，你先说说理由。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "好呀，你先说说理由。"
+            ]
+          },
+          {
+            "id": "stage-8",
+            "startMs": 5920,
+            "endMs": 6000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-9",
+            "startMs": 6000,
+            "endMs": 6040,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-10",
+            "startMs": 6040,
+            "endMs": 7440,
+            "text": "说完也听听你的想法。",
+            "speaker": "girl",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "说完也听听你的想法。"
+            ]
+          },
+          {
+            "id": "stage-11",
+            "startMs": 7440,
+            "endMs": 7520,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-12",
+            "startMs": 7520,
+            "endMs": 8320,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "意见不同，也认真听完对方的话。",
+          "speaker": "narrator",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "意见不同，",
+            "也认真听完对方的话。"
+          ]
+        },
+        "alt": "社区讨论会上，两位邻居对方案意见相反。一个说完，另一个先道谢，再平静地说明不同看法；两人都给对方发言的机会。这种有分歧仍相互尊重的气氛，就是 comity。"
       }
     }
   ],
