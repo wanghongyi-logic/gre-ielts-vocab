@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "161",
-  "authoredCount": 160,
-  "publishedCount": 160,
+  "release": "162",
+  "authoredCount": 170,
+  "publishedCount": 170,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -167,7 +167,17 @@
       521,
       744,
       660,
-      1849
+      1849,
+      862,
+      1810,
+      2751,
+      1568,
+      556,
+      919,
+      2443,
+      2623,
+      806,
+      1279
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -377,6 +387,16 @@
       "url": "units/core029-text-candidate-56e10619879cf65742347e4d606fcc8dbf71ee615354a71f0c72ff8607b36fdc.json",
       "sha256": "56e10619879cf65742347e4d606fcc8dbf71ee615354a71f0c72ff8607b36fdc",
       "bytes": 17803
+    },
+    {
+      "url": "units/core030-text-candidate-e95285ae037ebaa99d9d91bede12a4a7f4581c83d9fe111fdce0b3dffed8d2b8.json",
+      "sha256": "e95285ae037ebaa99d9d91bede12a4a7f4581c83d9fe111fdce0b3dffed8d2b8",
+      "bytes": 17773
+    },
+    {
+      "url": "units/core031-text-candidate-7196e4a8d7105c79c87bf69bded9cccfba7ac3f131a99fadc1994369dfb52d98.json",
+      "sha256": "7196e4a8d7105c79c87bf69bded9cccfba7ac3f131a99fadc1994369dfb52d98",
+      "bytes": 16710
     }
   ],
   "entries": [
@@ -13153,14 +13173,14 @@
         "posterDialogue": {
           "startMs": 0,
           "endMs": 7000,
-          "text": "We’ll form our own group.",
+          "text": "我们另组一队。",
           "speaker": "blue-boy",
           "anchor": {
             "x": 0.5,
             "y": 0.12
           },
           "displayLines": [
-            "We’ll form our own group."
+            "我们另组一队。"
           ]
         },
         "alt": "同一社团的四名成员因屋顶方案不合，两名带头者各自拿起尖顶与圆顶模型，转向各自的支持者，形成互不交流的两派。",
@@ -13194,14 +13214,14 @@
           {
             "startMs": 1320,
             "endMs": 2920,
-            "text": "A pointed roof.",
+            "text": "要尖顶的。",
             "speaker": "olive-boy",
             "anchor": {
               "x": 0.5,
               "y": 0.12
             },
             "displayLines": [
-              "A pointed roof."
+              "要尖顶的。"
             ],
             "id": "stage-1"
           },
@@ -13219,14 +13239,14 @@
           {
             "startMs": 3000,
             "endMs": 6600,
-            "text": "We’ll form our own group.",
+            "text": "我们另组一队。",
             "speaker": "blue-boy",
             "anchor": {
               "x": 0.5,
               "y": 0.12
             },
             "displayLines": [
-              "We’ll form our own group."
+              "我们另组一队。"
             ],
             "id": "stage-3"
           },
@@ -13449,14 +13469,14 @@
         "posterDialogue": {
           "startMs": 0,
           "endMs": 6520,
-          "text": "Is that all I get?",
+          "text": "就给我这么点？",
           "speaker": "boy",
           "anchor": {
             "x": 0.5,
             "y": 0.12
           },
           "displayLines": [
-            "Is that all I get?"
+            "就给我这么点？"
           ]
         },
         "alt": "An inadequate serving changes the hopeful boy to dissatisfied; the server releases his nearly empty bowl beside a peer’s full bowl.",
@@ -13490,14 +13510,14 @@
           {
             "startMs": 3480,
             "endMs": 6120,
-            "text": "Is that all I get?",
+            "text": "就给我这么点？",
             "speaker": "boy",
             "anchor": {
               "x": 0.5,
               "y": 0.12
             },
             "displayLines": [
-              "Is that all I get?"
+              "就给我这么点？"
             ],
             "id": "stage-1"
           },
@@ -13536,14 +13556,14 @@
         "posterDialogue": {
           "startMs": 0,
           "endMs": 10000,
-          "text": "Well… this table is rather wobbly…",
+          "text": "呃……这桌子有点晃……",
           "speaker": "boy",
           "anchor": {
             "x": 0.5,
             "y": 0.12
           },
           "displayLines": [
-            "Well… this table is rather wobbly…"
+            "呃……这桌子有点晃……"
           ]
         },
         "alt": "The boy spills his own juice. Asked directly whether he spilled it, he dodges by saying the table is wobbly; the spill remains visible.",
@@ -13577,14 +13597,14 @@
           {
             "startMs": 2440,
             "endMs": 4960,
-            "text": "Did you spill the juice?",
+            "text": "果汁是你洒的吗？",
             "speaker": "adult",
             "anchor": {
               "x": 0.5,
               "y": 0.12
             },
             "displayLines": [
-              "Did you spill the juice?"
+              "果汁是你洒的吗？"
             ],
             "id": "stage-1"
           },
@@ -13602,14 +13622,14 @@
           {
             "startMs": 5720,
             "endMs": 8720,
-            "text": "Well… this table is rather wobbly…",
+            "text": "呃……这桌子有点晃……",
             "speaker": "boy",
             "anchor": {
               "x": 0.5,
               "y": 0.12
             },
             "displayLines": [
-              "Well… this table is rather wobbly…"
+              "呃……这桌子有点晃……"
             ],
             "id": "stage-3"
           },
@@ -13625,6 +13645,633 @@
             "id": "stage-4"
           }
         ]
+      }
+    },
+    {
+      "number": 862,
+      "word": "exigent",
+      "coreMeaningZh": "急迫的；要求很高的",
+      "unit": 40,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 161,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 5400.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 5400,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "鱼缸漏水，男孩立即抓起布，双手紧压漏口，水流停下，鱼仍安全地游在缸里。",
+        "video": {
+          "url": "story-media/862-video-f79bf89db94d279cd572e6c91fafdfab17d9f0925fe7037aef15cd101badb7a7.mp4",
+          "sha256": "f79bf89db94d279cd572e6c91fafdfab17d9f0925fe7037aef15cd101badb7a7",
+          "bytes": 714833
+        },
+        "poster": {
+          "url": "story-media/862-poster-8cd5df261198efcab864ffff038b574434a432136a4876b7bcbff174c551f869.png",
+          "sha256": "8cd5df261198efcab864ffff038b574434a432136a4876b7bcbff174c551f869",
+          "bytes": 1220978
+        },
+        "staticPoster": {
+          "url": "story-media/862-staticPoster-c686ee0a0ae29b883e3f7f8d19eb29bd1ea00ee7141863c6dcedc2adcc70bd48.png",
+          "sha256": "c686ee0a0ae29b883e3f7f8d19eb29bd1ea00ee7141863c6dcedc2adcc70bd48",
+          "bytes": 1228353
+        }
+      }
+    },
+    {
+      "number": 1810,
+      "word": "posture",
+      "coreMeaningZh": "故作姿态，装腔作势；姿势，立场",
+      "unit": 40,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 162,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 7200,
+          "text": "开拍了？看我画！",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "开拍了？看我画！"
+          ]
+        },
+        "alt": "镜头转向男孩，他立刻摆出画家架势；镜头转开，他又放下画笔，画布始终几乎空白。",
+        "video": {
+          "url": "story-media/1810-video-659395cee7f0c2107454d6fb3127f2203c5b1ac2741ea8e3233a769c7c4ffa00.mp4",
+          "sha256": "659395cee7f0c2107454d6fb3127f2203c5b1ac2741ea8e3233a769c7c4ffa00",
+          "bytes": 810746
+        },
+        "poster": {
+          "url": "story-media/1810-poster-b7e0bffa322f09bef2c279cb2f2e1302031c1c4d7078ff7d93b2b0b4a57e4e48.png",
+          "sha256": "b7e0bffa322f09bef2c279cb2f2e1302031c1c4d7078ff7d93b2b0b4a57e4e48",
+          "bytes": 1120503
+        },
+        "staticPoster": {
+          "url": "story-media/1810-staticPoster-9e48afa29f9319e7d0f121e50fb13e539c4e09dddd2edc19b51fb5c0124ba525.png",
+          "sha256": "9e48afa29f9319e7d0f121e50fb13e539c4e09dddd2edc19b51fb5c0124ba525",
+          "bytes": 1156699
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1400,
+            "endMs": 4600,
+            "text": "开拍了？看我画！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "开拍了？看我画！"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 4600,
+            "endMs": 5000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          },
+          {
+            "startMs": 5000,
+            "endMs": 7200,
+            "text": "不拍了？那我歇了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "不拍了？那我歇了。"
+            ],
+            "id": "stage-3"
+          }
+        ]
+      }
+    },
+    {
+      "number": 2751,
+      "word": "beholden",
+      "coreMeaningZh": "欠人情的；因受惠而负有义务的",
+      "unit": 40,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 163,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6000,
+          "text": "欠你一个人情。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "欠你一个人情。"
+          ]
+        },
+        "alt": "朋友在雨中把伞借给男孩；男孩接过伞，手按胸口承认自己欠她一个人情。",
+        "video": {
+          "url": "story-media/2751-video-6d1b99e4476beb941ff601454fe5a34479bd377b7b76a20cac96bac39aae5311.mp4",
+          "sha256": "6d1b99e4476beb941ff601454fe5a34479bd377b7b76a20cac96bac39aae5311",
+          "bytes": 691763
+        },
+        "poster": {
+          "url": "story-media/2751-poster-72b45254e82561856b3b5961497ba9b403aef32b8dd876d4565a69effc9361a4.png",
+          "sha256": "72b45254e82561856b3b5961497ba9b403aef32b8dd876d4565a69effc9361a4",
+          "bytes": 1285699
+        },
+        "staticPoster": {
+          "url": "story-media/2751-staticPoster-0be73910793083dfd7ea01fcad325d7bf1048b1ce758379ec4cf3ad494a8d9c8.png",
+          "sha256": "0be73910793083dfd7ea01fcad325d7bf1048b1ce758379ec4cf3ad494a8d9c8",
+          "bytes": 1302460
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2600,
+            "endMs": 6000,
+            "text": "欠你一个人情。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "欠你一个人情。"
+            ],
+            "id": "stage-1"
+          }
+        ]
+      }
+    },
+    {
+      "number": 1568,
+      "word": "nascent",
+      "coreMeaningZh": "初生的；刚开始形成或发展的",
+      "unit": 40,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 164,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6000,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩静静看着刚破土的小芽伸直，两片嫩叶初初展开，仍处于刚开始生长的阶段。",
+        "video": {
+          "url": "story-media/1568-video-4e7c44884c8b60eb75f46a96ebef3ee9388dcdc9f5815a73450f50023ad63ffd.mp4",
+          "sha256": "4e7c44884c8b60eb75f46a96ebef3ee9388dcdc9f5815a73450f50023ad63ffd",
+          "bytes": 647118
+        },
+        "poster": {
+          "url": "story-media/1568-poster-a868dbbcaf81d73cca302372a9feea420ccac6a21f04cfae622941780453cc92.png",
+          "sha256": "a868dbbcaf81d73cca302372a9feea420ccac6a21f04cfae622941780453cc92",
+          "bytes": 1268470
+        },
+        "staticPoster": {
+          "url": "story-media/1568-staticPoster-8d9f15625363c11ec3998ef64d3a10e37a45ca8c624a125ae2de4da0c90f9cf4.png",
+          "sha256": "8d9f15625363c11ec3998ef64d3a10e37a45ca8c624a125ae2de4da0c90f9cf4",
+          "bytes": 1293733
+        }
+      }
+    },
+    {
+      "number": 556,
+      "word": "deft",
+      "coreMeaningZh": "灵巧熟练的；巧妙利落的",
+      "unit": 40,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 165,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 4760.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 4760,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩熟练地绕过丝带、拉紧两个环，迅速为小礼物打好整齐的蝴蝶结。",
+        "video": {
+          "url": "story-media/556-video-6b114060d282d8a940114f194ca50347350b667cb195574b7408975e71e355d7.mp4",
+          "sha256": "6b114060d282d8a940114f194ca50347350b667cb195574b7408975e71e355d7",
+          "bytes": 700354
+        },
+        "poster": {
+          "url": "story-media/556-poster-aa9813e06f5c8cf00f90878698fe88d3c7cc68a43ad672e2d113e437fb4c178d.png",
+          "sha256": "aa9813e06f5c8cf00f90878698fe88d3c7cc68a43ad672e2d113e437fb4c178d",
+          "bytes": 1189738
+        },
+        "staticPoster": {
+          "url": "story-media/556-staticPoster-d245f77b4e2b99ac642ab3c6ef0fdfadc9d0a6b3abdc434bfbb267057e2ba41b.png",
+          "sha256": "d245f77b4e2b99ac642ab3c6ef0fdfadc9d0a6b3abdc434bfbb267057e2ba41b",
+          "bytes": 1265752
+        }
+      }
+    },
+    {
+      "number": 919,
+      "word": "feeble",
+      "coreMeaningZh": "虚弱无力的；薄弱、无说服力的",
+      "unit": 41,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 166,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 5600.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 5600,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "疲倦的男孩双手勉强把小洒水壶提起一点，随即无力地放回长椅，垂着肩膀休息。",
+        "video": {
+          "url": "story-media/919-video-ab8c372915789a4d73d05315ae62d29e5aac0f782746a5d8636d4f0467bfe7cf.mp4",
+          "sha256": "ab8c372915789a4d73d05315ae62d29e5aac0f782746a5d8636d4f0467bfe7cf",
+          "bytes": 857728
+        },
+        "poster": {
+          "url": "story-media/919-poster-3cd2e7db118187c1ed4fed83a586d6c4ca767322c6e69450fee3046f096bdcae.png",
+          "sha256": "3cd2e7db118187c1ed4fed83a586d6c4ca767322c6e69450fee3046f096bdcae",
+          "bytes": 1273956
+        },
+        "staticPoster": {
+          "url": "story-media/919-staticPoster-fc95c9e0ebab100db8e61fbbe758a3d24e9f5d585148103704d2f6656046cdf8.png",
+          "sha256": "fc95c9e0ebab100db8e61fbbe758a3d24e9f5d585148103704d2f6656046cdf8",
+          "bytes": 1318461
+        }
+      }
+    },
+    {
+      "number": 2443,
+      "word": "tactless",
+      "coreMeaningZh": "言行不得体的；不顾他人感受的",
+      "unit": 41,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 167,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "真难看。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "真难看。"
+          ]
+        },
+        "alt": "女孩自豪地展示手工卡片，男孩直言难看；她失落地垂下卡片，他才意识到伤了她的心。",
+        "video": {
+          "url": "story-media/2443-video-6fb7c31b2d479e1339724f16e96f7c842ed79952fa9f2d6608cb923b49cec541.mp4",
+          "sha256": "6fb7c31b2d479e1339724f16e96f7c842ed79952fa9f2d6608cb923b49cec541",
+          "bytes": 618650
+        },
+        "poster": {
+          "url": "story-media/2443-poster-f4f3d32c462247a7cbb6b69c7ae9fecd2c3dd43d615e2377da1a557a49dbfb4a.png",
+          "sha256": "f4f3d32c462247a7cbb6b69c7ae9fecd2c3dd43d615e2377da1a557a49dbfb4a",
+          "bytes": 1161551
+        },
+        "staticPoster": {
+          "url": "story-media/2443-staticPoster-bb7e2dc9b0928fdd8a231fee63aeccfbe43da22944f6f04102261103a39c6cad.png",
+          "sha256": "bb7e2dc9b0928fdd8a231fee63aeccfbe43da22944f6f04102261103a39c6cad",
+          "bytes": 1174554
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1400,
+            "endMs": 3000,
+            "text": "真难看。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "真难看。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 3000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ]
+      }
+    },
+    {
+      "number": 2623,
+      "word": "vigilant",
+      "coreMeaningZh": "警觉的；留心防范的",
+      "unit": 41,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 168,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩留心幼苗，发现蜗牛靠近便伸出叶片引导，蜗牛转向离开。",
+        "video": {
+          "url": "story-media/2623-video-d51ab6d6210197c8bd36e402872084533dfe37ef9c15b84894329b6fe4fe6b72.mp4",
+          "sha256": "d51ab6d6210197c8bd36e402872084533dfe37ef9c15b84894329b6fe4fe6b72",
+          "bytes": 847738
+        },
+        "poster": {
+          "url": "story-media/2623-poster-4395d1dc8bb7d4f6f6fc3fa456b2291e18cfa50231781ec90f75e3e3b7196321.png",
+          "sha256": "4395d1dc8bb7d4f6f6fc3fa456b2291e18cfa50231781ec90f75e3e3b7196321",
+          "bytes": 1294616
+        },
+        "staticPoster": {
+          "url": "story-media/2623-staticPoster-f329c46897100769eb32f74e1dac9fce0d35c3332ebbea3b8775ce50dd98049e.png",
+          "sha256": "f329c46897100769eb32f74e1dac9fce0d35c3332ebbea3b8775ce50dd98049e",
+          "bytes": 1314494
+        }
+      }
+    },
+    {
+      "number": 806,
+      "word": "entreat",
+      "coreMeaningZh": "恳求；郑重请求",
+      "unit": 41,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 169,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8280.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 8280,
+          "text": "求你给它一点吃的吧。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "求你给它一点吃的吧。"
+          ]
+        },
+        "alt": "The boy earnestly pleads with an adult to share food with a hungry dog. She considers; the basket remains closed.",
+        "video": {
+          "url": "story-media/806-video-d62e3aa0df1c85cf8e9bbf6ea947d383b557a2d4898ffa2523b4c1fa98cd8c04.mp4",
+          "sha256": "d62e3aa0df1c85cf8e9bbf6ea947d383b557a2d4898ffa2523b4c1fa98cd8c04",
+          "bytes": 716223
+        },
+        "poster": {
+          "url": "story-media/806-poster-fd9a8ad24624a37f3d4d5fd24cd71d5397766b408260e703007209954c7d07e5.png",
+          "sha256": "fd9a8ad24624a37f3d4d5fd24cd71d5397766b408260e703007209954c7d07e5",
+          "bytes": 1305611
+        },
+        "staticPoster": {
+          "url": "story-media/806-staticPoster-fdf6df318630a468f61e32e94fe908582a1d42aa6ecb48238f7ffeed77fccd50.png",
+          "sha256": "fdf6df318630a468f61e32e94fe908582a1d42aa6ecb48238f7ffeed77fccd50",
+          "bytes": 1320868
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1280,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1280,
+            "endMs": 6520,
+            "text": "求你给它一点吃的吧。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "求你给它一点吃的吧。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6520,
+            "endMs": 8280,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ]
+      }
+    },
+    {
+      "number": 1279,
+      "word": "insipid",
+      "coreMeaningZh": "平淡乏味的；寡淡无味的",
+      "unit": 41,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 170,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 9200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 9200,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "A dull repetitive puppet performance loses the boy’s interest; he rests his cheek in his palm while the monotonous story continues.",
+        "video": {
+          "url": "story-media/1279-video-332ee3ba165934309e0c99d23a35bc9da8695e6abbbfb45153bc27186778ff01.mp4",
+          "sha256": "332ee3ba165934309e0c99d23a35bc9da8695e6abbbfb45153bc27186778ff01",
+          "bytes": 877303
+        },
+        "poster": {
+          "url": "story-media/1279-poster-224c0ff126a0268e15b5ce37004dc3e1724846c1557001faac9c73f9d8458880.png",
+          "sha256": "224c0ff126a0268e15b5ce37004dc3e1724846c1557001faac9c73f9d8458880",
+          "bytes": 1119583
+        },
+        "staticPoster": {
+          "url": "story-media/1279-staticPoster-c6e884cc8b02bffd49bb28105a2323b09c6b71762cf56e22e3ab2849ad42410a.png",
+          "sha256": "c6e884cc8b02bffd49bb28105a2323b09c6b71762cf56e22e3ab2849ad42410a",
+          "bytes": 1135761
+        }
       }
     }
   ],
