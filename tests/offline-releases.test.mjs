@@ -79,7 +79,7 @@ test('download rows expose only ordinary trusted ZIP links and never invoke impo
  const {host,manual,anchor}=fixture();let imports=0;const requests=[];
  const ui=mountReleaseDownloads({host,catalog:{entries:[]},onImport:()=>{imports++;},fetcher:async(endpoint)=>{requests.push(endpoint);return Response.json([{assets:[raw,{...raw,id:2,size:128*1024*1024}]}]);}});
  await ui.load();const section=anchor.afterNode,list=section.querySelector('[data-release-list]');
- assert.match(section.html,/下载资源包/);assert.doesNotMatch(section.html,/从 Release 导入|直接导入|CORS/);
+ assert.match(section.html,/下载 ZIP 备份/);assert.doesNotMatch(section.html,/从 Release 导入|直接导入|CORS/);
  assert.equal(host.querySelector('input'),manual);assert.equal(list.children.length,2);
  for(const row of list.children){const actions=row.children[2];assert.equal(actions.children.length,1);const link=actions.children[0];assert.equal(link.tag,'a');assert.equal(link.href,url);assert.equal(link.target,'_blank');assert.equal(link.rel,'noopener noreferrer');assert.equal(link.onclick,undefined);assert.equal(link.textContent,'下载 ZIP ↗');}
  assert.equal(imports,0);assert.equal(requests.length,1);assert.ok(requests.every(endpoint=>endpoint.startsWith('https://api.github.com/repos/')));

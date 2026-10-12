@@ -5,7 +5,7 @@ import {escapeLearningText as escape} from './render.js';
 
 // The contents is another leaf of the book. Keep the reading DOM in place so
 // returning to it preserves the same word, media controller and reading spot.
-export function installContents({main,picker,search,entries,getSelected,navigate,onOpen=()=>{},onClose=()=>{},onTransition=()=>{}}) {
+export function installContents({main,picker,search,entries,getSelected,navigate,onOpen=()=>{},onClose=()=>{},onTransition=()=>{},prepareReading=()=>{}}) {
  const doc=main.ownerDocument,win=doc.defaultView;
  const opener=doc.getElementById('open-search');
  const title=doc.getElementById('picker-title'),results=doc.getElementById('word-results');
@@ -14,7 +14,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
  const turns=installFrontmatterTurn({main,onActivity:onTransition,window:win,document:doc});
  function preparationFailed(){win.history.replaceState(null,'',leaf==='settings'?'#/settings':'#/contents');count.textContent='这一页暂时无法打开，请再点一次重试';picker.removeAttribute('aria-busy');}
  function reveal(change){
-  turns.begin({source:picker,direction:'next',flutter:true,prepare:()=>{change();hide({restore:false,animate:false});win.scrollTo({top:0,left:0,behavior:'instant'});},commit:()=>{main.focus({preventScroll:true});onClose({restored:false});}});
+  turns.begin({source:picker,direction:'next',prepare:()=>{change();const ready=previewReading(saved,false);win.scrollTo({top:0,left:0,behavior:'instant'});return ready;},commit:()=>{main.focus({preventScroll:true});onClose({restored:false});}});
  }
 
  const readingPositions=new Map();
@@ -81,6 +81,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   if(restore&&snapshot?.title)doc.title=snapshot.title;
   if(restore&&snapshot)win.scrollTo({left:snapshot.scrollX,top:snapshot.scrollY,behavior:'instant'});
   picker.removeAttribute('aria-busy');
+  return prepareReading();
  }
  function finishReading(snapshot,restore){
   if(restore&&snapshot){
@@ -125,7 +126,8 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   if(!button||!picker.contains(button))return;
   const number=Number(button.dataset.word);
   if(number===currentEntry()?.number){close();return;}
-  navigate(number);
+  if(picker.hasAttribute('aria-busy')&&win.location.hash===readingHash(number))return;
+  picker.setAttribute('aria-busy','true');navigate(number);
  });
  // Frontmatter uses the same distance/axis arbitration as word pages. Nothing
  // is routed until release; a short drag restores both leaf and scroll position.

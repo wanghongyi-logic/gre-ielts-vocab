@@ -60,5 +60,5 @@ export function installPreparedPages({loader,entries,picker,window:win=window,do
  function adjacent(number){keep(number);const position=neighboringNumbers(entries,number);for(const id of [position.next,position.previous].filter(Boolean))prepare(id,'low').catch(()=>{});}
  function get(number){const page=pages.get(number);return page?.ready?page:null;}
  function take(number){const page=get(number);if(page)pages.delete(number);return page;}
- return {prepare,get,take,adjacent,keep,destroy(){const retiring=[...pages.values()];for(const page of retiring)dispose(page);return Promise.allSettled(retiring.map(page=>page.promise));}};
+ return {prepare,get,take,adjacent,keep,discard(number){const page=pages.get(number);if(page)dispose(page);},destroy(){const retiring=[...pages.values()];for(const page of retiring)dispose(page);return Promise.allSettled(retiring.map(page=>page.promise));}};
 }

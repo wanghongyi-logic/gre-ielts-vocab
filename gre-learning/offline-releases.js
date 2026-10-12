@@ -92,10 +92,11 @@ export function mountReleaseDownloads({host, catalog, getReadyIds = () => null, 
   const section = doc.createElement('section');
   section.className = 'library-quiet-section release-downloads';
   section.dataset.releaseDownloads = '';
-  section.innerHTML = '<details class="release-browser" data-release-browser><summary><span>下载资源包</span><span class="library-disclosure-tail"><span>查看书包</span><span class="library-disclosure-mark" aria-hidden="true">+</span></span></summary><div class="release-browser-body"><div class="release-heading"><span>可下载书包</span><button type="button" class="library-text-action" data-release-refresh>刷新列表</button></div><p data-release-status role="status" aria-live="polite"></p><ul data-release-list></ul><a data-release-page target="_blank" rel="noopener noreferrer">打开书包下载页 ↗</a></div></details>';
+  section.innerHTML = '<details class="release-browser" data-release-browser><summary><span>下载 ZIP 备份</span><span class="library-disclosure-tail"><span class="library-disclosure-mark" aria-hidden="true">+</span></span></summary><div class="release-browser-body"><div class="release-heading"><span>可下载书包</span><button type="button" class="library-text-action" data-release-refresh>刷新列表</button></div><p data-release-status role="status" aria-live="polite"></p><ul data-release-list></ul><a data-release-page target="_blank" rel="noopener noreferrer">打开书包下载页 ↗</a></div></details>';
   section.querySelector('[data-release-page]').href = RELEASES_URL;
+  const backupHost = host.querySelector('[data-backup-downloads]');
   const anchor = host.querySelector('.library-import-feedback');
-  if (anchor) anchor.after(section); else host.append(section);
+  if (backupHost) backupHost.append(section); else if (anchor) anchor.after(section); else host.append(section);
   const status = section.querySelector('[data-release-status]'), list = section.querySelector('[data-release-list]'), refresh = section.querySelector('[data-release-refresh]');
   let assets = [], busy = false, destroyed = false, loaded = false, controller;
   function render() {

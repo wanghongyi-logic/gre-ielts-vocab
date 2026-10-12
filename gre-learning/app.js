@@ -20,7 +20,7 @@ const pages=installPreparedPages({loader,entries,picker});
 const swipe=installWordSwipe({surface:main,hintHost:main.parentNode,picker,getNeighbor:direction=>neighboringNumbers(entries,selectedNumber)[direction],getPrepared:direction=>pages.get(neighboringNumbers(entries,selectedNumber)[direction]),prepareNeighbor:direction=>pages.prepare(neighboringNumbers(entries,selectedNumber)[direction]),onNavigate:navigate,onTurnActivity:active=>motion.setTurning(active)});
 let selectedNumber,current,currentMedia,speech,renderGeneration=0,pendingSection=null;
 let libraryRevision=0,renderedLibraryRevision=0,libraryRefreshEpoch=0,libraryRefreshJob=null;
-const contents=installContents({main,picker,search,entries,getSelected:()=>selectedNumber,navigate,onOpen:()=>{swipe.cancel();if(current){renderGeneration++;main.removeAttribute('aria-busy');pages.adjacent(selectedNumber);}bookmarks.sync();motion.sync();window.speechSynthesis?.cancel();},onClose:()=>{bookmarks.sync();motion.sync();},onTransition:active=>motion.setTurning(active)});
+const contents=installContents({main,picker,search,entries,getSelected:()=>selectedNumber,navigate,prepareReading:()=>motion.prepareReveal(),onOpen:()=>{swipe.cancel();if(current){renderGeneration++;main.removeAttribute('aria-busy');pages.adjacent(selectedNumber);}bookmarks.sync();motion.sync();window.speechSynthesis?.cancel();},onClose:()=>{bookmarks.sync();motion.sync();},onTransition:active=>motion.setTurning(active)});
 function remember(){try{return sessionStorage.getItem('gre-learning-current-v1');}catch{return null;}}
 function navigate(number){if(entries.some(entry=>entry.number===number)&&number!==selectedNumber)location.hash=`/learn/${number}`;}
 function watchChapters(){bookmarks.refresh();}
@@ -29,6 +29,7 @@ async function render({preserveScroll=false}={}){
  const inContents=contents.isRoute(startingHash);
  const number=resolveWordNumber(inContents?'':startingHash,entries,remember());
  window.speechSynthesis?.cancel();
+ if(current&&selectedNumber===number&&currentMedia!==undefined&&renderedLibraryRevision===mediaRevision){main.removeAttribute('aria-busy');return;}
  const selected=entries.find(entry=>entry.number===number),position={...neighboringNumbers(entries,number),total:entries.length};
  if(!number){pages.destroy();loader.cancel();motion.cancel();bookmarks.suspend();current=null;selectedNumber=null;main.removeAttribute('aria-busy');main.innerHTML=renderNotReady();swipe.cancel();return;}
  // A failed destination leaves the existing page and its playback state usable.
@@ -46,6 +47,9 @@ async function render({preserveScroll=false}={}){
  }
  if(picker.open&&!inContents)await contents.whenSettled();
  if(generation!==renderGeneration||location.hash!==startingHash)return;
+ if(current&&selectedNumber===number&&JSON.stringify(current)===JSON.stringify(page.loaded.entry)&&JSON.stringify(currentMedia)===JSON.stringify(page.loaded.media)){
+  renderedLibraryRevision=mediaRevision;main.removeAttribute('aria-busy');swipe.cancel();pages.discard(number);pages.adjacent(number);return;
+ }
  page=pages.take(number);if(!page)return;
  const adopt=()=>{
  const scrollPosition=preserveScroll&&selectedNumber===number?window.scrollY:0;
@@ -96,7 +100,7 @@ function refreshLibrary(){
  return job.promise;
 }
 window.addEventListener('gre-library-updated',event=>{libraryRevision++;event.detail.waits.push(refreshLibrary());});
-window.addEventListener('gre-clear-library',event=>{const settled=(async()=>{libraryRefreshEpoch++;renderedLibraryRevision=libraryRevision;renderGeneration++;contents.cancel();swipe.cancel();loader.cancel();motion.destroy();window.speechSynthesis?.cancel();const pending=pages.destroy();main.querySelectorAll('video').forEach(video=>{video.pause();video.removeAttribute('src');video.load();});await pending;loader.destroy();})();event.detail.waits.push(settled);});
+window.addEventListener('gre-clear-library',event=>{const settled=(async()=>{libraryRefreshEpoch++;renderedLibraryRevision=libraryRevision;renderGeneration++;contents.cancel();swipe.cancel();loader.cancel();motion.destroy();currentMedia=undefined;window.speechSynthesis?.cancel();const pending=pages.destroy();main.querySelectorAll('video').forEach(video=>{video.pause();video.removeAttribute('src');video.load();});await pending;loader.destroy();})();event.detail.waits.push(settled);});
 window.addEventListener('gre-media-control-change',event=>{if(!event.detail.paused||event.detail.initial)return;const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-clear-library',{detail}));});
 window.addEventListener('hashchange',route);
 window.addEventListener('pagehide',event=>{libraryRefreshEpoch++;window.speechSynthesis?.cancel();loader.cancel();pages.destroy();if(event.persisted)motion.setTurning(true);else motion.cancel();bookmarks.suspend();renderGeneration++;});

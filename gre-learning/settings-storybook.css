@@ -128,7 +128,9 @@
 }
 #offline-settings button:disabled { opacity: .45; cursor: default; }
 #offline-settings .library-import-feedback { padding: 0; }
-#offline-settings [data-status]:not(:empty) {
+#offline-settings [data-status]:not(:empty),
+#offline-settings [data-import-status]:not(:empty),
+#offline-settings [data-download-status]:not(:empty) {
   padding: 13px 0 13px 13px;
   margin: 0 0 15px;
   border-left: 2px solid #8a9570;
@@ -460,3 +462,25 @@
   #open-settings .library-rail-track::after { display: none; }
   #open-settings .library-rail-label { color: ButtonText; }
 }
+
+/* Feedback belongs to the selected download group only. */
+.library-download-row{flex-wrap:wrap}
+.library-download-feedback{flex:0 0 100%;min-width:0}
+.library-download-feedback progress{width:100%}
+.library-download-feedback:has([data-download-status]:empty):has([data-download-progress][hidden]){display:none}
+
+/* Keep the first view to the saved total and everyday actions. */
+#offline-settings .library-overview{padding:12px 0 22px}
+#offline-settings .library-eyebrow{margin:0 0 5px;letter-spacing:0}
+#offline-settings .library-count{margin:0;gap:8px}
+#offline-settings .library-count strong{font-size:56px}
+#offline-settings .library-count>span{font-size:18px}
+#offline-settings .library-space{margin:8px 0 0}
+#offline-settings .library-action-row{min-height:64px;padding:10px 0}
+#offline-settings .library-disclosure>summary{min-height:64px;padding:10px 0}
+#offline-settings .import-row .offline-import{width:100%;text-align:left;border:0;padding:10px 0;background:transparent;color:var(--ink);font-size:16px}
+#offline-settings .import-row .offline-import span{float:right}
+#offline-settings .library-clear-row{border-top:1px solid var(--settings-rule);padding-top:12px}
+#offline-settings .library-clear-row .library-clear-action{margin:0}
+#offline-settings [data-backup-downloads] .release-downloads{margin:10px 0 18px}
+#offline-settings [data-backup-downloads] .release-browser>summary{min-height:44px;font-size:15px;padding:8px 0}

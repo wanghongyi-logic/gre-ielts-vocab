@@ -4,11 +4,12 @@ const displayText = stage => hasDisplayLines(stage)?stage.displayLines.join('\n'
 // A page is prepared paused, revealed with a decoded first frame, then activated.
 export function installStoryMedia(surface,{picker,window:win=window,document:doc=document}={}) {
  let video=null,figure=null,observer=null,media=null,frame=null,activationFrame=null,prepareCancel=null;
- let presented=false,presentationRequest=null,presentationTarget=null,presentationPaint=null;
- let generation=0,playAttempt=0,visible=true,turning=false,activated=false,ready=false,failed=false,blocked=false,firstPass=true,lastTime=0;
+ let presented=false,presentationRequest=null,presentationTarget=null,presentationPaint=null,revealing=false,revealFallback=false;
+ const revealWaiters=new Set();let presentationEpoch=0;
+ let generation=0,playAttempt=0,pendingPlay=null,visible=true,turning=false,activated=false,ready=false,failed=false,blocked=false,firstPass=true,lastTime=0;
  const preference=win.matchMedia('(prefers-reduced-motion: reduce)'),connection=win.navigator?.connection;
  const staticMode=()=>preference.matches||Boolean(connection?.saveData);
- const mayPlay=()=>Boolean(video&&ready&&activated&&!turning&&!failed&&!blocked&&visible&&!doc.hidden&&!picker?.open&&!staticMode());
+ const mayPlay=()=>Boolean(video&&ready&&activated&&(!turning||revealing)&&!failed&&!blocked&&visible&&!doc.hidden&&!picker?.open&&!staticMode());
  function stopFrame(){if(frame!==null)win.cancelAnimationFrame(frame);frame=null;}
  function dialogue(time,poster=false){
   const bubble=figure?.querySelector('[data-story-dialogue]');
@@ -29,22 +30,49 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
  }
  function waitForFrame(){return Boolean(media?.waitForPresentedFrame&&media?.resetTransition?.type==='none');}
  function cancelPresentation(){
+  presentationEpoch++;
   if(presentationRequest!==null)presentationTarget?.cancelVideoFrameCallback?.(presentationRequest);
   if(presentationPaint!==null)win.cancelAnimationFrame(presentationPaint);
   presentationRequest=null;presentationTarget=null;presentationPaint=null;
  }
  function requestPresentation(){
-  if(!waitForFrame()||presented||presentationRequest!==null||presentationPaint!==null||typeof video?.requestVideoFrameCallback!=='function')return;
-  const token=generation,target=video;presentationTarget=target;
+  if(presented||presentationRequest!==null||presentationPaint!==null||typeof video?.requestVideoFrameCallback!=='function')return;
+  const token=generation,epoch=presentationEpoch,target=video;presentationTarget=target;
   presentationRequest=target.requestVideoFrameCallback((_now,details)=>{
-   if(token!==generation||target!==video)return;
+   if(token!==generation||epoch!==presentationEpoch||target!==video)return;
    presentationRequest=null;presentationTarget=null;
    if(!(details?.presentedFrames>0)){requestPresentation();return;}
    presentationPaint=win.requestAnimationFrame(()=>{
-    if(token!==generation||target!==video)return;presentationPaint=null;
-    presented=true;if(mayPlay()&&!target.paused)paintFrame();
+    if(token!==generation||epoch!==presentationEpoch||target!==video)return;presentationPaint=null;
+    presented=true;if(mayPlay()&&!target.paused)paintFrame();settleReveal();
    });
   });
+ }
+ // Hiding the reading tree can retire an iOS video compositor surface without
+ // changing readyState. Its old presentation callback is not proof of a new paint.
+ function retainPresentation(){
+  cancelPresentation();presented=false;revealFallback=false;
+  const poster=figure?.querySelector('.story-poster');
+  poster?.style.setProperty('opacity','1');poster?.style.removeProperty('clip-path');
+ }
+ function settleReveal(){for(const finish of [...revealWaiters])finish();}
+ function prepareReveal(){
+  if(!video||failed||blocked||staticMode()||(presented&&!video.paused))return Promise.resolve();
+  revealing=true;video.style.opacity='1';figure?.classList.add('is-playing');
+  const promise=new Promise(resolve=>{
+   // A stalled decoder must not trap navigation: the already decoded poster is
+   // a complete destination, retained beneath the original (never cloned) video.
+   const finish=()=>{win.clearTimeout(timer);revealWaiters.delete(finish);resolve();};
+   const timer=win.setTimeout(()=>{
+    if(!presented&&figure?.querySelector('.story-poster')){
+     // The old video layer may be opaque black rather than transparent on iOS.
+     // Retire that layer only while the outgoing leaf still covers this poster.
+     revealFallback=true;video.style.opacity='0';figure.classList.remove('is-playing');dialogue(0,true);
+    }
+    finish();
+   },500);revealWaiters.add(finish);
+  });
+  sync();return promise;
  }
  function posterSource(staticFallback=false){
   if(!media?.staticPosterURL)return;
@@ -63,9 +91,9 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
  function paintFrame(){
   if(!video)return;
   posterSource(false);
-  if(waitForFrame()&&!presented&&typeof video.requestVideoFrameCallback==='function'){
-   video.style.opacity='1';figure?.classList.add('is-playing');
-   figure?.querySelector('.story-poster')?.style.setProperty('opacity','1');dialogue(0);return;
+  if(!presented&&typeof video.requestVideoFrameCallback==='function'){
+   if(!revealFallback){video.style.opacity='1';figure?.classList.add('is-playing');}
+   figure?.querySelector('.story-poster')?.style.setProperty('opacity','1');return;
   }
   const time=video.currentTime*1000,duration=Number.isFinite(video.duration)?video.duration*1000:media?.durationMs;
   if(time+150<lastTime)firstPass=false;
@@ -74,7 +102,7 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
   // Retain authored loop resets, but never fade a newly entered page from blank.
   const opacity=media?.resetTransition?.type==='none'?1:Math.max(0,Math.min(1,firstPass?1:time/into,(duration-time)/out));
   figure?.classList.add('is-playing');video.style.opacity=String(Number.isFinite(opacity)?opacity:1);
-  const underlay=waitForFrame()&&typeof video.requestVideoFrameCallback!=='function',poster=figure?.querySelector('.story-poster');
+  const underlay=typeof video.requestVideoFrameCallback!=='function',poster=figure?.querySelector('.story-poster');
   poster?.style.setProperty('opacity',underlay?'1':'0');
   if(waitForFrame()){if(underlay)poster?.style.setProperty('clip-path','inset(5% 0 4%)');else poster?.style.removeProperty('clip-path');}dialogue(time);
  }
@@ -83,19 +111,26 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
   paintFrame();frame=win.requestAnimationFrame(frameTick);
  }
  function sync(){
-  const attempt=++playAttempt;
   if(!video)return;
-  if(failed||blocked||staticMode()){video.pause();showPoster();return;}
-  if(!mayPlay()){video.pause();stopFrame();return;}
+  if(failed||blocked||staticMode()){playAttempt++;pendingPlay=null;video.pause();showPoster();settleReveal();return;}
+  if(!mayPlay()){playAttempt++;pendingPlay=null;video.pause();stopFrame();if(picker?.open||doc.hidden)retainPresentation();return;}
   requestPresentation();
+  // Closing the dialog, intersection updates and turn completion can all sync
+  // one navigation. None is a new playback intent or a reason to call play twice.
+  if(pendingPlay!==null)return;
+  if(!video.paused){if(frame===null)frame=win.requestAnimationFrame(frameTick);return;}
+  const attempt=++playAttempt;pendingPlay=attempt;
   const token=generation,target=video;
   posterSource(false);target.muted=true;
   target.play().then(()=>{
+   if(pendingPlay===attempt)pendingPlay=null;
    if(token!==generation||target!==video){target.pause();return;}
    if(attempt!==playAttempt)return;
    if(!mayPlay()){target.pause();return;}
    stopFrame();paintFrame();frame=win.requestAnimationFrame(frameTick);
+   if(typeof target.requestVideoFrameCallback!=='function')win.requestAnimationFrame(()=>{if(token===generation&&target===video&&mayPlay())settleReveal();});
   }).catch(()=>{
+   if(pendingPlay===attempt)pendingPlay=null;
    if(token!==generation||target!==video||attempt!==playAttempt)return;
    // A visibility/turn pause can reject an in-flight play without autoplay denial.
    if(!mayPlay())return;
@@ -103,7 +138,7 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
   });
  }
  function cancel(){
-  generation++;playAttempt++;activated=false;ready=false;presented=false;cancelPresentation();
+  generation++;playAttempt++;pendingPlay=null;activated=false;ready=false;presented=false;revealing=false;revealFallback=false;settleReveal();cancelPresentation();
   observer?.disconnect();observer=null;stopFrame();
   if(activationFrame!==null)win.cancelAnimationFrame(activationFrame);activationFrame=null;
   prepareCancel?.();prepareCancel=null;video?.pause();video=null;figure=null;media=null;
@@ -147,7 +182,7 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
    activationFrame=null;if(token!==generation||target!==video)return;activated=true;sync();
   });});
  }
- function setTurning(value){turning=Boolean(value);sync();}
+ function setTurning(value){turning=Boolean(value);if(turning)retainPresentation();else revealing=false;sync();}
  const visibility=()=>sync();doc.addEventListener('visibilitychange',visibility);preference.addEventListener('change',visibility);connection?.addEventListener?.('change',visibility);picker?.addEventListener('close',visibility);
- return {refresh,activate,setTurning,cancel,sync,prepareStaticPoster,destroy(){cancel();doc.removeEventListener('visibilitychange',visibility);preference.removeEventListener('change',visibility);connection?.removeEventListener?.('change',visibility);picker?.removeEventListener('close',visibility);}};
+ return {refresh,activate,setTurning,cancel,sync,prepareReveal,prepareStaticPoster,destroy(){cancel();doc.removeEventListener('visibilitychange',visibility);preference.removeEventListener('change',visibility);connection?.removeEventListener?.('change',visibility);picker?.removeEventListener('close',visibility);}};
 }

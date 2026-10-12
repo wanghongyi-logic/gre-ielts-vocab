@@ -1,5 +1,5 @@
 {
-  "build": "166-offline200-v15",
+  "build": "166-offline200-v16",
   "assets": [
     {
       "url": "index.html",
@@ -18,13 +18,13 @@
     },
     {
       "url": "gre-learning/update.js",
-      "sha256": "3a31a4e7f152cfecff1e01352457124203370a3d7a5caaf9c62c7f82018c97ef",
+      "sha256": "b8ff3cfd1eba6c7cb62a1fc94f918a5243751e66b4a5f73665211fad3f39ba5c",
       "bytes": 2635
     },
     {
       "url": "gre-learning/app.js",
-      "sha256": "0a0acd943959e1012ad3aab4a25f4ae98ca52d4b3aa36df22b87f1051c10c98c",
-      "bytes": 10905
+      "sha256": "6ba50b4f22602c8264e58f7a2dd9a1de333589a7f9dc1ef196d91f111de5a351",
+      "bytes": 11429
     },
     {
       "url": "gre-learning/catalog.json",
@@ -88,8 +88,8 @@
     },
     {
       "url": "gre-learning/story-media.js",
-      "sha256": "c730bf0ee5b564f74472813199339ad0b36043def9e841389b0e6d230189354a",
-      "bytes": 10222
+      "sha256": "80ad9c37d9bb13ef09885a3b1db21fafd3bec460015ac999fe450c25a9326092",
+      "bytes": 12653
     },
     {
       "url": "gre-learning/storybook.css",
@@ -103,13 +103,13 @@
     },
     {
       "url": "gre-learning/contents.js",
-      "sha256": "d9f1b51fbfd951390654563a0cc1b2f268390e2d09477c807c06c4b0ac6b09cb",
-      "bytes": 17287
+      "sha256": "dae255dcc05ef38d4e81a2c8e9aa7bd098a7dd4eaca949f48cb4acc77f7f6aaa",
+      "bytes": 17467
     },
     {
       "url": "gre-learning/prepared-pages.js",
-      "sha256": "542c8377232f39c759796c616c0e8498d82ac2f984561f183584a50541f94b4a",
-      "bytes": 5311
+      "sha256": "001e32fd6db3ed81ba6898d578205d790ac4d368e6bb63d3d6ca0350b1fe097e",
+      "bytes": 5380
     },
     {
       "url": "gre-learning/offline-zip.js",
@@ -128,8 +128,8 @@
     },
     {
       "url": "gre-learning/offline-manager.js",
-      "sha256": "52ac6c47c4233bf19e5e3b5a5e4764436533ab2c6c8088fd5ed609e8ba896d4c",
-      "bytes": 19340
+      "sha256": "f3be478ecba38176a345b5a08ef0fff28f7b8b652b6ba11dfa069f85bde22f47",
+      "bytes": 19372
     },
     {
       "url": "gre-learning/units/175-184-7237c053125a7b03df08fbbe14200ddf95cb5abc0a0d0b53654678213ab639c7.json",
@@ -383,7 +383,7 @@
     },
     {
       "url": "gre-learning/offline-preferences.js",
-      "sha256": "e09d74e1874ec92af3d4d559178da95898dada428642159247aa22d2c0446584",
+      "sha256": "b02615cad9c30050e5e8d9e9ff4176fd0091858e8a288bb5a08ed987e5f26e2f",
       "bytes": 1103
     },
     {
@@ -398,8 +398,8 @@
     },
     {
       "url": "gre-learning/offline-releases.js",
-      "sha256": "878b7ef17be0768a99dbd984edc35c927472cb8189db753fc39885cfd9854de6",
-      "bytes": 8588
+      "sha256": "d8959bf9e739cf6c84c0bcb5812daf6f21d408f023a5b4a55d56a843ecf4560f",
+      "bytes": 8682
     },
     {
       "url": "gre-learning/offline-releases.css",
@@ -408,13 +408,13 @@
     },
     {
       "url": "gre-learning/settings-storybook.css",
-      "sha256": "a376aeda52f73fa4f887c96d050012111387fed66fcbcdb1724f1a7c8f0e8b0b",
-      "bytes": 14142
+      "sha256": "9374d6fa1868397c9663459d78cabbc46a041c8df39c7b25dd0272e22f889230",
+      "bytes": 15690
     },
     {
       "url": "gre-learning/frontmatter-turn.js",
-      "sha256": "841734c0509d0708df15ce9b1396b8c93837a1f5f4ed201d5ba0cedde161f8f5",
-      "bytes": 8250
+      "sha256": "b7f7efb771fb6685d612cb46458141c1bde0f2451234ed75b358e7253a41fbec",
+      "bytes": 8807
     },
     {
       "url": "gre-learning/frontmatter-turn.css",

@@ -24,6 +24,7 @@ export function installFrontmatterTurn({main,onActivity=()=>{},window:win=window
  }
  function paint(progress){
   const state=active;if(!state)return;
+  if(state.preparing){state.pendingProgress=clamp(progress);return;}
   state.progress=clamp(progress);
   if(!state.overlay)return;
   const {bounds,rect,direction,face}=state;
@@ -43,6 +44,7 @@ export function installFrontmatterTurn({main,onActivity=()=>{},window:win=window
  }
  function animate(commit=true){
   const state=active;if(!state)return;
+  if(state.preparing){if(!commit){finish(false);return;}state.pendingCommit=commit;return;}
   if(reduced()||!state.overlay){finish(commit);return;}
   win.cancelAnimationFrame(state.frame);win.clearTimeout(state.timer);
   const start=win.performance.now(),from=state.progress,target=commit?1:0;
@@ -89,8 +91,17 @@ export function installFrontmatterTurn({main,onActivity=()=>{},window:win=window
    state.overlay=overlay;doc.body.append(overlay);
   }
   main.setAttribute('data-contents-turning','');onActivity(true);
-  try{prepare?.();paint(0);}catch(error){finish(false);throw error;}
-  if(!interactive)animate(true);
+  try{
+   const prepared=prepare?.();paint(0);
+   if(prepared?.then){
+    state.preparing=true;
+    Promise.resolve(prepared).then(()=>{
+     if(active!==state)return;state.preparing=false;
+     if(state.pendingProgress!==undefined)paint(state.pendingProgress);
+     if(state.pendingCommit!==undefined)animate(state.pendingCommit);else if(!interactive)animate(true);
+    },()=>{if(active===state)finish(false);});
+   }else if(!interactive)animate(true);
+  }catch(error){finish(false);throw error;}
   return state.finished;
  }
  // Only frontmatter is impressed for contents↔settings. Skip invisible branches
