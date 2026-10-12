@@ -109,3 +109,26 @@ test('every frontmatter route is a single sheet, with first-frame feedback and n
  assert.equal(preparations,1);turn.finish();await finished;assert.equal(commits,1);assert.equal(frames.size,0,'completion leaves no second animation queued');
  const cancelled=turn.begin({source:sheet,interactive:true,prepare:()=>Promise.resolve(),rollback:()=>commits++});await micro();turn.paint(.2);turn.animate(false);turn.finish(false);await cancelled;assert.equal(commits,2);assert.equal(frames.size,0);
 });
+
+test('ordinary page turns preserve the outgoing presented video and never re-enable its hidden poster',async()=>{
+ const h=harness();await h.motion.refresh(media);h.motion.activate();h.flush();h.flush();await micro();h.present();h.flush();h.video.currentTime=3.25;
+ const loads=h.loads;
+ for(let i=0;i<12;i++){
+  h.motion.setTurning(true,{preservePresentation:true});assert.equal(h.video.paused,true);assert.equal(h.poster.style.getPropertyValue('opacity'),'0');assert.equal(h.callbacks.size,0,'ordinary pause does not retire a healthy video compositor');
+  h.motion.setTurning(false,{preservePresentation:true});await micro();assert.equal(h.poster.style.getPropertyValue('opacity'),'1','rollback guards a potentially retired compositor');h.present();h.flush();assert.equal(h.poster.style.getPropertyValue('opacity'),'0');assert.equal(h.video.currentTime,3.25);assert.equal(h.loads,loads);
+ }
+ h.motion.destroy();
+});
+test('normal turn during first-frame wait retains decoded backing until a real presentation',async()=>{
+ const h=harness();await h.motion.refresh(media);h.motion.activate();h.flush();h.flush();await micro();assert.equal(h.poster.style.getPropertyValue('opacity'),'1');
+ h.motion.setTurning(true,{preservePresentation:true});h.motion.setTurning(false,{preservePresentation:true});await micro();assert.equal(h.poster.style.getPropertyValue('opacity'),'1');
+ h.present();h.flush();assert.equal(h.poster.style.getPropertyValue('opacity'),'0');h.motion.destroy();
+});
+test('video failure during a normal turn preserves the semantic poster fallback',async()=>{
+ const h=harness();await h.motion.refresh(media);h.motion.activate();h.flush();h.flush();await micro();h.present();h.flush();h.motion.setTurning(true,{preservePresentation:true});h.video.emit('error');h.motion.setTurning(false,{preservePresentation:true});
+ assert.equal(h.video.style.opacity,'0');assert.notEqual(h.poster.style.getPropertyValue('opacity'),'0');assert.equal(h.video.paused,true);h.motion.destroy();
+});
+test('older video APIs preserve their poster backing and crop through cancelled ordinary turns',async()=>{
+ const h=harness({rvfc:false});await h.motion.refresh({...media,waitForPresentedFrame:true});h.motion.activate();h.flush();h.flush();await micro();const crop=h.poster.style.getPropertyValue('clip-path');
+ h.motion.setTurning(true,{preservePresentation:true});assert.equal(h.poster.style.getPropertyValue('opacity'),'1');assert.equal(h.poster.style.getPropertyValue('clip-path'),crop);h.motion.setTurning(false,{preservePresentation:true});await micro();assert.equal(h.poster.style.getPropertyValue('opacity'),'1');h.motion.destroy();
+});

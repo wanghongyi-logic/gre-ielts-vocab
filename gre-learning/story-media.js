@@ -172,7 +172,15 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
    activationFrame=null;if(token!==generation||target!==video)return;activated=true;sync();
   });});
  }
- function setTurning(value){turning=Boolean(value);if(turning)retainPresentation();else revealing=false;sync();}
+ function setTurning(value,{preservePresentation=false}={}){
+  const resumeVisibleTurn=turning&&!value&&preservePresentation;turning=Boolean(value);
+  if(turning&&!preservePresentation)retainPresentation();else revealing=false;
+  // The outgoing impression must retain its exact visible frame. On rollback,
+  // however, opacity hiding may have retired WebKit's video surface: cover it
+  // with the existing decoded poster until a fresh frame is presented.
+  if(resumeVisibleTurn){retainPresentation();prepareReveal();}
+  sync();
+ }
  const visibility=()=>sync();doc.addEventListener('visibilitychange',visibility);preference.addEventListener('change',visibility);connection?.addEventListener?.('change',visibility);picker?.addEventListener('close',visibility);
  return {refresh,activate,setTurning,cancel,sync,prepareReveal,prepareStaticPoster,destroy(){cancel();doc.removeEventListener('visibilitychange',visibility);preference.removeEventListener('change',visibility);connection?.removeEventListener?.('change',visibility);picker?.removeEventListener('close',visibility);}};
 }

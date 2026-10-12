@@ -17,7 +17,7 @@ const main=document.getElementById('word-content'),picker=document.getElementByI
 const bookmarks=installBookmarkNavigation({surface:main,picker});
 let motion=installStoryMedia(main,{picker});
 const pages=installPreparedPages({loader,entries,picker});
-const swipe=installWordSwipe({surface:main,hintHost:main.parentNode,picker,getNeighbor:direction=>neighboringNumbers(entries,selectedNumber)[direction],getPrepared:direction=>pages.get(neighboringNumbers(entries,selectedNumber)[direction]),prepareNeighbor:direction=>pages.prepare(neighboringNumbers(entries,selectedNumber)[direction]),onNavigate:navigate,onTurnActivity:active=>motion.setTurning(active)});
+const swipe=installWordSwipe({surface:main,hintHost:main.parentNode,picker,getNeighbor:direction=>neighboringNumbers(entries,selectedNumber)[direction],getPrepared:direction=>pages.get(neighboringNumbers(entries,selectedNumber)[direction]),prepareNeighbor:direction=>pages.prepare(neighboringNumbers(entries,selectedNumber)[direction]),onNavigate:navigate,onTurnActivity:active=>motion.setTurning(active,{preservePresentation:true})});
 let selectedNumber,current,currentMedia,speech,renderGeneration=0,pendingSection=null;
 let libraryRevision=0,renderedLibraryRevision=0,libraryRefreshEpoch=0,libraryRefreshJob=null;
 const contents=installContents({main,picker,search,entries,getSelected:()=>selectedNumber,navigate,prepareReading:()=>motion.prepareReveal(),onOpen:()=>{swipe.cancel();if(current){renderGeneration++;main.removeAttribute('aria-busy');pages.adjacent(selectedNumber);}bookmarks.sync();motion.sync();window.speechSynthesis?.cancel();},onClose:()=>{bookmarks.sync();motion.sync();},onTransition:active=>motion.setTurning(active)});
