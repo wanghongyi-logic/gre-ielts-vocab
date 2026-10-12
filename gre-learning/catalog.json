@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "165",
-  "authoredCount": 200,
-  "publishedCount": 200,
+  "release": "166",
+  "authoredCount": 210,
+  "publishedCount": 210,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -207,7 +207,17 @@
       27,
       2024,
       800,
-      1744
+      1744,
+      1732,
+      1715,
+      2312,
+      519,
+      322,
+      1115,
+      1381,
+      1498,
+      225,
+      1036
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -457,6 +467,16 @@
       "url": "units/core037-text-candidate-df4897e58ede9f46a6cb7028d0e1345260f47571dd3e3f70907b067c567f25cc.json",
       "sha256": "df4897e58ede9f46a6cb7028d0e1345260f47571dd3e3f70907b067c567f25cc",
       "bytes": 18247
+    },
+    {
+      "url": "units/core038-text-candidate-091293e00aa5d71adb0429d63c2328eb1ae311b04645529a42543bc39fe89590.json",
+      "sha256": "091293e00aa5d71adb0429d63c2328eb1ae311b04645529a42543bc39fe89590",
+      "bytes": 18656
+    },
+    {
+      "url": "units/core039-text-candidate-319742813982b9f6ab1e3d924543127fdeafb838ee403816a0226c8148e443e7.json",
+      "sha256": "319742813982b9f6ab1e3d924543127fdeafb838ee403816a0226c8148e443e7",
+      "bytes": 18939
     }
   ],
   "entries": [
@@ -16449,6 +16469,772 @@
           "url": "story-media/1744-staticPoster-085778f676b430f4a1b00787535e5f9942f6a2d2f717496460fce8125ef93d45.png",
           "sha256": "085778f676b430f4a1b00787535e5f9942f6a2d2f717496460fce8125ef93d45",
           "bytes": 1276434
+        }
+      }
+    },
+    {
+      "number": 1732,
+      "word": "peripheral",
+      "coreMeaningZh": "外围的；次要的；外围设备",
+      "unit": 48,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 201,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "男孩：先修好漏水，装饰以后再说。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "男孩：先修好漏水，装饰以后再说。"
+          ]
+        },
+        "alt": "男孩修理漏水的模型船，接过朋友递来的装饰丝带，放在桌边后继续修漏水；装饰是次要的。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2650,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2650,
+            "endMs": 6000,
+            "text": "先修好漏水，装饰以后再说。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "先修好漏水，装饰以后再说。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/1732-video-810c21d0eba370fef6123915a5cf25e798cab3816183430b88f2de73a6d04496.mp4",
+          "sha256": "810c21d0eba370fef6123915a5cf25e798cab3816183430b88f2de73a6d04496",
+          "bytes": 806139
+        },
+        "poster": {
+          "url": "story-media/1732-poster-2f1ff83e0c6057c2c65d35d9953dad008860b668865cf52d52384c18c627315e.png",
+          "sha256": "2f1ff83e0c6057c2c65d35d9953dad008860b668865cf52d52384c18c627315e",
+          "bytes": 1230007
+        },
+        "staticPoster": {
+          "url": "story-media/1732-staticPoster-3f5b3ecda67aeaf4fb795501bef47e0c2dc29bc427609fc1865eae14afb2e6d8.png",
+          "sha256": "3f5b3ecda67aeaf4fb795501bef47e0c2dc29bc427609fc1865eae14afb2e6d8",
+          "bytes": 1235074
+        }
+      }
+    },
+    {
+      "number": 1715,
+      "word": "pellucid",
+      "coreMeaningZh": "清澈透明的；清楚易懂的",
+      "unit": 48,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 202,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "男孩：水真清，水底的石头都看得见。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "男孩：水真清，水底的石头都看得见。"
+          ]
+        },
+        "alt": "男孩蹲在清澈的小溪边，指给朋友看水底的圆石；透明的溪水让水底石头清晰可见。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1720,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1720,
+            "endMs": 6000,
+            "text": "水真清，水底的石头都看得见。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "水真清，水底的石头都看得见。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/1715-video-6daace371cd2919a962f85164f56a3b8f6a6d95b1c9837eb710429079c68b45d.mp4",
+          "sha256": "6daace371cd2919a962f85164f56a3b8f6a6d95b1c9837eb710429079c68b45d",
+          "bytes": 769627
+        },
+        "poster": {
+          "url": "story-media/1715-poster-daa16edd527c54abe251b4a11d0b8e086507f0e69b889a1fc06de859b76b82af.png",
+          "sha256": "daa16edd527c54abe251b4a11d0b8e086507f0e69b889a1fc06de859b76b82af",
+          "bytes": 1339525
+        },
+        "staticPoster": {
+          "url": "story-media/1715-staticPoster-5bc765bc4bfeff4363237950ba59951ddfea660478e9a8cf7dec7feae59b2bb2.png",
+          "sha256": "5bc765bc4bfeff4363237950ba59951ddfea660478e9a8cf7dec7feae59b2bb2",
+          "bytes": 1350942
+        }
+      }
+    },
+    {
+      "number": 2312,
+      "word": "spurious",
+      "coreMeaningZh": "虚假的；伪造的；缺乏真实依据的",
+      "unit": 48,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 203,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "男孩：原来不是真金币。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "男孩：原来不是真金币。"
+          ]
+        },
+        "alt": "男孩掀起所谓金币的金色表层，露出大片木纹和木质内芯，和朋友发现它并不是真金币。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3000,
+            "endMs": 6000,
+            "text": "原来不是真金币。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "原来不是真金币。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/2312-video-e3dce4f46abd22adf997875831dcfeba94f092378cb67288d545f6148d878d63.mp4",
+          "sha256": "e3dce4f46abd22adf997875831dcfeba94f092378cb67288d545f6148d878d63",
+          "bytes": 596601
+        },
+        "poster": {
+          "url": "story-media/2312-poster-d4c8a742b4dc09427ad809b9659c70a6986e4bc658adb120ee7192b128ae4ae4.png",
+          "sha256": "d4c8a742b4dc09427ad809b9659c70a6986e4bc658adb120ee7192b128ae4ae4",
+          "bytes": 1235621
+        },
+        "staticPoster": {
+          "url": "story-media/2312-staticPoster-4ae994d620e11d958a1fce0c54e1b62de62a0ec6ec9234bdd2a8657ee99d44fe.png",
+          "sha256": "4ae994d620e11d958a1fce0c54e1b62de62a0ec6ec9234bdd2a8657ee99d44fe",
+          "bytes": 1255267
+        }
+      }
+    },
+    {
+      "number": 519,
+      "word": "cursory",
+      "coreMeaningZh": "匆匆的；粗略的；草率的",
+      "unit": 48,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 204,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "男孩：扫一眼就行了。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "男孩：扫一眼就行了。"
+          ]
+        },
+        "alt": "男孩只匆匆扫了一眼桥梁图，就把纸放到一旁，目光移开，没有注意到图中桥梁缺少中间一段。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1200,
+            "endMs": 4000,
+            "text": "扫一眼就行了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "扫一眼就行了。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 4000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/519-video-0983553f53f99204521b0203365cb5fcda0c625e15adc99ca3125528f87b5e63.mp4",
+          "sha256": "0983553f53f99204521b0203365cb5fcda0c625e15adc99ca3125528f87b5e63",
+          "bytes": 561329
+        },
+        "poster": {
+          "url": "story-media/519-poster-7ee43976041163ca965f61afc7f8f5dd8ee731d7d3e952894865506744a5f4b0.png",
+          "sha256": "7ee43976041163ca965f61afc7f8f5dd8ee731d7d3e952894865506744a5f4b0",
+          "bytes": 1150918
+        },
+        "staticPoster": {
+          "url": "story-media/519-staticPoster-eff429932bd72043b96ad6a922d447769d81d7806f1999f4231681792bd5294d.png",
+          "sha256": "eff429932bd72043b96ad6a922d447769d81d7806f1999f4231681792bd5294d",
+          "bytes": 1174170
+        }
+      }
+    },
+    {
+      "number": 322,
+      "word": "cede",
+      "coreMeaningZh": "让出；割让；交出权利或控制权",
+      "unit": 48,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 205,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "这次由你来控制。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这次由你来控制。"
+          ]
+        },
+        "alt": "男孩把模型火车的控制器递给朋友，双方短暂共同握住后他松开双手，由朋友接手控制。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1280,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1280,
+            "endMs": 6200,
+            "text": "这次由你来控制。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这次由你来控制。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/322-video-6937169b45b09d1f4c35107a6dd998e2e71dc85e8762774e0dddd5a1b6758d4a.mp4",
+          "sha256": "6937169b45b09d1f4c35107a6dd998e2e71dc85e8762774e0dddd5a1b6758d4a",
+          "bytes": 796129
+        },
+        "poster": {
+          "url": "story-media/322-poster-7ca30d66c1efd0fddd3602bbcfd4e71f8bc57d275c413e3b521e8037a7fd3061.png",
+          "sha256": "7ca30d66c1efd0fddd3602bbcfd4e71f8bc57d275c413e3b521e8037a7fd3061",
+          "bytes": 1115898
+        },
+        "staticPoster": {
+          "url": "story-media/322-staticPoster-1fef062f97f5c16402c8a3a4ff24bcb47a0a5a2c6edd60fe595855db716b2bba.png",
+          "sha256": "1fef062f97f5c16402c8a3a4ff24bcb47a0a5a2c6edd60fe595855db716b2bba",
+          "bytes": 1170100
+        }
+      }
+    },
+    {
+      "number": 1115,
+      "word": "hew",
+      "coreMeaningZh": "砍；凿成；hew to：遵循，坚守",
+      "unit": 49,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 206,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "木匠双手握斧，沿标线砍削被夹紧的木料，削出新的木面；男孩在远处安全观看。",
+        "video": {
+          "url": "story-media/1115-video-5f472984956cf22ddb1ab4752d765ed95ab08744c8315f29a2ddd25089a82e4c.mp4",
+          "sha256": "5f472984956cf22ddb1ab4752d765ed95ab08744c8315f29a2ddd25089a82e4c",
+          "bytes": 1010076
+        },
+        "poster": {
+          "url": "story-media/1115-poster-5a16a6dbb654830f3a915d6a505a435246048407a7d9af273e74f7f0e8053de1.png",
+          "sha256": "5a16a6dbb654830f3a915d6a505a435246048407a7d9af273e74f7f0e8053de1",
+          "bytes": 1194685
+        },
+        "staticPoster": {
+          "url": "story-media/1115-staticPoster-7c596d68dee429a99041d07f35a51d461a52be50a78aac3980a434689502767d.png",
+          "sha256": "7c596d68dee429a99041d07f35a51d461a52be50a78aac3980a434689502767d",
+          "bytes": 1218220
+        }
+      }
+    },
+    {
+      "number": 1381,
+      "word": "lapse",
+      "coreMeaningZh": "一时疏忽；失误；间隔；失效；陷入",
+      "unit": 49,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 207,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "咦，漏了一个。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "咦，漏了一个。"
+          ]
+        },
+        "alt": "男孩装杯子时被窗外蝴蝶短暂分散注意力，漏掉桌边的一只杯子；回过神后，他指着空槽，发现了遗漏。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3600,
+            "endMs": 6200,
+            "text": "咦，漏了一个。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "咦，漏了一个。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/1381-video-335993d80558867937accf3e3a7c0547452690ac23c7ace24daefdd9e32e8b19.mp4",
+          "sha256": "335993d80558867937accf3e3a7c0547452690ac23c7ace24daefdd9e32e8b19",
+          "bytes": 782228
+        },
+        "poster": {
+          "url": "story-media/1381-poster-740649eaca8fc6f8fdeaba5b0ad3c60298693fe725b8e96ed47b4175996584e1.png",
+          "sha256": "740649eaca8fc6f8fdeaba5b0ad3c60298693fe725b8e96ed47b4175996584e1",
+          "bytes": 1245330
+        },
+        "staticPoster": {
+          "url": "story-media/1381-staticPoster-a182557f7ad7affac362cdec1e6d071d2070820eef1d221ced56c5a925f9025c.png",
+          "sha256": "a182557f7ad7affac362cdec1e6d071d2070820eef1d221ced56c5a925f9025c",
+          "bytes": 1279324
+        }
+      }
+    },
+    {
+      "number": 1498,
+      "word": "mimic",
+      "coreMeaningZh": "模仿；模拟；酷似；善于模仿的人",
+      "unit": 49,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 208,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "女孩先摆出双手叉腰的姿势，男孩看着她，再抬起双手模仿；女孩发现后朝他笑起来。",
+        "video": {
+          "url": "story-media/1498-video-b3601fd9b69ae5329696e4954795ad30cfe7f78710821f981bb3eda0fe9c7a6d.mp4",
+          "sha256": "b3601fd9b69ae5329696e4954795ad30cfe7f78710821f981bb3eda0fe9c7a6d",
+          "bytes": 790321
+        },
+        "poster": {
+          "url": "story-media/1498-poster-e75e72ec0edb5ab2f3f546120d7c01ad9e5f0d6372ba4b69fb34515e7a0ea2e4.png",
+          "sha256": "e75e72ec0edb5ab2f3f546120d7c01ad9e5f0d6372ba4b69fb34515e7a0ea2e4",
+          "bytes": 1223162
+        },
+        "staticPoster": {
+          "url": "story-media/1498-staticPoster-0cbae05a38b91ea30c15359aaf1e6a327b6232ccfd767d207a0b5a1ca455586f.png",
+          "sha256": "0cbae05a38b91ea30c15359aaf1e6a327b6232ccfd767d207a0b5a1ca455586f",
+          "bytes": 1262521
+        }
+      }
+    },
+    {
+      "number": 225,
+      "word": "bland",
+      "coreMeaningZh": "清淡无味的；平淡乏味的；不显情绪的",
+      "unit": 49,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 209,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "男孩：怎么没什么味道？",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "男孩：怎么没什么味道？"
+          ]
+        },
+        "alt": "男孩尝了一口汤，放低右手的勺子，觉得没什么味道，又看向桌上尚未用过的调味料。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3400,
+            "endMs": 6000,
+            "text": "怎么没什么味道？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "怎么没什么味道？"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/225-video-4b143a99fb64768d23c0fabcde4e59779dbaa418743955ff206299745382a7f2.mp4",
+          "sha256": "4b143a99fb64768d23c0fabcde4e59779dbaa418743955ff206299745382a7f2",
+          "bytes": 737382
+        },
+        "poster": {
+          "url": "story-media/225-poster-15dd5d31fa663ae991e1794dbf1e7c873d50990f7adb4b23df02e2086152ee15.png",
+          "sha256": "15dd5d31fa663ae991e1794dbf1e7c873d50990f7adb4b23df02e2086152ee15",
+          "bytes": 1216639
+        },
+        "staticPoster": {
+          "url": "story-media/225-staticPoster-56a4187d20c28cbf313f00ab02859bc90821c03d72282d2294400486bf37cd75.png",
+          "sha256": "56a4187d20c28cbf313f00ab02859bc90821c03d72282d2294400486bf37cd75",
+          "bytes": 1275452
+        }
+      }
+    },
+    {
+      "number": 1036,
+      "word": "gloat",
+      "coreMeaningZh": "沾沾自喜；得意扬扬；幸灾乐祸",
+      "unit": 49,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 210,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "男孩：看吧，我又赢了！",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "男孩：看吧，我又赢了！"
+          ]
+        },
+        "alt": "男孩指着自己连成一排的蓝色棋子，得意地看向低头的朋友，又扬起下巴向他夸耀自己又赢了。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2600,
+            "endMs": 6000,
+            "text": "看吧，我又赢了！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "看吧，我又赢了！"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/1036-video-d1dddcf53379797986d396f5a8d3a758ea4d42d2333accee3829a986d66019ff.mp4",
+          "sha256": "d1dddcf53379797986d396f5a8d3a758ea4d42d2333accee3829a986d66019ff",
+          "bytes": 560474
+        },
+        "poster": {
+          "url": "story-media/1036-poster-c25f5790e6d5d1a0257d1356a7dabf0f0e39f7ee8aeb11ae9d386359b508eb16.png",
+          "sha256": "c25f5790e6d5d1a0257d1356a7dabf0f0e39f7ee8aeb11ae9d386359b508eb16",
+          "bytes": 1143007
+        },
+        "staticPoster": {
+          "url": "story-media/1036-staticPoster-6663369ed77357c5e9780e9e0373448e2cbb9ced70c938d69b61ab783eae28a2.png",
+          "sha256": "6663369ed77357c5e9780e9e0373448e2cbb9ced70c938d69b61ab783eae28a2",
+          "bytes": 1175229
         }
       }
     }

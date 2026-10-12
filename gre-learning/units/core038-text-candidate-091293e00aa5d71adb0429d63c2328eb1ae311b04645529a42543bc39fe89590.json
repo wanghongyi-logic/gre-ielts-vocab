@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 1732,
+      "word": "peripheral",
+      "ipa": "/pəˈrɪfərəl/",
+      "pos": "adj. / n.",
+      "coreMeaningZh": "外围的；次要的；外围设备",
+      "coreEn": "At or near an outer edge; not central to a subject. As a noun, a device connected to a computer.",
+      "coreImageZh": "男孩正专心修补桌子中央的木船，另一人把装饰彩带递来。他将彩带轻放到桌边，继续处理船底的漏洞：彩带只是次要的事情。",
+      "mnemonics": [
+        {
+          "method": "PERI · 绕一圈",
+          "textZh": "peripheral 和 perimeter（周长、边界）共享表示“周围”的 peri-。沿图形的 perimeter 绕一圈，你走的就是外围；peripheral 再把这种“在外围”引申为“不居核心、次要”。",
+          "kind": "word_family",
+          "original": false
+        },
+        {
+          "method": "peripheral · 外设清单",
+          "textZh": "把 peripheral 连同电脑里的 peripherals（外设）一起记：打印机、键盘围着主机连接，主机之外还有这些外围设备。把这个整词与熟悉的设备放在一起，再联系事情的“外围、非核心”；外设不等于不重要。",
+          "kind": "invented_association",
+          "original": true,
+          "weak": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "形容词：外围的、边缘的",
+          "explanationZh": "可描述实际位置，也可用于视野、神经等固定术语。空间上的外围不等于价值低，peripheral vision 对观察周围很重要。",
+          "collocations": [
+            {
+              "phrase": "peripheral vision",
+              "meaningZh": "周边视觉、余光",
+              "usageZh": "指正视方向两侧的视野，不是视力差。"
+            },
+            {
+              "phrase": "peripheral areas",
+              "meaningZh": "外围地区",
+              "usageZh": "相对于某个中心而言。"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容词：次要的、非核心的",
+          "explanationZh": "指与主题有关但不居中心，通常不是完全不相干。常用 peripheral to 加所参照的主题。",
+          "collocations": [
+            {
+              "phrase": "peripheral issues",
+              "meaningZh": "次要问题",
+              "usageZh": "与 central issues 对照。"
+            },
+            {
+              "phrase": "peripheral to the discussion",
+              "meaningZh": "对这场讨论来说属次要",
+              "usageZh": "to 是介词，不表示移动方向。"
+            }
+          ]
+        },
+        {
+          "senseZh": "计算机名词：外围设备",
+          "explanationZh": "可数名词，复数 peripherals。打印机等可属外设；这个技术名称本身不评价设备是否重要。",
+          "collocations": [
+            {
+              "phrase": "computer peripherals",
+              "meaningZh": "计算机外围设备",
+              "usageZh": "名词复数。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The book contains a great deal of peripheral detail.",
+          "translationZh": "这本书包含大量非核心的细节。",
+          "explanationZh": "peripheral 修饰 detail，评价这些细节相对于主旨的重要性。"
+        },
+        {
+          "textEn": "A figure came into my peripheral vision.",
+          "translationZh": "一个人影进入了我的余光范围。",
+          "explanationZh": "这里是视野的外围，不是“次要的视觉”。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "marginal",
+          "comparisonZh": "peripheral / marginal issues 都可以指次要问题；peripheral 强调位于核心之外，marginal 强调重要性或影响很小。a marginal improvement 是微小的改善，不能换成 peripheral improvement；peripheral vision 也是固定术语。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    },
+    {
+      "number": 1715,
+      "word": "pellucid",
+      "ipa": "/pəˈluːsɪd/",
+      "pos": "adj.",
+      "coreMeaningZh": "清澈透明的；清楚易懂的",
+      "coreEn": "Exceptionally clear or transparent; clear and easy to understand in expression.",
+      "coreImageZh": "男孩蹲在清澈的小溪旁，透过水面清楚看见水底的一枚圆石。他指着石头，让同伴也看见：水清澈得一眼见底。",
+      "mnemonics": [
+        {
+          "method": "pelLUCID · 清楚见底",
+          "textZh": "pellucid 里完整保留 lucid（清楚的）。两词确有词源联系，来自“发光、清楚”的词族；pellucid 强调清透，既可说水看得穿，也可说文字一读就明白。",
+          "kind": "word_family",
+          "original": false
+        },
+        {
+          "method": "pellucid · PEEL 开薄膜",
+          "textZh": "看到开头 pell，借形近的 peel（剥掉）想象：把玻璃上的磨砂膜 peel 掉，原本模糊的景物立刻清楚透出来。剥开遮挡，变得清透，记 pellucid；这是拼写联想，不是词源。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "清澈、通透明亮",
+          "explanationZh": "常见于文学性描写，语气多为赞赏，可写水、光线或空气。比 日常用词 clear 更书面。",
+          "collocations": [
+            {
+              "phrase": "pellucid water",
+              "meaningZh": "清澈的水",
+              "usageZh": "突出能看透的通透感。"
+            },
+            {
+              "phrase": "pellucid light",
+              "meaningZh": "澄澈明亮的光",
+              "usageZh": "偏文学性描写。"
+            }
+          ]
+        },
+        {
+          "senseZh": "表达清楚、易于理解",
+          "explanationZh": "可修饰 prose、style、explanation 等；重点是读者能看清意思，不等于内容浅薄，也不保证论点正确。",
+          "collocations": [
+            {
+              "phrase": "pellucid prose",
+              "meaningZh": "清楚明白的散文或行文",
+              "usageZh": "赞扬表达清晰。"
+            },
+            {
+              "phrase": "a pellucid style",
+              "meaningZh": "明晰的文风",
+              "usageZh": "描述表达方式。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He writes in pellucid prose.",
+          "translationZh": "他的行文清楚明白。",
+          "explanationZh": "pellucid 从视觉上的通透延伸到意思容易理解。"
+        },
+        {
+          "textEn": "The light was so pellucid, so dazzling that she reached for her sunglasses.",
+          "translationZh": "光线如此澄澈、如此耀眼，她伸手去拿太阳镜。",
+          "explanationZh": "来自词典的文学性用例，形容光线。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "limpid",
+          "comparisonZh": "pellucid / limpid water 都可赞水清澈，pellucid / limpid prose 也都可赞文笔明晰。两者都较书面；limpid 常联想到水或眼睛的清亮，pellucid 也常用于光线及清楚易懂的表达。不能据此把所有 clear 都换成这两词。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    },
+    {
+      "number": 2312,
+      "word": "spurious",
+      "ipa": "/ˈspjʊriəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "虚假的；伪造的；缺乏真实依据的",
+      "coreEn": "Not genuine or authentic; false or based on unsound grounds.",
+      "coreImageZh": "男孩拿着一枚号称纯金的硬币，揭开翘起的金色外皮，却露出木头的内芯。同伴这才发现它并非真金币：spurious 强调表面冒充真实，实际并不可信。",
+      "mnemonics": [
+        {
+          "method": "spurious / serious",
+          "textZh": "spurious 看起来有些像 serious（认真的、严肃的）。记住那位一脸 serious、却拿出假证据的人：神情很认真，证据却是 spurious。借近形形成反差，不把“严肃”误当成“真实”。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "spurious · 假 pure",
+          "textZh": "spurious 开头的重读部分带有 pure /pjʊr/ 的声音。想起标签大写着 PURE GOLD（纯金），刮开却是镀金：号称 pure，实际 spurious。借声音钩住“假冒”，不是说这个词由 pure 构成。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "物品、来源或身份不真",
+          "explanationZh": "可描述伪作、假冒文件、不真诚的表现等。重点是表面声称的身份或性质并不真实。",
+          "collocations": [
+            {
+              "phrase": "a spurious signature",
+              "meaningZh": "伪造的签名",
+              "usageZh": "声称出自某人之手，实际不是。"
+            },
+            {
+              "phrase": "spurious claims",
+              "meaningZh": "虚假的主张或要求",
+              "usageZh": "具体指真假或依据不足，不能仅凭不同意就称其 spurious。"
+            }
+          ]
+        },
+        {
+          "senseZh": "推理、关联或依据不成立",
+          "explanationZh": "可描述似乎合理但站不住脚的论据。spurious correlation 是表面关联，可能由混杂因素或偶然性造成，不能简单理解成数据一定被人伪造。",
+          "collocations": [
+            {
+              "phrase": "a spurious argument",
+              "meaningZh": "站不住脚的论据",
+              "usageZh": "强调论据虚假或缺乏有效根据。"
+            },
+            {
+              "phrase": "a spurious correlation",
+              "meaningZh": "伪相关、虚假关联",
+              "usageZh": "观察到一起变化，不足以证明真实的因果联系。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Some of the arguments in favor of shutting the factory are questionable and others downright spurious.",
+          "translationZh": "支持关闭工厂的论据中，有些值得怀疑，另一些则根本没有真实依据。",
+          "explanationZh": "questionable 留有疑问，downright spurious 则作出明确的否定评价。"
+        },
+        {
+          "textEn": "a spurious Picasso painting that wouldn't have fooled an art expert for a second",
+          "translationZh": "一幅冒充毕加索真迹的画，连一秒钟都骗不过艺术专家",
+          "explanationZh": "词典中的名词短语用例；spurious 指作品的声称来源不真。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "counterfeit",
+          "comparisonZh": "spurious / counterfeit documents 都可以指假文件。counterfeit 更突出仿制真品以冒充；spurious 还可用于无根据的论点、相关性或不真诚的热情，这些通常不换成 counterfeit。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "specious",
+          "comparisonZh": "spurious / specious arguments 都可批评论据不可靠。specious 尤其强调“乍看有理，实则错误”；spurious 强调虚假或依据不成立，并不保证它看上去很有说服力。伪造画作一般用 spurious 或 counterfeit。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    },
+    {
+      "number": 519,
+      "word": "cursory",
+      "ipa": "/ˈkɜːsəri/",
+      "pos": "adj.",
+      "coreMeaningZh": "匆匆的；粗略的；草率的",
+      "coreEn": "Done quickly, with little attention to detail or thoroughness.",
+      "coreImageZh": "男孩匆匆看了眼图纸就把它放下，桥梁草图中明显的缺口也没发现。他做的是 cursory inspection：只粗略扫过，没有仔细检查。",
+      "mnemonics": [
+        {
+          "method": "CURSORy · 光标掠过",
+          "textZh": "cursory 前六个字母就是 cursor（光标）。想象光标在长文上飞快划过，人也只扫了一眼，没有逐句检查：这就是 cursory，匆匆而粗略。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "cursory · curse, sorry",
+          "textZh": "借 curse（咒骂）和 sorry（抱歉）的声音连读：草草检查漏了大错，先气得 curse，接着只能说 sorry。两个词共享中间的 /s/ 来提示 cursory；这是近音联想，实际读音仍以音标为准。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "粗略、不细致的查看或检查",
+          "explanationZh": "通常放在 glance、look、reading、examination、inspection、review 等名词前。重点不只是快，而是没有深入细节；不一定出于故意敷衍。",
+          "collocations": [
+            {
+              "phrase": "a cursory glance",
+              "meaningZh": "匆匆一瞥",
+              "usageZh": "眼睛很快扫过。"
+            },
+            {
+              "phrase": "a cursory examination",
+              "meaningZh": "粗略的检查",
+              "usageZh": "没有充分检查细节。"
+            },
+            {
+              "phrase": "a cursory reading",
+              "meaningZh": "粗略阅读",
+              "usageZh": "与 close / careful reading 对照。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He gave the picture a cursory glance.",
+          "translationZh": "他匆匆看了那幅画一眼。",
+          "explanationZh": "glance 本来就短暂；cursory 进一步强调没有细看。"
+        },
+        {
+          "textEn": "Only a cursory inspection of the building's electrical wiring was done.",
+          "translationZh": "只对这栋楼的电线做了粗略检查。",
+          "explanationZh": "only 强调检查不够深入。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "perfunctory",
+          "comparisonZh": "cursory / perfunctory inspection 都可能是不仔细的检查。cursory 强調仓促而不全面；perfunctory 强调例行公事、缺乏兴趣或用心，即使速度不快也可敷衍。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "casual",
+          "comparisonZh": "cursory / casual glance 都可说随意看了一眼。cursory 明确突出快速、粗略；casual 可只表示不经意或随便。casual clothes 是休闲服，不能替换成 cursory clothes。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    },
+    {
+      "number": 322,
+      "word": "cede",
+      "ipa": "/siːd/",
+      "pos": "v.",
+      "coreMeaningZh": "让出；割让；交出权利或控制权",
+      "coreEn": "To give up possession, control, territory, or a right to another party.",
+      "coreImageZh": "男孩原先握着指挥小火车的控制器，犹豫后将它递给同伴，松手退到一旁；同伴接过并开始操作。他交出的是控制权。",
+      "mnemonics": [
+        {
+          "method": "cede / seed · 交出去",
+          "textZh": "cede 和 seed（种子）同音 /siːd/。把自己仅有的那包 seed 交给别人，连种在哪里也由对方决定：你 cede 的是对这包种子的所有权和决定权。交出去、不再由自己掌控。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "reCEDE · 退让",
+          "textZh": "用 recede（后退、退去）中的完整 cede 串起来：人往后退，把原来的位置或控制权让给别人，就是 cede。两词确实同源；但 recede 说后退，cede 通常还要说明让出了什么。",
+          "kind": "word_family",
+          "original": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物动词：让出某物、权利或控制权",
+          "explanationZh": "常用 cede something to someone。宾语说明让出的是什么，to 后说明交给谁；不要从 cede to 的词表形式推断它像 agree to 一样直接表示“同意某事”。",
+          "collocations": [
+            {
+              "phrase": "cede control to someone",
+              "meaningZh": "把控制权交给某人",
+              "usageZh": "control 是宾语，to someone 是接收方。"
+            },
+            {
+              "phrase": "cede territory",
+              "meaningZh": "割让领土",
+              "usageZh": "正式语境，常涉及条约。"
+            },
+            {
+              "phrase": "cede a right",
+              "meaningZh": "让出一项权利",
+              "usageZh": "强调不再保有该权利。"
+            }
+          ]
+        },
+        {
+          "senseZh": "被动结构及语气",
+          "explanationZh": "something is ceded to someone 表示某物被交给某人。常带不情愿或受迫色彩，但这个动词本身并不保证每次都是被强迫。",
+          "collocations": [
+            {
+              "phrase": "be ceded to another country",
+              "meaningZh": "被割让给另一个国家",
+              "usageZh": "to 引出接收方。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Russia ceded Alaska to the U.S. in 1867.",
+          "translationZh": "俄国于1867年将阿拉斯加转让给美国。",
+          "explanationZh": "Alaska 是被转让的领土，to the U.S. 表示接收方。"
+        },
+        {
+          "textEn": "By getting into someone else's car, you cede control to the driver.",
+          "translationZh": "坐进别人的车，你就把控制权交给了驾驶者。",
+          "explanationZh": "cede control to 明确说明交出了什么，以及交给谁。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "relinquish",
+          "comparisonZh": "cede / relinquish control 都可指放弃控制权。cede 通常突出把权利、领土或控制权转到另一方，常接 to；relinquish 更突出自己不再持有、主张或掌控，不一定明确接收者。cede 不等于 concede that...（承认……）。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    }
+  ]
+}
