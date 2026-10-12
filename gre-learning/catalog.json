@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "163",
-  "authoredCount": 180,
-  "publishedCount": 180,
+  "release": "164",
+  "authoredCount": 190,
+  "publishedCount": 190,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -187,7 +187,17 @@
       2267,
       1613,
       2521,
-      1378
+      1378,
+      447,
+      2190,
+      2474,
+      1163,
+      2407,
+      1961,
+      1151,
+      3031,
+      1445,
+      824
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -417,6 +427,16 @@
       "url": "units/core033-text-candidate-4ab21e2e886f0a41feda49946e1061fa819f4be794fd40d2a983358d995ec9ca.json",
       "sha256": "4ab21e2e886f0a41feda49946e1061fa819f4be794fd40d2a983358d995ec9ca",
       "bytes": 18150
+    },
+    {
+      "url": "units/core034-text-candidate-031ccaa7e611ab091544f8190f959580496747bef3fb4365c530774af1dbb743.json",
+      "sha256": "031ccaa7e611ab091544f8190f959580496747bef3fb4365c530774af1dbb743",
+      "bytes": 20052
+    },
+    {
+      "url": "units/core035-text-candidate-c6e690c7fc86a52e496aba124fff14c08efddce91b2c185a8032d39a3f5d9cc8.json",
+      "sha256": "c6e690c7fc86a52e496aba124fff14c08efddce91b2c185a8032d39a3f5d9cc8",
+      "bytes": 16988
     }
   ],
   "entries": [
@@ -14957,6 +14977,686 @@
           "url": "story-media/1378-staticPoster-5886c41f83a1d3ea7a193b7603c9c0859bf057b770affdc5d2967dcb84960e99.png",
           "sha256": "5886c41f83a1d3ea7a193b7603c9c0859bf057b770affdc5d2967dcb84960e99",
           "bytes": 1263612
+        }
+      }
+    },
+    {
+      "number": 447,
+      "word": "consummate",
+      "coreMeaningZh": "技艺精湛的；完美的；完成",
+      "unit": 44,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 181,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 4760.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 4760,
+          "text": "这么难的一段，你拉得真从容。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这么难的一段，你拉得真从容。"
+          ]
+        },
+        "alt": "男孩从容地拉奏一段难曲，稳稳地收住乐句，老师称赞他的娴熟表现。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2400,
+            "endMs": 4500,
+            "text": "这么难的一段，你拉得真从容。",
+            "speaker": "teacher-offscreen",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这么难的一段，你拉得真从容。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 4500,
+            "endMs": 4760,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/447-video-1075192491a5ac9c8f95125555d09386fa16ad7704a94d849e59f43a43b3bc83.mp4",
+          "sha256": "1075192491a5ac9c8f95125555d09386fa16ad7704a94d849e59f43a43b3bc83",
+          "bytes": 574502
+        },
+        "poster": {
+          "url": "story-media/447-poster-299e3c51ab3f48c671a872dc32df6a56a9520223536c053c762c6c8273a842ad.png",
+          "sha256": "299e3c51ab3f48c671a872dc32df6a56a9520223536c053c762c6c8273a842ad",
+          "bytes": 1155986
+        },
+        "staticPoster": {
+          "url": "story-media/447-staticPoster-fc61c6f2d5e8bad540117ed502cd51398aa039ec2c39f1171494187b978b0781.png",
+          "sha256": "fc61c6f2d5e8bad540117ed502cd51398aa039ec2c39f1171494187b978b0781",
+          "bytes": 1173196
+        }
+      }
+    },
+    {
+      "number": 2190,
+      "word": "seminal",
+      "coreMeaningZh": "开创性的；孕育后续发展的",
+      "unit": 44,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 182,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 4760.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 4760,
+          "text": "我的新画，就是受你那幅启发的。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我的新画，就是受你那幅启发的。"
+          ]
+        },
+        "alt": "女孩说明自己的新画受男孩那幅画启发，再把相同的卷曲枝条画进新作品。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 200,
+            "endMs": 2400,
+            "text": "我的新画，就是受你那幅启发的。",
+            "speaker": "girl",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我的新画，就是受你那幅启发的。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 2400,
+            "endMs": 4760,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/2190-video-bdb4dee359b24e510e913db2bca3c6226c4c7e08121843b2fe76ad4dbbaf8d70.mp4",
+          "sha256": "bdb4dee359b24e510e913db2bca3c6226c4c7e08121843b2fe76ad4dbbaf8d70",
+          "bytes": 629741
+        },
+        "poster": {
+          "url": "story-media/2190-poster-f1fa33c425da0dd0b9a655d0be55abc19461c6c89161a9d8b6e0b3a9af8e954d.png",
+          "sha256": "f1fa33c425da0dd0b9a655d0be55abc19461c6c89161a9d8b6e0b3a9af8e954d",
+          "bytes": 1309412
+        },
+        "staticPoster": {
+          "url": "story-media/2190-staticPoster-1f0aacfab972321a56aea812c2a3938ff31672fd5e5f052658e6430c96a126d2.png",
+          "sha256": "1f0aacfab972321a56aea812c2a3938ff31672fd5e5f052658e6430c96a126d2",
+          "bytes": 1309338
+        }
+      }
+    },
+    {
+      "number": 2474,
+      "word": "tepid",
+      "coreMeaningZh": "微温的；不热情的",
+      "unit": 44,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 183,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 4760.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 4760,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "女孩兴奋地展示小风车，男孩只敷衍地拍了一下手，又垂下双臂，反应冷淡。",
+        "video": {
+          "url": "story-media/2474-video-f8d02d88913457d50ef9e00756cf864afb1332c1fcb4ff714d1b762a3ec6f43c.mp4",
+          "sha256": "f8d02d88913457d50ef9e00756cf864afb1332c1fcb4ff714d1b762a3ec6f43c",
+          "bytes": 545782
+        },
+        "poster": {
+          "url": "story-media/2474-poster-4940e4d2ffc8a39a72e702f6801cce5200173734e5405fa63ea78e4b791d2365.png",
+          "sha256": "4940e4d2ffc8a39a72e702f6801cce5200173734e5405fa63ea78e4b791d2365",
+          "bytes": 1117012
+        },
+        "staticPoster": {
+          "url": "story-media/2474-staticPoster-229206c23de99cfccc3e71b85102db6a5accc39747aff1c3e3c26b6fa9cd557a.png",
+          "sha256": "229206c23de99cfccc3e71b85102db6a5accc39747aff1c3e3c26b6fa9cd557a",
+          "bytes": 1101925
+        }
+      }
+    },
+    {
+      "number": 1163,
+      "word": "imbibe",
+      "coreMeaningZh": "饮用；吸收、接受思想",
+      "unit": 44,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 184,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩坐在长椅上，举起水杯饮水，再放下水杯，神情舒畅。",
+        "video": {
+          "url": "story-media/1163-video-8296b1454543f7a1a72d2f796a66c23b957cd455bfd370ad1da9fa8cad2dbf5c.mp4",
+          "sha256": "8296b1454543f7a1a72d2f796a66c23b957cd455bfd370ad1da9fa8cad2dbf5c",
+          "bytes": 707289
+        },
+        "poster": {
+          "url": "story-media/1163-poster-a4f4f29643063718e904b979c853c0aade78b463bf5df61c6377d028c9a83dcb.png",
+          "sha256": "a4f4f29643063718e904b979c853c0aade78b463bf5df61c6377d028c9a83dcb",
+          "bytes": 1292147
+        },
+        "staticPoster": {
+          "url": "story-media/1163-staticPoster-9eec00cd13da2037b493e7af8544db65f0f3c857fd9ec4166a9f378435295654.png",
+          "sha256": "9eec00cd13da2037b493e7af8544db65f0f3c857fd9ec4166a9f378435295654",
+          "bytes": 1299334
+        }
+      }
+    },
+    {
+      "number": 2407,
+      "word": "supple",
+      "coreMeaningZh": "柔韧、易弯曲的；灵活的",
+      "unit": 44,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 185,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩把柔软的皮带轻轻弯成深深的U形，再舒展开，皮革柔韧而不断裂。",
+        "video": {
+          "url": "story-media/2407-video-baaff079aed235ddf2625eea3e348cde9507c32e134ff13791bfd3fd2f924c2a.mp4",
+          "sha256": "baaff079aed235ddf2625eea3e348cde9507c32e134ff13791bfd3fd2f924c2a",
+          "bytes": 596566
+        },
+        "poster": {
+          "url": "story-media/2407-poster-095762d487ca11132923295d8a087c4cc3a9dca8f4cf9b2bb21ff77d6f8b8605.png",
+          "sha256": "095762d487ca11132923295d8a087c4cc3a9dca8f4cf9b2bb21ff77d6f8b8605",
+          "bytes": 1117921
+        },
+        "staticPoster": {
+          "url": "story-media/2407-staticPoster-ca3bb02e51ebe8eeff5baaa819cb693fd2ea1997025eecdac103dc4f5b11ca30.png",
+          "sha256": "ca3bb02e51ebe8eeff5baaa819cb693fd2ea1997025eecdac103dc4f5b11ca30",
+          "bytes": 1125678
+        }
+      }
+    },
+    {
+      "number": 1961,
+      "word": "rapprochement",
+      "coreMeaningZh": "关系缓和；恢复友好",
+      "unit": 45,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 186,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "男孩：要不要先吃块饼干？\n女孩：好，我们慢慢聊。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "男孩：要不要先吃块饼干？",
+            "女孩：好，我们慢慢聊。"
+          ]
+        },
+        "alt": "原本背过脸、抱着手臂的两人逐渐转向彼此；男孩递出饼干，女孩伸手回应并露出浅笑，关系开始缓和。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2400,
+            "endMs": 4000,
+            "text": "要不要先吃块饼干？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "要不要先吃块饼干？"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 4000,
+            "endMs": 5900,
+            "text": "好，我们慢慢聊。",
+            "speaker": "girl",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "好，我们慢慢聊。"
+            ],
+            "id": "stage-2"
+          },
+          {
+            "startMs": 5900,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-3"
+          }
+        ],
+        "video": {
+          "url": "story-media/1961-video-8d970841b8567b07e3890b38fdf6780c4b04dc65c787680374b8c82567e9c91c.mp4",
+          "sha256": "8d970841b8567b07e3890b38fdf6780c4b04dc65c787680374b8c82567e9c91c",
+          "bytes": 738910
+        },
+        "poster": {
+          "url": "story-media/1961-poster-0293ebba4206dc8ce03e5637155d89347c507fba9a8bc226728cf8dbad0d1768.png",
+          "sha256": "0293ebba4206dc8ce03e5637155d89347c507fba9a8bc226728cf8dbad0d1768",
+          "bytes": 1312862
+        },
+        "staticPoster": {
+          "url": "story-media/1961-staticPoster-b87f87666c0381f1c50722ec798b4bbf5a2819d4c5c5f9f730ca6936e24ce705.png",
+          "sha256": "b87f87666c0381f1c50722ec798b4bbf5a2819d4c5c5f9f730ca6936e24ce705",
+          "bytes": 1325167
+        }
+      }
+    },
+    {
+      "number": 1151,
+      "word": "hyperbole",
+      "coreMeaningZh": "夸张；夸张法",
+      "unit": 45,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 187,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 5400.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 5400,
+          "text": "我饿得能吃下一座山！",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我饿得能吃下一座山！"
+          ]
+        },
+        "alt": "男孩看着小三明治，张开双臂夸张地说自己饿得能吃下一座山，随后微笑着放下双臂。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1400,
+            "endMs": 4000,
+            "text": "我饿得能吃下一座山！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我饿得能吃下一座山！"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 4000,
+            "endMs": 5400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/1151-video-1a6ac79520a8500738e9d5c5a03ff19ed5ba54ebaa0fa1f0d80190f8e09c7859.mp4",
+          "sha256": "1a6ac79520a8500738e9d5c5a03ff19ed5ba54ebaa0fa1f0d80190f8e09c7859",
+          "bytes": 713119
+        },
+        "poster": {
+          "url": "story-media/1151-poster-6410ab6d2b997298b718ca16dd138cd0db729dc9c764de3de8959e052b2e0997.png",
+          "sha256": "6410ab6d2b997298b718ca16dd138cd0db729dc9c764de3de8959e052b2e0997",
+          "bytes": 1270909
+        },
+        "staticPoster": {
+          "url": "story-media/1151-staticPoster-defc3c149f5755b3eb102b993de420f6bd0e9fb69c490a869a7b0ae064650db9.png",
+          "sha256": "defc3c149f5755b3eb102b993de420f6bd0e9fb69c490a869a7b0ae064650db9",
+          "bytes": 1266286
+        }
+      }
+    },
+    {
+      "number": 3031,
+      "word": "succumb",
+      "coreMeaningZh": "屈服；抵挡不住；病重身亡",
+      "unit": 45,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 188,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6000,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩原本抱臂抵抗饼干的诱惑，随后忍不住伸手，向前一步拿起饼干并咬了一口。",
+        "video": {
+          "url": "story-media/3031-video-6f72bc9174cbe67c8cac262135f6dd985c7973a2dadd7dc88b8c1e99210f9765.mp4",
+          "sha256": "6f72bc9174cbe67c8cac262135f6dd985c7973a2dadd7dc88b8c1e99210f9765",
+          "bytes": 752209
+        },
+        "poster": {
+          "url": "story-media/3031-poster-00ca579ad0bf8ce19b93054b255b43fffa5010be08a0c44e6c2dbbf406131d54.png",
+          "sha256": "00ca579ad0bf8ce19b93054b255b43fffa5010be08a0c44e6c2dbbf406131d54",
+          "bytes": 1261918
+        },
+        "staticPoster": {
+          "url": "story-media/3031-staticPoster-f4a660521b9b26d8bb83e96edaec78f9bf05054e2a8ebb42d8b5dccbf639b634.png",
+          "sha256": "f4a660521b9b26d8bb83e96edaec78f9bf05054e2a8ebb42d8b5dccbf639b634",
+          "bytes": 1263865
+        }
+      }
+    },
+    {
+      "number": 1445,
+      "word": "malodorous",
+      "coreMeaningZh": "难闻的；有臭味的",
+      "unit": 45,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 189,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 5400.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 5400,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "敞开的餐盒散发难闻气味，男孩皱起眉头捏住鼻子，嫌恶地转过脸。",
+        "video": {
+          "url": "story-media/1445-video-f2c768afbd18ca5023591ced320f584dfc2fab4eea24b7e18826869a2beed4a2.mp4",
+          "sha256": "f2c768afbd18ca5023591ced320f584dfc2fab4eea24b7e18826869a2beed4a2",
+          "bytes": 686538
+        },
+        "poster": {
+          "url": "story-media/1445-poster-5de4b494378003472f2ed713a0cecfe728f7c41c4e5c4d976135acc55d453927.png",
+          "sha256": "5de4b494378003472f2ed713a0cecfe728f7c41c4e5c4d976135acc55d453927",
+          "bytes": 1231250
+        },
+        "staticPoster": {
+          "url": "story-media/1445-staticPoster-ca9f44d7fd5ce87a8d1e9fcf48f1ae998cfaa3c35bf28997b520471f34414ee4.png",
+          "sha256": "ca9f44d7fd5ce87a8d1e9fcf48f1ae998cfaa3c35bf28997b520471f34414ee4",
+          "bytes": 1242498
+        }
+      }
+    },
+    {
+      "number": 824,
+      "word": "eschew",
+      "coreMeaningZh": "有意避开；避免采用；戒绝",
+      "unit": 45,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 190,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6000,
+          "text": "我不用一次性杯子。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我不用一次性杯子。"
+          ]
+        },
+        "alt": "男孩明确拒绝使用一次性杯子，转而拿起可重复使用的水壶，纸杯始终未动。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1200,
+            "endMs": 2800,
+            "text": "我不用一次性杯子。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我不用一次性杯子。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 2800,
+            "endMs": 6000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/824-video-8bf01f80d1c335c4fbacfd75c06995e17afba3d7eca002f9534827f02f5b6526.mp4",
+          "sha256": "8bf01f80d1c335c4fbacfd75c06995e17afba3d7eca002f9534827f02f5b6526",
+          "bytes": 854113
+        },
+        "poster": {
+          "url": "story-media/824-poster-a6f5fd0e3cb0c7324857e796f303e6ce130818461fc4336ef8cdbce0f35e1964.png",
+          "sha256": "a6f5fd0e3cb0c7324857e796f303e6ce130818461fc4336ef8cdbce0f35e1964",
+          "bytes": 1256165
+        },
+        "staticPoster": {
+          "url": "story-media/824-staticPoster-c0a6bfdd238061097417683753141897215dd3a1d430015b6fb17fa88f8452d2.png",
+          "sha256": "c0a6bfdd238061097417683753141897215dd3a1d430015b6fb17fa88f8452d2",
+          "bytes": 1260035
         }
       }
     }
