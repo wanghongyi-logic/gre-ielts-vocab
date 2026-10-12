@@ -1,10 +1,10 @@
 {
-  "build": "166-offline200-v19",
+  "build": "166-offline200-v20",
   "assets": [
     {
       "url": "index.html",
-      "sha256": "52373088ff602257d434d277a8d3a9f7dae74b15c1c2ad62ebf0d0cde0ef53b8",
-      "bytes": 3089
+      "sha256": "795c1e375a3f2e09b911918331f6b2dc0204b070a63a2916d6a49470a1f7f684",
+      "bytes": 9222
     },
     {
       "url": "manifest.webmanifest",
@@ -18,7 +18,7 @@
     },
     {
       "url": "gre-learning/update.js",
-      "sha256": "dda3ccd4d10d9fba1dbb7d19f27483bd0b3ce601dec5875e9b99c64a79527a0f",
+      "sha256": "7c54ede9444f5a4d40132c1543019c63bb39979b2ec1c73d5dc6b460b3f3ef43",
       "bytes": 2635
     },
     {
@@ -98,8 +98,8 @@
     },
     {
       "url": "gre-learning/bookmark-navigation.js",
-      "sha256": "2e729aeb3554976d800a008618ff57a9a49f16acd983ee8623cddb76cd89ed3b",
-      "bytes": 4377
+      "sha256": "0312f841d74c0710dd27ef7164ced33d7c83316abdcb78d463b91c888b73650e",
+      "bytes": 4473
     },
     {
       "url": "gre-learning/contents.js",
@@ -383,7 +383,7 @@
     },
     {
       "url": "gre-learning/offline-preferences.js",
-      "sha256": "4b6baa46748a67ab9dcdfea49f5f3101e52a17ab95133f52935416804cee0820",
+      "sha256": "e561455f2b30773579637d8447ad6f5ffd4223b1c84abc671b68b920cfd2ad76",
       "bytes": 1103
     },
     {
@@ -430,6 +430,26 @@
       "url": "gre-learning/images/bookbinding-inlay.webp",
       "sha256": "90d03a7a65dc1697837c5d45769c8dd9c58fc8077ded12f4b796d100ceea8752",
       "bytes": 17080
+    },
+    {
+      "url": "gre-learning/sculpted-book-edge.js",
+      "sha256": "5faaca7965d8e3bb6aa9ce0afceccd60aee187468be57cdd6a3b89fc4fc3a61a",
+      "bytes": 5951
+    },
+    {
+      "url": "gre-learning/sculpted-book-edge.css",
+      "sha256": "25e00e523259f5e80298a59f89b6dded5fd4c022631582b3d4c38c98efc3148b",
+      "bytes": 12445
+    },
+    {
+      "url": "gre-learning/sculpted-continuous-paper.webp",
+      "sha256": "eedb6ab4b769846e070f49c53e0f76ea452669d1f25a8d11d7444f3bbc6a1f59",
+      "bytes": 121540
+    },
+    {
+      "url": "gre-learning/sculpted-paper-leaves.webp",
+      "sha256": "41b1dc18794d5dfa92f184645c6534596da65d8453d72583b68b05612f67ba34",
+      "bytes": 28506
     }
   ]
 }
