@@ -484,3 +484,8 @@
 #offline-settings .library-clear-row .library-clear-action{margin:0}
 #offline-settings [data-backup-downloads] .release-downloads{margin:10px 0 18px}
 #offline-settings [data-backup-downloads] .release-browser>summary{min-height:44px;font-size:15px;padding:8px 0}
+
+/* One download list; imported-file controls stay with Import. */
+#offline-settings .library-packs{border-top:0}
+#offline-settings .library-packs>summary{min-height:44px;padding:0 0 10px;font-size:14px;color:var(--settings-muted)}
+

@@ -11,3 +11,12 @@
 #word-picker.contents-page{touch-action:pan-y pinch-zoom}
 .frontmatter-navigation-hint{font-family:var(--serif);font-size:14px;letter-spacing:.025em;line-height:1.8;color:var(--muted);margin:12px 0 0;text-align:center}
 @media(prefers-reduced-motion:reduce){.frontmatter-turn{display:none}.frontmatter-live-leaf{will-change:auto}}
+
+/* One ivory leaf above a stationary sculpted page block. The runtime measures
+   its inner boundary; shadows and curls are contained on the reading side. */
+.frontmatter-turn[data-book-edge="sculpted"],.paper-turn[data-book-edge="sculpted"]{--turn-paper:#faf5e9;--turn-depth:#eee5d3;--turn-seam:#b6a181}
+.frontmatter-turn[data-book-edge="sculpted"] .frontmatter-fold,.paper-turn[data-book-edge="sculpted"] .paper-turn-fold{background:linear-gradient(90deg,var(--turn-seam) 0%,var(--turn-depth) 8%,var(--turn-paper) 36%,#fffaf0 65%,var(--turn-depth) 95%,var(--turn-seam) 100%);box-shadow:-3px 0 8px #b6a18124,1px 0 2px #faf5e9cc}
+.frontmatter-turn[data-book-edge="sculpted"][data-direction="previous"] .frontmatter-fold,.paper-turn[data-book-edge="sculpted"][data-direction="previous"] .paper-turn-fold{background:linear-gradient(270deg,var(--turn-seam) 0%,var(--turn-depth) 8%,var(--turn-paper) 36%,#fffaf0 65%,var(--turn-depth) 95%,var(--turn-seam) 100%);box-shadow:3px 0 8px #b6a18124,-1px 0 2px #faf5e9cc}
+.paper-turn[data-book-edge="sculpted"]{box-shadow:none}
+.paper-turn[data-book-edge="sculpted"] .paper-turn-shadow{background:linear-gradient(90deg,#b6a181,transparent);filter:blur(3px)}
+.paper-turn[data-book-edge="sculpted"][data-direction="previous"] .paper-turn-shadow{background:linear-gradient(270deg,#b6a181,transparent)}

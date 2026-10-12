@@ -1,5 +1,5 @@
 {
-  "build": "166-offline200-v17",
+  "build": "166-offline200-v18",
   "assets": [
     {
       "url": "index.html",
@@ -18,7 +18,7 @@
     },
     {
       "url": "gre-learning/update.js",
-      "sha256": "b36dddd78a5e1b870fc4f63df1b93047abce8e3f63a3b72ab603c2da39d8150f",
+      "sha256": "23401f265c61878892933ccd9bf10dd7ea6509fd8eb7996f846bd12ef683b2b7",
       "bytes": 2635
     },
     {
@@ -53,8 +53,8 @@
     },
     {
       "url": "gre-learning/swipe.js",
-      "sha256": "dd63fdc2aeb25b42167f4ca05c9d2095e1f27637b3130f8e966d087a79d66f96",
-      "bytes": 21736
+      "sha256": "8d47fe256d9a40a7b9ed2b13f7f1947076b62c979c5cc90f24a9f1e71c3dc34e",
+      "bytes": 21992
     },
     {
       "url": "gre-learning/motion.js",
@@ -128,8 +128,8 @@
     },
     {
       "url": "gre-learning/offline-manager.js",
-      "sha256": "f3be478ecba38176a345b5a08ef0fff28f7b8b652b6ba11dfa069f85bde22f47",
-      "bytes": 19372
+      "sha256": "7d6e7712c3d30ccb6596a62eb65fd34775eb2465b95bcaa8f54fd90d416e1069",
+      "bytes": 16857
     },
     {
       "url": "gre-learning/units/175-184-7237c053125a7b03df08fbbe14200ddf95cb5abc0a0d0b53654678213ab639c7.json",
@@ -383,7 +383,7 @@
     },
     {
       "url": "gre-learning/offline-preferences.js",
-      "sha256": "3e9849a317a9fd8d8d4571940c0edcde496dc1b322b3decd340c8695e741962f",
+      "sha256": "fa538c818e7d5ebc382ef8fcd780cb22d0acbac949957ff71e78f7345fc91cd6",
       "bytes": 1103
     },
     {
@@ -408,18 +408,18 @@
     },
     {
       "url": "gre-learning/settings-storybook.css",
-      "sha256": "9374d6fa1868397c9663459d78cabbc46a041c8df39c7b25dd0272e22f889230",
-      "bytes": 15690
+      "sha256": "78488fe5e7cf2f4d4beb856ddda8db152f6cb7cd0edc48166ef3baa97b0f2bff",
+      "bytes": 15923
     },
     {
       "url": "gre-learning/frontmatter-turn.js",
-      "sha256": "f4b5c6033ccefb7e05b54a655c6288fbde408b4abfa5aa794265d3951ed66cac",
-      "bytes": 8751
+      "sha256": "2d63190edfedd908c3cccfba625430a21664cf2b8fb93a0e616c67ef5e39bdf8",
+      "bytes": 9389
     },
     {
       "url": "gre-learning/frontmatter-turn.css",
-      "sha256": "026c2de0c4cb3ca942b5f99c74effd9638a871d1a4038a775b874c7cc9533807",
-      "bytes": 1672
+      "sha256": "7325a370c8049be1dea0f944a0534771b05217eda5796054d059c184645445ac",
+      "bytes": 3010
     },
     {
       "url": "gre-learning/images/botanical-progress-bookmark.png",

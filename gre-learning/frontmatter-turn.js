@@ -4,8 +4,11 @@ const clamp=value=>Math.max(0,Math.min(1,value));
 export function leafGeometry(progress,direction,width,height,{left=0,top=0}={}) {
  const p=clamp(progress),back=direction==='previous',bend=Math.sin(Math.PI*p);
  const edge=1-p*1.12,bow=bend*.035,flip=x=>back?1-x:x;
+ // Intersect the outgoing face with the real leaf, not its possibly wider DOM
+ // box. Overshoot may move the curl offscreen, but must never resurrect a strip
+ // of old text beyond the fixed book edge. At p=1 the face has exactly zero area.
  const points=[[flip(0),0],[flip(edge-bow),0],[flip(edge),.24],[flip(edge+bow),.5],[flip(edge),.76],[flip(edge-bow),1],[flip(0),1]];
- return {clip:`polygon(${points.map(([x,y])=>`${(left+x*width).toFixed(2)}px ${(top+y*height).toFixed(2)}px`).join(',')})`,edge:flip(edge)*100,curl:Math.min(21,p*65)*Math.pow(1-p,.55),bend,opacity:Math.min(1,p*22)*Math.min(1,(1-p)*15)};
+ return {clip:`polygon(${points.map(([x,y])=>`${(left+clamp(x)*width).toFixed(2)}px ${(top+y*height).toFixed(2)}px`).join(',')})`,edge:flip(edge)*100,curl:Math.min(21,p*65)*Math.pow(1-p,.55),bend,opacity:Math.min(1,p*22)*Math.min(1,(1-p)*15)};
 }
 
 export function installFrontmatterTurn({main,onActivity=()=>{},window:win=window,document:doc=document}) {
@@ -64,7 +67,11 @@ export function installFrontmatterTurn({main,onActivity=()=>{},window:win=window
   if(active)finish(!active.interactive);
   const rect=source.getBoundingClientRect(),v=win.visualViewport;
   const left=Math.max(rect.left,v?.offsetLeft||0),top=Math.max(rect.top,v?.offsetTop||0);
-  const right=Math.min(rect.right??rect.left+rect.width,(v?.offsetLeft||0)+(v?.width||win.innerWidth));
+  // The page block is stationary. Measure its inner edge, especially where a
+  // desktop main is wider than the max-width reading leaf; never peel the gutter.
+  const foreedge=doc.querySelector?.('.bookmarks.paper-foreedge')?.getBoundingClientRect?.();
+  const edgeLeft=foreedge?.width>0?foreedge.left:Infinity;
+  const right=Math.min(rect.right??rect.left+rect.width,(v?.offsetLeft||0)+(v?.width||win.innerWidth),edgeLeft);
   const bottom=Math.min(rect.bottom,(v?.offsetTop||0)+(v?.height||win.innerHeight));
   const state=active={commit,rollback,interactive,direction,progress:0,frame:0,timer:0,rect,bounds:{left,top,width:Math.max(0,right-left),height:Math.max(0,bottom-top)}};
   state.finished=new Promise(resolve=>{state.resolve=resolve;});
@@ -86,7 +93,7 @@ export function installFrontmatterTurn({main,onActivity=()=>{},window:win=window
     for(const [name,value,priority] of styles){if(value)face.style.setProperty(name,value,priority);else face.style.removeProperty(name);}
     if(!face.style.cssText)face.removeAttribute('style');
    };
-   const overlay=doc.createElement('div');overlay.className='frontmatter-turn';overlay.inert=true;overlay.setAttribute('aria-hidden','true');overlay.dataset.direction=direction;
+   const overlay=doc.createElement('div');overlay.className='frontmatter-turn';if(Number.isFinite(edgeLeft))overlay.dataset.bookEdge='sculpted';overlay.inert=true;overlay.setAttribute('aria-hidden','true');overlay.dataset.direction=direction;
    Object.assign(overlay.style,{left:`${left}px`,top:`${top}px`,width:`${state.bounds.width}px`,height:`${state.bounds.height}px`});
    state.folds=Array.from({length:1},(_,index)=>{const fold=doc.createElement('div');fold.className='frontmatter-fold';fold.dataset.sheet=String(index);overlay.append(fold);return fold;});
    state.overlay=overlay;doc.body.append(overlay);

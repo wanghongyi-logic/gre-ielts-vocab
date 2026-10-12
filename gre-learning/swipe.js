@@ -24,9 +24,9 @@ export function moveSwipe(state,{x,y,time}) {
 // DOM rectangles and fixed overlays use layout-viewport coordinates. The visible
 // viewport can move inside it when mobile browser chrome or orientation changes.
 export const paperSafeInset=(articleTop,viewportTop,inset)=>Math.max(0,Math.min(inset,articleTop-viewportTop));
-export function paperViewportBounds(rect,{left=0,top=0,width,height},safeTop=0){
+export function paperViewportBounds(rect,{left=0,top=0,width,height},safeTop=0,edgeLeft=Infinity){
  const x=Math.max(rect.left,left),y=Math.max(rect.top,top+Math.max(0,safeTop));
- const right=Math.min(rect.right??rect.left+rect.width,left+width);
+ const right=Math.min(rect.right??rect.left+rect.width,left+width,edgeLeft);
  const bottom=Math.min(rect.bottom,top+height);
  return {left:x,top:y,width:Math.max(0,right-x),height:Math.max(0,bottom-y)};
 }
@@ -87,11 +87,13 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepare
     const article=surface.querySelector('.reading-layout');
     if(!article)return;
     const rect=article.getBoundingClientRect(),v=syncSafeArea();
-    const bounds=paperViewportBounds(rect,v,safeArea.getBoundingClientRect().height);
+    const foreedge=doc.querySelector?.('.bookmarks.paper-foreedge')?.getBoundingClientRect?.();
+    const edgeLeft=foreedge?.width>0?foreedge.left:Infinity;
+    const bounds=paperViewportBounds(rect,v,safeArea.getBoundingClientRect().height,edgeLeft);
     const {left,top,width,height}=bounds;
     if(!width||!height)return;
     onTurnActivity(true);
-    paper=doc.createElement('div');paper.className='paper-turn';
+    paper=doc.createElement('div');paper.className='paper-turn';if(Number.isFinite(edgeLeft))paper.dataset.bookEdge='sculpted';
     paper.setAttribute('aria-hidden','true');paper.inert=true;paper.dataset.direction=direction;
     Object.assign(paper.style,{left:`${left}px`,top:`${top}px`,width:`${width}px`,height:`${height}px`});
     const underneath=doc.createElement('div');underneath.className='paper-turn-underneath';
