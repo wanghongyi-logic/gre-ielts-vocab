@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "153",
-  "authoredCount": 100,
-  "publishedCount": 100,
+  "release": "154",
+  "authoredCount": 105,
+  "publishedCount": 105,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -107,7 +107,12 @@
       825,
       1908,
       2473,
-      1423
+      1423,
+      786,
+      754,
+      1444,
+      2964,
+      2445
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -257,6 +262,11 @@
       "url": "units/core017-text-approved-ec7d82ffa823c951f67a5b7fd9bb6c77ed59f32c2950b002b34cca78e408ab10.json",
       "sha256": "ec7d82ffa823c951f67a5b7fd9bb6c77ed59f32c2950b002b34cca78e408ab10",
       "bytes": 20911
+    },
+    {
+      "url": "units/core018-text-approved-758cb0e4c979996fd3974c21e69b2117725d5a8c47c03737874ee6b1505a7e8c.json",
+      "sha256": "758cb0e4c979996fd3974c21e69b2117725d5a8c47c03737874ee6b1505a7e8c",
+      "bytes": 22413
     }
   ],
   "entries": [
@@ -7670,6 +7680,739 @@
             "y": 0.12
           }
         }
+      }
+    },
+    {
+      "number": 786,
+      "word": "encumber",
+      "coreMeaningZh": "使负重、拖累；妨碍行动或进展；使财产附有权利负担",
+      "unit": 28,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 101,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 9520,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Exact root-reviewed fully illustrated restart"
+        },
+        "video": {
+          "url": "story-media/786-617d131f9d267a6e353c7e3983cb4f7f89c68e99c4aefd3b9a564078a122e117.mp4",
+          "sha256": "617d131f9d267a6e353c7e3983cb4f7f89c68e99c4aefd3b9a564078a122e117",
+          "bytes": 975666
+        },
+        "poster": {
+          "url": "story-media/786-63f983babdeade80411c34752d4abbfc6a7f2ca0a7f500fac28d7aec2c03829c.png",
+          "sha256": "63f983babdeade80411c34752d4abbfc6a7f2ca0a7f500fac28d7aec2c03829c",
+          "bytes": 1212444
+        },
+        "staticPoster": {
+          "url": "story-media/786-a4cd5513ca6f337ee5e70c1d0d5e207de1ae7a5b5e57d18cbe7a73505d12dcbb.png",
+          "sha256": "a4cd5513ca6f337ee5e70c1d0d5e207de1ae7a5b5e57d18cbe7a73505d12dcbb",
+          "bytes": 1237908
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1800,
+            "endMs": 3520,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 3520,
+            "endMs": 3600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 3600,
+            "endMs": 5600,
+            "text": "这些箱子太碍事，过个门都费劲。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这些箱子太碍事，",
+              "过个门都费劲。"
+            ]
+          },
+          {
+            "id": "stage-4",
+            "startMs": 5600,
+            "endMs": 6400,
+            "text": "这些箱子太碍事，过个门都费劲。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这些箱子太碍事，",
+              "过个门都费劲。"
+            ]
+          },
+          {
+            "id": "stage-5",
+            "startMs": 6400,
+            "endMs": 7200,
+            "text": "这些箱子太碍事，过个门都费劲。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这些箱子太碍事，",
+              "过个门都费劲。"
+            ]
+          },
+          {
+            "id": "stage-6",
+            "startMs": 7200,
+            "endMs": 7800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 7800,
+            "endMs": 9520,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "这些箱子太碍事，过个门都费劲。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这些箱子太碍事，",
+            "过个门都费劲。"
+          ]
+        },
+        "alt": "男孩抱着两只大箱子，双手腾不出来，也不好看清脚下的门槛。他费力地侧身探看，又停下来稳住箱子。箱子 encumber him：成为负担，使过门这样的动作也变得困难。"
+      }
+    },
+    {
+      "number": 754,
+      "word": "effusive",
+      "coreMeaningZh": "热情洋溢的；感情外露的（有时显得过度）",
+      "unit": 28,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 102,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 10520,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Exact root-reviewed fully illustrated restart"
+        },
+        "video": {
+          "url": "story-media/754-f4607e3ebb49ee0f117677127f47b529a7b690d45152a047e0bd23a5cb2a719c.mp4",
+          "sha256": "f4607e3ebb49ee0f117677127f47b529a7b690d45152a047e0bd23a5cb2a719c",
+          "bytes": 1614294
+        },
+        "poster": {
+          "url": "story-media/754-8d266c0af1871a8c6f2d7f617d137baf80cd28d964e60c48ff1739758f493a36.png",
+          "sha256": "8d266c0af1871a8c6f2d7f617d137baf80cd28d964e60c48ff1739758f493a36",
+          "bytes": 1269846
+        },
+        "staticPoster": {
+          "url": "story-media/754-6800da2b71cc02d0540dcaa34332ea3f5021db899eba0ce6ecedd240e6d8c654.png",
+          "sha256": "6800da2b71cc02d0540dcaa34332ea3f5021db899eba0ce6ecedd240e6d8c654",
+          "bytes": 1282865
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1320,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1320,
+            "endMs": 3800,
+            "text": "太谢谢你了！这么快就修好了！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 3800,
+            "endMs": 3900,
+            "text": "太谢谢你了！这么快就修好了！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 3900,
+            "endMs": 4000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 4000,
+            "endMs": 5100,
+            "text": "不客气。",
+            "speaker": "helper",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 5100,
+            "endMs": 5120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 5120,
+            "endMs": 5200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 5200,
+            "endMs": 8320,
+            "text": "你手艺真好！真的帮了我大忙！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-8",
+            "startMs": 8320,
+            "endMs": 8400,
+            "text": "你手艺真好！真的帮了我大忙！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-9",
+            "startMs": 8400,
+            "endMs": 9000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-10",
+            "startMs": 9000,
+            "endMs": 9600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-11",
+            "startMs": 9600,
+            "endMs": 10520,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "太谢谢你了！你手艺真好，真的帮了我大忙！",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "朋友帮男孩修好了自行车。男孩热情地连声道谢；朋友刚说不客气，他又忍不住夸起对方的手艺。effusive 写的是感谢和赞美充分地流露出来，多得几乎收不住。"
+      }
+    },
+    {
+      "number": 1444,
+      "word": "malleable",
+      "coreMeaningZh": "可锻的，易塑形的；易受影响或改变的",
+      "unit": 28,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 103,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Exact root-reviewed fully illustrated restart"
+        },
+        "video": {
+          "url": "story-media/1444-2410ab6db528571c230103fea979f24eaa566fe28a3481d1beff2b0547fc660d.mp4",
+          "sha256": "2410ab6db528571c230103fea979f24eaa566fe28a3481d1beff2b0547fc660d",
+          "bytes": 1353651
+        },
+        "poster": {
+          "url": "story-media/1444-0610701b95ff6f88bcdcac5a64b2acc927a6782dc4d0a0401ac32d65af74ae9d.png",
+          "sha256": "0610701b95ff6f88bcdcac5a64b2acc927a6782dc4d0a0401ac32d65af74ae9d",
+          "bytes": 1270785
+        },
+        "staticPoster": {
+          "url": "story-media/1444-792e2b739e7fac1b6b342cc82a0fa934f5829be16e602b2b4ccc26b00cc94d69.png",
+          "sha256": "792e2b739e7fac1b6b342cc82a0fa934f5829be16e602b2b4ccc26b00cc94d69",
+          "bytes": 1310417
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 800,
+            "endMs": 1360,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 1360,
+            "endMs": 2120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 2120,
+            "endMs": 2800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 2800,
+            "endMs": 3400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 3400,
+            "endMs": 4520,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 4520,
+            "endMs": 5720,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 5720,
+            "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩把一团软泥压成扁圆饼，又用手指把边缘捏起来，做成小碗。软泥受力后改变形状，没有碎裂。malleable 就抓住这种“容易被塑形”的性质；人的想法易被外界改变，也可以这样形容。"
+      }
+    },
+    {
+      "number": 2964,
+      "word": "panacea",
+      "coreMeaningZh": "万能药；被寄望能解决一切问题的办法",
+      "unit": 28,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 104,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7600,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Exact root-reviewed fully illustrated restart"
+        },
+        "video": {
+          "url": "story-media/2964-d9094bb384eb90560ad42da998575e06ddbbcbb475d064f8b6030f0f01e68637.mp4",
+          "sha256": "d9094bb384eb90560ad42da998575e06ddbbcbb475d064f8b6030f0f01e68637",
+          "bytes": 1027939
+        },
+        "poster": {
+          "url": "story-media/2964-f0eebac9fe1bc63410692a953efcbe58b278910b624b74c61cd44c22068870ab.png",
+          "sha256": "f0eebac9fe1bc63410692a953efcbe58b278910b624b74c61cd44c22068870ab",
+          "bytes": 1220918
+        },
+        "staticPoster": {
+          "url": "story-media/2964-e911c5e1bb3505f43add68f0ab5d6b5b8e6fcd20ed36e4bef8c778a6ec65103c.png",
+          "sha256": "e911c5e1bb3505f43add68f0ab5d6b5b8e6fcd20ed36e4bef8c778a6ec65103c",
+          "bytes": 1290205
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 920,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 920,
+            "endMs": 1720,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 1720,
+            "endMs": 2920,
+            "text": "摊主：这一瓶，什么病都能治！",
+            "speaker": "vendor",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "摊主：这一瓶，",
+              "什么病都能治！"
+            ]
+          },
+          {
+            "id": "stage-3",
+            "startMs": 2920,
+            "endMs": 4120,
+            "text": "摊主：这一瓶，什么病都能治！",
+            "speaker": "vendor",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "摊主：这一瓶，",
+              "什么病都能治！"
+            ]
+          },
+          {
+            "id": "stage-4",
+            "startMs": 4120,
+            "endMs": 5200,
+            "text": "摊主：这一瓶，什么病都能治！",
+            "speaker": "vendor",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "摊主：这一瓶，",
+              "什么病都能治！"
+            ]
+          },
+          {
+            "id": "stage-5",
+            "startMs": 5200,
+            "endMs": 7600,
+            "text": "摊主：这一瓶，什么病都能治！",
+            "speaker": "vendor",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "摊主：这一瓶，",
+              "什么病都能治！"
+            ]
+          }
+        ],
+        "posterDialogue": {
+          "text": "摊主：这一瓶，\n什么病都能治！",
+          "speaker": "vendor",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "摊主：这一瓶，",
+            "什么病都能治！"
+          ]
+        },
+        "alt": "摊主举起同一瓶药，指着画有头痛、咳嗽、腿痛的三张卡片，声称这一瓶样样都能治。panacea 抓住的是“一个办法包办所有问题”的许诺；说 no panacea，就是提醒人们没有这么万能。"
+      }
+    },
+    {
+      "number": 2445,
+      "word": "taint",
+      "coreMeaningZh": "使受污染；玷污、损害；污点、不良影响",
+      "unit": 28,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 105,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7400,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Exact root-reviewed fully illustrated restart"
+        },
+        "video": {
+          "url": "story-media/2445-0bd5d4168044a2f469ba491b3e9da5122ebd9ce4236d8d37a4c1e5f2d495c3a2.mp4",
+          "sha256": "0bd5d4168044a2f469ba491b3e9da5122ebd9ce4236d8d37a4c1e5f2d495c3a2",
+          "bytes": 1173431
+        },
+        "poster": {
+          "url": "story-media/2445-4e204d4fd864f7fead28bb72f7ca4620aa457b8e024ef1a90e558075886ca36a.png",
+          "sha256": "4e204d4fd864f7fead28bb72f7ca4620aa457b8e024ef1a90e558075886ca36a",
+          "bytes": 1274353
+        },
+        "staticPoster": {
+          "url": "story-media/2445-12ea56eeb08057ab2a7dc75b45bd9ef1d8be3321d95a93370d0cbb3bd7841aaa.png",
+          "sha256": "12ea56eeb08057ab2a7dc75b45bd9ef1d8be3321d95a93370d0cbb3bd7841aaa",
+          "bytes": 1346314
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1120,
+            "endMs": 2080,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 2080,
+            "endMs": 2240,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 2240,
+            "endMs": 2400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 2400,
+            "endMs": 2560,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 2560,
+            "endMs": 3040,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 3040,
+            "endMs": 4160,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 4160,
+            "endMs": 7400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "桌上的清水混进一点脏污。男孩看见水变浑，停下了伸向杯子的手。taint 写的是原本的纯净或品质受到破坏；抽象地说，丑闻也能玷污一个人的名声。"
       }
     }
   ],
