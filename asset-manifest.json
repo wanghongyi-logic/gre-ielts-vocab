@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "155",
-  "generatedAt": "2026-10-12T03:54:26.643297+00:00",
+  "releaseBuild": "156",
+  "generatedAt": "2026-10-12T04:49:20.366735+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-reviewed-order",
@@ -29,9 +29,9 @@
     {
       "path": "gre-learning/catalog.json",
       "loading": "shell",
-      "bytes": 285589,
-      "sha256": "160c3b6ca6934f5bcf6f7120f145d99acb93c5efb325bbe57ef5f5c3842ca84f",
-      "gzipBytes": 46604
+      "bytes": 285595,
+      "sha256": "b4daeaa6f9990375d87b362d3d5f5369ae256fdf7db113abac4d7d1f2494f22d",
+      "gzipBytes": 46623
     },
     {
       "path": "gre-learning/contents.js",
@@ -2466,7 +2466,7 @@
       "path": "gre-learning/update.js",
       "loading": "shell",
       "bytes": 2647,
-      "sha256": "8afc5cab69a71eaba2edac5da32e92ccd6701a535d36e4fde184c24f4e4ee800",
+      "sha256": "e5b524b8763a81a7cc16d64393b0c76b06575eb9cabc24dbfd92398b0dc56890",
       "gzipBytes": 1124
     },
     {
@@ -2503,11 +2503,32 @@
       "bytes": 642,
       "sha256": "a14797d54dab8085da725e9c3fca00656c04305783517ca773eaeb0396b61532",
       "gzipBytes": 349
+    },
+    {
+      "path": "gre-learning/units/core016-mnemonic-review-2ef64e7d708b35f15ad27a1ba02fc30b9af72ce8555a11d8c21666110e1c7e52.json",
+      "loading": "on-demand",
+      "bytes": 18743,
+      "sha256": "2ef64e7d708b35f15ad27a1ba02fc30b9af72ce8555a11d8c21666110e1c7e52",
+      "gzipBytes": 6964
+    },
+    {
+      "path": "gre-learning/units/core012-mnemonic-review-cb282230d1daa07f8059800bfce06035708246bfc59df05cbe8098da4af38fb9.json",
+      "loading": "on-demand",
+      "bytes": 17349,
+      "sha256": "cb282230d1daa07f8059800bfce06035708246bfc59df05cbe8098da4af38fb9",
+      "gzipBytes": 6326
+    },
+    {
+      "path": "gre-learning/units/core017-mnemonic-review-ffb8b79a8e6ca50e3ca3fbf64d0f7154315158456b625974dd4d0531f3dbdc72.json",
+      "loading": "on-demand",
+      "bytes": 20836,
+      "sha256": "ffb8b79a8e6ca50e3ca3fbf64d0f7154315158456b625974dd4d0531f3dbdc72",
+      "gzipBytes": 7352
     }
   ],
   "totals": {
-    "bytes": 226316255,
-    "gzipBytes": 225006380
+    "bytes": 226373189,
+    "gzipBytes": 225027041
   },
   "retainedHistoricalAssets": 212
 }

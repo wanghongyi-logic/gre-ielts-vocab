@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "release": "155",
+  "release": "156",
   "authoredCount": 110,
   "publishedCount": 110,
   "libraryTarget": 4731,
@@ -239,9 +239,9 @@
       "bytes": 18704
     },
     {
-      "url": "units/core012-text-approved-b86c969b827b91d1f43a65f069fdba2a640d57f78d6b7c092bfde9bb9e799daa.json",
-      "sha256": "b86c969b827b91d1f43a65f069fdba2a640d57f78d6b7c092bfde9bb9e799daa",
-      "bytes": 17281
+      "url": "units/core012-mnemonic-review-cb282230d1daa07f8059800bfce06035708246bfc59df05cbe8098da4af38fb9.json",
+      "bytes": 17349,
+      "sha256": "cb282230d1daa07f8059800bfce06035708246bfc59df05cbe8098da4af38fb9"
     },
     {
       "url": "units/core013-text-approved-f84356190c116d3cd88944dbd6b49e6ad54b2a73a683332464caabd95565ba9a.json",
@@ -259,14 +259,14 @@
       "bytes": 17814
     },
     {
-      "url": "units/core016-text-approved-f4d1be4512199bfa3834a52cd59cf19e55ff0a7dec2f0aa80f49af57caa668c7.json",
-      "sha256": "f4d1be4512199bfa3834a52cd59cf19e55ff0a7dec2f0aa80f49af57caa668c7",
-      "bytes": 18750
+      "url": "units/core016-mnemonic-review-2ef64e7d708b35f15ad27a1ba02fc30b9af72ce8555a11d8c21666110e1c7e52.json",
+      "bytes": 18743,
+      "sha256": "2ef64e7d708b35f15ad27a1ba02fc30b9af72ce8555a11d8c21666110e1c7e52"
     },
     {
-      "url": "units/core017-text-approved-ec7d82ffa823c951f67a5b7fd9bb6c77ed59f32c2950b002b34cca78e408ab10.json",
-      "sha256": "ec7d82ffa823c951f67a5b7fd9bb6c77ed59f32c2950b002b34cca78e408ab10",
-      "bytes": 20911
+      "url": "units/core017-mnemonic-review-ffb8b79a8e6ca50e3ca3fbf64d0f7154315158456b625974dd4d0531f3dbdc72.json",
+      "bytes": 20836,
+      "sha256": "ffb8b79a8e6ca50e3ca3fbf64d0f7154315158456b625974dd4d0531f3dbdc72"
     },
     {
       "url": "units/core018-text-approved-758cb0e4c979996fd3974c21e69b2117725d5a8c47c03737874ee6b1505a7e8c.json",
