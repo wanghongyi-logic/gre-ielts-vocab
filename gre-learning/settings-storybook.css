@@ -1,0 +1,322 @@
+/* Settings is a leaf of the book. The reading surface and its styles stay intact. */
+#offline-settings {
+  --settings-muted: #6d705c;
+  --settings-rule: #d9d0bb;
+  margin: 14px auto 30px;
+  max-width: 560px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.65;
+}
+#offline-settings > .library-page > .library-page-title { display: none; }
+#offline-settings .library-overview { padding: 22px 0 24px; }
+#offline-settings .library-eyebrow {
+  margin: 0 0 8px;
+  color: var(--settings-muted);
+  font-size: 14px;
+  letter-spacing: .07em;
+}
+#offline-settings .library-count { gap: 10px; margin: 0 0 24px; }
+#offline-settings .library-count strong {
+  font-size: clamp(72px, 20vw, 90px);
+  font-weight: 400;
+  letter-spacing: -.065em;
+  line-height: 1;
+  color: var(--moss);
+}
+#offline-settings .library-count > span { font-size: 22px; color: #73755f; }
+#offline-settings progress {
+  width: 100%;
+  height: 3px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: #ded8c6;
+  accent-color: #788360;
+}
+#offline-settings progress::-webkit-progress-bar { background: #ded8c6; }
+#offline-settings progress::-webkit-progress-value { border-radius: 0; background: #788360; }
+#offline-settings progress::-moz-progress-bar { background: #788360; }
+#offline-settings .library-overview-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 9px;
+}
+#offline-settings .library-caption,
+#offline-settings [data-saved-percent] {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--settings-muted);
+}
+#offline-settings [data-saved-percent] { font-variant-numeric: tabular-nums; }
+#offline-settings .library-space {
+  margin: 18px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--settings-muted);
+  font-variant-numeric: tabular-nums;
+}
+#offline-settings .settings-status { margin: 6px 0 0; }
+#offline-settings .settings-status p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--settings-muted);
+}
+#offline-settings .settings-status [data-save-progress]:not(:empty) {
+  margin: 5px 0;
+  color: var(--moss);
+}
+#offline-settings .library-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 84px;
+  padding: 18px 0;
+  border-top: 1px solid var(--settings-rule);
+}
+#offline-settings h3 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--ink);
+}
+#offline-settings .mode-row p {
+  margin: 3px 0 0;
+  color: var(--settings-muted);
+  font-size: 14px;
+}
+#offline-settings button,
+#offline-settings .offline-import {
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 44px;
+  border-radius: 2px;
+}
+#offline-settings .offline-import,
+#offline-settings .library-mode-button {
+  flex: 0 0 auto;
+  min-width: 94px;
+  margin: 0;
+  padding: 10px 13px;
+  text-align: center;
+  color: var(--moss);
+  border: 1px solid #c5c6ac;
+  background: transparent;
+}
+#offline-settings .offline-import { background: #e9e9d8; }
+#offline-settings .offline-import span { margin-left: 3px; color: inherit; }
+#offline-settings .offline-import:has(input:disabled) { opacity: .5; cursor: wait; }
+#offline-settings .offline-import input { min-height: 44px; }
+#offline-settings .library-mode-button { border-color: #d2c9b2; }
+#offline-settings button:focus-visible,
+#offline-settings summary:focus-visible,
+#offline-settings a:focus-visible,
+#offline-settings .offline-import:focus-within {
+  outline: 2px solid var(--terra);
+  outline-offset: 4px;
+}
+#offline-settings button:disabled { opacity: .45; cursor: default; }
+#offline-settings .library-import-feedback { padding: 0; }
+#offline-settings [data-status]:not(:empty) {
+  padding: 13px 0 13px 13px;
+  margin: 0 0 15px;
+  border-left: 2px solid #8a9570;
+  border-radius: 0;
+  background: transparent;
+  color: var(--moss);
+  font-size: 15px;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+#offline-settings [data-cancel] { padding: 8px 12px; margin-bottom: 14px; }
+#offline-settings [data-import-progress] { margin-bottom: 14px; }
+#offline-settings [data-reopen] {
+  margin: 0 0 14px;
+  padding: 8px 0;
+  color: var(--moss);
+  background: none;
+  border: 0;
+}
+#offline-settings .library-disclosure {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--settings-rule);
+}
+#offline-settings .library-disclosure > summary,
+#offline-settings .release-browser > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 68px;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+}
+#offline-settings .release-browser > summary { min-height: 84px; font-size: 17px; }
+#offline-settings summary::-webkit-details-marker { display: none; }
+#offline-settings summary::marker { content: ''; }
+#offline-settings summary span { float: none; font: inherit; }
+#offline-settings .library-disclosure-tail {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+  color: var(--settings-muted);
+  font-size: 14px;
+}
+#offline-settings .library-disclosure-mark {
+  display: inline-block;
+  width: 14px;
+  text-align: center;
+  color: #7c8567;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+}
+#offline-settings details[open] > summary .library-disclosure-mark { transform: rotate(45deg); }
+#offline-settings .library-disclosure-body { padding: 0 0 18px; }
+#offline-settings .library-disclosure-body p {
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--settings-muted);
+  margin: 0 0 14px;
+}
+#offline-settings .library-packs ul { margin: 0; }
+#offline-settings .library-packs li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e3dccb;
+}
+#offline-settings .library-pack-label { display: grid; gap: 4px; min-width: 0; }
+#offline-settings .library-pack-label strong { font-size: 17px; font-weight: 400; }
+#offline-settings .library-pack-label > span {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--settings-muted);
+  overflow-wrap: anywhere;
+}
+#offline-settings .library-packs li button { padding: 8px 4px 8px 12px; font-size: 15px; }
+#offline-settings .library-text-action {
+  display: inline-block;
+  min-height: 44px;
+  padding: 8px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: 15px;
+  color: var(--moss);
+}
+#offline-settings .library-clear-action {
+  display: block;
+  min-height: 44px;
+  padding: 9px 0;
+  margin: 12px 0 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #8d5642;
+  font-size: 15px;
+}
+#offline-settings .library-help > summary { color: var(--settings-muted); }
+#offline-settings .library-help .library-disclosure-body { padding-top: 3px; }
+#offline-settings .library-help [data-persist] { margin: -6px 0 14px; }
+
+/* This is the generated transparent botanical artwork, never a CSS-drawn plant.
+   The PNG's transparent side margins are intentionally cropped, not contained. */
+#open-settings {
+  --library-bookmark-art: url('./images/botanical-progress-bookmark.png');
+  min-height: 66px;
+  max-height: 194px;
+  width: 44px;
+  padding: 7px 0;
+  gap: 0;
+}
+#open-settings .library-rail-track {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 52px;
+  max-height: 180px;
+  width: 38px;
+  border: 0;
+  border-radius: 0;
+  clip-path: none;
+  overflow: hidden;
+  background: none;
+  box-shadow: none;
+}
+#open-settings .library-rail-track::before,
+#open-settings .library-rail-fill {
+  content: '';
+  position: absolute;
+  display: block;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background-image: var(--library-bookmark-art);
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+#open-settings .library-rail-track::before { opacity: .34; filter: grayscale(1); }
+#open-settings .library-rail-fill {
+  clip-path: inset(calc((1 - var(--saved-progress, 0)) * 100%) 0 0 0);
+  transition: clip-path .5s ease;
+}
+#open-settings:hover .library-rail-fill,
+#open-settings.is-current .library-rail-fill { filter: saturate(1.12); }
+#open-settings:focus-visible { outline-offset: -1px; border-radius: 2px; }
+@media (min-width: 760px) {
+  #offline-settings { margin-top: 16px; }
+  #offline-settings .library-overview { padding: 28px 0 34px; }
+  #offline-settings .library-count { margin-bottom: 28px; }
+  #offline-settings .library-count strong { font-size: 96px; }
+  #offline-settings .library-action-row { min-height: 92px; }
+  #offline-settings .library-disclosure > summary { min-height: 76px; }
+  #offline-settings .release-browser > summary { min-height: 92px; }
+}
+@media (max-width: 759px) {
+  #word-picker:has(#offline-settings:not([hidden])) .contents-sheet { padding-left: 24px; padding-right: 66px; }
+  #offline-settings { margin-top: 4px; }
+}
+@media (max-width: 359px) {
+  #word-picker:has(#offline-settings:not([hidden])) .contents-sheet { padding-left: 20px; padding-right: 58px; }
+  #offline-settings .library-count strong { font-size: 72px; }
+  #offline-settings .library-action-row { gap: 8px; }
+  #offline-settings h3 { font-size: 16px; }
+  #offline-settings .offline-import,
+  #offline-settings .library-mode-button { min-width: 84px; padding-inline: 9px; }
+}
+@media (max-height: 640px) {
+  #open-settings { max-height: 120px; min-height: 50px; padding: 3px 0; }
+  #open-settings .library-rail-track { min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #open-settings .library-rail-fill { transition: none; animation: none; }
+}
+@media (forced-colors: active) {
+  #open-settings .library-rail-track { width: 10px; border: 1px solid CanvasText; }
+  #open-settings .library-rail-track::before { display: none; }
+  #open-settings .library-rail-fill { background: Highlight; forced-color-adjust: none; }
+}

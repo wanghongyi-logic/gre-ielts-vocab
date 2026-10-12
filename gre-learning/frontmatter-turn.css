@@ -1,0 +1,14 @@
+/* A real destination remains below the live, curling outgoing book leaf. */
+:root{--frontmatter-turn-ready:1}
+#word-content.frontmatter-live-leaf,#word-picker.frontmatter-live-leaf,.frontmatter-live-leaf.contents-page{display:block;position:fixed;background:var(--paper);pointer-events:none;will-change:clip-path;isolation:isolate}
+.frontmatter-live-leaf.contents-page{padding:0;border:0;border-radius:0;max-height:none;overflow:visible;color:var(--ink);box-shadow:none}
+.frontmatter-live-leaf .contents-return span[lang=en]{display:inline;margin-left:.7em;font-family:Georgia,serif;font-size:17px;font-style:italic}
+.frontmatter-turn{position:fixed;z-index:19;overflow:hidden;pointer-events:none;contain:strict;isolation:isolate}
+.frontmatter-fold{position:absolute;top:-2%;height:104%;width:0;opacity:0;transform-origin:center;will-change:left,width,transform;box-shadow:-8px 0 16px #49391e19,4px 0 5px #49391e10;border-radius:var(--leaf-bow,0) 0 0 var(--leaf-bow,0);background:linear-gradient(90deg,#d4c5a4 0%,#e8dbc0 9%,#f6eedc 36%,#faf5e9 67%,#e5d5b6 96%,#c3b18b 100%)}
+.frontmatter-fold[data-sheet="0"]{z-index:3}
+.frontmatter-fold[data-sheet="1"]{z-index:2}
+.frontmatter-fold[data-sheet="2"]{z-index:1}
+.frontmatter-turn[data-direction="previous"] .frontmatter-fold{background:linear-gradient(270deg,#d4c5a4 0%,#e8dbc0 9%,#f6eedc 36%,#faf5e9 67%,#e5d5b6 96%,#c3b18b 100%);border-radius:0 var(--leaf-bow,0) var(--leaf-bow,0) 0;box-shadow:8px 0 16px #49391e19,-4px 0 5px #49391e10}
+#word-picker.contents-page{touch-action:pan-y pinch-zoom}
+.frontmatter-navigation-hint{font-family:var(--serif);font-size:14px;letter-spacing:.025em;line-height:1.8;color:var(--muted);margin:12px 0 0;text-align:center}
+@media(prefers-reduced-motion:reduce){.frontmatter-turn{display:none}.frontmatter-live-leaf{will-change:auto}}

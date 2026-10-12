@@ -1,4 +1,6 @@
 import {filterEntries} from './model.js';
+import {startSwipe,moveSwipe,SWIPE} from './swipe.js';
+import {installFrontmatterTurn} from './frontmatter-turn.js';
 import {escapeLearningText as escape} from './render.js';
 
 // The contents is another leaf of the book. Keep the reading DOM in place so
@@ -9,91 +11,22 @@ export function installContents({main,picker,search,entries,getSelected,navigate
  const title=doc.getElementById('picker-title'),results=doc.getElementById('word-results');
  const count=doc.getElementById('search-count');
  const returnWord=doc.getElementById('contents-return-word');
- let saved=null,restoreFrame=0,turn=null;
- // Opening keeps the real reading surface (and its video layer) until it has
- // moved offscreen. Returning can use an impression of the video-free contents.
- function settleTurn(runRoute=true){if(!turn)return;const previous=turn;turn=null;previous.cleanup?.();previous.animation?.cancel();win.cancelAnimationFrame(previous.frame);win.clearTimeout(previous.timer);if(!previous.cleanup)previous.paper.remove();main.removeAttribute('data-contents-turning');onTransition(false);previous.done?.();previous.resolve?.();if(runRoute&&previous.route)previous.route();}
- function transition(change,done){
-  settleTurn();
-  const source=picker.open?picker:main;
-  const reduced=win.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-  const rect=source.getBoundingClientRect();
-  let paper,cleanup;
-  if(!reduced&&source===main&&source.children.length&&rect.width){
-   // Do not replace a composited video with a never-painted canvas and hide its
-   // original in the same task. Keep this exact DOM/video at its viewport rect;
-   // the prepared contents enters normal flow underneath it. No reparenting,
-   // decoder reload, poster swap, duplicate media or snapshot allocation.
-   const properties=['left','top','width','max-width','margin'];
-   const styles=properties.map(name=>[name,main.style.getPropertyValue(name),main.style.getPropertyPriority(name)]);
-   paper=main;main.classList.add('contents-live-turn');
-   Object.assign(main.style,{left:`${rect.left}px`,top:`${rect.top}px`,width:`${rect.width}px`,maxWidth:'none',margin:'0'});
-   cleanup=()=>{
-    // Hide only once the live leaf has cleared (or an explicit interrupt takes
-    // over), before canceling its transform or restoring its document geometry.
-    main.hidden=true;main.classList.remove('contents-live-turn');
-    for(const [name,value,priority] of styles){if(value)main.style.setProperty(name,value,priority);else main.style.removeProperty(name);}
-    if(!main.style.cssText)main.removeAttribute('style');
-   };
-  }else if(!reduced&&source.children.length&&rect.width){
-   paper=doc.createElement('div');paper.className='contents-paper-turn';paper.inert=true;paper.setAttribute('aria-hidden','true');
-   // Read each section/row once, before attachment. Offscreen branches are
-   // shallow geometry placeholders; their text/media descendants are never cloned.
-   function impressionOf(node){
-    if(node.nodeType!==1)return node.cloneNode(false);
-    const copy=node.cloneNode(false);
-    if(node.matches('.book-spread,.book-chapter,.contents-entry')){
-     const box=node.getBoundingClientRect();
-     if(box.bottom<0||box.top>win.innerHeight){copy.style.height=`${box.height}px`;return copy;}
-    }
-    for(const child of node.childNodes)copy.append(impressionOf(child));
-    return copy;
-   }
-   const impression=impressionOf(source);impression.classList.add('contents-paper-impression');
-   const originals=source.querySelectorAll('video');
-   impression.querySelectorAll('video').forEach((video,index)=>{
-    const original=originals[index],canvas=doc.createElement('canvas');canvas.className=video.className;canvas.style.cssText=video.style.cssText;
-    const scale=Math.min(1,768/(original.videoWidth||768));canvas.width=Math.max(1,Math.round(original.videoWidth*scale));canvas.height=Math.max(1,Math.round(original.videoHeight*scale));
-    try{if(original.readyState<2)throw new Error('poster');canvas.getContext('2d').drawImage(original,0,0,canvas.width,canvas.height);video.replaceWith(canvas);}catch{video.closest('.story-illustration')?.querySelector('.story-poster')?.style.setProperty('opacity','1');video.remove();}
-   });
-   for(const node of [impression,...impression.querySelectorAll('*')]){node.removeAttribute('id');node.removeAttribute('aria-labelledby');node.removeAttribute('aria-describedby');node.removeAttribute('autofocus');}
-   Object.assign(impression.style,{position:'absolute',left:`${rect.left}px`,top:`${rect.top}px`,width:`${rect.width}px`,maxWidth:'none',margin:'0',display:'block'});
-   paper.append(impression);doc.body.append(paper);
-  }
-  main.setAttribute('data-contents-turning','');onTransition(true);change();
-  if(!paper){main.removeAttribute('data-contents-turning');onTransition(false);done?.();return;}
-  const direction=picker.open?1:-1;
-  const state=turn={paper,cleanup,done,frame:0,animation:null,timer:0};
-  state.finished=new Promise(resolve=>{state.resolve=resolve;});
-  // The original reading video remains displayed above the destination, or the
-  // outgoing video-free directory is impressed above it. Give the prepared
-  // destination one paint at frame zero before revealing it.
-  state.frame=win.requestAnimationFrame(()=>{state.frame=win.requestAnimationFrame(()=>{
-   if(turn!==state)return;
-   if(!paper.animate){settleTurn();return;}
-   state.animation=paper.animate([{transform:'translateX(0)'},{transform:`translateX(${direction*103}${cleanup?'vw':'%'})`}],{duration:360,easing:'cubic-bezier(.32,.05,.2,1)',fill:'forwards'});
-   state.animation.finished.then(()=>{if(turn===state)settleTurn();},()=>{});
-   state.timer=win.setTimeout(()=>{if(turn===state)settleTurn();},650);
-  });});
+ let saved=null,restoreFrame=0,leaf=null,gestureRestored=false;
+ const turns=installFrontmatterTurn({main,onActivity:onTransition,window:win,document:doc});
+ function preparationFailed(){win.history.replaceState(null,'',leaf==='settings'?'#/settings':'#/contents');count.textContent='这一页暂时无法打开，请再点一次重试';picker.removeAttribute('aria-busy');}
+ function reveal(change){
+  turns.begin({source:picker,direction:'next',flutter:true,prepare:()=>{change();hide({restore:false,animate:false});win.scrollTo({top:0,left:0,behavior:'instant'});},commit:()=>{main.focus({preventScroll:true});onClose({restored:false});}});
  }
- win.addEventListener('pagehide',()=>settleTurn(false));
- doc.addEventListener('visibilitychange',()=>{if(doc.hidden)settleTurn(false);});
- win.addEventListener('resize',settleTurn);
- // A deliberate vertical scroll takes control of the already-ready leaf.
- // Finish its impression first rather than letting real content drift beneath it.
- for(const type of ['wheel','touchmove'])win.addEventListener(type,()=>settleTurn(),{passive:true});
- function preparationFailed(){win.history.replaceState(null,'','#/contents');count.textContent='这一页暂时无法打开，请再点一次重试';picker.removeAttribute('aria-busy');}
- function reveal(change){transition(()=>{change();hide({restore:false,animate:false});win.scrollTo({top:0,left:0,behavior:'instant'});main.focus({preventScroll:true});},()=>onClose({restored:false}));}
 
  const readingPositions=new Map();
  // Hash history must not race the book's explicit reading-position restore.
  if(win.history&&'scrollRestoration' in win.history)win.history.scrollRestoration='manual';
  const isRoute=hash=>/^#\/?(?:contents|settings)\/?$/.test(hash);
  const isSettings=()=>/^#\/?settings\/?$/.test(win.location.hash);
- function syncLeaf(){const settings=isSettings();title.textContent=settings?'设置':'目录';const leaf=doc.getElementById('offline-settings');if(leaf){leaf.hidden=!settings;if(settings)leaf.querySelector('details').open=true;}search.closest('.search-field').hidden=settings;doc.querySelector('.contents-list-heading').hidden=settings;results.hidden=settings;opener.setAttribute('aria-expanded',String(picker.open&&!settings));const settingTab=doc.getElementById('open-settings');settingTab?.setAttribute('aria-expanded',String(picker.open&&settings));settingTab?.classList.toggle('is-current',picker.open&&settings);if(picker.open)doc.title=(settings?'设置':'目录')+' · 单词故事';}
+ function syncLeaf(hash=win.location.hash){const settings=/^#\/?settings\/?$/.test(hash);leaf=settings?'settings':'contents';picker.dataset.leaf=leaf;title.textContent=settings?'设置':'目录';const settingsHost=doc.getElementById('offline-settings');if(settingsHost){settingsHost.hidden=!settings;if(settings)settingsHost.querySelector('details').open=true;}search.closest('.search-field').hidden=settings;doc.querySelector('.contents-list-heading').hidden=settings;results.hidden=settings;opener.setAttribute('aria-expanded',String(picker.open&&!settings));const settingTab=doc.getElementById('open-settings');settingTab?.setAttribute('aria-expanded',String(picker.open&&settings));settingTab?.classList.toggle('is-current',picker.open&&settings);if(picker.open)doc.title=(settings?'设置':'目录')+' · 单词故事';}
  const readingHash=number=>`#/learn/${number}`;
  const currentEntry=()=>entries.find(entry=>entry.number===getSelected())||entries[0];
- function captureReading(){const number=getSelected();if(number!=null&&!picker.open&&win.location.hash===readingHash(number))readingPositions.set(number,{scrollX:win.scrollX,scrollY:win.scrollY});}
+ function captureReading(){const number=getSelected();if(number!=null&&!turns.busy&&!picker.open&&win.location.hash===readingHash(number))readingPositions.set(number,{scrollX:win.scrollX,scrollY:win.scrollY});}
  win.addEventListener('scroll',captureReading,{passive:true});
  function renderResults(){
   syncLeaf();
@@ -116,47 +49,52 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   const position=readingPositions.get(selected?.number)||{scrollX:win.scrollX,scrollY:win.scrollY};
   saved={number:selected?.number,hash:readingHash(selected?.number),...position,focus:doc.activeElement,title:doc.title,ready:getSelected()!=null};
   search.value='';renderResults();
-  transition(()=>{
-  main.hidden=!main.classList.contains('contents-live-turn');main.inert=true;
-  doc.body.classList.add('is-contents-open');
-  picker.show();
-  syncLeaf();
-  win.scrollTo({top:0,left:0,behavior:'instant'});
-  title.focus({preventScroll:true});
-  onOpen();
-  });
+  turns.begin({source:main,direction:'previous',flutter:true,visual:Boolean(main.querySelector('.reading-layout')),prepare:()=>{
+   main.hidden=false;main.inert=true;doc.body.classList.add('is-contents-open');
+   picker.show();syncLeaf();win.scrollTo({top:0,left:0,behavior:'instant'});
+   title.focus({preventScroll:true});onOpen();
+  },commit:()=>{main.hidden=true;main.inert=true;}});
+ }
+ function previewReading(snapshot,restore){
+  main.hidden=false;main.inert=false;doc.body.classList.remove('is-contents-open');picker.close();
+  opener.setAttribute('aria-expanded','false');doc.getElementById('open-settings')?.setAttribute('aria-expanded','false');doc.getElementById('open-settings')?.classList.remove('is-current');
+  if(restore&&snapshot?.title)doc.title=snapshot.title;
+  if(restore&&snapshot)win.scrollTo({left:snapshot.scrollX,top:snapshot.scrollY,behavior:'instant'});
+  picker.removeAttribute('aria-busy');
+ }
+ function finishReading(snapshot,restore){
+  if(restore&&snapshot){
+   const target=snapshot.focus?.isConnected&&snapshot.focus!==doc.body&&!picker.contains(snapshot.focus)?snapshot.focus:main;
+   target?.focus({preventScroll:true});
+   restoreFrame=win.requestAnimationFrame(()=>{restoreFrame=0;if(!picker.open&&getSelected()===snapshot.number)win.scrollTo({left:snapshot.scrollX,top:snapshot.scrollY,behavior:'instant'});});
+  }
+  onClose({restored:Boolean(restore&&snapshot)});
  }
  function hide({restore=true,animate=true}={}){
   if(!picker.open)return false;
   win.cancelAnimationFrame(restoreFrame);
   const snapshot=saved;
-  const change=()=>{
-  main.hidden=false;main.inert=false;
-  doc.body.classList.remove('is-contents-open');
-  picker.close();
-  opener.setAttribute('aria-expanded','false');doc.getElementById('open-settings')?.setAttribute('aria-expanded','false');doc.getElementById('open-settings')?.classList.remove('is-current');
-  if(restore&&snapshot?.title)doc.title=snapshot.title;
-  if(restore&&snapshot){
-   win.scrollTo({left:snapshot.scrollX,top:snapshot.scrollY,behavior:'instant'});
-   const target=snapshot.focus?.isConnected&&snapshot.focus!==doc.body&&!picker.contains(snapshot.focus)?snapshot.focus:opener;
-   target?.focus({preventScroll:true});
-   restoreFrame=win.requestAnimationFrame(()=>{
-    restoreFrame=0;
-    if(!picker.open&&getSelected()===snapshot.number)win.scrollTo({left:snapshot.scrollX,top:snapshot.scrollY,behavior:'instant'});
-   });
-  }
-  picker.removeAttribute('aria-busy');
-  };
-  if(animate)transition(change,()=>onClose({restored:Boolean(restore&&snapshot)}));else change();
+  if(animate)turns.begin({source:picker,direction:'next',prepare:()=>previewReading(snapshot,restore),commit:()=>finishReading(snapshot,restore)});
+  else previewReading(snapshot,restore);
   return Boolean(restore&&snapshot);
  }
  function open(){captureReading();if(picker.open&&!isSettings()){title.focus({preventScroll:true});return;}win.location.hash='/contents';}
  function close(){if(picker.open)win.location.hash=saved?.hash||readingHash(currentEntry()?.number);}
  function syncRoute(){
-  if(isRoute(win.location.hash)){syncLeaf();picker.removeAttribute('aria-busy');if(picker.open)count.textContent=search.value.trim()?`找到 ${filterEntries(entries,search.value).length} 个词`:`${entries.length} 个词 · 按阅读顺序`;show();return {contents:true,restored:false};}
+  if(isRoute(win.location.hash)){
+   picker.removeAttribute('aria-busy');
+   if(picker.open){
+    const target=isSettings()?'settings':'contents';
+    if(target!==leaf)turns.begin({source:picker,copy:true,direction:target==='settings'?'previous':'next',prepare:()=>{syncLeaf();win.scrollTo({top:0,left:0,behavior:'instant'});title.focus({preventScroll:true});onOpen();}});
+    else syncLeaf();
+    count.textContent=search.value.trim()?`找到 ${filterEntries(entries,search.value).length} 个词`:`${entries.length} 个词 · 按阅读顺序`;
+   }else show();
+   return {contents:true,restored:false};
+  }
   const match=/^#\/?(?:learn\/)?(\d+)$/.exec(win.location.hash);
   const same=Boolean(saved&&Number(match?.[1])===saved.number&&getSelected()===saved.number);
-  const restored=picker.open&&same?hide():false;
+  const restored=picker.open&&same?hide():Boolean(gestureRestored&&same);
+  gestureRestored=false;
   if(picker.open&&!same){picker.setAttribute('aria-busy','true');count.textContent='正在翻开这一页…';}
   return {contents:false,restored};
  }
@@ -170,9 +108,89 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   if(number===currentEntry()?.number){close();return;}
   navigate(number);
  });
- picker.addEventListener('cancel',event=>{event.preventDefault();close();});
+ // Frontmatter uses the same distance/axis arbitration as word pages. Nothing
+ // is routed until release; a short drag restores both leaf and scroll position.
+ const hint=doc.createElement('p');hint.className='frontmatter-navigation-hint';hint.id='frontmatter-swipe-hint';hint.textContent='左右轻翻，回到正在读的一页';picker.querySelector('.contents-tools').after(hint);picker.setAttribute('aria-describedby',hint.id);picker.setAttribute('aria-keyshortcuts','Escape ArrowLeft ArrowRight');
+ const interactive='a,input,textarea,select,option,summary,label,button:not(.word-result),[contenteditable]:not([contenteditable="false"]),[role="slider"],[data-no-swipe]';
+ let gesture=null,touchId=null,pointerId=null,pressTimer=0,suppressUntil=0,preview=null;
+ const selected=()=>{const selection=win.getSelection?.();return Boolean(selection?.toString()&&(picker.contains(selection.anchorNode)||picker.contains(selection.focusNode)));};
+ function releaseGesture(){
+  win.clearTimeout(pressTimer);gesture=null;touchId=null;
+  const id=pointerId;pointerId=null;
+  if(id!==null&&picker.hasPointerCapture?.(id)){try{picker.releasePointerCapture(id);}catch{}}
+ }
+ function cancelGesture(){releaseGesture();if(turns.interactive)turns.animate(false);}
+ function beginGesture(x,y,id,target){
+  if(turns.busy||gesture||!picker.open||picker.hasAttribute('aria-busy')||!saved?.ready||target?.closest?.(interactive)||selected())return;
+  // Leave the browser's history edge swipe untouched.
+  if(x<=SWIPE.edge||x>=win.innerWidth-SWIPE.edge)return;
+  pointerId=id;gesture=startSwipe({x,y,width:Math.min(picker.clientWidth||win.innerWidth,win.innerWidth),time:win.performance.now(),previous:true,next:true});
+  pressTimer=win.setTimeout(()=>{if(gesture?.axis==='pending')releaseGesture();},SWIPE.holdLimit);
+ }
+ function previewTurn(direction){
+  if(preview)return;
+  preview={scrollX:win.scrollX,scrollY:win.scrollY,focus:doc.activeElement,title:doc.title,hash:win.location.hash};
+  const origin=preview,snapshot=saved;
+  turns.begin({source:picker,direction,interactive:true,prepare:()=>previewReading(snapshot,true),commit:()=>{
+   preview=null;gestureRestored=true;
+   win.location.hash=snapshot.hash;finishReading(snapshot,true);
+  },rollback:()=>{
+   preview=null;main.hidden=true;main.inert=true;doc.body.classList.add('is-contents-open');picker.show();
+   // A newer Back/Forward or bookmark route owns the URL; rollback restores only
+   // the visual source, then deferRoute applies that newer destination once.
+   doc.title=origin.title;win.scrollTo({left:origin.scrollX,top:origin.scrollY,behavior:'instant'});
+   origin.focus?.isConnected&&origin.focus.focus?.({preventScroll:true});syncLeaf(origin.hash);onOpen();
+  }}).then(()=>{releaseGesture();preview=null;});
+ }
+ function dragGesture(x,y,event){
+  if(!gesture)return;
+  if(selected()){cancelGesture();return;}
+  gesture=moveSwipe(gesture,{x,y,time:win.performance.now()});
+  if(gesture.axis==='vertical'||gesture.axis==='cancelled'){cancelGesture();return;}
+  if(gesture.axis==='pending'&&event.type==='touchmove'){
+   if(Math.abs(gesture.dx)<SWIPE.intentSlop||Math.abs(gesture.dx)<Math.abs(gesture.dy)*SWIPE.intentRatio)return;
+   gesture=moveSwipe({...gesture,axis:'horizontal'},{x,y,time:win.performance.now()});
+  }
+  if(gesture.axis!=='horizontal')return;
+  if(event.type==='touchmove'&&!event.cancelable){cancelGesture();return;}
+  if(event.cancelable)event.preventDefault();win.clearTimeout(pressTimer);
+  suppressUntil=win.performance.now()+450;
+  // Lock the fold edge for one gesture. Reversing back through its starting point
+  // flattens the same sheet, never flashes a differently oriented replacement.
+  if(!gesture.turnDirection)gesture.turnDirection=gesture.direction;
+  previewTurn(gesture.turnDirection);
+  const distance=gesture.turnDirection==='next'?-gesture.dx:gesture.dx;
+  turns.paint(Math.max(0,Math.min(.9,distance/gesture.width*.98)));
+ }
+ function finishGesture(x,y){
+  if(!gesture)return;
+  const wasDragging=gesture.axis==='horizontal';
+  gesture=moveSwipe(gesture,{x,y,time:win.performance.now()});
+  const commit=wasDragging&&gesture.ready&&gesture.direction===gesture.turnDirection&&!selected();
+  if(wasDragging)suppressUntil=win.performance.now()+450;
+  releaseGesture();if(turns.interactive)turns.animate(commit);
+ }
+ picker.addEventListener('touchstart',event=>{if(event.touches.length!==1){cancelGesture();return;}const touch=event.touches[0];beginGesture(touch.clientX,touch.clientY,null,event.target);touchId=gesture?touch.identifier:null;},{passive:true});
+ picker.addEventListener('touchmove',event=>{if(touchId===null)return;if(event.touches.length!==1){cancelGesture();return;}const touch=Array.from(event.touches).find(item=>item.identifier===touchId);if(touch)dragGesture(touch.clientX,touch.clientY,event);},{passive:false});
+ win.addEventListener('touchend',event=>{if(touchId===null)return;const touch=Array.from(event.changedTouches).find(item=>item.identifier===touchId);if(touch)finishGesture(touch.clientX,touch.clientY);},{passive:true});
+ win.addEventListener('touchcancel',cancelGesture,{passive:true});win.addEventListener('touchstart',event=>{if(event.touches.length>1)cancelGesture();},{passive:true});
+ picker.addEventListener('pointerdown',event=>{if(!['mouse','pen'].includes(event.pointerType)||event.button>0||event.isPrimary===false)return;beginGesture(event.clientX,event.clientY,event.pointerId,event.target);});
+ win.addEventListener('pointermove',event=>{if(event.pointerId!==pointerId||!gesture)return;dragGesture(event.clientX,event.clientY,event);if(gesture?.axis==='horizontal'&&!picker.hasPointerCapture?.(pointerId)){try{picker.setPointerCapture?.(pointerId);}catch{}};},{passive:false});
+ win.addEventListener('pointerup',event=>{if(event.pointerId===pointerId)finishGesture(event.clientX,event.clientY);});win.addEventListener('pointercancel',event=>{if(event.pointerId===pointerId)cancelGesture();});
+ picker.addEventListener('lostpointercapture',event=>{if(event.pointerId===pointerId)cancelGesture();});
+ doc.addEventListener('click',event=>{if(win.performance.now()<suppressUntil&&(event.detail>0||event.pointerType==='touch'||event.pointerType==='pen')&&(picker.contains(event.target)||main.contains(event.target))){event.preventDefault();event.stopImmediatePropagation();}},true);
+ doc.addEventListener('selectionchange',()=>{if(gesture&&selected())cancelGesture();});picker.addEventListener('contextmenu',cancelGesture);picker.addEventListener('dragstart',event=>{if(gesture)event.preventDefault();});
+ win.addEventListener('blur',()=>{releaseGesture();turns.interrupt();});
+ for(const type of ['pagehide','resize','orientationchange'])win.addEventListener(type,releaseGesture);
+ doc.addEventListener('visibilitychange',()=>{if(doc.hidden)releaseGesture();});
+ win.addEventListener('wheel',()=>{if(turns.interactive)cancelGesture();else turns.finish();},{passive:true});
+ win.addEventListener('touchmove',()=>{if(turns.busy&&!turns.interactive)turns.finish();},{passive:true});
+ picker.addEventListener('cancel',event=>{event.preventDefault();if(turns.interactive)cancelGesture();else close();});
  doc.addEventListener('keydown',event=>{
-  if(event.key==='Escape'&&picker.open){event.preventDefault();close();}
+  if(event.key==='Escape'&&turns.interactive){event.preventDefault();cancelGesture();return;}
+  if(event.key==='Escape'&&picker.open){event.preventDefault();close();return;}
+  if(event.defaultPrevented||event.repeat||event.altKey||event.ctrlKey||event.metaKey||event.shiftKey||!picker.open||turns.busy||event.target?.closest?.(interactive)||selected())return;
+  if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();close();}
  });
- return {show,hide,open,close,isRoute,syncRoute,renderResults,reveal,preparationFailed,whenSettled:()=>turn?.finished||Promise.resolve(),deferRoute(callback){if(!turn)return false;turn.route=callback;return true;},get returnHash(){return saved?.hash||readingHash(currentEntry()?.number);}};
+ return {show,hide,open,close,isRoute,syncRoute,renderResults,reveal,preparationFailed,whenSettled:turns.whenSettled,deferRoute:turns.deferRoute,cancel(){releaseGesture();turns.cancel();},get returnHash(){return saved?.hash||readingHash(currentEntry()?.number);}};
 }

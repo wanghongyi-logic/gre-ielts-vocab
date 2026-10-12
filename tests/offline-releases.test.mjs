@@ -1,9 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {File} from 'node:buffer';
-import {parseWordRange,trustedReleaseURL,normalizeReleaseAsset,localCoverage,discoverReleaseAssets,downloadReleaseAsset,releaseListMessage,DIRECT_IMPORT_LIMIT,mountReleaseImporter} from '../gre-learning/offline-releases.js';
-globalThis.File ??= File;
+import {parseWordRange,trustedReleaseURL,normalizeReleaseAsset,localCoverage,discoverReleaseAssets,releaseListMessage,mountReleaseDownloads} from '../gre-learning/offline-releases.js';
 const name='GRE-words-061-070.zip';
 const url=`https://github.com/wanghongyi-logic/gre-ielts-vocab/releases/download/test/${name}`;
 const raw={id:1,name,size:4,state:'uploaded',browser_download_url:url};
@@ -40,22 +38,21 @@ test('discovery rejects arbitrary assets, ignores drafts, deduplicates and sends
  }});
  assert.equal(found.length,1);assert.equal(found[0].url,url);
 });
-test('streaming transfer creates a small file with progress and no ambient credentials',async()=>{
- const progress=[];
- const file=await downloadReleaseAsset(asset(),{fetcher:async(input,options)=>{assert.equal(input,url);assert.equal(options.credentials,'omit');return new Response('abcd');},onProgress:p=>progress.push(p)});
- assert.equal(file.name,name);assert.equal(await file.text(),'abcd');assert.equal(progress.at(-1).completed,4);
+test('download module has no direct import or ZIP-fetch implementation',async()=>{
+ const module=await import('../gre-learning/offline-releases.js');
+ assert.equal(module.downloadReleaseAsset,undefined);assert.equal(module.DIRECT_IMPORT_LIMIT,undefined);
+ const source=await readFile(new URL('../gre-learning/offline-releases.js',import.meta.url),'utf8');
+ assert.doesNotMatch(source,/onImport|isImporting|data-remote|fetcher\(asset\.url|new File|new Blob|\.getReader\(/);
 });
-test('transfer rejects unverified descriptors and oversized assets without fetching',async()=>{
- const fetcher=()=>{throw new Error('must not fetch');};
- await assert.rejects(downloadReleaseAsset({...asset()},{fetcher}),/刷新/);
- await assert.rejects(downloadReleaseAsset(normalizeReleaseAsset({...raw,size:DIRECT_IMPORT_LIMIT+1}),{fetcher}),/先下载/);
+test('download descriptors retain large ZIPs without a direct-import size cap',()=>{
+ const large=normalizeReleaseAsset({...raw,size:128*1024*1024});
+ assert.ok(large);assert.equal(large.bytes,128*1024*1024);assert.equal(large.url,url);
+ assert.equal(Object.isFrozen(large),true);assert.equal(Object.isFrozen(large.range),true);
 });
-test('transfer handles CORS failure, wrong sizes, and abort before fetching',async()=>{
- await assert.rejects(downloadReleaseAsset(asset(),{fetcher:async()=>{throw new TypeError('Failed to fetch');}}));
- for(const body of ['abc','abcde'])await assert.rejects(downloadReleaseAsset(asset(),{fetcher:async()=>new Response(body)}));
- await assert.rejects(downloadReleaseAsset(asset(),{fetcher:async()=>new Response('abcd',{headers:{'Content-Length':'8'}})}),/大小已变化/);
- const controller=new AbortController();controller.abort();
- await assert.rejects(downloadReleaseAsset(asset(),{signal:controller.signal,fetcher:()=>{throw Error('must not fetch');}}),{name:'AbortError'});
+test('cancelled discovery does not start a metadata request',async()=>{
+ let calls=0;const controller=new AbortController();controller.abort();
+ await assert.rejects(discoverReleaseAssets({signal:controller.signal,fetcher:async()=>{calls++;return Response.json([]);}}),{name:'AbortError'});
+ assert.equal(calls,0);
 });
 // Minimal DOM fixture exercises ownership, states and repeated clicks without browser dependencies.
 class Element {
@@ -70,7 +67,7 @@ class Element {
 const fixture=()=>{const doc={createElement:tag=>new Element(tag,doc)};const host=new Element('host',doc),manual=new Element('input',doc),anchor=new Element('feedback',doc);host.selectors.set('input',manual);host.selectors.set('.library-import-feedback',anchor);return {host,manual,anchor};};
 test('mount preserves file import, empty/error states and manual download page',async()=>{
  const {host,manual,anchor}=fixture();let fail=false;
- const ui=mountReleaseImporter({host,catalog:{entries:[]},fetcher:async()=>{if(fail)throw Error('offline');return Response.json([]);}});
+ const ui=mountReleaseDownloads({host,catalog:{entries:[]},fetcher:async()=>{if(fail)throw Error('offline');return Response.json([]);}});
  assert.equal(host.querySelector('input'),manual);
  const section=anchor.afterNode;
  assert.equal(section.querySelector('[data-release-page]').href,'https://github.com/wanghongyi-logic/gre-ielts-vocab/releases');
@@ -78,15 +75,15 @@ test('mount preserves file import, empty/error states and manual download page',
  fail=true;await ui.load();assert.match(section.querySelector('[data-release-status]').textContent,/暂时无法读取/);
  ui.destroy();assert.equal(section.removed,true);
 });
-test('CORS-failed direct import retains download action and prevents duplicate clicks',async()=>{
- const {host,anchor}=fixture();let calls=0, reject;
- const ui=mountReleaseImporter({host,catalog:{entries:[]},onImport:()=>{calls++;return new Promise((_,r)=>{reject=r;});},fetcher:async()=>Response.json([{assets:[raw]}])});
+test('download rows expose only ordinary trusted ZIP links and never invoke import callbacks',async()=>{
+ const {host,manual,anchor}=fixture();let imports=0;const requests=[];
+ const ui=mountReleaseDownloads({host,catalog:{entries:[]},onImport:()=>{imports++;},fetcher:async(endpoint)=>{requests.push(endpoint);return Response.json([{assets:[raw,{...raw,id:2,size:128*1024*1024}]}]);}});
  await ui.load();const section=anchor.afterNode,list=section.querySelector('[data-release-list]');
- const button=list.children[0].children[2].children[0];
- const pending=button.onclick();await button.onclick();assert.equal(calls,1);
- reject(new TypeError('CORS'));await pending;
- assert.match(section.querySelector('[data-release-status]').textContent,/保存后在上方选择文件/);
- assert.equal(list.children[0].children[2].children[1].href,url);
+ assert.match(section.html,/下载资源包/);assert.doesNotMatch(section.html,/从 Release 导入|直接导入|CORS/);
+ assert.equal(host.querySelector('input'),manual);assert.equal(list.children.length,2);
+ for(const row of list.children){const actions=row.children[2];assert.equal(actions.children.length,1);const link=actions.children[0];assert.equal(link.tag,'a');assert.equal(link.href,url);assert.equal(link.target,'_blank');assert.equal(link.rel,'noopener noreferrer');assert.equal(link.onclick,undefined);assert.equal(link.textContent,'下载 ZIP ↗');}
+ assert.equal(imports,0);assert.equal(requests.length,1);assert.ok(requests.every(endpoint=>endpoint.startsWith('https://api.github.com/repos/')));
+ ui.refreshCoverage();assert.equal(requests.length,1);assert.equal(imports,0);
 });
 test('module does not replace host or introduce raw HTML from release metadata',async()=>{
  const source=await readFile(new URL('../gre-learning/offline-releases.js',import.meta.url),'utf8');
@@ -99,25 +96,20 @@ test('discovery network deadline aborts stalled fetch and stalled JSON body',asy
  assert.equal(signal.aborted,true);
  await assert.rejects(discoverReleaseAssets({timeoutMs:10,fetcher:async()=>({ok:true,json:()=>new Promise(()=>{})})}),/network-timeout/);
 });
-test('download fetch and stream idle deadlines abort and release reader',async()=>{
- let signal,cancelled=false;
- await assert.rejects(downloadReleaseAsset(asset(),{timeoutMs:10,fetcher:async(_,options)=>{signal=options.signal;return new Promise(()=>{});}}),/network-timeout/);
- assert.equal(signal.aborted,true);
- const stream=new ReadableStream({pull(){return new Promise(()=>{});},cancel(){cancelled=true;}});
- await assert.rejects(downloadReleaseAsset(asset(),{timeoutMs:10,fetcher:async()=>new Response(stream)}),/network-timeout/);
- assert.equal(cancelled,true);assert.equal(stream.locked,false);
+test('destroying download list aborts only its pending metadata discovery',async()=>{
+ const {host,anchor}=fixture();let signal;let started;const ready=new Promise(resolve=>started=resolve);
+ const ui=mountReleaseDownloads({host,catalog:{entries:[]},fetcher:async(_,options)=>{signal=options.signal;started();return new Promise(()=>{});}});
+ const pending=ui.load();await ready;ui.destroy();await pending;
+ assert.equal(signal.aborted,true);assert.equal(anchor.afterNode.removed,true);
 });
-test('caller cancellation wins during stalled discovery and streaming',async()=>{
- const discoveryController=new AbortController();
- const discovering=discoverReleaseAssets({signal:discoveryController.signal,fetcher:async()=>new Promise(()=>{})});
- discoveryController.abort();await assert.rejects(discovering,{name:'AbortError'});
- const controller=new AbortController(),stream=new ReadableStream({pull(){return new Promise(()=>{});}});
- const downloading=downloadReleaseAsset(asset(),{signal:controller.signal,fetcher:async()=>new Response(stream)});
- setTimeout(()=>controller.abort(),5);await assert.rejects(downloading,{name:'AbortError'});assert.equal(stream.locked,false);
+test('caller cancellation wins during stalled metadata discovery',async()=>{
+ const controller=new AbortController();
+ const discovering=discoverReleaseAssets({signal:controller.signal,fetcher:async()=>new Promise(()=>{})});
+ controller.abort();await assert.rejects(discovering,{name:'AbortError'});
 });
 test('refresh timeout recovers controls and identifies retained stale list',async()=>{
  const {host,anchor}=fixture();let stall=false;
- const ui=mountReleaseImporter({host,catalog:{entries:[]},discoveryTimeoutMs:10,fetcher:async()=>stall?new Promise(()=>{}):Response.json([{assets:[raw]}])});
+ const ui=mountReleaseDownloads({host,catalog:{entries:[]},discoveryTimeoutMs:10,fetcher:async()=>stall?new Promise(()=>{}):Response.json([{assets:[raw]}])});
  await ui.load();const section=anchor.afterNode,list=section.querySelector('[data-release-list]');assert.equal(list.children.length,1);
  stall=true;await ui.load();assert.equal(section.querySelector('[data-release-refresh]').disabled,false);
  assert.match(section.querySelector('[data-release-status]').textContent,/上次读取/);assert.equal(list.children.length,1);

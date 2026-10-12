@@ -2,8 +2,6 @@
 export const RELEASES_URL = 'https://github.com/wanghongyi-logic/gre-ielts-vocab/releases';
 const API_URL = 'https://api.github.com/repos/wanghongyi-logic/gre-ielts-vocab/releases';
 const PREFIX = '/wanghongyi-logic/gre-ielts-vocab/releases/download/';
-export const DIRECT_IMPORT_LIMIT = 64 * 1024 * 1024;
-const verifiedAssets = new WeakSet();
 
 // Each network stage has an idle deadline and shares the caller's cancellation.
 function networkSession(callerSignal, timeoutMs) {
@@ -47,7 +45,6 @@ export function normalizeReleaseAsset(raw, release) {
     if (!range || raw.state !== 'uploaded' || !Number.isSafeInteger(raw.id) || raw.id <= 0 || !Number.isSafeInteger(raw.size) || raw.size <= 0) return null;
     const url = trustedReleaseURL(raw.browser_download_url, raw.name);
     const asset = Object.freeze({id:raw.id, name:raw.name, bytes:raw.size, url, range:Object.freeze(range), release:String(release?.tag_name || '')});
-    verifiedAssets.add(asset);
     return asset;
   } catch { return null; }
 }
@@ -85,77 +82,31 @@ export async function discoverReleaseAssets({fetcher = globalThis.fetch, signal,
   return assets.sort((a,b) => a.range.start-b.range.start || a.range.end-b.range.end || b.id-a.id);
   } finally { network.close(); }
 }
-export async function downloadReleaseAsset(asset, {signal, onProgress = () => {}, fetcher = globalThis.fetch, timeoutMs = 30000} = {}) {
-  if (!verifiedAssets.has(asset)) throw new Error('请先刷新书包列表');
-  trustedReleaseURL(asset.url, asset.name);
-  if (asset.bytes > DIRECT_IMPORT_LIMIT) throw new Error('请先下载书包，再选择文件导入');
-  signal?.throwIfAborted();
-  const network = networkSession(signal,timeoutMs);
-  try {
-  const response = await network.wait(() => fetcher(asset.url, {signal:network.signal, mode:'cors', credentials:'omit', referrerPolicy:'no-referrer', redirect:'follow'}));
-  if (!response.ok || !response.body || response.type === 'opaque') throw new Error('请先下载书包，再选择文件导入');
-  if (response.url) {
-    const final = new URL(response.url);
-    if (final.protocol !== 'https:' || final.username || final.password || final.port || !['github.com','release-assets.githubusercontent.com'].includes(final.hostname)) throw new Error('下载地址无法验证，请使用下载链接');
-  }
-  const length = response.headers.get('Content-Length');
-  if (length !== null && Number(length) !== asset.bytes) { response.body.cancel().catch(() => {}); throw new Error('书包大小已变化，请刷新列表'); }
-  const reader = response.body.getReader(), chunks = [];
-  let completed = 0;
-  try {
-    while (true) {
-      signal?.throwIfAborted();
-      const {done, value} = await network.wait(() => reader.read());
-      if (done) break;
-      completed += value.byteLength;
-      if (completed > asset.bytes || completed > DIRECT_IMPORT_LIMIT) throw new Error('书包超过直接导入大小，请使用下载链接');
-      chunks.push(value);
-      onProgress({phase:'download', completed, total:asset.bytes});
-    }
-    signal?.throwIfAborted();
-    if (completed !== asset.bytes) throw new Error('下载不完整，请重新下载');
-    return new File(chunks, asset.name, {type:'application/zip'});
-  } catch (error) { reader.cancel().catch(() => {}); throw error; }
-  finally { reader.releaseLock(); }
-  } finally { network.close(); }
-}
 const size = bytes => `${(bytes / 1024 / 1024).toFixed(1)} MB`;
 export function releaseListMessage(state) {
-  return ({loading:'正在查找可下载的书包…', empty:'最近的发布中还没有找到书包。已有 ZIP 文件仍可在上方导入。', error:'暂时无法读取书包列表。可以打开下载页，下载后在上方选择文件。', ready:'下载后也可以在上方选择 ZIP 文件导入。'})[state];
+  return ({loading:'正在查找可下载的书包…', empty:'最近的发布中还没有找到书包。已有 ZIP 文件仍可在上方导入。', error:'暂时无法读取书包列表。可以打开下载页，下载后在上方选择文件。', ready:''})[state];
 }
-export function mountReleaseImporter({host, catalog, onImport, getReadyIds = () => null, isImporting = () => false, fetcher = globalThis.fetch, discoveryTimeoutMs = 20000}) {
-  if (!host || host.querySelector('[data-release-importer]')) return null;
+export function mountReleaseDownloads({host, catalog, getReadyIds = () => null, fetcher = globalThis.fetch, discoveryTimeoutMs = 20000}) {
+  if (!host || host.querySelector('[data-release-downloads]')) return null;
   const doc = host.ownerDocument;
   const section = doc.createElement('section');
-  section.className = 'library-quiet-section release-importer';
-  section.dataset.releaseImporter = '';
-  section.innerHTML = '<div class="release-heading"><h3>从 Release 导入</h3><button type="button" class="library-text-action" data-release-refresh>查看书包</button></div><p data-release-status role="status" aria-live="polite">查看已发布的离线书包，或在上方导入已有文件。</p><ul data-release-list></ul><p class="release-list-limit">这里查看最近 300 次发布中的书包；更早的书包可前往下载页查找。</p><a data-release-page target="_blank" rel="noopener noreferrer">打开书包下载页 ↗</a>';
+  section.className = 'library-quiet-section release-downloads';
+  section.dataset.releaseDownloads = '';
+  section.innerHTML = '<details class="release-browser" data-release-browser><summary><span>下载资源包</span><span class="library-disclosure-tail"><span>查看书包</span><span class="library-disclosure-mark" aria-hidden="true">+</span></span></summary><div class="release-browser-body"><div class="release-heading"><span>可下载书包</span><button type="button" class="library-text-action" data-release-refresh>刷新列表</button></div><p data-release-status role="status" aria-live="polite"></p><ul data-release-list></ul><a data-release-page target="_blank" rel="noopener noreferrer">打开书包下载页 ↗</a></div></details>';
   section.querySelector('[data-release-page]').href = RELEASES_URL;
   const anchor = host.querySelector('.library-import-feedback');
   if (anchor) anchor.after(section); else host.append(section);
   const status = section.querySelector('[data-release-status]'), list = section.querySelector('[data-release-list]'), refresh = section.querySelector('[data-release-refresh]');
-  let assets = [], busy = false, destroyed = false, controller;
+  let assets = [], busy = false, destroyed = false, loaded = false, controller;
   function render() {
     list.replaceChildren();
     for (const asset of assets) {
       const row = doc.createElement('li'), title = doc.createElement('strong'), info = doc.createElement('p'), actions = doc.createElement('div'), link = doc.createElement('a');
-      title.textContent = `第 ${asset.range.start}–${asset.range.end} 词 · ${asset.range.count} 词`;
+      title.textContent = `第 ${asset.range.start}–${asset.range.end} 词`;
       const coverage = localCoverage(asset, catalog, getReadyIds());
-      info.textContent = `${size(asset.bytes)} · ${coverage ? `本机已保存 ${coverage.saved}/${coverage.total} 词` : '本机覆盖情况待确认'}`;
+      info.textContent = `${size(asset.bytes)} · ${coverage ? `本机已保存 ${coverage.saved}/${coverage.total} 词` : '保存情况待确认'}`;
       actions.className = 'release-actions';
       link.href = asset.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = '下载 ZIP ↗';
-      if (onImport && asset.bytes <= DIRECT_IMPORT_LIMIT) {
-        const button = doc.createElement('button'); button.type = 'button'; button.dataset.remote = ''; button.textContent = '尝试直接导入'; button.disabled = busy || isImporting();
-        button.onclick = async () => {
-          if (busy || destroyed || isImporting()) return;
-          busy = true; refresh.disabled = true; render();
-          status.textContent = '正在连接书包下载；若无法连接，请先下载 ZIP 再导入。';
-          try { await onImport(asset); if (!destroyed) status.textContent = '请查看上方的导入结果。'; }
-          catch (error) { if (!destroyed) status.textContent = error?.name === 'AbortError' ? '已取消。仍可下载 ZIP 后选择文件导入。' : '当前无法直接导入。请点「下载 ZIP」，保存后在上方选择文件。'; }
-          finally { busy = false; if (!destroyed) { refresh.disabled = false; render(); } }
-        };
-        actions.append(button);
-      }
       actions.append(link); row.append(title,info,actions); list.append(row);
     }
   }
@@ -168,5 +119,7 @@ export function mountReleaseImporter({host, catalog, onImport, getReadyIds = () 
     finally { busy = false; if (!destroyed) { refresh.disabled = false; render(); refresh.textContent = '刷新列表'; } }
   }
   refresh.onclick = load;
+  const browser = section.querySelector('[data-release-browser]');
+  browser.ontoggle = () => { if (browser.open && !loaded && !busy && !destroyed) { loaded = true; load(); } };
   return {load, refreshCoverage:render, destroy(){destroyed=true;controller?.abort();section.remove();}};
 }

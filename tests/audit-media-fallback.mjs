@@ -1,12 +1,16 @@
-import {readFile} from 'node:fs/promises';import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';import {existsSync} from 'node:fs';import assert from 'node:assert/strict';
 const base=new URL((process.env.GRE_IMPLEMENTATION_DIR||new URL('../',import.meta.url).pathname).replace(/\/$/,'')+'/', 'file://').pathname;
 const {LessonLoader,expandCatalog}=await import(base+'gre-learning/lesson-loader.js');
 const {renderWordPage}=await import(base+'gre-learning/view.js');
-const catalog=expandCatalog(JSON.parse(await readFile(base+'gre-learning/catalog.json'))),meta=catalog.entries.at(-1),video=meta.storyMedia.video,bytes=await readFile(base+'gre-learning/'+video.url);
+const catalog=expandCatalog(JSON.parse(await readFile(base+'gre-learning/catalog.json')));
+// Pick an actually hosted fixture; deployments may intentionally remove later media.
+const meta=catalog.entries.find(entry=>entry.storyMedia?.video&&existsSync(base+'gre-learning/'+entry.storyMedia.video.url));
+assert.ok(meta,'Media fallback audit needs at least one hosted video fixture');
+const video=meta.storyMedia.video,bytes=await readFile(base+'gre-learning/'+video.url);
 const url=new URL('https://audit.test/gre-learning/');
 for(const mode of ['404','hang-fetch','hang-body']){
  const network=[];const loader=new LessonLoader(catalog,{baseURL:url,mediaTimeoutMs:35,cacheStorage:{open:async()=>({match:async u=>u===new URL(video.url,url).href?new Response(bytes):undefined,put:async()=>{}})},fetcher:async u=>{network.push(u.pathname);if(u.pathname.includes('/units/'))return new Response(await readFile(base+u.pathname));if(mode==='404')return new Response('gone',{status:404});if(mode==='hang-fetch')return new Promise(()=>{});return {ok:true,arrayBuffer:()=>new Promise(()=>{})}}});
- const start=Date.now();const pair=await loader.pair(meta.number);assert.equal(pair.entry.word,meta.word);assert.ok(pair.media?.videoURL.startsWith('blob:'));assert.equal(pair.media.posterURL,null);assert.ok(!network.some(p=>p.endsWith('.mp4')));assert.ok(Date.now()-start<1000);const html=renderWordPage(pair.entry,pair.media,{index:209,total:210});assert.ok(html.includes('<video'));assert.ok(!html.includes('src="null"'));console.log('PASS retained cached video + unavailable poster:',mode,'in',Date.now()-start,'ms');loader.destroy();
+ const start=Date.now();const pair=await loader.pair(meta.number);assert.equal(pair.entry.word,meta.word);assert.ok(pair.media?.videoURL.startsWith('blob:'));assert.equal(pair.media.posterURL,null);assert.ok(!network.some(p=>p.endsWith('.mp4')));assert.ok(Date.now()-start<1000);const html=renderWordPage(pair.entry,pair.media,{index:catalog.entries.indexOf(meta),total:catalog.entries.length});assert.ok(html.includes('<video'));assert.ok(!html.includes('src="null"'));console.log('PASS retained cached video + unavailable poster:',mode,'in',Date.now()-start,'ms');loader.destroy();
 }
 for(const mode of ['404','hang-fetch','hang-body']){
  const loader=new LessonLoader(catalog,{baseURL:url,mediaTimeoutMs:35,cacheStorage:null,fetcher:async u=>{if(u.pathname.includes('/units/'))return new Response(await readFile(base+u.pathname));if(mode==='404')return new Response('gone',{status:404});if(mode==='hang-fetch')return new Promise(()=>{});return {ok:true,arrayBuffer:()=>new Promise(()=>{})}}});
