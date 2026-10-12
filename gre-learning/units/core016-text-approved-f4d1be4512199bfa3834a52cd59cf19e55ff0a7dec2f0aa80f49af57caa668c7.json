@@ -1,0 +1,366 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 1870,
+      "word": "proliferate",
+      "ipa": "/prəˈlɪfəreɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "迅速增多；大量繁殖；使增殖",
+      "coreEn": "To multiply or increase rapidly in number or amount; also to cause such growth.",
+      "coreImageZh": "苗床里原先只有一株幼苗。几天后，新苗接连冒出，数量增加到十株。proliferate 强调一段时间内迅速增多，不只是原来的一株长高。",
+      "usage": [
+        {
+          "senseZh": "数量迅速增加或广泛扩展",
+          "explanationZh": "通常作不及物动词，主语可以是细胞、生物，也可以是文章、传言或组织。重点是产生或出现得越来越多，不等于单个物体变大；也不必每次都带失控或有害的评价。",
+          "collocations": [
+            {
+              "phrase": "cells proliferate",
+              "meaningZh": "细胞增殖"
+            },
+            {
+              "phrase": "rumors proliferate online",
+              "meaningZh": "传言在网上迅速增多"
+            }
+          ]
+        },
+        {
+          "senseZh": "使数量增加",
+          "explanationZh": "也有及物用法，表示使某物增殖或扩展；但一般描述事物自行增多时，优先掌握不及物结构。相关名词 proliferation 表示增殖、激增或扩散。",
+          "collocations": [
+            {
+              "phrase": "a proliferation of new products",
+              "meaningZh": "新产品的大量涌现"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Books and articles on the subject have proliferated over the last year.",
+          "translationZh": "过去一年，关于这个主题的书籍和文章迅速增多。",
+          "explanationZh": "增加的是出版物的数量；on the subject 修饰书籍和文章。"
+        },
+        {
+          "textEn": "Time passed and animal life proliferated.",
+          "translationZh": "时间推移，动物大量繁衍。",
+          "explanationZh": "这里是生物数量增长，不是说同一只动物体型变大。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "abound",
+          "comparisonZh": "都可用于某处某物很多的语境，但 proliferate 突出迅速增多的过程，abound 主要表示已经大量存在。Rumors abound 只说传言很多；rumors proliferate 还说它们在不断增多。abound in/with 的搭配不能直接搬给 proliferate。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "multiply",
+          "comparisonZh": "形容生物繁殖或事物数量增加时接近；multiply 本身不一定强调迅速，还可指数学乘法。multiply six by four 不能换成 proliferate。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "PRO + LIFE + RATE",
+          "textZh": "育苗室的幼苗不断增多，工作人员忙着添新托盘，数量表从几株跳到几十株。借 PRO(mote)（促进）、LIFE（生命）、RATE（速率），记生命快速增殖；三段正好拼成 PROLIFERATE。只借拼写，LIFE 在整词中不读 /laɪf/。",
+          "kind": "invented_association",
+          "original": false
+        },
+        {
+          "method": "PRO LIF(T)ER ATE",
+          "textZh": "餐桌上的空盘从两只很快增到十几只：职业举重运动员（pro lifter；lift 举起 + er 人）吃完了一盘又一盘（ate）。PRO + LIFTER + ATE，去掉 LIFTER 中的 T，便拼成 PROLIFERATE。只借拼写，不按短语连读；整词读 /prəˈlɪfəreɪt/。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ]
+    },
+    {
+      "number": 822,
+      "word": "erudite",
+      "ipa": "/ˈerjədaɪt/",
+      "pos": "adj.",
+      "coreMeaningZh": "博学的；学识渊博的；体现深厚学问的",
+      "coreEn": "Having or showing extensive knowledge acquired through reading and academic study.",
+      "coreImageZh": "男孩指着旧航海图上的星标，又指向摊开的相关书页，说明北极星与辨认北方的关系。他展现出经过学习积累的航海知识：erudite，学识渊博的。",
+      "usage": [
+        {
+          "senseZh": "人有深厚学问",
+          "explanationZh": "正式、通常带赞许意味，强调通过阅读和研究获得的知识，可专精于某一领域，不要求无所不知。不同于仅仅反应快、聪明，也不保证判断永远正确。",
+          "collocations": [
+            {
+              "phrase": "an erudite scholar",
+              "meaningZh": "学识渊博的学者"
+            },
+            {
+              "phrase": "an erudite historian",
+              "meaningZh": "博学的历史学家"
+            }
+          ]
+        },
+        {
+          "senseZh": "作品或表达体现深厚学识",
+          "explanationZh": "可修饰 book、lecture、discussion 等，指内容显露丰富知识。并不自动表示晦涩难懂；博学的讲解也可以清楚有趣。",
+          "collocations": [
+            {
+              "phrase": "an erudite discussion",
+              "meaningZh": "体现深厚学问的讨论"
+            },
+            {
+              "phrase": "an erudite book",
+              "meaningZh": "学识丰富的著作"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was a well-respected and erudite scholar.",
+          "translationZh": "他是一位备受尊敬、学识渊博的学者。",
+          "explanationZh": "well-respected 表示受尊敬，erudite 表示博学，是两个相关但不同的评价。"
+        },
+        {
+          "textEn": "The professor was entertaining as well as erudite.",
+          "translationZh": "这位教授既博学，又风趣。",
+          "explanationZh": "as well as 连接两种长处，说明博学并不意味着说话乏味难懂。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "learned",
+          "comparisonZh": "作形容词表示有深厚学问时，与 erudite 高度接近，如 a learned/erudite scholar。此义 learned 通常读两音节 /ˈlɜːnɪd/；learned behavior 中表示后天学会的那种用法，不能换成 erudite behavior。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "knowledgeable",
+          "comparisonZh": "都可称一个人知识丰富。knowledgeable 更通用，可指很了解汽车或本地情况；erudite 更偏学术和阅读积累，语气正式。a knowledgeable mechanic 不必就是 an erudite mechanic。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "E + RUD + ITE",
+          "textZh": "erudite 与 rude 有共同的拉丁词根；这里 RUD 指“未受训练”，不是“没礼貌”。E 表示脱离，记 E + RUD + ITE：通过学习走出无知，成为博学的人。",
+          "kind": "etymology",
+          "original": false
+        },
+        {
+          "method": "ERUDITE 阅读口诀",
+          "textZh": "Eager Readers Understand Deep Ideas Through Education：热爱阅读的人，通过学习理解深奥思想。七个词的首字母依次是 E R U D I T E，把“博学”连到阅读、理解与学习。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ]
+    },
+    {
+      "number": 1087,
+      "word": "hamstring",
+      "ipa": "/ˈhæmstrɪŋ/",
+      "pos": "v.; n.",
+      "coreMeaningZh": "使难以施展；严重限制；腘绳肌（腱）",
+      "coreEn": "To severely restrict someone’s ability to act or something’s effectiveness; also a muscle or tendon at the back of the thigh or knee.",
+      "coreImageZh": "送货车的轮轴已经断裂，车轮落在一旁。送货人试着拉车，装满包裹的车却无法前进。关键部件损坏，使送货工作难以进行：hamstring，严重限制行动能力。",
+      "usage": [
+        {
+          "senseZh": "严重限制行动或效能",
+          "explanationZh": "及物动词，常见被动 be hamstrung by，说明受什么限制。可用于预算、规章或自身习惯，使人或组织难以有效行动；不一定彻底停止，但通常比普通的小妨碍更强。过去式和过去分词通常为 hamstrung。",
+          "collocations": [
+            {
+              "phrase": "be hamstrung by regulations",
+              "meaningZh": "因规章而难以施展"
+            },
+            {
+              "phrase": "hamstring an effort",
+              "meaningZh": "严重妨碍一项努力"
+            }
+          ]
+        },
+        {
+          "senseZh": "腿后的肌肉或肌腱",
+          "explanationZh": "作可数名词可指膝后肌腱，也常指大腿后侧的腘绳肌。pull a hamstring 是拉伤相关肌肉或肌腱。动词还有割断腿腱使其失去功能的字面义；本课重点是由此联系的“使难以行动”。",
+          "collocations": [
+            {
+              "phrase": "a hamstring injury",
+              "meaningZh": "腘绳肌（腱）损伤"
+            },
+            {
+              "phrase": "pull a hamstring",
+              "meaningZh": "拉伤腘绳肌（腱）"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The mayor tried to hamstring our efforts by cutting the budget.",
+          "translationZh": "市长试图通过削减预算，使我们的努力难以奏效。",
+          "explanationZh": "hamstring 直接接 our efforts；by cutting the budget 交代造成限制的办法。"
+        },
+        {
+          "textEn": "The company was hamstrung by traditional but inefficient ways of conducting business.",
+          "translationZh": "传统却低效的经营方式使这家公司难以施展。",
+          "explanationZh": "被动结构突出公司受到的限制；限制也可能来自自己的做事方式。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "impair",
+          "comparisonZh": "预算不足可以 impair 或 hamstring 一个组织的效能。impair 广泛指损害或削弱，程度可轻可重；hamstring 更突出行动能力遭到严重限制。impair vision 表示损害视力，一般不改成 hamstring vision。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "hamper",
+          "comparisonZh": "都可说妨碍工作或行动；hamper 侧重使进展困难，hamstring 常更强，像关键能力被束缚。轻微拥堵只使车程慢一点时，hamper 比 hamstring 合适。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "HAM + STRING",
+          "textZh": "ham 古义指大腿后部，string 是绳；hamstring 原指腿后像绳一样的肌腱。联系腿腱受损就难以行动，再记动词“使难以施展”。",
+          "kind": "etymology",
+          "original": false
+        },
+        {
+          "method": "HAM(mer) + STRING",
+          "textZh": "锤子（hammer）被绳子（string）紧紧绑在工作台上，连抬起敲钉子都做不到，工作因此受阻。HAMMER 去掉 MER，再接 STRING，拼成 HAMSTRING；这是拼写联想。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ]
+    },
+    {
+      "number": 543,
+      "word": "debunk",
+      "ipa": "/diːˈbʌŋk/",
+      "pos": "v.",
+      "coreMeaningZh": "揭穿；证明某种说法虚假；戳破被夸大的名声",
+      "coreEn": "To demonstrate that a claim or belief is false, or expose an exaggerated reputation as undeserved.",
+      "coreImageZh": "朋友声称杯子能自己悬空。男孩在杯子后举起一块深色板，浅色细线便清楚地显现出来，原来它从上方木钉连到杯把，吊住了杯子。debunk：揭穿虚假的说法。",
+      "usage": [
+        {
+          "senseZh": "揭穿传言、谬论或虚假主张",
+          "explanationZh": "及物动词，直接接 myth、claim、theory 等。重点是把错误或虚假之处揭示出来，不只是表示怀疑、否认或持不同意见；常用于研究、调查和事实核查。",
+          "collocations": [
+            {
+              "phrase": "debunk a myth",
+              "meaningZh": "揭穿一种流传的错误观念"
+            },
+            {
+              "phrase": "debunk a claim",
+              "meaningZh": "证明一种主张不实"
+            }
+          ]
+        },
+        {
+          "senseZh": "戳破夸大或虚饰",
+          "explanationZh": "也可揭示某人、事物或形象并没有被宣传得那么好。语气常比中性的 disprove 更有“拆穿光环”的意味，但不意味着每次都要嘲笑，也不必断言最初传播者有意骗人。",
+          "collocations": [
+            {
+              "phrase": "debunk an idealized image",
+              "meaningZh": "戳破被理想化的形象"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His theories have been debunked by recent research.",
+          "translationZh": "近期研究已经揭示了他的理论不成立。",
+          "explanationZh": "被动结构 have been debunked 表示理论遭到证伪；by 引出提供反证的研究。"
+        },
+        {
+          "textEn": "She attempts to debunk unrealistic expectations about marriage.",
+          "translationZh": "她试图揭示人们对婚姻抱有的某些期待并不现实。",
+          "explanationZh": "debunk 也可戳破过度美化的想象；attempts to 只表示尝试，并不保证已经成功。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "disprove",
+          "comparisonZh": "谈用证据证明主张错误时接近，均可直接接 claim 或 theory。disprove 更中性，侧重证伪；debunk 常带拆穿谬论、虚饰或夸大之意。严肃检验一个新假说可用 disprove，不必把它说成骗局。"
+        },
+        {
+          "word": "discredit",
+          "comparisonZh": "让某理论不再可信时有交集。discredit 侧重削弱信用或可信度，不一定已经彻底证伪；还可指损害人的名声。discredit a witness 常说让证人失去可信度，不能机械换成 debunk a witness。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "DE + BUNK",
+          "textZh": "bunk 在这里是“胡话、无稽之谈”，de- 表示除去。把一套说法里的 bunk 清出来，露出它的虚假，就是 debunk：揭穿。这个拆法有真实词源依据。",
+          "kind": "etymology",
+          "original": false
+        },
+        {
+          "method": "DEB(ate) + (j)UNK",
+          "textZh": "辩论（debate）中，有人拿出原始照片，把当作证据的垃圾谣言（junk）揭穿。取 DEB(ate) 的 DEB 和 (j)UNK 的 UNK，拼成 DEBUNK；这是拼写联想，记“用证据拆穿”。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ]
+    },
+    {
+      "number": 3052,
+      "word": "umbrage",
+      "ipa": "/ˈʌmbrɪdʒ/",
+      "pos": "n.",
+      "coreMeaningZh": "因感到受冒犯而产生的不快、愠怒",
+      "coreEn": "Hurt or resentful displeasure at something perceived as an insult or a slight.",
+      "coreImageZh": "男孩正得意地展示桌上的纸鹤，朋友却说“这只纸鹤也太难看了。”男孩皱起眉，抱住双臂，把视线转开，觉得自己受了轻视。umbrage 是这种受冒犯后的不快。",
+      "usage": [
+        {
+          "senseZh": "觉得受了轻慢而不快",
+          "explanationZh": "通常作不可数名词，最常见 take umbrage at something，表示因某人的话或举动觉得受冒犯。重点是主观感到不被尊重；对方未必有意侮辱。较正式，也可带诙谐语气，不一定是勃然大怒。",
+          "collocations": [
+            {
+              "phrase": "take umbrage at a remark",
+              "meaningZh": "因一句话觉得受冒犯"
+            },
+            {
+              "phrase": "take umbrage at being ignored",
+              "meaningZh": "因被忽视而感到不快"
+            }
+          ]
+        },
+        {
+          "senseZh": "少见的文学义：树荫、阴影",
+          "explanationZh": "旧义可指阴影、树荫或遮阴的枝叶，如文学描写中的树木。现代常见的 take umbrage 是“感到受冒犯”，不能按字面译成“乘凉”。",
+          "collocations": []
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He took umbrage at her remarks.",
+          "translationZh": "他觉得她的话冒犯了自己，因而感到不快。",
+          "explanationZh": "take umbrage at 是常见结构；句子描述他的感受，不证明她有意侮辱。"
+        },
+        {
+          "textEn": "Will she take umbrage if she isn't invited to the wedding?",
+          "translationZh": "如果没有邀请她参加婚礼，她会觉得被怠慢而不高兴吗？",
+          "explanationZh": "没有受邀也可能被理解成轻慢；umbrage 的触发点不只限于一句冒犯的话。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "offense",
+          "comparisonZh": "take offense at 和 take umbrage at 都可表示因受冒犯而不快。offense 更常用，umbrage 较正式，也可带诙谐或“自尊被触动”的语气。offense 还有违法行为等义，a criminal offense 不能换成 umbrage。"
+        },
+        {
+          "word": "resentment",
+          "comparisonZh": "两者都可表示受轻视或不公对待后的怨愤。umbrage 常聚焦一次感到被冒犯的反应；resentment 可指长期积累的不满。通常说 take umbrage，却说 feel/harbor resentment，替换时要连动词一起调整。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "UMBR(ella) 的阴影",
+          "textZh": "从 UMBRELLA（伞）保留 UMBR，把 ELLA 换成 AGE，就拼成 UMBRAGE。两词都可追到拉丁 umbra“阴影”。再联想一句轻慢的话让心里蒙上阴影，记“受冒犯的不快”；这个心理画面是联想。",
+          "kind": "etymology",
+          "original": false
+        },
+        {
+          "method": "nUMB + RAGE",
+          "textZh": "作品被当面贬得一文不值，你先麻木发愣（numb），随后怒气（rage）涌上来：觉得自己受了侮辱。NUMB 去掉 N，再加 RAGE，正好是 UMBRAGE。只借拼写，整词读 /ˈʌmbrɪdʒ/；核心是“受冒犯”，程度未必达到 rage。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ]
+    }
+  ]
+}

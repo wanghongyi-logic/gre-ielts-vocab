@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "151",
-  "authoredCount": 90,
-  "publishedCount": 90,
+  "release": "152",
+  "authoredCount": 95,
+  "publishedCount": 95,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -97,7 +97,12 @@
       2742,
       2140,
       1704,
-      3387
+      3387,
+      1870,
+      822,
+      1087,
+      543,
+      3052
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -237,6 +242,11 @@
       "url": "units/core015-text-approved-be575a6384b37b3843f1d037da1f69abd2574b0d4987fc4b21ffcbb3f9f799b8.json",
       "sha256": "be575a6384b37b3843f1d037da1f69abd2574b0d4987fc4b21ffcbb3f9f799b8",
       "bytes": 17814
+    },
+    {
+      "url": "units/core016-text-approved-f4d1be4512199bfa3834a52cd59cf19e55ff0a7dec2f0aa80f49af57caa668c7.json",
+      "sha256": "f4d1be4512199bfa3834a52cd59cf19e55ff0a7dec2f0aa80f49af57caa668c7",
+      "bytes": 18750
     }
   ],
   "entries": [
@@ -6135,6 +6145,747 @@
         "posterDialogue": {
           "text": "新的果汁配好了。",
           "speaker": "adult",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      }
+    },
+    {
+      "number": 1870,
+      "word": "proliferate",
+      "coreMeaningZh": "迅速增多；大量繁殖；使增殖",
+      "unit": 26,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 91,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 9400,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated root-reviewed narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "苗床里原先只有一株幼苗。几天后，新苗接连冒出，数量增加到十株。proliferate 强调一段时间内迅速增多，不只是原来的一株长高。",
+        "video": {
+          "url": "story-media/1870-a8e4d6d8471a42efcbeb8c5917eb9c869e6170f17554ca29f205f9abb74f2578.mp4",
+          "sha256": "a8e4d6d8471a42efcbeb8c5917eb9c869e6170f17554ca29f205f9abb74f2578",
+          "bytes": 1226168
+        },
+        "poster": {
+          "url": "story-media/1870-1c09437091ae7f53eded28a3c1c774483bad98351171819e897598421a62411a.png",
+          "sha256": "1c09437091ae7f53eded28a3c1c774483bad98351171819e897598421a62411a",
+          "bytes": 1385462
+        },
+        "staticPoster": {
+          "url": "story-media/1870-028b41d20288cf420aa3171fce293ded41ff7aaa38946595a6bb032bfd38f1e6.png",
+          "sha256": "028b41d20288cf420aa3171fce293ded41ff7aaa38946595a6bb032bfd38f1e6",
+          "bytes": 1367508
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1200,
+            "endMs": 1600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 1600,
+            "endMs": 3000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 3000,
+            "endMs": 3480,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 3480,
+            "endMs": 4840,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 4840,
+            "endMs": 5000,
+            "text": "几天后，幼苗挤满了苗床。",
+            "speaker": "narrator",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 5000,
+            "endMs": 8800,
+            "text": "几天后，幼苗挤满了苗床。",
+            "speaker": "narrator",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 8800,
+            "endMs": 9400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "几天后，幼苗挤满了苗床。",
+          "speaker": "narrator",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      }
+    },
+    {
+      "number": 822,
+      "word": "erudite",
+      "coreMeaningZh": "博学的；学识渊博的；体现深厚学问的",
+      "unit": 26,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 92,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 11200,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated root-reviewed narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "男孩指着旧航海图上的星标，又指向摊开的相关书页，说明北极星与辨认北方的关系。他展现出经过学习积累的航海知识：erudite，学识渊博的。",
+        "video": {
+          "url": "story-media/822-2c9a2533ab95a77096ef2b2580563cab3f2ec283e5411a07ba4b5a0276a0a009.mp4",
+          "sha256": "2c9a2533ab95a77096ef2b2580563cab3f2ec283e5411a07ba4b5a0276a0a009",
+          "bytes": 1392139
+        },
+        "poster": {
+          "url": "story-media/822-785c8f9b910338775daf2b956b05fc33659a7222350cb6258514326f3b127604.png",
+          "sha256": "785c8f9b910338775daf2b956b05fc33659a7222350cb6258514326f3b127604",
+          "bytes": 1146342
+        },
+        "staticPoster": {
+          "url": "story-media/822-4358a784a6e2de8339f98ee2633c03f31057fc3a1648c7a3c19a189f07a048af.png",
+          "sha256": "4358a784a6e2de8339f98ee2633c03f31057fc3a1648c7a3c19a189f07a048af",
+          "bytes": 1213755
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 400,
+            "endMs": 2400,
+            "text": "古画里的水手为什么在看星星？",
+            "speaker": "friend",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 2400,
+            "endMs": 2800,
+            "text": "古画里的水手为什么在看星星？",
+            "speaker": "friend",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 2800,
+            "endMs": 3000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 3000,
+            "endMs": 4400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 4400,
+            "endMs": 5000,
+            "text": "北极星接近天极，可以用来辨认北方。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 5000,
+            "endMs": 7400,
+            "text": "北极星接近天极，可以用来辨认北方。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 7400,
+            "endMs": 9800,
+            "text": "北极星接近天极，可以用来辨认北方。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-8",
+            "startMs": 9800,
+            "endMs": 10200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-9",
+            "startMs": 10200,
+            "endMs": 10720,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-10",
+            "startMs": 10720,
+            "endMs": 11200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "北极星接近天极，可以用来辨认北方。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      }
+    },
+    {
+      "number": 1087,
+      "word": "hamstring",
+      "coreMeaningZh": "使难以施展；严重限制；腘绳肌（腱）",
+      "unit": 26,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 93,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 9400,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated root-reviewed narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "送货车的轮轴已经断裂，车轮落在一旁。送货人试着拉车，装满包裹的车却无法前进。关键部件损坏，使送货工作难以进行：hamstring，严重限制行动能力。",
+        "video": {
+          "url": "story-media/1087-0dff5949fab142a7fc6877809cdf7880954f0f470665aa7c1dd1b902a3e60eef.mp4",
+          "sha256": "0dff5949fab142a7fc6877809cdf7880954f0f470665aa7c1dd1b902a3e60eef",
+          "bytes": 1566772
+        },
+        "poster": {
+          "url": "story-media/1087-7be9761de42d88f9c7ca2c4ea3494249dc2b316f98f89eadef66e63b86c737a2.png",
+          "sha256": "7be9761de42d88f9c7ca2c4ea3494249dc2b316f98f89eadef66e63b86c737a2",
+          "bytes": 1303122
+        },
+        "staticPoster": {
+          "url": "story-media/1087-3306173e9c93057b7703eea64c77b9b9942a32ec42ef6f095931f0e7b6e773a6.png",
+          "sha256": "3306173e9c93057b7703eea64c77b9b9942a32ec42ef6f095931f0e7b6e773a6",
+          "bytes": 1335135
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1600,
+            "endMs": 2240,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 2240,
+            "endMs": 3080,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 3080,
+            "endMs": 4880,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 4880,
+            "endMs": 5600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 5600,
+            "endMs": 5720,
+            "text": "车轴断了，这批货没法运走了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 5720,
+            "endMs": 6360,
+            "text": "车轴断了，这批货没法运走了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 6360,
+            "endMs": 7000,
+            "text": "车轴断了，这批货没法运走了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-8",
+            "startMs": 7000,
+            "endMs": 8200,
+            "text": "车轴断了，这批货没法运走了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-9",
+            "startMs": 8200,
+            "endMs": 9400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "车轴断了，这批货没法运走了。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      }
+    },
+    {
+      "number": 543,
+      "word": "debunk",
+      "coreMeaningZh": "揭穿；证明某种说法虚假；戳破被夸大的名声",
+      "unit": 26,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 94,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 11120,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated root-reviewed narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "朋友声称杯子能自己悬空。男孩在杯子后举起一块深色板，浅色细线便清楚地显现出来，原来它从上方木钉连到杯把，吊住了杯子。debunk：揭穿虚假的说法。",
+        "video": {
+          "url": "story-media/543-0ae56c990889a0ed53f171607d316015bfc33a6fd463a81d23c4bdcc5bdc74ae.mp4",
+          "sha256": "0ae56c990889a0ed53f171607d316015bfc33a6fd463a81d23c4bdcc5bdc74ae",
+          "bytes": 1460413
+        },
+        "poster": {
+          "url": "story-media/543-626bb55183f72cd48a7d41439252278a30cd381c252688d47232debd1d152b9a.png",
+          "sha256": "626bb55183f72cd48a7d41439252278a30cd381c252688d47232debd1d152b9a",
+          "bytes": 1080807
+        },
+        "staticPoster": {
+          "url": "story-media/543-8dc8975f307e632690dedf7fc011533ce5689736cfc7971ee0e7c1780124d472.png",
+          "sha256": "8dc8975f307e632690dedf7fc011533ce5689736cfc7971ee0e7c1780124d472",
+          "bytes": 1113711
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 300,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 300,
+            "endMs": 2200,
+            "text": "看，杯子会自己悬空！",
+            "speaker": "friend",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 2200,
+            "endMs": 3120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 3120,
+            "endMs": 4120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 4120,
+            "endMs": 4300,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 4300,
+            "endMs": 7300,
+            "text": "是这根线吊着它。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-6",
+            "startMs": 7300,
+            "endMs": 7600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-7",
+            "startMs": 7600,
+            "endMs": 8400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-8",
+            "startMs": 8400,
+            "endMs": 9120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-9",
+            "startMs": 9120,
+            "endMs": 10320,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-10",
+            "startMs": 10320,
+            "endMs": 11120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "是这根线吊着它。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        }
+      }
+    },
+    {
+      "number": 3052,
+      "word": "umbrage",
+      "coreMeaningZh": "因感到受冒犯而产生的不快、愠怒",
+      "unit": 26,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 95,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 9000,
+        "resetTransition": {
+          "type": "none",
+          "reason": "Fully illustrated root-reviewed narrative restart; no transition effect."
+        },
+        "waitForPresentedFrame": true,
+        "alt": "男孩正得意地展示桌上的纸鹤，朋友却说“这只纸鹤也太难看了。”男孩皱起眉，抱住双臂，把视线转开，觉得自己受了轻视。umbrage 是这种受冒犯后的不快。",
+        "video": {
+          "url": "story-media/3052-46fd189d0ef2c771c25cef2e1cd5cfe606cbb9da21555455ea0d4665551da2e7.mp4",
+          "sha256": "46fd189d0ef2c771c25cef2e1cd5cfe606cbb9da21555455ea0d4665551da2e7",
+          "bytes": 829911
+        },
+        "poster": {
+          "url": "story-media/3052-30808927dad7b5b4b27bd2e787b1db1bf7d73afcca3ff7cf14d3fa8429031980.png",
+          "sha256": "30808927dad7b5b4b27bd2e787b1db1bf7d73afcca3ff7cf14d3fa8429031980",
+          "bytes": 1101933
+        },
+        "staticPoster": {
+          "url": "story-media/3052-ee05e114aa073e88166e45681777e215e1f75adfd3a98d5b6ee24dafd58d2dc7.png",
+          "sha256": "ee05e114aa073e88166e45681777e215e1f75adfd3a98d5b6ee24dafd58d2dc7",
+          "bytes": 1213812
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1520,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1520,
+            "endMs": 1600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 1600,
+            "endMs": 2720,
+            "text": "这只纸鹤也太难看了。",
+            "speaker": "friend",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 2720,
+            "endMs": 3800,
+            "text": "这只纸鹤也太难看了。",
+            "speaker": "friend",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-4",
+            "startMs": 3800,
+            "endMs": 4600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-5",
+            "startMs": 4600,
+            "endMs": 9000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "这只纸鹤也太难看了。",
+          "speaker": "friend",
           "anchor": {
             "x": 0.5,
             "y": 0.12

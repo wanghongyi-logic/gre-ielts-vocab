@@ -1,5 +1,5 @@
 {
-  "build": "151",
+  "build": "152",
   "assets": [
     {
       "url": "index.html",
@@ -19,7 +19,7 @@
     {
       "url": "gre-learning/update.js",
       "bytes": 2647,
-      "sha256": "13e972f5fce34dc4b76fcf59447a215a8407fb7d0770295e622a537229b22b43"
+      "sha256": "f7105d04483d4754f40ff80018a6b0bbaffb2cc256238e56723bece7ff8f5c96"
     },
     {
       "url": "gre-learning/app.js",
@@ -28,8 +28,8 @@
     },
     {
       "url": "gre-learning/catalog.json",
-      "bytes": 196389,
-      "sha256": "6532027074d7cb4e204344e21ce421a2775b7827b2b07a0cb300f7474034a56a"
+      "bytes": 218048,
+      "sha256": "c32af2d8648902369870ae6cae7596a8b1f1371620fd305bb9a78c4183fa8065"
     },
     {
       "url": "gre-learning/lesson-loader.js",
