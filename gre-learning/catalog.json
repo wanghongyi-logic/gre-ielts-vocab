@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "158",
-  "authoredCount": 140,
-  "publishedCount": 140,
+  "release": "160",
+  "authoredCount": 150,
+  "publishedCount": 150,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -147,7 +147,17 @@
       2947,
       1465,
       1457,
-      2694
+      2694,
+      755,
+      3027,
+      1819,
+      2308,
+      148,
+      2647,
+      1176,
+      2512,
+      1360,
+      1121
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -337,6 +347,16 @@
       "url": "units/core025-text-approved-cd37269828e21ebc5f12769fe4dacb893a65d5060d5eba3c72e29943e119b99a.json",
       "sha256": "cd37269828e21ebc5f12769fe4dacb893a65d5060d5eba3c72e29943e119b99a",
       "bytes": 16250
+    },
+    {
+      "url": "units/core026-text-candidate-f2dae8ffffd8b59f0d469dd6dc62341a13f843f93720e034e4390a95a604e163.json",
+      "sha256": "f2dae8ffffd8b59f0d469dd6dc62341a13f843f93720e034e4390a95a604e163",
+      "bytes": 16889
+    },
+    {
+      "url": "units/core027-text-candidate-b4b0bdee95c10d01d270ef5b5adb20f2f4ca50a0ac773ec0179841e35b9c3253.json",
+      "sha256": "b4b0bdee95c10d01d270ef5b5adb20f2f4ca50a0ac773ec0179841e35b9c3253",
+      "bytes": 19200
     }
   ],
   "entries": [
@@ -12153,6 +12173,803 @@
               "x": 0.5,
               "y": 0.12
             }
+          }
+        ]
+      }
+    },
+    {
+      "number": 755,
+      "word": "egalitarian",
+      "coreMeaningZh": "平等主义的；平等主义者",
+      "unit": 36,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 141,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 8000,
+          "text": "每个人都有同样的发言权。",
+          "speaker": "facilitator",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "每个人都有同样的发言权。"
+          ]
+        },
+        "alt": "社区讨论中，主持人把发言信物交给男孩，成年人认真听他的意见，体现人人平等的发言权。",
+        "video": {
+          "url": "story-media/755-video-9bc23256639fe0f25902369ca56b21b2d73d35f393fc28b059e295b133f946cf.mp4",
+          "sha256": "9bc23256639fe0f25902369ca56b21b2d73d35f393fc28b059e295b133f946cf",
+          "bytes": 1037161
+        },
+        "poster": {
+          "url": "story-media/755-poster-1806ca71d6a31e4bdceaad71097a5ee0a9cd40e2e15771d77e32901be5506cfb.png",
+          "sha256": "1806ca71d6a31e4bdceaad71097a5ee0a9cd40e2e15771d77e32901be5506cfb",
+          "bytes": 1241683
+        },
+        "staticPoster": {
+          "url": "story-media/755-staticPoster-4484816a415840d916908971a8bacf0776ba068c1fb0c3d127afe91326fafb37.png",
+          "sha256": "4484816a415840d916908971a8bacf0776ba068c1fb0c3d127afe91326fafb37",
+          "bytes": 1229420
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 240,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 240,
+            "endMs": 3600,
+            "text": "每个人都有同样的发言权。",
+            "speaker": "facilitator",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "每个人都有同样的发言权。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 3600,
+            "endMs": 4800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          },
+          {
+            "startMs": 4800,
+            "endMs": 7680,
+            "text": "那我也说说我的想法。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "那我也说说我的想法。"
+            ],
+            "id": "stage-3"
+          },
+          {
+            "startMs": 7680,
+            "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-4"
+          }
+        ]
+      }
+    },
+    {
+      "number": 3027,
+      "word": "staunch",
+      "coreMeaningZh": "坚定忠诚的；止住（流动）",
+      "unit": 36,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 142,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 9000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 9000,
+          "text": "我还是支持你。我们再试一次。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我还是支持你。我们再试一次。"
+          ]
+        },
+        "alt": "女孩的手工小桥失败后，男孩仍留在她身边，扶稳桥柱，和她一起重新搭桥，表现困难中坚定不移的支持。",
+        "video": {
+          "url": "story-media/3027-video-12510899d99022593184d8da0357feb0647624df3e089f72eeebf205baf19728.mp4",
+          "sha256": "12510899d99022593184d8da0357feb0647624df3e089f72eeebf205baf19728",
+          "bytes": 879711
+        },
+        "poster": {
+          "url": "story-media/3027-poster-6387676534bf455f303566fefdd7af5dc9c7246bb80d40a15fe0ae9aa9a18bd5.png",
+          "sha256": "6387676534bf455f303566fefdd7af5dc9c7246bb80d40a15fe0ae9aa9a18bd5",
+          "bytes": 1247443
+        },
+        "staticPoster": {
+          "url": "story-media/3027-staticPoster-deb4b4dd30b38bfcefc04fd805d06369ef7ed437f1022f35369e4a10243a6108.png",
+          "sha256": "deb4b4dd30b38bfcefc04fd805d06369ef7ed437f1022f35369e4a10243a6108",
+          "bytes": 1223942
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2000,
+            "endMs": 7800,
+            "text": "我还是支持你。我们再试一次。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我还是支持你。我们再试一次。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 7800,
+            "endMs": 9000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ]
+      }
+    },
+    {
+      "number": 1819,
+      "word": "precarious",
+      "coreMeaningZh": "不稳固的；岌岌可危的",
+      "unit": 36,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 143,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 7000,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩发现凳子上的箱子摇摇欲坠，小心伸手并迈步，用双手扶住中间的箱子。",
+        "video": {
+          "url": "story-media/1819-video-609fe4f3dc86db89ac334ea5a7b9d1e75bdad598774810404b94ac5041f2c05f.mp4",
+          "sha256": "609fe4f3dc86db89ac334ea5a7b9d1e75bdad598774810404b94ac5041f2c05f",
+          "bytes": 700611
+        },
+        "poster": {
+          "url": "story-media/1819-poster-6771908ca2192899c8b93241bbdfa09a75c6449437a45dc12a051b2d18a4a488.png",
+          "sha256": "6771908ca2192899c8b93241bbdfa09a75c6449437a45dc12a051b2d18a4a488",
+          "bytes": 1094993
+        },
+        "staticPoster": {
+          "url": "story-media/1819-staticPoster-69c5158ad07ff76b063a49b2ab28311c55f699464ccc5516c1135da2815c6884.png",
+          "sha256": "69c5158ad07ff76b063a49b2ab28311c55f699464ccc5516c1135da2815c6884",
+          "bytes": 1153401
+        }
+      }
+    },
+    {
+      "number": 2308,
+      "word": "sporadic",
+      "coreMeaningZh": "零星的；不定时发生的",
+      "unit": 36,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 144,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 12840.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 12840,
+          "text": "偶尔落几滴，停一阵，又落几滴。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "偶尔落几滴，停一阵，又落几滴。"
+          ]
+        },
+        "alt": "男孩静静看着水盆，三次孤立雨滴落下，间隔长短不一，体现零星、偶发的 sporadic。",
+        "video": {
+          "url": "story-media/2308-video-227b4a2dc257f47e78a21260e4fddf0792a8b0a304f2c7d659349bb10df9393c.mp4",
+          "sha256": "227b4a2dc257f47e78a21260e4fddf0792a8b0a304f2c7d659349bb10df9393c",
+          "bytes": 698456
+        },
+        "poster": {
+          "url": "story-media/2308-poster-3bba177f2256808382d4d37c8a9de93ed1a1cf0e718133c23dc9a732cc71ee82.png",
+          "sha256": "3bba177f2256808382d4d37c8a9de93ed1a1cf0e718133c23dc9a732cc71ee82",
+          "bytes": 1274542
+        },
+        "staticPoster": {
+          "url": "story-media/2308-staticPoster-f7ac5b50ebc2674c0929724fea5f322b4cd2e0768fd77dfdfe26cc4bfc676cfa.png",
+          "sha256": "f7ac5b50ebc2674c0929724fea5f322b4cd2e0768fd77dfdfe26cc4bfc676cfa",
+          "bytes": 1275409
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1400,
+            "endMs": 10200,
+            "text": "偶尔落几滴，停一阵，又落几滴。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "偶尔落几滴，停一阵，又落几滴。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 10200,
+            "endMs": 12840,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ]
+      }
+    },
+    {
+      "number": 148,
+      "word": "ascetic",
+      "coreMeaningZh": "禁欲苦修的；苦行者",
+      "unit": 36,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 145,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 9000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 9000,
+          "text": "我主动舍去享受，练习克制自己。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我主动舍去享受，练习克制自己。"
+          ]
+        },
+        "alt": "男孩主动谢绝舒适座椅和甜点，选择坐在草席上静心自律；体现主动舍弃享受的 ascetic。",
+        "video": {
+          "url": "story-media/148-video-431b185b77dcac08d695f8d62724beb2422cc34c0a15c328779327a49c5ab0ee.mp4",
+          "sha256": "431b185b77dcac08d695f8d62724beb2422cc34c0a15c328779327a49c5ab0ee",
+          "bytes": 689151
+        },
+        "poster": {
+          "url": "story-media/148-poster-79338582bb7f22c579e525cc0d17f5e98fcea6f28c04c569c39fc47fc23d0280.png",
+          "sha256": "79338582bb7f22c579e525cc0d17f5e98fcea6f28c04c569c39fc47fc23d0280",
+          "bytes": 1141529
+        },
+        "staticPoster": {
+          "url": "story-media/148-staticPoster-d7f2ca32db91801b9219ed5b819795f0917fdf1b17d01beb8d882c6899bf0838.png",
+          "sha256": "d7f2ca32db91801b9219ed5b819795f0917fdf1b17d01beb8d882c6899bf0838",
+          "bytes": 1148810
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1800,
+            "endMs": 7400,
+            "text": "我主动舍去享受，练习克制自己。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我主动舍去享受，练习克制自己。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 7400,
+            "endMs": 9000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ]
+      }
+    },
+    {
+      "number": 2647,
+      "word": "voracious",
+      "coreMeaningZh": "胃口极大的；如饥似渴的",
+      "unit": 37,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 146,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 7000,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩身旁已堆着读完的书；他合上蓝书，迫不及待地拿起下一本红书，打开后又专注地读起来。",
+        "video": {
+          "url": "story-media/2647-video-65958161d1a786626695277d1ca782d04a0124fee206318300c756fab6cbe4c6.mp4",
+          "sha256": "65958161d1a786626695277d1ca782d04a0124fee206318300c756fab6cbe4c6",
+          "bytes": 795426
+        },
+        "poster": {
+          "url": "story-media/2647-poster-45086112306cf49cd50f0f1d32f1331dae3327d01f83fe473ad1f9b3f0913c46.png",
+          "sha256": "45086112306cf49cd50f0f1d32f1331dae3327d01f83fe473ad1f9b3f0913c46",
+          "bytes": 1262731
+        },
+        "staticPoster": {
+          "url": "story-media/2647-staticPoster-d2a275dbf33d7793ce75c19f65a411e4ba4b6881a7598c5db463103bce01b081.png",
+          "sha256": "d2a275dbf33d7793ce75c19f65a411e4ba4b6881a7598c5db463103bce01b081",
+          "bytes": 1307798
+        }
+      }
+    },
+    {
+      "number": 1176,
+      "word": "impecunious",
+      "coreMeaningZh": "贫穷的；几乎没有钱的",
+      "unit": 37,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 147,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8400.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 8400,
+          "text": "我想买，可是没钱。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我想买，可是没钱。"
+          ]
+        },
+        "alt": "男孩想买书摊上的书，打开自己的零钱包，发现里面空空，只能遗憾地望着书。",
+        "video": {
+          "url": "story-media/1176-video-508f3ef082909bfec0d63c0238d92478e4f2f365cb8a9cd902b591e9f504adc9.mp4",
+          "sha256": "508f3ef082909bfec0d63c0238d92478e4f2f365cb8a9cd902b591e9f504adc9",
+          "bytes": 776388
+        },
+        "poster": {
+          "url": "story-media/1176-poster-53672eace522d9e5647576825ce7385b4a3d06281bc9e801e2fbb7fba389b8d4.png",
+          "sha256": "53672eace522d9e5647576825ce7385b4a3d06281bc9e801e2fbb7fba389b8d4",
+          "bytes": 1213999
+        },
+        "staticPoster": {
+          "url": "story-media/1176-staticPoster-7b0d63d9746953c6a098f7b5ad1e361156f0ebd095c24c45a3c38b3c7c9c3306.png",
+          "sha256": "7b0d63d9746953c6a098f7b5ad1e361156f0ebd095c24c45a3c38b3c7c9c3306",
+          "bytes": 1214940
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3120,
+            "endMs": 8120,
+            "text": "我想买，可是没钱。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我想买，可是没钱。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 8120,
+            "endMs": 8400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ]
+      }
+    },
+    {
+      "number": 2512,
+      "word": "transgress",
+      "coreMeaningZh": "违反规则；越轨",
+      "unit": 37,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 148,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 7000,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩看见禁止进入的牌子，仍故意跨过低绳，把一只脚踏进受保护的花圃，违反明确的规定。",
+        "video": {
+          "url": "story-media/2512-video-9de4a7ccf5c25b59faa328d4f264af4b84ac364b93f39b22d936de6667badb27.mp4",
+          "sha256": "9de4a7ccf5c25b59faa328d4f264af4b84ac364b93f39b22d936de6667badb27",
+          "bytes": 951754
+        },
+        "poster": {
+          "url": "story-media/2512-poster-4abd5fcb9b1dc0b787639adc3b3061322cae3b4057bdcbf35046444ec7d0306a.png",
+          "sha256": "4abd5fcb9b1dc0b787639adc3b3061322cae3b4057bdcbf35046444ec7d0306a",
+          "bytes": 1242975
+        },
+        "staticPoster": {
+          "url": "story-media/2512-staticPoster-3663c8bfe8e4879b1ad8c0dfff63c141e0617edc29c680c649abb9cded0f3164.png",
+          "sha256": "3663c8bfe8e4879b1ad8c0dfff63c141e0617edc29c680c649abb9cded0f3164",
+          "bytes": 1273388
+        }
+      }
+    },
+    {
+      "number": 1360,
+      "word": "kindred",
+      "coreMeaningZh": "同类的；志趣相投的；亲属",
+      "unit": 37,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 149,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 9000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 9000,
+          "text": "你也喜欢画会飞的房子！",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "你也喜欢画会飞的房子！"
+          ]
+        },
+        "alt": "两个孩子各自画出不同的飞屋，发现彼此有相近的想象力，开心地举起画互相欣赏，体现 kindred spirits 的志趣相投。",
+        "video": {
+          "url": "story-media/1360-video-89084f65df7e76b38dd8ae975cbc0f8a322141af322cbc55e5e541e7e73c8981.mp4",
+          "sha256": "89084f65df7e76b38dd8ae975cbc0f8a322141af322cbc55e5e541e7e73c8981",
+          "bytes": 1094885
+        },
+        "poster": {
+          "url": "story-media/1360-poster-b857ab894e45b1bbb81bee41ed97e8dad4605d83ac8b0e079f5042d5b85a9f08.png",
+          "sha256": "b857ab894e45b1bbb81bee41ed97e8dad4605d83ac8b0e079f5042d5b85a9f08",
+          "bytes": 1290484
+        },
+        "staticPoster": {
+          "url": "story-media/1360-staticPoster-a55c9a0968ebbcd27c42dfabb922431b78c39fe496331597ad18bc92423f43a3.png",
+          "sha256": "a55c9a0968ebbcd27c42dfabb922431b78c39fe496331597ad18bc92423f43a3",
+          "bytes": 1280713
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3000,
+            "endMs": 6600,
+            "text": "你也喜欢画会飞的房子！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "你也喜欢画会飞的房子！"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6600,
+            "endMs": 9000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ]
+      }
+    },
+    {
+      "number": 1121,
+      "word": "heterodox",
+      "coreMeaningZh": "非正统的；不循公认观点的",
+      "unit": 37,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 150,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 8000,
+          "text": "我认为，房子也可以悬在空中。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我认为，房子也可以悬在空中。"
+          ]
+        },
+        "alt": "长者坚持房屋要依靠地面支撑的传统看法，男孩拿着气球房屋模型，提出房屋也可以悬在空中的不同观点；模型始终由手掌托住。",
+        "video": {
+          "url": "story-media/1121-video-40d652ba5aa3237163b7c0948f33cd3bd8aae091b130c23771d1666f287475bc.mp4",
+          "sha256": "40d652ba5aa3237163b7c0948f33cd3bd8aae091b130c23771d1666f287475bc",
+          "bytes": 967858
+        },
+        "poster": {
+          "url": "story-media/1121-poster-fa906592de9a0fe6ac404d704e670c28e025414d4e0fbf7dc3bf4ceb9329c06c.png",
+          "sha256": "fa906592de9a0fe6ac404d704e670c28e025414d4e0fbf7dc3bf4ceb9329c06c",
+          "bytes": 1230482
+        },
+        "staticPoster": {
+          "url": "story-media/1121-staticPoster-33eb6405838268b1a5fed0347533b7ff039f539073860497ac3a347197fc29ad.png",
+          "sha256": "33eb6405838268b1a5fed0347533b7ff039f539073860497ac3a347197fc29ad",
+          "bytes": 1249212
+        },
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 160,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 160,
+            "endMs": 2320,
+            "text": "房子当然要靠地面支撑。",
+            "speaker": "elder",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "房子当然要靠地面支撑。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 2320,
+            "endMs": 2480,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          },
+          {
+            "startMs": 2480,
+            "endMs": 5720,
+            "text": "我认为，房子也可以悬在空中。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我认为，房子也可以悬在空中。"
+            ],
+            "id": "stage-3"
+          },
+          {
+            "startMs": 5720,
+            "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-4"
           }
         ]
       }
