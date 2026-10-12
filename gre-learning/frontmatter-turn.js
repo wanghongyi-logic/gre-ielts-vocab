@@ -31,7 +31,7 @@ export function installFrontmatterTurn({main,onActivity=()=>{},window:win=window
   face.style.clipPath=leafGeometry(state.progress,direction,bounds.width,bounds.height,{left:bounds.left-rect.left,top:bounds.top-rect.top}).clip;
   state.overlay.dataset.progress=state.progress.toFixed(3);
   state.folds.forEach((fold,index)=>{
-   const delay=state.flutter?index*.09:0;
+   const delay=0;
    const p=clamp((state.progress-delay)/(1-delay));
    const shape=leafGeometry(p,direction,bounds.width,bounds.height);
    const curl=index?Math.min(shape.curl,7-index):shape.curl;
@@ -48,24 +48,25 @@ export function installFrontmatterTurn({main,onActivity=()=>{},window:win=window
   if(reduced()||!state.overlay){finish(commit);return;}
   win.cancelAnimationFrame(state.frame);win.clearTimeout(state.timer);
   const start=win.performance.now(),from=state.progress,target=commit?1:0;
-  const duration=commit?Math.max(160,(state.flutter?510:360)*(1-from)):Math.max(140,240*from);
+  const duration=commit?Math.max(160,300*(1-from)):Math.max(140,240*from);
   function tick(now){
    if(active!==state)return;
    const t=clamp((now-start)/duration),eased=commit?t*t*(3-2*t):1-Math.pow(1-t,3);
    paint(from+(target-from)*eased);
    if(t<1)state.frame=win.requestAnimationFrame(tick);else finish(commit);
   }
-  // The real target is laid out and painted before the first parting of paper.
-  state.frame=win.requestAnimationFrame(()=>{state.frame=win.requestAnimationFrame(tick);});
+  // Preparation already supplies a decoded destination. Respond on the first
+  // animation frame rather than queueing another turn-start frame.
+  state.frame=win.requestAnimationFrame(tick);
   state.timer=win.setTimeout(()=>{if(active===state)finish(commit);},duration+350);
  }
- function begin({source,direction='previous',flutter=false,copy=false,visual=true,prepare,commit=()=>{},rollback=()=>{},interactive=false}) {
+ function begin({source,direction='previous',copy=false,visual=true,prepare,commit=()=>{},rollback=()=>{},interactive=false}) {
   if(active)finish(!active.interactive);
   const rect=source.getBoundingClientRect(),v=win.visualViewport;
   const left=Math.max(rect.left,v?.offsetLeft||0),top=Math.max(rect.top,v?.offsetTop||0);
   const right=Math.min(rect.right??rect.left+rect.width,(v?.offsetLeft||0)+(v?.width||win.innerWidth));
   const bottom=Math.min(rect.bottom,(v?.offsetTop||0)+(v?.height||win.innerHeight));
-  const state=active={commit,rollback,interactive,direction,flutter,progress:0,frame:0,timer:0,rect,bounds:{left,top,width:Math.max(0,right-left),height:Math.max(0,bottom-top)}};
+  const state=active={commit,rollback,interactive,direction,progress:0,frame:0,timer:0,rect,bounds:{left,top,width:Math.max(0,right-left),height:Math.max(0,bottom-top)}};
   state.finished=new Promise(resolve=>{state.resolve=resolve;});
   // The stylesheet is static in index.html. A missed/old stylesheet degrades to
   // an immediate complete leaf instead of showing an unstyled intermediate.
@@ -87,7 +88,7 @@ export function installFrontmatterTurn({main,onActivity=()=>{},window:win=window
    };
    const overlay=doc.createElement('div');overlay.className='frontmatter-turn';overlay.inert=true;overlay.setAttribute('aria-hidden','true');overlay.dataset.direction=direction;
    Object.assign(overlay.style,{left:`${left}px`,top:`${top}px`,width:`${state.bounds.width}px`,height:`${state.bounds.height}px`});
-   state.folds=Array.from({length:flutter?3:1},(_,index)=>{const fold=doc.createElement('div');fold.className='frontmatter-fold';fold.dataset.sheet=String(index);overlay.append(fold);return fold;});
+   state.folds=Array.from({length:1},(_,index)=>{const fold=doc.createElement('div');fold.className='frontmatter-fold';fold.dataset.sheet=String(index);overlay.append(fold);return fold;});
    state.overlay=overlay;doc.body.append(overlay);
   }
   main.setAttribute('data-contents-turning','');onActivity(true);

@@ -1,5 +1,5 @@
 {
-  "build": "166-offline200-v16",
+  "build": "166-offline200-v17",
   "assets": [
     {
       "url": "index.html",
@@ -18,7 +18,7 @@
     },
     {
       "url": "gre-learning/update.js",
-      "sha256": "b8ff3cfd1eba6c7cb62a1fc94f918a5243751e66b4a5f73665211fad3f39ba5c",
+      "sha256": "b36dddd78a5e1b870fc4f63df1b93047abce8e3f63a3b72ab603c2da39d8150f",
       "bytes": 2635
     },
     {
@@ -88,8 +88,8 @@
     },
     {
       "url": "gre-learning/story-media.js",
-      "sha256": "80ad9c37d9bb13ef09885a3b1db21fafd3bec460015ac999fe450c25a9326092",
-      "bytes": 12653
+      "sha256": "6c6afb58309c432aff99a41df6a9bf8e6a1d8e8c424ec0bd0725871c77cae662",
+      "bytes": 11973
     },
     {
       "url": "gre-learning/storybook.css",
@@ -103,8 +103,8 @@
     },
     {
       "url": "gre-learning/contents.js",
-      "sha256": "dae255dcc05ef38d4e81a2c8e9aa7bd098a7dd4eaca949f48cb4acc77f7f6aaa",
-      "bytes": 17467
+      "sha256": "438757078a44f311cc8da34b3914a39a3ac3a32d66a086190753cd1d60d3fce4",
+      "bytes": 17454
     },
     {
       "url": "gre-learning/prepared-pages.js",
@@ -383,13 +383,13 @@
     },
     {
       "url": "gre-learning/offline-preferences.js",
-      "sha256": "b02615cad9c30050e5e8d9e9ff4176fd0091858e8a288bb5a08ed987e5f26e2f",
+      "sha256": "3e9849a317a9fd8d8d4571940c0edcde496dc1b322b3decd340c8695e741962f",
       "bytes": 1103
     },
     {
       "url": "gre-learning/offline-batch.js",
-      "sha256": "d4c3d33eb6c42181b8eac28ebb32657281c09fcf3476ccb95909301dd1202871",
-      "bytes": 2383
+      "sha256": "f112412b9ee8a23998a3ad2f908d62b562e423ca5dbf9ca05c3e2ee40be6808e",
+      "bytes": 2370
     },
     {
       "url": "gre-learning/offline-control.js",
@@ -413,8 +413,8 @@
     },
     {
       "url": "gre-learning/frontmatter-turn.js",
-      "sha256": "b7f7efb771fb6685d612cb46458141c1bde0f2451234ed75b358e7253a41fbec",
-      "bytes": 8807
+      "sha256": "f4b5c6033ccefb7e05b54a655c6288fbde408b4abfa5aa794265d3951ed66cac",
+      "bytes": 8751
     },
     {
       "url": "gre-learning/frontmatter-turn.css",

@@ -25,9 +25,12 @@ test('corrupt optional local media stays hidden and cannot fall back to network'
  const loader=new LessonLoader(catalog,{baseURL,cacheStorage:{open:async()=>({match:async()=>new Response('corrupt'),put:async()=>{}})},fetcher:async url=>{assert.ok(!url.pathname.includes('story-media'));return new Response(await file(url));}});
  assert.equal((await loader.pair(catalog.entries[50].number)).media,null);loader.destroy();
 });
-test('download groups contain only current published 51+ refs, including static posters',()=>{
- const groups=optionalMediaGroups(catalog);assert.deepEqual(groups.map(g=>[g.start,g.end,g.ids.length]),[[51,100,50],[101,150,50],[151,200,50],[201,210,10]]);
- assert.equal(groups.reduce((n,g)=>n+g.bytes,0),506117138);
+test('download groups include all current published 1–210 refs, including static posters',()=>{
+ const groups=optionalMediaGroups(catalog);assert.deepEqual(groups.map(g=>[g.start,g.end,g.ids.length]),[[1,50,50],[51,100,50],[101,150,50],[151,200,50],[201,210,10]]);
+ const bytesFor=entries=>[...new Map(entries.flatMap(entry=>['poster','video','staticPoster'].map(role=>entry.storyMedia?.[role]).filter(Boolean)).map(ref=>[ref.url,ref])).values()].reduce((sum,ref)=>sum+ref.bytes,0);
+ assert.equal(groups[0].bytes,bytesFor(catalog.entries.slice(0,50)));
+ assert.equal(groups[0].ids[0],catalog.entries[0].number);assert.notEqual(groups[0].ids[0],1,'display range is distinct from vocabulary IDs');
+ assert.equal(groups.reduce((n,g)=>n+g.bytes,0),bytesFor(catalog.entries));
 });
 function worker(){
  const listeners={},maps=new Map(),requests=[];let fail=false;
@@ -66,4 +69,15 @@ test('library activation yields permanently to clear and does not spin after sta
 test('BFCache return retries an interrupted local-media activation',async()=>{
  const source=await readFile(new URL('gre-learning/app.js',root),'utf8'),block=source.slice(source.indexOf("window.addEventListener('pageshow'"),source.indexOf("route();window.dispatchEvent"));
  let handler,refreshes=0;const ctx=vm.createContext({window:{addEventListener:(name,fn)=>handler=fn},contents:{isRoute:()=>false},location:{hash:'#/learn/1'},picker:{open:false},current:{},selectedNumber:1,entries:[],remember(){},resolveWordNumber:()=>1,main:{removeAttribute(){}},watchChapters(){},motion:{setTurning(){}},pages:{adjacent(){}},renderedLibraryRevision:0,libraryRevision:1,refreshLibrary:()=>refreshes++,route(){throw Error('same-word BFCache return should preserve route')}});vm.runInContext(block,ctx);handler({persisted:true});assert.equal(refreshes,1);
+});
+
+test('first 50 keep automatic media saving; explicit group fills only missing cache and OPFS refs',async()=>{
+ const w=worker();await w.load();const meta=catalog.entries.slice(0,50).find(entry=>entry.storyMedia.staticPoster)||catalog.entries[0];
+ const posterURL=new URL(meta.storyMedia.poster.url,baseURL).href,videoURL=new URL(meta.storyMedia.video.url,baseURL).href;
+ assert.equal((await w.fetch(posterURL)).status,200,'first-50 poster still saves automatically');assert.ok(w.requests.includes(posterURL));
+ const calls=w.requests.length,skipPaths=['gre-learning/'+meta.storyMedia.video.url];
+ const results=await w.message({type:'DOWNLOAD_LESSONS',jobId:'first50',ids:[meta.number],skipPaths});assert.equal(results.at(-1).completed,1);
+ const fetched=w.requests.slice(calls);assert.ok(!fetched.includes(posterURL),'verified cache must not redownload');assert.ok(!fetched.includes(videoURL),'OPFS-covered video must not redownload');
+ if(meta.storyMedia.staticPoster)assert.ok(fetched.includes(new URL(meta.storyMedia.staticPoster.url,baseURL).href),'missing static poster is included');
+ const after=w.requests.length;await w.message({type:'DOWNLOAD_LESSONS',jobId:'first50-repeat',ids:[meta.number],skipPaths});assert.equal(w.requests.length,after,'repeat download fills no already-saved bytes');
 });

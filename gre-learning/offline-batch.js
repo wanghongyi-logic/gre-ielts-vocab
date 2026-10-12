@@ -5,7 +5,7 @@ export async function downloadLessons(ids,skipPaths,{signal,onProgress=()=>{}}={
 export function optionalMediaGroups(catalog){
  const groups=new Map();
  for(const [index,entry] of catalog.entries.entries()){
-  const ordinal=entry.displayOrdinal??index+1;if(ordinal<=50||!entry.storyMedia)continue;
+  const ordinal=entry.displayOrdinal??index+1;if(!entry.storyMedia)continue;
   const start=Math.floor((ordinal-1)/50)*50+1;
   if(!groups.has(start))groups.set(start,{start,end:ordinal,ids:[],refs:new Map()});
   const group=groups.get(start);group.end=ordinal;group.ids.push(entry.number);

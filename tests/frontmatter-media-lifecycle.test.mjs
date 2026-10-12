@@ -33,8 +33,8 @@ test('Settings and Contents return warms the same controller under the intact le
   h.motion.setTurning(true);h.picker.open=true;h.motion.sync();
   assert.equal(h.poster.style.getPropertyValue('opacity'),'1',leaf+' retains decoded backing before hiding');
   h.picker.open=false;let settled=false;const ready=h.motion.prepareReveal().then(()=>settled=true);await micro();
-  assert.equal(settled,false,'play promise is not a presented frame');assert.equal(h.video.currentTime,3.25);assert.equal(h.loads,loads,'no reload or seek on same-word return');
-  h.present();h.flush();await ready;assert.equal(h.poster.style.getPropertyValue('opacity'),'0');h.motion.setTurning(false);h.motion.destroy();
+  assert.equal(settled,true,'decoded poster makes the turn ready without waiting for playback');assert.equal(h.poster.style.getPropertyValue('z-index'),'1','poster covers the retired video layer');assert.equal(h.video.currentTime,3.25);assert.equal(h.loads,loads,'no reload or seek on same-word return');
+  assert.equal(h.timers.size,0,'return has no 500 ms gate');h.present();h.flush();await ready;assert.equal(h.poster.style.getPropertyValue('opacity'),'0');assert.equal(h.poster.style.getPropertyValue('z-index'),'');h.motion.setTurning(false);h.motion.destroy();
  }
 });
 test('retired presentation callbacks cannot expose a hidden video; stalled decode preserves backing',async()=>{
@@ -42,7 +42,7 @@ test('retired presentation callbacks cannot expose a hidden video; stalled decod
  const stale=[...h.callbacks.values()][0];h.motion.setTurning(true);h.picker.open=true;h.motion.sync();stale(0,{presentedFrames:1});h.flush();
  assert.equal(h.poster.style.getPropertyValue('opacity'),'1');
  h.picker.open=false;const ready=h.motion.prepareReveal();await micro();for(const fn of [...h.timers.values()])fn();await ready;
- assert.equal(h.poster.style.getPropertyValue('opacity'),'1');h.motion.destroy();
+ assert.equal(h.poster.style.getPropertyValue('opacity'),'1');assert.equal(h.poster.style.getPropertyValue('z-index'),'1','stalled decoder remains safely covered without a navigation timer');h.motion.destroy();
 });
 test('older video APIs keep a poster underlay and cancellation settles preparation',async()=>{
  const h=harness({rvfc:false});await h.motion.refresh(media);h.motion.activate();h.flush();h.flush();await micro();h.motion.setTurning(true);
@@ -94,4 +94,18 @@ test('new-word Contents reveal adopts and prepares one destination with one fold
  const ctx=vm.createContext({picker:{},saved:{},turns:{begin:value=>options=value},previewReading:()=>{prepared++;return ready;},win:{scrollTo(){}},main:{focus(){}},onClose:()=>committed++});
  vm.runInContext(block,ctx);ctx.reveal(()=>adopted++);assert.equal(options.flutter,undefined,'no three-sheet repeat when selecting one word');assert.equal(options.prepare(),ready);options.commit();
  assert.equal(adopted,1);assert.equal(prepared,1);assert.equal(committed,1);
+});
+test('every frontmatter route is a single sheet, with first-frame feedback and no queued startup frame',async()=>{
+ const source=await readFile(new URL('../gre-learning/contents.js',import.meta.url),'utf8');assert.ok(!source.includes('flutter'),'opening, closing, switching and row selection share one fold');
+ let id=0,now=0,commits=0,preparations=0;const frames=new Map(),timers=new Map(),elements=[];
+ const node=()=>({style:style(),classList:{add(){},remove(){}},dataset:{},setAttribute(){},removeAttribute(){},append(child){(this.children??=[]).push(child);},remove(){this.removed=true;}});
+ const doc=events({hidden:false,documentElement:{},body:node(),createElement:()=>{const n=node();elements.push(n);return n;}});
+ const win=events({innerWidth:400,innerHeight:800,performance:{now:()=>now},matchMedia:()=>events({matches:false}),getComputedStyle:()=>({getPropertyValue:()=> '1'}),requestAnimationFrame:fn=>{frames.set(++id,fn);return id;},cancelAnimationFrame:i=>frames.delete(i),setTimeout:fn=>{timers.set(++id,fn);return id;},clearTimeout:i=>timers.delete(i)});
+ const main=node(),sheet=Object.assign(node(),{getBoundingClientRect:()=>({left:0,top:0,width:400,height:800,bottom:800,right:400})});
+ const turn=installFrontmatterTurn({main,window:win,document:doc});
+ const finished=turn.begin({source:sheet,prepare:()=>{preparations++;return Promise.resolve();},commit:()=>commits++});await micro();
+ assert.equal(frames.size,1);const tick=[...frames.values()][0];frames.clear();now=16;tick(now);
+ const overlay=elements.find(n=>n.className==='frontmatter-turn');assert.equal(overlay.children.length,1);assert.ok(Number(overlay.dataset.progress)>0,'input responds in the first animation frame');
+ assert.equal(preparations,1);turn.finish();await finished;assert.equal(commits,1);assert.equal(frames.size,0,'completion leaves no second animation queued');
+ const cancelled=turn.begin({source:sheet,interactive:true,prepare:()=>Promise.resolve(),rollback:()=>commits++});await micro();turn.paint(.2);turn.animate(false);turn.finish(false);await cancelled;assert.equal(commits,2);assert.equal(frames.size,0);
 });

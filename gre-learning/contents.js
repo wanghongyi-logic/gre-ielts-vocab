@@ -69,7 +69,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   const position=readingPositions.get(selected?.number)||{scrollX:win.scrollX,scrollY:win.scrollY};
   saved={number:selected?.number,hash:readingHash(selected?.number),...position,focus:doc.activeElement,title:doc.title,ready:getSelected()!=null};
   search.value='';renderResults();
-  turns.begin({source:main,direction:'previous',flutter:true,visual:Boolean(main.querySelector('.reading-layout')),prepare:()=>{
+  turns.begin({source:main,direction:'previous',visual:Boolean(main.querySelector('.reading-layout')),prepare:()=>{
    main.hidden=!main.classList.contains('frontmatter-live-leaf');main.inert=true;doc.body.classList.add('is-contents-open');
    prepareLeaf({show:true});
    title.focus({preventScroll:true});onOpen();
