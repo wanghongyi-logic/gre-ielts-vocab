@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import vm from 'node:vm';
-import {webcrypto} from 'node:crypto';
+import {createHash,webcrypto} from 'node:crypto';
 import {LessonLoader,expandCatalog} from '../gre-learning/lesson-loader.js';
 import {optionalMediaGroups} from '../gre-learning/offline-batch.js';
 const root=new URL('../',import.meta.url),catalog=expandCatalog(JSON.parse(await readFile(new URL('gre-learning/catalog.json',root))));
@@ -14,10 +14,11 @@ test('51–210 default reading and adjacent preparation request text only',async
  assert.equal(mediaCalls,0);loader.destroy();
 });
 test('local posters, videos and static posters display after app update with no remote request',async()=>{
- const meta=catalog.entries.find(e=>e.displayOrdinal>50&&e.storyMedia.staticPoster),disk=new Map();
- for(const ref of [meta.storyMedia.poster,meta.storyMedia.video,meta.storyMedia.staticPoster])disk.set(new URL(ref.url,baseURL).href,await file(new URL(ref.url,baseURL)));
+ const original=catalog.entries.find(e=>e.displayOrdinal>50&&e.storyMedia.staticPoster),meta={...original,storyMedia:{...original.storyMedia}},disk=new Map();
+ for(const role of ['poster','video','staticPoster']){const bytes=Buffer.from('synthetic verified local '+role),sha256=createHash('sha256').update(bytes).digest('hex'),ref={...meta.storyMedia[role],sha256,bytes:bytes.length};meta.storyMedia[role]=ref;disk.set(new URL(ref.url,baseURL).href,bytes);}
+ const localCatalog={...catalog,entries:catalog.entries.map(entry=>entry===original?meta:entry)};
  for(let update=0;update<2;update++){
-  const loader=new LessonLoader(catalog,{baseURL,cacheStorage:{open:async()=>({match:async url=>disk.has(url)?new Response(disk.get(url)):undefined,put:async()=>{}})},fetcher:async url=>{assert.ok(!url.pathname.includes('story-media'));return new Response(await file(url));}});
+  const loader=new LessonLoader(localCatalog,{baseURL,cacheStorage:{open:async()=>({match:async url=>disk.has(url)?new Response(disk.get(url)):undefined,put:async()=>{}})},fetcher:async url=>{assert.ok(!url.pathname.includes('story-media'));return new Response(await file(url));}});
   const pair=await loader.pair(meta.number);for(const key of ['posterURL','videoURL','staticPosterURL'])assert.match(pair.media[key],/^blob:/);loader.destroy();
  }
 });
@@ -26,7 +27,7 @@ test('corrupt optional local media stays hidden and cannot fall back to network'
  assert.equal((await loader.pair(catalog.entries[50].number)).media,null);loader.destroy();
 });
 test('download groups include all current published 1–210 refs, including static posters',()=>{
- const groups=optionalMediaGroups(catalog);assert.deepEqual(groups.map(g=>[g.start,g.end,g.ids.length]),[[1,50,50],[51,100,50],[101,150,50],[151,200,50],[201,210,10]]);
+ const groups=optionalMediaGroups(catalog);assert.deepEqual(groups.map(group=>group.hostedAvailable),[true,false,false,false,false]);assert.deepEqual(groups.map(g=>[g.start,g.end,g.ids.length]),[[1,50,50],[51,100,50],[101,150,50],[151,200,50],[201,210,10]]);
  const bytesFor=entries=>[...new Map(entries.flatMap(entry=>['poster','video','staticPoster'].map(role=>entry.storyMedia?.[role]).filter(Boolean)).map(ref=>[ref.url,ref])).values()].reduce((sum,ref)=>sum+ref.bytes,0);
  assert.equal(groups[0].bytes,bytesFor(catalog.entries.slice(0,50)));
  assert.equal(groups[0].ids[0],catalog.entries[0].number);assert.notEqual(groups[0].ids[0],1,'display range is distinct from vocabulary IDs');
@@ -39,11 +40,11 @@ function worker(){
  const ctx=vm.createContext({self:{location:{href:origin+'sw.js'},addEventListener:(type,fn)=>listeners[type]=fn,clients:{claim:async()=>{},matchAll:async()=>[]}},caches,crypto:webcrypto,Response,Request,URL,AbortController,DOMException,Map,Set,setTimeout,clearTimeout,fetch:async req=>{requests.push(key(req));if(fail)return new Response('failure',{status:503});return new Response(await file(key(req)));}});
  return {requests,maps,setFail:value=>fail=value,load:async()=>vm.runInContext(await readFile(new URL('sw.js',root),'utf8'),ctx),fetch:async url=>{let p;listeners.fetch({request:new Request(url),respondWith:x=>p=x});return p;},message:async data=>{const messages=[];let p;listeners.message({data,ports:[{postMessage:value=>messages.push(value)}],waitUntil:x=>p=x});await p;return messages;}};
 }
-test('worker blocks optional GET misses; explicit download verifies and persists; clear prevents refetch',async()=>{
+test('retired optional GET and explicit download both avoid network; clear prevents refetch',async()=>{
  const w=worker();await w.load();const meta=catalog.entries[50],url=new URL(meta.storyMedia.video.url,baseURL).href;
  assert.equal((await w.fetch(url)).status,404);assert.ok(!w.requests.includes(url));
- let results=await w.message({type:'DOWNLOAD_LESSONS',jobId:'one',ids:[meta.number],skipPaths:[]});assert.equal(results.at(-1).completed,1);assert.equal(results.at(-1).cancelled,false);assert.ok(w.requests.includes(url));
- const calls=w.requests.length;assert.equal((await w.fetch(url)).status,200);assert.equal(w.requests.length,calls);
+ let results=await w.message({type:'DOWNLOAD_LESSONS',jobId:'one',ids:[meta.number],skipPaths:[]});assert.equal(results.at(-1).completed,0);assert.ok(results.some(m=>m.type==='LESSON_DOWNLOAD_ERROR'&&m.error.includes('资源包')));assert.ok(!w.requests.includes(url));
+ const calls=w.requests.length;assert.equal((await w.fetch(url)).status,404);assert.equal(w.requests.length,calls);
  await w.message({type:'PAUSE_AND_CLEAR_MEDIA'});assert.equal((await w.fetch(url)).status,404);assert.equal(w.requests.length,calls);
  await w.message({type:'RESUME_MEDIA_SAVE'});assert.equal((await w.fetch(url)).status,404);assert.equal(w.requests.length,calls);
  w.setFail(true);results=await w.message({type:'DOWNLOAD_LESSONS',jobId:'error',ids:[meta.number]});assert.ok(results.some(m=>m.type==='LESSON_DOWNLOAD_ERROR'));assert.equal(results.at(-1).type,'LESSON_DOWNLOAD_DONE');
@@ -80,4 +81,10 @@ test('first 50 keep automatic media saving; explicit group fills only missing ca
  const fetched=w.requests.slice(calls);assert.ok(!fetched.includes(posterURL),'verified cache must not redownload');assert.ok(!fetched.includes(videoURL),'OPFS-covered video must not redownload');
  if(meta.storyMedia.staticPoster)assert.ok(fetched.includes(new URL(meta.storyMedia.staticPoster.url,baseURL).href),'missing static poster is included');
  const after=w.requests.length;await w.message({type:'DOWNLOAD_LESSONS',jobId:'first50-repeat',ids:[meta.number],skipPaths});assert.equal(w.requests.length,after,'repeat download fills no already-saved bytes');
+});
+
+test('direct loader media calls cannot bypass retired hosting policy',async()=>{
+ const loader=new LessonLoader(catalog,{baseURL,cacheStorage:null,fetcher:()=>{throw new Error('retired media must never fetch');}});
+ for(const ref of [catalog.entries[50].storyMedia.poster,catalog.entries[50].storyMedia.video])assert.equal(await loader.mediaResource(ref,undefined,'high',true),null);
+ loader.destroy();
 });

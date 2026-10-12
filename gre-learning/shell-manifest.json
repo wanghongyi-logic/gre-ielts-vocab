@@ -1,5 +1,5 @@
 {
-  "build": "166-offline200-v23",
+  "build": "166-offline200-v24",
   "assets": [
     {
       "url": "index.html",
@@ -18,7 +18,7 @@
     },
     {
       "url": "gre-learning/update.js",
-      "sha256": "078c45b792565e0bc1a46f892dfaab1b58ac7c4d178d5044306ae27acf9018e1",
+      "sha256": "95617726e8d33f7f92fee85f94e6a8fe7aa3cadce2d432e271efc911f777c037",
       "bytes": 6372
     },
     {
@@ -33,8 +33,8 @@
     },
     {
       "url": "gre-learning/lesson-loader.js",
-      "sha256": "0b3a9bf969c225f30efad822ede4c16b3b6721f9a0df21e3311a9ad7f764edd4",
-      "bytes": 11964
+      "sha256": "c919c0e818dbee553a3a1eafb3d09bfcd7443eaab7e68f546d5d182a8dde0f8e",
+      "bytes": 12101
     },
     {
       "url": "gre-learning/schema.js",
@@ -128,8 +128,8 @@
     },
     {
       "url": "gre-learning/offline-manager.js",
-      "sha256": "64f63a10ed926776f537adb44b78e96c4bfaf97582abd747c7a8b122c59866d9",
-      "bytes": 20385
+      "sha256": "fe597132dd5095ec775604baedca8199ac9bbe87f82ffa92eebc662078e0f341",
+      "bytes": 20610
     },
     {
       "url": "gre-learning/units/175-184-7237c053125a7b03df08fbbe14200ddf95cb5abc0a0d0b53654678213ab639c7.json",
@@ -383,13 +383,13 @@
     },
     {
       "url": "gre-learning/offline-preferences.js",
-      "sha256": "aab3d55d20f42ab0dd6d5c547aa0613bec733ba54389b60f37ed6a1e1f49b1b2",
+      "sha256": "4a48773484d931a33d988466c1e8dfab97d2df90298576c226f6a0b62b76ad8b",
       "bytes": 1103
     },
     {
       "url": "gre-learning/offline-batch.js",
-      "sha256": "f112412b9ee8a23998a3ad2f908d62b562e423ca5dbf9ca05c3e2ee40be6808e",
-      "bytes": 2370
+      "sha256": "b71eaf46347225701df0feb941da2ef86240d5d9e8114c954f9232d6462d6a07",
+      "bytes": 2501
     },
     {
       "url": "gre-learning/offline-control.js",
@@ -455,6 +455,11 @@
       "url": "gre-learning/book-paper-face.webp",
       "sha256": "a3625f1edb18102b4037a3e6143e4e0eabde60118a15c860141cd0efc989e553",
       "bytes": 15414
+    },
+    {
+      "url": "gre-learning/hosted-media.js",
+      "sha256": "4ade479ad3f9f90de01e00e748a8f5b8017684da8da3c792fd9eefc44cd2d4a2",
+      "bytes": 659
     }
   ]
 }

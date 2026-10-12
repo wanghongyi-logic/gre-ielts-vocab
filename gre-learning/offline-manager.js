@@ -54,10 +54,11 @@ export function installOfflineManager(catalog){
   const feedback=document.createElement('div');feedback.className='library-download-feedback';feedback.innerHTML='<button type="button" data-download-cancel hidden>取消下载</button><progress data-download-progress hidden aria-label="本组下载进度"></progress><p role="status" data-download-status></p>';
   const target={progress:feedback.querySelector('[data-download-progress]'),cancel:feedback.querySelector('[data-download-cancel]'),status:feedback.querySelector('[data-download-status]')};
   target.progress.setAttribute('aria-label',`第 ${group.start}–${group.end} 词下载进度`);target.cancel.onclick=()=>cancelOperation(target);
-  button.onclick=()=>run('download',target,async options=>{const library=await inspectLibrary(catalog);const result=await downloadLessons(group.ids,library.opfsPaths,options);return {...result,pages:true,wordIds:group.ids};});
+  button.onclick=()=>group.hostedAvailable&&run('download',target,async options=>{const library=await inspectLibrary(catalog);const result=await downloadLessons(group.ids,library.opfsPaths,options);return {...result,pages:true,wordIds:group.ids};});
   row.append(label,button,feedback);host.querySelector('[data-pages-downloads]').append(row);return {group,label,button,target};
  });
- function refreshDownloads(){for(const {group,label,button} of downloadRows){const saved=group.ids.filter(id=>savedReadyIds?.includes(id)).length;label.textContent=`第 ${group.start}–${group.end} 词 · ${size(group.bytes)}`;button.textContent=saved===group.ids.length?'已保存':saved?`继续下载 ${saved}/${group.ids.length}`:'下载';button.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating||saved===group.ids.length;}}
+ function refreshDownloads(){for(const {group,label,button} of downloadRows){const saved=group.ids.filter(id=>savedReadyIds?.includes(id)).length;label.textContent=`第 ${group.start}–${group.end} 词 · ${size(group.bytes)}${group.hostedAvailable?'':saved===group.ids.length?' · 已保存到本机':' · 请从下方下载资源包后导入'}`;button.hidden=!group.hostedAvailable;button.textContent=saved===group.ids.length?'已保存':saved?`继续下载 ${saved}/${group.ids.length}`:'下载';button.disabled=!group.hostedAvailable||Boolean(controller)||clearingThisPage||changingMode||mutating||saved===group.ids.length;}}
+ refreshDownloads();
  const openManager=()=>{host.querySelector('details').open=true;location.hash='/settings';refresh(true);};
  const modeButton=document.createElement('button');modeButton.type='button';modeButton.className='library-mode-button';
  function syncMode(){const textOnly=videoMode()==='none';modeButton.textContent=textOnly?'使用视频':'纯文字';host.querySelector('[data-mode-description]').textContent=textOnly?'纯文字':'视频与文字';}

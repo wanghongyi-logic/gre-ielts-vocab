@@ -1,3 +1,4 @@
+import {hostedMediaPaths} from './hosted-media.js';
 import {createMediaControl} from './offline-control.js';
 import {videoMode} from './offline-preferences.js';
 import {localAsset} from './offline-packs.js';
@@ -19,7 +20,7 @@ export function expandCatalog(raw){
 }
 export class LessonLoader {
  constructor(catalog,{baseURL=new URL('./',import.meta.url),fetcher=globalThis.fetch.bind(globalThis),crypto=globalThis.crypto,cacheStorage=globalThis.caches,mediaTimeoutMs=5000,maxEntries=8,maxBytes=2*1024*1024,setTimer=globalThis.setTimeout.bind(globalThis),clearTimer=globalThis.clearTimeout.bind(globalThis)}={}) {
-  this.catalog=catalog;this.index=new Map(catalog.entries.map(entry=>[entry.number,entry]));
+  this.catalog=catalog;this.hostedMediaPaths=hostedMediaPaths(catalog);this.index=new Map(catalog.entries.map(entry=>[entry.number,entry]));
   if(this.index.size!==catalog.entries.length)throw new Error('Duplicate canonical ID');
   this.baseURL=baseURL;this.fetcher=fetcher;this.cacheStorage=cacheStorage;this.crypto=crypto;this.mediaTimeoutMs=mediaTimeoutMs;this.mediaControl=createMediaControl(new URL('../',baseURL));this.mediaGeneration=null;this.mediaControl.subscribe(state=>{if(state.paused||(this.mediaGeneration!==null&&state.generation!==this.mediaGeneration))this.destroy();this.mediaGeneration=state.generation;});this.maxEntries=maxEntries;this.maxBytes=maxBytes;this.cache=new Map();this.bytes=0;this.generation=0;this.foreground=null;this.prefetchController=null;this.timer=null;this.mediaCache=new Map();this.setTimer=setTimer;this.clearTimer=clearTimer;
  }
@@ -66,7 +67,7 @@ export class LessonLoader {
   {
    try{const cached=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(!cached)throw new Error('Not cached');const bytes=await cached.arrayBuffer();if(bytes.byteLength!==ref.bytes)throw new Error('Invalid cache');const digest=await this.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==ref.sha256)throw new Error('Invalid cache');if(signal?.aborted)throw abortError();return this.mediaControl.guard(ticket,()=>{if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);const blobURL=URL.createObjectURL(new Blob([bytes],{type:mediaType(ref)}));this.mediaCache.set(ref.sha256,blobURL);return blobURL;});}catch(error){if(signal?.aborted)throw error;}
   }
-  if(!allowNetwork)return null;
+  if(!allowNetwork||!this.hostedMediaPaths.has(ref.url))return null;
   notifyMedia('start',ref);try{
   const {bytes}=await optionalMediaBytes(this.fetcher,url,signal,priority,this.mediaTimeoutMs);
   if(bytes.byteLength!==ref.bytes)throw new Error('Illustration byte count mismatch');

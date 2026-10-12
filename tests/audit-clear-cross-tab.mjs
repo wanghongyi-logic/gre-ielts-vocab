@@ -16,7 +16,7 @@ const mediaURL=new URL(ref.url,base).href,textURL=new URL('units/keep.json',base
 const current=new Map([[mediaURL,new Response(content)],[textURL,new Response('text')]]),legacy=new Map([[mediaURL,new Response(content)]]);
 const stores=new Map([['gre-scalable-verified-units-v1',current],['legacy-owned-media',legacy]]);
 globalThis.caches={keys:async()=>[...stores.keys()],open:async name=>{if(!stores.has(name))stores.set(name,new Map());const map=stores.get(name);return {keys:async()=>[...map.keys()].map(url=>({url})),match:async url=>map.get(url)?.clone(),delete:async req=>map.delete(req.url),put:async(url,response)=>map.set(url,response)}}};
-const loader=new LessonLoader({entries:[]},{baseURL:new URL(base),fetcher:async()=>new Response(content)});
+const loader=new LessonLoader({entries:[{number:1,displayOrdinal:1,storyMedia:{video:ref}}]},{baseURL:new URL(base),fetcher:async()=>new Response(content)});
 const initialBlob=await loader.mediaResource(ref);
 await clearSavedResources();
 assert.equal(current.has(mediaURL),false);assert.equal(current.has(textURL),true);
@@ -25,7 +25,7 @@ const retained=await loader.mediaResource(ref);assert.equal(retained,null);await
 loader.destroy();
 const {createMediaControl}=await import(base+'offline-control.js');await createMediaControl(new URL('../',base)).resume();
 let release,started;const began=new Promise(r=>started=r),gate=new Promise(r=>release=r);
-const otherTab=new LessonLoader({entries:[]},{baseURL:new URL(base),fetcher:async()=>{started();await gate;return new Response(content)}});
+const otherTab=new LessonLoader({entries:[{number:1,displayOrdinal:1,storyMedia:{video:ref}}]},{baseURL:new URL(base),fetcher:async()=>{started();await gate;return new Response(content)}});
 const pending=otherTab.mediaResource(ref);await began;await clearSavedResources();assert.equal(current.has(mediaURL),false);release();await assert.rejects(pending,{name:'AbortError'});assert.equal(current.has(mediaURL),false);console.log('PASS stale in-flight fetch cannot repopulate cache or return a playable blob after clear');
 const {createMediaControl:createFresh}=await import(base+'offline-control.js?fresh-context');assert.equal((await createFresh(new URL('../',base)).state()).paused,true);console.log('PASS clear pause survives a fresh control-module context');
 otherTab.destroy();
