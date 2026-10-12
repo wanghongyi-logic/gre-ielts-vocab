@@ -1,9 +1,9 @@
 from pathlib import Path
 import json,hashlib,re
 root=Path(__file__).resolve().parent.parent
-p=root/'gre-learning/shell-manifest.json';data=json.loads(p.read_text());data['build']='166-offline200-v10'
+p=root/'gre-learning/shell-manifest.json';data=json.loads(p.read_text());data['build']='166-offline200-v11'
 paths=[x['url'] for x in data['assets']]
-for name in ['offline-zip.js','offline-packs.js','offline-copy-worker.js','offline-manager.js','offline-preferences.js','offline-batch.js']:
+for name in ['offline-zip.js','offline-packs.js','offline-copy-worker.js','offline-manager.js','offline-preferences.js','offline-batch.js','offline-control.js','offline-releases.js','offline-releases.css']:
  path='gre-learning/'+name
  if path not in paths:paths.append(path)
 # Cache all small lesson text files, never pre-cache all video assets.
@@ -13,7 +13,10 @@ for unit in catalog['units']:
  if path not in paths:paths.append(path)
 data['assets']=[{'url':path,'sha256':hashlib.sha256((root/path).read_bytes()).hexdigest(),'bytes':(root/path).stat().st_size} for path in paths]
 p.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
-sw=root/'sw.js';s=sw.read_text();s=re.sub(r"const BUILD='[^']+';","const BUILD='"+data['build']+"';",s);s=re.sub(r'const SHELL_ASSETS = .*?;\n', 'const SHELL_ASSETS = '+json.dumps(data['assets'],separators=(',',':'))+';\n',s,count=1);sw.write_text(s)
+sw=root/'sw.js';s=sw.read_text();control=(root/'gre-learning/offline-control.js').read_text().replace('export function ','function ');block='// BEGIN GENERATED MEDIA CONTROL\n'+control+'// END GENERATED MEDIA CONTROL\n'
+if '// BEGIN GENERATED MEDIA CONTROL' in s:s=re.sub(r'// BEGIN GENERATED MEDIA CONTROL\n.*?// END GENERATED MEDIA CONTROL\n',lambda _:block,s,flags=re.S)
+else:s=block+s
+s=re.sub(r"const BUILD='[^']+';","const BUILD='"+data['build']+"';",s);s=re.sub(r'const SHELL_ASSETS = .*?;\n', 'const SHELL_ASSETS = '+json.dumps(data['assets'],separators=(',',':'))+';\n',s,count=1);sw.write_text(s)
 # Catalog media references survive optional removal of hosted videos and illustrations.
 import gzip,datetime
 p=root/'asset-manifest.json';m=json.loads(p.read_text());m['releaseBuild']=data['build'];m['generatedAt']=datetime.datetime.now(datetime.timezone.utc).isoformat();m['readyAssetContract']='text+poster+video';m['availablePairedLessons']=catalog['publishedCount'];m['availableTextLessons']=catalog['publishedCount'];m['offlinePackageWords']=200

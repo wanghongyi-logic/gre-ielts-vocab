@@ -1,0 +1,31 @@
+// Independent in-memory IDB/OPFS regression harness; no browser storage is touched.
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+const records=new Map(),disk=new Map();
+const request=fn=>{let r={};setTimeout(()=>{r.result=fn();r.onsuccess?.();},0);return r;};
+globalThis.indexedDB={open(){let r={};setTimeout(()=>{r.result={transaction(){let tx={};let last;tx.objectStore=()=>Object.fromEntries(['get','getAll','put','delete'].map(method=>[method,arg=>{last=request(()=>{let result=method==='get'?records.get(arg):method==='getAll'?[...records.values()]:method==='put'?(records.set(arg.key,structuredClone(arg)),arg.key):records.delete(arg);setTimeout(()=>tx.oncomplete?.(),0);return result;});return last;}]));return tx;}};r.onsuccess();},0);return r;}};
+const directory={async getFileHandle(name,{create=false}={}){if(!disk.has(name)){if(!create)throw Error('Missing');disk.set(name,new Blob());}return {async getFile(){return disk.get(name);},async createWritable(){let chunks=[];return {async write(blob){chunks.push(blob);},async close(){disk.set(name,new Blob(chunks));},async abort(){}};}};},async removeEntry(name){disk.delete(name);},async *entries(){for(let name of disk.keys())yield [name,{kind:'file'}];}};
+Object.defineProperty(globalThis,'navigator',{value:{storage:{async getDirectory(){return {async getDirectoryHandle(){return directory;}};},async estimate(){return {quota:1e9,usage:1};}},locks:{request:(name,fn)=>fn()}}});
+
+const base=new URL('../gre-learning/',import.meta.url).href;
+const {LessonLoader}=await import(base+'lesson-loader.js');
+const {clearSavedResources}=await import(base+'offline-packs.js');
+const content='synthetic verified video';
+const ref={url:'story-media/test.mp4',bytes:content.length,sha256:createHash('sha256').update(content).digest('hex')};
+const mediaURL=new URL(ref.url,base).href,textURL=new URL('units/keep.json',base).href;
+const current=new Map([[mediaURL,new Response(content)],[textURL,new Response('text')]]),legacy=new Map([[mediaURL,new Response(content)]]);
+const stores=new Map([['gre-scalable-verified-units-v1',current],['legacy-owned-media',legacy]]);
+globalThis.caches={keys:async()=>[...stores.keys()],open:async name=>{if(!stores.has(name))stores.set(name,new Map());const map=stores.get(name);return {keys:async()=>[...map.keys()].map(url=>({url})),match:async url=>map.get(url)?.clone(),delete:async req=>map.delete(req.url),put:async(url,response)=>map.set(url,response)}}};
+const loader=new LessonLoader({entries:[]},{baseURL:new URL(base),fetcher:async()=>new Response(content)});
+const initialBlob=await loader.mediaResource(ref);
+await clearSavedResources();
+assert.equal(current.has(mediaURL),false);assert.equal(current.has(textURL),true);
+assert.equal(legacy.has(mediaURL),true);
+const retained=await loader.mediaResource(ref);assert.equal(retained,null);await assert.rejects(fetch(initialBlob));console.log('PASS cross-tab clear revokes old blobs, blocks reuse, retains legacy cache and text');
+loader.destroy();
+const {createMediaControl}=await import(base+'offline-control.js');await createMediaControl(new URL('../',base)).resume();
+let release,started;const began=new Promise(r=>started=r),gate=new Promise(r=>release=r);
+const otherTab=new LessonLoader({entries:[]},{baseURL:new URL(base),fetcher:async()=>{started();await gate;return new Response(content)}});
+const pending=otherTab.mediaResource(ref);await began;await clearSavedResources();assert.equal(current.has(mediaURL),false);release();await assert.rejects(pending,{name:'AbortError'});assert.equal(current.has(mediaURL),false);console.log('PASS stale in-flight fetch cannot repopulate cache or return a playable blob after clear');
+const {createMediaControl:createFresh}=await import(base+'offline-control.js?fresh-context');assert.equal((await createFresh(new URL('../',base)).state()).paused,true);console.log('PASS clear pause survives a fresh control-module context');
+otherTab.destroy();

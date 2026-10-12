@@ -1,3 +1,4 @@
+import {createMediaControl} from './offline-control.js';
 import {videoMode} from './offline-preferences.js';
 import {localAsset} from './offline-packs.js';
 import {gateCatalog,isStorybookCatalog} from './release-policy.js';
@@ -19,7 +20,7 @@ export class LessonLoader {
  constructor(catalog,{baseURL=new URL('./',import.meta.url),fetcher=globalThis.fetch.bind(globalThis),crypto=globalThis.crypto,cacheStorage=globalThis.caches,mediaTimeoutMs=5000,maxEntries=8,maxBytes=2*1024*1024,setTimer=globalThis.setTimeout.bind(globalThis),clearTimer=globalThis.clearTimeout.bind(globalThis)}={}) {
   this.catalog=catalog;this.index=new Map(catalog.entries.map(entry=>[entry.number,entry]));
   if(this.index.size!==catalog.entries.length)throw new Error('Duplicate canonical ID');
-  this.baseURL=baseURL;this.fetcher=fetcher;this.cacheStorage=cacheStorage;this.crypto=crypto;this.mediaTimeoutMs=mediaTimeoutMs;this.maxEntries=maxEntries;this.maxBytes=maxBytes;this.cache=new Map();this.bytes=0;this.generation=0;this.foreground=null;this.prefetchController=null;this.timer=null;this.mediaCache=new Map();this.setTimer=setTimer;this.clearTimer=clearTimer;
+  this.baseURL=baseURL;this.fetcher=fetcher;this.cacheStorage=cacheStorage;this.crypto=crypto;this.mediaTimeoutMs=mediaTimeoutMs;this.mediaControl=createMediaControl(new URL('../',baseURL));this.mediaGeneration=null;this.mediaControl.subscribe(state=>{if(state.paused||(this.mediaGeneration!==null&&state.generation!==this.mediaGeneration))this.destroy();this.mediaGeneration=state.generation;});this.maxEntries=maxEntries;this.maxBytes=maxBytes;this.cache=new Map();this.bytes=0;this.generation=0;this.foreground=null;this.prefetchController=null;this.timer=null;this.mediaCache=new Map();this.setTimer=setTimer;this.clearTimer=clearTimer;
  }
  async resource(ref,signal,priority='high') {
   if(signal?.aborted)throw abortError();
@@ -52,16 +53,17 @@ export class LessonLoader {
   return data;
  }
  async mediaResource(ref,signal,priority='high') {
+  const ticket=await this.mediaControl.ticket();if(ticket===null)return null;
   if(signal?.aborted)throw abortError();
-  if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);
+  if(this.mediaCache.has(ref.sha256))return this.mediaControl.guard(ticket,()=>this.mediaCache.get(ref.sha256));
   const url=new URL(ref.url,this.baseURL);
   if(url.origin!==this.baseURL.origin||!url.pathname.startsWith(new URL('story-media/',this.baseURL).pathname))throw new Error('Media outside lesson scope');
   const local=await localAsset(ref);
   if(signal?.aborted)throw abortError();
-  if(local){if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);const blobURL=URL.createObjectURL(local);this.mediaCache.set(ref.sha256,blobURL);return blobURL;}
+  if(local)return this.mediaControl.guard(ticket,()=>{if(signal?.aborted)throw abortError();if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);const blobURL=URL.createObjectURL(local);this.mediaCache.set(ref.sha256,blobURL);return blobURL;});
   // Reuse previously verified local cache before online fallback.
   if(ref.url.endsWith('.mp4')||ref.url.endsWith('.webm')){
-   try{const cached=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(!cached)throw new Error('Not cached');const bytes=await cached.arrayBuffer();if(bytes.byteLength!==ref.bytes)throw new Error('Invalid cache');const digest=await this.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==ref.sha256)throw new Error('Invalid cache');if(signal?.aborted)throw abortError();if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);const blobURL=URL.createObjectURL(new Blob([bytes],{type:'video/mp4'}));this.mediaCache.set(ref.sha256,blobURL);return blobURL;}catch(error){if(signal?.aborted)throw error;}
+   try{const cached=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(!cached)throw new Error('Not cached');const bytes=await cached.arrayBuffer();if(bytes.byteLength!==ref.bytes)throw new Error('Invalid cache');const digest=await this.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==ref.sha256)throw new Error('Invalid cache');if(signal?.aborted)throw abortError();return this.mediaControl.guard(ticket,()=>{if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);const blobURL=URL.createObjectURL(new Blob([bytes],{type:'video/mp4'}));this.mediaCache.set(ref.sha256,blobURL);return blobURL;});}catch(error){if(signal?.aborted)throw error;}
   }
   notifyMedia('start',ref);try{
   const {bytes}=await optionalMediaBytes(this.fetcher,url,signal,priority,this.mediaTimeoutMs);
@@ -71,12 +73,14 @@ export class LessonLoader {
   if(hash!==ref.sha256)throw new Error('Illustration integrity mismatch');
   if(signal?.aborted)throw abortError();
   const type=ref.url.endsWith('.mp4')?'video/mp4':ref.url.endsWith('.webm')?'video/webm':ref.url.endsWith('.webp')?'image/webp':ref.url.endsWith('.png')?'image/png':ref.url.endsWith('.avif')?'image/avif':'image/jpeg';
+  return await this.mediaControl.guard(ticket,async()=>{
   if(this.cacheStorage){try{const disk=await this.cacheStorage.open('gre-scalable-verified-units-v1');await disk.put(url.href,new Response(bytes,{headers:{'Content-Type':type}}));notifyMedia('saved',ref);}catch{}}
   if(signal?.aborted)throw abortError();
   // Another concurrent verified request may have completed while disk persistence waited.
   if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);
   const blobURL=URL.createObjectURL(new Blob([bytes],{type}));
   this.mediaCache.set(ref.sha256,blobURL);return blobURL;
+  });
   }finally{notifyMedia('end',ref);}
  }
  async pair(number,signal,priority='high') {

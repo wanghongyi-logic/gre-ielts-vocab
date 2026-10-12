@@ -7,6 +7,8 @@
     "test:offline:text": "node tests/audit-text210.mjs",
     "test:offline:media": "node tests/audit-media-fallback.mjs",
     "test:offline:reimport": "node tests/audit-text-update-reimport.mjs",
-    "test:offline:update": "node tests/audit-update-lifecycle.mjs"
+    "test:offline:update": "node tests/audit-update-lifecycle.mjs",
+    "test:offline:cross-tab": "node tests/audit-clear-cross-tab.mjs",
+    "test:offline:releases": "node --test tests/offline-releases.test.mjs"
   }
 }

@@ -1,3 +1,4 @@
+import {createMediaControl} from './offline-control.js';
 import {validatePack} from './offline-zip.js';
 const DB='gre-offline-pack-index-v1',DIR='gre-offline-packs-v1';
 const cancelled=signal=>{if(signal?.aborted)throw new DOMException('Import cancelled','AbortError');};
@@ -61,11 +62,9 @@ export async function inspectLibrary(catalog,{cachedPaths=[]}={}){
 
 export async function cleanUnusedPacks(catalog,approvedKeys){return locked(async()=>{const unused=(await inspectLibrary(catalog)).packs.filter(p=>p.ownedCurrentAssets===0&&approvedKeys.includes(p.key));for(const pack of unused){await transaction('readwrite',s=>s.delete(pack.key));await(await directory()).removeEntry(pack.name).catch(()=>{});}return unused.length;});}
 
-export async function clearSavedResources(){return locked(async()=>{
- const worker=navigator.serviceWorker?.controller;
- if(worker)await new Promise((resolve,reject)=>{const channel=new MessageChannel(),timer=setTimeout(()=>{channel.port1.close();reject(new Error('请等待页面更新完成后重试清除'));},15000);channel.port1.onmessage=({data})=>{clearTimeout(timer);channel.port1.close();data.type==='MEDIA_CLEARED'?resolve():reject(new Error(data.error||'无法清除已保存内容'));};worker.postMessage({type:'PAUSE_AND_CLEAR_MEDIA'},[channel.port2]);});
+export async function clearSavedResources(){return locked(()=>createMediaControl(new URL('../',import.meta.url)).clear(async()=>{
  if(globalThis.caches){const cache=await caches.open('gre-scalable-verified-units-v1'),root=new URL('./story-media/',import.meta.url).href;for(const request of await cache.keys())if(request.url.startsWith(root))await cache.delete(request);}
  const packs=await listPacks(),dir=await directory();for(const pack of packs){try{await dir.removeEntry(pack.name);}catch(error){if(error.name!=='NotFoundError')throw error;}await transaction('readwrite',store=>store.delete(pack.key));}
  for await(const [name,handle] of dir.entries())if(handle.kind==='file'&&/^pack-[0-9]+-[a-f0-9-]+\.zip$/.test(name))await dir.removeEntry(name);
  verifiedSlices.clear();badSlices.clear();return packs.length;
-});}
+}));}

@@ -1,0 +1,11 @@
+/* Scoped to the new section; inherits the existing paper Settings palette. */
+.release-importer .release-heading,.release-importer .release-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.release-importer ul{list-style:none;padding:0;margin:16px 0}
+.release-importer li{padding:16px 0;border-top:1px solid currentColor;border-color:color-mix(in srgb,currentColor 15%,transparent)}
+.release-importer li strong{font-size:14px;font-weight:600}
+.release-importer li p{margin:7px 0 12px;font-size:12px}
+.release-importer a{color:inherit;text-underline-offset:4px;font-size:13px}
+.release-importer button{font:inherit;color:inherit;background:transparent;border:1px solid currentColor;border-radius:4px;padding:9px 12px;cursor:pointer;min-height:44px}
+.release-importer button:disabled{opacity:.5;cursor:wait}
+.release-importer button:focus-visible,.release-importer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.release-importer .release-heading button{border:0}
