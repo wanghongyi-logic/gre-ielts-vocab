@@ -81,7 +81,7 @@ body {background-color:var(--journal-paper);background-image:var(--journal-face)
 .bookmarks.botanical-margin .margin-art {position:absolute;left:-1px;top:0;width:32px;height:var(--margin-vine-height);z-index:-1;overflow:hidden;pointer-events:none;user-select:none;}
 .bookmarks.botanical-margin .margin-vine {position:absolute;inset:0;background:url('./botanical-vine.webp') 50% 50%/76px 100% no-repeat;pointer-events:none;}
 .bookmarks.botanical-margin .margin-vine-ground {filter:grayscale(1) sepia(.3);opacity:.25;}
-.bookmarks.botanical-margin .margin-vine-saved {opacity:.8;clip-path:inset(clamp(0%,calc((1 - var(--margin-saved-progress))*100%),100%) 0 0);transition:clip-path 400ms ease;}
+.bookmarks.botanical-margin .margin-vine-saved {opacity:.8;clip-path:inset(clamp(0%,calc((1 - var(--margin-saved-progress))*100%),100%) 0 0);transition:none;}
 .bookmarks.botanical-margin #open-settings.library-rail {
  position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;
  flex:1 1 150px;width:44px;min-width:44px;min-height:90px;max-height:180px;
@@ -209,13 +209,13 @@ body {background-color:var(--journal-paper);background-image:var(--journal-face)
 .bookmarks.botanical-margin .bookmark-list::before {filter:grayscale(1) sepia(.3);opacity:.25;}
 .bookmarks.botanical-margin .bookmark-list::after {
  filter:none;opacity:.8;
- clip-path:inset(clamp(0px,calc(var(--margin-total-height,763px) * (1 - var(--margin-displayed-progress,var(--margin-saved-progress))) - var(--margin-lower-origin,413px)),100%) 0 0);
+ clip-path:inset(clamp(0px,calc(var(--margin-total-height,763px) * (1 - var(--margin-displayed-progress,var(--margin-progress-front,var(--margin-saved-progress)))) - var(--margin-lower-origin,413px)),100%) 0 0);
 }
 .bookmarks.botanical-margin .margin-vine-saved {
- clip-path:inset(clamp(0px,calc(var(--margin-total-height,763px) * (1 - var(--margin-displayed-progress,var(--margin-saved-progress)))),100%) 0 0);
+ clip-path:inset(clamp(0px,calc(var(--margin-total-height,763px) * (1 - var(--margin-displayed-progress,var(--margin-progress-front,var(--margin-saved-progress))))),100%) 0 0);
 }
 @media(forced-colors:active){.bookmarks.botanical-margin .bookmark-list::before,.bookmarks.botanical-margin .bookmark-list::after {display:none;}}
-.bookmarks.botanical-margin .bookmark-list::after {transition:clip-path 400ms ease;}
+.bookmarks.botanical-margin .bookmark-list::after {transition:none;}
 @media(prefers-reduced-motion:reduce){.bookmarks.botanical-margin .bookmark-list::after {transition:none;}}
 
 /* The existing bottom back-to-top button owns this temporary watercolor sweep. */
@@ -248,4 +248,28 @@ body {background-color:var(--journal-paper);background-image:var(--journal-face)
  .bookmarks.botanical-margin.is-growing-vine .margin-growth-upper,
  .bookmarks.botanical-margin.is-growing-vine .margin-growth-lower,
  .bookmarks.botanical-margin.is-growing-vine .margin-growth-bloom {display:none;}
+}
+
+/* Leaves awaken in their existing painted silhouettes, behind one gold front. */
+.bookmarks.botanical-margin.is-growing-vine .margin-growth-upper,
+.bookmarks.botanical-margin.is-growing-vine .margin-growth-lower {
+ filter:sepia(1) saturate(1.15) brightness(1.2);
+ -webkit-mask-image:linear-gradient(transparent calc(var(--growth-local-front) - 10px),#000 var(--growth-local-front),transparent calc(var(--growth-local-front) + 16px));
+ mask-image:linear-gradient(transparent calc(var(--growth-local-front) - 10px),#000 var(--growth-local-front),transparent calc(var(--growth-local-front) + 16px));
+}
+.bookmarks.botanical-margin.is-growing-vine .margin-growth-upper-wake,
+.bookmarks.botanical-margin.is-growing-vine .margin-growth-lower-wake {
+ filter:saturate(1.18) contrast(1.07);opacity:var(--margin-growth-wake,0);
+ -webkit-mask-image:linear-gradient(transparent calc(var(--growth-local-front) + 5px),#000 calc(var(--growth-local-front) + 24px),transparent calc(var(--growth-local-front) + 72px));
+ mask-image:linear-gradient(transparent calc(var(--growth-local-front) + 5px),#000 calc(var(--growth-local-front) + 24px),transparent calc(var(--growth-local-front) + 72px));
+}
+.bookmarks.botanical-margin .margin-growth-flower {display:none;position:absolute;pointer-events:none;left:7px;top:-2px;width:30px;height:34px;z-index:1;}
+.bookmarks.botanical-margin.is-growing-vine .margin-growth-flower {
+ display:block;background:url('./botanical-tip-flower.webp') center/100% auto no-repeat;
+ opacity:var(--margin-growth-flower,0);transform:scale(var(--margin-growth-flower-scale,.45));transform-origin:50% 72%;
+}
+@media(prefers-reduced-motion:reduce),(forced-colors:active){
+ .bookmarks.botanical-margin.is-growing-vine .margin-growth-upper-wake,
+ .bookmarks.botanical-margin.is-growing-vine .margin-growth-lower-wake,
+ .bookmarks.botanical-margin.is-growing-vine .margin-growth-flower {display:none;}
 }

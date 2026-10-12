@@ -1,3 +1,4 @@
+import {installSavedProgress} from './botanical-progress.js';
 import {installBranchGrowth} from './botanical-growth.js';
 import {installMovingWatercolor} from './botanical-selection.js';
 // Illustration-only enhancement. Reading routes, downloads and media remain owned
@@ -45,9 +46,11 @@ export function installBotanicalMargin(nav){
   if(!control.title)control.title=item.label;
  }
  const settings=nav.querySelector('#open-settings'),count=settings?.querySelector('.library-rail-label');
+ const progress=installSavedProgress(nav,settings);
  const sync=()=>{
-  if(count){const match=count.textContent.match(/^(\d+)\s*\/\s*(\d+)$/);count.dataset.saved=match?.[1]||'—';count.dataset.total=match?`/ ${match[2]}`:'';}
-  nav.style.setProperty('--margin-saved-progress',String(savedFraction(settings?.style.getPropertyValue('--saved-progress'))));
+  const match=count?.textContent.match(/^(\d+)\s*\/\s*(\d+)$/);
+  if(count){count.dataset.saved=match?.[1]||'—';count.dataset.total=match?`/ ${match[2]}`:'';}
+  progress.update(savedFraction(settings?.style.getPropertyValue('--saved-progress')),{ready:Boolean(match),animate:settings?.dataset.progressMotion==='download'});
  };
  sync();
  if(win?.MutationObserver){const observer=new win.MutationObserver(sync);if(count)observer.observe(count,{childList:true,characterData:true,subtree:true});if(settings)observer.observe(settings,{attributes:true,attributeFilter:['style']});}
