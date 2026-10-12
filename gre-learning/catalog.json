@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "156",
-  "authoredCount": 110,
-  "publishedCount": 110,
+  "release": "157",
+  "authoredCount": 120,
+  "publishedCount": 120,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -117,7 +117,17 @@
       1669,
       981,
       2658,
-      384
+      384,
+      78,
+      458,
+      1324,
+      2522,
+      2566,
+      1623,
+      169,
+      326,
+      2593,
+      1539
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -277,6 +287,16 @@
       "url": "units/core019-text-approved-ada08e6e1964789d669a2a07399a33d63d94d048ae3aa1b5231bc4cc0eff125c.json",
       "sha256": "ada08e6e1964789d669a2a07399a33d63d94d048ae3aa1b5231bc4cc0eff125c",
       "bytes": 21475
+    },
+    {
+      "url": "units/core020-text-approved-7b6a1e175c90d6f8ed33e790a4cc3310ead264fffc23898c8198e09513518886.json",
+      "sha256": "7b6a1e175c90d6f8ed33e790a4cc3310ead264fffc23898c8198e09513518886",
+      "bytes": 21117
+    },
+    {
+      "url": "units/core021-text-approved-ceb231eb758a4086c4abc7ae72dc800fecdbed84df707f4edd92700979db791c.json",
+      "sha256": "ceb231eb758a4086c4abc7ae72dc800fecdbed84df707f4edd92700979db791c",
+      "bytes": 24090
     }
   ],
   "entries": [
@@ -9219,6 +9239,1385 @@
           ]
         },
         "alt": "社区讨论会上，两位邻居对方案意见相反。一个说完，另一个先道谢，再平静地说明不同看法；两人都给对方发言的机会。这种有分歧仍相互尊重的气氛，就是 comity。"
+      }
+    },
+    {
+      "number": 78,
+      "word": "alacrity",
+      "coreMeaningZh": "欣然、迅速响应的热切劲头；乐意行动",
+      "unit": 30,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 111,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 10600,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "stages": [
+          {
+            "id": "silent-0",
+            "startMs": 0,
+            "endMs": 100,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-0",
+            "startMs": 100,
+            "endMs": 1700,
+            "text": "谁愿意帮忙布置？",
+            "speaker": "friend",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "谁愿意帮忙布置？"
+            ]
+          },
+          {
+            "id": "line-1",
+            "startMs": 1700,
+            "endMs": 5400,
+            "text": "我来！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我来！"
+            ]
+          },
+          {
+            "id": "silent-end",
+            "startMs": 5400,
+            "endMs": 10600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "我来！",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我来！"
+          ]
+        },
+        "alt": "朋友刚问谁愿意帮忙布置，男孩就笑着举起手，立刻起身加入。alacrity 是这种欣然又积极的响应，不只是动作快。",
+        "video": {
+          "url": "story-media/78-e333d59ab9a93cf0b464f169da0b41bbd25cf9d4fbf9584c39891a7c13fd5b01.mp4",
+          "sha256": "e333d59ab9a93cf0b464f169da0b41bbd25cf9d4fbf9584c39891a7c13fd5b01",
+          "bytes": 1475311
+        },
+        "poster": {
+          "url": "story-media/78-15409f2f604bbd995ee029fb29977c50295d4d7bca1fa19ae69780d157b643ea.png",
+          "sha256": "15409f2f604bbd995ee029fb29977c50295d4d7bca1fa19ae69780d157b643ea",
+          "bytes": 1124729
+        },
+        "staticPoster": {
+          "url": "story-media/78-147ba283ecd20408b8a1e3cc5042e7cf07d3f4559e7de44f4d60740fa20a1d2e.png",
+          "sha256": "147ba283ecd20408b8a1e3cc5042e7cf07d3f4559e7de44f4d60740fa20a1d2e",
+          "bytes": 1205033
+        }
+      }
+    },
+    {
+      "number": 458,
+      "word": "conundrum",
+      "coreMeaningZh": "令人困惑的难题；谜题",
+      "unit": 30,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 112,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8800,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "stages": [
+          {
+            "id": "silent-0",
+            "startMs": 0,
+            "endMs": 120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-0",
+            "startMs": 120,
+            "endMs": 1440,
+            "text": "先打开盒子。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "先打开盒子。"
+            ]
+          },
+          {
+            "id": "silent-1",
+            "startMs": 1440,
+            "endMs": 1760,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-1",
+            "startMs": 1760,
+            "endMs": 2840,
+            "text": "锁住了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "锁住了。"
+            ]
+          },
+          {
+            "id": "silent-2",
+            "startMs": 2840,
+            "endMs": 3160,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-2",
+            "startMs": 3160,
+            "endMs": 5240,
+            "text": "钥匙就在里面！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "钥匙就在里面！"
+            ]
+          },
+          {
+            "id": "silent-3",
+            "startMs": 5240,
+            "endMs": 5560,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-3",
+            "startMs": 5560,
+            "endMs": 8560,
+            "text": "可开盒子，得先拿到钥匙……",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "可开盒子，",
+              "得先拿到钥匙……"
+            ]
+          },
+          {
+            "id": "silent-end",
+            "startMs": 8560,
+            "endMs": 8800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "开盒要先拿钥匙，钥匙却锁在盒里。",
+          "speaker": "narrator",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "开盒要先拿钥匙，",
+            "钥匙却锁在盒里。"
+          ]
+        },
+        "alt": "男孩面前的两把钥匙都锁在透明盒子里，而开盒子又需要其中一把。他看着锁孔和盒里的钥匙，怎么才能先拿到钥匙？这个循环让他犯了难。",
+        "video": {
+          "url": "story-media/458-cf81b328a3a0cb91dae6a625b75339f286f522a00b3a4d337199f40d1ad5e21d.mp4",
+          "sha256": "cf81b328a3a0cb91dae6a625b75339f286f522a00b3a4d337199f40d1ad5e21d",
+          "bytes": 740312
+        },
+        "poster": {
+          "url": "story-media/458-8c0fb27508c1406169b690b3a6b7530819ec033ab24532e99794dabcc5beedb2.png",
+          "sha256": "8c0fb27508c1406169b690b3a6b7530819ec033ab24532e99794dabcc5beedb2",
+          "bytes": 1138282
+        },
+        "staticPoster": {
+          "url": "story-media/458-27148c1760b77eb2555ca706925b11b1bf26e11c83a3cd664784ebea606dad92.png",
+          "sha256": "27148c1760b77eb2555ca706925b11b1bf26e11c83a3cd664784ebea606dad92",
+          "bytes": 1136205
+        }
+      }
+    },
+    {
+      "number": 1324,
+      "word": "irascible",
+      "coreMeaningZh": "易怒的，性情暴躁的；显露怒气的",
+      "unit": 30,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 113,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7000,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "stages": [
+          {
+            "id": "silent-0",
+            "startMs": 0,
+            "endMs": 120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-0",
+            "startMs": 120,
+            "endMs": 1480,
+            "text": "看这条路线。",
+            "speaker": "coach",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "看这条路线。"
+            ]
+          },
+          {
+            "id": "silent-1",
+            "startMs": 1480,
+            "endMs": 2840,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-1",
+            "startMs": 2840,
+            "endMs": 4920,
+            "text": "怎么回事！你把线擦掉了！",
+            "speaker": "coach",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "怎么回事！",
+              "你把线擦掉了！"
+            ]
+          },
+          {
+            "id": "silent-2",
+            "startMs": 4920,
+            "endMs": 5120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-2",
+            "startMs": 5120,
+            "endMs": 6800,
+            "text": "我不是故意的……",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我不是故意的……"
+            ]
+          },
+          {
+            "id": "silent-end",
+            "startMs": 6800,
+            "endMs": 7000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "只擦掉一小条线，教练就大发脾气。",
+          "speaker": "narrator",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "只擦掉一小条线，",
+            "教练就大发脾气。"
+          ]
+        },
+        "alt": "教练在白板上画战术，旁边的男孩不小心擦掉一小条线，教练立刻皱眉，大声呵斥。一点小事就让他发火，显出他 irascible 的脾气。",
+        "video": {
+          "url": "story-media/1324-74fd5d3a202e928c239bf534460daf71e8545e0470508bc1f27dcee916bd5ce4.mp4",
+          "sha256": "74fd5d3a202e928c239bf534460daf71e8545e0470508bc1f27dcee916bd5ce4",
+          "bytes": 578208
+        },
+        "poster": {
+          "url": "story-media/1324-4bef5db84fabb53ab5c1e5e1c4ef3e6c4610fe07c00236bac227ac1252016309.png",
+          "sha256": "4bef5db84fabb53ab5c1e5e1c4ef3e6c4610fe07c00236bac227ac1252016309",
+          "bytes": 1062441
+        },
+        "staticPoster": {
+          "url": "story-media/1324-1fe25e5cf13b40a1b93a976d587ae979f5de589fab67d8d588f06029d29264aa.png",
+          "sha256": "1fe25e5cf13b40a1b93a976d587ae979f5de589fab67d8d588f06029d29264aa",
+          "bytes": 1129156
+        }
+      }
+    },
+    {
+      "number": 2522,
+      "word": "trepidation",
+      "coreMeaningZh": "对将要发生的事感到惶恐不安；忐忑",
+      "unit": 30,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 114,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8800,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "stages": [
+          {
+            "id": "silent-0",
+            "startMs": 0,
+            "endMs": 80,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-0",
+            "startMs": 80,
+            "endMs": 1720,
+            "text": "快轮到我了……",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "快轮到我了……"
+            ]
+          },
+          {
+            "id": "silent-1",
+            "startMs": 1720,
+            "endMs": 1880,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-1",
+            "startMs": 1880,
+            "endMs": 4120,
+            "text": "要是一开口就忘词呢？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "要是一开口就忘词呢？"
+            ]
+          },
+          {
+            "id": "silent-2",
+            "startMs": 4120,
+            "endMs": 4280,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-2",
+            "startMs": 4280,
+            "endMs": 5720,
+            "text": "慢慢呼气……",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "慢慢呼气……"
+            ]
+          },
+          {
+            "id": "silent-3",
+            "startMs": 5720,
+            "endMs": 5880,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-3",
+            "startMs": 5880,
+            "endMs": 7880,
+            "text": "还是有点紧张。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "还是有点紧张。"
+            ]
+          },
+          {
+            "id": "silent-end",
+            "startMs": 7880,
+            "endMs": 8800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "演讲还没开始，他已担心自己会忘词。",
+          "speaker": "narrator",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "演讲还没开始，",
+            "他已担心自己会忘词。"
+          ]
+        },
+        "alt": "轮到男孩上台演讲了。他站在幕布边，攥着讲稿，担心自己一开口就忘词。还没有出错，心里已经忐忑不安。",
+        "video": {
+          "url": "story-media/2522-49e2fcdfdfe2b0992d6595fbc07ba059dbca1856d4d8d3df1ca5e937f1a9a25b.mp4",
+          "sha256": "49e2fcdfdfe2b0992d6595fbc07ba059dbca1856d4d8d3df1ca5e937f1a9a25b",
+          "bytes": 813522
+        },
+        "poster": {
+          "url": "story-media/2522-869a8e14e2a325bc09f9a22c62b1a05651ae09382aa90bee00e1569104f7ed86.png",
+          "sha256": "869a8e14e2a325bc09f9a22c62b1a05651ae09382aa90bee00e1569104f7ed86",
+          "bytes": 1100209
+        },
+        "staticPoster": {
+          "url": "story-media/2522-a4152d3b9e66c9c5f4d037c68632b4da8f8800da2ff7c098c1d0c39e788f468d.png",
+          "sha256": "a4152d3b9e66c9c5f4d037c68632b4da8f8800da2ff7c098c1d0c39e788f468d",
+          "bytes": 1115621
+        }
+      }
+    },
+    {
+      "number": 2566,
+      "word": "untenable",
+      "coreMeaningZh": "（论点）站不住脚的；（处境）难以维持的",
+      "unit": 30,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 115,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8800,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "stages": [
+          {
+            "id": "silent-0",
+            "startMs": 0,
+            "endMs": 120,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-0",
+            "startMs": 120,
+            "endMs": 2080,
+            "text": "这盆花在黑暗里会长得更好！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这盆花在黑暗里",
+              "会长得更好！"
+            ]
+          },
+          {
+            "id": "silent-1",
+            "startMs": 2080,
+            "endMs": 3200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-1",
+            "startMs": 3200,
+            "endMs": 5520,
+            "text": "每页记录都相反……",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "每页记录都相反……"
+            ]
+          },
+          {
+            "id": "silent-2",
+            "startMs": 5520,
+            "endMs": 5800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-2",
+            "startMs": 5800,
+            "endMs": 8520,
+            "text": "这个主张，已经站不住脚了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这个主张，",
+              "已经站不住脚了。"
+            ]
+          },
+          {
+            "id": "silent-end",
+            "startMs": 8520,
+            "endMs": 8800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "记录与实验都反驳它，这个主张已站不住脚。",
+          "speaker": "narrator",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "记录与实验都反驳它，",
+            "这个主张已站不住脚。"
+          ]
+        },
+        "alt": "男孩声称花在黑暗里长得更好，可桌上的对照记录显示相反结果。他翻遍笔记也找不到支持：这个主张已经站不住脚。",
+        "video": {
+          "url": "story-media/2566-7d13ea87f2dec805907f57a9e743e87c18462b5511e28d590eadce879e6676bd.mp4",
+          "sha256": "7d13ea87f2dec805907f57a9e743e87c18462b5511e28d590eadce879e6676bd",
+          "bytes": 743103
+        },
+        "poster": {
+          "url": "story-media/2566-247117b7feba9945356e91b96f92bf08dccddafc389872e85b6d92b61c20ee2e.png",
+          "sha256": "247117b7feba9945356e91b96f92bf08dccddafc389872e85b6d92b61c20ee2e",
+          "bytes": 1140306
+        },
+        "staticPoster": {
+          "url": "story-media/2566-e63650340d9a7f3e7f1ed4ff10f9a67dbbbc36247f6b8292168b7503e31dfac7.png",
+          "sha256": "e63650340d9a7f3e7f1ed4ff10f9a67dbbbc36247f6b8292168b7503e31dfac7",
+          "bytes": 1145281
+        }
+      }
+    },
+    {
+      "number": 1623,
+      "word": "obviate",
+      "coreMeaningZh": "使不再必要；排除、预防（困难或风险）",
+      "unit": 31,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 116,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 9360,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "stages": [
+          {
+            "id": "silent-0",
+            "startMs": 0,
+            "endMs": 80,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-0",
+            "startMs": 80,
+            "endMs": 1520,
+            "text": "原本要逐个手写地址。",
+            "speaker": "narrator",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "原本要逐个手写地址。"
+            ]
+          },
+          {
+            "id": "silent-1",
+            "startMs": 1520,
+            "endMs": 1720,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-1",
+            "startMs": 1720,
+            "endMs": 3120,
+            "text": "标签打印好了！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "标签打印好了！"
+            ]
+          },
+          {
+            "id": "silent-2",
+            "startMs": 3120,
+            "endMs": 4600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-2",
+            "startMs": 4600,
+            "endMs": 6080,
+            "text": "放下笔，直接贴标签。",
+            "speaker": "narrator",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "放下笔，直接贴标签。"
+            ]
+          },
+          {
+            "id": "silent-3",
+            "startMs": 6080,
+            "endMs": 6280,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-3",
+            "startMs": 6280,
+            "endMs": 8640,
+            "text": "有了标签，就不用手写地址了。",
+            "speaker": "narrator",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "有了标签，",
+              "就不用手写地址了。"
+            ]
+          },
+          {
+            "id": "silent-end",
+            "startMs": 8640,
+            "endMs": 9360,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "打印好的标签，让手写地址不再必要。",
+          "speaker": "narrator",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "打印好的标签，",
+            "让手写地址不再必要。"
+          ]
+        },
+        "alt": "男孩准备把地址逐个抄到信封上。打印机一次打好了所有地址标签，他放下笔，直接贴上标签：手写地址已经没必要了。",
+        "video": {
+          "url": "story-media/1623-db25328ca19b7eac24bfbe83eee8eb416792feada6044d22f9f6c66771d99c25.mp4",
+          "sha256": "db25328ca19b7eac24bfbe83eee8eb416792feada6044d22f9f6c66771d99c25",
+          "bytes": 975592
+        },
+        "poster": {
+          "url": "story-media/1623-747eca4b8c11cdd93b8e038f5eeac889f7313e0f62d68f0760152523a3a27a27.png",
+          "sha256": "747eca4b8c11cdd93b8e038f5eeac889f7313e0f62d68f0760152523a3a27a27",
+          "bytes": 1113561
+        },
+        "staticPoster": {
+          "url": "story-media/1623-944d9433f6db5f97460519b21bc3d455d03482d5416ebc7b82171f4519345947.png",
+          "sha256": "944d9433f6db5f97460519b21bc3d455d03482d5416ebc7b82171f4519345947",
+          "bytes": 1143953
+        }
+      }
+    },
+    {
+      "number": 169,
+      "word": "audacious",
+      "coreMeaningZh": "大胆冒险的；敢于打破常规的；放肆无礼的",
+      "unit": 31,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 117,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8080,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "stages": [
+          {
+            "id": "silent-0",
+            "startMs": 0,
+            "endMs": 80,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-0",
+            "startMs": 80,
+            "endMs": 1120,
+            "text": "大家都画了小亭子。",
+            "speaker": "narrator",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "大家都画了小亭子。"
+            ]
+          },
+          {
+            "id": "silent-1",
+            "startMs": 1120,
+            "endMs": 1960,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-1",
+            "startMs": 1960,
+            "endMs": 3520,
+            "text": "花园要横跨整条河？",
+            "speaker": "girl",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "花园要横跨整条河？"
+            ]
+          },
+          {
+            "id": "silent-2",
+            "startMs": 3520,
+            "endMs": 3680,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-2",
+            "startMs": 3680,
+            "endMs": 5960,
+            "text": "对，把花园架到河面上！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "对，把花园架到河面上！"
+            ]
+          },
+          {
+            "id": "silent-end",
+            "startMs": 5960,
+            "endMs": 8080,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "横跨河面的空中花园，是他提出的大胆方案。",
+          "speaker": "narrator",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "横跨河面的空中花园，",
+            "是他提出的大胆方案。"
+          ]
+        },
+        "alt": "设计讨论会上，其他人画的都是普通小亭子，男孩却展开一张横跨河面的空中花园草图。大家惊讶地抬起头，他仍指着草图，认真提出这个大胆突破常规的方案。",
+        "video": {
+          "url": "story-media/169-49ee4f32ae0859913c47f1cd476f3cda7d230c0a1ede937d9ce413f8b7fdeb7a.mp4",
+          "sha256": "49ee4f32ae0859913c47f1cd476f3cda7d230c0a1ede937d9ce413f8b7fdeb7a",
+          "bytes": 1006942
+        },
+        "poster": {
+          "url": "story-media/169-e1104acdc07bd1e5c7a38cfe170432186d1c42735f8d6968775274fda2bd290d.png",
+          "sha256": "e1104acdc07bd1e5c7a38cfe170432186d1c42735f8d6968775274fda2bd290d",
+          "bytes": 1164830
+        },
+        "staticPoster": {
+          "url": "story-media/169-d7850604951439469a504400ab591822de6e681b563fcb39a3ba2946fd330e17.png",
+          "sha256": "d7850604951439469a504400ab591822de6e681b563fcb39a3ba2946fd330e17",
+          "bytes": 1231969
+        }
+      }
+    },
+    {
+      "number": 326,
+      "word": "censure",
+      "coreMeaningZh": "严厉批评，谴责",
+      "unit": 31,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 118,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "stages": [
+          {
+            "id": "silent-0",
+            "startMs": 0,
+            "endMs": 80,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-0",
+            "startMs": 80,
+            "endMs": 1120,
+            "text": "记录被擅自改过了。",
+            "speaker": "narrator",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "记录被擅自改过了。"
+            ]
+          },
+          {
+            "id": "silent-1",
+            "startMs": 1120,
+            "endMs": 1280,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-1",
+            "startMs": 1280,
+            "endMs": 3280,
+            "text": "你改了记录，这是造假。",
+            "speaker": "leader",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "你改了记录，",
+              "这是造假。"
+            ]
+          },
+          {
+            "id": "silent-2",
+            "startMs": 3280,
+            "endMs": 3480,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-2",
+            "startMs": 3480,
+            "endMs": 5880,
+            "text": "这种行为不可接受。",
+            "speaker": "leader",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这种行为不可接受。"
+            ]
+          },
+          {
+            "id": "silent-end",
+            "startMs": 5880,
+            "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "你改了记录，这是造假。",
+          "speaker": "leader",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "你改了记录，",
+            "这是造假。"
+          ]
+        },
+        "alt": "在小组会上，负责人指着被擅自改过的记录，郑重指出造假行为不可接受。男孩低头听着：这不是随口挑错，而是严厉谴责。",
+        "video": {
+          "url": "story-media/326-31549020f8731a9d991c5e40e75729a7843dabd585c920f5365462277b05327f.mp4",
+          "sha256": "31549020f8731a9d991c5e40e75729a7843dabd585c920f5365462277b05327f",
+          "bytes": 722950
+        },
+        "poster": {
+          "url": "story-media/326-1327f6330499780fd0cf84458719dd2b4548a2d65204d43d23147e3c013fab61.png",
+          "sha256": "1327f6330499780fd0cf84458719dd2b4548a2d65204d43d23147e3c013fab61",
+          "bytes": 1125188
+        },
+        "staticPoster": {
+          "url": "story-media/326-72af7fef315b4aae333a1f05f2f556e28b5f59eeae181d0c4dbd09160402926b.png",
+          "sha256": "72af7fef315b4aae333a1f05f2f556e28b5f59eeae181d0c4dbd09160402926b",
+          "bytes": 1131019
+        }
+      }
+    },
+    {
+      "number": 2593,
+      "word": "vehement",
+      "coreMeaningZh": "感情或态度强烈的；表达激烈有力的；动作猛烈的",
+      "unit": 31,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 119,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8080,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "stages": [
+          {
+            "id": "silent-0",
+            "startMs": 0,
+            "endMs": 80,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-0",
+            "startMs": 80,
+            "endMs": 1120,
+            "text": "送水泥的车堵住了门前通道。",
+            "speaker": "narrator",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "送水泥的车堵住了门前通道。"
+            ]
+          },
+          {
+            "id": "silent-1",
+            "startMs": 1120,
+            "endMs": 1240,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-1",
+            "startMs": 1240,
+            "endMs": 3520,
+            "text": "不能堵在这里！",
+            "speaker": "resident",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "不能堵在这里！"
+            ]
+          },
+          {
+            "id": "silent-2",
+            "startMs": 3520,
+            "endMs": 3680,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-2",
+            "startMs": 3680,
+            "endMs": 5960,
+            "text": "请马上把车移开！",
+            "speaker": "resident",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "请马上把车移开！"
+            ]
+          },
+          {
+            "id": "silent-3",
+            "startMs": 5960,
+            "endMs": 6160,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-3",
+            "startMs": 6160,
+            "endMs": 7880,
+            "text": "好，我这就移车。",
+            "speaker": "driver",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "好，我这就移车。"
+            ]
+          },
+          {
+            "id": "silent-end",
+            "startMs": 7880,
+            "endMs": 8080,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "不能堵路，请马上移车！",
+          "speaker": "resident",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "不能堵路，请马上移车！"
+          ]
+        },
+        "alt": "满载水泥袋的货车堵住家门，住户紧皱眉头，连连挥手要求司机移车。他明确而强烈地抗议“不能堵门！”，语气毫不含糊，但没有推打任何人。",
+        "video": {
+          "url": "story-media/2593-4438a20328ab2bbf3f8b32a7c31de67c2a6a66b983adac85cc4877aa5daf7c6c.mp4",
+          "sha256": "4438a20328ab2bbf3f8b32a7c31de67c2a6a66b983adac85cc4877aa5daf7c6c",
+          "bytes": 945445
+        },
+        "poster": {
+          "url": "story-media/2593-e72fc7771264a27b82d6fbace80583640172502252525e17a3cf543faf4951c2.png",
+          "sha256": "e72fc7771264a27b82d6fbace80583640172502252525e17a3cf543faf4951c2",
+          "bytes": 1250256
+        },
+        "staticPoster": {
+          "url": "story-media/2593-c7f821372cf2629f5ccda498673687259fcb65f347689d448f42f4b5bbf47db8.png",
+          "sha256": "c7f821372cf2629f5ccda498673687259fcb65f347689d448f42f4b5bbf47db8",
+          "bytes": 1257971
+        }
+      }
+    },
+    {
+      "number": 1539,
+      "word": "mordant",
+      "coreMeaningZh": "尖刻的，讥诮而犀利的（尤指言语或幽默）",
+      "unit": 31,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 120,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "stages": [
+          {
+            "id": "silent-0",
+            "startMs": 0,
+            "endMs": 1280,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "line-0",
+            "startMs": 1280,
+            "endMs": 5880,
+            "text": "你来得真早，我们都快散场了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "你来得真早，",
+              "我们都快散场了。"
+            ]
+          },
+          {
+            "id": "silent-end",
+            "startMs": 5880,
+            "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ],
+        "posterDialogue": {
+          "text": "你来得真早，我们都快散场了。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "你来得真早，",
+            "我们都快散场了。"
+          ]
+        },
+        "alt": "聚会快结束时，迟到的人才推门进来。朋友看了一眼钟，冷冷地说：“你来得真早，我们都快散场了。”旁人忍不住笑，迟到的人却听出了话里的刺。",
+        "video": {
+          "url": "story-media/1539-0e05c897933b2f65b2014969e202de1872b94448ffc2e4626392ae087c5c0bb2.mp4",
+          "sha256": "0e05c897933b2f65b2014969e202de1872b94448ffc2e4626392ae087c5c0bb2",
+          "bytes": 758700
+        },
+        "poster": {
+          "url": "story-media/1539-c8846194835c1ba8ede58731b64745331cc9bdbe8d2183c14b1352838d30407a.png",
+          "sha256": "c8846194835c1ba8ede58731b64745331cc9bdbe8d2183c14b1352838d30407a",
+          "bytes": 1218330
+        },
+        "staticPoster": {
+          "url": "story-media/1539-f5b4dce12de9d2c2b1daefb21f194186ee855c1d6dfc26e43514b1e14559fce6.png",
+          "sha256": "f5b4dce12de9d2c2b1daefb21f194186ee855c1d6dfc26e43514b1e14559fce6",
+          "bytes": 1239944
+        }
       }
     }
   ],
