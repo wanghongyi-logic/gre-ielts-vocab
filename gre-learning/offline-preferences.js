@@ -1,4 +1,4 @@
-export const OFFLINE_EDITION='166-offline200-v8';
+export const OFFLINE_EDITION='166-offline200-v10';
 let mediaEdition='';
 export function setMediaEdition(catalog){mediaEdition=catalog.entries.map(e=>[e.number,e.storyMedia?.video?.sha256,e.storyMedia?.poster?.sha256,e.storyMedia?.staticPoster?.sha256].join(':')).join('|');}
 export function videoMode(){try{if(sessionStorage.getItem('gre-media-paused-after-clear')==='1')return 'none';}catch{}try{return localStorage.getItem('gre-video-mode-v1')||'auto';}catch{return 'auto';}}

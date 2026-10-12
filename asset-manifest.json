@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "166-offline200-v8",
-  "generatedAt": "2026-10-12T15:46:34.681093+00:00",
+  "releaseBuild": "166-offline200-v10",
+  "generatedAt": "2026-10-12T16:00:15.460926+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-reviewed-order",
@@ -1296,9 +1296,9 @@
     {
       "path": "gre-learning/storybook.css",
       "loading": "shell",
-      "bytes": 47935,
-      "sha256": "9123d23168384d0e9e8359d0f44a977aa3a83f0e6c7b3c2fc838671ea43fadf0",
-      "gzipBytes": 11280
+      "bytes": 49257,
+      "sha256": "571de19994b8aa2f40bb201f10ebd4c85620a973a4383853f602f8f6eeb1502b",
+      "gzipBytes": 11550
     },
     {
       "path": "gre-learning/swipe.js",
@@ -1569,9 +1569,9 @@
     {
       "path": "gre-learning/update.js",
       "loading": "shell",
-      "bytes": 2634,
-      "sha256": "d5462c957286c6ff394d8bb66131258b178601cab4d23bed0aec25e879f9518b",
-      "gzipBytes": 1122
+      "bytes": 2635,
+      "sha256": "5c2ddc8c48d0b6d568a7927a282d9709be6a87c5dffbac8b05b559b4b48edaa8",
+      "gzipBytes": 1123
     },
     {
       "path": "gre-learning/view.js",
@@ -3193,16 +3193,16 @@
     {
       "path": "gre-learning/offline-manager.js",
       "loading": "shell",
-      "bytes": 15090,
-      "sha256": "66639bf346a7123c8914aa83c984e426e6cf8064a2d9638276bdc564695ac4c3",
-      "gzipBytes": 5050
+      "bytes": 14231,
+      "sha256": "8e1c871ac97351fdbb50b42c96f3de6da9ab665041038e4b2f83ab43dc617c8f",
+      "gzipBytes": 4888
     },
     {
       "path": "gre-learning/offline-preferences.js",
       "loading": "shell",
-      "bytes": 1082,
-      "sha256": "a0b90a1039366b24f84a9518ac48efa93ff77bc82de9b8152d7faec547e695d9",
-      "gzipBytes": 537
+      "bytes": 1083,
+      "sha256": "3e650ee23fed1e6a4aa5b9c78ce1d97c7a01151789bab424946dc722eb68b7c8",
+      "gzipBytes": 538
     },
     {
       "path": "gre-learning/story-media/175-9ada9463e3c9612e669416638afc17d94617d01cb9500b35b06df5b4a2960928.mp4",
@@ -4683,8 +4683,8 @@
     }
   ],
   "totals": {
-    "bytes": 546037186,
-    "gzipBytes": 543681744
+    "bytes": 546037651,
+    "gzipBytes": 543681854
   },
   "retainedHistoricalAssets": 212,
   "availableTextLessons": 210,
