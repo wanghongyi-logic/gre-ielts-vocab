@@ -1,4 +1,4 @@
-import {installSculptedBookEdge} from './sculpted-book-edge.js';
+import {installBotanicalMargin} from './botanical-margin.js';
 // The highlighted bookmark describes the reading location, except while the
 // directory is open. Programmatic scrolling owns one explicit, cancelable target.
 export function sectionAtPosition(sections,{scrollY=0,height=0,scrollHeight=0}={}) {
@@ -12,7 +12,7 @@ export function sectionAtPosition(sections,{scrollY=0,height=0,scrollHeight=0}={
 }
 export function installBookmarkNavigation({surface,picker,window:win=window,document:doc=document}) {
  const nav=doc.querySelector('.bookmarks'),directory=doc.getElementById('open-search');
- installSculptedBookEdge(nav);
+ installBotanicalMargin(nav);
  const links=[...nav.querySelectorAll('[data-section]')];
  let sections=[],reading='word-title',pending=null,frame=0,settleFrame=0,suspended=true;
  // Retire only the old rail preference; keep all reading progress untouched.

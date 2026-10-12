@@ -8,13 +8,13 @@ const shell=JSON.parse(await read('gre-learning/shell-manifest.json'));
 const manifest=JSON.parse(await read('asset-manifest.json'));
 const catalog=JSON.parse(await read('gre-learning/catalog.json'));
 const sw=(await read('sw.js')).toString();
-assert.equal(shell.build,'166-offline200-v22');
+assert.equal(shell.build,'166-offline200-v23');
 assert.equal(manifest.releaseBuild,shell.build);
-assert.match((await read('gre-learning/offline-preferences.js')).toString(),/OFFLINE_EDITION='166-offline200-v22'/);
-assert.match(sw,/const BUILD='166-offline200-v22'/);
-assert.match((await read('gre-learning/update.js')).toString(),/const build = '166-offline200-v22'/);
+assert.match((await read('gre-learning/offline-preferences.js')).toString(),/OFFLINE_EDITION='166-offline200-v23'/);
+assert.match(sw,/const BUILD='166-offline200-v23'/);
+assert.match((await read('gre-learning/update.js')).toString(),/const build = '166-offline200-v23'/);
 assert.deepEqual(JSON.parse(sw.match(/const SHELL_ASSETS = (.*);\n/)[1]),shell.assets,'Service worker and shell metadata must agree exactly');
-const required=['sculpted-book-edge.js','sculpted-book-edge.css','sculpted-continuous-paper.webp','sculpted-paper-leaves.webp','frontmatter-turn.js','frontmatter-turn.css','settings-storybook.css','images/botanical-progress-bookmark.png'];
+const required=['botanical-margin.js','botanical-margin.css','botanical-vine.webp','botanical-sage-wash.webp','book-paper-face.webp','frontmatter-turn.js','frontmatter-turn.css','settings-storybook.css','images/botanical-progress-bookmark.png'];
 for(const path of required)assert.ok(shell.assets.some(item=>item.url==='gre-learning/'+path),path+' must be available offline');
 const paths=new Set();
 for(const ref of shell.assets){assert.ok(!paths.has(ref.url),'Duplicate shell path '+ref.url);paths.add(ref.url);assert.ok(!ref.url.includes('/story-media/'),'Do not precache lesson posters or videos');const bytes=await read(ref.url);assert.equal(bytes.length,ref.bytes);assert.equal(hash(bytes),ref.sha256);}

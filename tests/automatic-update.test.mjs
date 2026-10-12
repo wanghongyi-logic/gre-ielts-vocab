@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import {readFile} from 'node:fs/promises';
 const source=await readFile(new URL('../gre-learning/update.js',import.meta.url),'utf8');
-const current='166-offline200-v22',next='166-offline200-v23';
+const current=source.match(/const build = '([^']+)'/)[1],next=current+'-next';
 const flush=async()=>{for(let i=0;i<12;i++)await Promise.resolve();};
 function target(){const handlers={};return {addEventListener(type,fn){(handlers[type]??=[]).push(fn);},dispatchEvent(event){for(const fn of handlers[event.type]||[])fn(event);},fire(type,data={}){this.dispatchEvent({type,...data});}};}
 function fixture({build=current,ready=true,hidden=false,online=true,blocked=false,update,register,storage=new Map()}={}){

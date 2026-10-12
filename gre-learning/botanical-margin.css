@@ -1,0 +1,138 @@
+/* Approved illustrated journal: one paper face; no carved or raised sidebar. */
+:root {
+ --bookmark-gutter:calc(44px + env(safe-area-inset-right,0px));
+ --journal-paper:#faf5e9;--journal-ink:#526249;--journal-sepia:#94784f;
+ --journal-face:linear-gradient(#faf5e99e,#faf5e99e),url('./book-paper-face.webp');
+ background-color:var(--journal-paper);background-image:var(--journal-face);background-size:auto,384px 384px;
+}
+body {background-color:var(--journal-paper);background-image:var(--journal-face);background-size:auto,384px 384px;box-shadow:none;}
+#word-content,.reading-layout {background-color:transparent;}
+.book-spread,.book-continuation,#word-picker.contents-page,#word-picker .contents-sheet,
+#word-content.frontmatter-live-leaf,#word-picker.frontmatter-live-leaf,
+.frontmatter-live-leaf.contents-page,.contents-paper-turn,.contents-paper-turn .contents-page,
+#word-content.contents-live-turn,.paper-turn-underneath,.paper-turn-page {
+ background-color:var(--journal-paper);background-image:var(--journal-face);background-size:auto,384px 384px;
+}
+/* Keep the image/video colors intact. This quiet surround simply tapers the
+   page grain into the existing cream media ground, without filtering media. */
+.story-illustration {background-color:var(--journal-paper);box-shadow:0 -12px 18px 8px var(--journal-paper),0 12px 18px 8px var(--journal-paper);}
+.frontmatter-turn .frontmatter-fold,.paper-turn .paper-turn-fold,
+.frontmatter-turn[data-book-edge="sculpted"] .frontmatter-fold,
+.paper-turn[data-book-edge="sculpted"] .paper-turn-fold {
+ background-image:linear-gradient(90deg,#cbbd9c8a,transparent 18%,#fffaf080 60%,#cbbd9c65),var(--journal-face);
+ background-size:auto,auto,384px 384px;
+ box-shadow:-3px 0 9px #a28c6220,1px 0 2px #fffaf080;
+}
+.frontmatter-turn[data-direction="previous"] .frontmatter-fold,
+.paper-turn[data-direction="previous"] .paper-turn-fold,
+.frontmatter-turn[data-book-edge="sculpted"][data-direction="previous"] .frontmatter-fold,
+.paper-turn[data-book-edge="sculpted"][data-direction="previous"] .paper-turn-fold {
+ background-image:linear-gradient(270deg,#cbbd9c8a,transparent 18%,#fffaf080 60%,#cbbd9c65),var(--journal-face);
+}
+.bookmarks.botanical-margin {
+ --margin-step:64px;--margin-saved-progress:0;--margin-vine-height:calc(100% - 328px);
+ width:44px;top:max(16px,env(safe-area-inset-top));bottom:max(16px,env(safe-area-inset-bottom));
+ right:env(safe-area-inset-right,0px);left:auto;transform:none;gap:18px;
+ display:flex;flex-direction:column;justify-content:space-between;
+ padding:0;height:auto;isolation:isolate;overflow:visible;
+ border:0;border-radius:0;background:none;box-shadow:none;pointer-events:none;
+}
+.bookmarks.botanical-margin::before,.bookmarks.botanical-margin::after {display:none;content:none;}
+.bookmarks.botanical-margin .bookmark-tools {display:flex;flex-direction:column;gap:0;flex:none;pointer-events:auto;}
+.bookmarks.botanical-margin .bookmark-list {display:flex;flex-direction:column;gap:0;flex:none;max-height:none;margin:0;overflow:visible;pointer-events:auto;}
+.bookmarks.botanical-margin .bookmark,
+.bookmarks.botanical-margin .bookmark:last-child,
+.bookmarks.botanical-margin .bookmark-tools>.contents-bookmark {
+ position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:none;
+ width:44px;min-width:44px;max-width:44px;height:var(--margin-step);min-height:var(--margin-step);
+ margin:0;padding:0 0 0 7px;gap:2px;writing-mode:horizontal-tb;text-orientation:mixed;
+ font-family:var(--serif);font-size:11px;line-height:1.35;letter-spacing:0;
+ color:var(--journal-sepia);border:0;border-radius:0;background:none;box-shadow:none;text-decoration:none;
+ pointer-events:auto;transition:color 160ms ease;
+}
+.bookmarks.botanical-margin .margin-control::after {
+ content:'';position:absolute;inset:0 -1px 0 0;z-index:-1;background:url('./botanical-sage-wash.webp') center/100% 100% no-repeat;
+ opacity:0;pointer-events:none;transition:opacity 160ms ease;
+}
+.bookmarks.botanical-margin .margin-control.is-current {color:var(--journal-ink);background:none;border:0;box-shadow:none;}
+.bookmarks.botanical-margin .margin-control.is-current::after {opacity:1;}
+.bookmarks.botanical-margin .margin-icon {
+ display:block;position:relative;z-index:2;width:21px;height:21px;flex:none;fill:none;stroke:currentColor;
+ stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;overflow:visible;
+ filter:none;margin:0;text-shadow:0 1px #fffaf0;
+}
+.bookmarks.botanical-margin [data-section="word-title"] .margin-icon {width:27px;height:28px;}
+.bookmarks.botanical-margin [data-section="context-examples"] .margin-icon {fill:currentColor;stroke-width:.35;width:19px;}
+.bookmarks.botanical-margin [data-section="comparison"] .margin-icon {stroke-width:2;width:18px;}
+.bookmarks.botanical-margin .margin-label {display:none;position:relative;z-index:2;font:11px/1.3 var(--serif);white-space:nowrap;letter-spacing:.02em;}
+.bookmarks.botanical-margin .margin-control.is-current .margin-label {display:block;}
+.bookmarks.botanical-margin a+a::before {content:none;}
+.bookmarks.botanical-margin .bookmark-list .margin-control:not(:first-child)::before {
+ content:'';position:absolute;left:-2px;top:-7px;width:20px;height:35px;pointer-events:none;
+ background:url('./botanical-vine.webp') 50% 12%/60px 180px no-repeat;opacity:.75;z-index:-1;
+ -webkit-mask-image:linear-gradient(transparent,#000 16%,#000 85%,transparent);
+ mask-image:linear-gradient(transparent,#000 16%,#000 85%,transparent);
+}
+.bookmarks.botanical-margin .bookmark-list .margin-control:nth-child(3)::before {background-position:50% 38%;}
+.bookmarks.botanical-margin .bookmark-list .margin-control:nth-child(4)::before {background-position:50% 61%;}
+.bookmarks.botanical-margin .bookmark-list .margin-control:nth-child(5)::before {background-position:50% 84%;}
+.bookmarks.botanical-margin .margin-art {position:absolute;left:-1px;top:0;width:32px;height:var(--margin-vine-height);z-index:-1;overflow:hidden;pointer-events:none;user-select:none;}
+.bookmarks.botanical-margin .margin-vine {position:absolute;inset:0;background:url('./botanical-vine.webp') 50% 50%/76px 100% no-repeat;pointer-events:none;}
+.bookmarks.botanical-margin .margin-vine-ground {filter:grayscale(1) sepia(.3);opacity:.25;}
+.bookmarks.botanical-margin .margin-vine-saved {opacity:.8;clip-path:inset(clamp(0%,calc((1 - var(--margin-saved-progress))*100%),100%) 0 0);transition:clip-path 400ms ease;}
+.bookmarks.botanical-margin #open-settings.library-rail {
+ position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;
+ flex:1 1 150px;width:44px;min-width:44px;min-height:90px;max-height:180px;
+ padding:10px 0 10px 7px;margin:0;gap:8px;writing-mode:horizontal-tb;
+ color:var(--journal-sepia);border:0;border-radius:0;background:none;box-shadow:none;pointer-events:auto;
+}
+.bookmarks.botanical-margin #open-settings.library-rail.is-current {color:var(--journal-ink);}
+.bookmarks.botanical-margin #open-settings .library-rail-track {position:absolute!important;width:1px!important;height:1px!important;min-height:0!important;overflow:hidden!important;clip-path:inset(50%)!important;background:none!important;border:0!important;}
+.bookmarks.botanical-margin #open-settings .library-rail-track::before,
+.bookmarks.botanical-margin #open-settings .library-rail-track::after {display:none;content:none;}
+.bookmarks.botanical-margin #open-settings .library-rail-label {position:relative;z-index:2;display:block;flex:none;width:34px;height:auto;margin:0;overflow:visible;clip-path:none;font-size:0;color:inherit;white-space:normal;text-align:center;text-shadow:0 0 3px var(--journal-paper),0 0 3px var(--journal-paper);}
+.bookmarks.botanical-margin #open-settings .library-rail-label::before,
+.bookmarks.botanical-margin #open-settings .library-rail-label::after {display:block;font:12px/1.4 Georgia,'Times New Roman',serif;font-variant-numeric:tabular-nums;letter-spacing:-.025em;}
+.bookmarks.botanical-margin #open-settings .library-rail-label::before {content:attr(data-saved);}
+.bookmarks.botanical-margin #open-settings .library-rail-label::after {content:attr(data-total);}
+.bookmarks.botanical-margin #open-settings .margin-icon {width:19px;height:19px;}
+.bookmarks.botanical-margin .margin-control:focus-visible {outline:2px solid #7a6547;outline-offset:-3px;border-radius:7px;}
+@media(hover:hover){.bookmarks.botanical-margin .margin-control:not(.is-current):hover {color:#645538;background:none;}.bookmarks.botanical-margin .margin-control:not(.is-current):hover::after {opacity:.38;}}
+@media(min-width:760px){.bookmarks.botanical-margin {right:max(env(safe-area-inset-right,0px),18px,calc((100vw - 1120px - 42px - var(--bookmark-gutter))/2 + 18px));}}
+@media(max-height:640px){
+ .bookmarks.botanical-margin {--margin-step:54px;--margin-vine-height:calc(100% - 278px);gap:10px;}
+ .bookmarks.botanical-margin #open-settings.library-rail {min-height:68px;max-height:110px;padding-top:6px;padding-bottom:6px;gap:4px;}
+ .bookmarks.botanical-margin #open-settings .library-rail-label::before,.bookmarks.botanical-margin #open-settings .library-rail-label::after {font-size:11px;}
+}
+@media(max-height:480px){
+ .bookmarks.botanical-margin {--margin-step:44px;--margin-vine-height:calc(100% - 228px);gap:5px;top:max(8px,env(safe-area-inset-top));bottom:max(8px,env(safe-area-inset-bottom));}
+ .bookmarks.botanical-margin #open-settings.library-rail {flex:1 1 56px;min-height:56px;max-height:80px;padding:3px 0 3px 7px;gap:3px;}
+ .bookmarks.botanical-margin #open-settings .margin-icon {width:15px;height:15px;}
+ .bookmarks.botanical-margin #open-settings.is-current .margin-label {display:none;}
+ .bookmarks.botanical-margin .margin-icon {width:18px;height:18px;}
+ .bookmarks.botanical-margin [data-section="word-title"] .margin-icon {width:23px;height:23px;}
+ .bookmarks.botanical-margin .margin-label {font-size:10px;line-height:1.1;}
+ .bookmarks.botanical-margin .bookmark-list .margin-control:not(:first-child)::before {height:24px;width:16px;top:-3px;opacity:.58;}
+}
+@media(max-height:360px){
+ .bookmarks.botanical-margin .bookmark-list {flex:1 1 auto;min-height:44px;max-height:calc(100dvh - 110px - max(8px,env(safe-area-inset-top)) - max(8px,env(safe-area-inset-bottom)));overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;}
+ .bookmarks.botanical-margin #open-settings.library-rail {flex:0 0 56px;max-height:56px;}
+}
+@media(prefers-reduced-motion:reduce){.bookmarks.botanical-margin .margin-control,.bookmarks.botanical-margin .margin-control::after,.bookmarks.botanical-margin .margin-vine-saved {transition:none;animation:none;}}
+@media(forced-colors:active){
+ :root,body,#word-picker.contents-page,#word-picker .contents-sheet,.book-spread,.book-continuation {background:Canvas;}
+ .bookmarks.botanical-margin .margin-art,.bookmarks.botanical-margin .margin-control::before,.bookmarks.botanical-margin .margin-control::after {display:none;}
+ .bookmarks.botanical-margin .margin-control {color:LinkText;}
+ .bookmarks.botanical-margin .margin-control.is-current {color:HighlightText;background:Highlight;forced-color-adjust:none;}
+ .bookmarks.botanical-margin .margin-control:focus-visible {outline-color:Highlight;}
+ .story-illustration {box-shadow:none;}
+}
+
+.bookmarks.botanical-margin #open-settings .library-rail-fill {background:none!important;animation:none!important;}
+/* Quiet paper behind numbers and the gear; no bordered card or hard rectangle. */
+.bookmarks.botanical-margin #open-settings.library-rail {color:#806b4c;}
+.bookmarks.botanical-margin #open-settings.library-rail.is-current {color:var(--journal-ink);}
+.bookmarks.botanical-margin #open-settings.library-rail::before {
+ content:'';position:absolute;inset:12px -1px 12px 7px;z-index:0;pointer-events:none;
+ background:radial-gradient(ellipse at 65% 50%,#faf5e9f2 0 42%,#faf5e9b3 64%,#faf5e900 86%);
+}

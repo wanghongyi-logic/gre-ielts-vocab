@@ -1,10 +1,10 @@
 from pathlib import Path
 import json,hashlib,re
 root=Path(__file__).resolve().parent.parent
-p=root/'gre-learning/shell-manifest.json';data=json.loads(p.read_text());data['build']='166-offline200-v22'
+p=root/'gre-learning/shell-manifest.json';data=json.loads(p.read_text());data['build']='166-offline200-v23'
 assert "OFFLINE_EDITION='"+data['build']+"'" in (root/'gre-learning/offline-preferences.js').read_text(), 'Settings readiness edition must match shell build'
 paths=[x['url'] for x in data['assets']]
-for name in ['offline-zip.js','offline-packs.js','offline-copy-worker.js','offline-manager.js','offline-preferences.js','offline-batch.js','offline-control.js','offline-releases.js','offline-releases.css','settings-storybook.css','frontmatter-turn.js','frontmatter-turn.css','sculpted-book-edge.js','sculpted-book-edge.css','sculpted-continuous-paper.webp','sculpted-paper-leaves.webp','images/botanical-progress-bookmark.png','images/bookbinding-inlay.webp']:
+for name in ['offline-zip.js','offline-packs.js','offline-copy-worker.js','offline-manager.js','offline-preferences.js','offline-batch.js','offline-control.js','offline-releases.js','offline-releases.css','settings-storybook.css','frontmatter-turn.js','frontmatter-turn.css','botanical-margin.js','botanical-margin.css','botanical-vine.webp','botanical-sage-wash.webp','book-paper-face.webp','images/botanical-progress-bookmark.png','images/bookbinding-inlay.webp']:
  path='gre-learning/'+name
  if path not in paths:paths.append(path)
 # Cache all small lesson text files, never pre-cache all video assets.

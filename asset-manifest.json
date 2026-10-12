@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "166-offline200-v22",
-  "generatedAt": "2026-10-12T19:23:16.990591+00:00",
+  "releaseBuild": "166-offline200-v23",
+  "generatedAt": "2026-10-12T19:32:48.373821+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-reviewed-order",
@@ -22,9 +22,9 @@
     {
       "path": "gre-learning/bookmark-navigation.js",
       "loading": "shell",
-      "bytes": 4473,
-      "sha256": "0312f841d74c0710dd27ef7164ced33d7c83316abdcb78d463b91c888b73650e",
-      "gzipBytes": 1739
+      "bytes": 4469,
+      "sha256": "cc472f23596d3f8db7d3b97b9a2ed7ac2d1692a729f2c456da109a4a076bca99",
+      "gzipBytes": 1735
     },
     {
       "path": "gre-learning/catalog.json",
@@ -737,8 +737,8 @@
       "path": "gre-learning/update.js",
       "loading": "shell",
       "bytes": 6372,
-      "sha256": "319850a0f9d5adacc0cd4a3268afa5c4b2e90b1c3211a859d90abe3a5b574b1b",
-      "gzipBytes": 2257
+      "sha256": "078c45b792565e0bc1a46f892dfaab1b58ac7c4d178d5044306ae27acf9018e1",
+      "gzipBytes": 2256
     },
     {
       "path": "gre-learning/view.js",
@@ -764,9 +764,9 @@
     {
       "path": "index.html",
       "loading": "shell",
-      "bytes": 9222,
-      "sha256": "795c1e375a3f2e09b911918331f6b2dc0204b070a63a2916d6a49470a1f7f684",
-      "gzipBytes": 2393
+      "bytes": 5337,
+      "sha256": "14cda6a60103692cc29f6dad67f0d0674ca036a0396f0bed5d614d70a38e0b3e",
+      "gzipBytes": 2061
     },
     {
       "path": "manifest.webmanifest",
@@ -968,8 +968,8 @@
       "path": "gre-learning/offline-preferences.js",
       "loading": "shell",
       "bytes": 1103,
-      "sha256": "694b3ca22cf31492175a001a952a011d0514a2975d779206aee88cdc50a4ad19",
-      "gzipBytes": 533
+      "sha256": "aab3d55d20f42ab0dd6d5c547aa0613bec733ba54389b60f37ed6a1e1f49b1b2",
+      "gzipBytes": 534
     },
     {
       "path": "gre-learning/story-media/175-9ada9463e3c9612e669416638afc17d94617d01cb9500b35b06df5b4a2960928.mp4",
@@ -4612,37 +4612,44 @@
       "gzipBytes": 17108
     },
     {
-      "path": "gre-learning/sculpted-book-edge.js",
+      "path": "gre-learning/botanical-margin.js",
       "loading": "shell",
-      "bytes": 5951,
-      "sha256": "5faaca7965d8e3bb6aa9ce0afceccd60aee187468be57cdd6a3b89fc4fc3a61a",
-      "gzipBytes": 2532
+      "bytes": 5454,
+      "sha256": "08bedbf74f45b9f7379c3a01cd06163ef537ef223f52c38ffc21749032f2c204",
+      "gzipBytes": 2399
     },
     {
-      "path": "gre-learning/sculpted-book-edge.css",
+      "path": "gre-learning/botanical-margin.css",
       "loading": "shell",
-      "bytes": 12445,
-      "sha256": "25e00e523259f5e80298a59f89b6dded5fd4c022631582b3d4c38c98efc3148b",
-      "gzipBytes": 3053
+      "bytes": 11858,
+      "sha256": "3ea04411df7e5e87ff677430b0a77710091c363cd37f6448ad74c186c7ddbcb9",
+      "gzipBytes": 2890
     },
     {
-      "path": "gre-learning/sculpted-continuous-paper.webp",
+      "path": "gre-learning/botanical-vine.webp",
       "loading": "shell",
-      "bytes": 121540,
-      "sha256": "eedb6ab4b769846e070f49c53e0f76ea452669d1f25a8d11d7444f3bbc6a1f59",
-      "gzipBytes": 120066
+      "bytes": 40864,
+      "sha256": "e5ec8dcaab2adc942c81f92a1339369994238bc8bbe62f9455ffa03ce38a5e7f",
+      "gzipBytes": 40897
     },
     {
-      "path": "gre-learning/sculpted-paper-leaves.webp",
+      "path": "gre-learning/botanical-sage-wash.webp",
       "loading": "shell",
-      "bytes": 28506,
-      "sha256": "41b1dc18794d5dfa92f184645c6534596da65d8453d72583b68b05612f67ba34",
-      "gzipBytes": 28534
+      "bytes": 4744,
+      "sha256": "2060657d5ee31771bb39b946b2c8f7f878f2b3780d328a287c7ff186b15e2a14",
+      "gzipBytes": 4767
+    },
+    {
+      "path": "gre-learning/book-paper-face.webp",
+      "loading": "shell",
+      "bytes": 15414,
+      "sha256": "a3625f1edb18102b4037a3e6143e4e0eabde60118a15c860141cd0efc989e553",
+      "gzipBytes": 15437
     }
   ],
   "totals": {
-    "bytes": 541336676,
-    "gzipBytes": 538874126
+    "bytes": 541242679,
+    "gzipBytes": 538785995
   },
   "retainedHistoricalAssets": 212,
   "availableTextLessons": 210,
