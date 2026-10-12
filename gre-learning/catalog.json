@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "162",
-  "authoredCount": 170,
-  "publishedCount": 170,
+  "release": "163",
+  "authoredCount": 180,
+  "publishedCount": 180,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -177,7 +177,17 @@
       2443,
       2623,
       806,
-      1279
+      1279,
+      2130,
+      1573,
+      1862,
+      520,
+      2870,
+      499,
+      2267,
+      1613,
+      2521,
+      1378
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -397,6 +407,16 @@
       "url": "units/core031-text-candidate-7196e4a8d7105c79c87bf69bded9cccfba7ac3f131a99fadc1994369dfb52d98.json",
       "sha256": "7196e4a8d7105c79c87bf69bded9cccfba7ac3f131a99fadc1994369dfb52d98",
       "bytes": 16710
+    },
+    {
+      "url": "units/core032-text-candidate-2b77389776bca52ca2375b46008fb16240722801504ca07b5e0caa01dc2d7bd1.json",
+      "sha256": "2b77389776bca52ca2375b46008fb16240722801504ca07b5e0caa01dc2d7bd1",
+      "bytes": 18798
+    },
+    {
+      "url": "units/core033-text-candidate-4ab21e2e886f0a41feda49946e1061fa819f4be794fd40d2a983358d995ec9ca.json",
+      "sha256": "4ab21e2e886f0a41feda49946e1061fa819f4be794fd40d2a983358d995ec9ca",
+      "bytes": 18150
     }
   ],
   "entries": [
@@ -14271,6 +14291,672 @@
           "url": "story-media/1279-staticPoster-c6e884cc8b02bffd49bb28105a2323b09c6b71762cf56e22e3ab2849ad42410a.png",
           "sha256": "c6e884cc8b02bffd49bb28105a2323b09c6b71762cf56e22e3ab2849ad42410a",
           "bytes": 1135761
+        }
+      }
+    },
+    {
+      "number": 2130,
+      "word": "salubrious",
+      "coreMeaningZh": "有益健康的；环境宜人、宜居的",
+      "unit": 42,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 171,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 4760.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 4760,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩站在敞开的花园窗旁，轻轻呼吸新鲜空气，舒适地放松下来。",
+        "video": {
+          "url": "story-media/2130-video-4ca4313bf77a8516cc138957caf0257e2225fd04e500ff332694e03059237ce6.mp4",
+          "sha256": "4ca4313bf77a8516cc138957caf0257e2225fd04e500ff332694e03059237ce6",
+          "bytes": 607900
+        },
+        "poster": {
+          "url": "story-media/2130-poster-023b52de5c9d2aba5eca552623edbd50fd5c7d5a22d1dc2150aa89d4df9e45ba.png",
+          "sha256": "023b52de5c9d2aba5eca552623edbd50fd5c7d5a22d1dc2150aa89d4df9e45ba",
+          "bytes": 1254766
+        },
+        "staticPoster": {
+          "url": "story-media/2130-staticPoster-601579726d70271a55eccc8a4ed6179be68a54d560ab65c0e0740f11164ff69b.png",
+          "sha256": "601579726d70271a55eccc8a4ed6179be68a54d560ab65c0e0740f11164ff69b",
+          "bytes": 1266497
+        }
+      }
+    },
+    {
+      "number": 1573,
+      "word": "nebulous",
+      "coreMeaningZh": "模糊不清的；缺乏明确形态或内容的",
+      "unit": 42,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 172,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 4760.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 4760,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩看着模糊不清的草图，试着选一块积木，又困惑地停下来。",
+        "video": {
+          "url": "story-media/1573-video-869a7b2c616bc83d9757c1fa1f3908e229dcfabc5b179363764a8952eb0368a2.mp4",
+          "sha256": "869a7b2c616bc83d9757c1fa1f3908e229dcfabc5b179363764a8952eb0368a2",
+          "bytes": 539124
+        },
+        "poster": {
+          "url": "story-media/1573-poster-4df8fe3a3c999824475d37ff2ddf22b60df5312e9db99024bec12cf7182f395b.png",
+          "sha256": "4df8fe3a3c999824475d37ff2ddf22b60df5312e9db99024bec12cf7182f395b",
+          "bytes": 1066577
+        },
+        "staticPoster": {
+          "url": "story-media/1573-staticPoster-551a05211ebe6a9edbef4824956bffd173ef2f98c40b6814bfa29e90476fdd8a.png",
+          "sha256": "551a05211ebe6a9edbef4824956bffd173ef2f98c40b6814bfa29e90476fdd8a",
+          "bytes": 1072366
+        }
+      }
+    },
+    {
+      "number": 1862,
+      "word": "prodigious",
+      "coreMeaningZh": "巨大的；惊人的；非凡的",
+      "unit": 42,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 173,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 4760.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 4760,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩想搬起巨大的南瓜，用力后发现它纹丝不动，惊叹于它远超普通南瓜的体积。",
+        "video": {
+          "url": "story-media/1862-video-532c1a627064fd5af1202e344b5ba537a402745c2336fa308534cd9ceafd72e1.mp4",
+          "sha256": "532c1a627064fd5af1202e344b5ba537a402745c2336fa308534cd9ceafd72e1",
+          "bytes": 695150
+        },
+        "poster": {
+          "url": "story-media/1862-poster-618a272bd2bf0fbee53386231aafb528cf63a47acfaaa5384c0a0db6698cb67b.png",
+          "sha256": "618a272bd2bf0fbee53386231aafb528cf63a47acfaaa5384c0a0db6698cb67b",
+          "bytes": 1272079
+        },
+        "staticPoster": {
+          "url": "story-media/1862-staticPoster-cb6c8af3e09ea6e47224d6cdd1475c57eb0eec024e589e47d58c2246c1384d17.png",
+          "sha256": "cb6c8af3e09ea6e47224d6cdd1475c57eb0eec024e589e47d58c2246c1384d17",
+          "bytes": 1275411
+        }
+      }
+    },
+    {
+      "number": 520,
+      "word": "curt",
+      "coreMeaningZh": "简短而生硬无礼的",
+      "unit": 42,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 174,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 4760.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 4760,
+          "text": "不包。",
+          "speaker": "shopkeeper",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "不包。"
+          ]
+        },
+        "alt": "男孩礼貌地请求包装，店主冷冷地说“不包。”，随即转头不理他。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 160,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 160,
+            "endMs": 1440,
+            "text": "请问能帮我包装一下吗？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "请问能帮我包装一下吗？"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 1440,
+            "endMs": 1520,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          },
+          {
+            "startMs": 1520,
+            "endMs": 2520,
+            "text": "不包。",
+            "speaker": "shopkeeper",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "不包。"
+            ],
+            "id": "stage-3"
+          },
+          {
+            "startMs": 2520,
+            "endMs": 4760,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-4"
+          }
+        ],
+        "video": {
+          "url": "story-media/520-video-e65e14e35ef35ac562df3b7fc9616259a4b9ca6e98ca566e620a950b651eb3a4.mp4",
+          "sha256": "e65e14e35ef35ac562df3b7fc9616259a4b9ca6e98ca566e620a950b651eb3a4",
+          "bytes": 595880
+        },
+        "poster": {
+          "url": "story-media/520-poster-e9ec1913991659e0e957fe7ae7d16f694a0248105d67c9c5f012f115234b8e6f.png",
+          "sha256": "e9ec1913991659e0e957fe7ae7d16f694a0248105d67c9c5f012f115234b8e6f",
+          "bytes": 1230423
+        },
+        "staticPoster": {
+          "url": "story-media/520-staticPoster-03ec99a8f894219c468050660f4edc903d9536facab36643f9269325bfcc5da1.png",
+          "sha256": "03ec99a8f894219c468050660f4edc903d9536facab36643f9269325bfcc5da1",
+          "bytes": 1216316
+        }
+      }
+    },
+    {
+      "number": 2870,
+      "word": "extrapolate",
+      "coreMeaningZh": "依据已有数据外推；推断",
+      "unit": 42,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 175,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6400.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6400,
+          "text": "照这样推，下一排应该在这里。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "照这样推，下一排应该在这里。"
+          ]
+        },
+        "alt": "男孩观察三排等间距的幼苗，思考后推测出下一排的位置；虚线表示尚未种植的预测。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 400,
+            "endMs": 3400,
+            "text": "这三排间距一样……",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这三排间距一样……"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 3400,
+            "endMs": 6400,
+            "text": "照这样推，下一排应该在这里。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "照这样推，下一排应该在这里。"
+            ],
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/2870-video-525695def3ebafd657312dcda90199cb066c1f9d2b32a4274f0f4abe39c9b63e.mp4",
+          "sha256": "525695def3ebafd657312dcda90199cb066c1f9d2b32a4274f0f4abe39c9b63e",
+          "bytes": 699581
+        },
+        "poster": {
+          "url": "story-media/2870-poster-9bc9b1cf6f553278c98cb8d0841a50c597b15e7ea5098b7acafd340da37b59be.png",
+          "sha256": "9bc9b1cf6f553278c98cb8d0841a50c597b15e7ea5098b7acafd340da37b59be",
+          "bytes": 1245253
+        },
+        "staticPoster": {
+          "url": "story-media/2870-staticPoster-e03c3406f7dc6104a9fb9d0fd3153b0256afc5322ca4fbd4c01c3c582778bc6a.png",
+          "sha256": "e03c3406f7dc6104a9fb9d0fd3153b0256afc5322ca4fbd4c01c3c582778bc6a",
+          "bytes": 1246195
+        }
+      }
+    },
+    {
+      "number": 499,
+      "word": "credulous",
+      "coreMeaningZh": "轻信的；容易上当的",
+      "unit": 43,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 176,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "朋友：我一跳就能摸到月亮！\n男孩：我信！你真厉害！",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "朋友：我一跳就能摸到月亮！\n男孩：我信！你真厉害！"
+          ]
+        },
+        "alt": "朋友吹嘘一跳就能摸到月亮，男孩毫不怀疑地竖起拇指，兴奋地相信了。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 200,
+            "endMs": 2400,
+            "text": "我一跳就能摸到月亮！",
+            "speaker": "friend",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我一跳就能摸到月亮！"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 2400,
+            "endMs": 5800,
+            "text": "我信！你真厉害！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我信！你真厉害！"
+            ],
+            "id": "stage-2"
+          },
+          {
+            "startMs": 5800,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-3"
+          }
+        ],
+        "video": {
+          "url": "story-media/499-video-126a6a6d8cdbbe46478fcf236c0b7bb67a930081b01442c5acf5840b4ea4e6bb.mp4",
+          "sha256": "126a6a6d8cdbbe46478fcf236c0b7bb67a930081b01442c5acf5840b4ea4e6bb",
+          "bytes": 593616
+        },
+        "poster": {
+          "url": "story-media/499-poster-e01a6adf99865b1d45249b2470340b07d77f0101eeb998b1454fac2f780b5b0d.png",
+          "sha256": "e01a6adf99865b1d45249b2470340b07d77f0101eeb998b1454fac2f780b5b0d",
+          "bytes": 1143711
+        },
+        "staticPoster": {
+          "url": "story-media/499-staticPoster-447b7fcb603df9a4fc9238a8a35a3ff7df06b38fc279006594c865bd10dd54bd.png",
+          "sha256": "447b7fcb603df9a4fc9238a8a35a3ff7df06b38fc279006594c865bd10dd54bd",
+          "bytes": 1147895
+        }
+      }
+    },
+    {
+      "number": 2267,
+      "word": "snub",
+      "coreMeaningZh": "故意冷落；怠慢；冷落的举动",
+      "unit": 43,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 177,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6000,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩伸手友好问候，女孩嫌弃地拒绝，转身热情迎接另一个孩子，留下男孩失落地垂下手。",
+        "video": {
+          "url": "story-media/2267-video-7c8547c7644744e0a31aa5988d435e82380fe78778dd3f1fdf16d0b36db7ef0f.mp4",
+          "sha256": "7c8547c7644744e0a31aa5988d435e82380fe78778dd3f1fdf16d0b36db7ef0f",
+          "bytes": 716918
+        },
+        "poster": {
+          "url": "story-media/2267-poster-5f975cf9bdc65b9ea0f753abc405ca49c3496f8d3e5f5bab104500533ac9ae3f.png",
+          "sha256": "5f975cf9bdc65b9ea0f753abc405ca49c3496f8d3e5f5bab104500533ac9ae3f",
+          "bytes": 1179468
+        },
+        "staticPoster": {
+          "url": "story-media/2267-staticPoster-7de57b197c5eaa7bab1f0fa4ff841016e391a1aa8e9f126665a33cdfc6c6a21e.png",
+          "sha256": "7de57b197c5eaa7bab1f0fa4ff841016e391a1aa8e9f126665a33cdfc6c6a21e",
+          "bytes": 1208463
+        }
+      }
+    },
+    {
+      "number": 1613,
+      "word": "obliterate",
+      "coreMeaningZh": "彻底毁掉；抹去；遮得不留痕迹",
+      "unit": 43,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 178,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6000,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "海浪漫过精细的沙画，退去后只剩平滑的空白沙滩，男孩惊讶地看着完全消失的画。",
+        "video": {
+          "url": "story-media/1613-video-10d6072814121a4469449cffa10467bd8234f7431eed2efb1f9f213013f800d6.mp4",
+          "sha256": "10d6072814121a4469449cffa10467bd8234f7431eed2efb1f9f213013f800d6",
+          "bytes": 999245
+        },
+        "poster": {
+          "url": "story-media/1613-poster-b147606d71521bb06ac28792e73a40a9066b3d94ea03a412e06a63160f654b1f.png",
+          "sha256": "b147606d71521bb06ac28792e73a40a9066b3d94ea03a412e06a63160f654b1f",
+          "bytes": 1179370
+        },
+        "staticPoster": {
+          "url": "story-media/1613-staticPoster-e8193ba8f46084077485a3a3f84333441c2425370d6eeab293ece0b101fb7c5c.png",
+          "sha256": "e8193ba8f46084077485a3a3f84333441c2425370d6eeab293ece0b101fb7c5c",
+          "bytes": 1197072
+        }
+      }
+    },
+    {
+      "number": 2521,
+      "word": "trenchant",
+      "coreMeaningZh": "犀利的；清晰有力的；一针见血的",
+      "unit": 43,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 179,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 4760.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 4760,
+          "text": "桥很漂亮，可中间靠什么撑住？",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "桥很漂亮，可中间靠什么撑住？"
+          ]
+        },
+        "alt": "男孩指出漂亮桥梁模型的中间缺乏支撑，制作者停下兴奋的介绍，认真看向问题。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1200,
+            "endMs": 3400,
+            "text": "桥很漂亮，可中间靠什么撑住？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "桥很漂亮，可中间靠什么撑住？"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 3400,
+            "endMs": 4760,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/2521-video-cc6a7c22ac70937d591c06d5b20292efcea44f4802a6dc73910d4836aff4dd3e.mp4",
+          "sha256": "cc6a7c22ac70937d591c06d5b20292efcea44f4802a6dc73910d4836aff4dd3e",
+          "bytes": 595391
+        },
+        "poster": {
+          "url": "story-media/2521-poster-591b4226ef04450d243ac1b080d63bd3ec8262c89d0bb21f06fc10494443af6b.png",
+          "sha256": "591b4226ef04450d243ac1b080d63bd3ec8262c89d0bb21f06fc10494443af6b",
+          "bytes": 1228257
+        },
+        "staticPoster": {
+          "url": "story-media/2521-staticPoster-35bb7b53741c3d2a7bdb1470554d7cbee88bbd35750d97e8169303de329b8968.png",
+          "sha256": "35bb7b53741c3d2a7bdb1470554d7cbee88bbd35750d97e8169303de329b8968",
+          "bytes": 1232199
+        }
+      }
+    },
+    {
+      "number": 1378,
+      "word": "languish",
+      "coreMeaningZh": "衰弱；萎靡；长期受困或被搁置",
+      "unit": 43,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 180,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 4760.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 4760,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩在室内漫长等待，望着窗外明亮的游乐场，身体渐渐无力地垂下。",
+        "video": {
+          "url": "story-media/1378-video-8fcc1971bae233eeb18c5b6495f3edf6b596aa8981f18baedb8fa067ed36e489.mp4",
+          "sha256": "8fcc1971bae233eeb18c5b6495f3edf6b596aa8981f18baedb8fa067ed36e489",
+          "bytes": 611438
+        },
+        "poster": {
+          "url": "story-media/1378-poster-9bf35dfbd1d1bbdc2af533bf1aa76bde19549d2fdfab09e51f2bb68a1604e44c.png",
+          "sha256": "9bf35dfbd1d1bbdc2af533bf1aa76bde19549d2fdfab09e51f2bb68a1604e44c",
+          "bytes": 1229520
+        },
+        "staticPoster": {
+          "url": "story-media/1378-staticPoster-5886c41f83a1d3ea7a193b7603c9c0859bf057b770affdc5d2967dcb84960e99.png",
+          "sha256": "5886c41f83a1d3ea7a193b7603c9c0859bf057b770affdc5d2967dcb84960e99",
+          "bytes": 1263612
         }
       }
     }
