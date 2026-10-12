@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "157",
-  "authoredCount": 120,
-  "publishedCount": 120,
+  "release": "158",
+  "authoredCount": 140,
+  "publishedCount": 140,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -127,7 +127,27 @@
       169,
       326,
       2593,
-      1539
+      1539,
+      116,
+      330,
+      845,
+      558,
+      1786,
+      2048,
+      354,
+      352,
+      1880,
+      1695,
+      654,
+      1082,
+      1890,
+      2719,
+      1878,
+      48,
+      2947,
+      1465,
+      1457,
+      2694
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -297,6 +317,26 @@
       "url": "units/core021-text-approved-ceb231eb758a4086c4abc7ae72dc800fecdbed84df707f4edd92700979db791c.json",
       "sha256": "ceb231eb758a4086c4abc7ae72dc800fecdbed84df707f4edd92700979db791c",
       "bytes": 24090
+    },
+    {
+      "url": "units/core022-text-approved-e72d9ca7347eccdc20bda798e3b51cc021c5a6dde06b05898c006898c7692a7c.json",
+      "sha256": "e72d9ca7347eccdc20bda798e3b51cc021c5a6dde06b05898c006898c7692a7c",
+      "bytes": 22204
+    },
+    {
+      "url": "units/core023-text-approved-6bc914430f85ee96944a71a7bca4728d9bd92aa1d311f9a48b34ac2cbafcba50.json",
+      "sha256": "6bc914430f85ee96944a71a7bca4728d9bd92aa1d311f9a48b34ac2cbafcba50",
+      "bytes": 19514
+    },
+    {
+      "url": "units/core024-text-approved-d7379b4e0dd7d27b40385eb3d847a36a438f74daf969c7555e6544104e7107fa.json",
+      "sha256": "d7379b4e0dd7d27b40385eb3d847a36a438f74daf969c7555e6544104e7107fa",
+      "bytes": 16926
+    },
+    {
+      "url": "units/core025-text-approved-cd37269828e21ebc5f12769fe4dacb893a65d5060d5eba3c72e29943e119b99a.json",
+      "sha256": "cd37269828e21ebc5f12769fe4dacb893a65d5060d5eba3c72e29943e119b99a",
+      "bytes": 16250
     }
   ],
   "entries": [
@@ -10618,6 +10658,1503 @@
           "sha256": "f5b4dce12de9d2c2b1daefb21f194186ee855c1d6dfc26e43514b1e14559fce6",
           "bytes": 1239944
         }
+      }
+    },
+    {
+      "number": 116,
+      "word": "antediluvian",
+      "coreMeaningZh": "极其古老的，陈旧过时的；大洪水前的",
+      "unit": 32,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 121,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 10000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "speaker": "supervisor",
+          "text": "先手抄三份，再挨个送。",
+          "displayLines": [
+            "先手抄三份，",
+            "再挨个送。"
+          ]
+        },
+        "alt": "男孩原本准备使用笔记本电脑发送文件，主管却坚持先手抄三份再逐个送。男孩接过笔，无奈地开始手抄。",
+        "video": {
+          "url": "story-media/116-5fbf10d4aa74c038a2ef1303e648b9bda8bb31105e00328ff33ef82bef663a7f.mp4",
+          "sha256": "5fbf10d4aa74c038a2ef1303e648b9bda8bb31105e00328ff33ef82bef663a7f",
+          "bytes": 1028170
+        },
+        "poster": {
+          "url": "story-media/116-643e425f502e4856ecfc5916a3ce06203cb8c1b19d608d3064bbb958ade7aaad.png",
+          "sha256": "643e425f502e4856ecfc5916a3ce06203cb8c1b19d608d3064bbb958ade7aaad",
+          "bytes": 1223958
+        },
+        "staticPoster": {
+          "url": "story-media/116-458adc4b827510d39885e46d7ff7223f5fd32c0611cccdecbb7777c1dde01676.png",
+          "sha256": "458adc4b827510d39885e46d7ff7223f5fd32c0611cccdecbb7777c1dde01676",
+          "bytes": 1236887
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1280,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1280,
+            "endMs": 7000,
+            "text": "先手抄三份，再挨个送。",
+            "speaker": "supervisor",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "先手抄三份，再挨个送。"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 7000,
+            "endMs": 10000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 330,
+      "word": "chagrin",
+      "coreMeaningZh": "懊恼，失望或难堪；使懊恼",
+      "unit": 32,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 122,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩自信地举手回答，听见老师提醒再想想，才意识到答错了。他难为情地垂下目光，勉强一笑，把手落到桌上的铅笔旁。",
+        "video": {
+          "url": "story-media/330-eeb101bab3ca1089eea3522aa3aa7fd0aece94e3a4956d39f83b2554e12d04aa.mp4",
+          "sha256": "eeb101bab3ca1089eea3522aa3aa7fd0aece94e3a4956d39f83b2554e12d04aa",
+          "bytes": 759440
+        },
+        "poster": {
+          "url": "story-media/330-d78fef92a22184174aed333695254958bbb3dd1b9a3770605c90c1edd0740c39.png",
+          "sha256": "d78fef92a22184174aed333695254958bbb3dd1b9a3770605c90c1edd0740c39",
+          "bytes": 1178298
+        },
+        "staticPoster": {
+          "url": "story-media/330-5b49e7aec78993f03d12d6dd6e288c8a1ca3425a2b6462ab038b8ba04636ff34.png",
+          "sha256": "5b49e7aec78993f03d12d6dd6e288c8a1ca3425a2b6462ab038b8ba04636ff34",
+          "bytes": 1189415
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 160,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 160,
+            "endMs": 1840,
+            "text": "我知道！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我知道！"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 1840,
+            "endMs": 2000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 2000,
+            "endMs": 3400,
+            "text": "再想想。",
+            "speaker": "teacher",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "再想想。"
+            ]
+          },
+          {
+            "id": "stage-4",
+            "startMs": 3400,
+            "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 845,
+      "word": "exacerbate",
+      "coreMeaningZh": "使恶化，加重，加剧",
+      "unit": 32,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 123,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": null,
+        "alt": "男孩面前的旧衬衫原本只有一道小裂口。他抓住两边往外拉，裂口变得更长更大；他看着加重的破损，露出懊恼的神情。",
+        "video": {
+          "url": "story-media/845-b3ae949dbf47d5a692a9a284dd7e4395d8cb49ca26a4eec2f6bb1f73658d2477.mp4",
+          "sha256": "b3ae949dbf47d5a692a9a284dd7e4395d8cb49ca26a4eec2f6bb1f73658d2477",
+          "bytes": 697782
+        },
+        "poster": {
+          "url": "story-media/845-067c0b4916dae9646e902fdc80c10a7ae0a0a434f90e346e8ce24e28b81585b0.png",
+          "sha256": "067c0b4916dae9646e902fdc80c10a7ae0a0a434f90e346e8ce24e28b81585b0",
+          "bytes": 1079139
+        },
+        "staticPoster": {
+          "url": "story-media/845-c48469c7182a1e4a6452300d3eed08b87f129e24684a04e9fa38a8ec3883da99.png",
+          "sha256": "c48469c7182a1e4a6452300d3eed08b87f129e24684a04e9fa38a8ec3883da99",
+          "bytes": 1141961
+        }
+      }
+    },
+    {
+      "number": 558,
+      "word": "defy",
+      "coreMeaningZh": "公然违抗；抗拒，使难以做到",
+      "unit": 32,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 124,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "speaker": "boy",
+          "text": "我偏不。"
+        },
+        "alt": "美术课上，老师举起手掌请男孩停笔。他看着老师，明确表示不服从，右手仍握着铅笔继续画画。",
+        "video": {
+          "url": "story-media/558-e1d8b6cbefe78f8927d3ee376084dd062a0c8e51ff5f35ee4957870daa07dd6e.mp4",
+          "sha256": "e1d8b6cbefe78f8927d3ee376084dd062a0c8e51ff5f35ee4957870daa07dd6e",
+          "bytes": 853971
+        },
+        "poster": {
+          "url": "story-media/558-446b154e42b940e114d2706c1b9c62cbbb1f531d108b150522d85362a6e7993e.png",
+          "sha256": "446b154e42b940e114d2706c1b9c62cbbb1f531d108b150522d85362a6e7993e",
+          "bytes": 1279503
+        },
+        "staticPoster": {
+          "url": "story-media/558-9917be707acc41567614b3ec8fd7f494c13f6978ba38d34883dee1ebb6590c3e.png",
+          "sha256": "9917be707acc41567614b3ec8fd7f494c13f6978ba38d34883dee1ebb6590c3e",
+          "bytes": 1264470
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1600,
+            "endMs": 3800,
+            "text": "请停笔。",
+            "speaker": "teacher",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "请停笔。"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 3800,
+            "endMs": 5800,
+            "text": "我偏不。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我偏不。"
+            ]
+          },
+          {
+            "id": "stage-3",
+            "startMs": 5800,
+            "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 1786,
+      "word": "plethora",
+      "coreMeaningZh": "大量；过多，过剩",
+      "unit": 32,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 125,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": null,
+        "alt": "两个人面对满桌吃不完的菜，男孩端着额外的一盘面包，找不到地方放，两人意识到准备得太多。",
+        "video": {
+          "url": "story-media/1786-4a87de1c35871e69d5df45032d51fdf524dc56cac1ec67288ea9e5883e0df474.mp4",
+          "sha256": "4a87de1c35871e69d5df45032d51fdf524dc56cac1ec67288ea9e5883e0df474",
+          "bytes": 670189
+        },
+        "poster": {
+          "url": "story-media/1786-ed0bf3995880b08050f515c99da28e400645f0860d3cf9c39c9a03dcfb1982db.png",
+          "sha256": "ed0bf3995880b08050f515c99da28e400645f0860d3cf9c39c9a03dcfb1982db",
+          "bytes": 1257874
+        },
+        "staticPoster": {
+          "url": "story-media/1786-66ef7f3af0a61055f59075e4ed8715e68cd4638a0c5aa86f1d702ad8e65076b6.png",
+          "sha256": "66ef7f3af0a61055f59075e4ed8715e68cd4638a0c5aa86f1d702ad8e65076b6",
+          "bytes": 1263321
+        }
+      }
+    },
+    {
+      "number": 2048,
+      "word": "repudiate",
+      "coreMeaningZh": "拒绝接受；否认；与……断绝关系",
+      "unit": 33,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 126,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "speaker": "boy",
+          "text": "我不承认这个指控。"
+        },
+        "alt": "班会上，同学指着手中的纸说：你作弊了。男孩听清指控后，抬起右手、摇头，当众说：我不承认这个指控。这里只展示明确否认，并未证明有罪或无罪。",
+        "video": {
+          "url": "story-media/2048-cc5b5e14d074c334d34a778c0fdbc02779dd6ee65aeafef358e25bc2683fea88.mp4",
+          "sha256": "cc5b5e14d074c334d34a778c0fdbc02779dd6ee65aeafef358e25bc2683fea88",
+          "bytes": 1189865
+        },
+        "poster": {
+          "url": "story-media/2048-5c91009d7db0488b6f7405af95506517874f487534269c6b4dea22a76d716d45.png",
+          "sha256": "5c91009d7db0488b6f7405af95506517874f487534269c6b4dea22a76d716d45",
+          "bytes": 1179869
+        },
+        "staticPoster": {
+          "url": "story-media/2048-9276c6bd57225afbeac51df34dd24fb2cf8d7d7023208a71734bac7f2e6c8574.png",
+          "sha256": "9276c6bd57225afbeac51df34dd24fb2cf8d7d7023208a71734bac7f2e6c8574",
+          "bytes": 1193338
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1000,
+            "endMs": 2840,
+            "text": "你作弊了。",
+            "speaker": "accuser",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "你作弊了。"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 2840,
+            "endMs": 3600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 3600,
+            "endMs": 7600,
+            "text": "我不承认这个指控。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我不承认这个指控。"
+            ]
+          },
+          {
+            "id": "stage-4",
+            "startMs": 7600,
+            "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 354,
+      "word": "circumvent",
+      "coreMeaningZh": "绕过；设法规避（障碍、困难或规定）",
+      "unit": 33,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 127,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6520.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": null,
+        "alt": "男孩抱着书，从前方绕过挡路的书车，走到右侧还书台。",
+        "video": {
+          "url": "story-media/354-4f91d90599b142ddecb2f1e60f1a726d92535fce2af34bff06f71431bd4e92ea.mp4",
+          "sha256": "4f91d90599b142ddecb2f1e60f1a726d92535fce2af34bff06f71431bd4e92ea",
+          "bytes": 1500149
+        },
+        "poster": {
+          "url": "story-media/354-0042f02c69c6fa16e91f375c7d0a040023fb6eb001e3b572f7ae7c4045b41d56.png",
+          "sha256": "0042f02c69c6fa16e91f375c7d0a040023fb6eb001e3b572f7ae7c4045b41d56",
+          "bytes": 1229603
+        },
+        "staticPoster": {
+          "url": "story-media/354-21f0e97e8a27bf3e4e4f999649daeac3c671c556f2e2a443dbbdefd8b562cb88.png",
+          "sha256": "21f0e97e8a27bf3e4e4f999649daeac3c671c556f2e2a443dbbdefd8b562cb88",
+          "bytes": 1302984
+        }
+      }
+    },
+    {
+      "number": 352,
+      "word": "circumscribe",
+      "coreMeaningZh": "限制，限定；在……周围画线",
+      "unit": 33,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 128,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 11000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "speaker": "girl",
+          "text": "只能在这一块。"
+        },
+        "alt": "女孩用红笔限定院子规划图中的一小块区域，男孩把原本散在外面的两个花朵标记拿起、搬到圈内并放下，三个标记都被限制在小范围内。",
+        "video": {
+          "url": "story-media/352-e2f9b7327fd2c9081c745bd39e822da173a956ab0f7d470f6acf24b269cde57a.mp4",
+          "sha256": "e2f9b7327fd2c9081c745bd39e822da173a956ab0f7d470f6acf24b269cde57a",
+          "bytes": 1815195
+        },
+        "poster": {
+          "url": "story-media/352-636f0579e7b1f520041354042b29f175795867c231bd50705720d9da9c009e12.png",
+          "sha256": "636f0579e7b1f520041354042b29f175795867c231bd50705720d9da9c009e12",
+          "bytes": 1175331
+        },
+        "staticPoster": {
+          "url": "story-media/352-7a0be2a6ef1db133b2336619fe53d208c89db52c8006d2453ee716f1eb5e68a5.png",
+          "sha256": "7a0be2a6ef1db133b2336619fe53d208c89db52c8006d2453ee716f1eb5e68a5",
+          "bytes": 1269748
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1400,
+            "endMs": 3200,
+            "text": "只能在这一块。",
+            "speaker": "girl",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "只能在这一块。"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 3200,
+            "endMs": 11000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 1880,
+      "word": "propitious",
+      "coreMeaningZh": "有利的；吉利的，预示成功的",
+      "unit": 33,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 129,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "雨后的草地上，父亲伸手感受轻稳的风，点头鼓励。男孩双手举起原来的风筝准备尝试，风筝尚未飞起。",
+        "video": {
+          "url": "story-media/1880-86f21219398a5bf6bdb74cfe94360b4e542f7b2df0a6edb987f16805ab91df7d.mp4",
+          "sha256": "86f21219398a5bf6bdb74cfe94360b4e542f7b2df0a6edb987f16805ab91df7d",
+          "bytes": 903162
+        },
+        "poster": {
+          "url": "story-media/1880-f17164cbd390098351ad88b7d86344d586aaf07c0bf6825ba97528fca4a42974.png",
+          "sha256": "f17164cbd390098351ad88b7d86344d586aaf07c0bf6825ba97528fca4a42974",
+          "bytes": 1217205
+        },
+        "staticPoster": {
+          "url": "story-media/1880-3bcf965c103fe261be25c871ae8b587fff9005ed3b81b7f60387079c6fbf26f3.png",
+          "sha256": "3bcf965c103fe261be25c871ae8b587fff9005ed3b81b7f60387079c6fbf26f3",
+          "bytes": 1252432
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 3400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 3400,
+            "endMs": 5400,
+            "text": "风正好，试试吧。",
+            "speaker": "father",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "风正好，试试吧。"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 5400,
+            "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 1695,
+      "word": "partisan",
+      "coreMeaningZh": "偏袒一方的；党派支持者",
+      "unit": 33,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 130,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 10000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "speaker": "boy",
+          "text": "也看看我们的吧。",
+          "displayLines": [
+            "也看看我们的吧。"
+          ]
+        },
+        "alt": "两件同样完整的城堡模型摆在评委面前。评委未比较作品，便把奖牌交给同戴蓝色队徽的女孩。橙色队徽男孩示意自己的作品，评委仍转向女孩。",
+        "video": {
+          "url": "story-media/1695-e72ddcbee4441606371e30ff230b95b9b2f89300c3311a54c9828a0bd6366803.mp4",
+          "sha256": "e72ddcbee4441606371e30ff230b95b9b2f89300c3311a54c9828a0bd6366803",
+          "bytes": 875416
+        },
+        "poster": {
+          "url": "story-media/1695-75df7204df747379b5cb7a4ca4dc7df3777afa69581bcc7bf7d8717f1b5a1dcf.png",
+          "sha256": "75df7204df747379b5cb7a4ca4dc7df3777afa69581bcc7bf7d8717f1b5a1dcf",
+          "bytes": 1147413
+        },
+        "staticPoster": {
+          "url": "story-media/1695-7b4216797b8a2bfe434fdb7e936a5bf69bce8eb20694d95d2d5d2216906e531c.png",
+          "sha256": "7b4216797b8a2bfe434fdb7e936a5bf69bce8eb20694d95d2d5d2216906e531c",
+          "bytes": 1167041
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 400,
+            "endMs": 4400,
+            "text": "我们队拿奖。",
+            "speaker": "judge",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我们队拿奖。"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 4400,
+            "endMs": 4600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 4600,
+            "endMs": 9500,
+            "text": "也看看我们的吧。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "也看看我们的吧。"
+            ]
+          },
+          {
+            "id": "stage-4",
+            "startMs": 9500,
+            "endMs": 10000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 654,
+      "word": "discretionary",
+      "coreMeaningZh": "可酌情决定的；可自行支配的",
+      "unit": 34,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 131,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 12000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "speaker": "librarian",
+          "text": "这次由我决定，不收费用。"
+        },
+        "alt": "男孩放下损坏的书，管理员检查并听他解释，然后由自己决定免收这次费用，把费用卡放到一旁的托盘里。",
+        "video": {
+          "url": "story-media/654-dce15df9b72ee301786345f5d08ba32a2d62880127cc1e588ffb436ee3ecae96.mp4",
+          "sha256": "dce15df9b72ee301786345f5d08ba32a2d62880127cc1e588ffb436ee3ecae96",
+          "bytes": 1676452
+        },
+        "poster": {
+          "url": "story-media/654-0734cb912f1c417db2f5d186c0576625bc896dca75cba5dd8735f09fc69a0d18.png",
+          "sha256": "0734cb912f1c417db2f5d186c0576625bc896dca75cba5dd8735f09fc69a0d18",
+          "bytes": 1224569
+        },
+        "staticPoster": {
+          "url": "story-media/654-b702d4ac39baeba9629e715906c7ab294c5866f9b8b5140e5d48c4d45adca7b1.png",
+          "sha256": "b702d4ac39baeba9629e715906c7ab294c5866f9b8b5140e5d48c4d45adca7b1",
+          "bytes": 1249825
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 6200,
+            "endMs": 11000,
+            "text": "这次由我决定，不收费用。",
+            "speaker": "librarian",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这次由我决定，不收费用。"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 11000,
+            "endMs": 12000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 1082,
+      "word": "hallow",
+      "coreMeaningZh": "极其崇敬；使神圣",
+      "unit": 34,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 132,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": null,
+        "alt": "男孩双手将花环轻放在纪念碑台座上，松手后垂首肃立，表达深切敬意。",
+        "video": {
+          "url": "story-media/1082-4a8d8a6f635ac26bd9fb1d558cb0a6f1faa3c29a478b01a6b0d3df0d58e06a2a.mp4",
+          "sha256": "4a8d8a6f635ac26bd9fb1d558cb0a6f1faa3c29a478b01a6b0d3df0d58e06a2a",
+          "bytes": 883081
+        },
+        "poster": {
+          "url": "story-media/1082-f4522ddac4f64532996215b7fb70ea28acf880b811a059d91c102eb6629c6a29.png",
+          "sha256": "f4522ddac4f64532996215b7fb70ea28acf880b811a059d91c102eb6629c6a29",
+          "bytes": 1252342
+        },
+        "staticPoster": {
+          "url": "story-media/1082-79ec8d33f56a3ad05dd81277e193f7382a816e357afbb86b2e7dd1cddd819b98.png",
+          "sha256": "79ec8d33f56a3ad05dd81277e193f7382a816e357afbb86b2e7dd1cddd819b98",
+          "bytes": 1294633
+        }
+      }
+    },
+    {
+      "number": 1890,
+      "word": "protean",
+      "coreMeaningZh": "变化多端的；能呈现多种面貌的；多才多艺的",
+      "unit": 34,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 133,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 10000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": null,
+        "alt": "同一个男孩先滑稽地扮演小丑，取下帽子放到桌上，再拿起王冠戴上，以庄重的神态和姿势扮演国王，表现出多变的表演能力。",
+        "video": {
+          "url": "story-media/1890-766cba856a2a4119f57077901fdf47816224c32b42eac899351b8d7dc5b854ad.mp4",
+          "sha256": "766cba856a2a4119f57077901fdf47816224c32b42eac899351b8d7dc5b854ad",
+          "bytes": 1493370
+        },
+        "poster": {
+          "url": "story-media/1890-1b299e646cfac235e672e9a235629c7166c807058898902a84888bb3b7201757.png",
+          "sha256": "1b299e646cfac235e672e9a235629c7166c807058898902a84888bb3b7201757",
+          "bytes": 1221861
+        },
+        "staticPoster": {
+          "url": "story-media/1890-690230615e72a31b5c10ba08a06f2ec845fc70d295c03e8baff7da11ea757a30.png",
+          "sha256": "690230615e72a31b5c10ba08a06f2ec845fc70d295c03e8baff7da11ea757a30",
+          "bytes": 1228699
+        }
+      }
+    },
+    {
+      "number": 2719,
+      "word": "analogous",
+      "coreMeaningZh": "在某些方面相似的；可类比的",
+      "unit": 34,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 134,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 10000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "speaker": "boy",
+          "text": "样子不同，都能提醒人。"
+        },
+        "alt": "男孩先按响固定在车把支架上的自行车铃，再摇响手铃，同学依次看向两个铃。两个铃外形不同，都能提醒人注意。",
+        "video": {
+          "url": "story-media/2719-3cf24bd190be0d4a871b01ed327fdbf5f0da355e89d58d8a235bcf3feecb892a.mp4",
+          "sha256": "3cf24bd190be0d4a871b01ed327fdbf5f0da355e89d58d8a235bcf3feecb892a",
+          "bytes": 1068799
+        },
+        "poster": {
+          "url": "story-media/2719-2f0ebff323604b6438290e02e93f15e9061d78d04e0c6819c083d111b58f93e4.png",
+          "sha256": "2f0ebff323604b6438290e02e93f15e9061d78d04e0c6819c083d111b58f93e4",
+          "bytes": 1125135
+        },
+        "staticPoster": {
+          "url": "story-media/2719-e73004bbd9f9e970c33de9c0ae5c0913f39f0ff91f867dc37d324a5a6c36ddf9.png",
+          "sha256": "e73004bbd9f9e970c33de9c0ae5c0913f39f0ff91f867dc37d324a5a6c36ddf9",
+          "bytes": 1156601
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 5400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 5400,
+            "endMs": 8800,
+            "text": "样子不同，都能提醒人。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "样子不同，都能提醒人。"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 8800,
+            "endMs": 10000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 1878,
+      "word": "prophetic",
+      "coreMeaningZh": "有预见性的；预示后来之事的；先知的",
+      "unit": 34,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 135,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 10000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "野餐时男孩先说快下雨了，解开伞带并撑开雨伞。随后雨落下来，印证了他先前的预言。",
+        "video": {
+          "url": "story-media/1878-9710be81973016efd9d97989a90cdb2b359d8609f3f364b8b59240f477215f45.mp4",
+          "sha256": "9710be81973016efd9d97989a90cdb2b359d8609f3f364b8b59240f477215f45",
+          "bytes": 1340380
+        },
+        "poster": {
+          "url": "story-media/1878-433d6912e1d654d2c2d3a7fcbaacb5e212d3e99707948e11d94e77728d8abe88.png",
+          "sha256": "433d6912e1d654d2c2d3a7fcbaacb5e212d3e99707948e11d94e77728d8abe88",
+          "bytes": 1184468
+        },
+        "staticPoster": {
+          "url": "story-media/1878-9188e7e2585a10ebb0382cec270a32c3eef5dfc31d7a223a935d3985e64b4707.png",
+          "sha256": "9188e7e2585a10ebb0382cec270a32c3eef5dfc31d7a223a935d3985e64b4707",
+          "bytes": 1305160
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 2000,
+            "text": "快下雨了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "快下雨了。"
+            ]
+          },
+          {
+            "id": "stage-1",
+            "startMs": 2000,
+            "endMs": 10000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 48,
+      "word": "acumen",
+      "coreMeaningZh": "敏锐的判断力；精明",
+      "unit": 35,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 136,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 7120.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": null,
+        "alt": "Sharp practical judgment: notice emerging customer need and make relevant stock accessible",
+        "video": {
+          "url": "story-media/48-9eaa1de8d4587686a5cdb5720efd9e0e17cfddd898f2fa4aeaf6c1e01afd8093.mp4",
+          "sha256": "9eaa1de8d4587686a5cdb5720efd9e0e17cfddd898f2fa4aeaf6c1e01afd8093",
+          "bytes": 1149787
+        },
+        "poster": {
+          "url": "story-media/48-c6940b4d1a478db812e276a3dc068da97a05fa776d3f457f476029e6728fa53a.png",
+          "sha256": "c6940b4d1a478db812e276a3dc068da97a05fa776d3f457f476029e6728fa53a",
+          "bytes": 1217794
+        },
+        "staticPoster": {
+          "url": "story-media/48-354c7373356c639f5d06a3945adb4670bbc9ad08ab05e5278f5e8fdb4180fc6e.png",
+          "sha256": "354c7373356c639f5d06a3945adb4670bbc9ad08ab05e5278f5e8fdb4180fc6e",
+          "bytes": 1273022
+        }
+      }
+    },
+    {
+      "number": 2947,
+      "word": "novice",
+      "coreMeaningZh": "新手，初学者；见习修士或修女",
+      "unit": 35,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 137,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 10000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩第一次做陶器，用力一挤，泥坯就矮塌变形了。他停下来，看老师示范怎样轻轻托住泥壁，再小心地试一次：novice 是刚入门、还缺经验的新手。",
+        "video": {
+          "url": "story-media/2947-c2daf96d3650e9d0d6632d79d6440bb4b6a530777d952cb37093a3cc19375c23.mp4",
+          "sha256": "c2daf96d3650e9d0d6632d79d6440bb4b6a530777d952cb37093a3cc19375c23",
+          "bytes": 1156093
+        },
+        "poster": {
+          "url": "story-media/2947-ca55ffd45c7ddbd67a5b715a0a86544c6bc388a95dddc57c0857ac28fd8836ea.png",
+          "sha256": "ca55ffd45c7ddbd67a5b715a0a86544c6bc388a95dddc57c0857ac28fd8836ea",
+          "bytes": 1148439
+        },
+        "staticPoster": {
+          "url": "story-media/2947-17a66d0de2039efb9763af02987a98edd0ee6795d4776a3e34e18c38dd1ad048.png",
+          "sha256": "17a66d0de2039efb9763af02987a98edd0ee6795d4776a3e34e18c38dd1ad048",
+          "bytes": 1167309
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 2200,
+            "text": "我第一次做陶艺。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我第一次做陶艺。"
+            ]
+          },
+          {
+            "id": "stage-1",
+            "startMs": 2200,
+            "endMs": 3400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 3400,
+            "endMs": 5800,
+            "text": "轻轻扶着，慢慢来。",
+            "speaker": "teacher",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "轻轻扶着，慢慢来。"
+            ]
+          },
+          {
+            "id": "stage-3",
+            "startMs": 5800,
+            "endMs": 10000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 1465,
+      "word": "maverick",
+      "coreMeaningZh": "特立独行的人；不循常规的",
+      "unit": 35,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 138,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 9000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "speaker": "boy",
+          "textZh": "我想试试宽一点的机翼。",
+          "start": 2.08,
+          "end": 5.84,
+          "text": "我想试试宽一点的机翼。"
+        },
+        "alt": "女孩展示常规窄翼纸飞机，男孩选择自己折宽翼飞机，拿起后松手短暂滑翔，体现不循常规的独立选择。",
+        "video": {
+          "url": "story-media/1465-cdcf9cf2c2fdcc9e0a602d2280900e5404e8e1acdaf68961641fab9304d9443c.mp4",
+          "sha256": "cdcf9cf2c2fdcc9e0a602d2280900e5404e8e1acdaf68961641fab9304d9443c",
+          "bytes": 1154544
+        },
+        "poster": {
+          "url": "story-media/1465-709743f3132e06b135f09cf67c69f32bff0040e71bacd02bfea2782a88daac2c.png",
+          "sha256": "709743f3132e06b135f09cf67c69f32bff0040e71bacd02bfea2782a88daac2c",
+          "bytes": 1184738
+        },
+        "staticPoster": {
+          "url": "story-media/1465-7891971d42f23144ebda31f2de113469e3ec17c5649921aa577c3fdc8cb983b1.png",
+          "sha256": "7891971d42f23144ebda31f2de113469e3ec17c5649921aa577c3fdc8cb983b1",
+          "bytes": 1250654
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 160,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 160,
+            "endMs": 1920,
+            "text": "大家都照这个样子折。",
+            "speaker": "girl",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "大家都照这个样子折。"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 1920,
+            "endMs": 2080,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 2080,
+            "endMs": 5840,
+            "text": "我想试试宽一点的机翼。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我想试试宽一点的机翼。"
+            ]
+          },
+          {
+            "id": "stage-4",
+            "startMs": 5840,
+            "endMs": 9000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 1457,
+      "word": "martinet",
+      "coreMeaningZh": "死守规章、要求绝对服从的人",
+      "unit": 35,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 139,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "speaker": "teacher",
+          "text": "不行，谱架必须在线内。"
+        },
+        "alt": "老师为谱架没有完全对准地面标线而阻止练习；男孩双手挪好谱架，再松手等待。",
+        "video": {
+          "url": "story-media/1457-0e606f5eda7135968f05e5b455f64a964c6222b061d8d34f42df66536e71c46e.mp4",
+          "sha256": "0e606f5eda7135968f05e5b455f64a964c6222b061d8d34f42df66536e71c46e",
+          "bytes": 657352
+        },
+        "poster": {
+          "url": "story-media/1457-d119b7a6ec761d9b35b8fd8d5cf7feb53ec5eacec7d4a6349bef826b0578b783.png",
+          "sha256": "d119b7a6ec761d9b35b8fd8d5cf7feb53ec5eacec7d4a6349bef826b0578b783",
+          "bytes": 1148525
+        },
+        "staticPoster": {
+          "url": "story-media/1457-0de7244238a4a6546fea41320fc25d87f74a75ddcc9d0db2483a38cf3cb5ea0a.png",
+          "sha256": "0de7244238a4a6546fea41320fc25d87f74a75ddcc9d0db2483a38cf3cb5ea0a",
+          "bytes": 1138930
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 1900,
+            "text": "现在可以练了吗？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "现在可以练了吗？"
+            ]
+          },
+          {
+            "id": "stage-1",
+            "startMs": 1900,
+            "endMs": 2000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-2",
+            "startMs": 2000,
+            "endMs": 5600,
+            "text": "不行，谱架必须在线内。",
+            "speaker": "teacher",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "不行，谱架必须在线内。"
+            ]
+          },
+          {
+            "id": "stage-3",
+            "startMs": 5600,
+            "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
+      }
+    },
+    {
+      "number": 2694,
+      "word": "zealot",
+      "coreMeaningZh": "狂热分子；极端热衷于某主张的人",
+      "unit": 35,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 140,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 8000.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "speaker": "boy",
+          "text": "不用讨论，只能全用红色！",
+          "textZh": "不用讨论，只能全用红色！"
+        },
+        "alt": "女孩提出多色设计，男孩拒绝考虑其他方案，把红色卡片推向她并坚持只能使用红色。",
+        "video": {
+          "url": "story-media/2694-bc3121076ba482a1f91252eff03d353f21b328a07ec13f32d2f7c387600830c3.mp4",
+          "sha256": "bc3121076ba482a1f91252eff03d353f21b328a07ec13f32d2f7c387600830c3",
+          "bytes": 770817
+        },
+        "poster": {
+          "url": "story-media/2694-e8a6bad8bd7c1c723301df866919f498ff3c8cd1bc35574b4706f94bbba3d335.png",
+          "sha256": "e8a6bad8bd7c1c723301df866919f498ff3c8cd1bc35574b4706f94bbba3d335",
+          "bytes": 1191312
+        },
+        "staticPoster": {
+          "url": "story-media/2694-aac2684522472d4c5864e27ca68c0bea262a88b195183a26f9209d8e4a9cddcb.png",
+          "sha256": "aac2684522472d4c5864e27ca68c0bea262a88b195183a26f9209d8e4a9cddcb",
+          "bytes": 1222158
+        },
+        "stages": [
+          {
+            "id": "stage-0",
+            "startMs": 0,
+            "endMs": 240,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-1",
+            "startMs": 240,
+            "endMs": 2000,
+            "text": "也听听其他人的方案吧。",
+            "speaker": "girl",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "也听听其他人的方案吧。"
+            ]
+          },
+          {
+            "id": "stage-2",
+            "startMs": 2000,
+            "endMs": 3400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          },
+          {
+            "id": "stage-3",
+            "startMs": 3400,
+            "endMs": 7600,
+            "text": "不用讨论，只能全用红色！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "不用讨论，只能全用红色！"
+            ]
+          },
+          {
+            "id": "stage-4",
+            "startMs": 7600,
+            "endMs": 8000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            }
+          }
+        ]
       }
     }
   ],

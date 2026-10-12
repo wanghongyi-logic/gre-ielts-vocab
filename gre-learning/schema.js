@@ -4,7 +4,7 @@ export const SCHEMA_VERSION = 3;
 const reviewedSingleMethods = {"175":{"word":"avarice","mnemonic":{"method":"拼写联想｜avaRICE，米仓满了还要抢","textZh":"抓住词尾 RICE（米）：米商的仓库已经塞满，他还把别人待售的米袋往怀里抢，眼里想的全是钱。米越囤越多，贪心没有尽头。这里借拼写记忆；词尾读 /rɪs/。","original":false,"kind":"invented_association"}},"176":{"word":"aver","mnemonic":{"method":"熟词联想｜VERy sure，aVER","textZh":"very 和 aver 同出表示“真实”的词根。借 very sure（非常肯定）记 aVER：别人再三追问，他依然直视对方说“我确定，就是这样”——郑重断言。","original":false,"kind":"word_family"}}};
 const fields = {
   entry: ['number','word','ipa','pos','coreMeaningZh','coreEn','coreImageZh','mnemonics','usage','examples','equivalents'],
-  mnemonic: ['method','textZh','original','kind'],
+  mnemonic: ['method','textZh','original','kind','weak'],
   usage: ['senseZh','explanationZh','collocations'],
   collocation: ['phrase','meaningZh','usageZh'],
   example: ['textEn','translationZh','explanationZh'],
@@ -32,6 +32,7 @@ export function validateEntry(entry, baselineLesson) {
   if (entry.mnemonics.length > 3 || (!reviewedSingleMethod&&!entry.mnemonics.some(item => item.original === true))) throw new TypeError('Mnemonic count or attribution requirement not met');
   for (const item of entry.mnemonics) {
     shape(item, 'mnemonic'); required(item, ['method','textZh'], 'mnemonic');
+    if (Object.prototype.hasOwnProperty.call(item, 'weak') && typeof item.weak !== 'boolean') throw new TypeError('Invalid mnemonic weak flag');
     if (typeof item.original !== 'boolean' || !['invented_association','etymology','semantic_image','word_family','word_components','phrase_anchor'].includes(item.kind)) throw new TypeError('Invalid mnemonic attribution');
   }
   list(entry.usage, 'usage');

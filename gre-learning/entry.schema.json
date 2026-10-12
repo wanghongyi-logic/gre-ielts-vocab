@@ -59,6 +59,9 @@
               "word_components",
               "phrase_anchor"
             ]
+          },
+          "weak": {
+            "type": "boolean"
           }
         },
         "required": [

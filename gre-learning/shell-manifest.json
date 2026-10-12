@@ -1,5 +1,5 @@
 {
-  "build": "157",
+  "build": "158",
   "assets": [
     {
       "url": "index.html",
@@ -18,7 +18,7 @@
     },
     {
       "url": "gre-learning/update.js",
-      "sha256": "b3d9e65fdd11196e41be68238252c42c3cd4a4066a9b5404f4b8c7eafbcc0b7a",
+      "sha256": "3d69cc20bff62d2ef908f4190da171edce6e72b8608513d141b639e5ed30dbd7",
       "bytes": 2647
     },
     {
@@ -28,8 +28,8 @@
     },
     {
       "url": "gre-learning/catalog.json",
-      "sha256": "ec71ff5912db527d4f96639f80c9fa57c6b0f03b863a30abe277b3e376bedd3e",
-      "bytes": 326162
+      "sha256": "6f4a6f96271365fb8c37b5ba097afe5b18c83f88a4c453ebe5a18ddaa79dc1cc",
+      "bytes": 374987
     },
     {
       "url": "gre-learning/lesson-loader.js",
@@ -38,8 +38,8 @@
     },
     {
       "url": "gre-learning/schema.js",
-      "sha256": "54b7754ba4706802e4dbd5ba472c8405883543c7379c83f6ace232394dc369c3",
-      "bytes": 4701
+      "sha256": "fa7c6338a126e62094177b615e9453373541ac46899c505d4c6c24dc87923bb6",
+      "bytes": 4853
     },
     {
       "url": "gre-learning/render.js",
@@ -63,8 +63,8 @@
     },
     {
       "url": "gre-learning/view.js",
-      "sha256": "49d0a84ab7a888f6b36e6154759e3356d09f96a5eb7b771a95a312dab02c96c4",
-      "bytes": 7144
+      "sha256": "1aaa9e554d2a1b05dddec14466a5a0be9a0dd3975842c1f31da287f04774071e",
+      "bytes": 7248
     },
     {
       "url": "gre-learning/motion-tracks.js",
@@ -93,8 +93,8 @@
     },
     {
       "url": "gre-learning/storybook.css",
-      "sha256": "cd6b33419845defae0ac0defd1627d2ecd22662f1f8726002eee868dda5ba8a1",
-      "bytes": 36081
+      "sha256": "98cec8f194d4b874b22b82bc25be75e1a25a801e35138dcb7bb237561569cc33",
+      "bytes": 36297
     },
     {
       "url": "gre-learning/bookmark-navigation.js",

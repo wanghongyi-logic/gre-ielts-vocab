@@ -7,7 +7,7 @@ const legacyMethodKinds = new Set(["动作联想","同族联想","同源联想",
 function method(item){
  const [prefix,...rest]=item.method.split('｜');
  const title=legacyMethodKinds.has(prefix)&&rest.join('｜')?rest.join('｜'):item.method;
- return `<article class="mnemonic"><div class="mnemonic-heading"><div><h3>${escape(title)}</h3></div></div><p>${escape(item.textZh)}</p></article>`;
+ return `<article class="mnemonic">${item.weak === true ? '<span class="mnemonic-weak" aria-label="较弱的记忆方法">弱</span>' : ''}<div class="mnemonic-heading"><div><h3>${escape(title)}</h3></div></div><p>${escape(item.textZh)}</p></article>`;
 }
 const hasDisplayLines = stage => Array.isArray(stage?.displayLines)&&stage.displayLines.length>=1&&stage.displayLines.length<=2&&stage.displayLines.every(line=>typeof line==='string'&&line.length>0&&!/[\r\n]/.test(line));
 const displayText = stage => hasDisplayLines(stage)?stage.displayLines.join('\n'):stage.text;

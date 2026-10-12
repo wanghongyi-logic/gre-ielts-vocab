@@ -1,0 +1,359 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 2048,
+      "word": "repudiate",
+      "ipa": "/rɪˈpjuːdieɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "拒绝接受；否认；与……断绝关系",
+      "coreEn": "To reject something, deny its truth or validity, or refuse further association with someone.",
+      "coreImageZh": "班会上，有人拿着一张指控男孩作弊的纸。男孩坚决摇头，抬手示意不接受，并当众否认纸上的指控。重点是明确表态“不承认这个说法”。",
+      "mnemonics": [
+        {
+          "method": "rePUDiATE",
+          "textZh": "看到 rePUDiATE，抓住 PUD(ding) 和 ATE：布丁少了，大家问是谁吃的，他却坚决否认“不是我吃的！”由“否认吃了布丁”记住“否认、不承认”。这是拼写联想，pudding 的读音不能代替原词读音。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "REPUDI · 离谱的",
+          "textZh": "把 repudiate 中的 repudi- 近音联想为“离谱的”：他觉得指控“离谱”，当场坚决否认、不予接受。由此记住“否认；拒绝接受”。这是近音联想，不代替单词本身的发音。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "拒绝接受一种观点、说法或主张",
+          "explanationZh": "正式及物动词，直接接名词宾语。repudiate a claim 可表示否认说法的真实性；repudiate a policy 则是拒绝接受或支持政策。通常比日常的 say no 更郑重、明确。",
+          "collocations": [
+            {
+              "phrase": "repudiate a claim",
+              "meaningZh": "否认一项说法",
+              "usageZh": "表示不承认该说法是真的；动词本身不保证说话者已拿出反证。"
+            },
+            {
+              "phrase": "repudiate former beliefs",
+              "meaningZh": "公开放弃原先的信念",
+              "usageZh": "表示明确否定自己过去接受的信念；这是与 recant 最接近的语境。"
+            }
+          ]
+        },
+        {
+          "senseZh": "不再承认与某人的关系；拒绝承认义务",
+          "explanationZh": "宾语可以是人，也可以是合同或债务。接人时是与其划清界限；接债务时可指不承认偿还责任。不能把所有用法都理解成证明某件事错误。",
+          "collocations": [
+            {
+              "phrase": "repudiate somebody",
+              "meaningZh": "不再承认与某人的关系",
+              "usageZh": "常见于政党、组织或家庭拒绝再与某人保持关联的语境。"
+            },
+            {
+              "phrase": "repudiate a debt",
+              "meaningZh": "拒绝承认或偿付债务",
+              "usageZh": "侧重否认债务或偿付责任，比单纯晚付款更强。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He repudiated the allegation/charge/claim that he had tried to deceive them.",
+          "translationZh": "他否认了有关他曾企图欺骗他们的指控或说法。",
+          "explanationZh": "allegation、charge、claim 是词典给出的可替换宾语。repudiated 表示明确否认，并不自动表示已经证明指控为假。"
+        },
+        {
+          "textEn": "His party repudiated him after the scandal.",
+          "translationZh": "丑闻发生后，他所属的政党与他划清了界限。",
+          "explanationZh": "宾语是人，意思是不再承认与他的关系，而不是否认这个人存在。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "recant",
+          "comparisonZh": "两者都是正式动词，谈到公开放弃自己原先的信念时，recant/repudiate former beliefs 可以接近。recant 强调收回本人先前说过或相信的内容，既可及物也可不及物；repudiate 通常及物，还能否认别人的指控、拒绝某项政策或与某人断绝关系。这些用法不能一律换成 recant。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    },
+    {
+      "number": 354,
+      "word": "circumvent",
+      "ipa": "/ˌsɜːrkəmˈvent/",
+      "pos": "v.",
+      "coreMeaningZh": "绕过；设法规避（障碍、困难或规定）",
+      "coreEn": "To find a way around an obstacle, difficulty, or rule.",
+      "coreImageZh": "男孩抱着书走进图书馆，直通还书台的路被一辆装满书的推车挡住。他改走推车前方的空隙，绕过去抵达还书台；障碍没有消失，他找到了另一条路。",
+      "mnemonics": [
+        {
+          "method": "CIRCLE + WENT",
+          "textZh": "看到 circum 想到 circle（圆），看到 vent 联想 went（走了）：前面被挡住，就绕个弯走过去。由“绕过去”记“绕过、规避”。这是拼写联想，vent 仍读 /vent/，不要读成 went。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "circumVENT",
+          "textZh": "vent 是通风口；把 circum 想成 circle（绕圈）。想象电影里大门锁住了，主角钻进旁边的 vent，绕开门锁到达另一边。用“借通风口绕开阻挡”记 circumvent；这里借用的是 vent 的独立词义，不是词源拆解。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "设法绕过障碍，或规避规则与控制",
+          "explanationZh": "正式及物动词，直接接被绕过的对象。重点是另找办法避开阻碍，不一定把问题本身消除。规避规定的语境常带批评意味，但绕过实际困难也可以是中性的。",
+          "collocations": [
+            {
+              "phrase": "circumvent a restriction",
+              "meaningZh": "规避一项限制",
+              "usageZh": "通过另找途径，使这项限制不能约束当前做法。"
+            },
+            {
+              "phrase": "circumvent a problem",
+              "meaningZh": "设法绕开问题",
+              "usageZh": "强调采取替代办法，未必已经解决问题的根源。"
+            },
+            {
+              "phrase": "circumvent an obstacle",
+              "meaningZh": "绕过障碍",
+              "usageZh": "可指实际挡路的物体，也可指妨碍行动的抽象障碍。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Ships were registered abroad to circumvent employment and safety regulations.",
+          "translationZh": "船只在国外登记注册，以规避雇佣和安全方面的规定。",
+          "explanationZh": "改变注册地点来避开规定，呈现“设法规避”的用法；句子本身不说明这种安排是否合法。"
+        },
+        {
+          "textEn": "They found a way of circumventing the law.",
+          "translationZh": "他们找到了规避法律的办法。",
+          "explanationZh": "a way of + 动名词表示一种办法；circumventing 直接接 the law。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "bypass",
+          "comparisonZh": "两者都是及物动词，在 circumvent/bypass a restriction 中都可表示绕过限制。bypass 还常指跳过一道程序或某个负责人，侧重不经过；circumvent 较正式，更突出设法避开障碍。这里不比较 bypass 的道路或手术名词义。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "sidestep",
+          "comparisonZh": "circumvent/sidestep a problem 都可表示回避问题，均直接接宾语。sidestep 更常用于不回答问题、不承担责任，未必找到了可行办法；circumvent 更常让人想到另寻途径。sidestep 也能不及物地表示侧身躲开，这种句法不能直接照搬给 circumvent。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "skirt",
+          "comparisonZh": "说绕开一片挡路的区域时，circumvent/skirt the forest 可以接近；skirt 更强调沿边缘经过。skirt 还常表示避谈难堪的话题，可用 skirt around a subject；circumvent 通常直接接对象。这里比较 skirt 的动词义，不能把所有“规避规定”的用法都换成 skirt。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    },
+    {
+      "number": 352,
+      "word": "circumscribe",
+      "ipa": "/ˈsɜːrkəmskraɪb/",
+      "pos": "v.",
+      "coreMeaningZh": "限制，限定；在……周围画线",
+      "coreEn": "To set bounds on something, especially to restrict freedom, power, or scope.",
+      "coreImageZh": "男孩在一张大纸上规划花圃，原本想把花种满整片院子。女孩用红笔圈出门口的一小块区域，男孩只好把花苗图标收进圈内；计划的范围被明确限制住。",
+      "mnemonics": [
+        {
+          "method": "circum + SCRIBE",
+          "textZh": "circum 表示“围绕”，scribe 对应“写、划线”，可以用熟悉的 describe 帮助认出 scribe。沿四周画出一条线，活动就被圈在界内，由此记“限制、限定”。这是词源记忆：来自表示“围绕”的 circum 和表示“写”的拉丁语 scribere。",
+          "original": false,
+          "kind": "etymology"
+        },
+        {
+          "method": "CIRCUS + SCRIPT",
+          "textZh": "把 circumscribe 近形联想为 circus（马戏团）+ script（剧本）。想象导演要求小丑完全按剧本表演，不许即兴，发挥空间被“限制”住。它们只是拼写相似，不是词源拆分。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "把权力、自由或活动范围限制在一定界限内",
+          "explanationZh": "正式及物动词，常用被动形式 be circumscribed by + 限制因素。通常强调可活动的范围受到约束，而不是简单减少一点数量。另有“在周围画线”的本义及几何学中的外接用法。",
+          "collocations": [
+            {
+              "phrase": "circumscribe someone’s powers",
+              "meaningZh": "限制某人的权力",
+              "usageZh": "划定其可以行使权力的边界，常见于制度与权限语境。"
+            },
+            {
+              "phrase": "be circumscribed by rules",
+              "meaningZh": "受到规则限制",
+              "usageZh": "by 后指出造成限制的因素。"
+            },
+            {
+              "phrase": "circumscribe the scope of an inquiry",
+              "meaningZh": "限定调查的范围",
+              "usageZh": "规定哪些问题属于调查范围，哪些不在范围内。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The power of the monarchy was circumscribed by the new law.",
+          "translationZh": "新法律限制了君主制的权力。",
+          "explanationZh": "被动结构说明权力受到约束，by 引出施加限制的新法律。"
+        },
+        {
+          "textEn": "Their plans were circumscribed by a lack of money.",
+          "translationZh": "资金不足限制了他们的计划。",
+          "explanationZh": "限制因素也可以是现实条件；这里是资金不足压缩了计划能够实施的范围。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "confine",
+          "comparisonZh": "两者都是及物动词，均可表达把活动限制在一定范围内。circumscribe the scope of a discussion 强调划定讨论边界；confine the discussion to one topic 则常用 to 明说限定范围。confine 还可指把人关在某处，这种具体的拘禁义不能一概换成 circumscribe。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "limit",
+          "comparisonZh": "在 circumscribe/limit someone’s power 中都表示限制权力。limit 更常用、范围更广，也可单纯控制数量或程度；circumscribe 较正式，突出划界、约束活动范围。日常说 limit spending 时，换成 circumscribe 会显得生硬，也容易把重点转为开支范围。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    },
+    {
+      "number": 1880,
+      "word": "propitious",
+      "ipa": "/prəˈpɪʃəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "有利的；吉利的，预示成功的",
+      "coreEn": "Likely to help something succeed, or suggesting a good result.",
+      "coreImageZh": "雨后，男孩抱着风筝等待。父亲伸手感受轻稳的风，点头示意；男孩这才举起风筝准备放飞。天气提供了有利条件，事情有望顺利，但还没有保证成功。",
+      "mnemonics": [
+        {
+          "method": "PROFIT US",
+          "textZh": "把 propitious 近音联想到 profit us（使我们获益）：市场条件正好，生意有希望给我们带来收益。用“有望获益”记“有利于成功的”，不等于已经赚到钱。近音联想不改变原词读音 /prəˈpɪʃəs/。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "PRO PITCHES",
+          "textZh": "把 propitious 近音联想成 PRO PITCHES：pro（专业选手）为我们队 pitches（投球），高手助阵，赢球的条件更有利。由“高手投球，有利于赢”记“有利的”；这只是近音联想。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "时机或条件有利于取得好结果",
+          "explanationZh": "正式用语，常修饰 time、moment、conditions、circumstances，也可用 propitious for + 名词。强调有希望、有利条件，不保证结果一定成功。",
+          "collocations": [
+            {
+              "phrase": "a propitious time",
+              "meaningZh": "有利的时机",
+              "usageZh": "后接 to do something，说明适合开始哪件事。"
+            },
+            {
+              "phrase": "propitious conditions",
+              "meaningZh": "有利的条件",
+              "usageZh": "条件使计划更有希望成功，不能直接等同于实际成功。"
+            },
+            {
+              "phrase": "propitious for a strike",
+              "meaningZh": "有利于罢工的",
+              "usageZh": "for 引出哪项行动受益。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "With the economy in recession, it was not a propitious time to start a company.",
+          "translationZh": "经济处于衰退期，当时并不是创办公司的有利时机。",
+          "explanationZh": "not a propitious time 指外部经济条件不利，并非创业者缺乏乐观。"
+        },
+        {
+          "textEn": "Circumstances could hardly have been less propitious for a strike.",
+          "translationZh": "当时的形势对罢工几乎再不利不过了。",
+          "explanationZh": "could hardly have been less 强调条件极为不利；for 引出行动。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "auspicious",
+          "comparisonZh": "两者可在 an auspicious/propitious start 中表示开端有望成功。auspicious 常突出好兆头；propitious 也常强调使行动更容易成功的实际条件。这只是侧重点：两者意义有重叠，都不保证成功。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    },
+    {
+      "number": 1695,
+      "word": "partisan",
+      "ipa": "/ˌpɑːtɪˈzæn/",
+      "pos": "adj.; n.",
+      "coreMeaningZh": "偏袒一方的；党派支持者",
+      "coreEn": "Strongly supporting one side, often at the expense of fair judgment.",
+      "coreImageZh": "两队同时把作品交给评委。评委没仔细看，就把奖牌递给和自己戴同色队徽的孩子；另一队伸手指着作品，评委却转开目光。",
+      "mnemonics": [
+        {
+          "method": "PARTI + 赞",
+          "textZh": "把 partisan 近音联想为 party（党派、队伍）＋“赞”：只要是自己这队的就点赞，对方再有道理也不听。由“只赞自己一方”记“偏袒一方的”。这是近音联想，原词仍读 /ˌpɑːtɪˈzæn/。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "PARTISAN / PARTIAL",
+          "textZh": "看到 partisan，联想到开头同样是 PARTI 的 partial。partial 有“偏袒的”意思；partisan 则让人想到先站定一方、替自己人说话。把两个整词一起记：偏心是 partial，偏向一个阵营是 partisan；不要套用 partial 的“部分的”义。",
+          "original": true,
+          "kind": "word_family"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "强烈支持某一方，常带偏袒意味",
+          "explanationZh": "形容词可修饰政治立场，也可形容观众、评论或评判。常含批评，强调立场先行；并非每次都表示彻底不理性。名词 a partisan 可指坚定支持某方的人，另有游击队员义，不与偏见义混为一谈。",
+          "collocations": [
+            {
+              "phrase": "partisan politics",
+              "meaningZh": "党派政治",
+              "usageZh": "强调依党派立场行事，可暗含派系利益重于共同利益。"
+            },
+            {
+              "phrase": "partisan views",
+              "meaningZh": "偏袒一方的观点",
+              "usageZh": "views 受所属阵营影响。"
+            },
+            {
+              "phrase": "a partisan crowd",
+              "meaningZh": "明显支持一方的人群",
+              "usageZh": "不局限于正式政党，可用于比赛等场景。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Most newspapers are politically partisan.",
+          "translationZh": "大多数报纸在政治上都有明显的党派倾向。",
+          "explanationZh": "politically 限定倾向的领域；不是说报纸每条信息都必然错误。"
+        },
+        {
+          "textEn": "The audience was very partisan, and refused to listen to her speech.",
+          "translationZh": "观众明显偏向另一方，拒绝听她演讲。",
+          "explanationZh": "拒绝聆听体现出立场先行，超出单纯“有自己的观点”。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "biased",
+          "comparisonZh": "partisan/biased reporting 都可指偏向一方的报道。partisan 突出对某阵营、人物或事业的忠诚；biased 泛指判断不公，也可说 biased sample（有偏样本），此处不能换成 partisan。biased 还常接 against 或 in favour of，不能把同一补语机械移到 partisan 后。"
+        },
+        {
+          "word": "one-sided",
+          "comparisonZh": "a partisan/one-sided account 都可能只呈现一方立场。one-sided 也可形容比赛实力悬殊，未必有党派忠诚；这种语境不能直接换 partisan。这里比较的都是形容词义。"
+        }
+      ]
+    }
+  ]
+}

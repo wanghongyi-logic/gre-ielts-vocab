@@ -227,3 +227,5 @@ body{width:calc(100% - var(--bookmark-gutter));padding:0;background:var(--paper)
 
 /* Candidate153: only explicit authored native lines opt into this two-line treatment. */
 .story-dialogue[data-story-display-lines="true"]{white-space:pre-line;font-size:14px;line-height:18px;padding:4px 10px;text-align:center;width:max-content;max-width:calc(100% - 16px)}
+
+.mnemonic-weak{display:table;margin:0 0 5px;padding:1px 5px;border:1px solid var(--rule);border-radius:3px;color:var(--terra);font-family:var(--sans);font-size:11px;font-weight:400;line-height:1.5;letter-spacing:0}
