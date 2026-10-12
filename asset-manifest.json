@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "166-offline200-v24",
-  "generatedAt": "2026-10-12T19:35:39.589398+00:00",
+  "releaseBuild": "166-offline200-v25",
+  "generatedAt": "2026-10-12T19:53:32.111294+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-reviewed-order",
@@ -737,7 +737,7 @@
       "path": "gre-learning/update.js",
       "loading": "shell",
       "bytes": 6372,
-      "sha256": "95617726e8d33f7f92fee85f94e6a8fe7aa3cadce2d432e271efc911f777c037",
+      "sha256": "96a553a873e411e4b58d0a93a5235be6e09ca5ab9d3f6a803cd0b253e5d27d1f",
       "gzipBytes": 2257
     },
     {
@@ -968,7 +968,7 @@
       "path": "gre-learning/offline-preferences.js",
       "loading": "shell",
       "bytes": 1103,
-      "sha256": "4a48773484d931a33d988466c1e8dfab97d2df90298576c226f6a0b62b76ad8b",
+      "sha256": "c61a06bf6e2e357e163fa48d66a785abda38b396701fe285d0192f2d52bf63a6",
       "gzipBytes": 534
     },
     {
@@ -1394,9 +1394,9 @@
     {
       "path": "gre-learning/botanical-margin.css",
       "loading": "shell",
-      "bytes": 11858,
-      "sha256": "3ea04411df7e5e87ff677430b0a77710091c363cd37f6448ad74c186c7ddbcb9",
-      "gzipBytes": 2890
+      "bytes": 12661,
+      "sha256": "00f27b2e64ff7e92fb93d3fff4645b41fdf8e972fa50658afbbaa04963aae367",
+      "gzipBytes": 3131
     },
     {
       "path": "gre-learning/botanical-vine.webp",
@@ -1428,8 +1428,8 @@
     }
   ],
   "totals": {
-    "bytes": 35126693,
-    "gzipBytes": 33579611
+    "bytes": 35127496,
+    "gzipBytes": 33579852
   },
   "retainedHistoricalAssets": 212,
   "availableTextLessons": 210,
