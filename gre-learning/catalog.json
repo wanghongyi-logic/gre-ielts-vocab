@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "164",
-  "authoredCount": 190,
-  "publishedCount": 190,
+  "release": "165",
+  "authoredCount": 200,
+  "publishedCount": 200,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -197,7 +197,17 @@
       1151,
       3031,
       1445,
-      824
+      824,
+      2137,
+      1,
+      1471,
+      1059,
+      3062,
+      820,
+      27,
+      2024,
+      800,
+      1744
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -437,6 +447,16 @@
       "url": "units/core035-text-candidate-c6e690c7fc86a52e496aba124fff14c08efddce91b2c185a8032d39a3f5d9cc8.json",
       "sha256": "c6e690c7fc86a52e496aba124fff14c08efddce91b2c185a8032d39a3f5d9cc8",
       "bytes": 16988
+    },
+    {
+      "url": "units/core036-text-candidate-8b837868a59c4b8124440fa15f9df87b68f5b53f3d51051947a4dd04b3f23ba1.json",
+      "sha256": "8b837868a59c4b8124440fa15f9df87b68f5b53f3d51051947a4dd04b3f23ba1",
+      "bytes": 22564
+    },
+    {
+      "url": "units/core037-text-candidate-df4897e58ede9f46a6cb7028d0e1345260f47571dd3e3f70907b067c567f25cc.json",
+      "sha256": "df4897e58ede9f46a6cb7028d0e1345260f47571dd3e3f70907b067c567f25cc",
+      "bytes": 18247
     }
   ],
   "entries": [
@@ -15657,6 +15677,778 @@
           "url": "story-media/824-staticPoster-c0a6bfdd238061097417683753141897215dd3a1d430015b6fb17fa88f8452d2.png",
           "sha256": "c0a6bfdd238061097417683753141897215dd3a1d430015b6fb17fa88f8452d2",
           "bytes": 1260035
+        }
+      }
+    },
+    {
+      "number": 2137,
+      "word": "sanction",
+      "coreMeaningZh": "正式批准、许可；制裁、处罚",
+      "unit": 46,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 191,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "管理员：批准了，可以开始。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "管理员：批准了，可以开始。"
+          ]
+        },
+        "alt": "男孩申请使用花圃；管理员在图纸上盖章，再点头表示批准。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2800,
+            "endMs": 6000,
+            "text": "批准了，可以开始。",
+            "speaker": "keeper",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "批准了，可以开始。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/2137-video-fdd0b52f7b46a81f817155a0c7e2048f826f2f42ee5534a68743fe6ce3c117ad.mp4",
+          "sha256": "fdd0b52f7b46a81f817155a0c7e2048f826f2f42ee5534a68743fe6ce3c117ad",
+          "bytes": 736289
+        },
+        "poster": {
+          "url": "story-media/2137-poster-1f94bb3ae1fe2561818ad2cc17dbd30c7b7d4f367d810dad3ffd2f1558ac54c7.png",
+          "sha256": "1f94bb3ae1fe2561818ad2cc17dbd30c7b7d4f367d810dad3ffd2f1558ac54c7",
+          "bytes": 1306537
+        },
+        "staticPoster": {
+          "url": "story-media/2137-staticPoster-d11cf8067cfe3e9934852f12418bde96e9081a029a906e3241f829e6bb78dae1.png",
+          "sha256": "d11cf8067cfe3e9934852f12418bde96e9081a029a906e3241f829e6bb78dae1",
+          "bytes": 1305042
+        }
+      }
+    },
+    {
+      "number": 1,
+      "word": "abandon",
+      "coreMeaningZh": "抛弃；放弃；纵情、放纵",
+      "unit": 46,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 192,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩放下没做完的木船模型，松开双手，转身迈步离开，把未完成的作品留在工作台上。",
+        "video": {
+          "url": "story-media/1-video-dfca19def7dfe9fd7aaa3abaadea1f119d230c69bd4e225fadab6120fec97f26.mp4",
+          "sha256": "dfca19def7dfe9fd7aaa3abaadea1f119d230c69bd4e225fadab6120fec97f26",
+          "bytes": 871042
+        },
+        "poster": {
+          "url": "story-media/1-poster-a33ed62c435b4cf0451ce4c6a32f26b0387f2240cb8add52bc86eeb106afcf8b.png",
+          "sha256": "a33ed62c435b4cf0451ce4c6a32f26b0387f2240cb8add52bc86eeb106afcf8b",
+          "bytes": 1249498
+        },
+        "staticPoster": {
+          "url": "story-media/1-staticPoster-12698022bac07a0ba0ecda878895439f9d5405494590e855391277abf6596dbc.png",
+          "sha256": "12698022bac07a0ba0ecda878895439f9d5405494590e855391277abf6596dbc",
+          "bytes": 1275260
+        }
+      }
+    },
+    {
+      "number": 1471,
+      "word": "measured",
+      "coreMeaningZh": "慎重、有分寸的；缓慢而稳当的",
+      "unit": 46,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 193,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "男孩：我们先把事情弄清楚。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "男孩：我们先把事情弄清楚。"
+          ]
+        },
+        "alt": "看到花瓶打碎，男孩先停下来平复情绪，再用克制的语气请对方一起弄清事情经过。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2800,
+            "endMs": 6000,
+            "text": "我们先把事情弄清楚。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我们先把事情弄清楚。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/1471-video-f6ddb44be6d055361bc1cbf8faf025dcf02bfe1e329ce5bc11fd80ad71809b50.mp4",
+          "sha256": "f6ddb44be6d055361bc1cbf8faf025dcf02bfe1e329ce5bc11fd80ad71809b50",
+          "bytes": 628211
+        },
+        "poster": {
+          "url": "story-media/1471-poster-b5f922ef260873d7c53b9da3532a05b2acf5009426bdd07ba33e35bfaa083cc2.png",
+          "sha256": "b5f922ef260873d7c53b9da3532a05b2acf5009426bdd07ba33e35bfaa083cc2",
+          "bytes": 1204885
+        },
+        "staticPoster": {
+          "url": "story-media/1471-staticPoster-e8484a891368d7aef014b8fe683d17137a8e06343652621039c93b3a777a36c9.png",
+          "sha256": "e8484a891368d7aef014b8fe683d17137a8e06343652621039c93b3a777a36c9",
+          "bytes": 1232555
+        }
+      }
+    },
+    {
+      "number": 1059,
+      "word": "gregarious",
+      "coreMeaningZh": "爱交际、喜欢与人相处的；群居的",
+      "unit": 46,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 194,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "我也来和大家一起玩！",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我也来和大家一起玩！"
+          ]
+        },
+        "alt": "男孩开心地走近玩桌游的朋友，扶着坐垫坐下来，愉快地加入大家。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 400,
+            "endMs": 5800,
+            "text": "我也来和大家一起玩！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我也来和大家一起玩！"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 5800,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/1059-video-eaf635565c85fba9c85177e63d852ed3e8c2f4b0889c1ec69845dd3cdb009d3e.mp4",
+          "sha256": "eaf635565c85fba9c85177e63d852ed3e8c2f4b0889c1ec69845dd3cdb009d3e",
+          "bytes": 721214
+        },
+        "poster": {
+          "url": "story-media/1059-poster-6fc57e403f7013bb1eab2f5de634221e43d31165cf7d0ce1d89f0a2fbc091e5b.png",
+          "sha256": "6fc57e403f7013bb1eab2f5de634221e43d31165cf7d0ce1d89f0a2fbc091e5b",
+          "bytes": 1282691
+        },
+        "staticPoster": {
+          "url": "story-media/1059-staticPoster-bc372b8528e2503bde14eaf697245e50d365a2ea78bd1b52d7f18678e51af3ff.png",
+          "sha256": "bc372b8528e2503bde14eaf697245e50d365a2ea78bd1b52d7f18678e51af3ff",
+          "bytes": 1306146
+        }
+      }
+    },
+    {
+      "number": 3062,
+      "word": "wayward",
+      "coreMeaningZh": "任性、难以管束的；不按预期方向发展的",
+      "unit": 46,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 195,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "我偏要去那边看看。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我偏要去那边看看。"
+          ]
+        },
+        "alt": "朋友指着说好的花园小路，男孩却执意转向路边的鲜花，朋友无奈地叉起腰。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 300,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 300,
+            "endMs": 1700,
+            "text": "我们说好走这条路。",
+            "speaker": "guide friend",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我们说好走这条路。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 1700,
+            "endMs": 1900,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          },
+          {
+            "startMs": 1900,
+            "endMs": 5800,
+            "text": "我偏要去那边看看。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我偏要去那边看看。"
+            ],
+            "id": "stage-3"
+          },
+          {
+            "startMs": 5800,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-4"
+          }
+        ],
+        "video": {
+          "url": "story-media/3062-video-5678d1d8b024b974f56ad27f7888f30aee8dc9200b74adec06e5b421a80213cf.mp4",
+          "sha256": "5678d1d8b024b974f56ad27f7888f30aee8dc9200b74adec06e5b421a80213cf",
+          "bytes": 791713
+        },
+        "poster": {
+          "url": "story-media/3062-poster-ef8bd44811c3c5e1d8e8c050543cecf6be28f99ba87c2c0dc2cb95e1d02334fc.png",
+          "sha256": "ef8bd44811c3c5e1d8e8c050543cecf6be28f99ba87c2c0dc2cb95e1d02334fc",
+          "bytes": 1302062
+        },
+        "staticPoster": {
+          "url": "story-media/3062-staticPoster-e058bf163ae91a1e0d5ded8d8d01fe8a8a8c4ca09ef93eb32416162332ad666c.png",
+          "sha256": "e058bf163ae91a1e0d5ded8d8d01fe8a8a8c4ca09ef93eb32416162332ad666c",
+          "bytes": 1310629
+        }
+      }
+    },
+    {
+      "number": 820,
+      "word": "errant",
+      "coreMeaningZh": "偏离正路的；行为不当的；漂泊的",
+      "unit": 47,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 196,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩本想把球踢进球门，球却偏向旁边的花盆；他放下踢球的脚，惊讶地看着偏离目标的球。",
+        "video": {
+          "url": "story-media/820-video-d126f3e912370280860a3e1b9ad31ca40591cfb3ebf8d93e2a7696fed8692fd4.mp4",
+          "sha256": "d126f3e912370280860a3e1b9ad31ca40591cfb3ebf8d93e2a7696fed8692fd4",
+          "bytes": 751195
+        },
+        "poster": {
+          "url": "story-media/820-poster-d2331d156b56b62b71e470be8638c612b567df8a40d1b25e212848ce8a37c5e9.png",
+          "sha256": "d2331d156b56b62b71e470be8638c612b567df8a40d1b25e212848ce8a37c5e9",
+          "bytes": 1306937
+        },
+        "staticPoster": {
+          "url": "story-media/820-staticPoster-26f5b00d34dd20c2c94b17010defd245d2936094c2ae0c47b6a2248972da6be9.png",
+          "sha256": "26f5b00d34dd20c2c94b17010defd245d2936094c2ae0c47b6a2248972da6be9",
+          "bytes": 1307359
+        }
+      }
+    },
+    {
+      "number": 27,
+      "word": "absurd",
+      "coreMeaningZh": "荒谬的；不合情理的；荒唐可笑的",
+      "unit": 47,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 197,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "用筛子装水，一滴也不会漏！",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "用筛子装水，一滴也不会漏！"
+          ]
+        },
+        "alt": "男孩声称筛子装水一滴不漏，倒水后，水却从筛孔流进下方的盆中，荒唐的说法当场被事实推翻。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 200,
+            "endMs": 2400,
+            "text": "用筛子装水，一滴也不会漏！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "用筛子装水，一滴也不会漏！"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 2400,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/27-video-d6e01bd2bf57989d9eeb14f0690f060606e2417845e81168fa87513e753353db.mp4",
+          "sha256": "d6e01bd2bf57989d9eeb14f0690f060606e2417845e81168fa87513e753353db",
+          "bytes": 646620
+        },
+        "poster": {
+          "url": "story-media/27-poster-f384322eb990f0a21df103b239b3ac7dae349bbeff23598f2b38d36bde5988cb.png",
+          "sha256": "f384322eb990f0a21df103b239b3ac7dae349bbeff23598f2b38d36bde5988cb",
+          "bytes": 1264905
+        },
+        "staticPoster": {
+          "url": "story-media/27-staticPoster-71873d400ed0cdac037cb6a4d92aa7ca4a5ddb36fe84366f537c1c7096608e2e.png",
+          "sha256": "71873d400ed0cdac037cb6a4d92aa7ca4a5ddb36fe84366f537c1c7096608e2e",
+          "bytes": 1256962
+        }
+      }
+    },
+    {
+      "number": 2024,
+      "word": "remiss",
+      "coreMeaningZh": "疏于尽责的；疏忽的；懈怠的",
+      "unit": 47,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 198,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "糟了，我忘了按时浇水。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "糟了，我忘了按时浇水。"
+          ]
+        },
+        "alt": "男孩沉迷阅读，忽视了给植物浇水的职责；看到枯萎的植物和未动的水壶，才懊恼地发现自己忘记按时浇水。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3600,
+            "endMs": 6000,
+            "text": "糟了，我忘了按时浇水。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "糟了，我忘了按时浇水。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/2024-video-baf44c1c402d00d46143cb28af62b1616531441518e8d17abf6d811e7999b1ef.mp4",
+          "sha256": "baf44c1c402d00d46143cb28af62b1616531441518e8d17abf6d811e7999b1ef",
+          "bytes": 643429
+        },
+        "poster": {
+          "url": "story-media/2024-poster-41c24679dd6873b52d1253f3bb3a3275b8d2b0ebe59784863971dec4e69ed41c.png",
+          "sha256": "41c24679dd6873b52d1253f3bb3a3275b8d2b0ebe59784863971dec4e69ed41c",
+          "bytes": 1174322
+        },
+        "staticPoster": {
+          "url": "story-media/2024-staticPoster-65983d6afd64606e92bf1dfd654eb82c903d476b1d5bd1dd9ead4f1700d76124.png",
+          "sha256": "65983d6afd64606e92bf1dfd654eb82c903d476b1d5bd1dd9ead4f1700d76124",
+          "bytes": 1155751
+        }
+      }
+    },
+    {
+      "number": 800,
+      "word": "ensue",
+      "coreMeaningZh": "随之发生；接着发生；因而产生",
+      "unit": 47,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 199,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          }
+        },
+        "alt": "男孩推倒第一块多米诺骨牌，紧接着其余骨牌接连倒下，展示前一件事引发的随后结果。",
+        "video": {
+          "url": "story-media/800-video-384c9c1b4a0e850d0180fcdbc5f8eb2bdf6d5e52bdaad7014b346a162c49f843.mp4",
+          "sha256": "384c9c1b4a0e850d0180fcdbc5f8eb2bdf6d5e52bdaad7014b346a162c49f843",
+          "bytes": 714316
+        },
+        "poster": {
+          "url": "story-media/800-poster-45342cf7acf39dfc3d42731231b3d1011ba9e366dd75b8b7b6f8878b0cf8ade7.png",
+          "sha256": "45342cf7acf39dfc3d42731231b3d1011ba9e366dd75b8b7b6f8878b0cf8ade7",
+          "bytes": 1196397
+        },
+        "staticPoster": {
+          "url": "story-media/800-staticPoster-471bee6c32ca986a61a3e761f28181bd34ff1a443ae6357e264fe8cd94996cbf.png",
+          "sha256": "471bee6c32ca986a61a3e761f28181bd34ff1a443ae6357e264fe8cd94996cbf",
+          "bytes": 1201794
+        }
+      }
+    },
+    {
+      "number": 1744,
+      "word": "perspicacious",
+      "coreMeaningZh": "有洞察力的；判断敏锐的",
+      "unit": 47,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 200,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200.0,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "脚印通向帘子后面，它一定躲在那里。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "脚印通向帘子后面，它一定躲在那里。"
+          ]
+        },
+        "alt": "男孩从泥脚印的方向推断小猫藏在帘子后面，拉开帘子，果然发现了小猫。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1400,
+            "endMs": 4000,
+            "text": "脚印通向帘子后面，它一定躲在那里。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "脚印通向帘子后面，它一定躲在那里。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 4000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/1744-video-4d888bbc27b2475617ef28084c45eff484d1b9c8d217f06ab9adfc269b34308c.mp4",
+          "sha256": "4d888bbc27b2475617ef28084c45eff484d1b9c8d217f06ab9adfc269b34308c",
+          "bytes": 707523
+        },
+        "poster": {
+          "url": "story-media/1744-poster-bbfbd0da739ce34b6ec5a404f8036fb707b6587853d491cce8caccf0827daf28.png",
+          "sha256": "bbfbd0da739ce34b6ec5a404f8036fb707b6587853d491cce8caccf0827daf28",
+          "bytes": 1272029
+        },
+        "staticPoster": {
+          "url": "story-media/1744-staticPoster-085778f676b430f4a1b00787535e5f9942f6a2d2f717496460fce8125ef93d45.png",
+          "sha256": "085778f676b430f4a1b00787535e5f9942f6a2d2f717496460fce8125ef93d45",
+          "bytes": 1276434
         }
       }
     }

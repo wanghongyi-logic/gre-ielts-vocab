@@ -1,13 +1,13 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "164",
-  "generatedAt": "2026-10-12T12:52:29.452378+00:00",
+  "releaseBuild": "165",
+  "generatedAt": "2026-10-12T13:36:37.034822+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-reviewed-order",
   "readyAssetContract": "text+poster+video",
-  "availablePairedLessons": 190,
+  "availablePairedLessons": 200,
   "libraryTarget": 4731,
   "wholeTargetReady": false,
   "shellManifest": "gre-learning/shell-manifest.json",
@@ -29,9 +29,9 @@
     {
       "path": "gre-learning/catalog.json",
       "loading": "shell",
-      "bytes": 488272,
-      "sha256": "b9da0a1abc08f47fe0073bcdc97eb115edb9f2d0bac00862025699b486469f6c",
-      "gzipBytes": 77783
+      "bytes": 513321,
+      "sha256": "5f246a99b96859d05e26aec89d627d1d1f35ebc2224488083c5f619da5a43529",
+      "gzipBytes": 81493
     },
     {
       "path": "gre-learning/contents.js",
@@ -2466,8 +2466,8 @@
       "path": "gre-learning/update.js",
       "loading": "shell",
       "bytes": 2647,
-      "sha256": "8587df26922848d31ef7393d3a5c3aca61a5d2fbe5518738826789f8120125ab",
-      "gzipBytes": 1123
+      "sha256": "735a84d0a9b6a80a3b09abc0db94d1fbb6649caa4f4d54c19e175f60c2fdffdb",
+      "gzipBytes": 1124
     },
     {
       "path": "gre-learning/view.js",
@@ -4316,11 +4316,235 @@
       "bytes": 1260035,
       "sha256": "c0a6bfdd238061097417683753141897215dd3a1d430015b6fb17fa88f8452d2",
       "gzipBytes": 1259849
+    },
+    {
+      "path": "gre-learning/units/core036-text-candidate-8b837868a59c4b8124440fa15f9df87b68f5b53f3d51051947a4dd04b3f23ba1.json",
+      "loading": "on-demand",
+      "bytes": 22564,
+      "sha256": "8b837868a59c4b8124440fa15f9df87b68f5b53f3d51051947a4dd04b3f23ba1",
+      "gzipBytes": 7399
+    },
+    {
+      "path": "gre-learning/units/core037-text-candidate-df4897e58ede9f46a6cb7028d0e1345260f47571dd3e3f70907b067c567f25cc.json",
+      "loading": "on-demand",
+      "bytes": 18247,
+      "sha256": "df4897e58ede9f46a6cb7028d0e1345260f47571dd3e3f70907b067c567f25cc",
+      "gzipBytes": 6506
+    },
+    {
+      "path": "gre-learning/story-media/2137-video-fdd0b52f7b46a81f817155a0c7e2048f826f2f42ee5534a68743fe6ce3c117ad.mp4",
+      "loading": "on-demand",
+      "bytes": 736289,
+      "sha256": "fdd0b52f7b46a81f817155a0c7e2048f826f2f42ee5534a68743fe6ce3c117ad",
+      "gzipBytes": 731314
+    },
+    {
+      "path": "gre-learning/story-media/2137-poster-1f94bb3ae1fe2561818ad2cc17dbd30c7b7d4f367d810dad3ffd2f1558ac54c7.png",
+      "loading": "on-demand",
+      "bytes": 1306537,
+      "sha256": "1f94bb3ae1fe2561818ad2cc17dbd30c7b7d4f367d810dad3ffd2f1558ac54c7",
+      "gzipBytes": 1306440
+    },
+    {
+      "path": "gre-learning/story-media/2137-staticPoster-d11cf8067cfe3e9934852f12418bde96e9081a029a906e3241f829e6bb78dae1.png",
+      "loading": "on-demand",
+      "bytes": 1305042,
+      "sha256": "d11cf8067cfe3e9934852f12418bde96e9081a029a906e3241f829e6bb78dae1",
+      "gzipBytes": 1305013
+    },
+    {
+      "path": "gre-learning/story-media/1-video-dfca19def7dfe9fd7aaa3abaadea1f119d230c69bd4e225fadab6120fec97f26.mp4",
+      "loading": "on-demand",
+      "bytes": 871042,
+      "sha256": "dfca19def7dfe9fd7aaa3abaadea1f119d230c69bd4e225fadab6120fec97f26",
+      "gzipBytes": 866699
+    },
+    {
+      "path": "gre-learning/story-media/1-poster-a33ed62c435b4cf0451ce4c6a32f26b0387f2240cb8add52bc86eeb106afcf8b.png",
+      "loading": "on-demand",
+      "bytes": 1249498,
+      "sha256": "a33ed62c435b4cf0451ce4c6a32f26b0387f2240cb8add52bc86eeb106afcf8b",
+      "gzipBytes": 1249206
+    },
+    {
+      "path": "gre-learning/story-media/1-staticPoster-12698022bac07a0ba0ecda878895439f9d5405494590e855391277abf6596dbc.png",
+      "loading": "on-demand",
+      "bytes": 1275260,
+      "sha256": "12698022bac07a0ba0ecda878895439f9d5405494590e855391277abf6596dbc",
+      "gzipBytes": 1274980
+    },
+    {
+      "path": "gre-learning/story-media/1471-video-f6ddb44be6d055361bc1cbf8faf025dcf02bfe1e329ce5bc11fd80ad71809b50.mp4",
+      "loading": "on-demand",
+      "bytes": 628211,
+      "sha256": "f6ddb44be6d055361bc1cbf8faf025dcf02bfe1e329ce5bc11fd80ad71809b50",
+      "gzipBytes": 623562
+    },
+    {
+      "path": "gre-learning/story-media/1471-poster-b5f922ef260873d7c53b9da3532a05b2acf5009426bdd07ba33e35bfaa083cc2.png",
+      "loading": "on-demand",
+      "bytes": 1204885,
+      "sha256": "b5f922ef260873d7c53b9da3532a05b2acf5009426bdd07ba33e35bfaa083cc2",
+      "gzipBytes": 1204544
+    },
+    {
+      "path": "gre-learning/story-media/1471-staticPoster-e8484a891368d7aef014b8fe683d17137a8e06343652621039c93b3a777a36c9.png",
+      "loading": "on-demand",
+      "bytes": 1232555,
+      "sha256": "e8484a891368d7aef014b8fe683d17137a8e06343652621039c93b3a777a36c9",
+      "gzipBytes": 1232289
+    },
+    {
+      "path": "gre-learning/story-media/1059-video-eaf635565c85fba9c85177e63d852ed3e8c2f4b0889c1ec69845dd3cdb009d3e.mp4",
+      "loading": "on-demand",
+      "bytes": 721214,
+      "sha256": "eaf635565c85fba9c85177e63d852ed3e8c2f4b0889c1ec69845dd3cdb009d3e",
+      "gzipBytes": 716244
+    },
+    {
+      "path": "gre-learning/story-media/1059-poster-6fc57e403f7013bb1eab2f5de634221e43d31165cf7d0ce1d89f0a2fbc091e5b.png",
+      "loading": "on-demand",
+      "bytes": 1282691,
+      "sha256": "6fc57e403f7013bb1eab2f5de634221e43d31165cf7d0ce1d89f0a2fbc091e5b",
+      "gzipBytes": 1282505
+    },
+    {
+      "path": "gre-learning/story-media/1059-staticPoster-bc372b8528e2503bde14eaf697245e50d365a2ea78bd1b52d7f18678e51af3ff.png",
+      "loading": "on-demand",
+      "bytes": 1306146,
+      "sha256": "bc372b8528e2503bde14eaf697245e50d365a2ea78bd1b52d7f18678e51af3ff",
+      "gzipBytes": 1305990
+    },
+    {
+      "path": "gre-learning/story-media/3062-video-5678d1d8b024b974f56ad27f7888f30aee8dc9200b74adec06e5b421a80213cf.mp4",
+      "loading": "on-demand",
+      "bytes": 791713,
+      "sha256": "5678d1d8b024b974f56ad27f7888f30aee8dc9200b74adec06e5b421a80213cf",
+      "gzipBytes": 786950
+    },
+    {
+      "path": "gre-learning/story-media/3062-poster-ef8bd44811c3c5e1d8e8c050543cecf6be28f99ba87c2c0dc2cb95e1d02334fc.png",
+      "loading": "on-demand",
+      "bytes": 1302062,
+      "sha256": "ef8bd44811c3c5e1d8e8c050543cecf6be28f99ba87c2c0dc2cb95e1d02334fc",
+      "gzipBytes": 1302082
+    },
+    {
+      "path": "gre-learning/story-media/3062-staticPoster-e058bf163ae91a1e0d5ded8d8d01fe8a8a8c4ca09ef93eb32416162332ad666c.png",
+      "loading": "on-demand",
+      "bytes": 1310629,
+      "sha256": "e058bf163ae91a1e0d5ded8d8d01fe8a8a8c4ca09ef93eb32416162332ad666c",
+      "gzipBytes": 1310416
+    },
+    {
+      "path": "gre-learning/story-media/820-video-d126f3e912370280860a3e1b9ad31ca40591cfb3ebf8d93e2a7696fed8692fd4.mp4",
+      "loading": "on-demand",
+      "bytes": 751195,
+      "sha256": "d126f3e912370280860a3e1b9ad31ca40591cfb3ebf8d93e2a7696fed8692fd4",
+      "gzipBytes": 746415
+    },
+    {
+      "path": "gre-learning/story-media/820-poster-d2331d156b56b62b71e470be8638c612b567df8a40d1b25e212848ce8a37c5e9.png",
+      "loading": "on-demand",
+      "bytes": 1306937,
+      "sha256": "d2331d156b56b62b71e470be8638c612b567df8a40d1b25e212848ce8a37c5e9",
+      "gzipBytes": 1306690
+    },
+    {
+      "path": "gre-learning/story-media/820-staticPoster-26f5b00d34dd20c2c94b17010defd245d2936094c2ae0c47b6a2248972da6be9.png",
+      "loading": "on-demand",
+      "bytes": 1307359,
+      "sha256": "26f5b00d34dd20c2c94b17010defd245d2936094c2ae0c47b6a2248972da6be9",
+      "gzipBytes": 1307143
+    },
+    {
+      "path": "gre-learning/story-media/27-video-d6e01bd2bf57989d9eeb14f0690f060606e2417845e81168fa87513e753353db.mp4",
+      "loading": "on-demand",
+      "bytes": 646620,
+      "sha256": "d6e01bd2bf57989d9eeb14f0690f060606e2417845e81168fa87513e753353db",
+      "gzipBytes": 641904
+    },
+    {
+      "path": "gre-learning/story-media/27-poster-f384322eb990f0a21df103b239b3ac7dae349bbeff23598f2b38d36bde5988cb.png",
+      "loading": "on-demand",
+      "bytes": 1264905,
+      "sha256": "f384322eb990f0a21df103b239b3ac7dae349bbeff23598f2b38d36bde5988cb",
+      "gzipBytes": 1264784
+    },
+    {
+      "path": "gre-learning/story-media/27-staticPoster-71873d400ed0cdac037cb6a4d92aa7ca4a5ddb36fe84366f537c1c7096608e2e.png",
+      "loading": "on-demand",
+      "bytes": 1256962,
+      "sha256": "71873d400ed0cdac037cb6a4d92aa7ca4a5ddb36fe84366f537c1c7096608e2e",
+      "gzipBytes": 1256747
+    },
+    {
+      "path": "gre-learning/story-media/2024-video-baf44c1c402d00d46143cb28af62b1616531441518e8d17abf6d811e7999b1ef.mp4",
+      "loading": "on-demand",
+      "bytes": 643429,
+      "sha256": "baf44c1c402d00d46143cb28af62b1616531441518e8d17abf6d811e7999b1ef",
+      "gzipBytes": 638592
+    },
+    {
+      "path": "gre-learning/story-media/2024-poster-41c24679dd6873b52d1253f3bb3a3275b8d2b0ebe59784863971dec4e69ed41c.png",
+      "loading": "on-demand",
+      "bytes": 1174322,
+      "sha256": "41c24679dd6873b52d1253f3bb3a3275b8d2b0ebe59784863971dec4e69ed41c",
+      "gzipBytes": 1174099
+    },
+    {
+      "path": "gre-learning/story-media/2024-staticPoster-65983d6afd64606e92bf1dfd654eb82c903d476b1d5bd1dd9ead4f1700d76124.png",
+      "loading": "on-demand",
+      "bytes": 1155751,
+      "sha256": "65983d6afd64606e92bf1dfd654eb82c903d476b1d5bd1dd9ead4f1700d76124",
+      "gzipBytes": 1155474
+    },
+    {
+      "path": "gre-learning/story-media/800-video-384c9c1b4a0e850d0180fcdbc5f8eb2bdf6d5e52bdaad7014b346a162c49f843.mp4",
+      "loading": "on-demand",
+      "bytes": 714316,
+      "sha256": "384c9c1b4a0e850d0180fcdbc5f8eb2bdf6d5e52bdaad7014b346a162c49f843",
+      "gzipBytes": 709969
+    },
+    {
+      "path": "gre-learning/story-media/800-poster-45342cf7acf39dfc3d42731231b3d1011ba9e366dd75b8b7b6f8878b0cf8ade7.png",
+      "loading": "on-demand",
+      "bytes": 1196397,
+      "sha256": "45342cf7acf39dfc3d42731231b3d1011ba9e366dd75b8b7b6f8878b0cf8ade7",
+      "gzipBytes": 1196218
+    },
+    {
+      "path": "gre-learning/story-media/800-staticPoster-471bee6c32ca986a61a3e761f28181bd34ff1a443ae6357e264fe8cd94996cbf.png",
+      "loading": "on-demand",
+      "bytes": 1201794,
+      "sha256": "471bee6c32ca986a61a3e761f28181bd34ff1a443ae6357e264fe8cd94996cbf",
+      "gzipBytes": 1201420
+    },
+    {
+      "path": "gre-learning/story-media/1744-video-4d888bbc27b2475617ef28084c45eff484d1b9c8d217f06ab9adfc269b34308c.mp4",
+      "loading": "on-demand",
+      "bytes": 707523,
+      "sha256": "4d888bbc27b2475617ef28084c45eff484d1b9c8d217f06ab9adfc269b34308c",
+      "gzipBytes": 702636
+    },
+    {
+      "path": "gre-learning/story-media/1744-poster-bbfbd0da739ce34b6ec5a404f8036fb707b6587853d491cce8caccf0827daf28.png",
+      "loading": "on-demand",
+      "bytes": 1272029,
+      "sha256": "bbfbd0da739ce34b6ec5a404f8036fb707b6587853d491cce8caccf0827daf28",
+      "gzipBytes": 1271865
+    },
+    {
+      "path": "gre-learning/story-media/1744-staticPoster-085778f676b430f4a1b00787535e5f9942f6a2d2f717496460fce8125ef93d45.png",
+      "loading": "on-demand",
+      "bytes": 1276434,
+      "sha256": "085778f676b430f4a1b00787535e5f9942f6a2d2f717496460fce8125ef93d45",
+      "gzipBytes": 1276230
     }
   ],
   "totals": {
-    "bytes": 490107249,
-    "gzipBytes": 487925431
+    "bytes": 522572856,
+    "gzipBytes": 520291467
   },
   "retainedHistoricalAssets": 212
 }
