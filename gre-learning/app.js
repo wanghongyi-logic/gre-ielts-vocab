@@ -19,12 +19,13 @@ let motion=installStoryMedia(main,{picker});
 const pages=installPreparedPages({loader,entries,picker});
 const swipe=installWordSwipe({surface:main,hintHost:main.parentNode,picker,getNeighbor:direction=>neighboringNumbers(entries,selectedNumber)[direction],getPrepared:direction=>pages.get(neighboringNumbers(entries,selectedNumber)[direction]),prepareNeighbor:direction=>pages.prepare(neighboringNumbers(entries,selectedNumber)[direction]),onNavigate:navigate,onTurnActivity:active=>motion.setTurning(active)});
 let selectedNumber,current,currentMedia,speech,renderGeneration=0,pendingSection=null;
+let libraryRevision=0,renderedLibraryRevision=0,libraryRefreshEpoch=0,libraryRefreshJob=null;
 const contents=installContents({main,picker,search,entries,getSelected:()=>selectedNumber,navigate,onOpen:()=>{swipe.cancel();if(current){renderGeneration++;main.removeAttribute('aria-busy');pages.adjacent(selectedNumber);}bookmarks.sync();motion.sync();window.speechSynthesis?.cancel();},onClose:()=>{bookmarks.sync();motion.sync();},onTransition:active=>motion.setTurning(active)});
 function remember(){try{return sessionStorage.getItem('gre-learning-current-v1');}catch{return null;}}
 function navigate(number){if(entries.some(entry=>entry.number===number)&&number!==selectedNumber)location.hash=`/learn/${number}`;}
 function watchChapters(){bookmarks.refresh();}
-async function render(){
- const generation=++renderGeneration,startingHash=location.hash;
+async function render({preserveScroll=false}={}){
+ const generation=++renderGeneration,startingHash=location.hash,mediaRevision=libraryRevision;
  const inContents=contents.isRoute(startingHash);
  const number=resolveWordNumber(inContents?'':startingHash,entries,remember());
  window.speechSynthesis?.cancel();
@@ -47,8 +48,9 @@ async function render(){
  if(generation!==renderGeneration||location.hash!==startingHash)return;
  page=pages.take(number);if(!page)return;
  const adopt=()=>{
+ const scrollPosition=preserveScroll&&selectedNumber===number?window.scrollY:0;
  motion.destroy();main.querySelectorAll('video').forEach(video=>{video.pause();video.removeAttribute('src');video.load();});bookmarks.suspend();motion=page.motion;
- current=page.loaded.entry;currentMedia=page.loaded.media;selectedNumber=number;
+ current=page.loaded.entry;currentMedia=page.loaded.media;selectedNumber=number;renderedLibraryRevision=mediaRevision;
  main.removeAttribute('aria-busy');
  document.title=`${selected.word} · 单词故事`;counter.textContent=`${position.index+1} / ${entries.length}`;counter.setAttribute('aria-label',`第 ${position.index+1} 个词，共 ${entries.length} 个`);
  try{sessionStorage.setItem('gre-learning-current-v1',String(number));}catch{}
@@ -57,7 +59,7 @@ async function render(){
  main.querySelectorAll('[data-prepared-id]').forEach(node=>{node.id=node.dataset.preparedId;delete node.dataset.preparedId;});
  const speakButton=main.querySelector('[data-speak]');
  if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window)){speakButton.disabled=true;speakButton.title='此浏览器暂不支持朗读';}
- if(!picker.open)window.scrollTo({top:0,behavior:'instant'});
+ if(!picker.open)window.scrollTo({top:scrollPosition,behavior:'instant'});
  watchChapters();swipe.rendered(`${current.word}，第 ${position.index+1} 个词，共 ${entries.length} 个`);if(picker.open)motion.setTurning(true);motion.activate();pages.adjacent(number);
  if(picker.open&&inContents)contents.renderResults();
  if(pendingSection){const section=pendingSection;pendingSection=null;bookmarks.navigate(section);}
@@ -74,10 +76,29 @@ document.addEventListener('click',event=>{
  const voices=window.speechSynthesis.getVoices(),voice=voices.find(item=>item.localService&&item.lang.startsWith('en'))||voices.find(item=>item.lang.startsWith('en'));if(voice)speech.voice=voice;
  button.classList.add('is-speaking');speech.onend=()=>button.classList.remove('is-speaking');speech.onerror=()=>{button.classList.remove('is-speaking');document.getElementById('speech-status').textContent='朗读暂不可用，请稍后再试';};window.speechSynthesis.speak(speech);
 });
-function route(){if(contents.deferRoute(route))return;const state=contents.syncRoute();if(state.contents&&current)return;if(state.restored&&current){renderGeneration++;main.removeAttribute('aria-busy');pages.adjacent(selectedNumber);if(pendingSection){const section=pendingSection;pendingSection=null;const hash=location.hash;contents.whenSettled().then(()=>{if(location.hash===hash&&!picker.open)bookmarks.navigate(section);});}return;}render();}
-window.addEventListener('gre-clear-library',event=>{const settled=(async()=>{renderGeneration++;contents.cancel();swipe.cancel();loader.cancel();motion.destroy();window.speechSynthesis?.cancel();const pending=pages.destroy();main.querySelectorAll('video').forEach(video=>{video.pause();video.removeAttribute('src');video.load();});await pending;loader.destroy();})();event.detail.waits.push(settled);});
+function route(){if(contents.deferRoute(route))return;const state=contents.syncRoute();if(state.contents&&current){if(renderedLibraryRevision<libraryRevision)refreshLibrary();return;}if(state.restored&&current){renderGeneration++;main.removeAttribute('aria-busy');pages.adjacent(selectedNumber);if(renderedLibraryRevision<libraryRevision)refreshLibrary();if(pendingSection){const section=pendingSection;pendingSection=null;const hash=location.hash;contents.whenSettled().then(()=>{if(location.hash===hash&&!picker.open)bookmarks.navigate(section);});}return;}render();}
+// A frontmatter transition may retain the current DOM while invalidating a render.
+// Mark a library revision complete only when a fresh page is actually adopted.
+function refreshLibrary(){
+ if(libraryRefreshJob?.epoch===libraryRefreshEpoch)return libraryRefreshJob.promise;
+ const epoch=libraryRefreshEpoch,job={epoch,promise:null};libraryRefreshJob=job;
+ job.promise=(async()=>{
+  while(epoch===libraryRefreshEpoch&&renderedLibraryRevision<libraryRevision){
+   await contents.whenSettled();if(epoch!==libraryRefreshEpoch)return;
+   const generation=++renderGeneration;swipe.cancel();loader.cancel();await pages.destroy();
+   if(epoch!==libraryRefreshEpoch)return;
+   if(generation!==renderGeneration)continue;
+   const before=renderedLibraryRevision;await render({preserveScroll:true});
+   // Stable failures leave the old readable page in place. A later route retries.
+   if(generation+1===renderGeneration&&renderedLibraryRevision===before)break;
+  }
+ })().finally(()=>{if(libraryRefreshJob===job)libraryRefreshJob=null;});
+ return job.promise;
+}
+window.addEventListener('gre-library-updated',event=>{libraryRevision++;event.detail.waits.push(refreshLibrary());});
+window.addEventListener('gre-clear-library',event=>{const settled=(async()=>{libraryRefreshEpoch++;renderedLibraryRevision=libraryRevision;renderGeneration++;contents.cancel();swipe.cancel();loader.cancel();motion.destroy();window.speechSynthesis?.cancel();const pending=pages.destroy();main.querySelectorAll('video').forEach(video=>{video.pause();video.removeAttribute('src');video.load();});await pending;loader.destroy();})();event.detail.waits.push(settled);});
 window.addEventListener('gre-media-control-change',event=>{if(!event.detail.paused||event.detail.initial)return;const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-clear-library',{detail}));});
 window.addEventListener('hashchange',route);
-window.addEventListener('pagehide',event=>{window.speechSynthesis?.cancel();loader.cancel();pages.destroy();if(event.persisted)motion.setTurning(true);else motion.cancel();bookmarks.suspend();renderGeneration++;});
-window.addEventListener('pageshow',event=>{if(!event.persisted)return;if(contents.isRoute(location.hash)){route();return;}if(contents.isRoute(location.hash)!==picker.open){route();return;}if(current&&(contents.isRoute(location.hash)||resolveWordNumber(location.hash,entries,remember())===selectedNumber)){main.removeAttribute('aria-busy');watchChapters();motion.setTurning(false);pages.adjacent(selectedNumber);}else route();});
+window.addEventListener('pagehide',event=>{libraryRefreshEpoch++;window.speechSynthesis?.cancel();loader.cancel();pages.destroy();if(event.persisted)motion.setTurning(true);else motion.cancel();bookmarks.suspend();renderGeneration++;});
+window.addEventListener('pageshow',event=>{if(!event.persisted)return;if(contents.isRoute(location.hash)){route();return;}if(contents.isRoute(location.hash)!==picker.open){route();return;}if(current&&(contents.isRoute(location.hash)||resolveWordNumber(location.hash,entries,remember())===selectedNumber)){main.removeAttribute('aria-busy');watchChapters();motion.setTurning(false);pages.adjacent(selectedNumber);if(renderedLibraryRevision<libraryRevision)refreshLibrary();}else route();});
 route();window.dispatchEvent(new Event('vocab-app-ready'));

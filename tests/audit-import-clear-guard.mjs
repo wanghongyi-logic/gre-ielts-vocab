@@ -6,7 +6,7 @@ const downloads=await readFile(new URL('../gre-learning/offline-releases.js',imp
 const runSource=source.slice(source.indexOf('async function run(action)'),source.indexOf('\n input.onchange='));
 const node=()=>({hidden:false,disabled:false,textContent:'',value:'',classList:{add(){},remove(){}}});
 let calls=0;
-const context=vm.createContext({controller:null,clearingThisPage:true,AbortController,host:{querySelector:node,querySelectorAll:()=>[]},bookmark:node(),input:node(),cancel:node(),progress:node(),status:node(),modeButton:node(),welcome:{querySelector:node},refresh:async()=>{},chooseVideoMode:async()=>{}});
+const context=vm.createContext({controller:null,clearingThisPage:true,AbortController,CustomEvent:class{},window:{dispatchEvent(){}},refreshDownloads(){},sharedControl:{ticket:async()=>0,state:async()=>({generation:0})},host:{querySelector:node,querySelectorAll:()=>[]},bookmark:node(),input:node(),cancel:node(),progress:node(),status:node(),modeButton:node(),welcome:{querySelector:node},refresh:async()=>{},chooseVideoMode:async()=>{}});
 vm.runInContext(runSource,context);
 context.action=async()=>{calls++;return {wordIds:[1]};};
 await vm.runInContext('run(action)',context);assert.equal(calls,0,'manual import must not run during clear');

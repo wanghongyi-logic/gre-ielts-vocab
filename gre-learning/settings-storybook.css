@@ -320,3 +320,143 @@
   #open-settings .library-rail-track::before { display: none; }
   #open-settings .library-rail-fill { background: Highlight; forced-color-adjust: none; }
 }
+
+/* Optional Pages media remains a quiet, explicit settings action. */
+.library-download-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid rgba(99,82,55,.12);font-size:12px;line-height:1.5}
+.library-download-row:last-child{border-bottom:0}
+.library-download-row button{flex-shrink:0;font-size:12px}
+[data-pages-downloads]{list-style:none;margin:4px 0 0;padding:0}
+.library-pages-downloads .library-disclosure-body>p{font-size:12px}
+
+/* Image-designed book-edge progress. Append after settings-storybook.css.
+   The entire 44px margin control remains a button; the 12px woven strip is progress,
+   never a slider. --saved-progress is the real complete-media fraction [0,1]. */
+.bookmarks #open-settings.library-rail {
+  --library-bookmark-art: url('./images/bookbinding-inlay.webp');
+  display: flex;
+  flex: 1 1 160px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  min-width: 44px;
+  min-height: 64px;
+  max-height: 180px;
+  padding: 8px 0;
+  gap: 9px;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: #686b50;
+  pointer-events: auto;
+  cursor: pointer;
+}
+#open-settings .library-rail-track {
+  position: relative;
+  display: block;
+  flex: 1 1 auto;
+  width: 12px;
+  min-height: 26px;
+  max-height: 145px;
+  border: 0;
+  border-radius: 1px;
+  overflow: hidden;
+  clip-path: none;
+  background: linear-gradient(90deg, #d5ccb7 0%, #e6dec9 35%, #e8e0cd 75%, #d9d0bc 100%);
+  box-shadow: inset 1px 0 0 #b4a78b38, 1px 0 0 #fffdf080;
+}
+#open-settings .library-rail-marker { display: none; }
+#open-settings .library-rail-track::before,
+#open-settings .library-rail-fill {
+  content: '';
+  position: absolute;
+  display: block;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: var(--library-bookmark-art) center / 100% 100% no-repeat;
+}
+#open-settings .library-rail-track::before {
+  opacity: .24;
+  filter: grayscale(1) sepia(.3);
+}
+#open-settings .library-rail-track::after {
+  content: '';
+  position: absolute;
+  display: block;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to bottom, #aa946caa 0 1px, transparent 1px calc(100% - 1px), #aa946caa calc(100% - 1px));
+  pointer-events: none;
+}
+#open-settings .library-rail-fill {
+  clip-path: inset(clamp(0%, calc((1 - var(--saved-progress, 0)) * 100%), 100%) 0 0);
+  opacity: 1;
+  filter: none;
+  transition: clip-path 420ms ease;
+  animation: none;
+}
+#open-settings:hover .library-rail-fill,
+#open-settings.is-current .library-rail-fill,
+#open-settings.is-saving .library-rail-fill {
+  background: var(--library-bookmark-art) center / 100% 100% no-repeat;
+  filter: none;
+  opacity: 1;
+  animation: none;
+}
+#open-settings .library-rail-label {
+  position: static;
+  display: block;
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip-path: none;
+  font: 10px/1.2 Georgia, 'Times New Roman', serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.025em;
+  white-space: nowrap;
+  color: #686b50;
+}
+#open-settings:focus-visible {
+  outline: 2px solid var(--terra, #ad644b);
+  outline-offset: -2px;
+  border-radius: 2px;
+}
+@media (max-height: 640px) {
+  .bookmarks #open-settings.library-rail {
+    flex-basis: 90px;
+    min-height: 54px;
+    max-height: 110px;
+    padding: 5px 0;
+    gap: 7px;
+  }
+  #open-settings .library-rail-track { min-height: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #open-settings .library-rail-fill { transition: none; animation: none; }
+}
+@media (forced-colors: active) {
+  #open-settings .library-rail-track {
+    width: 12px;
+    border: 1px solid CanvasText;
+    background: Canvas;
+    box-shadow: none;
+  }
+  #open-settings .library-rail-fill,
+  #open-settings:hover .library-rail-fill,
+  #open-settings.is-current .library-rail-fill,
+  #open-settings.is-saving .library-rail-fill {
+    background: Highlight;
+    box-shadow: none;
+    forced-color-adjust: none;
+  }
+  #open-settings .library-rail-track::before,
+  #open-settings .library-rail-track::after { display: none; }
+  #open-settings .library-rail-label { color: ButtonText; }
+}

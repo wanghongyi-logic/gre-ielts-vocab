@@ -1,4 +1,4 @@
-import {filterEntries} from './model.js';
+import {filterEntries,resolveWordNumber} from './model.js';
 import {startSwipe,moveSwipe,SWIPE} from './swipe.js';
 import {installFrontmatterTurn} from './frontmatter-turn.js';
 import {escapeLearningText as escape} from './render.js';
@@ -24,7 +24,30 @@ export function installContents({main,picker,search,entries,getSelected,navigate
  const isSettings=()=>/^#\/?settings\/?$/.test(win.location.hash);
  function syncLeaf(hash=win.location.hash){const settings=/^#\/?settings\/?$/.test(hash);leaf=settings?'settings':'contents';picker.dataset.leaf=leaf;title.textContent=settings?'设置':'目录';const settingsHost=doc.getElementById('offline-settings');if(settingsHost){settingsHost.hidden=!settings;if(settings)settingsHost.querySelector('details').open=true;}search.closest('.search-field').hidden=settings;doc.querySelector('.contents-list-heading').hidden=settings;results.hidden=settings;opener.setAttribute('aria-expanded',String(picker.open&&!settings));const settingTab=doc.getElementById('open-settings');settingTab?.setAttribute('aria-expanded',String(picker.open&&settings));settingTab?.classList.toggle('is-current',picker.open&&settings);if(picker.open)doc.title=(settings?'设置':'目录')+' · 单词故事';}
  const readingHash=number=>`#/learn/${number}`;
- const currentEntry=()=>entries.find(entry=>entry.number===getSelected())||entries[0];
+ function currentEntry(){
+  // Direct directory entry resolves the same remembered word as app.render,
+  // before asynchronous lesson/media preparation can finish.
+  let number=getSelected();
+  if(number==null){let remembered;try{remembered=win.sessionStorage?.getItem('gre-learning-current-v1');}catch{}number=resolveWordNumber('',entries,remembered);}
+  return entries.find(entry=>entry.number===number)||entries[0];
+ }
+ function prepareLeaf({show=false}={}){
+  // Keep the destination laid out but unpainted while measuring its actual
+  // current row (including desktop columns). No frame or smooth scroll is used.
+  const visibility=picker.style.getPropertyValue('visibility'),priority=picker.style.getPropertyPriority('visibility');
+  picker.style.setProperty('visibility','hidden');
+  try{
+   if(show)picker.show();syncLeaf();
+   win.scrollTo({top:0,left:0,behavior:'instant'});
+   if(leaf==='contents'){
+    const row=results.querySelector('[aria-current="page"]');
+    if(row){const rect=row.getBoundingClientRect(),viewport=win.visualViewport;const height=viewport?.height||win.innerHeight,offset=viewport?.offsetTop||0;
+     if(rect.height>0)win.scrollTo({top:Math.max(0,win.scrollY+rect.top+rect.height/2-offset-height/2),left:0,behavior:'instant'});
+    }
+   }
+  }finally{if(visibility)picker.style.setProperty('visibility',visibility,priority);else picker.style.removeProperty('visibility');}
+ }
+
  function captureReading(){const number=getSelected();if(number!=null&&!turns.busy&&!picker.open&&win.location.hash===readingHash(number))readingPositions.set(number,{scrollX:win.scrollX,scrollY:win.scrollY});}
  win.addEventListener('scroll',captureReading,{passive:true});
  function renderResults(){
@@ -47,8 +70,8 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   saved={number:selected?.number,hash:readingHash(selected?.number),...position,focus:doc.activeElement,title:doc.title,ready:getSelected()!=null};
   search.value='';renderResults();
   turns.begin({source:main,direction:'previous',flutter:true,visual:Boolean(main.querySelector('.reading-layout')),prepare:()=>{
-   main.hidden=false;main.inert=true;doc.body.classList.add('is-contents-open');
-   picker.show();syncLeaf();win.scrollTo({top:0,left:0,behavior:'instant'});
+   main.hidden=!main.classList.contains('frontmatter-live-leaf');main.inert=true;doc.body.classList.add('is-contents-open');
+   prepareLeaf({show:true});
    title.focus({preventScroll:true});onOpen();
   },commit:()=>{main.hidden=true;main.inert=true;}});
  }
@@ -82,7 +105,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
    picker.removeAttribute('aria-busy');
    if(picker.open){
     const target=isSettings()?'settings':'contents';
-    if(target!==leaf)turns.begin({source:picker,copy:true,direction:target==='settings'?'previous':'next',prepare:()=>{syncLeaf();win.scrollTo({top:0,left:0,behavior:'instant'});title.focus({preventScroll:true});onOpen();}});
+    if(target!==leaf)turns.begin({source:picker,copy:true,direction:target==='settings'?'previous':'next',prepare:()=>{prepareLeaf();title.focus({preventScroll:true});onOpen();}});
     else syncLeaf();
     count.textContent=search.value.trim()?`找到 ${filterEntries(entries,search.value).length} 个词`:`${entries.length} 个词 · 按阅读顺序`;
    }else show();
@@ -106,7 +129,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
  });
  // Frontmatter uses the same distance/axis arbitration as word pages. Nothing
  // is routed until release; a short drag restores both leaf and scroll position.
- const hint=doc.createElement('p');hint.className='frontmatter-navigation-hint';hint.id='frontmatter-swipe-hint';hint.textContent='左右轻翻，回到正在读的一页';picker.querySelector('.contents-tools').after(hint);picker.setAttribute('aria-describedby',hint.id);picker.setAttribute('aria-keyshortcuts','Escape ArrowLeft ArrowRight');
+ picker.setAttribute('aria-keyshortcuts','Escape ArrowLeft ArrowRight');
  const interactive='a,input,textarea,select,option,summary,label,button:not(.word-result),[contenteditable]:not([contenteditable="false"]),[role="slider"],[data-no-swipe]';
  let gesture=null,touchId=null,pointerId=null,pressTimer=0,suppressUntil=0,preview=null;
  const selected=()=>{const selection=win.getSelection?.();return Boolean(selection?.toString()&&(picker.contains(selection.anchorNode)||picker.contains(selection.focusNode)));};

@@ -16,6 +16,14 @@ class Classes {
 }
 export class Element extends Events {
  constructor(tag,doc){super();this.tagName=tag.toUpperCase();this.ownerDocument=doc;this.nodeType=1;this.childNodes=[];this.style=style();this.attributes=new Map();this.className='';this.classList=new Classes(this);this.dataset={};this.hidden=false;this.inert=false;this.open=false;this.value='';this.checked=false;this.textContent='';this.clientWidth=375;this.capture=new Set();this.box={left:0,top:0,width:375,height:1500};}
+ set innerHTML(value){
+  this.html=value;
+  if(this.id!=='word-results')return;
+  for(const child of [...this.childNodes])child.remove();
+  const rows=[...value.matchAll(/<button[^>]*data-word="(\d+)"([^>]*)>/g)];
+  rows.forEach((match,index)=>{const row=new Element('button',this.ownerDocument);row.className='word-result';row.dataset.word=match[1];row.setAttribute('data-word',match[1]);if(match[2].includes('aria-current="page"'))row.setAttribute('aria-current','page');row.box={left:0,top:180+index*90,width:300,height:80,...this.ownerDocument.defaultView.rowBoxes?.get(Number(match[1]))};this.append(row);});
+ }
+ get innerHTML(){return this.html||'';}
  get id(){return this.attributes.get('id')||'';}set id(value){this.attributes.set('id',value);}
  get children(){return this.childNodes.filter(node=>node.nodeType===1);}
  get isConnected(){return this===this.ownerDocument?.body||Boolean(this.parentNode?.isConnected);}

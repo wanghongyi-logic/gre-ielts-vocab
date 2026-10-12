@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {leafGeometry,installFrontmatterTurn} from '../../gre-learning/frontmatter-turn.js';
 import {installContents} from '../../gre-learning/contents.js';
 import {makeHarness} from './dom-harness.mjs';
-function fixture(options){const h=makeHarness(options),calls={open:0,close:[],activity:[],routes:[]};const entries=[{number:12,word:'abate',coreMeaningZh:'减弱'},{number:13,word:'aberrant',coreMeaningZh:'异常的'}];const contents=installContents({main:h.main,picker:h.picker,search:h.search,entries,getSelected:()=>12,navigate:number=>h.win.location.hash=`/learn/${number}`,onOpen:()=>calls.open++,onClose:result=>calls.close.push(result),onTransition:active=>calls.activity.push(active)});const route=()=>{if(contents.deferRoute(route))return;calls.routes.push(contents.syncRoute());};h.win.addEventListener('hashchange',route);return {...h,get overlays(){return h.overlays;},contents,calls,route,open(hash='/contents'){h.win.location.hash=hash;h.hashes();},mouseStart(target=h.title,x=240,y=200){h.picker.emit('pointerdown',{target,clientX:x,clientY:y,pointerId:1,pointerType:'mouse',button:0});},mouseMove(x,y=200){return h.win.emit('pointermove',{clientX:x,clientY:y,pointerId:1,pointerType:'mouse'});},mouseEnd(x,y=200){h.win.emit('pointerup',{clientX:x,clientY:y,pointerId:1,pointerType:'mouse'});}};}
+function fixture(options){const h=makeHarness(options),calls={open:0,close:[],activity:[],routes:[]};const entries=[{number:12,word:'abate',coreMeaningZh:'减弱'},{number:13,word:'aberrant',coreMeaningZh:'异常的'}];const contents=installContents({main:h.main,picker:h.picker,search:h.search,entries,getSelected:options?.getSelected||(()=>12),navigate:number=>h.win.location.hash=`/learn/${number}`,onOpen:()=>calls.open++,onClose:result=>calls.close.push(result),onTransition:active=>calls.activity.push(active)});const route=()=>{if(contents.deferRoute(route))return;calls.routes.push(contents.syncRoute());};h.win.addEventListener('hashchange',route);return {...h,get overlays(){return h.overlays;},contents,calls,route,open(hash='/contents'){h.win.location.hash=hash;h.hashes();},mouseStart(target=h.title,x=240,y=200){h.picker.emit('pointerdown',{target,clientX:x,clientY:y,pointerId:1,pointerType:'mouse',button:0});},mouseMove(x,y=200){return h.win.emit('pointermove',{clientX:x,clientY:y,pointerId:1,pointerType:'mouse'});},mouseEnd(x,y=200){h.win.emit('pointerup',{clientX:x,clientY:y,pointerId:1,pointerType:'mouse'});}};}
 test('curl geometry is mirrored, bounded, and flat at resting poses',()=>{for(const direction of ['next','previous'])for(const p of [0,.05,.25,.5,.75,.99,1]){const shape=leafGeometry(p,direction,375,812);assert.ok(Number.isFinite(shape.edge));assert.ok(shape.curl>=0&&shape.curl<=21);assert.doesNotMatch(shape.clip,/NaN/);if(p===0||p===1)assert.equal(shape.opacity,0);}const next=leafGeometry(.5,'next',375,812),previous=leafGeometry(.5,'previous',375,812);assert.equal(Math.round(next.edge+previous.edge),100);});
 test('live source stays attached and real target exists before the first frame',()=>{const h=fixture();h.win.scrollTo({top:360});h.win.emit('scroll');h.open();assert.equal(h.picker.open,true);assert.equal(h.main.hidden,false);assert.equal(h.main.parentNode,h.doc.body);assert.equal(h.main.classList.contains('frontmatter-live-leaf'),true);assert.equal(h.overlays.length,1);assert.equal(h.overlays[0].children.length,3);assert.equal(h.overlays[0].dataset.progress,'0.000');h.frame();h.frame(40);assert.match(h.main.style.clipPath,/polygon/);assert.equal(h.picker.open,true);h.drain();assert.equal(h.main.hidden,true);assert.equal(h.main.inert,true);assert.equal(h.overlays.length,0);assert.equal(h.main.style.position,'');});
 test('close restores exact word, reading spot, title, and opener focus',()=>{const h=fixture();h.opener.focus();h.win.scrollTo({top:460});h.win.emit('scroll');h.open();h.drain();h.contents.close();h.hashes();assert.equal(h.main.hidden,false);assert.equal(h.win.scrollY,460);assert.equal(h.overlays.length,1);h.drain();assert.equal(h.win.location.hash,'#/learn/12');assert.equal(h.doc.title,'abate · 单词故事');assert.equal(h.doc.activeElement,h.opener);assert.equal(h.main.inert,false);assert.equal(h.picker.open,false);assert.equal(h.calls.routes.at(-1).restored,true);});
@@ -39,7 +39,8 @@ test('frontmatter markup and styles contain no obsolete continue-reading control
  }
  const h=fixture();
  assert.equal(h.doc.getElementById('close-search'),null);
- assert.equal(h.picker.getAttribute('aria-describedby'),'frontmatter-swipe-hint');
+ assert.equal(h.picker.getAttribute('aria-describedby'),null);
+ assert.equal(h.picker.querySelector('.frontmatter-navigation-hint'),null);
  assert.equal(h.picker.getAttribute('aria-keyshortcuts'),'Escape ArrowLeft ArrowRight');
 });
 test('both frontmatter leaves support every keyboard return without a return button',()=>{
@@ -65,4 +66,70 @@ test('current directory row still returns to the saved reading position',()=>{
  const row=h.make('button','current-row',h.results,'word-result');row.dataset.word='12';row.setAttribute('data-word','12');
  h.picker.emit('click',{target:row});h.drain();
  assert.equal(h.win.location.hash,'#/learn/12');assert.equal(h.picker.open,false);assert.equal(h.win.scrollY,460);
+});
+
+test('directory is centered on its current row before the first painted turn frame',()=>{
+ const h=fixture();h.win.rowBoxes=new Map([[12,{top:2400,height:80}]]);
+ h.win.scrollTo({top:460});h.win.emit('scroll');
+ const scrolls=[],scroll=h.win.scrollTo;h.win.scrollTo=options=>{scrolls.push({options,visibility:h.picker.style.visibility});scroll(options);};
+ h.open();
+ assert.equal(h.win.scrollY,2034);assert.equal(h.overlays[0].dataset.progress,'0.000');
+ assert.ok(scrolls.every(call=>call.visibility==='hidden'&&call.options.behavior==='instant'));
+ assert.equal(h.picker.style.visibility,'');assert.equal(h.doc.activeElement,h.title);
+ h.drain();assert.equal(h.win.scrollY,2034);assert.equal(scrolls.length,2);
+ h.contents.close();h.drain();assert.equal(h.win.scrollY,460);
+});
+test('settings stays at top and switching to directory prepositions without a scroll frame',()=>{
+ const h=fixture();h.win.rowBoxes=new Map([[12,{top:2400,height:80}]]);
+ h.open('/settings');h.drain();assert.equal(h.win.scrollY,0);
+ h.win.scrollTo({top:200});h.open('/contents');
+ assert.equal(h.win.scrollY,2034);assert.equal(h.overlays[0].dataset.progress,'0.000');
+ h.drain();assert.equal(h.win.scrollY,2034);
+});
+test('initial directory resolves the remembered reading row before asynchronous adoption',()=>{
+ let number;const h=fixture({getSelected:()=>number});
+ h.win.sessionStorage={getItem:()=> '13'};h.win.rowBoxes=new Map([[13,{top:3200,height:100}]]);
+ h.main.querySelector('.reading-layout').remove();h.open();
+ assert.equal(h.win.scrollY,2844);assert.equal(h.main.hidden,true);assert.equal(h.overlays.length,0);
+ assert.equal(h.contents.returnHash,'#/learn/13');
+ number=13;const scroll=h.win.scrollY;h.contents.renderResults();h.drain();
+ assert.equal(h.win.scrollY,scroll);assert.equal(h.results.querySelector('[aria-current="page"]').dataset.word,'13');
+});
+test('unavailable or invalid session memory falls back safely to the first directory row',()=>{
+ for(const storage of [{getItem(){throw new Error('blocked');}},{getItem:()=> '999'}]){
+  const h=fixture({getSelected:()=>undefined});h.win.sessionStorage=storage;h.open();h.drain();
+  assert.equal(h.contents.returnHash,'#/learn/12');assert.equal(h.win.scrollY,0);
+ }
+});
+test('filtering never auto-scrolls; a filtered-out current row falls back to the top on reentry',()=>{
+ const h=fixture();h.win.rowBoxes=new Map([[12,{top:2400,height:80}]]);h.open();h.drain();
+ h.win.scrollTo({top:210});h.search.value='aberrant';h.search.emit('input');
+ assert.equal(h.win.scrollY,210);assert.equal(h.results.querySelector('[aria-current="page"]'),null);
+ h.open('/settings');h.drain();h.open('/contents');h.drain();
+ assert.equal(h.search.value,'aberrant');assert.equal(h.win.scrollY,0);
+});
+test('missing or unmeasurable current row never throws or schedules a late scroll',()=>{
+ for(const missing of [true,false]){
+  const h=fixture();if(missing)h.results.querySelector=()=>null;else h.win.rowBoxes=new Map([[12,{height:0}]]);
+  h.open();assert.equal(h.win.scrollY,0);h.drain();assert.equal(h.win.scrollY,0);assert.equal(h.picker.style.visibility,'');
+ }
+});
+test('centering uses actual two-column geometry and visual viewport rather than ordinal',()=>{
+ const h=fixture({getSelected:()=>13});h.win.rowBoxes=new Map([[13,{left:540,top:700,height:120}]]);
+ h.win.visualViewport={height:600,offsetTop:20};h.open();
+ assert.equal(h.win.scrollY,440);assert.equal(h.win.scrollX,0);h.drain();assert.equal(h.win.scrollY,440);
+});
+test('reduced motion and missing turn CSS hide reading layout before directory measurement',()=>{
+ for(const options of [{reduced:true},{styled:false}]){
+  const h=fixture(options);h.win.rowBoxes=new Map([[12,{top:2400,height:80}]]);
+  const scroll=h.win.scrollTo;h.win.scrollTo=position=>{assert.equal(h.main.hidden,true);assert.equal(h.picker.style.visibility,'hidden');scroll(position);};
+  h.open();assert.equal(h.win.scrollY,2034);assert.equal(h.picker.style.visibility,'');assert.equal(h.overlays.length,0);
+ }
+});
+test('cancelled flip returns to prepositioned directory and keyboard return restores reading scroll',()=>{
+ const h=fixture();h.win.rowBoxes=new Map([[12,{top:2400,height:80}]]);h.win.scrollTo({top:460});h.win.emit('scroll');
+ h.open();h.drain();h.mouseStart();h.mouseMove(205);h.mouseEnd(205);h.drain();
+ assert.equal(h.win.scrollY,2034);assert.equal(h.picker.open,true);
+ h.doc.emit('keydown',{key:'ArrowRight',target:h.title});h.drain();
+ assert.equal(h.win.scrollY,460);assert.equal(h.picker.open,false);assert.equal(h.main.inert,false);
 });

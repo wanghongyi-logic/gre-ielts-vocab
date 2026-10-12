@@ -5,6 +5,7 @@ import {gateCatalog,isStorybookCatalog} from './release-policy.js';
 import {validateTrackedArt} from './motion-tracks.js';
 import {validateEntry} from './schema.js';
 const notifyMedia=(phase,ref)=>{if(typeof window!=='undefined')window.dispatchEvent(new CustomEvent('gre-offline-asset',{detail:{phase,path:ref.url,bytes:ref.bytes}}));};
+const mediaType=ref=>ref.url.endsWith('.mp4')?'video/mp4':ref.url.endsWith('.webm')?'video/webm':ref.url.endsWith('.webp')?'image/webp':ref.url.endsWith('.png')?'image/png':ref.url.endsWith('.avif')?'image/avif':'image/jpeg';
 const abortError=()=>Object.assign(new Error('Request superseded'),{name:'AbortError'});
 // Optional media has a deadline independent of required lesson text, including body reads.
 async function optionalMediaBytes(fetcher,url,signal,priority,timeoutMs){
@@ -52,7 +53,7 @@ export class LessonLoader {
   }
   return data;
  }
- async mediaResource(ref,signal,priority='high') {
+ async mediaResource(ref,signal,priority='high',allowNetwork=true) {
   const ticket=await this.mediaControl.ticket();if(ticket===null)return null;
   if(signal?.aborted)throw abortError();
   if(this.mediaCache.has(ref.sha256))return this.mediaControl.guard(ticket,()=>this.mediaCache.get(ref.sha256));
@@ -62,9 +63,10 @@ export class LessonLoader {
   if(signal?.aborted)throw abortError();
   if(local)return this.mediaControl.guard(ticket,()=>{if(signal?.aborted)throw abortError();if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);const blobURL=URL.createObjectURL(local);this.mediaCache.set(ref.sha256,blobURL);return blobURL;});
   // Reuse previously verified local cache before online fallback.
-  if(ref.url.endsWith('.mp4')||ref.url.endsWith('.webm')){
-   try{const cached=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(!cached)throw new Error('Not cached');const bytes=await cached.arrayBuffer();if(bytes.byteLength!==ref.bytes)throw new Error('Invalid cache');const digest=await this.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==ref.sha256)throw new Error('Invalid cache');if(signal?.aborted)throw abortError();return this.mediaControl.guard(ticket,()=>{if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);const blobURL=URL.createObjectURL(new Blob([bytes],{type:'video/mp4'}));this.mediaCache.set(ref.sha256,blobURL);return blobURL;});}catch(error){if(signal?.aborted)throw error;}
+  {
+   try{const cached=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(!cached)throw new Error('Not cached');const bytes=await cached.arrayBuffer();if(bytes.byteLength!==ref.bytes)throw new Error('Invalid cache');const digest=await this.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==ref.sha256)throw new Error('Invalid cache');if(signal?.aborted)throw abortError();return this.mediaControl.guard(ticket,()=>{if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);const blobURL=URL.createObjectURL(new Blob([bytes],{type:mediaType(ref)}));this.mediaCache.set(ref.sha256,blobURL);return blobURL;});}catch(error){if(signal?.aborted)throw error;}
   }
+  if(!allowNetwork)return null;
   notifyMedia('start',ref);try{
   const {bytes}=await optionalMediaBytes(this.fetcher,url,signal,priority,this.mediaTimeoutMs);
   if(bytes.byteLength!==ref.bytes)throw new Error('Illustration byte count mismatch');
@@ -72,7 +74,7 @@ export class LessonLoader {
   const hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');
   if(hash!==ref.sha256)throw new Error('Illustration integrity mismatch');
   if(signal?.aborted)throw abortError();
-  const type=ref.url.endsWith('.mp4')?'video/mp4':ref.url.endsWith('.webm')?'video/webm':ref.url.endsWith('.webp')?'image/webp':ref.url.endsWith('.png')?'image/png':ref.url.endsWith('.avif')?'image/avif':'image/jpeg';
+  const type=mediaType(ref);
   return await this.mediaControl.guard(ticket,async()=>{
   if(this.cacheStorage){try{const disk=await this.cacheStorage.open('gre-scalable-verified-units-v1');await disk.put(url.href,new Response(bytes,{headers:{'Content-Type':type}}));notifyMedia('saved',ref);}catch{}}
   if(signal?.aborted)throw abortError();
@@ -87,8 +89,8 @@ export class LessonLoader {
   const meta=this.index.get(Number(number));if(!meta)throw new Error('Lesson is not reviewed and ready');
   if(isStorybookCatalog(this.catalog)) {
    if(videoMode()==='none'){const unit=await this.resource(meta.unit,signal,priority),entry=unit.entries?.find(e=>e.number===meta.number);if(!entry||entry.word!==meta.word)throw new Error('Incompatible lesson');validateEntry(entry);return {entry,media:null};}
-   const refs=meta.storyMedia;
-   const [unit,posterURL,videoURL,staticPosterURL]=await Promise.all([this.resource(meta.unit,signal,priority),refs?this.mediaResource(refs.poster,signal,priority).catch(error=>{if(signal?.aborted)throw error;return null;}):null,refs?this.mediaResource(refs.video,signal,priority).catch(error=>{if(signal?.aborted)throw error;return null;}):null,refs?.staticPoster?this.mediaResource(refs.staticPoster,signal,priority).catch(error=>{if(signal?.aborted)throw error;return null;}):null]);
+   const refs=meta.storyMedia,allowNetwork=(meta.displayOrdinal??this.catalog.entries.indexOf(meta)+1)<=50;
+   const [unit,posterURL,videoURL,staticPosterURL]=await Promise.all([this.resource(meta.unit,signal,priority),refs?this.mediaResource(refs.poster,signal,priority,allowNetwork).catch(error=>{if(signal?.aborted)throw error;return null;}):null,refs?this.mediaResource(refs.video,signal,priority,allowNetwork).catch(error=>{if(signal?.aborted)throw error;return null;}):null,refs?.staticPoster?this.mediaResource(refs.staticPoster,signal,priority,allowNetwork).catch(error=>{if(signal?.aborted)throw error;return null;}):null]);
    const entry=unit.entries?.find(item=>item.number===meta.number);
    if(!entry||entry.word!==meta.word)throw new Error('Incompatible lesson');
    validateEntry(entry);
