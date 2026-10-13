@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "167",
-  "authoredCount": 220,
-  "publishedCount": 220,
+  "release": "168",
+  "authoredCount": 230,
+  "publishedCount": 230,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -227,7 +227,17 @@
       2311,
       262,
       1040,
-      364
+      364,
+      759,
+      2461,
+      846,
+      926,
+      3021,
+      2560,
+      2115,
+      1942,
+      379,
+      1026
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -497,6 +507,16 @@
       "url": "units/core041-text-candidate-52ee1c11358f950fbf507251f2b6ae9de41b0bf5e53e35005d2a36a5acb62048.json",
       "sha256": "52ee1c11358f950fbf507251f2b6ae9de41b0bf5e53e35005d2a36a5acb62048",
       "bytes": 21678
+    },
+    {
+      "url": "units/core042-text-candidate-304178c24500acb2ea6ab28fb24c63699aad826dff045e444c1fbe1b5a27a540.json",
+      "sha256": "304178c24500acb2ea6ab28fb24c63699aad826dff045e444c1fbe1b5a27a540",
+      "bytes": 21751
+    },
+    {
+      "url": "units/core043-text-candidate-5d138677006ff543afef745a6b2334429e1ed6ce0071cc6238421977f35ede6a.json",
+      "sha256": "5d138677006ff543afef745a6b2334429e1ed6ce0071cc6238421977f35ede6a",
+      "bytes": 23403
     }
   ],
   "entries": [
@@ -18059,6 +18079,791 @@
           "url": "story-media/364-staticPoster-f879f254fb12b4c8640199af7b56f5452abac449a3769da37fc32c4171be25c4.png",
           "sha256": "f879f254fb12b4c8640199af7b56f5452abac449a3769da37fc32c4171be25c4",
           "bytes": 1134724
+        }
+      }
+    },
+    {
+      "number": 759,
+      "word": "elate",
+      "coreMeaningZh": "使兴高采烈；使喜出望外",
+      "unit": 52,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 221,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "我的作品入选了！",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我的作品入选了！"
+          ]
+        },
+        "alt": "男孩读到作品入选的来信，先认真看信，随后抬起脸开心地笑起来。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2800,
+            "endMs": 6200,
+            "text": "我的作品入选了！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我的作品入选了！"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/759-video-292f46479a4c34fa9c2588c70a22b7c96826a53f05ef50c1c835a940f54991fc.mp4",
+          "sha256": "292f46479a4c34fa9c2588c70a22b7c96826a53f05ef50c1c835a940f54991fc",
+          "bytes": 542240
+        },
+        "poster": {
+          "url": "story-media/759-poster-a584c11453db8749b3998f8cc01f1828c78ab045ed815f6b9d7ecba2dd28b69f.png",
+          "sha256": "a584c11453db8749b3998f8cc01f1828c78ab045ed815f6b9d7ecba2dd28b69f",
+          "bytes": 1091733
+        },
+        "staticPoster": {
+          "url": "story-media/759-staticPoster-85f29427cd6a4423d2152e83b813f20c0fd80787aebce7a42604636f1a8905e6.png",
+          "sha256": "85f29427cd6a4423d2152e83b813f20c0fd80787aebce7a42604636f1a8905e6",
+          "bytes": 1108139
+        }
+      }
+    },
+    {
+      "number": 2461,
+      "word": "taxing",
+      "coreMeaningZh": "费力的；费神的；令人吃不消的",
+      "unit": 52,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 222,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "这题真费脑筋。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这题真费脑筋。"
+          ]
+        },
+        "alt": "男孩尝试把红色拼块放进复杂拼图，仍然找不到合适位置，只好停下来揉揉额头。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3800,
+            "endMs": 6200,
+            "text": "这题真费脑筋。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这题真费脑筋。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/2461-video-bbc77fa5a3bd181ad555deb82c5f1e6bc4bd7a4a65e4421189ae3c4b5a09bf6f.mp4",
+          "sha256": "bbc77fa5a3bd181ad555deb82c5f1e6bc4bd7a4a65e4421189ae3c4b5a09bf6f",
+          "bytes": 776843
+        },
+        "poster": {
+          "url": "story-media/2461-poster-5efd3570e92ecf53e4555a2245b914b31c774d94e6dbb5f71639d5b057023ccc.png",
+          "sha256": "5efd3570e92ecf53e4555a2245b914b31c774d94e6dbb5f71639d5b057023ccc",
+          "bytes": 1196896
+        },
+        "staticPoster": {
+          "url": "story-media/2461-staticPoster-203f7e328b0de422d242b9235848289ebddcf0c75393cf913312203d9209e7b1.png",
+          "sha256": "203f7e328b0de422d242b9235848289ebddcf0c75393cf913312203d9209e7b1",
+          "bytes": 1219692
+        }
+      }
+    },
+    {
+      "number": 846,
+      "word": "exacting",
+      "coreMeaningZh": "要求严格的；苛求的；需要高度细致和努力的",
+      "unit": 52,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 223,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "这里还要再精确一点。",
+          "speaker": "craft teacher",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这里还要再精确一点。"
+          ]
+        },
+        "alt": "手工老师仔细检查男孩的小船，指出桅杆微小的歪斜；男孩扶稳船身、调直桅杆，老师随后再次认真检查。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1000,
+            "endMs": 4600,
+            "text": "这里还要再精确一点。",
+            "speaker": "craft teacher",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这里还要再精确一点。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 4600,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/846-video-ca22acfb039be239417d4859549fee52df2f15590ad4ca5ad5c8077979ee687d.mp4",
+          "sha256": "ca22acfb039be239417d4859549fee52df2f15590ad4ca5ad5c8077979ee687d",
+          "bytes": 894686
+        },
+        "poster": {
+          "url": "story-media/846-poster-a22bbec17234426b2f6a628e68bf778149be1346b3af9cdb9f2f703cc42ca8b3.png",
+          "sha256": "a22bbec17234426b2f6a628e68bf778149be1346b3af9cdb9f2f703cc42ca8b3",
+          "bytes": 1177574
+        },
+        "staticPoster": {
+          "url": "story-media/846-staticPoster-5ffe60723f4b133f2e513260b9a7e41af519f59cb1741cc36dadc06ae33d546c.png",
+          "sha256": "5ffe60723f4b133f2e513260b9a7e41af519f59cb1741cc36dadc06ae33d546c",
+          "bytes": 1189081
+        }
+      }
+    },
+    {
+      "number": 926,
+      "word": "fester",
+      "coreMeaningZh": "（伤口）化脓，溃烂；（怨恨、问题）持续加重，恶化",
+      "unit": 52,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 224,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "越想越气，这件事一直没说开。",
+          "speaker": "narrator",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "越想越气，这件事一直没说开。"
+          ]
+        },
+        "alt": "玩具飞机断了机翼，男孩起初难过，随后抱紧双臂、越想越气；朋友犹豫着走近，他却转开身子，未说开的委屈逐渐变成怨气。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1600,
+            "endMs": 6200,
+            "text": "越想越气，这件事一直没说开。",
+            "speaker": "narrator",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "越想越气，这件事一直没说开。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/926-video-0bc5b4bfce36d56b44b9097428bb1093abf543572e52e6d557e30eae5e271a7e.mp4",
+          "sha256": "0bc5b4bfce36d56b44b9097428bb1093abf543572e52e6d557e30eae5e271a7e",
+          "bytes": 844250
+        },
+        "poster": {
+          "url": "story-media/926-poster-511068937041f1aecc7ae28e3ce410b33c76008e6192bbb55e04cc423fdbbafb.png",
+          "sha256": "511068937041f1aecc7ae28e3ce410b33c76008e6192bbb55e04cc423fdbbafb",
+          "bytes": 1252767
+        },
+        "staticPoster": {
+          "url": "story-media/926-staticPoster-d8c64bffab883bbb9987ea5376a1c80731aed9b3e6a6b1929d9b49d2ac5bae00.png",
+          "sha256": "d8c64bffab883bbb9987ea5376a1c80731aed9b3e6a6b1929d9b49d2ac5bae00",
+          "bytes": 1294369
+        }
+      }
+    },
+    {
+      "number": 3021,
+      "word": "skittish",
+      "coreMeaningZh": "紧张易受惊的；不够稳重、变化无常的",
+      "unit": 52,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 225,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "一点动静，它就受惊。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "一点动静，它就受惊。"
+          ]
+        },
+        "alt": "男孩摊开手掌递苹果，旁边草丛稍有动静，小马就警觉地抬头、抬蹄，并把一只前蹄向后收了一小步。男孩停住并收回一些递苹果的手，给它留出空间。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3400,
+            "endMs": 6200,
+            "text": "一点动静，它就受惊。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "一点动静，它就受惊。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/3021-video-4209555555dbbaeaa29bd7e315f1f2dbaa189db11ccc0711146d754ce2c0a8f7.mp4",
+          "sha256": "4209555555dbbaeaa29bd7e315f1f2dbaa189db11ccc0711146d754ce2c0a8f7",
+          "bytes": 947923
+        },
+        "poster": {
+          "url": "story-media/3021-poster-b8e8d89f469a9739f9d473e93f1846fbc4845899e6f93947a3c72cb0ab3cada5.png",
+          "sha256": "b8e8d89f469a9739f9d473e93f1846fbc4845899e6f93947a3c72cb0ab3cada5",
+          "bytes": 1200513
+        },
+        "staticPoster": {
+          "url": "story-media/3021-staticPoster-b983c8d7148ca825dd731b1f99b7481258afead9a6731ed0e5d4185e565ea6b5.png",
+          "sha256": "b983c8d7148ca825dd731b1f99b7481258afead9a6731ed0e5d4185e565ea6b5",
+          "bytes": 1260353
+        }
+      }
+    },
+    {
+      "number": 2560,
+      "word": "unkempt",
+      "coreMeaningZh": "（头发、外表等）蓬乱的；不整洁的；疏于打理的",
+      "unit": 53,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 226,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "头发还没梳呢。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "头发还没梳呢。"
+          ]
+        },
+        "alt": "男孩发现头发蓬乱，抬手压了压发束，松开手后头发仍然乱蓬蓬。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1200,
+            "endMs": 6200,
+            "text": "头发还没梳呢。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "头发还没梳呢。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/2560-video-18bfd96896ba671e94ad5b81c6539b8d9d7b75e3b26bf8d6d09e6c978408e2e6.mp4",
+          "sha256": "18bfd96896ba671e94ad5b81c6539b8d9d7b75e3b26bf8d6d09e6c978408e2e6",
+          "bytes": 680286
+        },
+        "poster": {
+          "url": "story-media/2560-poster-3abf31119ebb7f2bb5d02e0b9212ca9db17e53a079f37e354fb8930ceb75ff36.png",
+          "sha256": "3abf31119ebb7f2bb5d02e0b9212ca9db17e53a079f37e354fb8930ceb75ff36",
+          "bytes": 1115746
+        },
+        "staticPoster": {
+          "url": "story-media/2560-staticPoster-fa04e45e9e1c7a52fe3dafc9ecf9a4939618ca8d4f03aa5f9990d24c55336184.png",
+          "sha256": "fa04e45e9e1c7a52fe3dafc9ecf9a4939618ca8d4f03aa5f9990d24c55336184",
+          "bytes": 1132868
+        }
+      }
+    },
+    {
+      "number": 2115,
+      "word": "ruminate",
+      "coreMeaningZh": "反复思量；沉思；（牛等）反刍",
+      "unit": 53,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 227,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "他那句话，究竟是什么意思？",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "他那句话，究竟是什么意思？"
+          ]
+        },
+        "alt": "男孩读完纸条放在桌上，托着下巴反复琢磨，又拿起同一张纸条读了一遍。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1800,
+            "endMs": 6200,
+            "text": "他那句话，究竟是什么意思？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "他那句话，究竟是什么意思？"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/2115-video-db2bb8fe2850a9228643c1f5ec5cf64ffff50a2a128a1a8a3be52b2fadacd70c.mp4",
+          "sha256": "db2bb8fe2850a9228643c1f5ec5cf64ffff50a2a128a1a8a3be52b2fadacd70c",
+          "bytes": 880578
+        },
+        "poster": {
+          "url": "story-media/2115-poster-c42ff0a052b93802a35a3fa3b8502dd0a68e21156287c01e31f7c5b5948674ea.png",
+          "sha256": "c42ff0a052b93802a35a3fa3b8502dd0a68e21156287c01e31f7c5b5948674ea",
+          "bytes": 1185455
+        },
+        "staticPoster": {
+          "url": "story-media/2115-staticPoster-7337802423385ff6a04cc25c7dd86dbed1f258f5230bc909a09118b5ca25b116.png",
+          "sha256": "7337802423385ff6a04cc25c7dd86dbed1f258f5230bc909a09118b5ca25b116",
+          "bytes": 1213336
+        }
+      }
+    },
+    {
+      "number": 1942,
+      "word": "quotidian",
+      "coreMeaningZh": "每日的；日常的；平凡普通的",
+      "unit": 53,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 228,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "每天早上，都这样。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "每天早上，都这样。"
+          ]
+        },
+        "alt": "男孩照常吃早餐，把勺子放回碗里，松开手后转身握住身旁书包的提手，准备开始一天。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1400,
+            "endMs": 6200,
+            "text": "每天早上，都这样。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "每天早上，都这样。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/1942-video-57cbfbb55c90e8385ec3e3bd639c80df4265c89c8131821c1a41a2c567d67600.mp4",
+          "sha256": "57cbfbb55c90e8385ec3e3bd639c80df4265c89c8131821c1a41a2c567d67600",
+          "bytes": 693687
+        },
+        "poster": {
+          "url": "story-media/1942-poster-0fa1e13a0949baa0940a58a0c698157113ce30a6c677e3acef7a2d9fd6143c40.png",
+          "sha256": "0fa1e13a0949baa0940a58a0c698157113ce30a6c677e3acef7a2d9fd6143c40",
+          "bytes": 1100994
+        },
+        "staticPoster": {
+          "url": "story-media/1942-staticPoster-55bd22ff28839196d3e63556486dfee8f6005c7cbea2bf0570d28b6eae463986.png",
+          "sha256": "55bd22ff28839196d3e63556486dfee8f6005c7cbea2bf0570d28b6eae463986",
+          "bytes": 1169239
+        }
+      }
+    },
+    {
+      "number": 379,
+      "word": "colossal",
+      "coreMeaningZh": "巨大的，庞大的；数量或程度惊人的",
+      "unit": 53,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 229,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "这么大！快顶到屋顶了。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这么大！快顶到屋顶了。"
+          ]
+        },
+        "alt": "男孩站在普通长凳旁，仰头望着几乎顶到博物馆屋顶的巨大雕像，惊叹它的体积。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1600,
+            "endMs": 6200,
+            "text": "这么大！快顶到屋顶了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这么大！快顶到屋顶了。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/379-video-5629a5912c5d045e02cef3380eea0576bbb0bd90458b576fddff318bcd3bdc1c.mp4",
+          "sha256": "5629a5912c5d045e02cef3380eea0576bbb0bd90458b576fddff318bcd3bdc1c",
+          "bytes": 593078
+        },
+        "poster": {
+          "url": "story-media/379-poster-a1942229a362b9c973e5a7fae0c2349ecfb73e4d2131ff4419c52cbcf28c5c91.png",
+          "sha256": "a1942229a362b9c973e5a7fae0c2349ecfb73e4d2131ff4419c52cbcf28c5c91",
+          "bytes": 1184139
+        },
+        "staticPoster": {
+          "url": "story-media/379-staticPoster-a42ba8a1dfc06fce2fa2f8b3da30c85947b4033c533a13a6c65a2ddc53a6dfda.png",
+          "sha256": "a42ba8a1dfc06fce2fa2f8b3da30c85947b4033c533a13a6c65a2ddc53a6dfda",
+          "bytes": 1185677
+        }
+      }
+    },
+    {
+      "number": 1026,
+      "word": "germane",
+      "coreMeaningZh": "与所谈问题密切相关的；切题的，贴切的",
+      "unit": 53,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 230,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "这份天气预报正好用得上。",
+          "speaker": "mother",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这份天气预报正好用得上。"
+          ]
+        },
+        "alt": "商量公园野餐时，男孩举起画着雨云的天气预报；母亲从野餐篮转向预报，认真查看与计划直接相关的信息。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1900,
+            "text": "周六还能去公园野餐吗？",
+            "speaker": "mother",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "周六还能去公园野餐吗？"
+            ],
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1900,
+            "endMs": 3000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-1"
+          },
+          {
+            "startMs": 3000,
+            "endMs": 6200,
+            "text": "这份天气预报正好用得上。",
+            "speaker": "mother",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这份天气预报正好用得上。"
+            ],
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/1026-video-13b1a2a0c670202370a2d4cdead947d769042e6bc05dd665268b6221cba4d8c8.mp4",
+          "sha256": "13b1a2a0c670202370a2d4cdead947d769042e6bc05dd665268b6221cba4d8c8",
+          "bytes": 693384
+        },
+        "poster": {
+          "url": "story-media/1026-poster-006a3cc7deff630f290ed99250ee817cae8f64846d4f59044ead852cc1705585.png",
+          "sha256": "006a3cc7deff630f290ed99250ee817cae8f64846d4f59044ead852cc1705585",
+          "bytes": 1274919
+        },
+        "staticPoster": {
+          "url": "story-media/1026-staticPoster-f3aa78aae0532a7ff9e2620797498f6c1156ba3a59c5970bce7e1e71fa031bf3.png",
+          "sha256": "f3aa78aae0532a7ff9e2620797498f6c1156ba3a59c5970bce7e1e71fa031bf3",
+          "bytes": 1281212
         }
       }
     }

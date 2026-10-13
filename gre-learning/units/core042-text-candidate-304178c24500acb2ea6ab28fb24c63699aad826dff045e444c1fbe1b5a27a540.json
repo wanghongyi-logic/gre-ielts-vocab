@@ -1,0 +1,405 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 759,
+      "word": "elate",
+      "ipa": "/ɪˈleɪt/",
+      "pos": "v. [T]",
+      "coreMeaningZh": "使兴高采烈；使喜出望外",
+      "coreEn": "To make someone feel intensely happy, often because of welcome news or success.",
+      "coreImageZh": "男孩读着刚收到的信，得知自己的作品入选了，眼睛一下亮起来。他双手握着信，抬头露出灿烂的笑容。是这个好消息让他兴高采烈：the news elates him。",
+      "mnemonics": [
+        {
+          "method": "ELEVATE 心情升高",
+          "textZh": "把 elate 联想到 elevate（抬高）：好消息把心情一下子抬高，让人兴高采烈。两词的拼写只差中间的 EV，借形近记“使人喜出望外”；这是拼写联想。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "ELITE 入选乐开花",
+          "textZh": "elate 和 elite（精英）只差中间一个字母。盼了很久，终于收到入选 elite team（精英队）的通知，好消息让你喜出望外：elate。借形近记“使人兴高采烈”，两词读音不同。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "好消息、成功等使人兴高采烈",
+          "explanationZh": "这里作及物动词：让人高兴的事物作主语，受到影响的人作宾语。常带成功或喜讯引起的强烈喜悦，有时也有得意、自豪的感觉。",
+          "collocations": [
+            {
+              "phrase": "elate someone",
+              "meaningZh": "使某人兴高采烈",
+              "usageZh": "是某件事使这个人高兴。"
+            },
+            {
+              "phrase": "be elated at / by the news",
+              "meaningZh": "听到消息后喜出望外",
+              "usageZh": "elated 描写人的感受，at / by 引出原因。"
+            }
+          ]
+        },
+        {
+          "senseZh": "elate 与 elated",
+          "explanationZh": "想写“我很高兴”，通常用 I am / feel elated；想写“这件事让我高兴”，可用它作主语，加 elate 和宾语。词形是 elated、elating，名词是 elation。",
+          "collocations": [
+            {
+              "phrase": "feel elated",
+              "meaningZh": "感到兴高采烈",
+              "usageZh": "强调感受，而不是对外做出的动作。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The discovery has elated researchers.",
+          "translationZh": "这一发现使研究人员兴奋不已。",
+          "explanationZh": "discovery 是带来喜悦的原因，researchers 是受到影响的人；elate 直接接宾语。"
+        },
+        {
+          "textEn": "The winning of the state basketball championship elated the whole town.",
+          "translationZh": "赢得州篮球冠军，让全镇的人都欣喜若狂。",
+          "explanationZh": "The winning of… 是名词短语，作主语；elated 在这里是过去式，不是跟在 be 后面的形容词。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "delight",
+          "comparisonZh": "好消息让人高兴时，elate someone 和 delight someone 都可直接接人。elate 突出情绪高涨，常见于喜讯或成功；delight 更通用，也可写美景、礼物带来的愉悦。delight 还可作名词，或用 delight in doing，不能把这些结构直接搬给 elate。"
+        },
+        {
+          "word": "exhilarate",
+          "comparisonZh": "成功让人兴奋时，两者都可及物，也能说 be elated/exhilarated by success。elate 更突出喜悦、自豪带来的高昂情绪；exhilarate 更容易带出振奋、充满活力的感觉，例如刺激的活动使人兴奋。两者有交集，不是所有情境都同样自然。"
+        }
+      ]
+    },
+    {
+      "number": 2461,
+      "word": "taxing",
+      "ipa": "/ˈtæksɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "费力的；费神的；令人吃不消的",
+      "coreEn": "Difficult enough to use a great deal of mental or physical energy.",
+      "coreImageZh": "男孩盯着复杂的拼图，试过一块又停下来思考，最后疲惫地揉了揉额头。taxing 描写这件事很费神、很耗精力；重点在做起来吃力。",
+      "mnemonics": [
+        {
+          "method": "TAX 收走精力",
+          "textZh": "TAX（税）从钱包里收走钱；taxing 的工作像在收“精力税”，不断耗掉精神和体力，做起来很吃力。tax 本身也有“使费力、使负担很重”的动词义，taxing 就借这层负担感来记。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "TASK 做得真累",
+          "textZh": "taxing 和 task（任务）长得很像。想起一大堆任务接着来，脑力、体力都快耗光了：taxing，费神又费力。这是形近联想，不是同音词。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "耗费大量脑力或体力",
+          "explanationZh": "可修饰任务、工作、旅程，也能放在 be、prove 等之后。它强调付出的精力多、做起来吃力；费脑筋和费体力都可以，不只指看不懂。",
+          "collocations": [
+            {
+              "phrase": "a taxing task / problem",
+              "meaningZh": "费力的任务／费神的问题",
+              "usageZh": "事情给人带来负担。"
+            },
+            {
+              "phrase": "mentally / physically taxing",
+              "meaningZh": "很耗脑力／体力的",
+              "usageZh": "副词说明主要消耗哪方面的精力。"
+            }
+          ]
+        },
+        {
+          "senseZh": "注意语境中的词性",
+          "explanationZh": "本页记形容词“费劲的”。在 taxing income 这类表达里，taxing 则可能是动词 tax 的 -ing 形式，表示征税；不能只看词尾就把两种用法混在一起。",
+          "collocations": [
+            {
+              "phrase": "nothing too taxing",
+              "meaningZh": "不太费神或费力的事情",
+              "usageZh": "taxing 放在 nothing 后，说明想避免的负担。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The journey proved to be very taxing.",
+          "translationZh": "这趟旅程结果相当累人。",
+          "explanationZh": "proved to be 后接形容词；不是说旅程需要缴税，而是走下来很耗精力。"
+        },
+        {
+          "textEn": "I just need an entertaining read for the beach - nothing too taxing.",
+          "translationZh": "我只想找本在海边消遣的读物，不要太费脑筋。",
+          "explanationZh": "read 在这里是名词“读物”；nothing too taxing 表示不想读需要投入很多脑力的内容。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "arduous",
+          "comparisonZh": "a taxing/arduous journey 都能写旅途艰辛。taxing 更容易突出人的精力被消耗；arduous 突出完成它需要大量、持续的努力，语气较正式。两者都不是“勤劳的人”；an arduous worker 不能直接用来表示勤奋员工。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "exacting",
+          "comparisonZh": "说工作耗费心力时，a taxing/exacting task 有交集。taxing 强调做起来费劲，exacting 更突出事情对努力、技巧或细致程度要求高。an exacting teacher 是要求严格的老师；a taxing teacher 则更容易表示让人费神，不能照换成同一个意思。"
+        }
+      ]
+    },
+    {
+      "number": 846,
+      "word": "exacting",
+      "ipa": "/ɪɡˈzæktɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "要求严格的；苛求的；需要高度细致和努力的",
+      "coreEn": "Setting very high requirements, or calling for substantial care, skill, and effort.",
+      "coreImageZh": "手工老师检查男孩做的小船模型，发现桅杆还稍有歪斜，便让他调整后再检查。exacting 说的是要求高、细节不能马虎；老师不必发火，也不等于故意为难人。",
+      "mnemonics": [
+        {
+          "method": "EXACT 一点不差",
+          "textZh": "他要求每个尺寸都 EXACT（精确），稍有偏差就让你重做。看见 EXACTing，就想起这种“一点都不能差”的要求：标准严格，做起来也很费心。借熟词 exact 记意思。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "exACTING 这场戏真难演",
+          "textZh": "exacting 里完整藏着 acting（演戏）。想象导演要求：哭的同时还得笑，眼泪必须在指定那一秒落下。这场戏对演技和控制力要求很高，真是 exacting。借 ACTING 的字形记“要求高、费心力”，不是词源拆解。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "人或标准要求很高",
+          "explanationZh": "常放在 teacher、employer、standards 等名词前。可以带苛求、不易满足的语气，但不自动意味着要求不公正，或这个人爱发脾气。",
+          "collocations": [
+            {
+              "phrase": "an exacting teacher",
+              "meaningZh": "要求严格的老师",
+              "usageZh": "重点在老师提出的要求。"
+            },
+            {
+              "phrase": "exacting standards",
+              "meaningZh": "严格的标准",
+              "usageZh": "要求达到很高的水平。"
+            }
+          ]
+        },
+        {
+          "senseZh": "事情需要很多细致工作和努力",
+          "explanationZh": "可形容需要技巧、耐心、专注的任务。它和 taxing 的“费劲”有交集；exacting 更让人注意任务提出的高要求，不必出现筋疲力尽的结果。",
+          "collocations": [
+            {
+              "phrase": "an exacting task",
+              "meaningZh": "要求高、需要细致投入的任务",
+              "usageZh": "可以是精密装配、校对等。"
+            },
+            {
+              "phrase": "meet exacting safety standards",
+              "meaningZh": "达到严格的安全标准",
+              "usageZh": "meet 在这里表示满足、达到要求。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "All our aircraft meet exacting safety standards.",
+          "translationZh": "我们所有的飞机都符合严格的安全标准。",
+          "explanationZh": "exacting 修饰 standards，说明要求高；不是说飞机感到劳累。"
+        },
+        {
+          "textEn": "The Duke was not well enough to carry out such an exacting task.",
+          "translationZh": "公爵身体状况还不足以承担这样一项要求很高的任务。",
+          "explanationZh": "exacting 修饰 task，写它需要投入很多心力；well enough to 表示身体状况是否足以承担。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "demanding",
+          "comparisonZh": "an exacting/demanding teacher 都可表示要求很高的老师；形容费心的任务时也接近。demanding 适用范围更宽，exacting 常让人想到严格、不肯放过细节。demanding attention 若表示“正在要求关注”，是动词 demand 的分词结构，不能换成形容词 exacting。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "rigorous",
+          "comparisonZh": "exacting/rigorous standards 都强调严格。exacting 着重要求很高、难以轻易满足；rigorous 还常写方法或论证缜密。a rigorous proof 是严密的证明，不能机械换成 an exacting proof 来表达同样的逻辑严密性。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    },
+    {
+      "number": 926,
+      "word": "fester",
+      "ipa": "/ˈfestər/",
+      "pos": "v. [chiefly I]",
+      "coreMeaningZh": "（伤口）化脓，溃烂；（怨恨、问题）持续加重，恶化",
+      "coreEn": "For a wound, to become infected and form pus; for resentment or a problem, to persist and worsen.",
+      "coreImageZh": "同伴弄坏玩具后，两人一直没有谈开。男孩反复看着桌上的断裂玩具，委屈渐渐变成更深的怨气；同伴走近时，他仍不愿理会。没处理的心结越来越深：his resentment festers。",
+      "mnemonics": [
+        {
+          "method": "FASTER 越拖越坏",
+          "textZh": "fester 和 faster（更快）只差一个字母。想象一个没处理的伤口，感染加重得更快，最后化脓：fester。借熟悉的 faster 记住“化脓、恶化”；只是拼写联想，fester 本身不表示速度快。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "FEAST 细菌吃大餐",
+          "textZh": "看到 fester，把 fest 联想到 feast（大吃一顿）：细菌在没处理的伤口里“赴宴”，感染加重，伤口化脓。拼写上，feast 去掉 a 再接 er，就是 fester。这是形近联想，不是词源；feast 的元音 /iː/ 与 fester 的 /e/ 不同。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "伤口感染后化脓、溃烂",
+          "explanationZh": "常作不及物动词，以 wound、cut、sore 等为主语。重点不只是一般疼痛，而是伤口感染、形成脓液。过去式和过去分词 festered，现在分词 festering，第三人称单数 festers。",
+          "collocations": [
+            {
+              "phrase": "a wound begins to fester",
+              "meaningZh": "伤口开始化脓",
+              "usageZh": "伤口是主语；通常不说某人 fester a wound 来表达这一常见义。"
+            },
+            {
+              "phrase": "a festering sore",
+              "meaningZh": "一处化脓的疮口",
+              "usageZh": "festering 作定语，说明伤处正在感染化脓。"
+            }
+          ]
+        },
+        {
+          "senseZh": "未解决的怨气或问题越积越深",
+          "explanationZh": "把坏情绪或问题比作没处理的伤口，强调持续存在并加重，而不是突然生气一次。常见 let something fester 或 allow something to fester。",
+          "collocations": [
+            {
+              "phrase": "let resentment fester",
+              "meaningZh": "任由怨恨越积越深",
+              "usageZh": "let 后接宾语加动词原形。"
+            },
+            {
+              "phrase": "allow a dispute to fester",
+              "meaningZh": "任由争端持续恶化",
+              "usageZh": "allow 后的结构是宾语加 to 不定式。"
+            },
+            {
+              "phrase": "fester in someone’s mind",
+              "meaningZh": "在某人心里积成怨气",
+              "usageZh": "主语可以是伤人的话、委屈或怨恨；in 后说明积压在谁心里。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The wound became inflamed and festered.",
+          "translationZh": "伤口发了炎，继而化脓。",
+          "explanationZh": "wound 是 festered 的主语；这里是伤口化脓的字面义。"
+        },
+        {
+          "textEn": "It's better to express your anger than let it fester inside you.",
+          "translationZh": "把怒气表达出来，总比让它憋在心里越积越深好。",
+          "explanationZh": "it 指 anger。fester 把没有处理的愤怒写成逐渐加重的伤口；这不是说情绪真的产生脓液。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rankle",
+          "comparisonZh": "说一句冒犯的话长久让人不快时接近：an insult festered in her mind 或 rankled with her。fester 更突出怨气未解决而持续加重，rankle 更突出一直令人恼怒、耿耿于怀。rankle with somebody 的结构不能照搬成 fester with somebody；伤口化脓的常见表达仍是 fester。"
+        },
+        {
+          "word": "deteriorate",
+          "comparisonZh": "the situation festered/deteriorated 都可说局势变坏。deteriorate 更广，身体状况、天气、质量都可恶化；fester 常带问题被拖着不解决、如伤口溃烂般加重的意味。deteriorating eyesight 说视力变差，不能按同一意思换成 festering eyesight。"
+        }
+      ]
+    },
+    {
+      "number": 3021,
+      "word": "skittish",
+      "ipa": "/ˈskɪtɪʃ/",
+      "pos": "adj.",
+      "coreMeaningZh": "紧张易受惊的；不够稳重、变化无常的",
+      "coreEn": "Nervous and easily startled; also, not serious or steady in mood, opinion, or behavior.",
+      "coreImageZh": "男孩摊开手掌递苹果，旁边草丛轻轻一响，小马就竖起耳朵、缩身后退了一小步。男孩停住手，给它留出空间。小马很 skittish：一点动静就受惊，并非故意不听话。",
+      "mnemonics": [
+        {
+          "method": "sKITTIsh 小猫一惊",
+          "textZh": "skittish 中间的 KITTI 很像 kitty（小猫）。想象门刚轻轻一响，小猫就惊跳着躲开：紧张、容易受惊。用熟悉的整个 kitty 抓住字形，再带回完整读音 /ˈskɪtɪʃ/；这是音形联想，不是实际构词。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "SKIT 正事演成小品",
+          "textZh": "SKIT 是小品、搞笑短剧：把 skit 的 t 双写，再接 -ish，就得到 skittish。想象一个人谈正事也像演小品，刚摆出严肃脸又开起玩笑，用这个场景记“不够稳重”的另一义。它不是动物易受惊义的解释，也不是词源拆解。",
+          "original": false,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "人或动物紧张，容易受惊",
+          "explanationZh": "可作定语或表语。常形容马、猫等因细小动静就惊跳、躲避；形容人时也可表示对风险担忧、不踏实。易受惊不等于易怒，更不等于故意难管。",
+          "collocations": [
+            {
+              "phrase": "a skittish horse",
+              "meaningZh": "一匹容易受惊的马",
+              "usageZh": "强调惊跳、躲避等敏感反应。"
+            },
+            {
+              "phrase": "be skittish about investing",
+              "meaningZh": "对投资感到忐忑",
+              "usageZh": "about 后可接名词或动名词 investing。"
+            },
+            {
+              "phrase": "skittish investors",
+              "meaningZh": "谨慎不安的投资者",
+              "usageZh": "可能因一点坏消息就犹豫或撤退；并不自动表示轻浮。"
+            }
+          ]
+        },
+        {
+          "senseZh": "言行不够稳重，或状态容易变动",
+          "explanationZh": "说人的想法或情绪轻飘、容易变化时，是另一层意思；不要把任何受惊动物都理解成“反复无常”。金融语境也可指市场容易突然波动。相关形式有 skittishly（紧张不安地等）和 skittishness（易受惊、变化无常等）。",
+          "collocations": [
+            {
+              "phrase": "playful and skittish",
+              "meaningZh": "爱玩闹而不够稳重",
+              "usageZh": "用于人的语境时，需要前后文确认是轻浮易变义。"
+            },
+            {
+              "phrase": "skittish financial markets",
+              "meaningZh": "容易波动的金融市场",
+              "usageZh": "markets 在这里指市场反应和走势容易变化，不是字面上的胆小。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The kitten was really skittish.",
+          "translationZh": "那只小猫特别容易受惊。",
+          "explanationZh": "skittish 作表语，描述小猫紧张、容易惊跳的状态。"
+        },
+        {
+          "textEn": "We've been skittish about taking on such a large mortgage.",
+          "translationZh": "我们一直对背上这么大一笔房贷感到忐忑。",
+          "explanationZh": "about 后接 taking on；这里是不安和顾虑，不是说我们性格轻浮。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "restive",
+          "comparisonZh": "skittish/restive horse 都可描述不安、难以稳住的马；skittish 更突出容易惊吓，restive 更突出烦躁、抗拒控制。说一群人坐立不安时也有交集，但等待太久而 restive 不必是害怕。skittish about investing 的 about 结构不能机械照搬给 restive。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "fractious",
+          "comparisonZh": "两词在“躁动、不好控制”的语境有交集，但不是通用替换。skittish horse 可能只是胆小；fractious horse 更突出难管、容易闹脾气。fractious child 常是烦躁爱哭闹，skittish child 则可能只是易受惊。张巍词表同列这一组，不表示紧张的投资者都爱争吵。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    }
+  ]
+}

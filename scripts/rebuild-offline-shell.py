@@ -1,7 +1,7 @@
 from pathlib import Path
 import json,hashlib,re
 root=Path(__file__).resolve().parent.parent
-p=root/'gre-learning/shell-manifest.json';data=json.loads(p.read_text());data['build']='167-offline200-v31'
+p=root/'gre-learning/shell-manifest.json';data=json.loads(p.read_text());data['build']='168-offline200-v31'
 assert "OFFLINE_EDITION='"+data['build']+"'" in (root/'gre-learning/offline-preferences.js').read_text(), 'Settings readiness edition must match shell build'
 paths=[x['url'] for x in data['assets']]
 for name in ['hosted-media.js','offline-zip.js','offline-packs.js','offline-copy-worker.js','offline-manager.js','offline-preferences.js','offline-batch.js','offline-control.js','offline-releases.js','offline-releases.css','settings-storybook.css','frontmatter-turn.js','frontmatter-turn.css','botanical-margin.js','botanical-selection.js','botanical-growth.js','botanical-progress.js','botanical-tip-flower.webp','botanical-margin.css','botanical-vine.webp','botanical-sage-wash.webp','book-paper-face.webp','images/botanical-progress-bookmark.png','images/bookbinding-inlay.webp']:
