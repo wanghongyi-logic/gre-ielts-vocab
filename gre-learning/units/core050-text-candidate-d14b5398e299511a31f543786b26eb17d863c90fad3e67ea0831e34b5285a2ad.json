@@ -1,0 +1,402 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 195,
+      "word": "balloon",
+      "ipa": "/bəˈluːn/",
+      "pos": "v.",
+      "coreMeaningZh": "迅速膨胀；数量或规模激增",
+      "coreEn": "To become much larger in size, amount, or importance, especially quickly.",
+      "coreImageZh": "男孩压下气筒，小小的红气球迅速鼓成大球，让他吃惊地松开了手。把这种膨胀移到数量或规模上，就是动词 balloon：费用、人数或问题一下子涨大。",
+      "mnemonics": [
+        {
+          "method": "BALLOON 费用像气球",
+          "textZh": "先抓住熟悉的 balloon（气球）：往里不断打气，它就越鼓越大。想象每增加一笔开支，预算这只“气球”就猛涨一圈；costs balloon 便是费用迅速膨胀。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "BALL·OON",
+          "textZh": "balloon 开头完整藏着 ball（球），后面圆鼓鼓的 OO 像球被撑大：短短的 BALL 也“胀”成了 BALLOON。用这个一眼可见的字形记“迅速膨胀”；这是视觉联想，不是词源拆分。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不及物动词：数量或规模激增",
+          "explanationZh": "常以 costs、debt、deficit、population 等作主语，强调变化快、幅度大。balloon to 后接增长后的数值；balloon from A to B 给出前后变化。常用于令人担忧的膨胀，但并不必然含贬义。",
+          "collocations": [
+            {
+              "phrase": "costs balloon",
+              "meaningZh": "费用激增",
+              "usageZh": "费用作主语，不是“给费用吹气”。"
+            },
+            {
+              "phrase": "balloon from 100 to 400",
+              "meaningZh": "从100激增至400",
+              "usageZh": "from 给起点，to 给结果。"
+            }
+          ]
+        },
+        {
+          "senseZh": "由小事迅速发展成大问题；鼓胀",
+          "explanationZh": "balloon into 常表示迅速扩大，发展成更大的事态。也可描写物体鼓起变圆，如风把裙子吹鼓；读音与名词“气球”相同。",
+          "collocations": [
+            {
+              "phrase": "balloon into a scandal",
+              "meaningZh": "迅速扩大成一桩丑闻",
+              "usageZh": "into 引出发展后的事态。"
+            },
+            {
+              "phrase": "balloon out",
+              "meaningZh": "鼓胀起来",
+              "usageZh": "常形容受空气等作用而鼓起的外形。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Unemployment ballooned to fourteen per cent.",
+          "translationZh": "失业率激增至百分之十四。",
+          "explanationZh": "ballooned to 表示快速上升到这个数值。"
+        },
+        {
+          "textEn": "The rumours soon ballooned into a full-blown scandal.",
+          "translationZh": "传闻很快演变成了一桩严重的丑闻。",
+          "explanationZh": "ballooned into 表示事态迅速扩大；full-blown 指已充分形成的。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "expand",
+          "comparisonZh": "the population ballooned/expanded 都可说人口扩大。balloon 更突出迅速而大幅膨胀；expand 更中性，变化也可以缓慢、有计划。expand 还可及物，如 expand the business；本义的 balloon 通常不这样接宾语。"
+        },
+        {
+          "word": "swell",
+          "comparisonZh": "the crowd ballooned/swelled 都可表示人群规模变大。balloon 更突出急剧增长；swell 也常写肿胀、河水上涨或声音渐强，这些搭配不能都换成 balloon。"
+        }
+      ]
+    },
+    {
+      "number": 976,
+      "word": "founder",
+      "ipa": "/ˈfaʊndə(r)/",
+      "pos": "v.",
+      "coreMeaningZh": "失败，垮掉；（船）沉没",
+      "coreEn": "To fail or collapse, especially because of a serious problem; of a ship, to fill with water and sink.",
+      "coreImageZh": "男孩和女孩想让玩具车驶过他们搭好的纸板桥，桥面却撑不住，向下塌了。过桥的计划就此失败。这里的 founder 是“计划垮掉”，不是名词“创始人”。",
+      "mnemonics": [
+        {
+          "method": "foUNDER",
+          "textZh": "founder 里能直接看到 under（在下面）。想象船进了水，沉到水面下面，整趟航行也泡了汤。由“沉下去”连到“计划失败”，就记住动词 founder；这是字形联想，不是词根拆分。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "FOUNDER 的店垮了",
+          "textZh": "想象一位 founder（创始人）把钱全花在豪华装修上，店里却连货都没钱进，只能拉下卷帘门。创始人的事业 foundered：彻底失败。用同一拼写里的这场反差，区分“创始人”和“失败”两种用法。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "计划、谈判或事业因困难而失败",
+          "explanationZh": "目标义通常作不及物动词，较正式。主语多是 project、plan、talks、business；founder on 后接导致失败的障碍。表示事情垮掉，不只是暂时做得不顺。",
+          "collocations": [
+            {
+              "phrase": "a project founders",
+              "meaningZh": "项目失败",
+              "usageZh": "让项目作主语；不用 founder a project 表示“使项目失败”。"
+            },
+            {
+              "phrase": "founder on a lack of trust",
+              "meaningZh": "因缺乏信任而失败",
+              "usageZh": "on 引出无法克服的障碍。"
+            }
+          ]
+        },
+        {
+          "senseZh": "船沉没；与名词“创始人”区分",
+          "explanationZh": "船作主语时，founder 可指进水沉没。a/the founder of an organization 中的 founder 则是可数名词“创始人”，读音相同，需看句法判断。",
+          "collocations": [
+            {
+              "phrase": "a ship founders",
+              "meaningZh": "船沉没",
+              "usageZh": "具体的沉没义，与抽象的失败义相联系。"
+            },
+            {
+              "phrase": "the founder of a company",
+              "meaningZh": "公司的创始人",
+              "usageZh": "这里是人，不是“公司失败”的动词。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The project foundered after problems with funding.",
+          "translationZh": "项目因资金问题而失败了。",
+          "explanationZh": "foundered 是不及物动词过去式，资金问题使项目无法继续。"
+        },
+        {
+          "textEn": "The peace talks foundered on a basic lack of trust.",
+          "translationZh": "和平谈判因根本缺乏信任而破裂。",
+          "explanationZh": "founder on 直接指出导致失败的障碍。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "fail",
+          "comparisonZh": "the plan foundered/failed 都可表示计划失败。founder 较正式，更容易让人想到遇到困难后垮掉；fail 范围更广，还能说 fail an exam、fail to reply，不能把这些结构直接改成 founder。"
+        },
+        {
+          "word": "collapse",
+          "comparisonZh": "谈判或事业整体垮掉时，founder/collapse 接近。collapse 强调结构或体系崩溃，也常形容建筑倒塌、人突然倒下；founder 的目标义更常写计划、尝试或事业因问题失败。"
+        }
+      ]
+    },
+    {
+      "number": 332,
+      "word": "champion",
+      "ipa": "/ˈtʃæmpiən/",
+      "pos": "v.",
+      "coreMeaningZh": "积极拥护、支持；为某人或事业争取",
+      "coreEn": "To actively support, defend, or argue for a person, cause, or idea.",
+      "coreImageZh": "女孩提出清理花园里的垃圾，男孩站到她身边，举起夹子说：“我支持这个计划，一起清理吧！”他带头参与，也让旁边的同伴加入。这种站出来支持并推动一项事业，就是 champion。",
+      "mnemonics": [
+        {
+          "method": "CHAMPION 替你出战",
+          "textZh": "从熟悉的 champion（冠军）想起：一位拳击冠军站到你这一边，替你争取公平的比赛机会。他为你的权利积极奔走，就是 champion your rights。借“冠军替你出战”记住动词“拥护、支持”。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "CHAMPION / CAMPAIGN",
+          "textZh": "champion 的整体字形让人联想到 campaign（宣传活动）。想象你组织一场保护校园老树的 campaign，四处讲解、争取支持；你正在 champion 这项保护行动。用形近的熟词，连到“积极倡导”。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物动词：公开而积极地支持",
+          "explanationZh": "直接接所支持的人、理念或事业，如 champion a cause。常含主动倡导、为之争取的力度，比仅在心里赞同更积极。可用过去分词 championed 表示“得到倡导的”。",
+          "collocations": [
+            {
+              "phrase": "champion a cause",
+              "meaningZh": "积极支持一项事业",
+              "usageZh": "cause 在这里是所追求的事业或主张，不是“原因”。"
+            },
+            {
+              "phrase": "champion a reform",
+              "meaningZh": "倡导一项改革",
+              "usageZh": "主动争取支持、推动实施。"
+            }
+          ]
+        },
+        {
+          "senseZh": "与名词“拥护者、冠军”区分",
+          "explanationZh": "champion the rights of ... 是动词“捍卫……的权利”；a champion of ... 是名词“……的拥护者”。a tennis champion 则指网球冠军，不能把动词一律理解成夺冠。",
+          "collocations": [
+            {
+              "phrase": "champion equal rights",
+              "meaningZh": "积极争取平等权利",
+              "usageZh": "直接接 rights，不需先加 for。"
+            },
+            {
+              "phrase": "a champion of free speech",
+              "meaningZh": "言论自由的拥护者",
+              "usageZh": "冠词 a 和 of 提示这里是名词。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He has championed constitutional reform for many years.",
+          "translationZh": "他多年来一直积极倡导宪法改革。",
+          "explanationZh": "championed 直接接改革，表示积极支持，不表示他赢得了比赛。"
+        },
+        {
+          "textEn": "He championed protection of the wilderness.",
+          "translationZh": "他积极倡导保护荒野。",
+          "explanationZh": "protection 是所支持的事业；champion 强调积极倡导。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "support",
+          "comparisonZh": "champion/support a cause 都可表示支持一项事业。champion 更突出主动倡导、为它争取；support 可以只是赞同，也可以提供资金或帮助。support a roof（支撑屋顶）不是 champion 的意思。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "defend",
+          "comparisonZh": "champion/defend human rights 都可表示捍卫人权。defend 更常强调抵御侵犯或回应批评；champion 还可主动推广一个新主张，不必先有攻击。谈守卫城墙时通常用 defend，不用 champion。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    },
+    {
+      "number": 142,
+      "word": "arrest",
+      "ipa": "/əˈrest/",
+      "pos": "v.",
+      "coreMeaningZh": "阻止，使停止；遏止进程",
+      "coreEn": "To bring movement, progress, or development to a stop.",
+      "coreImageZh": "玩具车正沿着斜坡往下滑，男孩在前面放下木块。车被木块挡住，停了下来。arrest 抓住的就是“让正在进行的事情停下来”，也可用于遏止衰退或恶化。",
+      "mnemonics": [
+        {
+          "method": "ARREST / A REST",
+          "textZh": "arrest 的读音与 a rest（休息一下）很接近。想象不停运转的机器被按下停止键，终于能“歇一歇”：原来的运行被叫停，便记住 arrest 的“使停止”。这是近音联想。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "ARREST 把进程拦住",
+          "textZh": "从熟悉的 arrest（逮捕）联想：警察截住正在逃跑的人，不让他继续跑；换成不断恶化的局面，就是把“恶化的进程”截住。arrest the decline 因而是遏止衰退。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物动词：使移动或发展停止",
+          "explanationZh": "这一义项偏正式，直接接被遏止的过程或变化，常见 decline、development、deterioration、spread。动作或变化原本已在进行，随后被制止；不只是事先预防。",
+          "collocations": [
+            {
+              "phrase": "arrest the decline",
+              "meaningZh": "遏止衰退",
+              "usageZh": "强调让下降趋势停止。"
+            },
+            {
+              "phrase": "arrest the development of something",
+              "meaningZh": "阻止某事物的发展",
+              "usageZh": "对象可好可坏，arrest 本身不表示赞成或反对。"
+            }
+          ]
+        },
+        {
+          "senseZh": "根据宾语区分熟悉义项",
+          "explanationZh": "arrest somebody 通常是逮捕某人；arrest somebody’s attention 则是吸引某人的注意。这些义项不能都机械译成“遏止”。目标义常以过程作宾语。",
+          "collocations": [
+            {
+              "phrase": "arrest the spread of disease",
+              "meaningZh": "遏止疾病传播",
+              "usageZh": "被制止的是传播过程。"
+            },
+            {
+              "phrase": "arrest someone’s attention",
+              "meaningZh": "吸引某人的注意",
+              "usageZh": "注意力被抓住，是另一常见比喻义。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They failed to arrest the company's decline.",
+          "translationZh": "他们未能遏止公司的衰退。",
+          "explanationZh": "arrest 的宾语是 decline，表示使衰退停止。"
+        },
+        {
+          "textEn": "The law could arrest the development of good research if applied prematurely.",
+          "translationZh": "这项法律若过早实施，可能阻碍有价值研究的发展。",
+          "explanationZh": "被制止的也可以是有益进程；此处 development 是宾语。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "halt",
+          "comparisonZh": "arrest/halt the decline 都能表示遏止衰退。arrest 在这一义项中较正式，通常是及物动词；halt 还可不及物，如 production halted（生产停止了），不能照搬成 production arrested。"
+        },
+        {
+          "word": "check",
+          "comparisonZh": "arrest/check the spread 都可表示遏制扩散。arrest 更突出使进程停下；check 可指抑制、减缓，未必完全停止。此处 check 不是“检查”。"
+        }
+      ]
+    },
+    {
+      "number": 1929,
+      "word": "qualify",
+      "ipa": "/ˈkwɒlɪfaɪ/",
+      "pos": "v.",
+      "coreMeaningZh": "限定说法；加上条件，使表述不那么绝对",
+      "coreEn": "To add limits, conditions, or reservations to a statement, making it less absolute or general.",
+      "coreImageZh": "男孩指着几艘模型船说：“这些船都能浮起来。”一艘破损的船沉下去后，他改指仍浮着的几艘：“完好的那几艘能浮起来。”把原先说的“全都”缩到眼前的一部分，就是 qualify 原先的说法。",
+      "mnemonics": [
+        {
+          "method": "QUALIFY / QUALITY",
+          "textZh": "qualify 与熟悉的 quality（质量）只差一个字母。想象卖家夸包的 quality：“这个包防水！”随后补上“只防小雨，不能浸泡”，就给质量承诺加了限制：qualify a claim。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "QUALIFY 入围有条件",
+          "textZh": "熟悉的 qualify for a race 是“取得比赛资格”：只有满足条件才能入围。把这道“条件门槛”移到一句话上，“谁都能报名”补成“只有成年人能报名”，说法的适用范围被限定了，就是 qualify。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物动词：限定、缓和原来的说法",
+          "explanationZh": "直接接 statement、claim、remark、opinion 等。常通过补充例外、条件或背景，让说法不那么宽泛或绝对；不一定是否定原话，也不等于为原话提供证明。",
+          "collocations": [
+            {
+              "phrase": "qualify a statement",
+              "meaningZh": "对一项表述加以限定",
+              "usageZh": "说明它适用的范围或需要保留的条件。"
+            },
+            {
+              "phrase": "qualify a claim",
+              "meaningZh": "限制一项主张的适用范围或强度",
+              "usageZh": "不是“使主张获得资格”。"
+            }
+          ]
+        },
+        {
+          "senseZh": "看宾语与介词，区分“限定”和“取得资格”",
+          "explanationZh": "qualify what I said 可表示限定我先前说的话；qualify for a competition 则是取得参赛资格。qualified support 通常是有保留、有条件的支持，不能按“合格的支持”理解。",
+          "collocations": [
+            {
+              "phrase": "qualify what I said",
+              "meaningZh": "限定我先前的话",
+              "usageZh": "what 从句整体作宾语。"
+            },
+            {
+              "phrase": "qualified support",
+              "meaningZh": "有保留的支持",
+              "usageZh": "形容词 qualified 在此带有限制条件。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I would qualify that by putting it into context.",
+          "translationZh": "我会把那句话放回具体背景中，对它加以限定。",
+          "explanationZh": "by 引出限定的方式；具体背景使原话不再那么笼统。"
+        },
+        {
+          "textEn": "Boyd qualified his opinion, noting that the evidence could be interpreted in other ways.",
+          "translationZh": "博伊德对自己的看法作了保留，指出这些证据还可以有其他解读。",
+          "explanationZh": "承认存在其他解释，减弱了原先看法的绝对程度。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "modify",
+          "comparisonZh": "qualify/modify a statement 都可涉及修改表述。qualify 特别指加条件或保留，使范围更窄、语气更不绝对；modify 只需改变内容或形式，改一个名字也可以，却未必是在 qualify。"
+        },
+        {
+          "word": "hedge",
+          "comparisonZh": "给断言加上“可能”“通常”等保留时，qualify 与 hedge 接近。hedge 更强调说得谨慎、不作绝对承诺；qualify 也可很明确地限定范围，如“仅指本组样本”，不必含糊其辞。"
+        }
+      ]
+    }
+  ]
+}

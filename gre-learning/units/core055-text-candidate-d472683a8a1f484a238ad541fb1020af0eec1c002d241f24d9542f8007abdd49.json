@@ -1,0 +1,402 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 2306,
+      "word": "spontaneous",
+      "ipa": "/spɑːnˈteɪniəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "自发的；未经安排、自然发生的",
+      "coreEn": "Arising naturally, without prior planning, prompting, or deliberate arrangement.",
+      "coreImageZh": "男孩路过院子，突然听见朋友弹起音乐。没人让他鼓掌，他却忍不住笑起来，跟着节奏拍起手。这个没有事先安排、自然流露的反应就是 spontaneous。",
+      "usage": [
+        {
+          "senseZh": "行为或反应未经安排，自然流露",
+          "explanationZh": "常形容掌声、笑声、提议、决定或反应。重点是没有预先计划、没有刻意做作，不是只要“突然”就一定 spontaneous。",
+          "collocations": [
+            {
+              "phrase": "spontaneous applause",
+              "meaningZh": "自发的掌声",
+              "usageZh": "观众自然地鼓掌，而不是按指令或事先安排。"
+            },
+            {
+              "phrase": "a spontaneous reaction",
+              "meaningZh": "自发的反应",
+              "usageZh": "强调反应自然产生、并非刻意准备。"
+            }
+          ]
+        },
+        {
+          "senseZh": "人随性而自然；现象自行发生",
+          "explanationZh": "形容人时常指愿意随心而动、不事事预先安排。专业语境也可表示现象未受到外部人为诱发；具体机制需看领域。",
+          "collocations": [
+            {
+              "phrase": "a spontaneous person",
+              "meaningZh": "随性、率真的人",
+              "usageZh": "不一定是在批评缺少责任心。"
+            },
+            {
+              "phrase": "spontaneous combustion",
+              "meaningZh": "自燃",
+              "usageZh": "指没有外部火源直接点燃而发生的燃烧。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His jokes seemed spontaneous, but were in fact carefully prepared beforehand.",
+          "translationZh": "他的笑话看起来像是脱口而出的，其实事先都精心准备过。",
+          "explanationZh": "seemed 与 in fact 形成反差：表面自然即兴，实际提前设计。"
+        },
+        {
+          "textEn": "The audience burst into spontaneous applause.",
+          "translationZh": "观众自发地热烈鼓起掌来。",
+          "explanationZh": "spontaneous 说明鼓掌没有事先安排；burst into 则补充了突然开始的动作。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "intuitive",
+          "comparisonZh": "形容未经过刻意思考的 response 时，两词可以接近。spontaneous 强调反应自然而然、未经安排；intuitive 强调依靠直觉而非有意识的推理。一个自发的笑声不一定是在凭直觉作判断，不能普遍替换。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "unplanned",
+          "comparisonZh": "a spontaneous/unplanned visit 都可指未事先计划的拜访。unplanned 只说明没有计划，可能是被动发生；spontaneous 更容易带出顺着当下心情、自然发起的意味。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "SPONTANEOUS · SPOON TENNIS",
+          "textZh": "spontaneous 近音联想 spoon（勺子）和 tennis（网球）：等饭时，两人忽然拿起勺子当球拍，用纸团打起迷你网球。没约好，也没准备，想到就玩，这就是 spontaneous 的即兴、自发。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "SPONTANEOUS · SIMULTANEOUS",
+          "textZh": "联想形近的 simultaneous（同时发生的）：演出太精彩，没人发指令，大家同时鼓起掌来。simultaneous 说掌声一起响，spontaneous 则说大家忍不住、自发地拍起手。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 1017,
+      "word": "garrulous",
+      "ipa": "/ˈɡærələs/",
+      "pos": "adj.",
+      "coreMeaningZh": "喋喋不休的；絮絮叨叨的",
+      "coreEn": "Talking at length, especially about trivial matters.",
+      "coreImageZh": "公园长椅旁，男孩从一件小事讲起，又扯到早餐的面包是什么形状。朋友几次想插话，他却还在兴致勃勃地说个没完。这种话多又爱讲琐事的状态就是 garrulous。",
+      "usage": [
+        {
+          "senseZh": "话多、爱絮叨的",
+          "explanationZh": "常形容人或说话方式，尤其强调谈论琐碎事情，带不耐烦的意味。并不表示口齿不清，也不等于能言善辩。",
+          "collocations": [
+            {
+              "phrase": "a garrulous neighbour",
+              "meaningZh": "喋喋不休的邻居",
+              "usageZh": "常见的人物评价，重点是话说得太多。"
+            },
+            {
+              "phrase": "become garrulous",
+              "meaningZh": "变得絮叨起来",
+              "usageZh": "可描述某人在某种场合突然话多了。"
+            }
+          ]
+        },
+        {
+          "senseZh": "冗长絮叨的",
+          "explanationZh": "也可形容演说或叙述，重点仍是多话、枝节过多，而不是单纯字数长。",
+          "collocations": [
+            {
+              "phrase": "a garrulous speech",
+              "meaningZh": "絮絮叨叨的讲话",
+              "usageZh": "暗示讲话绕远、琐事太多。"
+            },
+            {
+              "phrase": "a garrulous account",
+              "meaningZh": "絮叨冗长的叙述",
+              "usageZh": "突出叙述者一路说个不停。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I had talked too much about myself and felt like a garrulous old fool.",
+          "translationZh": "我过多地谈论自己，觉得自己像个絮絮叨叨的老傻瓜。",
+          "explanationZh": "说话者自己意识到话太多；old fool 是自嘲，garrulous 描述絮叨的说话习惯。"
+        },
+        {
+          "textEn": "The normally garrulous commentator had nothing to say.",
+          "translationZh": "那位平时滔滔不绝的评论员此时无话可说。",
+          "explanationZh": "normally garrulous 与 had nothing to say 形成反差，显示平常很爱说话。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "loquacious",
+          "comparisonZh": "a garrulous/loquacious neighbour 都指话多的邻居。garrulous 更容易让人想到琐碎、重复、令人厌烦的絮叨；loquacious 是较正式的“健谈、话多”，不一定有同样强的负面意味。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "talkative",
+          "comparisonZh": "形容某人爱说话时可接近。talkative 最普通，也可完全中性；garrulous 常暗含说得过多或谈论无关紧要的事情，不能一概当作称赞“健谈”。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "GARRULOUS · 嘎啦噜嗦",
+          "textZh": "把 garrulous 的声音近似联想到“嘎啦噜嗦”：一句简单的话，被他嘎啦嘎啦说成一长串，鸡毛蒜皮也讲个没完。记住的是喋喋不休，不是说得有道理。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "GARRULOUS · GORILLA US",
+          "textZh": "garrulous 近音联想 gorilla（大猩猩）和 us（我们）：故事里的大猩猩拉住我们，从香蕉有几个斑点讲到每个斑点的形状，半天不让人插话。连这点小事都说个没完，真是 garrulous。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 917,
+      "word": "feckless",
+      "ipa": "/ˈfekləs/",
+      "pos": "adj.",
+      "coreMeaningZh": "无能无效的；软弱、不负责任的",
+      "coreEn": "Ineffectual or lacking the resolve and responsibility to get things done.",
+      "coreImageZh": "水龙头还在滴答漏水。男孩拿着扳手反复摆弄，却没把漏水修好，最后摊手放弃。朋友指着仍在滴水的龙头，提醒他问题还在。这样办不成事、又轻易放弃，可以用 feckless 形容。",
+      "usage": [
+        {
+          "senseZh": "办不成事、没有成效的",
+          "explanationZh": "常批评人、领导方式或行动软弱无能，无法取得应有成果。不是一般的“身体虚弱”。",
+          "collocations": [
+            {
+              "phrase": "a feckless attempt",
+              "meaningZh": "没有成效的尝试",
+              "usageZh": "批评尝试软弱或无能，没把事情办成。"
+            },
+            {
+              "phrase": "feckless leadership",
+              "meaningZh": "软弱无能的领导",
+              "usageZh": "指缺乏决断与有效行动。"
+            }
+          ]
+        },
+        {
+          "senseZh": "软弱、不负责任的",
+          "explanationZh": "形容人时，往往把无能与缺少担当、目标或决心联系起来，语气明显贬义。",
+          "collocations": [
+            {
+              "phrase": "a feckless young man",
+              "meaningZh": "没有担当的年轻人",
+              "usageZh": "对品格和处事方式作负面评价，不只是技能暂时不足。"
+            },
+            {
+              "phrase": "feckless and irresponsible",
+              "meaningZh": "软弱无能且不负责任的",
+              "usageZh": "两词并列强调缺少担当。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Pickering's life was routinely threatened, and one feckless attempt had already been made to kidnap or kill him.",
+          "translationZh": "皮克林经常受到生命威胁，而且此前已经有人企图绑架或杀害他，只是那次行动未能得逞。",
+          "explanationZh": "feckless 修饰 attempt，突出那次行动无能、没有奏效；并非在说受威胁的人软弱。"
+        },
+        {
+          "textEn": "They were too lazy, feckless and arrogant to take the work seriously.",
+          "translationZh": "他们太懒惰、太没有担当、又太傲慢，根本不认真对待这项工作。",
+          "explanationZh": "feckless 与 lazy、arrogant 并列评价人，重在缺少责任感和认真办事的能力。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ineffectual",
+          "comparisonZh": "a feckless/ineffectual leader 都可以指办不成事的领导。ineffectual 更集中于无法取得效果；feckless 常连带批评性格软弱、缺少目标或责任心。"
+        },
+        {
+          "word": "irresponsible",
+          "comparisonZh": "评价某人没有担当时，两词可接近。irresponsible 直接说不负责任，并不保证他缺乏能力；feckless 还容易带出无能、无所作为的意味。形容一次无效尝试时，不宜随意换成 irresponsible。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "FECKLESS · EFFECT LESS",
+          "textZh": "看到 feckless，联想熟悉的 effect（效果）和 -less（没有）：忙了半天，却没有 effect。feck 确实是 effect 在苏格兰语中的缩略变体；把“没效果”连到“办不成事、缺少担当”。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "FECKLESS · FIX LESS",
+          "textZh": "feckless 近音联想 fix less：修理工把工具换来换去，忙活半天，能修好的东西却少得可怜。瞎忙一场，问题还在，记住这种无能无效的做事方式。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 1201,
+      "word": "impugn",
+      "ipa": "/ɪmˈpjuːn/",
+      "pos": "v.",
+      "coreMeaningZh": "质疑、抨击（品格、动机或可信度等）",
+      "coreEn": "To attack or cast doubt on someone’s integrity or on the truth or validity of something.",
+      "coreImageZh": "朋友说模型桥已经检查好了，男孩却指着桥板上清楚可见的裂缝，追问这座桥是否真的安全。他是在用具体问题挑战对方说法的可信度，这就是 impugn。",
+      "usage": [
+        {
+          "senseZh": "质疑品格、动机或能力",
+          "explanationZh": "及物动词，后面直接接被质疑的对象；语气正式，比一般询问更有挑战和批评意味。质疑并不等于已经证明对方有问题。",
+          "collocations": [
+            {
+              "phrase": "impugn someone’s motives",
+              "meaningZh": "质疑某人的动机",
+              "usageZh": "暗指对方可能并非出于善意。"
+            },
+            {
+              "phrase": "impugn someone’s integrity",
+              "meaningZh": "攻击某人的正直品格",
+              "usageZh": "质疑其诚实或道德操守，语气较重。"
+            }
+          ]
+        },
+        {
+          "senseZh": "质疑陈述、证据或论点的有效性",
+          "explanationZh": "可以用言语、证据或论证提出挑战，不限于恶意诋毁，也不必大声争吵。",
+          "collocations": [
+            {
+              "phrase": "impugn the validity of a claim",
+              "meaningZh": "质疑某项主张的有效性",
+              "usageZh": "针对主张能否成立。"
+            },
+            {
+              "phrase": "impugn someone’s credibility",
+              "meaningZh": "质疑某人的可信度",
+              "usageZh": "让人怀疑此人是否值得相信。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Are you impugning my competence as a professional designer?",
+          "translationZh": "你是在质疑我作为专业设计师的能力吗？",
+          "explanationZh": "直接接 my competence；说话者感到自己的专业能力受到了挑战。"
+        },
+        {
+          "textEn": "He could no longer work as a doctor because his reputation had been impugned.",
+          "translationZh": "他的声誉受到质疑，因此无法再以医生的身份工作。",
+          "explanationZh": "被动式 had been impugned 指声誉受到攻击；句子并没有断言那些指责属实。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "question",
+          "comparisonZh": "question/impugn someone’s motives 都可表示质疑动机。question 用途更广，既能温和地提出疑问，也能表示不信；impugn 更正式，通常带公开挑战或攻击的意味。普通的“问一个问题”不能换成 impugn。"
+        },
+        {
+          "word": "challenge",
+          "comparisonZh": "challenge/impugn the validity of an argument 都可质疑论证有效性。challenge 范围更宽，还可指要求证明、发起比赛等；impugn 特别着重让某人的品格、可信度或某项主张受到怀疑。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "IMPUGN · IMPURE 动机",
+          "textZh": "impugn 和 impure（不纯的）开头很像，读音也接近：当你说“他的动机 impure，不单纯”，就是在 impugn 他的动机，质疑他并非出于好意。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "IMPUGN · “硬喷”不可信",
+          "textZh": "把 impugn 近音联想成“硬喷”：对方拿出报告，他就指着数据说“这根本不可信！”这句话是在攻击报告的可信度。记住的是质疑、抨击；impugn 本身不限定为无理谩骂。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 1714,
+      "word": "pejorative",
+      "ipa": "/pɪˈdʒɔːrətɪv/",
+      "pos": "adj.",
+      "coreMeaningZh": "贬义的；带有贬损、轻蔑意味的",
+      "coreEn": "Expressing contempt, disparagement, or a negative judgment through words.",
+      "coreImageZh": "男孩捧出亲手做的陶杯，朋友却撇嘴说：“这也叫杯子？一堆破泥巴。”这不是客观指出杯子的缺点，而是用话贬低作品。这样带着贬损意味的说法就是 pejorative。",
+      "usage": [
+        {
+          "senseZh": "词语、称呼带有贬义",
+          "explanationZh": "多形容 term、word、label 等语言表达，说明其含有轻蔑或负面评价。相同的词也可能因语境、说话方式而产生贬义。",
+          "collocations": [
+            {
+              "phrase": "a pejorative term",
+              "meaningZh": "贬义称呼",
+              "usageZh": "重点是称呼传达的态度，而不只是字面的指代。"
+            },
+            {
+              "phrase": "use a word in a pejorative sense",
+              "meaningZh": "以贬义使用一个词",
+              "usageZh": "词在此处的用法带有负面评价。"
+            }
+          ]
+        },
+        {
+          "senseZh": "评论或暗示贬低人或事物",
+          "explanationZh": "可指表述的语气、联想含义，不必包含脏话；看似普通的词也可能被用来贬低别人。",
+          "collocations": [
+            {
+              "phrase": "pejorative remarks",
+              "meaningZh": "贬损性评论",
+              "usageZh": "批评的是言辞中的轻蔑与贬低。"
+            },
+            {
+              "phrase": "pejorative connotations",
+              "meaningZh": "贬义色彩",
+              "usageZh": "强调词语引发的负面联想。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Make sure students realize that \"fat\" is a pejorative word.",
+          "translationZh": "要确保学生明白，用“fat”称呼人带有贬损意味。",
+          "explanationZh": "这里说明称呼人的用词会带来侮辱性评价，不能只看词典里的字面意思。"
+        },
+        {
+          "textEn": "I'm using the word ‘academic’ here in a pejorative sense.",
+          "translationZh": "我在这里使用“academic”一词，是取其贬义。",
+          "explanationZh": "in a pejorative sense 表示“以贬义”；academic 在其他语境完全可以是中性词。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "derogatory",
+          "comparisonZh": "pejorative/derogatory remarks 都是贬损性评论，许多语境中可互换。pejorative 特别常用于分析词语、称呼的贬义色彩；derogatory 更直接评价言论是在贬低或冒犯某人。"
+        },
+        {
+          "word": "disparaging",
+          "comparisonZh": "pejorative/disparaging comments 都可说评论在贬低人或事。disparaging 更突出说话者把对方说得很差、不值得重视；pejorative 更常落在表达本身带有负面含义。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "PEJORATIVE · “不过是配角”",
+          "textZh": "pejorative 前半段近音联想“配角”；-ative 结尾可对照 creative（有创意的）。一句“你不过是个配角，没你也一样”，把人说得无足轻重，就是 pejorative 的贬损说法。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "PEJORATIVE · DECORATIVE",
+          "textZh": "看到 pejorative，联想形近的 decorative（装饰性的）：“你不过是个装饰花瓶。”把人说成只配摆着看的装饰，就是带有贬损意味的 pejorative 说法。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    }
+  ]
+}

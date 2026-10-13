@@ -1,0 +1,404 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 3613,
+      "ipa": "/ˌekwəˈnɪməti/",
+      "pos": "n.",
+      "coreMeaningZh": "困境中的镇定、平静",
+      "coreEn": "Mental calm and emotional steadiness, especially under stress.",
+      "coreImageZh": "积木模型倒了，同伴急得捂住脸，男孩却稳住情绪：“别慌，我们重新搭。”他蹲着捡起积木，平静地重新搭建。遇到挫折仍保持镇定，就是 equanimity。",
+      "usage": [
+        {
+          "senseZh": "不可数名词：面对压力时心态稳定",
+          "explanationZh": "语体正式，常用于坏消息、挫折或困难出现后仍然不慌不怒。它说的是人的心理状态，不是周围环境安静，也不等于毫不关心。",
+          "collocations": [
+            {
+              "phrase": "with equanimity",
+              "meaningZh": "镇定地",
+              "usageZh": "常与 accept、face、receive 等动词搭配。"
+            },
+            {
+              "phrase": "maintain one’s equanimity",
+              "meaningZh": "保持镇定",
+              "usageZh": "强调有压力时仍稳住情绪。"
+            }
+          ]
+        },
+        {
+          "senseZh": "也可以失去或恢复镇定",
+          "explanationZh": "可用 lose、regain 等动词描述这种状态的变化。通常不加不定冠词；remarkable equanimity 是“非凡的镇定”，不是“一个镇定”。",
+          "collocations": [
+            {
+              "phrase": "regain one’s equanimity",
+              "meaningZh": "恢复平静",
+              "usageZh": "先被事件扰乱，后来重新稳住心态。"
+            },
+            {
+              "phrase": "lose one’s equanimity",
+              "meaningZh": "失去镇定",
+              "usageZh": "指情绪不再平稳，不是失去物理平衡。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She accepted the prospect of her operation with equanimity.",
+          "translationZh": "面对即将接受手术，她表现得很镇定。",
+          "explanationZh": "with equanimity 修饰 accepted，说明她面对令人紧张的事情时的心态。"
+        },
+        {
+          "textEn": "In spite of her financial troubles, she faced the future with equanimity.",
+          "translationZh": "尽管面临经济困境，她仍镇定地面对未来。",
+          "explanationZh": "in spite of 引出压力来源，后半句强调情绪没有被困难打乱。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "composure",
+          "comparisonZh": "face a crisis with equanimity/composure 都可表示镇定应对危机。composure 更常突出把情绪控制住、表现沉着；equanimity 更强调心态平稳，尤其不因打击而失衡。两者此处都作不可数名词。"
+        },
+        {
+          "word": "calmness",
+          "comparisonZh": "形容人在压力下的平静时，calmness 与 equanimity 接近。calmness 更普通、更宽泛，也能说环境或天气的平静；equanimity 通常只说人的心态。"
+        }
+      ],
+      "word": "equanimity",
+      "mnemonics": [
+        {
+          "method": "EQUAL + ENEMY 一样平静",
+          "textZh": "equanimity 联想 equal（一样）＋ enemy（敌人）：朋友来了，他平静交谈；敌人来挑衅，他仍一样平静。外界变了，自己的情绪不乱，就是镇定。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "equanimity 一块泥，没踢",
+          "textZh": "equanimity 近音“一块泥，没踢”：别人甩来一块泥弄脏了鞋，他没踢人发火，只平静地擦掉。受了刺激还稳得住，就是镇定。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 3979,
+      "ipa": "/mæɡˈnænɪməs/",
+      "pos": "adj.",
+      "coreMeaningZh": "宽宏大量的；对对手或冒犯者大度的",
+      "coreEn": "Generous and forgiving, especially towards a rival or someone who has caused offence.",
+      "coreImageZh": "输棋的对手一时冲动打翻了棋子，随后低头道歉。男孩没有计较，伸手与他握手：“没关系，再来一局吧。”有理由生气却仍宽厚待人，就是 magnanimous。",
+      "usage": [
+        {
+          "senseZh": "对人宽厚，不计较得失或冒犯",
+          "explanationZh": "常用于竞争、冲突或受冒犯之后的态度，语体正式。可以形容胜者不羞辱对手，也可以形容败者坦然称赞赢家；不只是肯花钱。",
+          "collocations": [
+            {
+              "phrase": "magnanimous in victory",
+              "meaningZh": "获胜后大度的",
+              "usageZh": "没有趁胜贬低或羞辱败者。"
+            },
+            {
+              "phrase": "magnanimous in defeat",
+              "meaningZh": "落败后仍有气度的",
+              "usageZh": "能认可对手的表现，不因失败而怨恨。"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容宽容的态度、举动或某人的为人",
+          "explanationZh": "作定语或表语都可以。用 towards/to 引出受到宽厚对待的人；gesture 常指宽恕、帮助或示好的具体举动。",
+          "collocations": [
+            {
+              "phrase": "a magnanimous gesture",
+              "meaningZh": "宽宏大量的举动",
+              "usageZh": "如主动原谅曾冒犯自己的人。"
+            },
+            {
+              "phrase": "magnanimous towards an opponent",
+              "meaningZh": "对对手宽厚的",
+              "usageZh": "强调不记仇或不计较，而非对对方言听计从。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was magnanimous in defeat and praised his opponent's skill.",
+          "translationZh": "他虽落败，却很有气度，还称赞了对手的技艺。",
+          "explanationZh": "in defeat 说明大度不只属于胜者；称赞对手是具体表现。"
+        },
+        {
+          "textEn": "The team's manager was magnanimous in victory, and praised the losing team.",
+          "translationZh": "球队主教练获胜后表现得很大度，称赞了失利的球队。",
+          "explanationZh": "in victory 与 praised 对应：赢了也不给对手难堪。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "benevolent",
+          "comparisonZh": "a magnanimous/benevolent ruler 都可指宽厚仁慈的统治者。magnanimous 特别突出面对对手、过失或冒犯仍不计较；benevolent 范围更广，可指乐于助人或慈善的。benevolent organization 通常指慈善机构，不宜机械改成 magnanimous organization。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "generous",
+          "comparisonZh": "a magnanimous/generous gesture 都可表示大方、宽厚的举动。generous 还常说金钱、时间或份量给得多；magnanimous 更强调胸怀与宽恕，不能把 generous portion 换成 magnanimous portion。"
+        }
+      ],
+      "word": "magnanimous",
+      "mnemonics": [
+        {
+          "method": "MAGNET + ANIMALS",
+          "textZh": "magnanimous 联想 magnet（磁铁）＋ animals（动物）：小鸟抢了他的午餐，他没有赶走它们，反而分出面包屑。宽厚又大方的他，像磁铁一样吸引小动物。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "MAN + ANONYMOUS",
+          "textZh": "magnanimous 联想 man（男人）＋ anonymous（匿名的）。这个男人曾被对手当众羞辱；对手遇到困难时，他仍匿名出钱帮忙，不提旧怨。这就是宽宏大量。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 4269,
+      "ipa": "/ˈreɪləri/",
+      "pos": "n.",
+      "coreMeaningZh": "善意的打趣、逗趣",
+      "coreEn": "Friendly, good-humoured teasing or joking about someone.",
+      "coreImageZh": "朋友笑着打趣男孩烤黑的面包：“你这面包，晒得可真黑！”男孩也一本正经地介绍自己的“特别焦香版”，两人一起笑起来。这种双方都觉得轻松的善意打趣，就是 raillery。",
+      "usage": [
+        {
+          "senseZh": "主要作不可数名词：善意打趣",
+          "explanationZh": "语体正式，指带笑意的逗趣或轻微调侃，常与朋友、同伴之间的互动有关。重点是 good-natured；故意羞辱、恶意嘲弄通常不属于这里的意思。",
+          "collocations": [
+            {
+              "phrase": "good-natured raillery",
+              "meaningZh": "善意的打趣",
+              "usageZh": "直接点出友好、不伤人的语气。"
+            },
+            {
+              "phrase": "gentle raillery",
+              "meaningZh": "温和的逗趣",
+              "usageZh": "强调程度轻，不是尖刻攻击。"
+            }
+          ]
+        },
+        {
+          "senseZh": "看语气，也看对象的反应",
+          "explanationZh": "可说 raillery from somebody，说明打趣来自谁。少数用法可用复数 railleries 指具体的玩笑话，但本条优先记整体性的不可数用法。",
+          "collocations": [
+            {
+              "phrase": "raillery from a friend",
+              "meaningZh": "来自朋友的打趣",
+              "usageZh": "from 引出开玩笑的人。"
+            },
+            {
+              "phrase": "a tone of raillery",
+              "meaningZh": "打趣的语气",
+              "usageZh": "说明说话方式，而非陈述内容一定是假的。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Luke had to put up with a lot of raillery from his sister the first time he asked a girl for a date.",
+          "translationZh": "卢克第一次约女孩出去时，少不了被姐姐打趣一番。",
+          "explanationZh": "a lot of 后接不可数 raillery；from his sister 指打趣者。"
+        },
+        {
+          "textEn": "He said that he would introduce a note of good-humoured, good-natured raillery.",
+          "translationZh": "他说自己会加入一点轻松友善的打趣。",
+          "explanationZh": "good-humoured、good-natured 明确限定为善意的玩笑。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "banter",
+          "comparisonZh": "friendly raillery/banter 都可指善意逗趣。banter 较日常，常让人想到有来有往的玩笑式交谈；raillery 更正式、略带书面色彩。banter 也可作动词，如 banter with friends；raillery 在这里是名词，不能直接替换该动词。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "teasing",
+          "comparisonZh": "在 good-natured raillery/teasing 中，两词都可表示友善打趣。teasing 的范围更宽，可能是让人尴尬甚至伤人的捉弄；raillery 的核心用法通常保留轻松善意，不能在所有语境中直接互换。"
+        }
+      ],
+      "word": "raillery",
+      "mnemonics": [
+        {
+          "method": "RAILLERY 像 GALLERY",
+          "textZh": "raillery 和 gallery（画廊）的后半都是 LLERY。朋友指着画廊里你的大头漫画笑说：“这脑容量可真大！”你也笑了——这种善意打趣就是 raillery。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "RAILLERY：Really？",
+          "textZh": "raillery 可近音联想 really（真的吗），两者并非同音。朋友把烤糊的吐司叫“大师作品”，你笑着问：“Really？这是炭烤艺术吧？”他也笑了——是朋友间的打趣。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 3462,
+      "ipa": "/ˌdefəˈrenʃl/",
+      "pos": "adj.",
+      "coreMeaningZh": "恭敬的；出于尊重而礼让的",
+      "coreEn": "Showing respect, especially by yielding to someone’s age, authority, or expertise.",
+      "coreImageZh": "男孩认真听老向导讲解，恭敬地点头，收回碰着望远镜的手：“您先示范，我认真看。”他让向导先操作，自己在旁仔细观看。这种尊敬而礼让的态度，就是 deferential。",
+      "usage": [
+        {
+          "senseZh": "形容尊敬、恭顺的态度或举止",
+          "explanationZh": "常用于面对年长者、上级或有专业知识的人时的态度。可以包含礼让、听取意见，但不自动等于卑躬屈膝，也不表示心里完全赞同。",
+          "collocations": [
+            {
+              "phrase": "a deferential tone",
+              "meaningZh": "恭敬的语气",
+              "usageZh": "说话方式显示出对对方的尊重。"
+            },
+            {
+              "phrase": "a deferential manner",
+              "meaningZh": "恭敬的举止",
+              "usageZh": "可体现于点头、让对方先说等行为。"
+            }
+          ]
+        },
+        {
+          "senseZh": "用 towards 或 to 引出尊敬的对象",
+          "explanationZh": "常作表语，也可放在名词前作定语。根据上下文，可以是得体的尊重，也可能暗示对权威过分顺从。",
+          "collocations": [
+            {
+              "phrase": "deferential towards one’s mentor",
+              "meaningZh": "对导师恭敬的",
+              "usageZh": "towards 后接受到尊敬的人。"
+            },
+            {
+              "phrase": "deferential to authority",
+              "meaningZh": "对权威恭顺的",
+              "usageZh": "语气是否带批评，要看上下文，不能一概译成奉承。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was always deferential towards his mentor.",
+          "translationZh": "他对导师一向很恭敬。",
+          "explanationZh": "towards his mentor 指尊敬所朝向的对象。"
+        },
+        {
+          "textEn": "She is always extremely deferential towards anyone in authority.",
+          "translationZh": "她对任何掌权的人都总是毕恭毕敬。",
+          "explanationZh": "extremely 加强程度；anyone in authority 指有权威或职位的人。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "respectful",
+          "comparisonZh": "a deferential/respectful tone 都可表示恭敬的语气。deferential 更容易带出因对方年长、位高或专业而礼让、顺从；respectful 更宽泛，也适用于平等双方。respectful of other cultures 不宜直接照搬为 deferential of other cultures。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "courteous",
+          "comparisonZh": "a deferential/courteous reply 都可能是有礼貌的回答。courteous 重点在待人礼貌周到，并不要求认可对方的权威；deferential 更强调恭敬和礼让。因此对陌生顾客的日常礼貌未必需要用 deferential。"
+        }
+      ],
+      "word": "deferential",
+      "mnemonics": [
+        {
+          "method": "deferential 待夫人说",
+          "textZh": "deferential 近音“待夫人说”：待夫人说完，再礼貌回应“谢谢您的指教”，不抢话、不怠慢，态度恭敬有礼。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "DEFERENT 像 DIFFERENT",
+          "textZh": "deferential 前半的 deferent 很像 different（不同）。与长辈意见不同，也先认真听完，再恭敬地说“请您指教”：deferential，恭敬而礼让的。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 3986,
+      "ipa": "/ˌmælˈfiːzns/",
+      "pos": "n.",
+      "coreMeaningZh": "不法或不当行为，尤指职务中的违法乱纪",
+      "coreEn": "Wrongdoing or misconduct, especially by an official or someone entrusted with authority.",
+      "coreImageZh": "负责保管修桥公款的官员从钱箱里拿出硬币，偷偷塞进自己的钱袋。男孩指着公款提醒：“这是修桥的钱。”利用职务把公款据为己有，是 malfeasance 的一种。",
+      "usage": [
+        {
+          "senseZh": "不可数名词：正式语境中的不法行为",
+          "explanationZh": "常见于法律、政府或公司责任语境，尤其指掌权者、任职者的不当或违法行为。它不只指偷钱，也不只是办事慢或能力不足。",
+          "collocations": [
+            {
+              "phrase": "malfeasance in office",
+              "meaningZh": "任职期间的违法乱纪行为",
+              "usageZh": "in office 指履行职务的背景。"
+            },
+            {
+              "phrase": "official malfeasance",
+              "meaningZh": "官员的不法行为",
+              "usageZh": "official 在这里是形容词，指公职相关。"
+            }
+          ]
+        },
+        {
+          "senseZh": "也可用于公司和商业活动",
+          "explanationZh": "常与 evidence of、investigate、uncover 等调查或证据表达搭配。描述 wrongdoing 的整体概念时通常不用 a，也不随意加复数。",
+          "collocations": [
+            {
+              "phrase": "corporate malfeasance",
+              "meaningZh": "公司的不法行为",
+              "usageZh": "说明该词并不限于政府官员。"
+            },
+            {
+              "phrase": "evidence of malfeasance",
+              "meaningZh": "不法行为的证据",
+              "usageZh": "指支持指控的事实材料；指控本身不等于已经查证。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The investigation has uncovered evidence of corporate malfeasance.",
+          "translationZh": "调查发现了公司存在不法行为的证据。",
+          "explanationZh": "corporate 指公司层面；evidence of 说明调查所得是证据。"
+        },
+        {
+          "textEn": "These laws were put in place to discourage malfeasance by public officials.",
+          "translationZh": "制定这些法律是为了遏制公职人员的违法乱纪行为。",
+          "explanationZh": "by public officials 指行为实施者，to discourage 说明立法目的。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "fraudulence",
+          "comparisonZh": "涉及虚报账目、骗取公款等欺诈时，malfeasance 与 fraudulence 有交集。fraudulence 着重欺骗、造假或欺诈性质；malfeasance 更广，未必包含欺骗，也可指其他滥用职务的不法行为。因此不能把所有 malfeasance 都译成诈骗。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "misconduct",
+          "comparisonZh": "official malfeasance/misconduct 都可指官员的不当行为。misconduct 范围更广，也可指违反校规、职业纪律等未必违法的行为；malfeasance 更正式，通常带有较严重的不法或失职意味。"
+        }
+      ],
+      "word": "malfeasance",
+      "mnemonics": [
+        {
+          "method": "MAIL FEE + CENTS",
+          "textZh": "malfeasance 近音 mail fee＋cents（邮费零钱）：邮局经办人把收到的邮费零钱塞进自己口袋。钱本该入公账，利用职务私吞，就是不法行为。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "MALWARE + FINANCE",
+          "textZh": "malfeasance 联想 malware（恶意软件）＋ finance（财务）：掌管财务的人偷偷植入恶意程序，把公款转入自己的账户。这种利用职务做坏事，就是 malfeasance。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    }
+  ]
+}

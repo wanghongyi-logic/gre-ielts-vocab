@@ -1,0 +1,407 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 9,
+      "word": "abeyance",
+      "ipa": "/əˈbeɪəns/",
+      "pos": "n.",
+      "coreMeaningZh": "暂时中止；搁置状态",
+      "coreEn": "A temporary state in which an activity, plan, or rule is not carried out or put into effect.",
+      "coreImageZh": "材料暂时不够，男孩把做到一半的模型轻轻盖好，工具也留在旁边：“暂时停一停，工具留着，下次接着做。”计划只是搁置，仍等着继续，这就是 abeyance。",
+      "usage": [
+        {
+          "senseZh": "计划或行动暂时搁置",
+          "explanationZh": "正式用语，通常作不可数名词，常见 in abeyance 和 hold something in abeyance。表示目前不推进，保留以后继续的可能；不等于永久放弃。",
+          "collocations": [
+            {
+              "phrase": "hold a project in abeyance",
+              "meaningZh": "暂时搁置项目",
+              "usageZh": "可以补充 until 或 pending 引出的恢复条件。"
+            },
+            {
+              "phrase": "remain in abeyance",
+              "meaningZh": "继续处于搁置状态",
+              "usageZh": "表示暂缓状态持续，未必已确定恢复日期。"
+            }
+          ]
+        },
+        {
+          "senseZh": "规则或做法暂停生效、使用",
+          "explanationZh": "也可说规则、惯例或敌对行动不再实行。fall into abeyance 着重进入停用状态，并不自动表示规则已被正式废除。",
+          "collocations": [
+            {
+              "phrase": "fall into abeyance",
+              "meaningZh": "逐渐停止使用；陷于停顿",
+              "usageZh": "常写惯例或制度暂时不再实行。"
+            },
+            {
+              "phrase": "keep a decision in abeyance",
+              "meaningZh": "暂缓作出或执行决定",
+              "usageZh": "须看上下文判断是尚未决断，还是已有决定暂不执行。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The project is being held in abeyance until agreement is reached on funding it.",
+          "translationZh": "在就资金问题达成协议之前，该项目暂时被搁置。",
+          "explanationZh": "until 给出了暂缓的条件；项目并没有被永久取消。"
+        },
+        {
+          "textEn": "Let's hold that problem in abeyance for a while.",
+          "translationZh": "那个问题先搁一搁吧。",
+          "explanationZh": "hold ... in abeyance 表示暂缓处理；for a while 强调只是暂时。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "quiescence",
+          "comparisonZh": "abeyance 与 quiescence 都可表示不活动。abeyance 更常是计划、权利或行动被搁置；quiescence 更强调安静、不活跃的状态，也可描述细胞或火山。held in abeyance 是惯用搭配，不能机械改成 held in quiescence。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "suspension",
+          "comparisonZh": "the suspension of a project 与 a project held in abeyance 都可表示项目暂停。suspension 更直接指暂停这一行为或结果，也可指停职；abeyance 更突出事情处于暂缓、待续的状态。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "a BAY · 避风待航",
+          "textZh": "abeyance 前半近音 a bay（一个海湾），后面是名词常见的 -ance。船先停进海湾躲风，等风停再出航：航程暂时搁置，就是 in abeyance。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "OBEY · 听令暂停",
+          "textZh": "abeyance 的 abey- 读起来像 obey（服从），再接名词结尾 -ance。工头说“先停工，等材料”，大家 obey，工程便暂时停下来，处于 abeyance。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 104,
+      "word": "anathema",
+      "ipa": "/əˈnæθəmə/",
+      "pos": "n.",
+      "coreMeaningZh": "深恶痛绝的人或事物；极其反感的东西",
+      "coreEn": "A person, thing, or idea that someone strongly detests or finds utterly unacceptable.",
+      "coreImageZh": "有人把作弊小抄递过来，男孩立刻后仰缩手，坚决拒绝：“作弊？这种事我绝不接受。”在他眼里，作弊是令人深恶痛绝的事，是 anathema。",
+      "usage": [
+        {
+          "senseZh": "某事与一个人的信念格格不入",
+          "explanationZh": "常用 be anathema to somebody，语气很强，表示对方深恶痛绝或完全不能接受，尤其用于理念、制度和行为。anathema 在这个结构中仍是名词。",
+          "collocations": [
+            {
+              "phrase": "be anathema to somebody",
+              "meaningZh": "是某人深恶痛绝的东西",
+              "usageZh": "to 引出厌恶、排斥它的人或群体。"
+            },
+            {
+              "phrase": "the idea is anathema",
+              "meaningZh": "这个想法令人极其反感",
+              "usageZh": "不是一般的意见不同，而是强烈的否定与排斥。"
+            }
+          ]
+        },
+        {
+          "senseZh": "把人或事视为不可接受的对象",
+          "explanationZh": "可作不可数名词，也可用 an anathema。现代一般语境主要强调厌恶的对象；宗教语境另有诅咒、逐出教门等义，不应混为一谈。",
+          "collocations": [
+            {
+              "phrase": "regard something as anathema",
+              "meaningZh": "把某事视为深恶痛绝之物",
+              "usageZh": "regard ... as 后面放被排斥的评价。"
+            },
+            {
+              "phrase": "an anathema to traditionalists",
+              "meaningZh": "传统主义者极其反感的事物",
+              "usageZh": "表示对特定群体的立场而言难以接受，并非人人都讨厌它。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Credit controls are anathema to the government.",
+          "translationZh": "政府对信贷管制极为反感。",
+          "explanationZh": "to the government 指明是谁强烈排斥这种做法。"
+        },
+        {
+          "textEn": "For older employees, the new system is an anathema.",
+          "translationZh": "对年长员工而言，新制度是他们极其反感的东西。",
+          "explanationZh": "an anathema 的可数用法，把新制度说成一个强烈排斥的对象。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "repellent",
+          "comparisonZh": "Cheating is anathema/repellent to her 都可表达她极度厌恶作弊，但 anathema 是名词，repellent 在这里是形容词。不能把 an anathema 机械换成 a repellent；后者作名词通常指驱虫剂等驱避物。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "abomination",
+          "comparisonZh": "两者都可指令人憎恶的事物。anathema to somebody 更突出与某人的信念、原则不相容；abomination 常把对象本身说成极其恶劣、令人厌恶，语气带强烈谴责。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ANATHEMA · 啊，拿它吗？",
+          "textZh": "anathema 近音“啊，拿它吗？”有人递来作弊小抄，你立刻缩手：“啊，拿它吗？这种东西我最讨厌！”这张小抄是你深恶痛绝的东西。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "ANATHEMA · ANTHEM",
+          "textZh": "anathema 很像 anthem（颂歌，常见于 national anthem“国歌”）。一首竟然歌颂欺凌的 anthem，让受害者听见就深恶痛绝；这首歌对他就是 anathema。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 4637,
+      "word": "valorize",
+      "ipa": "/ˈvæləraɪz/",
+      "pos": "v.",
+      "coreMeaningZh": "肯定……的价值；赞扬；推崇",
+      "coreEn": "To regard or present someone or something as valuable, important, or worthy of admiration.",
+      "coreImageZh": "男孩仔细欣赏一只手工陶器，又郑重地向大家展示：“这份手艺值得被看见。”他把作品的手艺和价值呈现出来，给予肯定和赞扬，这就是 valorize。",
+      "usage": [
+        {
+          "senseZh": "赋予或肯定价值",
+          "explanationZh": "正式的及物动词，常用于文化、社会或学术讨论，说明某种叙述、制度或评价把特定品质、人群、经验看得很有价值。不是只表示核算价格。",
+          "collocations": [
+            {
+              "phrase": "valorize traditional craftsmanship",
+              "meaningZh": "肯定传统手工艺的价值",
+              "usageZh": "突出手艺值得尊重、重视。"
+            },
+            {
+              "phrase": "valorize individual achievement",
+              "meaningZh": "推崇个人成就",
+              "usageZh": "可描述一种文化或教育体系重视什么。"
+            }
+          ]
+        },
+        {
+          "senseZh": "推崇某种形象或过去",
+          "explanationZh": "常带有分析或批评意味：某种评价把对象抬得很高，说话者未必认同。另有维持商品价格等经济义，应按语境区别。",
+          "collocations": [
+            {
+              "phrase": "valorize the past",
+              "meaningZh": "美化、推崇过去",
+              "usageZh": "可批评只赞美过去而忽视现实。"
+            },
+            {
+              "phrase": "valorize a particular experience",
+              "meaningZh": "赋予某种经历价值",
+              "usageZh": "不一定是公开颁奖，也可体现在文本如何描写它。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "American education valorizes individual merit and initiative, which challenges a traditional Filipino preference for collective accomplishment.",
+          "translationZh": "美国教育推崇个人才干和主动性，这与菲律宾传统上重视集体成就的倾向形成张力。",
+          "explanationZh": "valorizes 说明教育中受到推崇的价值取向；不是说提高某件商品的价格。"
+        },
+        {
+          "textEn": "The prophets valorized history.",
+          "translationZh": "先知们赋予历史以重要价值。",
+          "explanationZh": "这里指把历史看作有意义、有价值的对象，体现“赋予或肯定价值”的用法。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "exalt",
+          "comparisonZh": "valorize/exalt a hero 都可指抬高、赞扬英雄。exalt 常有热烈颂扬或抬到崇高地位的意味；valorize 也可较冷静地分析一种文化如何赋予某事价值。涉及政府维持商品价格时，exalt 不能直接替换。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "glorify",
+          "comparisonZh": "两词都可写把人物或生活方式描绘得值得赞美。glorify 更突出美化、颂扬，常暗示过誉；valorize 还可指承认被忽视经验的价值，并不必然夸大。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "VALUE + RISE",
+          "textZh": "valorize 联想 value（价值）加 rise（上升）：大家认真称赞一门手艺，让它在人们心中的分量上升。肯定它的价值、推崇它，就是 valorize。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "VALORIZE · COLORIZE",
+          "textZh": "valorize 很像 colorize（给……上色）。博物馆给一位长期被忽视的匠人画上彩色肖像，赞扬他的贡献：为肖像添彩，也让他的价值被看见。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 4215,
+      "word": "prescient",
+      "ipa": "/ˈpreʃənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "有先见之明的；能预知的",
+      "coreEn": "Showing an accurate sense of what will happen in the future.",
+      "coreImageZh": "男孩看见乌云压过来，赶在冰雹落下前给幼苗盖好玻璃罩：“我看要下冰雹，先把幼苗罩好。”随后冰雹打在罩外，幼苗安然无恙。他提前判断对了，这就是 prescient。",
+      "usage": [
+        {
+          "senseZh": "人或判断有先见之明",
+          "explanationZh": "强调在事情发生前已经正确预见，常在事后回看时作出评价。可以依据观察和推理，并不一定带有神秘的预言能力。",
+          "collocations": [
+            {
+              "phrase": "a prescient observer",
+              "meaningZh": "有先见之明的观察者",
+              "usageZh": "他对后来局势的判断提前应验。"
+            },
+            {
+              "phrase": "prove prescient",
+              "meaningZh": "事实证明有先见之明",
+              "usageZh": "常用于后来发生的事情验证了先前的判断。"
+            }
+          ]
+        },
+        {
+          "senseZh": "警告、作品预见了后来的发展",
+          "explanationZh": "也修饰 warning、prediction、analysis 等，表示其中对未来的预见准确。与 precocious“早熟的”不同：重点是预见未来，不是发展得比同龄人早。",
+          "collocations": [
+            {
+              "phrase": "a prescient warning",
+              "meaningZh": "有先见之明的警告",
+              "usageZh": "警告先于危险发生，后来被证明判断正确。"
+            },
+            {
+              "phrase": "prescient about future developments",
+              "meaningZh": "对未来发展有预见",
+              "usageZh": "about 引出所预见的方面。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Headlam comes across as an acerbic yet perceptive and sometimes prescient commentator.",
+          "translationZh": "赫德拉姆给人的印象是一位言辞尖刻却目光敏锐、有时颇有先见之明的评论者。",
+          "explanationZh": "prescient 比 perceptive 更进一步：不仅看得透，还提前看到了后来的发展。"
+        },
+        {
+          "textEn": "Britt’s testimony was more prescient than he let on.",
+          "translationZh": "布里特的证词比他表现出来的更有先见之明。",
+          "explanationZh": "prescient 评价证词中对后来事情的预见；than he let on 表示超出他显露出来的程度。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "prophetic",
+          "comparisonZh": "a prescient/prophetic warning 都可表示后来应验的预警。prescient 更突出提前看得准；prophetic 可带预言、先知或宗教色彩，也可泛指具有预示性，不能把这种宗教含义一并套到 prescient 上。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "farsighted",
+          "comparisonZh": "a prescient/farsighted leader 都可能有远见。farsighted 更侧重考虑长远利益并规划，不要求具体预测已应验；prescient 更突出事先预见后来确实发生的事。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "PRE + SCIENTist",
+          "textZh": "prescient 可联想 pre-（预先）加 scientist（科学家）的前半：科学家根据云层和气压，在天气变化前就判断会下冰雹。提前预见并判断对了，就是 prescient。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "PRESCIENT · PRESENT",
+          "textZh": "prescient 的拼写很像 present（礼物）。圣诞节还没到，礼物也没送出，他就准确预料到自己将收到什么：对将来的事有先见之明。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 3151,
+      "word": "antagonistic",
+      "ipa": "/ænˌtæɡəˈnɪstɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "敌对的；对抗的；强烈反对的",
+      "coreEn": "Showing active opposition, hostility, or strong unfriendliness toward someone or something.",
+      "coreImageZh": "男孩提出花园种植计划，同伴却伸手阻拦，随后抱臂坚决反对：“不行，我就是不同意！”他不是平静地提出不同意见，而是摆出处处对抗的态度，这就是 antagonistic。",
+      "usage": [
+        {
+          "senseZh": "对人或事表现出敌意、反对",
+          "explanationZh": "常用 antagonistic to/toward(s) somebody/something。重点是主动反对或不友好，可以体现在语气、行为、立场中，并不要求发生身体冲突。",
+          "collocations": [
+            {
+              "phrase": "antagonistic toward critics",
+              "meaningZh": "对批评者怀有敌意",
+              "usageZh": "toward 和 towards 均可，指敌意的对象。"
+            },
+            {
+              "phrase": "an antagonistic attitude",
+              "meaningZh": "对抗性的态度",
+              "usageZh": "强于普通意见不同，表现出明显的不友好或抵触。"
+            }
+          ]
+        },
+        {
+          "senseZh": "双方关系或作用相互对立",
+          "explanationZh": "可以形容关系、团体或力量相互冲突。专业语境中也可指作用相反、互相抵消，应与人际关系中的情绪性敌意区别。",
+          "collocations": [
+            {
+              "phrase": "an antagonistic relationship",
+              "meaningZh": "敌对、对立的关系",
+              "usageZh": "关系中持续存在冲突或抵触。"
+            },
+            {
+              "phrase": "antagonistic forces",
+              "meaningZh": "相互对抗的力量",
+              "usageZh": "可指社会力量，专业语境也可指作用相反的力量。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He's extremely antagonistic toward all critics.",
+          "translationZh": "他对所有批评者都抱有极强的敌意。",
+          "explanationZh": "toward all critics 点明敌意针对的人，extremely 加强态度的强烈程度。"
+        },
+        {
+          "textEn": "You can be clear about what you need without being antagonistic.",
+          "translationZh": "你可以清楚地表达自己的需求，而不必表现得充满敌意。",
+          "explanationZh": "清晰、坚定地表达需求，不等于对别人采取敌对姿态。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "adversarial",
+          "comparisonZh": "an antagonistic/adversarial relationship 都可指双方相互对抗。adversarial 更容易强调制度或互动方式形成的对立，如诉讼双方，不必含私人恶意；antagonistic 更突出抵触或敌意。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "inimical",
+          "comparisonZh": "在对人或观点抱敌意的语境，antagonistic 与 inimical 可以接近；inimical 更正式，也常表示“有害、不利于”，如 inimical to health。这种纯粹有害的意思不能直接用 antagonistic 替换。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ANTI + AGONY",
+          "textZh": "antagonistic 前段联想 anti-（反对），中段联想 agony（痛苦），后面是常见形容词尾 -istic。对方处处跟你对着干，让你苦不堪言；这种带着敌意的态度就是 antagonistic。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "ANTAGONISTIC · PROTAGONIST",
+          "textZh": "antagonistic 和 protagonist（故事的主角）都带有 -tagonist-。主角刚要完成计划，一个对手就来阻挠，始终站在对立面；这个对手的态度就是 antagonistic。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ]
+    }
+  ]
+}
