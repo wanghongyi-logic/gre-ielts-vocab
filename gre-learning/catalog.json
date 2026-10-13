@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "168",
-  "authoredCount": 230,
-  "publishedCount": 230,
+  "release": "169",
+  "authoredCount": 240,
+  "publishedCount": 240,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -237,7 +237,17 @@
       2115,
       1942,
       379,
-      1026
+      1026,
+      3055,
+      2900,
+      1022,
+      216,
+      2594,
+      575,
+      122,
+      1927,
+      1200,
+      1825
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -509,14 +519,24 @@
       "bytes": 21678
     },
     {
-      "url": "units/core042-text-candidate-304178c24500acb2ea6ab28fb24c63699aad826dff045e444c1fbe1b5a27a540.json",
-      "sha256": "304178c24500acb2ea6ab28fb24c63699aad826dff045e444c1fbe1b5a27a540",
-      "bytes": 21751
+      "url": "units/core042-text-candidate-b4fbb63f8bbda069abdf3605ca777c25965d2d6c04ab78ba2a28916441bb3ba1.json",
+      "sha256": "b4fbb63f8bbda069abdf3605ca777c25965d2d6c04ab78ba2a28916441bb3ba1",
+      "bytes": 21601
     },
     {
-      "url": "units/core043-text-candidate-5d138677006ff543afef745a6b2334429e1ed6ce0071cc6238421977f35ede6a.json",
-      "sha256": "5d138677006ff543afef745a6b2334429e1ed6ce0071cc6238421977f35ede6a",
-      "bytes": 23403
+      "url": "units/core043-text-candidate-6869c543c470a531e05348c68c23db95d6c3116f32862ed70f92a92e1b973c51.json",
+      "sha256": "6869c543c470a531e05348c68c23db95d6c3116f32862ed70f92a92e1b973c51",
+      "bytes": 23539
+    },
+    {
+      "url": "units/core044-text-candidate-9f7054e6c9e90ecbfaab7add94615ed721494bccf29f86a008ebdc8a655a1b1c.json",
+      "sha256": "9f7054e6c9e90ecbfaab7add94615ed721494bccf29f86a008ebdc8a655a1b1c",
+      "bytes": 22836
+    },
+    {
+      "url": "units/core045-text-candidate-e1bb1b0279873c130d1ccd112d2b9ec9347ecf1e30516218c459fbe75811ead6.json",
+      "sha256": "e1bb1b0279873c130d1ccd112d2b9ec9347ecf1e30516218c459fbe75811ead6",
+      "bytes": 20854
     }
   ],
   "entries": [
@@ -18864,6 +18884,836 @@
           "url": "story-media/1026-staticPoster-f3aa78aae0532a7ff9e2620797498f6c1156ba3a59c5970bce7e1e71fa031bf3.png",
           "sha256": "f3aa78aae0532a7ff9e2620797498f6c1156ba3a59c5970bce7e1e71fa031bf3",
           "bytes": 1281212
+        }
+      }
+    },
+    {
+      "number": 3055,
+      "word": "unremitting",
+      "coreMeaningZh": "持续不停的；不减弱的；坚持不懈的",
+      "unit": 54,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 231,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "还得继续，不能停。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "还得继续，不能停。"
+          ]
+        },
+        "alt": "男孩双脚站稳，双手不断上下压动水泵把手，一下接着一下，始终没有停手。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 800,
+            "endMs": 6200,
+            "text": "还得继续，不能停。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "还得继续，不能停。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/3055-video-10582da7bef6e151aee1726fe06a7084cb7915ef25b416a9c2d149a8a026f061.mp4",
+          "sha256": "10582da7bef6e151aee1726fe06a7084cb7915ef25b416a9c2d149a8a026f061",
+          "bytes": 1412129
+        },
+        "poster": {
+          "url": "story-media/3055-poster-7c1924ec4ac4871f382e1b351f44a1b3485915ba89f9b17b81ae6649a97142ad.png",
+          "sha256": "7c1924ec4ac4871f382e1b351f44a1b3485915ba89f9b17b81ae6649a97142ad",
+          "bytes": 1277339
+        },
+        "staticPoster": {
+          "url": "story-media/3055-staticPoster-dcb64e2b8a95ad3dcfb5260ebd8b7c1995e3f87a552cea0acd5df953ccee4ba4.png",
+          "sha256": "dcb64e2b8a95ad3dcfb5260ebd8b7c1995e3f87a552cea0acd5df953ccee4ba4",
+          "bytes": 1284380
+        }
+      }
+    },
+    {
+      "number": 2900,
+      "word": "halfhearted",
+      "coreMeaningZh": "不热心的；缺乏热情或投入的；敷衍的",
+      "unit": 54,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 232,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "嗯……挺好。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "嗯……挺好。"
+          ]
+        },
+        "alt": "小木偶正在表演，男孩却望向一旁，懒洋洋地拍两下手，又垂下手，毫无热情。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 800,
+            "endMs": 6200,
+            "text": "嗯……挺好。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "嗯……挺好。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/2900-video-c554224f52c30085e2762e79131ef2f3a0762cbef6957560a0485df24ee801d9.mp4",
+          "sha256": "c554224f52c30085e2762e79131ef2f3a0762cbef6957560a0485df24ee801d9",
+          "bytes": 1092336
+        },
+        "poster": {
+          "url": "story-media/2900-poster-8c16e9b7e1670f7522b0834120cc175d155c079937a57cb8842584566055ce3e.png",
+          "sha256": "8c16e9b7e1670f7522b0834120cc175d155c079937a57cb8842584566055ce3e",
+          "bytes": 1267898
+        },
+        "staticPoster": {
+          "url": "story-media/2900-staticPoster-a55dbe738c9a1b0ca3c6a0b2d5da6d11ae6352032bfa625d33746077b42e5b94.png",
+          "sha256": "a55dbe738c9a1b0ca3c6a0b2d5da6d11ae6352032bfa625d33746077b42e5b94",
+          "bytes": 1270976
+        }
+      }
+    },
+    {
+      "number": 1022,
+      "word": "gauge",
+      "coreMeaningZh": "测量；估计，判断；测量仪，衡量标准",
+      "unit": 54,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 233,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "看看它长到多高了。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "看看它长到多高了。"
+          ]
+        },
+        "alt": "男孩把刻度尺下端对齐盆里的土面，凑近查看花顶对应的刻度，量出向日葵的高度。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 800,
+            "endMs": 6200,
+            "text": "看看它长到多高了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "看看它长到多高了。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/1022-video-beb90a3616bb9be52b9e08cbcea4de5faf5094231a966bedb1bdb0d24d33f3bd.mp4",
+          "sha256": "beb90a3616bb9be52b9e08cbcea4de5faf5094231a966bedb1bdb0d24d33f3bd",
+          "bytes": 651833
+        },
+        "poster": {
+          "url": "story-media/1022-poster-2a608dd831a3d62a562a3d0c464e91fdd23c2e36469c52b4f7fc7d526a6151ca.png",
+          "sha256": "2a608dd831a3d62a562a3d0c464e91fdd23c2e36469c52b4f7fc7d526a6151ca",
+          "bytes": 1264379
+        },
+        "staticPoster": {
+          "url": "story-media/1022-staticPoster-6cef54200e172c91a4d332867566b601b91f4e7f604de88f946175fe8e63748a.png",
+          "sha256": "6cef54200e172c91a4d332867566b601b91f4e7f604de88f946175fe8e63748a",
+          "bytes": 1271387
+        }
+      }
+    },
+    {
+      "number": 216,
+      "word": "belie",
+      "coreMeaningZh": "给……造成假象，掩盖真实情况；与……相矛盾，证明……不实",
+      "unit": 54,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 234,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "外面这么漂亮，里面却坏了。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "外面这么漂亮，里面却坏了。"
+          ]
+        },
+        "alt": "男孩把预先切开的红苹果分开，发现光鲜外皮掩盖着腐坏的内里。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1800,
+            "text": "看起来真新鲜。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "看起来真新鲜。"
+            ],
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1800,
+            "endMs": 3000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-1"
+          },
+          {
+            "startMs": 3000,
+            "endMs": 6200,
+            "text": "外面这么漂亮，里面却坏了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "外面这么漂亮，里面却坏了。"
+            ],
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/216-video-cf8bc1c0a9c10de862d722eae7ee0afda0bc1aff1ae21b98571e3446daab42cf.mp4",
+          "sha256": "cf8bc1c0a9c10de862d722eae7ee0afda0bc1aff1ae21b98571e3446daab42cf",
+          "bytes": 615989
+        },
+        "poster": {
+          "url": "story-media/216-poster-9713dc9850dcb7370bc8962d86490b4dce5366602b905d7ca8d3dab4bbabb53b.png",
+          "sha256": "9713dc9850dcb7370bc8962d86490b4dce5366602b905d7ca8d3dab4bbabb53b",
+          "bytes": 1197665
+        },
+        "staticPoster": {
+          "url": "story-media/216-staticPoster-2362ab506fe2275ffcf6d4c60a75a57c800a6f82984b3f64de4a51a8bfbaf9fb.png",
+          "sha256": "2362ab506fe2275ffcf6d4c60a75a57c800a6f82984b3f64de4a51a8bfbaf9fb",
+          "bytes": 1233708
+        }
+      }
+    },
+    {
+      "number": 2594,
+      "word": "venal",
+      "coreMeaningZh": "可被金钱收买的；受贿腐败的；为钱出卖原则的",
+      "unit": 54,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 235,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "钱收下，给你盖章。",
+          "speaker": "clerk",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "钱收下，给你盖章。"
+          ]
+        },
+        "alt": "办事员先拒绝不齐的材料，随后收下申请人的钱袋，为他盖章；男孩在一旁看着。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1800,
+            "text": "材料不齐，不能批。",
+            "speaker": "clerk",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "材料不齐，不能批。"
+            ],
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1800,
+            "endMs": 3800,
+            "text": "给我这笔钱，就给你盖章。",
+            "speaker": "clerk",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "给我这笔钱，就给你盖章。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 3800,
+            "endMs": 6200,
+            "text": "钱收下，给你盖章。",
+            "speaker": "clerk",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "钱收下，给你盖章。"
+            ],
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/2594-video-7a940b79677765d11899395bd5923d2b33f4a7281bb123de91ef1ff17467528f.mp4",
+          "sha256": "7a940b79677765d11899395bd5923d2b33f4a7281bb123de91ef1ff17467528f",
+          "bytes": 676165
+        },
+        "poster": {
+          "url": "story-media/2594-poster-958890a841de4f56df927f9ee37b9937b63a7efa69044b1665a454f6efbc9a7f.png",
+          "sha256": "958890a841de4f56df927f9ee37b9937b63a7efa69044b1665a454f6efbc9a7f",
+          "bytes": 1233101
+        },
+        "staticPoster": {
+          "url": "story-media/2594-staticPoster-7e37fffea93ee79236222327de24d6a0eeae2542fc2a046a75c8221c9eedf005.png",
+          "sha256": "7e37fffea93ee79236222327de24d6a0eeae2542fc2a046a75c8221c9eedf005",
+          "bytes": 1212004
+        }
+      }
+    },
+    {
+      "number": 575,
+      "word": "demur",
+      "coreMeaningZh": "提出异议，表示反对；异议",
+      "unit": 55,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 236,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "这样分不太公平吧？",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这样分不太公平吧？"
+          ]
+        },
+        "alt": "男孩看到两盘饼干分量悬殊，礼貌地摊手提出异议。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1800,
+            "endMs": 5900,
+            "text": "这样分不太公平吧？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这样分不太公平吧？"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 5900,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/575-video-f0d740ffb385b2af9a510c24df1dd17c8cb3306ee6c28ed4ff1b39f0b80bbd2c.mp4",
+          "sha256": "f0d740ffb385b2af9a510c24df1dd17c8cb3306ee6c28ed4ff1b39f0b80bbd2c",
+          "bytes": 703428
+        },
+        "poster": {
+          "url": "story-media/575-poster-8a74d2758a81900e0f4d53afc2a462ca9b393c999bd366c5177c7290b123db7e.png",
+          "sha256": "8a74d2758a81900e0f4d53afc2a462ca9b393c999bd366c5177c7290b123db7e",
+          "bytes": 1245469
+        },
+        "staticPoster": {
+          "url": "story-media/575-staticPoster-90a60cd6c48fe3da4dff993e3f8428affad2383d76f172eb53728c5d950cf787.png",
+          "sha256": "90a60cd6c48fe3da4dff993e3f8428affad2383d76f172eb53728c5d950cf787",
+          "bytes": 1231260
+        }
+      }
+    },
+    {
+      "number": 122,
+      "word": "apocryphal",
+      "coreMeaningZh": "真实性可疑的；广为流传却未必真实的",
+      "unit": 55,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 237,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "真有这回事？谁见过呢？",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "真有这回事？谁见过呢？"
+          ]
+        },
+        "alt": "老人讲述巨鱼背着房子飞过云间的传说，男孩追问见证，老人承认自己也只是听说。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1800,
+            "text": "村里一直这么传。",
+            "speaker": "elder",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "村里一直这么传。"
+            ],
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1800,
+            "endMs": 4000,
+            "text": "真有这回事？谁见过呢？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "真有这回事？谁见过呢？"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 4000,
+            "endMs": 6200,
+            "text": "我也只是听说。",
+            "speaker": "elder",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我也只是听说。"
+            ],
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/122-video-b03829324240044a554e6a3e18b619c9e7b869c718a687779739b62251c0e37a.mp4",
+          "sha256": "b03829324240044a554e6a3e18b619c9e7b869c718a687779739b62251c0e37a",
+          "bytes": 652396
+        },
+        "poster": {
+          "url": "story-media/122-poster-7aa8dbb4c83ff5eba7554bb69b795c9de51ea4128509a9ff81980f5b39d8a6d0.png",
+          "sha256": "7aa8dbb4c83ff5eba7554bb69b795c9de51ea4128509a9ff81980f5b39d8a6d0",
+          "bytes": 1238391
+        },
+        "staticPoster": {
+          "url": "story-media/122-staticPoster-c52c712d7840011bca48b90728868bea522183aad9747f4497610dd1bd9fa6df.png",
+          "sha256": "c52c712d7840011bca48b90728868bea522183aad9747f4497610dd1bd9fa6df",
+          "bytes": 1238641
+        }
+      }
+    },
+    {
+      "number": 1927,
+      "word": "quaff",
+      "coreMeaningZh": "大口畅饮；痛饮",
+      "unit": 55,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 238,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "痛快！",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "痛快！"
+          ]
+        },
+        "alt": "口渴的男孩双手捧着杯子，大口畅饮，放下杯子后心满意足。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3800,
+            "endMs": 6200,
+            "text": "痛快！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "痛快！"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/1927-video-6a6d72887d76010106c7fc2674a1d59ff38d9595cb1202edde54cb8402e72996.mp4",
+          "sha256": "6a6d72887d76010106c7fc2674a1d59ff38d9595cb1202edde54cb8402e72996",
+          "bytes": 651139
+        },
+        "poster": {
+          "url": "story-media/1927-poster-64c88cf00112ed235e6957f12ced8158d73b03cd94186bb776817d78b1d7fa23.png",
+          "sha256": "64c88cf00112ed235e6957f12ced8158d73b03cd94186bb776817d78b1d7fa23",
+          "bytes": 1166727
+        },
+        "staticPoster": {
+          "url": "story-media/1927-staticPoster-02e065676fdcdba52425bb09f0db75dce1dc0741fb3e0881cac5c50e209a691c.png",
+          "sha256": "02e065676fdcdba52425bb09f0db75dce1dc0741fb3e0881cac5c50e209a691c",
+          "bytes": 1147647
+        }
+      }
+    },
+    {
+      "number": 1200,
+      "word": "impudent",
+      "coreMeaningZh": "放肆无礼的；厚颜不恭的",
+      "unit": 55,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 239,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "你懂什么，听我的！",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "你懂什么，听我的！"
+          ]
+        },
+        "alt": "男孩叉着腰、抬着下巴，无礼地打断老人，老人皱眉。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3000,
+            "text": "你懂什么，听我的！",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "你懂什么，听我的！"
+            ],
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/1200-video-778afcaaef9ace4cf0acf493709b2b204df5f420693ade8d4cf677b5ebea9e45.mp4",
+          "sha256": "778afcaaef9ace4cf0acf493709b2b204df5f420693ade8d4cf677b5ebea9e45",
+          "bytes": 454716
+        },
+        "poster": {
+          "url": "story-media/1200-poster-129f8e1e7393b1b14a90e2b03bd23fd0639d5d3576c7e926334ef5b1442c3989.png",
+          "sha256": "129f8e1e7393b1b14a90e2b03bd23fd0639d5d3576c7e926334ef5b1442c3989",
+          "bytes": 1248232
+        },
+        "staticPoster": {
+          "url": "story-media/1200-staticPoster-c7c8132d5ce79a73b22ab9dd1cf42aa0742028ab0c2199a30eb21f490ff0c126.png",
+          "sha256": "c7c8132d5ce79a73b22ab9dd1cf42aa0742028ab0c2199a30eb21f490ff0c126",
+          "bytes": 1248316
+        }
+      }
+    },
+    {
+      "number": 1825,
+      "word": "preclude",
+      "coreMeaningZh": "使不可能；阻止；排除……的可能性",
+      "unit": 55,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 240,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "路堵死了，过不去了。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "路堵死了，过不去了。"
+          ]
+        },
+        "alt": "巨大的倒木横堵狭窄山路，男孩停下，摊手意识到自己过不去了。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1800,
+            "endMs": 5000,
+            "text": "路堵死了，过不去了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "路堵死了，过不去了。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 5000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/1825-video-0fbfd4d32cbfa2a32de35d22a625adfa1f3ae61fc26a9a12ff1d3e238c874ffe.mp4",
+          "sha256": "0fbfd4d32cbfa2a32de35d22a625adfa1f3ae61fc26a9a12ff1d3e238c874ffe",
+          "bytes": 717187
+        },
+        "poster": {
+          "url": "story-media/1825-poster-7ab908e5029feb3d125ca84c35f89272e60afbb61854a83c5628d1b983105c44.png",
+          "sha256": "7ab908e5029feb3d125ca84c35f89272e60afbb61854a83c5628d1b983105c44",
+          "bytes": 1268674
+        },
+        "staticPoster": {
+          "url": "story-media/1825-staticPoster-bba43e59ceae1819493291f9cbcdc866a6bc6b0166a3a9db77a21aaab7632d57.png",
+          "sha256": "bba43e59ceae1819493291f9cbcdc866a6bc6b0166a3a9db77a21aaab7632d57",
+          "bytes": 1269355
         }
       }
     }

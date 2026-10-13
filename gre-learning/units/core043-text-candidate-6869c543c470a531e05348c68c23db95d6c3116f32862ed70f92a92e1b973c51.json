@@ -1,0 +1,409 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 2560,
+      "word": "unkempt",
+      "ipa": "/ʌnˈkempt/",
+      "pos": "adj.",
+      "coreMeaningZh": "（头发、外表等）蓬乱的；不整洁的；疏于打理的",
+      "coreEn": "Untidy in appearance, especially because grooming or care has been neglected.",
+      "coreImageZh": "男孩起床后，头发几撮向外翘着。他用手把乱发压下去，松开后又蓬起来。unkempt 说的就是这种没梳理、没打理好的样子；它强调外表不整洁，不等于人品不好。",
+      "mnemonics": [
+        {
+          "method": "UNKE(M)PT 没收拾好",
+          "textZh": "UNKEMPT 只比 UNKEPT（没保持好）多一个 M。把多出的 M 想成两撮翘起的乱发：原本该 kept neat（保持整齐），如今却没收拾好，显得乱蓬蓬。这里借近形记忆；unkept promise 是“未兑现的承诺”，不能换成 unkempt。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "UN · CAMPED",
+          "textZh": "把 unkempt 近听成“俺 camped（露过营）”：刚露营回来，还没顾上洗漱整理，头发乱翘、衣服皱巴巴，就是“蓬乱、不修边幅”。camped 读 /kæmpt/，与 unkempt 后半段 /kempt/ 相近；这是近音联想，不是词源。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "外表没有打理好",
+          "explanationZh": "最常见的是头发、胡须和整个人的外表；也可修饰衣服。可放名词前，或接在 look、be 等后面。通常带批评意味，但蓬乱不必然等于肮脏，更不表示人的品行差。",
+          "collocations": [
+            {
+              "phrase": "unkempt hair / an unkempt beard",
+              "meaningZh": "蓬乱的头发／未修整的胡须",
+              "usageZh": "强调没有梳理、修整好的状态。"
+            },
+            {
+              "phrase": "look unkempt / an unkempt appearance",
+              "meaningZh": "显得不修边幅／不整洁的外表",
+              "usageZh": "look 后的 unkempt 是形容词表语。"
+            }
+          ]
+        },
+        {
+          "senseZh": "地方或文字缺乏整理",
+          "explanationZh": "也可以说花园、草坪、房间杂乱、缺少照料。较少见的比喻用法形容文字粗糙、欠修饰；不要把常见的“外表蓬乱”误解成“不讲道德”。",
+          "collocations": [
+            {
+              "phrase": "an unkempt garden / lawn",
+              "meaningZh": "疏于打理的花园／草坪",
+              "usageZh": "可指杂草丛生、外观凌乱。"
+            },
+            {
+              "phrase": "unkempt prose",
+              "meaningZh": "欠修饰的散文",
+              "usageZh": "比喻用法，突出表达粗糙；不是说纸张脏。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His hair was unkempt and filthy.",
+          "translationZh": "他的头发乱蓬蓬的，而且很脏。",
+          "explanationZh": "unkempt 说没有梳理整齐；filthy 另补充“很脏”。两词并列，不能把它们直接当成同一意思。"
+        },
+        {
+          "textEn": "She wore rumpled clothing and her hair was unkempt.",
+          "translationZh": "她穿着皱巴巴的衣服，头发也乱蓬蓬的。",
+          "explanationZh": "衣服皱、头发乱共同构成不修边幅的外观；was unkempt 描述状态，并不是被动语态。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "disheveled",
+          "comparisonZh": "unkempt/disheveled hair 都可指乱蓬蓬的头发。unkempt 更容易让人想到没打理；disheveled 强调眼前凌乱、散乱的样子，也可以是一阵风吹出来的。两者都不必然表示脏。dishevelled 是另一常用拼写。"
+        },
+        {
+          "word": "untidy",
+          "comparisonZh": "an unkempt/untidy room 都能说房间不整洁。untidy 更宽泛，东西摆放凌乱就能用；unkempt 往往带出无人打理的感觉。untidy 还可说做事缺乏条理；不能把所有这类抽象搭配都换成 unkempt。"
+        }
+      ]
+    },
+    {
+      "number": 2115,
+      "word": "ruminate",
+      "ipa": "英 /ˈruːmɪneɪt/；美 /ˈruːməneɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "反复思量；沉思；（牛等）反刍",
+      "coreEn": "To keep turning a subject over in the mind; also, for certain animals, to bring swallowed food back up and chew it again.",
+      "coreImageZh": "男孩读着一张纸条，放下后仍托着脸思考，过一会儿又拿起来重新读。ruminate 就是让同一件事在脑中翻来覆去，反复思量；想得久，并不保证已经想出答案。",
+      "mnemonics": [
+        {
+          "method": "ROOM 里回味 ATE",
+          "textZh": "借 ROOM（房间）＋IN（里面）＋ATE（吃过）的声音：吃完饭回到房间里，还在一遍遍回想席间那句话。ROOM-IN-ATE 连起来贴近 ruminate 的英式读音，把“回到房里反复回味”连到“反复思量”。重音在开头；这是近音联想，不是词源。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "RUIN + MATE",
+          "textZh": "借 ruin（毁掉）和 mate（朋友）记：一句话伤了朋友，你事后反复琢磨“我是不是把这段友谊毁了？”把 RUIN MATE 中的 M 移到 U 后，就得到 RUMINATE。只挪一个字母，用“怕毁掉友谊，反复想那句话”记“反复思量”；这是拼写联想，不是词源。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "长时间、反复思量某件事",
+          "explanationZh": "语气较正式，重点是同一件事在心里来回想；可以是认真思考，也可以久久放不下，不保证想出结论。最常用不及物结构，思考的对象接 on、over 或 about。词典也收及物用法，不能断言它绝不直接接宾语。",
+          "collocations": [
+            {
+              "phrase": "ruminate on / over / about something",
+              "meaningZh": "反复思考某事",
+              "usageZh": "介词后可接名词，或 whether、what 等引导的内容。"
+            },
+            {
+              "phrase": "ruminate over a decision / the past",
+              "meaningZh": "反复琢磨一个决定／往事",
+              "usageZh": "强调持续回想，不等于已经作出决定。"
+            },
+            {
+              "phrase": "rumination / ruminative",
+              "meaningZh": "反复思量／沉思的",
+              "usageZh": "分别是名词与形容词；本页动词过去式、过去分词为 ruminated，现在分词为 ruminating。"
+            }
+          ]
+        },
+        {
+          "senseZh": "牛等动物把食物送回口中再嚼",
+          "explanationZh": "这是动物行为中的“反刍”，与头脑里把同一件事翻来覆去想形成直观联系。不是所有咀嚼都叫反刍；人吃饭时细嚼慢咽，不能因此直接用这个动物义。",
+          "collocations": [
+            {
+              "phrase": "cows ruminate",
+              "meaningZh": "牛反刍",
+              "usageZh": "可不带宾语；不是说牛在作出理性的深思判断。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He ruminated over the implications of their decision.",
+          "translationZh": "他反复思量他们的决定会带来哪些影响。",
+          "explanationZh": "ruminated over 带出反复思考的内容；implications 在这里是可能的影响或后果，不只是字面的“暗示”。"
+        },
+        {
+          "textEn": "He wanted to have a look at the two oxen, both ruminating without raising their eyes.",
+          "translationZh": "他想看看那两头牛，它们都在反刍，连眼睛也没抬一下。",
+          "explanationZh": "both ruminating 描写两头牛当时的状态；主语是 oxen，ruminating 在这里用动物“反刍”义。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ponder",
+          "comparisonZh": "ruminate over a question 和 ponder a question 都能说仔细琢磨问题。ruminate 更突出同一件事反复在脑中盘旋；ponder 强调认真权衡，也可能久久没有结论。ponder 可直接接宾语，也可接 on/over，替换时不能只机械保留一个句型。它不能替代动物“反刍”义。"
+        },
+        {
+          "word": "meditate",
+          "comparisonZh": "ruminate/meditate on a subject 都可说沉思某个话题。ruminate 着重来回琢磨；meditate 更容易强调有意集中思想，也可单独表示冥想练习。meditate for ten minutes 若指做冥想，换成 ruminate 会变成反复想事，不是同一种活动；也不能替代牛反刍。"
+        }
+      ]
+    },
+    {
+      "number": 1942,
+      "word": "quotidian",
+      "ipa": "英 /kwəʊˈtɪdiən/；美 /kwoʊˈtɪdiən/",
+      "pos": "adj.",
+      "coreMeaningZh": "每日的；日常的；平凡普通的",
+      "coreEn": "Occurring each day, or belonging to ordinary daily life rather than being unusual or exceptional.",
+      "coreImageZh": "男孩照常坐在厨房吃早餐，放下勺子后，伸手去拿椅子旁的书包。这些每天重复、平常却熟悉的小事，就是 quotidian life：日常生活。这个词也可强调“每日发生”，并不一定带有无聊或厌烦的意味。",
+      "mnemonics": [
+        {
+          "method": "QUOTe 写进 DIAry",
+          "textZh": "在 QUOTiDIAn 里看见 quote（引句）和 diary（日记）的熟悉轮廓：每天往日记里摘一句身边人的话，记录的都是吃饭、上学这些日常小事。借“日记里每天的一句”记“每日的、日常的”；这两个熟词是拼写线索，不是说整个词按它们拼接或发音。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "QUOTA · 点",
+          "textZh": "把 quotidian 近听成 quota（定额）＋“点”：每天到点，领走当天的口粮，一天一天照常重复，就是“每日的、日常的”。quota 本身不表示“每日”，这里借固定领粮的画面来记。这是近音联想，不能直接按 quota 加“点”来读；quotidian 的重音在第二音节。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "日常生活中普通的事情",
+          "explanationZh": "语体较正式，常修饰生活、细节、工作或活动，突出它们属于寻常日子。它可以带“平淡无奇”的意味，但不必然等于无聊、低劣或没有价值。文学评论也可以赞美日常生活里的美。",
+          "collocations": [
+            {
+              "phrase": "quotidian life / existence",
+              "meaningZh": "日常生活",
+              "usageZh": "常用作名词前的定语，比 everyday 更书面。"
+            },
+            {
+              "phrase": "quotidian tasks / details",
+              "meaningZh": "日常事务／平常细节",
+              "usageZh": "与 unusual、extraordinary 对照时，多取“平凡普通”义。"
+            }
+          ]
+        },
+        {
+          "senseZh": "每天发生或重复",
+          "explanationZh": "也可严格表示“每日的”，此时强调频率。读到 quotidian report 之类表达，要先看是否真的指每天一次，而不是笼统地把它翻成“无聊的报告”。",
+          "collocations": [
+            {
+              "phrase": "a quotidian report / routine",
+              "meaningZh": "每日报告／日常惯例",
+              "usageZh": "report 突出每日提交，routine 突出惯常重复；具体解释依上下文。"
+            }
+          ]
+        },
+        {
+          "senseZh": "留意形容词与副词结构",
+          "explanationZh": "本页主要学习形容词。日常的事可写 quotidian activities；“每天做某事”则通常用 every day 或 daily 作时间状语，不能把形容词直接塞进 I do it every day 的末尾。the quotidian 在文学语境可名词化指日常生活。",
+          "collocations": []
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Television has become part of our quotidian existence.",
+          "translationZh": "电视已经融入我们的日常生活。",
+          "explanationZh": "quotidian 修饰 existence，意思是寻常的日常生活；句子没有直接说这种生活无聊。"
+        },
+        {
+          "textEn": "I had hopes of escaping my quotidian world.",
+          "translationZh": "我曾希望能逃离自己平淡的日常生活。",
+          "explanationZh": "escaping 和 had hopes 让这里带出想摆脱平常生活的心情；“平淡”的色彩来自整句，不能据此说 quotidian 永远贬义。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "workday",
+          "comparisonZh": "quotidian 与 workday 可在“寻常、日常”这个形容词义上对应。workday 更常见的名词义是“工作日”或“一天的工作时段”；a long workday 不能换成 a long quotidian。quotidian 描述日常生活时，也不限于上班日。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "everyday",
+          "comparisonZh": "quotidian/everyday life 都指日常生活；quotidian 更正式、文学化。everyday 是一个词的形容词，表示平常的，常放名词前；every day 是两个词，表示每天。表达某件事每日发生时，还可用 daily；不能忽略词性把这些写法直接对换。"
+        },
+        {
+          "word": "workaday",
+          "comparisonZh": "a quotidian/workaday life 都可描写平凡的日子，workaday 常带寻常、缺少新意的色彩。quotidian 另有严格“每日发生”的频率义；workaday 并不自动保证一天一次。"
+        }
+      ]
+    },
+    {
+      "number": 379,
+      "word": "colossal",
+      "ipa": "/kəˈlɑːsəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "巨大的，庞大的；数量或程度惊人的",
+      "coreEn": "Extremely large in physical size, amount, extent, or degree.",
+      "coreImageZh": "男孩在博物馆停下脚步，仰头望着一座高达屋顶的巨型雕像；他和旁边的普通椅子都显得很小。colossal 强调远超寻常的巨大，不只是在说“比平时大一点”。",
+      "mnemonics": [
+        {
+          "method": "COLOSSal 与 COLOSSeum",
+          "textZh": "COLOSSal 的大半词形和 COLOSSeum（罗马斗兽场）相同：想象站在那座庞大的圆形竞技场里，周围一圈圈看台高高展开，人显得很小。借斗兽场的庞大体量，记“巨大得惊人”。这是地标名称的近形联想，不是词源。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": true
+        },
+        {
+          "method": "LOSS of ALL",
+          "textZh": "看 coLOSSAL 中的 LOSS（损失）和 AL，把 AL 补成 ALL（全部）：想象一家公司几十亿元全亏光，损失大得惊人，a colossal loss。用“巨额资金全部赔掉”把词形连到巨大程度；这是拼写联想，不按 loss、all 连读。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "体积或规模远超寻常",
+          "explanationZh": "可形容雕像、建筑、船只等庞然大物，也可写自然事物。比普通的 big、large 语气强，常让人感到规模惊人；并不限定必须是人造物。",
+          "collocations": [
+            {
+              "phrase": "a colossal statue",
+              "meaningZh": "一座巨型雕像",
+              "usageZh": "着重雕像的尺寸，不等于艺术价值很高。"
+            },
+            {
+              "phrase": "on a colossal scale",
+              "meaningZh": "规模极大地",
+              "usageZh": "可形容工程、生产或破坏等的整体规模。"
+            }
+          ]
+        },
+        {
+          "senseZh": "数量、程度或影响极大",
+          "explanationZh": "也常形容金钱数量、损失、浪费或错误的严重程度。它本身不只用于坏事；具体是褒是贬取决于所修饰的内容。",
+          "collocations": [
+            {
+              "phrase": "a colossal amount of money",
+              "meaningZh": "一笔数额惊人的钱",
+              "usageZh": "amount of 后接不可数名词 money。"
+            },
+            {
+              "phrase": "a colossal mistake",
+              "meaningZh": "一个极其严重的错误",
+              "usageZh": "夸张强调错误程度或影响，不是在说错误有实体尺寸。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "In the center of the hall stood a colossal wooden statue, decorated in ivory and gold.",
+          "translationZh": "大厅中央矗立着一座用象牙和黄金装饰的巨型木雕。",
+          "explanationZh": "colossal 直接修饰 statue，强调实体尺寸。句首地点短语之后是倒装，主语是 a colossal wooden statue。"
+        },
+        {
+          "textEn": "There has been a colossal waste of public money.",
+          "translationZh": "公款遭到了极其严重的浪费。",
+          "explanationZh": "colossal 在这里写浪费程度之大；public money 指公款，不是面额很大的钞票。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "immense",
+          "comparisonZh": "a colossal/immense amount of money 都是数额极大的钱，两个词都可修饰尺寸、数量和程度。colossal 常多一分“庞然大物般惊人”的强调；immense 用来写抽象程度也很自然。a colossal mistake 通常说严重失误，不能只凭“都表示巨大”就假定每种搭配换成 immense 同样自然；两者都不是“永远无限大”。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "enormous",
+          "comparisonZh": "a colossal/enormous statue 都能说雕像巨大；a colossal/enormous amount of money 也都成立。enormous 适用广，colossal 往往更有“庞大得令人吃惊”的色彩。两者均是形容词，强调数量、尺寸或程度；不能把普通 big 的“年纪大”或“重要人物”等所有用法直接换过去。"
+        }
+      ]
+    },
+    {
+      "number": 1026,
+      "word": "germane",
+      "ipa": "/dʒɜːrˈmeɪn/",
+      "pos": "adj.",
+      "coreMeaningZh": "与所谈问题密切相关的；切题的，贴切的",
+      "coreEn": "Directly relevant and appropriate to the subject or situation being considered.",
+      "coreImageZh": "大家正在商量周六能不能去公园野餐，男孩拿出有雨云图案的天气预报，大家转而认真查看。天气正是决定能否户外野餐的关键信息，所以这份预报 germane to the discussion：与讨论密切相关、切中问题。",
+      "mnemonics": [
+        {
+          "method": "GERMAN 德语课",
+          "textZh": "GERMAN（德语）末尾加 E，就是 GERMANE。上德语课，问德语语法当然切题；问晚饭吃什么就跑题了。借这个整词近形记“与话题相关”，不是词源；germane 的重音在后，读 /dʒɜːrˈmeɪn/。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "GERM + MAIN",
+          "textZh": "谈消毒时，GERM（细菌）就是 MAIN（主要）话题，当然切题。把 germ 和 main 的声音接起来，中间 /m/ 共用一次，就能带出 germane；末尾 /meɪn/ 与 main 同音。这是音形联想。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "信息、言论与当前问题密切相关",
+          "explanationZh": "这是较正式的词，常用于讨论、论证、报告等场合。重点是信息对眼前问题确实有关系、有用处，不只是“两个东西有点像”。",
+          "collocations": [
+            {
+              "phrase": "be germane to the discussion",
+              "meaningZh": "与讨论密切相关",
+              "usageZh": "to 是介词，后接所讨论的问题或主题。"
+            },
+            {
+              "phrase": "remarks germane to the issue",
+              "meaningZh": "切中该问题的评论",
+              "usageZh": "germane to the issue 放在 remarks 后，说明评论与什么问题有关。"
+            }
+          ]
+        },
+        {
+          "senseZh": "常见句法及使用边界",
+          "explanationZh": "最常见的是 be germane to something；也可单独作表语，由上下文补足“与什么有关”。通常不直接放在名词前，但并非绝对不能。现代常用义不表示朋友亲密或有血缘关系。",
+          "collocations": [
+            {
+              "phrase": "not germane to the case",
+              "meaningZh": "与该案无关，不切中该案的问题",
+              "usageZh": "否定的是关联性，不是在说该信息本身一定错误。"
+            },
+            {
+              "phrase": "be directly germane to the question",
+              "meaningZh": "与该问题直接相关",
+              "usageZh": "常接 question、issue、subject、case 等表示讨论对象的名词。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The report contains matters that are germane to the case.",
+          "translationZh": "这份报告包含与该案密切相关的事项。",
+          "explanationZh": "germane to 指出报告中的哪些内容真正关系到该案；这里 matters 是“事项、内容”。"
+        },
+        {
+          "textEn": "Her remarks could not have been more germane to the discussion.",
+          "translationZh": "她的话再切题不过了。",
+          "explanationZh": "could not have been more 加形容词表示“已经极其……”，整句是在肯定她的发言非常切题。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "relevant",
+          "comparisonZh": "信息 relevant/germane to the case 都表示与该案相关。germane 更正式，常带“切中当前问题、适合此处讨论”的意味；relevant 适用范围更广。求职时说 relevant work experience（相关工作经验）更自然，不宜把所有 relevant 都机械换成 germane。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "apposite",
+          "comparisonZh": "评论 apposite/germane to the discussion 都可以很切题。germane 着重与讨论有实质联系；apposite 更强调放在这里恰到好处，例如一个选得巧的比喻。apposite 常直接修饰 quotation、analogy 等名词，germane 更常见于 be germane to 结构，替换时要兼顾句法和侧重点。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    }
+  ]
+}
