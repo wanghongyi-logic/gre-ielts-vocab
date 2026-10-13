@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "166",
-  "authoredCount": 210,
-  "publishedCount": 210,
+  "release": "167",
+  "authoredCount": 220,
+  "publishedCount": 220,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -217,7 +217,17 @@
       1381,
       1498,
       225,
-      1036
+      1036,
+      607,
+      1412,
+      882,
+      494,
+      2266,
+      634,
+      2311,
+      262,
+      1040,
+      364
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -477,6 +487,16 @@
       "url": "units/core039-text-candidate-319742813982b9f6ab1e3d924543127fdeafb838ee403816a0226c8148e443e7.json",
       "sha256": "319742813982b9f6ab1e3d924543127fdeafb838ee403816a0226c8148e443e7",
       "bytes": 18939
+    },
+    {
+      "url": "units/core040-text-candidate-158b9a5b7d018b24338c12f9b8c606942d5eb23568cb71e1cff499587403f625.json",
+      "sha256": "158b9a5b7d018b24338c12f9b8c606942d5eb23568cb71e1cff499587403f625",
+      "bytes": 19986
+    },
+    {
+      "url": "units/core041-text-candidate-52ee1c11358f950fbf507251f2b6ae9de41b0bf5e53e35005d2a36a5acb62048.json",
+      "sha256": "52ee1c11358f950fbf507251f2b6ae9de41b0bf5e53e35005d2a36a5acb62048",
+      "bytes": 21678
     }
   ],
   "entries": [
@@ -17235,6 +17255,810 @@
           "url": "story-media/1036-staticPoster-6663369ed77357c5e9780e9e0373448e2cbb9ced70c938d69b61ab783eae28a2.png",
           "sha256": "6663369ed77357c5e9780e9e0373448e2cbb9ced70c938d69b61ab783eae28a2",
           "bytes": 1175229
+        }
+      }
+    },
+    {
+      "number": 607,
+      "word": "deter",
+      "coreMeaningZh": "阻止；使打消念头；威慑",
+      "unit": 50,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 211,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "有狗守着，还是别进去了。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "有狗守着，还是别进去了。"
+          ]
+        },
+        "alt": "男孩想打开花园门，门后的狗一叫，他收回伸向门闩的手，提着篮子后退，决定不进去。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3200,
+            "endMs": 6200,
+            "text": "有狗守着，还是别进去了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "有狗守着，还是别进去了。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/607-video-05fef387eebbf5a2394fdab97172c5a8a0082a27cdb54212d626cd19107c6700.mp4",
+          "sha256": "05fef387eebbf5a2394fdab97172c5a8a0082a27cdb54212d626cd19107c6700",
+          "bytes": 895847
+        },
+        "poster": {
+          "url": "story-media/607-poster-875f10d32080df7383ee1bf38332ab04bf03404b1ccd8f0d6981e520c07d24f2.png",
+          "sha256": "875f10d32080df7383ee1bf38332ab04bf03404b1ccd8f0d6981e520c07d24f2",
+          "bytes": 1308138
+        },
+        "staticPoster": {
+          "url": "story-media/607-staticPoster-1f123a96a5764fafb6087b8dfd25ae62b5535fe0ebcb6734ae64b7ac7917ac74.png",
+          "sha256": "1f123a96a5764fafb6087b8dfd25ae62b5535fe0ebcb6734ae64b7ac7917ac74",
+          "bytes": 1318119
+        }
+      }
+    },
+    {
+      "number": 1412,
+      "word": "loath",
+      "coreMeaningZh": "不情愿的；不愿意的",
+      "unit": 50,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 212,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "我有点舍不得借出去。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我有点舍不得借出去。"
+          ]
+        },
+        "alt": "朋友摊开双手想借木头飞机，男孩把心爱的飞机抱在怀里犹豫，随后只稍微递出一点，仍没有松手。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1280,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1280,
+            "endMs": 6200,
+            "text": "我有点舍不得借出去。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我有点舍不得借出去。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/1412-video-487757b66fa30796c7e451a483f5ed0d821420b4b2f940e5400dfcdb26f2abd9.mp4",
+          "sha256": "487757b66fa30796c7e451a483f5ed0d821420b4b2f940e5400dfcdb26f2abd9",
+          "bytes": 581480
+        },
+        "poster": {
+          "url": "story-media/1412-poster-6fd1e0bbb988cf13484e8a5f34a4090500dbfb05fb6a676385b856150f86e3c6.png",
+          "sha256": "6fd1e0bbb988cf13484e8a5f34a4090500dbfb05fb6a676385b856150f86e3c6",
+          "bytes": 1161775
+        },
+        "staticPoster": {
+          "url": "story-media/1412-staticPoster-421dbd632e80b01de10dbf148e8f0c58fdc19911e6d660f074b7f9d6341dc6dc.png",
+          "sha256": "421dbd632e80b01de10dbf148e8f0c58fdc19911e6d660f074b7f9d6341dc6dc",
+          "bytes": 1168738
+        }
+      }
+    },
+    {
+      "number": 882,
+      "word": "extol",
+      "coreMeaningZh": "大加赞扬；热情颂扬",
+      "unit": 50,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 213,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "做得真出色，每个细节都很用心！",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "做得真出色，每个细节都很用心！"
+          ]
+        },
+        "alt": "成人访客仔细看男孩制作的微型花园，指着细节热情称赞，男孩开心地接受赞美。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2920,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2920,
+            "endMs": 6200,
+            "text": "做得真出色，每个细节都很用心！",
+            "speaker": "adult visitor",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "做得真出色，每个细节都很用心！"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/882-video-8ecad66dd86f9ad4086b42a2a24bfdd68db65aaae4db67db22ccc2fb26e658d9.mp4",
+          "sha256": "8ecad66dd86f9ad4086b42a2a24bfdd68db65aaae4db67db22ccc2fb26e658d9",
+          "bytes": 581558
+        },
+        "poster": {
+          "url": "story-media/882-poster-d964a65feb5c531e8c911ae4b72ced4476e8a81485fd3487bb3a8421ff48f0a9.png",
+          "sha256": "d964a65feb5c531e8c911ae4b72ced4476e8a81485fd3487bb3a8421ff48f0a9",
+          "bytes": 1143198
+        },
+        "staticPoster": {
+          "url": "story-media/882-staticPoster-ab080dd6321ac00fec3930dc8b15274c8cfd01c6d1298a9a3c400730fd387b2c.png",
+          "sha256": "ab080dd6321ac00fec3930dc8b15274c8cfd01c6d1298a9a3c400730fd387b2c",
+          "bytes": 1146078
+        }
+      }
+    },
+    {
+      "number": 494,
+      "word": "crass",
+      "coreMeaningZh": "粗俗无礼的；愚钝冒失的；不顾他人感受的",
+      "unit": 50,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 214,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "这里这么安静，别大声响铃。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这里这么安静，别大声响铃。"
+          ]
+        },
+        "alt": "男孩在安静的图书馆大声摇铃，旁边两位读者捂耳皱眉，他却仍兴高采烈。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3800,
+            "endMs": 6200,
+            "text": "这里这么安静，别大声响铃。",
+            "speaker": "older reader",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这里这么安静，别大声响铃。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/494-video-9942bdc4a6912576076f5d4a2f6017e977aee7392fb5d2880da72ea4dcbc7e1a.mp4",
+          "sha256": "9942bdc4a6912576076f5d4a2f6017e977aee7392fb5d2880da72ea4dcbc7e1a",
+          "bytes": 784859
+        },
+        "poster": {
+          "url": "story-media/494-poster-77644d825859216d1e51b1dcfe4825ae49d664680afd8cb300d7b966f9cfc929.png",
+          "sha256": "77644d825859216d1e51b1dcfe4825ae49d664680afd8cb300d7b966f9cfc929",
+          "bytes": 1196101
+        },
+        "staticPoster": {
+          "url": "story-media/494-staticPoster-71474d4449beeb16ae637eec1f8017a947b5729cfe5245241c49e7127fcbb214.png",
+          "sha256": "71474d4449beeb16ae637eec1f8017a947b5729cfe5245241c49e7127fcbb214",
+          "bytes": 1260861
+        }
+      }
+    },
+    {
+      "number": 2266,
+      "word": "snobbish",
+      "coreMeaningZh": "势利的；自命高人一等的",
+      "unit": 50,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 215,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "穿成这样，也想和我们坐？",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "穿成这样，也想和我们坐？"
+          ]
+        },
+        "alt": "穿着讲究的孩子轻蔑地抬手，转头拒绝穿补丁衣服的孩子加入茶桌；绿夹克男孩不赞同地看着。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1600,
+            "endMs": 6200,
+            "text": "穿成这样，也想和我们坐？",
+            "speaker": "well-dressed boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "穿成这样，也想和我们坐？"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/2266-video-8e777480213ca2604b5570c07af99faba0ec5eab8945b72ac2c3d3b19854e115.mp4",
+          "sha256": "8e777480213ca2604b5570c07af99faba0ec5eab8945b72ac2c3d3b19854e115",
+          "bytes": 735846
+        },
+        "poster": {
+          "url": "story-media/2266-poster-69cf5605bf1986cfc53f834945c3a936d7d1341c965fb93875bd93a320f621ac.png",
+          "sha256": "69cf5605bf1986cfc53f834945c3a936d7d1341c965fb93875bd93a320f621ac",
+          "bytes": 1310187
+        },
+        "staticPoster": {
+          "url": "story-media/2266-staticPoster-4dd9ae627f337f96e8a3225e0c5b8e99f9e1773b2ac7732d750f715792ee335e.png",
+          "sha256": "4dd9ae627f337f96e8a3225e0c5b8e99f9e1773b2ac7732d750f715792ee335e",
+          "bytes": 1321947
+        }
+      }
+    },
+    {
+      "number": 634,
+      "word": "dire",
+      "coreMeaningZh": "极其严重的；危急的；极糟糕的",
+      "unit": 51,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 216,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "再没有水，这片菜就保不住了。",
+          "speaker": "center",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "再没有水，这片菜就保不住了。"
+          ]
+        },
+        "alt": "男孩倾斜水壶，只倒出最后几滴水；园丁拿着桶盖，指向严重枯萎的菜地，担心水荒将毁掉庄稼。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2800,
+            "endMs": 6200,
+            "text": "再没有水，这片菜就保不住了。",
+            "speaker": "gardener",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "再没有水，这片菜就保不住了。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/634-video-7a7e77659d9a4f1294dba07bd5028d978e1c775aad7c2f991f072fe528243f00.mp4",
+          "sha256": "7a7e77659d9a4f1294dba07bd5028d978e1c775aad7c2f991f072fe528243f00",
+          "bytes": 692277
+        },
+        "poster": {
+          "url": "story-media/634-poster-b243ffe5d19622f4fe26397eddabb16d964f8d7aa2db2f9be831dc5544752f1b.png",
+          "sha256": "b243ffe5d19622f4fe26397eddabb16d964f8d7aa2db2f9be831dc5544752f1b",
+          "bytes": 1325885
+        },
+        "staticPoster": {
+          "url": "story-media/634-staticPoster-2995624249a50dbd0ebbf2a2ad81e337874b2d9b418c78b8b8df339847e798c5.png",
+          "sha256": "2995624249a50dbd0ebbf2a2ad81e337874b2d9b418c78b8b8df339847e798c5",
+          "bytes": 1348943
+        }
+      }
+    },
+    {
+      "number": 2311,
+      "word": "spur",
+      "coreMeaningZh": "激励；促使，加速；激励因素；马刺",
+      "unit": 51,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 217,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "再试一次，你快做成了！",
+          "speaker": "friend",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "再试一次，你快做成了！"
+          ]
+        },
+        "alt": "男孩原本灰心地停下折纸，朋友鼓励后，他重新动手折纸飞机，展示鼓励促使行动。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1400,
+            "endMs": 6000,
+            "text": "再试一次，你快做成了！",
+            "speaker": "friend",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "再试一次，你快做成了！"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/2311-video-64d88a33ba36a71279ab00f0c1f0f730751ddbbcf991980dcd41a11da76143cd.mp4",
+          "sha256": "64d88a33ba36a71279ab00f0c1f0f730751ddbbcf991980dcd41a11da76143cd",
+          "bytes": 676694
+        },
+        "poster": {
+          "url": "story-media/2311-poster-3781a5e2e87b6ad410d0c57afb3d177dfd0ad84b17cfbf0759fae4ae88fea6b3.png",
+          "sha256": "3781a5e2e87b6ad410d0c57afb3d177dfd0ad84b17cfbf0759fae4ae88fea6b3",
+          "bytes": 1092043
+        },
+        "staticPoster": {
+          "url": "story-media/2311-staticPoster-ea39eef5e60443b5339f2d1603c3c279caa1b431aefb21aab8569252d63c08ad.png",
+          "sha256": "ea39eef5e60443b5339f2d1603c3c279caa1b431aefb21aab8569252d63c08ad",
+          "bytes": 1169931
+        }
+      }
+    },
+    {
+      "number": 262,
+      "word": "bridle",
+      "coreMeaningZh": "马勒；控制，抑制；动怒，表示不满",
+      "unit": 51,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 218,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "先冷静，别发火。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "先冷静，别发火。"
+          ]
+        },
+        "alt": "积木塔被意外碰倒后，男孩先握紧双手，随后深呼吸、松开手，克制怒气，平静地面对道歉的朋友。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2600,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2600,
+            "endMs": 6000,
+            "text": "先冷静，别发火。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "先冷静，别发火。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/262-video-3569700c4b422aa448a319faac495ab4d7f1d72ae596c9e5ce6b984be0783106.mp4",
+          "sha256": "3569700c4b422aa448a319faac495ab4d7f1d72ae596c9e5ce6b984be0783106",
+          "bytes": 653416
+        },
+        "poster": {
+          "url": "story-media/262-poster-9ed1c7de21a357b7081f0860eec54650ce4b7b52d83d5d4e56bfb5a84a9289fc.png",
+          "sha256": "9ed1c7de21a357b7081f0860eec54650ce4b7b52d83d5d4e56bfb5a84a9289fc",
+          "bytes": 1058290
+        },
+        "staticPoster": {
+          "url": "story-media/262-staticPoster-a383ca57bc2ef770e4fbda2ab4ee62f1be38003507eb6693e3f1a773643869a4.png",
+          "sha256": "a383ca57bc2ef770e4fbda2ab4ee62f1be38003507eb6693e3f1a773643869a4",
+          "bytes": 1088140
+        }
+      }
+    },
+    {
+      "number": 1040,
+      "word": "glut",
+      "coreMeaningZh": "供应过剩；过量；使充斥，使过饱",
+      "unit": 51,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 219,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "这么多苹果，卖不完了。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这么多苹果，卖不完了。"
+          ]
+        },
+        "alt": "摊位上堆满了卖不出去的苹果，摊主还捧着满满一篮，顾客摆手拒绝后转身离开。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3400,
+            "endMs": 6000,
+            "text": "这么多苹果，卖不完了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这么多苹果，卖不完了。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/1040-video-1023b2d8b67ce81af92134e52334e0df055eb61dbf19d65f9d134daf14f2ac9d.mp4",
+          "sha256": "1023b2d8b67ce81af92134e52334e0df055eb61dbf19d65f9d134daf14f2ac9d",
+          "bytes": 637994
+        },
+        "poster": {
+          "url": "story-media/1040-poster-a1b143e26b25eaac277218e4ac80a0f82b34bce6ab7cd53ceb84ab718419b06c.png",
+          "sha256": "a1b143e26b25eaac277218e4ac80a0f82b34bce6ab7cd53ceb84ab718419b06c",
+          "bytes": 1278047
+        },
+        "staticPoster": {
+          "url": "story-media/1040-staticPoster-4ae7428cf1e8606f97c609f2a3d954e274e1910cec5bbc85807e87c78afa5d80.png",
+          "sha256": "4ae7428cf1e8606f97c609f2a3d954e274e1910cec5bbc85807e87c78afa5d80",
+          "bytes": 1303802
+        }
+      }
+    },
+    {
+      "number": 364,
+      "word": "clot",
+      "coreMeaningZh": "凝块，血块；（使）凝结成块",
+      "unit": 51,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 220,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "血液已经凝成块了。",
+          "speaker": "teacher",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "血液已经凝成块了。"
+          ]
+        },
+        "alt": "老师轻轻倾斜密封的透明样本瓶，已经凝结的暗红色血块仍保持成团，男孩在一旁观察。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 3000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 3000,
+            "endMs": 6000,
+            "text": "血液已经凝成块了。",
+            "speaker": "teacher",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "血液已经凝成块了。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 6000,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/364-video-cd12d047660dc4b086531d3a23a9d4ca1d7e30b6e3a0173f24d174966229d4f7.mp4",
+          "sha256": "cd12d047660dc4b086531d3a23a9d4ca1d7e30b6e3a0173f24d174966229d4f7",
+          "bytes": 523152
+        },
+        "poster": {
+          "url": "story-media/364-poster-82cb073e82e52a4a794204076495e3efff7952a2ff997e0f92179ebca58f702c.png",
+          "sha256": "82cb073e82e52a4a794204076495e3efff7952a2ff997e0f92179ebca58f702c",
+          "bytes": 1101339
+        },
+        "staticPoster": {
+          "url": "story-media/364-staticPoster-f879f254fb12b4c8640199af7b56f5452abac449a3769da37fc32c4171be25c4.png",
+          "sha256": "f879f254fb12b4c8640199af7b56f5452abac449a3769da37fc32c4171be25c4",
+          "bytes": 1134724
         }
       }
     }

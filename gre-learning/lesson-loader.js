@@ -1,4 +1,4 @@
-import {hostedMediaPaths} from './hosted-media.js';
+import {hostedMediaPaths,isHostedMediaEntry} from './hosted-media.js';
 import {createMediaControl} from './offline-control.js';
 import {videoMode} from './offline-preferences.js';
 import {localAsset} from './offline-packs.js';
@@ -90,7 +90,7 @@ export class LessonLoader {
   const meta=this.index.get(Number(number));if(!meta)throw new Error('Lesson is not reviewed and ready');
   if(isStorybookCatalog(this.catalog)) {
    if(videoMode()==='none'){const unit=await this.resource(meta.unit,signal,priority),entry=unit.entries?.find(e=>e.number===meta.number);if(!entry||entry.word!==meta.word)throw new Error('Incompatible lesson');validateEntry(entry);return {entry,media:null};}
-   const refs=meta.storyMedia,allowNetwork=(meta.displayOrdinal??this.catalog.entries.indexOf(meta)+1)<=50;
+   const refs=meta.storyMedia,allowNetwork=isHostedMediaEntry(meta,this.catalog.entries.indexOf(meta));
    const [unit,posterURL,videoURL,staticPosterURL]=await Promise.all([this.resource(meta.unit,signal,priority),refs?this.mediaResource(refs.poster,signal,priority,allowNetwork).catch(error=>{if(signal?.aborted)throw error;return null;}):null,refs?this.mediaResource(refs.video,signal,priority,allowNetwork).catch(error=>{if(signal?.aborted)throw error;return null;}):null,refs?.staticPoster?this.mediaResource(refs.staticPoster,signal,priority,allowNetwork).catch(error=>{if(signal?.aborted)throw error;return null;}):null]);
    const entry=unit.entries?.find(item=>item.number===meta.number);
    if(!entry||entry.word!==meta.word)throw new Error('Incompatible lesson');

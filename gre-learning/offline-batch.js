@@ -4,13 +4,17 @@ export async function downloadLessons(ids,skipPaths,{signal,onProgress=()=>{}}={
 
 // Ranges are published display ordinals, never vocabulary IDs or future lessons.
 export function optionalMediaGroups(catalog){
- const groups=new Map();
+ const groups=[];let current=null;
  for(const [index,entry] of catalog.entries.entries()){
   const ordinal=entry.displayOrdinal??index+1;if(!entry.storyMedia)continue;
-  const start=Math.floor((ordinal-1)/50)*50+1;
-  if(!groups.has(start))groups.set(start,{start,end:ordinal,ids:[],hostedAvailable:true,refs:new Map()});
-  const group=groups.get(start);group.end=ordinal;group.ids.push(entry.number);group.hostedAvailable&&=isHostedMediaEntry(entry,index);
-  for(const ref of [entry.storyMedia.poster,entry.storyMedia.video,entry.storyMedia.staticPoster].filter(Boolean))group.refs.set(ref.url,ref);
+  const bucket=Math.floor((ordinal-1)/50),hostedAvailable=isHostedMediaEntry(entry,index);
+  // Split a fifty-word bucket at a hosting boundary. Retired neighbors must not
+  // hide a newly hosted incremental range such as 211–220.
+  if(!current||current.bucket!==bucket||current.hostedAvailable!==hostedAvailable||ordinal!==current.end+1){
+   current={bucket,start:ordinal,end:ordinal,ids:[],hostedAvailable,refs:new Map()};groups.push(current);
+  }
+  current.end=ordinal;current.ids.push(entry.number);
+  for(const ref of [entry.storyMedia.poster,entry.storyMedia.video,entry.storyMedia.staticPoster].filter(Boolean))current.refs.set(ref.url,ref);
  }
- return [...groups.values()].map(({refs,...group})=>({...group,bytes:[...refs.values()].reduce((sum,ref)=>sum+ref.bytes,0)}));
+ return groups.map(({refs,bucket,...group})=>({...group,bytes:[...refs.values()].reduce((sum,ref)=>sum+ref.bytes,0)}));
 }

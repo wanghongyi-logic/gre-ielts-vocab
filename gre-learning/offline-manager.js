@@ -12,7 +12,7 @@ export function installOfflineManager(catalog){
   <summary class="library-page-title">随身书库</summary>
   <div class="library-overview">
    <p class="library-eyebrow">已保存</p>
-   <p class="library-count"><strong data-saved-count>—</strong><span> / <span data-total-count>210</span> 词</span></p>
+   <p class="library-count"><strong data-saved-count>—</strong><span> / <span data-total-count>${catalog.entries.length}</span> 词</span></p>
    <p class="library-space" data-space></p>
   </div>
   <details class="library-disclosure library-pages-downloads">
@@ -37,7 +37,7 @@ export function installOfflineManager(catalog){
   <div class="library-clear-row"><button type="button" class="library-clear-action" data-clear-all>清除已保存资源</button><p role="status" data-status></p></div>
  </details>`;
  host.id='offline-settings';host.setAttribute('aria-label','本机书库设置');host.classList.add('settings-leaf');host.hidden=true;document.querySelector('.contents-tools').after(host);
- const bookmark=document.createElement('button');bookmark.type='button';bookmark.id='open-settings';bookmark.className='library-rail';bookmark.setAttribute('aria-label','本地保存进度，打开设置');bookmark.setAttribute('aria-controls','word-picker');bookmark.setAttribute('aria-expanded','false');bookmark.innerHTML='<span class="library-rail-track" role="progressbar" aria-label="本机已保存单词" aria-valuemin="0" aria-valuemax="210" aria-valuenow="0"><span class="library-rail-fill"></span></span><span class="library-rail-label" aria-hidden="true">—</span>';const group=document.createElement('div');group.className='bookmark-tools';const contents=document.getElementById('open-search');contents.before(group);group.append(contents);group.after(bookmark);bookmark.onclick=()=>openManager();
+ const bookmark=document.createElement('button');bookmark.type='button';bookmark.id='open-settings';bookmark.className='library-rail';bookmark.setAttribute('aria-label','本地保存进度，打开设置');bookmark.setAttribute('aria-controls','word-picker');bookmark.setAttribute('aria-expanded','false');bookmark.innerHTML=`<span class="library-rail-track" role="progressbar" aria-label="本机已保存单词" aria-valuemin="0" aria-valuemax="${catalog.entries.length}" aria-valuenow="0"><span class="library-rail-fill"></span></span><span class="library-rail-label" aria-hidden="true">—</span>`;const group=document.createElement('div');group.className='bookmark-tools';const contents=document.getElementById('open-search');contents.before(group);group.append(contents);group.after(bookmark);bookmark.onclick=()=>openManager();
  const releaseStyle=document.createElement('link');releaseStyle.rel='stylesheet';releaseStyle.href=new URL('./offline-releases.css',import.meta.url).href;document.head.append(releaseStyle);
  const welcome=document.createElement('div');welcome.className='settings-status';welcome.hidden=true;
  welcome.innerHTML='<p role="status" data-text-ready>正在准备文字离线…</p>';

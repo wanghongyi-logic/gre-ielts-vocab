@@ -10,7 +10,7 @@ const origin='https://optional.test/',baseURL=new URL('gre-learning/',origin);
 const file=url=>readFile(new URL(new URL(url).pathname.slice(1),root));
 test('51–210 default reading and adjacent preparation request text only',async()=>{
  let mediaCalls=0;const loader=new LessonLoader(catalog,{baseURL,cacheStorage:null,fetcher:async url=>{if(url.pathname.includes('story-media'))mediaCalls++;return new Response(await file(url));}});
- for(const meta of catalog.entries.slice(50)){const pair=await loader.pair(meta.number);assert.equal(pair.media,null);assert.equal(pair.entry.word,meta.word);}
+ for(const meta of catalog.entries.filter(entry=>entry.displayOrdinal>=51&&entry.displayOrdinal<=210)){const pair=await loader.pair(meta.number);assert.equal(pair.media,null);assert.equal(pair.entry.word,meta.word);}
  assert.equal(mediaCalls,0);loader.destroy();
 });
 test('local posters, videos and static posters display after app update with no remote request',async()=>{
@@ -26,8 +26,8 @@ test('corrupt optional local media stays hidden and cannot fall back to network'
  const loader=new LessonLoader(catalog,{baseURL,cacheStorage:{open:async()=>({match:async()=>new Response('corrupt'),put:async()=>{}})},fetcher:async url=>{assert.ok(!url.pathname.includes('story-media'));return new Response(await file(url));}});
  assert.equal((await loader.pair(catalog.entries[50].number)).media,null);loader.destroy();
 });
-test('download groups include all current published 1–210 refs, including static posters',()=>{
- const groups=optionalMediaGroups(catalog);assert.deepEqual(groups.map(group=>group.hostedAvailable),[true,false,false,false,false]);assert.deepEqual(groups.map(g=>[g.start,g.end,g.ids.length]),[[1,50,50],[51,100,50],[101,150,50],[151,200,50],[201,210,10]]);
+test('download groups include all published refs, splitting new hosting ranges, including static posters',()=>{
+ const groups=optionalMediaGroups(catalog);assert.deepEqual(groups.map(group=>group.hostedAvailable),[true,false,false,false,false,...(catalog.entries.length===220?[true]:[])]);assert.deepEqual(groups.map(g=>[g.start,g.end,g.ids.length]),[[1,50,50],[51,100,50],[101,150,50],[151,200,50],[201,210,10],...(catalog.entries.length===220?[[211,220,10]]:[])]);
  const bytesFor=entries=>[...new Map(entries.flatMap(entry=>['poster','video','staticPoster'].map(role=>entry.storyMedia?.[role]).filter(Boolean)).map(ref=>[ref.url,ref])).values()].reduce((sum,ref)=>sum+ref.bytes,0);
  assert.equal(groups[0].bytes,bytesFor(catalog.entries.slice(0,50)));
  assert.equal(groups[0].ids[0],catalog.entries[0].number);assert.notEqual(groups[0].ids[0],1,'display range is distinct from vocabulary IDs');

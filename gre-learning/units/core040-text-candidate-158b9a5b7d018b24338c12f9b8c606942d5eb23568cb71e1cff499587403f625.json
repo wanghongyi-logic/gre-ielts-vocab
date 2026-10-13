@@ -1,0 +1,399 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 607,
+      "word": "deter",
+      "ipa": "/dɪˈtɜːr/",
+      "pos": "v. [T]",
+      "coreMeaningZh": "阻止；使打消念头；威慑",
+      "coreEn": "To discourage or prevent an action by making its difficulty, cost, or bad consequences apparent.",
+      "coreImageZh": "男孩提着野餐篮走近花园门，看到关着的门后有狗守着，便停止伸手开门、退了回来。他原本想进去，却因有所顾忌而打消念头：这只狗使他不敢进去，即 deterred him from entering。",
+      "mnemonics": [
+        {
+          "method": "DETOUR 绕远就不去了",
+          "textZh": "deter 和 detour（绕道）外形很近。想去一家店，却发现必须 detour 绕很远，于是打消念头：这段绕路把你劝退了。记“代价太大，就不去了”；两词不是同音，也不是同源拆解。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "DETERmined 也会却步",
+          "textZh": "determined（下定决心的）开头完整写着 deter。本来 determined to go，决心一定去，听说沿途危险后却打消了念头：危险 deterred you from going。用“本来决心去，后来被劝退”记 deter；这是拼写反差联想，不是词源。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "让人不做某事",
+          "explanationZh": "常用 deter somebody from doing something；from 后接名词或动名词，不接 to do。过去式 deterred、现在分词 deterring 都双写 r。",
+          "collocations": [
+            {
+              "phrase": "deter someone from applying",
+              "meaningZh": "使某人打消申请的念头",
+              "usageZh": "阻力可以是费用、条件或对失败的担心。"
+            },
+            {
+              "phrase": "be deterred by the cost",
+              "meaningZh": "因费用而却步",
+              "usageZh": "by 引出使人退缩的原因。"
+            }
+          ]
+        },
+        {
+          "senseZh": "威慑或阻止行为发生",
+          "explanationZh": "也可直接接行为作宾语，如 deter theft。可以指降低意愿或发生可能性，不保证每一次都完全制止。",
+          "collocations": [
+            {
+              "phrase": "deter theft",
+              "meaningZh": "遏制盗窃",
+              "usageZh": "强调让潜在行为人有所顾忌。"
+            },
+            {
+              "phrase": "deter an attack",
+              "meaningZh": "威慑、阻止一次攻击",
+              "usageZh": "可涉及不利后果的威胁。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "These measures are designed to deter an enemy attack.",
+          "translationZh": "这些措施旨在威慑敌方，使其不敢发动攻击。",
+          "explanationZh": "are designed to 表示目的，不是在断言威慑已经成功。"
+        },
+        {
+          "textEn": "High prices are deterring many young people from buying houses.",
+          "translationZh": "高房价正使许多年轻人打消买房的念头。",
+          "explanationZh": "deter people from doing 的完整结构；高成本也能产生劝退作用。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "constrain",
+          "comparisonZh": "deter/constrain someone from acting 都可说限制行动。deter 多使人因代价或风险而不愿行动；constrain 更强调外部条件的限制。constrain someone to do something 却可表示迫使某人做某事，不能把这个 to 结构机械套给 deter。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "dissuade",
+          "comparisonZh": "deter/dissuade someone from leaving 都可表示使人不离开。dissuade 通常强调劝说；deter 的主语也常是高价、危险等非言语因素。说 a high fee deters applicants 很自然；若用 dissuade，应注意它更有劝退或说服色彩。"
+        }
+      ]
+    },
+    {
+      "number": 1412,
+      "word": "loath",
+      "ipa": "/loʊθ/",
+      "pos": "adj.",
+      "coreMeaningZh": "不情愿的；不愿意的",
+      "coreEn": "Unwilling or reluctant to do something.",
+      "coreImageZh": "同伴想借男孩最喜欢的木制玩具飞机，男孩却把它抱紧，迟疑着没有马上递出去。他不是讨厌同伴，而是舍不得借：loath to lend it。",
+      "mnemonics": [
+        {
+          "method": "lOATH 不愿破誓",
+          "textZh": "loath 里完整藏着 oath（誓言）。已经发过 oath 不再熬夜，朋友又邀你通宵玩，你心里不愿违背誓言：be loath to break an oath。用“有誓在先，不愿违背”记不情愿；这是拼写联想。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "LOAF 舍不得给",
+          "textZh": "loath 和 loaf（面包）都以 loa 开头，末尾分别是 th 与 f，外形很近。手里只剩最后一个 loaf，别人想拿走，你抱着舍不得：loath to give it away，不情愿给出去。借熟悉的面包记“舍不得做”，不要把 loath 读成 loaf。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "be loath to do：不愿意做",
+          "explanationZh": "常作表语，接 to 不定式；语气较正式。原因可以是顾虑、不舍或厌恶，并不必然强烈憎恨。",
+          "collocations": [
+            {
+              "phrase": "be loath to admit a mistake",
+              "meaningZh": "不愿承认错误",
+              "usageZh": "to 后用动词原形 admit。"
+            },
+            {
+              "phrase": "be loath to leave",
+              "meaningZh": "不舍得离开",
+              "usageZh": "可能正因为喜欢这里而不愿走。"
+            }
+          ]
+        },
+        {
+          "senseZh": "区别 loath 与 loathe",
+          "explanationZh": "loath 是形容词“不情愿的”，通常说 be loath to do；loathe 是及物动词“憎恶”，通常接名词或动名词。常见读音 loath 结尾 /θ/，loathe 结尾 /ð/。",
+          "collocations": [
+            {
+              "phrase": "loath to change",
+              "meaningZh": "不愿改变",
+              "usageZh": "不要把此处 loath 当作动词使用。"
+            },
+            {
+              "phrase": "loathe waiting",
+              "meaningZh": "憎恶等待",
+              "usageZh": "这是另一个词 loathe，不是 loath 的时态变化。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I'm loath to spend it all at once.",
+          "translationZh": "我不愿一下子把它全花掉。",
+          "explanationZh": "主语处于不情愿的状态；后面接 to spend。"
+        },
+        {
+          "textEn": "She is loath to give up her hard-earned liberty.",
+          "translationZh": "她不愿放弃自己辛苦争取来的自由。",
+          "explanationZh": "不愿放弃珍贵之物；并不是厌恶自由。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "reluctant",
+          "comparisonZh": "loath/reluctant to admit a mistake 都能表示不愿承认错误，结构也相同。loath 更偏正式，突出内心不愿；reluctant 更通用。reluctant participant 可以作定语，loath 通常放在 be/seem 等之后，不能所有位置都照换。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "unwilling",
+          "comparisonZh": "be loath/unwilling to leave 在不愿离开义上接近。unwilling 是范围较广的日常表达，loath 较正式。不要把 unwilling to 等同于 unable to：前者不愿，后者不能。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ]
+    },
+    {
+      "number": 882,
+      "word": "extol",
+      "ipa": "/ɪkˈstoʊl/",
+      "pos": "v. [T]",
+      "coreMeaningZh": "大加赞扬；热情颂扬",
+      "coreEn": "To praise someone or something enthusiastically and highly.",
+      "coreImageZh": "男孩向来访的大人展示自己做的微型花园。大人认真看过细节后，热情地伸手称赞，男孩开心地听着。这种大加赞扬就是 extol。",
+      "mnemonics": [
+        {
+          "method": "EX TOLD 满口都是夸",
+          "textZh": "extol 的声音接近 ex told 的前一段：想象前任 ex told everyone，说你有多好，逢人就热情夸赞。用“前任说的全是好话”记 extol；told 末尾多一个 /d/，这里只是近音联想。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "EXCEL 出色就夸",
+          "textZh": "extol 与 excel（表现出色）都是 ex 开头、l 结尾的短词，视觉轮廓很近。队友在比赛中 excel，大家就 extol 他的表现，夸个不停。用“做得出色 → 大加赞扬”连起来；两词意义和读音不同，这是形近因果联想。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物动词：高度赞扬人或事物",
+          "explanationZh": "直接接赞美的对象，不要把 of 加在 extol 和宾语之间。过去式 extolled、现在分词 extolling 双写 l。语气通常较正式。",
+          "collocations": [
+            {
+              "phrase": "extol someone’s achievements",
+              "meaningZh": "颂扬某人的成就",
+              "usageZh": "不要求赞扬者本人参与了这些成就。"
+            },
+            {
+              "phrase": "extol the benefits of exercise",
+              "meaningZh": "大力称赞运动的好处",
+              "usageZh": "benefits 是 extol 的宾语，of exercise 修饰 benefits。"
+            }
+          ]
+        },
+        {
+          "senseZh": "常见搭配 extol the virtues of",
+          "explanationZh": "virtues 在此通常指优点或好处，不必只理解成道德美德。赞扬可能真诚，也可能是推销；extol 本身不等于撒谎吹捧。",
+          "collocations": [
+            {
+              "phrase": "extol the virtues of a method",
+              "meaningZh": "盛赞一种方法的优点",
+              "usageZh": "明确在谈正面评价，而不是中性说明方法。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She is forever extolling the virtues of her children.",
+          "translationZh": "她总是没完没了地夸自己的孩子有多好。",
+          "explanationZh": "forever 带有反复如此的语气；extolling 是热情赞扬。"
+        },
+        {
+          "textEn": "For years she has extolled the virtues of solar power.",
+          "translationZh": "多年来，她一直大力称赞太阳能的好处。",
+          "explanationZh": "virtues 指优点、好处，不是太阳能的道德品质。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "applaud",
+          "comparisonZh": "extol/applaud an achievement 都可表示高度称赞成就。extol 突出热情颂扬；applaud 也可只是表示赞许，更可以字面指鼓掌。观众鼓掌这个动作不能一律替换为 extol，extol 也不要求实际拍手。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "praise",
+          "comparisonZh": "extol/praise someone’s work 都是赞扬作品。extol 的热情和强度通常更明显，且较正式；praise 范围较宽，一句普通肯定也可以。若原文只说温和称赞，换 extol 会增强语气。"
+        }
+      ]
+    },
+    {
+      "number": 494,
+      "word": "crass",
+      "ipa": "/kræs/",
+      "pos": "adj.",
+      "coreMeaningZh": "粗俗无礼的；愚钝冒失的；不顾他人感受的",
+      "coreEn": "Offensively lacking sensitivity, refinement, or good judgment.",
+      "coreImageZh": "安静的图书馆里，男孩却兴冲冲地摇响桌上的大铃，旁边正在阅读的人皱眉看过来。他只顾自己热闹，没有考虑别人需要安静，行为很 crass。",
+      "mnemonics": [
+        {
+          "method": "CRASS 没有 CLASS",
+          "textZh": "crass 和 class 只差一个字母。class 除了“班级”也可指风度、品位：有 class 的人照顾别人的感受，crass 的人却当面揭短、粗鲁冒失。用这对形近反差记住“没风度、不知分寸”。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "CRASH 一句话撞翻气氛",
+          "textZh": "crass 和 crash（撞击）只差末字母。大家正温柔地安慰一个人，他却粗鲁地揭人伤疤，一句话像 crash 撞翻整桌气氛：a crass remark。记住“没分寸地撞疼别人”，不是普通意外碰撞；这里只借形近。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "话语或行为愚钝冒失、不体谅人",
+          "explanationZh": "强烈贬义，重点常在明摆着缺少判断力、教养或敏感度；不只指说脏话，也不只指某个阶层。",
+          "collocations": [
+            {
+              "phrase": "a crass remark",
+              "meaningZh": "冒失无礼的话",
+              "usageZh": "可能没有粗口，却严重不顾听者感受。"
+            },
+            {
+              "phrase": "crass insensitivity",
+              "meaningZh": "粗鲁而毫不体谅",
+              "usageZh": "insensitivity 强调不顾人的感受。"
+            }
+          ]
+        },
+        {
+          "senseZh": "明显低劣的判断；粗俗的商业取向",
+          "explanationZh": "可修饰 error、ignorance、commercialism 等。crass error 强调错误愚蠢而明显；crass commercialism 批评逐利表现得粗鄙露骨。",
+          "collocations": [
+            {
+              "phrase": "a crass mistake",
+              "meaningZh": "愚蠢冒失的错误",
+              "usageZh": "比普通 mistake 带更强负面评价。"
+            },
+            {
+              "phrase": "crass commercialism",
+              "meaningZh": "粗俗露骨的商业主义",
+              "usageZh": "不是所有商业活动都叫 crass。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He made crass comments about her worn-out clothes.",
+          "translationZh": "他对她穿旧了的衣服说了些粗鲁又不顾感受的话。",
+          "explanationZh": "评论别人的窘迫而缺少体谅，是这里的核心。"
+        },
+        {
+          "textEn": "The government has behaved with crass insensitivity.",
+          "translationZh": "政府的表现粗鲁而毫不体谅他人。",
+          "explanationZh": "with 后的名词短语说明行为方式；crass 加强负面判断。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "tactless",
+          "comparisonZh": "crass/tactless comments 都可指不顾感受的冒失评论。tactless 着重缺少圆融和分寸；crass 往往批评得更重，带粗俗、愚钝或明显缺乏判断之意。crass commercialism 不宜随便换 tactless。"
+        },
+        {
+          "word": "vulgar",
+          "comparisonZh": "crass/vulgar jokes 都可批评笑话粗俗。vulgar 常强调格调低俗、猥亵或趣味粗鄙；crass 还可强调愚钝地不顾他人感受。crass error of judgment 不能仅按“粗俗”机械换成 vulgar。"
+        }
+      ]
+    },
+    {
+      "number": 2266,
+      "word": "snobbish",
+      "ipa": "/ˈsnɑːbɪʃ/",
+      "pos": "adj.",
+      "coreMeaningZh": "势利的；自命高人一等的",
+      "coreEn": "Showing contempt for people or things judged inferior in status, education, or taste.",
+      "coreImageZh": "茶点桌旁，一个衣着华丽的孩子看到穿朴素补丁衣服的同伴想加入，便扬起下巴、摆手拒绝；男孩在一旁看着，露出不赞同的神情。这种因自认地位高而看不起别人的态度就是 snobbish。",
+      "mnemonics": [
+        {
+          "method": "SNUB 看低就冷落",
+          "textZh": "snobbish 开头的 snob 很像 snub（冷落、怠慢）。想象有人一看别人衣着普通，就转头不理：他因为自觉高人一等而 snub 别人，态度很 snobbish。由看低别人后的冷落动作记“势利”；是形近联想，不说两词同源。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "snoBBISH 都当 RUBBISH",
+          "textZh": "snobbish 与 rubbish（垃圾、废话）都有醒目的 bbish 结尾。想象一个只认名牌的人，把普通但好用的东西一概叫作 rubbish，还看不起用它们的人：这种以品位压人的态度很 snobbish。用“看不上的全当垃圾”记势利；不是客观说普通东西差。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "以地位、学识或品位自居而看低别人",
+          "explanationZh": "贬义。势利不只限于有钱人，也可表现在音乐、汽车、教育或艺术品位上；单纯喜欢精品并不足以叫 snobbish。",
+          "collocations": [
+            {
+              "phrase": "a snobbish attitude",
+              "meaningZh": "势利、自命高人一等的态度",
+              "usageZh": "重点在贬低自认为不如自己的人或事物。"
+            },
+            {
+              "phrase": "snobbish about music",
+              "meaningZh": "在音乐品位上自命清高",
+              "usageZh": "about 后接产生这种优越感的领域。"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容词及常见派生",
+          "explanationZh": "可作定语或表语；口语近形 snobby，名词 snob 指势利的人，snobbishness 指势利态度。不能把它当成“羞怯、不爱说话”。",
+          "collocations": [
+            {
+              "phrase": "sound snobbish",
+              "meaningZh": "听起来很势利",
+              "usageZh": "是在评价说话内容或态度。"
+            },
+            {
+              "phrase": "intellectually snobbish",
+              "meaningZh": "在学识上自命不凡的",
+              "usageZh": "不必涉及金钱或衣着。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "My brother is very snobbish about cars.",
+          "translationZh": "我哥哥在汽车品位上很自命不凡。",
+          "explanationZh": "about cars 说明他的优越感表现在哪个领域。"
+        },
+        {
+          "textEn": "I'd expected her to be snobbish but she was warm and friendly.",
+          "translationZh": "我本以为她会很势利，没想到她热情又友好。",
+          "explanationZh": "but 对照了预想中的高傲排斥和实际的平易近人。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "haughty",
+          "comparisonZh": "snobbish/haughty behavior 都可形容傲慢看不起人。snobbish 较具体地涉及地位、学识或品位的等级观念；haughty 更突出高傲、居高临下的态度，不一定看重社会阶层。"
+        },
+        {
+          "word": "elitist",
+          "comparisonZh": "snobbish/elitist attitudes 在自认为少数人品位更高、看不起大众的语境中接近。elitist 还可指让精英主导的制度或主张，未必描述某个人势利的待人方式，不能处处替换。"
+        }
+      ]
+    }
+  ]
+}
