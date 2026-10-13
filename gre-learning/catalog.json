@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "169",
-  "authoredCount": 240,
-  "publishedCount": 240,
+  "release": "170",
+  "authoredCount": 250,
+  "publishedCount": 250,
   "libraryTarget": 4731,
   "learningRelease": {
     "standardVersion": "gre-deep-20261010-v1",
@@ -247,7 +247,17 @@
       122,
       1927,
       1200,
-      1825
+      1825,
+      2075,
+      408,
+      1522,
+      1492,
+      2451,
+      821,
+      451,
+      243,
+      908,
+      2984
     ],
     "status": "approved",
     "sampleMode": "storybook-reviewed-order",
@@ -537,6 +547,16 @@
       "url": "units/core045-text-candidate-e1bb1b0279873c130d1ccd112d2b9ec9347ecf1e30516218c459fbe75811ead6.json",
       "sha256": "e1bb1b0279873c130d1ccd112d2b9ec9347ecf1e30516218c459fbe75811ead6",
       "bytes": 20854
+    },
+    {
+      "url": "units/core046-text-candidate-c3024098569faf1ede3648fcd525cf450b14cff4ae8472fb713c3bb96d49343e.json",
+      "sha256": "c3024098569faf1ede3648fcd525cf450b14cff4ae8472fb713c3bb96d49343e",
+      "bytes": 20459
+    },
+    {
+      "url": "units/core047-text-candidate-cd975e56415d36774994f89decb99a1709569c51090c94cc67111a20db2ec2ed.json",
+      "sha256": "cd975e56415d36774994f89decb99a1709569c51090c94cc67111a20db2ec2ed",
+      "bytes": 19279
     }
   ],
   "entries": [
@@ -19714,6 +19734,841 @@
           "url": "story-media/1825-staticPoster-bba43e59ceae1819493291f9cbcdc866a6bc6b0166a3a9db77a21aaab7632d57.png",
           "sha256": "bba43e59ceae1819493291f9cbcdc866a6bc6b0166a3a9db77a21aaab7632d57",
           "bytes": 1269355
+        }
+      }
+    },
+    {
+      "number": 2075,
+      "word": "reticent",
+      "coreMeaningZh": "沉默寡言的；不愿透露想法或私事的",
+      "unit": 56,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 241,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "我的事，就先不说了。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "我的事，就先不说了。"
+          ]
+        },
+        "alt": "男孩被问起心事，只礼貌地摆摆手，把自己的想法留在心里。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1600,
+            "text": "说说你的心事吧？",
+            "speaker": "girl",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "说说你的心事吧？"
+            ],
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1600,
+            "endMs": 1800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-1"
+          },
+          {
+            "startMs": 1800,
+            "endMs": 6200,
+            "text": "我的事，就先不说了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "我的事，就先不说了。"
+            ],
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/2075-video-021cf194575993494ed3663b69d2674413f3ae0e13cd1cd23ce79ba51a072106.mp4",
+          "sha256": "021cf194575993494ed3663b69d2674413f3ae0e13cd1cd23ce79ba51a072106",
+          "bytes": 727596
+        },
+        "poster": {
+          "url": "story-media/2075-poster-a56bd6be3ca5b609cc5caa8662d2c0cf4949b36365e1f85a2bfd8e784e0d985d.png",
+          "sha256": "a56bd6be3ca5b609cc5caa8662d2c0cf4949b36365e1f85a2bfd8e784e0d985d",
+          "bytes": 1292991
+        },
+        "staticPoster": {
+          "url": "story-media/2075-staticPoster-1cc71ad09eadafb12f08550848e810566945bdc3a0df40ee296e76a92a188186.png",
+          "sha256": "1cc71ad09eadafb12f08550848e810566945bdc3a0df40ee296e76a92a188186",
+          "bytes": 1288883
+        }
+      }
+    },
+    {
+      "number": 408,
+      "word": "concede",
+      "coreMeaningZh": "（常不情愿地）承认；认输；让步、让出",
+      "unit": 56,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 242,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "这局你赢了。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这局你赢了。"
+          ]
+        },
+        "alt": "男孩看着已经结束的棋局，虽有些失落，还是承认对方赢了。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2000,
+            "endMs": 6200,
+            "text": "这局你赢了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这局你赢了。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/408-video-61312cd733a344a138efd247db7104aedf83fd3f161a592b904a07f4a850f90a.mp4",
+          "sha256": "61312cd733a344a138efd247db7104aedf83fd3f161a592b904a07f4a850f90a",
+          "bytes": 588629
+        },
+        "poster": {
+          "url": "story-media/408-poster-38fc8a11ca84c954c9981c7b5de3a8b5b97250565a0325df9acc0065792b99aa.png",
+          "sha256": "38fc8a11ca84c954c9981c7b5de3a8b5b97250565a0325df9acc0065792b99aa",
+          "bytes": 1151651
+        },
+        "staticPoster": {
+          "url": "story-media/408-staticPoster-5b66f3a4611fe2e4bf41b4891b6feadf111dfe0725c633c51e7921b58e2b0b96.png",
+          "sha256": "5b66f3a4611fe2e4bf41b4891b6feadf111dfe0725c633c51e7921b58e2b0b96",
+          "bytes": 1159549
+        }
+      }
+    },
+    {
+      "number": 1522,
+      "word": "mitigate",
+      "coreMeaningZh": "减轻；缓和（伤害、痛苦或不良影响）",
+      "unit": 56,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 243,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "有了遮阳篷，没那么晒了。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "有了遮阳篷，没那么晒了。"
+          ]
+        },
+        "alt": "遮阳篷撑开后，男孩没那么晒了，但仍在出汗，院子里也依然炎热。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1500,
+            "text": "太阳晒得好难受。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "太阳晒得好难受。"
+            ],
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1500,
+            "endMs": 3000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-1"
+          },
+          {
+            "startMs": 3000,
+            "endMs": 6200,
+            "text": "有了遮阳篷，没那么晒了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "有了遮阳篷，没那么晒了。"
+            ],
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/1522-video-1eda7803cd8fc3e7037de97bbb2216e821da7b9b07d81c5b90432a1087b19c07.mp4",
+          "sha256": "1eda7803cd8fc3e7037de97bbb2216e821da7b9b07d81c5b90432a1087b19c07",
+          "bytes": 691605
+        },
+        "poster": {
+          "url": "story-media/1522-poster-2cf5c340d45c3cd2d634c4a8f0f093e9b809f7a9ebadcf71d4120d8235ca2e51.png",
+          "sha256": "2cf5c340d45c3cd2d634c4a8f0f093e9b809f7a9ebadcf71d4120d8235ca2e51",
+          "bytes": 1242393
+        },
+        "staticPoster": {
+          "url": "story-media/1522-staticPoster-154500bec4b9e062dd93e5a7cff31b2dccaba2e8fdcb1f7bf76abd3ecc1b2cd4.png",
+          "sha256": "154500bec4b9e062dd93e5a7cff31b2dccaba2e8fdcb1f7bf76abd3ecc1b2cd4",
+          "bytes": 1242773
+        }
+      }
+    },
+    {
+      "number": 1492,
+      "word": "meticulous",
+      "coreMeaningZh": "一丝不苟的；对细节极其仔细的",
+      "unit": 56,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 244,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "每一块都要对齐。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "每一块都要对齐。"
+          ]
+        },
+        "alt": "男孩搭模型时，把木条贴着尺子反复检查，连细小的偏差都不放过。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1800,
+            "endMs": 6200,
+            "text": "每一块都要对齐。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "每一块都要对齐。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/1492-video-e59bda8091888f020a024b444d4fd219a7f9ce6737298d2a36478e8b8de4d9c5.mp4",
+          "sha256": "e59bda8091888f020a024b444d4fd219a7f9ce6737298d2a36478e8b8de4d9c5",
+          "bytes": 613097
+        },
+        "poster": {
+          "url": "story-media/1492-poster-08b2913accb68471eafdafaff0ff68071430399616ccee5eaeb7700d59553063.png",
+          "sha256": "08b2913accb68471eafdafaff0ff68071430399616ccee5eaeb7700d59553063",
+          "bytes": 1219439
+        },
+        "staticPoster": {
+          "url": "story-media/1492-staticPoster-a42f843a34fab6f7495ef93900cd4f128ba70fdafe3fc976e10ae798a20fc5bd.png",
+          "sha256": "a42f843a34fab6f7495ef93900cd4f128ba70fdafe3fc976e10ae798a20fc5bd",
+          "bytes": 1215042
+        }
+      }
+    },
+    {
+      "number": 2451,
+      "word": "tantamount",
+      "coreMeaningZh": "（效果、意义上）等同的；无异于",
+      "unit": 56,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 245,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "门这样敞着，就等于放它走。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "门这样敞着，就等于放它走。"
+          ]
+        },
+        "alt": "鸟笼的门一直大敞着，小鸟飞了出去：这样敞着门，实际效果就等于放鸟自由。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 2800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 2800,
+            "endMs": 6200,
+            "text": "门这样敞着，就等于放它走。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "门这样敞着，就等于放它走。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/2451-video-b2ceddd825d51b33aa53d5b2fc3c6415bd0fc02180a21e25ae65f42ab8d31726.mp4",
+          "sha256": "b2ceddd825d51b33aa53d5b2fc3c6415bd0fc02180a21e25ae65f42ab8d31726",
+          "bytes": 655590
+        },
+        "poster": {
+          "url": "story-media/2451-poster-9f815f2b12b0ab2cef00d25206796f04f2c50c523a81d1c898ed74107e07ed84.png",
+          "sha256": "9f815f2b12b0ab2cef00d25206796f04f2c50c523a81d1c898ed74107e07ed84",
+          "bytes": 1276886
+        },
+        "staticPoster": {
+          "url": "story-media/2451-staticPoster-4f7316bd03b14205190aa96eb5331e767e07ea1f0492fad1ccf9562f66c627a4.png",
+          "sha256": "4f7316bd03b14205190aa96eb5331e767e07ea1f0492fad1ccf9562f66c627a4",
+          "bytes": 1297690
+        }
+      }
+    },
+    {
+      "number": 821,
+      "word": "erratic",
+      "coreMeaningZh": "不规律的；忽好忽坏的；难以预测的",
+      "unit": 57,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 246,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "怎么一会儿往左，一会儿往右？",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "怎么一会儿往左，一会儿往右？"
+          ]
+        },
+        "alt": "遥控小车忽左忽右，男孩惊讶地追着它看，又低头检查遥控器。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1680,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1680,
+            "endMs": 5280,
+            "text": "怎么一会儿往左，一会儿往右？",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "怎么一会儿往左，一会儿往右？"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 5280,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/821-video-0b96c159502902ff28c2da25512406a657736c47dc5375562bb8c553aa755836.mp4",
+          "sha256": "0b96c159502902ff28c2da25512406a657736c47dc5375562bb8c553aa755836",
+          "bytes": 1309109
+        },
+        "poster": {
+          "url": "story-media/821-poster-f719bb6d7df0ea1a3594c063302cefff6ff0b8eef3f11082c40324fbef8e6581.png",
+          "sha256": "f719bb6d7df0ea1a3594c063302cefff6ff0b8eef3f11082c40324fbef8e6581",
+          "bytes": 1274421
+        },
+        "staticPoster": {
+          "url": "story-media/821-staticPoster-e27c7d2029009635970c68fa995d6a18af6bd59c28767f94800353ec247d748f.png",
+          "sha256": "e27c7d2029009635970c68fa995d6a18af6bd59c28767f94800353ec247d748f",
+          "bytes": 1286440
+        }
+      }
+    },
+    {
+      "number": 451,
+      "word": "contentious",
+      "coreMeaningZh": "引起争议的；爱争辩的",
+      "unit": 57,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 247,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "不行，我还是不同意。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "不行，我还是不同意。"
+          ]
+        },
+        "alt": "女孩提议这样搭积木，男孩先摆手否定；她换个方案，他仍然反对。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 1000,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 1000,
+            "endMs": 2000,
+            "text": "不行。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "不行。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 2000,
+            "endMs": 3200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          },
+          {
+            "startMs": 3200,
+            "endMs": 6200,
+            "text": "不行，我还是不同意。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "不行，我还是不同意。"
+            ],
+            "id": "stage-3"
+          }
+        ],
+        "video": {
+          "url": "story-media/451-video-6267042815156ed95a93ff03f62d5f974fab2238f2994cc62158a61155b7cc77.mp4",
+          "sha256": "6267042815156ed95a93ff03f62d5f974fab2238f2994cc62158a61155b7cc77",
+          "bytes": 826416
+        },
+        "poster": {
+          "url": "story-media/451-poster-8117fb60ede75bd3248e6ca9deb804ede06dfbada06800dac9ace0946accca8b.png",
+          "sha256": "8117fb60ede75bd3248e6ca9deb804ede06dfbada06800dac9ace0946accca8b",
+          "bytes": 1085329
+        },
+        "staticPoster": {
+          "url": "story-media/451-staticPoster-5d72df07c153045255675cd61b68e53cb817a192d34ea63ca38d7bd6d5dbad2c.png",
+          "sha256": "5d72df07c153045255675cd61b68e53cb817a192d34ea63ca38d7bd6d5dbad2c",
+          "bytes": 1091189
+        }
+      }
+    },
+    {
+      "number": 243,
+      "word": "bolster",
+      "coreMeaningZh": "支持；支撑；增强",
+      "unit": 57,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 248,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "加根支撑，就稳了。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "加根支撑，就稳了。"
+          ]
+        },
+        "alt": "男孩扶住垂下来的小苗，给它绑上木桩；松开双手后，小苗有了支撑。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 800,
+            "endMs": 6200,
+            "text": "加根支撑，就稳了。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "加根支撑，就稳了。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/243-video-f6b4f7e8dfc5fd1adbf53a9cdf846e6c7a25dfc214a82003b74a58757a92d5ce.mp4",
+          "sha256": "f6b4f7e8dfc5fd1adbf53a9cdf846e6c7a25dfc214a82003b74a58757a92d5ce",
+          "bytes": 724341
+        },
+        "poster": {
+          "url": "story-media/243-poster-288f179c22b976b74ac28cf72c3515bffebbe1ead0ce04a3cbd96b76f5bd319a.png",
+          "sha256": "288f179c22b976b74ac28cf72c3515bffebbe1ead0ce04a3cbd96b76f5bd319a",
+          "bytes": 1172324
+        },
+        "staticPoster": {
+          "url": "story-media/243-staticPoster-3b03012de9ebb15c10aa44b72a9fb381b0fc63093639d3af7f77ac5146488b11.png",
+          "sha256": "3b03012de9ebb15c10aa44b72a9fb381b0fc63093639d3af7f77ac5146488b11",
+          "bytes": 1196080
+        }
+      }
+    },
+    {
+      "number": 908,
+      "word": "fastidious",
+      "coreMeaningZh": "对细节极讲究的；一丝不苟的；挑剔难满足的",
+      "unit": 57,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 249,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "这一小点也得擦干净。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这一小点也得擦干净。"
+          ]
+        },
+        "alt": "男孩盯着杯沿上的一小点污渍，拿起布仔细擦拭，又举起来检查了一遍。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 800,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 800,
+            "endMs": 6200,
+            "text": "这一小点也得擦干净。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这一小点也得擦干净。"
+            ],
+            "id": "stage-1"
+          }
+        ],
+        "video": {
+          "url": "story-media/908-video-e0df682aca6d2b350eab5ebf80d72daa46f48e14a1d9120c2945b9a5111f498e.mp4",
+          "sha256": "e0df682aca6d2b350eab5ebf80d72daa46f48e14a1d9120c2945b9a5111f498e",
+          "bytes": 822427
+        },
+        "poster": {
+          "url": "story-media/908-poster-effde37b191ae5dac8b709e068034a9bae7c80df1e46c2038353904914da81a9.png",
+          "sha256": "effde37b191ae5dac8b709e068034a9bae7c80df1e46c2038353904914da81a9",
+          "bytes": 1074522
+        },
+        "staticPoster": {
+          "url": "story-media/908-staticPoster-4eb67ecaec7ea04fde55fee678e45fd9db662dd638f7efec2c6cbd5a8b617b79.png",
+          "sha256": "4eb67ecaec7ea04fde55fee678e45fd9db662dd638f7efec2c6cbd5a8b617b79",
+          "bytes": 1097104
+        }
+      }
+    },
+    {
+      "number": 2984,
+      "word": "pragmatic",
+      "coreMeaningZh": "务实的；注重实际效果的",
+      "unit": 57,
+      "standardVersion": "gre-deep-20261010-v1",
+      "reviewStatus": "approved",
+      "textApproved": true,
+      "artApproved": true,
+      "displayOrdinal": 250,
+      "storyMedia": {
+        "width": 768,
+        "height": 768,
+        "durationMs": 6200,
+        "waitForPresentedFrame": true,
+        "resetTransition": {
+          "type": "none"
+        },
+        "posterDialogue": {
+          "startMs": 0,
+          "endMs": 6200,
+          "text": "这个能用，就用这个。",
+          "speaker": "boy",
+          "anchor": {
+            "x": 0.5,
+            "y": 0.12
+          },
+          "displayLines": [
+            "这个能用，就用这个。"
+          ]
+        },
+        "alt": "男孩发现杯子够不着，就踩上结实的矮木箱，把杯子拿了下来。",
+        "stages": [
+          {
+            "startMs": 0,
+            "endMs": 400,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-0"
+          },
+          {
+            "startMs": 400,
+            "endMs": 2080,
+            "text": "这个能用，就用这个。",
+            "speaker": "boy",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "displayLines": [
+              "这个能用，就用这个。"
+            ],
+            "id": "stage-1"
+          },
+          {
+            "startMs": 2080,
+            "endMs": 6200,
+            "text": "",
+            "speaker": "center",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.12
+            },
+            "id": "stage-2"
+          }
+        ],
+        "video": {
+          "url": "story-media/2984-video-1e9667056842eb64e30a0f9f0fb9d1e960229551841bad42927faaf2645f85b7.mp4",
+          "sha256": "1e9667056842eb64e30a0f9f0fb9d1e960229551841bad42927faaf2645f85b7",
+          "bytes": 786938
+        },
+        "poster": {
+          "url": "story-media/2984-poster-594227668dd1ac84699de67748e05ca86ce3b68817243841d84250dee26bbc45.png",
+          "sha256": "594227668dd1ac84699de67748e05ca86ce3b68817243841d84250dee26bbc45",
+          "bytes": 1114491
+        },
+        "staticPoster": {
+          "url": "story-media/2984-staticPoster-2560a0f2fe069f7b5534bc4e43f3dc172c85b39a488031cccbffabc03e4f59de.png",
+          "sha256": "2560a0f2fe069f7b5534bc4e43f3dc172c85b39a488031cccbffabc03e4f59de",
+          "bytes": 1166815
         }
       }
     }

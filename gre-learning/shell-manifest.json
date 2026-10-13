@@ -1,5 +1,5 @@
 {
-  "build": "169-offline200-v31",
+  "build": "170-offline200-v31",
   "assets": [
     {
       "url": "index.html",
@@ -18,7 +18,7 @@
     },
     {
       "url": "gre-learning/update.js",
-      "sha256": "7796c57cb559170e7f6cb66f8e4e55906abffa0a38df012fa9e733906a89c73f",
+      "sha256": "d6ba2da96addbaad39249c55ea71db5930f27d3262cf1fa608aef3ffdbe9e292",
       "bytes": 6372
     },
     {
@@ -28,8 +28,8 @@
     },
     {
       "url": "gre-learning/catalog.json",
-      "sha256": "66f56141e60c19fe3869ed5212647a9cc729c62dbd8482e6467e2ec1a1f9a036",
-      "bytes": 616277
+      "sha256": "bcd26823d288420b7c9906c2eaec96003e9902adf4d8091692d15c747a3c3ac4",
+      "bytes": 642683
     },
     {
       "url": "gre-learning/lesson-loader.js",
@@ -383,7 +383,7 @@
     },
     {
       "url": "gre-learning/offline-preferences.js",
-      "sha256": "3834ee16a9c165effa0bdd0e83326f2af944756467376eb3c6126e3ccc9014ed",
+      "sha256": "4518a175900541da83d05422d6101014f9d9e32206e9a920f6730ff0703e646b",
       "bytes": 1103
     },
     {
@@ -458,7 +458,7 @@
     },
     {
       "url": "gre-learning/hosted-media.js",
-      "sha256": "c1b26e3d410d8cb5eee9eb75593d7d06ab47354d44a0967a38111bcd192c78ad",
+      "sha256": "3404fc0fdb3ce07851514999fcb3ced6066b1fc2d27df9837949ac6c2c41eb0c",
       "bytes": 836
     },
     {
@@ -510,6 +510,16 @@
       "url": "gre-learning/units/core044-text-candidate-9f7054e6c9e90ecbfaab7add94615ed721494bccf29f86a008ebdc8a655a1b1c.json",
       "sha256": "9f7054e6c9e90ecbfaab7add94615ed721494bccf29f86a008ebdc8a655a1b1c",
       "bytes": 22836
+    },
+    {
+      "url": "gre-learning/units/core046-text-candidate-c3024098569faf1ede3648fcd525cf450b14cff4ae8472fb713c3bb96d49343e.json",
+      "sha256": "c3024098569faf1ede3648fcd525cf450b14cff4ae8472fb713c3bb96d49343e",
+      "bytes": 20459
+    },
+    {
+      "url": "gre-learning/units/core047-text-candidate-cd975e56415d36774994f89decb99a1709569c51090c94cc67111a20db2ec2ed.json",
+      "sha256": "cd975e56415d36774994f89decb99a1709569c51090c94cc67111a20db2ec2ed",
+      "bytes": 19279
     }
   ]
 }
