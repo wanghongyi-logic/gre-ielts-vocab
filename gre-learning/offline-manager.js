@@ -1,3 +1,4 @@
+import {mountSavedExport} from './offline-export-ui.js';
 import {mountReleaseDownloads} from './offline-releases.js';
 import {createMediaControl} from './offline-control.js';
 import {batchStatus,downloadLessons,optionalMediaGroups} from './offline-batch.js';
@@ -149,6 +150,7 @@ export function installOfflineManager(catalog){
  window.addEventListener('gre-offline-asset',({detail})=>{if(detail.phase==='saved'){clearTimeout(savedRefreshTimer);savedRefreshTimer=setTimeout(refreshSaved,600);}});
  window.addEventListener('gre-offline-corrupt',()=>{status.textContent='有一份本机内容无法读取，请重新导入对应书包；文字仍可阅读';clearTimeout(savedRefreshTimer);savedRefreshTimer=setTimeout(refreshSaved,500);});
  releaseDownloads=mountReleaseDownloads({host,catalog});
+ mountSavedExport({host,catalog,isBusy:()=>Boolean(controller)||clearingThisPage||changingMode||mutating||filePickerOpen,setBusy:value=>{mutating=value;syncMutationControls();}});
  const drawerSelectors=['.library-page','.library-pages-downloads','[data-release-browser]','.library-packs'];
  window.addEventListener('gre-update-capture',event=>{event.detail.drawers=Object.fromEntries(drawerSelectors.map(selector=>[selector,Boolean(host.querySelector(selector)?.open)]));});
  window.addEventListener('gre-update-restore',event=>{
