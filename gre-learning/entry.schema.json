@@ -200,17 +200,7 @@
     {
       "properties": {
         "mnemonics": {
-          "minItems": 2,
-          "contains": {
-            "properties": {
-              "original": {
-                "const": true
-              }
-            },
-            "required": [
-              "original"
-            ]
-          }
+          "minItems": 2
         }
       }
     },

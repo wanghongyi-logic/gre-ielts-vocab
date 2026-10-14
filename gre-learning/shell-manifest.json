@@ -1,5 +1,5 @@
 {
-  "build": "171-offline200-v31",
+  "build": "172-offline200-v31",
   "assets": [
     {
       "url": "index.html",
@@ -18,7 +18,7 @@
     },
     {
       "url": "gre-learning/update.js",
-      "sha256": "2803210be7d629dc4228b4c0983ad78404937508332644a6f0c028f5e43ec14b",
+      "sha256": "adfe6a09f36eceaf70db84e7c77c6c6b2ecb98e1627cc37e19caa571d0b96343",
       "bytes": 6372
     },
     {
@@ -28,8 +28,8 @@
     },
     {
       "url": "gre-learning/catalog.json",
-      "sha256": "b675beef93d1de85473038821db9b69cb6bdd6c7af10ffe199ed890e380e1a24",
-      "bytes": 771440
+      "sha256": "cba685d01233e452ff55888a6f91cf61fcccb0465ab9dc1e2b49a9ee1e82f32e",
+      "bytes": 1019318
     },
     {
       "url": "gre-learning/lesson-loader.js",
@@ -38,8 +38,8 @@
     },
     {
       "url": "gre-learning/schema.js",
-      "sha256": "fa7c6338a126e62094177b615e9453373541ac46899c505d4c6c24dc87923bb6",
-      "bytes": 4853
+      "sha256": "cfabd87ee44eaf60c87297edad5bae259109a66f9aa784dcba97d2321bac55ff",
+      "bytes": 4871
     },
     {
       "url": "gre-learning/render.js",
@@ -383,7 +383,7 @@
     },
     {
       "url": "gre-learning/offline-preferences.js",
-      "sha256": "cca40149afcffa91ad19cf2dc303cf2efca31746bf1934b06d05b98396a043fd",
+      "sha256": "1c057d39b58a3eed4618ed4739d308ac6bc1088fb4679d0fbf04988363c81cba",
       "bytes": 1103
     },
     {
@@ -458,7 +458,7 @@
     },
     {
       "url": "gre-learning/hosted-media.js",
-      "sha256": "dfb1c7bf3beacb74b4eb891cc243011de98720fd62aebff547fa6599f5b43efa",
+      "sha256": "1c83f5b9f2ec4e84cb7e6a241cfa4243f2ad2dabaa4dc18f72ad8c4d452334d1",
       "bytes": 836
     },
     {
@@ -570,6 +570,91 @@
       "url": "gre-learning/units/core057-text-candidate-b2a44f6d0507b37cfc8eb0ca758c73db57d2be99e90a49de0e6fdc3757ca1d0b.json",
       "sha256": "b2a44f6d0507b37cfc8eb0ca758c73db57d2be99e90a49de0e6fdc3757ca1d0b",
       "bytes": 18798
+    },
+    {
+      "url": "gre-learning/units/core058-text-candidate-3e0a6969e9cf714b51e464e24ea2cda807d1c8093cf5152c9709131b23a69161.json",
+      "sha256": "3e0a6969e9cf714b51e464e24ea2cda807d1c8093cf5152c9709131b23a69161",
+      "bytes": 20340
+    },
+    {
+      "url": "gre-learning/units/core059-text-candidate-f83b9aeb6d4a0cb1abad1b6beca95834310b24cefa265355e28b87bdb97579c5.json",
+      "sha256": "f83b9aeb6d4a0cb1abad1b6beca95834310b24cefa265355e28b87bdb97579c5",
+      "bytes": 21194
+    },
+    {
+      "url": "gre-learning/units/core060-text-candidate-82f6ac57db027e9444b6500969ffa3ce26c3ee6ae744c905b29a7af472ba02a7.json",
+      "sha256": "82f6ac57db027e9444b6500969ffa3ce26c3ee6ae744c905b29a7af472ba02a7",
+      "bytes": 19424
+    },
+    {
+      "url": "gre-learning/units/core061-text-candidate-648764b3e1ef62e73b298e0a04d9386fcd2c2a2e1c0174f50f2ec4c1c73b796b.json",
+      "sha256": "648764b3e1ef62e73b298e0a04d9386fcd2c2a2e1c0174f50f2ec4c1c73b796b",
+      "bytes": 20773
+    },
+    {
+      "url": "gre-learning/units/core062-text-candidate-e6203fd906f4bac65842b0cb6abffc0419917a0ed978d3c4aa1511a0f5662f83.json",
+      "sha256": "e6203fd906f4bac65842b0cb6abffc0419917a0ed978d3c4aa1511a0f5662f83",
+      "bytes": 21386
+    },
+    {
+      "url": "gre-learning/units/core063-text-candidate-0816782db00fde149bcb12a12a190c342f4b7403270a22f81df1d5ba6647de91.json",
+      "sha256": "0816782db00fde149bcb12a12a190c342f4b7403270a22f81df1d5ba6647de91",
+      "bytes": 23294
+    },
+    {
+      "url": "gre-learning/units/core064-text-candidate-8dd85686a911784bc272587c96f9766f585830bf143cbb05803c318359441d24.json",
+      "sha256": "8dd85686a911784bc272587c96f9766f585830bf143cbb05803c318359441d24",
+      "bytes": 21539
+    },
+    {
+      "url": "gre-learning/units/core065-text-candidate-7d2656b199812a914361f82c48c305625b7e9248358a1ef33b2c8b8e12994532.json",
+      "sha256": "7d2656b199812a914361f82c48c305625b7e9248358a1ef33b2c8b8e12994532",
+      "bytes": 20546
+    },
+    {
+      "url": "gre-learning/units/core066-text-candidate-7146499c212d824f6ea95aea14d7decdbc2c28e203a67f140a8664230caa146b.json",
+      "sha256": "7146499c212d824f6ea95aea14d7decdbc2c28e203a67f140a8664230caa146b",
+      "bytes": 19068
+    },
+    {
+      "url": "gre-learning/units/core067-text-candidate-cf9dc390536172f36edf814d771d49d8c9565b349c023547510aead06e69629d.json",
+      "sha256": "cf9dc390536172f36edf814d771d49d8c9565b349c023547510aead06e69629d",
+      "bytes": 8950
+    },
+    {
+      "url": "gre-learning/units/core068-text-candidate-d8af3a80eb50b750ad24d01afb40bae01dc90cf4ec0ac9a54d4de9df092c944b.json",
+      "sha256": "d8af3a80eb50b750ad24d01afb40bae01dc90cf4ec0ac9a54d4de9df092c944b",
+      "bytes": 12341
+    },
+    {
+      "url": "gre-learning/units/core069-text-candidate-0b5369f74347cbfc5c89edb63784068f43cead496d1d77e6bec76bb711dd7b50.json",
+      "sha256": "0b5369f74347cbfc5c89edb63784068f43cead496d1d77e6bec76bb711dd7b50",
+      "bytes": 21078
+    },
+    {
+      "url": "gre-learning/units/core070-text-candidate-60973254a6299983f30e3f0f65a1f2bf2b7b01f6352180f28d6caa4d31222574.json",
+      "sha256": "60973254a6299983f30e3f0f65a1f2bf2b7b01f6352180f28d6caa4d31222574",
+      "bytes": 20930
+    },
+    {
+      "url": "gre-learning/units/core071-text-candidate-95d4f90acdb52084606d986cc881f81a8e13346d406ecff9d8f2a9367c626432.json",
+      "sha256": "95d4f90acdb52084606d986cc881f81a8e13346d406ecff9d8f2a9367c626432",
+      "bytes": 22330
+    },
+    {
+      "url": "gre-learning/units/core072-text-candidate-ef578925047142f23c3b7cbbf20b1f5afafee34f7fda89a206dd227445ecab45.json",
+      "sha256": "ef578925047142f23c3b7cbbf20b1f5afafee34f7fda89a206dd227445ecab45",
+      "bytes": 22660
+    },
+    {
+      "url": "gre-learning/units/core073-text-candidate-bafe7f4bf367596ec66262ab0a8a2cbe777dcfb2051298801d31fb4f22a7b8fc.json",
+      "sha256": "bafe7f4bf367596ec66262ab0a8a2cbe777dcfb2051298801d31fb4f22a7b8fc",
+      "bytes": 23469
+    },
+    {
+      "url": "gre-learning/units/core074-text-candidate-ee01d1ea9186cdc40525871394a6797ba58ea6db885c3283878de47fbb591848.json",
+      "sha256": "ee01d1ea9186cdc40525871394a6797ba58ea6db885c3283878de47fbb591848",
+      "bytes": 23589
     }
   ]
 }

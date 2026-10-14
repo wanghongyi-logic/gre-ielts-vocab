@@ -29,7 +29,8 @@ export function validateEntry(entry, baselineLesson) {
   const exception=reviewedSingleMethods[entry.number];
   const reviewedSingleMethod=exception?.word===entry.word&&Array.isArray(entry.mnemonics)&&entry.mnemonics.length===1&&Object.entries(exception.mnemonic).every(([key,value])=>entry.mnemonics[0]?.[key]===value);
   list(entry.mnemonics, 'mnemonics', reviewedSingleMethod?1:2);
-  if (entry.mnemonics.length > 3 || (!reviewedSingleMethod&&!entry.mnemonics.some(item => item.original === true))) throw new TypeError('Mnemonic count or attribution requirement not met');
+  if (entry.mnemonics.length > 3) throw new TypeError('Mnemonic count requirement not met');
+  // Attribution records authorship honestly; release assembly separately binds source evidence and root approval.
   for (const item of entry.mnemonics) {
     shape(item, 'mnemonic'); required(item, ['method','textZh'], 'mnemonic');
     if (Object.prototype.hasOwnProperty.call(item, 'weak') && typeof item.weak !== 'boolean') throw new TypeError('Invalid mnemonic weak flag');

@@ -1,0 +1,176 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4212,
+      "word": "premium",
+      "ipa": "/ˈpriːmiəm/",
+      "pos": "adj.",
+      "coreMeaningZh": "优质的；高档的",
+      "coreEn": "Of higher than usual quality or value.",
+      "coreImageZh": "男孩用一支做工精细的钢笔在纸上试写，笔尖顺滑，墨线均匀。premium 突出优于普通产品的品质，不只是价格高。",
+      "usage": [
+        {
+          "senseZh": "优于普通档次的产品或服务",
+          "explanationZh": "本条主学形容词，通常放在名词前，强调品质、规格或档次较高；商家使用这个词，不等于质量已经得到独立认证。",
+          "collocations": [
+            {
+              "phrase": "premium products",
+              "meaningZh": "优质产品",
+              "usageZh": "premium 修饰 products，评价产品档次。"
+            },
+            {
+              "phrase": "premium quality",
+              "meaningZh": "上乘品质",
+              "usageZh": "quality 是名词；整个短语可说明产品的品质。"
+            }
+          ]
+        },
+        {
+          "senseZh": "价格高于通常水平",
+          "explanationZh": "修饰 price 或 rate 时，premium 说的是收费较高，不能把“高价”自动解释成“优质”。",
+          "collocations": [
+            {
+              "phrase": "a premium price",
+              "meaningZh": "较高的价格",
+              "usageZh": "这里是形容词修饰 price；pay a premium 则用名词，表示支付额外费用。"
+            }
+          ]
+        },
+        {
+          "senseZh": "补充短语：稀缺而抢手",
+          "explanationZh": "be at a premium 表示资源供应紧张、因而格外宝贵。短语中的 premium 是名词，与“优质的”形容词用法分开理解。",
+          "collocations": [
+            {
+              "phrase": "space is at a premium",
+              "meaningZh": "空间很紧张",
+              "usageZh": "强调可用空间少，不是在说空间的品质高。"
+            },
+            {
+              "phrase": "put a premium on something",
+              "meaningZh": "高度重视某事物",
+              "usageZh": "另一个名词短语，强调看重某事物；不是“使它变得优质”。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The building is on a premium site.",
+          "translationZh": "这栋楼位于一处上佳地段。",
+          "explanationZh": "premium 修饰 site，说明地段条件优越。"
+        },
+        {
+          "textEn": "The premium package also provides higher screen resolution.",
+          "translationZh": "高级套餐还提供更高的屏幕分辨率。",
+          "explanationZh": "premium 修饰 package；后面的更高分辨率具体体现了较高规格。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "high-quality",
+          "comparisonZh": "premium/high-quality products 都可指优质产品。high-quality 直接评价质量；premium 还常带高档定位、较高售价的意味。premium price 指高价，不能换成 high-quality price。"
+        },
+        {
+          "word": "superior",
+          "comparisonZh": "premium/superior materials 都可指上乘材料。superior 还可以接 to 表示“优于……”，premium 没有这种比较结构；at a premium 也不能逐词替换为 at a superior。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "PREMIUM · 拼命做好",
+          "textZh": "把 premium 宽松地近音联想成“拼命”：工匠拼命打磨笔尖、反复试写，终于做出一支运笔顺滑、墨线均匀的优质钢笔。由“拼命做好”的制作情境，联想到成品的上乘品质。这个近音并不精确，英文仍读 /ˈpriːmiəm/。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": true
+        },
+        {
+          "method": "CREAMY，嗯！",
+          "textZh": "把 premium 近音联想成“creamy，嗯！”：尝一口用好奶油做的冰淇淋，口感细腻，忍不住满意地哼一声。creamy 是“奶油般细滑的”，这一口联想到 premium ice cream，优质冰淇淋。两者开头分别是 /p/ 和 /k/，并非同音。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 3931,
+      "word": "ironic",
+      "ipa": "/aɪˈrɒnɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "具有讽刺意味的；用反话表达的",
+      "coreEn": "Involving a telling contrast between expectations and reality, or expressing an intended meaning opposite to the literal words.",
+      "coreImageZh": "卖雨衣的人自信地演示防水效果，演示后打开雨衣，里面的衣服却湿了一块。卖的正是防水用品，自己却没能保持干燥，这种与期待形成鲜明反差的结果很 ironic。",
+      "usage": [
+        {
+          "senseZh": "情境反讽：结果与期待形成意味深长的反差",
+          "explanationZh": "不只是碰巧、惊喜或倒霉；关键是事情的发展反过来衬出了原先期待、身份或目的的落空。",
+          "collocations": [
+            {
+              "phrase": "an ironic twist",
+              "meaningZh": "具有讽刺意味的转折",
+              "usageZh": "twist 指事情意外的转变；ironic 还要求这个转变与原先期待形成反差。"
+            },
+            {
+              "phrase": "It is ironic that ...",
+              "meaningZh": "讽刺的是……",
+              "usageZh": "it 作形式主语，that 从句说明具体情境。"
+            }
+          ]
+        },
+        {
+          "senseZh": "言语反讽：字面话语与真实意思相反",
+          "explanationZh": "说“真及时”可能实际在批评迟到，也可以是朋友间的轻松打趣；不一定带恶意。要结合语境、语气判断。",
+          "collocations": [
+            {
+              "phrase": "an ironic remark",
+              "meaningZh": "一句反话；带反讽的评论",
+              "usageZh": "remark 是可数名词；说话人的真实意思与字面意思相反。"
+            },
+            {
+              "phrase": "an ironic tone",
+              "meaningZh": "反讽的语气",
+              "usageZh": "tone 指说话的语气；不是所有严厉或嘲笑的语气都属于 ironic。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It is ironic that although many items are now cheaper to make, fewer people can afford to buy them.",
+          "translationZh": "讽刺的是，虽然如今许多商品的制造成本更低了，买得起它们的人却更少了。",
+          "explanationZh": "制造成本降低本应让购买更容易，实际购买能力却走向相反方向，形成情境反讽。"
+        },
+        {
+          "textEn": "At the most solemn moments he will flash a mocking smile or make an ironic remark.",
+          "translationZh": "在最庄严的时刻，他会露出嘲弄的笑容，或说一句反话。",
+          "explanationZh": "ironic remark 指用反话表达的评论；这个例句带嘲弄语境，但 ironic 本身不要求每次都恶意挖苦。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "paradoxical",
+          "comparisonZh": "ironic/paradoxical outcome 都可描述违背通常预期的结果。paradoxical 更突出表面矛盾或违反常理；ironic 更突出期待与现实间有意味的反差。ironic remark 表示反话，paradoxical remark 则是看似矛盾的话，不能直接互换。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "sarcastic",
+          "comparisonZh": "带挖苦意味的 ironic/sarcastic remark 可以重合。sarcastic 更突出嘲讽、刺人的态度；ironic 也可温和幽默。情境本身可以 ironic，但通常不能说一个无人发言的结果 sarcastic。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "IRON 熨出反效果",
+          "textZh": "ironic 的开头完整写着 iron（熨斗；熨衣服）：本想把衬衫熨得体面，熨斗却把它烫出一个洞。让衣服变好的工具反而毁了衣服，期待与结果形成讽刺性的反差。这是拼写联想，不是词源。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "IRONIC · 爱惹你",
+          "textZh": "把 ironic 的前面几拍近音联想成“爱惹你”：朋友迟到，你偏笑着说“你可真准时！”字面在夸，实际在说他迟到了。这句玩笑反话就是 ironic；“爱惹你”只是近音，不是标准读音。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    }
+  ]
+}

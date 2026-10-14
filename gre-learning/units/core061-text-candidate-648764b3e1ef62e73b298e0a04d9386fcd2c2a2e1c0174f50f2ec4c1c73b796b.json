@@ -1,0 +1,405 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 3411,
+      "word": "contingent",
+      "ipa": "/kənˈtɪndʒənt/",
+      "pos": "adj.; n.",
+      "coreMeaningZh": "取决于条件的；可能发生但不确定的；代表团、分遣队",
+      "coreEn": "Dependent on a condition or uncertain event; as a noun, a group forming part of a larger gathering or force.",
+      "coreImageZh": "男孩已经装好野餐篮，却站在门廊下等雨停。只有天气转晴，他才提篮出发；野餐能否进行是 contingent on the weather，取决于天气。",
+      "usage": [
+        {
+          "senseZh": "取决于某条件",
+          "explanationZh": "正式用语，形容词常接 on 或 upon。条件尚未满足，结果就不能视为已经确定。",
+          "collocations": [
+            {
+              "phrase": "be contingent on approval",
+              "meaningZh": "以获得批准为条件",
+              "usageZh": "on 后可接名词或动名词；不要把 contingent 当动词。"
+            },
+            {
+              "phrase": "be contingent upon circumstances",
+              "meaningZh": "视情况而定",
+              "usageZh": "upon 与 on 在此意思相同，常见于正式书面语。"
+            }
+          ]
+        },
+        {
+          "senseZh": "不确定的可能性；另有团体名词义",
+          "explanationZh": "contingent events 是可能发生、受其他情况影响的事件。名词 contingent 则指具有共同来源等特征的一批人或大部队中的分遣队，两种词性须分开。",
+          "collocations": [
+            {
+              "phrase": "contingent events",
+              "meaningZh": "偶发或不确定的事件",
+              "usageZh": "不能把有条件一律理解成完全没有原因的随机事件。"
+            },
+            {
+              "phrase": "a contingent of troops",
+              "meaningZh": "一支分遣队",
+              "usageZh": "此处是可数名词，不是“取决于”的形容词；contingent workers 又可指非长期合同雇员。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "All payments are contingent upon satisfactory completion dates.",
+          "translationZh": "各笔款项的支付都取决于完工日期是否符合要求。",
+          "explanationZh": "contingent upon 引出付款所需满足的条件。"
+        },
+        {
+          "textEn": "Our plans are contingent upon the weather.",
+          "translationZh": "我们的计划要视天气而定。",
+          "explanationZh": "计划能否实行尚未确定，要看天气这一条件。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "circumstantial",
+          "comparisonZh": "张巍表把两者对应在“依情况而定”这一形容词义上。circumstantial 较常见的意思是“与具体情况有关的”或“间接的”，尤其 circumstantial evidence 指间接证据；不能据此把 contingent on approval 机械换成 circumstantial on approval。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "conditional",
+          "comparisonZh": "contingent on approval 与 conditional on approval 都表示以批准为条件，都是形容词。contingent 常突出结果依赖另一事件；conditional 也用于条件句等语法术语，不能替换名词 contingent 的代表团义。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "CONTINgent · CONTINue",
+          "textZh": "比赛因雨暂停，能否 continue（继续），取决于雨能不能停。contingent 和 continue 共享开头的 contin：看到熟悉的“继续”，就想起“能否继续，要看条件”。这里只借近形；contingent 是有条件、取决于，continue 才是继续。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "CONTINGENT · CONTINENT",
+          "textZh": "continent（大陆）中间加一个 g，就是 contingent。去另一片大陆的旅行，取决于签证是否获批：想跨大陆，先满足条件。两词几乎完整的相似字形，把“大陆之旅”连到“有条件”；这不是词源拆解。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 3077,
+      "word": "abound",
+      "ipa": "/əˈbaʊnd/",
+      "pos": "v.",
+      "coreMeaningZh": "大量存在；充满、富于",
+      "coreEn": "To exist in large numbers or quantities, or to contain a great deal of something.",
+      "coreImageZh": "男孩走进草莓园，放眼望去满地都是成熟的草莓。他蹲下采满一篮，抬头仍看见许多红果；草莓在这里 abound，大量存在。",
+      "usage": [
+        {
+          "senseZh": "某物大量存在",
+          "explanationZh": "不及物动词，较正式。数量多的事物作主语；可以是动物、资源、机会，也可以是传闻、错误等。",
+          "collocations": [
+            {
+              "phrase": "opportunities abound",
+              "meaningZh": "机会很多",
+              "usageZh": "opportunities 是主语，abound 后不直接加宾语。"
+            },
+            {
+              "phrase": "rumours abound",
+              "meaningZh": "传闻四起、传闻很多",
+              "usageZh": "描述数量多，不保证传闻真实。"
+            }
+          ]
+        },
+        {
+          "senseZh": "某地或事物充满某物",
+          "explanationZh": "让容纳事物的地方、材料等作主语时，用 abound in 或 abound with 接所充满的东西。",
+          "collocations": [
+            {
+              "phrase": "abound in wildlife",
+              "meaningZh": "有大量野生动物",
+              "usageZh": "地区作主语；in 后的 wildlife 不可数。"
+            },
+            {
+              "phrase": "abound with examples",
+              "meaningZh": "有大量例子",
+              "usageZh": "作品或讨论中例子很多；不是及物用法 abound examples。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Stories about his travels abound.",
+          "translationZh": "关于他旅行经历的故事多得很。",
+          "explanationZh": "Stories 是大量存在的事物，作主语。"
+        },
+        {
+          "textEn": "They live in a region where oil abounds.",
+          "translationZh": "他们住在一个石油资源丰富的地区。",
+          "explanationZh": "oil 是不可数名词，用单数形式 abounds。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "proliferate",
+          "comparisonZh": "张巍表列出这一动词对应，但两者不完全等义：abound 突出已经大量存在，proliferate 突出迅速增加或繁殖。谈网上流传的传言时可能接近；一地石油储量丰富可说 oil abounds，不能自然地换成 oil proliferates。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "teem",
+          "comparisonZh": "abound with life 与 teem with life 都可表示充满生机；teem 常带大量事物密集、活跃的画面。结构要相应调整，不能把 opportunities abound 逐字换成 opportunities teem。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ABOUND · ABUNDANT",
+          "textZh": "abound 和 abundant（丰富的）是一家：abound 把“丰富”说成动作或状态，意为大量存在。看到满园草莓，就把 abundant strawberries 换一个说法：strawberries abound。对照大块相似字形，同时记住一个是形容词，一个是动词。",
+          "original": true,
+          "kind": "word_family"
+        },
+        {
+          "method": "ABOUND · AROUND",
+          "textZh": "abound 与 around（四周）只差一个字母，读音也很近。走进果园，look around，四周到处都是草莓，于是记住 strawberries abound，草莓大量存在。around 的 r 换成 b 得到 abound；不是词源拆解。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 3522,
+      "word": "disproportionate",
+      "ipa": "/ˌdɪsprəˈpɔːrʃənət/",
+      "pos": "adj.",
+      "coreMeaningZh": "不成比例的；不相称的；相对过多或过少的",
+      "coreEn": "Too large or too small relative to something else or to an expected proportion.",
+      "coreImageZh": "男孩给一个小小的模型房子安上巨大屋顶，屋顶远远伸出四周，几乎把房身盖没了。屋顶与房身大小不相称，就是 disproportionate。",
+      "usage": [
+        {
+          "senseZh": "大小、数量或份额失衡",
+          "explanationZh": "必须有明示或暗含的比较基准。常指相对过多，但也能指相对过少；并不等于单纯的大。",
+          "collocations": [
+            {
+              "phrase": "a disproportionate share",
+              "meaningZh": "不成比例的份额",
+              "usageZh": "份额相对于人口、贡献或其他基准过大或过小，具体方向由语境决定。"
+            },
+            {
+              "phrase": "a disproportionate number of people",
+              "meaningZh": "占比不相称的人数",
+              "usageZh": "number 搭配可数复数；常指某类人所占比例高于预期。"
+            }
+          ]
+        },
+        {
+          "senseZh": "反应、惩罚、代价等不相称",
+          "explanationZh": "用 to 引出比较对象，常用于评价反应相对于原因过激或负担相对于收益太重。",
+          "collocations": [
+            {
+              "phrase": "disproportionate to the offence",
+              "meaningZh": "与过错不相称",
+              "usageZh": "通常评价惩罚相对过重；offence 为英式拼写。"
+            },
+            {
+              "phrase": "a disproportionate amount of time",
+              "meaningZh": "不成比例的时间投入",
+              "usageZh": "amount 搭配不可数的 time；需要理解任务价值或其他比较背景。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The area contains a disproportionate number of young middle-class families.",
+          "translationZh": "这个地区的年轻中产家庭所占比例异常高。",
+          "explanationZh": "这里比较的是某类家庭所占比例，不只是说家庭总数多。"
+        },
+        {
+          "textEn": "He believes that middle-class people bear a disproportionate share of the tax burden.",
+          "translationZh": "他认为中产阶层承担了过高比例的税收负担。",
+          "explanationZh": "相对于合理的分担基准，税负份额过大。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "incommensurate",
+          "comparisonZh": "两词都是形容词，都可表示不相称。disproportionate 更直接指比例失衡；incommensurate 常强调程度、价值或大小不匹配，常用 with，也可用 to。不能不顾搭配直接替换。"
+        },
+        {
+          "word": "excessive",
+          "comparisonZh": "惩罚相对过重时，disproportionate punishment 和 excessive punishment 接近。excessive 直接表示过度；disproportionate 需要比较基准，并且也可能表示相对过少，不能总换成 excessive。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "DIS + PROPORTIONATE",
+          "textZh": "proportionate 是成比例的，前面的 dis- 在这里表示否定。想象模型房子各部分原本按同一比例缩小，后来偏偏换上巨大屋顶：原有 proportion 被打破，整座模型就 disproportionate，不成比例。",
+          "original": true,
+          "kind": "word_components"
+        },
+        {
+          "method": "disproPORTIONate",
+          "textZh": "词中完整保留 portion（一份），开头 dis- 提醒“不”。两人做同样多的事，分蛋糕时一人拿走巨大一份，另一人只得一小角：两份 portion 与贡献不相称，这样的分配就是 disproportionate。失衡的是份量与贡献的比例，不是蛋糕绝对有多大。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 4083,
+      "word": "obtrusive",
+      "ipa": "/əbˈtruːsɪv/",
+      "pos": "adj.",
+      "coreMeaningZh": "惹眼得令人不快的；突兀碍眼的；打扰人的",
+      "coreEn": "Unpleasantly noticeable, or pushing itself on your attention in an unwelcome way.",
+      "coreImageZh": "男孩想欣赏花园里的小雕像，却被一块巨大鲜艳的广告牌挡住视线。他向左探身，又向右挪步，仍不得不看见它；这块广告牌是 obtrusive，突兀又碍眼。",
+      "usage": [
+        {
+          "senseZh": "外观或声音过于惹眼、扰人",
+          "explanationZh": "多含负面评价。东西可能很显眼却不讨厌，这时不一定适合用 obtrusive；也不限于物理上挡路。",
+          "collocations": [
+            {
+              "phrase": "visually obtrusive",
+              "meaningZh": "视觉上突兀碍眼的",
+              "usageZh": "建筑、设备或广告与环境格格不入时可用。"
+            },
+            {
+              "phrase": "obtrusive advertising",
+              "meaningZh": "扰人、碍眼的广告",
+              "usageZh": "强调广告强占注意力，不只是广告容易看见。"
+            }
+          ]
+        },
+        {
+          "senseZh": "人的在场或行为令人不自在",
+          "explanationZh": "可以形容人、举止或某人的存在感，突出不受欢迎地引人注意；不必涉及侵犯隐私。",
+          "collocations": [
+            {
+              "phrase": "an obtrusive presence",
+              "meaningZh": "令人不自在的显眼存在",
+              "usageZh": "presence 指在场或存在感，不是礼物 presents。"
+            },
+            {
+              "phrase": "obtrusive behaviour",
+              "meaningZh": "冒失扰人的行为",
+              "usageZh": "这里是负面的行为评价，不能简单译成积极的“突出表现”。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The sofa would be less obtrusive in a paler colour.",
+          "translationZh": "这张沙发如果颜色浅一些，就不会那么突兀碍眼了。",
+          "explanationZh": "问题是视觉上过于突出，不是沙发一定挡住了通道。"
+        },
+        {
+          "textEn": "They tried to ensure that their presence was not too obtrusive.",
+          "translationZh": "他们尽量不让自己的在场显得过分惹人注意。",
+          "explanationZh": "此处强调在场者避免打扰别人或强占注意力。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "conspicuous",
+          "comparisonZh": "两词都是形容词，都能表示显眼；obtrusive 还带惹人不快、碍眼的负面意味。conspicuous success 可以是引人注目的成功，不能自然换成 obtrusive success。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "intrusive",
+          "comparisonZh": "形容扰人的问题、设备或行为时可能接近。intrusive 更常强调闯入私人空间或干涉不该干涉的事；obtrusive 更着重不受欢迎地吸引注意，未必侵犯隐私。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "OBTRUSIVE · OBSTRUCTIVE",
+          "textZh": "obstruct 是阻挡，obstructive 是造成阻碍的；它与 obtrusive 大块字形相似。想象一块巨大的鲜红广告牌：挡住走道时是 obstructive，挪到路边后虽然不挡路，仍刺眼地抢走所有注意力，就是 obtrusive。两种讨厌之处，一种是挡路，一种是突兀碍眼。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "OBTRUSIVE · ABUSIVE",
+          "textZh": "abuse 是辱骂，abusive 是辱骂人的。有人在安静的车厢里大声骂人：说话伤人是 abusive，强占所有人的注意、令人不快则是 obtrusive。两词相近的外形和 -usive 声音连起同一个扰人场景，但 obtrusive 不一定涉及辱骂。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ]
+    },
+    {
+      "number": 3329,
+      "word": "chimera",
+      "ipa": "/kaɪˈmɪrə/",
+      "pos": "n.",
+      "coreMeaningZh": "幻想；不可能实现的希望；奇美拉怪兽",
+      "coreEn": "An imagined thing or an unrealizable hope; also the composite monster of Greek mythology.",
+      "coreImageZh": "男孩把一颗糖埋进土里，浇水后幻想长出一棵结满糖果的树。梦中的糖果树很诱人，现实里却只有那块空土；这种不可能实现的愿望就是 a chimera。",
+      "usage": [
+        {
+          "senseZh": "不切实际的希望或幻想",
+          "explanationZh": "可数名词，较正式。常用于指出看似诱人的目标其实无法实现，不是所有有创造力的设想都叫 chimera。",
+          "collocations": [
+            {
+              "phrase": "pursue a chimera",
+              "meaningZh": "追逐不可能实现的幻想",
+              "usageZh": "pursue 后直接接幻想这一对象。"
+            },
+            {
+              "phrase": "prove to be a chimera",
+              "meaningZh": "结果证明只是幻想",
+              "usageZh": "强调希望与现实之间的落差，不是单纯做了一个梦。"
+            }
+          ]
+        },
+        {
+          "senseZh": "神话怪兽；另有生物学专门义",
+          "explanationZh": "希腊神话中的 Chimera 有狮头、山羊身、蛇尾，会喷火；这虚构形象引申出幻想义。生物学的 chimera 是嵌合体，不能译成“妄想”。",
+          "collocations": [
+            {
+              "phrase": "the Chimera",
+              "meaningZh": "奇美拉怪兽",
+              "usageZh": "特指神话角色时常大写；作为一般幻想名词时小写。"
+            },
+            {
+              "phrase": "a genetic chimera",
+              "meaningZh": "遗传嵌合体",
+              "usageZh": "专门义指由遗传组成不同的细胞或组织构成的个体等，与一般幻想义分开。"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His utopia was a chimera.",
+          "translationZh": "他设想的乌托邦不过是一场幻想。",
+          "explanationZh": "chimera 评价理想社会不可能真正实现。"
+        },
+        {
+          "textEn": "Economic stability in that country is a chimera.",
+          "translationZh": "在那个国家，经济稳定只是难以实现的幻想。",
+          "explanationZh": "这句话表达说话者对实现该目标的否定判断。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "illusion",
+          "comparisonZh": "两词在指虚幻想法时都是名词，可以接近。chimera 尤其常指无法实现的希望；illusion 还可指视觉错觉或错误印象。optical illusion 不能通常换成 optical chimera，怪兽义也不作此替换。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "pipe dream",
+          "comparisonZh": "两者都可指不可能实现的愿望，a chimera 与 a pipe dream 在这个语境很接近。pipe dream 更口语，chimera 更正式，还另外有神话与生物学意义。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "CHIMERA · CAMERA",
+          "textZh": "chimera 与 camera（照相机）大块字形相似。想象你举起 camera 想拍下空中的糖果城堡，照片却只有蓝天：那座城堡只在想象中，是 chimera。借熟悉的相机把近形词连到“虚幻之物”，不是说二者同源或同音。",
+          "original": true,
+          "kind": "invented_association"
+        },
+        {
+          "method": "CHIMERA · KITE + MIRROR",
+          "textZh": "取 kite（风筝）开头的 /kaɪ/，接上 mirror（镜子）的 /ˈmɪrə/，大致合成 chimera 的 /kaɪˈmɪrə/。想象魔镜里有一只飞翔的风筝，转身望向天空却空无一物：它只是镜中幻想。这里借两个熟悉词的声音，kite 的末尾 /t/ 不带进来，也不是词源。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    }
+  ]
+}

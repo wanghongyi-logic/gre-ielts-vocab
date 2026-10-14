@@ -1,0 +1,401 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 920,
+      "word": "feign",
+      "ipa": "/feɪn/",
+      "pos": "vt.",
+      "coreMeaningZh": "假装；装出某种感情或状态",
+      "coreEn": "To deliberately show a feeling or condition that is not genuine.",
+      "coreImageZh": "玩完积木后，女孩提着空篮子，请男孩一起收拾地毯上的积木。男孩刚才还精神十足，一看见篮子便靠向沙发扶手，闭眼装睡；随后又偷偷睁开一只眼睛，看女孩是否离开。他并没有睡着，而是在 feign sleep，装出熟睡的样子来逃避收拾。",
+      "usage": [
+        {
+          "senseZh": "装出并没有的感情或态度",
+          "explanationZh": "较正式的及物动词，常直接接表示感情、反应或态度的名词。说话者把惊讶、热情或漠然表现在脸上，内心却并非如此；重点是制造一种虚假的表现。",
+          "collocations": [
+            {
+              "phrase": "feign surprise",
+              "meaningZh": "故作惊讶",
+              "usageZh": "明明早就知道，却装出刚听说时吃惊的样子。"
+            },
+            {
+              "phrase": "feign indifference",
+              "meaningZh": "装作不在乎",
+              "usageZh": "外表漠不关心，实际可能十分在意。"
+            }
+          ]
+        },
+        {
+          "senseZh": "假装处于某种身体或认知状态",
+          "explanationZh": "也常用于装病、装睡、装死或装作不知情。后面直接接所伪装的状态，如 illness、sleep、ignorance。重点是把没有的状态表现出来，让别人误以为那是真的。",
+          "collocations": [
+            {
+              "phrase": "feign illness",
+              "meaningZh": "装病",
+              "usageZh": "表示装出身体不适的样子，不是指病得很轻。"
+            },
+            {
+              "phrase": "feign sleep",
+              "meaningZh": "装睡",
+              "usageZh": "人实际醒着，却让旁人以为自己已睡着。"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "pretend",
+          "comparisonZh": "feign sleep 与 pretend to be asleep 都能表示装睡；feign 较正式，常直接接感情或状态名词，pretend 更常用，常接 to do 或 that 从句。pretend 还可用于大家都知道是假的角色游戏，如孩子假扮海盗；这种共同想象的游戏通常不用 feign 来表达。"
+        },
+        {
+          "word": "simulate",
+          "comparisonZh": "feign surprise 与 simulate surprise 都可指装出惊讶，二者都直接接名词；simulate 更突出模仿出某种表现。simulate 还常用于电脑或设备模拟真实条件，目的可以是训练或研究，并不涉及欺骗；模拟暴风雨环境可用 simulate a storm，通常不换成 feign a storm。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She feigned sleep to avoid having to answer.",
+          "translationZh": "为了不必回答，她假装睡着了。",
+          "explanationZh": "feigned sleep 直接把 sleep 作为宾语；后面的目的说明她为何要制造熟睡的假象。"
+        },
+        {
+          "textEn": "‘Who cares?’ said Alex, feigning indifference.",
+          "translationZh": "“谁在乎啊？”亚历克斯装出满不在乎的样子说道。",
+          "explanationZh": "feigning indifference 说明说话时的表现；表面说不在意，实际并没有那样漠然。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "F(or)EIGN · 装不懂",
+          "textZh": "从熟悉的 foreign（外国的）里遮住 or，剩下的正好是 feign，这是近形联想。想象一个本地人明明听懂了问题，却装成外国游客，摆出“听不懂”的茫然样。借这副装出来的表情，记住 feign 的“假装、装出某种状态”。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "FEIGN / FAINT · 假晕",
+          "textZh": "feign /feɪn/ 和 faint /feɪnt/ 读起来只差最后的 /t/。一个人怕上台，突然像 faint（晕倒）那样倒进椅子；大家刚转身，他就睁眼偷吃饼干。他是在 feign illness（装病）。抓住“假装晕倒”这幕，记住 feign 是假装。",
+          "original": false,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 2626,
+      "word": "vilify",
+      "ipa": "/ˈvɪlɪfaɪ/",
+      "pos": "vt.",
+      "coreMeaningZh": "诋毁；中伤；恶言贬损",
+      "coreEn": "To attack someone or something with harsh, degrading words that make others think badly of them.",
+      "coreImageZh": "美术角里，女孩安静地站在自己的画旁。男孩却转向另一位同学，指着她说：“她自私又卑鄙，根本不值得信任！”女孩听得难过，旁边的同学也皱起眉，感到不舒服。男孩在用恶言攻击她的人品、损害她的形象，这就是 vilify；他并没有在认真评价画作。",
+      "usage": [
+        {
+          "senseZh": "用恶言攻击人或群体的名声",
+          "explanationZh": "正式及物动词，直接接被攻击的人、群体或事物。通常是把对象说得卑劣、不可信或毫无价值，使别人对其产生恶感；程度比一般批评重。攻击可以包含谎言，也可以借真实事件恶意贬损，词本身不保证每句话都是捏造的。",
+          "collocations": [
+            {
+              "phrase": "vilify an opponent",
+              "meaningZh": "诋毁对手",
+              "usageZh": "指恶言损害对手的形象，超出就某个观点提出异议。"
+            },
+            {
+              "phrase": "be vilified in the press",
+              "meaningZh": "在媒体上遭到诋毁",
+              "usageZh": "被动语态突出受攻击者；in the press 交代攻击出现的地方。"
+            }
+          ]
+        },
+        {
+          "senseZh": "把对象说成坏人，或因某事大加贬损",
+          "explanationZh": "vilify somebody as... 用 as 引出被扣上的负面身份或标签；vilify somebody for... 用 for 引出遭攻击的原因。这些结构说明攻击者怎样描述对方、为何攻击，不代表作者认可其指控。",
+          "collocations": [
+            {
+              "phrase": "vilify someone as a traitor",
+              "meaningZh": "把某人诋毁为叛徒",
+              "usageZh": "as a traitor 是攻击者给出的标签，不足以证明此人真的背叛了谁。"
+            },
+            {
+              "phrase": "vilify someone for their views",
+              "meaningZh": "因某人的观点而恶意攻击他",
+              "usageZh": "for 引出理由；重点是针对人的恶言攻击，而非单纯反驳观点。"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "malign",
+          "comparisonZh": "vilify an opponent 与 malign an opponent 都可表示诋毁对手，都是较正式的及物用法。vilify 通常更突出公开、直接而恶毒的贬损；malign 可着重对人作不公或歪曲的描述，也能较隐晦。悄悄暗示同事动机不纯时，malign 往往更贴切；直接痛骂其卑鄙无耻则很符合 vilify。"
+        },
+        {
+          "word": "disparage",
+          "comparisonZh": "vilify/disparage a rival 都可指以贬损的话攻击对手，但 disparage 更侧重把能力、成就或价值说低，vilify 则通常语气更恶毒，带有污名化意味。说别人的获奖“没什么了不起”，可用 disparage an achievement；仅仅轻视这项成就，还不足以称为 vilify。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We shouldn't vilify people for being successful.",
+          "translationZh": "我们不该仅因别人成功就恶意诋毁他们。",
+          "explanationZh": "people 是被诋毁的对象，for being successful 是攻击的原因；句子反对把成功者当作攻击目标。"
+        },
+        {
+          "textEn": "He was vilified in the press for his comments.",
+          "translationZh": "他因自己的言论在媒体上遭到恶意贬损。",
+          "explanationZh": "was vilified 用被动语态，in the press 表示媒体语境，for his comments 说明遭攻击的缘由。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "VILify / VILlain",
+          "textZh": "把 vilify 和熟悉的 villain（反派、坏蛋）连起来。想象有人把别人的照片贴到故事书的“坏蛋”位置，还四处说那人卑鄙、恶毒、不可信：把人说成 villain，就是在 vilify。这里借词形和含义联想，两词并不同源。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "VERIFY / VILIFY",
+          "textZh": "verify（核实）与 vilify 长得很像，把 verify 中的 er 换成 il 就是 vilify。看到“他是骗子”的传言，先 verify，查清事实；有人却直接把他骂成“卑鄙骗子”，四处抹黑，那是在 vilify。记住这句提醒：“先 verify，别乱 vilify！”",
+          "original": false,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 415,
+      "word": "condescending",
+      "ipa": "/ˌkɒndɪˈsendɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "居高临下的；带着优越感对待他人的",
+      "coreEn": "Treating other people as though they are less intelligent, capable, or important than you.",
+      "coreImageZh": "手工桌旁，女孩正拿着一块木拼图思考。男孩抬着下巴，带着自以为耐心的笑容指向拼图，说：“这么简单也不会？我慢慢教你。”女孩听出他把自己当成了不懂事的小孩，露出不悦的神情。这种看似帮忙、实则自觉高人一等的态度，就是 condescending。",
+      "usage": [
+        {
+          "senseZh": "待人时显露高人一等的态度",
+          "explanationZh": "通常含贬义，形容一个人待别人时，仿佛对方不如自己聪明、能干或重要。可以带着笑容、显得很有耐心，并不一定高声辱骂；真正平等尊重的帮助不属于这种态度。",
+          "collocations": [
+            {
+              "phrase": "a condescending attitude",
+              "meaningZh": "居高临下的态度",
+              "usageZh": "常接 towards 或 toward somebody，说明这种态度针对谁。"
+            },
+            {
+              "phrase": "be condescending to someone",
+              "meaningZh": "以高人一等的姿态对待某人",
+              "usageZh": "to 引出被轻视的人；不表示真的站得比对方高。"
+            }
+          ]
+        },
+        {
+          "senseZh": "语气、言辞或表情透出轻视",
+          "explanationZh": "可形容 tone、remark、smile 等。重点是表达里隐含“你不懂，我屈尊告诉你”的优越感，不只是内容简单或声音柔和。condescendingly 是副词；condescend 是对应动词。",
+          "collocations": [
+            {
+              "phrase": "a condescending tone",
+              "meaningZh": "居高临下的语气",
+              "usageZh": "同样一句解释，可以因语气把对方当成无知者而令人反感。"
+            },
+            {
+              "phrase": "a condescending remark",
+              "meaningZh": "带优越感、看低别人的话",
+              "usageZh": "有时字面像夸奖，实际上暗含对对方能力低下的预设。"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "patronizing",
+          "comparisonZh": "说 a condescending/patronizing tone 时，两者非常接近，都表示以优越者的姿态对人说话。patronizing 常让人联想到表面的好意或帮助，但不能硬分成一个礼貌、一个粗鲁；两者都可能笑着贬低人。patronizing a local shop 中是动词 patronize 的“光顾”义，不能换成 condescending。"
+        },
+        {
+          "word": "arrogant",
+          "comparisonZh": "形容某人自以为高人一等的态度时，condescending 与 arrogant 可以接近。arrogant 广指傲慢自大；condescending 更具体地指在待人时把对方放在较低的位置。一味夸耀自己的成就可称 arrogant，却不一定是在居高临下地教导或对待别人。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her tone of voice was always so condescending.",
+          "translationZh": "她说话总是带着那种居高临下的腔调。",
+          "explanationZh": "condescending 修饰说话的语气；即使字面上在解释问题，也可能流露轻视。"
+        },
+        {
+          "textEn": "His comments were offensive and condescending to us.",
+          "translationZh": "他那番话既冒犯了我们，又把我们看低了一等。",
+          "explanationZh": "to us 指明受到这种态度对待的人；offensive 和 condescending 分别强调冒犯与优越感。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "conDESCENDing",
+          "textZh": "抓住完整的 descend（下降）：想象有人把自己放在高高的台阶上，回答问题时仿佛“屈尊下来”教你，脸上还写着“这么简单也不懂”。他不是平等交流，而是在居高临下地对人说话，这就是 condescending。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "CONDESCENDING · 看得很低",
+          "textZh": "借熟悉的“看得很低”作粗略近音联想。你明明会用电脑，对方却像教小孩一样慢慢指着鼠标说：“你肯定不懂，我来教你。”他看似热心帮忙，却把你的能力看得很低，自觉高人一等；这种态度就是 condescending。",
+          "original": true,
+          "kind": "invented_association"
+        }
+      ]
+    },
+    {
+      "number": 865,
+      "word": "exorbitant",
+      "ipa": "/ɪɡˈzɔːrbɪtənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "（价格、费用等）高得离谱的；（要求等）过分的",
+      "coreEn": "Far beyond what is reasonable or acceptable, especially in price, cost, or demands.",
+      "coreImageZh": "水果摊上，一颗普通苹果安静地放在托盘里。摊主报出一百元的价格，男孩惊得睁大眼睛，看看苹果，又看看手里的小钱袋，最后抬手拒绝购买。这种远超合理水平、让人直呼离谱的价格，就是 an exorbitant price。",
+      "usage": [
+        {
+          "senseZh": "价格、费用或收费高得不合理",
+          "explanationZh": "常用于价格、房租、票价和各种费用，含明显的不满或批评。比 expensive 更强：不只说贵，而是高到超出合理或可接受的程度；并不表示账单已经过期或付款逾期。",
+          "collocations": [
+            {
+              "phrase": "exorbitant prices",
+              "meaningZh": "离谱的高价",
+              "usageZh": "指出要价远高于合理水平，不只是与便宜商品相比更贵。"
+            },
+            {
+              "phrase": "charge exorbitant fees",
+              "meaningZh": "收取过高的费用",
+              "usageZh": "charge 后直接接所收费用；可用于服务费、手续费等。"
+            }
+          ]
+        },
+        {
+          "senseZh": "要求或数额超出合理限度",
+          "explanationZh": "也可形容过分的要求、开支数额或收益，核心仍是超出应有的限度，而非一般的数量大。修饰 demands 时要看上下文，既可能涉及金钱，也可能涉及对方索取的其他条件。",
+          "collocations": [
+            {
+              "phrase": "exorbitant demands",
+              "meaningZh": "过分的要求",
+              "usageZh": "强调要求的程度或数额不合理，不等于要求提出得太晚。"
+            },
+            {
+              "phrase": "an exorbitant amount of money",
+              "meaningZh": "大得离谱的一笔钱",
+              "usageZh": "amount of money 指钱的数额；exorbitant 表达说话者对数额过大的评价。"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "excessive",
+          "comparisonZh": "在 exorbitant/excessive fees 或 demands 中，两者都可表示超出合理限度；exorbitant 通常批评得更强，尤其常见于费用和要价。excessive 的适用面更广，excessive noise 或 exercise 自然表示噪声太大、运动过量，这些语境通常不换成 exorbitant。"
+        },
+        {
+          "word": "extortionate",
+          "comparisonZh": "在 exorbitant/extortionate prices 或 fees 中很接近，都可批评价格高得不合理。extortionate 常带“简直是在宰人”的语气；日常价格语境中的它并不自动指真的敲诈犯罪。exorbitant 还能较自然地形容非金钱方面的过分要求；换成 extortionate，可能让人更容易联想到逼迫或索财。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The bill for dinner was exorbitant.",
+          "translationZh": "那顿晚餐的账单贵得离谱。",
+          "explanationZh": "exorbitant 评价的是账单金额高得不合理，句子没有说账单到期未付。"
+        },
+        {
+          "textEn": "It’s a good hotel but the prices are exorbitant.",
+          "translationZh": "这家酒店不错，但价格高得离谱。",
+          "explanationZh": "but 把酒店本身不错与收费不合理对照起来；并不是说酒店质量很差。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "exORBITant · 超出轨道",
+          "textZh": "抓住完整的 orbit（轨道），ex- 表示向外。把正常价格想成一条稳定轨道，店家的要价一下冲到轨道外，远远超出合理范围，就是 exorbitant。这个“偏离轨道”的联系也有真实词源依据。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "EXORBITANT · 一桌比天贵",
+          "textZh": "把 exorbitant 粗略联想到夸张的“一桌比天贵”：明明只点了一桌普通家常菜，账单却高得离谱，让你忍不住叫出“这也太贵了！”记住这种远超合理水平的要价，就是 exorbitant。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ]
+    },
+    {
+      "number": 162,
+      "word": "astute",
+      "ipa": "/əˈstuːt/",
+      "pos": "adj.",
+      "coreMeaningZh": "精明的；判断敏锐、善于把握形势的",
+      "coreEn": "Quick to understand people or situations and make sound practical judgments, often to gain an advantage.",
+      "coreImageZh": "温室的操作台上，园艺老师摆出两盆幼苗：一盆花盆亮闪闪，叶子却已发黄下垂；另一盆装在朴素的陶盆里，绿叶挺拔。男孩没有被漂亮花盆吸引，俯身查看叶片后，果断指向健康的那盆，准备把它种下。这种看清关键、作出明智选择的判断，就是 astute。",
+      "usage": [
+        {
+          "senseZh": "人看得准，善于作实际判断",
+          "explanationZh": "常形容善于看清人物、局势或利害关系的人，尤其是能据此作出有利决定的人。重点不只是知识多或考试成绩好，而是判断敏锐、会应对具体情况；可以是称赞，也可依语境带有精于算计的意味。",
+          "collocations": [
+            {
+              "phrase": "an astute observer",
+              "meaningZh": "眼光敏锐的观察者",
+              "usageZh": "能看出别人忽略的关键或背后的动机，不只是看得仔细。"
+            },
+            {
+              "phrase": "politically astute",
+              "meaningZh": "在政治上很精明",
+              "usageZh": "副词 politically 限定判断能力的领域；也常见 financially astute。"
+            }
+          ]
+        },
+        {
+          "senseZh": "观察、决定或策略显出精明",
+          "explanationZh": "也可形容一个判断、行动或处理方式，表示它切中实际情况、看准利害。astute move 常赞赏行动选得聪明；astute observation 则侧重观察有见地，并不一定涉及谋利。",
+          "collocations": [
+            {
+              "phrase": "an astute move",
+              "meaningZh": "精明的一着；明智之举",
+              "usageZh": "move 在这里指做法或行动，不是单指身体移动。"
+            },
+            {
+              "phrase": "an astute observation",
+              "meaningZh": "敏锐而有见地的观察",
+              "usageZh": "可指口头或书面的判断，强调看到了重要而不明显的东西。"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "shrewd",
+          "comparisonZh": "在 an astute/shrewd businessperson 或 an astute/shrewd move 中非常接近，都强调实际判断精明。shrewd 常突出务实、精打细算，astute 常突出迅速看清形势后应对得当；这只是重心差别，不能硬分成一褒一贬。两者都不只是泛指学识丰富，是否带精于算计的意味要看语境。"
+        },
+        {
+          "word": "perceptive",
+          "comparisonZh": "在 an astute/perceptive observation 中都可表示观察敏锐、有见地。perceptive 更集中于注意到并理解别人没看出的东西；astute 在决定、策略语境中还常强调据此采取有利做法。称赞一个人察觉朋友的难过时，perceptive 很自然；换成 astute，可能多出衡量局势、善于应对的意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It was an astute move to sell the shares then.",
+          "translationZh": "在那时卖出股票，是个精明的决定。",
+          "explanationZh": "astute move 评价出售的时机与做法选得好；这里并没有交代后来具体赚了多少钱。"
+        },
+        {
+          "textEn": "She was politically astute.",
+          "translationZh": "她在政治上很精明。",
+          "explanationZh": "politically 指明她善于判断的领域；句子没有单独说明她是否善良，也不等于说她知识渊博。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ASTUTE ／ A STUDENT",
+          "textZh": "用熟悉的 a student（一个学生）作近音联想，前面的 a stu- 尤其接近。想象这个学生买零食时，没被“大包装更划算”的招牌带走，一算单价便发现小包更便宜，立刻作出选择。记住他看得准、选得精明的表现，就是 astute。",
+          "original": false,
+          "kind": "invented_association"
+        },
+        {
+          "method": "ASTUTE ／ ACUTE",
+          "textZh": "把 astute 和 acute 并排记：词形相近，尾音也相近。想到熟悉的 acute angle（锐角），再把“锐”移到人的判断力上：一眼看出关键，脑子转得快，作出精明选择。acute 可以说角是锐的，astute 则用来形容这种敏锐的头脑与判断。",
+          "original": false,
+          "kind": "invented_association"
+        }
+      ]
+    }
+  ]
+}
