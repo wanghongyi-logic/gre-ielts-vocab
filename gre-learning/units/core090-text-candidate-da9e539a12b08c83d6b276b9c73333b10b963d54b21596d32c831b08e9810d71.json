@@ -1,0 +1,391 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4769,
+      "word": "idiosyncratic",
+      "ipa": "/ˌɪdiəsɪŋˈkrætɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "个人特有的；有独特习性或古怪风格的",
+      "coreEn": "Distinctive of a particular person or thing, especially in an unusual habit, manner, or style.",
+      "coreImageZh": "男孩偏要把铅笔按长短摆成扇形，连角度都要合自己的心意。idiosyncratic 强调某个人或事物独有、往往有些古怪的习惯或风格。",
+      "mnemonics": [
+        {
+          "method": "IDEA + SING + CRITIC",
+          "textZh": "把 idiosyncratic 近音联想到 idea（观点）、sing（唱）和 critic（评论家）：这位评论家不写影评，偏要把自己的观点唱出来。用这种他独有的古怪风格，记住 idiosyncratic。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "VIDEO + SINK + TRAFFIC · 水槽里的车流视频",
+          "textZh": "把 idiosyncratic 的声音联想到 video（视频）、sink（水槽）和 traffic（车流）：这位导演总爱把玩具车摆进厨房水槽，拍成车流视频，观众一看就知道是他的作品。用这种个人独有的古怪风格，记住 idiosyncratic。这是近音联想，不是词源。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "个人特有的方式与特点",
+          "explanationZh": "常修饰 style、approach、behaviour、habit、schedule 等。重点是某个人或事物特有的方式，可以带欣赏，也可以表示古怪，不等于一概愚蠢或错误。",
+          "collocations": [
+            {
+              "phrase": "an idiosyncratic style",
+              "meaningZh": "个人独有的风格"
+            },
+            {
+              "phrase": "an idiosyncratic approach",
+              "meaningZh": "独特的方法"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容词与名词区分",
+          "explanationZh": "idiosyncratic 是形容词；对应名词 idiosyncrasy 指个人特有的习性或怪癖。也能形容某个系统、设计或作品独有的不寻常特点，不只形容人。",
+          "collocations": [
+            {
+              "phrase": "highly idiosyncratic",
+              "meaningZh": "极具个人特色的"
+            },
+            {
+              "phrase": "idiosyncratic behaviour",
+              "meaningZh": "个人特有的古怪行为"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The film, three hours long, is directed in his usual idiosyncratic style.",
+          "translationZh": "这部三小时长的电影沿用了他一贯独特的导演风格。",
+          "explanationZh": "usual 与 idiosyncratic 不矛盾：对他本人是一贯的，对别人则很特别。"
+        },
+        {
+          "textEn": "He follows a very idiosyncratic schedule.",
+          "translationZh": "他遵循一套很有个人特点的作息安排。",
+          "explanationZh": "idiosyncratic 修饰 schedule，强调他的安排不循一般习惯。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "distinct",
+          "comparisonZh": "在风格鲜明、与众不同的语境中有交集。distinct 更宽泛，可指清楚可辨或彼此不同；idiosyncratic 强调某个人或事物独有、常带古怪色彩的特点。distinct groups 不能自动改成 idiosyncratic groups。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "quirky",
+          "comparisonZh": "形容个人习惯、设计或风格有趣而古怪时很接近。quirky 更口语化，也常有俏皮可爱的感觉；idiosyncratic 较正式，更突出特定个人或事物的独有性。"
+        }
+      ]
+    },
+    {
+      "number": 481,
+      "word": "cosmopolitan",
+      "ipa": "/ˌkɒzməˈpɒlɪtən/",
+      "pos": "adj.; n.",
+      "coreMeaningZh": "国际化的；见多识广、不囿于一地的；世界公民",
+      "coreEn": "Bringing together people and cultures from many countries, or showing broad international experience; also a person at home in different cultures.",
+      "coreImageZh": "同一条城市街道上，寿司、披萨和中式蒸点一起出现。男孩不出这条街就能接触不同国家的文化；cosmopolitan 强调国际化、多种文化交汇，也可形容见多识广的人。",
+      "mnemonics": [
+        {
+          "method": "COSMOPOLITAN · 时尚COSMO",
+          "textZh": "《时尚COSMO》的完整刊名里就有 COSMOPOLITAN。把这个完整单词和“国际杂志里汇聚不同地方的时尚与生活”连起来，记住国际化、接触多种文化；这里借刊名作记忆锚点。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "COSMO + POLIT · 世界公民",
+          "textZh": "cosmopolitan 的词源可追溯到“世界公民”：cosmo 对应世界，polit 对应公民。想象把整个世界当作自己的城市，和不同地方的人自在交流，由“世界公民”记住国际化、见多识广。",
+          "original": false,
+          "kind": "etymology",
+          "weak": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "城市、群体和环境的国际化",
+          "explanationZh": "可形容城市、人口、氛围或文化，表示不同国家的人与文化汇聚其中。它不只表示城市很大，也不等于任何跨国活动都必须用这个词。",
+          "collocations": [
+            {
+              "phrase": "a cosmopolitan city",
+              "meaningZh": "国际化城市"
+            },
+            {
+              "phrase": "a cosmopolitan atmosphere",
+              "meaningZh": "国际化的氛围"
+            }
+          ]
+        },
+        {
+          "senseZh": "人的阅历与其他用法",
+          "explanationZh": "形容人或 outlook 时强调见过不同文化、眼界开放。名词 a cosmopolitan 指四海为家、熟悉多种文化的人；生物学中还可指物种在世界多地广泛分布。",
+          "collocations": [
+            {
+              "phrase": "a cosmopolitan outlook",
+              "meaningZh": "开放的国际视野"
+            },
+            {
+              "phrase": "a cosmopolitan species",
+              "meaningZh": "世界广布的物种"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The club has a cosmopolitan atmosphere.",
+          "translationZh": "这家俱乐部有一种国际化的氛围。",
+          "explanationZh": "cosmopolitan 描述的是不同文化共同形成的氛围。"
+        },
+        {
+          "textEn": "Young people today are much more cosmopolitan.",
+          "translationZh": "如今的年轻人更加见多识广，具有国际视野。",
+          "explanationZh": "用于人时侧重跨文化阅历和眼界，不是说每个人都住在大都市。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "international",
+          "comparisonZh": "形容城市、群体或活动时可有交集。international 泛指涉及多个国家；cosmopolitan 更突出文化交汇或对不同文化的熟悉、开放。international law 通常不能换成 cosmopolitan law。"
+        },
+        {
+          "word": "worldly",
+          "comparisonZh": "形容见过世面的人时部分接近。worldly 也可指熟悉人情世故或关心物质享受；cosmopolitan 特别强调跨国家、跨文化的经验，不能在所有语境互换。"
+        }
+      ]
+    },
+    {
+      "number": 4770,
+      "word": "panoply",
+      "ipa": "/ˈpænəpli/",
+      "pos": "n.",
+      "coreMeaningZh": "琳琅满目的整套事物；种类繁多、令人瞩目的陈列",
+      "coreEn": "A large, varied, and often impressive array or collection of things.",
+      "coreImageZh": "园艺架上整整齐齐摆满花盆、手套、铲子、浇水壶和其他工具。男孩张开手展示这一整套丰富的用具：panoply 抓住的是种类多、阵容齐、令人印象深刻。",
+      "mnemonics": [
+        {
+          "method": "PAN + SUPPLY · 厨具满满当当",
+          "textZh": "panoply 近形联想到 pan（平底锅）和 supply（供应品）：走进厨具店，煎锅、炒锅、汤锅和配套用具排得满满当当。由这一整套丰富陈列，记住 panoply。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "PIANO + PLAY · 琴行大阵容",
+          "textZh": "把 panoply 近形联想到 piano（钢琴）加 play（弹奏）：琴行把各种钢琴、电子琴和键盘乐器排成一长列，任你试弹。想到这套种类丰富、令人眼花缭乱的陈列，就想起 panoply。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "a panoply of 的常见结构",
+          "explanationZh": "偏正式或文学语体，通常说 a panoply of 加复数名词或不可数名词，表示丰富多样的一整套。常与 whole、full、impressive 等词连用。",
+          "collocations": [
+            {
+              "phrase": "a panoply of tools",
+              "meaningZh": "种类齐全的一套工具"
+            },
+            {
+              "phrase": "a whole panoply of options",
+              "meaningZh": "丰富多样的一整套选项"
+            }
+          ]
+        },
+        {
+          "senseZh": "具体陈列与抽象范围",
+          "explanationZh": "可以指看得见的装备，也可指情绪、策略、服务等抽象事物。并不一定真有一个陈列台；历史用法还可指全副盔甲。",
+          "collocations": [
+            {
+              "phrase": "the full panoply of emotions",
+              "meaningZh": "各种各样的情绪"
+            },
+            {
+              "phrase": "a panoply of colours",
+              "meaningZh": "斑斓丰富的色彩"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "There is a whole panoply of remedies and drugs available to the modern doctor.",
+          "translationZh": "现代医生可以使用种类繁多的疗法和药物。",
+          "explanationZh": "a whole panoply of 强调选择丰富，不是只有一种疗法。"
+        },
+        {
+          "textEn": "The government has promised a whole panoply of social and economic improvements.",
+          "translationZh": "政府承诺实施一整套广泛的社会与经济改进措施。",
+          "explanationZh": "这里用于抽象的 improvements，指范围广、种类多的措施。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "array",
+          "comparisonZh": "a panoply/array of tools 等结构可以接近。array 更常见，可只是有序排列或一系列；panoply 更强调种类繁多、阵容完整或令人瞩目。技术上的 array（数组）不能用 panoply 替换。"
+        },
+        {
+          "word": "assortment",
+          "comparisonZh": "都可指各式各样的一组东西。assortment 可以是随意混合的杂集，不必完整或壮观；panoply 较正式，往往带丰富、齐备或引人注目的色彩。"
+        }
+      ]
+    },
+    {
+      "number": 1724,
+      "word": "peremptory",
+      "ipa": "/pəˈremptəri/",
+      "pos": "adj.",
+      "coreMeaningZh": "不容置辩的；命令式的；专横的",
+      "coreEn": "Demanding immediate obedience and allowing no discussion, question, or refusal.",
+      "coreImageZh": "男孩刚想问一句，老师就指着纸张说“现在就做，不用再问”。peremptory 指的是要求立即服从、不让人商量的语气或举动，不只是一般的坚定。",
+      "mnemonics": [
+        {
+          "method": "PER EMPTY · 空桶立刻装满",
+          "textZh": "把 peremptory 的词形联想到 per（每）和 empty（空的）：主管指着空桶命令“每个都立刻装满，不许问为什么！”用这种不给商量余地的命令，记住不容置辩。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "PARENT + STORY · 不许再解释",
+          "textZh": "把 peremptory 近形、近音联想到 parent（家长）加 story（故事、说辞）：孩子刚想解释，家长就打断他的 story：“不用再说，照办！”这种不给讨论余地的命令式口气，就是 peremptory。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "要求服从的语气与举动",
+          "explanationZh": "常修饰 tone、manner、order、command、gesture、instructions 等，语体较正式，通常带批评色彩。它强调不让对方质疑或拒绝。",
+          "collocations": [
+            {
+              "phrase": "a peremptory tone",
+              "meaningZh": "不容置辩的语气"
+            },
+            {
+              "phrase": "peremptory instructions",
+              "meaningZh": "命令式的指示"
+            }
+          ]
+        },
+        {
+          "senseZh": "不容讨论或更改的决定",
+          "explanationZh": "也可强调决定具有终结性、不容争论。不要和 pre-emptive（先发制人的、预先防止的）混淆；peremptory 的重心不是“提前”。",
+          "collocations": [
+            {
+              "phrase": "a peremptory dismissal",
+              "meaningZh": "不容争辩的驳回"
+            },
+            {
+              "phrase": "a peremptory gesture",
+              "meaningZh": "不容拒绝的手势"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He started issuing peremptory instructions.",
+          "translationZh": "他开始发出不容置辩的指令。",
+          "explanationZh": "issuing instructions 是发出指令；peremptory 说明发令者不接受质疑。"
+        },
+        {
+          "textEn": "In his usual peremptory manner, he ordered us all into the conference room.",
+          "translationZh": "他用一贯专横的口气，命令我们所有人进会议室。",
+          "explanationZh": "peremptory manner 与 ordered 相呼应，突出立即服从的要求。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "imperious",
+          "comparisonZh": "形容语气、态度或命令时接近，都可能带盛气凌人的意味。imperious 更突出傲慢地摆出权威；peremptory 特别突出不容争辩和要求立即服从。"
+        },
+        {
+          "word": "dictatorial",
+          "comparisonZh": "形容专横的态度或命令时可接近。dictatorial 还可形容独裁统治或长期专断的管理方式；peremptory 常聚焦某次话语、指令或手势不让人拒绝。"
+        }
+      ]
+    },
+    {
+      "number": 1954,
+      "word": "ramshackle",
+      "ipa": "/ˈræmˌʃækəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "破败不稳的；摇摇欲坠的；拼凑而组织松散的",
+      "coreEn": "Poorly built or in bad repair and liable to fall apart; also badly organized or loosely put together.",
+      "coreImageZh": "旧木棚屋顶下垂、木板歪斜，男孩轻碰门边，松动的门就晃起来。ramshackle 不只是“旧”，而是破败、连接松散，仿佛随时会散架。",
+      "mnemonics": [
+        {
+          "method": "ROOM + SHAKE · 破屋晃起来",
+          "textZh": "ramshackle 近音联想到 room（房间）加 shake（摇晃）：一辆车从门前驶过，老房子的门窗就跟着晃。由“破屋一震就摇摇欲坠”记住 ramshackle。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "烂车壳 · 一拉就要散架",
+          "textZh": "把 ramshackle 的整体声音粗略联想成“烂车壳”：报废车锈迹斑斑，松垮的门板一拉就像要散架。用这副破败不稳的车壳记住 ramshackle；这是近音联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "建筑、车辆与实物的破败",
+          "explanationZh": "常形容房屋、棚屋、车辆等做工差或失修严重、看起来快要散架的东西。普通陈旧但结实的房子不一定 ramshackle。",
+          "collocations": [
+            {
+              "phrase": "a ramshackle shed",
+              "meaningZh": "破败摇晃的棚屋"
+            },
+            {
+              "phrase": "a ramshackle vehicle",
+              "meaningZh": "破旧不稳的车辆"
+            }
+          ]
+        },
+        {
+          "senseZh": "比喻拼凑、缺乏组织",
+          "explanationZh": "也可形容体系、联盟或安排，表示东拼西凑、组织不良，仿佛随时会瓦解。这里不必真的有破损的木板。",
+          "collocations": [
+            {
+              "phrase": "a ramshackle alliance",
+              "meaningZh": "松散拼凑的联盟"
+            },
+            {
+              "phrase": "a ramshackle system",
+              "meaningZh": "组织混乱的体系"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They entered the shop, which was a curious ramshackle building.",
+          "translationZh": "他们走进了那家店，那是一座奇特而破败的建筑。",
+          "explanationZh": "ramshackle 修饰 building，说明建筑本身的破败不稳。"
+        },
+        {
+          "textEn": "They joined with a ramshackle alliance of other rebels.",
+          "translationZh": "他们与其他反叛者组成的松散联盟联合起来。",
+          "explanationZh": "ramshackle 在这里是比喻，描述联盟组织松散、不牢靠。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "dilapidated",
+          "comparisonZh": "形容房屋、车辆等年久失修时很接近。dilapidated 更突出失修造成的破败；ramshackle 也能指本来就搭得松散、质量差，还常用于组织或联盟的比喻。"
+        },
+        {
+          "word": "rickety",
+          "comparisonZh": "形容家具、建筑或车辆结构松动不稳时接近。rickety 特别突出摇晃、承重不可靠；ramshackle 往往同时暗示整体破败或胡乱拼凑。"
+        }
+      ]
+    }
+  ]
+}

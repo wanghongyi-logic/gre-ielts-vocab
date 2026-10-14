@@ -492,3 +492,39 @@
 
 #offline-settings .library-release-row{color:var(--ink);font-size:16px;text-decoration:none}
 #offline-settings .library-release-row:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* One rhythm for peer settings actions; range fields stay inside their row. */
+#offline-settings{--settings-action-size:16px;--settings-action-leading:1.5;--settings-action-gap:12px}
+#offline-settings .library-disclosure>summary,
+#offline-settings .release-browser>summary,
+#offline-settings .library-action-row h3,
+#offline-settings .import-row .offline-import,
+#offline-settings .library-mode-button,
+#offline-settings .library-clear-action{
+ font-family:inherit;font-size:var(--settings-action-size);font-weight:400;line-height:var(--settings-action-leading);letter-spacing:0;
+}
+#offline-settings .library-action-row,
+#offline-settings .library-disclosure>summary,
+#offline-settings .release-browser>summary{min-height:64px;padding:12px 0;gap:var(--settings-action-gap)}
+#offline-settings .library-range-row{margin:0;border-top:1px solid var(--settings-rule)}
+#offline-settings .library-range-row>.library-disclosure-body{padding:0 0 16px}
+#offline-settings .library-range-fields{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:center}
+#offline-settings .library-range-fields input{
+ box-sizing:border-box;width:100%;min-width:0;min-height:44px;padding:8px 10px;border:1px solid var(--settings-rule);border-radius:2px;
+ background:transparent;color:var(--ink);font-family:inherit;font-size:16px;font-weight:400;line-height:1.5;font-variant-numeric:tabular-nums;
+}
+#offline-settings .library-range-fields>.library-text-action{grid-column:1/-1;justify-self:start;min-height:44px;margin:0;padding:8px 0;font-size:16px;font-weight:400;line-height:1.5}
+#offline-settings [data-range-delete]{color:#8d5642}
+#offline-settings .library-range-feedback{min-width:0}
+#offline-settings .library-range-feedback progress{display:block;width:100%;margin:8px 0;accent-color:var(--moss)}
+#offline-settings .library-range-feedback progress[hidden]{display:none}
+#offline-settings .library-range-feedback p{margin:8px 0 0;font-size:14px;font-weight:400;line-height:1.5;color:var(--settings-muted)}
+#offline-settings .library-range-feedback p:empty{display:none}
+#offline-settings .library-range-feedback button{min-height:44px;padding:8px 0;font:inherit;font-size:14px;line-height:1.5;border:0;background:transparent;color:var(--moss)}
+#offline-settings .library-range-fields input:focus-visible{outline:2px solid var(--moss);outline-offset:2px}
+#offline-settings .library-range-fields button:disabled{opacity:.45}
+#offline-settings .library-download-row{font-size:14px;line-height:1.5}
+#offline-settings .library-download-row button{font-size:14px;font-weight:400;line-height:1.5}
+#offline-settings .library-clear-row{padding-top:12px}
+#offline-settings .library-clear-row .library-clear-action{min-height:44px;padding:8px 0}
+#offline-settings .library-range-feedback [hidden]{display:none}

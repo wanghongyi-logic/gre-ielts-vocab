@@ -1,3 +1,4 @@
+import {savedRangeFields,bindSavedRange} from './offline-range.js';
 import {mountSavedExport} from './offline-export-ui.js';
 import {mountReleaseDownloads} from './offline-releases.js';
 import {createMediaControl} from './offline-control.js';
@@ -6,7 +7,7 @@ import {OFFLINE_EDITION,setMediaEdition,chooseVideoMode,videoMode} from './offli
 import {importPack,inspectLibrary,cleanUnusedPacks,clearSavedResources,clearSavedWords,deletePack,storageStatus} from './offline-packs.js';
 const size=n=>(n/1024/1024).toFixed(1)+' MB';
 export function installOfflineManager(catalog){
- setMediaEdition(catalog);let controller=null,activeOperation=null,cachedPaths=[],clearingThisPage=false,changingMode=false,mutating=false,filePickerOpen=false,savedReadyIds=null,savedTotal=catalog.entries.length,releaseDownloads=null,refreshEpoch=0;
+ setMediaEdition(catalog);let controller=null,activeOperation=null,cachedPaths=[],clearingThisPage=false,changingMode=false,mutating=false,filePickerOpen=false,savedReadyIds=null,savedTotal=catalog.entries.length,releaseDownloads=null,savedExport=null,rangeDelete=null,refreshEpoch=0;
  window.addEventListener('gre-update-can-reload',event=>{if(controller||changingMode||clearingThisPage||mutating||filePickerOpen)event.detail.blocked=true;});
  const host=document.createElement('section');host.className='offline-library';
  host.innerHTML=`<details class="library-page" open>
@@ -35,6 +36,7 @@ export function installOfflineManager(catalog){
    <div class="library-disclosure-body"><ul data-packs></ul><button type="button" class="library-text-action" data-clean hidden>清理未使用的文件</button></div>
   </details>
   <div class="library-action-row mode-row"><div><h3>阅读方式</h3><p data-mode-description></p><p role="status" data-mode-status></p></div><div data-mode-action></div></div>
+  <details class="library-disclosure library-range-row" data-delete-range><summary><span>按范围删除</span><span class="library-disclosure-mark" aria-hidden="true">+</span></summary><div class="library-disclosure-body">${savedRangeFields('range-delete')}<div class="library-range-feedback"><button type="button" data-range-delete-cancel hidden>取消删除</button><progress data-range-delete-progress hidden aria-label="删除进度"></progress><p role="status" aria-live="polite" data-range-delete-status></p></div></div></details>
   <div class="library-clear-row"><button type="button" class="library-clear-action" data-clear-all>清除已保存资源</button><p role="status" data-status></p></div>
  </details>`;
  host.id='offline-settings';host.setAttribute('aria-label','本机书库设置');host.classList.add('settings-leaf');host.hidden=true;document.querySelector('.contents-tools').after(host);
@@ -44,21 +46,21 @@ export function installOfflineManager(catalog){
  welcome.innerHTML='<p role="status" data-text-ready>正在准备文字离线…</p>';
  host.append(welcome);
  const settingsStyle=document.createElement('link');settingsStyle.rel='stylesheet';settingsStyle.href=new URL('./settings-storybook.css',import.meta.url).href;document.head.append(settingsStyle);
- const input=host.querySelector('input'),cancel=host.querySelector('[data-cancel]'),progress=host.querySelector('[data-import-progress]'),status=host.querySelector('[data-status]'),list=host.querySelector('[data-packs]'),space=host.querySelector('[data-space]'),clean=host.querySelector('[data-clean]');
+ const input=host.querySelector('input[type="file"]'),cancel=host.querySelector('[data-cancel]'),progress=host.querySelector('[data-import-progress]'),status=host.querySelector('[data-status]'),list=host.querySelector('[data-packs]'),space=host.querySelector('[data-space]'),clean=host.querySelector('[data-clean]');
  const importTarget={progress,cancel,status:host.querySelector('[data-import-status]')};
- input.addEventListener('click',()=>{filePickerOpen=true;});
- for(const type of ['change','cancel'])input.addEventListener(type,()=>{filePickerOpen=false;});
- window.addEventListener('focus',()=>{if(filePickerOpen)setTimeout(()=>{filePickerOpen=false;},500);});
+ input.addEventListener('click',()=>{filePickerOpen=true;refreshDownloads();});
+ for(const type of ['change','cancel'])input.addEventListener(type,()=>{filePickerOpen=false;refreshDownloads();});
+ window.addEventListener('focus',()=>{if(filePickerOpen)setTimeout(()=>{filePickerOpen=false;refreshDownloads();},500);});
  const downloadRows=optionalMediaGroups(catalog).map(group=>{
   const row=document.createElement('li'),label=document.createElement('span'),button=document.createElement('button');
   row.className='library-download-row';button.type='button';button.className='library-text-action';
   const feedback=document.createElement('div');feedback.className='library-download-feedback';feedback.innerHTML='<button type="button" data-download-cancel hidden>取消下载</button><progress data-download-progress hidden aria-label="本组下载进度"></progress><p role="status" data-download-status></p>';
   const target={progress:feedback.querySelector('[data-download-progress]'),cancel:feedback.querySelector('[data-download-cancel]'),status:feedback.querySelector('[data-download-status]')};
   target.downloadIds=group.ids;target.progress.setAttribute('aria-label',`第 ${group.start}–${group.end} 词下载进度`);target.cancel.onclick=()=>cancelOperation(target);
-  button.onclick=()=>group.start===1&&group.end===50&&group.ids.every(id=>savedReadyIds?.includes(id))?clearFirstGroup(group,target):group.hostedAvailable&&run('download',target,async options=>{const library=await inspectLibrary(catalog);const result=await downloadLessons(group.ids,library.opfsPaths,options);return {...result,pages:true,wordIds:group.ids};});
+  button.onclick=()=>!group.ids.every(id=>savedReadyIds?.includes(id))&&group.hostedAvailable&&run('download',target,async options=>{const library=await inspectLibrary(catalog);const result=await downloadLessons(group.ids,library.opfsPaths,options);return {...result,pages:true,wordIds:group.ids};});
   row.append(label,button,feedback);host.querySelector('[data-pages-downloads]').append(row);return {group,label,button,target};
  });
- function refreshDownloads(){for(const {group,label,button} of downloadRows){const saved=group.ids.filter(id=>savedReadyIds?.includes(id)).length;label.textContent=`第 ${group.start}–${group.end} 词 · ${size(group.bytes)}${group.hostedAvailable?'':saved===group.ids.length?' · 已保存到本机':' · 请从下方下载资源包后导入'}`;button.hidden=!group.hostedAvailable;button.textContent=saved===group.ids.length?'已保存':saved?`继续下载 ${saved}/${group.ids.length}`:'下载';button.disabled=!group.hostedAvailable||Boolean(controller)||clearingThisPage||changingMode||mutating||(saved===group.ids.length&&!(group.start===1&&group.end===50));}}
+ function refreshDownloads(){rangeDelete?.sync(Boolean(controller)||clearingThisPage||changingMode||mutating||filePickerOpen);savedExport?.sync();for(const {group,label,button} of downloadRows){const saved=group.ids.filter(id=>savedReadyIds?.includes(id)).length;label.textContent=`第 ${group.start}–${group.end} 词 · ${size(group.bytes)}${group.hostedAvailable?'':saved===group.ids.length?' · 已保存到本机':' · 请从下方下载资源包后导入'}`;button.hidden=!group.hostedAvailable;button.textContent=saved===group.ids.length?'已保存':saved?`继续下载 ${saved}/${group.ids.length}`:'下载';button.disabled=!group.hostedAvailable||Boolean(controller)||clearingThisPage||changingMode||mutating||saved===group.ids.length;}}
  refreshDownloads();
  const openManager=()=>{host.querySelector('details').open=true;location.hash='/settings';refresh(true);};
  const modeButton=document.createElement('button');modeButton.type='button';modeButton.className='library-mode-button';
@@ -84,15 +86,34 @@ export function installOfflineManager(catalog){
    space.textContent=storage.usage!==undefined?'占用 '+size(storage.usage):'存储空间暂不可读';
   }catch{if(epoch===refreshEpoch)space.textContent='暂时无法读取本机存储';}
  }
- async function clearFirstGroup(group,target){
-  if(controller||clearingThisPage||changingMode||mutating)return;
-  mutating=true;syncMutationControls();target.status.textContent='';target.progress.setAttribute('aria-label',`第 ${group.start}–${group.end} 词清除进度`);target.progress.hidden=false;target.progress.removeAttribute('value');
+ const rangeSection=host.querySelector('[data-delete-range]');
+ rangeDelete=bindSavedRange(rangeSection,catalog,{prefix:'range-delete',verb:'删除'});
+ const deleteProgress=rangeSection.querySelector('[data-range-delete-progress]'),deleteStatus=rangeSection.querySelector('[data-range-delete-status]'),deleteCancel=rangeSection.querySelector('[data-range-delete-cancel]');
+ let deletion=null;
+ deleteCancel.onclick=()=>{if(!deletion||deletion.committing)return;deletion.controller.abort();deleteCancel.disabled=true;};
+ rangeDelete.button.onclick=async()=>{
+  if(controller||clearingThisPage||changingMode||mutating||filePickerOpen)return;
+  let selected;try{selected=rangeDelete.selection();}catch(error){deleteStatus.textContent=error.message;return;}
+  const current={controller:new AbortController(),committing:false};deletion=current;mutating=true;syncMutationControls();
+  deleteStatus.textContent='';deleteProgress.hidden=false;deleteProgress.removeAttribute('value');deleteCancel.hidden=false;deleteCancel.disabled=false;
   try{
    const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-clear-library',{detail}));await Promise.all(detail.waits);
-   await clearSavedWords(catalog,group.ids);
-  }catch(error){target.status.textContent=`清除未完成：${error.message}`;}
-  finally{const updated={waits:[]};window.dispatchEvent(new CustomEvent('gre-library-updated',{detail:updated}));await Promise.all(updated.waits).catch(()=>{});target.progress.hidden=true;target.progress.setAttribute('aria-label',`第 ${group.start}–${group.end} 词下载进度`);await refresh(true);mutating=false;syncMutationControls();}
- }
+   const result=await clearSavedWords(catalog,selected.ids,{signal:current.controller.signal,onProgress:p=>{
+    if(deletion!==current)return;
+    if(p.phase==='delete'||p.phase==='done'){current.committing=true;deleteCancel.hidden=true;}
+    if(p.phase==='prepare'){deleteProgress.removeAttribute('value');deleteStatus.textContent='正在准备';}
+    else{deleteProgress.max=p.total||1;deleteProgress.value=p.completed;deleteStatus.textContent=`删除 ${p.completed}/${p.total}`;}
+   }});
+   deleteStatus.textContent=result.removedAssets?`已删除 ${selected.start}–${selected.end} · ${result.removedAssets} 个资源`:'这段没有可删除的资源';
+  }catch(error){deleteStatus.textContent=error.name==='AbortError'?'':`删除未完成：${error.message}`;}
+  finally{
+   // Rebuild reading and totals in place, including after cancellation or a
+   // partial cleanup failure. Keep the route, drawer and inputs untouched.
+   try{const updated={waits:[]};window.dispatchEvent(new CustomEvent('gre-library-updated',{detail:updated}));await Promise.all(updated.waits);}
+   catch(error){deleteStatus.textContent=`刷新未完成：${error.message}`;}
+   await refresh(true);deletion=null;mutating=false;deleteCancel.hidden=true;deleteProgress.hidden=true;syncMutationControls();
+  }
+ };
  function syncMutationControls(){const busy=Boolean(controller)||clearingThisPage||changingMode||mutating;input.disabled=busy;modeButton.disabled=busy;clean.disabled=busy;host.querySelector('[data-clear-all]').disabled=busy;for(const button of list.querySelectorAll('button'))button.disabled=busy;refreshDownloads();}
  clean.onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating)return;mutating=true;syncMutationControls();try{const unused=(await inspectLibrary(catalog)).packs.filter(p=>p.ownedCurrentAssets===0);if(!unused.length||!confirm(`清理 ${unused.length} 个当前未使用的书包？仍在使用的内容会保留。`))return;const count=await cleanUnusedPacks(catalog,unused.map(p=>p.key));status.textContent=`已清理 ${count} 个当前未使用的书包`;await refresh();}catch(error){status.textContent=`清理未完成：${error.message}`;}finally{mutating=false;syncMutationControls();}};
  host.querySelector('[data-clear-all]').onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating)return;const library=await inspectLibrary(catalog,{cachedPaths});if(!confirm(`清除本机已保存的 ${library.readyIds.length} 词视频与插图，以及 ${library.packs.length} 个导入资源包？文字页面、阅读进度、偏好和「文件」里的原始 ZIP 会保留。`))return;if(controller||clearingThisPage||changingMode||mutating)return;clearingThisPage=true;releaseDownloads?.cancelPending();refreshDownloads();const button=host.querySelector('[data-clear-all]');button.disabled=true;input.disabled=true;modeButton.disabled=true;status.textContent='正在停止读取并清除本机资源…';try{sessionStorage.setItem('gre-media-paused-after-clear','1');const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-clear-library',{detail}));await Promise.all(detail.waits);await clearSavedResources();cachedPaths=[];sessionStorage.setItem('gre-library-cleared-message','1');location.reload();}catch(error){clearingThisPage=false;status.textContent=`清除未完成：${error.message}，可以重新尝试`;button.disabled=false;input.disabled=false;modeButton.disabled=false;await refresh(true);}};
@@ -140,7 +161,7 @@ export function installOfflineManager(catalog){
    // from another tab changes the generation and must never resurrect media.
    if(!activated&&ticket!==null){try{const state=await sharedControl.state();if(!state.paused&&state.generation===ticket){const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-library-updated',{detail}));await Promise.all(detail.waits);}}catch{}}
    controller=null;activeOperation=null;
-   input.disabled=false;modeButton.disabled=false;input.value='';cancel.hidden=true;progress.hidden=true;await refresh(true);
+   input.disabled=false;modeButton.disabled=false;input.value='';cancel.hidden=true;progress.hidden=true;await refresh(true);syncMutationControls();
   }
  }
  input.onchange=()=>{const file=input.files[0];if(file)return run('import',importTarget,options=>importPack(file,catalog,options));};
@@ -150,8 +171,8 @@ export function installOfflineManager(catalog){
  window.addEventListener('gre-offline-asset',({detail})=>{if(detail.phase==='saved'){clearTimeout(savedRefreshTimer);savedRefreshTimer=setTimeout(refreshSaved,600);}});
  window.addEventListener('gre-offline-corrupt',()=>{status.textContent='有一份本机内容无法读取，请重新导入对应书包；文字仍可阅读';clearTimeout(savedRefreshTimer);savedRefreshTimer=setTimeout(refreshSaved,500);});
  releaseDownloads=mountReleaseDownloads({host,catalog});
- mountSavedExport({host,catalog,isBusy:()=>Boolean(controller)||clearingThisPage||changingMode||mutating||filePickerOpen,setBusy:value=>{mutating=value;syncMutationControls();}});
- const drawerSelectors=['.library-page','.library-pages-downloads','[data-release-browser]','.library-packs'];
+ savedExport=mountSavedExport({host,catalog,isBusy:()=>Boolean(controller)||clearingThisPage||changingMode||mutating||filePickerOpen,setBusy:value=>{mutating=value;syncMutationControls();}});
+ const drawerSelectors=['.library-page','.library-pages-downloads','[data-release-browser]','.library-packs','[data-export-range]','[data-delete-range]'];
  window.addEventListener('gre-update-capture',event=>{event.detail.drawers=Object.fromEntries(drawerSelectors.map(selector=>[selector,Boolean(host.querySelector(selector)?.open)]));});
  window.addEventListener('gre-update-restore',event=>{
   const drawers=event.detail.position?.drawers;if(!drawers)return;

@@ -6,6 +6,7 @@ import {pathToFileURL,fileURLToPath} from 'node:url';
 const root=process.env.GRE_IMPLEMENTATION_DIR||fileURLToPath(new URL('../',import.meta.url));
 const source=await readFile(root+'/gre-learning/offline-manager.js','utf8');
 const exportSource=await readFile(root+'/gre-learning/offline-export-ui.js','utf8');
+const rangeSource=await readFile(root+'/gre-learning/offline-range.js','utf8');
 const css=await readFile(root+'/gre-learning/settings-storybook.css','utf8');
 const {optionalMediaGroups}=await import(pathToFileURL(root+'/gre-learning/offline-batch.js'));
 const {mountReleaseDownloads,RELEASES_URL}=await import(pathToFileURL(root+'/gre-learning/offline-releases.js'));
@@ -20,7 +21,7 @@ class Element{
  before(node){const i=this.parent.children.indexOf(this);node.parent=this.parent;this.parent.children.splice(i,0,node);}
  remove(){this.parent.children=this.parent.children.filter(n=>n!==this);}
  replaceChildren(...nodes){this.children=[];this.append(...nodes);}
- matches(s){if(s.startsWith('#'))return this.id===s.slice(1);if(s.startsWith('.'))return this.className.split(' ').includes(s.slice(1));if(s.startsWith('[')){const [k,v]=s.slice(1,-1).split('=');return k in this.attributes&&(!v||this.attributes[k]===v.replaceAll('"',''));}return this.tagName===s;}
+ matches(s){const qualified=s.match(/^([\w-]+)(\[.+\])$/);if(qualified)return this.tagName===qualified[1]&&this.matches(qualified[2]);if(s.startsWith('#'))return this.id===s.slice(1);if(s.startsWith('.'))return this.className.split(' ').includes(s.slice(1));if(s.startsWith('[')){const [k,v]=s.slice(1,-1).split('=');return k in this.attributes&&(!v||this.attributes[k]===v.replaceAll('"',''));}return this.tagName===s;}
  querySelectorAll(s){return this.children.flatMap(n=>[...(n.matches(s)?[n]:[]),...n.querySelectorAll(s)]);}
  querySelector(s){return this.querySelectorAll(s)[0]||null;}
  addEventListener(k,fn){this.listeners[k]=fn;}
@@ -29,15 +30,17 @@ class Element{
 const tick=()=>new Promise(r=>setImmediate(r));
 function fixture({allHosted=true,first50=false}={}){
  const doc={createElement:tag=>new Element(tag,doc)};doc.root=new Element('document',doc);doc.head=new Element('head',doc);doc.root.append(doc.head);doc.querySelector=s=>doc.root.querySelector(s);doc.getElementById=id=>doc.querySelector('#'+id);const contents=new Element('div',doc);contents.className='contents-tools';doc.root.append(contents);const nav=new Element('nav',doc),search=new Element('button',doc);search.id='open-search';doc.root.append(nav);nav.append(search);
- const calls={inspections:0,imports:0,downloads:0,activations:0,clears:0,selective:[],deletes:0,cleanups:0,exports:0,exportCleanups:0,objectURLs:[],revokedURLs:[],modes:[],reloads:0,confirms:[]};let pendingClear,clearError,confirmed=false,releaseFetches=0,importResult={wordIds:[1,2]},pendingImport,pendingDownload,pendingExport,progressOptions,exportOptions,mode='auto',pendingActivation;const events={};
+ const calls={inspections:0,imports:0,downloads:0,activations:0,clears:0,selective:[],deletes:0,cleanups:0,exports:0,exportCleanups:0,objectURLs:[],revokedURLs:[],modes:[],reloads:0,confirms:[]};let pendingClear,clearError,confirmed=false,releaseFetches=0,importResult={wordIds:[1,2]},pendingImport,pendingDownload,pendingExport,progressOptions,exportOptions,clearOptions,mode='auto',pendingActivation;const events={};
  const exportResult={complete:2,packages:[{name:'GRE-1-2.zip',file:new Blob(['saved resources'])}],cleanup:async()=>{calls.exportCleanups++;}};
  class FixtureURL extends URL{static createObjectURL(file){const url='blob:settings-export-'+(calls.objectURLs.length+1);calls.objectURLs.push({url,file});return url;}static revokeObjectURL(url){calls.revokedURLs.push(url);}}
  const data={readyIds:[1,2],total:3,packs:[{wordIds:[1,2],version:'v1',bytes:2048,available:true,ownedCurrentAssets:2,key:'one'}]};
  if(first50){data.readyIds=Array.from({length:50},(_,i)=>1000+i);data.total=51;}
- const ctx=vm.createContext({document:doc,window:{addEventListener(k,fn){events[k]=fn;},dispatchEvent(event){if(event.type==='gre-library-updated'){calls.activations++;if(pendingActivation)event.detail.waits.push(pendingActivation);}}},location:{hash:'',reload(){calls.reloads++;}},sessionStorage:{getItem(){return null;},setItem(){},removeItem(){}},navigator:{storage:{persist:async()=>true},serviceWorker:{addEventListener(){}}},URL:FixtureURL,File,Blob,AbortController,DOMException,CustomEvent:class{constructor(t,o){this.type=t;this.detail=o.detail;}},MessageChannel,RELEASES_URL,setTimeout:()=>1,clearTimeout(){},optionalMediaGroups:catalog=>optionalMediaGroups(catalog).map(group=>({...group,hostedAvailable:allHosted||group.hostedAvailable})),setMediaEdition(){},videoMode:()=>mode,chooseVideoMode:async value=>{calls.modes.push(value);mode=value;},OFFLINE_EDITION:'v12',createMediaControl:()=>({subscribe(){},ticket:async()=>0,state:async()=>({generation:0})}),batchStatus:async()=>({readyPaths:[]}),inspectLibrary:async()=>{calls.inspections++;return data;},storageStatus:async()=>({usage:1024,quota:10240,persistent:false}),deletePack:async()=>{calls.deletes++;},cleanUnusedPacks:async()=>{calls.cleanups++;return 0;},clearSavedResources:async()=>{calls.clears++;},clearSavedWords:async(catalog,ids)=>{calls.selective.push([...ids]);if(pendingClear)await pendingClear;if(clearError)throw clearError;data.readyIds=data.readyIds.filter(id=>!ids.includes(id));},downloadLessons:async(ids,paths,options)=>{calls.downloads++;progressOptions=options;return pendingDownload?await pendingDownload:{wordIds:ids};},importPack:async(file,catalog,options)=>{calls.imports++;progressOptions=options;return pendingImport?await pendingImport:importResult;},exportSavedResources:async(catalog,options)=>{calls.exports++;exportOptions=options;return pendingExport?await pendingExport:exportResult;},mountReleaseDownloads:options=>mountReleaseDownloads({...options,fetcher:async()=>{releaseFetches++;return Response.json([]);}}),confirm:msg=>{calls.confirms.push(msg);return confirmed;}});
+ const ctx=vm.createContext({document:doc,window:{addEventListener(k,fn){events[k]=fn;},dispatchEvent(event){if(event.type==='gre-library-updated'){calls.activations++;if(pendingActivation)event.detail.waits.push(pendingActivation);}}},location:{hash:'',reload(){calls.reloads++;}},sessionStorage:{getItem(){return null;},setItem(){},removeItem(){}},navigator:{storage:{persist:async()=>true},serviceWorker:{addEventListener(){}}},URL:FixtureURL,File,Blob,AbortController,DOMException,CustomEvent:class{constructor(t,o){this.type=t;this.detail=o.detail;}},MessageChannel,RELEASES_URL,setTimeout:()=>1,clearTimeout(){},optionalMediaGroups:catalog=>optionalMediaGroups(catalog).map(group=>({...group,hostedAvailable:allHosted||group.hostedAvailable})),setMediaEdition(){},videoMode:()=>mode,chooseVideoMode:async value=>{calls.modes.push(value);mode=value;},OFFLINE_EDITION:'v12',createMediaControl:()=>({subscribe(){},ticket:async()=>0,state:async()=>({generation:0})}),batchStatus:async()=>({readyPaths:[]}),inspectLibrary:async()=>{calls.inspections++;return data;},storageStatus:async()=>({usage:1024,quota:10240,persistent:false}),deletePack:async()=>{calls.deletes++;},cleanUnusedPacks:async()=>{calls.cleanups++;return 0;},clearSavedResources:async()=>{calls.clears++;},clearSavedWords:async(catalog,ids,options)=>{calls.selective.push([...ids]);clearOptions=options;if(pendingClear)await pendingClear;if(clearError)throw clearError;if(options?.signal?.aborted)throw new DOMException('Cancelled','AbortError');data.readyIds=data.readyIds.filter(id=>!ids.includes(id));return {removedAssets:ids.length*3};},downloadLessons:async(ids,paths,options)=>{calls.downloads++;progressOptions=options;return pendingDownload?await pendingDownload:{wordIds:ids};},importPack:async(file,catalog,options)=>{calls.imports++;progressOptions=options;return pendingImport?await pendingImport:importResult;},exportSavedResources:async(catalog,options)=>{calls.exports++;exportOptions=options;return pendingExport?await pendingExport:exportResult;},mountReleaseDownloads:options=>mountReleaseDownloads({...options,fetcher:async()=>{releaseFetches++;return Response.json([]);}}),confirm:msg=>{calls.confirms.push(msg);return confirmed;}});
+ vm.runInContext(rangeSource.replaceAll('export function','function'),ctx);
  vm.runInContext(exportSource.replace(/^import .*;\n/gm,'').replace('export function','function'),ctx);
  vm.runInContext(source.replace(/^import .*;\n/gm,'').replace('export function','function').replaceAll('import.meta.url',JSON.stringify('https://fixture.test/gre-learning/offline-manager.js'))+(first50?'\ninstallOfflineManager({entries:Array.from({length:51},(_,i)=>({number:1000+i,displayOrdinal:i+1,storyMedia:{poster:{url:"p"+i,bytes:100},video:{url:"v"+i,bytes:200}}}))});':'\ninstallOfflineManager({entries:[{number:1},{number:2},{number:3},...[51,52,101,102].map(number=>({number,displayOrdinal:number,storyMedia:{poster:{url:"p"+number,bytes:100},video:{url:"v"+number,bytes:200}}}))]});'),ctx);
- return {doc,ctx,calls,data,exportResult,setExport(p){pendingExport=p;},exportProgress(p){exportOptions.onProgress(p);},get exportSignal(){return exportOptions?.signal;},get host(){return doc.getElementById('offline-settings');},get releases(){return releaseFetches;},setClear(p,error){pendingClear=p;clearError=error;},setConfirmed(v){confirmed=v;},setActivation(p){pendingActivation=p;},setPending(p){pendingImport=p;},setDownload(p){pendingDownload=p;},progress(p){progressOptions.onProgress(p);},get signal(){return progressOptions.signal;},emit(k,detail){events[k]({detail});}};
+ if(!first50){const end=doc.getElementById('offline-settings').querySelector('[data-export-end]');end.value='3';end.listeners.input();}
+ return {doc,ctx,calls,data,exportResult,clearProgress(p){clearOptions.onProgress(p);},get clearSignal(){return clearOptions?.signal;},get exportOptions(){return exportOptions;},setExport(p){pendingExport=p;},exportProgress(p){exportOptions.onProgress(p);},get exportSignal(){return exportOptions?.signal;},get host(){return doc.getElementById('offline-settings');},get releases(){return releaseFetches;},setClear(p,error){pendingClear=p;clearError=error;},setConfirmed(v){confirmed=v;},setActivation(p){pendingActivation=p;},setPending(p){pendingImport=p;},setDownload(p){pendingDownload=p;},progress(p){progressOptions.onProgress(p);},get signal(){return progressOptions.signal;},emit(k,detail){events[k]({detail});}};
 }
 test('settings has one clean resource drawer, separate import controls and no mixed FAQ',async()=>{
  const f=fixture(),h=f.host,drawer=h.querySelector('.library-pages-downloads');
@@ -183,26 +186,47 @@ test('retired Pages ranges show import guidance with no enabled or visible stale
  f.data.readyIds=[51,52];f.doc.getElementById('open-settings').onclick();await tick();assert.match(rows(f)[0].querySelector('span').textContent,/已保存到本机/);assert.equal(rows(f)[0].querySelector('button').hidden,true);
 });
 
-test('saved first 50 is a direct scoped clear, locks other mutations, and resets to download without copy',async()=>{
+function setRange(f,prefix,start,end){const h=f.host,a=h.querySelector(`[data-${prefix}-start]`),b=h.querySelector(`[data-${prefix}-end]`);a.value=String(start);b.value=String(end);a.listeners.input();b.listeners.input();return h.querySelector(`[data-${prefix}]`);}
+test('saved download rows never hide deletion; range delete names selected ordinals and refreshes in place',async()=>{
  const f=fixture({first50:true});f.doc.getElementById('open-settings').onclick();await tick();
- const first=rows(f)[0],button=first.querySelector('button');assert.equal(button.textContent,'已保存');assert.equal(button.disabled,false);
- let finish;f.setClear(new Promise(resolve=>finish=resolve));const running=button.onclick();await tick();
- assert.deepEqual(f.calls.selective[0],Array.from({length:50},(_,i)=>1000+i));assert.equal(f.host.querySelector('input').disabled,true);assert.equal(f.host.querySelector('[data-clear-all]').disabled,true);
- assert.equal(first.querySelector('[data-download-progress]').hidden,false);assert.equal(f.host.querySelector('[data-import-progress]').hidden,true);
+ const first=rows(f)[0];assert.equal(first.querySelector('button').textContent,'已保存');assert.equal(first.querySelector('button').disabled,true);await first.querySelector('button').onclick();assert.equal(f.calls.selective.length,0);
+ const button=setRange(f,'range-delete',13,17),range=f.host.querySelector('[data-delete-range]');range.open=true;
+ assert.equal(button.textContent,'删除 13–17');assert.equal(button.disabled,false);let finish;f.setClear(new Promise(resolve=>finish=resolve));const running=button.onclick();await tick();
+ assert.deepEqual(f.calls.selective[0],[1012,1013,1014,1015,1016]);assert.equal(updateBlocked(f),true);assert.equal(f.host.querySelector('input').disabled,true);assert.equal(f.host.querySelector('[data-export]').disabled,true);
+ assert.equal(f.host.querySelector('[data-range-delete-progress]').hidden,false);assert.equal(first.querySelector('[data-download-progress]').hidden,true);assert.equal(f.host.querySelector('[data-import-progress]').hidden,true);
+ f.clearProgress({phase:'delete',completed:7,total:15});assert.equal(f.host.querySelector('[data-range-delete-progress]').value,7);assert.equal(f.host.querySelector('[data-range-delete-status]').textContent,'删除 7/15');assert.equal(f.host.querySelector('[data-range-delete-cancel]').hidden,true);
  await button.onclick();assert.equal(f.calls.selective.length,1);finish();await running;
- assert.equal(button.textContent,'下载');assert.equal(button.disabled,false);assert.equal(first.querySelector('[data-download-status]').textContent,'');assert.equal(first.querySelector('[data-download-progress]').hidden,true);
- assert.equal(f.calls.confirms.length,0);assert.equal(f.calls.reloads,0);assert.equal(f.calls.clears,0);assert.deepEqual(f.calls.modes,[]);assert.equal(f.host.querySelector('[data-saved-count]').textContent,0);
- await button.onclick();assert.equal(f.calls.downloads,1);
+ assert.equal(f.host.querySelector('[data-saved-count]').textContent,45);assert.equal(first.querySelector('button').textContent,'继续下载 45/50');assert.equal(button.disabled,false);assert.equal(range.open,true);assert.equal(f.host.querySelector('[data-range-delete-start]').value,'13');
+ assert.equal(f.calls.confirms.length,0);assert.equal(f.calls.reloads,0);assert.equal(f.calls.clears,0);assert.deepEqual(f.calls.modes,[]);assert.equal(f.ctx.location.hash,'/settings');assert.equal(updateBlocked(f),false);assertNoDuplicateProgress(f);
 });
-test('selective clear errors stay at first group and release locks for retry',async()=>{
- const f=fixture({first50:true});f.doc.getElementById('open-settings').onclick();await tick();f.setClear(null,new Error('quota'));
- const first=rows(f)[0];await first.querySelector('button').onclick();assert.match(first.querySelector('[data-download-status]').textContent,/quota/);assert.equal(first.querySelector('button').disabled,false);assert.equal(f.host.querySelector('input').disabled,false);assert.equal(f.host.querySelector('[data-status]').textContent,'');
+test('range validation blocks blank, fractions, exponent, bounds and reversed selections before mutation',async()=>{
+ const f=fixture({first50:true}),h=f.host,button=h.querySelector('[data-range-delete]');assert.equal(button.disabled,true);assert.equal(h.querySelector('[data-range-delete-start]').value,'');
+ for(const [start,end] of [['',''],['1.5','2'],['1e1','20'],['0','2'],['1','52'],['8','7']]){setRange(f,'range-delete',start,end);assert.equal(button.disabled,true);await button.onclick();}
+ assert.equal(f.calls.selective.length,0);assert.equal(f.calls.activations,0);assert.equal(updateBlocked(f),false);
+ setRange(f,'range-delete',51,51);assert.equal(button.disabled,false);assert.equal(button.textContent,'删除 51–51');
 });
-
-test('first-group clear cannot run while another group download owns the mutation controls',async()=>{
- const f=fixture({first50:true});f.doc.getElementById('open-settings').onclick();await tick();let finish;f.setDownload(new Promise(resolve=>finish=resolve));
- const [first,second]=rows(f),running=second.querySelector('button').onclick();await tick();assert.equal(first.querySelector('button').disabled,true);await first.querySelector('button').onclick();assert.equal(f.calls.selective.length,0);
- finish({wordIds:[1050]});await running;assert.equal(first.querySelector('button').disabled,false);
+test('range cancellation and errors stay local and unlock controls without navigation',async()=>{
+ for(const outcome of ['cancel','error']){const f=fixture({first50:true});f.doc.getElementById('open-settings').onclick();await tick();const button=setRange(f,'range-delete',2,4);let finish;f.setClear(new Promise(resolve=>finish=resolve),outcome==='error'?new Error('quota'):null);const running=button.onclick();await tick();
+ if(outcome==='cancel'){f.host.querySelector('[data-range-delete-cancel]').onclick();assert.equal(f.clearSignal.aborted,true);}finish();await running;
+ assert.equal(f.host.querySelector('[data-range-delete-status]').textContent,outcome==='error'?'删除未完成：quota':'');assert.equal(f.host.querySelector('[data-status]').textContent,'');assert.equal(button.disabled,false);assert.equal(f.host.querySelector('input').disabled,false);assert.equal(f.calls.reloads,0);assert.equal(f.ctx.location.hash,'/settings');assert.equal(updateBlocked(f),false);assert.equal(f.data.readyIds.length,50);}
+});
+for(const kind of ['download','import','export'])test(`range delete respects active ${kind} and cannot run a competing action`,async()=>{
+ const f=fixture({first50:true});f.doc.getElementById('open-settings').onclick();await tick();const button=setRange(f,'range-delete',10,12);let finish;const pending=new Promise(resolve=>finish=resolve);let running;
+ if(kind==='download'){f.setDownload(pending);running=rows(f)[1].querySelector('button').onclick();}else if(kind==='import'){f.setPending(pending);const input=f.host.querySelector('input');input.files=[new Blob(['test'])];running=input.onchange();}else{f.setExport(pending);running=f.host.querySelector('[data-export]').onclick();}
+ await tick();assert.equal(button.disabled,true);assert.equal(f.host.querySelector('[data-range-delete-start]').disabled,true);await button.onclick();assert.equal(f.calls.selective.length,0);finish(kind==='export'?f.exportResult:{wordIds:[]});await running;assert.equal(button.disabled,false);
+});
+test('range deletion blocks imports, downloads, export, full clear and mode changes until refreshed',async()=>{
+ const f=fixture({first50:true});f.doc.getElementById('open-settings').onclick();await tick();let finish;f.setClear(new Promise(resolve=>finish=resolve));const running=setRange(f,'range-delete',7,9).onclick();await tick();
+ const h=f.host;await h.querySelector('[data-export]').onclick();await h.querySelector('[data-clear-all]').onclick();await h.querySelector('.library-mode-button').onclick();const input=h.querySelector('input');input.files=[new Blob(['test'])];await input.onchange();await rows(f)[1].querySelector('button').onclick();
+ assert.equal(f.calls.exports,0);assert.equal(f.calls.clears,0);assert.equal(f.calls.imports,0);assert.equal(f.calls.downloads,0);assert.deepEqual(f.calls.modes,[]);finish();await running;assert.equal(updateBlocked(f),false);
+});
+test('export range uses the same fields, freezes selection, and reports progress only in its drawer',async()=>{
+ const f=fixture({first50:true}),h=f.host;const button=setRange(f,'export',20,25);assert.equal(button.textContent,'导出 20–25');let finish;f.setExport(new Promise(resolve=>finish=resolve));const running=button.onclick();await tick();
+ assert.equal(JSON.stringify(f.exportOptions.range),JSON.stringify({start:20,end:25}));assert.equal(h.querySelector('[data-export-start]').disabled,true);assert.equal(h.querySelector('[data-range-delete]').disabled,true);f.exportProgress({phase:'scan',completed:3,total:6});assert.equal(h.querySelector('[data-export-status]').textContent,'检查 3/6');assert.equal(h.querySelector('[data-range-delete-status]').textContent,'');
+ finish(f.exportResult);await running;assert.equal(h.querySelector('[data-export-start]').disabled,false);assert.equal(h.querySelector('[data-export-start]').value,'20');await h.querySelector('[data-export-close]').onclick();
+});
+test('both range drawers retain open state across update capture and restore',async()=>{
+ const f=fixture({first50:true}),h=f.host;h.querySelector('[data-export-range]').open=true;h.querySelector('[data-delete-range]').open=true;const capture={};f.emit('gre-update-capture',capture);h.querySelector('[data-export-range]').open=false;h.querySelector('[data-delete-range]').open=false;const restore={position:{drawers:capture.drawers},waits:[]};f.emit('gre-update-restore',restore);await Promise.all(restore.waits);assert.equal(h.querySelector('[data-export-range]').open,true);assert.equal(h.querySelector('[data-delete-range]').open,true);
 });
 
 test('each committed download word updates saved count and vine immediately without storage rescan or remount',async()=>{
@@ -241,9 +265,9 @@ test('saved export owns manager mutation and reload guards while leaving route, 
  for(const {progress,status} of others){assert.equal(progress.value,8);assert.equal(progress.max,17);assert.equal(progress.hidden,true);assert.equal(status.textContent,'prior group feedback');}
  assert.equal(h.querySelector('[data-saved-count]').textContent,saved);assert.equal(rail.style.values['--saved-progress'],fill);assert.equal(JSON.stringify(f.data),state);assert.equal(f.ctx.location.hash,'/settings');assert.equal(f.calls.reloads,0);assert.equal(f.calls.activations,0);
  finish(f.exportResult);await exporting;
- assert.equal(updateBlocked(f),false);for(const control of [input,clear,clean,remove,mode,...rows(f).map(row=>row.querySelector('button'))])assert.equal(control.disabled,false);
+ assert.equal(updateBlocked(f),false);for(const control of [input,clear,clean,remove,mode,rows(f)[1].querySelector('button')])assert.equal(control.disabled,false);assert.equal(rows(f)[0].querySelector('button').disabled,true);
  assert.equal(h.querySelector('[data-export-progress]').hidden,true);assert.equal(h.querySelector('[data-export-files]').querySelectorAll('a').length,1);assert.equal(h.querySelector('[data-export-status]').textContent,'已整理 2 词 · 1 个包');
- await h.querySelector('[data-export-close]').onclick();assert.equal(f.calls.exportCleanups,1);assert.deepEqual(f.calls.revokedURLs,[f.calls.objectURLs[0].url]);assert.equal(JSON.stringify(f.data),state);assert.equal(f.ctx.location.hash,'/settings');assert.equal(f.calls.reloads,0);assert.equal(rail.style.values['--saved-progress'],fill);
+ await h.querySelector('[data-export-close]').onclick();assert.equal(f.calls.exportCleanups,0);assert.deepEqual(f.calls.revokedURLs,[]);assert.equal(h.querySelector('[data-export-files]').hidden,true);await h.querySelector('[data-export-close]').onclick();assert.equal(h.querySelector('[data-export-files]').hidden,false);assert.equal(JSON.stringify(f.data),state);assert.equal(f.ctx.location.hash,'/settings');assert.equal(f.calls.reloads,0);assert.equal(rail.style.values['--saved-progress'],fill);
 });
 
 test('export cancellation during a queued Web Lock releases manager controls and update guard without navigation',async()=>{
@@ -253,7 +277,7 @@ test('export cancellation during a queued Web Lock releases manager controls and
  h.querySelector('[data-export-cancel]').onclick();assert.equal(requested.signal.aborted,true);await exporting;
  assert.equal(updateBlocked(f),false);assert.equal(h.querySelector('input').disabled,false);assert.equal(h.querySelector('[data-clear-all]').disabled,false);assert.equal(h.querySelector('[data-export-status]').textContent,'');assert.equal(h.querySelector('[data-export-progress]').hidden,true);assert.equal(h.querySelector('[data-export-files]').children.length,0);
  assert.equal(f.calls.exports,0);assert.equal(f.calls.reloads,0);assert.equal(f.ctx.location.hash,'/settings');assert.equal(f.doc.getElementById('open-settings').style.values['--saved-progress'],fill);assertNoDuplicateProgress(f);
- delete f.ctx.navigator.locks;await h.querySelector('[data-export]').onclick();assert.equal(f.calls.exports,1);assert.equal(updateBlocked(f),false);await h.querySelector('[data-export-close]').onclick();assert.equal(f.calls.exportCleanups,1);
+ delete f.ctx.navigator.locks;await h.querySelector('[data-export]').onclick();assert.equal(f.calls.exports,1);assert.equal(updateBlocked(f),false);await h.querySelector('[data-export-close]').onclick();assert.equal(f.calls.exportCleanups,0);
 });
 
 test('export respects an existing import guard and releases its own manager guard after failure',async()=>{
@@ -266,4 +290,21 @@ test('export respects an existing import guard and releases its own manager guar
  assert.equal(updateBlocked(f),false);assert.equal(input.disabled,false);assert.equal(h.querySelector('[data-clear-all]').disabled,false);assert.equal(h.querySelector('[data-export-status]').textContent,'导出未完成：export source unavailable');assert.equal(h.querySelector('[data-import-status]').textContent,'');assert.equal(h.querySelector('[data-export-progress]').hidden,true);assert.equal(h.querySelector('[data-export-files]').children.length,0);
  assert.equal(f.ctx.location.hash,'/settings');assert.equal(f.calls.reloads,0);assert.equal(f.calls.activations,1,'only the earlier import activates media');assert.deepEqual(f.calls.modes,['auto']);assert.equal(f.doc.getElementById('open-settings').style.values['--saved-progress'],before);assertNoDuplicateProgress(f);
  await h.querySelector('[data-clear-all]').onclick();assert.equal(f.calls.confirms.length,1,'normal controls are usable again after export failure');assert.equal(f.calls.clears,0,'confirmation still protects source deletion');
+});
+
+test('export and delete share compact accessible range controls and peer settings typography',()=>{
+ const f=fixture({first50:true}),h=f.host;
+ for(const prefix of ['export','range-delete']){
+  const start=h.querySelector(`[data-${prefix}-start]`),end=h.querySelector(`[data-${prefix}-end]`);
+  assert.equal(start.getAttribute('aria-label'),'起始词序号');assert.equal(end.getAttribute('aria-label'),'结束词序号');assert.equal(start.max,'51');assert.equal(end.max,'51');
+  assert.equal(start.parent.className,'library-range-fields');assert.equal(start.parent,end.parent);assert.equal(h.querySelector(`[data-${prefix}-status]`).textContent,'');
+ }
+ assert.match(css,/--settings-action-size:16px/);assert.match(css,/--settings-action-leading:1\.5/);assert.match(css,/grid-template-columns:minmax\(0,1fr\) auto minmax\(0,1fr\)/);assert.match(css,/library-range-feedback \[hidden\]\{display:none\}/);
+ assert.equal(h.querySelector('[data-export-range]').open,false);assert.equal(h.querySelector('[data-delete-range]').open,false);
+ assert.equal(h.querySelector('[data-range-delete-start]').value,'');assert.equal(h.querySelector('[data-range-delete-end]').value,'');
+});
+test('invalid export ranges do not start work, reserve a lock, or clear previous output',async()=>{
+ const f=fixture({first50:true}),h=f.host;await h.querySelector('[data-export]').onclick();const link=h.querySelector('[data-export-files]').querySelector('a');
+ for(const [start,end] of [['',''],['2.5','9'],['4','3'],['1','52']]){const button=setRange(f,'export',start,end);assert.equal(button.disabled,true);await button.onclick();}
+ assert.equal(f.calls.exports,1);assert.equal(f.calls.exportCleanups,0);assert.equal(h.querySelector('[data-export-files]').querySelector('a'),link);assert.equal(f.calls.revokedURLs.length,0);assert.equal(updateBlocked(f),false);
 });

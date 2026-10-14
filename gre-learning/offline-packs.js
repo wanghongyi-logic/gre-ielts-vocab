@@ -18,7 +18,7 @@ async function copy(file,name,signal,onProgress){
  }
  cancelled(signal);if((await entry.getFile()).size!==file.size)throw new Error('Stored package size mismatch');
 }
-async function locked(fn){if(navigator.locks?.request)return navigator.locks.request(DB,fn);throw new Error('此浏览器缺少安全导入所需的存储锁，请更新 Safari 后重试');}
+async function locked(fn,signal){if(navigator.locks?.request)return signal?navigator.locks.request(DB,{signal},fn):navigator.locks.request(DB,fn);throw new Error('此浏览器缺少安全导入所需的存储锁，请更新 Safari 后重试');}
 function support(){if(!navigator.storage?.getDirectory||!globalThis.indexedDB||!globalThis.crypto?.subtle)throw new Error('此浏览器不支持离线书库。请使用 HTTPS 网站上的 Safari 17 或更新版本');}
 async function recover(){const dir=await directory(),owned=new Set((await listPacks()).map(p=>p.name));for await(const [name,handle] of dir.entries())if(handle.kind==='file'&&/^pack-[0-9]+-[a-f0-9-]+\.zip$/.test(name)&&!owned.has(name))await dir.removeEntry(name);}
 const identity=files=>JSON.stringify(files.map(f=>[f.path,f.role,f.wordId,f.bytes,f.sha256]).sort((a,b)=>a[0].localeCompare(b[0])));
@@ -90,44 +90,52 @@ async function commitPackChanges(changes){
   try{for(const {pack,replacement} of changes)replacement?store.put(replacement):store.delete(pack.key);}catch(error){tx.abort();reject(error);}
  });
 }
-async function verifyRetainedSlices(file,files){
+async function verifyRetainedSlices(file,files,signal){
  for(const entry of files){
+  cancelled(signal);
   if(!Number.isSafeInteger(entry.start)||entry.start<0||!Number.isSafeInteger(entry.bytes)||entry.bytes<0||entry.start+entry.bytes>file.size)throw new Error('Stored package range mismatch');
   const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',await file.slice(entry.start,entry.start+entry.bytes).arrayBuffer())),b=>b.toString(16).padStart(2,'0')).join('');
   if(hash!==entry.sha256)throw new Error('Stored package asset checksum failed');
  }
 }
-export async function clearSavedWords(catalog,ids){
- support();return locked(async()=>{
-  await recover();const packs=await listPacks(),paths=selectedMedia(catalog,ids,packs),root=new URL('../',import.meta.url),urls=[...paths].map(path=>new URL(path,root).href);
-  return createMediaControl(root).selectiveClear(urls,async()=>{
-   const dir=await directory(),changes=[],staged=[];let committed=false;
+export async function clearSavedWords(catalog,ids,{signal,onProgress=()=>{}}={}){
+ support();cancelled(signal);return locked(async()=>{
+  cancelled(signal);await recover();cancelled(signal);const packs=await listPacks(),paths=selectedMedia(catalog,ids,packs),root=new URL('../',import.meta.url),urls=[...paths].map(path=>new URL(path,root).href);
+  cancelled(signal);let committed=false;return createMediaControl(root).selectiveClear(urls,async()=>{
+   cancelled(signal);const dir=await directory(),changes=[],staged=[];
+   const cache=globalThis.caches?await caches.open('gre-scalable-verified-units-v1'):null,wanted=new Set(urls),cached=(await cache?.keys()||[]).filter(request=>wanted.has(request.url));
+   const removedURLs=new Set(cached.map(request=>request.url));
+   for(const pack of packs)for(const file of pack.files)if(mediaRoles.has(file.role)&&paths.has(file.path))removedURLs.add(new URL(file.path,root).href);
+   const total=removedURLs.size;onProgress({phase:'prepare',completed:0,total});cancelled(signal);
    try{
     for(const pack of packs){const retained=pack.files.filter(file=>!mediaRoles.has(file.role)||!paths.has(file.path));if(retained.length!==pack.files.length)changes.push({pack,retained});}
     // Keep every original until all replacements fit, copy successfully and
     // verify. A quota, interruption or checksum failure cannot lose other words.
     const stagingBytes=changes.reduce((sum,change)=>sum+change.retained.reduce((n,file)=>n+file.bytes,0),0);if(stagingBytes)await ensureSpace(stagingBytes);
     for(const change of changes){
-     const {pack,retained}=change;if(!retained.length)continue;
+     cancelled(signal);const {pack,retained}=change;if(!retained.length)continue;
      const source=await(await dir.getFileHandle(pack.name)).getFile();if(source.size!==pack.bytes)throw new Error('Stored package size mismatch');
      const parts=[],files=[];let offset=0;
      for(const entry of retained){
       if(!Number.isSafeInteger(entry.start)||entry.start<0||!Number.isSafeInteger(entry.bytes)||entry.bytes<0||entry.start+entry.bytes>source.size)throw new Error('Stored package range mismatch');
       parts.push(source.slice(entry.start,entry.start+entry.bytes));files.push({...entry,start:offset});offset+=entry.bytes;
      }
-     const compact=new Blob(parts),name=temporaryName();staged.push(name);await copy(compact,name,undefined,()=>{});
-     const stored=await(await dir.getFileHandle(name)).getFile();await verifyRetainedSlices(stored,files);
+     const compact=new Blob(parts),name=temporaryName();staged.push(name);await copy(compact,name,signal,()=>{onProgress({phase:'prepare',completed:0,total});});
+     const stored=await(await dir.getFileHandle(name)).getFile();await verifyRetainedSlices(stored,files,signal);
      change.replacement={...pack,name,files,bytes:stored.size,partiallyCleared:true,originalIdentity:pack.originalIdentity||identity(pack.files)};
     }
+    // Cancellation is safe until this boundary. Once committing, finish all
+    // physical removals even if the caller aborts, keeping index/cache coherent.
+    cancelled(signal);onProgress({phase:'delete',completed:0,total});
     // One index transaction makes the complete set of replacements visible.
     if(changes.length)await commitPackChanges(changes);committed=true;
     for(const {pack} of changes){try{await dir.removeEntry(pack.name);}catch(error){if(error.name!=='NotFoundError')throw error;}}
-    if(globalThis.caches){const cache=await caches.open('gre-scalable-verified-units-v1'),wanted=new Set(urls);for(const request of await cache.keys())if(wanted.has(request.url))await cache.delete(request);}
-    verifiedSlices.clear();badSlices.clear();
-    return {packs:changes.length,files:changes.reduce((sum,{pack,retained})=>sum+pack.files.length-retained.length,0),bytes:changes.reduce((sum,{pack,replacement})=>sum+pack.bytes-(replacement?.bytes||0),0),paths:urls};
+    let completed=0;for(const url of removedURLs){if(cache)await cache.delete(url);onProgress({phase:'delete',completed:++completed,total});}
+    verifiedSlices.clear();badSlices.clear();onProgress({phase:'done',completed:total,total});
+    return {packs:changes.length,files:changes.reduce((sum,{pack,retained})=>sum+pack.files.length-retained.length,0),bytes:changes.reduce((sum,{pack,replacement})=>sum+pack.bytes-(replacement?.bytes||0),0),paths:urls,removedAssets:total};
    }finally{
     if(!committed)for(const name of staged)await dir.removeEntry(name).catch(()=>{});
    }
-  });
- });
+  },{rollbackOnError:()=>!committed});
+ },signal);
 }

@@ -1,6 +1,7 @@
 import {localAsset} from './offline-packs.js';
 import {CRC32,SHA256} from './offline-export-hash.js';
 import {safePath,MAX_ENTRY,indexZip} from './offline-zip.js';
+import {resolveSavedRange} from './offline-range.js';
 
 const CHUNK=1024*1024,MAX_PACK=96*1024*1024,MAX_MEMORY=24*1024*1024;
 const EXPORT_DIR='gre-offline-exports-v1',SESSION_LOCK='gre-offline-export-session-v1:',STALE_AFTER=24*60*60*1000;
@@ -123,7 +124,12 @@ async function source(ref){
  return null;
 }
 
-export async function exportSavedResources(catalog,{signal,onProgress=()=>{},readSource=source}={}){
+export async function exportSavedResources(catalog,{signal,onProgress=()=>{},readSource=source,range}={}){
+ // Validate before opening storage or cleaning temporary files. Keep the
+ // original catalog order: the importer validates stable word IDs
+ // against that full catalog, not against display ordinals or a renumbered copy.
+ const selected=range===undefined?null:new Set(resolveSavedRange(catalog,range?.start,range?.end).ids);
+ const entries=selected?catalog.entries.filter(entry=>selected.has(entry.number)):catalog.entries;
  const session='export-'+Date.now()+'-'+crypto.randomUUID(),outputs=[];let skipped=0,complete=0,sink=null,memoryBytes=0,released=false,release=()=>{};
  const cleanup=async()=>{if(released)return;try{await removeSession(session);released=true;}finally{release();}};
  let group=[],assets=new Map(),bytes=0;
@@ -132,7 +138,8 @@ export async function exportSavedResources(catalog,{signal,onProgress=()=>{},rea
   if(!group.length)return;
   const number=outputs.length+1,manifest={format:'gre-offline-pack-v1',packId:session+'-'+number,version:'1',wordIds:group.map(e=>e.number),files:[...assets.values()].map(({path,role,wordId,ref})=>({path,role,wordId,bytes:ref.bytes,sha256:ref.sha256}))};
   const manifestBlob=new Blob([JSON.stringify(manifest)]),mhash=await fingerprints(manifestBlob,signal),items=[{path:'manifest.json',blob:manifestBlob,crc:mhash.crc},...[...assets.values()].map(a=>({path:a.path,bytes:a.ref.bytes,sha256:a.ref.sha256,crc:a.crc,readBlob:()=>readSource(a.ref)}))];
-  const name=`GRE-${group[0].displayOrdinal||catalog.entries.indexOf(group[0])+1}-${group.at(-1).displayOrdinal||catalog.entries.indexOf(group.at(-1))+1}.zip`;
+  const ordinals=group.map(entry=>entry.displayOrdinal||catalog.entries.indexOf(entry)+1);
+  const name=`GRE-${selected?Math.min(...ordinals):ordinals[0]}-${selected?Math.max(...ordinals):ordinals.at(-1)}.zip`;
   await prepareSink();
   try{
    await writeStoreZip(items,sink,{signal,onProgress:p=>onProgress({...p,phase:'pack'})});const file=await sink.finish();cancelled(signal);await indexZip(file);cancelled(signal);
@@ -148,8 +155,8 @@ export async function exportSavedResources(catalog,{signal,onProgress=()=>{},rea
   // again before the temporary package can be finalized. The small Blob
   // fallback also caps retained output across all packages.
   await prepareSink();
-  for(let i=0;i<catalog.entries.length;i++){
-   cancelled(signal);const entry=catalog.entries[i],found=[];
+  for(let i=0;i<entries.length;i++){
+   cancelled(signal);const entry=entries[i],found=[];
    for(const role of ['poster','video','staticPoster']){
     const ref=entry.storyMedia?.[role];if(!ref)continue;const path='gre-learning/'+ref.url;
     if(!safePath(path)||!Number.isSafeInteger(ref.bytes)||ref.bytes<0||ref.bytes>MAX_ENTRY)throw new Error('资源信息不支持导出');
@@ -165,9 +172,9 @@ export async function exportSavedResources(catalog,{signal,onProgress=()=>{},rea
     if(group.length&&(group.length>=200||bytes+extra>MAX_PACK)){await flush();await prepareSink();}
     group.push(entry);for(const a of found)if(!assets.has(a.path)){assets.set(a.path,a);bytes+=a.ref.bytes;}complete++;
    }else skipped++;
-   onProgress({phase:'scan',completed:i+1,total:catalog.entries.length});
+   onProgress({phase:'scan',completed:i+1,total:entries.length});
   }
-  await flush();if(sink){await sink.abort();sink=null;}if(!outputs.length)throw new Error('本机还没有完整保存的资源可导出');cancelled(signal);
+  await flush();if(sink){await sink.abort();sink=null;}if(!outputs.length)throw new Error(selected?'所选范围内没有完整保存的资源可导出':'本机还没有完整保存的资源可导出');cancelled(signal);
   return {packages:outputs,complete,skipped,cleanup};
  }catch(error){if(sink)await sink.abort().catch(()=>{});await cleanup().catch(()=>{});throw error;}
 }

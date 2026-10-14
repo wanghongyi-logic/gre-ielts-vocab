@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4771,
+      "word": "snapshot",
+      "ipa": "/ˈsnæpʃɒt/",
+      "pos": "n.",
+      "coreMeaningZh": "某一时刻的简要情况；快照，随手拍的照片",
+      "coreEn": "A brief view or account of a situation at a particular time; also a photograph taken quickly and informally.",
+      "coreImageZh": "男孩举起相机，拍下花园一角此刻的情景。照片定格的是一个瞬间；把这个画面移到报告或数据中，snapshot 就是对某一时刻情况的简要呈现，不是完整历史。",
+      "mnemonics": [
+        {
+          "method": "SNAP + SHOT · 咔嚓一张",
+          "textZh": "snap 可让人想到“咔嚓”一下，shot 可以指一张照片。把两个完整小词合起来：迅速拍下一张 snapshot，再由“一瞬间的照片”记住“某一时刻的简要情况”。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "SNAPSHOT / SCREENSHOT",
+          "textZh": "想到熟悉的 screenshot（截屏）：截屏只留下屏幕当时的样子，不是整段录像。snapshot 同样定格一刻；一页数据里的 snapshot，也只简要反映那个时点的情况。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "简要情况与时点视角",
+          "explanationZh": "常用 a snapshot of，指某个地方、群体或局面在特定时刻的简要情况。报告、调查、访谈或数据都能提供这种“快照”；不保证覆盖全部细节，也不必包含变化趋势。",
+          "collocations": [
+            {
+              "phrase": "a snapshot of the economy",
+              "meaningZh": "经济状况的简要呈现"
+            },
+            {
+              "phrase": "provide a snapshot",
+              "meaningZh": "提供某一时刻的概况"
+            }
+          ]
+        },
+        {
+          "senseZh": "普通照片与名词搭配",
+          "explanationZh": "日常语境可指迅速、随意拍下的照片，常用 take a snapshot of。作名词可数，复数为 snapshots；相对于正式摄影作品，常带随手记录的感觉。",
+          "collocations": [
+            {
+              "phrase": "take a snapshot of someone",
+              "meaningZh": "给某人随手拍张照片"
+            },
+            {
+              "phrase": "holiday snapshots",
+              "meaningZh": "度假随拍照片"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Credit rating agencies provide a snapshot of the risks an investment poses at any one time.",
+          "translationZh": "信用评级机构会简要呈现某项投资在某一时点面临的风险。",
+          "explanationZh": "at any one time 点明这是时点上的风险概况，不是全过程预测。"
+        },
+        {
+          "textEn": "Let me take a snapshot of you guys.",
+          "translationZh": "让我给你们随手拍张照片。",
+          "explanationZh": "take a snapshot of 用于实际拍照；you guys 是随意称呼几个人的说法。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "summary",
+          "comparisonZh": "谈调查或报告的简要内容时可以接近。summary 强调压缩要点，不一定限于一个时点；snapshot 强调某一刻的状况。小说的情节摘要通常用 summary，随手拍的照片不能叫 summary。"
+        },
+        {
+          "word": "overview",
+          "comparisonZh": "描述概况时有交集。overview 强调整体性的概览，可能跨越很长时期；snapshot 更像截取一个时点或局部样本。两者都不等于详尽说明，但 snapshot 尤其提醒读者注意时点限制。"
+        }
+      ]
+    },
+    {
+      "number": 961,
+      "word": "fluster",
+      "ipa": "/ˈflʌstə(r)/",
+      "pos": "v.; n.",
+      "coreMeaningZh": "使慌乱，使心烦意乱；慌乱状态",
+      "coreEn": "To make someone nervous and confused, especially during a task; also a state of such nervous confusion.",
+      "coreImageZh": "男孩正做展示，看到计时快结束，又有人举手。他一紧张，把手里的提示卡顺序都弄乱了。fluster 的关键是心里慌、思路也乱，做事失去原来的从容。",
+      "mnemonics": [
+        {
+          "method": "FLUSTER ≈ FASTER",
+          "textZh": "把 fluster 近音联想到 faster（更快些）：别人一遍遍催“Faster!”，你越急越乱，连先做哪一步都忘了。用“催快了，反而慌乱”记住 fluster。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "FLUSTER / FRUSTRATE",
+          "textZh": "fluster 的词形让人联想到 frustrate（使受挫）：表格反复出错，越受挫越心烦，最后连该填哪一栏都搞不清。frustrate 侧重受挫，fluster 记住随后那种紧张、乱了方寸的状态。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "使人紧张而乱了方寸",
+          "explanationZh": "常作及物动词，宾语是人。unexpected questions、interruptions 等可以 fluster someone。形容人的状态常用 be/get flustered；不只是感到难为情，还包含思路或动作失去条理。",
+          "collocations": [
+            {
+              "phrase": "fluster the speaker",
+              "meaningZh": "使发言者慌乱"
+            },
+            {
+              "phrase": "get flustered",
+              "meaningZh": "变得紧张慌乱"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词与程度",
+          "explanationZh": "名词常见 in a fluster，指心烦意乱、手忙脚乱的状态。可能只是短暂慌乱，不一定达到惊恐发作的程度。",
+          "collocations": [
+            {
+              "phrase": "be in a fluster",
+              "meaningZh": "处于慌乱之中"
+            },
+            {
+              "phrase": "easily flustered",
+              "meaningZh": "容易慌乱的"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Shouts from the protesters flustered the speaker.",
+          "translationZh": "抗议者的喊声让发言者乱了方寸。",
+          "explanationZh": "flustered 在这里是及物动词过去式，speaker 是受到干扰的人。"
+        },
+        {
+          "textEn": "The heavy traffic put the driver in a fluster.",
+          "translationZh": "拥堵的交通让司机心烦意乱。",
+          "explanationZh": "in a fluster 是名词结构，描写司机紧张而不知所措的状态。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "disconcert",
+          "comparisonZh": "意外问题使人失去从容时，两者接近。disconcert 更突出扰乱信心、让人不自在；fluster 往往还表现为紧张忙乱、思路打结。不是每次 disconcert 都会让人手忙脚乱。"
+        },
+        {
+          "word": "perturb",
+          "comparisonZh": "都可表示使人不安。perturb 较正式，能指较深的担忧或心理扰动；fluster 更常聚焦眼前任务中的紧张混乱。扰动物理系统的 perturb 不能换成 fluster。"
+        }
+      ]
+    },
+    {
+      "number": 4772,
+      "word": "accentuate",
+      "ipa": "/əkˈsentʃueɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "使突出，使更明显；强调",
+      "coreEn": "To make a feature, quality, or difference stand out more clearly or have a stronger effect.",
+      "coreImageZh": "男孩把桌灯的灯罩转向陶土模型，原来就有的凸起轮廓一下更醒目了。accentuate 是让已有特点更加突出，不一定增加新东西，也不限于好看的特点。",
+      "mnemonics": [
+        {
+          "method": "ACCENTuate · 加重音",
+          "textZh": "accent 有“重音”的意思：一个音节被重读，就从其他音节中凸显出来。抓住 accentuate 里完整的 accent，把“声音上加重音”推广到“让某个特点更突出”。",
+          "original": false,
+          "kind": "word_family",
+          "weak": false
+        },
+        {
+          "method": "ACCENTUATE · 啊，显出来！",
+          "textZh": "把 accentuate 的读音粗略联想成“啊，显出来！”：灯光换个角度，原本不醒目的轮廓就显出来了。用“变得更明显”记住使突出；这是近音提示。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "突出外形、颜色与特点",
+          "explanationZh": "作及物动词，后面直接接被突出的特征。衣服、发型、光线等可以 accentuate a feature。特点原本存在，只是变得更明显；突出缺点也能用这个词。",
+          "collocations": [
+            {
+              "phrase": "accentuate the contours",
+              "meaningZh": "使轮廓更突出"
+            },
+            {
+              "phrase": "accentuate a feature",
+              "meaningZh": "突出某个特点"
+            }
+          ]
+        },
+        {
+          "senseZh": "使差异或问题更加明显",
+          "explanationZh": "也能用于抽象的 differences、inequality、problems 等，并非只用于外观。常用 accentuate something；表达“强调某个判断”时，emphasize that... 通常比 accentuate that... 自然。",
+          "collocations": [
+            {
+              "phrase": "accentuate the differences",
+              "meaningZh": "使差异更明显"
+            },
+            {
+              "phrase": "accentuate inequality",
+              "meaningZh": "加剧不平等，使其更加突出"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her dress was tightly belted, accentuating the slimness of her waist.",
+          "translationZh": "她的裙子束着紧紧的腰带，衬得腰部更加纤细。",
+          "explanationZh": "accentuating 说明束腰带产生的效果：原有的纤细腰身更显眼。"
+        },
+        {
+          "textEn": "The fundamental patterns of inequality have remained and have been accentuated by the war.",
+          "translationZh": "不平等的基本格局依然存在，而且因战争而加剧。",
+          "explanationZh": "被动式 have been accentuated 表明既存的不平等因战争更加突出，体现抽象用法。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "emphasize",
+          "comparisonZh": "在使某个特点更明显时很接近。emphasize 还常指通过言语强调重要性，可接 that 从句；accentuate 更突出让已有特征、效果或差异更醒目。句式不能一概照搬。"
+        },
+        {
+          "word": "highlight",
+          "comparisonZh": "都能表示使特点突出。highlight 也可指在文字上做高亮标记，或挑出重点介绍；accentuate 常强调既有特征的显著程度增强，不一定是在选出重点。"
+        }
+      ]
+    },
+    {
+      "number": 4773,
+      "word": "cachet",
+      "ipa": "/ˈkæʃeɪ/",
+      "pos": "n.",
+      "coreMeaningZh": "声望；受人推崇的地位或独特魅力",
+      "coreEn": "Prestige or admired status associated with distinctive quality, achievement, or approval.",
+      "coreImageZh": "画廊里，雕塑旁陈列着获奖奖章，参观者都尊重这位艺术家。cachet 指这种受到认可、令人推崇的声望；奖章只是认可的标志，词义并不是奖章本身。",
+      "mnemonics": [
+        {
+          "method": "CACHET · 看谁认可",
+          "textZh": "把 cachet 的读音近似联想到“看谁”：看谁认可这场展览？若一位备受尊敬的艺术家亲自推荐，展览便多了一份声望。用“受认可而有分量”记住 cachet。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "CASH + A · 为招牌多付钱",
+          "textZh": "把 cachet 近音记成 cash（钱）加字母 A。同样一件衬衫，绣上备受推崇的品牌标志，顾客就愿意多付 cash。让人愿意为这块招牌多付钱的声望与格调，就是 cachet。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "声望与令人推崇的特质",
+          "explanationZh": "声望义多作不可数名词，也常见 a certain cachet。可说品牌、学校、活动或地点有 cachet，强调别人眼中的独特价值和地位，不只是知名度高。",
+          "collocations": [
+            {
+              "phrase": "social cachet",
+              "meaningZh": "社会声望"
+            },
+            {
+              "phrase": "have a certain cachet",
+              "meaningZh": "具有某种令人推崇的格调"
+            }
+          ]
+        },
+        {
+          "senseZh": "赋予或增加声望",
+          "explanationZh": "常见 give/lend cachet to、confer cachet on，表示某种关联或认可提升其地位。注意 cache /kæʃ/ 是藏匿物或缓存；cachet 的词尾不读 /t/，声望义也不是储存物资。",
+          "collocations": [
+            {
+              "phrase": "lend cachet to a brand",
+              "meaningZh": "给品牌增添声望"
+            },
+            {
+              "phrase": "the cachet of a prestigious address",
+              "meaningZh": "显赫地址所带来的地位感"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "No other brand name has quite the same cachet.",
+          "translationZh": "没有别的品牌拥有完全相同的声望与格调。",
+          "explanationZh": "has cachet 表示享有令人推崇的独特地位，不只是广告曝光多。"
+        },
+        {
+          "textEn": "Supporting the arts confers social cachet.",
+          "translationZh": "支持艺术会带来社会声望。",
+          "explanationZh": "confers 表示赋予；social cachet 是社会认可带来的地位。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "prestige",
+          "comparisonZh": "表示令人尊敬或推崇的地位时非常接近。prestige 更直接强调广受尊重；cachet 常多一层独特、时髦或因特定关联而有分量的感觉。具体印章义的 cachet 不能换成 prestige。"
+        },
+        {
+          "word": "distinction",
+          "comparisonZh": "表示卓越带来的声望或出众特质时有交集。distinction 还可指差别、区分或荣誉等级；cachet 侧重受到推崇的地位与格调。make a distinction 不是“制造声望”。"
+        }
+      ]
+    },
+    {
+      "number": 456,
+      "word": "contrite",
+      "ipa": "/kənˈtraɪt/",
+      "pos": "adj.",
+      "coreMeaningZh": "真诚悔过的；因自己的过错而深感懊悔的",
+      "coreEn": "Feeling or showing sincere remorse and guilt for something wrong one has done.",
+      "coreImageZh": "男孩弄伤了别人的盆栽，看到断叶和洒出的土，真诚承认错误，并主动拿布清理。contrite 抓住的是为自己的过错深感懊悔，不只是被发现时有点尴尬。",
+      "mnemonics": [
+        {
+          "method": "CONTRITE ≈ CAN’T RIGHT",
+          "textZh": "把 contrite 近音联想到 can’t right the wrong（无法挽回过错）：自己说出的伤人话收不回来，越想越愧疚，真心道歉。由“为自己的错深深懊悔”记住 contrite。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "CONTRITE / CONTRIBUTE",
+          "textZh": "contrite 与 contribute（出力）的词形很像：弄坏了大家的花园，心里真过意不去，于是主动 contribute，出力修好它。用“悔过后主动补救”记住 contrite。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "人真诚悔过的状态",
+          "explanationZh": "较正式，可说 be/feel/look/seem contrite，也可用 genuinely 或 deeply 加强。懊悔针对自己做错的事，不只是遗憾错过机会，也不只是怕受罚。",
+          "collocations": [
+            {
+              "phrase": "feel contrite",
+              "meaningZh": "感到真诚懊悔"
+            },
+            {
+              "phrase": "genuinely contrite",
+              "meaningZh": "真心悔过的"
+            }
+          ]
+        },
+        {
+          "senseZh": "表现出悔意的言语和神情",
+          "explanationZh": "可修饰 apology、expression、tone 等，说明其中显出愧疚与悔意。名词是 contrition。表情或道歉可以看起来 contrite，但旁人仍可能质疑其真诚。",
+          "collocations": [
+            {
+              "phrase": "a contrite apology",
+              "meaningZh": "充满悔意的道歉"
+            },
+            {
+              "phrase": "a contrite expression",
+              "meaningZh": "懊悔的神情"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She seemed genuinely contrite when she apologized.",
+          "translationZh": "她道歉时看起来真心感到懊悔。",
+          "explanationZh": "genuinely 强调真诚，seemed 则保留了这是旁人观察判断的意味。"
+        },
+        {
+          "textEn": "He was so contrite that he wrote me a letter of apology.",
+          "translationZh": "他深感懊悔，特意给我写了一封道歉信。",
+          "explanationZh": "so...that... 把悔意与道歉行动联系起来；写信是悔意的表现。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "remorseful",
+          "comparisonZh": "都表示对自己做错的事深感悔恨，形容人的内心时非常接近。remorseful 更着重被悔恨折磨；contrite 常让人想到谦卑认错或流露悔意，不只是事后不开心。"
+        },
+        {
+          "word": "repentant",
+          "comparisonZh": "形容为过错悔悟的人时接近。repentant 较容易带改过、转变行为或宗教忏悔的意味；contrite 更聚焦当下真诚的愧疚与痛悔。二者都不是一般的失望。"
+        }
+      ]
+    }
+  ]
+}

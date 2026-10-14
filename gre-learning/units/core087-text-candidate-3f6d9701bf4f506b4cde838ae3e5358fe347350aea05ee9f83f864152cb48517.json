@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 1335,
+      "word": "jaded",
+      "ipa": "/ˈdʒeɪdɪd/",
+      "pos": "adj.",
+      "coreMeaningZh": "因经历过多而厌倦的；失去热情的",
+      "coreEn": "Bored or no longer enthusiastic after too much experience of something.",
+      "coreImageZh": "男孩已经吃过许多同样的点心。再来一块，他也提不起兴趣，连伸出的手都收了回来。这种因为见得多、经历得多而失去新鲜感的状态，就是 jaded。",
+      "mnemonics": [
+        {
+          "method": "FADED · 热情褪色",
+          "textZh": "jaded 和 faded（褪色了的）只差开头一个字母，读音也相近：同样的娱乐重复太多，原先鲜亮的热情像颜色一样褪去了。用“热情 faded，人就 jaded”记住厌倦、提不起劲。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "GRADED · 评卷评腻了",
+          "textZh": "jaded 和 graded（评过分）押韵，词尾也同是 -aded。老师给一大摞千篇一律的作文评过分，再见到同样的开头，只觉得厌倦、提不起兴趣。用“反复评卷评腻了”的画面记住 jaded。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "重复经历后的倦怠",
+          "explanationZh": "可形容人、眼光或胃口，常暗示经历太多、失去新鲜感，甚至对事物不再抱有期待。它比 bored 更突出反复经历后的麻木感，不只是眼下没事做。",
+          "collocations": [
+            {
+              "phrase": "feel jaded",
+              "meaningZh": "感到厌倦、提不起劲"
+            },
+            {
+              "phrase": "a jaded audience",
+              "meaningZh": "已看得厌倦的观众"
+            }
+          ]
+        },
+        {
+          "senseZh": "定语与表语",
+          "explanationZh": "可说 a jaded traveller，也可说 become jaded。jaded palate 字面指吃腻了、难再被食物打动的味觉，也可比喻挑剔而厌倦的欣赏口味。不要把它一律理解为运动后的体力疲劳。",
+          "collocations": [
+            {
+              "phrase": "a jaded palate",
+              "meaningZh": "吃腻了的胃口；厌倦挑剔的口味"
+            },
+            {
+              "phrase": "become jaded",
+              "meaningZh": "变得厌倦"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Flying is exciting the first time you do it, but you soon become jaded.",
+          "translationZh": "第一次乘飞机很令人兴奋，但很快你就会觉得没意思了。",
+          "explanationZh": "first time 与 soon become 对照，说明新鲜感随着重复经历消退。"
+        },
+        {
+          "textEn": "Perhaps some caviar can tempt your jaded palate.",
+          "translationZh": "也许来点鱼子酱能勾起你已经吃腻了的胃口。",
+          "explanationZh": "palate 在这里指味觉或胃口；jaded 表示普通食物已难以让人感兴趣。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "bored",
+          "comparisonZh": "都可以形容没兴趣。bored 可以只是暂时觉得无聊；jaded 更突出经历过多后的厌倦、麻木，因而 a jaded traveller 比 a bored traveller 多一层“游历太多，已不新鲜”的意思。"
+        },
+        {
+          "word": "weary",
+          "comparisonZh": "在厌倦、缺少热情时有交集。weary 还常指长途旅行或劳动后的身体疲惫，也可用 weary of 表示厌烦；jaded 更常突出反复体验后失去兴致。"
+        }
+      ]
+    },
+    {
+      "number": 2805,
+      "word": "conjure",
+      "ipa": "/ˈkʌndʒə/",
+      "pos": "v.",
+      "coreMeaningZh": "使浮现于脑海；唤起；像变魔术般变出",
+      "coreEn": "To bring an image to mind, or make something appear as if by magic.",
+      "coreImageZh": "男孩把手伸进帽子，变出一条红丝巾，这是 conjure 的变魔术义。文字、声音或气味也能像这样把画面“变”进脑海，常用 conjure up。",
+      "mnemonics": [
+        {
+          "method": "CONJURE · 看这儿",
+          "textZh": "近音联想“看这儿”：朋友指向一张海边旧照，你一看，当年浪花和笑声的画面就在脑海里浮现。把“看这儿，往事浮现”的瞬间连到 conjure up。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "CONJURE · 空着也能变",
+          "textZh": "近音联想“空着”：观众明明觉得帽子里空着，魔术师却从里面变出丝巾。用“空着的帽子变出东西”记住 conjure 的变魔术义。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "唤起画面、记忆或想法",
+          "explanationZh": "常用 conjure up an image/memories，也可以省略 up，直接说 conjure images。主语可以是人，也可以是使人联想的文字、声音或气味；不表示那些画面真的出现在眼前。",
+          "collocations": [
+            {
+              "phrase": "conjure up memories",
+              "meaningZh": "唤起记忆"
+            },
+            {
+              "phrase": "conjure an image",
+              "meaningZh": "使一个画面浮现于脑海"
+            }
+          ]
+        },
+        {
+          "senseZh": "变魔术；巧妙地弄出",
+          "explanationZh": "可以不接宾语表示表演魔术，也可接变出的东西；conjure something from/out of something 说明从何处变出。比喻用法可指仿佛凭空弄出一顿饭或一个办法。代词放在 up 前，如 conjure it up。",
+          "collocations": [
+            {
+              "phrase": "conjure a dove from a hat",
+              "meaningZh": "从帽子里变出一只鸽子"
+            },
+            {
+              "phrase": "conjure up a solution",
+              "meaningZh": "巧妙地想出一个解决办法"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "In an instant, the magician had conjured (up) a dove from his hat.",
+          "translationZh": "转眼间，魔术师已从帽子里变出了一只鸽子。",
+          "explanationZh": "conjured (up) 表明 up 可以使用，也可以省略；from his hat 说明变出的来源。"
+        },
+        {
+          "textEn": "His words conjured images of far-away action.",
+          "translationZh": "他的话使人脑海中浮现出远方发生的种种活动。",
+          "explanationZh": "images 作 conjured 的宾语，体现使画面浮现于脑海的含义；这里的 action 不是“动作片”这一固定词义。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "evoke",
+          "comparisonZh": "唤起记忆或画面时很接近，如 conjure up/evoke memories。evoke 也常指引起情绪或反应；conjure 更容易让人联想到生动地把画面呈现出来，且另有变魔术义，不能总用 evoke 替换。"
+        },
+        {
+          "word": "imagine",
+          "comparisonZh": "人主动在脑海中形成画面时，conjure up an image 和 imagine a scene 接近。imagine 更广，也可表示猜想或假设；气味“唤起记忆”可用 conjure up，却不能让气味作 imagine 的普通施事主语。"
+        }
+      ]
+    },
+    {
+      "number": 2031,
+      "word": "renounce",
+      "ipa": "/rɪˈnaʊns/",
+      "pos": "v.",
+      "coreMeaningZh": "正式宣布放弃；弃绝；声明不再支持",
+      "coreEn": "To formally or publicly give up a claim, belief, practice, or connection.",
+      "coreImageZh": "男孩把代表国王角色的纸王冠放下，并明确说自己正式放弃这个角色。重点是清楚地声明不再拥有或支持，而不只是暂时把东西搁在一边。",
+      "mnemonics": [
+        {
+          "method": "ANNOUNCE · 宣布不要了",
+          "textZh": "renounce 与熟悉的 announce（宣布）有相近的大段词形和声音。把它放进一句明确声明：“我宣布放弃这个权利。”由“宣布”连到“宣布放弃”，记住 renounce；不是所有宣布都叫 renounce。",
+          "original": false,
+          "kind": "word_family",
+          "weak": false
+        },
+        {
+          "method": "人闹事 · 公开弃绝支持",
+          "textZh": "把 renounce 近音联想到“人闹事”：原本支持的团体有人闹事打人，他当众声明：“我不再支持这个团体。”由这次明确弃绝支持，记住 renounce：正式放弃。这是近音联想，不是词源。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "放弃权利、主张或身份",
+          "explanationZh": "正式用语，通常为及物动词，直接接宾语。renounce a claim to something 表示放弃对某物的权利主张；to 属于 claim 的搭配，不是 renounce 后固定要接的介词。",
+          "collocations": [
+            {
+              "phrase": "renounce a claim",
+              "meaningZh": "宣布放弃一项权利主张"
+            },
+            {
+              "phrase": "renounce one’s citizenship",
+              "meaningZh": "宣布放弃自己的国籍"
+            }
+          ]
+        },
+        {
+          "senseZh": "弃绝信仰或行为",
+          "explanationZh": "可以宣布不再相信、支持或采取某事，如 renounce violence。不能和 denounce 混用：renounce 是自己放弃、断绝联系，denounce 是公开谴责；两种行为可以同时发生，但意思不同。",
+          "collocations": [
+            {
+              "phrase": "renounce violence",
+              "meaningZh": "宣布弃绝暴力"
+            },
+            {
+              "phrase": "renounce a belief",
+              "meaningZh": "宣布放弃一种信仰"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her ex-husband renounced his claim to the family house.",
+          "translationZh": "她的前夫放弃了对这所家庭住宅的权利主张。",
+          "explanationZh": "renounced 直接接 his claim，to the family house 修饰 claim。"
+        },
+        {
+          "textEn": "Gandhi renounced the use of violence.",
+          "translationZh": "甘地宣布弃绝使用暴力。",
+          "explanationZh": "the use of violence 是放弃的行为；句子强调宣布不再采用。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "relinquish",
+          "comparisonZh": "放弃权利或控制权时，renounce/relinquish a claim 很接近。renounce 更突出正式或公开的声明；relinquish 更突出交出、停止持有，也可指被迫松手，不一定有公开声明。"
+        },
+        {
+          "word": "abjure",
+          "comparisonZh": "宣布弃绝信仰或某种行为时两词很接近，如 renounce/abjure violence。abjure 更郑重、文学化，有时带宣誓意味；renounce 使用范围更广，也常接权利主张、国籍等。"
+        }
+      ]
+    },
+    {
+      "number": 280,
+      "word": "burlesque",
+      "ipa": "/bɜːˈlesk/",
+      "pos": "n.; v.; adj.",
+      "coreMeaningZh": "滑稽模仿；讽刺性戏仿；滑稽模仿的",
+      "coreEn": "A comic, exaggerated imitation of something serious; to imitate in this manner.",
+      "coreImageZh": "男孩学国王威风凛凛的样子，却拿汤勺当权杖，郑重宣布只许吃布丁。把严肃的威仪夸张成可笑的样子，就是 burlesque 的滑稽模仿。",
+      "mnemonics": [
+        {
+          "method": "BURLESQUE · 不来死磕",
+          "textZh": "近音联想“不来死磕”：台上的人模仿武侠高手，招式夸张得让人发笑，根本不是认真打斗。用这种把严肃招式演得滑稽可笑的模仿，记住 burlesque。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "BALL + SKI · 踩皮球模仿滑雪",
+          "textZh": "把 burlesque 近音联想成 ball（球）和 ski（滑雪）：演员脚踩两只大皮球，举着滑雪杖，故意夸张地模仿滑雪冠军冲线。用这场可笑的夸张模仿记住它。这是近音联想，不是词源。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "名词：滑稽模仿或戏仿作品",
+          "explanationZh": "常用 a burlesque of something，表示对某个严肃题材或风格的滑稽模仿。作为表现手法时可不可数，指具体作品时可数。重点是夸张模仿带来的可笑效果，不等于一切幽默。",
+          "collocations": [
+            {
+              "phrase": "a burlesque of a serious drama",
+              "meaningZh": "对严肃戏剧的滑稽模仿"
+            },
+            {
+              "phrase": "political burlesque",
+              "meaningZh": "政治讽刺性戏仿"
+            }
+          ]
+        },
+        {
+          "senseZh": "动词、形容词及义项边界",
+          "explanationZh": "作动词可直接接被模仿的人或事物；形容词表示滑稽模仿的。burlesque 还指一种可能包含脱衣舞的综艺表演传统；本页例句和插画采用文学、戏剧中的滑稽模仿义。",
+          "collocations": [
+            {
+              "phrase": "burlesque a solemn speech",
+              "meaningZh": "滑稽地模仿一场庄严演讲"
+            },
+            {
+              "phrase": "a burlesque treatment",
+              "meaningZh": "滑稽化的处理"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The dance scene is in part a burlesque of Bollywood movies.",
+          "translationZh": "这场舞蹈在一定程度上是对宝莱坞电影的滑稽模仿。",
+          "explanationZh": "a burlesque of 指具体的戏仿；in part 表示在一定程度上。"
+        },
+        {
+          "textEn": "The political burlesques are not very hard-hitting and kind of bland.",
+          "translationZh": "这些政治讽刺性戏仿不太尖锐，颇有些平淡。",
+          "explanationZh": "burlesques 是可数复数，指多部作品；hard-hitting 表示批评有力、尖锐。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "parody",
+          "comparisonZh": "都可指对既有作品或风格的滑稽模仿，如 a burlesque/parody of a speech。burlesque 往往更突出夸张、把庄严变得可笑；parody 范围更广，也可细致模仿某人的语言风格。"
+        },
+        {
+          "word": "satire",
+          "comparisonZh": "都可能产生讽刺效果。satire 更着眼于揭露或批评人的愚蠢、社会弊端，不必通过模仿；burlesque 强调滑稽化处理严肃对象，可以只是逗趣。因此两者有交集，却不能处处互换。"
+        }
+      ]
+    },
+    {
+      "number": 4763,
+      "word": "upsurge",
+      "ipa": "/ˈʌpsɜːdʒ/",
+      "pos": "n.",
+      "coreMeaningZh": "突然高涨；激增",
+      "coreEn": "A sudden and usually substantial increase in amount or intensity.",
+      "coreImageZh": "起初，同学们对做纸飞机兴趣平平；男孩一展示作品，大家忽然争着举手参加。这一阵明显而迅速的热情高涨，就是 an upsurge in enthusiasm。",
+      "mnemonics": [
+        {
+          "method": "UP + SURF · 浪头猛抬高",
+          "textZh": "用熟悉的 up（向上）和 surf（冲浪）作近形、近音联想：冲浪时一个浪头突然抬高，把板子托上去。把“突然向上涌起”的画面连到 upsurge，记住数量或情绪的猛增。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "UP + SEARCH · 搜索量蹿高",
+          "textZh": "upsurge 可近音联想 up 加 search（搜索）：一个话题突然走红，搜索量一下向上蹿高。用“搜索量突然猛增”的画面记住 upsurge。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "数量或活动的突然增加",
+          "explanationZh": "本页重点是可数名词，常用单数 an upsurge in something；也可用 of。可形容需求、犯罪、活动等的突然明显增加，不带固定褒贬色彩。",
+          "collocations": [
+            {
+              "phrase": "an upsurge in demand",
+              "meaningZh": "需求的激增"
+            },
+            {
+              "phrase": "an upsurge in violence",
+              "meaningZh": "暴力事件的激增"
+            }
+          ]
+        },
+        {
+          "senseZh": "情绪或支持的高涨",
+          "explanationZh": "也可指情绪、兴趣或支持突然增强。比 increase 更突出突然和幅度明显；不只是一个普通、缓慢的增长。名词重音在第一音节，复数为 upsurges。",
+          "collocations": [
+            {
+              "phrase": "an upsurge of emotion",
+              "meaningZh": "一阵情绪高涨"
+            },
+            {
+              "phrase": "an upsurge in enthusiasm",
+              "meaningZh": "热情的突然高涨"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "An upsurge of/in violence in the district has been linked to increased unemployment.",
+          "translationZh": "该地区暴力事件的激增被认为与失业增加有关。",
+          "explanationZh": "原句用 of/in 标示两种介词搭配；has been linked to 表示被认为与某事有关，不等于已经证明因果。"
+        },
+        {
+          "textEn": "Department stores report a recent upsurge in credit-card fraud.",
+          "translationZh": "百货商店报告说，信用卡诈骗近期激增。",
+          "explanationZh": "a recent upsurge in 接增加的现象；credit-card fraud 指信用卡诈骗。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "surge",
+          "comparisonZh": "在突然大幅增加的名词义上很接近，an upsurge/a surge in demand 通常都自然。surge 还可指水流、人群等突然向前涌动；upsurge 在本页重点是数量或强度的上升。"
+        },
+        {
+          "word": "increase",
+          "comparisonZh": "an upsurge/an increase in demand 都可说需求增加。increase 是更宽泛的中性词，不自带突然或幅度大的意思；替换为 increase 可能丢失“猛增”的力度。"
+        }
+      ]
+    }
+  ]
+}

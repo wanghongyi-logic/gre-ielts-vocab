@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4764,
+      "word": "braggart",
+      "ipa": "/ˈbræɡət/",
+      "pos": "n.",
+      "coreMeaningZh": "爱自夸的人；吹牛者",
+      "coreEn": "A person who talks too proudly about their own achievements or abilities.",
+      "coreImageZh": "男孩做了一只普通的小船，却对同学宣称天下第一、谁都比不过自己。braggart 指这样总爱夸耀自己的人，带贬义，不是普通的自信。",
+      "mnemonics": [
+        {
+          "method": "BRAG + ART · 吹牛当艺术",
+          "textZh": "braggart 让人看到 brag（自夸）和 art（艺术）：把吹牛当成一门艺术，开口就是自己的本事天下第一。用“精于自夸的人”记住 braggart；art 在这里是词形联想，不是说这个词真的由“艺术”构成。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "BRACKET · 括号里塞满自夸",
+          "textZh": "用 bracket（括号）近音联想 braggart：他在名字后的括号里写满“天下第一、样样精通”，逢人便念。记住这个爱自夸的人。",
+          "kind": "invented_association",
+          "original": true,
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "可数名词，带贬义",
+          "explanationZh": "说某人是 a braggart，批评的是过度谈论自己的成就、能力等。复数为 braggarts。自信地陈述事实不一定是吹牛。",
+          "collocations": [
+            {
+              "phrase": "a boastful braggart",
+              "meaningZh": "爱自吹自擂的人"
+            },
+            {
+              "phrase": "an insufferable braggart",
+              "meaningZh": "令人难以忍受的吹牛者"
+            }
+          ]
+        },
+        {
+          "senseZh": "与动作词区分",
+          "explanationZh": "brag 是动词“自夸”，braggart 是爱自夸的人。可以说 brag about one’s achievements，但不能把名词 braggart 当动词使用。braggart 也有较少见的形容词用法，本页以名词为重点。",
+          "collocations": [
+            {
+              "phrase": "brag about one’s achievements",
+              "meaningZh": "夸耀自己的成就"
+            },
+            {
+              "phrase": "call someone a braggart",
+              "meaningZh": "称某人为吹牛者"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "thinks he's a loudmouth braggart",
+          "translationZh": "认为他是个大嗓门的吹牛大王",
+          "explanationZh": "原文是省略主语的动词短语；loudmouth 强调大声而令人厌烦地说话。"
+        },
+        {
+          "textEn": "a braggart who was always talking about how much money he made",
+          "translationZh": "一个总在吹嘘自己赚了多少钱的人",
+          "explanationZh": "原文是名词短语；who 从句说明他反复吹嘘收入，体现 braggart 的核心含义。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "boaster",
+          "comparisonZh": "都指自夸者，a braggart/a boaster 通常可互换。braggart 往往更像鲜明的负面人物标签；boast 这个动词有时可中性地表示以某事为荣，但 boaster 仍带贬义。"
+        },
+        {
+          "word": "show-off",
+          "comparisonZh": "都可指爱炫耀的人。braggart 特别强调嘴上自夸；show-off 也可通过动作、服装或表演博取注意，所以不一定说大话。"
+        }
+      ]
+    },
+    {
+      "number": 4765,
+      "word": "sagacious",
+      "ipa": "/səˈɡeɪʃəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "睿智的；判断敏锐而明智的",
+      "coreEn": "Showing wise judgment and a good understanding of situations.",
+      "coreImageZh": "男孩先看看猛烈的雨，再看看脆弱的幼苗，决定暂时留在棚里。他不是一味照计划做事，而是看清形势、作出明智判断，这就是 sagacious。",
+      "mnemonics": [
+        {
+          "method": "SUGGEST · 请他出主意",
+          "textZh": "sagacious 可由 suggest（建议）的近形、近音来提示：遇到难题，大家请看得透、判断准的人出主意。用“能提出明智建议的人”记住 sagacious。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": true
+        },
+        {
+          "method": "SAGACIOUS · 啥该舍",
+          "textZh": "近音联想“啥该舍”：东西太多、时间有限，明智的人先判断什么最重要、啥该舍，不会眉毛胡子一把抓。把看清轻重、判断明智的样子连到 sagacious。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "人的判断与见识",
+          "explanationZh": "正式用语，强调洞察情况并作出明智判断，常形容人、建议、判断或决定。它不是单指学得快或考试分数高。",
+          "collocations": [
+            {
+              "phrase": "a sagacious decision",
+              "meaningZh": "明智的决定"
+            },
+            {
+              "phrase": "sagacious advice",
+              "meaningZh": "睿智的建议"
+            }
+          ]
+        },
+        {
+          "senseZh": "聪明与明智的区别",
+          "explanationZh": "clever 可以突出反应快、技巧巧妙；sagacious 更突出成熟的判断力。它通常带褒义，不暗示狡诈。名词为 sagacity，但记忆时不必先学这个较难的名词。",
+          "collocations": [
+            {
+              "phrase": "a sagacious adviser",
+              "meaningZh": "有远见、善判断的顾问"
+            },
+            {
+              "phrase": "sagacious judgment",
+              "meaningZh": "明智敏锐的判断"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The judge was fair and sagacious.",
+          "translationZh": "这位法官公正而睿智。",
+          "explanationZh": "fair and sagacious 并列描述法官，分别表示公正与判断明智。"
+        },
+        {
+          "textEn": "sagacious investors got in on the ground floor",
+          "translationZh": "有远见的投资者在早期就参与了进来",
+          "explanationZh": "get in on the ground floor 指在早期就参与，例子突出看准机会的判断力；原文为小写开头、无句末标点的例示分句。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "wise",
+          "comparisonZh": "在 a wise/sagacious decision 中很接近。wise 更常用，既可指人生智慧也可指明智选择；sagacious 正式得多，更突出看得透、判断准。"
+        },
+        {
+          "word": "shrewd",
+          "comparisonZh": "两者都可表示判断敏锐。shrewd 常突出实际利益、商业眼光，有时带精于算计的意味；sagacious 通常更褒义、庄重。"
+        }
+      ]
+    },
+    {
+      "number": 110,
+      "word": "animus",
+      "ipa": "/ˈænɪməs/",
+      "pos": "n.",
+      "coreMeaningZh": "敌意；恶意；强烈的憎恶",
+      "coreEn": "A strong feeling of hostility or ill will toward someone or something.",
+      "coreImageZh": "输了棋以后，男孩把怨气转向对手，甚至说下次不想让对方参加。这不是单纯失望，而是针对人的敌意，也就是 animus。",
+      "mnemonics": [
+        {
+          "method": "ENEMY + US · 对我们有敌意",
+          "textZh": "animus 可近音联想 enemy（敌人）加 us（我们）：把我们当敌人的一方，对我们怀有敌意。由“敌人对我们的敌意”记住 animus。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "ANIMALS · 护地盘的敌意",
+          "textZh": "animus 近形、近音联想到熟悉的 animals（动物）：两只护地盘的动物互相龇牙、怒视，谁也不肯让对方靠近。用这幅针对对方的敌意画面，记住 animus。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "针对某人的敌意",
+          "explanationZh": "正式用语，常按不可数名词使用；也可说 an animus，指某种具体敌意。常见 animus against/toward(s) someone，表示对某人的敌意；personal animus 强调个人成见或恶意。",
+          "collocations": [
+            {
+              "phrase": "personal animus",
+              "meaningZh": "个人敌意"
+            },
+            {
+              "phrase": "animus against someone",
+              "meaningZh": "对某人的敌意"
+            }
+          ]
+        },
+        {
+          "senseZh": "态度而非行为",
+          "explanationZh": "animus 是内在敌意，可以影响言行，但不必已经表现为攻击。它比暂时生气或不喜欢通常更强、更有针对性；本页不采用拉丁语或专门心理学中的其他含义。",
+          "collocations": [
+            {
+              "phrase": "racial animus",
+              "meaningZh": "种族敌意"
+            },
+            {
+              "phrase": "be motivated by animus",
+              "meaningZh": "出于敌意而行动"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She felt an animus against them.",
+          "translationZh": "她对他们怀有敌意。",
+          "explanationZh": "against 指敌意的对象；an animus 表示一种具体的敌意，并非这个词只能不可数。"
+        },
+        {
+          "textEn": "Your animus towards him suggests that you are the wrong man for the job.",
+          "translationZh": "你对他的敌意表明，你不是这项工作的合适人选。",
+          "explanationZh": "towards 接敌意对象；句子说个人敌意使人不适合承担该工作。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hostility",
+          "comparisonZh": "表示敌对态度时很接近，如 animus/hostility toward someone。hostility 更常用，也可指公开的敌对行为；复数 hostilities 还可指交战，而 animus 通常指内心敌意。"
+        },
+        {
+          "word": "animosity",
+          "comparisonZh": "在个人或群体之间的强烈敌意上很接近，都可接 toward(s) 或 against。animus 更正式，常突出驱动行为的敌意或偏见；不能因此断言两者在所有专门语境下相同。"
+        }
+      ]
+    },
+    {
+      "number": 4766,
+      "word": "majestic",
+      "ipa": "/məˈdʒɛstɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "雄伟的；壮丽的；庄严的",
+      "coreEn": "Impressively grand, dignified, or beautiful in a way that inspires admiration.",
+      "coreImageZh": "高耸的雪山占据视野，男孩仰起头，安静地惊叹。majestic 不只是好看，还带宏伟、庄严、令人敬畏的气势。",
+      "mnemonics": [
+        {
+          "method": "MAJESTY · 陛下的威仪",
+          "textZh": "从电影里常听到的 Your Majesty（陛下）联想：君主端庄地走入宏伟大殿，气势庄严。majestic 和 majesty 属于同一词族，用这份威仪记住“庄严、雄伟”；山川也能有这样的气势，不限于王室。",
+          "original": false,
+          "kind": "word_family",
+          "weak": false
+        },
+        {
+          "method": "MAGIC STICK · 点出宏伟宫殿",
+          "textZh": "把 majestic 近音联想成 magic stick（魔杖）：魔杖一点，眼前升起高耸的宫殿，巨柱和穹顶让人仰头惊叹。用这座庄严宏伟的宫殿，记住 majestic。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "自然景观与建筑",
+          "explanationZh": "常形容山脉、风景、建筑等，强调宏大的美与气势。可以作定语或表语，如 majestic mountains、the building looks majestic。",
+          "collocations": [
+            {
+              "phrase": "majestic mountains",
+              "meaningZh": "雄伟的群山"
+            },
+            {
+              "phrase": "a majestic palace",
+              "meaningZh": "宏伟的宫殿"
+            }
+          ]
+        },
+        {
+          "senseZh": "人的仪态与动作",
+          "explanationZh": "也可形容庄严有气度的外表、举止或行进。比 beautiful 更有庄严、宏大的色彩；华丽但轻巧可爱的东西未必 majestic。",
+          "collocations": [
+            {
+              "phrase": "a majestic appearance",
+              "meaningZh": "庄严的外表"
+            },
+            {
+              "phrase": "move majestically",
+              "meaningZh": "庄严优雅地移动"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "...a majestic country home that once belonged to the Astor family.",
+          "translationZh": "……一座曾属于阿斯特家族的宏伟乡间宅邸。",
+          "explanationZh": "原文保留省略号，是名词短语；majestic 形容宅邸宏伟、有气势。"
+        },
+        {
+          "textEn": "Anna looked tanned and majestic in her linen caftan.",
+          "translationZh": "安娜穿着亚麻长袍，肤色黝黑，仪态高贵。",
+          "explanationZh": "majestic 也可形容人的仪态。caftan 是一种宽松长袍，tanned 表示晒成棕褐色。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "grand",
+          "comparisonZh": "形容宏大的建筑、场面时可以接近。grand 范围更广，可指规模大、豪华或隆重；majestic 更突出庄严而令人敬畏的气势。"
+        },
+        {
+          "word": "stately",
+          "comparisonZh": "形容庄严的建筑或仪态时很接近，如 a majestic/stately building。stately 常突出从容、优雅、端庄；majestic 更适合强调高山等自然景观的恢宏。"
+        }
+      ]
+    },
+    {
+      "number": 1699,
+      "word": "pathological",
+      "ipa": "/ˌpæθəˈlɒdʒɪkəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "病理的；与疾病有关的；病态的、难以控制的",
+      "coreEn": "Related to disease or pathology; also describing extreme, unreasonable, or uncontrollable behaviour or feelings.",
+      "coreImageZh": "在植物科普展上，讲解员指出病害导致的叶片变化，男孩只是观察者。这里的 pathological 表示与疾病有关。用于行为时还可表示极端、难以控制，但不能因为一个普通习惯就给人下诊断。",
+      "mnemonics": [
+        {
+          "method": "怕它 + LOGICAL · 怕得不合情理",
+          "textZh": "把 pathological 近音联想成“怕它，logical 吗？”：故事中的成年人明知玩具无害，却长期被强烈恐惧困住，连日常生活都受到严重影响。用这种极端、难以控制的怕，连到 pathological 的行为义；普通害怕不等于病态，这个联想也不是诊断标准。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "BIOLOGICAL · 生物切片看病变",
+          "textZh": "pathological 和 biological（生物的）有相近的大段词形与声音。生物课把健康与患病组织切片并排观察：疾病造成的组织变化，就是 pathological changes。由“生物切片里看病变”记住病理的、由疾病引起的。",
+          "kind": "invented_association",
+          "original": false,
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "疾病与病理研究",
+          "explanationZh": "可表示由疾病造成、与疾病相关，也可表示与病理学有关。pathological changes 指病理性变化；病理研究不一定研究人的疾病，插画采用植物病害的科普场景。",
+          "collocations": [
+            {
+              "phrase": "pathological changes",
+              "meaningZh": "病理性变化"
+            },
+            {
+              "phrase": "pathological examination",
+              "meaningZh": "病理检查"
+            }
+          ]
+        },
+        {
+          "senseZh": "极端或难以控制的行为",
+          "explanationZh": "pathological liar、pathological fear 等搭配常描述极端、反复或难以控制的行为、情绪，语气很强。词典中的这种表达不自动构成临床诊断，也不宜给孩子或普通偏好贴标签。",
+          "collocations": [
+            {
+              "phrase": "a pathological liar",
+              "meaningZh": "说谎成性的人"
+            },
+            {
+              "phrase": "a pathological fear of something",
+              "meaningZh": "对某事物极端而难以控制的恐惧"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He experiences chronic, almost pathological jealousy.",
+          "translationZh": "他长期心怀嫉妒，几乎到了病态的程度。",
+          "explanationZh": "almost 保留“几乎”的程度，pathological 强调嫉妒极端而难以控制。"
+        },
+        {
+          "textEn": "He's a pathological liar.",
+          "translationZh": "他是个习惯性撒谎、难以自控的人。",
+          "explanationZh": "pathological liar 是常见搭配，指说谎成性的人。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "pathologic",
+          "comparisonZh": "在“病理的、与疾病有关的”专业用法中通常可互换，如 pathological/pathologic changes。pathological 在一般语境中更常见；说谎成性等固定表达通常用 pathological。"
+        },
+        {
+          "word": "compulsive",
+          "comparisonZh": "描述难以控制的反复行为时有交集，如 pathological/compulsive lying。compulsive 突出难以克制的冲动；pathological 还包含疾病和病理学义，因此 pathological examination 不能换成 compulsive examination。"
+        }
+      ]
+    }
+  ]
+}
