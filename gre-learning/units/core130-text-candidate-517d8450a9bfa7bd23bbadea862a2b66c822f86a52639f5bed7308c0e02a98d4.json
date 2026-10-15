@@ -1,0 +1,349 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 351,
+      "word": "circumlocution",
+      "ipa": "/ˌsɝːkəmləˈkjuːʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "迂回的说法；拐弯抹角；冗长绕弯的表达",
+      "coreEn": "An indirect or unnecessarily wordy way of expressing something.",
+      "coreImageZh": "男孩想借桌上的铅笔，却不直接说名字，反而比画着描述那种能在纸上画线的东西。朋友问他是不是要铅笔，他才有些不好意思地点头。",
+      "usage": [
+        {
+          "senseZh": "绕弯表达",
+          "explanationZh": "可作不可数名词，指说话绕弯的方式；也可数，指某一种迂回说法。可能是故意回避，也可能只是没直接说出名称，不等于撒谎。",
+          "collocations": [
+            {
+              "phrase": "avoid circumlocution",
+              "meaningZh": "避免拐弯抹角"
+            },
+            {
+              "phrase": "a circumlocution for something",
+              "meaningZh": "表示某事物的一种迂回说法"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "wordiness",
+          "comparisonZh": "都可能涉及用词过多；wordiness 只说冗长，circumlocution 还突出绕着意思说。一个直接但啰唆的回答可有 wordiness，却未必是在绕弯。"
+        },
+        {
+          "word": "evasion",
+          "comparisonZh": "在回避正面回答时相近；evasion 着重逃避，circumlocution 着重迂回的语言形式。绕着描述一个忘了名字的东西，不一定有逃避意图。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "circumlocution / circle + location",
+          "textZh": "把 circumlocution 的整体词形联到 circle（圆圈）＋location（地点）：问路只想知道 location，对方却把四周像画 circle 一样讲了一圈，迟迟不直说目的地。用“说话绕圈，不直奔重点”记迂回表达。这是近形联想，不是词源拆分。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "circumlocution / location",
+          "textZh": "circumlocution 后半段的 locution 与 location（地点）只差一个元音字母。想象别人只问 location，他却讲了半天附近有什么、以前发生过什么，始终不直接报地点。用“问个 location，答得绕来绕去”记迂回说法。这是词形联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Please answer without circumlocution: did you approve the plan?",
+          "translationZh": "请别拐弯抹角：你批准了这个计划吗？",
+          "explanationZh": "without circumlocution 要求直接回答。"
+        },
+        {
+          "textEn": "He used a lengthy circumlocution instead of simply saying “pencil.”",
+          "translationZh": "他没有直接说“铅笔”，而是用了一长串绕弯的说法。",
+          "explanationZh": "这里指一次具体的迂回表达，用可数形式 a circumlocution。"
+        }
+      ]
+    },
+    {
+      "number": 2767,
+      "word": "calamity",
+      "ipa": "/kəˈlæməti/",
+      "pos": "n.",
+      "coreMeaningZh": "灾难；重大灾祸",
+      "coreEn": "A disastrous event that causes serious loss, suffering, or damage.",
+      "coreImageZh": "男孩站在安全的高处，顺着邻居的手势望向洪水后的村庄：房屋受损，农田被淹。他渐渐明白，许多家庭失去了住处和收成，神情沉重下来。",
+      "usage": [
+        {
+          "senseZh": "严重灾祸",
+          "explanationZh": "常作可数名词，复数为 calamities。可指自然灾害，也可指经济等领域的重大不幸；语气通常比日常的 trouble 重得多。",
+          "collocations": [
+            {
+              "phrase": "a natural calamity",
+              "meaningZh": "自然灾害"
+            },
+            {
+              "phrase": "an economic calamity",
+              "meaningZh": "经济灾难"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "disaster",
+          "comparisonZh": "严重灾难义上十分接近，如 a natural calamity/disaster。calamity 较郑重，常使人想到重大损失与苦难；disaster 日常也常夸张地形容失败的聚会或作品。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "misfortune",
+          "comparisonZh": "都涉及不幸；misfortune 的范围更广，小的不顺也可以这样说。calamity 通常是造成严重损失的灾祸，不只是运气不好。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "calamity / call a mighty",
+          "textZh": "把 calamity 的声音联到 call a mighty rescue team（叫一支强大的救援队）：洪水毁了许多房屋，普通人已无力应付，得赶紧呼叫强大的救援队。用“严重灾祸需要大救援”记 calamity；这是近音联想。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "calamity / call a meeting",
+          "textZh": "联想 call a meeting（召集会议）：洪水冲毁房屋，镇上紧急开会安排救灾。由这场必须紧急应对的灾难记 calamity；这是近音联想，不是词源。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The flood was a calamity for the farming community.",
+          "translationZh": "这场洪水给这个农业社区带来了灾难。",
+          "explanationZh": "for 引出遭受重大损失的群体。"
+        },
+        {
+          "textEn": "The sudden collapse of the industry brought economic calamity to the region.",
+          "translationZh": "这个行业的突然崩溃给该地区带来了经济灾难。",
+          "explanationZh": "不局限于自然灾害；这里指严重的经济损失与困境。"
+        }
+      ]
+    },
+    {
+      "number": 367,
+      "word": "cloying",
+      "ipa": "/ˈklɔɪɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "甜得发腻的；过分煽情而令人腻烦的",
+      "coreEn": "Unpleasant because it is excessively sweet or sentimental.",
+      "coreImageZh": "男孩尝了一小口堆满糖霜的蛋糕，原本期待的神情变成了皱眉抿嘴。他放下叉子，不想再吃；让他发腻的是甜味过重，并不是吃得太多。",
+      "usage": [
+        {
+          "senseZh": "味道或气味甜得发腻",
+          "explanationZh": "带不赞同意味，可形容甜食或浓甜的香气。关键是原本讨喜的甜过了头，不是任何不好吃的东西都叫 cloying。",
+          "collocations": [
+            {
+              "phrase": "cloying sweetness",
+              "meaningZh": "令人发腻的甜味"
+            },
+            {
+              "phrase": "a cloying scent",
+              "meaningZh": "浓甜得令人不适的香气"
+            }
+          ]
+        },
+        {
+          "senseZh": "感情表达过分甜腻",
+          "explanationZh": "用于故事、表演、赞美等，表示甜蜜或煽情过头，让人厌烦。",
+          "collocations": [
+            {
+              "phrase": "cloying sentimentality",
+              "meaningZh": "令人腻烦的过度煽情"
+            },
+            {
+              "phrase": "cloying flattery",
+              "meaningZh": "甜腻得令人反感的奉承"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "syrupy",
+          "comparisonZh": "形容感情表达甜腻时相近，如 syrupy/cloying praise。syrupy 也可客观描述糖浆般的质地；cloying 明确带过量而不舒服的评价。"
+        },
+        {
+          "word": "sentimental",
+          "comparisonZh": "sentimental 侧重感情用事或多愁善感，未必令人讨厌；cloying 强调煽情过头。sweet 或 sentimental 都不能单独表达 cloying 的“过量而腻烦”。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "cloying / annoying",
+          "textZh": "cloying 和 annoying（烦人的）尾部声音相近。想象糖霜甜到让你皱眉，或情话甜到让你想躲开：sweet 过了头，就变得 annoying。用“甜到烦”记 cloying，不把它泛化成任何烦人。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "cloying / cloning",
+          "textZh": "cloying 与 cloning（克隆、复制）的词形很近。想象一部爱情片把同一句甜蜜誓言不断复制，人人开口都是它；甜话多到腻烦。用“复制过头的甜蜜”记 cloying，这是近形联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The thick frosting gave the cake a cloying sweetness.",
+          "translationZh": "厚厚的糖霜让蛋糕甜得发腻。",
+          "explanationZh": "突出甜味过量带来的不适。"
+        },
+        {
+          "textEn": "The film is moving without becoming cloying.",
+          "translationZh": "这部电影感人，却没有煽情到令人腻烦。",
+          "explanationZh": "moving 可以是赞赏；cloying 指情感表达过了头。"
+        }
+      ]
+    },
+    {
+      "number": 482,
+      "word": "cosset",
+      "ipa": "/ˈkɑːsɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "娇养；宠爱；过分呵护",
+      "coreEn": "To give someone abundant attention and comfort, often more than they need.",
+      "coreImageZh": "男孩已经坐得很舒服，水杯也在手边，家长仍抱着第三个靠垫，叫他别动。男孩说自己能来，家长却还在旁边忙着呵护他。",
+      "usage": [
+        {
+          "senseZh": "娇养；给予过多照顾",
+          "explanationZh": "及物动词，直接接人或动物。常带过度保护意味；在酒店服务等语境，也可赞赏周到宠爱，不一定指已经把人惯坏。",
+          "collocations": [
+            {
+              "phrase": "cosset a child",
+              "meaningZh": "娇养孩子"
+            },
+            {
+              "phrase": "cosset guests",
+              "meaningZh": "让客人享受周到的呵护"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "pamper",
+          "comparisonZh": "在给予舒适享受和额外照顾时很接近，如 cosset/pamper guests。两者都可能带宠爱或过度照料的意味。"
+        },
+        {
+          "word": "spoil",
+          "comparisonZh": "指把孩子惯坏时接近；spoil 更容易强调纵容造成的不良结果。cosset 更突出呵护周到或过分保护，未必已经导致坏习惯。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "cosset / closet",
+          "textZh": "cosset 与 closet（衣橱）的词形很近。想象父母替已经会穿衣服的孩子塞满整柜漂亮衣服，每天还抢着替他挑、替他穿。用“衣橱前样样代劳”记过分呵护；这是拼写联想。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "cosset / cost + set",
+          "textZh": "把 cosset 联到 cost（花费）和 set（一套）：孩子刚喜欢上一件玩具，家长不问 cost，立刻把整套 set 都买齐。用“不惜花费，整套都宠给你”记娇宠；这是联想，不是词源。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His parents cosseted him so much that he rarely did anything for himself.",
+          "translationZh": "父母把他娇养得太过，他很少自己动手做事。",
+          "explanationZh": "后半句明确了过分照顾的结果。"
+        },
+        {
+          "textEn": "The hotel cossets its guests with comfortable rooms and attentive service.",
+          "translationZh": "这家酒店以舒适的客房和周到的服务悉心款待客人。",
+          "explanationZh": "服务语境中可以是正面描写，不必译成把客人惯坏。"
+        }
+      ]
+    },
+    {
+      "number": 3066,
+      "word": "wilt",
+      "ipa": "/wɪlt/",
+      "pos": "v.",
+      "coreMeaningZh": "变得萎靡；失去精力；（植物）蔫下去",
+      "coreEn": "To lose energy or strength; of a plant, to become limp and droop.",
+      "coreImageZh": "男孩写了很久作业，手里的笔慢慢停下来。他放下笔，肩膀和脑袋渐渐垂下，说自己已经没精神了，最后伏在手臂上休息。",
+      "usage": [
+        {
+          "senseZh": "人因疲惫或压力而萎靡",
+          "explanationZh": "常作不及物动词，描写体力、精神或斗志减弱；不是必然昏倒，也不是故意偷懒。",
+          "collocations": [
+            {
+              "phrase": "wilt under pressure",
+              "meaningZh": "在压力下萎靡下来"
+            },
+            {
+              "phrase": "wilt in the heat",
+              "meaningZh": "在酷热中变得无精打采"
+            }
+          ]
+        },
+        {
+          "senseZh": "植物蔫下去；使萎蔫",
+          "explanationZh": "植物失去水分等会变软、下垂，可及物或不及物。蔫了不等于已经死亡。",
+          "collocations": [
+            {
+              "phrase": "wilted flowers",
+              "meaningZh": "蔫了的花"
+            },
+            {
+              "phrase": "the heat wilted the leaves",
+              "meaningZh": "高温使叶片萎蔫"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "droop",
+          "comparisonZh": "都能描写低垂的姿态，如 flowers wilt/droop；droop 更侧重垂下的外形，wilt 更突出失去原有的挺拔或活力。drooping branches 也可能只是枝条自然下垂。"
+        },
+        {
+          "word": "weaken",
+          "comparisonZh": "在人失去力量时相近；weaken 的范围更广，也能指削弱论点、结构等。wilt 常让人想到受热、受累或受压后蔫下去的状态。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "wilt / tilt",
+          "textZh": "wilt 与 tilt（倾斜）只差开头一个字母。想象写作业的人累到头慢慢 tilt，肩膀也垂下来：用“失去精神，脑袋歪垂”记 wilt。tilt 本身只指倾斜，不等于疲倦。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "wilt / 萎了",
+          "textZh": "把 wilt 近音联到“萎了”：熬着写了半天作业，整个人像缺水的花一样蔫下去，没精神了。用“人也萎了”记疲惫萎靡，再连到植物萎蔫。中文只作近音提示。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "After hours of study, he began to wilt.",
+          "translationZh": "学了几个小时之后，他开始疲惫萎靡。",
+          "explanationZh": "人作主语，指精力逐渐耗尽。"
+        },
+        {
+          "textEn": "The flowers wilted in the afternoon heat.",
+          "translationZh": "花在午后的炎热中蔫了。",
+          "explanationZh": "植物义强调失去挺拔、软垂下来，不必然是死了。"
+        }
+      ]
+    }
+  ]
+}

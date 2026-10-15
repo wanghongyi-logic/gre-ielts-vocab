@@ -1,0 +1,386 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 2004,
+      "word": "refractory",
+      "ipa": "/rɪˈfræktəri/",
+      "pos": "adj.",
+      "coreMeaningZh": "倔强的，不服管教的；难治的；耐高温的",
+      "coreEn": "Stubbornly resisting control; also resistant to treatment or high heat.",
+      "coreImageZh": "照顾者让男孩把小汽车收进箱子。他明明听懂了，却叉腰扭头说“我就不收！”这种故意抗拒要求的表现就是 refractory。",
+      "usage": [
+        {
+          "senseZh": "抗拒管理或指令",
+          "explanationZh": "较正式，强调别人试图管理时仍不肯配合，不只是心情不好或没有听见。",
+          "collocations": [
+            {
+              "phrase": "a refractory child",
+              "meaningZh": "不服管教的孩子"
+            },
+            {
+              "phrase": "refractory behavior",
+              "meaningZh": "抗拒管教的行为"
+            }
+          ]
+        },
+        {
+          "senseZh": "专业用法：难治、耐高温",
+          "explanationZh": "疾病 refractory to treatment 是对治疗反应不佳；refractory materials 是耐高温材料。人的“不听话”不能直接套入这些专业义。",
+          "collocations": [
+            {
+              "phrase": "refractory to treatment",
+              "meaningZh": "难以治疗的"
+            },
+            {
+              "phrase": "refractory materials",
+              "meaningZh": "耐火材料"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "unruly",
+          "comparisonZh": "形容难管的人或群体时接近。unruly 常强调缺乏纪律、行为失控；refractory 更突出对管理和引导的抗拒。"
+        },
+        {
+          "word": "stubborn",
+          "comparisonZh": "都可表示固执。stubborn 范围更广，可指不肯改变意见；refractory 常带有不服控制、难以管教的意味。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "refractory / re + factory",
+          "textZh": "factory 是工厂。把 refractory 看成 re 加上一个“多长了 r”的 factory：工厂里的机器人接到指令，却反复回答“不干！”记住这座拒绝听指挥的工厂，就能连到“不服管教的”。这是拼形联想，不是词源。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "refractory / re + fraction",
+          "textZh": "把 refractory 近形联到 re（再一次）＋fraction（分数）：老师要求重做分数题，孩子明明听懂，却偏说“我就不做！”用“拒绝服从要求”记 refractory 的“抗拒管教的”。这是拼形联想，不是词源，也不按这个提示读音。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "refractory players will be ejected from the game",
+          "translationZh": "不服管理的球员将被逐出比赛。",
+          "explanationZh": "refractory 修饰 players，强调他们不服从比赛管理。"
+        },
+        {
+          "textEn": "The boy remained refractory even after the cleanup request was explained again.",
+          "translationZh": "即使收拾玩具的要求又解释了一遍，男孩仍然不肯听从。",
+          "explanationZh": "remained refractory 表示仍保持抗拒态度，even after 突出他已经听懂要求。"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "word": "abiding",
+      "ipa": "/əˈbaɪdɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "持久的，长久不变的",
+      "coreEn": "Continuing for a long time, especially a feeling, belief, or memory.",
+      "coreImageZh": "男孩轻轻摸着童年的小熊，说从小就喜欢它，过了这么多年仍然如此。这里 abiding 描述的是一直没有消退的感情。",
+      "usage": [
+        {
+          "senseZh": "长久保持的感情、信念或兴趣",
+          "explanationZh": "常置于名词前；重点是延续很久，不必理解为绝对永恒。",
+          "collocations": [
+            {
+              "phrase": "abiding affection",
+              "meaningZh": "持久的深情"
+            },
+            {
+              "phrase": "an abiding interest in music",
+              "meaningZh": "对音乐长久的兴趣"
+            }
+          ]
+        },
+        {
+          "senseZh": "难以淡去的记忆",
+          "explanationZh": "an abiding memory 是长久留在心中的记忆。abiding by the rules 则是动词短语，意思是遵守规则。",
+          "collocations": [
+            {
+              "phrase": "an abiding memory",
+              "meaningZh": "长久难忘的记忆"
+            },
+            {
+              "phrase": "an abiding belief",
+              "meaningZh": "长久坚定的信念"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "enduring",
+          "comparisonZh": "都可形容长久的感情、记忆和影响。enduring 使用范围较广，还常形容经久不衰的吸引力、声望；abiding 尤其常用于内心的感受和信念。"
+        },
+        {
+          "word": "lasting",
+          "comparisonZh": "都表示持续很久。lasting 更通用，可说 lasting damage 或 lasting effects；abiding love 则突出长久保持的爱。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "abiding / a binding",
+          "textZh": "binding 来自 bind“绑住”，可以指书本的装订。a binding 和 abiding 的字形只差一个 n：想象一份感情像结实的装订，把两个人长久连在一起。牢牢相连、经年不散，就是 abiding。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "abiding / a building",
+          "textZh": "看到 abiding，联想到 a building（一座建筑）：童年的老楼多年仍在，你对它的感情也一直没变。用“老楼长存，感情长久”记 abiding，持久的。这里只借字形联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She holds an abiding affection for her old school.",
+          "translationZh": "她对母校怀有长久不变的深情。",
+          "explanationZh": "abiding 放在 affection 前，说明这份感情持续多年。"
+        },
+        {
+          "textEn": "His abiding love for the old teddy bear had not faded with the years.",
+          "translationZh": "他对那只旧玩具熊长久的喜爱，并未随岁月消退。",
+          "explanationZh": "had not faded with the years 把 abiding 的持久性具体说出来。"
+        }
+      ]
+    },
+    {
+      "number": 414,
+      "word": "concur",
+      "ipa": "/kənˈkɝː/",
+      "pos": "v.",
+      "coreMeaningZh": "同意，意见一致；同时发生",
+      "coreEn": "To agree with an opinion or conclusion; also, to happen at the same time.",
+      "coreImageZh": "女孩建议把盆栽放在窗边晒太阳。男孩想了想，点头说“我也这么想，就放这儿”。他赞同这项建议，就是 concur。",
+      "usage": [
+        {
+          "senseZh": "正式表达赞同",
+          "explanationZh": "通常不及物；concur with someone 或 a conclusion 表示同意某人或某个结论，也可接 that 从句。过去式 concurred，现在分词 concurring。",
+          "collocations": [
+            {
+              "phrase": "concur with someone",
+              "meaningZh": "同意某人"
+            },
+            {
+              "phrase": "concur that…",
+              "meaningZh": "一致认为……"
+            }
+          ]
+        },
+        {
+          "senseZh": "同时发生或共同作用",
+          "explanationZh": "另可用于事件同时发生，或几个因素共同促成结果。具体义项要看主语和上下文。",
+          "collocations": [
+            {
+              "phrase": "events concur",
+              "meaningZh": "事件同时发生"
+            },
+            {
+              "phrase": "concur in an opinion",
+              "meaningZh": "持同一意见"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "agree",
+          "comparisonZh": "表达同一意见时最接近，agree 更日常，concur 更正式。agree to do something 的“答应做事”结构，不宜直接照搬成 concur to do something。"
+        },
+        {
+          "word": "coincide",
+          "comparisonZh": "在事件同时发生、意见相合时接近。coincide 常以事件、时间或意见为主语；向某人表示赞同时，concur with someone 更直接。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "concur / conquer",
+          "textZh": "conquer 是“征服”，与 concur 的整体拼形和辅音相近。讨论时不用 conquer 对方；把道理讲清，他点头说“I concur”，才是“我同意”。用“征服对方”和“让对方赞同”的短对比记住两词。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "concur / con + current",
+          "textZh": "current 可以指水流。concur 的 con- 表示“一起”，cur 与 current 的“流动、奔跑”词族相连：两股水流汇到一起，像两个人的意见汇到一起，于是同意、意见一致。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The new report concurs with previous findings.",
+          "translationZh": "这份新报告与此前的研究结果一致。",
+          "explanationZh": "报告作主语时，concurs with 表示它的结论与已有结果相符。"
+        },
+        {
+          "textEn": "They concurred that the plant should stay by the window.",
+          "translationZh": "他们一致认为这盆植物应该放在窗边。",
+          "explanationZh": "concurred that 后接双方同意的具体观点。"
+        }
+      ]
+    },
+    {
+      "number": 288,
+      "word": "cajole",
+      "ipa": "/kəˈdʒoʊl/",
+      "pos": "v.",
+      "coreMeaningZh": "用好话哄劝，劝诱",
+      "coreEn": "To persuade a reluctant person through praise, pleasant talk, or gentle urging.",
+      "coreImageZh": "女孩起初不愿唱歌。男孩夸她唱得好听，又温和地请她唱一小段；她终于答应，朝话筒开口。这种用好话哄劝的过程就是 cajole。",
+      "usage": [
+        {
+          "senseZh": "哄劝某人做事",
+          "explanationZh": "常暗含对方本来不太愿意，靠赞美、好话或承诺来劝动；有时带哄骗色彩，但不一定说谎。",
+          "collocations": [
+            {
+              "phrase": "cajole someone into doing something",
+              "meaningZh": "哄劝某人做某事"
+            },
+            {
+              "phrase": "cajole someone out of doing something",
+              "meaningZh": "哄劝某人不要做某事"
+            }
+          ]
+        },
+        {
+          "senseZh": "哄着取得某物",
+          "explanationZh": "cajole something out of someone 指用好话让对方交出信息、钱等。过去式 cajoled，现在分词 cajoling。",
+          "collocations": [
+            {
+              "phrase": "cajole an answer out of someone",
+              "meaningZh": "哄着某人说出答案"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "coax",
+          "comparisonZh": "在温和地劝动不情愿的人时很接近。coax 更突出耐心和温柔；cajole 更容易让人想到赞美、甜言蜜语或讨好的话。"
+        },
+        {
+          "word": "wheedle",
+          "comparisonZh": "都可指用好话达到目的。wheedle 通常贬义更明显，突出刻意讨好或不真诚；cajole 也可用于日常温和哄劝。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "cajole / 夸久了",
+          "textZh": "把 cajole 的声音近似联想到“夸久了”：对方本来不愿唱，你夸她声音好听，又请她唱一段；夸着劝着，她终于点头。记住“靠好话劝动”，就是 cajole。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "cajole / cage + hole",
+          "textZh": "把 cajole 近似联到 cage + hole（笼子＋开口）：小鸟不肯回笼，你在开口处拿着它爱吃的东西，轻声哄它进去。用“耐心哄劝，而不是硬抓”记 cajole。这里只借近音，不是词源拆分。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I managed to cajole her out of leaving too early.",
+          "translationZh": "我总算用好话劝她不要太早离开。",
+          "explanationZh": "cajole someone out of doing something 表示哄劝某人不做某事。"
+        },
+        {
+          "textEn": "He cajoled his reluctant friend into singing by praising her voice.",
+          "translationZh": "他夸朋友嗓音好听，哄得原本不情愿的她答应唱歌。",
+          "explanationZh": "into singing 是被劝做的事；by praising her voice 说明哄劝的方式。"
+        }
+      ]
+    },
+    {
+      "number": 4800,
+      "word": "gravitate",
+      "ipa": "/ˈɡrævɪteɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "受吸引而趋向；自然地倾向",
+      "coreEn": "To move toward or develop a natural preference for someone or something that attracts you.",
+      "coreImageZh": "男孩一看到恐龙展品，目光和身体就不由自主地朝它转去。他说每次来都最想看恐龙；这种自然被吸引过去的倾向，就是 gravitate。",
+      "usage": [
+        {
+          "senseZh": "受吸引而趋向人或地方",
+          "explanationZh": "不及物，常接 to 或 toward/towards。重点是自然受到吸引，不只是按要求走向某处。",
+          "collocations": [
+            {
+              "phrase": "gravitate toward someone",
+              "meaningZh": "自然被某人吸引"
+            },
+            {
+              "phrase": "gravitate to a place",
+              "meaningZh": "受吸引而去某处"
+            }
+          ]
+        },
+        {
+          "senseZh": "兴趣、话题或选择自然倾向",
+          "explanationZh": "可以没有实际走动：人倾向某种工作，谈话逐渐转向某个话题。另有物理上的受引力作用移动之义。",
+          "collocations": [
+            {
+              "phrase": "gravitate toward a career",
+              "meaningZh": "自然倾向某种职业"
+            },
+            {
+              "phrase": "the conversation gravitates to politics",
+              "meaningZh": "谈话渐渐转向政治"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "be drawn to",
+          "comparisonZh": "在被某人或事物吸引时很接近。be drawn to 更直接说吸引力；gravitate toward 还常带有自然靠近、选择或逐渐趋向的意味。"
+        },
+        {
+          "word": "be attracted to",
+          "comparisonZh": "都能表示受到吸引。be attracted to 可以只说兴趣或好感；gravitate to/toward 更突出由此产生的趋向，且不用被动结构。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "gravitate / gravity",
+          "textZh": "gravity 是重力，和 gravitate 共享完整的 gravit。重力把东西吸向地面；喜欢的展品也仿佛有吸引力，把你的目光和身体引过去。从 gravity 的“引力”连到 gravitate 的“受吸引而趋向”。两词确属同一词族。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "gravitate / grab it",
+          "textZh": "看到 gravitate，借前半段的近音想到 grab it（把它抓过来）：喜欢的点心一出现，你就自然朝它靠过去。先被吸引而趋向的这一步，就是 gravitate；它不表示已经抓到。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "People tend to gravitate to the beaches here.",
+          "translationZh": "人们往往会被这里的海滩吸引过去。",
+          "explanationZh": "gravitate to 表示受到吸引而前往；tend to 进一步说明这是一种常见倾向。"
+        },
+        {
+          "textEn": "At museums, he always gravitates toward the dinosaur exhibits.",
+          "translationZh": "在博物馆里，他总会自然地被恐龙展品吸引过去。",
+          "explanationZh": "always 和 toward 一起呈现稳定的兴趣倾向。"
+        }
+      ]
+    }
+  ]
+}

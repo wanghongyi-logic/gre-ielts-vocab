@@ -1,0 +1,363 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 2585,
+      "word": "vapid",
+      "ipa": "/ˈvæpɪd/",
+      "pos": "adj.",
+      "coreMeaningZh": "空洞乏味的；缺乏生气的",
+      "coreEn": "Dull and lacking interesting substance, freshness, or spirit.",
+      "coreImageZh": "图书馆里，男孩本来认真听故事。讲故事的人却只平平地说起床、吃饭、睡觉。男孩越听越没精神，最后说，讲了半天还是没什么内容。",
+      "usage": [
+        {
+          "senseZh": "内容空洞、索然乏味",
+          "explanationZh": "常形容谈话、评论、娱乐内容等没有新意或实质。不是单指速度慢，也不是单指人感到疲倦。",
+          "collocations": [
+            {
+              "phrase": "vapid conversation",
+              "meaningZh": "空洞乏味的谈话"
+            },
+            {
+              "phrase": "a vapid remark",
+              "meaningZh": "一句空洞的话"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "jejune",
+          "comparisonZh": "形容内容乏味、浅薄时接近。jejune 还可突出幼稚、不成熟；vapid 更突出缺少实质和生气。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "dull",
+          "comparisonZh": "都能说无趣；dull 范围较广，vapid 常带“空洞、没有内容”的批评意味。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "rapid 空话",
+          "textZh": "vapid 与 rapid（快速的）只差开头字母。想象一个人 rapid 地说个不停，却全是空话，听完仍觉得 vapid：说得快，也可以很乏味。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "vapor 散尽",
+          "textZh": "vapid 的开头让人想到 vapor（蒸气）。词源中的画面是一杯酒散了气、失了味；后来也形容谈话没滋味、没生气。记住“味道散尽，只剩乏味”。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy soon lost interest in the vapid story.",
+          "translationZh": "男孩很快就对这个空洞乏味的故事失去了兴趣。",
+          "explanationZh": "乏味的是故事，不是男孩。"
+        },
+        {
+          "textEn": "The interview was full of vapid remarks about success.",
+          "translationZh": "采访里尽是些关于成功的空洞言论。",
+          "explanationZh": "强调言论缺乏实质。"
+        }
+      ]
+    },
+    {
+      "number": 2611,
+      "word": "verve",
+      "ipa": "/vɜːrv/",
+      "pos": "n.",
+      "coreMeaningZh": "活力；热情；神采",
+      "coreEn": "Lively energy and enthusiasm, especially in a performance or creative work.",
+      "coreImageZh": "排练室里，男孩跟着节拍舒展双臂，轻快地向旁边迈出一步，神情投入又愉快。旁边的观众看得起劲，称赞这段舞真有活力。",
+      "usage": [
+        {
+          "senseZh": "表演或创作中的活力与热情",
+          "explanationZh": "通常作不可数名词。常用 with verve 描述做事富有热情和感染力，不只是动作快或体力好。",
+          "collocations": [
+            {
+              "phrase": "dance with verve",
+              "meaningZh": "跳舞时充满活力"
+            },
+            {
+              "phrase": "write with verve",
+              "meaningZh": "写得生动有神采"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "vitality",
+          "comparisonZh": "活力义相近；vitality 也指健康、生命力，verve 更常说表演或表达中的精神与热情。"
+        },
+        {
+          "word": "enthusiasm",
+          "comparisonZh": "都含热情；enthusiasm 偏内心的热切，verve 更突出表现出来的生动劲头。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "nerve 上台",
+          "textZh": "verve 与 nerve（神经；勇气）只差首字母。鼓起 nerve 上台后，放开手脚、热情投入，表演便有了 verve。两词不是反义词。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "serve 有劲",
+          "textZh": "verve 和 serve（服务；发球）形音相近。想象网球选手精神十足地 serve，发球后仍兴致勃勃地投入比赛：记住那股活力，就是 verve。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy danced with remarkable verve.",
+          "translationZh": "男孩跳起舞来格外有活力。",
+          "explanationZh": "with verve 说明表演的劲头。"
+        },
+        {
+          "textEn": "Her writing has a verve that makes even ordinary events engaging.",
+          "translationZh": "她的文字富有神采，连普通事件也写得引人入胜。",
+          "explanationZh": "也可形容文字中的生气。"
+        }
+      ]
+    },
+    {
+      "number": 2820,
+      "word": "coy",
+      "ipa": "/kɔɪ/",
+      "pos": "adj.",
+      "coreMeaningZh": "羞答答的；故作含蓄的；不愿明说的",
+      "coreEn": "Bashful or playfully reserved; also reluctant to reveal something or give a definite answer.",
+      "coreImageZh": "老师夸男孩的画好看，问是不是他画的。男孩先低下目光，嘴角藏着一点笑意，停了一下才轻声承认。他有些害羞，又带一点含蓄的俏皮。",
+      "usage": [
+        {
+          "senseZh": "羞涩、带一点故作含蓄",
+          "explanationZh": "可形容笑容、神态或回答。常含俏皮、故作羞涩的意味；不能把所有真心害怕社交的 shy 都换成 coy。",
+          "collocations": [
+            {
+              "phrase": "a coy smile",
+              "meaningZh": "羞答答的微笑"
+            },
+            {
+              "phrase": "a coy reply",
+              "meaningZh": "含蓄而略带俏皮的回答"
+            }
+          ]
+        },
+        {
+          "senseZh": "不愿透露",
+          "explanationZh": "be coy about something 表示对某事不愿明说，可带批评意味，不一定涉及害羞。",
+          "collocations": [
+            {
+              "phrase": "be coy about the details",
+              "meaningZh": "对细节不愿明说"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "bashful",
+          "comparisonZh": "说不好意思、羞答答时接近；bashful 更常是真害羞，coy 可以带有故作含蓄或俏皮。"
+        },
+        {
+          "word": "evasive",
+          "comparisonZh": "不肯明确回答时接近；evasive 偏回避问题，不含 coy 可能带有的羞涩或俏皮。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "coy boy",
+          "textZh": "coy 与 boy（男孩）押韵。想象被夸奖的 boy 低头偷偷一笑，想承认又不好意思马上开口：a coy boy，羞答答的男孩。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "quiet 的亲戚",
+          "textZh": "coy 和 quiet（安静的）有共同的词源，coy 早先也有安静之意。记“被夸后突然 quiet，低头含笑”，接到今天的“羞答答、含蓄”。安静本身不一定是 coy。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy gave a coy smile when the teacher praised his picture.",
+          "translationZh": "老师夸他的画时，男孩羞答答地笑了笑。",
+          "explanationZh": "用微笑表达略带俏皮的害羞。"
+        },
+        {
+          "textEn": "The company remained coy about the launch date.",
+          "translationZh": "公司仍不愿明确透露发布日期。",
+          "explanationZh": "coy about 表示不愿说清楚。"
+        }
+      ]
+    },
+    {
+      "number": 1767,
+      "word": "pine",
+      "ipa": "/paɪn/",
+      "pos": "v.; n.",
+      "coreMeaningZh": "苦苦思念；渴盼；松树、松木",
+      "coreEn": "To long persistently for someone or something absent; as a noun, a pine tree or its wood.",
+      "coreImageZh": "男孩坐在窗边，看着自己和奶奶的合照。奶奶住得很远，他天天想她。他望向窗外，又回头看照片，真希望能再陪奶奶坐一会儿。",
+      "usage": [
+        {
+          "senseZh": "持续、惆怅地思念或渴盼",
+          "explanationZh": "不及物动词，常用 pine for someone/something。比普通的 want 更深、更持久，常带难以满足的惆怅。",
+          "collocations": [
+            {
+              "phrase": "pine for home",
+              "meaningZh": "苦苦思念家乡"
+            },
+            {
+              "phrase": "pine for someone",
+              "meaningZh": "深切思念某人"
+            }
+          ]
+        },
+        {
+          "senseZh": "憔悴；松树或松木",
+          "explanationZh": "pine away 可指因忧伤等逐渐憔悴。名词 pine 指松树或松木，与思念义要分开；pining 是去掉词尾 e 后加 -ing。",
+          "collocations": [
+            {
+              "phrase": "pine away",
+              "meaningZh": "逐渐憔悴"
+            },
+            {
+              "phrase": "a pine tree",
+              "meaningZh": "一棵松树"
+            },
+            {
+              "phrase": "pine furniture",
+              "meaningZh": "松木家具"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "yearn",
+          "comparisonZh": "强烈渴望时接近，常接 for 或 to do；pine for 更突出长久、惆怅地想念不在身边或难以得到的人或物。"
+        },
+        {
+          "word": "long for",
+          "comparisonZh": "都可表示深切想念；pine for 往往更有苦苦思念、难以排遣的色彩。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "pine / pain",
+          "textZh": "pine 与 pain（痛苦）形音相近，动词词源也与痛苦有关。想念远方亲人，心里隐隐作痛：这份持续的思念就是 pine for。两词读音不同。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "pine 想家",
+          "textZh": "先认出熟悉的 pine tree（松树）。想象人在异乡，看到松树，就天天想起老家门前那一棵：看见 pine，便 pine for home。用同形词串起思念，别把两个词义混成一个。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy pined for his grandmother, who lived far away.",
+          "translationZh": "男孩深切思念着住在远方的奶奶。",
+          "explanationZh": "pine for 接思念的人。"
+        },
+        {
+          "textEn": "Years after moving abroad, she still pined for her hometown.",
+          "translationZh": "移居国外多年后，她仍苦苦思念着故乡。",
+          "explanationZh": "强调持续很久的思念。"
+        }
+      ]
+    },
+    {
+      "number": 2347,
+      "word": "stoic",
+      "ipa": "/ˈstoʊɪk/",
+      "pos": "adj.; n.",
+      "coreMeaningZh": "坚忍克制的；遇到痛苦仍镇定的人",
+      "coreEn": "Calm and restrained in the face of pain or distress; a person who shows such restraint.",
+      "coreImageZh": "做了很久的风筝坏了，男孩看着它，神情有些失落。他缓缓松开攥紧的手，平静地对家长说自己有点难过，想先缓一缓。风筝还坏着，他只是稳住了情绪。",
+      "usage": [
+        {
+          "senseZh": "面对痛苦、挫折时保持克制",
+          "explanationZh": "形容外在表现镇定、坚忍，不表示内心毫无感受。stoical 也可作形容词，stoically 是副词。",
+          "collocations": [
+            {
+              "phrase": "remain stoic",
+              "meaningZh": "仍然镇定克制"
+            },
+            {
+              "phrase": "stoic endurance",
+              "meaningZh": "坚忍的承受"
+            }
+          ]
+        },
+        {
+          "senseZh": "坚忍的人；斯多葛学派",
+          "explanationZh": "a stoic 可指苦乐不形于色的人。首字母大写的 Stoic 常指斯多葛学派成员，或与该学派有关的；日常词义不等于完整的哲学主张。",
+          "collocations": [
+            {
+              "phrase": "a stoic in adversity",
+              "meaningZh": "逆境中坚忍的人"
+            },
+            {
+              "phrase": "Stoic philosophy",
+              "meaningZh": "斯多葛哲学"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "impassive",
+          "comparisonZh": "都可说不露声色；impassive 偏表情难以读懂，stoic 更突出遭遇痛苦时的坚忍克制。"
+        },
+        {
+          "word": "composed",
+          "comparisonZh": "都可说镇定；composed 不一定面对苦痛，stoic 通常强调在逆境中的承受。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "stone 般稳",
+          "textZh": "stoic 开头的形音让人想到 stone（石头）。坏消息来了，他心里难过，外表却像石头一样稳：用这份镇定记 stoic，不是说人真的没有感觉。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "stoic / so sick",
+          "textZh": "把 stoic 的声音近似联到 so sick（病得很重）：他病中很难受，却平静地配合治疗，不抱怨，也不把痛苦表现出来。用“病中仍克制、坚忍”记 stoic；这是近音联想，不是说他没有痛感。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy remained stoic when he saw his damaged kite.",
+          "translationZh": "看到损坏的风筝时，男孩仍保持着克制。",
+          "explanationZh": "不否认男孩内心难过。"
+        },
+        {
+          "textEn": "She faced the long recovery with stoic patience.",
+          "translationZh": "她以坚忍的耐心面对漫长的康复过程。",
+          "explanationZh": "突出承受困难时的镇定。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 1855,
+      "word": "probe",
+      "ipa": "/proʊb/",
+      "pos": "v.; n.",
+      "coreMeaningZh": "深入调查；探查；调查；探针、探测器",
+      "coreEn": "To investigate closely or examine with an instrument; also an investigation or a device used to explore.",
+      "coreImageZh": "男孩没有只盯着蔫掉的叶子。他问起浇水的情况，顺着水管仔细查看，终于发现水管被花盆托盘压扁了。园丁确认了这条线索。",
+      "usage": [
+        {
+          "senseZh": "深入调查、追问",
+          "explanationZh": "可直接接调查对象，也可用 probe into something。强调往深处查，寻找表面看不见的原因；不等于已经解决问题。",
+          "collocations": [
+            {
+              "phrase": "probe the cause of the failure",
+              "meaningZh": "深入调查故障原因"
+            },
+            {
+              "phrase": "probe into the matter",
+              "meaningZh": "深入调查此事"
+            }
+          ]
+        },
+        {
+          "senseZh": "探查工具；一次调查",
+          "explanationZh": "名词可指探针、探测器，也可指细致调查。动词还可指用工具探查内部。",
+          "collocations": [
+            {
+              "phrase": "a space probe",
+              "meaningZh": "太空探测器"
+            },
+            {
+              "phrase": "a probe into the accident",
+              "meaningZh": "对事故的深入调查"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "investigate",
+          "comparisonZh": "调查原因或事件时接近。investigate 是较通用的调查；probe 更突出深入追问、探查隐藏的情况。"
+        },
+        {
+          "word": "examine",
+          "comparisonZh": "仔细检查时可接近；examine 也可只是查看物体、检查身体或考查学生，probe 更突出深入探查。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "probe / problem",
+          "textZh": "probe 的词形让人想到 problem（问题）。机器出了 problem，不能只看表面，要逐处检查、问清原因。用“有问题，就深入查”记 probe。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "probe / prove",
+          "textZh": "probe 与 prove（证明）只差一个字母，也有词源联系。想证明猜想，先得深入调查证据：先 probe，再 prove。前者是探查，后者是证明。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy probed the cause of the plant’s poor growth.",
+          "translationZh": "男孩深入探查这株植物长势不佳的原因。",
+          "explanationZh": "强调寻找背后的原因。"
+        },
+        {
+          "textEn": "The report prompted a probe into the missing funds.",
+          "translationZh": "这份报告促成了对资金失踪一事的调查。",
+          "explanationZh": "a probe into 中 probe 是可数名词。"
+        }
+      ]
+    },
+    {
+      "number": 2670,
+      "word": "whet",
+      "ipa": "/wet/",
+      "pos": "v.",
+      "coreMeaningZh": "激起、增强（食欲或兴趣）；磨快",
+      "coreEn": "To make an appetite or interest stronger; also to sharpen a blade by rubbing it.",
+      "coreImageZh": "男孩看着展台上的螺旋化石，起初只是有些好奇。听完向导的一小段介绍，他更想知道古代海洋里还有什么，迫不及待地请向导继续讲。",
+      "usage": [
+        {
+          "senseZh": "激起或增强食欲、兴趣",
+          "explanationZh": "及物动词，常接 appetite、curiosity、interest。往往是一小段体验勾起更多欲望，并不表示已经满足。过去式 whetted，现在分词 whetting。",
+          "collocations": [
+            {
+              "phrase": "whet someone’s appetite for more",
+              "meaningZh": "勾起某人想要更多的欲望"
+            },
+            {
+              "phrase": "whet someone’s curiosity",
+              "meaningZh": "激起某人的好奇心"
+            }
+          ]
+        },
+        {
+          "senseZh": "把刀刃磨快",
+          "explanationZh": "用石头等摩擦刀刃，使它更锋利。注意是 whet，不是表示弄湿的 wet。",
+          "collocations": [
+            {
+              "phrase": "whet a knife",
+              "meaningZh": "磨快一把刀"
+            },
+            {
+              "phrase": "whet the blade on a stone",
+              "meaningZh": "在石头上磨刀刃"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stimulate",
+          "comparisonZh": "激起兴趣或食欲时接近。stimulate 用途更广，还可指刺激经济、神经等；whet 常突出让人更想尝试或了解。"
+        },
+        {
+          "word": "sharpen",
+          "comparisonZh": "磨快刀刃时基本同义。sharpen 也可使技能、注意力更敏锐；whet 常与食欲、兴趣等搭配。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "whet / wet",
+          "textZh": "whet 与 wet（湿的）同音。想象磨刀师把磨石沾湿，再把刀刃磨得更锋利。由“磨快刀刃”联到“让兴趣更强”；whet appetite 是勾起胃口，不是弄湿胃口。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "whet / what",
+          "textZh": "whet 与 what（什么）词形很近。预告片只露出一点悬念，你马上追问：“What happens next?” 胃口被吊起来了。用“勾得你不断问 what”记 whet。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The fossil display whetted his curiosity about ancient seas.",
+          "translationZh": "化石展览激起了他对古代海洋的好奇心。",
+          "explanationZh": "whetted curiosity 指更加想了解。"
+        },
+        {
+          "textEn": "The cook whetted the knife on a stone.",
+          "translationZh": "厨师在石头上把刀磨快。",
+          "explanationZh": "刀刃变锋利是字面的磨快义。"
+        }
+      ]
+    },
+    {
+      "number": 2098,
+      "word": "riot",
+      "ipa": "/ˈraɪət/",
+      "pos": "n.; v.",
+      "coreMeaningZh": "暴乱；参与暴乱",
+      "coreEn": "Violent disorder involving a group in a public place; also to take part in such disorder.",
+      "coreImageZh": "男孩和大人站在安全的矮墙内，看见广场上的摊子被掀翻、店窗被砸碎，几个人仍在愤怒地叫喊。大人告诉他外面发生了暴乱，让他留在里面。",
+      "usage": [
+        {
+          "senseZh": "群体性的公共暴乱",
+          "explanationZh": "可数名词，通常涉及暴力、破坏和公共秩序失控。这里不是普通争吵，也不是和平集会。",
+          "collocations": [
+            {
+              "phrase": "a riot breaks out",
+              "meaningZh": "爆发暴乱"
+            },
+            {
+              "phrase": "riot police",
+              "meaningZh": "防暴警察"
+            }
+          ]
+        },
+        {
+          "senseZh": "参与暴乱",
+          "explanationZh": "作不及物动词，常用 riot in the streets。另有 a riot of colour 等比喻搭配，指色彩纷繁，需按语境理解。",
+          "collocations": [
+            {
+              "phrase": "riot in the streets",
+              "meaningZh": "在街头参与暴乱"
+            },
+            {
+              "phrase": "a riot of colour",
+              "meaningZh": "缤纷的色彩"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "violent unrest",
+          "comparisonZh": "描述群体暴力骚乱时接近。unrest 是不可数名词，范围较宽，也可指尚未升级成暴力的不安局势；加 violent 才更接近本词核心义。"
+        },
+        {
+          "word": "uprising",
+          "comparisonZh": "两者都可能涉及群体冲突；uprising 强调起来反抗权威，riot 强调暴力骚乱，未必有明确的政治目标。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "riot / 来殴他",
+          "textZh": "把 riot 近音联到“来殴他”。想象街头一群人叫嚷着围攻他人，还砸坏店窗，公共秩序陷入暴乱。用这句失控的叫喊记 riot；这是近音联想。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "riot / quiet",
+          "textZh": "riot 与 quiet（安静的）押韵。原本 quiet 的街道忽然有人群打砸，玻璃碎了一地，安静变成暴乱。用“quiet 街道被 riot 打破”记住这组声音相近、场面相反的词。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Several shops were damaged during the riot.",
+          "translationZh": "几家商店在暴乱中遭到破坏。",
+          "explanationZh": "财产破坏体现了这里的暴力骚乱义。"
+        },
+        {
+          "textEn": "The crowd rioted in the square and overturned market stalls.",
+          "translationZh": "人群在广场上闹起暴乱，掀翻了集市摊位。",
+          "explanationZh": "rioted 作动词，表示参与暴乱。"
+        }
+      ]
+    },
+    {
+      "number": 1413,
+      "word": "loathe",
+      "ipa": "/loʊð/",
+      "pos": "v.",
+      "coreMeaningZh": "极其厌恶；憎恶",
+      "coreEn": "To dislike someone or something intensely, often with disgust.",
+      "coreImageZh": "一盘油腻的炸食摆在男孩面前。他皱起鼻子，转过脸，抬手坚决表示不吃，说自己最讨厌这种食物。大人理解他的厌恶，没有勉强他。",
+      "usage": [
+        {
+          "senseZh": "强烈厌恶某人、某事或某种行为",
+          "explanationZh": "及物动词，可接名词或动名词，如 loathe waiting。比普通 dislike 强，常带嫌恶感。注意常用的 loath 是形容词，be loath to do 表示不情愿；这里的 loathe 是厌恶，结尾读 /ð/。",
+          "collocations": [
+            {
+              "phrase": "loathe the smell",
+              "meaningZh": "极其厌恶这种气味"
+            },
+            {
+              "phrase": "loathe being kept waiting",
+              "meaningZh": "非常讨厌被迫等候"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "detest",
+          "comparisonZh": "都表示强烈厌恶，常可互换，如 loathe/detest cruelty。loathe 尤其容易让人想到嫌恶、受不了的感觉。"
+        },
+        {
+          "word": "hate",
+          "comparisonZh": "强烈讨厌时接近。hate 使用范围更广，日常也用来抱怨小事；loathe 通常更明确地表达强烈厌恶。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "loathe / loaf",
+          "textZh": "loathe 与 loaf（一条面包）近形近音。想象一条发霉的面包递到面前，你厌恶得立刻转过脸。用“这条 loaf，看着就厌恶”记 loathe。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "loathe / clothes",
+          "textZh": "把 loathe 联到 clothes（衣服）：大部分词形和声音相近。想象一堆散发恶臭的脏衣服，你一靠近就皱鼻、躲开，实在厌恶。用“厌恶这堆 clothes”记 loathe。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He loathes greasy food and cannot bear its smell.",
+          "translationZh": "他极其厌恶油腻的食物，连气味都受不了。",
+          "explanationZh": "cannot bear 突出了强烈的嫌恶。"
+        },
+        {
+          "textEn": "She loathes being interrupted while she is reading.",
+          "translationZh": "她非常讨厌读书时被打断。",
+          "explanationZh": "接 being interrupted，表示厌恶这种经历。"
+        }
+      ]
+    },
+    {
+      "number": 1790,
+      "word": "plod",
+      "ipa": "/plɑːd/",
+      "pos": "v.",
+      "coreMeaningZh": "缓慢沉重地走；吃力地缓慢进行",
+      "coreEn": "To walk with slow, heavy steps, or to make slow, laborious progress.",
+      "coreImageZh": "男孩背着小背包，在雨后的泥路上疲惫地往前走。他先费力迈出一只脚，站稳后再迈另一只脚；两步都很短、很沉，仍一点点向小屋靠近。",
+      "usage": [
+        {
+          "senseZh": "缓慢而沉重地走",
+          "explanationZh": "常因疲倦、负重或路难走而步履沉重。多作不及物动词，配 along、through、up 等说明路线。过去式 plodded，现在分词 plodding。",
+          "collocations": [
+            {
+              "phrase": "plod through the mud",
+              "meaningZh": "在泥地里艰难缓慢地走"
+            },
+            {
+              "phrase": "plod wearily home",
+              "meaningZh": "拖着疲惫的脚步回家"
+            }
+          ]
+        },
+        {
+          "senseZh": "费力而缓慢地推进",
+          "explanationZh": "可形容做枯燥工作或进展迟缓。侧重慢、吃力或单调，不等于懒得做。",
+          "collocations": [
+            {
+              "phrase": "plod through a long report",
+              "meaningZh": "吃力地慢慢读完一份长报告"
+            },
+            {
+              "phrase": "plod along",
+              "meaningZh": "缓慢地继续进行"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "trudge",
+          "comparisonZh": "形容疲惫或费力地走时非常接近。两词都强调步履沉重；plod 也常用来形容工作或故事进展缓慢。"
+        },
+        {
+          "word": "tramp",
+          "comparisonZh": "都可能指沉重地走；tramp 更突出踏着重步走或长途步行，未必像 plod 那样缓慢吃力。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "plod / 疲劳的",
+          "textZh": "把 plod 近音联到“疲劳的”：疲劳的人抬脚都费劲，一步一步沉重地往前走。用“疲劳的脚步”记 plod；中文只是联想，英语仍读 /plɑːd/。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "plod / load",
+          "textZh": "plod 的后半段让人想到 load（负荷、重物）。肩上背着沉重的 load，双脚只能缓慢地一步步向前挪。用“背着重 load，走得慢又沉”记 plod；两词不是同音。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The tired boy plodded along the muddy path.",
+          "translationZh": "疲惫的男孩沿着泥泞小路沉重缓慢地走着。",
+          "explanationZh": "疲倦和泥路让脚步吃力而缓慢。"
+        },
+        {
+          "textEn": "I plodded through the long report, checking every figure.",
+          "translationZh": "我吃力地慢慢读完那份长报告，核对了每一个数字。",
+          "explanationZh": "比喻工作推进缓慢、费力。"
+        }
+      ]
+    }
+  ]
+}

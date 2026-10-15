@@ -1,0 +1,348 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 2869,
+      "word": "exterminate",
+      "ipa": "/ɪkˈstɝːməneɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "彻底消灭；灭绝",
+      "coreEn": "To destroy or get rid of completely, usually by killing.",
+      "coreImageZh": "男孩看见清理出来的死蟑螂，又查看已经清空的橱柜。工作人员告诉他，这一窝蟑螂已经全部消灭，一只也没剩；男孩这才放下心来。",
+      "usage": [
+        {
+          "senseZh": "彻底消灭，尤指害虫等",
+          "explanationZh": "及物动词，直接接被消灭的对象。强调消灭干净，通常涉及杀灭；赶走几只或暂时控制数量还不够。用于人群时有极其严重的杀戮意味。",
+          "collocations": [
+            {
+              "phrase": "exterminate cockroaches",
+              "meaningZh": "彻底消灭蟑螂"
+            },
+            {
+              "phrase": "have the rats exterminated",
+              "meaningZh": "请人把老鼠灭除"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "eradicate",
+          "comparisonZh": "彻底除掉害虫时很接近；eradicate 也常用于根除疾病、贫困或坏习惯，强调连根去除。exterminate 更常让人想到把某群生物全部杀灭。"
+        },
+        {
+          "word": "eliminate",
+          "comparisonZh": "都可指消除；eliminate 范围更广，可排除选项、消除错误，不必涉及杀灭。谈害虫时 exterminate 的灭除意味更鲜明。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "exterminate / terminate",
+          "textZh": "exterminate 中能直接看到 terminate（终止）。联想《终结者》The Terminator 的名字：这次被“终结”的是整窝害虫的生命，一只不剩。用“彻底终结”记消灭干净。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "exterminate / extra minute（近形）",
+          "textZh": "把 exterminate 的整体词形联到 extra minute（多一分钟）：最后一窝虫还没清掉，再给灭虫员一分钟，他把剩下的也全部消灭。用“最后一窝也灭掉”记彻底消灭。这是近形联想，不按该短语的读音读。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The workers exterminated all the cockroaches in the cupboard.",
+          "translationZh": "工作人员把橱柜里的蟑螂全部消灭了。",
+          "explanationZh": "all 突出了灭除干净的结果。"
+        },
+        {
+          "textEn": "The building had to be closed while the rats were exterminated.",
+          "translationZh": "灭鼠期间，这栋楼不得不关闭。",
+          "explanationZh": "被动式强调老鼠是被灭除的对象。"
+        }
+      ]
+    },
+    {
+      "number": 2248,
+      "word": "sloth",
+      "ipa": "/slɑːθ/",
+      "pos": "n.",
+      "coreMeaningZh": "懒惰；怠惰",
+      "coreEn": "An unwillingness to work or make an effort.",
+      "coreImageZh": "朋友请男孩一起收拾积木。男孩明明精神很好，也看见了地上的积木，却只是伸了伸手，又靠回去说懒得动。积木仍然散在原处。",
+      "usage": [
+        {
+          "senseZh": "不愿出力的懒惰",
+          "explanationZh": "此义是不可数名词，偏正式，常带批评意味。重点是不肯行动，不是做事慢，也不是累得需要休息。另有可数名词“树懒”义。",
+          "collocations": [
+            {
+              "phrase": "out of sheer sloth",
+              "meaningZh": "纯粹出于懒惰"
+            },
+            {
+              "phrase": "a life of sloth",
+              "meaningZh": "懒散的生活"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "laziness",
+          "comparisonZh": "在人不肯出力时基本同义；laziness 更日常，sloth 较正式，也常见于道德或宗教讨论。"
+        },
+        {
+          "word": "idleness",
+          "comparisonZh": "都可涉及无所事事；idleness 只说闲着，也可能是无事可做。sloth 更明确地说不愿工作或努力。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "sloth / slow",
+          "textZh": "sloth 与 slow（慢）形近，也确有词源联系。想象有人一听要做家务就故意放慢动作，拖到最后索性不做。用“不愿出力，慢慢拖”记懒惰；慢本身并不等于懒。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "sloth / cloth",
+          "textZh": "sloth 与 cloth（布）只差首字母。抹布就在手边，桌上也只洒了一点水，他却懒得拿起来擦。用“连块 cloth 都不肯动”记 sloth，强调不愿出力。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He left the dishes unwashed out of sheer sloth.",
+          "translationZh": "他纯粹因为懒惰，把碗碟放着不洗。",
+          "explanationZh": "out of 引出不做事的原因。"
+        },
+        {
+          "textEn": "She mistook his exhaustion for sloth.",
+          "translationZh": "她把他的筋疲力尽误当成了懒惰。",
+          "explanationZh": "疲惫和不愿出力需要区分。"
+        }
+      ]
+    },
+    {
+      "number": 1130,
+      "word": "hoary",
+      "ipa": "/ˈhɔːri/",
+      "pos": "adj.",
+      "coreMeaningZh": "古老的；因年老而灰白的；陈旧老套的",
+      "coreEn": "Very old; also gray or white with age, or stale from long repetition.",
+      "coreImageZh": "男孩站在一棵树皮深裂、树根盘曲的大树旁。向导告诉他，这棵树已经活了上千年。他沿着粗大的树干抬头望去，惊叹它竟如此古老。",
+      "usage": [
+        {
+          "senseZh": "年代久远，十分古老",
+          "explanationZh": "较书面，可形容古树、传说等。重点是年代久远，不单是体积大，也不一定含贬义。",
+          "collocations": [
+            {
+              "phrase": "hoary legends",
+              "meaningZh": "古老的传说"
+            },
+            {
+              "phrase": "a hoary old tree",
+              "meaningZh": "一棵古老的大树"
+            }
+          ]
+        },
+        {
+          "senseZh": "灰白苍老；陈旧老套",
+          "explanationZh": "形容头发或胡须时，指因年老而灰白；形容笑话、借口等时，常指用得太久、毫无新意。",
+          "collocations": [
+            {
+              "phrase": "a hoary beard",
+              "meaningZh": "苍白的胡须"
+            },
+            {
+              "phrase": "a hoary old joke",
+              "meaningZh": "一个老掉牙的笑话"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ancient",
+          "comparisonZh": "年代极久的意思相近，如 hoary/ancient legends。ancient 也可正式指古代的历史时期；hoary 常带久经岁月、古老苍然的描写色彩。"
+        },
+        {
+          "word": "hackneyed",
+          "comparisonZh": "形容笑话、说法老套时相近；hackneyed 专指用滥而失去新意。hoary 还可只说年代久远或毛发灰白，这些场合不能换成 hackneyed。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "hoary / hairy",
+          "textZh": "把 hoary 联到形近的 hairy（多毛的）：想象一位老人满头、满脸的毛发都已灰白。由“毛发苍白、年岁很老”记 hoary，再连到年代久远的古树和传说。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "hoary / story",
+          "textZh": "hoary 与 story（故事）的后半段读音相近。爷爷讲的 story，是爷爷的爷爷从祖辈那里听来的，已经传了许多代。用“一代代传下来的古老 story”记 hoary。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A hoary old tree stood beside the village gate.",
+          "translationZh": "村口旁立着一棵古老的大树。",
+          "explanationZh": "指树的年代久远，并非只说树干很粗。"
+        },
+        {
+          "textEn": "The speech was full of hoary jokes that everyone had heard before.",
+          "translationZh": "演讲里尽是大家早就听过的老掉牙笑话。",
+          "explanationZh": "重复多年、失去新意的引申义。"
+        }
+      ]
+    },
+    {
+      "number": 495,
+      "word": "crave",
+      "ipa": "/kreɪv/",
+      "pos": "v.",
+      "coreMeaningZh": "强烈渴望；非常想要",
+      "coreEn": "To want something very strongly.",
+      "coreImageZh": "男孩盯着冰淇淋柜里的草莓冰淇淋，忍不住稍稍往前倾。朋友问他是不是很想吃，他说自己已经惦记了一整天，目光仍舍不得离开。",
+      "usage": [
+        {
+          "senseZh": "强烈想要食物、感情或其他事物",
+          "explanationZh": "常作及物动词，直接接宾语，如 crave chocolate，不必加 for。语气比普通 want 强；名词 craving 常用 a craving for something。",
+          "collocations": [
+            {
+              "phrase": "crave chocolate",
+              "meaningZh": "特别想吃巧克力"
+            },
+            {
+              "phrase": "crave attention",
+              "meaningZh": "强烈渴望关注"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "desire",
+          "comparisonZh": "都表示想要；desire 可指较郑重的愿望或目标，crave 更突出迫切的食欲或情感需要。crave a snack 比 desire a snack 更有馋得想吃的感觉。"
+        },
+        {
+          "word": "long for",
+          "comparisonZh": "都可表示强烈渴望。long for 常带等待、缺失或思念的意味；crave 更突出当下强烈的欲望。注意 long for 接宾语，crave 通常直接接宾语。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "crave / brave",
+          "textZh": "crave 与 brave（勇敢的）只差首字母。想象一个人太渴望自由，终于鼓起勇气走出束缚自己的生活。用“因为强烈渴望，才变得 brave”记 crave；勇敢和渴望并不是同义词。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "crave / cave",
+          "textZh": "crave 比 cave（洞穴）多一个 r。想象探洞回来的人口渴得厉害，满脑子只想喝上一大杯水。用“从 cave 回来，特别渴望水”记 crave；这是词形联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I have been craving strawberry ice cream all afternoon.",
+          "translationZh": "我整个下午都特别想吃草莓冰淇淋。",
+          "explanationZh": "进行时表现持续惦记着某种食物。"
+        },
+        {
+          "textEn": "After months of isolation, she craved human contact.",
+          "translationZh": "独处了几个月后，她强烈渴望与人交往。",
+          "explanationZh": "也可用于强烈的情感需要。"
+        }
+      ]
+    },
+    {
+      "number": 89,
+      "word": "aloof",
+      "ipa": "/əˈluːf/",
+      "pos": "adj.",
+      "coreMeaningZh": "冷淡疏远的；不愿参与的",
+      "coreEn": "Emotionally distant or reserved, and not inclined to become involved.",
+      "coreImageZh": "同学笑着邀请男孩一起玩桌上的游戏。男孩听见了，却只冷淡地说了一句“不了，你自己玩吧”，随后把目光移开，仍与同学保持着距离。",
+      "usage": [
+        {
+          "senseZh": "对人冷淡，保持距离",
+          "explanationZh": "可形容人、神态或态度；不等于单纯独处，也不一定是害羞或害怕。常用 seem/remain aloof。",
+          "collocations": [
+            {
+              "phrase": "an aloof manner",
+              "meaningZh": "冷淡疏远的态度"
+            },
+            {
+              "phrase": "seem aloof",
+              "meaningZh": "显得冷淡"
+            }
+          ]
+        },
+        {
+          "senseZh": "不介入某事",
+          "explanationZh": "aloof from 可表示与人群、争论或活动保持距离。是否带负面评价要看语境。",
+          "collocations": [
+            {
+              "phrase": "remain aloof from the debate",
+              "meaningZh": "置身于争论之外"
+            },
+            {
+              "phrase": "keep aloof from the group",
+              "meaningZh": "与这个群体保持距离"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "distant",
+          "comparisonZh": "形容态度时十分接近，如 an aloof/distant manner。distant 还常指空间或时间遥远，aloof 主要强调社交或情感上的距离。"
+        },
+        {
+          "word": "reserved",
+          "comparisonZh": "都可能显得话少、不流露感情；reserved 侧重内敛克制，未必让人觉得不友好。aloof 更容易使人感到对方不愿接近或参与。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "aloof / a roof",
+          "textZh": "把 aloof 近音联到 a roof（一个屋顶）：楼下朋友热情招呼，一个人却待在屋顶露台，淡淡看一眼便转开脸，不愿加入。用“人在屋顶，态度也疏远”记 aloof。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "aloof / alone",
+          "textZh": "aloof 与 alone（独自）前半段的词形相近。想象聚会上有人坚持 alone：别人主动搭话，他也只冷淡回应，继续与大家保持距离。用“主动独处，还待人冷淡”记 aloof；alone 本身不含冷淡。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He seemed aloof, answering each friendly question with only a few words.",
+          "translationZh": "他显得冷淡疏远，对每个友好的问题都只简短回答。",
+          "explanationZh": "这里通过交往时的态度体现情感距离。"
+        },
+        {
+          "textEn": "The researcher remained aloof from the political dispute.",
+          "translationZh": "这位研究人员始终没有卷入那场政治争论。",
+          "explanationZh": "aloof from 表示不介入，不必是在故意怠慢别人。"
+        }
+      ]
+    }
+  ]
+}

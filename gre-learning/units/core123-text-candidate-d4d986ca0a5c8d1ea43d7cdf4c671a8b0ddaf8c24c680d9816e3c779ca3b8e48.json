@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 2271,
+      "word": "solace",
+      "ipa": "英 /ˈsɒlɪs/；美 /ˈsɑːləs/",
+      "pos": "n.; vt.",
+      "coreMeaningZh": "安慰；慰藉；给予安慰",
+      "coreEn": "Comfort in sadness or distress; to give someone such comfort.",
+      "coreImageZh": "模型飞机的机翼折断了，男孩难过地坐在长椅上。朋友坐在身旁，轻轻把手放到他的肩上；飞机还没修好，但陪伴让他得到了一点慰藉。",
+      "usage": [
+        {
+          "senseZh": "安慰；慰藉",
+          "explanationZh": "名词常用于 find/take/seek solace in，表示从某人或某事中得到或寻求安慰。安慰不等于问题已经解决。",
+          "collocations": [
+            {
+              "phrase": "find solace in friendship",
+              "meaningZh": "从友谊中得到慰藉"
+            },
+            {
+              "phrase": "a source of solace",
+              "meaningZh": "慰藉的来源"
+            }
+          ]
+        },
+        {
+          "senseZh": "安慰；抚慰",
+          "explanationZh": "及物动词，较正式。可以直接接得到安慰的人；也可用 be solaced by 表示受到某人或某物的慰藉。",
+          "collocations": [
+            {
+              "phrase": "solace someone",
+              "meaningZh": "安慰某人"
+            },
+            {
+              "phrase": "be solaced by a friend’s presence",
+              "meaningZh": "因朋友在场而得到慰藉"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "comfort",
+          "comparisonZh": "都可作名词或动词表示安慰。comfort 还可指身体舒适；solace 通常着重悲伤、忧虑中的精神慰藉。"
+        },
+        {
+          "word": "console",
+          "comparisonZh": "作动词时都表示安慰。console 常用于安慰失落、悲伤的人；名词“慰藉”不能直接换成 console。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "solace / so less",
+          "textZh": "把 solace 的声音联到 so + less：朋友安慰之后，心里的难过少了好多，less sadness 带来 solace。so less 只是两个熟词拼成的近音提示。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "solace / solar",
+          "textZh": "看到 solace 的 sola-，联到 solar（太阳的）：低落时，朋友的陪伴像暖阳照进心里，给人慰藉。用“心里的阳光”记 solace；两词近形但不同源。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy found solace in his friend’s quiet company.",
+          "translationZh": "朋友安静地陪着男孩，让他得到了慰藉。",
+          "explanationZh": "find solace in 表示从某事中获得精神安慰。"
+        },
+        {
+          "textEn": "She was solaced by the letters her friends sent.",
+          "translationZh": "朋友们寄来的信让她得到了安慰。",
+          "explanationZh": "此处 solaced 是动词 solace 的过去分词。"
+        }
+      ]
+    },
+    {
+      "number": 2037,
+      "word": "repertoire",
+      "ipa": "英 /ˈrepətwɑː/；美 /ˈrepərtwɑːr/",
+      "pos": "n.",
+      "coreMeaningZh": "全部技能；常备曲目或剧目",
+      "coreEn": "The range of skills someone can use, or works a performer is prepared to perform.",
+      "coreImageZh": "桌上摆着纸船、纸鹤和纸花。朋友问除了纸船还会折什么，男孩逐一展示这些作品：它们代表他掌握的一整套折纸本领。",
+      "usage": [
+        {
+          "senseZh": "掌握的一套技能或方法",
+          "explanationZh": "强调可调用的范围或储备，不是某一次表现，也不必表示天生才华。",
+          "collocations": [
+            {
+              "phrase": "a repertoire of skills",
+              "meaningZh": "一套技能"
+            },
+            {
+              "phrase": "expand one’s repertoire",
+              "meaningZh": "扩充自己的技能储备"
+            }
+          ]
+        },
+        {
+          "senseZh": "常备曲目；可表演的全部节目",
+          "explanationZh": "可指个人、乐团或剧团已经掌握、能够演出的作品，通常用单数来概括这一整套。",
+          "collocations": [
+            {
+              "phrase": "in the singer’s repertoire",
+              "meaningZh": "在这位歌手的常备曲目中"
+            },
+            {
+              "phrase": "a wide repertoire",
+              "meaningZh": "广泛的曲目或技能储备"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "range",
+          "comparisonZh": "都可表示一定范围。a range of skills 与 repertoire of skills 接近；range 单独使用并不专指已经掌握的技能或曲目。"
+        },
+        {
+          "word": "inventory",
+          "comparisonZh": "都可涉及一套储备。inventory 常指库存或清单；repertoire 更突出能够使用的技能或演出的作品。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "repertoire / repair + tire",
+          "textZh": "把 repertoire 的声音松散联到 repair + tire（修轮胎）：修理师不只会补胎，还会修车灯、调刹车，掌握一整套本领。由“可拿出来用的各种修理技能”记 repertoire。近音联想，非词源。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "repertoire / rapper + tour",
+          "textZh": "把 repertoire 的声音松散联到 rapper（说唱歌手）和 tour（巡演）：歌手带着一整套练熟的歌巡回演出，观众点哪首，他都能唱。这套随时能表演的曲目，就是 repertoire。近音联想，非词源。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy added a paper butterfly to his repertoire of origami designs.",
+          "translationZh": "男孩在自己会折的折纸花样中又添了一只纸蝴蝶。",
+          "explanationZh": "repertoire 表示已掌握的整套花样。"
+        },
+        {
+          "textEn": "The quartet has several modern pieces in its repertoire.",
+          "translationZh": "这个四重奏乐团的常备曲目中有几首现代作品。",
+          "explanationZh": "in its repertoire 表示这些作品是乐团能够演出的曲目。"
+        }
+      ]
+    },
+    {
+      "number": 1656,
+      "word": "oxymoron",
+      "ipa": "英 /ˌɒksɪˈmɔːrɒn/；美 /ˌɑːksɪˈmɔːrɑːn/",
+      "pos": "n.",
+      "coreMeaningZh": "矛盾修饰法；矛盾词语组合",
+      "coreEn": "A phrase that joins words whose meanings seem to contradict each other.",
+      "coreImageZh": "冷场时，男孩说这是“震耳欲聋的沉默”。朋友反问：又震耳欲聋，又沉默？这两个表面相反的意思被放进同一个短语，构成 oxymoron。",
+      "usage": [
+        {
+          "senseZh": "把表面矛盾的词放在一起",
+          "explanationZh": "常用于有意制造鲜明效果的表达，也可指出措辞内部的不协调。重点是词语组合，不是所有矛盾事件。",
+          "collocations": [
+            {
+              "phrase": "a striking oxymoron",
+              "meaningZh": "鲜明的矛盾修饰"
+            },
+            {
+              "phrase": "an apparent oxymoron",
+              "meaningZh": "表面上的矛盾词语组合"
+            }
+          ]
+        },
+        {
+          "senseZh": "一个矛盾词语组合",
+          "explanationZh": "可数名词；复数 oxymorons，也可用 oxymora。deafening silence 把“震耳欲聋”和“沉默”放在一起，但可表达冷场带来的强烈感受。",
+          "collocations": [
+            {
+              "phrase": "use an oxymoron",
+              "meaningZh": "使用矛盾修饰法"
+            },
+            {
+              "phrase": "deafening silence",
+              "meaningZh": "震耳欲聋的沉默"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "contradiction in terms",
+          "comparisonZh": "都可指措辞内部的矛盾。oxymoron 常是有表达效果的修辞；contradiction in terms 也可能只是指出概念不相容。"
+        },
+        {
+          "word": "paradox",
+          "comparisonZh": "有关联，但并不完全等同。paradox 可是一整句看似矛盾却可能有道理的话或一种情境；oxymoron 着重相矛盾词语的并置。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "oxymoron / oxy + moron",
+          "textZh": "这个词本身就藏着一个示范：希腊语来源中，oxy- 对应“锐利、敏锐”，后半部分对应“愚钝”。合起来像说“敏锐的愚钝”，两个相反意思挤在一起，正是矛盾修饰法。用这个自带的例子记拼写的两半。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "oxymoron / oxygen + more",
+          "textZh": "看到 oxymoron 的 oxy- 和 mor-，联到 oxygen（氧气）和 more（更多）：想象一句故意写得矛盾的广告“更多的零氧气”。“更多”与“零”挤在同一个短语里，提醒你找词语内部的冲突。这是自编拼写联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The phrase “deafening silence” is an oxymoron.",
+          "translationZh": "“震耳欲聋的沉默”这个短语是一个矛盾修饰的例子。",
+          "explanationZh": "矛盾发生在 deafening 和 silence 这两个词之间。"
+        },
+        {
+          "textEn": "The poet used the oxymoron “joyful sorrow” to describe the farewell.",
+          "translationZh": "诗人用“欢乐的忧伤”这一矛盾修饰来描写告别。",
+          "explanationZh": "表面相反的情感并置，可以表现复杂感受。"
+        }
+      ]
+    },
+    {
+      "number": 427,
+      "word": "congruent",
+      "ipa": "英 /ˈkɒŋɡruənt/；美 /ˈkɑːŋɡruənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "一致的；相符的；全等的",
+      "coreEn": "In agreement or consistent; in geometry, identical in shape and size.",
+      "coreImageZh": "男孩把做好的桥梁模型与设计图对照，桥拱和支柱都符合原来的设计。老师点头确认：成果与计划是一致的。",
+      "usage": [
+        {
+          "senseZh": "相符的；一致的",
+          "explanationZh": "常接 with，表示事实、目标、行为等相互吻合。这里不要求像几何图形那样大小完全相同。",
+          "collocations": [
+            {
+              "phrase": "congruent with the evidence",
+              "meaningZh": "与证据相符"
+            },
+            {
+              "phrase": "congruent goals",
+              "meaningZh": "一致的目标"
+            }
+          ]
+        },
+        {
+          "senseZh": "全等的",
+          "explanationZh": "几何学中指形状与大小都相同，平移、旋转或翻转后可以完全重合；仅形状相同而大小不同不够。",
+          "collocations": [
+            {
+              "phrase": "congruent triangles",
+              "meaningZh": "全等三角形"
+            },
+            {
+              "phrase": "congruent figures",
+              "meaningZh": "全等图形"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "consistent",
+          "comparisonZh": "在与事实、原则等相符的语境中接近。consistent 还可形容表现稳定；congruent 另有几何学的全等义。"
+        },
+        {
+          "word": "compatible",
+          "comparisonZh": "都可表示能够协调。compatible 更强调可以共存、不冲突；congruent 更强调对应、相符，并且可指全等。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "congruent / 共个圆",
+          "textZh": "把 congruent 的声音松散联到“共个圆”：把两张半径相同的圆形纸片叠好，边缘完全重合，像是两张纸“共用一个圆”。由同形同大的完全重合，记 congruent 的“全等”；再记住它在一般语境中也表示相符、一致。这是自编近音提示。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        },
+        {
+          "method": "congruent / come + glue",
+          "textZh": "把 congruent 的声音松散联到 come + glue（来，把它们粘合）：两张同形同大的纸片叠在一起，边缘完全对齐后再粘牢。由“重合得严丝合缝”记全等，再联到一般的“相符、一致”。近音联想，非词源。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The finished model was congruent with the original design.",
+          "translationZh": "完成的模型与最初的设计相符。",
+          "explanationZh": "表示成果符合设计，并非把模型和图纸说成数学上全等。"
+        },
+        {
+          "textEn": "These two triangles are congruent, although one has been rotated.",
+          "translationZh": "这两个三角形是全等的，尽管其中一个旋转了方向。",
+          "explanationZh": "方向变化不会改变形状和大小。"
+        }
+      ]
+    },
+    {
+      "number": 593,
+      "word": "derelict",
+      "ipa": "/ˈderəlɪkt/",
+      "pos": "adj.",
+      "coreMeaningZh": "玩忽职守的；被遗弃而破败的",
+      "coreEn": "Neglectful of duty; also abandoned and left in poor condition.",
+      "coreImageZh": "轮到男孩给花浇水，他却一直玩小汽车。老师指着干土和低垂的植物提醒他；他这才承认，自己忽略了该做的事。",
+      "usage": [
+        {
+          "senseZh": "玩忽职守的；失职的",
+          "explanationZh": "常用 derelict in one’s duty/duties，重点是未履行应尽责任，不是单纯做得不够熟练。",
+          "collocations": [
+            {
+              "phrase": "derelict in his duties",
+              "meaningZh": "玩忽职守的"
+            },
+            {
+              "phrase": "derelict in their responsibility",
+              "meaningZh": "未尽到他们的责任"
+            }
+          ]
+        },
+        {
+          "senseZh": "被遗弃的；破败的",
+          "explanationZh": "常形容建筑或土地无人照管、荒废破败。名词还可指被遗弃的船等；把人称为 a derelict 往往有贬损意味，此处不作推荐用法。",
+          "collocations": [
+            {
+              "phrase": "a derelict building",
+              "meaningZh": "废弃破败的建筑"
+            },
+            {
+              "phrase": "derelict land",
+              "meaningZh": "荒废的土地"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "negligent",
+          "comparisonZh": "在失职义上接近，都表示没有尽到应有注意或责任；derelict 还可形容被遗弃的房屋等。"
+        },
+        {
+          "word": "abandoned",
+          "comparisonZh": "在物品、建筑被遗弃义上接近。abandoned 不一定破败；derelict in one’s duty 则不能简单换成 abandoned。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "derelict / dear + left",
+          "textZh": "把 derelict 的声音松散联到 dear（心爱的）和 left（留下了）：曾经心爱的老屋，搬家后被主人留在身后，长期无人照管，终于荒废破败。由“心爱旧屋被留下”记 derelict 的废弃义。近音联想，非词源。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "derelict / delete",
+          "textZh": "把 derelict 的外形联到 delete（删除）：值日生没有完成任务，却把“给花浇水”从待办里删掉，花一直没人照顾。把责任直接 delete 掉，就联到 derelict 的“失职”；这是近形联想，不是构词分析。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The caretaker was derelict in his duty to water the plants.",
+          "translationZh": "管理员没有尽到给植物浇水的职责。",
+          "explanationZh": "derelict in his duty 指未履行明确责任。"
+        },
+        {
+          "textEn": "The council plans to restore the derelict station.",
+          "translationZh": "市政委员会计划修复那座废弃破败的车站。",
+          "explanationZh": "此处描述建筑被遗弃、失修的状态。"
+        }
+      ]
+    }
+  ]
+}

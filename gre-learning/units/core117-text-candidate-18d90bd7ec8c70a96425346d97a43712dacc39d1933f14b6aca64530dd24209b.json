@@ -1,0 +1,391 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4811,
+      "word": "prophylactic",
+      "ipa": "/ˌproʊfəˈlæktɪk/",
+      "pos": "adj.; n.",
+      "coreMeaningZh": "预防性的，防护性的；预防用品",
+      "coreEn": "Intended to prevent disease or other harm; something used for that purpose.",
+      "coreImageZh": "男孩还没碰食物，先在水盆边洗净双手。prophylactic 强调提前采取措施，减少疾病或危害发生的机会，不是等问题发生后再补救。",
+      "usage": [
+        {
+          "senseZh": "用于预防疾病或感染",
+          "explanationZh": "较正式，常修饰措施、治疗或用药等，说明其预防目的；并不保证风险降为零。",
+          "collocations": [
+            {
+              "phrase": "prophylactic measures",
+              "meaningZh": "预防措施"
+            },
+            {
+              "phrase": "prophylactic treatment",
+              "meaningZh": "预防性治疗"
+            }
+          ]
+        },
+        {
+          "senseZh": "防范其他危害；预防用品",
+          "explanationZh": "也可用于非医疗语境，指提前防范不良后果。作可数名词可指预防用品，尤其可指避孕套；具体含义要看语境。",
+          "collocations": [
+            {
+              "phrase": "a prophylactic measure against fraud",
+              "meaningZh": "一项防范欺诈的措施"
+            },
+            {
+              "phrase": "a prophylactic",
+              "meaningZh": "一件预防用品；一个避孕套"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "preventive",
+          "comparisonZh": "在预防疾病或危害时很接近，均可修饰 measures 或 treatment。preventive 更常见、适用范围更广；prophylactic 较正式，常见于医疗或专业语境。"
+        },
+        {
+          "word": "protective",
+          "comparisonZh": "都可形容防护措施。protective 泛指保护、抵御伤害；prophylactic 更突出在疾病或问题发生前设防，不是所有 protective 用法都能互换。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "prophylactic / 怕飞来叮",
+          "textZh": "把 prophylactic 的声音近似联到“怕飞来叮”：怕蚊子飞来叮人，睡前先挂好蚊帐。用“还没被叮，先做好防护”记“预防性的、防护性的”。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "prophylactic / plastic",
+          "textZh": "把 prophylactic 的后半段近似联到 plastic（塑料）：野餐前先用塑料罩盖住食物，把飞虫挡在外面。由“提前罩住、预防污染”记词义；只是词形和声音联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy washed his hands before eating as a prophylactic measure.",
+          "translationZh": "男孩把饭前洗手作为一项预防措施。",
+          "explanationZh": "prophylactic 说明行动的预防目的，不表示他已经生病。"
+        },
+        {
+          "textEn": "The organization introduced prophylactic measures against data theft.",
+          "translationZh": "该机构采取了防范数据被盗的措施。",
+          "explanationZh": "这里用非医疗引申义：在损害发生前设防。"
+        }
+      ]
+    },
+    {
+      "number": 4812,
+      "word": "beget",
+      "ipa": "/bɪˈɡet/",
+      "pos": "v.",
+      "coreMeaningZh": "引起，产生；成为……的父亲",
+      "coreEn": "To cause or produce something as a result; in an older use, to father a child.",
+      "coreImageZh": "男孩轻轻推倒第一块木牌，倒下的木牌接着撞倒后一块。一个小动作引出一连串结果：beget 强调某事导致另一件事。",
+      "usage": [
+        {
+          "senseZh": "引起；产生某种结果",
+          "explanationZh": "及物动词，较正式，直接接结果作宾语。可用于好事或坏事，尤其适合描述一件事催生另一件事。",
+          "collocations": [
+            {
+              "phrase": "beget further problems",
+              "meaningZh": "引发更多问题"
+            },
+            {
+              "phrase": "success begets confidence",
+              "meaningZh": "成功带来自信"
+            }
+          ]
+        },
+        {
+          "senseZh": "生育；成为……的父亲",
+          "explanationZh": "旧式或文学用法，主语通常是父亲。常见变化为 beget–begot–begotten；过去式也有 begat，过去分词也有 begot；现在分词 begetting。",
+          "collocations": [
+            {
+              "phrase": "beget a child",
+              "meaningZh": "生育一个孩子"
+            },
+            {
+              "phrase": "beget an heir",
+              "meaningZh": "生育一个继承人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "create",
+          "comparisonZh": "在产生问题、机会等结果时可相近：create problems / beget problems。create 范围更广，可指有意创作或创造；beget 更突出前因产生后果，且语体较正式。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "generate",
+          "comparisonZh": "都可指产生结果、反应等。generate 常用于能源、数据、收益或某个过程的产出；beget 更常强调因果滋生，不宜机械替换 generate electricity。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "beget / be + get",
+          "textZh": "把 beget 看成两个熟词 be 和 get：Be kind，便可能 get kindness back。你的友善引出别人的友善，用“前一个行为带来后一个结果”记“引起、产生”；这是联想。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "beget / Bill Gates",
+          "textZh": "beget 的声音可近似联到 Bill Gates（比尔·盖茨）：他与伙伴共同创办微软，让一家新公司诞生。由“使新事物产生”记 beget；只是近音联想。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "One small mistake can beget a series of larger problems.",
+          "translationZh": "一个小错误可能引出一连串更大的问题。",
+          "explanationZh": "主语是起因，宾语是由此产生的结果。"
+        },
+        {
+          "textEn": "The king hoped to beget an heir.",
+          "translationZh": "国王希望生育一位继承人。",
+          "explanationZh": "这里用旧式的父亲生育子女义。"
+        }
+      ]
+    },
+    {
+      "number": 4813,
+      "word": "potent",
+      "ipa": "/ˈpoʊtənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "强有力的；强效的",
+      "coreEn": "Having great power, influence, or effect.",
+      "coreImageZh": "小小的磁铁一靠近，就牢牢吸起一串回形针。体积虽小，作用却很强：potent 强调力量、影响或效力。",
+      "usage": [
+        {
+          "senseZh": "力量或影响强大",
+          "explanationZh": "可修饰武器、力量、象征或论据等；不只形容人的肌肉，也能形容抽象影响。",
+          "collocations": [
+            {
+              "phrase": "a potent force",
+              "meaningZh": "一股强大的力量"
+            },
+            {
+              "phrase": "a potent argument",
+              "meaningZh": "有力的论据"
+            }
+          ]
+        },
+        {
+          "senseZh": "效力强；作用明显",
+          "explanationZh": "常用于药物、毒素、饮料等。强调作用强，并不自动表示安全、有益或适合多用。",
+          "collocations": [
+            {
+              "phrase": "a potent drug",
+              "meaningZh": "强效药物"
+            },
+            {
+              "phrase": "a potent toxin",
+              "meaningZh": "强效毒素"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "powerful",
+          "comparisonZh": "在力量或影响很强时接近，如 a powerful/potent force。powerful 更普遍，也常形容有权势的人或高功率机器；potent 特别适合强调产生的强烈效果。"
+        },
+        {
+          "word": "effective",
+          "comparisonZh": "都可说某方法有效。effective 侧重达到预期目的；potent 还突出作用强、影响大。能起效不一定就效力强。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "potent / POTENTial",
+          "textZh": "熟词 potential（潜力）里完整藏着 potent。把潜力想成“还没发挥出来的力量”，再用 potent 记“力量强、作用强”。两词同源，但 potential 的“潜在”不能直接代替 potent 的“强有力”。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "potent / 炮弹",
+          "textZh": "把 potent 的声音近似联到“炮弹”：一枚小小的炮弹也有强大的威力。用“作用强、威力大”记 potent；只是近音联想，不是准确发音。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The small magnet exerted a potent pull on the paper clips.",
+          "translationZh": "那块小磁铁对回形针产生了强大的吸引力。",
+          "explanationZh": "potent 描述作用的强度，不描述磁铁的大小。"
+        },
+        {
+          "textEn": "The photograph became a potent symbol of hope.",
+          "translationZh": "那张照片成了一个极具感染力的希望象征。",
+          "explanationZh": "potent 也能描述象征所具有的强大影响。"
+        }
+      ]
+    },
+    {
+      "number": 875,
+      "word": "expurgate",
+      "ipa": "/ˈekspərɡeɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "删去作品中被认为不当的内容",
+      "coreEn": "To remove material judged offensive, harmful, or otherwise objectionable from a work.",
+      "coreImageZh": "男孩编辑图画故事时，把嘲笑别人的那一页抽出，放进弃稿盘，留下准备分享的故事。expurgate 强调因为内容被认为不妥而删掉，不是随便整理纸张。",
+      "usage": [
+        {
+          "senseZh": "删去作品中的不当内容",
+          "explanationZh": "及物动词，较正式，常以书、文本或作品为宾语，表示删去其中被认为冒犯、不道德或有问题的部分。不是所有删短都叫 expurgate。",
+          "collocations": [
+            {
+              "phrase": "expurgate a novel",
+              "meaningZh": "删去小说中的不当内容"
+            },
+            {
+              "phrase": "expurgate objectionable passages",
+              "meaningZh": "删除不当段落"
+            }
+          ]
+        },
+        {
+          "senseZh": "经删改的版本",
+          "explanationZh": "常见过去分词 expurgated 作定语。它说明内容经过删除，不保证原作真的有害，也不表示仅改正拼写；unexpurgated 表示未经这类删改的。",
+          "collocations": [
+            {
+              "phrase": "an expurgated edition",
+              "meaningZh": "删改版"
+            },
+            {
+              "phrase": "an unexpurgated text",
+              "meaningZh": "未经删改的文本"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "censor",
+          "comparisonZh": "在审查并删掉不当内容时接近。censor 范围更广，还可指禁播、压制或禁止传播；expurgate 通常是从作品中删掉某些部分。"
+        },
+        {
+          "word": "abridge",
+          "comparisonZh": "都可能使文本变短。abridge 侧重缩短篇幅、保留主要内容；expurgate 侧重删去被认为不妥的部分，动机不同。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "expurgate / exit + pure",
+          "textZh": "看到 expurgate 的 ex 和 pur，联到 exit（出去）与 pure（纯净）：编辑让粗俗段落“出去”，使文字变得“干净”。用熟词记“删除不当内容”；pure 与这个词的清除含义有词源联系。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "expurgate / X per page",
+          "textZh": "把 expurgate 的声音近似联到 X per page（每页一个叉）：想象一份稿件，恰好每页都有一句冒犯的话。编辑逐页打叉，删去这些句子，由此记“删除不当内容”。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The editor expurgated the story before it was shared with the club.",
+          "translationZh": "编辑在故事分享给俱乐部成员之前，删去了其中不当的内容。",
+          "explanationZh": "expurgated 以整篇 story 为宾语，删除的是其中部分内容。"
+        },
+        {
+          "textEn": "The publisher released an expurgated edition of the memoir.",
+          "translationZh": "出版社发行了这部回忆录的删改版。",
+          "explanationZh": "expurgated 修饰 edition，表示删去了被认为不适宜的内容。"
+        }
+      ]
+    },
+    {
+      "number": 4814,
+      "word": "triumvirate",
+      "ipa": "/traɪˈʌmvərət/",
+      "pos": "n.",
+      "coreMeaningZh": "三人领导集团；三人组合",
+      "coreEn": "A group of three people, especially three who share control or authority.",
+      "coreImageZh": "男孩和两位伙伴共同领导俱乐部，一起讨论并决定活动计划。triumvirate 的重点是三个人组成一个团队，常常一起掌权，不是碰巧站着三个人。",
+      "usage": [
+        {
+          "senseZh": "三人共同领导的集团",
+          "explanationZh": "可数名词，正式用语。常接 of，说明这三个领导者是谁；不限于古罗马，也不限于男性。",
+          "collocations": [
+            {
+              "phrase": "a triumvirate of directors",
+              "meaningZh": "由三名主管组成的领导小组"
+            },
+            {
+              "phrase": "a ruling triumvirate",
+              "meaningZh": "执政的三人集团"
+            }
+          ]
+        },
+        {
+          "senseZh": "三人组合；三人执政",
+          "explanationZh": "也可泛指由三人组成的联合体；历史语境中还可指三人共掌权力的制度或职位。现代常用义仍以三人共同发挥作用为核心。",
+          "collocations": [
+            {
+              "phrase": "a triumvirate of founders",
+              "meaningZh": "三位创始人的组合"
+            },
+            {
+              "phrase": "government by a triumvirate",
+              "meaningZh": "三人集团执政"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "trio",
+          "comparisonZh": "在三人组合的意义上接近。trio 只强调三人或三件事，也常指音乐三重奏；triumvirate 较正式，常强调三人共享权力或重要地位。"
+        },
+        {
+          "word": "troika",
+          "comparisonZh": "用于三人领导班子时十分接近。troika 也可指三国或三机构的组合，并另有俄式三驾马车义；triumvirate 常强调三个领导者共同掌权。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "TRIumvirate / triangle",
+          "textZh": "triumvirate 开头的 tri 可联到 triangle（三角形）的“三”。想象三角会议桌的每个角各坐一位共同领导者，三个人一起决定事情：三人领导集团。这个“三”的联系有词源依据。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": true
+        },
+        {
+          "method": "triumvirate / three + vote",
+          "textZh": "把 triumvirate 的声音松散联到 three（三）和 vote（投票）：三位共同负责人围坐讨论，每人都参与表决。由“三人共同作主”记词义；只是近音联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A triumvirate of friends jointly led the club.",
+          "translationZh": "三位朋友组成领导小组，共同管理俱乐部。",
+          "explanationZh": "of 后说明成员，jointly led 突出三人共享领导职责。"
+        },
+        {
+          "textEn": "The company was run by a triumvirate rather than a single director.",
+          "translationZh": "这家公司由三人领导班子管理，而非由一位主管单独掌管。",
+          "explanationZh": "这里强调权力由三个人共同承担。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4801,
+      "word": "albeit",
+      "ipa": "/ɔːlˈbiːɪt/",
+      "pos": "conj.",
+      "coreMeaningZh": "尽管，虽然",
+      "coreEn": "Although; used to acknowledge a qualification or contrast without canceling the main point.",
+      "coreImageZh": "男孩承认自己做的碗有点歪，还是把苹果稳稳放进去，满意地说它很好用。albeit 引出“虽然有点歪”这个让步，不推翻“很好用”的主要判断。",
+      "usage": [
+        {
+          "senseZh": "补充一个让步条件",
+          "explanationZh": "较正式，常接形容词、副词或介词短语，相当于压缩的 although 从句。让步部分承认局限，主句的判断仍然成立。",
+          "collocations": [
+            {
+              "phrase": "useful, albeit imperfect",
+              "meaningZh": "有用，尽管不完美"
+            },
+            {
+              "phrase": "albeit rather slowly",
+              "meaningZh": "尽管相当缓慢"
+            }
+          ]
+        },
+        {
+          "senseZh": "注意后接结构",
+          "explanationZh": "可说 albeit expensive 或 albeit with some difficulty。学习时优先掌握这些紧凑结构；albeit 不是独立连接两个句子的 however。",
+          "collocations": [
+            {
+              "phrase": "albeit briefly",
+              "meaningZh": "尽管时间很短"
+            },
+            {
+              "phrase": "albeit with some difficulty",
+              "meaningZh": "尽管有些困难"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "although",
+          "comparisonZh": "都表示让步。although 更常见，常直接引出带主语和谓语的从句；albeit 较正式，尤其常见于 albeit expensive 这类紧凑补充。"
+        },
+        {
+          "word": "though",
+          "comparisonZh": "作让步连词时接近，though 更口语化。句末 though 可表示“不过”；这种副词用法不能换成 albeit。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "albeit / all be it",
+          "textZh": "albeit 读起来像 all、be、it 三个熟悉的小词。它的历史来源相当于“尽管它如此”。把 all be it 想成“就算事实确实如此”，后面仍保留原判断：就算碗歪了，仍然好用。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "albeit / a bit",
+          "textZh": "a bit 是“有一点”，与 albeit 形音相近。串成 useful, albeit a bit ugly：尽管有点丑，却很好用。看到 albeit，想起“有点缺点，仍然好用”的让步对比。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She appeared on the show, albeit briefly.",
+          "translationZh": "她在节目中露面了，尽管时间很短。",
+          "explanationZh": "albeit briefly 承认时间短，但不否定她确实露过面。"
+        },
+        {
+          "textEn": "The handmade bowl was useful, albeit a little crooked.",
+          "translationZh": "这个手工碗虽然有点歪，却很好用。",
+          "explanationZh": "a little crooked 是对碗的补充让步；主要判断仍是 useful。"
+        }
+      ]
+    },
+    {
+      "number": 4802,
+      "word": "winnow",
+      "ipa": "/ˈwɪnoʊ/",
+      "pos": "v.",
+      "coreMeaningZh": "筛选，淘汰不合适者；扬去谷壳",
+      "coreEn": "To remove unwanted elements and narrow a selection; originally, to separate grain from chaff using air.",
+      "coreImageZh": "男孩为画展挑画。他检查三张候选画，把受潮破损的一张移到旁边，只留下两张完好的。这种剔除不合适选项、缩小候选范围的过程就是 winnow。",
+      "usage": [
+        {
+          "senseZh": "缩小候选范围",
+          "explanationZh": "常用 winnow down，也可接 to 表示筛选后剩下多少。重点是经过判断剔除选项，不是随意把数量减少。",
+          "collocations": [
+            {
+              "phrase": "winnow down a list",
+              "meaningZh": "筛减名单"
+            },
+            {
+              "phrase": "winnow the field to three candidates",
+              "meaningZh": "把候选人筛减到三位"
+            }
+          ]
+        },
+        {
+          "senseZh": "剔除杂质或不合适的部分",
+          "explanationZh": "winnow out 常接被剔除的东西。原义是利用风扬去谷壳，留下谷粒。过去式 winnowed，现在分词 winnowing。",
+          "collocations": [
+            {
+              "phrase": "winnow out unsuitable applicants",
+              "meaningZh": "淘汰不合适的申请者"
+            },
+            {
+              "phrase": "winnow grain",
+              "meaningZh": "扬谷去壳"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sift",
+          "comparisonZh": "都可表示仔细筛选。sift through evidence 更突出逐一查看、找出有用内容；winnow down a list 更突出剔除之后候选范围缩小。"
+        },
+        {
+          "word": "screen",
+          "comparisonZh": "筛选申请者时接近。screen 强调按标准检查，未必立即减少人数；winnow 更突出去掉不合适者、留下较小的一组。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "winnow / wind",
+          "textZh": "wind 是风，与 winnow 确有词源联系。想象把谷物扬起来：风吹走轻的谷壳，重的谷粒留下。从“风吹去杂质”连到“筛掉不合适的，只留好的”，就是 winnow。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "winnow / win now",
+          "textZh": "把 winnow 的拼形拆成 win + now：win 是赢，now 是现在。淘汰赛现在只留下赢的人，其他人出局，名单越筛越短。用“留下胜者、逐轮筛减”记住 winnow；这是拼形联想。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The least qualified applicants were winnowed out of the initial pool.",
+          "translationZh": "资历最不符合要求的申请者被从最初的候选人中淘汰了。",
+          "explanationZh": "were winnowed out 是被动结构，主语是被剔除的人。"
+        },
+        {
+          "textEn": "He winnowed the selection down to two paintings by removing the damaged one.",
+          "translationZh": "他剔除受损的那幅，把候选画作筛减到两幅。",
+          "explanationZh": "down to two 给出筛选后的数量，by removing 说明如何筛减。"
+        }
+      ]
+    },
+    {
+      "number": 1240,
+      "word": "indulgent",
+      "ipa": "/ɪnˈdʌldʒənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "纵容的，溺爱的；宽容的",
+      "coreEn": "Willing, often too willing, to let someone have or do what they want.",
+      "coreImageZh": "快到晚饭时间，男孩还想再吃饼干。奶奶明知不该再给，还是笑着让他拿一块。indulgent 描述的是奶奶顺着孩子、过于宽纵的态度。",
+      "usage": [
+        {
+          "senseZh": "对人纵容、迁就",
+          "explanationZh": "常形容父母、祖辈或对待他人的态度，往往暗示过于宽松。可接 with、toward/towards 或 to 指明对象。",
+          "collocations": [
+            {
+              "phrase": "indulgent parents",
+              "meaningZh": "纵容孩子的父母"
+            },
+            {
+              "phrase": "indulgent with her children",
+              "meaningZh": "对她的孩子过于宽纵"
+            }
+          ]
+        },
+        {
+          "senseZh": "宽容的态度；让人纵享的事物",
+          "explanationZh": "an indulgent smile 可表示带着宽容或宠爱的笑。形容甜点或度假时，则偏向让人尽情享受、犒劳自己的，不是说食物会纵容人。",
+          "collocations": [
+            {
+              "phrase": "an indulgent smile",
+              "meaningZh": "宽容宠爱的微笑"
+            },
+            {
+              "phrase": "an indulgent dessert",
+              "meaningZh": "让人纵享的甜点"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "lenient",
+          "comparisonZh": "形容管教不严时接近。lenient 更突出处罚或规则宽松；indulgent 更突出顺着人的愿望、宠着对方，可能带有溺爱。"
+        },
+        {
+          "word": "permissive",
+          "comparisonZh": "都可形容放任的父母。permissive 强调允许的行为多、限制少；indulgent 常带有迁就或宠爱的意味。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "indulgent / 应，都准",
+          "textZh": "把 indulgent 的声音近似联想到“应，都准”：孩子提什么要求，大人都答应、都批准。连不该答应的也放行，这种“要什么都给”的态度，就是 indulgent 的纵容、溺爱。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "indulgent / 因独生",
+          "textZh": "把 indulgent 近音联想成“因独生”：故事中的父母因只有这一个孩子，舍不得拒绝，连不合理的要求也一概答应。用这份没有界限的溺爱，记 indulgent“纵容的、溺爱的”。这是近音联想，不是词源。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He gave the child an indulgent smile.",
+          "translationZh": "他宠爱地对孩子笑了笑。",
+          "explanationZh": "indulgent 修饰 smile，通过笑容表现对孩子的宽容或宠爱。"
+        },
+        {
+          "textEn": "His indulgent grandmother let him have another cookie just before dinner.",
+          "translationZh": "他那溺爱他的奶奶在晚饭前还让他再吃一块饼干。",
+          "explanationZh": "indulgent 形容奶奶；临近晚饭仍满足要求，体现宽纵。"
+        }
+      ]
+    },
+    {
+      "number": 1622,
+      "word": "obtuse",
+      "ipa": "/əbˈtuːs/",
+      "pos": "adj.",
+      "coreMeaningZh": "迟钝的，不善领会的；钝角的",
+      "coreEn": "Slow to grasp something clear or obvious; also, describing an angle greater than 90° and less than 180°.",
+      "coreImageZh": "朋友说阳光刺眼，还看向男孩旁边的窗帘，意思是请他遮光。男孩却认真问是不是该开灯，没领会明显的暗示。这里 obtuse 描述他这一次理解迟钝。",
+      "usage": [
+        {
+          "senseZh": "没有领会明显的意思",
+          "explanationZh": "常带批评意味，可形容人或反应；不宜当作中性的人物标签。有时 deliberately obtuse 表示故意装作不懂。",
+          "collocations": [
+            {
+              "phrase": "too obtuse to take a hint",
+              "meaningZh": "迟钝得听不懂暗示"
+            },
+            {
+              "phrase": "an obtuse response",
+              "meaningZh": "不得要领的回应"
+            }
+          ]
+        },
+        {
+          "senseZh": "几何或外形上的钝",
+          "explanationZh": "an obtuse angle 是大于90度、小于180度的钝角；形容物体尖端时可指不尖、圆钝。不要把几何义理解成人的性格。",
+          "collocations": [
+            {
+              "phrase": "an obtuse angle",
+              "meaningZh": "钝角"
+            },
+            {
+              "phrase": "an obtuse triangle",
+              "meaningZh": "钝角三角形"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "dense",
+          "comparisonZh": "在听不懂明显暗示时很接近。dense 形容人较口语，也带贬义；obtuse 较正式，还能表示故意不领会。dense 的“稠密”义不能换成 obtuse。"
+        },
+        {
+          "word": "slow-witted",
+          "comparisonZh": "都能表示理解反应慢。slow-witted 更直接评价思维速度；obtuse 常突出没有领会眼前本来明显的意思，两者用于人都可能冒犯。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "obtuse / 我不吐丝",
+          "textZh": "把 obtuse 的声音近似联想到“我不吐丝”。蚕老师示范了几遍，小蚕仍没弄懂该怎样吐丝，只好呆呆地说：“我还不会。”用这只没听懂示范的小蚕，记住 obtuse 的“理解迟钝”。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "obtuse / abuse",
+          "textZh": "把 obtuse 和熟词 abuse（辱骂）一起记：别人明明在辱骂他，他却还以为在夸自己。连这种明显的意思都没领会，理解真迟钝，就是 obtuse。两词整词形音相近，这是联想，不是词源。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He is too obtuse to take a hint.",
+          "translationZh": "他太迟钝，听不懂暗示。",
+          "explanationZh": "too…to… 表示迟钝到不能领会暗示；take a hint 是听懂暗示。"
+        },
+        {
+          "textEn": "His obtuse response showed that he had missed her hint about the curtain.",
+          "translationZh": "他不得要领的回应表明，他没听懂她关于窗帘的暗示。",
+          "explanationZh": "obtuse response 指这次回应没有领会意思，不是在说明几何角度。"
+        }
+      ]
+    },
+    {
+      "number": 1283,
+      "word": "instigate",
+      "ipa": "/ˈɪnstɪɡeɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "煽动，唆使；引发，发起",
+      "coreEn": "To provoke or prompt an action or event, often by urging someone else to start it.",
+      "coreImageZh": "男孩趁积木塔的主人不在，怂恿女孩把塔拆掉。女孩本来犹豫，听了他的鼓动才拿走顶部积木。男孩没有亲手拆塔，却挑起了这次恶作剧，这就是 instigate。",
+      "usage": [
+        {
+          "senseZh": "挑起事端、唆使他人行动",
+          "explanationZh": "及物，常带不良动机或挑事的意味。可接事件作宾语，也可用 instigate someone to do something。",
+          "collocations": [
+            {
+              "phrase": "instigate a fight",
+              "meaningZh": "挑起争斗"
+            },
+            {
+              "phrase": "instigate someone to act",
+              "meaningZh": "唆使某人行动"
+            }
+          ]
+        },
+        {
+          "senseZh": "发起某个过程",
+          "explanationZh": "并非所有语境都贬义：instigate an investigation 可指发起调查。过去式 instigated，现在分词 instigating；不要与 investigate“调查”混淆。",
+          "collocations": [
+            {
+              "phrase": "instigate an investigation",
+              "meaningZh": "发起调查"
+            },
+            {
+              "phrase": "instigate change",
+              "meaningZh": "促成变革"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "abet",
+          "comparisonZh": "在怂恿不当行为时接近。instigate 更强调挑起、促使行动开始；abet 还包括协助或支持。中性的“发起调查”不宜直接换成 abet。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "incite",
+          "comparisonZh": "都可表示煽动行动或事端。incite 更突出激起、鼓动；instigate 更突出对事件开端负有推动责任，常暗含不良用意。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "instigate / stick",
+          "textZh": "stick 是棍子，也可表示刺入；instigate 中的 stig 与 stick 确有词源联系。把怂恿想成拿小棍在背后“戳一戳”：自己不先做，却不断撺掇别人动手。从“在背后催动”记住 instigate 的唆使。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "instigate / investigate",
+          "textZh": "investigate 是调查，和 instigate 的整词拼形很近：investigate 去掉 ve 就是 instigate。记住先有人 instigate 挑事，后有人 investigate 调查。前者引发事端，后者查清事端，这个短对比把两词分开。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The government has instigated an investigation into the cause of the accident.",
+          "translationZh": "政府已发起对事故原因的调查。",
+          "explanationZh": "这里 instigated 是中性的“发起”，后面的 investigation 才是调查。"
+        },
+        {
+          "textEn": "The boy instigated the prank by urging his friend to take apart the tower.",
+          "translationZh": "男孩怂恿朋友拆掉积木塔，挑起了这次恶作剧。",
+          "explanationZh": "instigated the prank 强调他是发起者；by urging 说明他通过鼓动别人来引发行动。"
+        }
+      ]
+    }
+  ]
+}

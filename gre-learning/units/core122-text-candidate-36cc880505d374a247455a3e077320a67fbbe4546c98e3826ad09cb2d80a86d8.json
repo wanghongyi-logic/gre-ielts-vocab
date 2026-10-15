@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 2547,
+      "word": "uncanny",
+      "ipa": "/ʌnˈkæni/",
+      "pos": "adj.",
+      "coreMeaningZh": "离奇的；神秘得令人不安的；异常惊人的",
+      "coreEn": "Strangely mysterious or strikingly beyond ordinary expectations.",
+      "coreImageZh": "男孩在古董画廊发现，一幅陌生的老肖像竟和自己长得惊人地相似，连翘起的头发都一样。他感到不可思议；画中人物始终静止。",
+      "usage": [
+        {
+          "senseZh": "离奇而神秘的",
+          "explanationZh": "常含不安或难以解释的感觉，不一定表示真正有超自然力量。",
+          "collocations": [
+            {
+              "phrase": "an uncanny resemblance",
+              "meaningZh": "离奇的相似"
+            },
+            {
+              "phrase": "an uncanny silence",
+              "meaningZh": "诡异的寂静"
+            }
+          ]
+        },
+        {
+          "senseZh": "异常出色、惊人的",
+          "explanationZh": "形容能力、准确性等超出通常预期；不必令人害怕。",
+          "collocations": [
+            {
+              "phrase": "an uncanny ability to predict events",
+              "meaningZh": "预知事情的惊人本领"
+            },
+            {
+              "phrase": "uncanny accuracy",
+              "meaningZh": "惊人的准确性"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "eerie",
+          "comparisonZh": "都可表示诡异。eerie 更突出令人不安、毛骨悚然的氛围；uncanny 也可形容惊人的能力或相似。"
+        },
+        {
+          "word": "extraordinary",
+          "comparisonZh": "都可表示超乎寻常。extraordinary 范围更广；uncanny 常多一层难以解释的感觉。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "uncanny / 俺看你",
+          "textZh": "把 uncanny 的声音松散联到“俺看你”：一张百年前的老照片，怎么看都像“俺”，连眉眼都与你一模一样。由“俺看你，竟像看自己”的离奇相似，记 uncanny；这是近音联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "uncanny / un + candy",
+          "textZh": "看到 uncanny 的 canny，联到近形的 candy（糖果），再用熟悉的 un-（不）提醒自己“不寻常”：糖果还没拆开，却用你的声音叫出你的名字。这样的糖果神秘得令人发毛，便是 uncanny；这是拼写联想，不是词源拆分。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The old portrait bore an uncanny resemblance to the boy.",
+          "translationZh": "那幅老肖像与男孩有着离奇的相似。",
+          "explanationZh": "uncanny resemblance 强调相似得让人惊讶、难以解释。"
+        },
+        {
+          "textEn": "She has an uncanny ability to find the right words in a crisis.",
+          "translationZh": "她在危机时总能找到恰当的措辞，这种本领令人惊叹。",
+          "explanationZh": "此处赞叹超乎寻常的能力，不是在说恐怖。"
+        }
+      ]
+    },
+    {
+      "number": 937,
+      "word": "finale",
+      "ipa": "/fɪˈnɑːli/",
+      "pos": "n.",
+      "coreMeaningZh": "终曲；演出的最后部分；大结局",
+      "coreEn": "The concluding part of a performance, musical work, or series.",
+      "coreImageZh": "小剧场的演出来到最后一段：男孩完成最后的表演动作，再向观众鞠躬。这一收尾部分就是 finale。",
+      "usage": [
+        {
+          "senseZh": "终曲；最后一场或最后一段",
+          "explanationZh": "可用于音乐作品的最后乐章、舞台演出的收尾节目。grand finale 常指隆重的收尾，不保证结局幸福。",
+          "collocations": [
+            {
+              "phrase": "a grand finale",
+              "meaningZh": "隆重的收尾演出"
+            },
+            {
+              "phrase": "the finale of the symphony",
+              "meaningZh": "交响曲的终乐章"
+            }
+          ]
+        },
+        {
+          "senseZh": "一季或整部剧集的大结局",
+          "explanationZh": "可数名词。season finale 是本季最后一集；series finale 是整部剧集的最后一集。",
+          "collocations": [
+            {
+              "phrase": "the season finale",
+              "meaningZh": "本季大结局"
+            },
+            {
+              "phrase": "the series finale",
+              "meaningZh": "全剧大结局"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ending",
+          "comparisonZh": "都可表示结尾。ending 适用范围更广；finale 常指演出、音乐或系列作品的最后部分。"
+        },
+        {
+          "word": "conclusion",
+          "comparisonZh": "都能指结束部分。conclusion 还可指论证的结论，finale 通常不表示这种推理结果。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "finale / final",
+          "textZh": "在 finale 中直接认出 final（最后的）：节目单到了 final item，所有演员一起登台，演完最后的节目再谢幕。把“最后的”落到“收尾节目”上，记 finale 是名词。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "finale / finally",
+          "textZh": "把 finale 联到熟悉的 finally（终于）：追了很久的连续剧终于播出最后一集，悬念收束，故事结束。finally 到了大结局，便是 finale。两词形近而不同音，不要把 finale 读成 finally。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "All the dancers returned to the stage for the grand finale.",
+          "translationZh": "所有舞者都回到舞台上，参加隆重的收尾演出。",
+          "explanationZh": "grand finale 指全场最后的盛大表演部分。"
+        },
+        {
+          "textEn": "The season finale left one mystery unresolved.",
+          "translationZh": "本季大结局留下了一个尚未解开的谜。",
+          "explanationZh": "finale 是本季收尾，不保证故事全部圆满解决。"
+        }
+      ]
+    },
+    {
+      "number": 2695,
+      "word": "zenith",
+      "ipa": "英 /ˈzenɪθ/；美 /ˈziːnɪθ/",
+      "pos": "n.",
+      "coreMeaningZh": "顶峰；鼎盛时期；天顶",
+      "coreEn": "The highest point or culmination; in astronomy, the point directly overhead.",
+      "coreImageZh": "男孩沿山路登上最高处，站定后向远方望去。登到顶点的画面帮助理解事业或力量达到 zenith；天文学的“天顶”则另指观察者正上方。",
+      "usage": [
+        {
+          "senseZh": "顶峰；鼎盛时期",
+          "explanationZh": "常形容事业、影响力、权势等达到最高水平，通常用单数。",
+          "collocations": [
+            {
+              "phrase": "reach its zenith",
+              "meaningZh": "达到顶峰"
+            },
+            {
+              "phrase": "at the zenith of her career",
+              "meaningZh": "在她事业的巅峰时期"
+            }
+          ]
+        },
+        {
+          "senseZh": "天顶",
+          "explanationZh": "天文学中指观察者正上方的天球点，不是任意山峰，也不是每颗星都必经的最高位置。",
+          "collocations": [
+            {
+              "phrase": "directly at the zenith",
+              "meaningZh": "正处在天顶"
+            },
+            {
+              "phrase": "near the zenith",
+              "meaningZh": "靠近天顶"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "peak",
+          "comparisonZh": "两词都可指最高点或高峰期。peak 更常用于具体山峰；zenith 的比喻义较正式，另有准确的天文义。"
+        },
+        {
+          "word": "apex",
+          "comparisonZh": "都可表示顶点。apex 也常用于几何或物体尖端；zenith 常用于发展的最高阶段。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "zenith / beneath",
+          "textZh": "把 zenith 与熟悉的 beneath（在下面）作近音对照：站上山顶，其他山头都在你 beneath；自己到了 zenith。用“下面都在脚下，自己已到顶点”记住它。两词只是联想对照，并非处处可互换的反义词。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "zenith / 吉尼斯",
+          "textZh": "把 zenith 的美式读音 /ˈziːnɪθ/ 松散联到“吉尼斯”：运动员创造最高纪录，迎来自己成绩的巅峰。由“纪录顶点”记 zenith；这是近音联想，标准发音仍按音标。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her influence reached its zenith after the discovery.",
+          "translationZh": "那项发现之后，她的影响力达到了顶峰。",
+          "explanationZh": "zenith 表示影响力发展的最高阶段。"
+        },
+        {
+          "textEn": "The telescope was pointed toward a star near the zenith.",
+          "translationZh": "望远镜对准了天顶附近的一颗星。",
+          "explanationZh": "这里是观察者正上方的天文义，不是事业高峰。"
+        }
+      ]
+    },
+    {
+      "number": 2404,
+      "word": "superfluous",
+      "ipa": "/suːˈpɜːfluəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "多余的；超过需要的；不必要的",
+      "coreEn": "More than is needed or sufficient; unnecessary.",
+      "coreImageZh": "教室美术角里，男孩的铅笔盒已经装满，足够画完眼前的小树；女孩又递来一捆铅笔。男孩指着已有的铅笔，礼貌地谢绝：额外这捆是 superfluous。",
+      "usage": [
+        {
+          "senseZh": "超过需要的；多余的",
+          "explanationZh": "重点是相对于实际需要已经过量，不只是数量大。",
+          "collocations": [
+            {
+              "phrase": "superfluous supplies",
+              "meaningZh": "多余的物资"
+            },
+            {
+              "phrase": "superfluous detail",
+              "meaningZh": "多余的细节"
+            }
+          ]
+        },
+        {
+          "senseZh": "不必要的",
+          "explanationZh": "也可形容解释、步骤或人的在场等没有必要，并不一定是在数具体数量。",
+          "collocations": [
+            {
+              "phrase": "render something superfluous",
+              "meaningZh": "使某事变得不再必要"
+            },
+            {
+              "phrase": "further explanation is superfluous",
+              "meaningZh": "进一步解释没有必要"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "unnecessary",
+          "comparisonZh": "两词都表示不必要。superfluous 常特别突出已有足够内容、再加便属多余。"
+        },
+        {
+          "word": "redundant",
+          "comparisonZh": "在重复、多余义上重叠。redundant 还可指系统备用部件或被裁减的岗位，并非每个语境都能换成 superfluous。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "superfluous / super + flow",
+          "textZh": "把 superfluous 联到熟悉的 super（超级）和 flow（水流）：小杯子早已装满，水还“超级猛地流”，多出来的水溢到桌上。由“已经够了，还在多流”记“多余的”。这个画面也呼应本词“溢出”的词源。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "superfluous / super + fluent",
+          "textZh": "看到 superfluous，联到 super（超级）和 fluent（流利的）：一句话已经说清，讲话者却又流利地重复十遍，听众只想删掉多余的话。用“流利过头，多说无益”记 superfluous；这只是助记，流利本身并不是缺点。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The editor removed several superfluous paragraphs.",
+          "translationZh": "编辑删去了几段多余的文字。",
+          "explanationZh": "这些段落对表达所需内容没有帮助。"
+        },
+        {
+          "textEn": "Once the door opened automatically, the extra button became superfluous.",
+          "translationZh": "门能自动打开之后，那个额外的按钮就变得不再必要了。",
+          "explanationZh": "强调功能已被满足，额外部分失去必要性。"
+        }
+      ]
+    },
+    {
+      "number": 1302,
+      "word": "intermittent",
+      "ipa": "/ˌɪntəˈmɪtənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "间歇的；时断时续的",
+      "coreEn": "Stopping and starting again at intervals rather than continuing without a break.",
+      "coreImageZh": "雨下一会儿停了，男孩看着留下的水洼；过了一阵，雨又开始落下。雨—停—再下的过程就是 intermittent rain。",
+      "usage": [
+        {
+          "senseZh": "时断时续的",
+          "explanationZh": "指活动或现象中间有停顿，然后再次发生；可用于雨、声音、疼痛、电力等。间隔常不规则，但本词不要求每次都毫无规律。",
+          "collocations": [
+            {
+              "phrase": "intermittent rain",
+              "meaningZh": "间歇性降雨"
+            },
+            {
+              "phrase": "an intermittent signal",
+              "meaningZh": "断断续续的信号"
+            }
+          ]
+        },
+        {
+          "senseZh": "间歇发生的",
+          "explanationZh": "区别于 continuous（连续的）。它描述发生方式，不自动说明强弱、严重程度或原因。",
+          "collocations": [
+            {
+              "phrase": "intermittent power failures",
+              "meaningZh": "间歇发生的停电"
+            },
+            {
+              "phrase": "intermittent noise",
+              "meaningZh": "时有时无的噪声"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sporadic",
+          "comparisonZh": "都可表示不持续。sporadic 更强调零星、散发、不规则地发生；intermittent 更突出发生—停止—再发生。"
+        },
+        {
+          "word": "periodic",
+          "comparisonZh": "都可能有间隔。periodic 常突出按周期重复；intermittent 本身不保证固定周期。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "intermittent / interval",
+          "textZh": "看到 intermittent 前面的 inter-，联到 interval（间隔、休息时间）：雨下一阵，留一段空档，再下一阵。记住“每段之间有 interval”，就能想起 intermittent 的“时断时续”。不把它误记成一定按固定周期发生。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "intermittent / Internet",
+          "textZh": "把 intermittent 的外形联到熟悉的 Internet（互联网）：视频刚播两秒就卡住，又播一段，又停下来。由 Internet 连接时好时坏，记 intermittent 是“断断续续的”；这是近形场景联想，不是构词分析。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Intermittent rain delayed the outdoor performance.",
+          "translationZh": "时下时停的雨耽误了户外演出。",
+          "explanationZh": "不是一直下雨，而是下雨与停雨交替。"
+        },
+        {
+          "textEn": "The radio produced an intermittent buzzing sound.",
+          "translationZh": "收音机发出时有时无的嗡嗡声。",
+          "explanationZh": "intermittent 说明声音不连续，不说明声音一定很大。"
+        }
+      ]
+    }
+  ]
+}

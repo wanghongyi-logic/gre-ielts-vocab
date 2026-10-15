@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4793,
+      "word": "insidious",
+      "ipa": "/ɪnˈsɪdiəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "暗中有害的，潜伏着逐渐造成危害的；阴险的",
+      "coreEn": "Causing harm gradually or without being readily noticed; also deceitful and intended to trap someone.",
+      "coreImageZh": "男孩只顾欣赏花朵，没发现叶片下面的小虫正在一点点啃食。等他低头看见时，叶缘已经缺了一大块。这种不易察觉、逐渐累积的损害就是 insidious harm。",
+      "usage": [
+        {
+          "senseZh": "危害不易察觉，常逐渐累积",
+          "explanationZh": "常形容疾病、影响或问题。重点是危险隐藏得深或发展得慢，不只是“有害”，也不表示一定有人故意作恶。",
+          "collocations": [
+            {
+              "phrase": "insidious effects",
+              "meaningZh": "潜移默化的有害影响"
+            },
+            {
+              "phrase": "an insidious disease",
+              "meaningZh": "不易察觉地发展的疾病"
+            }
+          ]
+        },
+        {
+          "senseZh": "阴险、暗中设陷阱",
+          "explanationZh": "形容敌人、阴谋等时，强调隐蔽的恶意或诱骗；并非所有用法都涉及疾病。",
+          "collocations": [
+            {
+              "phrase": "an insidious plot",
+              "meaningZh": "阴险的图谋"
+            },
+            {
+              "phrase": "an insidious enemy",
+              "meaningZh": "阴险的敌人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "pernicious",
+          "comparisonZh": "都可形容有害影响。pernicious 更强调破坏性或严重危害；insidious 更突出危害悄悄发生、难以及时察觉。"
+        },
+        {
+          "word": "treacherous",
+          "comparisonZh": "形容敌人或阴谋时，都可表示阴险、不可信。treacherous 更突出背叛信任或暗藏危险；insidious 还常形容逐渐发生、无人策划的危害。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "insidious / inside",
+          "textZh": "insidious 的 insid- 很像熟词 inside（在里面）。想象外面看着完好的木头，inside 却有虫子慢慢蛀坏：危险藏在里面，不知不觉造成损害，就是 insidious。这是拼写联想，不是把单词按 inside 拆开的词源。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "insidious：in + sit",
+          "textZh": "把 insidious 前半段的形音连到熟悉的 in 和 sit：有人坐在隐蔽处，等别人经过才设法陷害。它的词源确实从“坐在里面”连到“埋伏”，因此可记阴险、暗中设陷阱的意思；不是说普通坐着就有恶意。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Most people with this insidious disease have no idea that they are infected.",
+          "translationZh": "大多数患有这种隐匿性疾病的人根本不知道自己已被感染。",
+          "explanationZh": "insidious 指病情在不易察觉中发展。"
+        },
+        {
+          "textEn": "The report exposed the insidious effects of constant misinformation.",
+          "translationZh": "这份报告揭示了持续误导信息所造成的潜在危害。",
+          "explanationZh": "effects 表明关注的是不易被及时发现的有害影响。"
+        }
+      ]
+    },
+    {
+      "number": 2955,
+      "word": "ostensible",
+      "ipa": "/ɑːˈstensəbl/",
+      "pos": "adj.",
+      "coreMeaningZh": "表面上的，声称的（未必是真实的）",
+      "coreEn": "Appearing or stated to be true or real, while possibly differing from the actual situation or motive.",
+      "coreImageZh": "男孩说自己只是来还书，却一直看着桌上的蛋糕，还忍不住伸手。还书是他说出来的理由，是否是全部的真实动机却值得怀疑：an ostensible reason。",
+      "usage": [
+        {
+          "senseZh": "公开说出的理由、目的或身份",
+          "explanationZh": "较正式，通常放在名词前。常暗示表面说法与真实情况可能有差距；不必已经证实对方说谎。",
+          "collocations": [
+            {
+              "phrase": "the ostensible reason",
+              "meaningZh": "表面上的理由"
+            },
+            {
+              "phrase": "an ostensible purpose",
+              "meaningZh": "声称的目的"
+            }
+          ]
+        },
+        {
+          "senseZh": "表面看来如此，但未必属实",
+          "explanationZh": "可用于退休、独立性等表面状态。ostensibly 是副词，可修饰形容词或整个说法。",
+          "collocations": [
+            {
+              "phrase": "ostensible independence",
+              "meaningZh": "表面上的独立"
+            },
+            {
+              "phrase": "ostensibly independent",
+              "meaningZh": "表面上独立的"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "apparent",
+          "comparisonZh": "在“看来如此、尚未证实”这个义项上接近。apparent 也能表示明显、确凿可见；ostensible 通常暗示声称或表象未必等于实情，不能套用 apparent 的所有义项。"
+        },
+        {
+          "word": "seeming",
+          "comparisonZh": "都可表示表面看来如此。seeming 范围较广，可形容外观或性质；ostensible 尤其常用于对外声称的理由和目的。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ostensible / pretend",
+          "textZh": "用熟词 pretend（假装）帮助记 ostensible。两词的词源都连着“伸展、展示”，把某种样子摆到别人面前。pretend to return a book，却盯着蛋糕：还书只是摆出来的 ostensible reason。这个例子有假装，但 ostensible 本身只说“表面的、未必真实”。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "ostensible / sensible",
+          "textZh": "把 ostensible 和熟词 sensible（合理的）整词对照：两词整体形音相近。一个理由听着 sensible，看起来讲得通，却可能只是 ostensible，表面上的。用“听着合理，未必是真因”的区别一起记；这是形音联想，不是同义词或词源拆解。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The ostensible reason for his absence was illness.",
+          "translationZh": "他缺席的表面理由是生病。",
+          "explanationZh": "ostensible 暗示真实原因可能另有其事。"
+        },
+        {
+          "textEn": "Her ostensible purpose was to return the book, but she kept glancing at the cake.",
+          "translationZh": "她声称是来还书的，却一直瞟着蛋糕。",
+          "explanationZh": "对外说出的目的与行为透露的兴趣形成对照。"
+        }
+      ]
+    },
+    {
+      "number": 957,
+      "word": "fluctuate",
+      "ipa": "/ˈflʌktʃueɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "波动，起伏；反复变化",
+      "coreEn": "To rise and fall or change back and forth in amount, level, intensity, or value, often irregularly.",
+      "coreImageZh": "男孩看着岸边的红色浮球：水面升起，浮球跟着升高；水面落下，它又降下来，下一次升起的高度也不同。这种高低变化，就是 fluctuate。",
+      "usage": [
+        {
+          "senseZh": "数值、水平或状态反复变化",
+          "explanationZh": "通常作不及物动词，常用于价格、温度、体重和支持率。变化可以不规则，不要求固定周期，也不只是单向增加。",
+          "collocations": [
+            {
+              "phrase": "prices fluctuate wildly",
+              "meaningZh": "价格剧烈波动"
+            },
+            {
+              "phrase": "fluctuating temperatures",
+              "meaningZh": "起伏不定的温度"
+            }
+          ]
+        },
+        {
+          "senseZh": "说明波动范围或幅度",
+          "explanationZh": "between A and B 给出上下限；by + 数量说明变化幅度。名词 fluctuation 可指一次波动或波动现象。",
+          "collocations": [
+            {
+              "phrase": "fluctuate between $20 and $40",
+              "meaningZh": "在二十至四十美元之间波动"
+            },
+            {
+              "phrase": "fluctuate by ten degrees",
+              "meaningZh": "波动幅度达十度"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "vary",
+          "comparisonZh": "表示数值、水平发生变化时接近。vary 还可表示不同对象之间存在差别；fluctuate 通常强调同一事物随时间反复升降或变化。"
+        },
+        {
+          "word": "oscillate",
+          "comparisonZh": "都可表示来回变化。oscillate 常强调较有规律地在两端之间摆动；fluctuate 更常指价格、强度等不规则地波动。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "fluctuate / fluid",
+          "textZh": "把 fluctuate 和 fluid（流体）一起记：水是 fluid，水面会像波浪一样忽高忽低地 fluctuate。两词的词源都与“流动”有关，fluctuate 还直接连着“波浪”。从流动的水想到起伏变化，再想到价格、温度的波动。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "fluctuate / flute",
+          "textZh": "把 fluctuate 的整体字形和熟词 flute（长笛）对照，想象初学吹长笛，气息不稳，音量一会儿大、一会儿小：the volume fluctuates。flute 并不是连续藏在 fluctuate 里的词根，声音也不完全相同，只用这个画面辅助记“波动”。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His popularity has fluctuated during his term in office.",
+          "translationZh": "他任职期间的支持率一直有所起伏。",
+          "explanationZh": "抽象水平反复变化，不局限于实物摆动。"
+        },
+        {
+          "textEn": "In the desert, the temperature fluctuates dramatically.",
+          "translationZh": "在沙漠中，温度变化剧烈。",
+          "explanationZh": "dramatically 强调温差变化幅度大。"
+        }
+      ]
+    },
+    {
+      "number": 1237,
+      "word": "indoctrinate",
+      "ipa": "/ɪnˈdɑːktrəneɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "向……灌输思想，使不加质疑地接受",
+      "coreEn": "To teach someone to accept a particular set of beliefs without questioning it or considering alternatives.",
+      "coreImageZh": "领队反复说只有本组的想法正确。男孩刚举手想提问，对方就让他别问原因、照着重复。这里试图让人不加质疑地接受观念，正是在 indoctrinate。",
+      "usage": [
+        {
+          "senseZh": "向某人灌输观念",
+          "explanationZh": "及物动词，宾语通常是人。现代常用义带批评色彩，强调单方面灌输、压制质疑，不能把所有教学都这样称呼。",
+          "collocations": [
+            {
+              "phrase": "indoctrinate someone with a belief",
+              "meaningZh": "向某人灌输一种信念"
+            },
+            {
+              "phrase": "indoctrinate students in an ideology",
+              "meaningZh": "向学生灌输一种意识形态"
+            }
+          ]
+        },
+        {
+          "senseZh": "使人接受某种固定想法；另有较少用的中性教学义",
+          "explanationZh": "可用 be indoctrinated to believe… 表示被灌输得相信某事。词典也收录教授基础知识的中性义，但普通教育语境通常选 teach 或 instruct 更稳妥。",
+          "collocations": [
+            {
+              "phrase": "be indoctrinated to believe something",
+              "meaningZh": "被灌输得相信某事"
+            },
+            {
+              "phrase": "political indoctrination",
+              "meaningZh": "政治思想灌输"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "inculcate",
+          "comparisonZh": "都可表示通过反复教导使观念深入人心。inculcate 可用于责任感等正面价值，不必含压制质疑的意思；indoctrinate 的常用义更带单方面灌输的批评意味。"
+        },
+        {
+          "word": "brainwash",
+          "comparisonZh": "在强烈改变观念、使人不加质疑地接受某套思想时接近。brainwash 的“洗脑”色彩通常更强，常暗示操控或强制；indoctrinate 不必达到这种程度。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "indoctrinate / doctor",
+          "textZh": "indoctrinate 中间的 doctr- 很像 doctor。想象一个虚构的 doctor 不讲证据，只反复要求学生“相信我，别提问”，把自己的观点硬灌进去。这就是 indoctrinate。这里只借熟词的形音搭桥，不是在说医生都会这样教学。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "indoctrinate / INDOOR TRAINING",
+          "textZh": "把 indoctrinate 的整体形音近似联到 indoor training（室内培训）：这次培训只许学员反复背同一句口号，不准提问或质疑，要让他们不加思考地接受。由这种培训方式记 indoctrinate“灌输思想”。这里只借形音联想，室内培训本身并不等于灌输。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They have been indoctrinated by television to believe that violence is normal.",
+          "translationZh": "电视向他们反复灌输观念，使他们相信暴力是正常的。",
+          "explanationZh": "被动结构加 to believe，说明被灌输后接受的看法。"
+        },
+        {
+          "textEn": "The leader tried to indoctrinate new members with the group’s beliefs.",
+          "translationZh": "领队试图向新成员灌输该团体的信念。",
+          "explanationZh": "人作直接宾语，with 后接被灌输的观念。"
+        }
+      ]
+    },
+    {
+      "number": 4794,
+      "word": "suffrage",
+      "ipa": "/ˈsʌfrɪdʒ/",
+      "pos": "n.",
+      "coreMeaningZh": "选举权，投票权",
+      "coreEn": "The right to vote in elections; also the exercise of that right.",
+      "coreImageZh": "男孩在旁边观察一位成年女士投票，问她是否有权参与。她把自己的选票投入票箱，肯定地说自己也有投票权。这种权利就是 suffrage；男孩只是观察者。",
+      "usage": [
+        {
+          "senseZh": "政治选举中的投票权",
+          "explanationZh": "这个常用义通常不可数，常见于历史、政治及公民权利讨论。指有权投票，不等于赢得选举，也不泛指一切参政权利。",
+          "collocations": [
+            {
+              "phrase": "women’s suffrage",
+              "meaningZh": "女性选举权"
+            },
+            {
+              "phrase": "the right of suffrage",
+              "meaningZh": "选举权"
+            }
+          ]
+        },
+        {
+          "senseZh": "普选权与争取权利的运动",
+          "explanationZh": "universal suffrage 通常指成年公民普遍享有选举权；具体资格仍取决于相应制度。不要把某个固定年龄当成这个单词的定义。",
+          "collocations": [
+            {
+              "phrase": "universal suffrage",
+              "meaningZh": "普选权"
+            },
+            {
+              "phrase": "the suffrage movement",
+              "meaningZh": "争取选举权的运动"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "franchise",
+          "comparisonZh": "在“选举权”这个义项上接近，常说 the franchise。franchise 还有特许经营权、连锁品牌等含义，这些都不能与 suffrage 互换。"
+        },
+        {
+          "word": "vote",
+          "comparisonZh": "the vote 可以表示投票权，例如争取或获得投票权时，与 suffrage 接近。但 a vote 常指一票或一次表决，不能一概用来替代权利义的 suffrage。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "suffrage / suffer",
+          "textZh": "suffrage 的前半段很像 suffer（受苦）。记住为争取投票权而吃过苦的人：他们 suffer，是为了获得 suffrage。把“争取的到底是什么”锁定为投票权，别把 suffrage 误记成痛苦；两词不是这个意义上的词源拆分。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "suffrage / suff(icient) + age",
+          "textZh": "suffrage 看到 suff…age，联想 sufficient（够了）+ age（年龄）：年龄够了，终于有权在选举中投票！记住 suffrage 是“投票权”。这是拼写联想，实际资格还取决于当地规定。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The campaign called for universal suffrage.",
+          "translationZh": "这场运动呼吁实行普选权。",
+          "explanationZh": "universal suffrage 指普遍享有投票权。"
+        },
+        {
+          "textEn": "She wrote a book about the struggle for women’s suffrage.",
+          "translationZh": "她写了一本讲述争取女性选举权历程的书。",
+          "explanationZh": "women’s suffrage 指女性的投票权。"
+        }
+      ]
+    }
+  ]
+}
