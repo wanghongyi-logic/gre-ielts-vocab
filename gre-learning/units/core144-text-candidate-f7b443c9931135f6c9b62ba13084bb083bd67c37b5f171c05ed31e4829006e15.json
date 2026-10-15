@@ -1,0 +1,394 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 2802,
+      "word": "conflagration",
+      "ipa": "/ˌkɑːn.fləˈɡreɪ.ʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "大火；大范围的毁灭性火灾；大规模冲突",
+      "coreEn": "A large, destructive fire; figuratively, a large and violent conflict.",
+      "coreImageZh": "男孩在安全区看见远处多栋仓库被同一场大火吞没，消防员示意他留在护栏这一侧。浓烟和大片火光说明这不是一处小火苗，而是范围广、破坏严重的 conflagration。",
+      "usage": [
+        {
+          "senseZh": "大范围、破坏性的大火",
+          "explanationZh": "可数名词，语气正式。强调火灾规模与破坏，不用于普通炉火。",
+          "collocations": [
+            {
+              "phrase": "a devastating conflagration",
+              "meaningZh": "破坏严重的大火"
+            },
+            {
+              "phrase": "contain the conflagration",
+              "meaningZh": "控制这场大火"
+            }
+          ]
+        },
+        {
+          "senseZh": "比喻大规模冲突",
+          "explanationZh": "可将波及地区广的武装冲突比作蔓延的大火。",
+          "collocations": [
+            {
+              "phrase": "a regional conflagration",
+              "meaningZh": "区域性大规模冲突"
+            },
+            {
+              "phrase": "a wider conflagration",
+              "meaningZh": "范围更广的冲突"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "blaze",
+          "comparisonZh": "普通词义比较：两词都可指猛烈燃烧的火；blaze 也可指壁炉中熊熊的火，conflagration 通常强调大范围破坏。此词对不标机构来源。"
+        },
+        {
+          "word": "inferno",
+          "comparisonZh": "普通词义比较：描述极猛烈的大火时接近；inferno 更突出地狱般的火势和热度，conflagration 更突出大火的规模与毁坏。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "conflagration / congratulations",
+          "textZh": "conflagration 与熟悉的 congratulations（祝贺）都以 con 开头，并有 gra 和 tion 这段相近轮廓。想象庆典的烟花失火，祝贺会变成烧毁整片街区的大火。用“祝贺会酿成大火”区别这两个长词；只是近形联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        },
+        {
+          "method": "con + flag + ration：营地大火",
+          "textZh": "conflagration 可以按拼写暂分为 con + flag + ration。flag 是旗帜，ration 是配给的口粮。想象营地发生大火，帐篷、旗帜和储备口粮接连被吞没，整片营地遭殃，由此记“大范围的毁灭性火灾”。这是人为拼写联想，flag 和 ration 并不是本词的真实词根。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The conflagration destroyed several warehouses before firefighters contained it.",
+          "translationZh": "消防员控制火势前，这场大火烧毁了几座仓库。",
+          "explanationZh": "多栋建筑被毁，体现范围和破坏程度。"
+        },
+        {
+          "textEn": "Leaders feared that the border dispute would trigger a wider conflagration.",
+          "translationZh": "领导人担心边境争端会引发范围更广的冲突。",
+          "explanationZh": "这里比喻冲突蔓延，并非说边境真的着火。"
+        }
+      ]
+    },
+    {
+      "number": 375,
+      "word": "cogent",
+      "ipa": "/ˈkoʊ.dʒənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "清楚有力的；令人信服的",
+      "coreEn": "Clear, well reasoned, and convincing.",
+      "coreImageZh": "男孩指出近路上的木桥已经断了一块桥板，因此应走安全的绕行路。同伴看清证据后点头认同。cogent 形容这个理由清楚、有根据，足以说服人，不是说男孩嗓门大。",
+      "usage": [
+        {
+          "senseZh": "理由、论证有说服力",
+          "explanationZh": "常修饰 argument、reason、case、explanation，重在清楚而有力的论证。",
+          "collocations": [
+            {
+              "phrase": "a cogent argument",
+              "meaningZh": "令人信服的论证"
+            },
+            {
+              "phrase": "a cogent reason",
+              "meaningZh": "充分有力的理由"
+            }
+          ]
+        },
+        {
+          "senseZh": "清楚有力地支持某种主张",
+          "explanationZh": "make a cogent case for 后接所支持的做法；against 则引出反对对象。",
+          "collocations": [
+            {
+              "phrase": "a cogent case for reform",
+              "meaningZh": "支持改革的有力论据"
+            },
+            {
+              "phrase": "a cogent explanation",
+              "meaningZh": "清楚而令人信服的解释"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "compelling",
+          "comparisonZh": "微臣教育《救命800词》663 项列为近义。修饰 argument、reason 时都可表示令人信服；compelling 还可形容故事引人入胜，这时不能换成 cogent。"
+        },
+        {
+          "word": "persuasive",
+          "comparisonZh": "同一词表列为近义。两者都可形容有说服力的理由；persuasive 也可直接形容擅长劝说的人，cogent 通常评价论证。"
+        },
+        {
+          "word": "authoritative",
+          "comparisonZh": "张巍《真经 GRE 等价词汇总》第二天第9行将 authoritative 与 cogent 配对。authoritative explanation 可强调可靠、专业而值得信赖；cogent explanation 强调理由清楚且说服力强。authoritative voice 的“威严语气”不能直接换成 cogent。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "cogent / consent：理由让人同意",
+          "textZh": "cogent 和 consent（同意）拼写很近：co 开头、ent 结尾，中间 g 换成 ns。原本反对的人听到清楚、站得住脚的理由，终于给出 consent。让人因理由而同意，便抓住 cogent 的“有说服力”。这是近形联想，两词读音不同。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "cogent / agent：拿证据来劝服",
+          "textZh": "cogent 的 gent 与 agent（代理人）中的 gent 相同。想象房产 agent 不空口夸房子，而是拿出通勤时间和维修记录，把理由讲清，使你信服。由“拿证据说服人的 agent”记 cogent；这是拼写联想，不是说所有代理人都可信。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The broken bridge gave us a cogent reason to take the longer route.",
+          "translationZh": "断裂的桥给了我们一个绕远路的充分理由。",
+          "explanationZh": "可见的危险为选择提供有力依据。"
+        },
+        {
+          "textEn": "She made a cogent case for repairing the library roof before buying new furniture.",
+          "translationZh": "她提出了有力论据，说明应该先修图书馆屋顶，再添置新家具。",
+          "explanationZh": "make a cogent case for 表示清楚有力地论证某项主张。"
+        }
+      ]
+    },
+    {
+      "number": 1220,
+      "word": "inclement",
+      "ipa": "/ɪnˈklem.ənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "（天气）恶劣的，寒冷多风雨的；严酷的",
+      "coreEn": "Unpleasantly cold, wet, or stormy; also harsh or merciless.",
+      "coreImageZh": "男孩站在干燥门廊下，外面大雨斜落、树枝被风吹弯。一阵寒风让他缩肩，他决定等天气缓和再走。inclement 描述外面寒冷风雨交加的恶劣天气，不是男孩的情绪。",
+      "usage": [
+        {
+          "senseZh": "天气恶劣",
+          "explanationZh": "正式表达，尤其常指令人难受的寒冷、风雨或风雪。",
+          "collocations": [
+            {
+              "phrase": "inclement weather",
+              "meaningZh": "恶劣天气"
+            },
+            {
+              "phrase": "inclement conditions",
+              "meaningZh": "恶劣的天气条件"
+            }
+          ]
+        },
+        {
+          "senseZh": "人的严酷、无情",
+          "explanationZh": "词典也收这一较少见的义项；日常首先掌握天气搭配。",
+          "collocations": [
+            {
+              "phrase": "an inclement judge",
+              "meaningZh": "严酷无情的法官"
+            },
+            {
+              "phrase": "inclement treatment",
+              "meaningZh": "严酷的对待"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "harsh",
+          "comparisonZh": "微臣教育《救命800词》664 项列为近义。harsh weather 与 inclement weather 可近义；harsh 还常形容刺耳的声音、严厉批评，inclement 不能普遍替换。"
+        },
+        {
+          "word": "severe",
+          "comparisonZh": "同一词表列为近义。severe weather 强调强度高、可能危险；inclement 更突出天气不宜出行、寒冷风雨等不适，不必达到极端天气程度。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "inclement / climate：坏天气",
+          "textZh": "inclement 的 clement 部分在拼写上接近 climate（气候），前面又有常见否定前缀 in-。把整词联想成“不友好的 climate”：冷风夹雨，让人不想出门。由此记天气恶劣；这里借 climate 的字形，不是它的真实构词，也不要误拼成 inclimate。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "inclement / cement：风雨停工",
+          "textZh": "inclement 去掉开头 in 后的 clement，比 cement（水泥）只多一个 l。想象工地刚准备浇水泥，寒风暴雨就来了，只好停工遮盖材料。见到这个近形的 cement，想起让施工停下的恶劣天气。这是拼写联想，不是发音或词源分析。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy waited on the porch because of the inclement weather.",
+          "translationZh": "由于天气恶劣，男孩留在门廊下等候。",
+          "explanationZh": "风雨使他暂缓出行，原因是天气条件。"
+        },
+        {
+          "textEn": "The outdoor concert was postponed because of inclement conditions.",
+          "translationZh": "露天音乐会因恶劣天气而延期。",
+          "explanationZh": "正式通知中常用的天气表达。"
+        }
+      ]
+    },
+    {
+      "number": 790,
+      "word": "enfranchise",
+      "ipa": "/ɪnˈfræn.tʃaɪz/",
+      "pos": "v.",
+      "coreMeaningZh": "赋予选举权；解放，给予自由",
+      "coreEn": "To give someone the right to vote; also to free someone from servitude.",
+      "coreImageZh": "登记员告诉母亲，新规定已经给了她投票权。她原先没有这项权利，现在终于可以参加选举。男孩只在旁边见证她的喜悦；enfranchise 的关键是授予权利，不是把选票投入箱子的动作。",
+      "usage": [
+        {
+          "senseZh": "赋予某人或某群体选举权",
+          "explanationZh": "及物动词，宾语是获得权利的人。被动式 be enfranchised 表示被赋予选举权。",
+          "collocations": [
+            {
+              "phrase": "enfranchise women",
+              "meaningZh": "赋予妇女选举权"
+            },
+            {
+              "phrase": "newly enfranchised citizens",
+              "meaningZh": "新获得选举权的公民"
+            }
+          ]
+        },
+        {
+          "senseZh": "解放，使摆脱束缚",
+          "explanationZh": "也可用于从奴役或其他束缚中获得自由，语体正式；不能把解放的所有例子都解释成获准投票。",
+          "collocations": [
+            {
+              "phrase": "enfranchise enslaved people",
+              "meaningZh": "使受奴役的人获得自由"
+            },
+            {
+              "phrase": "political enfranchisement",
+              "meaningZh": "政治权利的授予"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "give the right to vote",
+          "comparisonZh": "普通释义对照：这组日常表达能直接解释动画中的 enfranchise，强调权利从无到有。give someone a vote 还可能只是让人参与某一次表决，需看上下文。"
+        },
+        {
+          "word": "liberate",
+          "comparisonZh": "微臣教育《救命800词》665 项列为近义，原条目采用“解放”义。在摆脱奴役的语境可接近；liberate 本身不保证授予选举权，不能直接替换本动画中的法律权利含义。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "enFRANCHISE：给人选举权",
+          "textZh": "enfranchise 中完整保留 franchise。回想学 suffrage 时见过的 the franchise，就是“选举权”：原先没有这项权利的人，现在得到它，这个“赋予选举权”的动作就是 enfranchise。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "enfranchise / in French eyes",
+          "textZh": "enfranchise 的读音接近 in French eyes，两者主要差在 French 中的元音。想象一位法国朋友刚获得投票资格，拿着新领的选民证，眼里满是喜悦：“我终于有投票权了！”用这双 French eyes 记“被赋予选举权”。这是虚构的近音小故事，不是法国历史。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The new law enfranchised citizens who had previously been denied the vote.",
+          "translationZh": "新法律赋予了此前被剥夺投票资格的公民选举权。",
+          "explanationZh": "强调原先被排除的人现在得到权利；这是一般性虚构例句。"
+        },
+        {
+          "textEn": "The reform enfranchised thousands of women.",
+          "translationZh": "这项改革赋予了数千名妇女选举权。",
+          "explanationZh": "宾语是获得权利的人；并不是说改革组织了某次投票。"
+        }
+      ]
+    },
+    {
+      "number": 828,
+      "word": "estimable",
+      "ipa": "/ˈes.tɪ.mə.bəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "值得尊敬的；令人敬重的",
+      "coreEn": "Deserving respect and admiration.",
+      "coreImageZh": "男孩得知一位志愿者多年来默默为邻居准备餐食，站得端正，真诚表达敬意。estimable 说明这人的品行和付出值得尊敬，并非只因他有名、年长或穿戴体面。",
+      "usage": [
+        {
+          "senseZh": "品格、贡献值得敬重",
+          "explanationZh": "正式且略显旧式，常用于人、对手、品质或贡献。",
+          "collocations": [
+            {
+              "phrase": "an estimable person",
+              "meaningZh": "值得尊敬的人"
+            },
+            {
+              "phrase": "an estimable adversary",
+              "meaningZh": "可敬的对手"
+            }
+          ]
+        },
+        {
+          "senseZh": "带尊重地评价一个人的做法",
+          "explanationZh": "既可以认可朋友，也可以尊重意见不同者；不等于喜欢或赞同其全部观点。",
+          "collocations": [
+            {
+              "phrase": "estimable qualities",
+              "meaningZh": "可敬的品质"
+            },
+            {
+              "phrase": "an estimable contribution",
+              "meaningZh": "值得敬重的贡献"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "admirable",
+          "comparisonZh": "普通词义比较：都可评价值得赞赏的人或品质；admirable 日常更常用，还能表示做法令人赞叹，estimable 语体更正式，侧重值得敬重。"
+        },
+        {
+          "word": "respectable",
+          "comparisonZh": "普通词义比较：形容人品正派、受人尊重时接近；respectable 还可表示“尚可的、体面的”，如 a respectable score，此时不能换 estimable。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "estimable / self-esteem：值得敬重",
+          "textZh": "从熟悉的 self-esteem（自尊）抓住 esteem（尊重），再看 estimable 开头的 estim-：它们属于同一词族。self-esteem 是尊重自己，estimable 则是一个人有值得别人尊重的品格。用“有值得敬重的品格”把同族词联系起来，别误解为自高自大。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "estimable / estimate：人品获高评",
+          "textZh": "estimable 和 estimate（估计、评价）有完整相同的 estim- 开头。想象评审不看财富，而是 estimate 一个人的人品与贡献，给出很高评价：这个人值得敬重。借“评价人品很高”记 estimable 的常用义，不把它机械译成“可以估算的”。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The volunteer was an estimable member of the community.",
+          "translationZh": "这位志愿者是社区中一位值得尊敬的成员。",
+          "explanationZh": "敬意来自长期帮助邻里的行为。"
+        },
+        {
+          "textEn": "Although we disagreed, I regarded her as an estimable opponent.",
+          "translationZh": "虽然我们意见不合，我仍认为她是一位值得尊敬的对手。",
+          "explanationZh": "尊敬对手并不等于赞同对方观点。"
+        }
+      ]
+    }
+  ]
+}
