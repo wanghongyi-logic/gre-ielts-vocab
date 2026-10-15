@@ -1,5 +1,5 @@
 {
-  "build": "175-offline200-v31",
+  "build": "176-offline200-v32",
   "assets": [
     {
       "url": "index.html",
@@ -28,8 +28,8 @@
     },
     {
       "url": "gre-learning/catalog.json",
-      "sha256": "4f9d1ab2ccf0959966bd9b70b8cb877ca92b81d0136a419693722071a7b0b19f",
-      "bytes": 1384883
+      "sha256": "bdd42f943bacf3467c26c72cb211f13ffadb177fe84411e9637f749d0cda4fbd",
+      "bytes": 1422632
     },
     {
       "url": "gre-learning/lesson-loader.js",
@@ -458,7 +458,7 @@
     },
     {
       "url": "gre-learning/hosted-media.js",
-      "sha256": "6823f37b74afb732706b00206d1e167c99c6230c10e0286cfe880b18f13ddbda",
+      "sha256": "34683258c68f68f05dab7294536219da3a6c1a332db773447986466dea921a5c",
       "bytes": 833
     },
     {
@@ -780,6 +780,16 @@
       "url": "gre-learning/units/core094-text-candidate-9ef6473b8593548ee86a99de3b63265efc1a484ad684476f110b11d94719dfa2.json",
       "sha256": "9ef6473b8593548ee86a99de3b63265efc1a484ad684476f110b11d94719dfa2",
       "bytes": 19943
+    },
+    {
+      "url": "gre-learning/units/core095-text-candidate-30b63d131832f12762618914afe7741197dc59905e23716b02444da815ae810b.json",
+      "sha256": "30b63d131832f12762618914afe7741197dc59905e23716b02444da815ae810b",
+      "bytes": 21298
+    },
+    {
+      "url": "gre-learning/units/core096-text-candidate-802ff9da35fc3def440ee3064138603bc97469874cc1407cb51a8745a8d7def7.json",
+      "sha256": "802ff9da35fc3def440ee3064138603bc97469874cc1407cb51a8745a8d7def7",
+      "bytes": 20535
     }
   ]
 }

@@ -1,0 +1,432 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 3006,
+      "word": "rhetorical",
+      "ipa": "/rɪˈtɔːrɪkəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "修辞的；旨在说服或产生表达效果的；有时指辞藻华丽而空洞的",
+      "coreEn": "Concerned with effective or persuasive expression; sometimes showy language valued for its effect rather than its substance. A rhetorical question makes a point without expecting an answer.",
+      "coreImageZh": "男孩面对一棵小树提出一个答案显而易见的问题，听众会意点头。他是在强调保护小树、打动听众，并非索取信息；这是 rhetorical 的修辞效果。",
+      "mnemonics": [
+        {
+          "method": "hisTORICAL 演说",
+          "textZh": "用熟悉的 hisTORICAL（历史的）带住 rheTORICAL，两词共享后面的 TORICAL。想象历史庆典上的演说，把“今天开馆”说成“让知识照亮这座城”，借表达方式感染听众：这就是 rhetorical，修辞性的、讲究表达效果的。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "WRITE OR CALL",
+          "textZh": "借 write or call（写信或打电话）的整体近音记 rhetorical：募捐时，写信或打电话问“谁愿意让孩子没有书读？”对方听出的是捐书呼吁，而非等他回答的问题。rhetorical 就连到“修辞性的、讲究表达效果的”。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "中性义：修辞与说服手法",
+          "explanationZh": "可描述为了清楚、有力地表达或影响听众而使用的语言技巧。rhetorical device 不一定是浮夸空话，也不保证论证真实；应看具体手法和内容。",
+          "collocations": [
+            {
+              "phrase": "a rhetorical device",
+              "meaningZh": "一种修辞手法"
+            },
+            {
+              "phrase": "rhetorical skill",
+              "meaningZh": "修辞或表达技巧"
+            }
+          ]
+        },
+        {
+          "senseZh": "修辞性问句：不以获得回答为目的",
+          "explanationZh": "a rhetorical question 通常用于强调观点、引导思考或表达态度，提问者并不期待听众提供答案。中文常译“反问”，但并非所有修辞性问句都能机械套用同一种中文反问句式。",
+          "collocations": [
+            {
+              "phrase": "ask a rhetorical question",
+              "meaningZh": "提出修辞性问句"
+            },
+            {
+              "phrase": "a rhetorical question",
+              "meaningZh": "反问；修辞性问句"
+            }
+          ]
+        },
+        {
+          "senseZh": "带批评意味：重言辞，轻实质",
+          "explanationZh": "在 purely rhetorical、rhetorical flourish 等语境中，可以突出华丽辞藻、表面声势或缺少实际内容。这个批评色彩取决于语境，不能给所有 rhetorical 用法都强加“空洞”。",
+          "collocations": [
+            {
+              "phrase": "a rhetorical flourish",
+              "meaningZh": "修饰性很强的措辞"
+            },
+            {
+              "phrase": "purely rhetorical",
+              "meaningZh": "只是言辞上的；只为表达效果的"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "My question was rhetorical. I wasn't really expecting an answer.",
+          "translationZh": "我的问题只是为了强调观点，并不是真的期待回答。",
+          "explanationZh": "第一句把问题称为 rhetorical，下一句直接说明不期待答案；这是修辞性问句的典型用法。"
+        },
+        {
+          "textEn": "She ended her speech with a rhetorical flourish.",
+          "translationZh": "她用一段富于修辞效果的措辞结束了演讲。",
+          "explanationZh": "a rhetorical flourish 指引人注意的修饰性表达；单凭这一句不能断定她的话虚假或空洞。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "oratorical",
+          "comparisonZh": "都可用于演讲技巧或风格，如 rhetorical/oratorical skill。oratorical 更专指公开演说；rhetorical 也用于书面表达、修辞手法和不期待回答的问句。rhetorical question 不宜直接改成 oratorical question。"
+        },
+        {
+          "word": "bombastic",
+          "comparisonZh": "形容演说华而不实时可以接近。bombastic 明确批评夸大、浮夸；rhetorical 的中性义只是有关修辞与说服，不能把 rhetorical analysis 一律理解成对浮夸言辞的分析。"
+        }
+      ]
+    },
+    {
+      "number": 2863,
+      "word": "equilibrium",
+      "ipa": "/ˌiːkwəˈlɪbriəm/",
+      "pos": "n.",
+      "coreMeaningZh": "均衡；平衡状态；情绪的平静与稳定",
+      "coreEn": "A state in which opposing influences balance one another; also a steady, calm state of mind.",
+      "coreImageZh": "男孩把相同重量的积木放到天平两端，原先倾斜的横梁恢复水平。相互对抗的作用达成平衡，就是 equilibrium；人的心情也能恢复这种稳定。",
+      "mnemonics": [
+        {
+          "method": "EQUAL + LIBRARY",
+          "textZh": "借 equal＋library 的整体形音联想 equilibrium：在 library（图书馆）里，把两摞书放在天平两边，调到 equal（相等）的重量，秤杆就稳稳水平。equilibrium 就是这种“平衡、均衡”。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "QUIET LIVING ROOM",
+          "textZh": "把 equilibrium 的整体读音借联想到 quiet living room（安静的客厅）。争吵后，坐进安静的客厅，慢慢平复情绪，重新恢复内心的平衡：这就是 emotional equilibrium。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "相互作用达到平衡",
+          "explanationZh": "通常作不可数名词，表示相对的力量、因素或过程彼此平衡。经济、生态和物理语境各有具体定义；动态平衡仍可有持续变化或交换，不能简单理解为“一切完全不动”。",
+          "collocations": [
+            {
+              "phrase": "in equilibrium",
+              "meaningZh": "处于平衡状态"
+            },
+            {
+              "phrase": "maintain equilibrium",
+              "meaningZh": "维持平衡"
+            }
+          ]
+        },
+        {
+          "senseZh": "恢复情绪稳定",
+          "explanationZh": "用于心理状态时较正式，表示镇定、平静，不只是身体站稳。常与 regain、recover、restore 搭配。",
+          "collocations": [
+            {
+              "phrase": "regain your equilibrium",
+              "meaningZh": "恢复镇定"
+            },
+            {
+              "phrase": "emotional equilibrium",
+              "meaningZh": "情绪稳定"
+            }
+          ]
+        },
+        {
+          "senseZh": "专业语境的数量形式",
+          "explanationZh": "一般义常不可数，但讨论不同的平衡状态或模型解时可作可数用法，复数常为 equilibria。a new equilibrium 可指一次变化后形成的新平衡。",
+          "collocations": [
+            {
+              "phrase": "a new equilibrium",
+              "meaningZh": "一种新的平衡状态"
+            },
+            {
+              "phrase": "market equilibrium",
+              "meaningZh": "市场均衡"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Supply and demand were in equilibrium.",
+          "translationZh": "供给与需求处于均衡状态。",
+          "explanationZh": "in equilibrium 表示相互作用达到了平衡；这里是市场供需的均衡。"
+        },
+        {
+          "textEn": "He sat down to try and recover his equilibrium.",
+          "translationZh": "他坐下来，试着恢复镇定。",
+          "explanationZh": "recover his equilibrium 用的是心理义，指情绪重新稳定，不是在修理天平。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "balance",
+          "comparisonZh": "表示力量或因素的平衡时很接近，balance 更日常、用途更广；equilibrium 常较正式，突出相对作用达到平衡；平衡不一定稳定。bank balance 的“账户余额”义不能换成 equilibrium。"
+        },
+        {
+          "word": "composure",
+          "comparisonZh": "表示情绪稳定、镇定时有交集，如 regain your equilibrium/composure。composure 更突出在压力下保持沉着；equilibrium 还可表示物理、生态或经济平衡，不能全换成 composure。"
+        }
+      ]
+    },
+    {
+      "number": 4779,
+      "word": "quintessential",
+      "ipa": "/ˌkwɪntɪˈsenʃəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "最典型的；集中体现某类本质特征的",
+      "coreEn": "Showing the defining qualities of a type in an especially complete or characteristic way.",
+      "coreImageZh": "三层雪球、煤眼睛、礼帽、红围巾，再加上男孩装上的胡萝卜鼻子，集中呈现出一眼可认的典型雪人形象。quintessential 强调最能体现一类特征，不表示质量一定最好。",
+      "mnemonics": [
+        {
+          "method": "QUEEN + essential",
+          "textZh": "近音借 queen＋essential：给童话女王配齐皇冠、权杖、长袍这些识别要素，剪影一出现，大家立刻认出“这就是典型的女王”。quintessential 就是“最典型、最有代表性的”，并不保证品质最好。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "quintessential 群体现象",
+          "textZh": "借“群体现象”的近音联想 quintessential：一张抢购照片里，人人看别人买什么就跟着买，集中体现了典型的从众心理。这样的画面就是 quintessential example，最典型、最有代表性的例子。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "最能代表某一类型",
+          "explanationZh": "较正式，通常放在名词前，如 the quintessential example。强调某人或事物充分体现这个类型的特征；它可以是典型英雄，也可以是典型反派，未必表示褒奖。",
+          "collocations": [
+            {
+              "phrase": "the quintessential example",
+              "meaningZh": "最典型的例子"
+            },
+            {
+              "phrase": "a quintessential villain",
+              "meaningZh": "集中体现典型特征的反派"
+            }
+          ]
+        },
+        {
+          "senseZh": "突出本质特征",
+          "explanationZh": "也可强调某种风格、气质或特质的充分体现。不要仅凭拼写中的 essential 就理解为“必要的”；necessary/essential 的“不可缺少”不是 quintessential 的基本意思。",
+          "collocations": [
+            {
+              "phrase": "quintessential charm",
+              "meaningZh": "最能体现本质的魅力"
+            },
+            {
+              "phrase": "quintessentially American",
+              "meaningZh": "极具美国特色地；极为典型的美国式的"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was the quintessential tough guy.",
+          "translationZh": "他是典型的硬汉。",
+          "explanationZh": "quintessential 表示他充分体现“硬汉”这一类型的特征，并非在评价他的道德或成就。"
+        },
+        {
+          "textEn": "Everybody thinks of him as the quintessential New Yorker.",
+          "translationZh": "大家都觉得他是最典型的纽约人。",
+          "explanationZh": "the quintessential New Yorker 指他集中体现人们认知中的纽约人特征，不是说他比所有纽约人都优秀。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "typical",
+          "comparisonZh": "表示具有某类典型特征时接近。typical 可以只是通常、常见或有代表性；quintessential 程度更强，像把该类型的特征集中体现出来。a typical day 常指普通的一天，不必改成 a quintessential day。"
+        },
+        {
+          "word": "archetypal",
+          "comparisonZh": "都可表示非常典型，如 an archetypal/a quintessential hero。archetypal 也强调原型、模式或可反复出现的形象；quintessential 更强调把本质特征充分体现出来，不必是最早的原型。"
+        }
+      ]
+    },
+    {
+      "number": 4780,
+      "word": "regime",
+      "ipa": "/reɪˈʒiːm/",
+      "pos": "n.",
+      "coreMeaningZh": "政权；统治制度；管理制度或有规律的安排",
+      "coreEn": "A government or system of rule, often discussed critically; also an organized system for managing an activity or following a routine.",
+      "coreImageZh": "城门旁，掌权者按规定给通行证盖章，男孩才获准通行。regime 指掌管城市、实施规则的政权或统治制度；图中的君主政权只是其中一种形式。",
+      "mnemonics": [
+        {
+          "method": "REGIon 换政权",
+          "textZh": "把 regime 与熟悉的 region（地区）对照记，它们都以 REGI 开头。同一片 region 换了掌权者，地图边界没变，治理班子和制度却变了：变的是 regime，政权或统治制度。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "RED GYM 作息",
+          "textZh": "把 regime 近音联想成 red gym（红色健身房）：教练贴出固定训练表，大家每天按时跑步、举重、休息。这套有计划的锻炼安排，就是 an exercise regime。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "政治：政权或统治制度",
+          "explanationZh": "可数名词，常用于谈论某一届统治者或一套统治方式；批评或谈论专制政权时尤其常见，但词本身不保证非法、残酷，也不保证合法。",
+          "collocations": [
+            {
+              "phrase": "a military regime",
+              "meaningZh": "军人政权"
+            },
+            {
+              "phrase": "under the regime",
+              "meaningZh": "在该政权统治下"
+            }
+          ]
+        },
+        {
+          "senseZh": "管理制度或规则体系",
+          "explanationZh": "用于税制、监管、管理等，不一定指政府本身。a tax regime 是一套税收安排；regime change 在政治语境中则通常指政权更替。",
+          "collocations": [
+            {
+              "phrase": "a tax regime",
+              "meaningZh": "税收制度"
+            },
+            {
+              "phrase": "a regulatory regime",
+              "meaningZh": "监管制度"
+            }
+          ]
+        },
+        {
+          "senseZh": "按计划执行的日常安排",
+          "explanationZh": "也可指饮食、运动等有规律的安排，尤其在英式英语中常见。美式英语这类义项也常用 regimen；不要把 regime、regimen、regiment 三个词混写。",
+          "collocations": [
+            {
+              "phrase": "an exercise regime",
+              "meaningZh": "有规律的锻炼安排"
+            },
+            {
+              "phrase": "a strict training regime",
+              "meaningZh": "严格的训练制度"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The new regime is sure to fall.",
+          "translationZh": "新政权肯定会垮台。",
+          "explanationZh": "这里 regime 指统治当局；fall 是政权倒台，不是一个人跌倒。"
+        },
+        {
+          "textEn": "Our tax regime is one of the most favourable in Europe.",
+          "translationZh": "我们的税收制度是欧洲最优惠的制度之一。",
+          "explanationZh": "tax regime 指一套税收安排。这里是制度义，不是把税收当作独立的政治统治者。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "government",
+          "comparisonZh": "表示统治国家的政府时可接近，the new regime/government 都可能指新的执政当局。government 更中性，且可指政府机构；regime 更容易带批评距离，也常突出一套统治方式。exercise regime 不能换成 exercise government。"
+        },
+        {
+          "word": "regimen",
+          "comparisonZh": "在饮食、锻炼或治疗安排上可接近，an exercise regime/regimen 都有使用。regimen 通常指为某种目的规定的一套日程或处理方案，不代指统治国家的政权。military regime 不等于 military regimen。"
+        }
+      ]
+    },
+    {
+      "number": 2938,
+      "word": "milieu",
+      "ipa": "/mɪlˈjuː/",
+      "pos": "n.",
+      "coreMeaningZh": "周围环境；尤指社会或文化环境、氛围",
+      "coreEn": "The surrounding conditions in which someone lives or something develops, especially the social or cultural setting.",
+      "coreImageZh": "男孩站在画架旁，看着周围的画作和后方一位安静的画家，受到艺术氛围感染，在自己的画纸上落下一笔。这些包围着他的社会文化条件，就是 milieu。",
+      "mnemonics": [
+        {
+          "method": "MEAL + YOU",
+          "textZh": "把 milieu 近音联想成 meal＋you（聚餐中的你）：你坐在一桌朋友中间，四周的谈吐、习俗和气氛慢慢影响了你。包围着你的这套社会文化环境，就是 milieu。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "milieu · 迷路",
+          "textZh": "把 milieu 近音联想成“迷路”：刚搬进陌生街区，路口、店铺和邻里的生活习惯都不熟，出门就迷路。包围着你的这套生活与社会环境，就是 milieu。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "人的社会文化环境",
+          "explanationZh": "正式可数名词，常指人的生活圈、文化氛围或某种思想成长的环境。它比“房间”或“地点”包含更多关系、习惯与社会条件。",
+          "collocations": [
+            {
+              "phrase": "a social milieu",
+              "meaningZh": "一种社会环境"
+            },
+            {
+              "phrase": "a cultural milieu",
+              "meaningZh": "一种文化环境"
+            }
+          ]
+        },
+        {
+          "senseZh": "事件或作品所处的背景",
+          "explanationZh": "也可指某个时期、群体或活动周围的条件，帮助解释作品或思想如何形成。可用复数 milieus 或 milieux；两种写法都存在。",
+          "collocations": [
+            {
+              "phrase": "an artistic milieu",
+              "meaningZh": "艺术环境或圈子"
+            },
+            {
+              "phrase": "within a particular milieu",
+              "meaningZh": "在某个特定环境中"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The findings of the report refer to a particular social and cultural milieu.",
+          "translationZh": "这份报告的研究结果针对的是特定的社会和文化环境。",
+          "explanationZh": "milieu 指结论所涉及的社会文化条件，提醒读者不要脱离背景理解。"
+        },
+        {
+          "textEn": "His natural milieu is that of the arts.",
+          "translationZh": "他如鱼得水的环境是艺术圈。",
+          "explanationZh": "natural milieu 指一个人熟悉、适应的生活圈或文化环境；natural 在这里不等于自然生态环境。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "environment",
+          "comparisonZh": "谈一个人的社会文化环境时可以接近，如 a social environment/milieu。environment 更常见，范围也更广，可指自然环境、软件环境等；milieu 通常更正式，突出环绕人或活动的社会文化条件。"
+        },
+        {
+          "word": "setting",
+          "comparisonZh": "表示人物、事件或作品所处背景时有交集。setting 可只交代时间和地点，也可指具体布景；milieu 更常强调社会关系、文化气氛与周围条件。a table setting 的“餐具摆设”义不能换成 milieu。"
+        }
+      ]
+    }
+  ]
+}
