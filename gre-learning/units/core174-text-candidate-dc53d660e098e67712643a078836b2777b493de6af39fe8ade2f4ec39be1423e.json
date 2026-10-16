@@ -1,0 +1,388 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4918,
+      "word": "annihilate",
+      "ipa": "/əˈnaɪəleɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "彻底摧毁；使不复存在；彻底击败",
+      "coreEn": "To destroy something completely, or to defeat an opponent overwhelmingly.",
+      "coreImageZh": "浅浪把沙堡整个冲平，原来的建筑形状完全消失。",
+      "usage": [
+        {
+          "senseZh": "彻底摧毁、消灭",
+          "explanationZh": "比一般的 damage 强烈得多，强调作为一个整体不再存在或功能被彻底毁掉。日常夸张用法也可表示完全击败，不表示比赛中的人真的被毁灭。",
+          "collocations": [
+            {
+              "phrase": "annihilate a structure",
+              "meaningZh": "彻底摧毁一座建筑"
+            },
+            {
+              "phrase": "annihilate the opposition",
+              "meaningZh": "彻底击败对手"
+            },
+            {
+              "phrase": "be completely annihilated",
+              "meaningZh": "被彻底摧毁"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "destroy",
+          "comparisonZh": "都可表示摧毁。annihilate 更强烈地突出彻底毁灭或不复存在；destroy 的使用范围更广，也常强调失去原有功能。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "decimate",
+          "comparisonZh": "都可用于严重破坏。现代 decimate 通常指大量毁掉或使数量锐减，仍可能有剩余；annihilate 更强调彻底摧毁，不能把两者的程度一概等同。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "exterminate",
+          "comparisonZh": "在彻底消灭生物群体时可接近。exterminate 常用于害虫等有生命的对象；annihilate 也可用于建筑、计划、论点或比赛中的对手。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AN + NIHIL + ATE · 归到零",
+          "textZh": "从足球比分 two-nil（比分二比零）里的 nil＝零、没有，认出 nihil 的“无”：nil 本就是拉丁语 nihil 的缩略形式。annihilate 的 an- 来自表示“向”的 ad-，-ate 是动词结尾，合起来就是把原有事物变到“什么也没有”的状态。记整座沙堡被冲平，剩下零座沙堡，不只是缺了一个角。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a night late · 晚了一夜，全没了",
+          "textZh": "把整个 annihilate 联想到 a night late（晚了一夜）：你本想给沙堡拍照，却晚了一夜才回来，潮水已把整座沙堡彻底冲平，连轮廓也没留下。用“晚一夜看到全毁”的画面记彻底摧毁。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The incoming wave annihilated the sandcastle, leaving no trace of its walls or towers.",
+          "translationZh": "涌来的海浪彻底冲毁了沙堡，城墙和塔楼的形状一点也没留下。",
+          "explanationZh": "消失的是沙堡这一完整形状，不是说沙子这种物质消失。"
+        },
+        {
+          "textEn": "Our chess team annihilated the visitors, winning every match in the final round.",
+          "translationZh": "我们的国际象棋队彻底击败了客队，赢下了最后一轮的每场比赛。",
+          "explanationZh": "比赛中的夸张用法表示压倒性胜利。"
+        }
+      ]
+    },
+    {
+      "number": 4919,
+      "word": "anomaly",
+      "ipa": "/əˈnɒməli/",
+      "pos": "n.",
+      "coreMeaningZh": "异常情况；偏离常态或预期的事物",
+      "coreEn": "Something that differs from an expected pattern, usual condition, or general rule.",
+      "coreImageZh": "预期都开红花的一组植物中，有一盆开出了白花。",
+      "usage": [
+        {
+          "senseZh": "偏离预期模式的事物",
+          "explanationZh": "可指观察结果、数据、现象或制度中的异常点。异常不自动表示错误、危险或病态，要看比较基准是什么；复数为 anomalies，虽然以 -ly 结尾，仍是名词。",
+          "collocations": [
+            {
+              "phrase": "an anomaly in the data",
+              "meaningZh": "数据中的异常点"
+            },
+            {
+              "phrase": "a statistical anomaly",
+              "meaningZh": "统计异常"
+            },
+            {
+              "phrase": "detect an anomaly",
+              "meaningZh": "发现异常"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "aberration",
+          "comparisonZh": "都可指偏离常态的现象。aberration 常突出反常偏差，有时暗示暂时失常；anomaly 更中性地表示与预期模式不一致的点。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "irregularity",
+          "comparisonZh": "都可表示不合规则或不正常之处。irregularity 也常用于程序不规范、形状不均匀；anomaly 更常突出某个结果或现象与整体预期不同。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "A + NORMAL + Y，少了 R",
+          "textZh": "先把整个词连到熟悉的 normal（正常的）。先拼出 A + NORMAL + Y，去掉表示 regular（常规）的 R，便正好得到 ANOMALY：连“常规”的标记都不在了，出现偏离正常模式的异常。a- 在这个提示里提醒“不”，末尾 y 把画面落到一个异常事物上。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "an omelette · 平常早餐中的例外",
+          "textZh": "把整个 anomaly 联想到 an omelette（一个煎蛋饼）。一家人平常上学日只来得及吃面包，某天桌上却出现了现煎蛋饼，这对他们固定的早餐模式是个异常、例外。靠“偏离惯常早餐”联结含义。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The white flower was an anomaly in a group of plants that were all expected to bloom red.",
+          "translationZh": "在一组预期全开红花的植物中，那朵白花是个异常。",
+          "explanationZh": "异常来自观察结果与这组植物的预期不符，不凭颜色推断原因。"
+        },
+        {
+          "textEn": "One unusually high reading appeared to be an anomaly, so the team checked the instrument.",
+          "translationZh": "一个异常偏高的读数显得不合常态，于是团队检查了仪器。",
+          "explanationZh": "先识别偏离模式的读数，再查原因；anomaly 本身不说明一定是仪器故障。"
+        }
+      ]
+    },
+    {
+      "number": 114,
+      "word": "anonymous",
+      "ipa": "/əˈnɒnɪməs/",
+      "pos": "adj.",
+      "coreMeaningZh": "匿名的；未署名的；身份不明的",
+      "coreEn": "With a person’s name or identity unknown or deliberately undisclosed.",
+      "coreImageZh": "阅读室收到一箱书，捐赠者没有留下姓名。",
+      "usage": [
+        {
+          "senseZh": "姓名不公开或不知道是谁",
+          "explanationZh": "可形容捐赠者、作者、信件或评论。一个人可以有姓名但选择不公开；anonymous 不表示此人没有名字，也不自动暗示做了坏事。",
+          "collocations": [
+            {
+              "phrase": "an anonymous donor",
+              "meaningZh": "匿名捐赠者"
+            },
+            {
+              "phrase": "an anonymous letter",
+              "meaningZh": "未署名的信"
+            },
+            {
+              "phrase": "remain anonymous",
+              "meaningZh": "保持匿名"
+            }
+          ]
+        },
+        {
+          "senseZh": "缺乏鲜明个性、不起眼的",
+          "explanationZh": "也可形容难以辨认、缺少独特面貌的建筑或环境。这个引申义与人的姓名是否公开不同。",
+          "collocations": [
+            {
+              "phrase": "anonymous office blocks",
+              "meaningZh": "缺乏特色的办公楼"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "obscure",
+          "comparisonZh": "在“不为人知、不受注意”的引申语境中有交集。obscure 的人可能姓名已知、只是没有名气；anonymous 的捐赠者则没有公开身份。obscure 的“晦涩难懂”义也不能换成 anonymous。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "unnamed",
+          "comparisonZh": "在没有给出姓名时接近。unnamed 只说明当前叙述没点名；anonymous 常进一步强调身份不为受众所知或有意保密。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AN + ONYM + OUS · 名字空着",
+          "textZh": "真实词源中 an- 表示“无、不”，onym 连着“名字”，-ous 是形容词结尾。用熟悉的 name（名字）帮记 onym 中的 nym：都抓住 n、m 两个辅音。把整词想成捐赠单的姓名栏空着：有一位捐赠者，却不知道或没有公开他是谁，就是 anonymous。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a nanny mouse · 不留名的鼠保姆",
+          "textZh": "把整个 anonymous 近似听成 a nanny mouse：nanny 是照顾孩子的保姆，mouse 是老鼠。童话里，这位鼠保姆送来一篮食物，却没留下姓名，收礼的人不知道是谁。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "An anonymous donor left a box of books for the reading room without giving a name.",
+          "translationZh": "一位匿名捐赠者给阅读室留下一箱书，没有留下姓名。",
+          "explanationZh": "匿名来自身份未公开，不需要遮脸或神秘装扮。"
+        },
+        {
+          "textEn": "The researcher quoted the comments but kept every participant anonymous.",
+          "translationZh": "研究者引用了评论，但没有公开任何参与者的身份。",
+          "explanationZh": "这里是有意隐去姓名，而非参与者本来没有姓名。"
+        }
+      ]
+    },
+    {
+      "number": 2722,
+      "word": "antedate",
+      "ipa": "/ˈæntɪdeɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "在时间上早于；把日期写得早于实际日期",
+      "coreEn": "To exist or occur before something else; also, to assign a date earlier than the actual one.",
+      "coreImageZh": "祖父说院中的树在他出生前就已种下，树的存在早于他的出生。",
+      "usage": [
+        {
+          "senseZh": "存在或发生得更早",
+          "explanationZh": "通常是及物动词：A antedates B 表示 A 在时间上早于 B。也可用 by 加时间长度说明早了多少；并不表示修改了任何日期。",
+          "collocations": [
+            {
+              "phrase": "antedate someone’s birth",
+              "meaningZh": "早于某人的出生"
+            },
+            {
+              "phrase": "antedate the invention by decades",
+              "meaningZh": "比该发明早几十年"
+            }
+          ]
+        },
+        {
+          "senseZh": "把日期写得比实际更早",
+          "explanationZh": "以文件等作宾语时，也可表示标注了早于实际形成时间的日期，即倒填日期。要靠语境区分真实先后与日期标注行为。",
+          "collocations": [
+            {
+              "phrase": "antedate a document",
+              "meaningZh": "给文件标注早于实际的日期"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "predate",
+          "comparisonZh": "在“存在或发生得更早”的意义上很接近。两词都可比较时间先后；antedate 也能指倒填文件日期，使用时须看宾语和语境。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "precede",
+          "comparisonZh": "都可表示先于。precede 还能表示在队列、空间或叙述顺序上排在前面；antedate 专门突出日期或时间先后。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ANTE + DATE · 日期在前",
+          "textZh": "date 是熟悉的“日期”；ante- 是“在……之前”。用每天时钟上的 a.m. 作桥：它来自 ante meridiem，意思是“中午之前”。ANTE + DATE 连起来就是日期在前、早于；若说给文件 antedate，则是把标注日期写到了实际日期之前。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "Auntie + date · 姨妈的出生日期",
+          "textZh": "把整个 antedate 近似听成 Auntie + date，两个词连成“姨妈＋日期”。画一条家庭时间线：姨妈的出生日期明确在外甥之前，前一个日期早于后一个。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The tree antedates my grandfather’s birth; it was planted before he was born.",
+          "translationZh": "这棵树早在祖父出生前就存在了；它是在他出生之前种下的。",
+          "explanationZh": "比较真实的时间先后，不是因为树看起来老就推断年龄。"
+        },
+        {
+          "textEn": "The letter had been antedated: the date written on it was a week earlier than the day it was composed.",
+          "translationZh": "这封信被倒填了日期：上面写的日期比实际写信的日期早一周。",
+          "explanationZh": "另一义涉及标注日期，而不是信真的提前一周写成。"
+        }
+      ]
+    },
+    {
+      "number": 4920,
+      "word": "anticipate",
+      "ipa": "/ænˈtɪsɪpeɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "预料、预期；预先考虑并作准备",
+      "coreEn": "To expect something to happen, often considering or responding to it in advance.",
+      "coreImageZh": "孩子预想到朋友踢球后会口渴，在他们到来前准备好水。",
+      "usage": [
+        {
+          "senseZh": "预料将发生的情况",
+          "explanationZh": "可接名词、动名词或 that 从句，例如 anticipate delays、anticipate needing help。预期可以愉快，也可以涉及困难；通常不用 anticipate to do 这一结构。",
+          "collocations": [
+            {
+              "phrase": "anticipate a problem",
+              "meaningZh": "预想到问题"
+            },
+            {
+              "phrase": "anticipate that demand will rise",
+              "meaningZh": "预计需求会上升"
+            },
+            {
+              "phrase": "anticipate needing more time",
+              "meaningZh": "预计需要更多时间"
+            }
+          ]
+        },
+        {
+          "senseZh": "预先考虑需求并采取行动",
+          "explanationZh": "根据对未来的判断提前安排，在别人提出要求或问题出现前作准备。另在历史或艺术评论中，较早的事物也可 anticipate 较晚的发展，即先行体现其特征。",
+          "collocations": [
+            {
+              "phrase": "anticipate someone’s needs",
+              "meaningZh": "预先考虑并满足某人的需要"
+            },
+            {
+              "phrase": "anticipate later developments",
+              "meaningZh": "先行体现后来的发展"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "foresee",
+          "comparisonZh": "都可表示预见。foresee 着重事先看出将发生什么；anticipate 除预期外，常带有提前考虑、准备或行动的意味。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "prefigure",
+          "comparisonZh": "在较早事物预示、先行体现后来发展时可以接近；prefigure 也有事先想象义。但它通常着重预示或早期形态，不能普遍代替日常的 anticipate someone’s needs（预先考虑某人的需要）。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "expect",
+          "comparisonZh": "都可表示认为某事会发生。expect 更日常；anticipate 往往更突出事先想到，有时还包含为此准备，但并非每次都已经采取行动。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ANTI + CIP + ATE · 提前抓到",
+          "textZh": "这里 anti- 是 ante- 的形式变化，表示“在前”；和刚学的 antedate 一起记。cip- 的“拿、抓”与熟悉的 capture（捕捉）同源，-ate 是动词结尾。完整画面是脑中先捕捉到将来的情况：预想到朋友会渴，便先准备水。这样把“在前＋抓到”连到预料和准备。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "Auntie, sip it · 先想到会烫",
+          "textZh": "把整个 anticipate 联想到 Auntie, sip it（姨妈，小口喝）。外甥女预想到刚泡的茶可能很烫，在姨妈喝之前就先提醒，体现事先考虑并行动。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He anticipated that his friends would be thirsty after football and set out water before they arrived.",
+          "translationZh": "他预想到朋友们踢完球会口渴，在他们到来前就准备好了水。",
+          "explanationZh": "需求尚未被提出，他已经预先想到并作准备。"
+        },
+        {
+          "textEn": "The engineers anticipated delays and allowed extra time for testing.",
+          "translationZh": "工程师们预料会有延误，因此给测试多留了时间。",
+          "explanationZh": "anticipate 可以预期不利情况，并不一定表示乐观期待。"
+        }
+      ]
+    }
+  ]
+}

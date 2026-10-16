@@ -1,0 +1,413 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 49,
+      "word": "acute",
+      "ipa": "/əˈkjuːt/",
+      "pos": "adj.",
+      "coreMeaningZh": "敏锐的；强烈、严重的；急性的；锐角的",
+      "coreEn": "Quick and perceptive, highly sensitive, or very intense; also sudden and short-term in illness, or between 0 and 90 degrees for an angle.",
+      "coreImageZh": "男孩一下注意到叶缘的小缺口，展现敏锐的观察力。",
+      "usage": [
+        {
+          "senseZh": "感官、观察或思维敏锐",
+          "explanationZh": "可形容听觉、视觉、头脑或分析，强调能注意细微差别、迅速把握问题。不是仅仅用力看或听。",
+          "collocations": [
+            {
+              "phrase": "acute powers of observation",
+              "meaningZh": "敏锐的观察力"
+            },
+            {
+              "phrase": "acute hearing",
+              "meaningZh": "敏锐的听觉"
+            },
+            {
+              "phrase": "an acute mind",
+              "meaningZh": "敏锐的头脑"
+            }
+          ]
+        },
+        {
+          "senseZh": "程度强烈、情况严重；医学上的急性",
+          "explanationZh": "acute pain 或 acute shortage 强调强烈、严重。医学里的 acute 常指起病较突然、病程较短，与 chronic 慢性相对；“急性”不能简单当作严重程度的排名。",
+          "collocations": [
+            {
+              "phrase": "an acute shortage",
+              "meaningZh": "严重短缺"
+            },
+            {
+              "phrase": "acute pain",
+              "meaningZh": "剧烈疼痛"
+            },
+            {
+              "phrase": "an acute illness",
+              "meaningZh": "急性疾病"
+            }
+          ]
+        },
+        {
+          "senseZh": "数学中的锐角",
+          "explanationZh": "acute angle 指大于0度、小于90度的角；acute triangle 指三个内角都是锐角的三角形。",
+          "collocations": [
+            {
+              "phrase": "an acute angle",
+              "meaningZh": "锐角"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "incisive",
+          "comparisonZh": "在分析或判断敏锐时接近。incisive 更强调切中要害、表达有力；acute 还可形容感官敏锐、情况严重或急性病。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "severe",
+          "comparisonZh": "在疼痛、短缺或危机严重时接近；severe 不表示锐角，也不能直接替代 acute 的敏锐头脑义。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "dire",
+          "comparisonZh": "在短缺、困境十分严重时接近。dire 常带灾难性、急迫的色彩；不用于 acute hearing 或 acute angle 的意思。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "perceptive",
+          "comparisonZh": "在善于观察、理解细节时接近，是本场景的含义。perceptive 通常形容人或见解，不承载急性疾病等义。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "a cute · 小猫很敏锐",
+          "textZh": "整个 acute 与 a cute（一个可爱的……）连读同音 /əˈkjuːt/。想象 a cute kitten：这只可爱的小猫在你还没察觉时，就听见远处极轻的开门声，立刻转动耳朵。用完整的“小可爱→听觉敏锐”场景记 acute。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "A + CUT + E · 眼睛发现小缺口",
+          "textZh": "把整个拼写看成 A CUT＋E：a cut 是一个切口，E 提醒 eyes（眼睛）。叶边只有一个极小的缺口，敏锐的眼睛却一下发现了它。这个“看出小切口”的画面把全词连到观察敏锐义。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy’s acute powers of observation helped him spot a tiny notch in the leaf.",
+          "translationZh": "男孩敏锐的观察力让他发现了叶片上的一个小缺口。",
+          "explanationZh": "acute 形容察觉细节的能力，与急性或剧烈的含义不同。"
+        },
+        {
+          "textEn": "The village faced an acute shortage of clean water after the storm.",
+          "translationZh": "暴风雨后，村庄面临严重的清洁用水短缺。",
+          "explanationZh": "acute shortage 强调短缺严重，不表示村庄观察敏锐。"
+        }
+      ]
+    },
+    {
+      "number": 4897,
+      "word": "addiction",
+      "ipa": "/əˈdɪkʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "瘾；成瘾；难以摆脱的沉迷",
+      "coreEn": "A strong, difficult-to-control need to use a substance or continue an activity; also an informal description of an intense liking.",
+      "coreImageZh": "虚构故事中的男孩反复因游戏放弃画画，想停却难以停下，表现持续失控的沉迷。",
+      "usage": [
+        {
+          "senseZh": "难以控制的依赖或沉迷",
+          "explanationZh": "常用 addiction to＋名词或动名词。着重强烈需要、难以停止及对生活的影响，不能把一般喜欢或偶尔多玩直接当作成瘾；真实临床判断也不能靠一个简短场景完成。",
+          "collocations": [
+            {
+              "phrase": "addiction to gaming",
+              "meaningZh": "对游戏的成瘾或失控沉迷"
+            },
+            {
+              "phrase": "drug addiction",
+              "meaningZh": "药物或毒品成瘾"
+            },
+            {
+              "phrase": "overcome an addiction",
+              "meaningZh": "克服某种成瘾问题"
+            }
+          ]
+        },
+        {
+          "senseZh": "口语中的强烈爱好",
+          "explanationZh": "日常说话有时夸张地用 addiction 描述特别喜欢的东西。这种说法不自动构成医学诊断，也不意味着所有强烈爱好有害。",
+          "collocations": [
+            {
+              "phrase": "an addiction to detective novels",
+              "meaningZh": "对侦探小说的痴迷"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "dependence",
+          "comparisonZh": "在对某种物质形成依赖时有交集，但范围更广，也可表示依赖他人帮助。生理依赖与成瘾并不完全相同，不能仅凭词典近义就作临床等同。"
+        },
+        {
+          "word": "compulsion",
+          "comparisonZh": "指难以抗拒的冲动或驱使，能突出“忍不住”；addiction 指一种持续依赖或沉迷的状态，两者不是所有语境都可互换。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ADDITION + C · 加时却停不下",
+          "textZh": "完整的 addition（增加）在 I 与 T 之间插入 C，就成为 addiction。C 用最熟悉的 can’t stop（停不下来）记：游戏时间一次次增加，而且自己想停却控制不住，连原本的生活安排都受影响。关键不只是 addition，还多了 can’t stop。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a ditch + ion · 陷在沟里",
+          "textZh": "把 addiction 联想到 a ditch（一道沟）再接名词尾 -ion。想象一种反复的习惯像沟槽，把日常生活带进同一条轨迹：想转向其他活动，却总被拉回去。借“陷进去、难以脱离”的完整声音画面记成瘾。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "In the story, the boy’s addiction to gaming repeatedly keeps him from drawing, even though he wants to stop playing.",
+          "translationZh": "故事中，男孩对游戏的失控沉迷反复让他放弃画画，尽管他想停止玩游戏。",
+          "explanationZh": "虚构场景通过反复影响生活和难以停止解释词义，不对真实孩子作诊断。"
+        },
+        {
+          "textEn": "She jokingly called her love of detective novels an addiction.",
+          "translationZh": "她开玩笑地把自己对侦探小说的喜爱称作一种瘾。",
+          "explanationZh": "jokingly 明确是口语夸张，不是临床判断。"
+        }
+      ]
+    },
+    {
+      "number": 53,
+      "word": "adhere",
+      "ipa": "/ədˈhɪə/",
+      "pos": "v.",
+      "coreMeaningZh": "遵守；坚持支持；黏附",
+      "coreEn": "To follow a rule or remain loyal to a principle; also to stick firmly to a surface.",
+      "coreImageZh": "男孩仍遵守轮流玩的约定，把玩具交给同学，虽然对方允许他再玩一轮。",
+      "usage": [
+        {
+          "senseZh": "遵守规则、计划或原则",
+          "explanationZh": "通常用 adhere to＋名词，语气较正式，强调坚持照着做。这里的 to 不可随意省略；遵守不一定是被迫服从。",
+          "collocations": [
+            {
+              "phrase": "adhere to the agreement",
+              "meaningZh": "遵守约定"
+            },
+            {
+              "phrase": "strictly adhere to the rules",
+              "meaningZh": "严格遵守规则"
+            },
+            {
+              "phrase": "adhere to one’s principles",
+              "meaningZh": "坚持自己的原则"
+            }
+          ]
+        },
+        {
+          "senseZh": "物体黏附、贴住",
+          "explanationZh": "通常用物体作主语，adhere to＋表面。与遵守规则的比喻义有关，但实际翻译应区分。",
+          "collocations": [
+            {
+              "phrase": "adhere to the surface",
+              "meaningZh": "黏附在表面上"
+            },
+            {
+              "phrase": "paint that adheres well",
+              "meaningZh": "附着牢固的油漆"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hew",
+          "comparisonZh": "只在 hew to a rule/line 等“坚持、遵循”用法中接近。hew 的常见砍削义不能换成 adhere，也不用于普通黏附场景。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "stick to",
+          "comparisonZh": "既可指物理黏住，也可指坚持计划或原则，比 adhere to 更口语化。"
+        },
+        {
+          "word": "comply with",
+          "comparisonZh": "在遵守要求、规定时接近。comply with 更侧重照要求办，adhere to 也可强调自愿坚持原则；物理黏附不适用 comply with。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AD + HERE · 广告贴在这里",
+          "textZh": "整个 adhere 正好分成 ad（广告）＋here（这里）：一张广告贴得牢牢的，就黏在这里不脱落。再把物理上的“贴住”转到行为上：坚持贴着已认同的规则走，就是 adhere to the rules。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a deer · 小鹿坚持路线",
+          "textZh": "把整个 adhere 与 a deer（一只鹿）作近音联想。童话里的小鹿答应沿安全路线走，看到近处果子也不离开约定的小路，始终遵守约定。完整的“小鹿坚持路线”帮助记 adhere to。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy adhered to their agreement to take turns and passed the toy to his classmate.",
+          "translationZh": "男孩遵守了轮流玩的约定，把玩具交给同学。",
+          "explanationZh": "即使还能多玩一轮，也主动坚持原来的约定。"
+        },
+        {
+          "textEn": "The label adhered firmly to the dry glass jar.",
+          "translationZh": "标签牢牢地黏在干燥的玻璃罐上。",
+          "explanationZh": "物体作主语，adhere to 在这里表示实际黏附。"
+        }
+      ]
+    },
+    {
+      "number": 4898,
+      "word": "admirable",
+      "ipa": "/ˈædmərəbəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "值得敬佩的；令人赞赏的",
+      "coreEn": "Deserving admiration or praise because of a quality, action, or achievement.",
+      "coreImageZh": "男孩主动归还捡到的钱包，诚实的行为值得敬佩。",
+      "usage": [
+        {
+          "senseZh": "品质、行为或成果值得赞赏",
+          "explanationZh": "可形容诚实、勇气、耐心、克制，也可形容做得出色的工作。重点是值得敬佩或赞许，不只是长得可爱，也不要求所有人已经实际赞扬。",
+          "collocations": [
+            {
+              "phrase": "admirable honesty",
+              "meaningZh": "令人敬佩的诚实"
+            },
+            {
+              "phrase": "admirable restraint",
+              "meaningZh": "值得赞赏的克制"
+            },
+            {
+              "phrase": "do an admirable job",
+              "meaningZh": "把工作做得值得称赞"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "commendable",
+          "comparisonZh": "都可表示值得赞许。commendable 常突出某种行为应受到称赞，语气较正式；admirable 还可以带更明显的敬佩感。"
+        },
+        {
+          "word": "praiseworthy",
+          "comparisonZh": "强调值得表扬，与 admirable 的值得赞赏义很接近；具体是否带敬意仍看语境。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ADMIRE + ABLE · 值得敬佩",
+          "textZh": "admire 是敬佩、赞赏。把它去掉末尾 e，再接 -able，得到整个 admirable：某种诚实或勇气值得让人 admire，就可称 admirable。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "ADORABLE → ADMIRABLE · 我的榜样",
+          "textZh": "把完整的 AD[O]RABLE（可爱的）换成 AD[MI]RABLE；O 的位置换入 MI，MI 用 my idol（我的偶像、榜样）记。一个人起初只是样子可爱，后来主动归还钱包，诚实得让你把他当榜样：这件事值得敬佩，便是 admirable。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Returning the lost wallet without asking for a reward was an admirable act of honesty.",
+          "translationZh": "归还失落的钱包而不索取报酬，是值得敬佩的诚实之举。",
+          "explanationZh": "敬佩来自诚实行为，而非外表或讨好别人。"
+        },
+        {
+          "textEn": "She showed admirable restraint when the discussion became heated.",
+          "translationZh": "讨论变得激烈时，她表现出了值得赞赏的克制。",
+          "explanationZh": "克制这一品质本身值得赞许，不是说她正在敬佩别人。"
+        }
+      ]
+    },
+    {
+      "number": 57,
+      "word": "admonish",
+      "ipa": "/ədˈmɒnɪʃ/",
+      "pos": "v.",
+      "coreMeaningZh": "告诫；劝诫；责备、训诫",
+      "coreEn": "To warn or advise someone seriously, or to express disapproval in order to correct their behavior.",
+      "coreImageZh": "讲解员严肃告诫男孩别碰脆弱展品，男孩收回手。",
+      "usage": [
+        {
+          "senseZh": "告诫、提醒某人改正或避免错误",
+          "explanationZh": "及物动词，常用 admonish someone not to do something，或者 admonish someone for doing something。语气认真、明确，可以含责备；通常强调纠正或警告，不一定是轻声细语，也不等于辱骂。",
+          "collocations": [
+            {
+              "phrase": "admonish someone not to touch",
+              "meaningZh": "告诫某人不要触碰"
+            },
+            {
+              "phrase": "admonish someone for interrupting",
+              "meaningZh": "因打断别人而责备某人"
+            },
+            {
+              "phrase": "admonish someone to be careful",
+              "meaningZh": "告诫某人小心"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "scold",
+          "comparisonZh": "都可责备不当行为。scold 往往更带生气、训斥的感觉；admonish 常含严肃提醒、希望改正或避免危险的目的。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "warn",
+          "comparisonZh": "在提醒危险或不良后果时接近。warn 范围更广，可只是提供风险信息；admonish 常直接针对人的行为提出纠正性提醒。"
+        },
+        {
+          "word": "reprove",
+          "comparisonZh": "在表达不赞同、责备时接近；reprove 主要是责备，admonish 也可以在错误发生前严肃告诫。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AD + MON + ISH · 班长提醒",
+          "textZh": "把整个 admonish 记成 ad＋mon＋ish。ad- 表示向、对着，mon 用熟悉的 monitor（班长、监督者）搭桥，带回提醒、警告：班长对着正要碰易碎物品的同学，严肃提醒“别碰，容易损坏”。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "add money + sh · 先别充值",
+          "textZh": "把 admonish 的整体声音联想到 add money（加钱、充值）再接 sh（嘘）。孩子又想未经同意往游戏账户加钱，大人先说“嘘，听我说”，再严肃告诫他不要擅自继续充值。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The guide admonished the boy not to touch the fragile exhibit, and he drew his hand back.",
+          "translationZh": "讲解员告诫男孩不要碰脆弱的展品，他便收回了手。",
+          "explanationZh": "not to touch 明确指出应避免的行为，语气严肃而有纠正目的。"
+        },
+        {
+          "textEn": "The chair admonished the panelists for repeatedly interrupting one another.",
+          "translationZh": "主持人因讨论嘉宾反复互相打断而责备了他们。",
+          "explanationZh": "admonish someone for doing something 针对已经出现的不当行为。"
+        }
+      ]
+    }
+  ]
+}

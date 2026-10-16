@@ -1,0 +1,426 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4899,
+      "word": "adopt",
+      "ipa": "/əˈdɒpt/",
+      "pos": "v.",
+      "coreMeaningZh": "采用、采纳；收养；正式通过",
+      "coreEn": "To take up and use a method or idea, legally take a child into one’s family, or formally approve something.",
+      "coreImageZh": "男孩认可按颜色收积木的建议，随即开始采用这个办法。",
+      "usage": [
+        {
+          "senseZh": "采用方法、建议或态度",
+          "explanationZh": "及物动词，强调把一个想法、做法等接受下来并加以使用，不只是听说或赞赏。",
+          "collocations": [
+            {
+              "phrase": "adopt a new method",
+              "meaningZh": "采用新方法"
+            },
+            {
+              "phrase": "adopt a proposal",
+              "meaningZh": "采纳建议"
+            },
+            {
+              "phrase": "adopt a cautious approach",
+              "meaningZh": "采取谨慎做法"
+            }
+          ]
+        },
+        {
+          "senseZh": "收养；正式通过",
+          "explanationZh": "收养孩子时表示使其成为家庭成员、建立父母子女关系；也可表示机构正式通过政策或决议。两个含义须按宾语区分。",
+          "collocations": [
+            {
+              "phrase": "adopt a child",
+              "meaningZh": "收养孩子"
+            },
+            {
+              "phrase": "adopt a resolution",
+              "meaningZh": "正式通过决议"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "foster",
+          "comparisonZh": "在照顾儿童的语境中相关，但不是无条件互换。adopt 通常指正式收养、成为法律上的父母；foster 指寄养照护，不必建立同样的父母子女关系。foster 也有培养、促进义，不能替换 adopt a method。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "take up",
+          "comparisonZh": "在开始采用某种方法、做法时接近；take up 还可指开始兴趣活动或占用空间，不等同正式收养。"
+        },
+        {
+          "word": "implement",
+          "comparisonZh": "采用办法后常会实施它。adopt 侧重决定接受并使用，implement 侧重把计划落实执行；两者可以前后相接。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AD + OPT · 选来采用",
+          "textZh": "整个 adopt 可从 ad＋opt 记起：ad- 表示向，opt 的“选择”联系熟悉的 option（选项）。面对几种方案，选中一种并把它拿来使用，就是 adopt。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "A DOT + P · 采用圆点方案",
+          "textZh": "完整的 A DOT（一枚圆点）在 O 后插入 P，得到 ADOPT。P 用 plan（方案）记：大家建议用彩色圆点标记收纳盒，你觉得可行，就开始照这个方案整理东西。圆点加上真正采用的 plan，把全词带回“采纳、采用”。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy adopted his classmate’s suggestion and began sorting the blocks by color.",
+          "translationZh": "男孩采纳同学的建议，开始按颜色整理积木。",
+          "explanationZh": "不是只说方法不错，而是已经着手采用。"
+        },
+        {
+          "textEn": "The committee adopted the new policy after a lengthy discussion.",
+          "translationZh": "委员会经过长时间讨论后，正式通过了新政策。",
+          "explanationZh": "机构 adopt a policy 表示正式采纳、通过，与收养无关。"
+        }
+      ]
+    },
+    {
+      "number": 4900,
+      "word": "adroit",
+      "ipa": "/əˈdrɔɪt/",
+      "pos": "adj.",
+      "coreMeaningZh": "灵巧的；熟练的；机敏、善于应对的",
+      "coreEn": "Skillful and deft in physical actions or in handling people, ideas, and situations.",
+      "coreImageZh": "男孩稳稳对准绳头和珠孔，一次穿过，动作灵巧熟练。",
+      "usage": [
+        {
+          "senseZh": "手上或身体动作灵巧",
+          "explanationZh": "可形容一个人、双手、动作或处理物品的方式。强调熟练而准确，不是碰巧成功。",
+          "collocations": [
+            {
+              "phrase": "adroit fingers",
+              "meaningZh": "灵巧的手指"
+            },
+            {
+              "phrase": "an adroit movement",
+              "meaningZh": "一个灵巧的动作"
+            }
+          ]
+        },
+        {
+          "senseZh": "应对问题、交际或思考机敏",
+          "explanationZh": "也可形容巧妙处理尴尬局面、谈判或回答问题，语体较正式。",
+          "collocations": [
+            {
+              "phrase": "adroit at handling difficult questions",
+              "meaningZh": "善于应对难题"
+            },
+            {
+              "phrase": "an adroit negotiator",
+              "meaningZh": "机敏老练的谈判者"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "nimble",
+          "comparisonZh": "在动作或思维敏捷时接近。nimble 更突出轻快、反应快，adroit 更重技巧熟练和处理巧妙。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "dexterous",
+          "comparisonZh": "在手工操作灵巧时很接近；dexterous 尤其容易让人想到双手技巧，adroit 也常用于交际和局面处理。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "deft",
+          "comparisonZh": "都可形容动作熟练、利落；deft 常突出轻巧准确的一次动作或处理，adroit 也可概括一个人的机敏能力。",
+          "sources": [
+            "zhangwei_dedicated_2021",
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "acumen",
+          "comparisonZh": "属于意义相关、词性不同的关联：adroit 是形容词“机敏、灵巧的”，acumen 是名词“敏锐判断力”。可说 an adroit negotiator 或 business acumen，不能在原句中直接互换，也不能把 acumen 当成手指灵巧的形容词。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "a droid · 灵巧机器人",
+          "textZh": "把整个 adroit 联想到 a droid（一台机器人）；droid 可借熟悉的 Android（安卓）名字来认。想象机器人用细小机械手稳稳穿珠、准确打结，动作十分灵巧。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "I draw it · 画得又稳又准",
+          "textZh": "把整个 adroit 联想到一句熟悉的话 I draw it（我来画）。画师说完，便用流畅准确的线条画出细小叶脉，展现熟练技巧。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "With an adroit movement, the boy guided the cord through the bead.",
+          "translationZh": "男孩动作灵巧，把绳头穿过了珠子。",
+          "explanationZh": "稳准的穿珠动作体现手上技巧，不是仅仅聪明或幸运。"
+        },
+        {
+          "textEn": "Her adroit reply eased the tension without avoiding the difficult question.",
+          "translationZh": "她机敏的回答缓解了紧张气氛，又没有回避那个难题。",
+          "explanationZh": "这里形容应对方式巧妙，不是手工动作。"
+        }
+      ]
+    },
+    {
+      "number": 4901,
+      "word": "adulation",
+      "ipa": "/ˌædjʊˈleɪʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "过度赞美；吹捧、谄媚；狂热崇拜",
+      "coreEn": "Excessive or uncritical admiration and praise, sometimes offered as flattery.",
+      "coreImageZh": "男孩把普通陶碗夸成天下第一，试图靠吹捧获得老师的奖励。",
+      "usage": [
+        {
+          "senseZh": "过度吹捧、奉承",
+          "explanationZh": "通常为不可数名词，常有不赞同的意味。可以是为讨好某人而夸大赞美，也可以是粉丝不加批判的狂热崇拜；不必每次都有谋取好处的动机。",
+          "collocations": [
+            {
+              "phrase": "lavish adulation",
+              "meaningZh": "铺天盖地的吹捧"
+            },
+            {
+              "phrase": "receive public adulation",
+              "meaningZh": "受到公众狂热追捧"
+            },
+            {
+              "phrase": "seek adulation",
+              "meaningZh": "寻求过度赞美和追捧"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "approbation",
+          "comparisonZh": "在获得赞许时有关联，但 approbation 通常是正式的认可、赞同，不必过度或谄媚。adulation 的夸大、无保留追捧色彩更强。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "sycophant",
+          "comparisonZh": "这是行为与人的关联，不能当作可直接替换的近义词：adulation 指过度奉承，sycophant 指阿谀奉承的人。两者虽都是名词，却不是同一类指称；人可以 offer adulation，不能因此把“奉承者”写成“奉承”本身。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "flattery",
+          "comparisonZh": "都可指讨好式赞美。flattery 更直接强调让对方高兴的奉承；adulation 还可指没有明确讨好目的的狂热崇拜。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AD + U + LATE + ION · 迟到后吹捧",
+          "textZh": "把全词串成 ad（广告）＋U（you，你）＋late（迟到），再把 late 的末尾 e 换成名词尾 -ion：AD＋U＋LAT＋ION 正好得到 ADULATION。你拍广告迟到了，为求负责人通融，把对方普通的作品夸成“举世无双”。过头的赞美带回“谄媚、吹捧”。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a donation · 一枚硬币夸上天",
+          "textZh": "把整个 adulation 与 a donation（一次捐赠）作近音联想：有人只捐了一枚硬币，旁人为了讨好他、希望他继续捐，竟把他夸成“世上最伟大的恩人”。夸赞远远超出事实，就是 adulation。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy’s adulation of the teacher’s ordinary bowl was an obvious attempt to win a reward.",
+          "translationZh": "男孩对老师那只普通陶碗的过度吹捧，显然是想获得奖励。",
+          "explanationZh": "普通作品被夸到不相称的高度，体现讨好式吹捧，而非正常欣赏。"
+        },
+        {
+          "textEn": "The singer grew uncomfortable with the uncritical adulation of her fans.",
+          "translationZh": "歌手渐渐对粉丝不加批判的狂热追捧感到不自在。",
+          "explanationZh": "粉丝的赞美未必虚假或逐利，过度崇拜也可称 adulation。"
+        }
+      ]
+    },
+    {
+      "number": 4902,
+      "word": "advanced",
+      "ipa": "/ədˈvɑːnst/",
+      "pos": "adj.",
+      "coreMeaningZh": "先进的；高级的；进展到后期的；年事已高的",
+      "coreEn": "Far ahead in development or skill, or far along in a process or in age.",
+      "coreImageZh": "装置能自动识别并分拣积木，比依靠手工的小铲体现更先进的技术。",
+      "usage": [
+        {
+          "senseZh": "技术先进；课程或能力达到高级",
+          "explanationZh": "强调发展、知识或技能水平较高，不只外观新颖。advanced course 通常面向已有基础的学习者，不表示课程提前举行。",
+          "collocations": [
+            {
+              "phrase": "advanced technology",
+              "meaningZh": "先进技术"
+            },
+            {
+              "phrase": "an advanced course",
+              "meaningZh": "高级课程"
+            },
+            {
+              "phrase": "advanced learners",
+              "meaningZh": "高阶学习者"
+            }
+          ]
+        },
+        {
+          "senseZh": "进展较深、处于后期；年事已高",
+          "explanationZh": "advanced stage 表示过程已推进较远；advanced age 表示高龄。与 advance notice（提前通知）的 advance 用法区分。",
+          "collocations": [
+            {
+              "phrase": "at an advanced stage",
+              "meaningZh": "处于较后阶段"
+            },
+            {
+              "phrase": "of advanced age",
+              "meaningZh": "年事已高的"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sophisticated",
+          "comparisonZh": "形容技术或设备复杂精良时接近；sophisticated 也可指人老练、有品位，而 advanced 更突出发展水平领先。"
+        },
+        {
+          "word": "high-level",
+          "comparisonZh": "形容高级课程或技能时接近；high-level 也可指高层级决策，不能覆盖 advanced age 等意思。"
+        },
+        {
+          "word": "developed",
+          "comparisonZh": "在技术或系统已发展成熟时部分重合；advanced 往往更强调发展到较高、较领先的水平。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ADVANCE + D · 已经走在前面",
+          "textZh": "熟悉的 advance 表示前进、推进，in advance 中也有在前的意思。它加上 d 成为 advanced：已经向前推进，技术和技能走在更前面，就是先进、高级。用一台能自动识别分类的装置，来对照原先全靠手工的工具。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "add vans · 加入先进车队",
+          "textZh": "把整个 advanced 联想到 add vans（增加面包车）：配送公司加入能自动识路、自己驾驶的新型面包车，车队因此有了更先进的技术。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The advanced machine could recognize and sort the blocks automatically.",
+          "translationZh": "这台先进机器能够自动识别并分拣积木。",
+          "explanationZh": "先进体现在自动识别和分拣的能力，不只是机器看着新奇。"
+        },
+        {
+          "textEn": "The project was already at an advanced stage when the design changed.",
+          "translationZh": "设计改变时，项目已经推进到较后阶段。",
+          "explanationZh": "advanced stage 说的是进度，并非夸赞设计技术先进。"
+        }
+      ]
+    },
+    {
+      "number": 4903,
+      "word": "advantage",
+      "ipa": "/ədˈvɑːntɪdʒ/",
+      "pos": "n.",
+      "coreMeaningZh": "优势；有利条件；优点、好处",
+      "coreEn": "A quality or circumstance that puts someone in a better position or makes something useful or preferable.",
+      "coreImageZh": "长柄工具够得到更高处的苹果，具体显示它比短柄工具多出的优势。",
+      "usage": [
+        {
+          "senseZh": "优势、有利条件或优点",
+          "explanationZh": "常用 an advantage over 表示相对某人或某物的优势，或 the advantage of 表示某特点的好处。优势增加便利或机会，不保证最终获胜。",
+          "collocations": [
+            {
+              "phrase": "have an advantage over",
+              "meaningZh": "相对……占优势"
+            },
+            {
+              "phrase": "a practical advantage",
+              "meaningZh": "实际优势"
+            },
+            {
+              "phrase": "the advantage of a longer handle",
+              "meaningZh": "较长手柄带来的优势"
+            }
+          ]
+        },
+        {
+          "senseZh": "利用机会；占别人便宜",
+          "explanationZh": "take advantage of a chance/resource 可以中性地表示利用；宾语是人且含不公平行为时，常表示利用别人、占便宜。",
+          "collocations": [
+            {
+              "phrase": "take advantage of an opportunity",
+              "meaningZh": "利用机会"
+            },
+            {
+              "phrase": "take advantage of someone",
+              "meaningZh": "利用某人、占某人便宜"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "benefit",
+          "comparisonZh": "表示某事带来的好处时接近。advantage 更常突出相对更有利的位置或特点，benefit 不一定涉及比较竞争。"
+        },
+        {
+          "word": "edge",
+          "comparisonZh": "在比对方略占优势时接近，常用 an edge over；edge 还可指边缘或刀刃，不覆盖所有 advantage 用法。"
+        },
+        {
+          "word": "asset",
+          "comparisonZh": "某项有用的技能或资源可以是 asset，并给人带来 advantage；前者偏指有价值的资源本身，后者偏指形成的优势。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ADVANCE → ADVANTAGE · 领先的好处",
+          "textZh": "把整个 advantage 与熟悉的 advance（向前推进）联系：某个条件让你走得更靠前、做事更有利，就给你 an advantage。两词的历史都与“在前”有关；advantage 中的 -age 是名词后缀。用长柄让工具够得更远，记住这种领先位置带来的优势。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "AD + VAN + TAG(E) · 电动车的优势",
+          "textZh": "把完整 ADVANTAGE 看成 AD（广告）里的 VAN（面包车），车上 TAG（标签）写着 E＝electric（电动）：AD＋VAN＋TAG＋E 正好拼回全词。广告对照展示这款车在住宅区低速送货时噪声较小，把更安静作为它的一项优势。广告、车和电动标签连成同一幅画面。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The longer handle gave the boy an advantage in reaching the higher apples.",
+          "translationZh": "较长的手柄让男孩在够取高处苹果时更有优势。",
+          "explanationZh": "优势来自工具伸得更远，不是保证摘到所有苹果。"
+        },
+        {
+          "textEn": "We took advantage of the quiet morning to finish the recording.",
+          "translationZh": "我们利用清静的早晨完成了录音。",
+          "explanationZh": "take advantage of 加时间条件，表示中性地利用有利机会。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,412 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 2714,
+      "word": "agreeable",
+      "ipa": "/əˈɡriːəbəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "宜人的；令人愉悦的；可接受的；愿意同意的",
+      "coreEn": "Pleasant to experience, acceptable, or willing to consent.",
+      "coreImageZh": "树荫下有凉风，父子舒服地坐在长凳上休息。",
+      "usage": [
+        {
+          "senseZh": "宜人、让人感到愉快",
+          "explanationZh": "可形容天气、时光、味道、交谈或人的举止。重点是体验合意、相处舒服，不必达到杰出的程度。",
+          "collocations": [
+            {
+              "phrase": "agreeable weather",
+              "meaningZh": "宜人的天气"
+            },
+            {
+              "phrase": "an agreeable afternoon",
+              "meaningZh": "惬意的午后"
+            },
+            {
+              "phrase": "an agreeable companion",
+              "meaningZh": "令人相处愉快的同伴"
+            }
+          ]
+        },
+        {
+          "senseZh": "可接受；愿意同意",
+          "explanationZh": "方案 agreeable to someone 表示对某人来说可以接受；人 be agreeable to something 表示愿意接受某事，要看主语区分。",
+          "collocations": [
+            {
+              "phrase": "a mutually agreeable solution",
+              "meaningZh": "双方均可接受的解决方案"
+            },
+            {
+              "phrase": "be agreeable to a proposal",
+              "meaningZh": "愿意接受一项提议"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "excellent",
+          "comparisonZh": "在正面评价体验时可能有交集，但并非普遍等义。agreeable 侧重宜人、合意或令人满意；excellent 强调质量出众。一个舒服的午后可以 agreeable，并不需要达到“卓越”的标准。",
+          "source": "zhangwei_core7"
+        },
+        {
+          "word": "pleasant",
+          "comparisonZh": "在宜人、令人愉悦义上很接近；agreeable 还可表示愿意同意或可接受，pleasant 通常不能替换这些用法。"
+        },
+        {
+          "word": "acceptable",
+          "comparisonZh": "形容方案可被接受时接近；acceptable 未必令人愉快，而 agreeable 也常直接描述让人享受的体验。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AGREE + ABLE · 合我的意",
+          "textZh": "熟悉的 agree（同意、合得来）加 -able，构成 agreeable。想象清凉的树荫正合你的心意，你会点头说“这样很好”：从“合意、能接受”连到“令人愉悦”。说一个人 agreeable，也可以指他好相处。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a green apple · 清爽好滋味",
+          "textZh": "把整个 agreeable 联想到 a green apple（一个青苹果）：咬下去清脆、清爽，滋味正合心意，让人感到愉快。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The shade and gentle breeze made their afternoon in the park especially agreeable.",
+          "translationZh": "树荫和轻柔的微风让他们在公园度过的午后格外惬意。",
+          "explanationZh": "agreeable 描述舒适宜人的体验，不是表示同意某个观点。"
+        },
+        {
+          "textEn": "After a short discussion, they found a meeting time agreeable to everyone.",
+          "translationZh": "简短商量后，他们找到了所有人都能接受的开会时间。",
+          "explanationZh": "agreeable to everyone 表示时间安排合各方心意、可以接受。"
+        }
+      ]
+    },
+    {
+      "number": 4909,
+      "word": "alarmist",
+      "ipa": "/əˈlɑːmɪst/",
+      "pos": "adj.; n.",
+      "coreMeaningZh": "危言耸听的；制造不必要恐慌的人",
+      "coreEn": "Exaggerating danger and causing unnecessary fear; a person who does this.",
+      "coreImageZh": "仅见一小片云就断言公园会被灾难淹没，同伴指出这种判断没有充分依据。",
+      "usage": [
+        {
+          "senseZh": "夸大危险、制造不必要恐慌",
+          "explanationZh": "含批评意味，可修饰报道、预测、言论或人。重点是夸大或缺乏充分根据，不是把每一次严肃的风险警告都说成危言耸听。",
+          "collocations": [
+            {
+              "phrase": "alarmist headlines",
+              "meaningZh": "危言耸听的标题"
+            },
+            {
+              "phrase": "an alarmist prediction",
+              "meaningZh": "夸大危险的预测"
+            },
+            {
+              "phrase": "alarmist rhetoric",
+              "meaningZh": "制造恐慌的言辞"
+            }
+          ]
+        },
+        {
+          "senseZh": "危言耸听者",
+          "explanationZh": "可数名词，指倾向于夸大危险、让人不必要地害怕的人。",
+          "collocations": [
+            {
+              "phrase": "an alarmist",
+              "meaningZh": "危言耸听的人"
+            },
+            {
+              "phrase": "dismiss someone as an alarmist",
+              "meaningZh": "把某人当作危言耸听者而不予理会"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "scaremongering",
+          "comparisonZh": "都可批评夸大危险、散布恐慌的言论。scaremongering 更直接突出制造恐惧的行为；alarmist 也可形容某人过度担忧的预测。"
+        },
+        {
+          "word": "pessimistic",
+          "comparisonZh": "都可能预想坏结果，但 pessimistic 只表示悲观；alarmist 还包含把危险说得过重、引起不必要恐慌。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ALARM + IST · 过度拉警报",
+          "textZh": "alarm 是熟悉的警报，-ist 可表示做某类事情的人。alarmist 想成一个小事也大喊“危险！”、不断拉响不必要警报的人；它也可作形容词，形容这种夸大危险的说法。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a warm mist · 把水雾说成灾难",
+          "textZh": "把整个 alarmist 联想到 a warm mist（一团温暖的水雾，mist＝薄雾）：明明是温泉边普通的水雾，有人却大喊“整个山谷马上要爆炸了！”，无根据地制造恐慌。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His claim that one small cloud meant the park would soon be flooded was alarmist.",
+          "translationZh": "他声称一小片云就意味着公园很快会被淹没，这种说法是在危言耸听。",
+          "explanationZh": "把有限迹象夸张成灾难预言，造成没有充分根据的恐慌。"
+        },
+        {
+          "textEn": "The editor removed the alarmist headline and replaced it with a measured description of the problem.",
+          "translationZh": "编辑删掉了危言耸听的标题，换成了对问题的审慎描述。",
+          "explanationZh": "alarmist 指标题夸大危险；改写并不等于否认问题存在。"
+        }
+      ]
+    },
+    {
+      "number": 4910,
+      "word": "alien",
+      "ipa": "/ˈeɪliən/",
+      "pos": "adj.; n.",
+      "coreMeaningZh": "陌生的；格格不入的；外来的；外星生物",
+      "coreEn": "Unfamiliar or very different from what is usual; in fiction, a being from another world.",
+      "coreImageZh": "初次接触陶轮的孩子完全不熟悉这种工具，老师耐心介绍。",
+      "usage": [
+        {
+          "senseZh": "陌生、不熟悉；与本来情况不相容",
+          "explanationZh": "alien to someone 可表示某人很不熟悉；alien to a belief or nature 可表示不合某种信念或本性。陌生不一定意味着危险或敌意。",
+          "collocations": [
+            {
+              "phrase": "an alien environment",
+              "meaningZh": "陌生的环境"
+            },
+            {
+              "phrase": "be alien to someone",
+              "meaningZh": "对某人来说很陌生"
+            },
+            {
+              "phrase": "alien to one’s nature",
+              "meaningZh": "与某人的本性不相容"
+            }
+          ]
+        },
+        {
+          "senseZh": "外来的；外星生物",
+          "explanationZh": "形容词也可表示来自别处；科幻作品中名词 an alien 指外星生物。另有正式语境中的非本国公民义，日常描述人时宜按具体身份选用更准确的词。",
+          "collocations": [
+            {
+              "phrase": "an alien species",
+              "meaningZh": "外来物种"
+            },
+            {
+              "phrase": "an alien spacecraft",
+              "meaningZh": "外星飞船"
+            },
+            {
+              "phrase": "an alien in a science-fiction story",
+              "meaningZh": "科幻故事中的外星生物"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "unfamiliar",
+          "comparisonZh": "表示不熟悉时很接近。alien 往往更突出与平时经验差异很大，也可表示与本性、观念不相容；unfamiliar 主要说明尚不熟悉。"
+        },
+        {
+          "word": "foreign",
+          "comparisonZh": "在来自外部或不合本来性质的语境中接近；foreign 常直接表示外国的，alien 还常表示陌生、格格不入，或科幻中的外星生物。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ALIEN 外星人 · 从陌生世界来",
+          "textZh": "先想熟悉的科幻名词 alien（外星生物），再把镜头转到它的视角：地球上的陶轮、杯子和操作方式，对它都很陌生。这样，同一个完整单词就从“外星生物”连到形容词“陌生的、与熟悉经验不同的”。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a lion · 第一次见机器人",
+          "textZh": "把整个 alien 联想到 a lion（一头狮子）：童话里的狮子第一次看见会递水杯的机器人，完全不熟悉这种东西，好奇地打量它。用完整近音场景记“陌生的”。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The potter’s wheel was completely alien to Leo, who had never seen one before.",
+          "translationZh": "利奥以前从未见过陶轮，这种工具对他来说完全陌生。",
+          "explanationZh": "alien to Leo 描述缺乏接触经验，不是判断工具危险。"
+        },
+        {
+          "textEn": "Deliberate cruelty was alien to her nature.",
+          "translationZh": "故意残忍地对待别人不符合她的本性。",
+          "explanationZh": "alien to 在这里表示与某人的性情不相容。"
+        }
+      ]
+    },
+    {
+      "number": 82,
+      "word": "allay",
+      "ipa": "/əˈleɪ/",
+      "pos": "v.",
+      "coreMeaningZh": "减轻；缓和；平息恐惧或疑虑",
+      "coreEn": "To reduce fear, worry, doubt, or the severity of something distressing.",
+      "coreImageZh": "老师平静的解释和陪伴让孩子上台前紧绷的神情逐渐放松。",
+      "usage": [
+        {
+          "senseZh": "缓解恐惧、疑虑等",
+          "explanationZh": "通常直接接 fears、concerns、anxiety、doubts 等。强调情绪或疑虑减轻、平息，未必意味着问题的一切原因已经消失。",
+          "collocations": [
+            {
+              "phrase": "allay someone’s fears",
+              "meaningZh": "缓解某人的恐惧"
+            },
+            {
+              "phrase": "allay concerns",
+              "meaningZh": "减轻担忧"
+            },
+            {
+              "phrase": "allay doubts",
+              "meaningZh": "消除或减轻疑虑"
+            }
+          ]
+        },
+        {
+          "senseZh": "减轻痛苦或严重程度",
+          "explanationZh": "较正式，也可用于 grief、pain 等痛苦感受；具体是否完全消除要看上下文。",
+          "collocations": [
+            {
+              "phrase": "allay grief",
+              "meaningZh": "减轻悲痛"
+            },
+            {
+              "phrase": "allay pain",
+              "meaningZh": "缓解疼痛"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "mitigate",
+          "comparisonZh": "在减轻程度上接近。allay 常直接指安抚恐惧、疑虑；mitigate 更广泛地指降低问题、损害或后果的严重性，不一定让人情绪平静。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "palliate",
+          "comparisonZh": "都可表示减轻痛苦或严重程度。palliate 常侧重缓解症状、痛苦或某种不利情况，而未必除去根因；allay 更常用于使恐惧、疑虑平息。",
+          "source": "zhangwei_core7"
+        },
+        {
+          "word": "soothe",
+          "comparisonZh": "都能表示安抚。soothe 可直接接人，如 soothe a child；allay 通常接要缓解的感受，如 allay a child’s fears。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "A + LAY · 把忧虑放下",
+          "textZh": "lay 是熟悉的“放下、放置”。allay 的真实词史来自古英语“放下”，由表示向下的前缀和与 lay 有关的动词组成；今天保留双 l 的拼写。想象老师的安慰让你把一直揪着的忧虑放下来，害怕和紧张随之减轻，就抓住 allay 的意思。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a lake · 湖边缓下心情",
+          "textZh": "把整个 allay 联想到 a lake（一片湖）：故事里，一个原本担心演讲的人在平静湖边听朋友安慰，紧张慢慢减轻。记住“湖边安慰缓解已有忧虑”的完整近音画面。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The teacher’s calm reassurance helped allay Leo’s fear of forgetting his speech.",
+          "translationZh": "老师平静的安慰帮助利奥减轻了忘记演讲内容的恐惧。",
+          "explanationZh": "孩子从紧张转为较安定，体现担忧减轻，而非保证演出一定完美。"
+        },
+        {
+          "textEn": "Clear answers about the timetable allayed the volunteers’ concerns.",
+          "translationZh": "关于时间安排的清楚答复减轻了志愿者们的担忧。",
+          "explanationZh": "具体解释使已有顾虑缓和。"
+        }
+      ]
+    },
+    {
+      "number": 4911,
+      "word": "all-encompassing",
+      "ipa": "/ˌɔːl ɪnˈkʌmpəsɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "全面涵盖的；包罗万象的",
+      "coreEn": "Including every relevant aspect within the scope being discussed.",
+      "coreImageZh": "出行计划把路线、饮食、住宿和安全等各方面都纳入考虑。",
+      "usage": [
+        {
+          "senseZh": "涵盖所谈范围内的各个方面",
+          "explanationZh": "强调覆盖面完整，而不只是项目多、篇幅长或物体大。常用于计划、理论、解释或体系；“全部”的范围由语境决定。",
+          "collocations": [
+            {
+              "phrase": "an all-encompassing plan",
+              "meaningZh": "涵盖各方面的计划"
+            },
+            {
+              "phrase": "an all-encompassing theory",
+              "meaningZh": "全面解释相关现象的理论"
+            },
+            {
+              "phrase": "an all-encompassing approach",
+              "meaningZh": "兼顾各方面的方法"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "inclusive",
+          "comparisonZh": "在广泛纳入内容时接近。all-encompassing 强调各相关方面全面覆盖；inclusive 也常强调不排除某些人、群体或费用，未必声称覆盖所有方面。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "comprehensive",
+          "comparisonZh": "都可形容内容全面。comprehensive 常强调周全、详尽；all-encompassing 更鲜明地突出没有把相关方面留在范围之外。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ALL + EN + COMPASS + ING · 全部圈入",
+          "textZh": "all 是全部；用 compass（指南针）的圆形刻度想起东南西北都在一圈之内。encompass 的真实构词是 en- + compass，词义有围住、包含；加 -ing，再由 all 强调全部，就得到 all-encompassing。想象把出行的路线、吃住和安全统统圈进计划范围，各方面都包含在内。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "ALL IN · COME PASSING",
+          "textZh": "把整个 all-encompassing 联想到 all in（全在里面）· come（来）· passing（通过）。想象路线、吃饭、住宿、安全四张卡片一个不漏地通过入口，全部进入同一本计划册：各方面都纳入了。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Their all-encompassing trip plan covered the route, meals, accommodation, and safety arrangements.",
+          "translationZh": "他们的全面出行计划涵盖了路线、饮食、住宿和安全安排。",
+          "explanationZh": "在这次出行的范围内，各项主要方面都被纳入，不只是准备了很多东西。"
+        },
+        {
+          "textEn": "The researcher rejected an all-encompassing explanation and examined the different causes separately.",
+          "translationZh": "研究者没有采用一个包揽一切的解释，而是分别考察了不同原因。",
+          "explanationZh": "all-encompassing 描述试图覆盖所有相关方面的解释范围，并不自动表示解释正确。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4874,
+      "word": "gleam",
+      "ipa": "/ɡliːm/",
+      "pos": "v.；n.",
+      "coreMeaningZh": "闪光；发出或反射亮光；一道亮光",
+      "coreEn": "To shine or reflect light; a small or brief appearance of light.",
+      "coreImageZh": "日光照在银壶上，男孩稍转壶身，壶腹映出明亮的反光。",
+      "usage": [
+        {
+          "senseZh": "发光或反射亮光",
+          "explanationZh": "动词通常不及物，可说 gleam in the sunlight。金属表面的反光可以 gleam，并不要求物体自身发光；也不必像警示灯那样反复亮灭。",
+          "collocations": [
+            {
+              "phrase": "gleam in the sunlight",
+              "meaningZh": "在阳光下闪亮"
+            },
+            {
+              "phrase": "gleaming silver",
+              "meaningZh": "闪亮的银器"
+            }
+          ]
+        },
+        {
+          "senseZh": "一道亮光；隐约显露",
+          "explanationZh": "名词可用于 a gleam of light，也可比喻眼神中显露的一丝情绪或一线希望。",
+          "collocations": [
+            {
+              "phrase": "a gleam of hope",
+              "meaningZh": "一线希望"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "glisten",
+          "comparisonZh": "都能描写表面闪亮。glisten 特别容易让人想到湿润、光滑表面的反光；gleam 也自然用于干燥而擦亮的金属。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "scintillate",
+          "comparisonZh": "都可表示闪耀。scintillate 较正式，突出许多细小闪光，也可比喻谈吐才思闪现；gleam 是更日常的光泽描写。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "sparkle",
+          "comparisonZh": "都可表示闪光。sparkle 常让人想到许多活泼的小亮点，如钻石或水波；gleam 也可是一片较柔和、持续的亮光。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "twinkle",
+          "comparisonZh": "都可形容光闪动。twinkle 突出小亮点忽明忽暗，如远处星星；gleam 不一定有这种间歇性。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "CLEAN → GLEAM · 擦亮玻璃与金属",
+          "textZh": "把 CLEAN（干净的）与 GLEAM 并排看：中间 LEA 完全相同，开头 C 换成 G，借 glass（玻璃）记；结尾 N 换成 M，借 metal（金属）记。把玻璃和金属擦得 clean，它们就 gleam，闪闪发亮。两个变化都指向会发亮的材料，帮助从整个词形想起“闪光”。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "gleam / beam · 玻璃接住一束光",
+          "textZh": "把 gleam 与 beam（光束）一起看、一起读：两词都以 eam /iːm/ 收尾；gleam 开头的 gl 借 glass（玻璃）来提示。想象 a beam of light 照到 glass 上，玻璃 gleams，闪出亮光。gl＋与 beam 相同的结尾把整个词接起来。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The silver pot gleamed in the sunlight as the boy turned it slightly.",
+          "translationZh": "男孩轻轻转动银壶，壶身在阳光下闪亮。",
+          "explanationZh": "银壶反射日光，符合实物反光场景。"
+        },
+        {
+          "textEn": "A gleam of hope returned when the missing dog was seen near the park.",
+          "translationZh": "有人在公园附近看见了那只走失的狗，一线希望又出现了。",
+          "explanationZh": "名词 a gleam of hope 表示初现的一点希望。"
+        }
+      ]
+    },
+    {
+      "number": 4875,
+      "word": "grimy",
+      "ipa": "/ˈɡraɪmi/",
+      "pos": "adj.",
+      "coreMeaningZh": "肮脏的；满是积垢的",
+      "coreEn": "Covered with dirt, especially accumulated grease, soot or grime.",
+      "coreImageZh": "男孩透过车库灰黑油垢覆盖的窗户张望，窗外的植物都看不清。",
+      "usage": [
+        {
+          "senseZh": "积垢肮脏",
+          "explanationZh": "常形容手、衣物、窗户和建筑表面，突出油污、烟灰等积在上面的脏污感。比较级 grimier，最高级 grimiest。",
+          "collocations": [
+            {
+              "phrase": "grimy windows",
+              "meaningZh": "积满污垢的窗户"
+            },
+            {
+              "phrase": "grimy hands",
+              "meaningZh": "脏兮兮的双手"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "besmirched",
+          "comparisonZh": "描述被弄脏的表面时接近。besmirched 常用于名誉被玷污；grimy 更直接、自然地描写可见的灰尘油垢。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "muddy",
+          "comparisonZh": "都可以说不干净。muddy 明确是沾泥或混有泥；grimy 的污垢也可能是油、烟灰，不能一概换成 muddy。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "sordid",
+          "comparisonZh": "形容脏乱、令人不快的环境时有交集。sordid 还常指卑鄙或可耻的事情；grimy 通常先让人想到表面的实际污垢。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "stained",
+          "comparisonZh": "都能形容表面不洁。stained 突出留下了色斑，可能只有一处；grimy 突出积了一层污垢。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "crime / grime → grimy · G 提醒 garbage",
+          "textZh": "把 crime（犯罪）与近形的 grime（污垢）并排看：grime 的 G 借 garbage（垃圾）来分清，想的是垃圾留下的污垢，不是犯罪。grime 去掉 e 加 -y 就是 grimy，满是污垢的。看到 grimy，把 G 的垃圾提示和整个 grime 词形一起认出来。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "grimy ≈ grey + me · 满身灰尘的我",
+          "textZh": "把整个 grimy 的声音近似联想到 grey（灰色的）＋me（我）：想象自己钻进满是灰尘的阁楼，出来时头发、脸和衣服全蒙上一层灰，成了“灰灰的我”，脏兮兮的。看到 grimy，就想起这一身灰尘。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy could barely see the plants through the grimy garage window.",
+          "translationZh": "男孩透过车库那扇积满污垢的窗户，几乎看不清外面的植物。",
+          "explanationZh": "重点是油灰积垢遮挡视线。"
+        },
+        {
+          "textEn": "After repairing the bicycle, she left grimy fingerprints on the door.",
+          "translationZh": "修完自行车后，她在门上留下了脏兮兮的指印。",
+          "explanationZh": "修车沾上的油污转移到门上。"
+        }
+      ]
+    },
+    {
+      "number": 4876,
+      "word": "poignant",
+      "ipa": "/ˈpɔɪnjənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "令人深切感伤的；触动人心的",
+      "coreEn": "Deeply moving, especially by evoking sadness, tenderness or regret.",
+      "coreImageZh": "男孩和奶奶望着爷爷留下的空椅子与旧帽子，熟悉的物件唤起温柔而辛酸的思念。",
+      "usage": [
+        {
+          "senseZh": "深切触动情感，尤其令人感伤",
+          "explanationZh": "常形容 story、memory、reminder、moment。重点是某事触动人的感受，常有怀念、惋惜、辛酸，不只是说一个人心情不好。",
+          "collocations": [
+            {
+              "phrase": "a poignant reminder",
+              "meaningZh": "令人感伤的提醒或见证"
+            },
+            {
+              "phrase": "a poignant memory",
+              "meaningZh": "令人感伤的回忆"
+            },
+            {
+              "phrase": "a poignant farewell",
+              "meaningZh": "令人动容的告别"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "moving",
+          "comparisonZh": "都指能深深打动人。moving 可令人激动、敬佩或悲伤；poignant 更突出触到心底的酸楚、惋惜或柔情。"
+        },
+        {
+          "word": "touching",
+          "comparisonZh": "都能表达感人。touching 常突出温情、同情；poignant 往往多一层鲜明的感伤或失落。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "point + ant · 指着再也不动的小蚂蚁",
+          "textZh": "把 poignant 整体近似联想到 point（指向）＋ant（蚂蚁）。想象孩子指着曾经每天来搬面包屑、如今再也不动的小蚂蚁，想起它忙碌的样子，心里一阵酸楚：这一幕 poignant，令人感伤。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "poign + ant · 尖端刺心，G 提醒 gone",
+          "textZh": "看到 poignant，按 poign＋ant 把整词接起来。poign- 的词史含“刺、扎”，可用熟词 point 的“尖端”帮助认出；词中的 G 再借 gone（离去了）提示感伤：照片里亲人的笑容还在，人却已经 gone，熟悉的细节像尖端一样刺到心里，令人感伤。-ant 是原法语的分词结尾。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Grandpa’s hat on the empty chair was a poignant reminder of his absence.",
+          "translationZh": "空椅子上爷爷的帽子令人感伤地提醒着他们，爷爷已经不在了。",
+          "explanationZh": "熟悉旧物让缺席变得格外真切，呼应祖孙思念场景。"
+        },
+        {
+          "textEn": "The film ends with a poignant reunion between the sisters after forty years apart.",
+          "translationZh": "影片以姐妹分别四十年后令人动容的重逢收尾。",
+          "explanationZh": "重逢可以同时有温情与对失去岁月的感伤。"
+        }
+      ]
+    },
+    {
+      "number": 4877,
+      "word": "pushover",
+      "ipa": "英 /ˈpʊʃəʊvə(r)/；美 /ˈpʊʃoʊvər/",
+      "pos": "n.",
+      "coreMeaningZh": "轻而易举的事；容易击败或说服的人",
+      "coreEn": "Something very easy to do; also, a person who is easy to defeat or influence.",
+      "coreImageZh": "男孩把唯一一块大红方积木轻松放进宽松方孔，一看就会，一放即成。",
+      "usage": [
+        {
+          "senseZh": "轻而易举的事",
+          "explanationZh": "非正式可数名词，常用 be a pushover。这里说任务容易，不是把物体真的推倒。",
+          "collocations": [
+            {
+              "phrase": "The task is a pushover.",
+              "meaningZh": "这项任务轻而易举"
+            },
+            {
+              "phrase": "no pushover",
+              "meaningZh": "绝非轻而易举的事；不好对付的人"
+            }
+          ]
+        },
+        {
+          "senseZh": "容易击败或说服的人",
+          "explanationZh": "也可形容弱对手或容易答应别人要求的人。看主语区分：an exam 是任务，an opponent 是人。",
+          "collocations": [
+            {
+              "phrase": "be a pushover for someone",
+              "meaningZh": "很容易受某人影响"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "a breeze",
+          "comparisonZh": "都可非正式地说一件事很容易。a breeze 主要强调做起来轻松；pushover 还可以指容易对付的人。"
+        },
+        {
+          "word": "a cinch",
+          "comparisonZh": "在任务轻而易举时很近，a cinch 尤其常见于美式口语；它也可指确定会发生的事，pushover 没有这个确定性用法。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "push over · 一推就倒的多米诺",
+          "textZh": "pushover 完整地由 push（推）和 over（翻倒）两部分提示。想象任务像一枚轻巧的多米诺骨牌，手指轻轻一推就倒，完全不费劲：这样容易完成的事就是 a pushover。借“毫无抵抗、一推就倒”记“轻而易举”。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "push + offer · 一提请求就答应的人",
+          "textZh": "把完整 pushover 近音联想到 push（推动）＋offer（提议）：想象朋友把一个提议往你面前一推，你连想都没想就点头；换个提议，你又马上答应。这样很容易被说服、牵着走的人，也叫 a pushover。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Fitting the square block into the wide square hole was a pushover for the boy.",
+          "translationZh": "对男孩来说，把方积木放进宽松的方孔里轻而易举。",
+          "explanationZh": "名词指这项毫不费劲的任务。"
+        },
+        {
+          "textEn": "The first puzzle was a pushover, but the second kept us busy for an hour.",
+          "translationZh": "第一道谜题很容易，第二道却让我们忙了一个小时。",
+          "explanationZh": "同类任务难度对比，突出容易完成。"
+        }
+      ]
+    },
+    {
+      "number": 4878,
+      "word": "retroactive",
+      "ipa": "英 /ˌretrəʊˈæktɪv/；美 /ˌretroʊˈæktɪv/",
+      "pos": "adj.",
+      "coreMeaningZh": "有追溯效力的；适用于此前事项的",
+      "coreEn": "Applying to a time or situation before a rule or decision was introduced.",
+      "coreImageZh": "工作人员解释今天放宽的新规定也适用于昨天，让男孩昨天未通过的社团报名现在有效。",
+      "usage": [
+        {
+          "senseZh": "效力向过去延伸",
+          "explanationZh": "常用于规则、待遇调整或批准。重点是今天作出的决定也影响此前时间段，不只是延迟办理或把未来期限延长。",
+          "collocations": [
+            {
+              "phrase": "a retroactive change",
+              "meaningZh": "有追溯效力的变更"
+            },
+            {
+              "phrase": "retroactive approval",
+              "meaningZh": "追溯生效的批准"
+            },
+            {
+              "phrase": "be retroactive to January",
+              "meaningZh": "追溯至一月生效"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "retrospective",
+          "comparisonZh": "形容规定适用于过去时可与 retroactive 接近，英式用法尤其常见；retrospective 还广泛表示回顾过去，如回顾展，而 retroactive 强调效力。"
+        },
+        {
+          "word": "backdated",
+          "comparisonZh": "都可涉及较早的生效日期。backdated 突出把日期定为早于现在的日期，也可能只是文件日期；retroactive 强调规则或决定实际适用于过去。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "retro + active · 向过去起作用",
+          "textZh": "把整词认作 retro＋active：retro- 表示向后、回到过去，可借 retro style（复古风）记方向；active 借熟词 act（行动、起作用）记效力。今天的新规则向过去起作用，昨天的事情也按新规则处理，就是 retroactive，有追溯效力的。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "re-throw + active · 把新规抛回昨天",
+          "textZh": "把 retroactive 整体近音联想到 re-throw（重新抛）＋active（起作用的）。想象今天已经 active 的新规则是一张透明薄片：把它重新抛回去，盖到昨天的报名材料上，昨天的报名也按新规则生效。由“新规的效力覆盖过去”记住 retroactive，有追溯效力的。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The club made its new rule retroactive, so the boy’s application from yesterday was now valid.",
+          "translationZh": "社团让新规定追溯生效，因此男孩昨天提交的报名现在也有效了。",
+          "explanationZh": "今天的新规影响昨天的报名，明确体现效力向过去延伸。"
+        },
+        {
+          "textEn": "The pay increase announced in June was retroactive to April, so staff received the difference for those earlier months.",
+          "translationZh": "六月宣布的加薪追溯到四月生效，因此员工收到了此前月份的差额。",
+          "explanationZh": "公布日期晚于生效日期；补发的是按新标准计算的差额。"
+        }
+      ]
+    }
+  ]
+}

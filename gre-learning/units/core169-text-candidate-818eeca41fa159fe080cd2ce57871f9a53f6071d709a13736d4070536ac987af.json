@@ -1,0 +1,418 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4904,
+      "word": "adversarial",
+      "ipa": "/ˌædvəˈseəriəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "对立的；对抗性的",
+      "coreEn": "Involving people or groups that oppose one another.",
+      "coreImageZh": "一方要把草地改成停车场，另一方坚持保留草地，双方立场相对。",
+      "usage": [
+        {
+          "senseZh": "双方互相对立、对抗",
+          "explanationZh": "常用于关系、讨论、政治或诉讼程序。重点是存在持不同立场的双方，不要求愤怒、打斗，也不只是某种条件令人不利。",
+          "collocations": [
+            {
+              "phrase": "an adversarial relationship",
+              "meaningZh": "对立的关系"
+            },
+            {
+              "phrase": "an adversarial debate",
+              "meaningZh": "对抗性辩论"
+            },
+            {
+              "phrase": "an adversarial legal system",
+              "meaningZh": "对抗式诉讼制度"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "antagonistic",
+          "comparisonZh": "都可形容双方对立。antagonistic 较容易突出敌意或强烈反对；adversarial 也可描述克制而有规则的双方对抗。",
+          "sources": [
+            "zhangwei_dedicated_2021",
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "antithetical",
+          "comparisonZh": "形容观点、原则截然对立时接近；antithetical 更重内容上的相反，adversarial 更重人或群体之间互相反对的关系。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "oppositional",
+          "comparisonZh": "都可表达反对、对抗。oppositional 也可形容一个人习惯反抗的态度，adversarial 常明确涉及彼此对立的双方。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ADVERSARY + AL · 对手之间",
+          "textZh": "从比赛里熟悉的 A versus B（A 对 B，常写 VS）想起对立双方：他们互为 adversary（对手）。这个词与 adverse 的“相对、相反”有真实词源联系。adversary 把 y 改成 i，再加 -al，就得到 adversarial，形容对手之间的对立关系。记住整幅“VS 两侧的人”画面：双方立场相对。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "ad for cereal · 两个广告唱反调",
+          "textZh": "把整个 adversarial 联想到 ad for cereal（早餐麦片广告）。两个竞争品牌各发广告：一方坚持“脆的才好吃”，另一方反驳“软的才好吃”，明确站在对立立场。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Their discussion became adversarial when one proposed a car park and the other insisted on keeping the lawn.",
+          "translationZh": "一人提议建停车场、另一人坚持保留草地时，他们的讨论形成了对立。",
+          "explanationZh": "两人提出相互冲突的方案，体现双方对抗，而非天气或条件不利。"
+        },
+        {
+          "textEn": "The two teams replaced their adversarial relationship with a plan for sharing equipment.",
+          "translationZh": "两个团队用共同使用设备的计划，取代了原先对立的关系。",
+          "explanationZh": "adversarial 描述原来的双方关系；后面的合作安排构成对照。"
+        }
+      ]
+    },
+    {
+      "number": 4905,
+      "word": "adverse",
+      "ipa": "/ˈædvɜːs/",
+      "pos": "adj.",
+      "coreMeaningZh": "不利的；有害的；逆向的",
+      "coreEn": "Unfavorable or harmful, or acting in an opposing direction.",
+      "coreImageZh": "大雨浸湿草坪，父子无法按计划野餐，天气对活动不利。",
+      "usage": [
+        {
+          "senseZh": "对计划、利益或结果不利",
+          "explanationZh": "常修饰天气、条件、影响或结果，强调阻碍或伤害。不必有另一个人故意作对；与表示双方对立的 adversarial 区分。",
+          "collocations": [
+            {
+              "phrase": "adverse weather conditions",
+              "meaningZh": "不利天气条件"
+            },
+            {
+              "phrase": "an adverse effect on",
+              "meaningZh": "对……的不良影响"
+            },
+            {
+              "phrase": "adverse circumstances",
+              "meaningZh": "不利处境"
+            }
+          ]
+        },
+        {
+          "senseZh": "方向相反、迎面阻碍",
+          "explanationZh": "可形容与前进方向相反的风或水流。另注意 averse to 表示某人不愿意、反感，通常不能用 adverse 替换。",
+          "collocations": [
+            {
+              "phrase": "adverse winds",
+              "meaningZh": "逆风"
+            },
+            {
+              "phrase": "adverse currents",
+              "meaningZh": "逆流"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "unfavorable",
+          "comparisonZh": "表示条件或结果不利时很接近。adverse 还常强调造成损害、形成阻碍；unfavorable 也可用于不赞同的评价。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "harmful",
+          "comparisonZh": "在产生损害时接近；harmful 明确强调伤害，adverse 还可只表示不利或逆向，未必造成实际损伤。"
+        },
+        {
+          "word": "contrary",
+          "comparisonZh": "在方向相反时可重合，如逆风、逆流；contrary 不必带有对计划有害或不利的含义。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AD + VERSE · 迎面逆转",
+          "textZh": "把整个 adverse 联系到熟悉的 reverse（倒转、反向）：两词的 vers 都与“转”有关，ad- 是向、朝向。想象船想向前，水流却转到迎面、顶着船走，这种逆向条件对航行不利。词源的“转向对面”与这个画面相连。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "add worse · 更加不利",
+          "textZh": "整个 adverse 可联想到 add worse（添上更糟的情况）：野餐刚遇小雨，又加上大风，条件更加不利。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Adverse weather forced the boy and his father to postpone their picnic.",
+          "translationZh": "不利的天气迫使男孩和父亲推迟野餐。",
+          "explanationZh": "雨使户外野餐难以进行；天气没有与人争论或敌对。"
+        },
+        {
+          "textEn": "The new timetable had an adverse effect on attendance at the evening class.",
+          "translationZh": "新时间表对夜间课程的出勤产生了不利影响。",
+          "explanationZh": "adverse effect 表示负面结果，不是在说时间表本身怀有敌意。"
+        }
+      ]
+    },
+    {
+      "number": 65,
+      "word": "advocate",
+      "ipa": "v. /ˈædvəkeɪt/; n. /ˈædvəkət/",
+      "pos": "v.; n.",
+      "coreMeaningZh": "公开支持、提倡；支持者、倡导者；辩护律师",
+      "coreEn": "To argue publicly in favor of something; a person who supports a cause or speaks for others.",
+      "coreImageZh": "男孩向同伴主张骑车戴头盔，并说明保护头部的理由。",
+      "usage": [
+        {
+          "senseZh": "动词：公开支持、主张",
+          "explanationZh": "常接名词、动名词或 that 从句，如 advocate wearing a helmet；也可说 advocate for a cause。动词末尾读 /keɪt/，不要把 advocate somebody to do 当作常规结构。",
+          "collocations": [
+            {
+              "phrase": "advocate a change",
+              "meaningZh": "主张作出改变"
+            },
+            {
+              "phrase": "advocate wearing helmets",
+              "meaningZh": "提倡戴头盔"
+            },
+            {
+              "phrase": "advocate for equal access",
+              "meaningZh": "为平等获得机会而倡导"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词：支持者；为别人发声的人",
+          "explanationZh": "可数名词，常接 of 或 for。名词末尾通常读 /kət/；在法律语境中也可指辩护律师，具体称谓随制度而不同。",
+          "collocations": [
+            {
+              "phrase": "an advocate of reform",
+              "meaningZh": "改革倡导者"
+            },
+            {
+              "phrase": "an advocate for local residents",
+              "meaningZh": "为当地居民发声的人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "espouse",
+          "comparisonZh": "作动词、表示公开支持理念或事业时接近。espouse 较正式，常带接受并坚持某种立场的意味；不能拿来替换名词 advocate。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "protagonist",
+          "comparisonZh": "在“某项主张的积极支持者”这个名词义上相关；protagonist 更常指故事主角或事件重要参与者，这些含义不等于 advocate。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "champion",
+          "comparisonZh": "作动词表示积极支持、捍卫事业时接近。champion 语气常更积极有力；其“冠军”名词义不能据此与 advocate 互换。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "supporter",
+          "comparisonZh": "作名词表示支持者时接近；advocate 更容易强调公开论证、为某项主张或某群体发声。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AD + VOC + ATE · 为主张发声",
+          "textZh": "看完整的 ad＋voc＋ate：ad- 表示向，voc 的“呼喊、声音”可借熟悉的 voice（声音）记，-ate 是这里的词尾。历史上它联系“叫到身边来帮助说话的人”；现在为一个主张公开发声，就是 advocate。想象你走到众人面前，说出为什么支持保留公园。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "add the cat · 为小猫发声",
+          "textZh": "把整个动词 advocate 联想到 add the cat（把那只猫也加进去）。大家商量拍社区合照，你公开主张“把小猫也加入”，并给出理由、争取大家支持。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy advocated wearing a helmet whenever they rode their bicycles.",
+          "translationZh": "男孩主张他们每次骑自行车都戴头盔。",
+          "explanationZh": "advocated 后接 wearing，表示明确提倡一种做法，而非只是拿着头盔。"
+        },
+        {
+          "textEn": "She became an advocate for residents who wanted a quieter street.",
+          "translationZh": "她成了希望街道更安静的居民的代言支持者。",
+          "explanationZh": "这里 advocate 是可数名词，指为居民诉求发声的人。"
+        }
+      ]
+    },
+    {
+      "number": 4906,
+      "word": "aesthetic",
+      "ipa": "/esˈθetɪk/",
+      "pos": "adj.; n.",
+      "coreMeaningZh": "审美的；美学的；美观的；审美风格",
+      "coreEn": "Concerned with beauty, art, or how things look; also, a particular artistic style or approach.",
+      "coreImageZh": "男孩和花艺师比较颜色与整体构图，考虑插花的视觉美感。",
+      "usage": [
+        {
+          "senseZh": "形容词：与美、艺术或审美有关",
+          "explanationZh": "常说 aesthetic appeal、aesthetic considerations，不一定是在断言人人都认为它好看。也可形容美观、富有美感；美感可以因人和文化而异。",
+          "collocations": [
+            {
+              "phrase": "aesthetic appeal",
+              "meaningZh": "审美吸引力"
+            },
+            {
+              "phrase": "aesthetic considerations",
+              "meaningZh": "审美方面的考虑"
+            },
+            {
+              "phrase": "aesthetic value",
+              "meaningZh": "审美价值"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词：某种审美风格；相关词 aesthetics",
+          "explanationZh": "an aesthetic 可指一套视觉或艺术风格。aesthetics 可表示美学这门学科；谈学科时常按单数看待。aesthetic 关乎美感，ethical 才是伦理、道德方面的。美式英语也可写 esthetic。",
+          "collocations": [
+            {
+              "phrase": "a minimalist aesthetic",
+              "meaningZh": "极简审美风格"
+            },
+            {
+              "phrase": "the study of aesthetics",
+              "meaningZh": "美学研究"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "artistic",
+          "comparisonZh": "在与艺术、美感有关时接近。artistic 还可强调艺术创作能力，aesthetic 更常强调欣赏、外观或审美判断。"
+        },
+        {
+          "word": "visually pleasing",
+          "comparisonZh": "用于外观悦目时接近；aesthetic 也可中性地说“与审美有关”，并不总是正面的好看评价。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ATHLETIC → AESTHETIC · 从腿到眼睛",
+          "textZh": "用熟悉的 athletic（运动的）对照整个 aesthetic：ATHLETIC 先去掉 L，用 legs（腿）记；再在开头 A 后加入 ES，用 eyes see（眼睛看）记，就得到 AESTHETIC。看同一段体操，先关注腿部力量等运动能力，再用眼睛看姿态、线条的美感。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "east attic · 阁楼的美感",
+          "textZh": "把整个 aesthetic 联想到 east attic（东侧阁楼；attic 是屋顶下的阁楼）。你布置这间房时，特意协调窗帘颜色、画作和光线，不只考虑能放多少东西；这些关于美感的考虑就是 aesthetic considerations。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy chose the orange flower for aesthetic reasons, considering its color beside the white flowers.",
+          "translationZh": "男孩出于审美考虑选了橙花，考虑的是它放在白花旁边的色彩效果。",
+          "explanationZh": "选择依据是颜色和整体美感，不只是花能否稳稳插在瓶里。"
+        },
+        {
+          "textEn": "The café’s simple wooden furniture reflected a minimalist aesthetic.",
+          "translationZh": "咖啡馆简洁的木制家具体现了一种极简审美风格。",
+          "explanationZh": "这里 aesthetic 是名词，表示整体风格，不是道德判断。"
+        }
+      ]
+    },
+    {
+      "number": 66,
+      "word": "affable",
+      "ipa": "/ˈæfəbl/",
+      "pos": "adj.",
+      "coreMeaningZh": "和蔼亲切的；容易交谈的",
+      "coreEn": "Friendly, approachable, and pleasant to talk with.",
+      "coreImageZh": "馆员温和邀请害羞的男孩谈兴趣，认真倾听，让交流变得轻松。",
+      "usage": [
+        {
+          "senseZh": "亲切、容易接近和交谈",
+          "explanationZh": "形容人、举止或交谈态度，重点是别人容易自然地与其说话。并不要求穿着考究、举止上流，也不等于答应别人所有要求。",
+          "collocations": [
+            {
+              "phrase": "an affable host",
+              "meaningZh": "亲切的主人"
+            },
+            {
+              "phrase": "an affable manner",
+              "meaningZh": "和蔼的态度"
+            },
+            {
+              "phrase": "affable and approachable",
+              "meaningZh": "亲切且平易近人的"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "easygoing",
+          "comparisonZh": "都可让相处显得轻松。easygoing 更强调不紧绷、不苛求，affable 更强调待人友好、容易交谈；随和的人也可能不爱聊天。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "cordial",
+          "comparisonZh": "在热情友好地待人时接近。cordial 可以形容正式而友好的问候或关系，affable 更突出个人容易接近、交谈自在。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "genteel",
+          "comparisonZh": "在礼貌待人方面可能交集，但 genteel 偏重文雅、讲究规矩或上流派头，有时还暗含刻意装雅。affable 只要求亲切好交谈，不要求这种社会风格。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "friendly",
+          "comparisonZh": "范围更广的友好；affable 尤其强调让人与自己交谈时感到轻松。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "A FABLE + F · 亲切讲故事",
+          "textZh": "把完整 A FABLE（一则寓言）在原来的 F 旁再加一个 F，拼成 AFFABLE；多出的 F 用 friendly（友好的）记。讲故事的人温和回应你的问题，还愿意听你分享自己的想法，让你很容易开口。这样把“寓言＋友好交流”连到“和蔼、容易交谈”。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "have a bull · 好聊天的牛",
+          "textZh": "把整个 affable 联想到 have a bull（有一头公牛）。想象一头会说话的童话牛，看到陌生人便友善打招呼，耐心听对方说话，使人毫不拘谨。借这只容易交谈的牛记住亲切。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The affable librarian invited the shy boy to talk about his favorite stories.",
+          "translationZh": "和蔼的馆员邀请害羞的男孩聊聊最喜欢的故事。",
+          "explanationZh": "友善邀请和耐心倾听，使男孩更容易自然交谈。"
+        },
+        {
+          "textEn": "Although she declined the request, her affable manner kept the conversation relaxed.",
+          "translationZh": "虽然她拒绝了请求，她亲切的态度仍让谈话保持轻松。",
+          "explanationZh": "affable 不等于有求必应；拒绝时仍可以友好、好沟通。"
+        }
+      ]
+    }
+  ]
+}

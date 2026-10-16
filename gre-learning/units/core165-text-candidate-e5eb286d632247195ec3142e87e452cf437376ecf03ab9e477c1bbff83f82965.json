@@ -1,0 +1,443 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4892,
+      "word": "accept",
+      "ipa": "/əkˈsept/",
+      "pos": "v.",
+      "coreMeaningZh": "接受；承认；容忍、接受现实",
+      "coreEn": "To receive or agree to something; to recognize something as true; or to live with an unwelcome situation without trying to resist it.",
+      "coreImageZh": "男孩不喜欢施工噪声，却平静地接受眼下无法改变的情况，继续等候。",
+      "usage": [
+        {
+          "senseZh": "容忍或接受不理想的情况",
+          "explanationZh": "及物动词。可以表示面对不喜欢、暂时无法改变的现实而不再反对；不表示喜欢它，也不表示任何伤害都应忍受。",
+          "collocations": [
+            {
+              "phrase": "accept the situation",
+              "meaningZh": "接受这种情况"
+            },
+            {
+              "phrase": "accept a temporary inconvenience",
+              "meaningZh": "接受暂时的不便"
+            }
+          ]
+        },
+        {
+          "senseZh": "接受、同意；承认属实",
+          "explanationZh": "也可接邀请、建议或礼物，或用 accept that 从句表示承认一个事实。接受某个事实不等于赞同它是好事。",
+          "collocations": [
+            {
+              "phrase": "accept an invitation",
+              "meaningZh": "接受邀请"
+            },
+            {
+              "phrase": "accept that something is true",
+              "meaningZh": "承认某事属实"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "tolerate",
+          "comparisonZh": "在忍受不喜欢的情况时接近。tolerate 更直接强调容忍；accept 还可表示接受邀请、承认事实等，范围更广。"
+        },
+        {
+          "word": "put up with",
+          "comparisonZh": "在暂时忍受噪声、不便时接近。put up with 更口语化，通常突出不情愿；accept 可以较平静地接受现实。"
+        },
+        {
+          "word": "receive",
+          "comparisonZh": "只在收取某物时部分重合。receive 可以只是实际收到，accept 往往还包含愿意接纳；两者不能替换所有容忍或承认事实的用法。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "accept／except · 接纳或排除",
+          "textZh": "把整个 accept 与熟悉的 except（除……之外）对照：except 把一项排除在外，accept 把它接纳进来。暂时的不便没法排除，就先接纳现实、平静忍受，这时也可用 accept。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "ACCENT → ACCEPT · 耐心接纳",
+          "textZh": "完整的 accent（口音）只把 N 换成 P，就得到 ACCEPT；P 用 patience（耐心）记。遇到自己不熟悉的口音，耐心听懂并接纳对方，而不是抱怨或排斥，帮助记 accept 的接受、容忍义。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy accepted the temporary construction noise and waited quietly while his mother finished her errand.",
+          "translationZh": "男孩忍受了暂时的施工噪声，安静等母亲把事情办完。",
+          "explanationZh": "不喜欢噪声，但暂时接受它继续等候，与收礼物的意思不同。"
+        },
+        {
+          "textEn": "After checking the records, she accepted that her first estimate had been wrong.",
+          "translationZh": "核对记录后，她承认最初的估计错了。",
+          "explanationZh": "accept that 表示承认事实，而非认为错误值得赞许。"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "word": "accessible",
+      "ipa": "/əkˈsesəbəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "易懂的；可到达、可使用的；易接近的",
+      "coreEn": "Easy to understand, reach, use, or approach.",
+      "coreImageZh": "老师把折纸步骤说得简单清楚，男孩立即理解并完成一折。",
+      "usage": [
+        {
+          "senseZh": "内容或表达易懂",
+          "explanationZh": "可形容说明、书籍、解释等，强调读者容易理解；不等于内容肤浅或缺乏深度。",
+          "collocations": [
+            {
+              "phrase": "an accessible explanation",
+              "meaningZh": "易懂的解释"
+            },
+            {
+              "phrase": "make science accessible to children",
+              "meaningZh": "让儿童能够理解科学"
+            }
+          ]
+        },
+        {
+          "senseZh": "地点、设施或资料易于到达和使用",
+          "explanationZh": "常接 to，表示对某人可用、可进入或可获得；也用于无障碍设施，但具体是否符合要求须看实际设施。",
+          "collocations": [
+            {
+              "phrase": "accessible to visitors",
+              "meaningZh": "访客可进入或使用的"
+            },
+            {
+              "phrase": "an accessible entrance",
+              "meaningZh": "便于进入的入口"
+            }
+          ]
+        },
+        {
+          "senseZh": "人易于接近或沟通",
+          "explanationZh": "形容人愿意与别人交流、容易联系，不是形容其思想一定简单。",
+          "collocations": [
+            {
+              "phrase": "an accessible teacher",
+              "meaningZh": "易于沟通的老师"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "comprehensible",
+          "comparisonZh": "在内容易于理解时接近。comprehensible 直接强调能够理解；accessible 还可表示场所可进入、资料可用或人易沟通。"
+        },
+        {
+          "word": "approachable",
+          "comparisonZh": "形容人容易接近或沟通时接近。approachable 不常替代 accessible instructions 中的“易懂”。"
+        },
+        {
+          "word": "reachable",
+          "comparisonZh": "在地点或人能够到达、联系上时接近。reachable 不直接表示书籍讲解易懂。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "access＋-ible · 进入意思",
+          "textZh": "从熟悉的 access（进入的通道或机会）认出整个 accessible，后面的 -ible 表示“可以……的”。想象解释为读者打开一条通道，轻松进入意思、一下读懂，就是 accessible。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a sensible teacher · 明白话",
+          "textZh": "把整个 accessible 近音联想到 a sensible：一位 sensible（明智的）老师不堆砌术语，用大白话把折纸步骤说清楚，让说明 accessible，容易理解。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The teacher’s accessible instructions helped the boy understand how to fold the paper at once.",
+          "translationZh": "老师易懂的说明让男孩立刻明白了该怎样折纸。",
+          "explanationZh": "通过理解步骤体现 comprehensible，而不是身体够得到纸。"
+        },
+        {
+          "textEn": "The new ramp made the gallery accessible to visitors using wheelchairs.",
+          "translationZh": "新坡道让使用轮椅的访客能够进入美术馆。",
+          "explanationZh": "物理可进入义；句子描述该坡道提供的通行帮助。"
+        }
+      ]
+    },
+    {
+      "number": 4893,
+      "word": "accession",
+      "ipa": "/əkˈseʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "就任；即位；加入；同意、认可",
+      "coreEn": "The act of taking up an important office or position; also joining a body or agreement, or assenting to something.",
+      "coreImageZh": "新校长正式就任，接过学校职责并拿起办公钥匙开始履职。",
+      "usage": [
+        {
+          "senseZh": "就任重要职位或即位",
+          "explanationZh": "较正式，常用 accession to。强调开始拥有职位、权力或王位，不只是进入办公室或被提名。",
+          "collocations": [
+            {
+              "phrase": "accession to office",
+              "meaningZh": "就任"
+            },
+            {
+              "phrase": "accession to the throne",
+              "meaningZh": "即位"
+            }
+          ]
+        },
+        {
+          "senseZh": "加入组织或正式参加协议",
+          "explanationZh": "可指国家等加入组织或条约。表达加入这一过程；条约法律效果要看具体制度，本词本身不提供法律判断。",
+          "collocations": [
+            {
+              "phrase": "accession to an organization",
+              "meaningZh": "加入组织"
+            }
+          ]
+        },
+        {
+          "senseZh": "同意、认可；增加的馆藏",
+          "explanationZh": "较少见时可表示同意某项要求或建议，此义才与 acquiescence 接近。图书馆、博物馆中也可指新增藏品，常用复数 accessions。",
+          "collocations": [
+            {
+              "phrase": "accession to a request",
+              "meaningZh": "同意一项请求"
+            },
+            {
+              "phrase": "new accessions to the collection",
+              "meaningZh": "新入藏的藏品"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "acquiescence",
+          "comparisonZh": "仅在 accession 较少见的“同意、认可”义上接近。acquiescence 常指不反对而默许；它不表示 accession to office 的就任、登基，也不表示新增藏品。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "assumption of office",
+          "comparisonZh": "就任职位时是直接的释义式表达。accession 更正式，还可指即位、加入组织或其他不同词义。"
+        },
+        {
+          "word": "addition",
+          "comparisonZh": "在新入藏品或增加物的语境有交集。addition 范围很广，通常不表达就任职位；accession 作为馆藏用语更专门。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "access＋-ion · 正式进入职位",
+          "textZh": "从熟悉的 access（进入权、使用权）认出 accession，-ion 提醒这是名词。新校长正式就任，开始拥有处理学校事务的权限，像“进入这个职位并承担职责”，这就是 accession to office。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a session · 就职会议",
+          "textZh": "把整个 accession 近音联想到 a session（一场会议）：新负责人在正式会议上宣布就任，从当天起接掌职责，帮助记“就职”。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "On the day of her accession to office, the new principal formally took charge of the school.",
+          "translationZh": "正式就任当天，新校长开始主管学校事务。",
+          "explanationZh": "开始承担职位责任，而不是仅被选为候选人或拿到钥匙。"
+        },
+        {
+          "textEn": "The museum displayed several recent accessions in its entrance hall.",
+          "translationZh": "博物馆在入口大厅展示了几件新入藏的藏品。",
+          "explanationZh": "复数 accessions 指馆藏新增物，和就任义分开理解。"
+        }
+      ]
+    },
+    {
+      "number": 2699,
+      "word": "acclaim",
+      "ipa": "/əˈkleɪm/",
+      "pos": "v.; n.",
+      "coreMeaningZh": "热烈赞扬；喝彩；赞誉",
+      "coreEn": "To praise someone or something enthusiastically, often publicly; enthusiastic praise or approval.",
+      "coreImageZh": "男孩演奏结束，两位听众热烈鼓掌并赞扬他的表演。",
+      "usage": [
+        {
+          "senseZh": "热烈地赞扬、称颂",
+          "explanationZh": "动词常及物，常见 be acclaimed as；强调较强的赞赏，不只是中性地声称一件事。",
+          "collocations": [
+            {
+              "phrase": "acclaim a performance",
+              "meaningZh": "热烈赞扬一场表演"
+            },
+            {
+              "phrase": "be acclaimed as a masterpiece",
+              "meaningZh": "被誉为杰作"
+            }
+          ]
+        },
+        {
+          "senseZh": "获得的赞誉",
+          "explanationZh": "名词通常不可数；critical acclaim 指评论界的赞扬，其中 critical 不是负面批评。",
+          "collocations": [
+            {
+              "phrase": "win widespread acclaim",
+              "meaningZh": "赢得广泛赞誉"
+            },
+            {
+              "phrase": "receive critical acclaim",
+              "meaningZh": "获得评论界赞誉"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hail",
+          "comparisonZh": "在热烈称赞、誉为某种杰出人物或事物时接近，如 hail someone as a hero。hail 还可表示招呼或冰雹，这些意思不能换成 acclaim。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "applaud",
+          "comparisonZh": "都可以赞扬。applaud 可以指实际鼓掌，也能比喻表示赞许；acclaim 更突出热烈赞誉，不必真的拍手。"
+        },
+        {
+          "word": "praise",
+          "comparisonZh": "praise 范围更广，从普通称赞到热烈表扬都能用；acclaim 通常更强烈，常带公众认可的意味。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "a claim · 齐声称赞",
+          "textZh": "acclaim 与 a claim 连读同音。想象演出结束，听众争着说出同一个 claim（断言）：“这真是最精彩的表演！”大家公开而热烈地称赞，就是 acclaim。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a climb · 登顶喝彩",
+          "textZh": "把整个 acclaim 近音联想到 a climb（一次攀登）：攀登者成功登顶，观众齐声赞扬、热烈喝彩。这样的赞誉就是 acclaim。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The listeners acclaimed the boy’s performance with enthusiastic applause and warm praise.",
+          "translationZh": "听众以热烈的掌声和赞美为男孩的演奏喝彩。",
+          "explanationZh": "既有强烈掌声，也有明确赞美，体现热情而非礼貌点头。"
+        },
+        {
+          "textEn": "The small theater’s production received widespread critical acclaim.",
+          "translationZh": "这家小剧院的作品获得了评论界的广泛赞誉。",
+          "explanationZh": "不可数名词 acclaim；critical 指来自评论界。"
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "word": "accommodate",
+      "ipa": "英 /əˈkɒmədeɪt/；美 /əˈkɑːmədeɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "容纳；提供空间或住宿；照顾需要；适应",
+      "coreEn": "To provide space or accommodation for someone or something; to meet needs or adjust to a situation.",
+      "coreImageZh": "男孩把长椅上的背包移到腿上，腾出位置让同学坐下。",
+      "usage": [
+        {
+          "senseZh": "腾出空间、容纳或提供住宿",
+          "explanationZh": "通常及物，可以指场地容得下多少人，也可指给人安排位置或住宿。accommodate someone 不必指长期居住。",
+          "collocations": [
+            {
+              "phrase": "accommodate another person",
+              "meaningZh": "再容纳一个人"
+            },
+            {
+              "phrase": "a hall that accommodates fifty guests",
+              "meaningZh": "可容纳五十位来宾的大厅"
+            }
+          ]
+        },
+        {
+          "senseZh": "照顾需要或调整安排",
+          "explanationZh": "可以改变做法以满足需要、安排时间等；不是无条件答应一切要求。",
+          "collocations": [
+            {
+              "phrase": "accommodate different needs",
+              "meaningZh": "照顾不同需要"
+            },
+            {
+              "phrase": "accommodate a request",
+              "meaningZh": "设法满足请求"
+            }
+          ]
+        },
+        {
+          "senseZh": "使自己适应",
+          "explanationZh": "accommodate oneself to 表示调整自己以适应；与普通“容纳人”的结构不同。",
+          "collocations": [
+            {
+              "phrase": "accommodate oneself to a new routine",
+              "meaningZh": "适应新的作息"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "attune",
+          "comparisonZh": "只在调整以适应、使协调的语境有交集。attune 常用 attune something/oneself to，强调协调或敏感地适应；accommodate 还可以容纳客人、腾座位，attune 不承担这些空间义。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "make room for",
+          "comparisonZh": "在腾空间、让某人坐下或放下某物时很接近。accommodate 还可提供住宿、满足需要，意义范围更广。"
+        },
+        {
+          "word": "adapt",
+          "comparisonZh": "在调整自己或安排以适应时接近。adapt 更突出改变做法或形态；accommodate 还可在本来有足够空间时直接容纳，无须先改变。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "accommodation → accommodate",
+          "textZh": "从订房页面常见的 accommodation（住宿）认出整段 ACCOMMODAT：把名词结尾 -ion 换成 -e，得到动词 accommodate。给住客安排住宿要有房间、腾出位置；给同学腾一个座位也是提供空间、容纳他。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a common date · 腾出空档",
+          "textZh": "按英式读音，把整个 accommodate 近音联想到 a common date（大家共同合适的日期）：为了让所有人参加，先在共同日期腾出时间，再在会场腾出座位，既照顾安排，也容纳大家。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy moved his backpack onto his lap to accommodate his classmate on the bench.",
+          "translationZh": "男孩把背包移到腿上，腾出长椅上的位置让同学坐下。",
+          "explanationZh": "实实在在提供空间，不只是表示欢迎。"
+        },
+        {
+          "textEn": "The workshop changed its schedule to accommodate participants in different time zones.",
+          "translationZh": "工作坊调整了时间安排，以照顾不同时区的参与者。",
+          "explanationZh": "通过改变安排满足需要，属于非物理空间的延伸义。"
+        }
+      ]
+    }
+  ]
+}
