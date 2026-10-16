@@ -1,0 +1,4 @@
+#offline-settings .progress-display-row { justify-content: flex-start; gap: 8px; }
+#offline-settings .progress-display-options { display: flex; align-items: center; gap: 5px; color: var(--settings-muted); }
+#offline-settings .progress-display-options button { min-width: 44px; padding: 8px 3px; background: transparent; border: 0; color: var(--settings-muted); }
+#offline-settings .progress-display-options button[aria-pressed="true"] { color: var(--moss); text-decoration: underline; text-underline-offset: 5px; }

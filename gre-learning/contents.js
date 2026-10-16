@@ -5,7 +5,7 @@ import {escapeLearningText as escape} from './render.js';
 
 // The contents is another leaf of the book. Keep the reading DOM in place so
 // returning to it preserves the same word, media controller and reading spot.
-export function installContents({main,picker,search,entries,getSelected,navigate,onOpen=()=>{},onClose=()=>{},onTransition=()=>{},prepareReading=()=>{}}) {
+export function installContents({main,picker,search,entries,getSelected,navigate,getRemembered=()=>null,getReadingPosition=()=>null,onBeforeOpen=()=>{},onOpen=()=>{},onClose=()=>{},onTransition=()=>{},prepareReading=()=>{}}) {
  const doc=main.ownerDocument,win=doc.defaultView;
  const opener=doc.getElementById('open-search');
  const title=doc.getElementById('picker-title'),results=doc.getElementById('word-results');
@@ -31,7 +31,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   // Direct directory entry resolves the same remembered word as app.render,
   // before asynchronous lesson/media preparation can finish.
   let number=getSelected();
-  if(number==null){let remembered;try{remembered=win.sessionStorage?.getItem('gre-learning-current-v1');}catch{}number=resolveWordNumber('',entries,remembered);}
+  if(number==null){let remembered=getRemembered();if(remembered==null)try{remembered=win.sessionStorage?.getItem('gre-learning-current-v1');}catch{}number=resolveWordNumber('',entries,remembered);}
   return entries.find(entry=>entry.number===number)||entries[0];
  }
  function prepareLeaf({show=false}={}){
@@ -69,7 +69,8 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   if(picker.open)return;
   win.cancelAnimationFrame(restoreFrame);
   const selected=currentEntry();
-  const position=readingPositions.get(selected?.number)||{scrollX:win.scrollX,scrollY:win.scrollY};
+  onBeforeOpen();
+  const position=readingPositions.get(selected?.number)||getReadingPosition(selected?.number)||{scrollX:win.scrollX,scrollY:win.scrollY};
   saved={number:selected?.number,hash:readingHash(selected?.number),...position,focus:doc.activeElement,title:doc.title,ready:getSelected()!=null};
   search.value='';renderResults();
   turns.begin({source:main,direction:'previous',visual:Boolean(main.querySelector('.reading-layout')),prepare:()=>{

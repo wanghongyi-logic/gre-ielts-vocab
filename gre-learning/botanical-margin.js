@@ -1,3 +1,4 @@
+import {installProgressDisplay} from './progress-display.js';
 import {installSavedProgress} from './botanical-progress.js';
 import {installBranchGrowth} from './botanical-growth.js';
 import {installMovingWatercolor} from './botanical-selection.js';
@@ -47,13 +48,27 @@ export function installBotanicalMargin(nav){
  }
  const settings=nav.querySelector('#open-settings'),count=settings?.querySelector('.library-rail-label');
  const progress=installSavedProgress(nav,settings);
- const sync=()=>{
+ let display;
+ const sync=(animate=false)=>{
   const match=count?.textContent.match(/^(\d+)\s*\/\s*(\d+)$/);
-  if(count){count.dataset.saved=match?.[1]||'—';count.dataset.total=match?`/ ${match[2]}`:'';}
-  progress.update(savedFraction(settings?.style.getPropertyValue('--saved-progress')),{ready:Boolean(match),animate:settings?.dataset.progressMotion==='download'});
+  const reading=display?.mode==='learning'?display.reading():null,learning=display?.mode==='learning';
+  if(count){count.dataset.saved=learning?(reading?.current??'—'):(match?.[1]||'—');count.dataset.total=learning?(reading?`/ ${reading.total}`:''):(match?`/ ${match[2]}`:'');}
+  const track=settings?.querySelector('[role=progressbar]');
+  const ready=learning?Boolean(reading):Boolean(match),pending=learning?!ready:settings?.dataset.savedInventoryPending==='true'||!ready;
+  const current=learning?reading?.current:Number(match?.[1]),total=learning?reading?.total:Number(match?.[2]);
+  const label=ready?(learning?`当前阅读第 ${current} / ${total} 词`:`已完整保存 ${current} / ${total} 词`):(learning?'当前阅读位置':'本地保存进度');
+  if(track){
+   track.setAttribute('aria-label',learning?'当前阅读位置':'本机已保存单词');
+   if(pending)track.setAttribute('aria-busy','true');else track.removeAttribute('aria-busy');
+   if(ready){track.setAttribute('aria-valuenow',String(current));track.setAttribute('aria-valuemax',String(total));track.setAttribute('aria-valuetext',label);}
+   else{track.removeAttribute('aria-valuenow');track.removeAttribute('aria-valuetext');}
+  }
+  if(settings){settings.title=`${label}，打开设置`;settings.setAttribute('aria-label',`${label}，打开设置`);}
+  progress.update(learning?(reading?.fraction??0):savedFraction(settings?.style.getPropertyValue('--saved-progress')),{ready:learning?Boolean(reading):Boolean(match),animate:animate||learning||settings?.dataset.progressMotion==='download'});
  };
+ display=installProgressDisplay(doc,sync);
  sync();
- if(win?.MutationObserver){const observer=new win.MutationObserver(sync);if(count)observer.observe(count,{childList:true,characterData:true,subtree:true});if(settings)observer.observe(settings,{attributes:true,attributeFilter:['style']});}
+ if(win?.MutationObserver){const observer=new win.MutationObserver(()=>sync());if(count)observer.observe(count,{childList:true,characterData:true,subtree:true});if(settings)observer.observe(settings,{attributes:true,attributeFilter:['style','data-saved-inventory-pending']});}
  const geometry=()=>syncMarginGeometry(nav);geometry();
  if(win?.ResizeObserver){const observer=new win.ResizeObserver(geometry);for(const element of [nav,nav.querySelector('.bookmark-list'),settings])if(element)observer.observe(element);}
  win?.addEventListener?.('resize',geometry,{passive:true});
