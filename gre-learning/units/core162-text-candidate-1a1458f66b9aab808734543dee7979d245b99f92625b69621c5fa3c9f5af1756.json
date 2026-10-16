@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4,
+      "word": "abate",
+      "ipa": "/əˈbeɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "减弱；减轻；减少",
+      "coreEn": "To become or make less strong, severe, or great in amount.",
+      "coreImageZh": "男孩和父亲站在门廊里，看着密集的雨逐渐变成细雨。",
+      "usage": [
+        {
+          "senseZh": "强度或程度减弱",
+          "explanationZh": "较正式。可不及物，表示雨势、疼痛、怒气等自行减弱；也可及物，表示使某事减轻。通常着重强度下降，不必完全停止。",
+          "collocations": [
+            {
+              "phrase": "the rain abates",
+              "meaningZh": "雨势减弱"
+            },
+            {
+              "phrase": "abate someone’s anger",
+              "meaningZh": "缓和某人的怒气"
+            }
+          ]
+        },
+        {
+          "senseZh": "减少数量；专门语境中的撤销",
+          "explanationZh": "也能表示减免金额。法律语境还可指终止或撤销；不能把这个专门义套到每个天气或情绪句子里。",
+          "collocations": [
+            {
+              "phrase": "abate a tax",
+              "meaningZh": "减免税款"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "mitigate",
+          "comparisonZh": "都可表示减轻。mitigate 通常及物，着重采取措施减轻问题或后果；abate 可直接说雨势、怒气自行减弱。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "wane",
+          "comparisonZh": "都可指逐渐减弱。wane 常用于影响力、兴趣或月亮渐亏；abate 常强调恶劣情况、强度或严重程度下降。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "subside",
+          "comparisonZh": "雨势、疼痛、骚动减弱时接近。subside 还可指水位下降或地面下沉；abate 不直接承担这些空间义。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "a bait · 饵越来越少",
+          "textZh": "abate 与 a bait（一份鱼饵）同音，都是 /əˈbeɪt/。想象鱼一口一口啄掉鱼饵，原本一大块变得越来越小，量在减少。由“越来越少”转到雨势、怒气“越来越弱”，记住 abate 的减少、减弱义。鱼饵场景是声音联想，不是词源。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a beat · 把强度打下来",
+          "textZh": "把整个 abate 联想到 a beat（一下敲击），注意 BATE 与 BEAT 用的是同一组字母、元音顺序不同。想象一下敲在音量控制器上，把过强的音量压低，强度随之减弱。abate 的历史确实与“打下来、击倒”有关；这里的声音桥只是近音，beat 的 /iː/ 与 abate 的 /eɪ/ 不同。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The rain began to abate while the boy and his father waited on the porch.",
+          "translationZh": "男孩和父亲在门廊等候时，雨势开始减弱。",
+          "explanationZh": "不及物用法；雨变小，不表示已经停雨。"
+        },
+        {
+          "textEn": "Her anger abated after she heard the full explanation.",
+          "translationZh": "听完整个解释后，她的怒气减轻了。",
+          "explanationZh": "以情绪为主语，表示程度下降。"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "word": "abbreviate",
+      "ipa": "/əˈbriːvieɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "缩短；缩写",
+      "coreEn": "To make something shorter, especially a word, name, text, or speech.",
+      "coreImageZh": "男孩把三分钟的开场白缩成两句话，仍保留重点。",
+      "usage": [
+        {
+          "senseZh": "缩短文字或讲话",
+          "explanationZh": "通常及物，宾语可以是发言、说明、文章等。表达长度缩短；不要求把所有词都改成字母缩写。",
+          "collocations": [
+            {
+              "phrase": "abbreviate a speech",
+              "meaningZh": "缩短发言"
+            },
+            {
+              "phrase": "an abbreviated version",
+              "meaningZh": "缩短的版本"
+            }
+          ]
+        },
+        {
+          "senseZh": "把名称或词语缩写",
+          "explanationZh": "常用 abbreviate X to/as Y，或 X is abbreviated to/as Y；abbreviation 是缩写形式或缩写这一行为。",
+          "collocations": [
+            {
+              "phrase": "abbreviate September to Sept.",
+              "meaningZh": "把 September 缩写为 Sept."
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "curtail",
+          "comparisonZh": "都能表示缩短。curtail 更广，可削减活动、开支或权利；abbreviate 尤其用于词语和表达的缩写、缩短。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "shorten",
+          "comparisonZh": "shorten 范围更广，可缩短绳子、路程或时间；abbreviate 最典型的是把名称、文本或讲话变短。"
+        },
+        {
+          "word": "abridge",
+          "comparisonZh": "都可缩短文本。abridge 常指删节较长作品并保留主要内容；abbreviate 还常指把一个名称写成缩写形式。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "abbreviation → abbreviate",
+          "textZh": "从词典中常见的 abbreviation（缩写）认出整段 ABBREVIAT：把名词结尾 -ion 换成动词结尾 -e，就是 abbreviate。September → Sept. 是一个 abbreviation；把完整词变成这个短形式，动作就叫 abbreviate。也可把较长的发言变短。这是真实词族，利用熟悉名词带出整个动词。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "appreciate · 感谢话缩短",
+          "textZh": "把整个 abbreviate 与熟悉的 appreciate（感激）近音联想：原本想写一长段 I appreciate your help，最后把感谢话缩成 Thanks。把表达变短的动作，就是 abbreviate。两词四音节节奏与元音很接近，但 appreciate 的 /p/、/ʃ/ 对应这里的 /b/、/v/；这只是近音联想，不是同源关系。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy abbreviated his three-minute opening speech to two sentences.",
+          "translationZh": "男孩把三分钟的开场白缩成了两句话。",
+          "explanationZh": "缩短讲话内容，与分镜中保留重点的短开场白一致。"
+        },
+        {
+          "textEn": "In the timetable, the editor abbreviated Wednesday to Wed.",
+          "translationZh": "在时间表里，编辑把 Wednesday 缩写为 Wed.。",
+          "explanationZh": "把完整星期名称写成常见缩写；to 引出缩写结果。"
+        }
+      ]
+    },
+    {
+      "number": 4887,
+      "word": "aberration",
+      "ipa": "英 /ˌæbəˈreɪʃən/；美 /ˌæbəˈreɪʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "异常；偏离常态的情况",
+      "coreEn": "An occurrence or feature that departs from what is usual, expected, or normal.",
+      "coreImageZh": "一株一直开黄花的植物，这次竟出现了一朵紫花。",
+      "usage": [
+        {
+          "senseZh": "偏离通常模式的异常情况",
+          "explanationZh": "可数名词，重点是与通常或预期的模式不同。可能是一次表现失常，也可能是异常特征；不必等于严重错误或道德过错。",
+          "collocations": [
+            {
+              "phrase": "an aberration from the norm",
+              "meaningZh": "偏离常态的异常"
+            },
+            {
+              "phrase": "a temporary aberration",
+              "meaningZh": "暂时的反常现象"
+            }
+          ]
+        },
+        {
+          "senseZh": "光学像差",
+          "explanationZh": "专门语境中指成像偏差或缺陷，如色差；这是技术义，不宜把日常异常一律解释成镜头故障。",
+          "collocations": [
+            {
+              "phrase": "chromatic aberration",
+              "meaningZh": "色差"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "anomaly",
+          "comparisonZh": "都可指不合通常模式的现象。anomaly 常突出数据或系统中不符合预期的点；aberration 常突出对既有常态的偏离，语境中可能是偶发的一次。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "deviation",
+          "comparisonZh": "都涉及偏离。deviation 范围更广，可中性地指路线或数值偏差；aberration 通常更突出异常、不符合常态。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AB＋ERR＋ATION · 偏离常态",
+          "textZh": "AB- 的“离开”借 absent（缺席、不在场）记；ERR 借熟悉的 error（错误）记“走偏”，-ation 是常见名词结尾。合起来像从正常路线离开、走偏了，形成“偏离常态的异常”。这利用真实的“离开＋游移、走偏”词源；异常花色也算 aberration，不必是人为犯错。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a bear ration · 反常的一餐",
+          "textZh": "把整个 aberration 近音联想到 a bear ration：ration 是配给的一份食物，这里是一份熊的食物。想象动物园每天给熊一大盆食物，今天却反常地只端来一颗豌豆；这顿饭偏离一贯标准，就是 an aberration。bear 的元音与原词不同，ration 的 /æ/ 也不同于原词的 /eɪ/；这是近音画面，不是词源。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The single purple flower was an aberration on a plant that had always produced yellow blooms.",
+          "translationZh": "这株植物向来开黄花，唯一的紫花是一次异常现象。",
+          "explanationZh": "明确给出一贯黄花这一正常基线，而非普通混色花坛。"
+        },
+        {
+          "textEn": "The team regarded its unusually poor performance as an aberration, not a new pattern.",
+          "translationZh": "球队把这次异常糟糕的表现视为偶发失常，而不是新的常态。",
+          "explanationZh": "在连续表现中辨认一次偏离；aberration 本身不保证以后必然恢复。"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "word": "abet",
+      "ipa": "/əˈbet/",
+      "pos": "v.",
+      "coreMeaningZh": "帮助、支持或怂恿（通常指坏事）",
+      "coreEn": "To help or encourage someone in an action, especially something wrong.",
+      "coreImageZh": "同学怂恿男孩偷看禁止打开的谜题盒，还主动提出帮忙放哨。",
+      "usage": [
+        {
+          "senseZh": "帮助或怂恿不当行为",
+          "explanationZh": "较正式的及物动词，可以接人或行为；常含助长、配合的意思，不只是旁观或表示知道。abetting、abetted 的 t 双写。",
+          "collocations": [
+            {
+              "phrase": "abet someone in wrongdoing",
+              "meaningZh": "帮助某人做坏事"
+            },
+            {
+              "phrase": "abet a deception",
+              "meaningZh": "协助欺骗"
+            }
+          ]
+        },
+        {
+          "senseZh": "固定搭配 aid and abet",
+          "explanationZh": "表示帮助、教唆或协助，法律与一般批评语境都能见到。日常教学重点是配合不当行为，不据此判断具体法律责任。",
+          "collocations": [
+            {
+              "phrase": "aid and abet misconduct",
+              "meaningZh": "协助并助长不当行为"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "instigate",
+          "comparisonZh": "两者都可能涉及鼓动坏事。instigate 更强调挑起、促使事情发生；abet 还可以在计划已经开始后提供帮助或支持，不一定是发起者。",
+          "sources": [
+            "zhangwei_dedicated_2021",
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "assist",
+          "comparisonZh": "都可指帮助。assist 本身通常中性；abet 常暗示所帮助的是不当行为，因此不能随意用于普通友好帮助。"
+        },
+        {
+          "word": "encourage",
+          "comparisonZh": "都可鼓励某人行动。encourage 范围很广且常为褒义；abet 更正式，并常含帮助或怂恿坏事的负面意味。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "a bet · 赌约怂恿",
+          "textZh": "abet 与 a bet（一个赌约）同音，都是 /əˈbet/。同伴说“打赌你不敢偷看”，还答应替你放哨；赌约把人往违规行为上推，放哨又提供实际帮助。这样就从整个 a bet 记住 abet：帮助或怂恿，尤其是坏事。这里只借声音，不把 bet 当成真实词源。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "A PET → ABET · 帮忙做坏事",
+          "textZh": "看完整的 A PET（一只宠物），只把 P 换成 B，就得到 ABET；B 用熟悉的 bad（坏的）提示帮助的性质。想象故事里一只宠物狗帮主人叼走别人的包：它在帮忙，但帮的是坏事，所以是在 abet。PET 的 /p/ 与 BET 的 /b/ 不同；这是人为拼写故事，不是词源。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His classmate tried to abet the forbidden peek by offering to keep watch at the door.",
+          "translationZh": "同学提出在门口放哨，想帮他偷看那个不准打开的盒子。",
+          "explanationZh": "既有怂恿，也有提供实际配合；tried to 不表示已经成功偷看。"
+        },
+        {
+          "textEn": "The manager abetted the deception by approving reports she knew were false.",
+          "translationZh": "经理批准了她明知虚假的报告，协助了这场欺骗。",
+          "explanationZh": "以实际支持行为体现 abet；并非仅仅知道事情发生。"
+        }
+      ]
+    },
+    {
+      "number": 4888,
+      "word": "abnegation",
+      "ipa": "英 /ˌæbnɪˈɡeɪʃən/；美 /ˌæbnəˈɡeɪʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "自我克制；自愿舍弃；放弃或拒绝",
+      "coreEn": "The giving up of one’s own wishes, comforts, or rights; also the rejection or relinquishment of something.",
+      "coreImageZh": "男孩有钱也很想买玩具，却主动舍弃这份享受，把钱留作助学捐款。",
+      "usage": [
+        {
+          "senseZh": "主动舍弃自己的欲望或利益",
+          "explanationZh": "正式，通常不可数。强调克制自己、放弃原本想要或可以拥有的东西；单纯买不起或本来不喜欢，并不构成这个意思。",
+          "collocations": [
+            {
+              "phrase": "self-abnegation",
+              "meaningZh": "自我克制；舍己"
+            },
+            {
+              "phrase": "abnegation of personal comfort",
+              "meaningZh": "舍弃个人舒适"
+            }
+          ]
+        },
+        {
+          "senseZh": "放弃、拒绝或否认",
+          "explanationZh": "可涉及权利、信念、责任等，褒贬取决于对象。abnegation of responsibility 常批评放弃应尽责任，不能一律理解为高尚牺牲。",
+          "collocations": [
+            {
+              "phrase": "abnegation of responsibility",
+              "meaningZh": "放弃应尽的责任"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "self-denial",
+          "comparisonZh": "都可指克制自己的欲望、不给自己某种享受。self-denial 更直接；abnegation 较正式，还能用于权利、信念或责任的放弃。"
+        },
+        {
+          "word": "renunciation",
+          "comparisonZh": "都可指自愿放弃。renunciation 常突出公开、正式或明确的放弃行为；abnegation 在舍己语境中更突出对自身欲望或利益的克制。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AB＋NEGATION · 对欲望说不",
+          "textZh": "AB- 借 absent（缺席、离开）记“离开”；NEGATION 借 negative（否定的）记“说不”，末尾 -tion 表示名词。对本来很想要的享受说“不”，主动离开它，就能记住 abnegation 的克己、舍弃义。这利用真实的“离开＋否认、拒绝”词源，不是认为所有否定回答都属于自我牺牲。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "obligation＋N＝NO · 舍己",
+          "textZh": "看到整个 abnegation，近音联想到 obligation（义务）；特别抓住 abnegation 的 N，用 NO 提醒“对自己的享受说不”。想象已经答应捐款，自己却很想拿那笔钱买玩具：为了履行 obligation，主动对买玩具说 NO，这份舍弃才是 abnegation。两词都是四音节，/ɡeɪʃən/ 相同，开头元音及 /l/、/n/ 不同；N＝NO 是人为记忆提示，不是词源。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Saving his toy money for the promised school donation was an act of abnegation for the boy.",
+          "translationZh": "男孩把买玩具的钱留作答应过的助学捐款，是一次自愿舍弃个人享受的举动。",
+          "explanationZh": "有能力也有欲望，却主动放弃；对应分镜的 self-denial 义。"
+        },
+        {
+          "textEn": "Leaving every difficult decision to the staff was an abnegation of the director’s responsibility.",
+          "translationZh": "把每个困难决定都丢给员工，是主任对自身职责的放弃。",
+          "explanationZh": "放弃责任在这里是批评义，说明 abnegation 并非总是褒义。"
+        }
+      ]
+    }
+  ]
+}

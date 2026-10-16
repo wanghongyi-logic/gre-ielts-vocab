@@ -1,0 +1,437 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4838,
+      "word": "upshot",
+      "ipa": "/ˈʌpʃɑːt/",
+      "pos": "n.",
+      "coreMeaningZh": "最后结果；结局",
+      "coreEn": "The final result of an event or series of actions.",
+      "coreImageZh": "本来约好去公园野餐，窗外却下起大雨。男孩和同伴最后留在家里，坐到摆好野餐食物的餐桌旁。经历计划和变化以后，最后在家吃成了这顿野餐，这就是事情的 upshot。",
+      "usage": [
+        {
+          "senseZh": "一连串事情的最终结果",
+          "explanationZh": "常用单数 the upshot，强调事情发展到最后形成的结果；结果可以好，也可以不好。",
+          "collocations": [
+            {
+              "phrase": "the upshot of the discussion",
+              "meaningZh": "讨论的最终结果"
+            },
+            {
+              "phrase": "the upshot was that…",
+              "meaningZh": "最终结果是……"
+            }
+          ]
+        },
+        {
+          "senseZh": "简明交代事情最后怎样",
+          "explanationZh": "常在交代一番经过后总结结果。不是过程中的每一个变化，也不必指大团圆结局。",
+          "collocations": [
+            {
+              "phrase": "the practical upshot",
+              "meaningZh": "实际结果"
+            },
+            {
+              "phrase": "What was the upshot?",
+              "meaningZh": "最后结果怎样？"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "outcome",
+          "comparisonZh": "与最终结果义接近；upshot 常用来概括一连串事情最后带来的结果。"
+        },
+        {
+          "word": "outgrowth",
+          "comparisonZh": "outgrowth 强调从某事发展出来的产物或结果；upshot 强调最终结果，不能处处互换。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "up + shot：最后一投定结果",
+          "textZh": "up 是向上，shot 是投篮、射击的一次动作。看到 upshot，想象比赛最后一秒，球向上飞出，最后一投决定比赛结果。用这个完整的投篮画面记“最终结果”；这是联想，不是逐字翻译。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        },
+        {
+          "method": "upshot / APP＋SHOT：截下最终结果",
+          "textZh": "把 upshot 的声音近似联想到 APP＋SHOT：考试结束，在 app（手机应用）里查到最终成绩，把结果那一屏拍成一张 shot（照片）保存。用这张记录最终结果的画面，记 upshot：最后结果、结局。",
+          "original": true,
+          "kind": "reviewed_method",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The upshot was that they ate their picnic lunch at home.",
+          "translationZh": "最终，他们在家吃了这顿野餐。",
+          "explanationZh": "the upshot was that 引出经历雨天变故后的最终结果。"
+        },
+        {
+          "textEn": "The upshot of the discussion was a simpler plan that everyone could follow.",
+          "translationZh": "讨论的最终结果是一个人人都能执行的更简单的计划。",
+          "explanationZh": "结果也可以是好事，upshot 本身没有负面含义。"
+        }
+      ]
+    },
+    {
+      "number": 238,
+      "word": "blur",
+      "ipa": "/blɝː/",
+      "pos": "v.; n.",
+      "coreMeaningZh": "（使）模糊；模糊不清的影像或记忆",
+      "coreEn": "To become, or make something, indistinct; also something seen or remembered unclearly.",
+      "coreImageZh": "男孩想看窗外的红花，靠近一点仍只看见模糊的红绿轮廓。家人指出玻璃上的水雾遮住了清晰视线。blur 是让原本能分辨的轮廓变得不清楚，不是花真的消失了。",
+      "usage": [
+        {
+          "senseZh": "动词：视觉变得不清楚",
+          "explanationZh": "可及物，也可不及物；过去式 blurred，现在分词 blurring，双写 r。",
+          "collocations": [
+            {
+              "phrase": "blur the view",
+              "meaningZh": "使景物模糊"
+            },
+            {
+              "phrase": "blurred vision",
+              "meaningZh": "模糊的视线"
+            }
+          ]
+        },
+        {
+          "senseZh": "界线、区别或记忆变模糊",
+          "explanationZh": "可用于抽象事物，表示难以区分或记清。",
+          "collocations": [
+            {
+              "phrase": "blur the distinction between A and B",
+              "meaningZh": "使 A 与 B 的区别模糊"
+            },
+            {
+              "phrase": "blur the line between fact and fiction",
+              "meaningZh": "模糊事实与虚构的界线"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词：模糊的一片或模糊印象",
+          "explanationZh": "常说 a blur、in a blur。可以是看不清的移动物，也可以是记不清的经历。",
+          "collocations": [
+            {
+              "phrase": "a blur of movement",
+              "meaningZh": "一片模糊的移动影像"
+            },
+            {
+              "phrase": "a blur in my memory",
+              "meaningZh": "我记忆中模糊的一段"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "obscure",
+          "comparisonZh": "都可表示使不清楚。obscure 还可指遮住、隐瞒，blur 更突出轮廓或区别不清。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "smudge",
+          "comparisonZh": "强调弄上污迹、把墨迹擦花；这可能造成 blur，但模糊不一定来自污迹。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "blur / blue：蓝天碧海分不清",
+          "textZh": "blur 和 blue（蓝色的）只差末字母。想象远处蓝天与蓝海连成一片，交界处模糊难辨。用两个 blue 融成一片的景象记 blur；这是拼写联想，不是说两个词同音。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        },
+        {
+          "method": "blur / blow：向冷玻璃吹气",
+          "textZh": "把 blur 的声音大致联想到熟词 blow（吹气）。冬天朝冷玻璃 blow 一口热气，玻璃蒙上一层雾，窗外景物便 blur，模糊不清。用“吹气起雾，看不清”记 blur。",
+          "original": true,
+          "weak": true,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Moisture on the glass blurred the outlines of the flowers outside.",
+          "translationZh": "玻璃上的水雾使窗外花朵的轮廓变得模糊。",
+          "explanationZh": "blurred 是及物动词，水雾使轮廓不清。"
+        },
+        {
+          "textEn": "After many years, the details of that afternoon were a blur.",
+          "translationZh": "多年以后，那个下午的细节已经模糊不清。",
+          "explanationZh": "a blur 是名词，指记忆中的模糊印象。"
+        }
+      ]
+    },
+    {
+      "number": 2616,
+      "word": "veto",
+      "ipa": "/ˈviːtoʊ/",
+      "pos": "v.; n.",
+      "coreMeaningZh": "否决；禁止；否决权",
+      "coreEn": "To block or forbid a proposed action by exercising authority; also that refusal or the power to make it.",
+      "coreImageZh": "男孩想从池边跳下去，负责安全的管理员抬手制止，明确说水太浅，不允许跳。veto 不只是表示不喜欢，而是有权作决定的人否决了这个提议。",
+      "usage": [
+        {
+          "senseZh": "动词：行使权限否决",
+          "explanationZh": "可用于政府，也可用于老板、家长等否决计划；直接接提案或行动。过去式 vetoed，现在分词 vetoing。",
+          "collocations": [
+            {
+              "phrase": "veto a proposal",
+              "meaningZh": "否决一项提议"
+            },
+            {
+              "phrase": "veto a plan",
+              "meaningZh": "否决一项计划"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词：否决或否决权",
+          "explanationZh": "否决这一行为可数，复数 vetoes；否决权作为权力也可不可数。",
+          "collocations": [
+            {
+              "phrase": "the power of veto",
+              "meaningZh": "否决权"
+            },
+            {
+              "phrase": "override a veto",
+              "meaningZh": "推翻一次否决"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "forbid",
+          "comparisonZh": "都可表示不允许做某事；veto 尤其用于有权者阻止某个提议或计划。"
+        },
+        {
+          "word": "reject",
+          "comparisonZh": "含义更宽，可只是拒绝接受；veto 更突出有权阻止提议生效。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "veto / vote：有否决权的一票",
+          "textZh": "veto 与 vote（投票）使用相同的四个字母，交换 e 和 o 的位置即可。想象一位拥有否决权的人投下关键反对票，把提案挡住。用这张有权阻止提案的票记“否决”；普通反对票不一定就是 veto。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        },
+        {
+          "method": "veto：VET＋0，一口也不许",
+          "textZh": "把 veto 看成 vet（兽医）＋o，末尾 o 像数字 0。主人提出给狗喂不适合它的食物，vet 在计划上写下一个大大的 0：“一口也不许喂！”用兽医的这次明确否决，记 veto：否决、不准。",
+          "original": true,
+          "kind": "reviewed_method",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The pool supervisor vetoed the boy’s plan to jump into the shallow water.",
+          "translationZh": "泳池管理员否决了男孩跳进浅水里的计划。",
+          "explanationZh": "管理员行使现场管理权限，阻止计划实施。"
+        },
+        {
+          "textEn": "The committee could not proceed without overcoming the chair’s veto.",
+          "translationZh": "委员会必须先克服主席的否决，才能继续推进。",
+          "explanationZh": "veto 作名词，表示阻止提案继续的一次否决。"
+        }
+      ]
+    },
+    {
+      "number": 2113,
+      "word": "rue",
+      "ipa": "/ruː/",
+      "pos": "n.; v.",
+      "coreMeaningZh": "后悔；悔恨；为……感到懊悔",
+      "coreEn": "Regret or sorrow; as a verb, to feel regret for something.",
+      "coreImageZh": "男孩因为自己刚才太冒失，碰坏了朋友做的陶碗。看着碎碗，他低头懊悔，再抬头道歉。这里的 rue 是对自己已经做过的事感到后悔，不是单纯看到坏事而难过。",
+      "usage": [
+        {
+          "senseZh": "名词：后悔、悔恨之情",
+          "explanationZh": "名词义“悔恨”带文学色彩，日常更常说 regret；一般作不可数名词。",
+          "collocations": [
+            {
+              "phrase": "filled with rue",
+              "meaningZh": "充满悔恨"
+            },
+            {
+              "phrase": "with rue",
+              "meaningZh": "带着悔恨之情"
+            }
+          ]
+        },
+        {
+          "senseZh": "动词：为某事后悔",
+          "explanationZh": "现代英语中动词比“后悔”名词更常见，通常直接接后悔的事；rue the day 常强调对当初某天所做的事深感后悔。过去式 rued，现在分词 ruing。",
+          "collocations": [
+            {
+              "phrase": "rue a decision",
+              "meaningZh": "后悔一个决定"
+            },
+            {
+              "phrase": "rue the day…",
+              "meaningZh": "后悔当初……的那一天"
+            }
+          ]
+        },
+        {
+          "senseZh": "另一个同形名词：芸香",
+          "explanationZh": "植物 rue 是芸香，与“后悔”的 rue 词源不同。法语街名中的 rue 表示街道，也不要与英语后悔义混淆。",
+          "collocations": [
+            {
+              "phrase": "rue leaves",
+              "meaningZh": "芸香叶"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "regret",
+          "comparisonZh": "与名词“后悔”及动词“为……后悔”都接近；regret 比 rue 的名词用法常见。"
+        },
+        {
+          "word": "remorse",
+          "comparisonZh": "remorse 更突出因自己的过错而产生深切悔恨，rue 也可用于令人遗憾的决定或结果。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "penitence",
+          "comparisonZh": "都可指悔恨；penitence 更强调承认自己的过错并悔改，rue 还可用于对决定或结果的后悔。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "compunction",
+          "comparisonZh": "都涉及因过错而不安；compunction 常指做事前后的内疚顾虑，rue 更直接指事后的悔恨。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "rue / rude：为无礼的话后悔",
+          "textZh": "rude（无礼的）去掉 d 就是 rue。想象自己刚才说话太 rude，伤了朋友的心，回想起来十分后悔。用自己无礼后的悔意记 rue；这是近形联想。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        },
+        {
+          "method": "rue / ruin：弄坏以后才后悔",
+          "textZh": "rue /ruː/ 的声音与 ruin（毁坏）开头的 /ruː/ 相同。想象自己鲁莽地毁坏了朋友的作品，看到后果十分懊悔。借 ruin 后的悔意记 rue；只是近音联想，ruin 后面还多一段声音。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Filled with rue, the boy apologized for breaking his friend’s bowl.",
+          "translationZh": "男孩满怀悔恨，为碰坏朋友的碗而道歉。",
+          "explanationZh": "rue 作名词，表达懊悔之情；句式带文学色彩。"
+        },
+        {
+          "textEn": "She came to rue her decision to ignore the warning.",
+          "translationZh": "她后来开始后悔自己当初没有理会警告。",
+          "explanationZh": "rue 作动词，直接接所后悔的决定。"
+        }
+      ]
+    },
+    {
+      "number": 1104,
+      "word": "haunt",
+      "ipa": "/hɑːnt/",
+      "pos": "v.; n.",
+      "coreMeaningZh": "常去；经常萦绕或困扰；（鬼魂）出没；常去之处",
+      "coreEn": "To visit a place often; also to trouble someone repeatedly, or appear as a ghost. A haunt is a place often visited.",
+      "coreImageZh": "男孩自在地浏览旧书店的低书架，店主熟悉地招呼他“又来啦”。男孩说自己几乎每天放学都来。这里的 haunt 是经常光顾同一个地方，不是偶然来过一次。",
+      "usage": [
+        {
+          "senseZh": "动词：经常光顾",
+          "explanationZh": "直接接经常去的地方，比普通 visit 更突出反复造访。",
+          "collocations": [
+            {
+              "phrase": "haunt secondhand bookshops",
+              "meaningZh": "经常光顾旧书店"
+            },
+            {
+              "phrase": "haunt the local café",
+              "meaningZh": "常去当地的咖啡馆"
+            }
+          ]
+        },
+        {
+          "senseZh": "不断萦绕、困扰；鬼魂出没",
+          "explanationZh": "不愉快的记忆、担忧等反复进入脑海，可说 haunt someone；鬼故事里也可指鬼魂在某处出没。",
+          "collocations": [
+            {
+              "phrase": "be haunted by memories",
+              "meaningZh": "不断被记忆困扰"
+            },
+            {
+              "phrase": "a haunted house",
+              "meaningZh": "传说闹鬼的房子"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词：常去的地方",
+          "explanationZh": "可数名词，常与 favourite、usual、old 搭配，不自带闹鬼含义。",
+          "collocations": [
+            {
+              "phrase": "a favourite haunt",
+              "meaningZh": "喜爱并常去的地方"
+            },
+            {
+              "phrase": "revisit old haunts",
+              "meaningZh": "重访过去常去的地方"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "frequent",
+          "comparisonZh": "作动词时与常去义接近；注意 frequent 还可作形容词“频繁的”。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "HUNT 加 A（again）",
+          "textZh": "hunt 是搜寻，添上 A，联想 again（再次），就成 haunt：又来这家旧书店淘书，反复光顾。A 是记忆提示，不是词源。",
+          "original": true,
+          "kind": "reviewed_method",
+          "weak": false
+        },
+        {
+          "method": "H（habit）＋AUNT",
+          "textZh": "aunt 是姑妈；前面添 H，联想 habit（习惯），就成 haunt：养成习惯，常到姑妈家坐坐。H 是记忆提示，不是词源。",
+          "original": true,
+          "kind": "reviewed_method",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy haunts the little bookshop after school, visiting almost every day.",
+          "translationZh": "男孩放学后常去那家小书店，几乎每天都来。",
+          "explanationZh": "almost every day 明确反复光顾的频率。"
+        },
+        {
+          "textEn": "The old café was one of her favourite haunts.",
+          "translationZh": "那家老咖啡馆是她最喜欢常去的地方之一。",
+          "explanationZh": "haunts 是可数名词复数，表示常去之处。"
+        }
+      ]
+    }
+  ]
+}

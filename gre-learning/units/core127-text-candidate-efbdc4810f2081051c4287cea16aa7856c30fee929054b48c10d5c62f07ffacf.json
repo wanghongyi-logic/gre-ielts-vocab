@@ -1,0 +1,367 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 38,
+      "word": "accolade",
+      "ipa": "/ˈækəleɪd/",
+      "pos": "n.",
+      "coreMeaningZh": "赞誉；嘉奖；荣誉",
+      "coreEn": "An award or expression of praise recognizing merit or achievement.",
+      "coreImageZh": "老师称赞男孩画好的作品，伸手示意台座上的奖杯属于他。男孩欣喜地鞠躬道谢，再挺直身子看向自己的画；奖杯始终放在台座上。",
+      "usage": [
+        {
+          "senseZh": "赞誉；嘉奖",
+          "explanationZh": "可数名词，常用复数 accolades。既可指奖项或荣誉，也可指称赞的话，不一定有实体奖杯。",
+          "collocations": [
+            {
+              "phrase": "receive an accolade",
+              "meaningZh": "获得嘉奖"
+            },
+            {
+              "phrase": "win accolades for her work",
+              "meaningZh": "因作品赢得赞誉"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "award",
+          "comparisonZh": "奖项义接近；accolade 还可指赞誉，award 另可指裁定的赔偿金。"
+        },
+        {
+          "word": "praise",
+          "comparisonZh": "都可表示赞扬；praise 通常不可数，accolade 可数，常用复数。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "accolade / a cool ad",
+          "textZh": "把 accolade 的整体声音近似联到 a cool ad（一个很酷的广告）。看到作品说“A cool ad!”，这句话本身就在称赞它。用一句直接的赞语，记 accolade 是赞誉、嘉奖。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "accolade / collar",
+          "textZh": "accolade 的 col 与 collar（衣领）背后的“脖子”同源。它早先指授予骑士身份时的拥抱等仪式；想象在衣领附近接受授勋，再记今天的“嘉奖、赞誉”。这里借熟悉的 collar 帮助记词源，不必另背拉丁词。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The young painter received an accolade for his remarkable work.",
+          "translationZh": "这位小画家因出色的作品获得了嘉奖。",
+          "explanationZh": "强调对成就的认可，可表现为奖项或赞誉。"
+        },
+        {
+          "textEn": "The film earned accolades from critics and audiences alike.",
+          "translationZh": "这部电影同时赢得了影评人和观众的赞誉。",
+          "explanationZh": "复数 accolades 在这里不一定指正式奖项。"
+        }
+      ]
+    },
+    {
+      "number": 1274,
+      "word": "inquisitive",
+      "ipa": "/ɪnˈkwɪzətɪv/",
+      "pos": "adj.",
+      "coreMeaningZh": "爱打听的；好奇好问的；求知欲强的",
+      "coreEn": "Eager to ask questions and learn, sometimes excessively curious about other people’s private affairs.",
+      "coreImageZh": "男孩凑近女孩的日记本，追问她写了谁。女孩把本子抱紧，明确说这是自己的隐私，男孩这才停止打听。",
+      "usage": [
+        {
+          "senseZh": "过分好问；爱打听隐私",
+          "explanationZh": "谈论别人的私事时常含贬义，尤其强调追根究底或让人不舒服的打听。图中采用这一义项。",
+          "collocations": [
+            {
+              "phrase": "inquisitive about other people’s affairs",
+              "meaningZh": "爱打听别人的私事"
+            },
+            {
+              "phrase": "an inquisitive neighbor",
+              "meaningZh": "爱打听的邻居"
+            }
+          ]
+        },
+        {
+          "senseZh": "好奇；求知欲强",
+          "explanationZh": "也可中性或褒义地形容爱探索、爱提问的人，不能一律译成“多管闲事”。",
+          "collocations": [
+            {
+              "phrase": "an inquisitive mind",
+              "meaningZh": "好学好问的头脑"
+            },
+            {
+              "phrase": "an inquisitive child",
+              "meaningZh": "好奇好问的孩子"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "prying",
+          "comparisonZh": "窥探私事义接近；prying 明确贬义，inquisitive 也可赞美求知欲。",
+          "source": "weichen_gre",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "curious",
+          "comparisonZh": "好奇义接近；inquisitive 更强调爱问、探究，curious 另有“奇怪的”义。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "inquisitive / in a quiz",
+          "textZh": "把 inquisitive 开头的声音联到 in a quiz（在问答测验中）：有人把闲聊也变成一场 quiz，不停追问“写谁了？为什么？还有呢？”用“总想问出答案”记好奇好问；问到别人不愿说的私事，就成了爱打听。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "inquisitive / inquire",
+          "textZh": "把 inquisitive 与 inquire（询问）放在一起，两者共享醒目的 inqui-，也确实同源。inquire 是“问”，inquisitive 描写“爱问、想弄明白”的人；他若总 inquire about your private life，就是爱打听隐私。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her inquisitive questions about my private life made me uncomfortable.",
+          "translationZh": "她对我私生活的刨根问底让我不舒服。",
+          "explanationZh": "private life 和不舒服的反应明确了贬义。"
+        },
+        {
+          "textEn": "The inquisitive child wanted to know how the telescope worked.",
+          "translationZh": "这个好奇好问的孩子想知道望远镜是如何工作的。",
+          "explanationZh": "这里是正常的求知欲，并无侵犯隐私之意。"
+        }
+      ]
+    },
+    {
+      "number": 298,
+      "word": "canard",
+      "ipa": "/kəˈnɑːrd/",
+      "pos": "n.",
+      "coreMeaningZh": "谣言；虚假报道；无稽之谈",
+      "coreEn": "A false or unfounded story, report, or belief presented or repeated as true.",
+      "coreImageZh": "男孩紧张地说池塘里的鱼全被偷了。园丁指向一直在水里游的金鱼，男孩才发现自己听信了一则假消息。",
+      "usage": [
+        {
+          "senseZh": "虚假或没有根据的传闻",
+          "explanationZh": "可数名词，较正式。常用于指出广为流传的说法并不真实；重复 canard 的人不一定就是最初编造它的人。",
+          "collocations": [
+            {
+              "phrase": "spread a canard",
+              "meaningZh": "散播谣言"
+            },
+            {
+              "phrase": "debunk an old canard",
+              "meaningZh": "驳斥流传已久的无稽之谈"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "false rumor",
+          "comparisonZh": "都指虚假传闻；canard 较正式，也可指反复流传的无根据观念。"
+        },
+        {
+          "word": "fabrication",
+          "comparisonZh": "编造的说法义接近；canard 更强调作为事实流传的假消息。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "canard / CANcel＋hARD",
+          "textZh": "把 canard 看成 CANcel（取消）的 CAN，加上 hARD（困难的）的 ARD：有人编造“明天所有航班都取消”的假消息，传开之后想撤回却很难。由这条“取消航班、难以收回”的虚假传闻，记 canard。这是熟词拼写联想，不是词源。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "canard / 看那儿",
+          "textZh": "把 canard 的声音近似联到“看那儿”：有人传话说池塘里的鱼全被偷了，你指着水里说：“看那儿，鱼明明还在！”由眼前事实揭穿的假消息，记 canard 的“谣言、虚假报道”。这是中文近音提示，不是标准读音。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The claim that all the fish had been stolen turned out to be a canard.",
+          "translationZh": "关于鱼全被偷走的说法，结果是一则谣言。",
+          "explanationZh": "canard 指那则虚假的说法，不是指偷窃行为。"
+        },
+        {
+          "textEn": "The article repeats the old canard that talent makes practice unnecessary.",
+          "translationZh": "这篇文章重复了那个老掉牙的无稽之谈：有天赋就不必练习。",
+          "explanationZh": "这里指反复流传、没有根据的观念。"
+        }
+      ]
+    },
+    {
+      "number": 1750,
+      "word": "peruse",
+      "ipa": "/pəˈruːz/",
+      "pos": "v.",
+      "coreMeaningZh": "细读；仔细查看；阅读或浏览",
+      "coreEn": "To read or examine something, often carefully and in detail; also used for casual reading or looking through.",
+      "coreImageZh": "男孩先仔细看鸟屋的说明图，用手指顺着连线查找，反复对照旁边的木条，终于看懂短木条应该放在哪里。",
+      "usage": [
+        {
+          "senseZh": "细读；仔细审阅",
+          "explanationZh": "及物动词，直接接文件、说明等宾语。这里重点记认真查看细节的意思，语体较正式。",
+          "collocations": [
+            {
+              "phrase": "peruse the instructions",
+              "meaningZh": "仔细阅读说明"
+            },
+            {
+              "phrase": "peruse a report for errors",
+              "meaningZh": "细读报告以查找错误"
+            }
+          ]
+        },
+        {
+          "senseZh": "阅读；浏览",
+          "explanationZh": "也有一般阅读或随意翻看的实际用法，不宜一概判错。须靠上下文判断阅读的细致程度。相关名词是 perusal。",
+          "collocations": [
+            {
+              "phrase": "peruse a magazine at leisure",
+              "meaningZh": "悠闲地翻阅杂志"
+            },
+            {
+              "phrase": "for your perusal",
+              "meaningZh": "供您阅读或审阅"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "study",
+          "comparisonZh": "仔细查看文件义接近；study 另可指长期学习、研究。"
+        },
+        {
+          "word": "read",
+          "comparisonZh": "阅读义接近；peruse 较正式，细读还是浏览由语境判断。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "peruse / pre-use",
+          "textZh": "把 peruse 近形联到 pre-use（使用前）：新机器使用前，先把说明书一条条看清，别漏掉操作细节。由“使用前认真读说明”记细读；per- 并不是 pre-，这里是近形提示，不是词源拆分。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "peruse：彻底用过、逐项看过",
+          "textZh": "peruse 来自 per-（彻底）和 use（使用），早期有用尽、逐项处理之意，后来用于审读。把一份说明从头到尾用透，逐项看清，记 peruse 的细读义。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He perused the assembly instructions, checking the position of each part.",
+          "translationZh": "他仔细查看装配说明，核对每个部件的位置。",
+          "explanationZh": "checking each part 明确了仔细审阅的意思。"
+        },
+        {
+          "textEn": "She spent a quiet afternoon casually perusing a magazine.",
+          "translationZh": "她悠闲地度过了一个下午，随意翻阅着一本杂志。",
+          "explanationZh": "casually 明确了浏览义，不能因 peruse 就强行译成细读。"
+        }
+      ]
+    },
+    {
+      "number": 2568,
+      "word": "untoward",
+      "ipa": "/ʌnˈtɔːrd/",
+      "pos": "adj.",
+      "coreMeaningZh": "不利的；不幸的；意外添麻烦的；不妥的",
+      "coreEn": "Unfavorable, troublesome, or unfortunate; also improper or inappropriate.",
+      "coreImageZh": "野餐刚准备好，一阵不合时宜的雨突然落下。男孩伸出空手接了接雨滴，再失望地望向野餐桌；爸爸也为这场扫兴的雨皱起眉头。",
+      "usage": [
+        {
+          "senseZh": "不利；不幸；意外添麻烦",
+          "explanationZh": "较正式，常修饰 event、incident、circumstances 等，强调事情出了不顺或不利的状况。并非单纯“意外”：惊喜通常不叫 untoward。",
+          "collocations": [
+            {
+              "phrase": "an untoward incident",
+              "meaningZh": "不幸或不利的事件"
+            },
+            {
+              "phrase": "unless anything untoward happens",
+              "meaningZh": "除非出现什么不顺的情况"
+            }
+          ]
+        },
+        {
+          "senseZh": "不妥；不正当",
+          "explanationZh": "可形容举动或情况不合适。nothing untoward 表示没有不妥之处。另有较少见的“难以管教、难以驾驭”义。",
+          "collocations": [
+            {
+              "phrase": "untoward behavior",
+              "meaningZh": "不当行为"
+            },
+            {
+              "phrase": "nothing untoward",
+              "meaningZh": "没有什么不妥"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "unfortunate",
+          "comparisonZh": "都可形容不幸事件；untoward 还可指不妥的行为。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "improper",
+          "comparisonZh": "都可指行为不妥；improper 更直接强调不合规范。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "untoward / un + toward",
+          "textZh": "看到 un-（不）和 toward（朝向），想象本来正 toward 预定目的地前进，却碰到坏天气，把行程搅乱了。用“不能顺着期待的方向走”记不利、不顺；这是借熟悉词义建立的联想，不是说 toward 本身等于“幸运”。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "untoward / UNusual＋TOur＋WARD",
+          "textZh": "把 untoward 连到 UNusual（不寻常的）的 UN、TOur（旅行）的 TO 和 WARD（病房）：一次旅行出了没料到的状况，意外受伤让人进了病房。用“旅途中突然发生的坏事”记 untoward 的“不利的、事与愿违的”。这是熟词拼写联想，不按这三个词连读。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "An untoward incident forced them to cancel the picnic.",
+          "translationZh": "一件倒霉的事迫使他们取消了野餐。",
+          "explanationZh": "强调事件带来的不利影响，具体原因须由上下文说明。"
+        },
+        {
+          "textEn": "The review found nothing untoward in the way the contest was run.",
+          "translationZh": "审查未发现比赛的组织方式有什么不妥。",
+          "explanationZh": "这里指没有不正当或不合适的做法。"
+        }
+      ]
+    }
+  ]
+}

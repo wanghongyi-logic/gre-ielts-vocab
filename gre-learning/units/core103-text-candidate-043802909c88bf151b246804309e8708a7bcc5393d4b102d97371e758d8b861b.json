@@ -1,0 +1,391 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 1619,
+      "word": "obstinate",
+      "ipa": "/ˈɑːbstɪnət/",
+      "pos": "adj.",
+      "coreMeaningZh": "固执的，执拗的；顽固难除的",
+      "coreEn": "Refusing to change a view or course despite persuasion; also difficult to remove or overcome.",
+      "coreImageZh": "男孩拿着方形积木，硬要往圆孔里塞。旁边的朋友递来合适的圆形积木，他仍摇头，继续坚持原来的做法。面对劝说也不肯改变，就是 obstinate。",
+      "usage": [
+        {
+          "senseZh": "人或态度：执拗、不肯改变",
+          "explanationZh": "通常带贬义，强调面对劝说或相反证据仍不改主意，不只是有毅力。",
+          "collocations": [
+            {
+              "phrase": "an obstinate child",
+              "meaningZh": "执拗的孩子"
+            },
+            {
+              "phrase": "an obstinate refusal to compromise",
+              "meaningZh": "固执地拒绝妥协"
+            }
+          ]
+        },
+        {
+          "senseZh": "问题或东西：顽固难处理",
+          "explanationZh": "常放在名词前，也可形容污渍、杂草、阻力等难以消除。",
+          "collocations": [
+            {
+              "phrase": "an obstinate stain",
+              "meaningZh": "顽固污渍"
+            },
+            {
+              "phrase": "obstinate resistance",
+              "meaningZh": "顽强的抵抗"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stubborn",
+          "comparisonZh": "在“不肯改变”及“难以去除”义上很接近。stubborn 比较常用，也可突出坚韧；obstinate 更容易批评不听劝、不讲道理。两者都能形容顽固污渍，不能一律理解成人的性格。"
+        },
+        {
+          "word": "adamant",
+          "comparisonZh": "都能形容立场不动摇。adamant 更突出坚决，常接 that 从句，未必带“不讲理”的评价；obstinate 更强调固执难劝。形容污渍难清除时用 obstinate/stubborn，不用 adamant stain。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "OB＋STIN＋ATE · 守着立场不挪步",
+          "textZh": "词源里的 ob- 是“在旁、靠着”，stin- 连着 stand（站）的词根，-ate 形成形容词。想象一个人守着自己的立场站定：理由已经讲清，他仍一步不退、不肯改主意。这种站定不让步的固执，就是 obstinate。",
+          "original": false,
+          "kind": "etymology",
+          "weak": false
+        },
+        {
+          "method": "OH, STILL NOT!",
+          "textZh": "把 obstinate 的整体声音近似联想到“Oh, still not!”（哦，还是不肯！）。大家拿出证据劝他改主意，劝了一次又一次，他依然抱着胳膊不肯改。听到这句“还是不肯”，就记住 obstinate“固执的、执拗的”。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He can be very obstinate at times.",
+          "translationZh": "他有时会非常固执。",
+          "explanationZh": "at times 表示有时；obstinate 评价他不肯听劝的态度。"
+        },
+        {
+          "textEn": "Invading troops met with obstinate resistance by guerrilla forces.",
+          "translationZh": "入侵部队遭遇了游击队的顽强抵抗。",
+          "explanationZh": "obstinate resistance 突出阻力难以克服，不是单纯“不礼貌”。"
+        }
+      ]
+    },
+    {
+      "number": 276,
+      "word": "bungle",
+      "ipa": "/ˈbʌŋɡl/",
+      "pos": "v. [T, I]; n.",
+      "coreMeaningZh": "笨拙地做；搞砸；拙劣的失误",
+      "coreEn": "To spoil a task through clumsy or incompetent handling; also a badly handled attempt or mistake.",
+      "coreImageZh": "男孩想往杯里倒柠檬水，却没有对准杯口，柠檬水倒在了杯子旁边。原本简单的任务被笨拙操作搞砸了，这就是 bungle。",
+      "usage": [
+        {
+          "senseZh": "动词：把事情办砸",
+          "explanationZh": "可直接接 job、attempt 等，也可不带宾语。强调操作失误或能力不足，不等于故意破坏。",
+          "collocations": [
+            {
+              "phrase": "bungle the job",
+              "meaningZh": "把工作搞砸"
+            },
+            {
+              "phrase": "a bungled attempt",
+              "meaningZh": "一次搞砸的尝试"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词：拙劣失误",
+          "explanationZh": "可数名词，指处理不当造成的错误或失败；bungler 指办事笨拙的人。",
+          "collocations": [
+            {
+              "phrase": "a bureaucratic bungle",
+              "meaningZh": "官僚机构的处理失误"
+            },
+            {
+              "phrase": "a costly bungle",
+              "meaningZh": "代价高昂的失误"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "botch",
+          "comparisonZh": "在“把事情搞砸”义上很接近，可说 botch/bungle a job。botch 常使人想到做出来的东西质量糟；bungle 更强调执行时笨拙、出错。两者都不是单纯“没有成功”的中性说法。"
+        },
+        {
+          "word": "mess up",
+          "comparisonZh": "在“弄糟、搞砸”义上接近，mess up 更口语、范围更广，也可指把房间弄乱。可说 mess the job up / mess it up；bungle 是单个动词，不能照搬这种分开的结构。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "bungle：笨狗帮倒忙",
+          "textZh": "把 bungle 的整体声音近似联想成“笨狗”：狗叼着包装带想帮忙，却把礼物拖翻，越帮越乱。由“笨手笨脚地把事搞砸”记 bungle。只是近音联想，不把中文当作英文发音。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "BUNDLE→BUNGLE",
+          "textZh": "bundle 是一包东西，把 d 换成 g，就成了 bungle；g 提醒 gap（缝隙）：包裹没封好，留出一道缝，东西散落一地。打包这件事办砸了，就是 bungle。这是字形联想。",
+          "kind": "invented_association",
+          "original": true,
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They bungled the job.",
+          "translationZh": "他们把工作搞砸了。",
+          "explanationZh": "bungled 是过去式，直接接宾语 the job。"
+        },
+        {
+          "textEn": "He is a fool who bungles consistently.",
+          "translationZh": "他是个总把事情办砸的笨蛋。",
+          "explanationZh": "这里 bungles 不带宾语，表示一贯笨拙地办事；fool 是贬损说法。"
+        }
+      ]
+    },
+    {
+      "number": 4787,
+      "word": "pendulum",
+      "ipa": "/ˈpendʒələm/",
+      "pos": "n.",
+      "coreMeaningZh": "摆，摆锤；钟摆；来回转变的局面或趋势",
+      "coreEn": "A suspended weight that swings to and fro; figuratively, a tendency or situation shifting between opposing positions.",
+      "coreImageZh": "钟里的摆锤向左、向右来回摆动。舆论也可能像它一样，一阵偏向这一端，一阵又转向另一端。因此 pendulum 既能指钟摆，也能比喻局面或意见的摇摆。",
+      "usage": [
+        {
+          "senseZh": "实物：摆、钟摆",
+          "explanationZh": "可数名词。固定点下悬着重物，可以来回摆动；不只限于钟表里的装置。 pendulum 是装置；oscillation 是振荡或摆动过程，二者不能当作同一种物体。",
+          "collocations": [
+            {
+              "phrase": "a pendulum clock",
+              "meaningZh": "摆钟"
+            },
+            {
+              "phrase": "the swing of a pendulum",
+              "meaningZh": "摆锤的摆动"
+            }
+          ]
+        },
+        {
+          "senseZh": "比喻：两端之间的转变",
+          "explanationZh": "常用 the pendulum of 或 the pendulum swings。是名词，不能直接当作“摇摆不定”的形容词。",
+          "collocations": [
+            {
+              "phrase": "the pendulum of public opinion",
+              "meaningZh": "舆论的摇摆"
+            },
+            {
+              "phrase": "the pendulum swings back",
+              "meaningZh": "趋势重新摆回另一边"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "swing",
+          "comparisonZh": "名词表示意见或力量的“转变、摆动”时语义接近，但 swing 往往指一次转向，pendulum 保留在相对两端之间摆动的比喻。a swing in public opinion 是舆论的一次变化；钟摆这个实物仍叫 pendulum，不能与“摆动动作”混为一谈。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "PEN + DULl + drUM / 悬笔敲鼓解闷",
+          "textZh": "从 pen（笔）取 PEN、dull（无聊的）取 DUL、drum（鼓）取 UM，拼成 pendulum。一个无聊的下午，孩子把笔悬在细绳上，轻推让它来回摆，一下下敲鼓解闷。这支悬着来回摆的笔就是 pendulum，摆。拼写联想，不是近音或词源。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "PENDulum / dePEND",
+          "textZh": "从 depend on（依靠）想到一颗悬着的小球：它全靠一根绳子撑住，绳断就会掉；轻轻一推，它便左右来回摆，成为 pendulum（摆）。两词共同的 PEND 都与“悬挂”的历史词源有关。把“依靠绳子吊住、来回摆动”的小球和这两个词一起记。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The pendulum in the grandfather clock swung back and forth.",
+          "translationZh": "落地钟里的钟摆来回摆动。",
+          "explanationZh": "swung 是 swing 的过去式；back and forth 指来回。"
+        },
+        {
+          "textEn": "In education, the pendulum has swung back to traditional teaching methods.",
+          "translationZh": "在教育领域，趋势又转回了传统教学方法。",
+          "explanationZh": "钟摆是比喻，表示教学理念转回了先前的一端。"
+        }
+      ]
+    },
+    {
+      "number": 4788,
+      "word": "relegate",
+      "ipa": "/ˈreləɡeɪt/",
+      "pos": "v. [T]",
+      "coreMeaningZh": "使降级；把……置于次要地位；把……排到边缘",
+      "coreEn": "To assign someone or something to a lower rank, less important role, or less prominent position.",
+      "coreImageZh": "原本在舞台中央担任主角的男孩被换下来，转去旁边整理道具。他从主要角色被安排到辅助位置，这次地位的下降就是 relegate。",
+      "usage": [
+        {
+          "senseZh": "降低地位或重要性",
+          "explanationZh": "常用 relegate somebody/something to，后接新的角色或位置。可以是真的降职，也可以只是让内容不再受重视。",
+          "collocations": [
+            {
+              "phrase": "relegate someone to a minor role",
+              "meaningZh": "让某人退居次要角色"
+            },
+            {
+              "phrase": "relegate something to the background",
+              "meaningZh": "把某事放到次要位置"
+            }
+          ]
+        },
+        {
+          "senseZh": "体育：使球队降级",
+          "explanationZh": "常用被动 be relegated，指移到较低级别的联赛，与 promote 相对。",
+          "collocations": [
+            {
+              "phrase": "be relegated to a lower division",
+              "meaningZh": "被降到较低级别联赛"
+            },
+            {
+              "phrase": "face relegation",
+              "meaningZh": "面临降级"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "downgrade",
+          "comparisonZh": "在“降低级别或重要性”义上接近，都可用于职位或地位。downgrade 还常指调低评级、降低规格；relegate 更强调把人或事物安排到较次要的位置，常接 to。调低设备配置不必用 relegate。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "demote",
+          "comparisonZh": "在正式降职、降级时接近，常用 be demoted/relegated to。demote 更直接说明职位或级别下降，常有惩罚意味；relegate 还能说某个话题被置于背景，并不需要正式职位变化。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "RE＋LEG＋ATE · 往后派",
+          "textZh": "relegate 的词源里，re- 是“往回”，leg- 连着“派遣、送出”，-ate 构成动作词。把原本在重要位置的人往后派，降到次要岗位：这便是 relegate，降级、置于次要地位。",
+          "original": true,
+          "kind": "etymology",
+          "weak": false
+        },
+        {
+          "method": "RELEGATE / RAIL + GATE",
+          "textZh": "把 relegate 的整体声音近似联到 rail（铁路）＋gate（闸门）：原本管理全站的站长被撤去主管职务，改派到铁路道口值守。由“从管理全站降为只守一道闸门”，记 relegate“降级、置于较次要的位置”。这是近音联想，不是词源拆解。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She resigned when she was relegated to a desk job.",
+          "translationZh": "她被调去做案头工作后辞职了。",
+          "explanationZh": "be relegated to 表明这次安排使她处于较次要的位置；并非所有案头工作都低人一等。"
+        },
+        {
+          "textEn": "The story was relegated to the middle pages of the paper.",
+          "translationZh": "这篇报道被挪到了报纸中间较不显眼的版面。",
+          "explanationZh": "这里不是给人降职，而是降低报道的显著程度。"
+        }
+      ]
+    },
+    {
+      "number": 2591,
+      "word": "vaunt",
+      "ipa": "/vɑːnt/",
+      "pos": "v. [T, I]; n.",
+      "coreMeaningZh": "吹嘘，夸耀；自夸的话",
+      "coreEn": "To talk boastfully about something or praise it excessively; also a boast.",
+      "coreImageZh": "男孩高举奖杯，不停向别人夸耀自己多么厉害。把成绩反复拿出来吹嘘、宣扬得过头，就是 vaunt。",
+      "usage": [
+        {
+          "senseZh": "动词：夸耀某事",
+          "explanationZh": "正式用词，通常含不赞成。可直接接 achievements、virtues 等作宾语；不必真在撒谎，夸耀过度也可用。",
+          "collocations": [
+            {
+              "phrase": "vaunt one’s achievements",
+              "meaningZh": "夸耀自己的成就"
+            },
+            {
+              "phrase": "vaunt the benefits of something",
+              "meaningZh": "大肆宣扬某事的好处"
+            }
+          ]
+        },
+        {
+          "senseZh": "常见分词用法与名词",
+          "explanationZh": "vaunted 常作形容词，表示被大肆称赞的，语境中常带怀疑。名词 vaunt 指自夸的话，较少见。",
+          "collocations": [
+            {
+              "phrase": "a much-vaunted plan",
+              "meaningZh": "一个被大肆吹捧的计划"
+            },
+            {
+              "phrase": "an empty vaunt",
+              "meaningZh": "空洞的自夸"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "boast",
+          "comparisonZh": "在“夸耀”义上接近。vaunt 更正式，常带过度宣扬的批评；boast 更常用，可接 about/of 或直接接宾语。a hotel boasts a pool 常客观介绍设施，不宜硬换成带吹嘘感的 vaunts。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "brag",
+          "comparisonZh": "都能表示吹牛、自夸。brag 更口语，通常用 brag about/of something 或 brag that；vaunt something 可直接接被夸耀的对象。不要照搬宾语结构写成 brag one’s achievements。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "VAUNT / WANT",
+          "textZh": "把 vaunt 和 want（想要）的声音近似连起来：他明明只是想要一辆豪车，却对人吹嘘“我早就有了”。由“把想要的说成已经拥有的”记 vaunt“吹嘘”。这是声音联想，vaunt 并不要求每次都说假话。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "VAUNT / VAIN",
+          "textZh": "把 vaunt 与 vain（自负的、虚荣的）连着记：一个自负的人只得了小奖，却举着奖牌反复夸耀。vain 是这种自负，vaunt 是把它说成夸耀的话。两词都源于拉丁语 vanus；这里借真实的词族联系，记“自负地吹嘘”。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The local people like to vaunt the glories of their faded past.",
+          "translationZh": "当地人喜欢夸耀早已远去的昔日辉煌。",
+          "explanationZh": "vaunt 直接接 the glories，语气带有对过度夸耀的批评。"
+        },
+        {
+          "textEn": "He never misses an opportunity to vaunt his achievements.",
+          "translationZh": "他从不放过任何夸耀自己成就的机会。",
+          "explanationZh": "vaunt 直接接 achievements，表示夸耀成就。"
+        }
+      ]
+    }
+  ]
+}

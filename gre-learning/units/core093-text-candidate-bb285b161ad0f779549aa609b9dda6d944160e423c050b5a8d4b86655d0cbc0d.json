@@ -1,0 +1,395 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 1078,
+      "word": "halcyon",
+      "ipa": "/ˈhælsiən/",
+      "pos": "adj.",
+      "coreMeaningZh": "宁静幸福的；美好安乐的；繁荣的",
+      "coreEn": "Peaceful and happy, often describing an idealized time in the past; also marked by prosperity.",
+      "coreImageZh": "男孩坐在湖边，望着平静的水面，回味从前安宁快乐的夏日。halcyon 常形容记忆中的美好时光，不只是环境里没有声音。",
+      "mnemonics": [
+        {
+          "method": "HALCYON · 海西岸",
+          "textZh": "halcyon 的声音借“海西岸”来记：海西岸的落日下，风平浪静，一家人悠闲地度假。回想这些安宁幸福的日子，就是 halcyon days。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": true
+        },
+        {
+          "method": "HALCYON · 平息风浪的翠鸟",
+          "textZh": "halcyon 原本也指传说中的翠鸟。古人相信，它在海上筑巢时，风浪会平息，好让它安心孵蛋。由“翠鸟安稳孵蛋的平静日子”，记住 halcyon 的“安宁美好的”。",
+          "original": true,
+          "kind": "etymology",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "昔日美好的时光",
+          "explanationZh": "带文学色彩，通常放在名词前。halcyon days 尤其常见，指回忆中幸福、安宁或顺遂的岁月，常带怀旧和美化过去的意味。",
+          "collocations": [
+            {
+              "phrase": "halcyon days",
+              "meaningZh": "昔日美好的时光"
+            },
+            {
+              "phrase": "the halcyon days of youth",
+              "meaningZh": "青春时代的美好岁月"
+            }
+          ]
+        },
+        {
+          "senseZh": "宁静与繁荣",
+          "explanationZh": "也可形容平静的气氛，或事业、行业繁荣的时期。词义不限于安静，也可能突出生活幸福或事业顺利；不能仅凭没有噪声就把任何地点称为 halcyon。",
+          "collocations": [
+            {
+              "phrase": "a halcyon period",
+              "meaningZh": "安宁繁荣的时期"
+            },
+            {
+              "phrase": "a halcyon atmosphere",
+              "meaningZh": "宁静祥和的氛围"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She recalled the halcyon days of her youth.",
+          "translationZh": "她回想起青春时代那些美好的日子。",
+          "explanationZh": "recalled 与 halcyon days 呼应，带出对过去幸福岁月的怀念。"
+        },
+        {
+          "textEn": "It was all a far cry from those halcyon days in 1990, when he won three tournaments on the European tour.",
+          "translationZh": "这一切与他在1990年三次赢得欧洲巡回赛冠军的辉煌岁月相去甚远。",
+          "explanationZh": "halcyon 在这里突出过去的成功与顺遂；a far cry from 表示与之相差很远。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "idyllic",
+          "comparisonZh": "描写令人向往的宁静幸福生活时接近。idyllic 常用于乡村、假期或环境，突出理想般的美好；halcyon 更常用于一段被怀念的岁月，也可强调繁荣。"
+        },
+        {
+          "word": "tranquil",
+          "comparisonZh": "描写平静氛围时可接近。tranquil 主要表示安静、无扰，不必包含幸福、繁荣或怀旧；halcyon days 里的“美好岁月”不能总缩减成安静。",
+          "source": "weichen_gre"
+        }
+      ]
+    },
+    {
+      "number": 797,
+      "word": "ennui",
+      "ipa": "/ˌɒnˈwiː/",
+      "pos": "n.",
+      "coreMeaningZh": "百无聊赖；无聊而倦怠的感觉",
+      "coreEn": "A weary feeling of boredom and dissatisfaction when nothing seems interesting or engaging.",
+      "coreImageZh": "游戏和球就在眼前，男孩却什么都不想玩，托着腮发呆。ennui 是无聊、提不起兴趣的倦怠感，不只是身体累了。",
+      "mnemonics": [
+        {
+          "method": "ENNUI / ANNOY · 无聊得烦",
+          "textZh": "把 ennui 与 annoy（使烦恼）并排记：同样的旧话说了一遍又一遍，先听烦了，后来连听都懒得听。ennui 是这种无聊、提不起精神的倦怠；它与 annoy 确实同源。",
+          "original": true,
+          "kind": "word_family",
+          "weak": false
+        },
+        {
+          "method": "ENNUI · 《头脑特工队2》的丧丧",
+          "textZh": "《头脑特工队2》里，Ennui 是“丧丧”：整个人软塌塌，连头都懒得抬，对什么都提不起兴趣。角色名字 Ennui 本身就表示百无聊赖。",
+          "original": true,
+          "kind": "reviewed_method",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不可数的精神感受",
+          "explanationZh": "通常作不可数名词，带文学或较正式色彩。常指长期没有新鲜感、缺少兴趣的无聊与不满足，可能伴随精神疲倦；不是医学诊断，也不等于肌肉劳累。",
+          "collocations": [
+            {
+              "phrase": "a sense of ennui",
+              "meaningZh": "一种百无聊赖的感觉"
+            },
+            {
+              "phrase": "suffer from ennui",
+              "meaningZh": "感到无聊倦怠"
+            }
+          ]
+        },
+        {
+          "senseZh": "生活环境中的无聊",
+          "explanationZh": "可与 suburban、existential 等修饰语连用，描写郊区生活或对人生感到的倦怠。通常不直接说 an ennui；文学用法有时可加冠词，表示一种特定的倦怠。",
+          "collocations": [
+            {
+              "phrase": "suburban ennui",
+              "meaningZh": "郊区生活中的无聊倦怠"
+            },
+            {
+              "phrase": "overcome ennui",
+              "meaningZh": "摆脱百无聊赖"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The whole country seems to be affected by the ennui of winter.",
+          "translationZh": "整个国家似乎都受到了冬日无聊倦怠的影响。",
+          "explanationZh": "the ennui of winter 把倦怠与冬季生活的沉闷联系起来。"
+        },
+        {
+          "textEn": "The endless lecture filled him with ennui.",
+          "translationZh": "那场没完没了的讲座让他感到无聊倦怠。",
+          "explanationZh": "with ennui 按不可数名词使用，描写听讲者的精神感受。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "boredom",
+          "comparisonZh": "一般表示无聊时可替换。boredom 更日常、范围更广；ennui 较有文学色彩，常兼有精神疲倦和对生活不满足的感觉。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "tedium",
+          "comparisonZh": "都与乏味有关。tedium 常强调单调、冗长的活动本身，或由此带来的无聊；ennui 更突出人的内在倦怠，也可能没有某个具体的单调任务。",
+          "source": "weichen_gre"
+        }
+      ]
+    },
+    {
+      "number": 4776,
+      "word": "hagiographic",
+      "ipa": "/ˌhæɡiəˈɡræfɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "过度美化人物的；圣徒传记的",
+      "coreEn": "Presenting a person with excessive, uncritical admiration, as if nearly perfect; also relating to accounts of saints’ lives.",
+      "coreImageZh": "男孩给传记中的人物添上光环，声称要把他写得十全十美，缺点一概不提。hagiographic 指这种近乎圣人化的描写，不是普通的欣赏或赞扬。",
+      "mnemonics": [
+        {
+          "method": "HAGIOGRAPHIC · 给画像加光环",
+          "textZh": "把 hagiographic 的外形借联到 halo（光环）＋ graphic（图像）：给普通人的画像加上圣人光环，把缺点全部擦掉。像这样只颂扬、把人物写得近乎完美，就是 hagiographic。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "HAGIOGRAPHIC · 把凡人写成圣人",
+          "textZh": "hagio- 表示“圣者、神圣”，graphic 与描写有关：把普通人的生平写成圣徒传，只赞颂他的美德、不提缺点。这就是 hagiographic 的“过度美化人物的”。",
+          "original": true,
+          "kind": "etymology",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不加批判地美化人物",
+          "explanationZh": "常修饰 biography、account、portrait、film、tone 等，批评作品只颂扬人物而掩盖缺点。形容的是描写方式，不是直接说被描写的人本身道德高尚。",
+          "collocations": [
+            {
+              "phrase": "a hagiographic biography",
+              "meaningZh": "过度美化主人公的传记"
+            },
+            {
+              "phrase": "a hagiographic portrait",
+              "meaningZh": "把人物描绘得近乎完美的作品"
+            }
+          ]
+        },
+        {
+          "senseZh": "圣徒传记的本义",
+          "explanationZh": "在宗教或历史研究中，也可中性地指有关圣徒生平的材料，不一定是在批评偏袒。名词为 hagiography，另一形容词形式为 hagiographical；需根据语境区分本义与批评性引申义。",
+          "collocations": [
+            {
+              "phrase": "hagiographic literature",
+              "meaningZh": "圣徒传记文学"
+            },
+            {
+              "phrase": "a hagiographic account",
+              "meaningZh": "圣徒生平记述；过度美化人物的记述"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The biography has been criticized for being too hagiographic.",
+          "translationZh": "这部传记因过度美化主人公而受到批评。",
+          "explanationZh": "too hagiographic 指缺乏批判距离，并非只说书写的是圣徒。"
+        },
+        {
+          "textEn": "One form of hagiographic literature that arose in Late Antiquity was collections of miracles.",
+          "translationZh": "古代晚期出现的一种圣徒传记文学形式是神迹汇编。",
+          "explanationZh": "这里出自历史学论述，hagiographic 用本义，说明研究对象与圣徒生平有关。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "adulatory",
+          "comparisonZh": "形容过度赞扬的传记或报道时接近。adulatory 更广泛地表示奉承、极力赞美；hagiographic 更突出把具体人物写得近乎完美、忽略缺点的理想化塑造。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "idealized",
+          "comparisonZh": "描写人物经过美化时有交集。idealized 可以用于人物、风景或计划，也未必含奉承意味；hagiographic 常针对人物记述并含不加批判地崇敬之意。"
+        }
+      ]
+    },
+    {
+      "number": 60,
+      "word": "adulterate",
+      "ipa": "/əˈdʌltəreɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "掺假；掺入其他成分使不纯或品质降低",
+      "coreEn": "To make a substance less pure or lower in quality by adding another, often inferior, substance.",
+      "coreImageZh": "男孩把水倒进原本纯净的蜂蜜里，蜂蜜被掺稀、品质降低。adulterate 的关键是加入别的成分使它不纯，不是任何混合都叫掺假。",
+      "mnemonics": [
+        {
+          "method": "ADULTERATE · ADD + ALTER",
+          "textZh": "把 adulterate 联到 add（加入）＋ alter（改变）：往纯牛奶里加水，把纯奶改成了掺水奶。加入别的成分，使原物不纯，就是 adulterate。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "ADULT TO RATE · 成人品评掺水酒",
+          "textZh": "把 adulterate 的声音借联到 adult to rate（成人来评分）：成年人品评一杯酒，发现里面兑了水，纯度和品质都降了。往酒里掺水，使它不再纯正，就是 adulterate。这是近音联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物动词与掺入物",
+          "explanationZh": "直接接被掺杂的东西，常用于食品、饮料等。adulterate A with B 表示往 A 中掺入 B，使 A 不纯或品质变差；并非所有改善口味的配料或正常混合都属于 adulterate。",
+          "collocations": [
+            {
+              "phrase": "adulterate milk with water",
+              "meaningZh": "往牛奶里掺水"
+            },
+            {
+              "phrase": "adulterate food",
+              "meaningZh": "在食品中掺杂掺假"
+            }
+          ]
+        },
+        {
+          "senseZh": "常见被动形式",
+          "explanationZh": "常用 be adulterated with，重点在产品含有杂质或低价值成分。可含故意牟利的意味，但词义本身不要求每次都能证明欺诈意图；名词为 adulteration。",
+          "collocations": [
+            {
+              "phrase": "be adulterated with cheaper ingredients",
+              "meaningZh": "被掺入较廉价的原料"
+            },
+            {
+              "phrase": "adulterated honey",
+              "meaningZh": "掺了假的蜂蜜"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "There were complaints that the beer had been adulterated with water.",
+          "translationZh": "有人投诉说啤酒被掺了水。",
+          "explanationZh": "had been adulterated with water 表示啤酒因被加水而不再纯正。"
+        },
+        {
+          "textEn": "The water supply had been adulterated with chemicals from the soil.",
+          "translationZh": "供水中混入了来自土壤的化学物质。",
+          "explanationZh": "这里突出水质因外来成分而变得不纯，并未说明有人故意造假。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "contaminate",
+          "comparisonZh": "表示混入外来成分使不纯时接近。contaminate 更常强调污染或有害物，可能是意外；adulterate 常强调掺入别的成分使品质下降，掺入物本身未必有毒。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "dilute",
+          "comparisonZh": "掺水使液体浓度降低时可重合。dilute 只说明浓度降低，可能完全合理；adulterate 更广，也可掺入固体杂质，并带不纯或品质受损的含义。"
+        }
+      ]
+    },
+    {
+      "number": 2069,
+      "word": "resurgence",
+      "ipa": "/rɪˈsɜːdʒəns/",
+      "pos": "n.",
+      "coreMeaningZh": "再度兴起；复苏，复兴；重新增强",
+      "coreEn": "A renewed increase in activity, strength, popularity, or interest after a period of decline or inactivity.",
+      "coreImageZh": "一度萎蔫的植物经过照料，又长得旺盛起来。画面用生长回升来表现 resurgence：先衰落、后重新兴起，不是从未出现过的新生事物。",
+      "mnemonics": [
+        {
+          "method": "RE + SURGE · 浪潮再起",
+          "textZh": "resurgence 中 re- 表示“再”，surge 是“涌起、猛增”。想象退下去的浪潮又涌了上来：先落下，再起来，便是“再度兴起、复苏”。",
+          "original": false,
+          "kind": "word_family",
+          "weak": false
+        },
+        {
+          "method": "RE＋SURGEONS · 外科医生重返诊所",
+          "textZh": "把 resurgence 近音联到 re（再次）＋surgeons（外科医生们）：停摆已久的诊所重新开门，几位外科医生回来接诊，手术业务再次兴旺起来。由“医生们回来，诊所再兴起”，记 resurgence“复苏、重新兴起”。这是近音联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "重新兴起或增强",
+          "explanationZh": "较正式，常按单数或不可数名词使用。a resurgence of 后接重新兴起的事物；a resurgence in 常接需求、兴趣、受欢迎程度等指标。重点是先前已经减弱或沉寂过。",
+          "collocations": [
+            {
+              "phrase": "a resurgence of interest",
+              "meaningZh": "兴趣重新兴起"
+            },
+            {
+              "phrase": "a resurgence in demand",
+              "meaningZh": "需求重新增长"
+            }
+          ]
+        },
+        {
+          "senseZh": "不只用于好事",
+          "explanationZh": "既可指文化、经济或兴趣复苏，也可指疾病、暴力、通胀等重新加剧；resurgence 本身不保证是好消息。常用 see、experience、enjoy a resurgence，形容词为 resurgent。",
+          "collocations": [
+            {
+              "phrase": "experience a resurgence",
+              "meaningZh": "经历复苏或再度兴起"
+            },
+            {
+              "phrase": "a resurgence of violence",
+              "meaningZh": "暴力活动再度加剧"
+            }
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The creation of independent states has led to a resurgence of nationalism.",
+          "translationZh": "独立国家的建立导致了民族主义的再度兴起。",
+          "explanationZh": "a resurgence of nationalism 指已有思潮重新增强，不是第一次出现。"
+        },
+        {
+          "textEn": "There’s been a resurgence of criticism of the president.",
+          "translationZh": "对总统的批评又重新高涨起来。",
+          "explanationZh": "resurgence 并不自带褒义，这里指批评声浪再次增强。"
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "revival",
+          "comparisonZh": "指沉寂后恢复活力或流行时非常接近。resurgence 常突出活动、力量或数量重新增长；revival 还可专指戏剧重新上演或宗教复兴，这些固定义不宜一律替换。"
+        },
+        {
+          "word": "upsurge",
+          "comparisonZh": "都可表示明显增长。upsurge 不要求先前衰落或中断；resurgence 明确强调“又起来了”。从未流行过的新产品销量激增可以是 upsurge，未必是 resurgence。"
+        }
+      ]
+    }
+  ]
+}

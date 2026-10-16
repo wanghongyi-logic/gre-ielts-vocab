@@ -1,0 +1,380 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4907,
+      "word": "affiliate",
+      "ipa": "v. /əˈfɪlieɪt/; n. /əˈfɪliət/",
+      "pos": "v.; n.",
+      "coreMeaningZh": "使加入；使隶属；附属机构或成员机构",
+      "coreEn": "To formally connect with an organization; an organization connected to a larger one.",
+      "coreImageZh": "园艺社正式加入更大的园艺协会，成为其中的成员。",
+      "usage": [
+        {
+          "senseZh": "正式加入、建立组织联系",
+          "explanationZh": "常说 affiliate with/to 或 be affiliated with。联系可以是会员关系、合作归属或隶属关系，不一定意味着完全由对方拥有。动词词尾读 /eɪt/。",
+          "collocations": [
+            {
+              "phrase": "affiliate with an association",
+              "meaningZh": "加入一个协会"
+            },
+            {
+              "phrase": "be affiliated with a university",
+              "meaningZh": "与一所大学有关联或隶属关系"
+            }
+          ]
+        },
+        {
+          "senseZh": "附属机构、成员机构",
+          "explanationZh": "名词词尾读 /ət/；可指集团成员企业、地方分支或加盟机构，具体控制关系要看语境。",
+          "collocations": [
+            {
+              "phrase": "a local affiliate",
+              "meaningZh": "地方成员机构"
+            },
+            {
+              "phrase": "a network affiliate",
+              "meaningZh": "广播电视网的加盟台"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "associate",
+          "comparisonZh": "都可表示建立联系；affiliate 常强调正式的组织关系，associate 的联系范围更广，也可以只是交往或观念上的关联。"
+        },
+        {
+          "word": "subsidiary",
+          "comparisonZh": "名词 affiliate 可泛指关联企业；subsidiary 通常明确指受另一家公司控制的子公司，范围更窄。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AF + FILI + ATE · 加入大家庭",
+          "textZh": "把 affiliate 看成一家组织“收进一个新成员”的画面。af- 是 ad-（向、到）的变体，fili 来自拉丁语“儿子”，-ate 构成这里的动词；真实词史有“收为儿子”的意思。用熟悉的 family（家庭）画面带出 fili：小机构加入大组织的大家庭，成为正式成员。family 只是画面提示，不是说它与 fili 同源。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a silly ape · 猿猴入会",
+          "textZh": "把整个动词 affiliate 联想到 a silly ape（一只傻乎乎的猿猴）：童话里的猿猴填好入会表，正式加入森林园艺协会。短语 /ə ˈsɪli eɪp/ 与 /əˈfɪlieɪt/ 的主要差别是 /s/→/f/、末尾 /p/→/t/；整幅“猿猴正式入会”的近音画面提示加入组织，不是词源。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The school gardening club decided to affiliate with the regional gardening association.",
+          "translationZh": "学校园艺社决定加入地区园艺协会。",
+          "explanationZh": "社团成为更大协会的正式成员，体现组织联系。"
+        },
+        {
+          "textEn": "The station is a local affiliate of a national television network.",
+          "translationZh": "这家电视台是一家全国电视网的地方加盟台。",
+          "explanationZh": "affiliate 在这里是名词，指与较大机构建立联系的成员机构。"
+        }
+      ]
+    },
+    {
+      "number": 2708,
+      "word": "affirm",
+      "ipa": "/əˈfɜːm/",
+      "pos": "v.",
+      "coreMeaningZh": "肯定地声明；确认；维护",
+      "coreEn": "To state firmly that something is true, or to confirm support for something.",
+      "coreImageZh": "妈妈询问昨天是否浇过花，孩子明确确认自己已经浇过。",
+      "usage": [
+        {
+          "senseZh": "肯定地说某事属实",
+          "explanationZh": "强调明确、坚定地表达或确认，并不保证说话内容实际正确。affirm that 后可接完整陈述；回答已发生的事，重点是确认事实。",
+          "collocations": [
+            {
+              "phrase": "affirm that something is true",
+              "meaningZh": "肯定地声明某事属实"
+            },
+            {
+              "phrase": "affirm one’s innocence",
+              "meaningZh": "坚称自己无辜"
+            }
+          ]
+        },
+        {
+          "senseZh": "确认支持、维护决定",
+          "explanationZh": "可用于价值、支持立场或法院维持原判；不是单纯表示将来会做某事的承诺。",
+          "collocations": [
+            {
+              "phrase": "affirm support for a plan",
+              "meaningZh": "确认支持一个计划"
+            },
+            {
+              "phrase": "affirm a decision",
+              "meaningZh": "维持或确认一项决定"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "assert",
+          "comparisonZh": "都可表示肯定地陈述。assert 常突出强烈主张，affirm 常突出确认属实或重申支持。"
+        },
+        {
+          "word": "confirm",
+          "comparisonZh": "都可用于确认。confirm 常侧重用证据或核实过程证实，affirm 更突出明确肯定的表态。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AF + FIRM · 坚定确认",
+          "textZh": "firm 是熟悉的“牢固的、坚定的”：affirm 中完整保留 firm，前面的 af- 来自表示“向”的 ad-。真实词史就是“使坚定、确认”。想象有人问“昨天浇花了吗？”，孩子用 firm 的语气明确说“浇过了”：把一个陈述坚定地确认下来，就是 affirm。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a form · 确认表上事实",
+          "textZh": "把整个 affirm 联想到 a form（一张表）：表上记录昨天做过的事，你逐项核对后明确声明“这些内容属实”。a form /ə ˈfɔːm/ 与 affirm /əˈfɜːm/ 主要差在中间的元音；用“确认表上事实”的完整场景记肯定、确认。这是近音联想，不是词源。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "When his mother asked about the plant, Leo affirmed that he had watered it the day before.",
+          "translationZh": "妈妈问起那盆植物时，利奥明确确认自己前一天已经浇过水。",
+          "explanationZh": "affirmed 确认的是过去已经完成的事，不是保证以后去浇水。"
+        },
+        {
+          "textEn": "The court affirmed the earlier decision after reviewing the appeal.",
+          "translationZh": "法院审理上诉后维持了此前的裁决。",
+          "explanationZh": "这里指正式确认原决定继续有效。"
+        }
+      ]
+    },
+    {
+      "number": 68,
+      "word": "affluent",
+      "ipa": "/ˈæfluənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "富裕的；物质生活优裕的",
+      "coreEn": "Having substantial money, possessions, or material resources.",
+      "coreImageZh": "虚构故事中的女主人拥有宽敞住宅、充足食物和丰富的物质资源。",
+      "usage": [
+        {
+          "senseZh": "拥有较多财富、物质资源",
+          "explanationZh": "现代常用义是富裕，可形容人、家庭、地区或社会，重点是经济和物质条件充足。",
+          "collocations": [
+            {
+              "phrase": "an affluent family",
+              "meaningZh": "富裕的家庭"
+            },
+            {
+              "phrase": "an affluent suburb",
+              "meaningZh": "富裕的郊区"
+            },
+            {
+              "phrase": "an affluent society",
+              "meaningZh": "富裕社会"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "opulent",
+          "comparisonZh": "形容财富充裕时接近。opulent 更容易突出豪华、奢丽的外在表现；affluent 可只说明经济条件优裕，不必奢华张扬。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "well-to-do",
+          "comparisonZh": "都可形容家庭经济宽裕。well-to-do 常有生活舒适、家境不错的语气；affluent 也常用于分析富裕地区或社会群体。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "wealthy",
+          "comparisonZh": "都指富裕。wealthy 直接强调拥有财富，affluent 常连同充足的物质资源和优裕生活条件一起描述。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AF + FLUENT · 财富流入",
+          "textZh": "fluent（流利的）让人想到话语顺畅地流出；它和 affluent 都有真实的“流动”词源。affluent 可完整看成 af + fluent：af- 来自“向”，词史是“流入”。把画面换成财富和资源不断流入家庭，物质生活充足，就得到现代常用义“富裕的”。不是说英语流利的人一定有钱。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a flu ant · 富裕的小蚂蚁",
+          "textZh": "把整个 affluent 联想到拼接的近音提示 a flu ant：flu 是流感，ant 是蚂蚁。童话里的小蚂蚁得了流感，在宽敞的家里休息，储蓄、食物和生活用品都很充足；这些资源让人记住“富裕的”。/ə fluː ænt/ 与 /ˈæfluənt/ 的首尾元音和重音不同。这是自编提示，不是惯用英语短语或词源。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "In the story, the affluent hostess had a spacious home and more than enough food and supplies for her guests.",
+          "translationZh": "故事里，富裕的女主人拥有宽敞的住宅，也有绰绰有余的食物和用品招待客人。",
+          "explanationZh": "充足的财富和物质资源支持 affluent 的现代常用义。"
+        },
+        {
+          "textEn": "The report compared access to libraries in affluent and low-income neighborhoods.",
+          "translationZh": "报告比较了富裕社区与低收入社区的图书馆使用条件。",
+          "explanationZh": "affluent 描述社区居民整体较优裕的经济条件。"
+        }
+      ]
+    },
+    {
+      "number": 70,
+      "word": "aggravate",
+      "ipa": "/ˈæɡrəveɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "使恶化；加重；使恼火",
+      "coreEn": "To make an existing problem worse; informally, to annoy someone.",
+      "coreImageZh": "纸上原有一小块湿颜料，擦了一下反而扩散，污渍变得更严重。",
+      "usage": [
+        {
+          "senseZh": "使已有问题更严重",
+          "explanationZh": "常用于问题、冲突、伤情或不利处境，包含“本来已有，现在加重”的变化。",
+          "collocations": [
+            {
+              "phrase": "aggravate a problem",
+              "meaningZh": "使问题恶化"
+            },
+            {
+              "phrase": "aggravate an injury",
+              "meaningZh": "加重伤势"
+            },
+            {
+              "phrase": "aggravate tensions",
+              "meaningZh": "加剧紧张局势"
+            }
+          ]
+        },
+        {
+          "senseZh": "使人恼火",
+          "explanationZh": "这是已有的非正式用法。aggravate someone 可以表示惹恼某人；与“使问题恶化”有关但不能在每句中都互换。",
+          "collocations": [
+            {
+              "phrase": "aggravate someone",
+              "meaningZh": "使某人恼火"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "exacerbate",
+          "comparisonZh": "都表示使原有问题更严重。exacerbate 通常较正式，常用于局势、症状等；aggravate 还有非正式的“惹恼某人”义，exacerbate 不直接这样替换。",
+          "sources": [
+            "zhangwei_dedicated_2021",
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "worsen",
+          "comparisonZh": "都可表示恶化。aggravate 通常直接接被加重的问题；worsen 既可说某事使问题恶化，也可说问题自身 worsened。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AG + GRAV + ATE · 再添重量",
+          "textZh": "用熟悉的 gravity（重力）带出 grav 的“重”：它们确有共同的拉丁语来源。ag- 是 ad-（向、加到）的变体，-ate 是这里的动词结尾。想象一个问题本来已经很沉重，又往上加重量，负担更重，问题更坏：aggravate 就是加重、使恶化。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a grey vet · 队伍更长了",
+          "textZh": "把整个 aggravate 联想到 a grey vet（一位穿灰衣的兽医，vet＝兽医）：候诊室本来就排着队，这位兽医又迟到了，等待的队伍越来越长，已有的拥堵因此加重。/ə ɡreɪ vet/ 与 /ˈæɡrəveɪt/ 的辅音对应，但三个元音和重音不同；这是“迟到使排队问题更严重”的近音场景，不是词源。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Wiping the wet paint aggravated the stain by spreading it across more of the paper.",
+          "translationZh": "擦拭湿颜料把它抹到纸上更大的范围，反而使污渍更严重。",
+          "explanationZh": "污渍原来已存在，擦拭使其扩大，体现加重而非首次造成。"
+        },
+        {
+          "textEn": "The constant interruptions aggravated her while she was trying to finish the report.",
+          "translationZh": "她试着完成报告时，接连不断的打断令她很恼火。",
+          "explanationZh": "这里使用非正式的“使人恼火”义。"
+        }
+      ]
+    },
+    {
+      "number": 4908,
+      "word": "aghast",
+      "ipa": "UK /əˈɡɑːst/; US /əˈɡæst/",
+      "pos": "adj.",
+      "coreMeaningZh": "震惊而惊恐的；惊愕失色的",
+      "coreEn": "Filled with shock, horror, or dismay at something distressing.",
+      "coreImageZh": "孩子看见自己做好的纸板城堡已经被压坏，震惊又难过。",
+      "usage": [
+        {
+          "senseZh": "因糟糕或骇人的事情而震惊",
+          "explanationZh": "常放在 be、stand 等之后作表语，强调震惊伴随惊恐、错愕或沮丧，通常不是收到好消息时的开心惊喜。",
+          "collocations": [
+            {
+              "phrase": "be aghast at the news",
+              "meaningZh": "对消息感到惊愕"
+            },
+            {
+              "phrase": "stand aghast",
+              "meaningZh": "惊愕地站着"
+            },
+            {
+              "phrase": "be aghast to discover something",
+              "meaningZh": "发现某事后惊愕不已"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "appalled",
+          "comparisonZh": "都可表达对坏事的震惊和不安。appalled 常更突出强烈反感或道德上的震骇，aghast 可侧重一时惊愕失色。"
+        },
+        {
+          "word": "astonished",
+          "comparisonZh": "都可表示吃惊。astonished 可用于令人欣喜的意外；aghast 通常带有惊恐、沮丧等负面感受。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "a ghost · 惊见鬼影",
+          "textZh": "把整个 aghast 联想到 a ghost（一个鬼影）：在虚构故事里，人物突然看见鬼影，震惊得脸色都变了。英式 a ghost /ə ˈɡəʊst/ 与 aghast /əˈɡɑːst/ 主要差在中间的元音；这个完整近音画面提示“惊愕、惊恐”，不是把 a + ghost 当成真实构词。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a gasp · 倒吸一口气",
+          "textZh": "把整个 aghast 联想到 a gasp（一声倒吸气）：孩子看到精心做好的模型被压坏，猛地倒吸一口气，震惊又难过。按英式发音，a gasp /ə ˈɡɑːsp/ 与 aghast /əˈɡɑːst/ 主要差在末尾 /p/、/t/。记住坏消息引发的惊愕反应；这里不是运动后喘气。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Leo was aghast to find his finished cardboard castle crushed on the table.",
+          "translationZh": "利奥发现自己做好的纸板城堡在桌上被压坏了，惊愕得说不出话。",
+          "explanationZh": "坏掉的作品带来震惊和难过，不是愉快的惊喜。"
+        },
+        {
+          "textEn": "The committee was aghast at the amount of food thrown away after the event.",
+          "translationZh": "委员会对活动结束后被扔掉的食物数量感到震惊。",
+          "explanationZh": "浪费的规模令人惊愕和不安。"
+        }
+      ]
+    }
+  ]
+}

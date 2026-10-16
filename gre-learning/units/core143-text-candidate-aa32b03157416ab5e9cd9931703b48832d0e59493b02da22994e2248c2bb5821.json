@@ -1,0 +1,415 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 23,
+      "word": "abstain",
+      "ipa": "/əbˈsteɪn/",
+      "pos": "v.",
+      "coreMeaningZh": "自愿克制不做；戒绝；投票时弃权",
+      "coreEn": "To choose not to do or consume something; also, to choose not to vote.",
+      "coreImageZh": "男孩很想吃桌上的蛋糕，手伸到一半却主动收回来，决定今天不吃甜点。蛋糕仍在眼前，也没有人阻止他；abstain 强调自己选择克制。",
+      "usage": [
+        {
+          "senseZh": "自愿不做或不吃某物",
+          "explanationZh": "常用 abstain from + 名词或动词-ing；from 不可省成直接接宾语。一次克制也可用，不一定永久戒除。",
+          "collocations": [
+            {
+              "phrase": "abstain from alcohol",
+              "meaningZh": "不饮酒"
+            },
+            {
+              "phrase": "abstain from eating sweets",
+              "meaningZh": "克制不吃甜食"
+            }
+          ]
+        },
+        {
+          "senseZh": "表决时弃权",
+          "explanationZh": "表示不投赞成票，也不投反对票；可单独用 abstain。",
+          "collocations": [
+            {
+              "phrase": "abstain from voting",
+              "meaningZh": "投票时弃权"
+            },
+            {
+              "phrase": "three members abstained",
+              "meaningZh": "三名成员弃权"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "refrain from",
+          "comparisonZh": "表示克制不做某事时接近：abstain from/refrain from 后接名词或动词-ing；abstain 尤常用于饮食、饮酒及投票。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "forgo",
+          "comparisonZh": "forgo 表示自愿放弃原可享有的东西，直接接宾语：forgo dessert；abstain 则说 abstain from dessert，不能原样替换介词结构。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "abSTAIN：为免污渍，忍住不喝",
+          "textZh": "abstain 里完整藏着 stain（污渍）。穿着白衬衫面对一杯会留下 stain 的红汁，你主动把手收回，决定不喝。由“为免污渍，自愿不喝”记克制；这是拼写联想，不是词源。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        },
+        {
+          "method": "abs + tain：把自己拉住",
+          "textZh": "abs- 表示离开，-tain 与 contain（容纳、装住）里的 tain 同源，带有“握住、保持”的意思。想象伸手取蛋糕前，把自己稳稳拉住，和诱惑保持距离。整个词的词源画面就是把自己留在某事之外，从而自愿不做。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy chose to abstain from sweets for the day.",
+          "translationZh": "男孩决定这一天不吃甜食。",
+          "explanationZh": "chose 和 for the day 表明这是主动而有期限的克制。"
+        },
+        {
+          "textEn": "Five members voted in favor, two voted against, and one abstained.",
+          "translationZh": "五名成员投赞成票，两名投反对票，一名弃权。",
+          "explanationZh": "abstained 表示没有加入任何一方的投票。"
+        }
+      ]
+    },
+    {
+      "number": 339,
+      "word": "chauvinistic",
+      "ipa": "/ˌʃəʊ.vɪˈnɪs.tɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "盲目爱国的；盲目认定本群体优越的；沙文主义的",
+      "coreEn": "Showing an unreasonable belief that one’s own country or group is superior to others.",
+      "coreImageZh": "两座木桥模型明明一样好，男孩却只因其中一座来自自己的国家，就断言它一定胜过别国作品。chauvinistic 批评这种拒绝公平比较的盲目本国优越感。",
+      "usage": [
+        {
+          "senseZh": "盲目的本国优越感",
+          "explanationZh": "不是一般的爱国或自豪，而是过度偏袒本国、轻视别国，通常带贬义。",
+          "collocations": [
+            {
+              "phrase": "chauvinistic nationalism",
+              "meaningZh": "带有盲目优越感的民族主义"
+            },
+            {
+              "phrase": "a chauvinistic attitude",
+              "meaningZh": "盲目偏袒本国的态度"
+            }
+          ]
+        },
+        {
+          "senseZh": "盲目偏袒自己的群体",
+          "explanationZh": "也可用于性别等群体；male chauvinistic attitudes 指认为男性理应高于女性的态度。",
+          "collocations": [
+            {
+              "phrase": "male chauvinistic attitudes",
+              "meaningZh": "大男子主义态度"
+            },
+            {
+              "phrase": "chauvinistic assumptions",
+              "meaningZh": "认定本群体优越的偏见"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "jingoistic",
+          "comparisonZh": "批评极端爱国态度时接近；jingoistic 更容易带有好战、对外强硬的意味，chauvinistic 还可涉及性别或其他群体。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "nationalistic",
+          "comparisonZh": "都可涉及本国利益或优越感，但 nationalistic 本身未必包含同等强烈的盲目偏见，也不适合替代性别语境中的 chauvinistic。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "CHAUVINistic：舞台上的狂热沙文",
+          "textZh": "chauvinistic 中完整的 Chauvin 就是“沙文”这个名字。把名字直接记成舞台上的一个人：沙文狂热拥护拿破仑，不管事实怎样都坚持本国最好。这个词确实由这位戏剧人物得名；看到 Chauvin，就回想“沙文只认本国最好”的盲目优越感。后来也用于盲目认定自己的性别或群体高人一等。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        },
+        {
+          "method": "chauvin- / show + win：只展示本国胜利",
+          "textZh": "chauvin- 的声音可近似联想到 show（展示）+ win（获胜），其中 v 与 w 并不相同。想象一个人只 show 本国的 win，却把别国的成就全部遮住，坚称本国永远高人一等。由这种盲目偏袒记 chauvinistic；不是普通的庆祝获胜。",
+          "original": true,
+          "kind": "reviewed_method",
+          "weak": true
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His chauvinistic claim was that work from his own country was always superior.",
+          "translationZh": "他带着盲目本国优越感，声称自己国家的作品永远更好。",
+          "explanationZh": "always superior 揭示无条件的本国优越论。"
+        },
+        {
+          "textEn": "She challenged the chauvinistic assumption that women could not lead the team.",
+          "translationZh": "她反驳了那种认为女性无法带队的大男子主义偏见。",
+          "explanationZh": "这里针对性别群体的优越论，不涉及爱国。"
+        }
+      ]
+    },
+    {
+      "number": 766,
+      "word": "elucidate",
+      "ipa": "/ɪˈluː.sɪ.deɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "阐明；解释清楚",
+      "coreEn": "To make something clear or easier to understand by explaining it.",
+      "coreImageZh": "男孩不明白天平为何倾斜，老师解释较重的石头会压低那一侧。男孩眉头舒展，终于明白。elucidate 是把原来困惑的关系解释清楚。",
+      "usage": [
+        {
+          "senseZh": "解释清楚一个问题或原理",
+          "explanationZh": "语气正式，常接问题、过程或原因；也可单独说 Let me elucidate。",
+          "collocations": [
+            {
+              "phrase": "elucidate a difficult concept",
+              "meaningZh": "阐明一个难懂的概念"
+            },
+            {
+              "phrase": "elucidate the mechanism",
+              "meaningZh": "说明机制"
+            }
+          ]
+        },
+        {
+          "senseZh": "说明具体如何或为何发生",
+          "explanationZh": "可接 how、why 等引导的从句，突出使原来不清楚的关系变得明白。",
+          "collocations": [
+            {
+              "phrase": "elucidate how the system works",
+              "meaningZh": "阐明系统如何运作"
+            },
+            {
+              "phrase": "elucidate the reasons for the change",
+              "meaningZh": "说明变化的原因"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "illuminate",
+          "comparisonZh": "在 illuminate/elucidate a problem 中都可表示帮助理解；illuminate 还可指实际照亮，elucidate 不作普通的照明动词。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "enlighten",
+          "comparisonZh": "两者都可使人明白，但常见宾语不同：elucidate the issue 是阐明问题，enlighten someone about the issue 是让某人了解问题。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "eLUCIDate：把问题讲清楚",
+          "textZh": "看到 elucidate 中完整的 lucid，回想学过的 pellucid：水清澈、表达清楚易懂。这里的 lucid 就是“清楚的”；把原来难懂的内容解释到清楚明白，就是 elucidate——阐明、解释清楚。这是有依据的词族联系。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        },
+        {
+          "method": "Lucy + date：这个 date 到底什么意思？",
+          "textZh": "elucidate 中后段的声音很像 Lucy + date。Lucy 问：“date 在这句里是‘日期’，还是‘约会’？”你把这两个意思的区别解释清楚，让她不再混淆。用“给 Lucy 讲清 date”记 elucidate：阐明、解释清楚。这是近音联想，不是词源。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The teacher elucidated why the heavier stone made one side of the balance sink.",
+          "translationZh": "老师解释清楚了为什么较重的石头会使天平的一侧下沉。",
+          "explanationZh": "why 从句给出需要阐明的因果关系。"
+        },
+        {
+          "textEn": "A simple diagram helped elucidate the process.",
+          "translationZh": "一幅简单的示意图帮助说明了这个过程。",
+          "explanationZh": "阐明可以借助图示，不限于口头解释。"
+        }
+      ]
+    },
+    {
+      "number": 2402,
+      "word": "supercilious",
+      "ipa": "/ˌsuː.pəˈsɪl.i.əs/",
+      "pos": "adj.",
+      "coreMeaningZh": "傲慢轻蔑的；自以为高人一等的",
+      "coreEn": "Behaving as though one is superior to others and looking down on them.",
+      "coreImageZh": "同学认真展示自己做的纸船，男孩却抬起下巴、冷淡地侧目，觉得这点东西不值得看。supercilious 的重点是自以为高人一等，对别人的努力流露轻蔑。",
+      "usage": [
+        {
+          "senseZh": "形容轻视他人的态度与表情",
+          "explanationZh": "常带批评意味，不等于自然、自信的表现。",
+          "collocations": [
+            {
+              "phrase": "a supercilious smile",
+              "meaningZh": "傲慢轻蔑的微笑"
+            },
+            {
+              "phrase": "a supercilious manner",
+              "meaningZh": "目中无人的举止"
+            }
+          ]
+        },
+        {
+          "senseZh": "对某人表现傲慢",
+          "explanationZh": "可说 supercilious towards someone；不必有大声辱骂，轻蔑的神态也能体现。",
+          "collocations": [
+            {
+              "phrase": "be supercilious towards newcomers",
+              "meaningZh": "对新人态度傲慢"
+            },
+            {
+              "phrase": "a supercilious remark",
+              "meaningZh": "带有优越感的轻蔑话语"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "haughty",
+          "comparisonZh": "都表示自视甚高；supercilious 更突出对他人的轻蔑神态，haughty 更广泛地形容高傲、疏远。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "arrogant",
+          "comparisonZh": "arrogant 广泛批评自大、目中无人；supercilious 更容易让人想到居高临下的表情或语气。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "pompous",
+          "comparisonZh": "都可批评自高自大；pompous 更突出摆架子、故作重要，supercilious 更突出看不起别人的轻蔑。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "overbearing",
+          "comparisonZh": "都可表现傲慢；overbearing 还突出专横、压制他人，supercilious 可能只是冷淡轻蔑，并不一定强迫别人。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "SUPER + silly：我超强，你很蠢",
+          "textZh": "supercilious 前面的 super 清楚可见，中间 cili 的声音接近 silly（愚蠢的）。想象一个人心里说：“我是 super，你们都 silly。”这种自抬身价、把别人看低的态度，就是傲慢轻蔑。只是近音联想，不是真实构词。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        },
+        {
+          "method": "supercilious：高挑眉毛，居高临下",
+          "textZh": "supercilious 的词源画面是“眉毛”。不必另背拉丁语：看到开头熟悉的 super，就把眉毛也想成高高挑起；一个人抬眉斜眼看你，仿佛说“我高你一等”。用这种居高临下、看不起人的神态记“傲慢轻蔑”。这里的眉毛来自真实词源，super 帮忙唤起高高在上的画面；不是说所有挑眉都傲慢。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy gave his classmate’s paper boat a supercilious glance.",
+          "translationZh": "男孩傲慢轻蔑地瞥了一眼同学做的纸船。",
+          "explanationZh": "glance 把高人一等的态度落在具体的眼神上。"
+        },
+        {
+          "textEn": "Her supercilious tone made the new volunteers feel unwelcome.",
+          "translationZh": "她居高临下的语气让新志愿者觉得自己不受欢迎。",
+          "explanationZh": "supercilious 批评轻视他人的语气，不是单纯的正式口吻。"
+        }
+      ]
+    },
+    {
+      "number": 2538,
+      "word": "turgid",
+      "ipa": "/ˈtɜː.dʒɪd/",
+      "pos": "adj.",
+      "coreMeaningZh": "文风浮夸繁复的；肿胀的",
+      "coreEn": "Overblown and difficult to understand in style or language; also, swollen or distended.",
+      "coreImageZh": "讲者用庄严、繁复的辞藻讲了半天，男孩才发现他说的不过是开门。turgid 形容语言被过多的大话与修饰塞满，简单意思反而难懂。",
+      "usage": [
+        {
+          "senseZh": "批评语言浮夸、繁复难懂",
+          "explanationZh": "常修饰 prose、style、speech；不只是篇幅长，而是表达显得臃肿、晦涩。",
+          "collocations": [
+            {
+              "phrase": "turgid prose",
+              "meaningZh": "浮夸繁复的散文"
+            },
+            {
+              "phrase": "a turgid speech",
+              "meaningZh": "浮夸难懂的演讲"
+            }
+          ]
+        },
+        {
+          "senseZh": "字面义：充满而胀起",
+          "explanationZh": "可形容生物组织或水势膨胀。不要与 turbid（浑浊的）混淆。",
+          "collocations": [
+            {
+              "phrase": "turgid plant cells",
+              "meaningZh": "吸水膨胀的植物细胞"
+            },
+            {
+              "phrase": "turgid with water",
+              "meaningZh": "充满水而胀起"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "bombastic",
+          "comparisonZh": "都可批评语言浮夸；bombastic 更突出故作宏大的辞藻，turgid 还强调臃肿繁复、让人难以理解。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "florid",
+          "comparisonZh": "修饰文风时都可指过多装饰；florid 更突出辞藻华丽，turgid 更突出表达臃肿。florid 的面色红润义不能换成 turgid。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "pompous",
+          "comparisonZh": "形容语言浮夸时接近；pompous 更突出故作庄严重要，turgid 更强调堆砌辞藻而臃肿难懂。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "turgid：辞藻“特挤的”",
+          "textZh": "听到 turgid，可近似联想到“特挤的”，但不要把它当成标准读音。想象一句话里挤满宏大修饰，连简单意思都挤没了：辞藻特挤，表达浮夸繁复。这是帮助回想词义的近音画面。",
+          "original": false,
+          "kind": "reviewed_method",
+          "weak": false
+        },
+        {
+          "method": "turgid / turbid：G充气胀，B泥水浑",
+          "textZh": "把 turgid 和 turbid 并排看，只差中间的 g、b。turgid 的 G 提醒 gas（气体）：气球充满气就鼓胀；turbid 的 B 提醒 brown（棕色）：泥水发棕，浑浊不清。记住“G 充气胀，B 泥水浑”，turgid 是肿胀的，也可比喻文辞膨胀、浮夸。字母对应只是助记，不是词源。",
+          "original": true,
+          "kind": "reviewed_method",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The speaker’s turgid language made the simple instruction hard to follow.",
+          "translationZh": "讲者浮夸繁复的语言，让这条简单指示变得难以听懂。",
+          "explanationZh": "重点是语言过度修饰、妨碍理解，不只是听众不耐烦。"
+        },
+        {
+          "textEn": "The editor cut the turgid introduction to three clear sentences.",
+          "translationZh": "编辑把那段浮夸繁复的引言改成了三句清楚的话。",
+          "explanationZh": "删减针对表达臃肿，使内容更清楚。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,440 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 134,
+      "word": "appropriate",
+      "ipa": "v. /əˈprəʊprieɪt/；adj. /əˈprəʊpriət/",
+      "pos": "v.; adj.",
+      "coreMeaningZh": "擅自拿来己用；拨出作特定用途；合适的",
+      "coreEn": "As a verb, take for one’s own use or allocate for a purpose; as an adjective, suitable.",
+      "coreImageZh": "男孩把公用彩笔挪到自己面前，老师提醒他不能擅自独占。",
+      "usage": [
+        {
+          "senseZh": "动词：擅自占用或拿来己用",
+          "explanationZh": "把不属于自己的东西、想法或资源拿来使用，往往含未经许可的意味；是否涉及违法还取决于具体情况。动词末尾读 /eɪt/。",
+          "collocations": [
+            {
+              "phrase": "appropriate public resources",
+              "meaningZh": "擅自占用公共资源"
+            },
+            {
+              "phrase": "appropriate someone else’s idea",
+              "meaningZh": "把别人的想法拿来己用"
+            }
+          ]
+        },
+        {
+          "senseZh": "动词：拨出、留作特定用途",
+          "explanationZh": "机构把款项等指定给某个用途；这个意义本身不含擅自挪用的指责。",
+          "collocations": [
+            {
+              "phrase": "appropriate funds for repairs",
+              "meaningZh": "拨款用于维修"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容词：合适、恰当",
+          "explanationZh": "表示适合某人、目的或场合，常接 for 或 to；形容词末尾读 /ət/，与动词不同。",
+          "collocations": [
+            {
+              "phrase": "appropriate clothing",
+              "meaningZh": "合适的衣着"
+            },
+            {
+              "phrase": "appropriate for children",
+              "meaningZh": "适合儿童的"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "borrow",
+          "comparisonZh": "源表把它与动词 appropriate 相连，但重合有限。borrow 通常是经许可暂借并准备归还；appropriate 常把东西占作己用，可能未经许可。不能把普通借用都说成挪用。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "pilfer",
+          "comparisonZh": "都可涉及未经许可拿走东西。pilfer 特别指偷拿少量或小东西；appropriate 范围更广，可指占用资源、想法，也另有合法拨款义。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "suitable",
+          "comparisonZh": "只在 appropriate 的形容词“合适”义上接近，不能替换动词的占用或拨款。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AP + PROPRI + ATE · 变成自己的",
+          "textZh": "用熟悉的 property（财产、所有物）和 proper（合适的）连接 PROPRI“自己的”这个词族。AP- 对应“向、归于”，-ate 是这里的动词结尾；整个词的历史意思是“使成为自己的”。把公物归到自己手里，便容易记住“占作己用”；指定给某一用途则可引出“拨出”。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a pro pre-ate · 提前吃了别人的餐",
+          "textZh": "用声音拼接 a pro pre-ate：pro 指职业选手，pre- 是“提前”，ate 是“吃了”。一位选手未经同意，提前吃掉了给别人留的餐，把别人的那份拿来自己用。/ə prəʊ priː eɪt/ 很接近动词 /əˈprəʊprieɪt/，要把重音放在 pro 对应的音节；pre 的长音也只是提示。pre-ate 是为记忆拼出的表达，不是日常固定用语。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy tried to appropriate the shared colored pencils for his own drawing.",
+          "translationZh": "男孩想把公用彩笔独占下来，给自己画画用。",
+          "explanationZh": "彩笔属于大家共用，他未征求同意便想全部拿来自己使用。"
+        },
+        {
+          "textEn": "The committee appropriated part of its budget for repairs to the reading room.",
+          "translationZh": "委员会拨出部分预算，用于修缮阅览室。",
+          "explanationZh": "这里是把款项正式指定给某个用途，不是非法挪用。"
+        }
+      ]
+    },
+    {
+      "number": 4928,
+      "word": "approximate",
+      "ipa": "adj. /əˈprɒksɪmət/；v. /əˈprɒksɪmeɪt/",
+      "pos": "adj.; v.",
+      "coreMeaningZh": "近似的，大概的；接近；估算",
+      "coreEn": "Close to the actual figure or form but not exact; to come close to or estimate.",
+      "coreImageZh": "男孩估计一盘九个橘子大约有十个，尚未逐个清点。",
+      "usage": [
+        {
+          "senseZh": "形容词：大概、近似而不精确",
+          "explanationZh": "指数量、时间、形状等接近实际情况，但不是精确结果；不等于毫无依据的随意猜测。形容词末尾读 /ət/。",
+          "collocations": [
+            {
+              "phrase": "an approximate number",
+              "meaningZh": "大概的数量"
+            },
+            {
+              "phrase": "the approximate cost",
+              "meaningZh": "估计的费用"
+            }
+          ]
+        },
+        {
+          "senseZh": "动词：接近；估算",
+          "explanationZh": "可表示在数值或性质上接近某物，也可表示作近似估算。动词末尾读 /eɪt/。",
+          "collocations": [
+            {
+              "phrase": "approximate the original shape",
+              "meaningZh": "接近原来的形状"
+            },
+            {
+              "phrase": "approximate the total cost",
+              "meaningZh": "估算总费用"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rough",
+          "comparisonZh": "在粗略估计时接近。rough 还可表示粗糙、艰难或粗暴；approximate 专门强调接近而不精确。"
+        },
+        {
+          "word": "estimate",
+          "comparisonZh": "作动词“估算”时接近。estimate 也可作名词，指估计结果；approximate 作形容词还可形容近似的形状、时间或数值。"
+        },
+        {
+          "word": "approach",
+          "comparisonZh": "两者都能表示接近某个数值或水平；approach 还常指空间上的走近，approximate 更常强调数值或性质上的近似。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AP + PROXIM + ATE · 接近目标",
+          "textZh": "熟悉的 approach（接近）和 approximate 的词史都通向拉丁语的“近”；用 approach 为 PROXIM“最近、很近”搭桥。AP- 对应“向”，加上词尾 -ate，把整词连成“向目标靠近”：估计值靠近实际值，却不必完全相等，就是 approximate。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a boxy mate · 方块拼出的朋友",
+          "textZh": "把整个词联想到 a boxy mate：boxy 就是像 box（盒子）一样方方的，mate 是朋友。你用方块拼出朋友的模型，看得出像谁，轮廓却只能大致相似；模型的形状 approximates 朋友的样子。/ə bɒksi meɪt/ 与动词 /əˈprɒksɪmeɪt/ 主要差在 /b/ 与 /pr/，以及中间元音、重音；这是自编近音故事。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy gave an approximate number of ten oranges before counting the nine in the tray.",
+          "translationZh": "男孩还没数清盘里的九个橘子，就估计大约有十个。",
+          "explanationZh": "十与九接近，但十只是目测估计，不是精确计数。"
+        },
+        {
+          "textEn": "The paper model approximates the shape of the original building.",
+          "translationZh": "这个纸模型大致呈现了原建筑的形状。",
+          "explanationZh": "动词 approximate 表示接近原物的形状，并不声称所有细节都完全相同。"
+        }
+      ]
+    },
+    {
+      "number": 136,
+      "word": "apt",
+      "ipa": "/æpt/",
+      "pos": "adj.",
+      "coreMeaningZh": "易于、往往会；恰当的；学得快的",
+      "coreEn": "Likely or inclined to do something; particularly suitable; or quick to learn.",
+      "coreImageZh": "男孩指出这座老屋顶一下雨就容易漏水。",
+      "usage": [
+        {
+          "senseZh": "be apt to：易于、往往会",
+          "explanationZh": "后接动词原形，表示常见倾向或较可能发生的情况，不等于每次都必然如此。",
+          "collocations": [
+            {
+              "phrase": "be apt to leak",
+              "meaningZh": "容易漏水"
+            },
+            {
+              "phrase": "be apt to forget",
+              "meaningZh": "容易忘记"
+            }
+          ]
+        },
+        {
+          "senseZh": "特别贴切、适合",
+          "explanationZh": "常形容描述、比喻、例子或选择，表示与具体情境很相称。",
+          "collocations": [
+            {
+              "phrase": "an apt description",
+              "meaningZh": "贴切的描述"
+            },
+            {
+              "phrase": "an apt choice",
+              "meaningZh": "恰当的选择"
+            }
+          ]
+        },
+        {
+          "senseZh": "理解快、学得快",
+          "explanationZh": "如 an apt pupil，强调能够较快掌握所学内容。",
+          "collocations": [
+            {
+              "phrase": "an apt pupil",
+              "meaningZh": "领悟力强的学生"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "likely",
+          "comparisonZh": "在 apt to do 的结构中接近。likely 表示可能性，可由当前证据判断；apt 常带有一贯倾向、容易如此的意味。"
+        },
+        {
+          "word": "apposite",
+          "comparisonZh": "只在“贴切”义上接近。apposite 较正式，常修饰言论或例子；apt 还可表示倾向以及学习快。"
+        },
+        {
+          "word": "quick to learn",
+          "comparisonZh": "可以解释 an apt pupil 中的 apt；不能用来解释 apt to leak 这种倾向用法。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ADAPT 中的 APT",
+          "textZh": "从熟悉的 adapt（适应、调整以适合）看出完整的 APT。两者同属真实的“适合”词族：adapt 是把东西调整到适合，apt 是已经很适合。由“适合做某事”也可联想到“有做某事的倾向”；遇到 apt to，记得读成“容易、往往会”。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "A Perfect Tool · 恰好适用",
+          "textZh": "把眼前三个字母 A-P-T 连成自编短语 A Perfect Tool（一件恰好适用的工具）：修眼镜时，一把尺寸正合适的小螺丝刀正是 an apt choice。每个可见字母对应短语的一个词，整句话直接指向“恰当、合适”。它是记忆提示，不是 apt 的正式缩写或词源。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The old roof is apt to leak whenever it rains.",
+          "translationZh": "这座老屋顶一下雨就容易漏水。",
+          "explanationZh": "is apt to leak 表示经常发生的倾向，并非只描述眼前一次漏水。"
+        },
+        {
+          "textEn": "“A maze” was an apt description of the confusing corridors.",
+          "translationZh": "用“迷宫”形容那些令人迷惑的走廊很贴切。",
+          "explanationZh": "这个比喻恰好抓住走廊难以辨认方向的特点。"
+        }
+      ]
+    },
+    {
+      "number": 2730,
+      "word": "arbitrary",
+      "ipa": "/ˈɑːbɪtrəri/，亦读 /ˈɑːbɪtri/",
+      "pos": "adj.",
+      "coreMeaningZh": "无合理依据的；随意武断的；任意的",
+      "coreEn": "Based on personal whim rather than a relevant rule or reason; freely chosen in technical contexts.",
+      "coreImageZh": "两座模型同样达标，男孩却凭一时心意指定其中一座获奖。",
+      "usage": [
+        {
+          "senseZh": "选择或决定缺乏合理依据",
+          "explanationZh": "通常带批评意味：没有按相关标准、证据或一致规则作决定，而是凭个人心意。也可形容专断的权力行使。",
+          "collocations": [
+            {
+              "phrase": "an arbitrary decision",
+              "meaningZh": "武断的决定"
+            },
+            {
+              "phrase": "an arbitrary rule",
+              "meaningZh": "缺乏合理依据的规定"
+            }
+          ]
+        },
+        {
+          "senseZh": "数学等语境：任意选定的",
+          "explanationZh": "可指未限定为某个特定数值、对象或位置；这种技术用法通常没有不公正的批评意味。",
+          "collocations": [
+            {
+              "phrase": "an arbitrary constant",
+              "meaningZh": "任意常数"
+            },
+            {
+              "phrase": "an arbitrary point",
+              "meaningZh": "任意一点"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "capricious",
+          "comparisonZh": "都可能表示凭一时心意。capricious 突出反复无常、难以预测；arbitrary 突出缺乏合理依据，即使决定一直不变也可能 arbitrary。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "random",
+          "comparisonZh": "都可能不依固定模式，但 random 也可指有意设计的随机抽样。arbitrary 常批评决定没有相关理由；按约定抽签并不因此就是武断。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "A BIT RARE → ARBITRARY",
+          "textZh": "先抓住完整熟悉短语 A BIT RARE（有点少见）。商家随口说一件普通货“有点少见”，便任意抬价；顾客追问 reason why（理由是什么）。拼写上，在 A 后插入 R，再把末尾 E 换成 Y：ABITRARE → ARBITRARE → ARBITRARY。中间的 ARBITRARE 只是拼写过渡。R 和 Y 提醒这句追问，却得不到合理理由，便记住“随意武断”。这是自编拼写联想。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "our big tree · 没有理由就选它",
+          "textZh": "把整个词的较短英式读音 /ˈɑːbɪtri/ 联想到 our big tree（我们的大树）：几棵树条件同样合适，组织者却不作比较，只指着其中一棵说“就选我们这棵”，被问依据时也说不出理由。这样的选择是 arbitrary。our 取 /ɑː/ 的读法，/ɑː bɪɡ triː/ 比目标多 /ɡ/，tree 的元音也更长；这是自编近音提示。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Choosing the left-hand model as the winner without a reason was an arbitrary decision.",
+          "translationZh": "毫无理由地选左边的模型获奖，是一个武断的决定。",
+          "explanationZh": "两座模型同样达标，选择没有依据相关标准或证据。"
+        },
+        {
+          "textEn": "Draw a line through an arbitrary point on the circle.",
+          "translationZh": "过圆上任意一点画一条直线。",
+          "explanationZh": "数学语境中的 arbitrary 表示没有预先指定哪一点，不含批评意味。"
+        }
+      ]
+    },
+    {
+      "number": 137,
+      "word": "archaic",
+      "ipa": "/ɑːˈkeɪɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "古老的；极旧式的；如今已罕用的",
+      "coreEn": "Belonging to a much earlier period, or extremely old-fashioned and no longer in ordinary use.",
+      "coreImageZh": "男孩在历史体验区看到羽毛笔，得知这种古老工具如今很少用于日常书写。",
+      "usage": [
+        {
+          "senseZh": "属于较早时代、非常旧式",
+          "explanationZh": "可形容工具、制度、做法或样式；强调与早期时代相连，或明显不合现代习惯。并不一定表示损坏。",
+          "collocations": [
+            {
+              "phrase": "archaic writing tools",
+              "meaningZh": "古老的书写工具"
+            },
+            {
+              "phrase": "an archaic system",
+              "meaningZh": "陈旧的制度"
+            }
+          ]
+        },
+        {
+          "senseZh": "语言：早期使用、今已罕用",
+          "explanationZh": "某些词或语法形式在日常现代语言中已经少见，但仍可能出现在历史作品、诗歌或特殊场合。",
+          "collocations": [
+            {
+              "phrase": "archaic language",
+              "meaningZh": "古旧的语言"
+            },
+            {
+              "phrase": "an archaic expression",
+              "meaningZh": "如今罕用的旧式表达"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "antediluvian",
+          "comparisonZh": "都能夸张地说某物极其古老。antediluvian 常有“老掉牙”的戏谑或贬义，也有字面“洪水前的”特殊义；archaic 更常用于早期语言、工具或做法。",
+          "sources": [
+            "zhangwei_dedicated_2021",
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "outdated",
+          "comparisonZh": "在“过时”意义上接近。outdated 只需不再符合当前情况，可能刚刚过时；archaic 通常显得来自很早的时代。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "antiquated",
+          "comparisonZh": "都可形容陈旧、不合现代需要。antiquated 常带该更新了的批评；archaic 也可中性地说明早期语言或历史样式。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "hoary",
+          "comparisonZh": "只在“极古老、老套”义上部分接近。hoary 还可表示头发灰白或表面灰白，这些颜色、外观义与 archaic 不同。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ARCH + A + IC · 古城石拱门",
+          "textZh": "把拼写联成 ARCH（拱门）+ A（ancient，古老的）+ IC（形容词结尾）：想象古城遗址中一座早已不用的石拱门，保留着很早时代的建筑样式。整幅“古老拱门”的画面提示 archaic 的古老、旧式。这是拼写场景，不是说 archaic 来自现代英语 arch；arch 的 ch 读 /tʃ/，本词的 ch 读 /k/。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "our cake · 旧食谱上的语言",
+          "textZh": "把整个 archaic 联想到 our cake（我们的蛋糕）：准备烤蛋糕时，你翻开一份几百年前的手写食谱，里面使用如今很少见的旧式词语。archaic 描述的是食谱的古旧语言。our 采用常见英式 /ɑː/，our cake /ɑː keɪk/ 与 /ɑːˈkeɪɪk/ 很接近，但目标在结尾前多一个 /ɪ/ 音节；不是完全同音。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The guide showed the boy an archaic writing tool: a quill pen that was rarely used in everyday life anymore.",
+          "translationZh": "讲解员给男孩看了一种古老的书写工具：如今很少再用于日常书写的羽毛笔。",
+          "explanationZh": "古老的时代特征和当今日常少见的用途共同体现 archaic。"
+        },
+        {
+          "textEn": "The editor replaced several archaic expressions to make the letter easier for modern readers to understand.",
+          "translationZh": "编辑替换了几个古旧表达，让现代读者更容易理解这封信。",
+          "explanationZh": "被替换的是早期常见、如今日常少用的语言形式。"
+        }
+      ]
+    }
+  ]
+}

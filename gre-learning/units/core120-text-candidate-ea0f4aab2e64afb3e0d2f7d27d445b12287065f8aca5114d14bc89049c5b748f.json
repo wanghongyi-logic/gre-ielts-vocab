@@ -1,0 +1,414 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4819,
+      "word": "peccadillo",
+      "ipa": "/ˌpekəˈdɪloʊ/",
+      "pos": "n.",
+      "coreMeaningZh": "小过失；小毛病",
+      "coreEn": "A minor fault or slight offense.",
+      "coreImageZh": "大家还没来齐，男孩已经偷吃了一块饼干，衣服上还留着碎屑。大人轻轻提醒他下次等一等，把这看作可以原谅的小过失：a peccadillo。",
+      "usage": [
+        {
+          "senseZh": "不严重的小过失",
+          "explanationZh": "可数名词，复数可写 peccadilloes 或 peccadillos。常带宽容、轻描淡写的语气；把某事称为 peccadillo，意味着说话者认为它不严重。",
+          "collocations": [
+            {
+              "phrase": "a minor peccadillo",
+              "meaningZh": "一个小过失"
+            },
+            {
+              "phrase": "forgive someone’s peccadilloes",
+              "meaningZh": "原谅某人的小毛病"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "minor fault",
+          "comparisonZh": "都指小过失；minor fault是中性描述，peccadillo常带宽容或轻描淡写的语气，也较正式。"
+        },
+        {
+          "word": "indiscretion",
+          "comparisonZh": "在轻率失当的行为义上接近。indiscretion 强调不够谨慎或有失分寸；peccadillo 更突出过失很小，有时带宽容意味。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "peccadillo / pick a little",
+          "textZh": "把 peccadillo 的声音松散联到 pick a little（摘一点点）：孩子没经允许，从邻居的葡萄架上偷偷摘了几颗，还辩解“就一点点”。由这件不严重、但确实不对的小事，记“小过失”。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "peccadillo / 赔个礼喽",
+          "textZh": "把 peccadillo 的声音近似联到“赔个礼喽”：聚会时开了个不太合适的小玩笑，发现朋友不高兴，赶紧赔礼道歉。用“犯了个不严重的小错，赔个礼”记小过失；这是中文近音提示。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She forgave his peccadillo of eating a biscuit before the guests arrived.",
+          "translationZh": "她原谅了他在客人到来前偷吃一块饼干的小过失。",
+          "explanationZh": "peccadillo 把未经允许先吃饼干说成轻微、可原谅的过失。"
+        },
+        {
+          "textEn": "What he dismissed as a peccadillo seriously damaged their trust.",
+          "translationZh": "他轻描淡写地称为小过失的那件事，严重损害了他们之间的信任。",
+          "explanationZh": "称作 peccadillo 是说话者对严重程度的判断，不保证别人也这样认为。"
+        }
+      ]
+    },
+    {
+      "number": 911,
+      "word": "fatigue",
+      "ipa": "/fəˈtiːɡ/",
+      "pos": "n.; v.",
+      "coreMeaningZh": "疲劳；疲乏；使疲劳",
+      "coreEn": "Weariness from exertion or stress; to make or become tired.",
+      "coreImageZh": "走完长长的上坡路，男孩坐在长椅上，肩膀下垂、双腿发沉。他需要停下来恢复体力，这种疲乏就是 fatigue。",
+      "usage": [
+        {
+          "senseZh": "身体或精神上的疲劳",
+          "explanationZh": "这一义通常不可数，可来自体力活动、长期用脑或压力。fatigued 是“感到疲乏的”，fatiguing 是“使人疲乏的”。",
+          "collocations": [
+            {
+              "phrase": "physical and mental fatigue",
+              "meaningZh": "身心疲劳"
+            },
+            {
+              "phrase": "suffer from fatigue",
+              "meaningZh": "感到疲劳"
+            }
+          ]
+        },
+        {
+          "senseZh": "使疲劳；变得疲劳",
+          "explanationZh": "动词可及物，也可不及物，较 tire 正式。宾语可以是人或肌肉等身体部位。",
+          "collocations": [
+            {
+              "phrase": "fatigue the muscles",
+              "meaningZh": "使肌肉疲劳"
+            },
+            {
+              "phrase": "fatigue easily",
+              "meaningZh": "容易疲劳"
+            }
+          ]
+        },
+        {
+          "senseZh": "反复作用造成的衰弱或厌倦",
+          "explanationZh": "metal fatigue 指金属因反复受力而发生的疲劳；news fatigue 等指反复接触某类信息产生的厌倦。复数 fatigues 还可指军用工作服，不能按普通疲劳来理解。",
+          "collocations": [
+            {
+              "phrase": "metal fatigue",
+              "meaningZh": "金属疲劳"
+            },
+            {
+              "phrase": "news fatigue",
+              "meaningZh": "新闻疲劳；对新闻的厌倦"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "tiredness",
+          "comparisonZh": "在身心疲乏义上可互换。tiredness 更日常；fatigue 较正式，也用于肌肉、材料等技术语境。"
+        },
+        {
+          "word": "exhaustion",
+          "comparisonZh": "都可指劳累。exhaustion 通常更强，接近精疲力竭；fatigue 不必已经到了体力耗尽的程度。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "fatigue / 乏，踢，哥",
+          "textZh": "把 fatigue 的声音联到“乏、踢、哥”：哥哥踢了一下午足球，累得只想坐下，说“乏了，踢不动了”。由“踢球后的乏累”记 fatigue。",
+          "original": false,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "fatigue / fat tiger",
+          "textZh": "看到 fatigue，联想拼写相近的 fat tiger（胖老虎）：一只胖老虎追着猎物跑了很久，终于累得趴下直喘气。由“长时间追赶后的疲惫”记 fatigue；这是近形联想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "After the long walk, fatigue made him glad to sit down.",
+          "translationZh": "长途步行后，疲乏让他很高兴能坐下来。",
+          "explanationZh": "fatigue 是名词，指走路后体力消耗造成的疲劳。"
+        },
+        {
+          "textEn": "Repeating the same movement can fatigue the muscles.",
+          "translationZh": "重复同一个动作会使肌肉疲劳。",
+          "explanationZh": "fatigue 在这里是及物动词，宾语是 the muscles。"
+        }
+      ]
+    },
+    {
+      "number": 2579,
+      "word": "vagary",
+      "ipa": "/ˈveɪɡəri/",
+      "pos": "n.",
+      "coreMeaningZh": "反复无常的变化；突发奇想",
+      "coreEn": "An unpredictable change, action, or whim.",
+      "coreImageZh": "男孩刚请女孩折一条小船，又毫无预兆地改口要王冠。女孩拿着还没折的纸愣了一下；这种难以预料的突发念头，就是 a vagary。",
+      "usage": [
+        {
+          "senseZh": "突然又难以解释的念头或行为变化",
+          "explanationZh": "可数名词，复数为 vagaries。语气较正式，强调古怪、无常或难以预料，不等于所有新想法，也不等于经过权衡后的正常调整。",
+          "collocations": [
+            {
+              "phrase": "a sudden vagary",
+              "meaningZh": "一个突如其来的奇想"
+            },
+            {
+              "phrase": "human vagaries",
+              "meaningZh": "人的反复无常"
+            }
+          ]
+        },
+        {
+          "senseZh": "天气、市场等不可预测的变化",
+          "explanationZh": "常用复数 the vagaries of something，表示某事物的变幻莫测；不要求有人故意改变主意。",
+          "collocations": [
+            {
+              "phrase": "the vagaries of the weather",
+              "meaningZh": "天气的变幻莫测"
+            },
+            {
+              "phrase": "the vagaries of the market",
+              "meaningZh": "市场的反复变化"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "whim",
+          "comparisonZh": "在突发念头义上接近。whim 是没有充分理由的一时兴起；vagary 更突出古怪或反复无常，还能用于天气、市场等变化。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "caprice",
+          "comparisonZh": "都能指一时兴起、难以预测的念头。caprice 常突出任性或随心所欲；vagary 也可指不受人的意志控制的意外变化。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "vagary / 喂，改日！",
+          "textZh": "把 vagary 的声音联到“喂，改日！”：刚说好今天见面，对方又凭一时兴起打来电话：“喂，改日！”由“毫无预兆地突然变卦”记 vagary 的反复无常、突发奇想。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "vagary / 漫游的念头",
+          "textZh": "vagary 的历史来源是“漫游”，vag- 就像一双不肯按固定路线走的脚。把这双脚移到脑海里：念头四处游走，忽然拐向意想不到的地方。记 vagary：突发奇想、反复无常的变化。",
+          "original": true,
+          "kind": "etymology",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His latest vagary was to ask for a paper crown instead of a boat.",
+          "translationZh": "他最新的突发奇想，是把要折的小船改成纸王冠。",
+          "explanationZh": "vagary 指突然改变的念头，而不是王冠这个物品。"
+        },
+        {
+          "textEn": "The outdoor concert was at the mercy of the vagaries of the weather.",
+          "translationZh": "这场户外音乐会只能听任变幻莫测的天气摆布。",
+          "explanationZh": "the vagaries of the weather 是常见复数搭配。"
+        }
+      ]
+    },
+    {
+      "number": 4820,
+      "word": "stagger",
+      "ipa": "/ˈstæɡər/",
+      "pos": "v.",
+      "coreMeaningZh": "犹豫；动摇；踉跄；使震惊；错开安排",
+      "coreEn": "To waver or hesitate; to move unsteadily; to astonish; or to arrange at different times or positions.",
+      "coreImageZh": "轮到男孩上台了，他原本准备开始，却又收回要行动的姿态，说还想再考虑。脚下站得很稳，犹豫的是他的决定；这里的 stagger 是在行动或决心上动摇。",
+      "usage": [
+        {
+          "senseZh": "在决心或行动上犹豫、动摇",
+          "explanationZh": "这是本词图景采用的义项，较正式，也较少见。主语迟迟不能坚持原先的意图，并不一定身体摇晃。日常表达一般更常用 hesitate 或 waver。",
+          "collocations": [
+            {
+              "phrase": "stagger in one’s resolve",
+              "meaningZh": "在决心上动摇"
+            },
+            {
+              "phrase": "stagger at the prospect",
+              "meaningZh": "面对这种前景而犹豫"
+            }
+          ]
+        },
+        {
+          "senseZh": "脚步不稳地踉跄前进",
+          "explanationZh": "常见身体动作义。可接方向或地点，也可用 under 表示因重负而步履不稳；与上面的心理动摇义要按上下文区分。",
+          "collocations": [
+            {
+              "phrase": "stagger toward the door",
+              "meaningZh": "踉跄着走向门口"
+            },
+            {
+              "phrase": "stagger under a heavy load",
+              "meaningZh": "在重负下踉跄前行"
+            }
+          ]
+        },
+        {
+          "senseZh": "使非常震惊；错开安排",
+          "explanationZh": "及物动词。消息、数字等可以 stagger someone；安排义则把人员、时间或位置错开。staggering 作形容词常指惊人的。",
+          "collocations": [
+            {
+              "phrase": "be staggered by the cost",
+              "meaningZh": "被费用之高惊呆"
+            },
+            {
+              "phrase": "stagger starting times",
+              "meaningZh": "错开开始时间"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "waver",
+          "comparisonZh": "在决心或选择上动摇时接近。waver 更常用于信心、决心或立场不坚定；stagger 还常指身体踉跄。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "hesitate",
+          "comparisonZh": "在迟疑着不行动这一义上接近。hesitate 更常见，也可表示短暂停顿；stagger 的这一义更突出决心受到动摇。"
+        },
+        {
+          "word": "reel",
+          "comparisonZh": "在身体摇晃、踉跄时接近。reel 常带眩晕、重击或强烈震撼感；它不能直接替代 stagger 的错开安排义。"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "stagger / stay? go?",
+          "textZh": "把 stagger 的声音联到 stay? go?（留下？走？）：两种行动反复拿不定，刚想走又想留。整句熟词直接表现“犹豫、动摇”；只是近音提示。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "stagger / stack gear",
+          "textZh": "把 stagger 整体近音联到 stack gear（把装备叠成一摞）：抱起一大摞沉重装备，走路被压得东倒西歪。stack 与 gear 一起牵住全词声音，重负自然带出“踉跄”；不是词源。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Even when the difficulties became clear, she did not stagger in her resolve.",
+          "translationZh": "即使困难变得明显，她的决心也没有动摇。",
+          "explanationZh": "这里是较正式的心理动摇义，不是说她走路稳不稳。"
+        },
+        {
+          "textEn": "He staggered toward the bench under the weight of the boxes.",
+          "translationZh": "他被箱子的重量压得踉跄着走向长椅。",
+          "explanationZh": "staggered toward 描述实际步态；under 引出使他步履不稳的重负。"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "word": "abash",
+      "ipa": "/əˈbæʃ/",
+      "pos": "v.",
+      "coreMeaningZh": "使尴尬；使羞窘；使失去自信",
+      "coreEn": "To make someone feel embarrassed or lose self-confidence.",
+      "coreImageZh": "男孩自信地把企鹅模型说成鸭子。女孩温和地纠正后，他红着脸低下头，刚才的自信消失了；这句纠正使他感到羞窘，即 abash him。",
+      "usage": [
+        {
+          "senseZh": "使人羞窘或失去镇定",
+          "explanationZh": "及物动词，偏正式；原因作主语，人作宾语。常见被动或形容词形式 abashed，强调受到某事影响后变得不好意思，而非一贯性格害羞。",
+          "collocations": [
+            {
+              "phrase": "abash someone",
+              "meaningZh": "使某人羞窘"
+            },
+            {
+              "phrase": "be abashed by a correction",
+              "meaningZh": "因被纠正而尴尬"
+            }
+          ]
+        },
+        {
+          "senseZh": "abashed 与 unabashed",
+          "explanationZh": "abashed 常形容表情或举止带着尴尬；unabashed 表示毫不羞怯、毫不掩饰，不一定是贬义。不要与 abase（贬低、使卑下）混淆。",
+          "collocations": [
+            {
+              "phrase": "an abashed smile",
+              "meaningZh": "尴尬的微笑"
+            },
+            {
+              "phrase": "unabashed enthusiasm",
+              "meaningZh": "毫不掩饰的热情"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "embarrass",
+          "comparisonZh": "在使人尴尬这一义上很接近，且更日常。abash 常突出原有的自信或镇定被打断；embarrass 的适用范围更广。"
+        },
+        {
+          "word": "disconcert",
+          "comparisonZh": "都可指打乱人的镇定。disconcert 可以只是使人不安或不知所措，不一定羞窘；abash 更容易带不好意思的意味。",
+          "source": "weichen_gre",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "abash / a blush",
+          "textZh": "把 abash 的形音联到 a blush（一阵脸红）：本来很自信的人，被指出一个明显错误，立刻不好意思地红了脸。由“让人窘得脸红”记“使尴尬”。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "abash / a bash",
+          "textZh": "把 abash 近音联到 a bash（一记重击）：当众一句尖锐的纠正，像一记重击打掉了自信，让人窘得抬不起头。由“给自信一击，使人羞窘”，记 abash。这是联想，不是词源。",
+          "weak": false
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The girl’s gentle correction abashed him.",
+          "translationZh": "女孩温和的纠正使他感到尴尬。",
+          "explanationZh": "纠正是原因，him 是感到尴尬的人；不要求对方恶意羞辱。"
+        },
+        {
+          "textEn": "He gave an abashed smile when he realized his mistake.",
+          "translationZh": "意识到自己的错误时，他尴尬地笑了笑。",
+          "explanationZh": "abashed 修饰 smile，描写被错误弄得不好意思之后的表情。"
+        }
+      ]
+    }
+  ]
+}

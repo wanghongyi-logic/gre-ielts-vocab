@@ -1,0 +1,363 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 4934,
+      "word": "artificial",
+      "ipa": "/ˌɑːtɪˈfɪʃəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "人造的；仿造的；不自然或不真诚的",
+      "coreEn": "Made by people rather than occurring naturally; sometimes describing behavior that is affected or insincere.",
+      "coreImageZh": "男孩摸到花瓣是布做的，才发现眼前的花是人造仿真花。",
+      "usage": [
+        {
+          "senseZh": "人造、仿天然",
+          "explanationZh": "用于人制造的材料或仿天然物品，可以是中性描述。并不表示制造者在骗人，也不必意味着质量低。",
+          "collocations": [
+            {
+              "phrase": "artificial flowers",
+              "meaningZh": "人造花"
+            },
+            {
+              "phrase": "artificial light",
+              "meaningZh": "人造光"
+            }
+          ]
+        },
+        {
+          "senseZh": "不自然、不真诚",
+          "explanationZh": "用于笑容、举止或气氛，表示刻意做出来而非自然流露。",
+          "collocations": [
+            {
+              "phrase": "an artificial smile",
+              "meaningZh": "不自然的笑容"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "spurious",
+          "comparisonZh": "在人为伪造、冒充真实的语境有交集。spurious 常强调虚假或缺乏真实性；artificial flowers 可以公开作为装饰出售，artificial 本身不含欺骗判断。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "specious",
+          "comparisonZh": "二者可与虚假表象有关，但 specious 特指表面有道理、实际站不住脚，常修饰 argument；artificial 可指人造材料或做作的行为，通常不能据此互换。",
+          "sources": [
+            "zhangwei_dedicated_2021",
+            "weichen_gre"
+          ]
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ARTI + FIC + IAL · 技艺制造",
+          "textZh": "ARTI 连到熟悉的 art（技艺），FIC 的历史根源是“做、制造”，可借同属这一造词家族的 factory（工厂）来记；-ial 是形容词结尾。把整词想成“运用技艺制造出来的”：工厂用布做出花瓣，得到 artificial flowers。这个真实构词线索首先帮助记住“人造的”。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "our tea fish’ll · 茶盘小鱼",
+          "textZh": "想象茶盘上有一条陶瓷小鱼摆件，给它起个简单名字 tea fish。主人说：Our tea fish’ll never need feeding（我们的茶盘小鱼永远不用喂食），因为它是人造的。借 our 的英式单元音读法 /ɑː/，整串 /ɑː tiː ˈfɪʃəl/ 接近 artificial；tea 的 /iː/ 要缩成 /ɪ/。tea fish 是场景中自起的名字，整句是近音提示，不是词源。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy realized that the flower was artificial when he touched its cloth petals.",
+          "translationZh": "男孩摸到布做的花瓣，才意识到这朵花是人造的。",
+          "explanationZh": "布花模仿天然花朵的外形，artificial 点出它由人制作。"
+        },
+        {
+          "textEn": "Her artificial smile disappeared as soon as the camera was turned off.",
+          "translationZh": "摄像机一关，她那做作的笑容就消失了。",
+          "explanationZh": "这里描述刻意摆出的表情，使用的是“不自然、不真诚”的引申义。"
+        }
+      ]
+    },
+    {
+      "number": 4935,
+      "word": "artless",
+      "ipa": "/ˈɑːtlɪs/",
+      "pos": "adj.",
+      "coreMeaningZh": "天真坦率的；不矫饰的；另可指缺乏技巧的",
+      "coreEn": "Open and natural, without deceit or pretence; in another sense, lacking skill.",
+      "coreImageZh": "男孩直接承认饼干太香，自己忍不住先尝了一口，没有编造借口。",
+      "usage": [
+        {
+          "senseZh": "天真坦率、不矫饰",
+          "explanationZh": "话语或举止自然直率，没有刻意掩饰或算计；不等于所有不礼貌的话都值得赞许。",
+          "collocations": [
+            {
+              "phrase": "an artless reply",
+              "meaningZh": "天真坦率的回答"
+            },
+            {
+              "phrase": "artless charm",
+              "meaningZh": "自然纯真的魅力"
+            }
+          ]
+        },
+        {
+          "senseZh": "缺乏技巧",
+          "explanationZh": "在技艺或作品的语境中，也可表示没有技巧、拙于表现，需按上下文区分。",
+          "collocations": [
+            {
+              "phrase": "an artless performance",
+              "meaningZh": "缺乏技巧的表演"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "simplistic",
+          "comparisonZh": "这是来源列出的配对，但现代常用义差别明显：simplistic 批评把复杂问题想得过分简单；artless 的主要意思是坦率、纯真。最多在“简单而未经雕琢”的有限语境靠近，不能把天真回答直接译成 simplistic。",
+          "source": "zhangwei_dedicated_2021"
+        },
+        {
+          "word": "naive",
+          "comparisonZh": "描述缺乏世故、容易相信别人时可以接近。naive 更强调经验不足，有时带批评；artless 更突出自然坦率、没有心机。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "ART + LESS · 没有伎俩",
+          "textZh": "ART 除了“艺术、技艺”，也能表示巧计或伎俩；-less 就是“没有”。把整词读成“没有耍巧计”：孩子被问为何偷吃饼干，直接说“因为太香了”，不编一套理由。真实的 art + less 结构由“没有伎俩”连到“天真坦率”。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "HEARTLESS − HE · 没有暗藏恶意",
+          "textZh": "先认完整的 HEARTLESS（heart 心 + less 没有，冷酷无情的），再去掉最前面的 HE，正好留下 ARTLESS。把 HE 记作 Hidden Evil（暗藏的恶意）：孩子一句直话乍听尖锐，但了解经过后发现没有恶意，只是天真直说。这是有语义的拼写故事；“不冷酷”本身并不自动等于 artless。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Asked why he had eaten a cookie before dinner, the boy gave an artless reply: “It smelled so good that I wanted a bite.”",
+          "translationZh": "被问到为何饭前吃饼干时，男孩坦率地回答：“它太香了，我就想先尝一口。”",
+          "explanationZh": "他直接说出简单动机，没有装饰或编造借口。"
+        },
+        {
+          "textEn": "The interview retained the artless charm of an ordinary conversation.",
+          "translationZh": "这次访谈保留了日常谈话那种自然纯真的魅力。",
+          "explanationZh": "artless 强调自然、不刻意表演的风格。"
+        }
+      ]
+    },
+    {
+      "number": 153,
+      "word": "aspersion",
+      "ipa": "/əˈspɜːʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "诋毁；损害他人名誉的恶意言论",
+      "coreEn": "A damaging or malicious remark about someone’s character or reputation.",
+      "coreImageZh": "蓝衣男孩毫无证据地说女孩的获奖画作是抄来的，穿橄榄绿外套的男孩 立即制止这种诋毁。",
+      "usage": [
+        {
+          "senseZh": "恶意诋毁",
+          "explanationZh": "常用复数 aspersions，尤其 cast aspersions on，指对人的品格、动机或名誉进行恶意攻击。与有事实依据、针对作品的正常批评不同。",
+          "collocations": [
+            {
+              "phrase": "cast aspersions on someone’s integrity",
+              "meaningZh": "诋毁某人的正直品格"
+            },
+            {
+              "phrase": "an unfounded aspersion",
+              "meaningZh": "毫无根据的诋毁"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "slur",
+          "comparisonZh": "都可指损害名誉的恶意言论；slur 还常指针对某类身份的侮辱性称呼，范围不完全相同。aspersion 特别常见于 cast aspersions on。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "A + SPERS + ION · 泼脏水",
+          "textZh": "把整词接到“向人泼脏水”：a- 历史上来自表示“向”的 ad-，SPERS 来自“洒、撒”的词根，借熟悉的 spray（喷洒）画面来记，-ion 形成名词。散洒脏水弄脏别人，对应散播恶意话语损害名誉；spray 只是回忆动作的桥梁，不冒充同源词。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "A PERSON + S、I · 向人散播恶言",
+          "textZh": "完整的 A PERSON 去掉空格是 APERSON；在 A 后插入 S、在 ON 前插入 I，就得到 ASPERSION。S、I 合记一个短语 Spread Insults（散播恶意侮辱）：有人对 a person 散播没有证据的抄袭指控，损害其名誉。两处插入都服务于“散播恶言”，这是自编拼写联想。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Without offering any evidence, the boy in the blue shirt cast aspersions on the girl by claiming that her prize-winning painting was copied.",
+          "translationZh": "蓝衣男孩没有提供任何证据，就声称女孩的获奖画作是抄来的，以此诋毁她。",
+          "explanationZh": "未经证实的指控攻击她的诚实与获奖资格，符合 aspersions 的名誉攻击义。"
+        },
+        {
+          "textEn": "The article criticized the policy without casting aspersions on the officials’ motives.",
+          "translationZh": "文章批评了这项政策，但没有恶意揣测和攻击官员的动机。",
+          "explanationZh": "可以批评具体决定，同时避免针对个人品格或动机的诋毁。"
+        }
+      ]
+    },
+    {
+      "number": 156,
+      "word": "assert",
+      "ipa": "/əˈsɜːt/",
+      "pos": "v.",
+      "coreMeaningZh": "断言；坚定地声称；维护或主张",
+      "coreEn": "To state something confidently or firmly; also to insist on a right or make one’s influence felt.",
+      "coreImageZh": "男孩肯定地说球在箱里，因为他亲眼看见别人把球放了进去。",
+      "usage": [
+        {
+          "senseZh": "坚定陈述",
+          "explanationZh": "assert that 后接所声称的内容，强调说话者肯定的态度。这种表达方式本身不保证内容已经得到证明，也不要求大声喊叫。",
+          "collocations": [
+            {
+              "phrase": "assert that something is true",
+              "meaningZh": "断言某事属实"
+            }
+          ]
+        },
+        {
+          "senseZh": "维护权利或表明主见",
+          "explanationZh": "assert one’s rights 指积极维护权利；assert oneself 指清楚坚定地表达意愿、让自己获得应有重视。",
+          "collocations": [
+            {
+              "phrase": "assert one’s rights",
+              "meaningZh": "维护自己的权利"
+            },
+            {
+              "phrase": "assert oneself",
+              "meaningZh": "表明自己的主见"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "maintain",
+          "comparisonZh": "在坚持某种说法时可接近。assert 侧重肯定、明确地提出；maintain 常强调面对质疑仍坚持。maintain 的“维护设备、维持状态”等义不能换成 assert。",
+          "source": "zhangwei_dedicated_2021"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "AS + SERT · 把立场摆出来",
+          "textZh": "借熟悉的 insert（插入，如键盘 Insert 键）记住完整的 SERT 部分：insert 与 assert 的历史词根都与“连接、置入”有关。AS- 来自表示“向”的 ad- 的变化形式；将自己的说法放到众人面前并认定它成立，就连到 assert“坚定声称”。这是词源加情境桥梁，不把 assert 误解成普通的插入动作。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a shirt · 坚定认领衬衫",
+          "textZh": "看到 assert，联想完整的 a shirt（一件衬衫）：失物招领处，他指着衬衫坚定地说“That shirt is mine.” 这就是 assert a claim，明确主张自己的认领说法。英式 /ə ʃɜːt/ 与 /əˈsɜːt/ 只需把 shirt 开头的 /ʃ/ 换成 /s/；它是近音提示。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boy asserted that the ball was in the box because he had seen someone put it there.",
+          "translationZh": "男孩断言球在箱子里，因为他亲眼看见有人把球放了进去。",
+          "explanationZh": "asserted 描述他的肯定陈述，依据是此前的目击。"
+        },
+        {
+          "textEn": "The tenant asserted her right to receive written notice before an inspection.",
+          "translationZh": "租客坚持自己有权在检查前收到书面通知。",
+          "explanationZh": "assert a right 表示明确主张和维护一项权利。"
+        }
+      ]
+    },
+    {
+      "number": 160,
+      "word": "assuage",
+      "ipa": "/əˈsweɪdʒ/",
+      "pos": "v.",
+      "coreMeaningZh": "减轻；缓和；平息",
+      "coreEn": "To make an unpleasant feeling, pain, or concern less intense.",
+      "coreImageZh": "老师答应在台边陪着男孩，让他对忘词的担忧缓和下来。",
+      "usage": [
+        {
+          "senseZh": "缓和不适或负面情绪",
+          "explanationZh": "常接 fears、anxiety、guilt、anger、pain，表示程度减轻；不必表示问题已完全消失。",
+          "collocations": [
+            {
+              "phrase": "assuage someone’s fears",
+              "meaningZh": "缓解某人的恐惧"
+            },
+            {
+              "phrase": "assuage guilt",
+              "meaningZh": "减轻内疚"
+            }
+          ]
+        },
+        {
+          "senseZh": "满足饥渴或欲望",
+          "explanationZh": "也可指让饥饿、口渴或某种渴望得到满足，语体较正式。",
+          "collocations": [
+            {
+              "phrase": "assuage hunger",
+              "meaningZh": "缓解饥饿"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "propitiate",
+          "comparisonZh": "在平息愤怒、使对方息怒的语境有交集。propitiate 通常以被安抚的人或神为宾语；assuage 通常以 anger、fear 等感受为宾语，不能机械套用同一种句型。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "mitigate",
+          "comparisonZh": "都可表示减轻强度。assuage 常用于安抚情绪或缓和痛苦；mitigate 范围更广，可指减轻损害、风险或不利后果。",
+          "source": "weichen_gre"
+        }
+      ],
+      "mnemonics": [
+        {
+          "method": "MASSAGE → ASSUAGE · 气消一点",
+          "textZh": "借完整的 MASSAGE（按摩）记拼写：去掉最前面的 M，再在 SS 后放入 U，得到 ASSUAGE。M 提示 mad（生气），U 提示 you（你）：想象你气得肩膀紧绷，轻柔按摩让你放松，怒气少了一点。去掉 M、放进 U 都围绕“让你的怒气减轻”；这是拼写联想，不是近音或词源。",
+          "original": false,
+          "weak": false,
+          "kind": "reviewed_method"
+        },
+        {
+          "method": "a stage · 台边的安慰",
+          "textZh": "把 assuage 联想到完整的 a stage（一个舞台）。孩子上台前怕忘词，老师在台边说“我会陪着你”，让他的焦虑减轻。/ə steɪdʒ/ 与 /əˈsweɪdʒ/ 的区别在 /t/ 换成 /w/；整串近音加上台边安慰的画面，帮助记住“缓和不安”。",
+          "original": true,
+          "weak": false,
+          "kind": "reviewed_method"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The teacher’s promise to stay beside the stage assuaged the boy’s fear of forgetting his lines.",
+          "translationZh": "老师答应陪在台边，缓解了男孩对忘词的恐惧。",
+          "explanationZh": "有人陪伴和支持，使原有的紧张程度下降。"
+        },
+        {
+          "textEn": "A clear explanation of the delay helped assuage the passengers’ anger.",
+          "translationZh": "对延误作出清楚解释，有助于平息乘客的怒气。",
+          "explanationZh": "assuage 的宾语是 anger，表示让愤怒有所缓和。"
+        }
+      ]
+    }
+  ]
+}
