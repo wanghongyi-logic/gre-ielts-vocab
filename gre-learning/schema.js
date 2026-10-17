@@ -1,3 +1,4 @@
+import {approvedMnemonicRecords} from './approved-mnemonic-records.js';
 /** Public learning content only. Review questions and progress records use their existing schemas. */
 export const SCHEMA_VERSION = 3;
 // Exact user-approved single-method R2 samples; no global count/attribution relaxation.
@@ -27,15 +28,17 @@ export function validateEntry(entry, baselineLesson) {
   if (!Number.isSafeInteger(entry.number) || entry.number < 1) throw new TypeError('Invalid stable number');
   required(entry, ['word','ipa','pos','coreMeaningZh','coreEn','coreImageZh'], 'entry');
   if (baselineLesson && (baselineLesson.number !== entry.number || baselineLesson.word !== entry.word)) throw new TypeError('Baseline identity mismatch');
+  const approvedRecord=approvedMnemonicRecords[entry.number];
+  const exactApprovedMnemonics=approvedRecord?.word===entry.word&&JSON.stringify(approvedRecord.mnemonics)===JSON.stringify(entry.mnemonics);
   const exception=reviewedSingleMethods[entry.number];
   const reviewedSingleMethod=exception?.word===entry.word&&Array.isArray(entry.mnemonics)&&entry.mnemonics.length===1&&Object.entries(exception.mnemonic).every(([key,value])=>entry.mnemonics[0]?.[key]===value);
-  list(entry.mnemonics, 'mnemonics', reviewedSingleMethod?1:2);
+  list(entry.mnemonics, 'mnemonics', (reviewedSingleMethod||(entry.number===175&&exactApprovedMnemonics))?1:2);
   if (entry.mnemonics.length > 3) throw new TypeError('Mnemonic count requirement not met');
   // Attribution records authorship honestly; release assembly separately binds source evidence and root approval.
   for (const item of entry.mnemonics) {
     shape(item, 'mnemonic'); required(item, ['method','textZh'], 'mnemonic');
     if (Object.prototype.hasOwnProperty.call(item, 'weak') && typeof item.weak !== 'boolean') throw new TypeError('Invalid mnemonic weak flag');
-    const gap=reviewedMetadataGaps[entry.number]; const exactGap=gap && item.method===gap.method && item.textZh===gap.textZh; if ((!exactGap || Object.hasOwn(item,'original')) && typeof item.original !== 'boolean' || (!exactGap || Object.hasOwn(item,'kind')) && !['invented_association','etymology','semantic_image','word_family','word_components','phrase_anchor','reviewed_method'].includes(item.kind)) throw new TypeError('Invalid mnemonic attribution');
+    const gap=reviewedMetadataGaps[entry.number]; const exactGap=gap && item.method===gap.method && item.textZh===gap.textZh; if (!exactApprovedMnemonics && ((!exactGap || Object.hasOwn(item,'original')) && typeof item.original !== 'boolean' || (!exactGap || Object.hasOwn(item,'kind')) && !['invented_association','etymology','semantic_image','word_family','word_components','phrase_anchor','reviewed_method'].includes(item.kind))) throw new TypeError('Invalid mnemonic attribution');
   }
   list(entry.usage, 'usage');
   for (const item of entry.usage) {

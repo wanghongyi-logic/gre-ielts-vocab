@@ -1,0 +1,42 @@
+import vm from 'node:vm';
+import {fileURLToPath} from 'node:url';
+import {readFile,writeFile} from 'node:fs/promises';
+import {webcrypto} from 'node:crypto';
+import assert from 'node:assert/strict';
+const A=process.env.GRE_BASELINE_DIR||process.argv[2];
+assert.ok(A,'Set GRE_BASELINE_DIR or pass the prior release directory as first argument');
+const B=process.env.GRE_IMPLEMENTATION_DIR||fileURLToPath(new URL('../',import.meta.url));
+const origin='https://audit.test/';
+const cacheMaps=new Map(),deletions=[],requests=[],results=[];
+const key=r=>typeof r==='string'?r:r.url;
+const caches={async open(name){if(!cacheMaps.has(name))cacheMaps.set(name,new Map());const m=cacheMaps.get(name);return {async match(r){return m.get(key(r))?.clone()},async put(r,s){m.set(key(r),s.clone())},async delete(r){return m.delete(key(r))},async keys(){return [...m.keys()].map(x=>new Request(x))}}},async keys(){return [...cacheMaps.keys()]},async delete(name){deletions.push(name);return cacheMaps.delete(name)}};
+const catalogs=await Promise.all([A,B].map(async p=>JSON.parse(await readFile(p+'/gre-learning/catalog.json'))));
+const ref=catalogs[0].entries[380].storyMedia.video;
+assert.ok(catalogs[1].entries.some(e=>e.storyMedia?.video.sha256===ref.sha256),'same video retained in B metadata');
+const videoURL=new URL('gre-learning/'+ref.url,origin).href;
+const videoBytes=await readFile(A+'/gre-learning/'+ref.url);
+const storage=await caches.open('gre-scalable-verified-units-v1');
+await storage.put(videoURL,new Response(videoBytes));
+await storage.put(origin+'gre-learning/story-media\//retired.mp4',new Response('retained retired video'));
+await (await caches.open('other-app-cache')).put(origin+'other',new Response('unrelated'));
+function worker(path){const listeners={},network=[];let claims=0;const self={location:{href:origin+'sw.js'},addEventListener(t,fn){listeners[t]=fn},clients:{claim:async()=>{claims++},matchAll:async()=>[]},skipWaiting:async()=>{}};
+const context=vm.createContext({self,caches,crypto:webcrypto,Response,Request,URL,AbortController,DOMException,Set,Map,setTimeout,clearTimeout,fetch:async(r)=>{const u=key(r);requests.push(u);network.push(u);if(/story-media\//.test(u))return new Response('remote media removed',{status:404});const f=new URL(u).pathname.slice(1);try{return new Response(await readFile(path+'/'+f))}catch{return new Response('missing',{status:404})}}});
+return {async message(data){let pending,result;listeners.message({data,ports:[{postMessage(value){result=value}}],waitUntil(p){pending=p}});await pending;return result;},async load(){vm.runInContext(await readFile(path+'/sw.js','utf8'),context)},async lifecycle(type){let pending;listeners[type]({waitUntil(p){pending=p}});await pending},async fetch(url){let p;listeners.fetch({request:new Request(url),respondWith(x){p=x}});return p},network,context,get claims(){return claims}}}
+await(await caches.open('gre-scalable-shell-%2F-ancient')).put(origin+'__shell_ready__',new Response('ancient'));
+await(await caches.open('gre-scalable-shell-%2F-partial')).put(origin+'partial',new Response('partial'));
+const a=worker(A);await a.load();await a.lifecycle('install');await a.lifecycle('activate');assert.equal(a.claims,1);
+results.push('A install/activate succeeds with media endpoint returning 404');
+const b=worker(B);await b.load();await b.lifecycle('install');await b.lifecycle('activate');assert.equal(b.claims,1);
+results.push('A→B install/activate succeeds with all remote story media returning 404');
+assert.ok(!requests.some(x=>/story-media\//.test(x)));results.push('Neither install fetches video or poster assets');
+assert.ok(cacheMaps.has('gre-scalable-verified-units-v1'));assert.equal(await(await storage.match(origin+'gre-learning/story-media\//retired.mp4')).text(),'retained retired video');assert.ok(cacheMaps.has('other-app-cache'));results.push('Verified cache, retired media outside catalog, and unrelated caches survive activation');
+const served=await b.fetch(videoURL);assert.equal(served.status,200);assert.deepEqual(Buffer.from(await served.arrayBuffer()),videoBytes);assert.ok(!b.network.includes(videoURL));results.push('B serves retired381 video locally after remote deletion without network');
+const absent=catalogs[1].entries[999].storyMedia.video;const absentURL=new URL('gre-learning/'+absent.url,origin).href;for(let i=0;i<3;i++)assert.equal((await b.fetch(absentURL)).status,404);assert.ok(!b.network.includes(absentURL));results.push('Uncached retired1000 never fetches on repeated reads');
+const newText=catalogs[1].units.at(-1);const response=await b.fetch(origin+'gre-learning/'+newText.url);assert.equal(response.status,200);results.push('B serves latest verified text after installation independently of missing media');
+// A failed newer install must not destroy complete B or shared media.
+const broken=worker(B);await broken.load();vm.runInContext("fetch=async()=>new Response('gone',{status:404})",broken.context);await assert.rejects(broken.lifecycle('install'));assert.ok(cacheMaps.has('gre-scalable-verified-units-v1'));assert.equal((await b.fetch(videoURL)).status,200);results.push('Failed subsequent install preserves active shell and downloaded media');
+assert.ok(deletions.includes('gre-scalable-shell-%2F-ancient'));assert.ok(deletions.includes('gre-scalable-shell-%2F-partial'));assert.ok(deletions.every(name=>name.startsWith('gre-scalable-shell-')));results.push('Cleanup removes only obsolete/partial shell generations, never media cache');
+const report={passed:results,deletions,cacheNames:[...cacheMaps.keys()],networkRequests:requests.length,baselineRequests:a.network.length,upgradeRequests:b.network.length,upgradePaths:b.network};
+if(process.env.GRE_AUDIT_REPORT)await writeFile(process.env.GRE_AUDIT_REPORT,JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
+
+const clearResult=await b.message({type:'PAUSE_AND_CLEAR_MEDIA'});assert.equal(clearResult.type,'MEDIA_CLEARED');assert.equal(await storage.match(videoURL),undefined);assert.ok(cacheMaps.has('other-app-cache'));const clearedText=await b.fetch(origin+'gre-learning/'+newText.url);assert.equal(clearedText.status,200);const pausedVideo=await b.fetch(videoURL);assert.equal(pausedVideo.status,404);assert.ok(!b.network.includes(videoURL));await b.message({type:'RESUME_MEDIA_SAVE'});console.log('PASS explicit clear removes owned media only, preserves text/unrelated caches, and pauses refetch until resumed');
