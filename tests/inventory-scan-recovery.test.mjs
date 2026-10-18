@@ -35,3 +35,8 @@ for(const delay of [5,20]){const f=fixture({delay}),start=performance.now();cons
 {
  const f=fixture();const c=new AbortController(),one=f.ctx.inspectLibrary(catalog,{signal:c.signal});c.abort();const two=f.ctx.inspectLibrary(catalog);await assert.rejects(one,{name:'AbortError'});assert.equal((await two).readyIds.length,1600);assert.equal(f.stats.maxActive,8);console.log('PASS immediate retry skips a cancelled prior scan');
 }
+
+{
+ for(const stage of ['P1','P2','P3']){const f=fixture(),error=Object.assign(Error('private path'),{name:'SecurityError'});if(stage==='P1')f.ctx.listPacks=async()=>{throw error;};else if(stage==='P2')f.ctx.navigator.storage.getDirectory=async()=>{throw error;};else f.fail(error);await assert.rejects(f.ctx.inspectLibrary(catalog),value=>value===error&&value.inventoryStage===stage);}
+ console.log('PASS read-only inventory errors retain identity and identify index/directory/file stages');
+}

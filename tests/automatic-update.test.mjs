@@ -6,7 +6,7 @@ const source=await readFile(new URL('../gre-learning/update.js',import.meta.url)
 const current=source.match(/const build = '([^']+)'/)[1],next=current+'-next';
 const flush=async()=>{for(let i=0;i<12;i++)await Promise.resolve();};
 function target(){const handlers={};return {addEventListener(type,fn){(handlers[type]??=[]).push(fn);},dispatchEvent(event){for(const fn of handlers[event.type]||[])fn(event);},fire(type,data={}){this.dispatchEvent({type,...data});}};}
-function fixture({appReady=true,build=current,ready=true,hidden=false,online=true,blocked=false,update,register,storage=new Map()}={}){
+function fixture({appReady=true,build=current,ready=true,hidden=false,online=true,blocked=false,readingBlocked=false,storageBlocked=false,update,register,storage=new Map()}={}){
  let now=100000,id=0,reloads=0,checks=0,registrations=0,messages=0,holdMessage=false,activeBuild=build,activeReady=ready;
  const timers=new Map(),doc=Object.assign(target(),{visibilityState:hidden?'hidden':'visible',getElementById:()=>({hidden:true,textContent:''})});
  const window=Object.assign(target(),{scrollX:0,scrollY:430,scrollTo(value){window.scrollX=value.left;window.scrollY=value.top;}});
@@ -17,10 +17,10 @@ function fixture({appReady=true,build=current,ready=true,hidden=false,online=tru
  const navigator={serviceWorker,onLine:online};
  const schedule=(fn,ms,interval)=>{timers.set(++id,{fn,at:now+ms,interval});return id;};
  class MessageChannel{constructor(){this.port1={onmessage:null,close(){}};this.port2={send:data=>this.port1.onmessage?.({data})};}}
- window.addEventListener('gre-update-can-reload',event=>{if(blocked)event.detail.blocked=true;});
+ window.addEventListener('gre-update-can-reload',event=>{if(blocked||readingBlocked||storageBlocked)event.detail.blocked=true;event.detail.readingPreparation=readingBlocked;event.detail.storageMutation=storageBlocked;});
  const context=vm.createContext({window,document:doc,location,navigator,MessageChannel,WeakSet,Date:{now:()=>now},Promise,CustomEvent:class{constructor(type,options){this.type=type;this.detail=options.detail;}},sessionStorage:{getItem:key=>storage.get(key)||null,setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)},setTimeout:(fn,ms)=>schedule(fn,ms),clearTimeout:key=>timers.delete(key),setInterval:(fn,ms)=>schedule(fn,ms,ms),requestAnimationFrame:fn=>schedule(fn,16)});
  vm.runInContext(source,context);if(appReady)window.fire('gre-app-rendered');
- return {window,doc,navigator,registration,storage,location,get reloads(){return reloads;},get checks(){return checks;},get registrations(){return registrations;},get messages(){return messages;},setBlocked(value){blocked=value;},setBuild(value,isReady=true){activeBuild=value;activeReady=isReady;},hold(value){holdMessage=value;},swap(){serviceWorker.controller=worker();serviceWorker.fire('controllerchange');},async advance(ms){const end=now+ms;await flush();while(true){const due=[...timers].filter(([,t])=>t.at<=end).sort((a,b)=>a[1].at-b[1].at)[0];if(!due)break;now=due[1].at;timers.delete(due[0]);if(due[1].interval)schedule(due[1].fn,due[1].interval,due[1].interval);due[1].fn();await flush();}now=end;await flush();}};
+ return {window,doc,navigator,registration,storage,location,get reloads(){return reloads;},get checks(){return checks;},get registrations(){return registrations;},get messages(){return messages;},setBlocked(value){blocked=value;},setReadingBlocked(value){readingBlocked=value;},setStorageBlocked(value){storageBlocked=value;},setBuild(value,isReady=true){activeBuild=value;activeReady=isReady;},hold(value){holdMessage=value;},swap(){serviceWorker.controller=worker();serviceWorker.fire('controllerchange');},async advance(ms){const end=now+ms;await flush();while(true){const due=[...timers].filter(([,t])=>t.at<=end).sort((a,b)=>a[1].at-b[1].at)[0];if(!due)break;now=due[1].at;timers.delete(due[0]);if(due[1].interval)schedule(due[1].fn,due[1].interval,due[1].interval);due[1].fn();await flush();}now=end;await flush();}};
 }
 test('startup is immediate; pageshow/focus/visibility burst makes one check',async()=>{const f=fixture();await flush();assert.equal(f.checks,1);f.window.fire('pageshow');f.window.fire('focus');f.doc.fire('visibilitychange');await flush();assert.equal(f.checks,1);assert.equal(f.reloads,0);await f.advance(30100);f.doc.fire('visibilitychange');await flush();assert.equal(f.checks,2);});
 test('a ready controller applies without waiting for network, including offline',async()=>{const f=fixture({build:next,online:false});await flush();assert.equal(f.reloads,1);assert.equal(f.registrations,0);assert.equal(f.checks,0);});
@@ -42,3 +42,21 @@ test('user interaction while drawer content loads cancels delayed scroll restora
 
 test('startup restores local reading before a ready update can reload',async()=>{const f=fixture({appReady:false,build:next});await flush();assert.equal(f.reloads,0);assert.equal(f.registrations,0);await f.advance(1000);assert.equal(f.reloads,0);f.window.fire('gre-app-rendered');await flush();assert.equal(f.reloads,1);});
 test('failed startup can still recover with a fully ready update after bounded grace',async()=>{const f=fixture({appReady:false,build:next});await f.advance(11999);assert.equal(f.reloads,0);await f.advance(1);assert.equal(f.reloads,1);});
+
+test('verified ready update unwinds stale idle reading only, retaining saved count and position',async()=>{
+ const storage=new Map([['gre-saved-inventory-v1','saved-count-1600']]),f=fixture({build:next,readingBlocked:true,storage});let recoveries=0;
+ f.window.addEventListener('gre-update-recover-reading',event=>{recoveries++;f.setReadingBlocked(false);event.detail.waits.push(Promise.resolve());});
+ await f.advance(11999);assert.equal(f.reloads,0);await f.advance(201);assert.equal(recoveries,1);assert.equal(f.reloads,1);assert.equal(storage.get('gre-saved-inventory-v1'),'saved-count-1600');assert.equal(JSON.parse(storage.get('gre-update-position-v1')).hash,'#/learn/175');assert.equal(JSON.parse(storage.get('gre-update-position-v1')).y,430);
+});
+test('real storage mutation never triggers cleanup or reload even with stale reading',async()=>{
+ const f=fixture({build:next,readingBlocked:true,storageBlocked:true});let recoveries=0;f.window.addEventListener('gre-update-recover-reading',()=>{recoveries++;f.setReadingBlocked(false);});await f.advance(120000);assert.equal(recoveries,0);assert.equal(f.reloads,0);f.setStorageBlocked(false);await f.advance(12400);assert.equal(recoveries,1);assert.equal(f.reloads,1);
+});
+test('unverified controller and unknown blockers never authorize reading recovery',async()=>{
+ for(const options of [{build:next,ready:false,readingBlocked:true},{build:next,blocked:true}]){const f=fixture(options);let recoveries=0;f.window.addEventListener('gre-update-recover-reading',()=>recoveries++);await f.advance(120000);assert.equal(recoveries,0);assert.equal(f.reloads,0);}
+});
+test('a failed reload attempt gets one spaced retry and cannot loop',async()=>{
+ const first=fixture({build:next});await flush();assert.equal(first.reloads,1);const second=fixture({build:next,storage:first.storage});await second.advance(29999);assert.equal(second.reloads,0);await second.advance(1);assert.equal(second.reloads,1);const third=fixture({build:next,storage:first.storage});await third.advance(120000);assert.equal(third.reloads,0);
+ const legacy=fixture({build:next,storage:new Map([[`vocab-update-reload-${next}`,'1']])});await legacy.advance(29999);assert.equal(legacy.reloads,0);await legacy.advance(1);assert.equal(legacy.reloads,1);
+});
+
+test('denied reload-receipt storage cannot create an automatic reload loop',async()=>{const storage={get(){throw Object.assign(Error('denied'),{name:'SecurityError'});},set(){throw Error('denied');},delete(){}},f=fixture({build:next,storage});await f.advance(120000);assert.equal(f.reloads,0);});

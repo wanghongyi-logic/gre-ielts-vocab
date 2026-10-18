@@ -97,21 +97,22 @@ function sharedInventoryRead(key,work){
  let resolve,reject;const promise=new Promise((yes,no)=>{resolve=yes;reject=no;});
  inventoryReads.set(key,promise);inventoryReadQueue.push({key,work,promise,resolve,reject});pumpInventoryReads();return promise;
 }
+function inventoryFailure(error,stage){try{error.inventoryStage??=stage;}catch{}return error;}
 function startInventoryScan(){
  const job={revision:indexRevision,controller:new AbortController(),users:0,pending:true};
  const signal=job.controller.signal;
  job.promise=(async()=>{
-  const packs=(await listPacks()).sort((a,b)=>b.installedAt-a.installedAt),files=new Map();cancelled(signal);
+  const packs=(await listPacks().catch(error=>{throw inventoryFailure(error,'P1');})).sort((a,b)=>b.installedAt-a.installedAt),files=new Map();cancelled(signal);
   if(packs.length){
    // Read-only inspection must not create a directory; no packs means no OPFS.
    let dir;try{dir=await waitForLocal(sharedInventoryRead('directory',async()=> (await navigator.storage.getDirectory()).getDirectoryHandle(DIR)),{signal});}
-   catch(error){if(error.name!=='NotFoundError')throw error;return {packs,files};}
+   catch(error){if(error.name!=='NotFoundError')throw inventoryFailure(error,'P2');return {packs,files};}
    let next=0;
    await Promise.all(Array.from({length:Math.min(8,packs.length)},async()=>{
     while(next<packs.length){
      cancelled(signal);const pack=packs[next++];
      try{const file=await waitForLocal(sharedInventoryRead('file:'+pack.name,async()=> (await dir.getFileHandle(pack.name)).getFile()),{signal});files.set(pack.name,file);}
-     catch(error){if(error.name!=='NotFoundError'){job.controller.abort();throw error;}}
+     catch(error){if(error.name!=='NotFoundError'){job.controller.abort();throw inventoryFailure(error,'P3');}}
     }
    }));
   }

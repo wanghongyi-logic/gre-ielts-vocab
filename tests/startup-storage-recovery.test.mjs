@@ -40,8 +40,8 @@ test('read timeout settles caller and later rejection is consumed',async()=>{
 });
 function inventoryHarness({inventory=async()=>({readyPaths:[]}),library=async()=>({readyIds:[1],total:2,packs:[]}),usage=pending,initial=[1,2]}={}){
  const writes=[],node={textContent:'',hidden:false,disabled:false,dataset:{},setAttribute(){},removeAttribute(){},querySelector(){return this;}};
- let context;context=vm.createContext({Promise,Error,setTimeout,clearTimeout,waitForLocal:(work,options)=>waitForLocal(work,{...options,timeoutMs:20}),refreshEpoch:0,cachedPaths:[],savedReadyIds:initial,savedTotal:2,catalog:{entries:[]},sharedControl:{state:async()=>({generation:0,phase:'active'})},readSavedInventory:inventory,inspectLibrary:library,storageStatus:usage,queueSavedRefresh(){},refreshDownloads(){},paintSavedTotals(){writes.push([...context.savedReadyIds]);},paintSavedPending(){throw Error('a previous verified count must stay visible');},list:{replaceChildren(){}},host:{querySelector:()=>node},bookmark:node,retryStorage:{hidden:true},space:{textContent:''},clean:{hidden:false},controller:null,clearingThisPage:false,changingMode:false,mutating:false,size:n=>String(n)});
- const block=source.slice(source.indexOf(' let refreshJob='),source.indexOf('\n const rangeSection='));vm.runInContext(block,context);return {context,writes};
+ let context;context=vm.createContext({Promise,Error,OFFLINE_EDITION:'187-test',console:{warn(){}},setTimeout,clearTimeout,waitForLocal:(work,options)=>waitForLocal(work,{...options,timeoutMs:20}),refreshEpoch:0,cachedPaths:[],savedReadyIds:initial,savedTotal:2,catalog:{entries:[]},sharedControl:{state:async()=>({generation:0,phase:'active'})},readSavedInventory:inventory,inspectLibrary:library,storageStatus:usage,queueSavedRefresh(){},refreshDownloads(){},paintSavedTotals(){writes.push([...context.savedReadyIds]);},paintSavedPending(){throw Error('a previous verified count must stay visible');},list:{replaceChildren(){}},host:{querySelector:()=>node},bookmark:node,retryStorage:{hidden:true},space:{textContent:''},clean:{hidden:false},controller:null,clearingThisPage:false,changingMode:false,mutating:false,size:n=>String(n)});
+ const block=source.slice(source.indexOf(' let inventoryFailures='),source.indexOf('\n const rangeSection='));vm.runInContext(block,context);return {context,writes};
 }
 test('usage estimate hang does not delay verified inventory or count',async()=>{
  const {context:c,writes}=inventoryHarness();await Promise.race([c.refresh(),new Promise((_,reject)=>setTimeout(()=>reject(Error('count blocked on estimate')),50))]);assert.deepEqual(writes,[[1]]);assert.equal(c.retryStorage.hidden,true);
@@ -84,4 +84,22 @@ test('optional timeout before a delayed cache guard cannot allocate a stale obje
  const {createHash}=await import('node:crypto'),{LessonLoader}=await import('../gre-learning/lesson-loader.js'),bytes=Buffer.from('verified local video'),sha256=createHash('sha256').update(bytes).digest('hex'),ref={url:'story-media/'+sha256+'.mp4',sha256,bytes:bytes.length};let release;
  const loader=new LessonLoader({entries:[]},{cacheStorage:{open:async()=>({match:async()=>new Response(bytes)})},localMediaTimeoutMs:50});loader.mediaControl={ticket:async()=>0,guard:(_ticket,action)=>new Promise((resolve,reject)=>{release=()=>Promise.resolve().then(action).then(resolve,reject);})};
  const job=loader.optionalMedia(ref,undefined,'high',false);assert.equal(await job,null);assert.ok(release);release();await flush();assert.equal(loader.mediaCache.size,0);loader.destroy();
+});
+
+test('inventory diagnostics normalize each failure stage without raw errors or paths',async()=>{
+ for(const stage of ['C1','C2','P1','P2','P3','C3']){
+  const error=Object.assign(Error('private pack filename'),{name:'SecurityError',...(stage.startsWith('P')?{inventoryStage:stage}:{})}),events=[];
+  const {context:c}=inventoryHarness({inventory:async()=>{if(stage==='C2')throw error;return {readyPaths:[]};},library:async()=>{if(stage.startsWith('P'))throw error;return {readyIds:[1],total:2,packs:[]};}});let reads=0;
+  c.console={warn:(...args)=>events.push(args)};c.sharedControl.state=async()=>{if((stage==='C1'&&++reads===1)||(stage==='C3'&&++reads===2))throw error;return {generation:0,phase:'active'};};
+  await c.refresh();assert.equal(events.length,1,stage);assert.equal(events[0][1].code,stage+'-S');assert.equal(JSON.stringify(events).includes('private'),false);
+ }
+});
+test('version diagnostic appears only after two failures and clears on full success',async()=>{
+ let fail=true;const {context:c}=inventoryHarness({inventory:async()=>{if(fail)throw Object.assign(Error('no'),{name:'TimeoutError'});return {readyPaths:[]};}});
+ const footer={textContent:'v187'};const query=c.host.querySelector;c.host.querySelector=selector=>selector==='[data-runtime-build]'?footer:query(selector);
+ await c.refresh();assert.equal(footer.textContent,'v187');await c.refresh();assert.equal(footer.textContent,'v187 · C2-T');fail=false;await c.refresh();assert.equal(footer.textContent,'v187');fail=true;await c.refresh();assert.equal(footer.textContent,'v187');
+});
+
+test('actual quota errors get local Q diagnostic without inferring device capacity',async()=>{
+ const events=[],{context:c}=inventoryHarness({inventory:async()=>{throw Object.assign(Error('private quota text'),{name:'QuotaExceededError'});}});c.console={warn:(...args)=>events.push(args)};await c.refresh();assert.equal(events[0][1].code,'C2-Q');assert.equal(JSON.stringify(events).includes('private'),false);
 });

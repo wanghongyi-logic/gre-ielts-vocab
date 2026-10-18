@@ -24,7 +24,14 @@ let selectedNumber,current,currentMedia,speech,renderGeneration=0,pendingSection
 let libraryRevision=0,renderedLibraryRevision=0,libraryRefreshEpoch=0,libraryRefreshJob=null;
 const reading=installReadingPosition({entries,surface:main,picker,getSelected:()=>selectedNumber});
 const contents=installContents({main,picker,search,entries,getSelected:()=>selectedNumber,getRemembered:reading.remember,getReadingPosition:reading.position,onBeforeOpen:()=>reading.capture({force:true}),navigate,prepareReading:()=>motion.prepareReveal(),onOpen:()=>{swipe.cancel();if(current){renderGeneration++;main.removeAttribute('aria-busy');pages.adjacent(selectedNumber);}bookmarks.sync();motion.sync();window.speechSynthesis?.cancel();},onClose:()=>{requestAnimationFrame(()=>{reading.restore();reading.capture();bookmarks.sync();});motion.sync();},onTransition:active=>motion.setTurning(active)});
-window.addEventListener('gre-update-can-reload',event=>{if(swipe.busy||main.hasAttribute('aria-busy')||main.hasAttribute('data-contents-turning')||libraryRefreshJob)event.detail.blocked=true;});
+window.addEventListener('gre-update-can-reload',event=>{if(swipe.busy||main.hasAttribute('aria-busy')||main.hasAttribute('data-contents-turning')||libraryRefreshJob){event.detail.blocked=true;event.detail.readingPreparation=true;}});
+// Only the updater, after verifying a ready controller, requests this idle
+// cleanup. Storage mutation blockers are checked separately and never overridden.
+window.addEventListener('gre-update-recover-reading',event=>{
+ renderGeneration++;libraryRefreshEpoch++;libraryRefreshJob=null;
+ for(const cleanup of [()=>contents.cancel(),()=>swipe.cancel(),()=>loader.cancel(),()=>main.removeAttribute('aria-busy'),()=>motion.setTurning(false)]){try{cleanup();}catch{}}
+ event.detail.waits.push(Promise.resolve().then(()=>pages.destroy()));
+});
 function signalRendered(){contents.whenSettled().then(()=>window.dispatchEvent(new Event('gre-app-rendered')));}
 function remember(){return reading.remember();}
 function navigate(number){if(entries.some(entry=>entry.number===number)&&number!==selectedNumber)location.hash=`/learn/${number}`;}

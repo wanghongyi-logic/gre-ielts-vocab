@@ -11,7 +11,7 @@ const size=n=>(n/1024/1024).toFixed(1)+' MB';
 export function installOfflineManager(catalog){
  const savedSnapshot=createSavedSnapshot(catalog);
  setMediaEdition(catalog);let controller=null,activeOperation=null,cachedPaths=[],clearingThisPage=false,changingMode=false,mutating=false,filePickerOpen=false,savedReadyIds=null,savedGeneration=null,savedTotal=catalog.entries.length,releaseDownloads=null,savedExport=null,rangeDelete=null,refreshEpoch=0;
- window.addEventListener('gre-update-can-reload',event=>{if(controller||changingMode||clearingThisPage||mutating||filePickerOpen)event.detail.blocked=true;});
+ window.addEventListener('gre-update-can-reload',event=>{if(controller||changingMode||clearingThisPage||mutating||filePickerOpen){event.detail.blocked=true;event.detail.storageMutation=true;}});
  const host=document.createElement('section');host.className='offline-library';
  host.innerHTML=`<details class="library-page" open>
   <summary class="library-page-title">随身书库</summary>
@@ -96,15 +96,23 @@ export function installOfflineManager(catalog){
  function paintSavedPending(){bookmark.dataset.savedInventoryPending='true';savedReadyIds=null;bookmark.style.setProperty('--saved-progress','0');bookmark.querySelector('.library-rail-label').textContent='—';const bar=bookmark.querySelector('[role=progressbar]');bar.removeAttribute('aria-valuenow');bar.removeAttribute('aria-valuetext');bar.setAttribute('aria-busy','true');bookmark.title='本地保存进度，打开设置';bookmark.setAttribute('aria-label',bookmark.title);host.querySelector('[data-saved-count]').textContent='—';refreshDownloads();}
  const restoredIds=savedSnapshot.restore();if(restoredIds!==null){savedReadyIds=restoredIds;savedGeneration=savedSnapshot.generation();paintSavedTotals();}
  async function readSavedInventory(){let timer;try{return await Promise.race([batchStatus(),new Promise((_,reject)=>{timer=setTimeout(()=>reject(new Error('Inventory pending')),8000);})]);}finally{clearTimeout(timer);}}
+ let inventoryFailures=0;
+ function reportInventoryFailure(stage,error){
+  const allowed=['C1','C2','P1','P2','P3','C3'];
+  const code=(allowed.includes(error?.inventoryStage)?error.inventoryStage:stage)+'-'+(error?.name==='QuotaExceededError'?'Q':error?.name==='TimeoutError'?'T':['SecurityError','NotAllowedError'].includes(error?.name)?'S':error?.name==='AbortError'?'A':'O');
+  console.warn('GRE inventory',{build:OFFLINE_EDITION,code});
+  if(++inventoryFailures>=2)host.querySelector('[data-runtime-build]').textContent='v'+OFFLINE_EDITION.split('-')[0]+' · '+code;
+ }
+ function clearInventoryDiagnostic(){inventoryFailures=0;host.querySelector('[data-runtime-build]').textContent='v'+OFFLINE_EDITION.split('-')[0];}
  let refreshJob=null;
  function refresh(){if(refreshJob)return refreshJob;const job=refreshInventory().finally(()=>{if(refreshJob===job)refreshJob=null;});refreshJob=job;return job;}
  async function refreshInventory(){
-  const epoch=++refreshEpoch;let paths=cachedPaths;
-  try{const before=await waitForLocal(()=>sharedControl.state());if(before.phase==='clearing'||before.phase==='selective-clearing')throw new Error('Inventory changing');{const cache=await readSavedInventory();if(cache.pending||cache.error)throw new Error('Inventory pending');paths=cache.readyPaths||[];}const library=await inspectLibrary(catalog,{cachedPaths:paths});const after=await waitForLocal(()=>sharedControl.state());if(epoch!==refreshEpoch)return;if(after.generation!==before.generation||after.phase==='clearing'||after.phase==='selective-clearing'){queueSavedRefresh();return;}cachedPaths=paths;savedReadyIds=library.readyIds;savedGeneration=after.generation;savedTotal=library.total;refreshDownloads();list.replaceChildren();paintSavedTotals();host.querySelector('.library-packs').hidden=library.packs.length===0;
+  const epoch=++refreshEpoch;let paths=cachedPaths,stage='C1';
+  try{const before=await waitForLocal(()=>sharedControl.state());if(before.phase==='clearing'||before.phase==='selective-clearing')throw new Error('Inventory changing');{stage='C2';const cache=await readSavedInventory();if(cache.pending||cache.error)throw new Error('Inventory pending');paths=cache.readyPaths||[];}stage='P1';const library=await inspectLibrary(catalog,{cachedPaths:paths});stage='C3';const after=await waitForLocal(()=>sharedControl.state());if(epoch!==refreshEpoch)return;if(after.generation!==before.generation||after.phase==='clearing'||after.phase==='selective-clearing'){queueSavedRefresh();return;}cachedPaths=paths;savedReadyIds=library.readyIds;savedGeneration=after.generation;savedTotal=library.total;refreshDownloads();list.replaceChildren();paintSavedTotals();host.querySelector('.library-packs').hidden=library.packs.length===0;
    for(const pack of library.packs){const li=document.createElement('li'),label=document.createElement('span'),button=document.createElement('button');const title=document.createElement('strong'),detail=document.createElement('span');title.textContent=`${pack.wordIds.length} 词`;detail.textContent=`${size(pack.bytes)} · ${pack.version}${!pack.available?' · 文件缺失，请重新导入':pack.ownedCurrentAssets===0?' · 当前未使用':''}`;label.className='library-pack-label';label.append(title,detail);button.type='button';button.textContent='移除';button.setAttribute('aria-label',`删除 ${pack.wordIds.length} 词的本机资源包`);button.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating;button.onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating)return;if(!confirm(`删除这份本机资源包（${pack.wordIds.length} 词）？「文件」里的原始 ZIP 和其他资源包不会受影响。`))return;mutating=true;syncMutationControls();try{await deletePack(pack.key);status.textContent='本机资源包已删除，重新打开阅读后生效';await refresh();}catch(error){status.textContent=error.message;}finally{mutating=false;syncMutationControls();}};li.append(label,button);list.append(li);}
    clean.hidden=!library.packs.some(p=>p.ownedCurrentAssets===0);clean.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating;host.querySelector('[data-clear-all]').disabled=Boolean(controller)||clearingThisPage||changingMode||mutating;
-   retryStorage.hidden=true;space.textContent='';storageStatus().then(storage=>{if(epoch===refreshEpoch)space.textContent=storage.usage!==undefined?'占用 '+size(storage.usage):'';}).catch(()=>{});
-  }catch{if(epoch===refreshEpoch){retryStorage.hidden=false;space.textContent='暂时无法读取本机存储';if(savedReadyIds===null)paintSavedPending();else{bookmark.dataset.savedInventoryPending='true';bookmark.querySelector('[role=progressbar]').setAttribute('aria-busy','true');}}}
+   clearInventoryDiagnostic();retryStorage.hidden=true;space.textContent='';storageStatus().then(storage=>{if(epoch===refreshEpoch)space.textContent=storage.usage!==undefined?'占用 '+size(storage.usage):'';}).catch(()=>{});
+  }catch(error){if(epoch===refreshEpoch){reportInventoryFailure(stage,error);retryStorage.hidden=false;space.textContent='暂时无法读取本机存储';if(savedReadyIds===null)paintSavedPending();else{bookmark.dataset.savedInventoryPending='true';bookmark.querySelector('[role=progressbar]').setAttribute('aria-busy','true');}}}
  }
  const rangeSection=host.querySelector('[data-delete-range]');
  rangeDelete=bindSavedRange(rangeSection,catalog,{prefix:'range-delete',verb:'删除'});

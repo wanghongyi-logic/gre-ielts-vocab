@@ -25,3 +25,8 @@ test('settings rail mounts before real bookmark botanical observers capture it',
  assert.ok(bookmark.includes('installBotanicalMargin('));assert.ok(botanical.includes("#open-settings"));
  assert.ok(app.indexOf('try{installOfflineManager(catalog);}')<app.indexOf('const bookmarks=installBookmarkNavigation('));
 });
+
+test('stale-reading recovery releases all read work even if an optional cleanup hook throws',async()=>{
+ const source=await readFile(new URL('../gre-learning/app.js',import.meta.url),'utf8'),code=source.slice(source.indexOf("window.addEventListener('gre-update-recover-reading'"),source.indexOf('function signalRendered'));
+ let handler,swipes=0,cancelled=0,destroyed=0,cleared=0;const ctx=vm.createContext({window:{addEventListener:(_,fn)=>handler=fn},renderGeneration:1,libraryRefreshEpoch:2,libraryRefreshJob:{},contents:{cancel(){throw Error('optional');}},swipe:{cancel:()=>swipes++},loader:{cancel:()=>cancelled++},main:{removeAttribute:()=>cleared++},motion:{setTurning(){}},pages:{destroy:async()=>destroyed++},Promise});vm.runInContext(code,ctx);const detail={waits:[]};handler({detail});await Promise.all(detail.waits);assert.equal(ctx.renderGeneration,2);assert.equal(ctx.libraryRefreshEpoch,3);assert.equal(ctx.libraryRefreshJob,null);assert.deepEqual([swipes,cancelled,destroyed,cleared],[1,1,1,1]);
+});

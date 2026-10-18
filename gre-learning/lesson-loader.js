@@ -1,4 +1,4 @@
-import {waitForLocal} from './offline-async.js';
+import {waitForLocal,preferVerifiedLocal} from './offline-async.js';
 import {hostedMediaPaths,isHostedMediaEntry} from './hosted-media.js';
 import {createMediaControl} from './offline-control.js';
 import {videoMode} from './offline-preferences.js';
@@ -20,10 +20,10 @@ export function expandCatalog(raw){
  return {...raw,entries:raw.entries.map(entry=>({...entry,unit:raw.units[entry.unit],...(entry.art?{art:{...entry.art,url:`art-units/${entry.number}-${entry.art.sha256}.json`}}:{})}))};
 }
 export class LessonLoader {
- constructor(catalog,{baseURL=new URL('./',import.meta.url),fetcher=globalThis.fetch.bind(globalThis),crypto=globalThis.crypto,cacheStorage=globalThis.caches,mediaTimeoutMs=5000,localMediaTimeoutMs=6500,localTextTimeoutMs=1200,maxEntries=8,maxBytes=2*1024*1024,setTimer=globalThis.setTimeout.bind(globalThis),clearTimer=globalThis.clearTimeout.bind(globalThis)}={}) {
+ constructor(catalog,{baseURL=new URL('./',import.meta.url),fetcher=globalThis.fetch.bind(globalThis),crypto=globalThis.crypto,cacheStorage=globalThis.caches,mediaTimeoutMs=5000,localMediaTimeoutMs=6500,localTextTimeoutMs=1200,textTimeoutMs=6500,maxEntries=8,maxBytes=2*1024*1024,setTimer=globalThis.setTimeout.bind(globalThis),clearTimer=globalThis.clearTimeout.bind(globalThis)}={}) {
   this.catalog=catalog;this.hostedMediaPaths=hostedMediaPaths(catalog);this.index=new Map(catalog.entries.map(entry=>[entry.number,entry]));
   if(this.index.size!==catalog.entries.length)throw new Error('Duplicate canonical ID');
-  this.baseURL=baseURL;this.fetcher=fetcher;this.cacheStorage=cacheStorage;this.crypto=crypto;this.mediaTimeoutMs=mediaTimeoutMs;this.localMediaTimeoutMs=localMediaTimeoutMs;this.localTextTimeoutMs=localTextTimeoutMs;this.textWrites=new Map();this.textReads=new Map();this.nextUnit=null;this.mediaControl=createMediaControl(new URL('../',baseURL));this.mediaGeneration=null;this.mediaControl.subscribe(state=>{if(state.paused||(this.mediaGeneration!==null&&state.generation!==this.mediaGeneration))this.destroy();this.mediaGeneration=state.generation;});this.maxEntries=maxEntries;this.maxBytes=maxBytes;this.cache=new Map();this.bytes=0;this.generation=0;this.foreground=null;this.prefetchController=null;this.timer=null;this.mediaCache=new Map();this.setTimer=setTimer;this.clearTimer=clearTimer;
+  this.baseURL=baseURL;this.fetcher=fetcher;this.cacheStorage=cacheStorage;this.crypto=crypto;this.mediaTimeoutMs=mediaTimeoutMs;this.localMediaTimeoutMs=localMediaTimeoutMs;this.localTextTimeoutMs=localTextTimeoutMs;this.textTimeoutMs=textTimeoutMs;this.textWrites=new Map();this.textReads=new Map();this.nextUnit=null;this.mediaControl=createMediaControl(new URL('../',baseURL));this.mediaGeneration=null;this.mediaControl.subscribe(state=>{if(state.paused||(this.mediaGeneration!==null&&state.generation!==this.mediaGeneration))this.destroy();this.mediaGeneration=state.generation;});this.maxEntries=maxEntries;this.maxBytes=maxBytes;this.cache=new Map();this.bytes=0;this.generation=0;this.foreground=null;this.prefetchController=null;this.timer=null;this.mediaCache=new Map();this.setTimer=setTimer;this.clearTimer=clearTimer;
  }
  async resource(ref,signal,priority='high') {
   if(signal?.aborted)throw abortError();
@@ -43,28 +43,24 @@ export class LessonLoader {
   if(this.cache.has(key)){const item=this.cache.get(key);this.cache.delete(key);this.cache.set(key,item);return item.data;}
   const url=new URL(ref.url,this.baseURL);
   if(url.origin!==this.baseURL.origin||!url.pathname.startsWith(this.baseURL.pathname))throw new Error('Unit outside lesson scope');
-  const local=await waitForLocal(()=>localAsset(ref),{signal,timeoutMs:this.localTextTimeoutMs}).catch(error=>{if(signal?.aborted)throw error;return null;});
-  if(signal?.aborted)throw abortError();
-  // Read our verified disk copy even before a service worker controls this tab.
-  let diskResponse;
-  if(!local)try{diskResponse=await waitForLocal(async()=>{
-   const cached=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(!cached)return null;
-   const bytes=await cached.clone().arrayBuffer(),hash=Array.from(new Uint8Array(await this.crypto.subtle.digest('SHA-256',bytes)),v=>v.toString(16).padStart(2,'0')).join('');
-   return bytes.byteLength===ref.bytes&&hash===ref.sha256?cached:null;
-  },{signal,timeoutMs:this.localTextTimeoutMs});}catch(error){if(signal?.aborted)throw error;diskResponse=null;}
-  const response=local?new Response(local):diskResponse||await waitForLocal(()=>this.fetcher(url,{signal,priority,cache:'no-cache'}),{signal,timeoutMs:0});
-  if(!response.ok)throw new Error(`Lesson download failed (${response.status})`);
-  const bytes=await waitForLocal(()=>response.arrayBuffer(),{signal,timeoutMs:0});
-  if(bytes.byteLength!==ref.bytes)throw new Error('Lesson byte count mismatch');
-  const digest=await this.crypto.subtle.digest('SHA-256',bytes);
-  const hash=Array.from(new Uint8Array(digest),value=>value.toString(16).padStart(2,'0')).join('');
-  if(hash!==key)throw new Error('Lesson integrity mismatch');
+  const verified=async(response,fromDisk=false)=>{
+   if(!response?.ok)throw new Error(`Lesson download failed (${response?.status??'missing'})`);
+   const bytes=await response.arrayBuffer();
+   if(bytes.byteLength!==ref.bytes)throw new Error('Lesson byte count mismatch');
+   const digest=await this.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),value=>value.toString(16).padStart(2,'0')).join('');
+   if(hash!==key)throw new Error('Lesson integrity mismatch');
+   return {bytes,fromDisk};
+  };
+  const {bytes,fromDisk}=await preferVerifiedLocal(()=>Promise.any([
+   (async()=>{const blob=await localAsset(ref);if(!blob)throw new Error('No imported text');return verified(new Response(blob));})(),
+   (async()=>{const cached=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(!cached)throw new Error('No cached text');return verified(cached,true);})()
+  ]),async networkSignal=>verified(await this.fetcher(url,{signal:networkSignal,priority,cache:'no-cache'})),{signal,localTimeoutMs:this.localTextTimeoutMs,totalTimeoutMs:this.textTimeoutMs});
   if(signal?.aborted)throw abortError();
   const data=JSON.parse(new TextDecoder().decode(bytes));
   if(data.schema!==1){if(data.schema!==2||!ref.url.startsWith('art-units/')||bytes.byteLength>2*1024*1024)throw new Error('Unsupported lesson schema');validateTrackedArt(data);}
   // First-load requests can finish before service-worker control. Persist verified bytes too.
   // Quota/private-mode failures affect offline availability, never successful live rendering.
-  if(this.cacheStorage&&!diskResponse&&!this.textWrites.has(url.href)&&this.textWrites.size<2){
+  if(this.cacheStorage&&!fromDisk&&!this.textWrites.has(url.href)&&this.textWrites.size<2){
    // Verified text is immediately readable. At most two best-effort disk writes
    // may remain pending; a stalled browser must not retain the whole book in RAM.
    const write=Promise.resolve().then(async()=>{const disk=await this.cacheStorage.open('gre-scalable-verified-units-v1');await disk.put(url.href,new Response(bytes,{headers:{'Content-Type':'application/json'}}));}).catch(()=>{}).finally(()=>this.textWrites.delete(url.href));

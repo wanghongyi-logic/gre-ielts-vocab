@@ -1,15 +1,24 @@
 (() => {
   if (!('serviceWorker' in navigator) || location.protocol === 'file:' || location.hostname === 'app.local') return;
-  const build = '186-offline1600-v37';
+  const build = '187-offline1600-v38';
   const restoreKey='gre-update-position-v1';
   let registration,connecting,checking,inspecting,pendingBuild,applyTimer,retryTimer,hideTimer;
-  let appReady=false;
+  let appReady=false,readingBlockedAt=null,recoveringReading=false,pendingController;
   let interaction=0,restoring=false,refreshing=false,lastCheck=-Infinity,lastInput=-Infinity,pointerDown=false,retryDelay=5000;
   const status=document.getElementById('update-status');
   const show=message=>{if(status){clearTimeout(hideTimer);status.textContent=message;status.hidden=false;}};
   const canReload=()=>{
-    const detail={blocked:false};window.dispatchEvent(new CustomEvent('gre-update-can-reload',{detail}));
-    return appReady&&document.visibilityState!=='hidden'&&!pointerDown&&Date.now()-lastInput>=400&&!detail.blocked;
+    if(!appReady||document.visibilityState==='hidden'||pointerDown||Date.now()-lastInput<400||recoveringReading)return false;
+    const detail={blocked:false,storageMutation:false,readingPreparation:false};window.dispatchEvent(new CustomEvent('gre-update-can-reload',{detail}));
+    if(!detail.blocked){readingBlockedAt=null;return true;}
+    if(detail.storageMutation||!detail.readingPreparation){readingBlockedAt=null;return false;}
+    readingBlockedAt??=Date.now();
+    if(Date.now()-readingBlockedAt>=12000&&pendingController===navigator.serviceWorker.controller){
+      recoveringReading=true;const recovery={waits:[]};
+      window.dispatchEvent(new CustomEvent('gre-update-recover-reading',{detail:recovery}));
+      let timer;Promise.race([Promise.allSettled(recovery.waits),new Promise(resolve=>{timer=setTimeout(resolve,3000);})]).finally(()=>{clearTimeout(timer);recoveringReading=false;readingBlockedAt=Date.now();applyReady();});
+    }
+    return false;
   };
   function applyReady(){
     clearTimeout(applyTimer);
@@ -17,12 +26,16 @@
     if(!canReload()){applyTimer=setTimeout(applyReady,200);return;}
     const key=`vocab-update-reload-${pendingBuild}`;
     try{
-      if(sessionStorage.getItem(key)==='1')return;
+      const raw=sessionStorage.getItem(key);let attempt;
+      try{attempt=JSON.parse(raw);}catch{}
+      if(raw==='1'||attempt===1){attempt={attempts:1,at:Date.now()};sessionStorage.setItem(key,JSON.stringify(attempt));}
+      if(attempt?.attempts>=2){show('新版已就绪，请重新打开');return;}
+      if(attempt?.attempts===1&&Date.now()-attempt.at<30000){applyTimer=setTimeout(applyReady,Math.max(200,30000-(Date.now()-attempt.at)));return;}
       const position={build:pendingBuild,hash:location.hash,x:window.scrollX,y:window.scrollY,at:Date.now()};
       window.dispatchEvent(new CustomEvent('gre-update-capture',{detail:position}));
       sessionStorage.setItem(restoreKey,JSON.stringify(position));
-      sessionStorage.setItem(key,'1');
-    }catch{}
+      sessionStorage.setItem(key,JSON.stringify({attempts:(attempt?.attempts||0)+1,at:Date.now()}));
+    }catch{show('新版已就绪，请重新打开');return;}
     refreshing=true;show('新版已就绪，正在打开…');location.reload();
   }
   async function restorePosition(){
@@ -48,7 +61,7 @@
       const timer=setTimeout(()=>{finish();scheduleRetry();},8000);
       channel.port1.onmessage=event=>{
         const data=event.data;
-        if(controller===navigator.serviceWorker.controller&&data?.type==='APP_BUILD'&&data.ready===true&&data.build&&String(data.build)!==build){pendingBuild=String(data.build);applyReady();}
+        if(controller===navigator.serviceWorker.controller&&data?.type==='APP_BUILD'&&data.ready===true&&data.build&&String(data.build)!==build){pendingBuild=String(data.build);pendingController=controller;applyReady();}
         finish();
       };
       try{controller.postMessage({type:'GET_BUILD'},[channel.port2]);}catch{finish();}
@@ -68,7 +81,7 @@
     checking=registration.update().then(()=>{retryDelay=5000;watchWorker(registration.waiting);watchWorker(registration.installing);return inspectController();}).catch(scheduleRetry).finally(()=>{checking=null;});
     return checking;
   }
-  navigator.serviceWorker.addEventListener('controllerchange',()=>{pendingBuild=null;Promise.resolve(inspecting).then(inspectController);});
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{pendingBuild=null;pendingController=null;readingBlockedAt=null;Promise.resolve(inspecting).then(inspectController);});
   navigator.serviceWorker.addEventListener('message',event=>{if(event.data?.type==='SHELL_READY'&&event.source===navigator.serviceWorker.controller)inspectController();});
   function connect(){if(!appReady||connecting||navigator.onLine===false)return;connecting=navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(value=>{
     registration=value;

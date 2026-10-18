@@ -10,3 +10,18 @@ export function waitForLocal(work,{signal,timeoutMs=6000,message='本机存储�
   try{Promise.resolve(typeof work==='function'?work():work).then(value=>finish(null,value),error=>finish(error));}catch(error){finish(error);}
  });
 }
+
+// A fast local-read deadline starts network fallback; it does not discard a
+// still-pending valid offline copy. Only verified, non-missing results compete.
+export async function preferVerifiedLocal(localWork,networkWork,{signal,localTimeoutMs=1200,totalTimeoutMs=6500}={}){
+ const start=Date.now(),network=new AbortController();
+ if(signal?.aborted)throw new DOMException('Cancelled','AbortError');
+ const local=Promise.resolve().then(localWork);
+ try{
+  try{return await waitForLocal(local,{signal,timeoutMs:Math.min(localTimeoutMs,totalTimeoutMs)});}
+  catch(error){if(signal?.aborted)throw error;}
+  const remaining=Math.max(1,totalTimeoutMs-(Date.now()-start));
+  return await waitForLocal(Promise.any([local,Promise.resolve().then(()=>networkWork(network.signal))]),{signal,timeoutMs:remaining});
+ }catch(error){throw error instanceof AggregateError?error.errors.at(-1):error;}
+ finally{network.abort();}
+}
