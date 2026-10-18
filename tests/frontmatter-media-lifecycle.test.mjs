@@ -108,6 +108,10 @@ test('every frontmatter route is a single sheet, with first-frame feedback and n
  const overlay=elements.find(n=>n.className==='frontmatter-turn');assert.equal(overlay.children.length,1);assert.ok(Number(overlay.dataset.progress)>0,'input responds in the first animation frame');
  assert.equal(preparations,1);turn.finish();await finished;assert.equal(commits,1);assert.equal(frames.size,0,'completion leaves no second animation queued');
  const cancelled=turn.begin({source:sheet,interactive:true,prepare:()=>Promise.resolve(),rollback:()=>commits++});await micro();turn.paint(.2);turn.animate(false);turn.finish(false);await cancelled;assert.equal(commits,2);assert.equal(frames.size,0);
+ const failed=turn.begin({source:sheet,interactive:true,prepare:()=>Promise.resolve(),commit:()=>{throw Error('optional adoption failed');}});await micro();
+ assert.throws(()=>turn.finish(),/optional adoption failed/);await failed;
+ assert.equal(elements.filter(n=>n.className==='frontmatter-turn'&&!n.removed).length,0,'callback failure removes every blocking overlay');
+ assert.equal(frames.size,0);assert.equal(turn.deferRoute(()=>{}),false,'later directory navigation is not deferred forever');
 });
 
 test('ordinary page turns preserve the outgoing presented video and never re-enable its hidden poster',async()=>{

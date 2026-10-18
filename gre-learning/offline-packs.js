@@ -82,11 +82,61 @@ export async function localAsset(ref,retry=true){
 }
 export async function storageStatus(){const [estimate,persistent]=await Promise.all([waitForLocal(()=>navigator.storage?.estimate?.(),{timeoutMs:1500}).catch(()=>null),waitForLocal(()=>navigator.storage?.persisted?.(),{timeoutMs:1500}).catch(()=>false)]);return {...estimate,persistent:Boolean(persistent)};}
 
-export async function inspectLibrary(catalog,{cachedPaths=[]}={}){
- const packs=(await listPacks()).sort((a,b)=>b.installedAt-a.installedAt),signatures=new Set(),owners=new Map();
+// Inventory scans share in-flight browser metadata reads. A caller timing out or
+// cancelling cannot create another eight unabortable OPFS reads on every retry.
+const inventoryReads=new Map(),inventoryReadQueue=[];let inventoryReadsActive=0,inventoryScan=null;
+function pumpInventoryReads(){
+ while(inventoryReadsActive<8&&inventoryReadQueue.length){
+  const task=inventoryReadQueue.shift();inventoryReadsActive++;
+  const finish=()=>{inventoryReadsActive--;if(inventoryReads.get(task.key)===task.promise)inventoryReads.delete(task.key);pumpInventoryReads();};
+  Promise.resolve().then(task.work).then(task.resolve,task.reject).then(finish,finish);
+ }
+}
+function sharedInventoryRead(key,work){
+ if(inventoryReads.has(key))return inventoryReads.get(key);
+ let resolve,reject;const promise=new Promise((yes,no)=>{resolve=yes;reject=no;});
+ inventoryReads.set(key,promise);inventoryReadQueue.push({key,work,promise,resolve,reject});pumpInventoryReads();return promise;
+}
+function startInventoryScan(){
+ const job={revision:indexRevision,controller:new AbortController(),users:0,pending:true};
+ const signal=job.controller.signal;
+ job.promise=(async()=>{
+  const packs=(await listPacks()).sort((a,b)=>b.installedAt-a.installedAt),files=new Map();cancelled(signal);
+  if(packs.length){
+   // Read-only inspection must not create a directory; no packs means no OPFS.
+   let dir;try{dir=await waitForLocal(sharedInventoryRead('directory',async()=> (await navigator.storage.getDirectory()).getDirectoryHandle(DIR)),{signal});}
+   catch(error){if(error.name!=='NotFoundError')throw error;return {packs,files};}
+   let next=0;
+   await Promise.all(Array.from({length:Math.min(8,packs.length)},async()=>{
+    while(next<packs.length){
+     cancelled(signal);const pack=packs[next++];
+     try{const file=await waitForLocal(sharedInventoryRead('file:'+pack.name,async()=> (await dir.getFileHandle(pack.name)).getFile()),{signal});files.set(pack.name,file);}
+     catch(error){if(error.name!=='NotFoundError'){job.controller.abort();throw error;}}
+    }
+   }));
+  }
+  return {packs,files};
+ })();
+ const finish=()=>{job.pending=false;if(inventoryScan===job)inventoryScan=null;};job.promise.then(finish,finish);return job;
+}
+async function readPackInventory(signal){
+ while(true){
+  cancelled(signal);const job=inventoryScan||(inventoryScan=startInventoryScan());
+  if(job.controller.signal.aborted){await waitForLocal(job.promise.catch(()=>{}),{signal,timeoutMs:0});continue;}
+  job.users++;
+  let result;try{result=await waitForLocal(job.promise,{signal,timeoutMs:0});}
+  finally{job.users--;if(!job.users&&job.pending)job.controller.abort();}
+  // Imports/deletes and cross-tab notifications invalidate a scan in progress.
+  if(job.revision!==indexRevision)continue;
+  return {packs:result.packs.map(pack=>({...pack})),files:result.files};
+ }
+}
+
+export async function inspectLibrary(catalog,{cachedPaths=[],signal}={}){
+ const {packs,files}=await readPackInventory(signal),signatures=new Set(),owners=new Map();cancelled(signal);
  const wanted=new Set();for(const e of catalog.entries)for(const ref of [e.storyMedia?.video,e.storyMedia?.poster,e.storyMedia?.staticPoster].filter(Boolean))wanted.add('gre-learning/'+ref.url+'|'+ref.sha256+'|'+ref.bytes);
- for(const pack of packs){pack.available=false;let file;try{file=await savedFile(pack.name);pack.available=file.size===pack.bytes;}catch(error){if(error.name!=='NotFoundError')throw error;}pack.ownedCurrentAssets=0;if(!pack.available)continue;for(const f of pack.files){if(badSlices.has(sliceIdentity(pack,file,f)))continue;const signature=f.path+'|'+f.sha256+'|'+f.bytes;signatures.add(signature);if(wanted.has(signature)&&!owners.has(signature)){owners.set(signature,pack.key);pack.ownedCurrentAssets++;}}}
- const opfsPaths=[...signatures].map(signature=>signature.split('|')[0]);for(const signature of wanted)if(cachedPaths.includes(signature.split('|')[0]))signatures.add(signature);
+ for(const pack of packs){const file=files.get(pack.name);pack.available=Boolean(file)&&file.size===pack.bytes;pack.ownedCurrentAssets=0;if(!pack.available)continue;for(const f of pack.files){if(badSlices.has(sliceIdentity(pack,file,f)))continue;const signature=f.path+'|'+f.sha256+'|'+f.bytes;signatures.add(signature);if(wanted.has(signature)&&!owners.has(signature)){owners.set(signature,pack.key);pack.ownedCurrentAssets++;}}}
+ const cacheSet=new Set(cachedPaths),opfsPaths=[...signatures].map(signature=>signature.split('|')[0]);for(const signature of wanted)if(cacheSet.has(signature.split('|')[0]))signatures.add(signature);
  const readyIds=catalog.entries.filter(e=>[e.storyMedia?.video,e.storyMedia?.poster,e.storyMedia?.staticPoster].filter(Boolean).every(ref=>signatures.has('gre-learning/'+ref.url+'|'+ref.sha256+'|'+ref.bytes))).map(e=>e.number);
  return {packs,readyIds,opfsPaths,total:catalog.entries.length};
 }

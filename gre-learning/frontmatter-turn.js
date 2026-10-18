@@ -22,10 +22,13 @@ export function installFrontmatterTurn({main,onActivity=()=>{},window:win=window
   active=null;win.cancelAnimationFrame(state.frame);win.clearTimeout(state.timer);
   // Hide/restore the proper real leaf before removing the curl. No empty frame.
   if(state.face)state.face.inert=state.wasInert;
-  (commit?state.commit:state.rollback)?.();
-  state.restore?.();state.overlay?.remove();
-  main.removeAttribute('data-contents-turning');onActivity(false);
-  state.resolve();state.route?.();
+  // A failed optional adoption/media hook must not leave an inert leaf or
+  // invisible overlay intercepting every later directory click and swipe.
+  try{(commit?state.commit:state.rollback)?.();}
+  finally{try{state.restore?.();}finally{
+   state.overlay?.remove();main.removeAttribute('data-contents-turning');
+   try{onActivity(false);}finally{state.resolve();state.route?.();}
+  }}
  }
  function paint(progress){
   const state=active;if(!state)return;
@@ -137,3 +140,4 @@ export function installFrontmatterTurn({main,onActivity=()=>{},window:win=window
  win.visualViewport?.addEventListener?.('resize',interrupt);win.visualViewport?.addEventListener?.('scroll',interrupt);
  return {begin,paint,animate,finish,interrupt,cancel(){if(active)active.route=null;interrupt();},get busy(){return Boolean(active);},get interactive(){return Boolean(active?.interactive);},whenSettled:()=>active?.finished||Promise.resolve(),deferRoute(callback){if(!active)return false;active.route=callback;if(active.interactive)finish(false);return true;}};
 }
+

@@ -10,7 +10,8 @@ import {installReadingPosition} from './reading-position.js';
 import {installBookmarkNavigation} from './bookmark-navigation.js';
 const catalog=expandCatalog(await fetch(new URL('./catalog.json',import.meta.url),{cache:'no-cache'}).then(response=>{if(!response.ok)throw new Error('Lesson index unavailable');return response.json();}));
 installMobileZoomGuard();
-installOfflineManager(catalog);
+// Mount the settings rail before bookmark decoration; storage failures must not stop navigation.
+try{installOfflineManager(catalog);}catch(error){console.warn('Offline controls unavailable',error);}
 const entries=catalog.entries;
 document.getElementById('release-summary').textContent=`词汇学习 · 已收录 ${entries.length} 词`;
 const loader=new LessonLoader(catalog);
@@ -111,3 +112,4 @@ window.addEventListener('hashchange',()=>{reading.route(location.hash);route();}
 window.addEventListener('pagehide',event=>{libraryRefreshEpoch++;window.speechSynthesis?.cancel();loader.cancel();pages.destroy();motion.setTurning(true);bookmarks.suspend();renderGeneration++;});
 window.addEventListener('pageshow',event=>{if(!event.persisted&&!current)return;if(contents.isRoute(location.hash)){if(current){watchChapters();motion.setTurning(false);}route();return;}if(contents.isRoute(location.hash)!==picker.open){route();return;}if(current&&(contents.isRoute(location.hash)||resolveWordNumber(location.hash,entries,remember())===selectedNumber)){main.removeAttribute('aria-busy');watchChapters();motion.setTurning(false);pages.adjacent(selectedNumber);if(renderedLibraryRevision<libraryRevision)refreshLibrary();}else route();});
 route();window.dispatchEvent(new Event('vocab-app-ready'));
+
