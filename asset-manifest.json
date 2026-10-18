@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "187-offline1600-v38",
-  "generatedAt": "2026-10-18T11:48:12.174601+00:00",
+  "releaseBuild": "188-offline1600-v39",
+  "generatedAt": "2026-10-18T15:06:10.519411+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-reviewed-order",
@@ -737,7 +737,7 @@
       "path": "gre-learning/update.js",
       "loading": "shell",
       "bytes": 8169,
-      "sha256": "a9f48418dadd2a81971bc0fec8a813d077ecb7fa9c02036db4c37c9eb0511a4b",
+      "sha256": "f4a3656f8406f414b7648b3cefd697b28874a448691a69bc593d69c7b96108f8",
       "gzipBytes": 2688
     },
     {
@@ -968,7 +968,7 @@
       "path": "gre-learning/offline-preferences.js",
       "loading": "shell",
       "bytes": 1262,
-      "sha256": "612fb3b2d856d80272f3615fd3c9e081a26f8f84a1f14a45cef568f585db5e30",
+      "sha256": "f109f1ceef305de4a8ae4910d9b397647afe2d69da16811d744925aa9255c96c",
       "gzipBytes": 598
     },
     {
@@ -5586,16 +5586,16 @@
     },
     {
       "path": "sw.js",
-      "bytes": 107806,
-      "sha256": "466361326ebf37ac2b58c90f2c45334889979509dc0347226037606ed1701317",
-      "gzipBytes": 32848,
+      "bytes": 108144,
+      "sha256": "e2ca142f17c94d55451626d8675162e72b528aa3bf4c653219df327cb7d40566",
+      "gzipBytes": 32906,
       "loading": "on-demand"
     },
     {
       "path": "gre-learning/shell-manifest.json",
       "bytes": 87478,
-      "sha256": "15a869fc444081b7be2e2ebc2cf20db62176bc0339ae5c6c5b19cd5449b0ab14",
-      "gzipBytes": 20834,
+      "sha256": "ab526bcf5a51076d75e1b1665f717f8cc76a35df8d5cec420832cd8d0168cf1a",
+      "gzipBytes": 20805,
       "loading": "on-demand"
     },
     {
@@ -11967,11 +11967,18 @@
       "sha256": "cae68bf9c87c0c49c831db549874229b137cbe06279f13c1b388f5f35eee1167",
       "gzipBytes": 1721,
       "loading": "on-demand"
+    },
+    {
+      "path": "tests/old-shell-reuse.test.mjs",
+      "bytes": 3400,
+      "sha256": "18095919f115b5076c47592b98f2a3831b5732c201fd73372aeddb988c4e4c1f",
+      "gzipBytes": 1193,
+      "loading": "on-demand"
     }
   ],
   "totals": {
-    "bytes": 526901126,
-    "gzipBytes": 514323191
+    "bytes": 526904864,
+    "gzipBytes": 514324413
   },
   "retainedHistoricalAssets": 212,
   "availableTextLessons": 1600,
