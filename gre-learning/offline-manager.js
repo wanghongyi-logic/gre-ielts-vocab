@@ -1,3 +1,4 @@
+import {waitForLocal} from './offline-async.js';
 import {createSavedSnapshot,savedSnapshotKey} from './offline-snapshot.js';
 import {savedRangeFields,bindSavedRange} from './offline-range.js';
 import {mountSavedExport} from './offline-export-ui.js';
@@ -50,6 +51,7 @@ export function installOfflineManager(catalog){
  const settingsStyle=document.createElement('link');settingsStyle.rel='stylesheet';settingsStyle.href=new URL('./settings-storybook.css',import.meta.url).href;document.head.append(settingsStyle);
  const input=host.querySelector('input[type="file"]'),cancel=host.querySelector('[data-cancel]'),progress=host.querySelector('[data-import-progress]'),status=host.querySelector('[data-status]'),list=host.querySelector('[data-packs]'),space=host.querySelector('[data-space]'),clean=host.querySelector('[data-clean]');
  const importTarget={progress,cancel,status:host.querySelector('[data-import-status]')};
+ const retryStorage=document.createElement('button');retryStorage.type='button';retryStorage.className='library-text-action';retryStorage.textContent='重试读取';retryStorage.hidden=true;space.after(retryStorage);retryStorage.onclick=()=>refresh();
  input.addEventListener('click',()=>{filePickerOpen=true;refreshDownloads();});
  for(const type of ['change','cancel'])input.addEventListener(type,()=>{filePickerOpen=false;refreshDownloads();});
  window.addEventListener('focus',()=>{if(filePickerOpen)setTimeout(()=>{filePickerOpen=false;refreshDownloads();},500);});
@@ -62,7 +64,7 @@ export function installOfflineManager(catalog){
  const downloadTarget={progress:feedback.querySelector('[data-download-progress]'),cancel:feedback.querySelector('[data-download-cancel]'),status:feedback.querySelector('[data-download-status]'),downloadIds:availableIds};
  downloadTarget.cancel.onclick=()=>cancelOperation(downloadTarget);
  button.onclick=()=>run('download',downloadTarget,async options=>{
-  const library=await inspectLibrary(catalog);
+  const library=await waitForLocal(()=>inspectLibrary(catalog),{signal:options.signal});
   return downloadLessons(availableIds,library.opfsPaths,options);
  });
  row.append(button,feedback);host.querySelector('[data-pages-downloads]').append(row);
@@ -93,13 +95,15 @@ export function installOfflineManager(catalog){
  function paintSavedPending(){bookmark.dataset.savedInventoryPending='true';savedReadyIds=null;bookmark.style.setProperty('--saved-progress','0');bookmark.querySelector('.library-rail-label').textContent='—';const bar=bookmark.querySelector('[role=progressbar]');bar.removeAttribute('aria-valuenow');bar.removeAttribute('aria-valuetext');bar.setAttribute('aria-busy','true');bookmark.title='本地保存进度，打开设置';bookmark.setAttribute('aria-label',bookmark.title);host.querySelector('[data-saved-count]').textContent='—';refreshDownloads();}
  const restoredIds=savedSnapshot.restore();if(restoredIds!==null){savedReadyIds=restoredIds;paintSavedTotals();}
  async function readSavedInventory(){let timer;try{return await Promise.race([batchStatus(),new Promise((_,reject)=>{timer=setTimeout(()=>reject(new Error('Inventory pending')),8000);})]);}finally{clearTimeout(timer);}}
- async function refresh(){
+ let refreshJob=null;
+ function refresh(){if(refreshJob)return refreshJob;const job=refreshInventory().finally(()=>{if(refreshJob===job)refreshJob=null;});refreshJob=job;return job;}
+ async function refreshInventory(){
   const epoch=++refreshEpoch;let paths=cachedPaths;
-  try{const before=await sharedControl.state();if(before.phase==='clearing'||before.phase==='selective-clearing')throw new Error('Inventory changing');{if(!navigator.serviceWorker?.controller)throw new Error('Inventory pending');const cache=await readSavedInventory();if(cache.pending||cache.error)throw new Error('Inventory pending');paths=cache.readyPaths||[];}const [library,storage]=await Promise.all([inspectLibrary(catalog,{cachedPaths:paths}),storageStatus()]);const after=await sharedControl.state();if(epoch!==refreshEpoch)return;if(after.generation!==before.generation||after.phase==='clearing'||after.phase==='selective-clearing'){queueSavedRefresh();return;}cachedPaths=paths;savedReadyIds=library.readyIds;savedTotal=library.total;refreshDownloads();list.replaceChildren();paintSavedTotals();host.querySelector('.library-packs').hidden=library.packs.length===0;
+  try{const before=await waitForLocal(()=>sharedControl.state());if(before.phase==='clearing'||before.phase==='selective-clearing')throw new Error('Inventory changing');{const cache=await readSavedInventory();if(cache.pending||cache.error)throw new Error('Inventory pending');paths=cache.readyPaths||[];}const library=await waitForLocal(()=>inspectLibrary(catalog,{cachedPaths:paths}));const after=await waitForLocal(()=>sharedControl.state());if(epoch!==refreshEpoch)return;if(after.generation!==before.generation||after.phase==='clearing'||after.phase==='selective-clearing'){queueSavedRefresh();return;}cachedPaths=paths;savedReadyIds=library.readyIds;savedTotal=library.total;refreshDownloads();list.replaceChildren();paintSavedTotals();host.querySelector('.library-packs').hidden=library.packs.length===0;
    for(const pack of library.packs){const li=document.createElement('li'),label=document.createElement('span'),button=document.createElement('button');const title=document.createElement('strong'),detail=document.createElement('span');title.textContent=`${pack.wordIds.length} 词`;detail.textContent=`${size(pack.bytes)} · ${pack.version}${!pack.available?' · 文件缺失，请重新导入':pack.ownedCurrentAssets===0?' · 当前未使用':''}`;label.className='library-pack-label';label.append(title,detail);button.type='button';button.textContent='移除';button.setAttribute('aria-label',`删除 ${pack.wordIds.length} 词的本机资源包`);button.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating;button.onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating)return;if(!confirm(`删除这份本机资源包（${pack.wordIds.length} 词）？「文件」里的原始 ZIP 和其他资源包不会受影响。`))return;mutating=true;syncMutationControls();try{await deletePack(pack.key);status.textContent='本机资源包已删除，重新打开阅读后生效';await refresh();}catch(error){status.textContent=error.message;}finally{mutating=false;syncMutationControls();}};li.append(label,button);list.append(li);}
    clean.hidden=!library.packs.some(p=>p.ownedCurrentAssets===0);clean.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating;host.querySelector('[data-clear-all]').disabled=Boolean(controller)||clearingThisPage||changingMode||mutating;
-   space.textContent=storage.usage!==undefined?'占用 '+size(storage.usage):'存储空间暂不可读';
-  }catch{if(epoch===refreshEpoch){space.textContent='暂时无法读取本机存储';if(savedReadyIds===null)paintSavedPending();else{bookmark.dataset.savedInventoryPending='true';bookmark.querySelector('[role=progressbar]').setAttribute('aria-busy','true');}}}
+   retryStorage.hidden=true;space.textContent='';storageStatus().then(storage=>{if(epoch===refreshEpoch)space.textContent=storage.usage!==undefined?'占用 '+size(storage.usage):'';}).catch(()=>{});
+  }catch{if(epoch===refreshEpoch){retryStorage.hidden=false;space.textContent='暂时无法读取本机存储';if(savedReadyIds===null)paintSavedPending();else{bookmark.dataset.savedInventoryPending='true';bookmark.querySelector('[role=progressbar]').setAttribute('aria-busy','true');}}}
  }
  const rangeSection=host.querySelector('[data-delete-range]');
  rangeDelete=bindSavedRange(rangeSection,catalog,{prefix:'range-delete',verb:'删除'});
@@ -161,22 +165,29 @@ export function installOfflineManager(catalog){
   status.textContent='';
   clean.disabled=true;host.querySelector('[data-clear-all]').disabled=true;
   for(const button of list.querySelectorAll('button'))button.disabled=true;
-  refreshDownloads();await refresh();
+  refreshDownloads();queueSavedRefresh();
   try{
-   if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
-   await chooseVideoMode('auto');ticket=await sharedControl.ticket();operation.generation=ticket;
-   const pack=await action(operationOptions(operation)),state=await sharedControl.state();
-   if(controller.signal.aborted||state.paused||state.generation!==ticket)throw new DOMException('Cancelled','AbortError');
-   const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-library-updated',{detail}));await Promise.all(detail.waits);activated=true;
+   if(operation.controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
+   const signal=operation.controller.signal;
+   await waitForLocal(()=>chooseVideoMode('auto',{signal}),{signal});ticket=await waitForLocal(()=>sharedControl.ticket(),{signal});operation.generation=ticket;
+   const pack=await waitForLocal(()=>action(operationOptions(operation)),{signal,timeoutMs:0}),state=await waitForLocal(()=>sharedControl.state(),{signal});
+   if(activeOperation!==operation||signal.aborted||state.paused||state.generation!==ticket)throw new DOMException('Cancelled','AbortError');
+   const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-library-updated',{detail}));await waitForLocal(()=>Promise.all(detail.waits),{signal});activated=true;
    modeButton.textContent='纯文字';host.querySelector('[data-mode-description]').textContent='视频与文字';
    status.textContent=kind==='download'&&pack.unavailable?`已保存 ${pack.completed}/${pack.requested} · 暂不可用 ${pack.unavailable}`:'';
-  }catch(error){status.textContent=controller.signal.aborted||error.name==='AbortError'?'':`未完成：${error.message}。已保存内容保留，可以${kind==='download'?'继续下载':'重新导入'}`;}
+  }catch(error){const cancelled=operation.controller.signal.aborted||error.name==='AbortError';operation.controller.abort();if(activeOperation===operation)status.textContent=cancelled?'':`未完成：${error.message}。已保存内容保留，可以${kind==='download'?'继续下载':'重新导入'}`;}
   finally{
    // A cancelled batch keeps verified completed files; activate those too. A clear
    // from another tab changes the generation and must never resurrect media.
-   if(!activated&&ticket!==null){try{const state=await sharedControl.state();if(!state.paused&&state.generation===ticket){const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-library-updated',{detail}));await Promise.all(detail.waits);}}catch{}}
-   controller=null;activeOperation=null;
-   input.disabled=false;modeButton.disabled=false;input.value='';cancel.hidden=true;progress.hidden=true;await refresh(true);syncMutationControls();
+   // Release UI ownership first. Readiness/activation checks cannot strand Cancel.
+   if(activeOperation===operation){
+    controller=null;activeOperation=null;
+    input.disabled=false;modeButton.disabled=false;input.value='';cancel.hidden=true;progress.hidden=true;syncMutationControls();queueSavedRefresh();
+   }
+   if(!activated&&ticket!==null)waitForLocal(()=>sharedControl.state()).then(state=>{
+    if(activeOperation||state.paused||state.generation!==ticket)return;
+    const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-library-updated',{detail}));Promise.allSettled(detail.waits);
+   }).catch(()=>{});
   }
  }
  input.onchange=()=>{const file=input.files[0];if(file)return run('import',importTarget,options=>importPack(file,catalog,options));};
@@ -211,3 +222,4 @@ export function installOfflineManager(catalog){
  async function checkTextReady(){clearTimeout(readinessTimer);const target=navigator.serviceWorker?.controller;if(!target){welcome.querySelector('[data-text-ready]').textContent='文字正在准备，请保持联网';readinessTimer=setTimeout(checkTextReady,3000);return;}const channel=new MessageChannel();let settled=false;const timer=setTimeout(()=>{if(!settled){channel.port1.close();readinessTimer=setTimeout(checkTextReady,3000);}},6000);channel.port1.onmessage=({data})=>{settled=true;clearTimeout(timer);channel.port1.close();const ready=data.ready&&data.build===OFFLINE_EDITION;welcome.querySelector('[data-text-ready]').textContent=ready?'文字已可离线 · '+catalog.entries.length+' 词':'文字正在准备，请保持联网';if(!ready)readinessTimer=setTimeout(checkTextReady,3000);else refresh(true);};target.postMessage({type:'GET_TEXT_STATUS'},[channel.port2]);}
  checkTextReady();navigator.serviceWorker?.addEventListener('controllerchange',checkTextReady);
 }
+

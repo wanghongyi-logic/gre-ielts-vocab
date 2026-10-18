@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import vm from 'node:vm';
+import {waitForLocal} from '../gre-learning/offline-async.js';
 import {LessonLoader} from '../gre-learning/lesson-loader.js';
 
 test('uncontrolled/offline reader loads verified text from disk without fetch or rewrite',async()=>{
@@ -18,7 +19,7 @@ test('corrupt disk text is rejected and a valid network copy repairs it',async()
 test('decoded poster makes a prepared page ready while its video decoder is stalled',async()=>{
  let finishVideo,disposed=0,reads=0;const poster={decode:async()=>{},naturalWidth:100},root={className:'',innerHTML:'',querySelectorAll:()=>[],querySelector:s=>s==='.story-poster'?poster:null,remove(){}};
  const source=(await readFile(new URL('../gre-learning/prepared-pages.js',import.meta.url),'utf8')).replace(/^import .*;\n/gm,'').replace('export function','function');
- const context=vm.createContext({Map,Set,Promise,AbortController,DOMException,renderWordPage:()=>'',neighboringNumbers:()=>({previous:1,next:3}),installStoryMedia:()=>({refresh:()=>new Promise((resolve,reject)=>finishVideo=reject),prepareStaticPoster:()=>true,cancel(){},destroy(){disposed++;}})});
+ const context=vm.createContext({waitForLocal,Map,Set,Promise,AbortController,DOMException,renderWordPage:()=>'',neighboringNumbers:()=>({previous:1,next:3}),installStoryMedia:()=>({refresh:()=>new Promise((resolve,reject)=>finishVideo=reject),prepareStaticPoster:()=>true,cancel(){},destroy(){disposed++;}})});
  vm.runInContext(source,context);
  const timers=new Map();let id=0;
  const pages=context.installPreparedPages({loader:{pair:async()=>{reads++;return {entry:{number:2},media:{}};},retainMedia(){}},entries:[1,2,3].map(number=>({number})),picker:{},window:{setTimeout:fn=>{timers.set(++id,fn);return id;},clearTimeout:id=>timers.delete(id)},document:{createElement:()=>root}});

@@ -1,3 +1,4 @@
+import {waitForLocal} from './offline-async.js';
 import {hostedMediaPaths,isHostedMediaEntry} from './hosted-media.js';
 import {createMediaControl} from './offline-control.js';
 import {videoMode} from './offline-preferences.js';
@@ -19,10 +20,10 @@ export function expandCatalog(raw){
  return {...raw,entries:raw.entries.map(entry=>({...entry,unit:raw.units[entry.unit],...(entry.art?{art:{...entry.art,url:`art-units/${entry.number}-${entry.art.sha256}.json`}}:{})}))};
 }
 export class LessonLoader {
- constructor(catalog,{baseURL=new URL('./',import.meta.url),fetcher=globalThis.fetch.bind(globalThis),crypto=globalThis.crypto,cacheStorage=globalThis.caches,mediaTimeoutMs=5000,maxEntries=8,maxBytes=2*1024*1024,setTimer=globalThis.setTimeout.bind(globalThis),clearTimer=globalThis.clearTimeout.bind(globalThis)}={}) {
+ constructor(catalog,{baseURL=new URL('./',import.meta.url),fetcher=globalThis.fetch.bind(globalThis),crypto=globalThis.crypto,cacheStorage=globalThis.caches,mediaTimeoutMs=5000,localMediaTimeoutMs=6500,maxEntries=8,maxBytes=2*1024*1024,setTimer=globalThis.setTimeout.bind(globalThis),clearTimer=globalThis.clearTimeout.bind(globalThis)}={}) {
   this.catalog=catalog;this.hostedMediaPaths=hostedMediaPaths(catalog);this.index=new Map(catalog.entries.map(entry=>[entry.number,entry]));
   if(this.index.size!==catalog.entries.length)throw new Error('Duplicate canonical ID');
-  this.baseURL=baseURL;this.fetcher=fetcher;this.cacheStorage=cacheStorage;this.crypto=crypto;this.mediaTimeoutMs=mediaTimeoutMs;this.mediaControl=createMediaControl(new URL('../',baseURL));this.mediaGeneration=null;this.mediaControl.subscribe(state=>{if(state.paused||(this.mediaGeneration!==null&&state.generation!==this.mediaGeneration))this.destroy();this.mediaGeneration=state.generation;});this.maxEntries=maxEntries;this.maxBytes=maxBytes;this.cache=new Map();this.bytes=0;this.generation=0;this.foreground=null;this.prefetchController=null;this.timer=null;this.mediaCache=new Map();this.setTimer=setTimer;this.clearTimer=clearTimer;
+  this.baseURL=baseURL;this.fetcher=fetcher;this.cacheStorage=cacheStorage;this.crypto=crypto;this.mediaTimeoutMs=mediaTimeoutMs;this.localMediaTimeoutMs=localMediaTimeoutMs;this.mediaControl=createMediaControl(new URL('../',baseURL));this.mediaGeneration=null;this.mediaControl.subscribe(state=>{if(state.paused||(this.mediaGeneration!==null&&state.generation!==this.mediaGeneration))this.destroy();this.mediaGeneration=state.generation;});this.maxEntries=maxEntries;this.maxBytes=maxBytes;this.cache=new Map();this.bytes=0;this.generation=0;this.foreground=null;this.prefetchController=null;this.timer=null;this.mediaCache=new Map();this.setTimer=setTimer;this.clearTimer=clearTimer;
  }
  async resource(ref,signal,priority='high') {
   if(signal?.aborted)throw abortError();
@@ -68,7 +69,7 @@ export class LessonLoader {
   if(local)return this.mediaControl.guard(ticket,()=>{if(signal?.aborted)throw abortError();if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);const blobURL=URL.createObjectURL(local);this.mediaCache.set(ref.sha256,blobURL);return blobURL;});
   // Reuse previously verified local cache before online fallback.
   {
-   try{const cached=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(!cached)throw new Error('Not cached');const bytes=await cached.arrayBuffer();if(bytes.byteLength!==ref.bytes)throw new Error('Invalid cache');const digest=await this.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==ref.sha256)throw new Error('Invalid cache');if(signal?.aborted)throw abortError();return this.mediaControl.guard(ticket,()=>{if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);const blobURL=URL.createObjectURL(new Blob([bytes],{type:mediaType(ref)}));this.mediaCache.set(ref.sha256,blobURL);return blobURL;});}catch(error){if(signal?.aborted)throw error;}
+   try{const cached=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(!cached)throw new Error('Not cached');const bytes=await cached.arrayBuffer();if(bytes.byteLength!==ref.bytes)throw new Error('Invalid cache');const digest=await this.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==ref.sha256)throw new Error('Invalid cache');if(signal?.aborted)throw abortError();return this.mediaControl.guard(ticket,()=>{if(signal?.aborted)throw abortError();if(this.mediaCache.has(ref.sha256))return this.mediaCache.get(ref.sha256);const blobURL=URL.createObjectURL(new Blob([bytes],{type:mediaType(ref)}));this.mediaCache.set(ref.sha256,blobURL);return blobURL;});}catch(error){if(signal?.aborted)throw error;}
   }
   if(!allowNetwork||!this.hostedMediaPaths.has(ref.url)||!await this.mediaControl.automaticAllowed(url))return null;
   notifyMedia('start',ref);try{
@@ -89,12 +90,19 @@ export class LessonLoader {
   });
   }finally{notifyMedia('end',ref);}
  }
+ async optionalMedia(ref,signal,priority,allowNetwork){
+  if(!ref)return null;
+  const controller=new AbortController(),abort=()=>controller.abort();signal?.addEventListener('abort',abort,{once:true});if(signal?.aborted)abort();
+  try{return await waitForLocal(()=>this.mediaResource(ref,controller.signal,priority,allowNetwork),{signal,timeoutMs:this.localMediaTimeoutMs,onTimeout:abort});}
+  catch(error){abort();if(signal?.aborted)throw error;return null;}
+  finally{signal?.removeEventListener('abort',abort);}
+ }
  async pair(number,signal,priority='high') {
   const meta=this.index.get(Number(number));if(!meta)throw new Error('Lesson is not reviewed and ready');
   if(isStorybookCatalog(this.catalog)) {
    if(videoMode()==='none'){const unit=await this.resource(meta.unit,signal,priority),entry=unit.entries?.find(e=>e.number===meta.number);if(!entry||entry.word!==meta.word)throw new Error('Incompatible lesson');validateEntry(entry);return {entry,media:null};}
    const refs=meta.storyMedia,allowNetwork=isHostedMediaEntry(meta,this.catalog.entries.indexOf(meta));
-   const [unit,posterURL,videoURL,staticPosterURL]=await Promise.all([this.resource(meta.unit,signal,priority),refs?this.mediaResource(refs.poster,signal,priority,allowNetwork).catch(error=>{if(signal?.aborted)throw error;return null;}):null,refs?this.mediaResource(refs.video,signal,priority,allowNetwork).catch(error=>{if(signal?.aborted)throw error;return null;}):null,refs?.staticPoster?this.mediaResource(refs.staticPoster,signal,priority,allowNetwork).catch(error=>{if(signal?.aborted)throw error;return null;}):null]);
+   const [unit,posterURL,videoURL,staticPosterURL]=await Promise.all([this.resource(meta.unit,signal,priority),this.optionalMedia(refs?.poster,signal,priority,allowNetwork),this.optionalMedia(refs?.video,signal,priority,allowNetwork),this.optionalMedia(refs?.staticPoster,signal,priority,allowNetwork)]);
    const entry=unit.entries?.find(item=>item.number===meta.number);
    if(!entry||entry.word!==meta.word)throw new Error('Incompatible lesson');
    validateEntry(entry);

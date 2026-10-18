@@ -81,7 +81,7 @@ test('imports require explicit resume after a global clear',async()=>{reset();co
 // Give downloadPack its actual HTTPS module base while retaining the exact source
 // and shared mocked storage; Node's file:// module origin cannot be downloaded.
 const sourceURL=new URL('../gre-learning/offline-packs.js',import.meta.url);
-let hostedSource=await readFile(sourceURL,'utf8');for(const dependency of ['offline-control.js','offline-zip.js'])hostedSource=hostedSource.replace(`'./${dependency}'`,JSON.stringify(new URL(dependency,sourceURL).href));
+let hostedSource=await readFile(sourceURL,'utf8');for(const dependency of ['offline-control.js','offline-zip.js','offline-async.js'])hostedSource=hostedSource.replace(`'./${dependency}'`,JSON.stringify(new URL(dependency,sourceURL).href));
 hostedSource=hostedSource.replaceAll('import.meta.url',JSON.stringify('https://example.test/gre-learning/offline-packs.js'));
 const hosted=await import('data:text/javascript;base64,'+Buffer.from(hostedSource).toString('base64'));
 const hostedRoot=new URL('https://example.test/'),hostedControl=mediaControl.createMediaControl(hostedRoot);
@@ -296,4 +296,12 @@ test('postcommit cleanup failure keeps deleted paths blocked while retaining pri
  for(const url of targetURLs)assert.equal(await automatic.control.automaticAllowed(url),false);for(const [index,url] of automatic.urls.entries())if(!targetURLs.includes(url))assert.equal(await automatic.control.automaticAllowed(url),automatic.allowed[index],'unselected automatic loading is unchanged');
  for(const ref of mediaRefs(targets))assert.equal(await localAsset(ref),null,'the replacement index has already committed');assert.ok(disk.has(original.name),'the injected cleanup failure leaves the obsolete ZIP for recovery');await expectPresent(f,others);
  await clearSavedWords(f.catalog,range.ids);await expectRemoved(targets,cache);await expectPresent(f,others);assert.ok(!disk.has(original.name));assert.deepEqual(new Set((await automatic.control.state()).blockedAutoPaths),expected,'recovery keeps every deliberate exclusion');
+});
+
+
+test('temporary OPFS read failure does not downgrade saved words to missing',async()=>{
+ reset();const f=fixture(3);await importPack(f.source,f.catalog);const original=directory.getFileHandle;
+ directory.getFileHandle=async()=>{throw Object.assign(new Error('OPFS suspended'),{name:'TimeoutError'});};
+ try{await assert.rejects(inspectLibrary(f.catalog),{name:'TimeoutError'});}finally{directory.getFileHandle=original;}
+ await expectPresent(f);assert.equal((await inspectLibrary(f.catalog)).readyIds.length,3);
 });

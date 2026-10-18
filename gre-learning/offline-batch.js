@@ -1,6 +1,28 @@
 import {isHostedMediaEntry} from './hosted-media.js';
-export async function batchStatus(){const target=navigator.serviceWorker?.controller;if(!target)return {readyPaths:[],shellReady:false};return new Promise((resolve,reject)=>{const channel=new MessageChannel(),timer=setTimeout(()=>{channel.port1.close();reject(new Error('离线状态检查超时，请稍后重试'));},120000);channel.port1.onmessage=({data})=>{clearTimeout(timer);channel.port1.close();resolve(data);};target.postMessage({type:'GET_LESSON_STATUS'},[channel.port2]);});}
-export async function downloadLessons(ids,skipPaths,{signal,onProgress=()=>{}}={}){const target=navigator.serviceWorker?.controller;if(!target)throw new Error('请先等待纯文字离线准备完成，再下载视频');if(signal?.aborted)throw new DOMException('Cancelled','AbortError');return new Promise((resolve,reject)=>{const channel=new MessageChannel(),jobId=crypto.randomUUID();let error;const abort=()=>target.postMessage({type:'CANCEL_LESSON_DOWNLOAD',jobId});signal?.addEventListener('abort',abort,{once:true});const finish=()=>{signal?.removeEventListener('abort',abort);channel.port1.close();};channel.port1.onmessage=({data})=>{if(data.type==='LESSON_DOWNLOAD_PROGRESS')onProgress({phase:'batch',completed:data.completed,total:data.requested,readyId:data.readyId,generation:data.generation});else if(data.type==='LESSON_DOWNLOAD_ERROR'){error=new Error(data.error||'下载失败');}else if(data.type==='LESSON_DOWNLOAD_DONE'){finish();if(data.cancelled)reject(new DOMException('Cancelled','AbortError'));else if(error)reject(error);else resolve(data);}};target.postMessage({type:'DOWNLOAD_LESSONS',jobId,ids,skipPaths},[channel.port2]);});}
+import {waitForLocal} from './offline-async.js';
+// Inventories are local. A starting/suspended worker cannot block saved resources.
+export async function batchStatus(){
+ const cache=await waitForLocal(()=>globalThis.caches.open('gre-scalable-verified-units-v1'));
+ const root=new URL('./',import.meta.url).href;
+ const keys=await waitForLocal(()=>cache.keys());
+ const readyPaths=keys.map(request=>request.url).filter(url=>url.startsWith(root+'story-media/')&&/[a-f0-9]{64}/.test(url)).map(url=>'gre-learning/'+url.slice(root.length));
+ return {readyPaths,shellReady:false};
+}
+export async function downloadLessons(ids,skipPaths,{signal,onProgress=()=>{},idleTimeoutMs=120000}={}){
+ const target=navigator.serviceWorker?.controller;if(!target)throw new Error('离线服务尚未就绪，请稍后重试');
+ if(signal?.aborted)throw new DOMException('Cancelled','AbortError');
+ return new Promise((resolve,reject)=>{
+  const channel=new MessageChannel(),jobId=crypto.randomUUID();let error,done=false,timer;
+  const finish=(failure,value)=>{if(done)return;done=true;clearTimeout(timer);signal?.removeEventListener('abort',abort);navigator.serviceWorker?.removeEventListener?.('controllerchange',changed);channel.port1.close();failure?reject(failure):resolve(value);};
+  const cancel=()=>{try{target.postMessage({type:'CANCEL_LESSON_DOWNLOAD',jobId});}catch{}};
+  const abort=()=>{cancel();finish(new DOMException('Cancelled','AbortError'));};
+  const changed=()=>{cancel();finish(new Error('离线服务已更新，请继续下载'));};
+  const arm=()=>{clearTimeout(timer);timer=setTimeout(()=>{cancel();finish(new Error('下载长时间没有响应，请继续下载'));},idleTimeoutMs);};
+  signal?.addEventListener('abort',abort,{once:true});navigator.serviceWorker?.addEventListener?.('controllerchange',changed);
+  channel.port1.onmessage=({data})=>{if(done)return;arm();if(data.type==='LESSON_DOWNLOAD_PROGRESS')onProgress({phase:'batch',completed:data.completed,total:data.requested,readyId:data.readyId,generation:data.generation});else if(data.type==='LESSON_DOWNLOAD_ERROR'){error=new Error(data.error||'下载失败');}else if(data.type==='LESSON_DOWNLOAD_DONE'){if(data.cancelled)finish(new DOMException('Cancelled','AbortError'));else finish(error,data);}};
+  arm();try{target.postMessage({type:'DOWNLOAD_LESSONS',jobId,ids,skipPaths},[channel.port2]);}catch(error){finish(error);}
+ });
+}
 
 // Ranges are published display ordinals, never vocabulary IDs or future lessons.
 export function optionalMediaGroups(catalog){
@@ -18,3 +40,4 @@ export function optionalMediaGroups(catalog){
  }
  return groups.map(({refs,bucket,...group})=>({...group,bytes:[...refs.values()].reduce((sum,ref)=>sum+ref.bytes,0)}));
 }
+

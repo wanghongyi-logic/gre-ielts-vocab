@@ -9,7 +9,7 @@ export function createMediaControl(scopeURL){
  async function write(state){const cache=await globalThis.caches?.open(MEDIA_CONTROL_CACHE);if(cache?.put)await cache.put(key,new Response(JSON.stringify(state),{headers:{'Content-Type':'application/json'}}));memory={...state};}
  function announce(state,source='local'){const stamp=state.generation+'|'+state.paused+'|'+state.phase;if(stamp===announced)return;const initial=announced==='';announced=stamp;for(const listener of listeners)listener({...state,source,initial});if(typeof window!=='undefined')window.dispatchEvent(new CustomEvent('gre-media-control-change',{detail:{...state,source,initial}}));}
  function publish(state){announce(state);channel?.postMessage({scope});}
- async function lock(action){if(globalThis.navigator?.locks?.request)return navigator.locks.request(lockName,action);const run=queue.then(action,action);queue=run.catch(()=>{});return run;}
+ async function lock(action,signal){if(globalThis.navigator?.locks?.request)return signal?navigator.locks.request(lockName,{signal},action):navigator.locks.request(lockName,action);const run=queue.then(action,action);queue=run.catch(()=>{});return run;}
  const changed=()=>Object.assign(new Error('Saved media changed in another page'),{name:'AbortError'});
  if(channel)channel.onmessage=async event=>{if(event.data?.scope===scope)announce(await read(),'external');};
  const api={
@@ -29,8 +29,9 @@ export function createMediaControl(scopeURL){
     await write(complete);publish(complete);
    }
   });},
-  async resume(){return lock(async()=>{const previous=await read();if(!previous.paused)return previous;const state={...previous,generation:previous.generation+1,paused:false,phase:'active'};await write(state);publish(state);return state;});},
+  async resume({signal}={}){return lock(async()=>{if(signal?.aborted)throw changed();const previous=await read();if(signal?.aborted)throw changed();if(!previous.paused)return previous;const state={...previous,generation:previous.generation+1,paused:false,phase:'active'};await write(state);publish(state);return state;},signal);},
   subscribe(listener){listeners.add(listener);return()=>listeners.delete(listener);}
  };
  mediaControlInstances.set(scope,api);return api;
 }
+

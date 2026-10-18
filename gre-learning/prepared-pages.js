@@ -1,3 +1,4 @@
+import {waitForLocal} from './offline-async.js';
 import {renderWordPage} from './view.js';
 import {neighboringNumbers} from './model.js';
 import {installStoryMedia} from './story-media.js';
@@ -23,7 +24,7 @@ export function installPreparedPages({loader,entries,picker,window:win=window,do
   page.promise=(async()=>{
    const timer=win.setTimeout(()=>controller.abort(),8000);
    try{
-    const loaded=await loader.pair(number,controller.signal,priority);
+    const loaded=await waitForLocal(()=>loader.pair(number,controller.signal,priority),{signal:controller.signal,timeoutMs:0});
     if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
     const root=doc.createElement('div');root.className='prepared-page';
     root.innerHTML=renderWordPage(loaded.entry,loaded.media,{...neighboringNumbers(entries,number),total:entries.length});
@@ -35,7 +36,7 @@ export function installPreparedPages({loader,entries,picker,window:win=window,do
     if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');if(!poster.naturalWidth)poster.remove();
     }
     if(loaded.media?.staticPosterURL){
-     const fallback=doc.createElement('img');fallback.src=loaded.media.staticPosterURL;await fallback.decode().catch(()=>{});
+     const fallback=doc.createElement('img');fallback.src=loaded.media.staticPosterURL;await waitForLocal(()=>fallback.decode().catch(()=>{}),{signal:controller.signal,timeoutMs:0});
      if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');page.staticPosterImage=fallback;
     }
     // The visible preparation is always the authored frame-zero poster. A video
