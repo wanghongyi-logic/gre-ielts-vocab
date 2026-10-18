@@ -41,7 +41,10 @@ export function installPreparedPages({loader,entries,picker,window:win=window,do
     // The visible preparation is always the authored frame-zero poster. A video
     // decoder may fail without turning this real, verified page into a blank.
     page.motion=installStoryMedia(root,{picker,window:win,document:doc});
-    const mediaReady=await page.motion.refresh(loaded.media,{root});
+    // A decoded authored poster is sufficient for a page turn. Warm video in
+    // parallel; its controller keeps the poster until a frame is presented.
+    const videoReady=page.motion.refresh(loaded.media,{root}).catch(()=>false);
+    const mediaReady=root.querySelector('.story-poster')?true:await videoReady;
     if(!mediaReady&&!root.querySelector('.story-poster')){root.querySelector('.story-illustration')?.remove();root.querySelector('.reading-layout')?.classList.add('text-only-reading');}
     if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
     if(!page.motion.prepareStaticPoster()){
@@ -62,3 +65,4 @@ export function installPreparedPages({loader,entries,picker,window:win=window,do
  function take(number){const page=get(number);if(page)pages.delete(number);return page;}
  return {prepare,get,take,adjacent,keep,discard(number){const page=pages.get(number);if(page)dispose(page);},destroy(){const retiring=[...pages.values()];for(const page of retiring)dispose(page);return Promise.allSettled(retiring.map(page=>page.promise));}};
 }
+

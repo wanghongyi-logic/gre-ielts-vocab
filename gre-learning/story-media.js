@@ -157,7 +157,7 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
   });
   if(token!==generation||target!==video)return false;
   ready=decoded;failed=!decoded;
-  if(decoded&&!staticMode())paintFrame();else showPoster();
+  if(decoded&&activated&&!staticMode()){paintFrame();sync();}else if(!decoded||staticMode())showPoster();
   return decoded;
  }
  function activate(){
@@ -184,3 +184,4 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
  const visibility=()=>sync();doc.addEventListener('visibilitychange',visibility);preference.addEventListener('change',visibility);connection?.addEventListener?.('change',visibility);picker?.addEventListener('close',visibility);
  return {refresh,activate,setTurning,cancel,sync,prepareReveal,prepareStaticPoster,destroy(){cancel();doc.removeEventListener('visibilitychange',visibility);preference.removeEventListener('change',visibility);connection?.removeEventListener?.('change',visibility);picker?.removeEventListener('close',visibility);}};
 }
+

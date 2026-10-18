@@ -32,7 +32,10 @@ export class LessonLoader {
   if(url.origin!==this.baseURL.origin||!url.pathname.startsWith(this.baseURL.pathname))throw new Error('Unit outside lesson scope');
   const local=await localAsset(ref);
   if(signal?.aborted)throw abortError();
-  const response=local?new Response(local):await this.fetcher(url,{signal,priority,cache:'no-cache'});
+  // Read our verified disk copy even before a service worker controls this tab.
+  let diskResponse;
+  if(!local)try{diskResponse=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(diskResponse){const bytes=await diskResponse.clone().arrayBuffer(),hash=Array.from(new Uint8Array(await this.crypto.subtle.digest('SHA-256',bytes)),v=>v.toString(16).padStart(2,'0')).join('');if(bytes.byteLength!==ref.bytes||hash!==ref.sha256)diskResponse=null;}}catch{diskResponse=null;}
+  const response=local?new Response(local):diskResponse||await this.fetcher(url,{signal,priority,cache:'no-cache'});
   if(!response.ok)throw new Error(`Lesson download failed (${response.status})`);
   const bytes=await response.arrayBuffer();
   if(bytes.byteLength!==ref.bytes)throw new Error('Lesson byte count mismatch');
@@ -44,7 +47,7 @@ export class LessonLoader {
   if(data.schema!==1){if(data.schema!==2||!ref.url.startsWith('art-units/')||bytes.byteLength>2*1024*1024)throw new Error('Unsupported lesson schema');validateTrackedArt(data);}
   // First-load requests can finish before service-worker control. Persist verified bytes too.
   // Quota/private-mode failures affect offline availability, never successful live rendering.
-  if(this.cacheStorage){try{const disk=await this.cacheStorage.open('gre-scalable-verified-units-v1');await disk.put(url.href,new Response(bytes,{headers:{'Content-Type':'application/json'}}));}catch{}}
+  if(this.cacheStorage&&!diskResponse){try{const disk=await this.cacheStorage.open('gre-scalable-verified-units-v1');await disk.put(url.href,new Response(bytes,{headers:{'Content-Type':'application/json'}}));}catch{}}
   if(signal?.aborted)throw abortError();
   // Never pin a single oversize unit in the LRU. Its foreground caller may still render it.
   if(bytes.byteLength<=this.maxBytes){
@@ -125,3 +128,4 @@ export class LessonLoader {
  }
  destroy(){this.cancel();this.cache.clear();this.bytes=0;for(const url of this.mediaCache.values())URL.revokeObjectURL(url);this.mediaCache.clear();}
 }
+

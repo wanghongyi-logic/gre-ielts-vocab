@@ -1,14 +1,15 @@
 (() => {
   if (!('serviceWorker' in navigator) || location.protocol === 'file:' || location.hostname === 'app.local') return;
-  const build = '183-offline1320-v34';
+  const build = '184-offline1600-v35';
   const restoreKey='gre-update-position-v1';
   let registration,connecting,checking,inspecting,pendingBuild,applyTimer,retryTimer,hideTimer;
+  let appReady=false;
   let interaction=0,restoring=false,refreshing=false,lastCheck=-Infinity,lastInput=-Infinity,pointerDown=false,retryDelay=5000;
   const status=document.getElementById('update-status');
   const show=message=>{if(status){clearTimeout(hideTimer);status.textContent=message;status.hidden=false;}};
   const canReload=()=>{
     const detail={blocked:false};window.dispatchEvent(new CustomEvent('gre-update-can-reload',{detail}));
-    return document.visibilityState!=='hidden'&&!pointerDown&&Date.now()-lastInput>=400&&!detail.blocked;
+    return appReady&&document.visibilityState!=='hidden'&&!pointerDown&&Date.now()-lastInput>=400&&!detail.blocked;
   };
   function applyReady(){
     clearTimeout(applyTimer);
@@ -56,12 +57,12 @@
   const activate=worker=>{if(worker?.state==='installed')worker.postMessage({type:'SKIP_WAITING'});};
   const watched=new WeakSet();
   function watchWorker(worker){if(!worker||watched.has(worker))return;watched.add(worker);worker.addEventListener('statechange',()=>{activate(worker);if(worker.state==='redundant')scheduleRetry();});activate(worker);}
-  function scheduleRetry(){clearTimeout(retryTimer);retryTimer=setTimeout(()=>{if(!registration)connect();checkForUpdate();},retryDelay);retryDelay=Math.min(60000,retryDelay*3);}
+  function scheduleRetry(){clearTimeout(retryTimer);retryTimer=setTimeout(()=>{lastCheck=-Infinity;if(!registration)connect();checkForUpdate();},retryDelay);retryDelay=Math.min(60000,retryDelay*3);}
   function checkForUpdate(){
     if(document.visibilityState==='hidden')return;
     // Already installed updates can apply offline, without waiting for a network check.
     inspectController();applyReady();
-    if(navigator.onLine===false||document.visibilityState==='hidden'||!registration||checking||Date.now()-lastCheck<1000)return checking;
+    if(navigator.onLine===false||document.visibilityState==='hidden'||!registration||checking||Date.now()-lastCheck<30000)return checking;
     lastCheck=Date.now();clearTimeout(retryTimer);
     watchWorker(registration.waiting);watchWorker(registration.installing);
     checking=registration.update().then(()=>{retryDelay=5000;watchWorker(registration.waiting);watchWorker(registration.installing);return inspectController();}).catch(scheduleRetry).finally(()=>{checking=null;});
@@ -69,12 +70,14 @@
   }
   navigator.serviceWorker.addEventListener('controllerchange',()=>{pendingBuild=null;Promise.resolve(inspecting).then(inspectController);});
   navigator.serviceWorker.addEventListener('message',event=>{if(event.data?.type==='SHELL_READY'&&event.source===navigator.serviceWorker.controller)inspectController();});
-  function connect(){if(connecting||navigator.onLine===false)return;connecting=navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(value=>{
+  function connect(){if(!appReady||connecting||navigator.onLine===false)return;connecting=navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(value=>{
     registration=value;
     registration.addEventListener('updatefound',()=>watchWorker(registration.installing));
     watchWorker(registration.waiting);watchWorker(registration.installing);checkForUpdate();
   }).catch(scheduleRetry).finally(()=>{connecting=null;});}
-  connect();
+  // Give local reading priority; failed startup may still recover via a ready update.
+  const startupTimer=setTimeout(()=>{appReady=true;connect();inspectController();applyReady();},12000);
+  window.addEventListener('gre-app-rendered',()=>{if(appReady)return;appReady=true;clearTimeout(startupTimer);connect();inspectController();applyReady();});
   // Inspect now: registration/network work must never delay an already-ready update.
   inspectController();
   window.addEventListener('online',()=>{if(!registration)connect();checkForUpdate();});
@@ -86,3 +89,4 @@
   window.addEventListener('gre-app-rendered',restorePosition);
   setInterval(checkForUpdate,60000);
 })();
+

@@ -2,11 +2,36 @@ import {createMediaControl} from './offline-control.js';
 import {validatePack} from './offline-zip.js';
 const DB='gre-offline-pack-index-v1',DIR='gre-offline-packs-v1';
 const cancelled=signal=>{if(signal?.aborted)throw new DOMException('Import cancelled','AbortError');};
-let database;
+let database,assetIndex=null,indexRevision=0;
+// Metadata only: no book-sized Blob cache. Invalidate after every committed write.
+const indexChannel=typeof globalThis.BroadcastChannel==='function'?new BroadcastChannel('gre-pack-index:'+new URL('../',import.meta.url).href):null;
+indexChannel?.unref?.();
+function invalidateAssetIndex(broadcast=false){assetIndex=null;indexRevision++;if(broadcast)indexChannel?.postMessage('changed');}
+if(indexChannel)indexChannel.onmessage=()=>invalidateAssetIndex();
+if(typeof window!=='undefined'){
+ window.addEventListener('pageshow',()=>invalidateAssetIndex());
+ window.addEventListener('focus',()=>invalidateAssetIndex());
+ window.addEventListener('gre-library-updated',()=>invalidateAssetIndex());
+ window.addEventListener('gre-media-control-change',()=>invalidateAssetIndex());
+}
+async function indexedAssets(){
+ const revision=indexRevision;
+ if(!assetIndex){const pending=listPacks().then(packs=>{
+  const index=new Map();for(const pack of packs.sort((a,b)=>b.installedAt-a.installedAt))for(const entry of pack.files){const key=entry.path+'|'+entry.sha256+'|'+entry.bytes;if(!index.has(key))index.set(key,[]);index.get(key).push({pack,entry});}return index;
+ });assetIndex=pending;pending.catch(()=>{if(assetIndex===pending)assetIndex=null;});}
+ const index=await assetIndex;
+ // Every caller, including callers sharing the pending read, observes mutations.
+ if(revision!==indexRevision)return indexedAssets();return index;
+}
 const verifiedSlices=new Map(),badSlices=new Set();
 const sliceIdentity=(pack,file,entry)=>[pack.name,file.size,Number.isFinite(file.lastModified)?file.lastModified:'unknown',entry.path,entry.sha256,entry.bytes].join('|');
-function db(){return database??=(new Promise((resolve,reject)=>{const request=indexedDB.open(DB,1);request.onupgradeneeded=()=>request.result.createObjectStore('packs',{keyPath:'key'});request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error);})).catch(error=>{database=null;throw error;});}
-async function transaction(mode,operation){const database=await db();return new Promise((resolve,reject)=>{const tx=database.transaction('packs',mode);let result;const request=operation(tx.objectStore('packs'));request.onsuccess=()=>{result=request.result;};tx.oncomplete=()=>resolve(result);tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('Index update cancelled'));});}
+function db(){return database??=(new Promise((resolve,reject)=>{
+ let settled=false;const request=indexedDB.open(DB,1),timer=setTimeout(()=>{settled=true;reject(new Error('Local library is still opening; retry'));},4000);
+ request.onupgradeneeded=()=>request.result.createObjectStore('packs',{keyPath:'key'});
+ request.onsuccess=()=>{clearTimeout(timer);if(settled){request.result.close?.();return;}settled=true;const connection=request.result;connection.onversionchange=()=>{connection.close?.();database=null;invalidateAssetIndex();};resolve(connection);};
+ request.onerror=()=>{clearTimeout(timer);settled=true;reject(request.error);};
+})).catch(error=>{database=null;throw error;});}
+async function transaction(mode,operation){const database=await db();return new Promise((resolve,reject)=>{const tx=database.transaction('packs',mode);let result;const request=operation(tx.objectStore('packs'));request.onsuccess=()=>{result=request.result;};tx.oncomplete=()=>{if(mode==='readwrite')invalidateAssetIndex(true);resolve(result);};tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('Index update cancelled'));});}
 async function directory(){return(await navigator.storage.getDirectory()).getDirectoryHandle(DIR,{create:true});}
 export async function listPacks(){return transaction('readonly',store=>store.getAll());}
 async function copy(file,name,signal,onProgress){
@@ -46,8 +71,9 @@ export async function downloadPack(descriptor,catalog,{signal,onProgress=()=>{}}
  support();trustedPackageURL(descriptor);const control=createMediaControl(new URL('../',import.meta.url)),generation=await control.ticket();return locked(async()=>{await control.guard(generation,()=>{});await recover();cancelled(signal);await ensureSpace(descriptor.bytes);const options={signal,onProgress},name=temporaryName();let committed=false;try{const file=await downloadToStorage(descriptor,name,options);const parsed=await validatePack(file,catalog,options);if(parsed.manifest.packId!==descriptor.packId||parsed.manifest.version!==descriptor.version)throw new Error('下载的书包版本与目录不一致');const record=await control.guard(generation,()=>finalizeStoredPack(name,file,parsed,catalog,options));committed=record.name===name;return record;}finally{if(!committed)await(await directory()).removeEntry(name).catch(()=>{});}});
 }
 export async function deletePack(key){return locked(async()=>{const pack=await transaction('readonly',s=>s.get(key));if(!pack)return;await transaction('readwrite',s=>s.delete(key));await(await directory()).removeEntry(pack.name).catch(()=>{});});}
-export async function localAsset(ref){
- try{const path='gre-learning/'+ref.url;const packs=(await listPacks()).sort((a,b)=>b.installedAt-a.installedAt);for(const pack of packs){const entry=pack.files.find(f=>f.path===path&&f.sha256===ref.sha256&&f.bytes===ref.bytes);if(!entry)continue;try{const file=await(await(await directory()).getFileHandle(pack.name)).getFile();if(file.size!==pack.bytes)continue;const identity=sliceIdentity(pack,file,entry);if(badSlices.has(identity))continue;const slice=file.slice(entry.start,entry.start+entry.bytes,entry.role==='video'?'video/mp4':entry.role==='unit'?'application/json':ref.url.endsWith('.png')?'image/png':ref.url.endsWith('.webp')?'image/webp':'image/jpeg');if(!verifiedSlices.has(identity)){const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',await slice.arrayBuffer())),b=>b.toString(16).padStart(2,'0')).join('');if(digest!==entry.sha256){badSlices.add(identity);if(typeof window!=='undefined')window.dispatchEvent(new CustomEvent('gre-offline-corrupt',{detail:{packId:pack.packId}}));continue;}if(Number.isFinite(file.lastModified)){verifiedSlices.set(identity,true);while(verifiedSlices.size>64)verifiedSlices.delete(verifiedSlices.keys().next().value);}}return slice;}catch{}}}catch{}return null;
+export async function localAsset(ref,retry=true){
+ const revision=indexRevision;
+ try{const path='gre-learning/'+ref.url;const matches=(await indexedAssets()).get(path+'|'+ref.sha256+'|'+ref.bytes)||[];for(const {pack,entry} of matches){try{const file=await(await(await directory()).getFileHandle(pack.name)).getFile();if(file.size!==pack.bytes)continue;const identity=sliceIdentity(pack,file,entry);if(badSlices.has(identity))continue;const slice=file.slice(entry.start,entry.start+entry.bytes,entry.role==='video'?'video/mp4':entry.role==='unit'?'application/json':ref.url.endsWith('.png')?'image/png':ref.url.endsWith('.webp')?'image/webp':'image/jpeg');if(!verifiedSlices.has(identity)){const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',await slice.arrayBuffer())),b=>b.toString(16).padStart(2,'0')).join('');if(digest!==entry.sha256){badSlices.add(identity);if(typeof window!=='undefined')window.dispatchEvent(new CustomEvent('gre-offline-corrupt',{detail:{packId:pack.packId}}));continue;}if(Number.isFinite(file.lastModified)){verifiedSlices.set(identity,true);while(verifiedSlices.size>64)verifiedSlices.delete(verifiedSlices.keys().next().value);}}return slice;}catch{invalidateAssetIndex();}}}catch{}if(retry&&revision!==indexRevision)return localAsset(ref,false);return null;
 }
 export async function storageStatus(){const estimate=await navigator.storage?.estimate?.();const persistent=await navigator.storage?.persisted?.();return {...estimate,persistent:Boolean(persistent)};}
 
@@ -86,7 +112,7 @@ function selectedMedia(catalog,ids,packs){
 async function commitPackChanges(changes){
  const database=await db();return new Promise((resolve,reject)=>{
   const tx=database.transaction('packs','readwrite'),store=tx.objectStore('packs');
-  tx.oncomplete=()=>resolve();tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('Index update cancelled'));
+  tx.oncomplete=()=>{invalidateAssetIndex(true);resolve();};tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||new Error('Index update cancelled'));
   try{for(const {pack,replacement} of changes)replacement?store.put(replacement):store.delete(pack.key);}catch(error){tx.abort();reject(error);}
  });
 }
@@ -139,3 +165,4 @@ export async function clearSavedWords(catalog,ids,{signal,onProgress=()=>{}}={})
   },{rollbackOnError:()=>!committed});
  },signal);
 }
+

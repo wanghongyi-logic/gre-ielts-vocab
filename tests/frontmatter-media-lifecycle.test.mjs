@@ -132,3 +132,9 @@ test('older video APIs preserve their poster backing and crop through cancelled 
  const h=harness({rvfc:false});await h.motion.refresh({...media,waitForPresentedFrame:true});h.motion.activate();h.flush();h.flush();await micro();const crop=h.poster.style.getPropertyValue('clip-path');
  h.motion.setTurning(true,{preservePresentation:true});assert.equal(h.poster.style.getPropertyValue('opacity'),'1');assert.equal(h.poster.style.getPropertyValue('clip-path'),crop);h.motion.setTurning(false,{preservePresentation:true});await micro();assert.equal(h.poster.style.getPropertyValue('opacity'),'1');h.motion.destroy();
 });
+
+
+test('video decode finishing after page adoption resumes playback under its poster',async()=>{
+ const h=harness();h.video.readyState=0;const decoding=h.motion.refresh(media);h.motion.activate();h.flush();h.flush();await micro();assert.equal(h.plays,0);
+ h.video.readyState=2;h.video.emit('loadeddata');assert.equal(await decoding,true);await micro();assert.equal(h.plays,1);assert.equal(h.poster.style.getPropertyValue('opacity'),'1');h.present();h.flush();assert.equal(h.poster.style.getPropertyValue('opacity'),'0');h.motion.destroy();
+});
