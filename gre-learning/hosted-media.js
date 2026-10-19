@@ -2,7 +2,7 @@
 // Rebuild the shell after changing this policy; the worker receives the same code.
 // Add a future range only with its reviewed content and uploaded hash-bound assets.
 // Retired media remain local/import-only; future ordinals are never implicit.
-export const HOSTED_MEDIA_ORDINAL_RANGES = [[1,50],[1321,1600]];
+export const HOSTED_MEDIA_ORDINAL_RANGES = [[1,50],[1601,1895]];
 export function isHostedMediaEntry(entry,index){
  const ordinal=entry.displayOrdinal??index+1;
  return HOSTED_MEDIA_ORDINAL_RANGES.some(([first,last])=>ordinal>=first&&ordinal<=last);
