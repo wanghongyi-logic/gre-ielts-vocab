@@ -9,7 +9,7 @@ const fields = {
   mnemonic: ['method','textZh','original','kind','weak'],
   usage: ['senseZh','explanationZh','collocations'],
   collocation: ['phrase','meaningZh','usageZh'],
-  example: ['textEn','translationZh','explanationZh'],
+  example: ['textEn','translationZh','explanationZh','sourceAttribution'],
   equivalent: ['word','comparisonZh','source','sources']
 };
 const text = value => typeof value === 'string' && value.trim().length > 0;
@@ -49,12 +49,13 @@ export function validateEntry(entry, baselineLesson) {
   list(entry.examples, 'examples');
   for (const item of entry.examples) {
     if (item.explanationZh !== undefined && !text(item.explanationZh)) throw new TypeError('Invalid example explanation');
+    if (Object.hasOwn(item,'sourceAttribution') && !text(item.sourceAttribution)) throw new TypeError('Invalid example source attribution');
     shape(item, 'example'); required(item, ['textEn','translationZh'], 'example');
   }
   // Qualified editorial exception: no verified GRE equivalent pair for awning.
   const reviewedEmptyEquivalents=(entry.number===182&&entry.word==='awning')||(entry.number===4930&&entry.word==='arousal')||(entry.number===4933&&entry.word==='artifact');
   list(entry.equivalents, 'equivalents', reviewedEmptyEquivalents?0:1);
-  for (const item of entry.equivalents) { shape(item, 'equivalent'); required(item, ['word','comparisonZh'], 'equivalent'); if (Object.hasOwn(item,'source') && !['zhangwei_dedicated_2021','zhangwei_core7','weichen_gre'].includes(item.source)) throw new TypeError('Invalid equivalent source'); if (Object.hasOwn(item,'sources') && (!Array.isArray(item.sources) || !item.sources.length || item.sources.some(s=>!['zhangwei_dedicated_2021','zhangwei_core7','weichen_gre'].includes(s)))) throw new TypeError('Invalid equivalent sources'); }
+  for (const item of entry.equivalents) { shape(item, 'equivalent'); required(item, ['word','comparisonZh'], 'equivalent'); if (Object.hasOwn(item,'source') && !['zhangwei_dedicated_2021','zhangwei_core7','weichen_gre','zhangwei_original3000','chenqi_zhou_zaiyao3000_original'].includes(item.source)) throw new TypeError('Invalid equivalent source'); if (Object.hasOwn(item,'sources') && (!Array.isArray(item.sources) || !item.sources.length || item.sources.some(s=>!['zhangwei_dedicated_2021','zhangwei_core7','weichen_gre','zhangwei_original3000','chenqi_zhou_zaiyao3000_original'].includes(s)))) throw new TypeError('Invalid equivalent sources'); }
   if (!entry.usage.some(item => item.collocations.length)) throw new TypeError('Missing collocations');
   return entry;
 }

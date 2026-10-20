@@ -146,6 +146,11 @@
           "explanationZh": {
             "type": "string",
             "minLength": 1
+          },
+          "sourceAttribution": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
           }
         },
         "required": [
@@ -176,8 +181,26 @@
           "source": {
             "type": "string",
             "enum": [
-              "zhangwei_dedicated_2021"
+              "zhangwei_dedicated_2021",
+              "zhangwei_core7",
+              "weichen_gre",
+              "zhangwei_original3000",
+              "chenqi_zhou_zaiyao3000_original"
             ]
+          },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "enum": [
+                "zhangwei_dedicated_2021",
+                "zhangwei_core7",
+                "weichen_gre",
+                "zhangwei_original3000",
+                "chenqi_zhou_zaiyao3000_original"
+              ]
+            }
           }
         }
       }
