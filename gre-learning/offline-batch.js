@@ -1,12 +1,37 @@
 import {isHostedMediaEntry} from './hosted-media.js';
 import {waitForLocal} from './offline-async.js';
-// Inventories are local. A starting/suspended worker cannot block saved resources.
-export async function batchStatus(){
- const cache=await waitForLocal(()=>globalThis.caches.open('gre-scalable-verified-units-v1'));
- const root=new URL('./',import.meta.url).href;
- const keys=await waitForLocal(()=>cache.keys());
- const readyPaths=keys.map(request=>request.url).filter(url=>url.startsWith(root+'story-media/')&&/[a-f0-9]{64}/.test(url)).map(url=>'gre-learning/'+url.slice(root.length));
- return {readyPaths,shellReady:false};
+// A caller timeout cannot abort CacheStorage.match. Keep native reads shared and
+// bounded until they really settle, across cancellation/retry/background refresh.
+const statusMatches=new Map();
+function statusMatch(url,cacheName,signal,state){
+ if(signal?.aborted)throw new DOMException('Cancelled','AbortError');
+ const key=cacheName+'|'+url;if(statusMatches.has(key)){state.stage='CM';return statusMatches.get(key);}
+ if(statusMatches.size>=4){state.stage='CQ';return Promise.race([...statusMatches.values()].map(p=>p.catch(()=>undefined))).then(()=>statusMatch(url,cacheName,signal,state));}
+ state.stage='CM';
+ const pending=Promise.resolve().then(()=>globalThis.caches.match(url,{cacheName})).then(response=>{
+  const present=Boolean(response?.ok);try{response?.body?.cancel()?.catch(()=>{});}catch{}return present;
+ });
+ statusMatches.set(key,pending);const finish=()=>{if(statusMatches.get(key)===pending)statusMatches.delete(key);};pending.then(finish,finish);return pending;
+}
+async function scanKnownCache(refs,{cacheName,signal,timeoutMs=6000}={}){
+ const paths=[],controller=new AbortController(),abort=()=>controller.abort();signal?.addEventListener('abort',abort,{once:true});if(signal?.aborted)abort();let next=0;
+ try{await Promise.all(Array.from({length:Math.min(4,refs.length)},async()=>{
+  while(next<refs.length){if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');const ref=refs[next++],state={stage:'CM'};
+   try{if(await waitForLocal(()=>statusMatch(ref.url,cacheName,controller.signal,state),{signal:controller.signal,timeoutMs,message:'本机资源定位读取超时，请重试'}))paths.push(ref.path);}
+   catch(error){error.inventoryStage=state.stage;throw error;}
+  }
+ }));return paths;}finally{controller.abort();signal?.removeEventListener('abort',abort);}
+}
+// Probe only current catalog identities in the known cache. Never enumerate a
+// multi-gigabyte native cache or consume media bodies just to count saved words.
+export async function batchStatus(catalog,{ids,signal,timeoutMs=6000}={}){
+ if(!Array.isArray(catalog?.entries))throw new Error('Inventory catalog required');
+ const wanted=ids?new Set(ids):null,refs=new Map(),root=new URL('./',import.meta.url);
+ for(const entry of catalog.entries){if(wanted&&!wanted.has(entry.number))continue;for(const role of ['poster','video','staticPoster']){
+  const ref=entry.storyMedia?.[role];if(!ref||!ref.url.startsWith('story-media/')||!ref.url.includes(ref.sha256))continue;
+  refs.set(ref.url,{url:new URL(ref.url,root).href,path:'gre-learning/'+ref.url});
+ }}
+ return {readyPaths:await scanKnownCache([...refs.values()],{cacheName:'gre-scalable-verified-units-v1',signal,timeoutMs}),shellReady:false,verification:'committed-key-presence'};
 }
 // Fresh immutable-key inventory avoids rehashing gigabytes of already saved
 // complete words on Continue. Partial words still use normal per-file verification.
@@ -28,7 +53,7 @@ export async function downloadLessons(ids,skipPaths,{signal,onProgress=()=>{},id
   const checkpoint={version:1,jobId,ids,remaining:[...ids],state:'running',updatedAt:Date.now()};
   const save=()=>{checkpoint.updatedAt=Date.now();saveDownloadCheckpoint(checkpoint);};
   try{save();}catch{channel.port1.close();channel.port2.close();reject(new Error('无法保存下载任务，请检查本机存储后重试'));return;}
-  const finish=(failure,value)=>{if(done)return;done=true;clearTimeout(timer);clearTimeout(cancelTimer);signal?.removeEventListener('abort',abort);navigator.serviceWorker?.removeEventListener?.('controllerchange',changed);globalThis.document?.removeEventListener('visibilitychange',visibility);channel.port1.close();cancelChannel?.port1.close();checkpoint.state=failure?(failure.name==='AbortError'?'cancelled':'paused'):value?.unavailable?'paused':'complete';try{save();}catch{}failure?reject(failure):resolve(value);};
+  const finish=(failure,value)=>{if(done)return;done=true;clearTimeout(timer);clearTimeout(cancelTimer);signal?.removeEventListener('abort',abort);navigator.serviceWorker?.removeEventListener?.('controllerchange',changed);globalThis.document?.removeEventListener('visibilitychange',visibility);globalThis.addEventListener&&globalThis.removeEventListener('pagehide',pagehide);channel.port1.close();cancelChannel?.port1.close();checkpoint.state=failure?(failure.name==='AbortError'?'cancelled':'paused'):value?.unavailable?'paused':'complete';try{save();}catch{}failure?reject(failure):resolve(value);};
   // A lost cancellation reply is not proof that a native write drained. Probe
   // the SAME idempotent job cancellation with a capped budget per foreground.
   const cancel=()=>{
@@ -47,6 +72,7 @@ export async function downloadLessons(ids,skipPaths,{signal,onProgress=()=>{},id
   };
   const stop=failure=>{if(done||cancelling)return;stopError=failure;cancelling=true;clearTimeout(timer);checkpoint.state='cancelling';try{save();}catch{}cancel();onProgress({phase:'cancelling'});};
   const abort=()=>stop(new DOMException('Cancelled','AbortError'));
+  const pagehide=()=>stop(new DOMException('Page closed','AbortError'));globalThis.addEventListener?.('pagehide',pagehide);
   const changed=()=>{const current=navigator.serviceWorker?.controller;if(!current||current===target)return;cancel();finish(new Error('离线服务已更新，请继续下载'));};
   const arm=()=>{clearTimeout(timer);if(cancelling||globalThis.document?.hidden)return;timer=setTimeout(()=>{stop(new Error('下载长时间没有响应，请继续下载'));},idleTimeoutMs);};
   // Suspension is expected on iOS, not evidence of a failed download. Give the

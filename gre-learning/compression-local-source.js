@@ -8,6 +8,17 @@ const valid=validSource;
 const cancelled=()=>new DOMException('已取消；原文件未更改','AbortError');
 const timeout=()=>Object.assign(new Error('读取超时，请重试'),{name:'TimeoutError'});
 const errorText=error=>error?.message||'存储暂时不可读';
+const stageCodes={'index-open':'RI-O','index-cursor':'RI-C','index-format':'RI-F','index-metadata':'RI-M','cache-match':'RC-M','cache-queue':'RC-Q','cache-api':'RC-U','opfs-root':'RO-R','opfs-directory':'RO-D','opfs-handle':'RO-H','opfs-file':'RO-F','opfs-queue':'RO-Q','opfs-api':'RO-U'};
+function readError(error,stage,details){const result=new Error(errorText(error));result.name=error?.name||'Error';result.readStage=error?.readStage||stage;result.readDetails=details||error?.readDetails;return result;}
+function diagnostic(stage,error,affected,details=error?.readDetails){
+ stage=error?.readStage||details?.stage||stage;
+ const reason=({TimeoutError:'T',SecurityError:'S',NotAllowedError:'S',BlockedError:'B',NotSupportedError:'U',QuotaExceededError:'Q',NotReadableError:'N',InvalidStateError:'I',UnknownError:'X'})[error?.name]||'E';
+ return {code:(stageCodes[stage]||stage)+'-'+reason,stage,reason,affected,...(details?{pending:details}:{}),errorName:error?.name||'Error',message:errorText(error).slice(0,160)};
+}
+const metadataDiagnostic=(stage,reason,affected)=>({code:stageCodes[stage]+'-'+reason,stage,reason,affected});
+function pendingText(info){return info?`（当前进行 ${info.active||0}，排队 ${info.waiting||0}，此前未返回 ${info.abandoned||0}${Object.keys(info.stages||{}).length?'；'+Object.entries(info.stages).map(([stage,count])=>(stageCodes[stage]||stage)+' '+count).join('/') : ''}）`:'';}
+function rememberReason(reasons,identity,code){if(!reasons.has(identity))reasons.set(identity,new Set());reasons.get(identity).add(code);}
+
 function sourceRequests(catalog){
  const wanted=new Map();
  for(const entry of catalog?.entries||[])for(const role of roles){const ref=entry.storyMedia?.[role];if(!ref)continue;const source={path:'gre-learning/'+ref.url,sha256:ref.sha256,bytes:ref.bytes,wordId:entry.number,role};if(valid(source))wanted.set(sourceIdentity(source),source);}
@@ -18,7 +29,7 @@ function sourceRequests(catalog){
 function readStage(work,{signal,timeoutMs}){
  return new Promise((resolve,reject)=>{
   const state={stopped:false,onStop:new Set()};let timer;
-  const finish=error=>{if(state.stopped)return;state.stopped=true;for(const stop of state.onStop)stop();state.onStop.clear();clearTimeout(timer);signal?.removeEventListener('abort',abort);error?.name==='AbortError'&&signal?.aborted?reject(error):resolve(error||null);};
+  const finish=error=>{if(state.stopped)return;if(error&&state.describe){const details=state.describe();error=readError(error,details.stage,details);}state.stopped=true;for(const stop of state.onStop)stop();state.onStop.clear();clearTimeout(timer);signal?.removeEventListener('abort',abort);error?.name==='AbortError'&&signal?.aborted?reject(error):resolve(error||null);};
   const abort=()=>finish(cancelled());
   if(signal?.aborted){abort();return;}
   state.touch=()=>{if(!state.stopped){clearTimeout(timer);timer=setTimeout(()=>finish(timeout()),timeoutMs);}};
@@ -32,29 +43,29 @@ function readStage(work,{signal,timeoutMs}){
 function readMatchingPacks(wanted,{signal,timeoutMs}){
  const records=new Map(),uncertain=new Set();
  return new Promise((resolve,reject)=>{
-  let done=false,db,tx,request,timer,absent=false;
+  let done=false,db,tx,request,timer,absent=false,stage='index-open';
   const close=connection=>{try{connection?.close();}catch{}};
   const finish=error=>{
    if(done)return;done=true;clearTimeout(timer);signal?.removeEventListener('abort',abort);
    if(error)try{tx?.abort();}catch{}
    close(db);
    if(signal?.aborted){reject(cancelled());return;}
-   resolve({records,uncertain,error:error||null});
+   resolve({records,uncertain,error:error?readError(error,stage):null});
   };
   const abort=()=>finish(cancelled());
   const touch=()=>{if(!done){clearTimeout(timer);timer=setTimeout(()=>finish(timeout()),timeoutMs);}};
   if(signal?.aborted){abort();return;}
   signal?.addEventListener('abort',abort,{once:true});touch();
   try{
-   if(!globalThis.indexedDB?.open)throw new Error('此浏览器无法读取本机书包索引');
+   if(!globalThis.indexedDB?.open)throw Object.assign(new Error('此浏览器无法读取本机书包索引'),{name:'NotSupportedError'});
    request=globalThis.indexedDB.open(DB);
    request.onupgradeneeded=()=>{absent=true;try{request.transaction.abort();}catch(error){finish(error);}close(request.result);};
-   request.onblocked=()=>finish(new Error('本机书包索引被其他页面占用'));
+   request.onblocked=()=>finish(Object.assign(new Error('本机书包索引被其他页面占用'),{name:'BlockedError'}));
    request.onerror=()=>finish(absent?null:request.error||new Error('本机书包索引读取失败'));
    request.onsuccess=()=>{
     db=request.result;if(done){close(db);return;}touch();
     try{
-     if(!db.objectStoreNames.contains('packs'))throw new Error('未知的本机书包索引格式');
+     if(!db.objectStoreNames.contains('packs')){stage='index-format';throw new Error('未知的本机书包索引格式');}stage='index-cursor';
      db.onversionchange=()=>finish(new Error('本机书包索引已变化，请重试'));
      tx=db.transaction('packs','readonly');
      tx.oncomplete=()=>finish();tx.onerror=tx.onabort=()=>finish(tx.error||new Error('本机书包索引读取中断'));
@@ -65,7 +76,7 @@ function readMatchingPacks(wanted,{signal,timeoutMs}){
       if(done)return;touch();
       try{
        const cursor=cursorRequest.result;if(!cursor)return;const pack=cursor.value;
-       if(!Array.isArray(pack?.files))throw new Error('部分本机书包索引格式无效');
+       if(!Array.isArray(pack?.files)){stage='index-metadata';throw new Error('部分本机书包索引格式无效');}
        for(const file of pack.files){
         if(!file||typeof file!=='object')continue;
         const variant=file.kind==='owned-local-variant',source=variant?file.source:file;
@@ -98,89 +109,95 @@ function createReadPool(limit){
  const pump=()=>{
   while(active<limit&&queue.length){
    const task=queue.shift();if(!task.users.size)continue;task.active=true;active++;
-   const wanted=()=>task.users.size>0,touch=()=>{for(const state of task.users.keys())state.touch();};
-   const finish=(error,value)=>{active--;if(pending.get(task.key)===task)pending.delete(task.key);detach(task);pump();error?task.reject(error):task.resolve(value);};
-   Promise.resolve().then(()=>{if(!wanted())throw cancelled();return task.work(wanted,touch);}).then(value=>finish(null,value),error=>finish(error));
+   const wanted=()=>task.users.size>0,touch=()=>{for(const state of task.users.keys())state.touch();},phase=value=>{task.phase=value;};
+   const finish=(error,value)=>{active--;if(pending.get(task.key)===task)pending.delete(task.key);detach(task);pump();error?task.reject(readError(error,task.phase)):task.resolve(value);};
+   Promise.resolve().then(()=>{if(!wanted())throw cancelled();return task.work(wanted,touch,phase);}).then(value=>finish(null,value),error=>finish(error));
   }
  };
- return (key,work,state)=>{
+ const read=(key,work,state,phase)=>{
   if(state.stopped)return Promise.reject(cancelled());
-  let task=pending.get(key);
-  if(!task){let resolve,reject;const promise=new Promise((yes,no)=>{resolve=yes;reject=no;});task={key,work,promise,resolve,reject,users:new Map(),active:false};pending.set(key,task);queue.push(task);}
+  let task=pending.get(key);if(task)task.reused=true;
+  if(!task){let resolve,reject;const promise=new Promise((yes,no)=>{resolve=yes;reject=no;});task={key,work,promise,resolve,reject,users:new Map(),active:false,phase,reused:false};pending.set(key,task);queue.push(task);}
   if(!task.users.has(state)){
    const stop=()=>{task.users.delete(state);if(!task.users.size&&!task.active){const at=queue.indexOf(task);if(at>=0)queue.splice(at,1);if(pending.get(key)===task)pending.delete(key);task.reject(cancelled());}};
    task.users.set(state,stop);state.onStop.add(stop);
   }
   pump();return task.promise;
  };
+ read.snapshot=state=>{const tasks=[...pending.values()],own=tasks.filter(task=>task.users.has(state)),running=own.filter(task=>task.active);const stages={};for(const task of running)stages[task.phase]=(stages[task.phase]||0)+1;return {limit,active,waiting:own.length-running.length,scopeActive:running.length,abandoned:tasks.filter(task=>task.active&&!task.users.size).length,reused:own.filter(task=>task.reused).length,stages,stage:running[0]?.phase||(own.length?'queue':null)};};
+ return read;
 }
 const cacheReadPools=new WeakMap(),packReadPools=new WeakMap();
 function cacheReadPool(storage){if(!cacheReadPools.has(storage))cacheReadPools.set(storage,createReadPool(6));return cacheReadPools.get(storage);}
 function packReadPool(storage){if(!packReadPools.has(storage))packReadPools.set(storage,{directory:createReadPool(1),files:createReadPool(4)});return packReadPools.get(storage);}
 async function readRequestedCache(wanted,{signal,timeoutMs,baseURL}){
- const found=new Map(),unknown=new Set(),visited=new Set(),warnings=[];const entries=[...wanted];let next=0;
+ const found=new Map(),unknown=new Set(),visited=new Set(),warnings=[],diagnostics=[],reasons=new Map(),failureDetails=new Map();const entries=[...wanted];let next=0;
  const error=await readStage(async state=>{
-  // CacheStorage.match never creates a cache, unlike has() followed by open().
-  // Only response metadata is inspected here. Bytes/hash are checked before use.
-  const storage=globalThis.caches;if(typeof storage?.match!=='function')throw new Error('此浏览器无法读取本机媒体缓存');const read=cacheReadPool(storage);
+  // Direct immutable requested paths only; no keys(), open(), fetch, or bodies.
+  const storage=globalThis.caches;
+  if(typeof storage?.match!=='function')throw readError(Object.assign(new Error('此浏览器无法读取本机媒体缓存'),{name:'NotSupportedError'}),'cache-api');
+  const read=cacheReadPool(storage);state.describe=()=>{const pending=read.snapshot(state);return {...pending,stage:pending.stage==='queue'?'cache-queue':'cache-match'};};
   await Promise.all(Array.from({length:Math.min(6,entries.length)},async()=>{
    while(!state.stopped&&next<entries.length){
     const [identity,source]=entries[next++];
     try{
      const url=new URL(source.path,baseURL),response=await read(url.href,async()=>{
-      let response;try{response=await storage.match(url,{cacheName:CACHE});return response?{ok:response.ok,length:response.headers?.get?.('Content-Length'),variant:response.headers?.get?.('X-GRE-Owned-Variant')}:null;}
+      let response;try{response=await storage.match(url,{cacheName:CACHE});return response?{ok:response.ok,status:response.status,length:response.headers?.get?.('Content-Length'),variant:response.headers?.get?.('X-GRE-Owned-Variant')}:null;}
       finally{discardResponse(response);}
-     },state);
-     if(state.stopped)return;state.touch();
-     visited.add(identity);
-     if(!response)continue; // A known miss, not a failed read.
-     if(!response.ok){unknown.add(identity);continue;}
-     const length=response.length;
-     if(response.variant==='1'||length!==null&&length!==undefined&&Number(length)!==source.bytes){unknown.add(identity);continue;}
+     },state,'cache-match');
+     if(state.stopped)return;state.touch();visited.add(identity);
+     if(!response)continue;
+     const length=response.length,reason=!response.ok?'H':response.variant==='1'?'V':length!==null&&length!==undefined&&Number(length)!==source.bytes?'L':null;
+     if(reason){unknown.add(identity);const detail={...metadataDiagnostic('cache-match',reason,1),...(reason==='H'?{status:response.status}:{} )};rememberReason(reasons,identity,detail.code);failureDetails.set(detail.code,detail);continue;}
      found.set(identity,{...source,storage:'cache'});
-    }catch(error){if(state.stopped)return;state.touch();visited.add(identity);unknown.add(identity);}
+    }catch(error){if(state.stopped)return;state.touch();visited.add(identity);unknown.add(identity);const detail=diagnostic('cache-match',error,1);rememberReason(reasons,identity,detail.code);failureDetails.set(detail.code,detail);}
    }
   }));
  },{signal,timeoutMs});
- if(error)warnings.push('媒体缓存清单未读全：'+errorText(error));
  for(const [identity] of wanted)if(!visited.has(identity))unknown.add(identity);
- if(unknown.size&&!error)warnings.push(`媒体缓存有 ${unknown.size} 项暂时无法确认；不代表没有保存。`);
- return {found,unknown,warnings};
+ if(error){const detail=diagnostic('cache-match',error,unknown.size);diagnostics.push(detail);warnings.push(`${detail.code} · 媒体缓存清单未读全：${errorText(error)}；${unknown.size} 项待确认${pendingText(detail.pending)}`);for(const identity of unknown)if(!visited.has(identity))rememberReason(reasons,identity,detail.code);}
+ const counts=new Map();for(const codes of reasons.values())for(const code of codes)counts.set(code,(counts.get(code)||0)+1);
+ for(const [code,affected] of counts)if(!diagnostics.some(item=>item.code===code))diagnostics.push({...failureDetails.get(code),code,stage:'cache-match',reason:code.split('-').at(-1),affected});
+ if(unknown.size&&!error)warnings.push(`${[...counts.keys()].join('/')} · 媒体缓存有 ${unknown.size} 项暂时无法确认；不代表没有保存。`);
+ return {found,unknown,warnings,diagnostics,reasons};
 }
 async function inspectRequestedPacks(records,{signal,timeoutMs}){
- const found=new Map(),omitted=new Set(),unknown=new Set(),checked=new Set(),warnings=[],packs=new Map();
+ const found=new Map(),omitted=new Set(),unknown=new Set(),checked=new Set(),warnings=[],diagnostics=[],reasons=new Map(),failureDetails=new Map(),packs=new Map();
  for(const [identity,entries] of records)for(const entry of entries){if(!packs.has(entry.packName))packs.set(entry.packName,[]);packs.get(entry.packName).push({identity,entry});}
- if(!packs.size)return {found,omitted,unknown,warnings};
+ if(!packs.size)return {found,omitted,unknown,warnings,diagnostics,reasons};
  const pending=[...packs];let next=0;
  const error=await readStage(async state=>{
-  const storage=globalThis.navigator?.storage;if(typeof storage?.getDirectory!=='function')throw new Error('此浏览器无法读取本机书包文件');const reads=packReadPool(storage);
+  const storage=globalThis.navigator?.storage;if(typeof storage?.getDirectory!=='function')throw readError(Object.assign(new Error('此浏览器无法读取本机书包文件'),{name:'NotSupportedError'}),'opfs-api');const reads=packReadPool(storage);
+  state.describe=()=>{const dir=reads.directory.snapshot(state),files=reads.files.snapshot(state),detail=dir.stage?dir:files;return {...detail,stage:detail.stage==='queue'?'opfs-queue':detail.stage||'opfs-file'};};
   let directory;
-  try{directory=await reads.directory(DIR,async(wanted,touch)=>{const root=await storage.getDirectory();if(!wanted())throw cancelled();touch();return root.getDirectoryHandle(DIR,{create:false});},state);}
+  try{directory=await reads.directory(DIR,async(wanted,touch,phase)=>{const root=await storage.getDirectory();if(!wanted())throw cancelled();touch();phase('opfs-directory');return root.getDirectoryHandle(DIR,{create:false});},state,'opfs-root');}
   catch(error){if(error?.name!=='NotFoundError')throw error;for(const identity of records.keys())checked.add(identity);return;}
   if(state.stopped)return;state.touch();
   await Promise.all(Array.from({length:Math.min(4,pending.length)},async()=>{
    while(!state.stopped&&next<pending.length){
     const [name,matches]=pending[next++];
     try{
-     const file=await reads.files(name,async(wanted,touch)=>{const handle=await directory.getFileHandle(name,{create:false});if(!wanted())throw cancelled();touch();const file=await handle.getFile();return {size:file.size,lastModified:file.lastModified};},state);if(state.stopped)return;state.touch();
+     const file=await reads.files(name,async(wanted,touch,phase)=>{const handle=await directory.getFileHandle(name,{create:false});if(!wanted())throw cancelled();touch();phase('opfs-file');const file=await handle.getFile();return {size:file.size,lastModified:file.lastModified};},state,'opfs-handle');if(state.stopped)return;state.touch();
      for(const {identity,entry} of matches){
       checked.add(identity);
-      if(file.size!==entry.packBytes){unknown.add(identity);continue;}
+      if(file.size!==entry.packBytes){unknown.add(identity);rememberReason(reasons,identity,'RO-F-L');continue;}
       if(entry.variant)omitted.add(identity);
       else if(!found.has(identity)){const {storedBytes,variant,...item}=entry;found.set(identity,item);}
      }
-    }catch(error){if(state.stopped)return;state.touch();for(const {identity} of matches){checked.add(identity);if(error?.name!=='NotFoundError')unknown.add(identity);}}
+    }catch(error){if(state.stopped)return;state.touch();for(const {identity} of matches){checked.add(identity);if(error?.name!=='NotFoundError'){unknown.add(identity);const detail=diagnostic('opfs-file',error,1);rememberReason(reasons,identity,detail.code);failureDetails.set(detail.code,detail);}}}
    }
   }));
  },{signal,timeoutMs});
- if(error)warnings.push('本机书包文件清单未读全：'+errorText(error));
  for(const identity of records.keys())if(!checked.has(identity)||error&&!found.has(identity)&&!omitted.has(identity))unknown.add(identity);
- if(unknown.size&&!error)warnings.push(`本机书包有 ${unknown.size} 项暂时无法确认；不代表没有保存。`);
- return {found,omitted,unknown,warnings};
+ if(error){const detail=diagnostic('opfs-file',error,unknown.size);diagnostics.push(detail);warnings.push(`${detail.code} · 本机书包文件清单未读全：${errorText(error)}；${unknown.size} 项待确认${pendingText(detail.pending)}`);for(const identity of unknown)if(!reasons.has(identity))rememberReason(reasons,identity,detail.code);}
+ const counts=new Map();for(const codes of reasons.values())for(const code of codes)counts.set(code,(counts.get(code)||0)+1);
+ for(const [code,affected] of counts)if(!diagnostics.some(item=>item.code===code))diagnostics.push({code,stage:'opfs-file',reason:code.split('-').at(-1),...failureDetails.get(code),affected});
+ if(unknown.size&&!error)warnings.push(`${[...counts.keys()].join('/')} · 本机书包有 ${unknown.size} 项暂时无法确认；不代表没有保存。`);
+ return {found,omitted,unknown,warnings,diagnostics,reasons};
 }
 export async function listLocalMedia(catalog,{signal,baseURL=new URL('../',import.meta.url),timeoutMs=5000}={}){
  abortCheck(signal);timeoutMs=Number.isFinite(timeoutMs)&&timeoutMs>0?timeoutMs:5000;
- const wanted=sourceRequests(catalog),items=new Map(),unknown=new Set(),warnings=[];
+ const wanted=sourceRequests(catalog),items=new Map(),unknown=new Set(),warnings=[],diagnostics=[],reasons=new Map();
  if(wanted.size){
   const [packResult,cacheResult]=await Promise.all([
    (async()=>{const indexed=await readMatchingPacks(wanted,{signal,timeoutMs}),local=await inspectRequestedPacks(indexed.records,{signal,timeoutMs});return {indexed,local};})(),
@@ -188,10 +205,10 @@ export async function listLocalMedia(catalog,{signal,baseURL=new URL('../',impor
   ]);
   abortCheck(signal);
   const {indexed,local}=packResult;
-  if(indexed.error){warnings.push('本机书包索引清单未读全：'+errorText(indexed.error));for(const identity of wanted.keys())unknown.add(identity);}
-  if(indexed.uncertain.size)warnings.push(`本机索引有 ${indexed.uncertain.size} 项身份或位置无法确认；未加入待处理清单。`);
+  if(indexed.error){const detail=diagnostic('index-open',indexed.error,wanted.size);diagnostics.push(detail);warnings.push(`${detail.code} · 本机书包索引清单未读全：${errorText(indexed.error)}`);for(const identity of wanted.keys()){unknown.add(identity);rememberReason(reasons,identity,detail.code);}}
+  if(indexed.uncertain.size){diagnostics.push(metadataDiagnostic('index-metadata','V',indexed.uncertain.size));warnings.push(`RI-M-V · 本机索引有 ${indexed.uncertain.size} 项身份或位置无法确认；未加入待处理清单。`);for(const identity of indexed.uncertain)rememberReason(reasons,identity,'RI-M-V');}
   for(const identity of [...indexed.uncertain,...local.unknown,...cacheResult.unknown])unknown.add(identity);
-  warnings.push(...local.warnings,...cacheResult.warnings);
+  warnings.push(...local.warnings,...cacheResult.warnings);diagnostics.push(...local.diagnostics,...cacheResult.diagnostics);for(const store of [local,cacheResult])for(const [identity,codes] of store.reasons)for(const code of codes)rememberReason(reasons,identity,code);
   for(const [identity,item] of cacheResult.found)items.set(identity,item);
   for(const [identity,item] of local.found)items.set(identity,item);
   // An indexed compressed record is not proof its bytes are still readable.
@@ -200,14 +217,15 @@ export async function listLocalMedia(catalog,{signal,baseURL=new URL('../',impor
   for(const identity of local.omitted)unknown.delete(identity);
   for(const identity of items.keys())unknown.delete(identity);
   const result=[...wanted.keys()].filter(identity=>items.has(identity)).map(identity=>items.get(identity));
-  return inventoryResult(result,{warnings,unknown:unknown.size,omittedVariants,variantRecords:local.omitted.size,requested:wanted.size});
+  const unknownByStage={};for(const identity of unknown)for(const code of reasons.get(identity)||[])unknownByStage[code]=(unknownByStage[code]||0)+1;
+  return inventoryResult(result,{warnings,diagnostics,unknownByStage,unknown:unknown.size,missing:wanted.size-result.length-omittedVariants-unknown.size,omittedVariants,variantRecords:local.omitted.size,requested:wanted.size});
  }
- return inventoryResult([],{warnings,unknown:0,omittedVariants:0,variantRecords:0,requested:0});
+ return inventoryResult([],{warnings,diagnostics,unknownByStage:{},unknown:0,missing:0,omittedVariants:0,variantRecords:0,requested:0});
 }
 function inventoryResult(items,metadata){
  // Array compatibility for existing callers; consumers must retain the metadata
  // before filtering so an unreadable store is never presented as “zero saved”.
- Object.defineProperties(items,Object.fromEntries(Object.entries({...metadata,partial:metadata.unknown>0||metadata.warnings.length>0}).map(([key,value])=>[key,{value,enumerable:false}])));
+ Object.defineProperties(items,Object.fromEntries(Object.entries({...metadata,partial:metadata.unknown>0}).map(([key,value])=>[key,{value,enumerable:false}])));
  return items;
 }
 export async function readLocalSource(item,signal,{baseURL=new URL('../',import.meta.url)}={}){

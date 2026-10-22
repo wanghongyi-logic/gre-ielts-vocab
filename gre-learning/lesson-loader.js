@@ -10,6 +10,8 @@ import {validateEntry} from './schema.js';
 const notifyMedia=(phase,ref)=>{if(typeof window!=='undefined')window.dispatchEvent(new CustomEvent('gre-offline-asset',{detail:{phase,path:ref.url,bytes:ref.bytes}}));};
 const mediaType=ref=>ref.url.endsWith('.mp4')?'video/mp4':ref.url.endsWith('.webm')?'video/webm':ref.url.endsWith('.webp')?'image/webp':ref.url.endsWith('.png')?'image/png':ref.url.endsWith('.avif')?'image/avif':'image/jpeg';
 const abortError=()=>Object.assign(new Error('Request superseded'),{name:'AbortError'});
+// Saved reads address one immutable key directly; cache enumeration/open is not a prerequisite.
+const matchSavedCache=(storage,url)=>typeof storage?.match==='function'?storage.match(url,{cacheName:'gre-scalable-verified-units-v1'}):Promise.resolve(storage?.open?.('gre-scalable-verified-units-v1')).then(cache=>cache?.match(url));
 // Optional media has a deadline independent of required lesson text, including body reads.
 async function optionalMediaBytes(fetcher,url,signal,priority,timeoutMs){
  const controller=new AbortController();let timer,abort;
@@ -54,7 +56,7 @@ export class LessonLoader {
   };
   const {bytes,fromDisk}=await preferVerifiedLocal(()=>Promise.any([
    (async()=>{const blob=await localAsset(ref);if(!blob)throw new Error('No imported text');return verified(new Response(blob));})(),
-   (async()=>{const cached=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(!cached)throw new Error('No cached text');return verified(cached,true);})()
+   (async()=>{const cached=await matchSavedCache(this.cacheStorage,url.href);if(!cached)throw new Error('No cached text');return verified(cached,true);})()
   ]),async networkSignal=>verified(await this.fetcher(url,{signal:networkSignal,priority,cache:'no-cache'})),{signal,localTimeoutMs:this.localTextTimeoutMs,totalTimeoutMs:this.textTimeoutMs});
   if(signal?.aborted)throw abortError();
   const data=JSON.parse(new TextDecoder().decode(bytes));
@@ -100,7 +102,7 @@ export class LessonLoader {
    // allowing a replacement page to reuse the work rather than duplicate it.
    pending=Promise.any([
     (async()=>{const blob=await localAsset(ref);if(!blob)throw new Error('No imported media');return blob;})(),
-    (async()=>{const cached=await(await this.cacheStorage?.open('gre-scalable-verified-units-v1'))?.match(url.href);if(!cached)throw new Error('No cached media');const bytes=await cached.arrayBuffer();if(bytes.byteLength!==ref.bytes)throw new Error('Invalid cache size');const digest=await this.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==ref.sha256)throw new Error('Invalid cache hash');return new Blob([bytes],{type:mediaType(ref)});})()
+    (async()=>{const cached=await matchSavedCache(this.cacheStorage,url.href);if(!cached)throw new Error('No cached media');const bytes=await cached.arrayBuffer();if(bytes.byteLength!==ref.bytes)throw new Error('Invalid cache size');const digest=await this.crypto.subtle.digest('SHA-256',bytes),hash=Array.from(new Uint8Array(digest),v=>v.toString(16).padStart(2,'0')).join('');if(hash!==ref.sha256)throw new Error('Invalid cache hash');return new Blob([bytes],{type:mediaType(ref)});})()
    ]);
    this.localMediaReads.set(key,pending);
    const finish=()=>{if(this.localMediaReads.get(key)===pending)this.localMediaReads.delete(key);};pending.then(finish,finish);

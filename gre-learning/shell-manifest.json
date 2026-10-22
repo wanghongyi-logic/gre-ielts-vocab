@@ -1,5 +1,5 @@
 {
-  "build": "194-offline2600-v48",
+  "build": "195-offline2600-v49",
   "assets": [
     {
       "url": "index.html",
@@ -18,7 +18,7 @@
     },
     {
       "url": "gre-learning/update.js",
-      "sha256": "0c1a3294a675a5da2b399afb8784176bbea6b6e03925eda547bedb26c087c104",
+      "sha256": "829023209470f598cbc8750eb2d32cd717eaee53a7538e2a307f6c5a104f242e",
       "bytes": 8169
     },
     {
@@ -33,8 +33,8 @@
     },
     {
       "url": "gre-learning/lesson-loader.js",
-      "sha256": "dc354a8d65a82b0f6da3651bcf1ded0f914a9ac59978ed54dfbd07f96b60ddf7",
-      "bytes": 20302
+      "sha256": "9176f9333ab9427943b64406c85659a303564c788010df768d5fd5972d61796f",
+      "bytes": 20558
     },
     {
       "url": "gre-learning/schema.js",
@@ -128,18 +128,18 @@
     },
     {
       "url": "gre-learning/offline-manager.js",
-      "sha256": "8e44d77a91ede8c185b5bab24d5f2981889d4f8d51fa21f0538ea57f4fb95ef3",
-      "bytes": 35221
+      "sha256": "76b1ae895e7333225467cdee107bcbb882e35f9a3601c42642ca18bf1bf5de64",
+      "bytes": 35730
     },
     {
       "url": "gre-learning/offline-preferences.js",
-      "sha256": "5db9240b0945378a6d465d41046c7a0c81f7e3219ca9597b296cbcde7224236e",
+      "sha256": "851875f430f3d947f90aed763280cc6045e4375bbdc32dfa51638c4fcb066793",
       "bytes": 1262
     },
     {
       "url": "gre-learning/offline-batch.js",
-      "sha256": "92337fc8a01395ee366c0881b48ac7ba0800cade803337c37ebdc2c94c54e23a",
-      "bytes": 7455
+      "sha256": "840e577b822dd1405af6aa208a2658140a9216e122dd877d857ca4f10699a603",
+      "bytes": 9885
     },
     {
       "url": "gre-learning/offline-control.js",
@@ -2908,8 +2908,8 @@
     },
     {
       "url": "gre-learning/compression-local-source.js",
-      "bytes": 15921,
-      "sha256": "4eec94cabc6833a8cd783f7ee739c5ead9d8388feccd16b5debb2855f1d1d0b1"
+      "bytes": 21603,
+      "sha256": "4972a085ef5c15baf52dbe750ae1135815e13978af78715c4ec67cbfc6d962b6"
     },
     {
       "url": "gre-learning/compression-mp4.js",
@@ -2963,8 +2963,8 @@
     },
     {
       "url": "gre-learning/compression-batch-ui.js",
-      "bytes": 14265,
-      "sha256": "7059174d884b0ee4bc1c216fea6e6453bb412dfebd9746f71720c3e60133db92"
+      "bytes": 14305,
+      "sha256": "b97d83e5a6229d7ac5b53c5d5f4d5b7c81231de52d86e21edef2ab84fba12727"
     },
     {
       "url": "gre-learning/compression-checkpoint.js",
