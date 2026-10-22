@@ -1,4 +1,3 @@
-import {readPreviewAsset,previewClientId} from './compression-preview-session.js';
 import {waitForLocal,preferVerifiedLocal} from './offline-async.js';
 import {hostedMediaPaths,isHostedMediaEntry} from './hosted-media.js';
 import {createMediaControl} from './offline-control.js';
@@ -26,7 +25,7 @@ export class LessonLoader {
  constructor(catalog,{baseURL=new URL('./',import.meta.url),fetcher=globalThis.fetch.bind(globalThis),crypto=globalThis.crypto,cacheStorage=globalThis.caches,mediaTimeoutMs=5000,localMediaTimeoutMs=6500,localTextTimeoutMs=1200,textTimeoutMs=6500,maxEntries=8,maxBytes=2*1024*1024,setTimer=globalThis.setTimeout.bind(globalThis),clearTimer=globalThis.clearTimeout.bind(globalThis)}={}) {
   this.catalog=catalog;this.hostedMediaPaths=hostedMediaPaths(catalog);this.index=new Map(catalog.entries.map(entry=>[entry.number,entry]));
   if(this.index.size!==catalog.entries.length)throw new Error('Duplicate canonical ID');
-  this.baseURL=baseURL;this.fetcher=fetcher;this.cacheStorage=cacheStorage;this.crypto=crypto;this.mediaTimeoutMs=mediaTimeoutMs;this.localMediaTimeoutMs=localMediaTimeoutMs;this.localTextTimeoutMs=localTextTimeoutMs;this.textTimeoutMs=textTimeoutMs;this.textWrites=new Map();this.textReads=new Map();this.mediaReads=new Map();this.localMediaReads=new Map();this.nextUnit=null;this.mediaControl=createMediaControl(new URL('../',baseURL));this.mediaGeneration=null;this.mediaControl.subscribe(state=>{if(state.paused||(this.mediaGeneration!==null&&state.generation!==this.mediaGeneration))this.destroy();this.mediaGeneration=state.generation;});this.maxEntries=maxEntries;this.maxBytes=maxBytes;this.cache=new Map();this.bytes=0;this.generation=0;this.foreground=null;this.prefetchController=null;this.timer=null;this.mediaCache=new Map();this.previewMediaSources=new Map();this.setTimer=setTimer;this.clearTimer=clearTimer;this.previewChannel=typeof BroadcastChannel==='function'?new BroadcastChannel('gre-compression-preview-v1'):null;this.previewChannel?.unref?.();if(this.previewChannel)this.previewChannel.onmessage=event=>{if(event.data?.sender===previewClientId)return;this.destroy();if(typeof window!=='undefined'){const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-compression-replaced',{detail}));Promise.allSettled(detail.waits).then(()=>window.dispatchEvent(new CustomEvent('gre-library-updated',{detail:{waits:[]}})));}};if(typeof window!=='undefined')window.addEventListener('gre-compression-preview-change',()=>this.destroy());
+  this.baseURL=baseURL;this.fetcher=fetcher;this.cacheStorage=cacheStorage;this.crypto=crypto;this.mediaTimeoutMs=mediaTimeoutMs;this.localMediaTimeoutMs=localMediaTimeoutMs;this.localTextTimeoutMs=localTextTimeoutMs;this.textTimeoutMs=textTimeoutMs;this.textWrites=new Map();this.textReads=new Map();this.mediaReads=new Map();this.localMediaReads=new Map();this.nextUnit=null;this.mediaControl=createMediaControl(new URL('../',baseURL));this.mediaGeneration=null;this.mediaControl.subscribe(state=>{if(state.paused||(this.mediaGeneration!==null&&state.generation!==this.mediaGeneration))this.destroy();this.mediaGeneration=state.generation;});this.maxEntries=maxEntries;this.maxBytes=maxBytes;this.cache=new Map();this.bytes=0;this.generation=0;this.foreground=null;this.prefetchController=null;this.timer=null;this.mediaCache=new Map();this.setTimer=setTimer;this.clearTimer=clearTimer;
  }
  async resource(ref,signal,priority='high') {
   if(signal?.aborted)throw abortError();
@@ -111,9 +110,7 @@ export class LessonLoader {
  }
  async readMediaResource(ref,signal,priority,allowNetwork,ticket){
   if(signal?.aborted)throw abortError();
-  const preview=await readPreviewAsset(ref,{catalog:this.catalog,scopeURL:new URL('../',this.baseURL),generation:ticket});
   if(signal?.aborted)throw abortError();
-  if(preview)return this.mediaControl.readGuard(ticket,()=>{if(signal?.aborted)throw abortError();const identity='preview|'+preview.token+'|'+preview.variant.sha256+'|'+preview.source.sha256;this.previewMediaSources.set(identity,preview.source.sha256);if(!this.mediaCache.has(identity))this.mediaCache.set(identity,URL.createObjectURL(preview.blob));return this.mediaCache.get(identity);});
   if(this.mediaCache.has(ref.sha256))return this.mediaControl.readGuard(ticket,()=>{if(signal?.aborted)throw abortError();return this.mediaCache.get(ref.sha256);});
   const url=new URL(ref.url,this.baseURL);
   if(url.origin!==this.baseURL.origin||!url.pathname.startsWith(new URL('story-media/',this.baseURL).pathname))throw new Error('Media outside lesson scope');
@@ -221,8 +218,8 @@ export class LessonLoader {
  }
  retainMedia(numbers){
   const hashes=new Set();for(const number of numbers){const refs=this.index.get(number)?.storyMedia;if(refs){hashes.add(refs.poster.sha256);hashes.add(refs.video.sha256);if(refs.staticPoster)hashes.add(refs.staticPoster.sha256);}}
-  for(const [hash,url] of this.mediaCache)if(!hashes.has(hash)&&!hashes.has(this.previewMediaSources.get(hash))){URL.revokeObjectURL(url);this.mediaCache.delete(hash);this.previewMediaSources.delete(hash);}
+  for(const [hash,url] of this.mediaCache)if(!hashes.has(hash)){URL.revokeObjectURL(url);this.mediaCache.delete(hash);}
  }
- destroy(){this.cancel();for(const job of this.mediaReads.values())job.controller.abort();this.mediaReads.clear();this.localMediaReads.clear();this.nextUnit?.controller.abort();this.nextUnit=null;for(const job of this.textReads.values())job.controller.abort();this.textReads.clear();this.cache.clear();this.bytes=0;for(const url of this.mediaCache.values())URL.revokeObjectURL(url);this.mediaCache.clear();this.previewMediaSources.clear();}
+ destroy(){this.cancel();for(const job of this.mediaReads.values())job.controller.abort();this.mediaReads.clear();this.localMediaReads.clear();this.nextUnit?.controller.abort();this.nextUnit=null;for(const job of this.textReads.values())job.controller.abort();this.textReads.clear();this.cache.clear();this.bytes=0;for(const url of this.mediaCache.values())URL.revokeObjectURL(url);this.mediaCache.clear();}
 }
 

@@ -1,6 +1,4 @@
-import {installCompressionClientGate,compatibleCompressionClients} from './compression-client-gate.js';
-import {validateCompressionMedia} from './compression-preview.js';
-import {installCompressionSettings} from './compression-settings.js';
+import {installVariantClientGate,compatibleVariantClients} from './variant-client-gate.js';
 import {waitForLocal} from './offline-async.js';
 import {createStorageUsage,recordedStorage,storageUsageText,cacheSizeIndex,recordedCache} from './offline-storage-usage.js';
 import {createSavedSnapshot,savedSnapshotKey} from './offline-snapshot.js';
@@ -10,15 +8,15 @@ import {mountReleaseDownloads} from './offline-releases.js';
 import {createMediaControl} from './offline-control.js';
 import {batchStatus,downloadLessons,optionalMediaGroups,readDownloadCheckpoint,missingDownloadIds} from './offline-batch.js';
 import {OFFLINE_EDITION,setMediaEdition,chooseVideoMode,videoMode} from './offline-preferences.js';
-import {configureCompressionStorage,importPack,inspectLibrary,cleanUnusedPacks,clearSavedResources,clearSavedWords,deletePack} from './offline-packs.js';
+import {configureVariantImport,importPack,inspectLibrary,cleanUnusedPacks,clearSavedResources,clearSavedWords,deletePack} from './offline-packs.js';
 const size=n=>(n/1024/1024).toFixed(1)+' MB';
 export function installOfflineManager(catalog){
- installCompressionClientGate();
- configureCompressionStorage({catalogProvider:async()=>catalog,validateMedia:validateCompressionMedia,compatibleClients:compatibleCompressionClients});
+ installVariantClientGate();
+ configureVariantImport({catalogProvider:async()=>catalog,compatibleClients:compatibleVariantClients});
  const savedSnapshot=createSavedSnapshot(catalog);
- setMediaEdition(catalog);let controller=null,activeOperation=null,cachedPaths=[],clearingThisPage=false,changingMode=false,mutating=false,compressionBusy=false,filePickerOpen=false,savedReadyIds=null,savedInventoryFresh=false,savedGeneration=null,savedTotal=catalog.entries.length,releaseDownloads=null,savedExport=null,rangeDelete=null,refreshEpoch=0;
+ setMediaEdition(catalog);let controller=null,activeOperation=null,cachedPaths=[],clearingThisPage=false,changingMode=false,mutating=false,filePickerOpen=false,savedReadyIds=null,savedInventoryFresh=false,savedGeneration=null,savedTotal=catalog.entries.length,releaseDownloads=null,savedExport=null,rangeDelete=null,refreshEpoch=0;
  window.addEventListener('pagehide',()=>{if(activeOperation?.kind==='download')controller?.abort();});
- window.addEventListener('gre-update-can-reload',event=>{if(controller||changingMode||clearingThisPage||mutating||compressionBusy||filePickerOpen){event.detail.blocked=true;event.detail.storageMutation=true;}});
+ window.addEventListener('gre-update-can-reload',event=>{if(controller||changingMode||clearingThisPage||mutating||filePickerOpen){event.detail.blocked=true;event.detail.storageMutation=true;}});
  const host=document.createElement('section');host.className='offline-library';
  host.innerHTML=`<details class="library-page" open>
   <summary class="library-page-title">随身书库</summary>
@@ -57,8 +55,6 @@ export function installOfflineManager(catalog){
  welcome.innerHTML='<p role="status" data-text-ready>正在准备文字离线…</p>';
  host.append(welcome);
  const settingsStyle=document.createElement('link');settingsStyle.rel='stylesheet';settingsStyle.href=new URL('./settings-storybook.css',import.meta.url).href;document.head.append(settingsStyle);
- installCompressionSettings(host,catalog,{baseURL:new URL('../',import.meta.url),isBusy:()=>Boolean(controller)||clearingThisPage||changingMode||mutating});
- window.addEventListener('gre-compression-busy',event=>{compressionBusy=event.detail.busy;syncMutationControls();});
  const input=host.querySelector('input[type="file"]'),cancel=host.querySelector('[data-cancel]'),progress=host.querySelector('[data-import-progress]'),status=host.querySelector('[data-status]'),list=host.querySelector('[data-packs]'),space=host.querySelector('[data-space]'),clean=host.querySelector('[data-clean]');
  const importTarget={progress,cancel,status:host.querySelector('[data-import-status]')};
  const inventoryStatus=document.createElement('p');inventoryStatus.className='library-space';inventoryStatus.setAttribute('role','status');space.after(inventoryStatus);
@@ -93,10 +89,10 @@ export function installOfflineManager(catalog){
  row.append(button,feedback);host.querySelector('[data-pages-downloads]').append(row);
  const downloadRows=[{target:downloadTarget}];
  function refreshDownloads(){
-  rangeDelete?.sync(Boolean(controller)||clearingThisPage||changingMode||mutating||compressionBusy||filePickerOpen);savedExport?.sync();
+  rangeDelete?.sync(Boolean(controller)||clearingThisPage||changingMode||mutating||filePickerOpen);savedExport?.sync();
   const saved=availableIds.filter(id=>savedReadyIds?.includes(id)).length,complete=saved===availableIds.length;
   button.textContent=complete?'已保存全部资源':saved?'继续下载全部资源':'下载全部资源';
-  button.disabled=complete||Boolean(controller)||clearingThisPage||changingMode||mutating||compressionBusy||filePickerOpen;
+  button.disabled=complete||Boolean(controller)||clearingThisPage||changingMode||mutating||filePickerOpen;
  }
  refreshDownloads();
  const openManager=()=>{host.querySelector('details').open=true;location.hash='/settings';refresh(true);};
@@ -104,7 +100,7 @@ export function installOfflineManager(catalog){
  function syncMode(){const textOnly=videoMode()==='none';modeButton.textContent=textOnly?'使用视频':'纯文字';host.querySelector('[data-mode-description]').textContent=textOnly?'纯文字':'视频与文字';}
  syncMode();host.querySelector('[data-mode-action]').append(modeButton);
  modeButton.onclick=async()=>{
-  if(controller||clearingThisPage||changingMode||mutating||compressionBusy)return;
+  if(controller||clearingThisPage||changingMode||mutating)return;
   changingMode=true;modeButton.disabled=true;input.disabled=true;clean.disabled=true;host.querySelector('[data-clear-all]').disabled=true;
   for(const button of list.querySelectorAll('button'))button.disabled=true;
   refreshDownloads();const modeStatus=host.querySelector('[data-mode-status]');modeStatus.textContent='';
@@ -132,8 +128,8 @@ export function installOfflineManager(catalog){
   if(usageRecorded)usageRecorded.stale=true;if(usageCache)usageCache.stale=true;paintUsage();
   const epoch=++refreshEpoch;let paths=cachedPaths,stage='C1';
   try{const before=await waitForLocal(()=>sharedControl.state());if(before.phase==='clearing'||before.phase==='selective-clearing')throw new Error('Inventory changing');{stage='C2';const cache=await readSavedInventory();if(cache.pending||cache.error)throw new Error('Inventory pending');paths=cache.readyPaths||[];usageCache={...recordedCache(paths,usageCacheIndex),stale:true};paintUsage();}stage='P1';const library=await inspectLibrary(catalog,{cachedPaths:paths});stage='C3';const after=await waitForLocal(()=>sharedControl.state());if(epoch!==refreshEpoch)return;if(after.generation!==before.generation||after.phase==='clearing'||after.phase==='selective-clearing'){queueSavedRefresh();return;}cachedPaths=paths;savedInventoryFresh=true;savedReadyIds=library.readyIds;savedGeneration=after.generation;savedTotal=library.total;refreshDownloads();list.replaceChildren();paintSavedTotals();host.querySelector('.library-packs').hidden=library.packs.length===0;
-   for(const pack of library.packs){const li=document.createElement('li'),label=document.createElement('span'),button=document.createElement('button');const title=document.createElement('strong'),detail=document.createElement('span');title.textContent=`${pack.wordIds.length} 词`;detail.textContent=`${size(pack.bytes)} · ${pack.version}${pack.available===false?' · 文件缺失，请重新导入':pack.available===null?' · 当前范围未使用，未检查文件':pack.ownedCurrentAssets===0?' · 当前未使用':''}`;label.className='library-pack-label';label.append(title,detail);button.type='button';button.textContent='移除';button.setAttribute('aria-label',`删除 ${pack.wordIds.length} 词的本机资源包`);button.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating||compressionBusy;button.onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating||compressionBusy)return;if(!confirm(`删除这份本机资源包（${pack.wordIds.length} 词）？「文件」里的原始 ZIP 和其他资源包不会受影响。`))return;mutating=true;syncMutationControls();try{await deletePack(pack.key);status.textContent='本机资源包已删除，重新打开阅读后生效';await refresh();}catch(error){status.textContent=error.message;}finally{mutating=false;syncMutationControls();}};li.append(label,button);list.append(li);}
-   clean.hidden=!library.packs.some(p=>p.ownedCurrentAssets===0);clean.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating||compressionBusy;host.querySelector('[data-clear-all]').disabled=Boolean(controller)||clearingThisPage||changingMode||mutating||compressionBusy;
+   for(const pack of library.packs){const li=document.createElement('li'),label=document.createElement('span'),button=document.createElement('button');const title=document.createElement('strong'),detail=document.createElement('span');title.textContent=`${pack.wordIds.length} 词`;detail.textContent=`${size(pack.bytes)} · ${pack.version}${pack.available===false?' · 文件缺失，请重新导入':pack.available===null?' · 当前范围未使用，未检查文件':pack.ownedCurrentAssets===0?' · 当前未使用':''}`;label.className='library-pack-label';label.append(title,detail);button.type='button';button.textContent='移除';button.setAttribute('aria-label',`删除 ${pack.wordIds.length} 词的本机资源包`);button.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating;button.onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating)return;if(!confirm(`删除这份本机资源包（${pack.wordIds.length} 词）？「文件」里的原始 ZIP 和其他资源包不会受影响。`))return;mutating=true;syncMutationControls();try{await deletePack(pack.key);status.textContent='本机资源包已删除，重新打开阅读后生效';await refresh();}catch(error){status.textContent=error.message;}finally{mutating=false;syncMutationControls();}};li.append(label,button);list.append(li);}
+   clean.hidden=!library.packs.some(p=>p.ownedCurrentAssets===0);clean.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating;host.querySelector('[data-clear-all]').disabled=Boolean(controller)||clearingThisPage||changingMode||mutating;
    clearInventoryDiagnostic();retryStorage.hidden=true;inventoryStatus.textContent='';usageCache.stale=false;usageRecorded=recordedStorage(library);paintUsage();
   }catch(error){if(epoch===refreshEpoch){savedInventoryFresh=false;host.querySelector('.library-eyebrow').textContent='上次记录 · 尚未核对';reportInventoryFailure(stage,error);retryStorage.hidden=false;inventoryStatus.textContent='已保存清单暂时无法刷新；不代表资源已丢失';paintUsage();if(savedReadyIds===null)paintSavedPending();else{bookmark.dataset.savedInventoryPending='true';bookmark.querySelector('[role=progressbar]').setAttribute('aria-busy','true');}}}
  }
@@ -143,7 +139,7 @@ export function installOfflineManager(catalog){
  let deletion=null;
  deleteCancel.onclick=()=>{if(!deletion||deletion.committing)return;deletion.controller.abort();deleteCancel.disabled=true;};
  rangeDelete.button.onclick=async()=>{
-  if(controller||clearingThisPage||changingMode||mutating||compressionBusy||filePickerOpen)return;
+  if(controller||clearingThisPage||changingMode||mutating||filePickerOpen)return;
   let selected;try{selected=rangeDelete.selection();}catch(error){deleteStatus.textContent=error.message;return;}
   const current={controller:new AbortController(),committing:false};deletion=current;mutating=true;syncMutationControls();
   deleteStatus.textContent='';deleteProgress.hidden=false;deleteProgress.removeAttribute('value');deleteCancel.hidden=false;deleteCancel.disabled=false;
@@ -165,9 +161,9 @@ export function installOfflineManager(catalog){
    await refresh(true);deletion=null;mutating=false;deleteCancel.hidden=true;deleteProgress.hidden=true;syncMutationControls();
   }
  };
- function syncMutationControls(){const busy=Boolean(controller)||clearingThisPage||changingMode||mutating||compressionBusy;input.disabled=busy;modeButton.disabled=busy;clean.disabled=busy;host.querySelector('[data-clear-all]').disabled=busy;for(const button of list.querySelectorAll('button'))button.disabled=busy;refreshDownloads();}
- clean.onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating||compressionBusy)return;mutating=true;syncMutationControls();try{const unused=(await inspectLibrary(catalog)).packs.filter(p=>p.ownedCurrentAssets===0);if(!unused.length||!confirm(`清理 ${unused.length} 个当前未使用的书包？仍在使用的内容会保留。`))return;const count=await cleanUnusedPacks(catalog,unused.map(p=>p.key));status.textContent=`已清理 ${count} 个当前未使用的书包`;await refresh();}catch(error){status.textContent=`清理未完成：${error.message}`;}finally{mutating=false;syncMutationControls();}};
- host.querySelector('[data-clear-all]').onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating||compressionBusy)return;const library=await inspectLibrary(catalog,{cachedPaths});if(!confirm(`清除本机已保存的 ${library.readyIds.length} 词视频与插图，以及 ${library.packs.length} 个导入资源包？文字页面、阅读进度、偏好和「文件」里的原始 ZIP 会保留。`))return;if(controller||clearingThisPage||changingMode||mutating||compressionBusy)return;clearingThisPage=true;savedSnapshot.invalidate();paintSavedPending();releaseDownloads?.cancelPending();refreshDownloads();const button=host.querySelector('[data-clear-all]');button.disabled=true;input.disabled=true;modeButton.disabled=true;status.textContent='正在停止读取并清除本机资源…';try{sessionStorage.setItem('gre-media-paused-after-clear','1');const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-clear-library',{detail}));await Promise.all(detail.waits);await clearSavedResources();cachedPaths=[];sessionStorage.setItem('gre-library-cleared-message','1');location.reload();}catch(error){clearingThisPage=false;status.textContent=`清除未完成：${error.message}，可以重新尝试`;button.disabled=false;input.disabled=false;modeButton.disabled=false;await refresh(true);}};
+ function syncMutationControls(){const busy=Boolean(controller)||clearingThisPage||changingMode||mutating;input.disabled=busy;modeButton.disabled=busy;clean.disabled=busy;host.querySelector('[data-clear-all]').disabled=busy;for(const button of list.querySelectorAll('button'))button.disabled=busy;refreshDownloads();}
+ clean.onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating)return;mutating=true;syncMutationControls();try{const unused=(await inspectLibrary(catalog)).packs.filter(p=>p.ownedCurrentAssets===0);if(!unused.length||!confirm(`清理 ${unused.length} 个当前未使用的书包？仍在使用的内容会保留。`))return;const count=await cleanUnusedPacks(catalog,unused.map(p=>p.key));status.textContent=`已清理 ${count} 个当前未使用的书包`;await refresh();}catch(error){status.textContent=`清理未完成：${error.message}`;}finally{mutating=false;syncMutationControls();}};
+ host.querySelector('[data-clear-all]').onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating)return;const library=await inspectLibrary(catalog,{cachedPaths});if(!confirm(`清除本机已保存的 ${library.readyIds.length} 词视频与插图，以及 ${library.packs.length} 个导入资源包？文字页面、阅读进度、偏好和「文件」里的原始 ZIP 会保留。`))return;if(controller||clearingThisPage||changingMode||mutating)return;clearingThisPage=true;savedSnapshot.invalidate();paintSavedPending();releaseDownloads?.cancelPending();refreshDownloads();const button=host.querySelector('[data-clear-all]');button.disabled=true;input.disabled=true;modeButton.disabled=true;status.textContent='正在停止读取并清除本机资源…';try{sessionStorage.setItem('gre-media-paused-after-clear','1');const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-clear-library',{detail}));await Promise.all(detail.waits);await clearSavedResources();cachedPaths=[];sessionStorage.setItem('gre-library-cleared-message','1');location.reload();}catch(error){clearingThisPage=false;status.textContent=`清除未完成：${error.message}，可以重新尝试`;button.disabled=false;input.disabled=false;modeButton.disabled=false;await refresh(true);}};
  try{if(sessionStorage.getItem('gre-library-cleared-message')==='1'){sessionStorage.removeItem('gre-library-cleared-message');status.textContent='已清除本机视频与插图。视频暂时停用，选择「使用视频」或导入书包即可继续';}}catch{}
  host.querySelector('[data-reopen]').onclick=()=>location.reload();
  function cancelOperation(target){if(activeOperation?.target!==target)return;target.status.textContent=activeOperation.kind==='download'?'正在停止下载并保存已完成资源…':'正在停止导入并清理临时文件…';target.cancel.disabled=true;controller.abort();}
@@ -189,7 +185,7 @@ export function installOfflineManager(catalog){
   }
  }};}
  async function run(kind,target,action){
-  if(controller||clearingThisPage||changingMode||mutating||compressionBusy||filePickerOpen)return;
+  if(controller||clearingThisPage||changingMode||mutating||filePickerOpen)return;
   let ticket=null,activated=false;
   host.querySelector('[data-reopen]').hidden=true;
   controller=new AbortController();const operation={kind,target,controller};activeOperation=operation;
@@ -246,7 +242,7 @@ export function installOfflineManager(catalog){
  window.addEventListener('gre-offline-asset',({detail})=>{if(detail.phase==='saved'){clearTimeout(savedRefreshTimer);savedRefreshTimer=setTimeout(refreshSaved,600);}});
  window.addEventListener('gre-offline-corrupt',()=>{savedSnapshot.invalidate();refreshEpoch++;paintSavedPending();status.textContent='有一份本机内容无法读取，请重新导入对应书包；文字仍可阅读';clearTimeout(savedRefreshTimer);savedRefreshTimer=setTimeout(refreshSaved,500);});
  releaseDownloads=mountReleaseDownloads({host,catalog});
- savedExport=mountSavedExport({host,catalog,isBusy:()=>Boolean(controller)||clearingThisPage||changingMode||mutating||compressionBusy||filePickerOpen,setBusy:value=>{mutating=value;syncMutationControls();}});
+ savedExport=mountSavedExport({host,catalog,isBusy:()=>Boolean(controller)||clearingThisPage||changingMode||mutating||filePickerOpen,setBusy:value=>{mutating=value;syncMutationControls();}});
  const drawerSelectors=['.library-page','.library-pages-downloads','[data-release-browser]','.library-packs','[data-export-range]','[data-delete-range]'];
  window.addEventListener('gre-update-capture',event=>{event.detail.drawers=Object.fromEntries(drawerSelectors.map(selector=>[selector,Boolean(host.querySelector(selector)?.open)]));});
  window.addEventListener('gre-update-restore',event=>{

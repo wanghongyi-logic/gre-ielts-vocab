@@ -1,11 +1,8 @@
-import {createSpoolIndex} from './compression-spool-index.js';
-import {validSpoolName} from './compression-spool.js';
 import {waitForLocal} from './offline-async.js';
 import {createMediaControl} from './offline-control.js';
 import {validatePack,indexZip} from './offline-zip.js';
 import {sourceOf,verify as verifyStored,validateVariant,validSource,catalogSources,digest as variantDigest} from './compression-variants.js';
-import {createCompressionStorage} from './compression-storage.js';
-import {createBrowserAdapter} from './compression-browser-adapter.js';
+import {importOwnedArchive} from './variant-import.js';
 const DB='gre-offline-pack-index-v1',DIR='gre-offline-packs-v1';
 const cancelled=signal=>{if(signal?.aborted)throw new DOMException('Import cancelled','AbortError');};
 let database,assetIndex=null,indexRevision=0;
@@ -63,7 +60,7 @@ async function ensureSpace(bytes){const estimate=await waitForLocal(()=>navigato
 async function finalizeStoredPack(name,file,parsed,catalog,options,checked){const {existing,duplicate}=checked||await checkExisting(parsed,catalog,options);if(duplicate)return {...existing,duplicate:true};cancelled(options.signal);const {manifest,files}=parsed,record={key:manifest.packId+'@'+manifest.version,name,packId:manifest.packId,version:manifest.version,wordIds:manifest.wordIds,files,bytes:file.size,installedAt:Date.now()};await transaction('readwrite',s=>s.put(record));if(existing?.name)await(await directory()).removeEntry(existing.name).catch(()=>{});return record;}
 const temporaryName=()=> 'pack-'+Date.now()+'-'+crypto.randomUUID()+'.zip';
 export async function importPack(file,catalog,{signal,onProgress=()=>{}}={}){
- support();const zipIndex=await indexZip(file),manifestEntry=zipIndex.get('manifest.json');if(manifestEntry&&manifestEntry.bytes<=20*1024*1024){const manifest=JSON.parse(await file.slice(manifestEntry.start,manifestEntry.start+manifestEntry.bytes).text());if(manifest.format==='gre-owned-local-variants-v1'){const result=await (await compressionStorage()).importArchive(file,catalog,{signal});invalidateAssetIndex(true);return {...result.pack,duplicate:result.duplicate,...(Number.isSafeInteger(result.committedGeneration)?{committedGeneration:result.committedGeneration}:{})};}}const control=createMediaControl(new URL('../',import.meta.url)),generation=await control.ticket();return locked(async()=>{await control.guard(generation,()=>{});await recover();const options={signal,onProgress};cancelled(signal);const parsed=await validatePack(file,catalog,options),checked=await checkExisting(parsed,catalog,options);if(checked.duplicate)return control.guard(generation,()=>({...checked.existing,duplicate:true}));await ensureSpace(file.size);const name=temporaryName();let committed=false;try{await copy(file,name,signal,onProgress);const record=await control.guard(generation,()=>finalizeStoredPack(name,file,parsed,catalog,options,checked));committed=record.name===name;return record;}finally{if(!committed)await(await directory()).removeEntry(name).catch(()=>{});}});
+ support();const zipIndex=await indexZip(file),manifestEntry=zipIndex.get('manifest.json');if(manifestEntry&&manifestEntry.bytes<=20*1024*1024){const manifest=JSON.parse(await file.slice(manifestEntry.start,manifestEntry.start+manifestEntry.bytes).text());if(manifest.format==='gre-owned-local-variants-v1'){if(!variantImportOptions)throw Error('Backup import is not initialized');const control=createMediaControl(new URL('../',import.meta.url)),generation=await control.ticket();return locked(()=>importOwnedArchive(file,catalog,{...variantImportOptions,prepare:prepareVariantIndex,list:listPacks,read:savedFile,copy:(blob,name)=>copy(blob,name,signal,onProgress),remove:async name=>(await directory()).removeEntry(name),ensureSpace,temporaryName,guard:fn=>control.guard(generation,fn),commit:(record,markCommitted)=>commitOwnedRecord(record,generation,markCommitted)},{signal}),signal);}}const control=createMediaControl(new URL('../',import.meta.url)),generation=await control.ticket();return locked(async()=>{await control.guard(generation,()=>{});await recover();const options={signal,onProgress};cancelled(signal);const parsed=await validatePack(file,catalog,options),checked=await checkExisting(parsed,catalog,options);if(checked.duplicate)return control.guard(generation,()=>({...checked.existing,duplicate:true}));await ensureSpace(file.size);const name=temporaryName();let committed=false;try{await copy(file,name,signal,onProgress);const record=await control.guard(generation,()=>finalizeStoredPack(name,file,parsed,catalog,options,checked));committed=record.name===name;return record;}finally{if(!committed)await(await directory()).removeEntry(name).catch(()=>{});}});
 }
 export function trustedPackageURL(descriptor,baseURL=new URL('./',import.meta.url)){
  if(!descriptor||!Number.isSafeInteger(descriptor.bytes)||descriptor.bytes<22||descriptor.bytes>=0xffffffff||typeof descriptor.url!=='string')throw new Error('无效的下载配置');const target=new URL(descriptor.url,baseURL);if(target.origin!==baseURL.origin||target.username||target.password||target.hash||(!['https:'].includes(target.protocol)&&!['localhost','127.0.0.1'].includes(target.hostname)))throw new Error('下载必须使用本站的安全地址');return target.href;
@@ -274,12 +271,26 @@ export async function clearSavedWords(catalog,ids,{signal,onProgress=()=>{}}={})
 
 // Compression runtime is configured by the v45 lifecycle coordinator. Reads of
 // existing variants do not require destructive-operation permission.
-let compressionOptions=null,compressionEngine=null;
-export function configureCompressionStorage(options){compressionOptions=options;compressionEngine=null;}
-export async function compressionStorage(){
- if(!compressionOptions)throw Error('本机压缩尚未完成安全初始化');
- if(!compressionEngine)compressionEngine=(async()=>{const options=compressionOptions;const adapter=await createBrowserAdapter({scopeURL:new URL('../',import.meta.url),compatibleClients:options.compatibleClients,validateMedia:options.validateMedia,catalog:async()=>{const catalog=await options.catalogProvider();const sources=catalogSources(catalog);return {sources,revision:await variantDigest(new Blob([JSON.stringify(sources)]))};}});return createCompressionStorage(adapter);})();
- try{return await compressionEngine;}catch(error){compressionEngine=null;throw error;}
+let variantImportOptions=null;
+export function configureVariantImport(options){variantImportOptions=options;}
+async function prepareVariantIndex(){
+ const connection=await db();if(connection.objectStoreNames?.contains('compressionMeta'))return;
+ connection.close();database=null;
+ await new Promise((resolve,reject)=>{const r=indexedDB.open(DB,2);let abandoned=false;const timer=setTimeout(()=>{abandoned=true;reject(Error('Local index upgrade timed out'));},5000);
+ r.onupgradeneeded=()=>{if(abandoned){r.transaction.abort();return;}for(const name of ['compressionJournals','compressionMeta'])if(!r.result.objectStoreNames.contains(name))r.result.createObjectStore(name,{keyPath:'id'});};
+ r.onerror=()=>{clearTimeout(timer);reject(r.error);};r.onblocked=()=>{abandoned=true;clearTimeout(timer);reject(Error('Close old library tabs before importing this backup'));};r.onsuccess=()=>{clearTimeout(timer);r.result.close();if(!abandoned)resolve();};});
+}
+// Caller owns pack lock and media guard. Advance generation before exposing new
+// variant records so pending canonical downloads cannot refill stale media.
+async function commitOwnedRecord(record,generation,markCommitted){
+ const scope=new URL('../',import.meta.url),controlKey=new URL('__gre_media_control__',scope).href,cache=await caches.open('gre-media-control-v1'),response=await cache.match(controlKey),previous=response?await response.json():{generation:0,paused:false,phase:'active'};
+ if(previous.generation!==generation)throw Error('Library generation changed');
+ const blocked=record.files.filter(f=>f.kind==='owned-local-variant').map(f=>new URL(f.source.path,scope).href),next={...previous,generation:generation+1,phase:'variants-committing',blockedAutoPaths:[...new Set([...(previous.blockedAutoPaths||[]),...blocked])]};
+ const notify=()=>{if(typeof BroadcastChannel==='function'){const c=new BroadcastChannel('gre-media-write:'+scope.href);c.postMessage({scope:scope.href});c.close();}};
+ await cache.put(controlKey,new Response(JSON.stringify(next),{headers:{'Content-Type':'application/json'}}));notify();
+ await transaction('readwrite',store=>store.put(record));markCommitted();
+ // A failure after the durable IDB commit must never delete the imported file.
+ await cache.put(controlKey,new Response(JSON.stringify({...next,phase:'variants-committed'}),{headers:{'Content-Type':'application/json'}}));notify();return {committedGeneration:next.generation};
 }
 function bumpRevision(tx){if(!tx.objectStoreNames?.contains('compressionMeta'))return;const store=tx.objectStore('compressionMeta'),r=store.get('revision');r.onsuccess=()=>store.put({id:'revision',value:(r.result?.value||0)+1});}
 // Caller owns pack lock. Existing media lock protects cache cleanup from current
@@ -290,7 +301,8 @@ async function recoverCompressionJournals(){
   if(!journals.length)return;const dir=await directory();
   for(const j of journals){if(!['prepared','committed'].includes(j.phase))throw Error('Unknown compression journal');for(const name of j.phase==='prepared'?j.newNames:j.oldNames){try{await dir.removeEntry(name);}catch(e){if(e.name!=='NotFoundError')throw e;}}
    if(j.phase==='committed'&&globalThis.caches){const cache=await caches.open('gre-scalable-verified-units-v1');for(const c of j.cacheDeletes){const url=new URL(c.path,new URL('../',import.meta.url)),r=await cache.match(url);if(r?.ok){const blob=await r.blob();if(blob.size===c.bytes&&await variantDigest(blob)===c.sha256)await cache.delete(url);}}}
-   if(j.phase==='committed'&&j.spoolNames?.length){const index=createSpoolIndex();try{for(const name of j.spoolNames){if(!validSpoolName(name))throw Error('Invalid journal spool name');try{await dir.removeEntry(name);}catch(e){if(e.name!=='NotFoundError')throw e;}await index.delete(name);}}finally{index.close();}}
+   // Historical staging is deliberately left untouched. Only committed pack/cache cleanup runs.
+
    await new Promise((resolve,reject)=>{const tx=connection.transaction('compressionJournals','readwrite');tx.objectStore('compressionJournals').delete(j.id);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||Error('Recovery aborted'));});
   }invalidateAssetIndex(true);
  });
