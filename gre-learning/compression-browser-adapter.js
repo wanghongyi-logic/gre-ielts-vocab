@@ -1,3 +1,4 @@
+import {createPreviewIndex} from './compression-preview-index.js';
 import {createSpoolIndex} from './compression-spool-index.js';
 import {writeCompressionParts} from './compression-pack-writer.js';
 import {sourceOf,key} from './compression-variants.js';
@@ -24,8 +25,9 @@ export async function createBrowserAdapter({scopeURL,catalog,validateMedia,compa
  const generation=async()=>{const r=await(await caches.open('gre-media-control-v1')).match(controlKey);return r?(await r.json()).generation:0;};
  const cache=await caches.open(CACHE),readFile=async name=>(await(await directory()).getFileHandle(name)).getFile();
  const readCache=async path=>{const r=await cache.match(new URL(path,scope));return r?.ok?r.blob():null;};
- const spoolIndex=createSpoolIndex();
+ const spoolIndex=createSpoolIndex(),previewIndex=createPreviewIndex();
  return {
+  previewIndex,ownerLock:fn=>navigator.locks.request('gre-compression-queue-owner-v1',{mode:'exclusive',ifAvailable:true},lock=>{if(!lock)throw Error('Another compression session is active');return fn();}),
   spoolPut:spoolIndex.put,spoolGet:spoolIndex.get,spoolDelete:spoolIndex.delete,spoolList:spoolIndex.list,
   writeParts:async(name,parts,bytes,options)=>writeCompressionParts(await directory(true),name,parts,bytes,options),
   compatibleClients,catalog,validateMedia,async prepareMutation(){if(!await compatibleClients())throw Error('Compatible-client deployment gate is closed');if(!db?.objectStoreNames.contains('compressionMeta')){db?.close();db=await open(2);db.onversionchange=()=>db.close();}},id:()=>crypto.randomUUID(),
@@ -65,6 +67,6 @@ export async function createBrowserAdapter({scopeURL,catalog,validateMedia,compa
    const notify=()=>{const channel=new BroadcastChannel('gre-media-write:'+scope.href);channel.postMessage({scope:scope.href});channel.close();};notify();
    await transaction(['packs','compressionJournals','compressionMeta'],'readwrite',tx=>{const m=tx.objectStore('compressionMeta'),r=m.get('revision');r.onsuccess=()=>{if((r.result?.value||0)!==expected.revision){tx.abort();return;}for(const p of packs)tx.objectStore('packs').put(p);tx.objectStore('compressionJournals').put(j);m.put({id:'revision',value:expected.revision+1});};});const channel=new BroadcastChannel('gre-pack-index:'+scope.href);channel.postMessage('changed');channel.close();await controlCache.put(controlKey,new Response(JSON.stringify({...next,phase:'variants-committed'}),{headers:{'Content-Type':'application/json'}}));notify();return {committedGeneration:next.generation};},
   async freeSpace(){const e=await navigator.storage.estimate();return e.quota-e.usage;},
-  close:()=>{db?.close();spoolIndex.close();}
+  close:()=>{db?.close();spoolIndex.close();previewIndex.close();}
  };
 }

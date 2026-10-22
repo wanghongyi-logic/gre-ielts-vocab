@@ -1,3 +1,4 @@
+import {createPreviewSessions} from './compression-preview-session.js';
 import {createCompressionSpool,validSpoolName} from './compression-spool.js';
 import {SHA256} from './vendor/offline-export-hash.js';
 import {importVariantArchive} from './compression-archive.js';
@@ -97,7 +98,7 @@ export function createCompressionStorage(a){
   const live=new Map(catalog.sources.map(s=>[s.wordId+'|'+s.role,s]));
   for(const source of sources){if(!validSource(source)||unique.has(key(source)))throw Error('Invalid/duplicate source scope');const current=live.get(source.wordId+'|'+source.role);if(current&&key(current)!==key(source))throw Error('Catalog source changed');unique.set(key(source),source);}
   const owners=new Map();for(const p of snap.packs)for(const f of p.files){const k=key(sourceOf(f));if(unique.has(k)){if(!owners.has(k))owners.set(k,[]);owners.get(k).push({pack:p,entry:f});}}
-  const cacheKeys=new Set(snap.cache.map(key)),eligible=new Map();for(const [k,source] of unique){if(source.bytes<=150000){skipped.push({source,reason:'already-small'});continue;}
+  const cacheKeys=new Set(snap.cache.map(key)),eligible=new Map();for(const [k,source] of unique){if(source.bytes<=200000){skipped.push({source,reason:'already-small'});continue;}
    let variant=false;for(const x of owners.get(k)||[])if(x.entry.kind==='owned-local-variant'){try{await verify(await a.readEntry(x.pack,x.entry),x.entry);variant=true;break;}catch{}}
    if(variant){skipped.push({source,reason:'already-variant'});continue;}
    if(!owners.has(k)&&!cacheKeys.has(k)){skipped.push({source,reason:'not-local'});continue;}eligible.set(k,source);
@@ -108,5 +109,6 @@ export function createCompressionStorage(a){
   const groups=[...grouped.values()];for(let i=0;i<cacheOnly.length;i+=128)groups.push(cacheOnly.slice(i,i+128));
   return {groups:groups.map((sources,i)=>({id:'group-'+i,sources})),skipped,generation:snap.generation,revision:snap.revision,catalogRevision:catalog.revision};
  });}
- return {groupSources,spoolCandidate:(...args)=>a.lock(()=>spool.stage(...args)),recoverSpool:id=>a.lock(()=>spool.recover(id)),discardSpool:ds=>a.lock(()=>spool.discard(ds)),discardSessionSpool:id=>a.lock(()=>spool.discardSession(id)),plan:(s,o)=>a.lock(()=>plan(s,o)),replace,importArchive,recover:()=>a.lock(recoverLocked)};
+ const engine={groupSources,spoolCandidate:(...args)=>a.lock(()=>spool.stage(...args)),recoverSpool:id=>a.lock(()=>spool.recover(id)),discardSpool:ds=>a.lock(()=>spool.discard(ds)),discardSessionSpool:id=>a.lock(()=>spool.discardSession(id)),plan:(s,o)=>a.lock(()=>plan(s,o)),replace,importArchive,recover:()=>a.lock(recoverLocked)};
+ if(a.previewIndex)Object.assign(engine,createPreviewSessions(a,engine,spool));return engine;
 }

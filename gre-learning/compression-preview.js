@@ -1,6 +1,8 @@
 import {muxAVC,inspectMP4} from './compression-mp4.js';
 import {demuxAVC} from './compression-demux.js';
-export const MAX_BYTES=150000;
+export const MAX_BYTES=200000;
+// Acceptance ceiling increased; preserve the existing 02 encoder target.
+export const ENCODE_TARGET_BYTES=150000;
 const IMAGE_PROFILES=[{edge:512,quality:.82}];
 export const VIDEO_PROFILES=Object.freeze({resolution512:{edge:512,bps:102000},resolution384:{edge:384,bps:102000},resolution256:{edge:256,bps:102000},lowFps512:{edge:512,fps:10,bps:102000}});
 export const abortCheck=signal=>{if(signal?.aborted)throw new DOMException('已取消；原文件未更改','AbortError');};
@@ -21,13 +23,13 @@ export async function checkStillImage(blob){
 }
 export async function compressImage(source,{signal,checkpoint=async()=>{},onProgress=()=>{}}={}){
  if(source.size>16*1024*1024)throw new Error('图片超过 16 MB，已跳过');
- await checkStillImage(source);abortCheck(signal);const {img,release}=await imageFrom(source,signal);try{for(const profile of IMAGE_PROFILES){await checkpoint();abortCheck(signal);const {width,height}=dimensions(img.naturalWidth,img.naturalHeight,profile.edge),el=canvas(width,height),ctx=el.getContext('2d');if(!ctx)throw new Error('浏览器不支持图片处理');ctx.drawImage(img,0,0,width,height);
+ await checkStillImage(source);abortCheck(signal);const {img,release}=await imageFrom(source,signal);let encodedBytes=0;try{for(const profile of IMAGE_PROFILES){await checkpoint();abortCheck(signal);const {width,height}=dimensions(img.naturalWidth,img.naturalHeight,profile.edge),el=canvas(width,height),ctx=el.getContext('2d');if(!ctx)throw new Error('浏览器不支持图片处理');ctx.drawImage(img,0,0,width,height);
   // WebP may silently become PNG. Only accept an actual requested MIME.
   let output=await encodeImage(el,'image/webp',profile.quality);
   if(output.type!=='image/webp'){ctx.fillStyle='#fff';ctx.fillRect(0,0,width,height);ctx.drawImage(img,0,0,width,height);output=await encodeImage(el,'image/jpeg',profile.quality);if(output.type!=='image/jpeg')throw new Error('浏览器不支持安全图片编码');}
-  el.width=el.height=1;abortCheck(signal);onProgress({phase:'image',profile});
+  encodedBytes=output.size;el.width=el.height=1;abortCheck(signal);onProgress({phase:'image',profile});
   if(output.size<=MAX_BYTES&&output.size<source.size){const check=await imageFrom(output,signal);try{if(check.img.naturalWidth!==width||check.img.naturalHeight!==height)throw new Error('压缩图片尺寸校验失败');}finally{check.release();}return {blob:output,width,height,sha256:await sha256(output),profile,warning:output.type==='image/jpeg'?'JPEG 会将透明背景转为白色。':null};}
- }throw new Error('所选 512 像素画质无法压到 150 KB，已保留原文件；不会自动降档');}finally{release();}
+ }throw new Error(`输出 ${encodedBytes} 字节，未满足不超过 200 KB 且小于原文件的要求；已保留原文件，不会自动降档`);}finally{release();}
 }
 async function supportedConfig(width,height,bps,fps,signal){if(!globalThis.VideoEncoder||!globalThis.VideoFrame)throw new Error('此浏览器没有可用的视频编码能力');const config={codec:'avc1.42001f',width,height,bitrate:bps,framerate:fps,latencyMode:'realtime',avc:{format:'avc'}};abortCheck(signal);const probe=await bounded(VideoEncoder.isConfigSupported(config),signal);abortCheck(signal);if(!probe.supported)throw new Error('此手机不支持所需的 H.264 编码配置');return config;}
 function bounded(promise,signal,timeout=15000){return new Promise((resolve,reject)=>{let timer;const abort=()=>finish(new DOMException('已取消','AbortError'));const finish=(error,value)=>{clearTimeout(timer);signal?.removeEventListener('abort',abort);error?reject(error):resolve(value);};signal?.addEventListener('abort',abort,{once:true});timer=setTimeout(()=>finish(new Error('视频编码超时，已保留原文件')),timeout);promise.then(value=>finish(null,value),error=>finish(error));if(signal?.aborted)abort();});}
@@ -98,9 +100,9 @@ export async function transcodeAVC(source,{width,height,fps,bps,signal,checkpoin
 export async function compressVideo(source,{signal,checkpoint=async()=>{},onProgress=()=>{},videoProfile='resolution512'}={}){
  abortCheck(signal);const demuxed=await demuxAVC(source);abortCheck(signal);await videoSelfTest({signal,checkpoint});abortCheck(signal);
  const selected=VIDEO_PROFILES[videoProfile];if(!selected)throw new Error('未知视频预览档位');const profile={...selected,fps:selected.fps?Math.min(selected.fps,demuxed.fps):demuxed.fps};await checkpoint();abortCheck(signal);
- const {width,height}=dimensions(demuxed.width,demuxed.height,profile.edge),duration=demuxed.duration,bps=Math.min(profile.bps,Math.floor((MAX_BYTES-12000)*8/duration));if(bps<45000)throw new Error('完整时长无法在当前画质下满足 150 KB，已保留原文件');
+ const {width,height}=dimensions(demuxed.width,demuxed.height,profile.edge),duration=demuxed.duration,bps=Math.min(profile.bps,Math.floor((ENCODE_TARGET_BYTES-12000)*8/duration));if(bps<45000)throw new Error('现有 02 编码预算不足以保留完整时长，已保留原文件');
  const {blob:output,schedule}=await transcodeAVC(demuxed,{width,height,duration,fps:profile.fps,bps,signal,checkpoint,onProgress});
- if(output.size>MAX_BYTES||output.size>=source.size)throw new Error('所选画质无法压到 150 KB，已保留原文件；不会自动降档');
+ if(output.size>MAX_BYTES||output.size>=source.size)throw new Error(`输出 ${output.size} 字节，未满足不超过 200 KB 且小于原文件的要求；已保留原文件，不会自动降档`);
  const verified=await verifyVideo(output,{duration,width,height,signal,schedule});return {blob:output,...verified,sha256:await sha256(output),profile:{...profile,bps},warning:'已按呈现时间轴核对源解码帧和输出帧表。实际手机编码效果仍需对比确认；低帧率档会另行减少帧数。'};
 }
 export class PreviewQueue{
@@ -109,7 +111,7 @@ export class PreviewQueue{
  resume(){this.paused=false;for(const wake of this.resumeWaiters.splice(0))wake();if(this.running)this.onState('running');}
  cancel(){this.controller?.abort();this.resume();}
  async checkpoint(){abortCheck(this.controller.signal);if(this.paused)await new Promise(resolve=>this.resumeWaiters.push(resolve));abortCheck(this.controller.signal);}
- async run(items){if(this.running)throw new Error('已有预览正在运行');this.running=true;this.paused=false;this.controller=new AbortController();this.onState('running');const signal=this.controller.signal;try{for(const item of items){await this.checkpoint();try{const source=await this.readSource(item,signal);abortCheck(signal);if(!source)throw new Error('本机没有可验证原文件；不会联网下载');if(source.size<=MAX_BYTES){await this.onResult({item,status:'already-small',bytes:source.size});continue;}const result=await this.encode(source,item,{signal,checkpoint:()=>this.checkpoint(),onProgress:progress=>this.onState('progress',progress)});abortCheck(signal);if(result.blob.size>MAX_BYTES||result.blob.size>=source.size)throw new Error('压缩结果未达到大小要求');await this.onResult({item,status:'preview',source,...result});}catch(error){if(error.name==='AbortError')throw error;await this.onResult({item,status:'skipped',reason:error.message});}}return 'done';}catch(error){if(error.name==='AbortError')return 'cancelled';throw error;}finally{this.running=false;this.paused=false;this.resume();this.onState(signal.aborted?'cancelled':'done');}}
+ async run(items){if(this.running)throw new Error('已有预览正在运行');this.running=true;this.paused=false;this.controller=new AbortController();this.onState('running');const signal=this.controller.signal;try{for(const item of items){await this.checkpoint();try{const source=await this.readSource(item,signal);abortCheck(signal);if(!source)throw new Error('本机没有可验证原文件；不会联网下载');if(source.size<=MAX_BYTES){await this.onResult({item,status:'already-small',bytes:source.size});continue;}const result=await this.encode(source,item,{signal,checkpoint:()=>this.checkpoint(),onProgress:progress=>this.onState('progress',progress)});abortCheck(signal);if(result.blob.size>MAX_BYTES||result.blob.size>=source.size)throw new Error(`输出 ${result.blob.size} 字节，未满足不超过 200 KB 且小于原文件的要求`);await this.onResult({item,status:'preview',source,...result});}catch(error){if(error.name==='AbortError')throw error;await this.onResult({item,status:'skipped',reason:error.message});}}return 'done';}catch(error){if(error.name==='AbortError')return 'cancelled';throw error;}finally{this.running=false;this.paused=false;this.resume();this.onState(signal.aborted?'cancelled':'done');}}
 }
 
 export async function validateCompressionMedia(blob,variant,{signal}={}){

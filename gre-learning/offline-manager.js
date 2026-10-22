@@ -8,7 +8,7 @@ import {savedRangeFields,bindSavedRange} from './offline-range.js';
 import {mountSavedExport} from './offline-export-ui.js';
 import {mountReleaseDownloads} from './offline-releases.js';
 import {createMediaControl} from './offline-control.js';
-import {batchStatus,downloadLessons,optionalMediaGroups,readDownloadCheckpoint} from './offline-batch.js';
+import {batchStatus,downloadLessons,optionalMediaGroups,readDownloadCheckpoint,missingDownloadIds} from './offline-batch.js';
 import {OFFLINE_EDITION,setMediaEdition,chooseVideoMode,videoMode} from './offline-preferences.js';
 import {configureCompressionStorage,importPack,inspectLibrary,cleanUnusedPacks,clearSavedResources,clearSavedWords,deletePack} from './offline-packs.js';
 const size=n=>(n/1024/1024).toFixed(1)+' MB';
@@ -56,7 +56,7 @@ export function installOfflineManager(catalog){
  welcome.innerHTML='<p role="status" data-text-ready>正在准备文字离线…</p>';
  host.append(welcome);
  const settingsStyle=document.createElement('link');settingsStyle.rel='stylesheet';settingsStyle.href=new URL('./settings-storybook.css',import.meta.url).href;document.head.append(settingsStyle);
- installCompressionSettings(host,catalog,{baseURL:new URL('../',import.meta.url)});
+ installCompressionSettings(host,catalog,{baseURL:new URL('../',import.meta.url),isBusy:()=>Boolean(controller)||clearingThisPage||changingMode||mutating});
  window.addEventListener('gre-compression-busy',event=>{compressionBusy=event.detail.busy;syncMutationControls();});
  const input=host.querySelector('input[type="file"]'),cancel=host.querySelector('[data-cancel]'),progress=host.querySelector('[data-import-progress]'),status=host.querySelector('[data-status]'),list=host.querySelector('[data-packs]'),space=host.querySelector('[data-space]'),clean=host.querySelector('[data-clean]');
  const importTarget={progress,cancel,status:host.querySelector('[data-import-status]')};
@@ -80,8 +80,14 @@ export function installOfflineManager(catalog){
  downloadTarget.status.textContent=checkpoint&&checkpoint.state!=='complete'?'上次下载尚未完成，点「继续下载」会核验并复用已保存资源。':'最多同时下载 3 个资源。可返回书页继续阅读；iPhone 切到其他应用或锁屏可能暂停，返回后可继续下载。';
  downloadTarget.cancel.onclick=()=>cancelOperation(downloadTarget);
  button.onclick=()=>run('download',downloadTarget,async options=>{
-  const library=await waitForLocal(()=>inspectLibrary(catalog,{signal:options.signal}),{signal:options.signal,timeoutMs:0});
-  return downloadLessons(availableIds,library.opfsPaths,options);
+  options.onProgress({phase:'preparing'});
+  const cache=await batchStatus();if(options.signal.aborted)throw new DOMException('Cancelled','AbortError');
+  const missing=missingDownloadIds(catalog,availableIds,cache.readyPaths);
+  if(!missing.length)return {completed:0,requested:0};
+  const selected=new Set(missing),scoped={...catalog,entries:catalog.entries.filter(entry=>selected.has(entry.number))};
+  const library=await inspectLibrary(scoped,{cachedPaths:cache.readyPaths,signal:options.signal});
+  const ready=new Set(library.readyIds),remaining=missing.filter(id=>!ready.has(id));
+  return remaining.length?downloadLessons(remaining,library.opfsPaths,options):{completed:0,requested:0};
  });
  row.append(button,feedback);host.querySelector('[data-pages-downloads]').append(row);
  const downloadRows=[{target:downloadTarget}];
@@ -125,7 +131,7 @@ export function installOfflineManager(catalog){
   if(usageRecorded)usageRecorded.stale=true;if(usageCache)usageCache.stale=true;paintUsage();
   const epoch=++refreshEpoch;let paths=cachedPaths,stage='C1';
   try{const before=await waitForLocal(()=>sharedControl.state());if(before.phase==='clearing'||before.phase==='selective-clearing')throw new Error('Inventory changing');{stage='C2';const cache=await readSavedInventory();if(cache.pending||cache.error)throw new Error('Inventory pending');paths=cache.readyPaths||[];usageCache={...recordedCache(paths,usageCacheIndex),stale:true};paintUsage();}stage='P1';const library=await inspectLibrary(catalog,{cachedPaths:paths});stage='C3';const after=await waitForLocal(()=>sharedControl.state());if(epoch!==refreshEpoch)return;if(after.generation!==before.generation||after.phase==='clearing'||after.phase==='selective-clearing'){queueSavedRefresh();return;}cachedPaths=paths;savedReadyIds=library.readyIds;savedGeneration=after.generation;savedTotal=library.total;refreshDownloads();list.replaceChildren();paintSavedTotals();host.querySelector('.library-packs').hidden=library.packs.length===0;
-   for(const pack of library.packs){const li=document.createElement('li'),label=document.createElement('span'),button=document.createElement('button');const title=document.createElement('strong'),detail=document.createElement('span');title.textContent=`${pack.wordIds.length} 词`;detail.textContent=`${size(pack.bytes)} · ${pack.version}${!pack.available?' · 文件缺失，请重新导入':pack.ownedCurrentAssets===0?' · 当前未使用':''}`;label.className='library-pack-label';label.append(title,detail);button.type='button';button.textContent='移除';button.setAttribute('aria-label',`删除 ${pack.wordIds.length} 词的本机资源包`);button.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating||compressionBusy;button.onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating||compressionBusy)return;if(!confirm(`删除这份本机资源包（${pack.wordIds.length} 词）？「文件」里的原始 ZIP 和其他资源包不会受影响。`))return;mutating=true;syncMutationControls();try{await deletePack(pack.key);status.textContent='本机资源包已删除，重新打开阅读后生效';await refresh();}catch(error){status.textContent=error.message;}finally{mutating=false;syncMutationControls();}};li.append(label,button);list.append(li);}
+   for(const pack of library.packs){const li=document.createElement('li'),label=document.createElement('span'),button=document.createElement('button');const title=document.createElement('strong'),detail=document.createElement('span');title.textContent=`${pack.wordIds.length} 词`;detail.textContent=`${size(pack.bytes)} · ${pack.version}${pack.available===false?' · 文件缺失，请重新导入':pack.available===null?' · 当前范围未使用，未检查文件':pack.ownedCurrentAssets===0?' · 当前未使用':''}`;label.className='library-pack-label';label.append(title,detail);button.type='button';button.textContent='移除';button.setAttribute('aria-label',`删除 ${pack.wordIds.length} 词的本机资源包`);button.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating||compressionBusy;button.onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating||compressionBusy)return;if(!confirm(`删除这份本机资源包（${pack.wordIds.length} 词）？「文件」里的原始 ZIP 和其他资源包不会受影响。`))return;mutating=true;syncMutationControls();try{await deletePack(pack.key);status.textContent='本机资源包已删除，重新打开阅读后生效';await refresh();}catch(error){status.textContent=error.message;}finally{mutating=false;syncMutationControls();}};li.append(label,button);list.append(li);}
    clean.hidden=!library.packs.some(p=>p.ownedCurrentAssets===0);clean.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating||compressionBusy;host.querySelector('[data-clear-all]').disabled=Boolean(controller)||clearingThisPage||changingMode||mutating||compressionBusy;
    clearInventoryDiagnostic();retryStorage.hidden=true;inventoryStatus.textContent='';usageCache.stale=false;usageRecorded=recordedStorage(library);paintUsage();
   }catch(error){if(epoch===refreshEpoch){reportInventoryFailure(stage,error);retryStorage.hidden=false;inventoryStatus.textContent='已保存清单暂时无法刷新；不代表资源已丢失';paintUsage();if(savedReadyIds===null)paintSavedPending();else{bookmark.dataset.savedInventoryPending='true';bookmark.querySelector('[role=progressbar]').setAttribute('aria-busy','true');}}}
@@ -163,11 +169,14 @@ export function installOfflineManager(catalog){
  host.querySelector('[data-clear-all]').onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating||compressionBusy)return;const library=await inspectLibrary(catalog,{cachedPaths});if(!confirm(`清除本机已保存的 ${library.readyIds.length} 词视频与插图，以及 ${library.packs.length} 个导入资源包？文字页面、阅读进度、偏好和「文件」里的原始 ZIP 会保留。`))return;if(controller||clearingThisPage||changingMode||mutating||compressionBusy)return;clearingThisPage=true;savedSnapshot.invalidate();paintSavedPending();releaseDownloads?.cancelPending();refreshDownloads();const button=host.querySelector('[data-clear-all]');button.disabled=true;input.disabled=true;modeButton.disabled=true;status.textContent='正在停止读取并清除本机资源…';try{sessionStorage.setItem('gre-media-paused-after-clear','1');const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-clear-library',{detail}));await Promise.all(detail.waits);await clearSavedResources();cachedPaths=[];sessionStorage.setItem('gre-library-cleared-message','1');location.reload();}catch(error){clearingThisPage=false;status.textContent=`清除未完成：${error.message}，可以重新尝试`;button.disabled=false;input.disabled=false;modeButton.disabled=false;await refresh(true);}};
  try{if(sessionStorage.getItem('gre-library-cleared-message')==='1'){sessionStorage.removeItem('gre-library-cleared-message');status.textContent='已清除本机视频与插图。视频暂时停用，选择「使用视频」或导入书包即可继续';}}catch{}
  host.querySelector('[data-reopen]').onclick=()=>location.reload();
- function cancelOperation(target){if(activeOperation?.target!==target)return;controller.abort();target.status.textContent='';target.cancel.disabled=true;}
+ function cancelOperation(target){if(activeOperation?.target!==target)return;target.status.textContent=activeOperation.kind==='download'?'正在停止下载并保存已完成资源…':'正在停止导入并清理临时文件…';target.cancel.disabled=true;controller.abort();}
  cancel.onclick=()=>cancelOperation(importTarget);
  function operationOptions(operation){return {signal:operation.controller.signal,onProgress:p=>{
-  if(activeOperation!==operation||operation.controller.signal.aborted)return;
-  const {progress,status}=operation.target;progress.max=p.total;progress.value=p.completed;
+  if(activeOperation!==operation)return;
+  const {progress,status}=operation.target;
+  if(p.phase==='cancelling'){status.textContent=p.pending?'仍在等待离线服务确认停止，已保存资源会保留；返回本页时会再次检查。':'正在停止下载并保存已完成资源…';return;}
+  if(operation.controller.signal.aborted)return;
+  if(p.phase==='preparing'){progress.removeAttribute('value');status.textContent='正在检查尚未保存的资源…';return;}progress.max=p.total;progress.value=p.completed;
   status.textContent=operation.kind==='download'?`${p.completed}/${p.total}`:'';
   // The worker emits this receipt only after every asset of this word is
   // verified and committed. Byte/import progress never changes saved totals.
@@ -196,7 +205,9 @@ export function installOfflineManager(catalog){
    if(operation.controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
    const signal=operation.controller.signal;
    await waitForLocal(()=>chooseVideoMode('auto',{signal}),{signal});ticket=await waitForLocal(()=>sharedControl.ticket(),{signal});operation.generation=ticket;
-   const pack=await waitForLocal(()=>action(operationOptions(operation)),{signal,timeoutMs:0}),state=await waitForLocal(()=>sharedControl.state(),{signal});
+   // Do not race owned writes against AbortSignal: cancellation settles only
+   // after the action has released its writer/worker lease.
+   const pack=await action(operationOptions(operation)),state=await waitForLocal(()=>sharedControl.state(),{signal});
    const committedGeneration=kind==='import'&&pack.storageFormat==='owned-local-slices-v1'&&Number.isSafeInteger(pack.committedGeneration)&&pack.committedGeneration===ticket+1?pack.committedGeneration:ticket;
    if(activeOperation!==operation||signal.aborted||state.paused||state.generation!==committedGeneration)throw new DOMException('Cancelled','AbortError');
    ticket=committedGeneration;
@@ -207,7 +218,7 @@ export function installOfflineManager(catalog){
   finally{
    // A cancelled batch keeps verified completed files; activate those too. A clear
    // from another tab changes the generation and must never resurrect media.
-   // Release UI ownership first. Readiness/activation checks cannot strand Cancel.
+   // The action has now acknowledged cancellation and released its write ownership.
    if(activeOperation===operation){
     controller=null;activeOperation=null;
     input.disabled=false;modeButton.disabled=false;input.value='';cancel.hidden=true;progress.hidden=true;syncMutationControls();queueSavedRefresh();

@@ -1,3 +1,4 @@
+import {capturePreviewSnapshot,readPreviewSnapshot,assertPreviewSnapshot} from './compression-preview-session.js';
 import {localAsset,localAssetRecord} from './offline-packs.js';
 import {CRC32,SHA256} from './offline-export-hash.js';
 import {safePath,MAX_ENTRY,indexZip} from './offline-zip.js';
@@ -126,6 +127,7 @@ async function source(ref){
 }
 
 export async function exportSavedResources(catalog,{signal,onProgress=()=>{},readSource=source,range}={}){
+ const previewSnapshot=readSource===source?await capturePreviewSnapshot(catalog):null;
  // Validate before opening storage or cleaning temporary files. Keep the
  // original catalog order: the importer validates stable word IDs
  // against that full catalog, not against display ordinals or a renumbered copy.
@@ -138,12 +140,12 @@ export async function exportSavedResources(catalog,{signal,onProgress=()=>{},rea
  async function flush(){
   if(!group.length)return;
   const number=outputs.length+1,hasVariants=[...assets.values()].some(a=>a.record?.kind==='owned-local-variant'),manifest=hasVariants?{format:'gre-owned-local-variants-v1',trust:'owned-local-not-official',files:[...assets.values()].map((a,i)=>({...a.record,archivePath:'media/'+i+'.bin',start:undefined}))}:{format:'gre-offline-pack-v1',packId:session+'-'+number,version:'1',wordIds:group.map(e=>e.number),files:[...assets.values()].map(({path,role,wordId,ref})=>({path,role,wordId,bytes:ref.bytes,sha256:ref.sha256}))};
-  const manifestBlob=new Blob([JSON.stringify(manifest)]);if(manifestBlob.size>20*1024*1024)throw new Error('所选范围元数据超过安全单包上限');const mhash=await fingerprints(manifestBlob,signal),items=[{path:'manifest.json',blob:manifestBlob,crc:mhash.crc},...[...assets.values()].map((a,i)=>({path:hasVariants?'media/'+i+'.bin':a.path,bytes:a.stored.bytes,sha256:a.stored.sha256,crc:a.crc,readBlob:()=>readSource(a.ref)}))];
+  const manifestBlob=new Blob([JSON.stringify(manifest)]);if(manifestBlob.size>20*1024*1024)throw new Error('所选范围元数据超过安全单包上限');const mhash=await fingerprints(manifestBlob,signal),items=[{path:'manifest.json',blob:manifestBlob,crc:mhash.crc},...[...assets.values()].map((a,i)=>({path:hasVariants?'media/'+i+'.bin':a.path,bytes:a.stored.bytes,sha256:a.stored.sha256,crc:a.crc,readBlob:async()=>{await assertPreviewSnapshot(previewSnapshot);return a.preview?(await readPreviewSnapshot(a.ref,previewSnapshot))?.blob:readSource(a.ref);}}))];
   const ordinals=group.map(entry=>entry.displayOrdinal||catalog.entries.indexOf(entry)+1);
   const name=`GRE-${selectedRange?selectedRange.start:ordinals[0]}-${selectedRange?selectedRange.end:ordinals.at(-1)}.zip`;
   await prepareSink();
   try{
-   await writeStoreZip(items,sink,{signal,onProgress:p=>onProgress({...p,phase:'pack'})});const file=await sink.finish();cancelled(signal);await indexZip(file);cancelled(signal);
+   await assertPreviewSnapshot(previewSnapshot);await writeStoreZip(items,sink,{signal,onProgress:p=>onProgress({...p,phase:'pack'})});const file=await sink.finish();cancelled(signal);await indexZip(file);cancelled(signal);await assertPreviewSnapshot(previewSnapshot);
    if(sink.kind==='memory')memoryBytes+=file.size;
    outputs.push({name,file,words:group.length});sink=null;
   }catch(error){await sink.abort();sink=null;throw error;}
@@ -157,15 +159,15 @@ export async function exportSavedResources(catalog,{signal,onProgress=()=>{},rea
   // fallback also caps retained output across all packages.
   await prepareSink();
   for(let i=0;i<entries.length;i++){
-   cancelled(signal);const entry=entries[i],found=[];
+   cancelled(signal);await assertPreviewSnapshot(previewSnapshot);const entry=entries[i],found=[];
    for(const role of ['poster','video','staticPoster']){
     const originalRef=entry.storyMedia?.[role];if(!originalRef)continue;const ref={...originalRef,wordId:entry.number,role},path='gre-learning/'+ref.url;
     if(!safePath(path)||!Number.isSafeInteger(ref.bytes)||ref.bytes<0||ref.bytes>MAX_ENTRY)throw new Error('资源信息不支持导出');
-    const prior=assets.get(path);
-    if(prior&&prior.record?.kind!=='owned-local-variant'&&prior.ref.sha256===ref.sha256&&prior.ref.bytes===ref.bytes){found.push({...prior,role,wordId:entry.number});continue;}
-    const imported=readSource===source?await localAssetRecord(ref):null,stored=imported?.record||ref;const blob=imported?.blob||await readSource(ref);cancelled(signal);if(!blob||blob.size!==stored.bytes){found.length=0;break;}
+    const preview=await readPreviewSnapshot(ref,previewSnapshot),prior=assets.get(path);
+    if(!preview&&prior&&prior.record?.kind!=='owned-local-variant'&&prior.ref.sha256===ref.sha256&&prior.ref.bytes===ref.bytes){found.push({...prior,role,wordId:entry.number});continue;}
+    const imported=preview||(readSource===source?await localAssetRecord(ref):null),stored=imported?.record||ref;const blob=imported?.blob||await readSource(ref);cancelled(signal);if(!blob||blob.size!==stored.bytes){found.length=0;break;}
     const hash=await fingerprints(blob,signal);if(hash.sha256!==stored.sha256){found.length=0;break;}
-    found.push({path,role,wordId:entry.number,ref,stored,record:imported?.record||{path,role,wordId:entry.number,bytes:ref.bytes,sha256:ref.sha256},crc:hash.crc});
+    found.push({path,role,wordId:entry.number,ref,stored,preview:Boolean(preview),record:imported?.record||{path,role,wordId:entry.number,bytes:ref.bytes,sha256:ref.sha256},crc:hash.crc});
    }
    if(found.length&&entry.storyMedia?.video&&found.some(a=>a.role==='video')){
     const extra=found.filter(a=>!assets.has(a.path)).reduce((n,a)=>n+a.stored.bytes,0);

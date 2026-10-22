@@ -3,18 +3,24 @@ const MEDIA_CONTROL_CACHE='gre-media-control-v1',mediaControlInstances=new Map()
 export function createMediaControl(scopeURL){
  const scope=new URL(scopeURL).href;if(mediaControlInstances.has(scope))return mediaControlInstances.get(scope);
  const key=new URL('__gre_media_control__',scope).href,lockName='gre-media-write:'+scope,listeners=new Set();
- let memory={generation:0,paused:false,phase:'active'},announced='',queue=Promise.resolve();
+ let memory={generation:0,paused:false,phase:'active'},announced='',queue=Promise.resolve(),stateClock=0,memoryStamp=0;
  const channel=typeof globalThis.BroadcastChannel==='function'?new BroadcastChannel(lockName):null;channel?.unref?.();
- async function read(){try{const cache=await globalThis.caches?.open(MEDIA_CONTROL_CACHE),response=await cache?.match?.(key);if(response){const state=await response.json();if(Number.isSafeInteger(state.generation)&&state.generation>=0&&typeof state.paused==='boolean')memory=state;}}catch{}return {...memory};}
- async function write(state){const cache=await globalThis.caches?.open(MEDIA_CONTROL_CACHE);if(cache?.put)await cache.put(key,new Response(JSON.stringify(state),{headers:{'Content-Type':'application/json'}}));memory={...state};}
+ async function read(){const stamp=++stateClock;try{const cache=await globalThis.caches?.open(MEDIA_CONTROL_CACHE),response=await cache?.match?.(key);if(response){const state=await response.json();if(Number.isSafeInteger(state.generation)&&state.generation>=0&&typeof state.paused==='boolean'&&(state.generation>memory.generation||state.generation===memory.generation&&stamp>=memoryStamp)){memory=state;memoryStamp=stamp;}}}catch{}return {...memory};}
+ async function write(state){const cache=await globalThis.caches?.open(MEDIA_CONTROL_CACHE);if(cache?.put)await cache.put(key,new Response(JSON.stringify(state),{headers:{'Content-Type':'application/json'}}));memory={...state};memoryStamp=++stateClock;}
  function announce(state,source='local'){const stamp=state.generation+'|'+state.paused+'|'+state.phase;if(stamp===announced)return;const initial=announced==='';announced=stamp;for(const listener of listeners)listener({...state,source,initial});if(typeof window!=='undefined')window.dispatchEvent(new CustomEvent('gre-media-control-change',{detail:{...state,source,initial}}));}
  function publish(state){announce(state);channel?.postMessage({scope});}
  async function lock(action,signal){if(globalThis.navigator?.locks?.request)return signal?navigator.locks.request(lockName,{signal},action):navigator.locks.request(lockName,action);const run=queue.then(action,action);queue=run.catch(()=>{});return run;}
+ const transitioning=state=>['clearing','selective-clearing','variants-committing'].includes(state.phase);
  const changed=()=>Object.assign(new Error('Saved media changed in another page'),{name:'AbortError'});
  if(channel)channel.onmessage=async event=>{if(event.data?.scope===scope)announce(await read(),'external');};
  const api={
   async state(){const state=await read();announce(state,'read');return state;},
   async ticket(){const state=await api.state();return state.paused?null:state.generation;},
+  async readTicket(){let state=await api.state();if(transitioning(state))state=await lock(()=>api.state());return state.paused?null:state.generation;},
+  // Reading already verified bytes must not queue behind an unrelated native
+  // cache write. Check the durable generation, then expose synchronously; this
+  // method is never used for persistence, clearing, or index mutations.
+  async readGuard(generation,action){const state=await api.state();if(state.paused||state.generation!==generation)throw changed();if(transitioning(state))return api.guard(generation,action);return action();},
   async guard(generation,action){return lock(async()=>{const state=await read();announce(state,'read');if(state.paused||state.generation!==generation)throw changed();return action();});},
   async clear(action){return lock(async()=>{const previous=await read(),state={...previous,generation:previous.generation+1,paused:true,phase:'clearing'};await write(state);publish(state);await action();const complete={...state,phase:'cleared'};await write(complete);publish(complete);return complete;});},
   async automaticAllowed(url){const state=await read();return !state.paused&&!(state.blockedAutoPaths||[]).includes(new URL(url,scope).href);},

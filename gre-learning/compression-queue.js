@@ -23,7 +23,7 @@ function metadataItem(item){
  if(result.storage==='test')fail('测试文件不能替换本机书库','test-source');
  return result;
 }
-function scopePayload(scope){return {version:VERSION,profile:COMPRESSION_PROFILE,catalogRevision:scope.catalogRevision,generation:scope.generation,sample02:scope.sample02,items:scope.items,nonce:scope.nonce};}
+function scopePayload(scope){return {version:VERSION,...(scope.mode?{mode:scope.mode}:{}),profile:scope.profile||COMPRESSION_PROFILE,catalogRevision:scope.catalogRevision,generation:scope.generation,sample02:scope.sample02,items:scope.items,nonce:scope.nonce};}
 const scopeToken=scope=>digest(new Blob([JSON.stringify(scopePayload(scope))]));
 const sampleProof=sample=>{
  if(sample?.profile!=='resolution512'||sample.successful!==true&&sample.profileConfirmed!==true)fail('请明确确认固定 02 档；预览可选','sample-required');
@@ -58,15 +58,17 @@ export class SerialCompressionQueue{
  async prepare(items,{catalogRevision,sample02}={}){
   if(this.running)fail('已有批量任务正在处理','busy');
   const clean=items.map(metadataItem);if(!clean.length||new Set(clean.map(key)).size!==clean.length)fail('请选择不重复的准确文件清单','invalid-scope');
-  const scope={...scopePayload({catalogRevision:revision(catalogRevision),generation:generation(await this.readGeneration()),sample02:sampleProof(sample02),items:clean,nonce:globalThis.crypto.randomUUID()}),sources:clean.map(sourceOf),remainingCount:clean.length};
+  const scope={...scopePayload({mode:'stage-only',catalogRevision:revision(catalogRevision),generation:generation(await this.readGeneration()),sample02:sampleProof(sample02),items:clean,nonce:globalThis.crypto.randomUUID()}),sources:clean.map(sourceOf),remainingCount:clean.length};
   scope.token=await scopeToken(scope);return clone(scope);
  }
- async _validateScope(scope){
-  if(scope?.version!==VERSION||JSON.stringify(scope.profile)!==JSON.stringify(COMPRESSION_PROFILE)||typeof scope.nonce!=='string')fail('批量确认范围无效','invalid-scope');
+ async _validateScope(scope,{allowLegacy=false}={}){
+  const current=semantic(scope?.profile)===semantic(COMPRESSION_PROFILE),legacy=semantic(scope?.profile)===semantic({...COMPRESSION_PROFILE,maxBytes:150000});
+  if(scope?.version!==VERSION||!current&&!(allowLegacy&&legacy)||typeof scope.nonce!=='string')fail('批量确认范围或容量上限已变化，请重新确认当前 200 KB 范围','invalid-scope');
+  if(scope.mode!=='stage-only'&&!allowLegacy||scope.mode!==undefined&&scope.mode!=='stage-only'||scope.mode==='stage-only'&&!current)fail('旧版替换确认不能用于暂存压缩，请重新选择准确范围','invalid-scope');
   revision(scope.catalogRevision);generation(scope.generation);sampleProof(scope.sample02);
   if(!Array.isArray(scope.items)||!scope.items.length||JSON.stringify(scope.items)!==JSON.stringify(scope.items.map(metadataItem))||new Set(scope.items.map(key)).size!==scope.items.length||JSON.stringify(scope.sources)!==JSON.stringify(scope.items.map(sourceOf))||scope.token!==await scopeToken(scope))fail('准确文件清单已变化，请重新确认','changed-scope');
  }
- _approve(scope,approval){if(approval?.approved!==true||approval.scopeToken!==scope.token||approval.irreversibleLossy!==true||approval.exactFilesConfirmed!==true)fail('需要明确确认当前准确文件清单的有损替换','approval-required');}
+ _approve(scope,approval){if(approval?.approved!==true||approval.scopeToken!==scope.token||approval.stagingOnly!==true||approval.irreversibleLossy===true||approval.exactFilesConfirmed!==true)fail('需要确认当前准确清单的暂存压缩；此操作不授权彻底替换','approval-required');}
  // The checkpoint key is origin-wide, so ownership must be origin-wide too.
  // Never queue hidden work behind another tab; the user must explicitly retry.
  async _withOwner(work){
@@ -78,13 +80,13 @@ export class SerialCompressionQueue{
   });
  }
  async _assertCheckpointCurrent(){
-  const saved=await this.checkpointStore.load(),stamp=value=>value?semantic({scopeToken:value.scope?.token,approvalToken:value.approvalToken,expectedGeneration:value.expectedGeneration,results:value.results.map(r=>({source:r.source,status:r.status,code:r.code??null,reason:r.reason??null,originalRetained:r.originalRetained??null,logicalSavingBytes:r.logicalSavingBytes||0})),inFlight:value.inFlight||null,staged:value.staged||[]}):null;
+  const saved=await this.checkpointStore.load(),stamp=value=>value?semantic({scopeToken:value.scope?.token,approvalToken:value.approvalToken,expectedGeneration:value.expectedGeneration,results:value.results.map(r=>({source:r.source,status:r.status,code:r.code??null,reason:r.reason??null,originalRetained:r.originalRetained??null,logicalSavingBytes:r.logicalSavingBytes||0})),inFlight:value.inFlight||null,staged:value.staged||[],previewSession:value.previewSession||null}):null;
   if(!saved||stamp(saved)!==stamp(this.state))fail('断点已由其他页面更新，请重新载入并确认剩余范围','checkpoint-changed');
  }
- async _engine(){const engine=typeof this.storage==='function'?await this.storage():this.storage;if(!engine?.plan||!engine?.replace)fail('本机替换引擎不可用','storage-unavailable');return engine;}
+ async _engine(){const engine=typeof this.storage==='function'?await this.storage():this.storage;if(!engine?.spoolCandidate)fail('本机暂存压缩引擎不可用','storage-unavailable');return engine;}
  snapshot(){
   const state=this.state,results=state?.results||[],count=status=>results.filter(r=>r.status===status).length;
-  return {status:state?.status||'idle',total:state?.items.length||0,completed:count('completed'),skipped:count('skipped'),failed:count('failed'),remaining:state?state.items.length-results.length:0,logicalSavingBytes:results.reduce((sum,r)=>sum+(r.logicalSavingBytes||0),0),current:state?.current?clone(state.current):null,reason:state?.reason||null,recoveryRequired:Boolean(state?.inFlight),staged:state?.staged?.length||0,checkpointAvailable:this.checkpointAvailable};
+  return {status:state?.status||'idle',total:state?.items.length||0,completed:count('staged'),skipped:count('skipped'),failed:count('failed'),remaining:state?state.items.length-results.length:0,logicalSavingBytes:0,potentialSavingBytes:(state?.staged||[]).reduce((sum,d)=>sum+Math.max(0,d.source.bytes-d.variant.bytes),0),current:state?.current?clone(state.current):null,reason:state?.reason||null,recoveryRequired:Boolean(state?.inFlight),staged:state?.staged?.length||0,previewSession:state?.previewSession?clone(state.previewSession):null,checkpointAvailable:this.checkpointAvailable};
  }
  async _progress(){await notify(this.onProgress,this.snapshot());}
  async _save(){
@@ -92,21 +94,28 @@ export class SerialCompressionQueue{
   if(!this.ownerHeld)fail('未持有批量任务锁，不能更新断点','owner-lock-required');
   // Enumerate fields: neither injected helpers nor callbacks can smuggle Blob
   // values, DOM nodes or encoded content into a durable checkpoint.
-  const checkpoint={version:VERSION,scope:state.scope,items:state.items,results:state.results,expectedGeneration:state.expectedGeneration,status:state.status,reason:state.reason||null,inFlight:state.inFlight||null,staged:state.staged||[],approvalToken:state.approvalToken,updatedAt:Date.now()};
+  const checkpoint={version:VERSION,scope:state.scope,items:state.items,results:state.results,expectedGeneration:state.expectedGeneration,status:state.status,reason:state.reason||null,inFlight:state.inFlight||null,staged:state.staged||[],previewSession:state.previewSession||null,approvalToken:state.approvalToken,updatedAt:Date.now()};
   try{await this.checkpointStore.save(this.checkpointStore.incremental===true?checkpoint:clone(checkpoint));this.checkpointAvailable=true;}catch(error){this.checkpointAvailable=false;error.code='checkpoint-unavailable';throw error;}
  }
  async loadCheckpoint(){
   if(this.running)fail('正在处理时不能载入其他断点','busy');
   const checkpoint=await this.checkpointStore.load();if(!checkpoint)return null;
   if(checkpoint.version!==VERSION)fail('不支持的压缩断点版本','invalid-checkpoint');
-  await this._validateScope(checkpoint.scope);
+  await this._validateScope(checkpoint.scope,{allowLegacy:true});
   if(JSON.stringify(checkpoint.items)!==JSON.stringify(checkpoint.scope.items)||!Array.isArray(checkpoint.results)||!Number.isSafeInteger(checkpoint.expectedGeneration)||checkpoint.expectedGeneration<0)fail('压缩断点身份不一致','invalid-checkpoint');
   const identities=new Set(checkpoint.items.map(key)),seen=new Set();
-  for(const result of checkpoint.results){const id=key(result.source);if(!identities.has(id)||seen.has(id)||!['completed','skipped','failed'].includes(result.status)||!Number.isFinite(result.logicalSavingBytes)||result.logicalSavingBytes<0)fail('压缩断点结果无效','invalid-checkpoint');seen.add(id);}
+  for(const result of checkpoint.results){const id=key(result.source);if(!identities.has(id)||seen.has(id)||!['completed','staged','skipped','failed'].includes(result.status)||!Number.isFinite(result.logicalSavingBytes)||result.logicalSavingBytes<0)fail('压缩断点结果无效','invalid-checkpoint');seen.add(id);}
   if(checkpoint.inFlight&&(!identities.has(key(checkpoint.inFlight.source))||seen.has(key(checkpoint.inFlight.source))))fail('压缩断点提交身份无效','invalid-checkpoint');
   for(const descriptor of checkpoint.staged||[])this._descriptor(descriptor,checkpoint.scope);
   if(checkpoint.inFlight?.group)for(const descriptor of checkpoint.inFlight.group)this._descriptor(descriptor,checkpoint.scope);
-  this.state=clone(checkpoint);this.state.staged??=[];this.usedScopeTokens.add(checkpoint.scope.token);if(checkpoint.approvalToken)this.usedScopeTokens.add(checkpoint.approvalToken);this.state.current=null;this.state.status=checkpoint.inFlight?'recovery-required':checkpoint.results.length===checkpoint.items.length?'done':'paused';this.state.reason=checkpoint.inFlight?'上次替换结果待核实；请明确恢复整理，不能假定原件仍在':null;this.resumeScope=null;this.paused=this.state.status==='paused';await this._progress();return this.snapshot();
+  const stageOnly=checkpoint.scope.mode==='stage-only',settled=checkpoint.results.length===checkpoint.items.length;
+  if(stageOnly&&(checkpoint.inFlight||checkpoint.expectedGeneration!==checkpoint.scope.generation||checkpoint.results.some(r=>r.status==='completed'||r.logicalSavingBytes!==0)))fail('暂存断点包含替换状态，不能继续','invalid-checkpoint');
+  const stagedKeys=new Set((checkpoint.staged||[]).map(d=>key(d.source)));if(stagedKeys.size!==(checkpoint.staged||[]).length||stageOnly&&checkpoint.results.some(r=>r.status==='staged'&&!stagedKeys.has(key(r.source))))fail('暂存输出断点不完整','invalid-checkpoint');
+  if(checkpoint.previewSession&&(checkpoint.previewSession.id!==checkpoint.scope.nonce||typeof checkpoint.previewSession.token!=='string'||!checkpoint.previewSession.token))fail('预览会话断点身份无效','invalid-checkpoint');
+  this.state=clone(checkpoint);this.state.staged??=[];this.usedScopeTokens.add(checkpoint.scope.token);if(checkpoint.approvalToken)this.usedScopeTokens.add(checkpoint.approvalToken);this.state.current=null;
+  this.state.status=checkpoint.inFlight?'recovery-required':!stageOnly?'legacy-checkpoint':checkpoint.status==='invalidated'?'invalidated':settled?(checkpoint.previewSession?'staged':this.state.staged.length?'blocked':'done'):'paused';
+  this.state.reason=checkpoint.inFlight?'上次替换结果待核实；请明确恢复整理，不能假定原件仍在':!stageOnly?'旧版断点仅供核实或恢复；请重新开始暂存压缩':this.state.status==='blocked'?'压缩已暂存，预览会话尚未完成，请明确恢复':checkpoint.reason||null;
+  this.resumeScope=null;this.paused=this.state.status==='paused';await this._progress();return this.snapshot();
  }
  async start(scope,approval){
   if(this.running)fail('已有批量任务正在处理','busy');
@@ -121,12 +130,14 @@ export class SerialCompressionQueue{
    if(generation(await this.readGeneration())!==scope.generation)fail('书库已变化，请重新确认准确范围','generation-changed');
    if(saved?.scope?.nonce){
     const engine=await this._engine();if(typeof engine.discardSessionSpool!=='function')fail('无法安全清理上一批临时文件，请先恢复整理','group-storage-unavailable');
+    if(typeof engine.previewSession!=='function')fail('无法核验上一批预览状态','preview-unavailable');
+    const priorPreview=await engine.previewSession(saved.scope.nonce);if(priorPreview&&!['discarded','committed'].includes(priorPreview.status))fail('上一批预览仍在，请先明确放弃预览或完成彻底替换','preview-session-exists');
     // A new explicitly approved run supersedes only the previous checkpoint's
     // temporary session, including writing records lost before checkpointing.
     await engine.discardSessionSpool(saved.scope.nonce);
     if(generation(await this.readGeneration())!==scope.generation)fail('书库已变化，请重新确认准确范围','generation-changed');
    }
-   this.state={scope:clone(scope),items:clone(scope.items),results:[],expectedGeneration:scope.generation,status:'running',reason:null,inFlight:null,staged:[],current:null,approvalToken:scope.token};this.resumeScope=null;this.usedScopeTokens.add(scope.token);await this._save();
+   this.state={scope:clone(scope),items:clone(scope.items),results:[],expectedGeneration:scope.generation,status:'running',reason:null,inFlight:null,staged:[],previewSession:null,current:null,approvalToken:scope.token};this.resumeScope=null;this.usedScopeTokens.add(scope.token);await this._save();
    return await this._run();
   });}finally{this.running=false;}
  }
@@ -134,6 +145,8 @@ export class SerialCompressionQueue{
  cancel(){if(this.running){this.stopRequest='cancelled';this.paused=false;this.controller?.abort();}}
  async getResumeScope(){
   if(this.running)fail('请等待当前项目安全停止','busy');if(!this.state)fail('没有可继续的任务','no-checkpoint');if(this.state.inFlight)fail('先恢复上次结果不确定的整理','recovery-required');
+  if(this.state.scope.mode!=='stage-only')fail('旧版断点不能继续执行，请重新开始暂存压缩','legacy-checkpoint');
+  await this._checkGeneration();if(this.state.status==='invalidated')fail('源文件身份已变化，请重新扫描后开始新的暂存任务','source-changed');
   const finished=new Set(this.state.results.map(r=>key(r.source))),items=this.state.items.filter(item=>!finished.has(key(item)));if(!items.length)return null;
   this.resumeScope=await this.prepare(items,{catalogRevision:this.state.scope.catalogRevision,sample02:this.state.scope.sample02});return clone(this.resumeScope);
  }
@@ -144,17 +157,18 @@ export class SerialCompressionQueue{
    const scope=this.resumeScope;if(!scope||this.usedScopeTokens.has(scope.token))fail('请先核对并确认剩余准确范围','approval-required');await this._validateScope(scope);this._approve(scope,approval);
    if(revision(catalogRevision)!==this.state.scope.catalogRevision)fail('目录已更新，请重新扫描并确认','catalog-changed');
    await this._assertCheckpointCurrent();
-   if(!await this.gate())fail('请关闭旧版词书页面后再试','incompatible-clients');if(generation(await this.readGeneration())!==scope.generation)fail('书库已变化，请重新确认剩余范围','generation-changed');
+   if(!await this.gate())fail('请关闭旧版词书页面后再试','incompatible-clients');if(scope.generation!==this.state.expectedGeneration||generation(await this.readGeneration())!==this.state.expectedGeneration)fail('书库已变化，旧暂存会话已失效；请重新扫描后开始新的暂存任务','generation-changed');
    // Preserve the original full manifest and counters. Fresh approval binds only
    // the exact still-pending identities and the current generation.
    const finished=new Set(this.state.results.map(r=>key(r.source))),remaining=this.state.items.filter(item=>!finished.has(key(item)));
    if(JSON.stringify(remaining)!==JSON.stringify(scope.items))fail('剩余文件清单已变化','changed-scope');
+   if(this.state.scope.mode!=='stage-only'||this.state.status==='invalidated')fail('此断点不能继续暂存，请重新扫描','invalid-scope');
    this.state.expectedGeneration=scope.generation;this.state.approvalToken=scope.token;this.usedScopeTokens.add(scope.token);this.state.status='running';this.state.reason=null;this.resumeScope=null;await this._save();return await this._run();
   });}finally{this.running=false;}
  }
- async _checkGeneration(){if(generation(await this.readGeneration())!==this.state.expectedGeneration)fail('书库已被其他操作更改；请重新确认剩余准确范围','generation-changed');}
+ async _checkGeneration(){if(generation(await this.readGeneration())!==this.state.expectedGeneration)fail('书库已被其他操作更改；旧暂存会话已失效，请重新扫描','generation-changed');}
  async _result(item,result){
-  const record={source:sourceOf(item),status:result.status,code:result.code||null,reason:result.reason||null,originalRetained:result.originalRetained??null,logicalSavingBytes:result.logicalSavingBytes||0};
+  const record={source:sourceOf(item),status:result.status,code:result.code||null,reason:result.reason||null,originalRetained:result.originalRetained??null,logicalSavingBytes:0};
   if(result.output)record.output=clone(result.output);
   this.state.results.push(record);await this._save();await notify(this.onItem,record);
  }
@@ -164,14 +178,31 @@ export class SerialCompressionQueue{
   if(!validSource(source)||key(source)!==key(descriptor.variant.source)||descriptor.state!=='ready'||descriptor.spool?.sessionId!==scope.nonce||typeof descriptor.spool.name!=='string'||descriptor.spool.sha256!==descriptor.variant.sha256||descriptor.spool.bytes!==descriptor.variant.bytes||!allowed.has(key(source)))fail('暂存输出与已确认范围不一致','invalid-spool');
   return {source,variant:clone(descriptor.variant),spool:{name:descriptor.spool.name,sessionId:descriptor.spool.sessionId,sha256:descriptor.spool.sha256,bytes:descriptor.spool.bytes},state:'ready'};
  }
- async _groupResult(descriptors,result){
-  const state=this.state,start=state.results.length,staged=state.staged,flight=state.inFlight;
-  const names=new Set(descriptors.map(d=>d.spool.name));state.staged=staged.filter(d=>!names.has(d.spool.name));state.inFlight=null;
-  const records=descriptors.map((d,i)=>({source:d.source,status:'completed',code:'replaced',reason:null,originalRetained:false,output:d.variant,commitGeneration:result.committedGeneration,
-   // Credit the group total exactly once; no per-file physical saving is claimed.
-   logicalSavingBytes:i===0?result.calculatedSavingBytes:0}));
-  state.results.push(...records);try{await this._save();}catch(error){state.results.length=start;state.staged=staged;state.inFlight=flight;throw error;}
-  for(const record of records)await notify(this.onItem,record);
+ async _seal(engine){
+  await this._checkGeneration();if(!await this.gate())fail('请关闭旧版词书页面后再继续','incompatible-clients');
+  if(!this.state.staged.length){this.state.status='done';return;}
+  const session=await engine.sealPreviewSession(this.state.scope.nonce,this.state.staged,{generation:this.state.expectedGeneration,catalogRevision:this.state.scope.catalogRevision,scopeToken:this.state.scope.token,profile:clone(this.state.scope.profile)});
+  if(session?.id!==this.state.scope.nonce||!session.token||session.generation!==this.state.expectedGeneration||session.catalogRevision!==this.state.scope.catalogRevision||semantic(session.outputs)!==semantic(this.state.staged))fail('预览会话与准确暂存输出不一致','preview-session-changed');
+  await this._checkGeneration();this.state.previewSession={id:session.id,token:session.token};this.state.status='staged';this.state.reason=null;await this._save();
+ }
+ async getStagedSession(){
+  if(this.running)fail('请等待压缩安全停止','busy');if(!this.state||this.state.scope.mode!=='stage-only'||this.state.status!=='staged'||!this.state.previewSession)fail('尚无完整可检查的暂存预览','preview-unavailable');
+  await this._checkGeneration();const engine=await this._engine(),session=await engine.previewSession(this.state.scope.nonce);
+  if(!session||!['ready','active'].includes(session.status)||session.token!==this.state.previewSession.token||session.generation!==this.state.expectedGeneration||session.catalogRevision!==this.state.scope.catalogRevision||semantic(session.outputs)!==semantic(this.state.staged))fail('暂存预览身份已变化，请重新核对','preview-session-changed');
+  return clone(session);
+ }
+ async forgetDiscardedSession(expectedId){
+  if(this.running)fail('请等待当前任务停止','busy');if(typeof expectedId!=='string'||!expectedId)fail('缺少已放弃的暂存会话身份','invalid-session');
+  this.running=true;try{return await this._withOwner(async()=>{
+   const saved=await this.checkpointStore.load();
+   if(!saved||saved.scope?.nonce!==expectedId)fail('断点已由其他页面更新，不能清除其他批次','checkpoint-changed');
+   if(saved.inFlight)fail('旧版替换结果尚未核实，请先明确恢复整理','recovery-required');
+   const engine=await this._engine(),session=await engine.previewSession(expectedId);
+   if(session&&session.status!=='discarded')fail('请先明确放弃此批预览，再清除断点','preview-session-exists');
+   if((await engine.recoverSpool(expectedId)).length)fail('此批暂存文件尚未全部清理，断点保留','discard-incomplete');
+   if(typeof this.checkpointStore.clear!=='function')fail('断点存储不支持安全清除','checkpoint-unavailable');
+   await this.checkpointStore.clear();this.state=null;this.resumeScope=null;this.paused=false;this.checkpointAvailable=true;await this._progress();return this.snapshot();
+  });}finally{this.running=false;}
  }
  async _discard(engine,descriptors){
   if(!descriptors.length)return;await engine.discardSpool(descriptors);const names=new Set(descriptors.map(d=>d.spool.name));this.state.staged=this.state.staged.filter(d=>!names.has(d.spool.name));await this._save();
@@ -186,7 +217,8 @@ export class SerialCompressionQueue{
    if(item.role==='video'){const info=await this.inspectVideo(source);expectedVideo={fps:info.fps,duration:info.duration,...dimensions(info.width,info.height,512)};aborted(signal);}
    state.current={source:sourceOf(item),phase:'encoding'};await this._progress();
    output=await this.encode(source,clone(item),{signal,videoProfile:'resolution512',checkpoint:async()=>{aborted(signal);},onProgress:progress=>{state.current={source:sourceOf(item),phase:'encoding',completed:Number(progress.completed)||0,total:Number(progress.total)||0};void this._progress();}});aborted(signal);
-   if(!output?.blob||output.blob.size>MAX_BYTES||output.blob.size>=source.size)fail('02 档无法满足 150,000 字节；未替换原文件，不会降档','oversize-output');
+   if(!output?.blob)fail('未生成可验证的 02 档输出；未替换原文件','invalid-output');
+   if(output.blob.size>MAX_BYTES||output.blob.size>=source.size)fail(`输出 ${output.blob.size} 字节，未满足不超过 ${MAX_BYTES} 字节（${MAX_BYTES/1000} KB）且小于原文件的要求；未替换原文件，不会降档`,'oversize-output');
    if(expectedVideo&&(!Number.isFinite(expectedVideo.fps)||!Number.isFinite(expectedVideo.duration)||Math.abs(output.profile?.fps-expectedVideo.fps)>1e-9||!Number.isFinite(output.profile?.fps)||!Number.isFinite(output.duration)||Math.abs(output.duration-expectedVideo.duration)>.002||output.width!==expectedVideo.width||output.height!==expectedVideo.height))fail('输出未保留源帧率、完整时长或 512 尺寸档位','profile-mismatch');
    const variant=makeVariant(output,item);if(await digest(output.blob)!==variant.sha256)fail('输出校验失败，未替换原文件','output-changed');aborted(signal);await this._checkGeneration();
    state.current.phase='staging';await this._progress();
@@ -204,62 +236,40 @@ export class SerialCompressionQueue{
   this.paused=false;this.controller=new AbortController();if(this.stopRequest)this.controller.abort();const signal=this.controller.signal,state=this.state;await this._progress();
   try{
    aborted(signal);await this._checkGeneration();const engine=await this._engine();
-   for(const method of ['groupSources','spoolCandidate','recoverSpool','discardSpool','discardSessionSpool'])if(typeof engine[method]!=='function')fail('分组安全整理引擎不可用，未执行替换','group-storage-unavailable');
-   const finished=new Set(state.results.map(r=>key(r.source))),pending=state.items.filter(item=>!finished.has(key(item))),byIdentity=new Map(pending.map(item=>[key(item),item]));
-   // The storage engine owns durable spool journals. Recover only this explicitly
-   // resumed session, then adopt verified ready candidates lost before a save.
+   for(const method of ['groupSources','spoolCandidate','recoverSpool','discardSpool','discardSessionSpool','sealPreviewSession','previewSession'])if(typeof engine[method]!=='function')fail('安全暂存引擎不可用，原文件未替换','group-storage-unavailable');
+   const finished=new Map(state.results.map(r=>[key(r.source),r])),pending=state.items.filter(item=>!finished.has(key(item))),byIdentity=new Map(pending.map(item=>[key(item),item]));
+   // Recover only this explicitly resumed temporary session. Completed staging
+   // remains resident on disk, not in memory, until the separate preview decision.
    const recovered=await engine.recoverSpool(state.scope.nonce);aborted(signal);await this._checkGeneration();
    state.staged=[];const readyKeys=new Set();
-   for(const raw of recovered){const d=this._descriptor(raw);if(finished.has(key(d.source))){await engine.discardSpool([d]);continue;}if(readyKeys.has(key(d.source)))fail('暂存文件身份重复','invalid-spool');readyKeys.add(key(d.source));state.staged.push(d);}
+   for(const raw of recovered){const d=this._descriptor(raw),prior=finished.get(key(d.source));if(prior&&prior.status!=='staged'){await engine.discardSpool([d]);continue;}if(readyKeys.has(key(d.source)))fail('暂存文件身份重复','invalid-spool');readyKeys.add(key(d.source));state.staged.push(d);}
+   if(state.results.some(r=>r.status==='staged'&&!readyKeys.has(key(r.source))))fail('已完成的暂存文件缺失，不能偷偷重新编码','invalid-spool');
    await this._save();
    const grouped=await engine.groupSources(pending.map(sourceOf));aborted(signal);await this._checkGeneration();
-   if(grouped.generation!==state.expectedGeneration)fail('书库已变化，请重新确认剩余范围','generation-changed');
-   if(grouped.catalogRevision!==state.scope.catalogRevision)fail('目录已变化，请重新扫描并确认','catalog-changed');
+   if(grouped.generation!==state.expectedGeneration)fail('书库已变化，请重新扫描','generation-changed');
+   if(grouped.catalogRevision!==state.scope.catalogRevision)fail('目录已变化，请重新扫描','catalog-changed');
    const groups=grouped.groups||[],skipped=grouped.skipped||[],seen=new Set();
    for(const source of [...groups.flatMap(g=>g.sources),...skipped.map(s=>s.source)]){const id=key(source);if(!byIdentity.has(id)||seen.has(id))fail('分组清单与已确认准确范围不一致','group-scope-changed');seen.add(id);}
    if(seen.size!==pending.length)fail('分组清单缺少已确认文件','group-scope-changed');
-   for(const skip of skipped){await this._checkGeneration();aborted(signal);const item=byIdentity.get(key(skip.source));await this._discard(engine,state.staged.filter(d=>key(d.source)===key(item)));await this._result(item,{status:'skipped',code:item.bytes<=MAX_BYTES?'already-small':'unavailable',reason:skip.reason||'此项无须或无法再次压缩，未执行替换',originalRetained:null});}
-   groupLoop:for(const group of groups){
-    if(this.stopRequest)break;await this._checkGeneration();aborted(signal);
-    const descriptors=[];
-    for(const groupSource of group.sources){
-     if(this.stopRequest)break groupLoop;await this._checkGeneration();aborted(signal);const item=byIdentity.get(key(groupSource));state.current={source:sourceOf(item),phase:'reading'};await this._progress();
-     try{
-      if(item.bytes<=MAX_BYTES){await this._result(item,{status:'skipped',code:'already-small',originalRetained:true});continue;}
-      if(!supported(item)||item.bytes>(item.role==='video'?32:16)*1024*1024){await this._result(item,{status:'skipped',code:'unsupported',reason:'格式或大小不受支持，未替换原文件',originalRetained:true});continue;}
-      const staged=state.staged.find(d=>key(d.source)===key(item));const ready=staged||await this._encodeAndStage(engine,item,signal);if(ready)descriptors.push(ready);
-     }catch(error){
-      if(error.name==='AbortError'||['generation-changed','catalog-changed','checkpoint-unavailable','invalid-spool','spool-space'].includes(error.code))throw error;
-      const skip=['oversize-output','profile-mismatch'].includes(error.code)||/不支持|超出|超过|无法压到|150 KB|音轨|可变|时长|格式|预算|unsupported/i.test(error.message);
-      await this._result(item,{status:skip?'skipped':'failed',code:error.code||'processing-failed',reason:error.message,originalRetained:true});
-     }finally{state.current=null;await this._progress();}
-    }
-    if(!descriptors.length)continue;
-    let plan=null,attempted=false,completed=false;
+   for(const skip of skipped){await this._checkGeneration();aborted(signal);const item=byIdentity.get(key(skip.source));await this._discard(engine,state.staged.filter(d=>key(d.source)===key(item)));await this._result(item,{status:'skipped',code:item.bytes<=MAX_BYTES?'already-small':'unavailable',reason:skip.reason||'此项无须或无法再次压缩，原文件未替换',originalRetained:null});}
+   itemLoop:for(const group of groups)for(const groupSource of group.sources){
+    if(this.stopRequest)break itemLoop;await this._checkGeneration();aborted(signal);const item=byIdentity.get(key(groupSource));state.current={source:sourceOf(item),phase:'reading'};await this._progress();
     try{
-     aborted(signal);await this._checkGeneration();state.current={source:descriptors[0].source,phase:'planning',groupSize:descriptors.length};await this._progress();plan=await engine.plan(descriptors,{signal});aborted(signal);await this._checkGeneration();
-     if(plan.summary.catalogRevision!==state.scope.catalogRevision)fail('目录已变化；请重新扫描并确认','catalog-changed');
-     const exact=descriptors.map(({source,variant})=>({source,variant}));if(!plan.token||semantic(plan.summary.selected)!==semantic(exact))fail('替换计划与准确源文件/输出身份不一致','plan-changed');
-     if(!await this.gate())fail('请关闭旧版词书页面后再继续','incompatible-clients');aborted(signal);await this._checkGeneration();
-     state.current.phase='replacing';state.inFlight={source:descriptors[0].source,variant:descriptors[0].variant,group:clone(descriptors),planToken:plan.token};await this._save();await this._progress();aborted(signal);attempted=true;
-     const result=await engine.replace(descriptors,{token:plan.token,irreversibleLossy:true,exactFilesConfirmed:true},{signal});
-     if(!Number.isFinite(result.calculatedSavingBytes)||result.calculatedSavingBytes<0)fail('替换返回了无法核实的统计结果','uncertain-result');
-     const oldGeneration=state.expectedGeneration;await this._groupResult(descriptors,result);completed=true;
-     if(result.committedGeneration!==oldGeneration+1||generation(await this.readGeneration())!==result.committedGeneration){state.status='needs-approval';state.reason='本组已替换，但书库版本不符合本次提交；剩余项目需要重新确认';break;}
-     state.expectedGeneration=result.committedGeneration;await this._save();
+     if(item.bytes<=MAX_BYTES){await this._result(item,{status:'skipped',code:'already-small',originalRetained:true});continue;}
+     if(!supported(item)||item.bytes>(item.role==='video'?32:16)*1024*1024){await this._result(item,{status:'skipped',code:'unsupported',reason:'格式或大小不受支持，原文件未替换',originalRetained:true});continue;}
+     const ready=state.staged.find(d=>key(d.source)===key(item))||await this._encodeAndStage(engine,item,signal);
+     if(ready)await this._result(item,{status:'staged',code:'staged',output:ready.variant,originalRetained:true});
     }catch(error){
-     if(completed){state.status='needs-approval';state.reason='本组已替换；继续前需要重新核对书库版本和剩余范围：'+error.message;break;}
-     if(attempted){state.status='recovery-required';state.reason='本组替换或整理结果尚未核实，不能认定原件仍在。请明确恢复整理后重新确认剩余范围';await this._save().catch(()=>{});break;}
-     state.inFlight=null;
-     if(error.name==='AbortError'||['generation-changed','catalog-changed','incompatible-clients','checkpoint-unavailable'].includes(error.code))throw error;
-     await this._discard(engine,descriptors);
-     for(const d of descriptors)await this._result(d.source,{status:'failed',code:error.code||'group-plan-failed',reason:error.message,originalRetained:true});
-    }finally{plan=null;state.current=null;await this._progress();}
+     if(error.name==='AbortError'||['generation-changed','source-changed','catalog-changed','checkpoint-unavailable','invalid-spool','spool-space'].includes(error.code))throw error;
+     const skip=['oversize-output','profile-mismatch'].includes(error.code)||/不支持|超出|超过|无法压到|200 KB|音轨|可变|时长|格式|预算|unsupported/i.test(error.message);
+     await this._result(item,{status:skip?'skipped':'failed',code:error.code||'processing-failed',reason:error.message,originalRetained:true});
+    }finally{state.current=null;await this._progress();}
    }
-   if(state.status==='running')state.status=this.stopRequest||(state.results.length===state.items.length?'done':'paused');
-   if(!state.inFlight&&state.results.length===state.items.length){await engine.discardSessionSpool(state.scope.nonce);state.staged=[];}
-  }catch(error){state.status=['generation-changed','catalog-changed','incompatible-clients'].includes(error.code)?'needs-approval':error.name==='AbortError'?(this.stopRequest||'cancelled'):'blocked';state.reason=error.message;}
-  finally{state.current=null;this.paused=state.status==='paused';this.controller=null;this.stopRequest=null;await this._save().catch(()=>{if(!state.inFlight){state.status='blocked';state.reason='无法保存最新断点；请勿自动继续，请重新核对本机资源';}this.checkpointAvailable=false;});await this._progress();}
+   if(this.stopRequest)state.status=this.stopRequest;
+   else if(state.results.length===state.items.length)await this._seal(engine);
+   else state.status='paused';
+  }catch(error){state.status=['generation-changed','source-changed','catalog-changed','group-scope-changed'].includes(error.code)?'invalidated':error.name==='AbortError'?(this.stopRequest||'cancelled'):'blocked';state.reason=error.message;}
+  finally{state.current=null;this.paused=state.status==='paused';this.controller=null;this.stopRequest=null;await this._save().catch(()=>{state.status='blocked';state.reason='无法保存最新断点；请勿自动继续，请重新核对暂存资源';this.checkpointAvailable=false;});await this._progress();}
   return this.snapshot();
  }
  async recover({approved=false}={}){
@@ -267,9 +277,9 @@ export class SerialCompressionQueue{
   this.running=true;try{return await this._withOwner(async()=>{
    if(!this.state)return this.snapshot();
    if(!this.state.inFlight){
-    if(this.snapshot().remaining!==0)return this.snapshot();
-    await this._assertCheckpointCurrent();if(!await this.gate())fail('请关闭旧版词书页面后再恢复','incompatible-clients');
-    const engine=await this._engine();await engine.discardSessionSpool(this.state.scope.nonce);this.state.staged=[];this.state.status='done';this.state.reason=null;await this._save();await this._progress();return this.snapshot();
+    if(this.state.scope.mode!=='stage-only'||this.snapshot().remaining!==0)return this.snapshot();
+    await this._assertCheckpointCurrent();await this._checkGeneration();
+    const engine=await this._engine();await this._seal(engine);await this._save();await this._progress();return this.snapshot();
    }
    // A read-only load may have raced another owner. Verify under ownership
    // before recovery or any save, including an error-path save.
@@ -285,7 +295,7 @@ export class SerialCompressionQueue{
     // completion/savings or claim the original was retained.
     const records=affected.map(d=>({source:d.source,status:'failed',code:'recovered-outcome-unknown',reason:'整理已恢复，本组提交结果未单独核实；不计入已完成或节省空间，请重新扫描核对',originalRetained:null,logicalSavingBytes:0}));
     this.state.results.push(...records);await this._save();for(const record of records)await notify(this.onItem,record);
-    this.state.status='paused';this.state.reason='整理已恢复；剩余项目必须重新确认，此项结果请重新扫描核对';this.resumeScope=null;await this._save();await this._progress();return this.snapshot();
+    this.state.status='legacy-checkpoint';this.state.reason='旧版整理已恢复；请重新扫描后开始暂存压缩，此项结果请单独核对';this.resumeScope=null;await this._save();await this._progress();return this.snapshot();
    }catch(error){this.state.results.length=resultCount;this.state.inFlight=flight;this.state.staged=stagedBefore;this.state.status='recovery-required';this.state.reason='整理尚未核实：'+error.message;await this._save().catch(()=>{});await this._progress();throw error;}
   });}finally{this.running=false;}
  }

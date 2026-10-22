@@ -1,23 +1,11 @@
 import {mountCompressionPreview} from './compression-preview-ui.js';
-// Same document and storage context as the installed PWA. No work before click.
-export function installCompressionSettings(host,catalog,{baseURL=new URL('../',import.meta.url)}={}){
- const row=document.createElement('div');row.className='library-action-row';
- const open=document.createElement('button');open.type='button';open.className='library-text-action';open.textContent='按范围批量压缩';open.setAttribute('aria-expanded','false');
- const panel=document.createElement('section');panel.hidden=true;panel.setAttribute('aria-label','按范围批量压缩与预览');
- const close=document.createElement('button');close.type='button';close.className='library-text-action';close.textContent='关闭压缩预览';
- const previewHost=document.createElement('div');panel.append(close,previewHost);row.append(open);
- host.querySelector('[data-runtime-build]').before(row,panel);
- let preview=null,closing=null;
- function dismiss({focus=false}={}){
-  panel.hidden=true;open.setAttribute('aria-expanded','false');
-  if(preview){const prior=preview;preview=null;open.disabled=true;closing=Promise.resolve(prior.destroy()).finally(()=>{closing=null;open.disabled=false;});}
-  if(focus)open.focus();return closing;
- }
- open.onclick=()=>{if(preview||closing)return;preview=mountCompressionPreview(previewHost,catalog,{baseURL});panel.hidden=false;open.setAttribute('aria-expanded','true');close.focus();};
- close.onclick=()=>dismiss({focus:true});
- const route=()=>{if(location.hash!=='#/settings')dismiss();};
- const hide=()=>dismiss();
- // Source mutation/clear retires any in-memory comparison, without blocking normal controls.
- window.addEventListener('hashchange',route);window.addEventListener('pagehide',hide);window.addEventListener('gre-clear-library',hide);
- return {dismiss,destroy(){dismiss();window.removeEventListener('hashchange',route);window.removeEventListener('pagehide',hide);window.removeEventListener('gre-clear-library',hide);row.remove();panel.remove();}};
+// Match the export row. Collapsed settings do not scan, encode or load checkpoints.
+export function installCompressionSettings(host,catalog,{baseURL=new URL('../',import.meta.url),isBusy=()=>false}={}){
+ const row=document.createElement('details');row.className='library-disclosure library-range-row';
+ row.innerHTML='<summary><span>按范围压缩</span><span class="library-disclosure-mark" aria-hidden="true">+</span></summary>';
+ const body=document.createElement('div');row.append(body);host.querySelector('[data-runtime-build]').before(row);
+ let panel=null,disposed=false;
+ const open=()=>{if(row.open&&!panel&&!disposed)panel=mountCompressionPreview(body,catalog,{baseURL,isBusy});};row.addEventListener('toggle',open);
+ const pause=()=>panel?.pause();window.addEventListener('pagehide',pause);window.addEventListener('gre-clear-library',pause);
+ return {dismiss(){row.open=false;panel?.pause();},destroy(){disposed=true;row.removeEventListener('toggle',open);window.removeEventListener('pagehide',pause);window.removeEventListener('gre-clear-library',pause);row.remove();return panel?.destroy();}};
 }

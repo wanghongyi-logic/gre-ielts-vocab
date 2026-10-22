@@ -1,11 +1,13 @@
 import {key,validSource,validateVariant,verify} from './compression-variants.js';
 const abort=s=>{if(s?.aborted)throw new DOMException('Cancelled','AbortError');};
+const canonical=value=>Array.isArray(value)?value.map(canonical):value&&typeof value==='object'?Object.fromEntries(Object.keys(value).sort().map(k=>[k,canonical(value[k])])):value;
+export const canonicalJSON=value=>JSON.stringify(canonical(value));
 export const validSpoolName=name=>/^spool-[a-zA-Z0-9_-]{1,100}\.bin$/.test(name);
 // Separate durable staging records never become canonical pack metadata. A
 // writing record precedes every file creation, so interrupted staging is owned.
 export function createCompressionSpool(a){
  const check=d=>{if(!d?.spool||!validSpoolName(d.spool.name)||!validSource(d.source)||key(d.source)!==key(d.variant?.source))throw Error('Invalid spool descriptor');validateVariant(d.variant);if(d.spool.sha256!==d.variant.sha256||d.spool.bytes!==d.variant.bytes)throw Error('Spool identity mismatch');};
- async function read(d){check(d);const record=await a.spoolGet(d.spool.name);if(!record||record.state!=='ready'||JSON.stringify(record)!==JSON.stringify(d))throw Error('Spool is not ready or changed');return verify(await a.readFile(d.spool.name),d.variant);}
+ async function read(d){check(d);const record=await a.spoolGet(d.spool.name);if(!record||record.state!=='ready'||canonicalJSON(record)!==canonicalJSON(d))throw Error('Spool is not ready or changed');return verify(await a.readFile(d.spool.name),d.variant);}
  async function discard(ds){for(const d of ds){check(d);await a.removeFile(d.spool.name);await a.spoolDelete(d.spool.name);}}
  async function stage(sessionId,source,variant,blob,{signal}={}){
   if(typeof sessionId!=='string'||!sessionId||sessionId.length>200)throw Error('Invalid spool session');
