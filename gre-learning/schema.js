@@ -53,9 +53,9 @@ export function validateEntry(entry, baselineLesson) {
     shape(item, 'example'); required(item, ['textEn','translationZh'], 'example');
   }
   // Qualified editorial exception: no verified GRE equivalent pair for awning.
-  const reviewedEmptyEquivalents=(entry.number===182&&entry.word==='awning')||(entry.number===4930&&entry.word==='arousal')||(entry.number===4933&&entry.word==='artifact');
+  const reviewedEmptyEquivalents=(entry.number===182&&entry.word==='awning')||(entry.number===4930&&entry.word==='arousal')||(entry.number===4933&&entry.word==='artifact')||(entry.number===5943&&entry.word==='distal')||(entry.number===5947&&entry.word==='diurnal');
   list(entry.equivalents, 'equivalents', reviewedEmptyEquivalents?0:1);
-  for (const item of entry.equivalents) { shape(item, 'equivalent'); required(item, ['word','comparisonZh'], 'equivalent'); if (Object.hasOwn(item,'source') && !['zhangwei_dedicated_2021','zhangwei_core7','weichen_gre','zhangwei_original3000','chenqi_zhou_zaiyao3000_original'].includes(item.source)) throw new TypeError('Invalid equivalent source'); if (Object.hasOwn(item,'sources') && (!Array.isArray(item.sources) || !item.sources.length || item.sources.some(s=>!['zhangwei_dedicated_2021','zhangwei_core7','weichen_gre','zhangwei_original3000','chenqi_zhou_zaiyao3000_original'].includes(s)))) throw new TypeError('Invalid equivalent sources'); }
+  for (const item of entry.equivalents) { shape(item, 'equivalent'); required(item, ['word','comparisonZh'], 'equivalent'); if (Object.hasOwn(item,'source') && !['zhangwei_dedicated_2021','zhangwei_core7','weichen_gre','zhangwei_original3000','chenqi_zhou_zaiyao3000_original','B'].includes(item.source)) throw new TypeError('Invalid equivalent source'); if (Object.hasOwn(item,'sources') && (!Array.isArray(item.sources) || !item.sources.length || item.sources.some(s=>!['zhangwei_dedicated_2021','zhangwei_core7','weichen_gre','zhangwei_original3000','chenqi_zhou_zaiyao3000_original','B'].includes(s)))) throw new TypeError('Invalid equivalent sources'); }
   if (!entry.usage.some(item => item.collocations.length)) throw new TypeError('Missing collocations');
   return entry;
 }

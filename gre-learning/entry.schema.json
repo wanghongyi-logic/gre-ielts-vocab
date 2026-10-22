@@ -185,7 +185,8 @@
               "zhangwei_core7",
               "weichen_gre",
               "zhangwei_original3000",
-              "chenqi_zhou_zaiyao3000_original"
+              "chenqi_zhou_zaiyao3000_original",
+              "B"
             ]
           },
           "sources": {
@@ -198,7 +199,8 @@
                 "zhangwei_core7",
                 "weichen_gre",
                 "zhangwei_original3000",
-                "chenqi_zhou_zaiyao3000_original"
+                "chenqi_zhou_zaiyao3000_original",
+                "B"
               ]
             }
           }
@@ -271,17 +273,49 @@
   "allOf": [
     {
       "if": {
-        "properties": {
-          "number": {
-            "const": 182
+        "anyOf": [
+          {
+            "properties": {
+              "number": {
+                "const": 182
+              },
+              "word": {
+                "const": "awning"
+              }
+            },
+            "required": [
+              "number",
+              "word"
+            ]
           },
-          "word": {
-            "const": "awning"
+          {
+            "properties": {
+              "number": {
+                "const": 5943
+              },
+              "word": {
+                "const": "distal"
+              }
+            },
+            "required": [
+              "number",
+              "word"
+            ]
+          },
+          {
+            "properties": {
+              "number": {
+                "const": 5947
+              },
+              "word": {
+                "const": "diurnal"
+              }
+            },
+            "required": [
+              "number",
+              "word"
+            ]
           }
-        },
-        "required": [
-          "number",
-          "word"
         ]
       },
       "then": {

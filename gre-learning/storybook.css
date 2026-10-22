@@ -138,7 +138,7 @@ body{width:calc(100% - var(--bookmark-gutter));padding:0;background:var(--paper)
 .story-dialogue:empty{visibility:hidden}
 
 /* Pair-specific source mark; absent metadata leaves existing layout unchanged. */
-.equivalent-source{display:inline-block;margin-inline-start:.45em;padding:0 .24em;border:1px solid currentColor;border-radius:2px;font-size:.6em;font-weight:500;line-height:1.25;vertical-align:.12em;color:var(--ink-muted,#6f765e);white-space:nowrap}
+.equivalent-source,.example-source{display:inline-block;margin-inline-start:.45em;padding:0 .24em;border:1px solid currentColor;border-radius:2px;font-size:.6em;font-weight:500;line-height:1.25;vertical-align:.12em;color:var(--ink-muted,#6f765e);white-space:nowrap}
 
 /* The contents is a printed leaf in the same book, never a floating overlay. */
 #word-content[hidden]{display:none}
@@ -254,3 +254,6 @@ body{width:calc(100% - var(--bookmark-gutter));padding:0;background:var(--paper)
 /* One feathered media edge survives poster/video/canvas handoffs unchanged.
    Authored dialogue overlays are siblings, outside this mask. */
 .story-media-stack{position:absolute;inset:0;isolation:isolate;overflow:hidden}
+
+/* Example authorship label: reuse the existing small source badge treatment. */
+.example-source{font-size:12px;margin-inline-start:0;margin-top:8px}
