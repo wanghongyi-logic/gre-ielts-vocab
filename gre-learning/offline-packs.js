@@ -1,3 +1,5 @@
+import {createSpoolIndex} from './compression-spool-index.js';
+import {validSpoolName} from './compression-spool.js';
 import {waitForLocal} from './offline-async.js';
 import {createMediaControl} from './offline-control.js';
 import {validatePack,indexZip} from './offline-zip.js';
@@ -264,6 +266,7 @@ async function recoverCompressionJournals(){
   if(!journals.length)return;const dir=await directory();
   for(const j of journals){if(!['prepared','committed'].includes(j.phase))throw Error('Unknown compression journal');for(const name of j.phase==='prepared'?j.newNames:j.oldNames){try{await dir.removeEntry(name);}catch(e){if(e.name!=='NotFoundError')throw e;}}
    if(j.phase==='committed'&&globalThis.caches){const cache=await caches.open('gre-scalable-verified-units-v1');for(const c of j.cacheDeletes){const url=new URL(c.path,new URL('../',import.meta.url)),r=await cache.match(url);if(r?.ok){const blob=await r.blob();if(blob.size===c.bytes&&await variantDigest(blob)===c.sha256)await cache.delete(url);}}}
+   if(j.phase==='committed'&&j.spoolNames?.length){const index=createSpoolIndex();try{for(const name of j.spoolNames){if(!validSpoolName(name))throw Error('Invalid journal spool name');try{await dir.removeEntry(name);}catch(e){if(e.name!=='NotFoundError')throw e;}await index.delete(name);}}finally{index.close();}}
    await new Promise((resolve,reject)=>{const tx=connection.transaction('compressionJournals','readwrite');tx.objectStore('compressionJournals').delete(j.id);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error||Error('Recovery aborted'));});
   }invalidateAssetIndex(true);
  });

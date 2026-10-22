@@ -2,8 +2,8 @@ import {mountCompressionPreview} from './compression-preview-ui.js';
 // Same document and storage context as the installed PWA. No work before click.
 export function installCompressionSettings(host,catalog,{baseURL=new URL('../',import.meta.url)}={}){
  const row=document.createElement('div');row.className='library-action-row';
- const open=document.createElement('button');open.type='button';open.className='library-text-action';open.textContent='压缩预览';open.setAttribute('aria-expanded','false');
- const panel=document.createElement('section');panel.hidden=true;panel.setAttribute('aria-label','压缩预览');
+ const open=document.createElement('button');open.type='button';open.className='library-text-action';open.textContent='按范围批量压缩';open.setAttribute('aria-expanded','false');
+ const panel=document.createElement('section');panel.hidden=true;panel.setAttribute('aria-label','按范围批量压缩与预览');
  const close=document.createElement('button');close.type='button';close.className='library-text-action';close.textContent='关闭压缩预览';
  const previewHost=document.createElement('div');panel.append(close,previewHost);row.append(open);
  host.querySelector('[data-runtime-build]').before(row,panel);
