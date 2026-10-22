@@ -1,5 +1,5 @@
 {
-  "build": "191-offline2600-v43",
+  "build": "191-offline2600-v44",
   "assets": [
     {
       "url": "index.html",
@@ -18,7 +18,7 @@
     },
     {
       "url": "gre-learning/update.js",
-      "sha256": "979be8f842f37f26b16262e2146c964d001c9ae29d7568cd63a3fce33d3a2ae6",
+      "sha256": "4c6af19bf18e33f93c8a6e6cfb6186c32a3bf9282d9ee8d53a3a84038677fcef",
       "bytes": 8169
     },
     {
@@ -33,8 +33,8 @@
     },
     {
       "url": "gre-learning/lesson-loader.js",
-      "sha256": "3bf055f9f9cc926a67eb3edd67a23767c0455fe1a79fa772af3bfdadacd7f79c",
-      "bytes": 15242
+      "sha256": "634ec5b0ea38c858a9cd0a0a00cf74a218fdee19b479b65bacf11df4e18ec9da",
+      "bytes": 18414
     },
     {
       "url": "gre-learning/schema.js",
@@ -63,8 +63,8 @@
     },
     {
       "url": "gre-learning/view.js",
-      "sha256": "f0b06609e53007a64ac8ab59d094869bcf33b671dbe0d24ae3f577a46dba0502",
-      "bytes": 8199
+      "sha256": "d5c2f7e53a9169a12dc436ecaec2ae807233aeb559e29f08558c4ccb49ec6393",
+      "bytes": 8286
     },
     {
       "url": "gre-learning/motion-tracks.js",
@@ -88,8 +88,8 @@
     },
     {
       "url": "gre-learning/story-media.js",
-      "sha256": "e155d87bf15241cc7cc04239a2042c987bf1b8a66523aa96958e5b5ebb50534a",
-      "bytes": 12441
+      "sha256": "1becb1b766f4caabe0da54149c8a69a3aa9586ca86edd33afe6125436a21c042",
+      "bytes": 12790
     },
     {
       "url": "gre-learning/storybook.css",
@@ -108,8 +108,8 @@
     },
     {
       "url": "gre-learning/prepared-pages.js",
-      "sha256": "fd13fbef2a923a6295c8865ac4e1bcc47036c2c9b9672062034d3f7051f5b65e",
-      "bytes": 5824
+      "sha256": "e20377accda77bf450dbcff499585b2a03c1506212b89139112acdad1efb31aa",
+      "bytes": 9035
     },
     {
       "url": "gre-learning/offline-zip.js",
@@ -133,7 +133,7 @@
     },
     {
       "url": "gre-learning/offline-preferences.js",
-      "sha256": "be9b6ea72accbceb3ad0de424a11498dd46e98169d7433dfb43a36200a170197",
+      "sha256": "a6189dad81125ffbc6bb8dee9166dafbecc82099738de9d328d4909ead39d388",
       "bytes": 1262
     },
     {

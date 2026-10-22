@@ -1,5 +1,5 @@
 import {waitForLocal} from './offline-async.js';
-import {renderWordPage} from './view.js';
+import {renderWordPage,renderArtwork} from './view.js';
 import {neighboringNumbers} from './model.js';
 import {installStoryMedia} from './story-media.js';
 
@@ -24,12 +24,54 @@ export function installPreparedPages({loader,entries,picker,window:win=window,do
   page.promise=(async()=>{
    const timer=win.setTimeout(()=>controller.abort(),8000);
    try{
-    const loaded=await waitForLocal(()=>loader.pair(number,controller.signal,priority),{signal:controller.signal,timeoutMs:0});
+    const loaded=await waitForLocal(()=>loader.pair(number,controller.signal,priority,{progressive:true}),{signal:controller.signal,timeoutMs:0});
     if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
     const root=doc.createElement('div');root.className='prepared-page';
     root.innerHTML=renderWordPage(loaded.entry,loaded.media,{...neighboringNumbers(entries,number),total:entries.length});
     page.root=root;page.loaded=loaded;
     root.querySelectorAll('[id]').forEach(node=>{node.dataset.preparedId=node.id;node.id=`prepared-${number}-${node.id}`;});
+    if(loaded.mediaReady){
+     // Text and a stable media slot are ready independently of local disk/video decoding.
+     const article=root.querySelector('.reading-layout'),opening=root.querySelector('.opening-page');
+     const motion=installStoryMedia(root,{picker,window:win,document:doc});let stage=0,staticPosterURL=null;
+     page.motion={...motion,activate(){page.active=true;motion.activate();},destroy(){controller.abort();motion.destroy();}};
+     function addRetry(host){
+      const retry=doc.createElement('button');retry.type='button';retry.className='offline-video-hint';retry.textContent='重试动画';
+      retry.onclick=async()=>{if(retry.disabled||controller.signal.aborted)return;retry.disabled=true;try{const next=await loader.pair(number,controller.signal,'high',{progressive:true});if(controller.signal.aborted)return;if(next.mediaReady){retry.remove();await attach(await next.mediaReady,2);}}catch{}finally{retry.disabled=false;}};
+      host.appendChild(retry);
+     }
+     async function attach(media,rank){
+      if(controller.signal.aborted)return;
+      if(rank<stage){
+       if(rank===1&&media?.posterURL){
+        const figure=opening.querySelector('.story-illustration'),stack=figure?.querySelector('.story-media-stack');
+        if(stack&&!figure.querySelector('.story-poster')){const image=doc.createElement('img');image.className='story-poster';image.src=media.posterURL;image.width=media.width;image.height=media.height;image.alt=media.alt||loaded.entry.coreImageZh;image.decoding='async';stack.insertBefore(image,stack.firstChild);}
+        if(loaded.media)loaded.media={...loaded.media,posterURL:media.posterURL};motion.updateMedia({posterURL:media.posterURL});
+       }
+       return;
+      }
+      stage=rank;
+      if(!media){
+       opening.querySelector('.story-illustration')?.remove();article.classList.add('text-only-reading');loaded.media=null;
+       if(rank===2)addRetry(opening);return;
+      }
+      if(staticPosterURL)media={...media,staticPosterURL};
+      const holder=doc.createElement('div');holder.innerHTML=renderArtwork(loaded.entry,media);
+      const figure=holder.firstElementChild;if(!figure)return;
+      // Keep the article, text, IDs, scroll and reading-position ownership stable.
+      opening.querySelector('.story-illustration')?.replaceWith(figure);
+      if(!opening.querySelector('.story-illustration'))opening.appendChild(figure);
+      article.classList.remove('text-only-reading');loaded.media=media;
+      const ready=motion.refresh(media,{root:article});
+      if(page.active)motion.activate();
+      if(rank===2&&!media.videoURL)addRetry(figure);
+      await ready;
+     }
+     page.mediaReady=Promise.resolve(loaded.mediaReady).then(media=>attach(media,2)).catch(()=>{});
+     if(loaded.posterReady)Promise.resolve(loaded.posterReady).then(media=>attach(media,1)).catch(()=>{});
+     if(loaded.staticPosterReady)Promise.resolve(loaded.staticPosterReady).then(url=>{if(controller.signal.aborted||!url)return;staticPosterURL=url;if(loaded.media)loaded.media={...loaded.media,staticPosterURL:url};motion.updateMedia({staticPosterURL:url});}).catch(()=>{});
+     page.ready=true;return page;
+    }
     const poster=root.querySelector('.story-poster');
     if(poster){
     await Promise.race([poster.decode().catch(()=>{}),new Promise((_,reject)=>controller.signal.addEventListener('abort',()=>reject(new DOMException('Cancelled','AbortError')),{once:true}))]);

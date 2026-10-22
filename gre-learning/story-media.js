@@ -141,7 +141,11 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
   target.addEventListener('error',()=>{if(token!==generation||target!==video)return;failed=true;target.pause();showPoster();});
   const decoded=await new Promise(resolve=>{
    let done=false,timer=null;
-   const finish=ok=>{if(done)return;done=true;win.clearTimeout(timer);for(const type of ['loadeddata','seeked','canplay'])target.removeEventListener(type,check);target.removeEventListener('error',error);if(prepareCancel===abort)prepareCancel=null;resolve(ok);};
+   const finish=(ok,terminal=true)=>{
+    if(terminal){win.clearTimeout(timer);for(const type of ['loadeddata','seeked','canplay'])target.removeEventListener(type,check);target.removeEventListener('error',error);if(prepareCancel===abort)prepareCancel=null;}
+    if(done){if(ok&&token===generation&&target===video){ready=true;failed=false;sync();}return;}
+    done=true;resolve(ok);
+   };
    const abort=()=>finish(false),error=()=>finish(false);
    function check(){
     if(token!==generation||target!==video){finish(false);return;}
@@ -152,11 +156,11 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
    prepareCancel=abort;
    for(const type of ['loadeddata','seeked','canplay'])target.addEventListener(type,check);
    target.addEventListener('error',error);
-   timer=win.setTimeout(()=>finish(false),5000);
+   timer=win.setTimeout(()=>finish(false,false),5000);
    try{target.currentTime=0;target.preload='auto';target.load();check();}catch{finish(false);}
   });
   if(token!==generation||target!==video)return false;
-  ready=decoded;failed=!decoded;
+  ready=decoded;failed=false; // A slow local decoder may still report loadeddata; timeout is not corruption.
   if(decoded&&activated&&!staticMode()){paintFrame();sync();}else if(!decoded||staticMode())showPoster();
   return decoded;
  }
@@ -182,6 +186,6 @@ export function installStoryMedia(surface,{picker,window:win=window,document:doc
   sync();
  }
  const visibility=()=>sync();doc.addEventListener('visibilitychange',visibility);preference.addEventListener('change',visibility);connection?.addEventListener?.('change',visibility);picker?.addEventListener('close',visibility);
- return {refresh,activate,setTurning,cancel,sync,prepareReveal,prepareStaticPoster,destroy(){cancel();doc.removeEventListener('visibilitychange',visibility);preference.removeEventListener('change',visibility);connection?.removeEventListener?.('change',visibility);picker?.removeEventListener('close',visibility);}};
+ return {refresh,activate,setTurning,cancel,sync,prepareReveal,prepareStaticPoster,updateMedia(next){media={...media,...next};if(staticMode()||failed||blocked)showPoster();else if(video&&ready&&!video.paused)paintFrame();},destroy(){cancel();doc.removeEventListener('visibilitychange',visibility);preference.removeEventListener('change',visibility);connection?.removeEventListener?.('change',visibility);picker?.removeEventListener('close',visibility);}};
 }
 
