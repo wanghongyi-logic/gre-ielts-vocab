@@ -113,7 +113,10 @@ function refreshLibrary(){
  return job.promise;
 }
 window.addEventListener('gre-library-updated',event=>{libraryRevision++;event.detail.waits.push(refreshLibrary());});
-window.addEventListener('gre-clear-library',event=>{const settled=(async()=>{libraryRefreshEpoch++;renderedLibraryRevision=libraryRevision;renderGeneration++;contents.cancel();swipe.cancel();loader.cancel();motion.destroy();currentMedia=undefined;window.speechSynthesis?.cancel();const pending=pages.destroy();main.querySelectorAll('video').forEach(video=>{video.pause();video.removeAttribute('src');video.load();});await pending;loader.destroy();})();event.detail.waits.push(settled);});
+function retireLibraryMedia(event){const settled=(async()=>{libraryRefreshEpoch++;renderedLibraryRevision=libraryRevision;renderGeneration++;contents.cancel();swipe.cancel();loader.cancel();motion.destroy();currentMedia=undefined;window.speechSynthesis?.cancel();const pending=pages.destroy();main.querySelectorAll('video').forEach(video=>{video.pause();video.removeAttribute('src');video.load();});await pending;loader.destroy();})();event.detail.waits.push(settled);}
+window.addEventListener('gre-clear-library',retireLibraryMedia);
+window.addEventListener('gre-compression-replaced',retireLibraryMedia);
+window.addEventListener('gre-media-control-change',event=>{if(event.detail.initial||event.detail.phase!=='variants-committed')return;const detail={waits:[]};retireLibraryMedia({detail});Promise.allSettled(detail.waits).then(()=>{const refreshed={waits:[]};window.dispatchEvent(new CustomEvent('gre-library-updated',{detail:refreshed}));});});
 window.addEventListener('gre-media-control-change',event=>{if(!event.detail.paused||event.detail.initial)return;const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-clear-library',{detail}));});
 window.addEventListener('hashchange',()=>{reading.route(location.hash);route();});
 window.addEventListener('pagehide',event=>{libraryRefreshEpoch++;window.speechSynthesis?.cancel();loader.cancel();pages.destroy();motion.setTurning(true);bookmarks.suspend();renderGeneration++;});

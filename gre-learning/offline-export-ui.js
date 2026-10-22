@@ -18,19 +18,19 @@ function retireOutput(previous){
 export function mountSavedExport({host,catalog,isBusy,setBusy}){
  const section=document.createElement('div');
  section.className='library-export-row';
- section.innerHTML=`<details class="library-disclosure library-range-row" data-export-range><summary><span>导出已保存资源</span><span class="library-disclosure-mark" aria-hidden="true">+</span></summary><div class="library-disclosure-body">${savedRangeFields('export')}<div class="library-range-feedback"><button type="button" data-export-cancel hidden>取消导出</button><progress data-export-progress hidden aria-label="导出进度"></progress><p role="status" aria-live="polite" data-export-status></p><div data-export-files></div><button type="button" class="library-text-action" data-export-close hidden>收起导出文件</button></div></div></details>`;
+ section.innerHTML=`<details class="library-disclosure library-range-row" data-export-range><summary><span>导出已保存资源</span><span class="library-disclosure-mark" aria-hidden="true">+</span></summary><div class="library-disclosure-body">${savedRangeFields('export')}<p>所选范围生成一个 ZIP，已压缩资源按压缩后的版本导出。缺少资源的词会计入未导出数量。</p><div class="library-range-feedback"><button type="button" data-export-cancel hidden>取消导出</button><progress data-export-progress hidden aria-label="导出进度"></progress><p role="status" aria-live="polite" data-export-status></p><div data-export-files></div><button type="button" class="library-text-action" data-export-close hidden>收起导出文件</button></div></div></details>`;
  host.querySelector('.library-import-feedback').after(section);
  const button=section.querySelector('[data-export]'),cancel=section.querySelector('[data-export-cancel]'),progress=section.querySelector('[data-export-progress]'),status=section.querySelector('[data-export-status]'),files=section.querySelector('[data-export-files]'),close=section.querySelector('[data-export-close]');
  const range=bindSavedRange(section,catalog,{prefix:'export',verb:'导出',defaultAll:true}),key=catalogIdentity(catalog);
  let operation=null,output=retainedSavedExport?.catalogKey===key?retainedSavedExport:null,disposed=false,teardown=null;
  const abortError=()=>new DOMException('已取消导出','AbortError');
  const checkCancelled=current=>{if(disposed||current.controller.signal.aborted)throw abortError();};
- const summary=current=>`已整理 ${current.result.complete} 词 · ${current.result.packages.length} 个包`;
+ const summary=current=>{const selected=current.range.end-current.range.start+1,skipped=current.result.skipped??Math.max(0,selected-current.result.complete);return `选定 ${selected} 词 · 完整导出 ${current.result.complete} 词 · 缺资源未导出 ${skipped} 词 · ${current.result.packages.length} 个 ZIP`;};
  function syncOutput(){files.hidden=Boolean(output?.collapsed);close.hidden=!output;close.textContent=files.hidden?'展开导出文件':'收起导出文件';close.setAttribute('aria-expanded',String(!files.hidden));}
 
  function renderOutput(current,target){
   const label=document.createElement('p');label.setAttribute('data-export-result','');
-  label.textContent=`第 ${current.range.start}–${current.range.end} 词${current.version?` · 版本 ${current.version}`:''}`;target.append(label);
+  label.textContent=`第 ${current.range.start}–${current.range.end} 词${current.version?` · 版本 ${current.version}`:''}${current.result.skippedOrdinals?.length?` · 未导出序号：${current.result.skippedOrdinals.slice(0,20).join('、')}${current.result.skippedOrdinals.length>20?'等':''}`:''}`;target.append(label);
   for(let i=0;i<current.result.packages.length;i++){
    const pack=current.result.packages[i],row=document.createElement('div');row.className='library-action-row';
    let asset=current.assets[i];
@@ -65,7 +65,7 @@ export function mountSavedExport({host,catalog,isBusy,setBusy}){
      signal:current.controller.signal,range:current.range,
      onProgress:p=>{
       if(disposed||operation!==current||current.controller.signal.aborted)return;
-      progress.max=p.total;progress.value=p.completed;status.textContent=`${p.phase==='scan'?'检查':'导出'} ${p.completed}/${p.total}`;
+      progress.max=p.total;progress.value=p.completed;status.textContent=`${p.phase==='scan'?'检查':'导出'} ${p.completed}/${p.total}${p.skipped?` · 缺资源未导出 ${p.skipped} 词`:''}`;
      }
     });
    };

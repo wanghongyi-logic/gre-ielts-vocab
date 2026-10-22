@@ -10,7 +10,7 @@ export async function indexZip(file){
  for(let i=tail.length-22;i>=0;i--)if(view.getUint32(i,true)===0x06054b50&&i+22+view.getUint16(i+20,true)===tail.length){end=i;break;}
  if(end<0)fail('ZIP directory missing');
  const count=view.getUint16(end+10,true),size=view.getUint32(end+12,true),offset=view.getUint32(end+16,true),endOffset=file.size-tail.length+end;
- if(view.getUint16(end+4,true)||view.getUint16(end+6,true)||view.getUint16(end+8,true)!==count||!count||count>2000||size>2*1024*1024||offset+size!==endOffset)fail('Unsupported ZIP directory');
+ if(view.getUint16(end+4,true)||view.getUint16(end+6,true)||view.getUint16(end+8,true)!==count||!count||count>20000||size>20*1024*1024||offset+size!==endOffset)fail('Unsupported ZIP directory');
  const directory=await read(file,offset,size),v=dv(directory),entries=new Map(),ranges=[];let p=0;
  for(let n=0;n<count;n++){
   if(p+46>size||v.getUint32(p,true)!==0x02014b50)fail('Malformed ZIP directory');
@@ -31,9 +31,9 @@ export async function indexZip(file){
 }
 export function expectedFiles(catalog){const map=new Map();for(const entry of catalog.entries){const unit=typeof entry.unit==='number'?catalog.units[entry.unit]:entry.unit;for(const [role,ref]of [['unit',unit],['poster',entry.storyMedia?.poster],['video',entry.storyMedia?.video],['staticPoster',entry.storyMedia?.staticPoster]])if(ref){const path='gre-learning/'+ref.url;const old=map.get(path);if(old){old.wordIds.add(entry.number);old.roles.add(role);}else map.set(path,{...ref,roles:new Set([role]),wordIds:new Set([entry.number])});}}return map;}
 export async function validatePack(file,catalog,{signal,onProgress=()=>{}}={}){
- const entries=await indexZip(file),m=entries.get('manifest.json');if(!m||m.bytes>2*1024*1024)fail('Package manifest missing or too large');
+ const entries=await indexZip(file),m=entries.get('manifest.json');if(!m||m.bytes>20*1024*1024)fail('Package manifest missing or too large');
  const manifest=JSON.parse(await file.slice(m.start,m.start+m.bytes).text());
- if(manifest.format!=='gre-offline-pack-v1'||!/^[-a-zA-Z0-9_.]{1,100}$/.test(manifest.packId)||!/^[-a-zA-Z0-9_.]{1,100}$/.test(manifest.version)||!Array.isArray(manifest.files)||!Array.isArray(manifest.wordIds)||!manifest.wordIds.length||manifest.wordIds.length>200||new Set(manifest.wordIds).size!==manifest.wordIds.length)fail('Unsupported package manifest');
+ if(manifest.format!=='gre-offline-pack-v1'||!/^[-a-zA-Z0-9_.]{1,100}$/.test(manifest.packId)||!/^[-a-zA-Z0-9_.]{1,100}$/.test(manifest.version)||!Array.isArray(manifest.files)||!Array.isArray(manifest.wordIds)||!manifest.wordIds.length||manifest.wordIds.length>20000||new Set(manifest.wordIds).size!==manifest.wordIds.length)fail('Unsupported package manifest');
  const positions=manifest.wordIds.map(id=>catalog.entries.findIndex(e=>e.number===id));if(positions.some((position,i)=>position<0||(i>0&&position<=positions[i-1])))fail('Package word order does not match this edition');
  const expected=expectedFiles(catalog),seen=new Set(),indexed=[];
  for(const ref of manifest.files){

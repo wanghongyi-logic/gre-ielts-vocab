@@ -1,9 +1,9 @@
-import {localAsset} from './offline-packs.js';
+import {localAsset,localAssetRecord} from './offline-packs.js';
 import {CRC32,SHA256} from './offline-export-hash.js';
 import {safePath,MAX_ENTRY,indexZip} from './offline-zip.js';
 import {resolveSavedRange} from './offline-range.js';
 
-const CHUNK=1024*1024,MAX_PACK=96*1024*1024,MAX_MEMORY=24*1024*1024;
+const CHUNK=1024*1024,MAX_MEMORY=24*1024*1024;
 const EXPORT_DIR='gre-offline-exports-v1',SESSION_LOCK='gre-offline-export-session-v1:',STALE_AFTER=24*60*60*1000;
 const SESSION_NAME=/^export-([0-9]{13})-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/;
 const encoder=new TextEncoder();
@@ -24,20 +24,21 @@ function header(path,size,crc,offset,central=false){
  bytes.set(name,central?46:30);return bytes;
 }
 export async function writeStoreZip(items,sink,{signal,onProgress=()=>{}}={}){
- if(!items.length||items.length>2000)throw new Error('资源数量不支持导出');
+ if(!items.length||items.length>20000)throw new Error('资源数量不支持导出');
+ const directoryBytes=items.reduce((n,item)=>n+46+encoder.encode(item.path).length,0);if(directoryBytes>20*1024*1024)throw new Error('所选范围目录超过安全单包上限');const estimate=items.reduce((n,item)=>n+(item.bytes??item.blob?.size??0)+76+2*encoder.encode(item.path).length,22);if(estimate>=0xffffffff)throw new Error('所选范围超过 ZIP32 的单包大小上限，无法导出；不会自动拆包');
  let offset=0;const directory=[],paths=new Set();
  for(let i=0;i<items.length;i++){
   cancelled(signal);const item=items[i],{path,crc}=item;
   const blob=item.readBlob?await item.readBlob():item.blob;cancelled(signal);
   if(!blob||(item.bytes!==undefined&&blob.size!==item.bytes))throw new Error('已保存资源在导出期间发生变化，请重试');
   if(!safePath(path)||paths.has(path)||encoder.encode(path).length>65535||blob.size>MAX_ENTRY)throw new Error('资源格式不支持导出');
-  paths.add(path);const start=offset,h=header(path,blob.size,crc,0);await sink.write(h,offset);offset+=h.length;
+  if(offset+blob.size+76+2*encoder.encode(path).length>=0xffffffff)throw new Error('所选范围超过 ZIP32 单包大小上限');paths.add(path);const start=offset,h=header(path,blob.size,crc,0);await sink.write(h,offset);offset+=h.length;
   const checkedCRC=new CRC32(),checkedSHA=item.sha256?new SHA256():null;
   for(let n=0;n<blob.size;n+=CHUNK){cancelled(signal);const bytes=new Uint8Array(await blob.slice(n,n+CHUNK).arrayBuffer());cancelled(signal);checkedCRC.update(bytes);checkedSHA?.update(bytes);await sink.write(bytes,offset);offset+=bytes.length;}
   if(checkedCRC.digest()!==crc||(checkedSHA&&checkedSHA.hex()!==item.sha256))throw new Error('已保存资源在导出期间发生变化，请重试');
   directory.push(header(path,blob.size,crc,start,true));cancelled(signal);onProgress({completed:i+1,total:items.length});
  }
- const directoryStart=offset;
+ const directoryStart=offset;if(offset+directoryBytes+22>=0xffffffff)throw new Error('所选范围超过 ZIP32 单包大小上限');
  for(const d of directory){cancelled(signal);await sink.write(d,offset);offset+=d.length;}
  cancelled(signal);const end=new Uint8Array(22),v=new DataView(end.buffer);v.setUint32(0,0x06054b50,true);v.setUint16(8,items.length,true);v.setUint16(10,items.length,true);v.setUint32(12,offset-directoryStart,true);v.setUint32(16,directoryStart,true);await sink.write(end,offset);cancelled(signal);return offset+22;
 }
@@ -128,18 +129,18 @@ export async function exportSavedResources(catalog,{signal,onProgress=()=>{},rea
  // Validate before opening storage or cleaning temporary files. Keep the
  // original catalog order: the importer validates stable word IDs
  // against that full catalog, not against display ordinals or a renumbered copy.
- const selected=range===undefined?null:new Set(resolveSavedRange(catalog,range?.start,range?.end).ids);
+ const selectedRange=range===undefined?null:resolveSavedRange(catalog,range?.start,range?.end),selected=selectedRange?new Set(selectedRange.ids):null;
  const entries=selected?catalog.entries.filter(entry=>selected.has(entry.number)):catalog.entries;
- const session='export-'+Date.now()+'-'+crypto.randomUUID(),outputs=[];let skipped=0,complete=0,sink=null,memoryBytes=0,released=false,release=()=>{};
+ const session='export-'+Date.now()+'-'+crypto.randomUUID(),outputs=[],skippedOrdinals=[];let skipped=0,complete=0,sink=null,memoryBytes=0,released=false,release=()=>{};
  const cleanup=async()=>{if(released)return;try{await removeSession(session);released=true;}finally{release();}};
  let group=[],assets=new Map(),bytes=0;
  const prepareSink=async()=>{if(!sink)sink=await createSink(session,'part-'+(outputs.length+1)+'.zip',signal,MAX_MEMORY-memoryBytes);return sink;};
  async function flush(){
   if(!group.length)return;
-  const number=outputs.length+1,manifest={format:'gre-offline-pack-v1',packId:session+'-'+number,version:'1',wordIds:group.map(e=>e.number),files:[...assets.values()].map(({path,role,wordId,ref})=>({path,role,wordId,bytes:ref.bytes,sha256:ref.sha256}))};
-  const manifestBlob=new Blob([JSON.stringify(manifest)]),mhash=await fingerprints(manifestBlob,signal),items=[{path:'manifest.json',blob:manifestBlob,crc:mhash.crc},...[...assets.values()].map(a=>({path:a.path,bytes:a.ref.bytes,sha256:a.ref.sha256,crc:a.crc,readBlob:()=>readSource(a.ref)}))];
+  const number=outputs.length+1,hasVariants=[...assets.values()].some(a=>a.record?.kind==='owned-local-variant'),manifest=hasVariants?{format:'gre-owned-local-variants-v1',trust:'owned-local-not-official',files:[...assets.values()].map((a,i)=>({...a.record,archivePath:'media/'+i+'.bin',start:undefined}))}:{format:'gre-offline-pack-v1',packId:session+'-'+number,version:'1',wordIds:group.map(e=>e.number),files:[...assets.values()].map(({path,role,wordId,ref})=>({path,role,wordId,bytes:ref.bytes,sha256:ref.sha256}))};
+  const manifestBlob=new Blob([JSON.stringify(manifest)]);if(manifestBlob.size>20*1024*1024)throw new Error('所选范围元数据超过安全单包上限');const mhash=await fingerprints(manifestBlob,signal),items=[{path:'manifest.json',blob:manifestBlob,crc:mhash.crc},...[...assets.values()].map((a,i)=>({path:hasVariants?'media/'+i+'.bin':a.path,bytes:a.stored.bytes,sha256:a.stored.sha256,crc:a.crc,readBlob:()=>readSource(a.ref)}))];
   const ordinals=group.map(entry=>entry.displayOrdinal||catalog.entries.indexOf(entry)+1);
-  const name=`GRE-${selected?Math.min(...ordinals):ordinals[0]}-${selected?Math.max(...ordinals):ordinals.at(-1)}.zip`;
+  const name=`GRE-${selectedRange?selectedRange.start:ordinals[0]}-${selectedRange?selectedRange.end:ordinals.at(-1)}.zip`;
   await prepareSink();
   try{
    await writeStoreZip(items,sink,{signal,onProgress:p=>onProgress({...p,phase:'pack'})});const file=await sink.finish();cancelled(signal);await indexZip(file);cancelled(signal);
@@ -158,23 +159,23 @@ export async function exportSavedResources(catalog,{signal,onProgress=()=>{},rea
   for(let i=0;i<entries.length;i++){
    cancelled(signal);const entry=entries[i],found=[];
    for(const role of ['poster','video','staticPoster']){
-    const ref=entry.storyMedia?.[role];if(!ref)continue;const path='gre-learning/'+ref.url;
+    const originalRef=entry.storyMedia?.[role];if(!originalRef)continue;const ref={...originalRef,wordId:entry.number,role},path='gre-learning/'+ref.url;
     if(!safePath(path)||!Number.isSafeInteger(ref.bytes)||ref.bytes<0||ref.bytes>MAX_ENTRY)throw new Error('资源信息不支持导出');
     const prior=assets.get(path);
-    if(prior&&prior.ref.sha256===ref.sha256&&prior.ref.bytes===ref.bytes){found.push({...prior,role,wordId:entry.number});continue;}
-    const blob=await readSource(ref);cancelled(signal);if(!blob||blob.size!==ref.bytes){found.length=0;break;}
-    const hash=await fingerprints(blob,signal);if(hash.sha256!==ref.sha256){found.length=0;break;}
-    found.push({path,role,wordId:entry.number,ref,crc:hash.crc});
+    if(prior&&prior.record?.kind!=='owned-local-variant'&&prior.ref.sha256===ref.sha256&&prior.ref.bytes===ref.bytes){found.push({...prior,role,wordId:entry.number});continue;}
+    const imported=readSource===source?await localAssetRecord(ref):null,stored=imported?.record||ref;const blob=imported?.blob||await readSource(ref);cancelled(signal);if(!blob||blob.size!==stored.bytes){found.length=0;break;}
+    const hash=await fingerprints(blob,signal);if(hash.sha256!==stored.sha256){found.length=0;break;}
+    found.push({path,role,wordId:entry.number,ref,stored,record:imported?.record||{path,role,wordId:entry.number,bytes:ref.bytes,sha256:ref.sha256},crc:hash.crc});
    }
    if(found.length&&entry.storyMedia?.video&&found.some(a=>a.role==='video')){
-    const extra=found.filter(a=>!assets.has(a.path)).reduce((n,a)=>n+a.ref.bytes,0);
+    const extra=found.filter(a=>!assets.has(a.path)).reduce((n,a)=>n+a.stored.bytes,0);
     if(sink?.kind==='memory'&&memoryBytes+bytes+extra>MAX_MEMORY)throw memoryError();
-    if(group.length&&(group.length>=200||bytes+extra>MAX_PACK)){await flush();await prepareSink();}
-    group.push(entry);for(const a of found)if(!assets.has(a.path)){assets.set(a.path,a);bytes+=a.ref.bytes;}complete++;
-   }else skipped++;
+    // One selected range always produces one ZIP; unsupported size fails explicitly.
+    group.push(entry);for(const a of found)if(!assets.has(a.path)){assets.set(a.path,a);bytes+=a.stored.bytes;}complete++;
+   }else{skipped++;skippedOrdinals.push(entry.displayOrdinal??catalog.entries.indexOf(entry)+1);}
    onProgress({phase:'scan',completed:i+1,total:entries.length});
   }
-  await flush();if(sink){await sink.abort();sink=null;}if(!outputs.length)throw new Error(selected?'所选范围内没有完整保存的资源可导出':'本机还没有完整保存的资源可导出');cancelled(signal);
-  return {packages:outputs,complete,skipped,cleanup};
+  await flush();if(sink){await sink.abort();sink=null;}if(!outputs.length)throw Object.assign(new Error(selected?'所选范围内没有完整保存的资源可导出':'本机还没有完整保存的资源可导出'),{selectedCount:entries.length,complete:0,skipped,skippedOrdinals});cancelled(signal);
+  return {packages:outputs,complete,skipped,skippedOrdinals,selectedCount:entries.length,cleanup};
  }catch(error){if(sink)await sink.abort().catch(()=>{});await cleanup().catch(()=>{});throw error;}
 }
