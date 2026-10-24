@@ -1,0 +1,330 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6446,
+      "word": "mean",
+      "ipa": "/miːn/",
+      "pos": "adj.",
+      "coreMeaningZh": "吝啬的；卑劣的",
+      "coreEn": "unwilling to give or share; also unkind or ignoble",
+      "coreImageZh": "同学有一整盘饼干却拒绝分给别人，姐姐指出他连一点也舍不得分享；mean 在这里指吝啬、小气。",
+      "mnemonics": [
+        {
+          "method": "MEAN ↔ ME，东西全留给我",
+          "textZh": "把 mean 的词形联到 me（我）：桌上明明有一大盘饼干，他却把盘子拉到自己面前，反复说“给我，都是我的”，一点也舍不得分。由只顾 me、不肯分享，记住 mean，吝啬的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MEAN ↔ MINI，给别人的份额缩到最小",
+          "textZh": "把 mean 的声音联到 mini（迷你的）：一个小气的人自己有大盒糖，却把给朋友的那份缩成迷你小包，能少给一点就少给一点。由把分享份额缩成 mini，记住 mean，小气的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "吝啬的；卑劣的",
+          "explanationZh": "形容词 mean 可指吝啬、小气，常用 mean with money；也可指对人刻薄、卑劣，常说 be mean to someone。本页动画突出不肯分享的吝啬义。动词 mean 表示意思是，是另一词性。",
+          "collocations": [
+            {
+              "phrase": "mean with money",
+              "meaningZh": "在钱上很小气"
+            },
+            {
+              "phrase": "be mean to someone",
+              "meaningZh": "对某人刻薄"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stingy",
+          "comparisonZh": "在吝啬、不愿分享这一义上接近；stingy 更专指舍不得给，mean 也可指刻薄或卑劣。"
+        },
+        {
+          "word": "unkind",
+          "comparisonZh": "在对人不友善这一义上接近；unkind 更宽泛，mean 常带故意刻薄或小气的意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She's always been mean with money.",
+          "translationZh": "她在钱上一直很小气。",
+          "explanationZh": "has always been 说明一贯如此；with money 指在花钱或给钱方面。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mean_2"
+        },
+        {
+          "textEn": "They were too mean to buy the kids proper beds.",
+          "translationZh": "他们太吝啬了，连像样的床都舍不得给孩子们买。",
+          "explanationZh": "too ... to 表示太小气以至于不肯做某事，proper 指像样、合适的。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mean_2"
+        }
+      ]
+    },
+    {
+      "number": 6447,
+      "word": "measly",
+      "ipa": "/ˈmiːzli/",
+      "pos": "adj.",
+      "coreMeaningZh": "少得可怜的；微不足道的",
+      "coreEn": "very small or inadequate in amount",
+      "coreImageZh": "男孩看着大碗里少得可怜的一点饭，觉得根本不够吃，姐姐也指出分量太少；measly 指少得令人不满意。",
+      "mnemonics": [
+        {
+          "method": "MEASLY ↔ 米少了，碗里只有一点饭",
+          "textZh": "把 measly 的声音联到“米少了”：忙了一上午，端来的大碗里却只有一小撮米饭，看着就觉得根本不够吃。由少得可怜的一点米饭，记住 measly。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MEASLY ↔ MEAL，缩水的一餐",
+          "textZh": "把 measly 的词形联到 meal（一餐）：本来期待丰盛午餐，打开饭盒却只看到一小口食物，一整餐仿佛缩水了。由分量小得令人失望的 meal，记住 measly，少得可怜的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "少得可怜的；微不足道的",
+          "explanationZh": "口语中常带不满，形容钱、份额、数量等小得不够用，常放在数量或名词前。它不仅是客观的 small，还包含觉得太少、不像样的评价。",
+          "collocations": [
+            {
+              "phrase": "a measly sum",
+              "meaningZh": "少得可怜的一笔钱"
+            },
+            {
+              "phrase": "a measly portion",
+              "meaningZh": "小得可怜的一份"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "paltry",
+          "comparisonZh": "都可表示数量少得可怜；paltry 较正式，也可强调价值低，measly 更口语化。"
+        },
+        {
+          "word": "meagre",
+          "comparisonZh": "都可表示不足、少；meagre 可较客观，measly 常带明显抱怨。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I get a measly £8 an hour.",
+          "translationZh": "我每小时只拿少得可怜的8英镑。",
+          "explanationZh": "get 指挣得，an hour 表示每小时，measly 表达对数额的不满。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/measly"
+        },
+        {
+          "textEn": "All they get by way of thanks is a measly bottle of wine.",
+          "translationZh": "他们得到的全部谢礼不过是一瓶寒酸的葡萄酒。",
+          "explanationZh": "by way of thanks 表示作为感谢；all ... is 强调所得仅此而已。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/measly"
+        }
+      ]
+    },
+    {
+      "number": 6448,
+      "word": "medley",
+      "ipa": "/ˈmedli/",
+      "pos": "n.",
+      "coreMeaningZh": "混合物；大杂烩",
+      "coreEn": "a mixture of different things",
+      "coreImageZh": "男孩看见不同水果混在同一碗里，姐姐说这是几种水果的混合；medley 指不同事物组成的混合物。",
+      "mnemonics": [
+        {
+          "method": "MEDLEY ↔ 每类，每类拿一点混一起",
+          "textZh": "把 medley 的声音联到“每类”：做水果碗时，每类水果都拿一点，葡萄、苹果和橙子混在同一碗里。由每类混一点的大杂烩，记住 medley。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MEDLEY ↔ MELODY，多段旋律串在一起",
+          "textZh": "把 medley 的整体词形联到 melody（旋律）：熟悉歌曲的不同旋律一段接一段连起来，形成串烧。medley 确实也指这种集锦乐曲；由多段音乐组成的整体，记住它的混合物义。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "混合物；大杂烩",
+          "explanationZh": "可数名词，常说 a medley of，表示不同食物、风格或声音组成的混合。音乐中也指串联不同曲调的集锦；一般混合物义不要求杂乱。",
+          "collocations": [
+            {
+              "phrase": "a medley of flavours",
+              "meaningZh": "多种味道的混合"
+            },
+            {
+              "phrase": "a medley of songs",
+              "meaningZh": "歌曲串烧"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "mixture",
+          "comparisonZh": "都可指混合物；mixture 最通用，medley 更突出不同种类或片段汇在一起。"
+        },
+        {
+          "word": "assortment",
+          "comparisonZh": "都可指多种东西的集合；assortment 强调种类丰富，medley 强调混合成整体。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The building was a medley of styles from different periods.",
+          "translationZh": "这座建筑混合了不同时期的多种风格。",
+          "explanationZh": "a medley of 后说明混合的内容；from different periods 修饰 styles。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/medley"
+        },
+        {
+          "textEn": "We communicated in a medley of foreign words and universal gestures.",
+          "translationZh": "我们混用外语词汇和通用手势来交流。",
+          "explanationZh": "in 表示交流所用方式；words 与 gestures 共同构成混合。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/medley"
+        }
+      ]
+    },
+    {
+      "number": 6449,
+      "word": "meek",
+      "ipa": "/miːk/",
+      "pos": "adj.",
+      "coreMeaningZh": "温顺的；顺从的",
+      "coreEn": "gentle and willing to follow others without asserting oneself",
+      "coreImageZh": "男孩听从旁人的画画建议，不争辩便点头照办，姐姐看出他很顺从；meek 指不强求己见、温顺顺从。",
+      "mnemonics": [
+        {
+          "method": "MEEK ↔ WEAK，不敢坚持自己的意见",
+          "textZh": "把 meek 的整体词形联到 weak（弱的）：讨论计划时，一个人仿佛连反对的声音都很弱，别人说什么他就低声答应，不争自己的意见。由不坚持己见的顺从，记住 meek。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MEEK ↔ 咪，温顺小猫听安排",
+          "textZh": "把 meek 的声音联到小猫轻轻的“咪”：主人叫它挪个位置，它温顺地起身让开，又轻轻叫一声，不争不闹。由顺从的小猫，记住 meek，温顺的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "温顺的；顺从的",
+          "explanationZh": "形容安静温和、不强求自己意见、愿意顺从的人或态度。有时含不够自信的意思，但不等于身体弱小；可说 meek and mild。",
+          "collocations": [
+            {
+              "phrase": "meek submission",
+              "meaningZh": "温顺的服从"
+            },
+            {
+              "phrase": "a meek reply",
+              "meaningZh": "温顺的回答"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "submissive",
+          "comparisonZh": "在顺从、不反抗这一义上接近；submissive 更突出服从他人，meek 常兼有温和、安静。"
+        },
+        {
+          "word": "docile",
+          "comparisonZh": "都可表示温顺易接受指示；docile 常强调易教导或管理，meek 偏重不坚持己见。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They called her Miss Mouse because she was so meek and mild.",
+          "translationZh": "因为她太温顺柔和了，他们叫她“老鼠小姐”。",
+          "explanationZh": "because 引出绰号的原因；meek and mild 并列描述性格。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/meek"
+        },
+        {
+          "textEn": "They hung their heads in meek submission.",
+          "translationZh": "他们低下头，温顺地表示服从。",
+          "explanationZh": "hung their heads 指低头，in ... submission 描述服从的状态。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/meek"
+        }
+      ]
+    },
+    {
+      "number": 6450,
+      "word": "mellifluous",
+      "ipa": "/meˈlɪfluəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "声音甜美流畅的；悦耳的",
+      "coreEn": "sweet, smooth and pleasant to hear",
+      "coreImageZh": "歌手持续唱出柔和流畅的旋律，男孩听得入神，姐姐称赞歌声甜美；mellifluous 指声音优美、柔和而流畅。",
+      "mnemonics": [
+        {
+          "method": "MELLIFLUOUS：蜜流般甜美的声音",
+          "textZh": "mellifluous 的词源包含“蜜”和“流动”。借中文“蜜流”抓住 melli- 与 flu-：想象歌声像蜂蜜一样甜润，又柔和地流进耳朵。由甜而流畅的蜜流，记住 mellifluous，声音甜美流畅的。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MELLIFLUOUS ↔ MELODY + FLUENT，悦耳又流畅",
+          "textZh": "把 mellifluous 的整体词形联到 melody 和 fluent（旋律、流利的）：有人说话既像旋律一样悦耳，又像流利演讲一样顺畅，一句句轻柔地连起来。由有旋律感又流畅的声音，记住 mellifluous。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "声音甜美流畅的；悦耳的",
+          "explanationZh": "较正式，通常形容歌声、说话声或音乐甜美柔和、流畅悦耳。常修饰 voice、tones 或 sound，不只是音量小，也不表示语言内容一定正确。",
+          "collocations": [
+            {
+              "phrase": "a mellifluous voice",
+              "meaningZh": "甜美流畅的嗓音"
+            },
+            {
+              "phrase": "mellifluous tones",
+              "meaningZh": "圆润悦耳的音调"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "melodious",
+          "comparisonZh": "都可表示悦耳；melodious 更突出旋律美，mellifluous 兼有甜润、流畅的声音质感。"
+        },
+        {
+          "word": "dulcet",
+          "comparisonZh": "都可表示声音甜美；dulcet 较文学化，mellifluous 还强调流畅柔和。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I grew up around people who had wonderful, mellifluous voices.",
+          "translationZh": "我从小身边就有一些嗓音优美、甜润流畅的人。",
+          "explanationZh": "grew up 表示成长，who 引导定语从句修饰 people。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/mellifluous"
+        },
+        {
+          "textEn": "Soon the room is filled with Bates' mellifluous tones.",
+          "translationZh": "很快，房间里充满了贝茨甜美流畅的声音。",
+          "explanationZh": "be filled with 表示充满；tones 在这里指说话或歌唱的声音。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/mellifluous"
+        }
+      ]
+    }
+  ]
+}

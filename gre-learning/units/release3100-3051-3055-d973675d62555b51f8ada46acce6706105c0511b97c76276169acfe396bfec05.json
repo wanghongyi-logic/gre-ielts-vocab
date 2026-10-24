@@ -1,0 +1,330 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6671,
+      "word": "precipitation",
+      "ipa": "/prɪˌsɪpɪˈteɪʃn/",
+      "pos": "n.",
+      "coreMeaningZh": "仓促；沉积物，尤指降水",
+      "coreEn": "rash haste; material that falls or is deposited, especially rain or snow",
+      "coreImageZh": "窗外开始落雨，雨滴落进屋外容器并逐渐积起水；男孩观察从空中落下的水，表现降水。",
+      "mnemonics": [
+        {
+          "method": "头朝前冲：来不及细想",
+          "textZh": "precipitation 的词源可以追到拉丁语“头朝前、向下冲”。想象还没想清楚就一头冲进决定里：这种急急忙忙、欠考虑的状态，就是 precipitation，仓促。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "向下落：雨雪落到地面",
+          "textZh": "同一词族还有“落下、掷下”的意义。把 precipitation 想成雨点、雪花从空中落下并积到地面；天气里的 precipitation 就是降水，也包括雪等形式。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "仓促；沉积物，尤指降水",
+          "explanationZh": "天气中常指降水或降水量，包括雨、雪等；化学中可指沉淀过程或沉淀物。另有较正式、少见的“仓促”义，强调未经充分考虑的急迫，不是所有速度快都叫 precipitation。",
+          "collocations": [
+            {
+              "phrase": "heavy precipitation",
+              "meaningZh": "大量降水"
+            },
+            {
+              "phrase": "act with precipitation",
+              "meaningZh": "仓促行事"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rainfall",
+          "comparisonZh": "对应降水义，但 rainfall 只指雨，precipitation 还包括雪、冰雹等。"
+        },
+        {
+          "word": "haste",
+          "comparisonZh": "对应仓促义，更常见；precipitation 在此强调急迫、欠考虑。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "There is heavy precipitation in some parts of the country.",
+          "translationZh": "该国部分地区降水量很大。",
+          "explanationZh": "There is 引出存在的情况；precipitation 在此是不可数的降水。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/precipitation"
+        },
+        {
+          "textEn": "He acted with precipitation and regretted his decision the next day.",
+          "translationZh": "他仓促行事，第二天便后悔作了那个决定。",
+          "explanationZh": "with precipitation 表示以仓促的方式；regretted 与 acted 是并列谓语。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6672,
+      "word": "precipitous",
+      "ipa": "/prɪˈsɪpɪtəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "非常陡峭的；匆忙的",
+      "coreEn": "extremely steep; done with careless haste",
+      "coreImageZh": "男孩走到有护栏的观景台，俯看几乎直落的山壁后退回成人身边，突出山壁十分陡峭。",
+      "mnemonics": [
+        {
+          "method": "头朝下：陡得像直落",
+          "textZh": "precipitous 追溯到拉丁语表示“陡峭、头朝前”的词。想象站在护栏内望下去，岩壁几乎直落谷底；这种让人想到头朝下直坠的陡峭，就是 precipitous。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "头朝前：没想好就冲",
+          "textZh": "仍抓同一词源中的头朝前：方案还没看完，有人就一头冲去执行。把缺少思考的猛冲连到 precipitous，匆忙草率的。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "非常陡峭的；匆忙的",
+          "explanationZh": "形容地形时强调很陡、接近垂直；形容行动或决定时强调匆忙而欠考虑。不要因它与 precipitation 同族，就把它理解成“多雨的”。",
+          "collocations": [
+            {
+              "phrase": "a precipitous cliff",
+              "meaningZh": "极陡的悬崖"
+            },
+            {
+              "phrase": "a precipitous decision",
+              "meaningZh": "仓促的决定"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sheer",
+          "comparisonZh": "对应地形义，都可强调近乎垂直；sheer 在这里不是“纯粹的”。"
+        },
+        {
+          "word": "hasty",
+          "comparisonZh": "对应行动义；precipitous 语气更强，更容易含草率、鲁莽的评价。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The town is perched on the edge of a steep, precipitous cliff.",
+          "translationZh": "小镇坐落在陡峭悬崖的边缘。",
+          "explanationZh": "be perched on 表示位于高处或边缘；precipitous 加强悬崖极陡的特点。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/precipitous"
+        },
+        {
+          "textEn": "They regretted their precipitous decision to leave.",
+          "translationZh": "他们后悔仓促作出了离开的决定。",
+          "explanationZh": "to leave 说明决定的内容；precipitous 强调未经充分考虑。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6673,
+      "word": "predecessor",
+      "ipa": "/ˈpriːdəsesə(r)/",
+      "pos": "n.",
+      "coreMeaningZh": "前任，先辈",
+      "coreEn": "a person who held a position before the current holder",
+      "coreImageZh": "原管理员带男孩熟悉借阅工作，再把登记本交给他；男孩接任同一岗位，原管理员就是他的前任。",
+      "mnemonics": [
+        {
+          "method": "PRE：在我之前离任的人",
+          "textZh": "predecessor 来自拉丁语 prae“在先”和 decessor“离任者”。想象你接过登记本坐上岗位，先前负责的人刚起身交班；他就是你的 predecessor，前任。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "先离开，再接棒",
+          "textZh": "继续抓“在先的离任者”：旧队长摘下队长袖标交给新队长，同一个职责换了人承担。对新队长而言，之前担任的人就是 predecessor。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "前任，先辈",
+          "explanationZh": "可数名词，重点是同一岗位或角色上的先后关系，未必年龄更大。也可泛指先辈；在任职语境中，反义词 successor 指继任者。",
+          "collocations": [
+            {
+              "phrase": "one’s immediate predecessor",
+              "meaningZh": "某人的直接前任"
+            },
+            {
+              "phrase": "a predecessor in office",
+              "meaningZh": "职位上的前任"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "former holder",
+          "comparisonZh": "直接指原先担任这个职位的人；predecessor 更简洁。"
+        },
+        {
+          "word": "forerunner",
+          "comparisonZh": "可指先驱或前身，不一定担任过同一岗位；predecessor 在人事语境更明确指前任。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The new president reversed many of the policies of his predecessor.",
+          "translationZh": "新任总统撤销了前任的许多政策。",
+          "explanationZh": "reversed 在此是改变或撤销；of his predecessor 表示这些政策出自前任。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/predecessor"
+        },
+        {
+          "textEn": "My predecessor showed me how to keep the records.",
+          "translationZh": "我的前任教我怎样保管这些记录。",
+          "explanationZh": "showed me how to... 表示教我如何做；predecessor 指先前做这份工作的人。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6674,
+      "word": "preempt",
+      "ipa": "/ˌpriːˈempt/",
+      "pos": "v.",
+      "coreMeaningZh": "预先占有",
+      "coreEn": "to take possession of something before others can do so",
+      "coreImageZh": "男孩比同伴先到窗边空座并坐下，后来者只好另找座位，表现先于别人占有。",
+      "mnemonics": [
+        {
+          "method": "PRE＋EMPT：先买到手",
+          "textZh": "preempt 由 preemption 逆构而来，词源中 pre- 是在先，empt 与拉丁语“购买”有关。想象别人还在挑选，你已先买下最后一件；由先买到手记住 preempt，抢先占有。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "先占空位：别人来时已有主",
+          "textZh": "借熟悉的 empty“空的”的相近拼写联想 preempt：看见空座，先一步坐下，后来的人只好另找位置。抓住 pre- 的“先”和空位变成已占的变化，记 preempt。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "预先占有",
+          "explanationZh": "及物动词，直接接被抢先占有的东西或资源，如 seats、space。这里强调先于别人取得，不只是防止某事发生；英式拼写也常作 pre-empt。",
+          "collocations": [
+            {
+              "phrase": "preempt the best seats",
+              "meaningZh": "抢先占下最好的座位"
+            },
+            {
+              "phrase": "preempt available space",
+              "meaningZh": "预先占用可用空间"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "seize",
+          "comparisonZh": "都可表示取得或占有；seize 更强调迅速、有力地夺取，preempt 更强调抢在他人前面。"
+        },
+        {
+          "word": "appropriate",
+          "comparisonZh": "也可指把东西据为己有；preempt 特别带先行占有、排除后来者的意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They arrived early and preempted the best seats.",
+          "translationZh": "他们早早到场，抢先占下了最好的座位。",
+          "explanationZh": "arrived early 说明抢先的条件；preempted 后直接接被占的座位。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "The large display preempted all the available space.",
+          "translationZh": "大型展品预先占去了所有可用空间。",
+          "explanationZh": "all the available space 是宾语；强调空间已被占去，留不给别的用途。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6675,
+      "word": "preen",
+      "ipa": "/priːn/",
+      "pos": "v.",
+      "coreMeaningZh": "打扮修饰",
+      "coreEn": "to carefully tidy and admire your appearance",
+      "coreImageZh": "男孩照镜子梳头、抚平衣领，再仔细查看自己的样子，表现用心打扮修饰。",
+      "mnemonics": [
+        {
+          "method": "GREEN：穿好绿衣，仔细打扮",
+          "textZh": "借与 preen 同押 /iːn/ 韵的 green“绿色”联想：男孩穿上绿色新衣，还在镜前梳头、理领子，转来转去看自己。绿衣穿好了还要精心修饰，记 preen。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "QUEEN：出场前整理仪容",
+          "textZh": "借 queen“女王”和 preen 的共同韵尾 /iːn/ 联想：扮女王的演员出场前，对着镜子反复整理头发和服装，满意地欣赏自己。精心打扮的这个动作就是 preen。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "打扮修饰",
+          "explanationZh": "可直接用 preen，也常接反身代词，如 preen oneself。说人时常略带不赞同，暗示花较多时间修饰并欣赏自己的外表；这里不是鸟用喙理羽毛的意思。",
+          "collocations": [
+            {
+              "phrase": "preen oneself",
+              "meaningZh": "精心打扮自己"
+            },
+            {
+              "phrase": "preen in front of a mirror",
+              "meaningZh": "在镜前打扮修饰"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "groom",
+          "comparisonZh": "都可表示整理仪容；groom 更中性，preen 常带欣赏自己、过分讲究的意味。"
+        },
+        {
+          "word": "primp",
+          "comparisonZh": "同样指花心思打扮；primp 更突出细细整理衣服、头发。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Will you stop preening yourself in front of the mirror?",
+          "translationZh": "你能别再对着镜子打扮个不停了吗？",
+          "explanationZh": "Will you stop doing...? 用于要求别人停止某事；yourself 是反身代词。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/preen"
+        },
+        {
+          "textEn": "Roald always spends ages preening (himself) before he goes out.",
+          "translationZh": "罗尔德每次出门前总要花很长时间打扮自己。",
+          "explanationZh": "spend ages doing 表示花很长时间做某事；括号中的 himself 可省略。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/preen"
+        }
+      ]
+    }
+  ]
+}

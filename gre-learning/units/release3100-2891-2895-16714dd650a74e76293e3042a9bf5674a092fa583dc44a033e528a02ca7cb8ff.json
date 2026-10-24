@@ -1,0 +1,324 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6511,
+      "word": "myriad",
+      "ipa": "/ˈmɪriəd/",
+      "pos": "adj.",
+      "coreMeaningZh": "大量的；无数的",
+      "coreEn": "extremely numerous",
+      "coreImageZh": "男孩试着数满天的星星，却发现多得数不过来；myriad 作形容词表示极多的、无数的。",
+      "mnemonics": [
+        {
+          "method": "MYRIAD ↔ 米粒，数也数不清",
+          "textZh": "把 myriad 的声音联到“米粒”：一大袋米倒进米缸，白花花的米粒铺满眼前，根本数不清。由米粒多得数不清，记 myriad，大量的、无数的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MYRIAD，万的数量扩成无数",
+          "textZh": "myriad 历史上作数量词表示一万。想象一万个小灯同时亮起，整片广场星星点点；由一万这么大的数量，扩展记住形容词 myriad，数量极多的。",
+          "kind": "etymology",
+          "weak": false,
+          "original": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "大量的；无数的",
+          "explanationZh": "形容词可直接放在复数名词前，如 myriad problems，表示极多而非严格数学上的无限。作名词时可用 a myriad of。",
+          "collocations": [
+            {
+              "phrase": "myriad possibilities",
+              "meaningZh": "无数种可能性"
+            },
+            {
+              "phrase": "myriad stars",
+              "meaningZh": "繁星；无数颗星"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "numerous",
+          "comparisonZh": "都指数量很多；myriad 更强调多得难以逐一计数，较有书面色彩。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Helicopters were sent out to recover survivors on the myriad tiny islands.",
+          "translationZh": "直升机被派出去，救回众多小岛上的幸存者。",
+          "explanationZh": "myriad 直接修饰复数名词 islands，强调岛屿众多。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/myriad"
+        },
+        {
+          "textEn": "A cloud of dust was raised by their myriad feet.",
+          "translationZh": "他们无数双脚扬起了一片尘土。",
+          "explanationZh": "myriad feet 夸张地描写大量脚步；was raised 是被动形式。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/myriad"
+        }
+      ]
+    },
+    {
+      "number": 6512,
+      "word": "nadir",
+      "ipa": "/ˈneɪdɪə(r)/",
+      "pos": "n.",
+      "coreMeaningZh": "最低点；最糟糕的阶段",
+      "coreEn": "the lowest or worst point",
+      "coreImageZh": "男孩觉得作品损坏、比赛又落选，是近来最糟糕的时刻，姐姐鼓励他从低谷重新开始；nadir 指最低点或最坏的阶段。",
+      "mnemonics": [
+        {
+          "method": "NADIR ↔ 那底儿，已经跌到底",
+          "textZh": "把 nadir 的整体声音联到“那底儿”：一个人接连受挫，指着低谷说“已经跌到那底儿了”。抓住最下面、最糟的一刻，记 nadir，最低点。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "NADIR，正下方的天底",
+          "textZh": "nadir 在天文学里指观察者正下方的天球位置，与头顶方向相对。想象从头顶一路向下指到脚底方向；由最下方的位置，记人生或事业的最低点。",
+          "kind": "semantic_image",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "最低点；最糟糕的阶段",
+          "explanationZh": "常用 reach a nadir 或 at the nadir of，描述事业、关系或士气最差的阶段，不只是一般低落。",
+          "collocations": [
+            {
+              "phrase": "reach a nadir",
+              "meaningZh": "降到最低点"
+            },
+            {
+              "phrase": "the nadir of a career",
+              "meaningZh": "职业生涯的最低谷"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "low point",
+          "comparisonZh": "都可表示低谷；nadir 尤其指最低、最糟的阶段，语气更强且较正式。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The defeat was the nadir of her career.",
+          "translationZh": "那场失败是她职业生涯的最低谷。",
+          "explanationZh": "the nadir of 后接经历或时期，指出其中最糟的一刻。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/nadir"
+        },
+        {
+          "textEn": "The city experienced an economic nadir in the 1970s.",
+          "translationZh": "这座城市在二十世纪七十年代经历了经济低谷。",
+          "explanationZh": "an economic nadir 指经济状况最差的阶段。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/nadir"
+        }
+      ]
+    },
+    {
+      "number": 6513,
+      "word": "naïve",
+      "ipa": "/naɪˈiːv/",
+      "pos": "adj.",
+      "coreMeaningZh": "天真的；纯朴的；缺乏世故的",
+      "coreEn": "innocent or lacking worldly experience",
+      "coreImageZh": "男孩轻易相信表演者能从空帽子里变出真正的城堡，姐姐提醒那只是表演；naïve 指天真、缺乏世故而容易相信别人。",
+      "mnemonics": [
+        {
+          "method": "NAÏVE ↔ 奶娃，别人说什么都信",
+          "textZh": "把 naïve 的声音近似联到“奶娃”：想象小娃娃听说纸船能载人过海，就立刻相信了。由缺少经验、容易相信别人的纯真，记 naïve，天真的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "NAÏVE ↔ NATIVE，天然未染世故",
+          "textZh": "naïve 和 native 在词源上都联系到天生、自然。想到一个保留天然信任的人，初到陌生地方，别人随口一说他就全信；由尚未被世故磨过的纯真，记 naïve。",
+          "kind": "word_family",
+          "weak": false,
+          "original": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "天真的；纯朴的；缺乏世故的",
+          "explanationZh": "可批评缺乏经验、过于轻信，也可赞赏纯真质朴，具体褒贬取决于语境。常用 naive about 或 naive enough to do。",
+          "collocations": [
+            {
+              "phrase": "naive about the world",
+              "meaningZh": "不谙世事"
+            },
+            {
+              "phrase": "naive enough to believe it",
+              "meaningZh": "天真得竟相信这件事"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "innocent",
+          "comparisonZh": "在纯真义上接近；naïve 常突出经验不足、易轻信，innocent 还可表示无辜。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "unsophisticated",
+          "comparisonZh": "在不谙世事、缺乏经验这一义上接近；naïve 常突出轻信，unsophisticated 也可表示质朴或不复杂。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I can't believe you were so naive as to trust him!",
+          "translationZh": "我真不敢相信你竟天真到相信他！",
+          "explanationZh": "so...as to 在这里表示竟然达到某种程度，语气带惊讶或批评。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/naive"
+        },
+        {
+          "textEn": "Their approach to life is refreshingly naive.",
+          "translationZh": "他们对待生活的方式纯真得令人耳目一新。",
+          "explanationZh": "refreshingly 表明这里欣赏这种纯真，而不是责备。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/naive"
+        }
+      ]
+    },
+    {
+      "number": 6514,
+      "word": "narcissistic",
+      "ipa": "/ˌnɑːsɪˈsɪstɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "自恋的；过度自我欣赏的",
+      "coreEn": "excessively admiring oneself",
+      "coreImageZh": "男孩只顾照镜子夸自己，连姐姐等他一起准备也不在意；narcissistic 形容过分迷恋、欣赏自己。",
+      "mnemonics": [
+        {
+          "method": "NARCISSISTIC，迷恋自己倒影的故事",
+          "textZh": "narcissistic 联系到希腊神话中迷恋自己水中倒影的人物 Narcissus。想到一个人对着水面看自己的脸，看得忘了周围所有人；由只顾过度欣赏自己，记自恋的。",
+          "kind": "etymology",
+          "weak": false,
+          "original": false
+        },
+        {
+          "method": "NARCISSISTIC ↔ 拿起自拍 STICK",
+          "textZh": "把 narcissistic 的声音和词尾近似联到“拿起自拍 stick（杆）”：聚会时大家等着合照，他却举着自拍杆不停只拍自己，反复欣赏自己的脸。由拿起自拍杆便只顾自己，记自恋的。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "自恋的；过度自我欣赏的",
+          "explanationZh": "形容过度自我欣赏或只顾自己的态度，通常含批评；日常形容词不等于临床人格障碍诊断。",
+          "collocations": [
+            {
+              "phrase": "narcissistic behaviour",
+              "meaningZh": "自恋行为"
+            },
+            {
+              "phrase": "a narcissistic attitude",
+              "meaningZh": "自我迷恋的态度"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "self-absorbed",
+          "comparisonZh": "都可形容过分关注自己；narcissistic 更突出自我欣赏，self-absorbed 更突出忽略他人的想法和需要。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was insufferable at times – self-centred and narcissistic.",
+          "translationZh": "他有时令人难以忍受，自我中心而又自恋。",
+          "explanationZh": "破折号后两个形容词补充说明他令人受不了的表现。",
+          "sourceAttribution": "https://www.collinsdictionary.com/us/dictionary/english/narcissistic"
+        },
+        {
+          "textEn": "Narcissistic people have a hard time seeing another person's point of view.",
+          "translationZh": "自恋的人很难从别人的角度看问题。",
+          "explanationZh": "have a hard time doing 表示做某事很困难；point of view 指看法或视角。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/narcissistic"
+        }
+      ]
+    },
+    {
+      "number": 6515,
+      "word": "natty",
+      "ipa": "/ˈnæti/",
+      "pos": "adj.",
+      "coreMeaningZh": "整洁而时髦的",
+      "coreEn": "neat and stylish in appearance",
+      "coreImageZh": "男孩把领结理正、衣摆抚平，姐姐称赞他整洁又时髦；natty 形容这种利落漂亮的打扮。",
+      "mnemonics": [
+        {
+          "method": "NEAT + TIDY：打扮利落",
+          "textZh": "把 natty 的整体词形联到 neat（整洁）和 tidy（整齐）：衬衫熨平、领结理正，整个人既整洁又好看。抓住这身利落打扮，记住 natty。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "NAUGHTY 男孩变小绅士",
+          "textZh": "把 natty 近音联到 naughty（淘气的）：淘气男孩玩得衣服乱糟糟，拍合照前却换上合身西装，顿时成了整洁时髦的小绅士。由 naughty 男孩换上 natty 打扮记住词义。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "形容衣着或外表整洁、漂亮、时髦",
+          "explanationZh": "常用来赞赏穿着利落的人或衣服，带较随意、略旧式的语气；不只是干净，也强调打扮得好看。",
+          "collocations": [
+            {
+              "phrase": "a natty dresser",
+              "meaningZh": "穿着整洁时髦的人"
+            },
+            {
+              "phrase": "a natty suit",
+              "meaningZh": "利落漂亮的西装"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "dapper",
+          "comparisonZh": "都可赞赏衣着整洁、利落好看；dapper 常形容人的打扮，尤其男性。"
+        },
+        {
+          "word": "neat",
+          "comparisonZh": "都有整洁的意思；natty 还强调时髦漂亮，neat 的范围更广。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He's quite a natty dresser.",
+          "translationZh": "他是个很会打扮、穿着利落的人。",
+          "explanationZh": "a natty dresser 指衣着整洁而时髦的人。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/natty"
+        },
+        {
+          "textEn": "Cliff was a natty dresser.",
+          "translationZh": "克利夫穿着很整洁时髦。",
+          "explanationZh": "natty 修饰 dresser，评价一个人的穿衣打扮。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/natty"
+        }
+      ]
+    }
+  ]
+}

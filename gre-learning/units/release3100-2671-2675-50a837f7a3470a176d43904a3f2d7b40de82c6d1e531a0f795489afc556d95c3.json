@@ -1,0 +1,354 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6291,
+      "word": "indigenous",
+      "ipa": "/ɪnˈdɪdʒənəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "本地原生的；土生土长的",
+      "coreEn": "originating and occurring naturally in a particular region",
+      "coreImageZh": "向导说明步道旁的蕨类一直自然生长在当地，而非从外地引种；男孩蹲近观察。indigenous 强调这种本地原生的属性。",
+      "mnemonics": [
+        {
+          "method": "INDIGENOUS，生在当地的根",
+          "textZh": "indigenous 的词源指生于某地，gen- 与产生、出生有关。想象一株植物的根从这片土地自然长起，而非从外地搬来：这是当地原生的 indigenous plant。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INDIGENOUS ↔ 因地生，在这片土地自然生长",
+          "textZh": "把 indigenous 的声音联到“因地生”。这片山林原本就有这些蕨类，它们在当地自然繁衍，不是后来搬来的盆栽。用因这片土地而自然生长，记住本地原生。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "本地原生的；土生土长的",
+          "explanationZh": "本页用于植物或动物，常说 indigenous to a place，强调自然起源或原生分布，不只是目前出现在当地。用于人群和文化时也指原住民及其文化，需尊重具体称谓。",
+          "collocations": [
+            {
+              "phrase": "indigenous to the region",
+              "meaningZh": "该地区原生的"
+            },
+            {
+              "phrase": "indigenous plants",
+              "meaningZh": "本地原生植物"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "native",
+          "comparisonZh": "在某地原生这一义上很接近；native 还可指人的出生地或母语，适用范围更宽。"
+        },
+        {
+          "word": "endemic",
+          "comparisonZh": "用于本地物种时接近，但生态学中 endemic 常强调仅限某一区域，indigenous 不一定只分布在那里。",
+          "sources": [
+            "zhangwei_dedicated_2021"
+          ]
+        },
+        {
+          "word": "homegrown",
+          "comparisonZh": "都可强调本地来源；homegrown 也常指本地栽培或培养出来的，不一定天然原生。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The kangaroo is indigenous to Australia.",
+          "translationZh": "袋鼠是澳大利亚的原生动物。",
+          "explanationZh": "indigenous to 引出原生地区。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/indigenous"
+        },
+        {
+          "textEn": "The reserve supports a wide range of indigenous species.",
+          "translationZh": "这个保护区为多种本地原生物种提供生存环境。",
+          "explanationZh": "supports 在这里指支持生存；indigenous 修饰 species。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/indigenous"
+        }
+      ]
+    },
+    {
+      "number": 6292,
+      "word": "indolent",
+      "ipa": "/ˈɪndələnt/",
+      "pos": "adj.",
+      "coreMeaningZh": "懒惰的；好逸恶劳的",
+      "coreEn": "disinclined to work or make an effort",
+      "coreImageZh": "姐姐请男孩把脚边的几块积木收好，男孩明明可以轻松完成，却懒得起身，继续靠在椅子上不愿付出一点努力。",
+      "mnemonics": [
+        {
+          "method": "INDOLENT ↔ IDLE，能做却闲着",
+          "textZh": "看到 indolent，联到词形和声音相近的 idle（闲着的）。别人已经开始收拾，他明明能帮忙却只想闲坐。由不愿付出努力的闲人，记住 indolent。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "IN- + DOL-，一点辛苦也不想沾",
+          "textZh": "indolent 的词源原指不感到痛苦，dol- 与痛苦有关。记忆时想成一个连一点辛苦都不想沾的人：只爱舒服，不愿动手。由怕费力的安逸状态，联到今天的懒惰义。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "懒惰的；好逸恶劳的",
+          "explanationZh": "较正式或文学化，强调不喜欢活动或付出努力，通常带批评意味。不同于单纯缺少工作可做，也不能把生病无力自动判成懒惰。医学上另有进展缓慢等义，本页不取。",
+          "collocations": [
+            {
+              "phrase": "an indolent person",
+              "meaningZh": "懒惰的人"
+            },
+            {
+              "phrase": "an indolent lifestyle",
+              "meaningZh": "懒散的生活方式"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "lazy",
+          "comparisonZh": "在不愿做事这一义上接近；lazy 更日常，indolent 常突出好逸恶劳。"
+        },
+        {
+          "word": "lethargic",
+          "comparisonZh": "都可表现懒洋洋、不活跃；lethargic 更强调精力不足，可能由疲劳或疾病造成，不能一概指不愿努力。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She is indolent and irresponsible.",
+          "translationZh": "她懒惰又不负责任。",
+          "explanationZh": "两个形容词并列描述她的特点。",
+          "sourceAttribution": "Merriam-Webster，词典收录的完整句。 https://www.merriam-webster.com/dictionary/indolent"
+        },
+        {
+          "textEn": "I was an indolent creature who could not imagine action.",
+          "translationZh": "我那时是个懒散的人，根本想不到要采取行动。",
+          "explanationZh": "who 从句进一步说明懒散到缺乏行动意愿。",
+          "sourceAttribution": "Cambridge，词典收录的完整句。 https://dictionary.cambridge.org/us/dictionary/english/indolent"
+        }
+      ]
+    },
+    {
+      "number": 6293,
+      "word": "indurate",
+      "ipa": "/ˈɪndərət/",
+      "pos": "adj.",
+      "coreMeaningZh": "冷酷无情的；心肠硬的",
+      "coreEn": "hardened and lacking sympathy",
+      "coreImageZh": "口渴的男孩恳求朋友分一点水，朋友明知他难受仍毫不同情地拒绝，并把水抱回自己身旁，表现铁石心肠。",
+      "mnemonics": [
+        {
+          "method": "INDURATE ↔ DURABLE，心像耐硬材料",
+          "textZh": "indurate 与 durable（耐用的）同源，都连到坚硬、持久的意思。把冷酷者的心想成一块怎么也软不下来的硬材料：听到哀求仍不动情，就是 indurate。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INDURATE ↔ ENDURE，苦难后心不再软",
+          "textZh": "把 indurate 联到同源的 endure（忍受）。想象某人经历长期艰苦后，不但能忍，还对别人的痛苦失去了同情。由 endure 的忍受，联到故事里这颗变硬的心，记住 indurate：铁石心肠。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "冷酷无情的；心肠硬的",
+          "explanationZh": "本页取较少见、正式的形容词义，强调心肠硬、不动同情。也可作动词表示使硬化或使冷酷；形容词末尾读弱音，不同于动词常读 /eɪt/。不要把情绪镇定或坚韧一概说成冷酷。",
+          "collocations": [
+            {
+              "phrase": "an indurate heart",
+              "meaningZh": "冷酷的心"
+            },
+            {
+              "phrase": "remain indurate",
+              "meaningZh": "仍然冷酷无情"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "callous",
+          "comparisonZh": "在缺乏同情、心肠硬这一义上接近；callous 更常见，常暗示对别人的痛苦漠然。"
+        },
+        {
+          "word": "unfeeling",
+          "comparisonZh": "都表示缺乏同情；unfeeling 较直接，indurate 还带心肠已经硬化的意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His indurate heart remained unmoved by their pleas.",
+          "translationZh": "他冷酷的心没有被他们的恳求打动。",
+          "explanationZh": "indurate 作形容词修饰 heart，unmoved 强调不动同情。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "She found him indurate and unwilling to help the injured stranger.",
+          "translationZh": "她发现他冷酷无情，不愿帮助那个受伤的陌生人。",
+          "explanationZh": "found him 后的形容词作宾语补足语，描述此人的冷酷态度。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6294,
+      "word": "ineluctable",
+      "ipa": "/ˌɪnɪˈlʌktəbl/",
+      "pos": "adj.",
+      "coreMeaningZh": "不可避免的；无法逃脱的",
+      "coreEn": "impossible to avoid or escape",
+      "coreImageZh": "男孩想让这一天的太阳不要落下，姐姐说明日落无法避免；太阳仍逐渐没入海平线，愿望不能阻止这个必然过程。",
+      "mnemonics": [
+        {
+          "method": "IN- + LUCT-，挣扎也逃不掉",
+          "textZh": "ineluctable 的词源来自“无法挣脱”，其中 luct- 与搏斗、挣扎有关。想象你与时间较劲，想把日落拉住却办不到：再挣扎也逃不掉，就是 ineluctable。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INELUCTABLE ↔ 一律逃不了，终点总会来",
+          "textZh": "把 ineluctable 的声音粗略联到“一律逃不了”。不论把钟藏起来还是捂住眼睛，时间仍在走，天仍会黑。由谁都逃不了的过程，提醒自己这是不可避免的。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不可避免的；无法逃脱的",
+          "explanationZh": "正式用语，常形容命运、变化、趋势或逻辑结论无法回避。比常见的 unavoidable 更有不可抗拒的语气；不是所有意外或不愿接受的事都必然发生。",
+          "collocations": [
+            {
+              "phrase": "an ineluctable fate",
+              "meaningZh": "无法逃脱的命运"
+            },
+            {
+              "phrase": "ineluctable change",
+              "meaningZh": "不可避免的变化"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "inevitable",
+          "comparisonZh": "都表示不可避免；inevitable 更常见，ineluctable 较正式，尤其强调无法摆脱。",
+          "sources": [
+            "zhangwei_dedicated_2021",
+            "B"
+          ]
+        },
+        {
+          "word": "inescapable",
+          "comparisonZh": "都可表示无法逃避；inescapable 也可强调证据或结论无法回避，使用更广。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "the ineluctable approach of winter had many worried about the cost of heating their homes",
+          "translationZh": "冬季不可避免地临近，让许多人担忧家庭取暖的费用。",
+          "explanationZh": "保留词典原有小写形式；ineluctable 修饰 approach，表示冬天终将到来。",
+          "sourceAttribution": "Merriam-Webster，词典收录的完整句。 https://www.merriam-webster.com/dictionary/ineluctable"
+        },
+        {
+          "textEn": "True to the faith he had been professing all through his life, he accepted gracefully what was ineluctable.",
+          "translationZh": "他忠于毕生宣称的信仰，从容接受了无法避免的事情。",
+          "explanationZh": "what was ineluctable 指无法避免的事，accepted gracefully 表示从容接受。",
+          "sourceAttribution": "Collins，词典收录的完整句。 https://www.collinsdictionary.com/dictionary/english/ineluctable"
+        }
+      ]
+    },
+    {
+      "number": 6295,
+      "word": "inept",
+      "ipa": "/ɪˈnept/",
+      "pos": "adj.",
+      "coreMeaningZh": "不熟练的；笨手笨脚的",
+      "coreEn": "lacking the skill or ability needed for a task",
+      "coreImageZh": "男孩想把水倒进杯里，却把壶嘴对偏，水流落在杯旁；姐姐指出他倒水很不熟练，男孩停止倒水后看着桌上的水。",
+      "mnemonics": [
+        {
+          "method": "IN- + EPT，不适合这项活",
+          "textZh": "inept 的词源中 in- 是否定，ept 来自表示合适的词根。把它想成一双还不适合这项活的手：倒水时壶嘴没对准杯口，做得笨拙、不熟练。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INEPT ↔ 一捏破，手上功夫太生疏",
+          "textZh": "把 inept 的声音联到“一捏破”。别人轻轻捏成漂亮泥杯，他却没掌握力度，一捏就把杯壁弄破了。这个笨手笨脚的操作，提示 inept。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不熟练的；笨手笨脚的",
+          "explanationZh": "可形容人、动作、处理方式等缺乏相应能力。常说 inept at doing something，也可说 socially inept。这里强调本次技能不足，不是对人格的否定；其他语境还可表示言行不得体。",
+          "collocations": [
+            {
+              "phrase": "inept at handling tools",
+              "meaningZh": "不善于使用工具"
+            },
+            {
+              "phrase": "an inept attempt",
+              "meaningZh": "笨拙的尝试"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "clumsy",
+          "comparisonZh": "都可描述操作笨拙；clumsy 更常突出身体动作不灵巧，inept 也可指计划或办事能力差。"
+        },
+        {
+          "word": "incompetent",
+          "comparisonZh": "都可表示能力不足；incompetent 常强调不能胜任职责，语气通常比一次 inept attempt 更重。"
+        },
+        {
+          "word": "unequal to",
+          "comparisonZh": "在不能胜任某项任务这一义上接近；须说 unequal to the task，而 inept 常接 at，不直接互换介词。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She was left feeling inept and inadequate.",
+          "translationZh": "她结果感到自己笨拙而能力不足。",
+          "explanationZh": "feeling 后两个形容词描述她的感受，不是客观终身评价。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/inept"
+        },
+        {
+          "textEn": "He's intelligent but socially inept (= not good at relating to people socially).",
+          "translationZh": "他很聪明，却不擅长社交（即不善于在社交中与人相处）。",
+          "explanationZh": "socially 限定不熟练的领域；保留词典括号中的完整解释。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/inept"
+        }
+      ]
+    }
+  ]
+}

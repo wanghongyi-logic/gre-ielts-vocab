@@ -1,0 +1,340 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6471,
+      "word": "minutiae",
+      "ipa": "/maɪˈnjuːʃiiː/",
+      "pos": "n. pl.",
+      "coreMeaningZh": "次要的细节；琐事",
+      "coreEn": "very small details, often of little importance",
+      "coreImageZh": "聚会桌已经布置妥当，男孩却反复调整纸巾角和杯子的细小位置，姐姐提醒这些次要细节不用继续纠结；minutiae 就是这些琐碎的小细节。",
+      "mnemonics": [
+        {
+          "method": "MINUTIAE ↔ MINUTE，细小处变成琐碎细节",
+          "textZh": "minutiae 与表示微小的 minute 同源。想到一张大设计图旁边那些细小的边角、线宽和装饰位置：一个个小到容易忽略的细节，合起来就是 minutiae。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MINUTIAE ↔ MINI + TIE，只盯小领结",
+          "textZh": "把 minutiae 的词形联到 mini 和 tie（小型的、领带）：演出已经准备好了，却一直纠结小领结的结歪没歪、边齐没齐。由小领结上的琐碎讲究，记住 minutiae，细枝末节。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "次要的细节；琐事",
+          "explanationZh": "通常作复数名词，常接 of，表示某件事情中的小细节，语境中常暗示这些细节不值得过分纠缠；但不等于一切细节都无用。单数形式为 minutia，日常较少见。",
+          "collocations": [
+            {
+              "phrase": "the minutiae of daily life",
+              "meaningZh": "日常生活中的琐事"
+            },
+            {
+              "phrase": "get bogged down in minutiae",
+              "meaningZh": "陷在细枝末节里"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "particular",
+          "comparisonZh": "作名词时指一个细节，常用复数 particulars；minutiae 本身为复数，且更突出细小琐碎。",
+          "sources": [
+            "zhangwei_dedicated_2021"
+          ]
+        },
+        {
+          "word": "particulars",
+          "comparisonZh": "都可指细节；particulars 可含重要的具体信息，minutiae 更偏细微或琐碎之处。",
+          "sources": [
+            "B"
+          ]
+        },
+        {
+          "word": "details",
+          "comparisonZh": "都表示细节；details 范围更广，并不暗示不重要，minutiae 带很小很细的意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The committee studied the minutiae of the report for hours.",
+          "translationZh": "委员会花了几个小时研究报告的细枝末节。",
+          "explanationZh": "the minutiae of 表示……的细节，for hours 表示持续数小时。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/dictionary/english/minutiae"
+        },
+        {
+          "textEn": "Comedy is so often based on the minutiae of everyday life.",
+          "translationZh": "喜剧往往以日常生活中的琐碎细节为基础。",
+          "explanationZh": "be based on 表示以……为基础，everyday life 指日常生活。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/dictionary/english/minutiae"
+        }
+      ]
+    },
+    {
+      "number": 6472,
+      "word": "mirage",
+      "ipa": "/məˈrɑːʒ/",
+      "pos": "n.",
+      "coreMeaningZh": "海市蜃楼；幻象",
+      "coreEn": "an image that appears real but is not, especially a heat-related optical illusion",
+      "coreImageZh": "男孩把炎热沙地远处的反光当成池水，姐姐解释那只是海市蜃楼；他再仔细看，远方仍是干燥沙地，明白看似有水却不是真水，这就是 mirage。",
+      "mnemonics": [
+        {
+          "method": "MIRAGE ↔ MIRROR + IMAGE，看得见却摸不到",
+          "textZh": "把 mirage 的整体词形联到 mirror 和 image（镜子、影像）：镜子里看见一池水，伸手却摸不到池水本身。由看似真实却并非实物的影像，记住 mirage，海市蜃楼般的幻象。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MIRAGE ↔ 没啦，看似有水却没啦",
+          "textZh": "把 mirage 的声音联到“没啦”：热路面远处看着有水，换个角度一看，水影没啦，只剩干燥的路。由看似有却抓不住的水影，记住 mirage，海市蜃楼。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "海市蜃楼；幻象",
+          "explanationZh": "可数名词，字面指热空气等造成的光学幻象，常像远处有水；也可比喻看似真实却无法实现的希望。不是每个 mirage 都是人的精神错觉，光学现象本身也可称 mirage。",
+          "collocations": [
+            {
+              "phrase": "see a mirage",
+              "meaningZh": "看见海市蜃楼"
+            },
+            {
+              "phrase": "the mirage of an oasis",
+              "meaningZh": "绿洲的幻象"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "illusion",
+          "comparisonZh": "都可表示幻象；illusion 范围更广，mirage 的字面义特别指光学海市蜃楼。"
+        },
+        {
+          "word": "vision",
+          "comparisonZh": "都可指看见的景象；vision 不一定虚假，mirage 强调看似真实却不是那样。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Through my half-closed eyelids I began to see mirages.",
+          "translationZh": "透过半闭的眼睛，我开始看见海市蜃楼。",
+          "explanationZh": "through 引出观看的方式，began to see 表示开始看见。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/mirage"
+        },
+        {
+          "textEn": "It hovered before his eyes like the mirage of an oasis.",
+          "translationZh": "它像绿洲的海市蜃楼一样浮现在他眼前。",
+          "explanationZh": "like 引出比喻，the mirage of an oasis 指绿洲的幻象。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/mirage"
+        }
+      ]
+    },
+    {
+      "number": 6473,
+      "word": "mire",
+      "ipa": "/maɪə(r)/",
+      "pos": "n.",
+      "coreMeaningZh": "困境；难以摆脱的局面",
+      "coreEn": "a complicated or unpleasant situation that is hard to escape",
+      "coreImageZh": "男孩本想修好风筝线，却越拉越乱，线团缠在一起，既无法放飞又不知道从哪解开；mire 在这里比喻使人难以摆脱的困境。",
+      "mnemonics": [
+        {
+          "method": "MIRE ↔ 迈啊，陷住后迈不开",
+          "textZh": "把 mire 的声音联到“迈啊”：脚陷进黏泥，想迈步却迈不开。再把这个画面转到麻烦缠身、进退不得，就记住 mire 的比喻义，难以摆脱的困境。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MIRE ↔ WIRE，乱线缠成困境",
+          "textZh": "把 mire 的整体词形联到 wire（电线）：一堆电线缠成乱团，想接上设备却不知先解哪根，工作被卡住。由乱 wire 把事情拖进难解局面，记住 mire，困境。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "困境；难以摆脱的局面",
+          "explanationZh": "困境义常用单数，常说 in a mire、a mire of debt 等，带难以脱身的意味。字面还指泥潭；动词 mire 常见被动 be mired in，表示陷入麻烦。",
+          "collocations": [
+            {
+              "phrase": "a mire of debt",
+              "meaningZh": "债务泥潭"
+            },
+            {
+              "phrase": "get out of the mire",
+              "meaningZh": "摆脱困境"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "predicament",
+          "comparisonZh": "都表示困境；predicament 可指尴尬或困难处境，mire 常强调被深深拖住、难以脱身。"
+        },
+        {
+          "word": "mess",
+          "comparisonZh": "在混乱难办的局面这一义上接近；mess 较口语，也可指物理脏乱，mire 的比喻更有陷住感。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We must not be drawn into the mire of civil war.",
+          "translationZh": "我们绝不能被拖入内战的泥潭。",
+          "explanationZh": "be drawn into 是被动结构，表示被卷入某种局面。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/us/dictionary/english/mire?topic=difficult-situations-and-unpleasant-experiences"
+        },
+        {
+          "textEn": "The economy is not out of the mire yet.",
+          "translationZh": "经济尚未摆脱困境。",
+          "explanationZh": "not ... yet 表示尚未，out of the mire 指脱离困境。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english-thesaurus/mire"
+        }
+      ]
+    },
+    {
+      "number": 6474,
+      "word": "mirth",
+      "ipa": "/mɜːθ/",
+      "pos": "n.",
+      "coreMeaningZh": "欢乐；欢笑",
+      "coreEn": "happiness and amusement expressed in laughter",
+      "coreImageZh": "男孩故意把大帽子戴得歪歪的，做出滑稽表情，姐姐忍不住笑起来，男孩也开心地笑；mirth 就是这样洋溢在笑声中的欢乐。",
+      "mnemonics": [
+        {
+          "method": "MIRTH ↔ MERRY，欢乐从笑声里传出来",
+          "textZh": "mirth 与 merry（欢乐的）同源。想到熟悉的 Merry Christmas：聚在一起的人互相讲趣事，越说越开心，笑声充满房间。由 merry 的欢乐气氛，记住名词 mirth，欢乐与欢笑。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MIRTH ↔ 美事，遇上美事笑开怀",
+          "textZh": "把 mirth 的声音联到“美事”：朋友们盼了很久的聚会终于成行，大家说着“真是件美事”，忍不住笑开怀。由美事带来的欢笑，记住 mirth，欢乐。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "欢乐；欢笑",
+          "explanationZh": "不可数名词，偏文学或正式，常指由有趣事情引发、伴随笑声的欢乐。可说 cause/provoke mirth、tears of mirth；不是单纯的平静满足。",
+          "collocations": [
+            {
+              "phrase": "tears of mirth",
+              "meaningZh": "笑出来的眼泪"
+            },
+            {
+              "phrase": "cause mirth",
+              "meaningZh": "引起欢笑"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "amusement",
+          "comparisonZh": "都可表示觉得有趣的愉快；amusement 可以只是微微觉得好笑，mirth 更常伴随明显欢笑。"
+        },
+        {
+          "word": "merriment",
+          "comparisonZh": "都表示欢笑欢乐；merriment 常指一群人热闹欢娱，mirth 也可描述个人笑意。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The performance produced much mirth among the audience.",
+          "translationZh": "这场表演让观众欢笑不已。",
+          "explanationZh": "produced 在这里表示引起，much 修饰不可数名词 mirth。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mirth"
+        },
+        {
+          "textEn": "It was all he could do to stop tears of mirth falling down his cheeks.",
+          "translationZh": "他费了好大劲才没让笑出来的眼泪顺着脸颊流下。",
+          "explanationZh": "It was all he could do to 表示他勉强才做到，tears of mirth 是笑泪。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/mirth"
+        }
+      ]
+    },
+    {
+      "number": 6475,
+      "word": "misanthropic",
+      "ipa": "/ˌmɪsənˈθrɒpɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "厌恶人类的；不信任他人的",
+      "coreEn": "showing a general dislike or distrust of people",
+      "coreImageZh": "男孩友善地邀请长椅上的男子参加野餐，男子却把所有人都看作自私、不可信，拒绝接近大家；misanthropic 指这种对人类普遍厌恶或不信任的态度。",
+      "mnemonics": [
+        {
+          "method": "MISANTHROPIC：MIS- 厌恶 + ANTHROP- 人类",
+          "textZh": "misanthropic 中的 mis- 表示厌恶，anthrop- 表示人类。把两个意思连成一个态度：不是只讨厌某个人，而是认定人类都不值得信任，谁也不愿接近。由“厌恶＋人类”，记住 misanthropic。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MISANTHROPIC ↔ 没人特靠谱，谁都不信",
+          "textZh": "把 misanthropic 的整体声音联到“没人特靠谱”：别人友善地邀请他，他却认定所有人都自私，谁也不可信。由这种对所有人的不信任，记住 misanthropic，厌恶人类的。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "厌恶人类的；不信任他人的",
+          "explanationZh": "形容对人类或人性普遍厌恶、不信任的态度，可修饰人、观点、言论；不是单指害羞、喜欢独处，也不必包含暴力行为。",
+          "collocations": [
+            {
+              "phrase": "a misanthropic attitude",
+              "meaningZh": "厌恶人类的态度"
+            },
+            {
+              "phrase": "a misanthropic outlook",
+              "meaningZh": "厌世的看法"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "cynical",
+          "comparisonZh": "都可能怀疑人的动机；cynical 偏认为别人不真诚，misanthropic 进一步突出对人类普遍的厌恶。"
+        },
+        {
+          "word": "antisocial",
+          "comparisonZh": "在不愿与人来往这一点上接近；antisocial 还可指危害社会或妨碍他人，misanthropic 重点在厌人态度。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was shunned because of his miserable misanthropic nature.",
+          "translationZh": "他因那令人不快、厌恶人类的性情而受到疏远。",
+          "explanationZh": "because of 后接名词短语，misanthropic 修饰 nature。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/misanthropic"
+        },
+        {
+          "textEn": "The moral corruption he saw around him made him misanthropic.",
+          "translationZh": "他看到周围的道德败坏，因而对人类产生了厌恶。",
+          "explanationZh": "made him misanthropic 是“使他变得……”的宾语补足语结构。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/misanthropic"
+        }
+      ]
+    }
+  ]
+}

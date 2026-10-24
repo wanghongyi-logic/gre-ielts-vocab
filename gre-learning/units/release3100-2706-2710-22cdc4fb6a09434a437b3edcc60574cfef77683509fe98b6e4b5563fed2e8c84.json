@@ -1,0 +1,334 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6326,
+      "word": "intemperate",
+      "ipa": "/ɪnˈtempərət/",
+      "pos": "adj.",
+      "coreMeaningZh": "无节制的；过激的",
+      "coreEn": "excessive and lacking restraint, especially in words or behavior",
+      "coreImageZh": "老师只说画还可以改进，男孩却暴怒地回应老师，说出十分难听的话。姐姐劝他冷静；intemperate 形容这种不加节制、过激的言语和反应。",
+      "mnemonics": [
+        {
+          "method": "INTEMPERATE ↔ TEMPER，脾气失去控制",
+          "textZh": "看到 intemperate，联到 temper（脾气）：别人只轻轻提个意见，他的脾气就猛地冲上来，骂个不停。抓住脾气不受节制，记住 intemperate 过激的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INTEMPERATE ↔ TEMPERATURE，情绪温度爆表",
+          "textZh": "把 intemperate 联到 temperature（温度）。想象情绪有支温度计，一点小批评就让它直冲顶端，话也越说越过火；情绪温度失控，就是无节制的、过激的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "无节制的；过激的",
+          "explanationZh": "常修饰言语、语气、反应等，强调强烈得缺乏控制，带批评意味；也可表示过度饮酒。这里不是普通坚定或热情，而是过了适当的分寸。",
+          "collocations": [
+            {
+              "phrase": "intemperate language",
+              "meaningZh": "过激的言辞"
+            },
+            {
+              "phrase": "an intemperate reaction",
+              "meaningZh": "过激的反应"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "excessive",
+          "comparisonZh": "都可表示过度、超出适当限度；intemperate 更常突出言行缺乏节制。",
+          "sources": [
+            "zhangwei_dedicated_2021",
+            "B"
+          ]
+        },
+        {
+          "word": "unrestrained",
+          "comparisonZh": "都能描述不加控制的表现；unrestrained 也可用于无拘束的快乐，不一定像 intemperate 那样带批评。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The tone of the article is intemperate.",
+          "translationZh": "这篇文章的语气很过激。",
+          "explanationZh": "intemperate 作表语，评价文章语气缺乏克制。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/intemperate"
+        },
+        {
+          "textEn": "The speech itself was aggressive, intemperate, not only offensive but meant to offend.",
+          "translationZh": "这番讲话本身充满攻击性、毫无节制，不仅冒犯人，而且就是有意要冒犯人。",
+          "explanationZh": "not only… but… 连接两层递进评价，meant to offend 表示有意冒犯。",
+          "sourceAttribution": "Collins，页面例句 https://www.collinsdictionary.com/dictionary/english/intemperate"
+        }
+      ]
+    },
+    {
+      "number": 6327,
+      "word": "intensify",
+      "ipa": "/ɪnˈtensɪfaɪ/",
+      "pos": "vt./vi.",
+      "coreMeaningZh": "加强；增强；激化",
+      "coreEn": "to make or become stronger or more intense",
+      "coreImageZh": "男孩把风扇调大，姐姐手中的布条从轻轻摆动变成明显向后飘动。风力被加强了，这就是 intensify。",
+      "mnemonics": [
+        {
+          "method": "INTENSE + -IFY，让强度上升",
+          "textZh": "intensify 由 intense（强烈的）和表示使成为的 -ify 构成。想象把灯的亮度旋钮向上转，光越来越强；使它更强烈，就是 intensify 加强。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INTENSIFY ↔ 音腾四方，声音越来越强",
+          "textZh": "把 intensify 的声音近似联成“音腾四方”：原本轻轻的鼓声越敲越响，最后响彻四周。由声音逐渐增强，记住 intensify。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "加强；增强；激化",
+          "explanationZh": "可作及物或不及物动词，表示程度或强度提高，不局限于数量增加。常接 efforts、pressure、conflict 等，也可说某种活动或情绪自身加剧。",
+          "collocations": [
+            {
+              "phrase": "intensify efforts",
+              "meaningZh": "加强努力"
+            },
+            {
+              "phrase": "intensify the pressure",
+              "meaningZh": "加大压力"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "strengthen",
+          "comparisonZh": "都可表示使更强；strengthen 还常指结构变牢固，intensify 更强调强度或程度增加。"
+        },
+        {
+          "word": "heighten",
+          "comparisonZh": "在增强感情、效果或程度这一义上接近；heighten 也可表示使某物更高。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He intensified his training, running 45 miles a week.",
+          "translationZh": "他加强了训练，每周跑四十五英里。",
+          "explanationZh": "running 短语具体说明如何加强训练。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/us/dictionary/english/intensify"
+        },
+        {
+          "textEn": "The opposition leader has intensified his attacks on the government.",
+          "translationZh": "反对派领导人加强了对政府的抨击。",
+          "explanationZh": "has intensified 使用现在完成时，attacks on 指针对某方的抨击。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/intensify"
+        }
+      ]
+    },
+    {
+      "number": 6328,
+      "word": "inter",
+      "ipa": "/ɪnˈtɜːr/",
+      "pos": "vt.",
+      "coreMeaningZh": "埋葬；安葬",
+      "coreEn": "to bury a dead person or place remains in a tomb",
+      "coreImageZh": "工作人员把土铲入墓穴，逐渐盖住安放在里面的棺木，最后留下覆土的坟墓。inter 指把死者安葬入土。",
+      "mnemonics": [
+        {
+          "method": "IN + TER，安放入土",
+          "textZh": "inter 的词源是 in-（进入）加表示土地的 ter-。想象棺木放入地下，泥土慢慢盖上：把死者安放入土，就是 inter 安葬。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INTER ↔ ENTER，进入最后的安息处",
+          "textZh": "把 inter 联到 enter（进入）：送葬的人把棺木送入墓穴，死者进入最后的安息处。抓住进入墓穴这一场景，记住 inter 埋葬。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "埋葬；安葬",
+          "explanationZh": "正式的及物动词，宾语是死者或遗骸，常见被动 be interred in a tomb。过去式和过去分词是 interred；它不是表示两者之间的前缀 inter- 的独立用法。",
+          "collocations": [
+            {
+              "phrase": "be interred in a tomb",
+              "meaningZh": "被安葬在墓中"
+            },
+            {
+              "phrase": "inter the remains",
+              "meaningZh": "安葬遗骸"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "bury",
+          "comparisonZh": "在安葬死者这一义上接近；bury 也能指埋藏普通物品，inter 通常不这样用。"
+        },
+        {
+          "word": "entomb",
+          "comparisonZh": "都可指安葬；entomb 更突出放入墓室或封入坟墓。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The princess was interred on an island in the middle of a lake.",
+          "translationZh": "那位公主被安葬在湖中央的一座岛上。",
+          "explanationZh": "was interred 是被动语态，on an island 说明安葬地点。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/inter_1"
+        },
+        {
+          "textEn": "the soldier was interred with great honors at Arlington National Cemetery",
+          "translationZh": "那名士兵以极高的荣誉被安葬在阿灵顿国家公墓。",
+          "explanationZh": "with great honors 表示以隆重礼遇，at 引出墓地。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/inter"
+        }
+      ]
+    },
+    {
+      "number": 6329,
+      "word": "intercessor",
+      "ipa": "/ˌɪntərˈsesər/",
+      "pos": "n.",
+      "coreMeaningZh": "调停者；代为求情的人",
+      "coreEn": "someone who intervenes between people to mediate or plead for another",
+      "coreImageZh": "两名同学争着先玩球，姐姐介入调停，提出轮流玩的办法，两人同意了。intercessor 就是帮助双方化解争执的调停者。",
+      "mnemonics": [
+        {
+          "method": "INTER- + CESS-，走到双方之间",
+          "textZh": "intercessor 的 inter- 表示在两者之间，cess- 来自走、前进。想象两人吵得不可开交，有人走到中间，听双方说明、劝他们和解；这位走出来调解的人就是 intercessor。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INTERCESSOR ↔ SISTER，姐姐来劝和",
+          "textZh": "把 intercessor 后半段的声音联到 sister（姐姐）。两人争执时，姐姐走到中间，帮他们找到双方都接受的办法；由在中间劝和的姐姐，记住 intercessor 调停者。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "调停者；代为求情的人",
+          "explanationZh": "可数名词，指介入双方之间调解，或替他人请求帮助、宽待的人。也用于宗教语境中代人祈祷者；本页画面采用人与人之间的调停。",
+          "collocations": [
+            {
+              "phrase": "act as an intercessor",
+              "meaningZh": "担任调停者"
+            },
+            {
+              "phrase": "an intercessor between the two sides",
+              "meaningZh": "双方之间的调停人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "mediator",
+          "comparisonZh": "在帮助双方解决分歧的第三方这一义上接近；intercessor 也可能更偏向替某一方求情。"
+        },
+        {
+          "word": "go-between",
+          "comparisonZh": "都可表示在双方之间沟通的人；go-between 未必主动调解争执，也可能只传递消息。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Dozens and dozens of women needed counseling, direction, a chance to share their grievances, and an intercessor.",
+          "translationZh": "许许多多的女性需要咨询、指引、倾诉委屈的机会，以及一个代她们出面的人。",
+          "explanationZh": "needed 后接并列名词短语，an intercessor 指能替她们出面求助或协调的人。",
+          "sourceAttribution": "Collins，页面例句 https://www.collinsdictionary.com/dictionary/english/intercessor"
+        },
+        {
+          "textEn": "She acted as an intercessor between the two angry neighbors.",
+          "translationZh": "她在两个气愤的邻居之间担任调停人。",
+          "explanationZh": "act as 表示担任某种角色，between 点明调停的双方。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6330,
+      "word": "interdict",
+      "ipa": "/ˌɪntərˈdɪkt/",
+      "pos": "vt.",
+      "coreMeaningZh": "正式禁止",
+      "coreEn": "to forbid something by an authoritative order",
+      "coreImageZh": "男孩正准备投喂，管理员明确宣布这里禁止喂鱼，男孩收起鱼食。interdict 表示以权威命令禁止某事。",
+      "mnemonics": [
+        {
+          "method": "INTER- + DICT-，插话下禁令",
+          "textZh": "interdict 的 inter- 表示在中间，dict- 表示说。想象有人正要开始一项活动，主管插进一句明确的“禁止进行”；由权威出言阻止，记住 interdict 正式禁止。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INTERDICT ↔ DICTIONARY，字典被禁止外借",
+          "textZh": "把 interdict 联到 dictionary（字典）。管理员把珍贵字典收进柜子，正式宣布“这本字典禁止外借”。由字典旁那条明确禁令，记住 interdict 禁止。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "正式禁止",
+          "explanationZh": "及物动词，语气正式，通常指主管机关、法律或宗教权威明确禁止某项行为。另有军事拦截或切断运输线的用法，名词则表示禁令；这里聚焦正式禁止这一动词义。",
+          "collocations": [
+            {
+              "phrase": "interdict the use of something",
+              "meaningZh": "正式禁止使用某物"
+            },
+            {
+              "phrase": "be interdicted by law",
+              "meaningZh": "被法律禁止"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "prohibit",
+          "comparisonZh": "都表示明令禁止；prohibit 更常见，可直接用于规章或法律。"
+        },
+        {
+          "word": "forbid",
+          "comparisonZh": "都能表示禁止；forbid 范围更广，个人要求也可以用，interdict 更正式、权威色彩更强。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "the state legislature moved to interdict the use of radar-detection devices by motorists",
+          "translationZh": "州立法机关采取行动，拟禁止驾车者使用雷达探测装置。",
+          "explanationZh": "move to do 表示采取行动以做某事，the use of 是被禁止的行为。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/interdict"
+        },
+        {
+          "textEn": "The court interdicted the sale of the disputed land.",
+          "translationZh": "法院禁止出售那块有争议的土地。",
+          "explanationZh": "interdicted 后接 the sale，说明被明令禁止的是出售行为。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    }
+  ]
+}

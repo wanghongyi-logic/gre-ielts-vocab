@@ -1,0 +1,336 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6641,
+      "word": "placate",
+      "ipa": "/pləˈkeɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "（通过让步）平息，抚慰",
+      "coreEn": "to ease someone’s anger, often by making a concession",
+      "coreImageZh": "男孩弄坏女孩的纸风车后，主动把自己的风车赔给她；女孩接过赔偿，神情缓和下来，他用让步平息了她的怒气。",
+      "mnemonics": [
+        {
+          "method": "PLAC：把怒气安抚下来",
+          "textZh": "placate 来自拉丁语 placare“安抚、平息”，直接把 plac- 连到让人消气。男孩弄坏风车后，把自己的赔给女孩，她接过后不再生气；placate，通过让步平息怒气。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "PLEASE 亲戚：让对方满意来消气",
+          "textZh": "please“使满意”与 placate 有较远的词源亲缘。商店送错货，店主主动换货并承担运费，让生气的顾客满意下来；由 please 连到 placate，安抚、平息。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "（通过让步）平息，抚慰",
+          "explanationZh": "及物动词，宾语通常是生气或不满的人，也可指反对情绪。常用 placate somebody by doing something 或 with something，强调用让步、补偿等降低怒气。",
+          "collocations": [
+            {
+              "phrase": "placate an angry customer",
+              "meaningZh": "安抚愤怒的顾客"
+            },
+            {
+              "phrase": "placate somebody with an apology",
+              "meaningZh": "用道歉平息某人的怒气"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "appease",
+          "comparisonZh": "都可指通过满足要求、作出让步来安抚；appease 有时带姑息意味。",
+          "sources": [
+            "zhangwei_original3000"
+          ]
+        },
+        {
+          "word": "conciliate",
+          "comparisonZh": "都能缓和不满；conciliate 更常着眼于修复关系、争取好感。",
+          "sources": [
+            "zhangwei_original3000"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The concessions did little to placate the students.",
+          "translationZh": "这些让步几乎没有平息学生们的怒气。",
+          "explanationZh": "did little to 表示几乎没有起到某种作用；concessions 是让步。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/placate"
+        },
+        {
+          "textEn": "The administration placated protesters by agreeing to consider their demands.",
+          "translationZh": "管理方同意考虑抗议者的要求，从而安抚了他们。",
+          "explanationZh": "by agreeing to 表示采用的方式；consider 后直接接名词 demands。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/placate"
+        }
+      ]
+    },
+    {
+      "number": 6642,
+      "word": "placebo",
+      "ipa": "/pləˈsiːbəʊ/",
+      "pos": "n.",
+      "coreMeaningZh": "安慰性的事物",
+      "coreEn": "something offered to comfort or appease rather than solve the underlying problem",
+      "coreImageZh": "比赛取消让男孩很失望，工作人员送他一枚纪念徽章，他的表情缓和了一点；徽章提供了安慰，却没有让比赛重新开始。",
+      "mnemonics": [
+        {
+          "method": "PLACE：从“使高兴”到安慰",
+          "textZh": "placebo 来自拉丁语“我将使人高兴”，其中 place- 源于 placere“使满意”。想象比赛取消后，工作人员送来纪念徽章；事情没有改变，人却得到一点安慰。placebo，安慰性的事物。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "PLEASE 亲戚：送个小物件宽宽心",
+          "textZh": "please“使高兴”与 placebo 都追溯到拉丁语 placere。出游取消，朋友送来一张风景明信片，让你稍微高兴一点，却不能补回旅行。借 please 连到 placebo，聊以安慰的东西。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "安慰性的事物",
+          "explanationZh": "本条是非医疗的比喻义：某种东西或安排带来安慰，却没有解决根本问题，常带有限、象征性的意味。最常见的医疗义是安慰剂，但不能把所有 placebo 都理解成药物。",
+          "collocations": [
+            {
+              "phrase": "a placebo for disappointed fans",
+              "meaningZh": "给失望球迷的一点安慰"
+            },
+            {
+              "phrase": "serve as a placebo",
+              "meaningZh": "起到安慰作用"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "consolation",
+          "comparisonZh": "都可指安慰或慰藉之物；consolation 较中性，placebo 常暗示只是安慰而无实质补救。"
+        },
+        {
+          "word": "palliative",
+          "comparisonZh": "都可能提供缓解而不解决根源；palliative 更强调缓解不适，placebo 在此强调心理安慰。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The souvenir was a placebo for fans disappointed by the canceled concert.",
+          "translationZh": "这份纪念品成了演唱会取消后给失望歌迷的一点安慰。",
+          "explanationZh": "for 引出得到安慰的人；disappointed by... 是过去分词短语，修饰 fans。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "The new committee served as a placebo while the real problems remained unsolved.",
+          "translationZh": "新设的委员会只是起到了安慰作用，真正的问题仍未解决。",
+          "explanationZh": "serve as 表示起到某种作用；while 在此形成对照，指出根本问题仍在。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6643,
+      "word": "plagiarize",
+      "ipa": "/ˈpleɪdʒəraɪz/",
+      "pos": "v.",
+      "coreMeaningZh": "剽窃，抄袭",
+      "coreEn": "to pass off someone else’s words, ideas, or work as one’s own",
+      "coreImageZh": "另一名学生照着男孩的龙画描出同样的图案，还在课堂上说是自己想出来的；他把别人的创作冒充自己的，这就是抄袭。",
+      "mnemonics": [
+        {
+          "method": "PLAGI：把别人的作品“绑走”",
+          "textZh": "plagiarize 的 plagi- 来自拉丁语中“绑架者”的词，后来用于偷走别人的文字。想象有人把同学的整篇文章“绑走”，换上自己的名字；plagiarize，剽窃。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "把别人的主意据为己有",
+          "textZh": "仍用 plagi- “绑走”的词源画面：同学刚设计出一条独特的龙，另一个人就把图案搬到自己的纸上，宣称是自己想出来的。像把创意“绑到自己名下”，记 plagiarize，抄袭。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "剽窃，抄袭",
+          "explanationZh": "可及物，也可不及物，核心是使用他人的文字、想法或成果而冒充原创。可接文章、结果等宾语，也可用 plagiarize from 引出抄袭来源；与单纯引用并注明来源不同。",
+          "collocations": [
+            {
+              "phrase": "plagiarize a report",
+              "meaningZh": "抄袭一份报告"
+            },
+            {
+              "phrase": "plagiarize from an article",
+              "meaningZh": "从一篇文章中抄袭"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "steal",
+          "comparisonZh": "两者都可指窃取；plagiarize 特指文字、思想或作品方面的剽窃。"
+        },
+        {
+          "word": "copy",
+          "comparisonZh": "都可能涉及照搬；copy 本身可中性，plagiarize 明确包含冒充原创、未给予应有署名的含义。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He plagiarized a classmate's report.",
+          "translationZh": "他抄袭了一位同学的报告。",
+          "explanationZh": "plagiarized 是及物动词，report 是被抄袭的内容。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/plagiarize"
+        },
+        {
+          "textEn": "She plagiarized from an article she read on the Internet.",
+          "translationZh": "她抄袭了自己在网上读到的一篇文章的内容。",
+          "explanationZh": "from 引出来源；she read on the Internet 修饰 article。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/plagiarize"
+        }
+      ]
+    },
+    {
+      "number": 6644,
+      "word": "plangent",
+      "ipa": "/ˈplændʒənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "凄凉的，哀伤的",
+      "coreEn": "expressing deep sadness, especially through sound",
+      "coreImageZh": "老人独自在空桥下拉琴，悠长低沉的声音在河面回荡；男孩停下来静静倾听，眼里含泪，这段琴声凄凉而哀伤。",
+      "mnemonics": [
+        {
+          "method": "PLANG：从捶胸到哀叹",
+          "textZh": "plangent 的 plang- 来自拉丁语 plangere，既有击打义，也有哀叹义；古人因悲伤而捶胸，把两层意思连起来。想到捶胸哀叹的声音，就记住 plangent，凄凉哀伤的。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "让琴声替人哀叹",
+          "textZh": "仍抓 plang- “哀叹”：老人把思念老朋友的心情拉进小提琴里，悠长的旋律仿佛替他叹息，让听者也难过。由哀叹连到 plangent，带着深深哀伤的。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "凄凉的，哀伤的",
+          "explanationZh": "文学色彩较强，常形容声音、音乐或歌词，强调哀婉、凄凉而富于表现力。另有响亮回荡义；本条重点是悲伤色彩，不能只理解成声音大。",
+          "collocations": [
+            {
+              "phrase": "a plangent melody",
+              "meaningZh": "哀婉的旋律"
+            },
+            {
+              "phrase": "plangent chords",
+              "meaningZh": "凄凉的和弦"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "plaintive",
+          "comparisonZh": "都可形容声音哀怨；plangent 常兼有深沉回响和强烈表现力。"
+        },
+        {
+          "word": "mournful",
+          "comparisonZh": "都表示哀伤；mournful 也可形容人的神态或气氛，plangent 更常用于声音和表达。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Plangent organ music filled the church.",
+          "translationZh": "哀婉的管风琴声充满了教堂。",
+          "explanationZh": "plangent 修饰 organ music；filled 表示声音充满空间。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/plangent"
+        },
+        {
+          "textEn": "And nicely plangent chords accompanied the mutiny leader's body solemnly being brought to port.",
+          "translationZh": "叛变领袖的遗体被庄严地运回港口，恰到好处的哀婉和弦一路相伴。",
+          "explanationZh": "accompanied 是谓语；being brought to port 是被动结构，描述遗体被运回港口。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/plangent"
+        }
+      ]
+    },
+    {
+      "number": 6645,
+      "word": "plateau",
+      "ipa": "/ˈplætəʊ/",
+      "pos": "n.",
+      "coreMeaningZh": "高原；稳定时期，平台期",
+      "coreEn": "a broad raised flat area; a period or level with little change",
+      "coreImageZh": "男孩爬完陡坡，来到高高的宽阔平地，沿着平坦地面继续前行；这片高而平的土地就是高原。",
+      "mnemonics": [
+        {
+          "method": "PLAT：高处铺平的一片地",
+          "textZh": "plateau 来自法语，plat 表示平坦。想象爬上陡坡后，脚下突然出现一大片平地；抓住“高处的平”，记 plateau，高原。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "PLATE 盘子：上升后走平",
+          "textZh": "plateau 开头的 plate 让人想到平平的盘子：把成绩曲线想成一条爬上盘沿的蚂蚁，到达盘面后一直横着走，高度不再增加。plateau，也指发展停在同一水平的平台期。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "高原；稳定时期，平台期",
+          "explanationZh": "地理义是周围较低、顶部较平坦的广阔高地；比喻义指经过增长后进入变化很小的阶段，常用 reach a plateau。复数可写 plateaus 或 plateaux。",
+          "collocations": [
+            {
+              "phrase": "a high plateau",
+              "meaningZh": "一片高原"
+            },
+            {
+              "phrase": "reach a plateau",
+              "meaningZh": "达到平台期"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "tableland",
+          "comparisonZh": "对应地理义，指顶部平坦的高地，与 plateau 很接近。"
+        },
+        {
+          "word": "stable level",
+          "comparisonZh": "对应比喻义，强调水平保持稳定；plateau 常含此前经历增长的背景。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A broad valley opened up leading to a high, flat plateau of cultivated land.",
+          "translationZh": "一条宽阔的山谷展现在眼前，通向一片地势高而平坦的农耕高原。",
+          "explanationZh": "leading to... 修饰 valley，说明山谷通向哪里；cultivated land 指耕地。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/plateau"
+        },
+        {
+          "textEn": "The price of gas seems to have reached a plateau.",
+          "translationZh": "汽油价格似乎已经进入了稳定阶段。",
+          "explanationZh": "seems to have reached 表示看起来已经达到；a plateau 在此不是地形。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/plateau"
+        }
+      ]
+    }
+  ]
+}

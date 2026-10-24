@@ -1,0 +1,344 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6691,
+      "word": "procure",
+      "ipa": "/prəˈkjʊr/",
+      "pos": "v.",
+      "coreMeaningZh": "获得，取得",
+      "coreEn": "to obtain something, often through care or effort",
+      "coreImageZh": "男孩向保管员说明需要，等对方取出服装后双手接过，表现经过设法而取得所需物品。",
+      "mnemonics": [
+        {
+          "method": "为此费心：设法取得",
+          "textZh": "procure 的词源是“为……照料、操办”，pro- 表示为，后半来自表示照料的词。想象为演出费心找服装，问过保管员，终于借到需要的衣服；设法取得就是 procure。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "CARE：用心办到手",
+          "textZh": "procure 词源中“照料、用心”的意思可用熟悉的 care 来抓住。想象为家里找缺少的零件，认真询问、寻找，最后把零件带回来；用心设法拿到，记 procure。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "获得，取得",
+          "explanationZh": "较正式的及物动词，接取得的物品，常含经过努力或安排。可说 procure something for somebody，也可说 procure somebody something；此处只讲取得义。",
+          "collocations": [
+            {
+              "phrase": "procure a ticket",
+              "meaningZh": "设法弄到票"
+            },
+            {
+              "phrase": "procure supplies",
+              "meaningZh": "取得物资"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "obtain",
+          "comparisonZh": "都表示获得；obtain 较通用，procure 更常暗示费心寻找或安排。"
+        },
+        {
+          "word": "acquire",
+          "comparisonZh": "可指逐渐获得财物、技能等；procure 更常说为具体需要取得物品。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She managed to procure a ticket for the concert.",
+          "translationZh": "她设法弄到了一张音乐会门票。",
+          "explanationZh": "manage to do 表示设法成功做成；for the concert 说明门票用途。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/procure"
+        },
+        {
+          "textEn": "They procured a copy of the report for us.",
+          "translationZh": "他们为我们弄到了一份报告。",
+          "explanationZh": "procure something for somebody 表示为某人取得某物。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/procure"
+        }
+      ]
+    },
+    {
+      "number": 6692,
+      "word": "prod",
+      "ipa": "/prɒd/",
+      "pos": "v.",
+      "coreMeaningZh": "促使……行动",
+      "coreEn": "to urge or push someone to take action",
+      "coreImageZh": "同伴向男孩指出待整理的材料并催他开始，男孩终于动手，表现用提醒敦促人行动。",
+      "mnemonics": [
+        {
+          "method": "轻轻一推：话语让人动起来",
+          "textZh": "prod 有“戳、推”的具体意思，也能引申为敦促。想象同伴的话像轻轻一推，把一直坐着的人推动起来开始干活；用提醒推动行动，记 prod。",
+          "kind": "semantic_image",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "ROD：指示棒催你开始",
+          "textZh": "借 prod 中看得到的 rod“杆、棒”联想：老师用指示棒指向待完成的任务，提醒你“现在开始”，你这才动手。把棒指向任务、话催人行动的画面连到 prod。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "促使……行动",
+          "explanationZh": "本课取及物动词“敦促、促使行动”。常用 prod somebody into doing something 或 prod somebody to do something；可由言语、提醒或形势促成，并不需要实际戳人。",
+          "collocations": [
+            {
+              "phrase": "prod someone into action",
+              "meaningZh": "敦促某人行动"
+            },
+            {
+              "phrase": "prod someone to respond",
+              "meaningZh": "催促某人回应"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "goad",
+          "comparisonZh": "都可表示促使行动；goad 常含更强刺激或激将，prod 可以是提醒催促。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "nudge",
+          "comparisonZh": "都能表示温和推动；nudge 更轻、更含蓄，prod 可更直接地催促。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She was prodded into joining the team.",
+          "translationZh": "她在敦促下加入了团队。",
+          "explanationZh": "was prodded 是被动语态；into 后接 joining，说明被促成的行动。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/prod"
+        },
+        {
+          "textEn": "The strike may prod the government into action.",
+          "translationZh": "罢工也许会促使政府采取行动。",
+          "explanationZh": "may 表示可能；prod somebody into action 表示促使某人行动。",
+          "sourceAttribution": "GRE核心词汇考法精析，原书PDF第792页"
+        }
+      ]
+    },
+    {
+      "number": 6693,
+      "word": "prodigal",
+      "ipa": "/ˈprɒdɪɡəl/",
+      "pos": "adj.; n.",
+      "coreMeaningZh": "挥霍的；败家子",
+      "coreEn": "wasteful with money; a person who spends it recklessly",
+      "coreImageZh": "男孩不顾背包里已有玩具，仍接连购买，最后发现钱袋空了，表现挥霍钱财及挥霍无度的人。",
+      "mnemonics": [
+        {
+          "method": "往外赶：把钱花散了",
+          "textZh": "prodigal 来自拉丁语“赶走、挥霍”，其中有“向外”和“驱赶”的含义。想象钱刚到口袋，就被一笔笔赶出去买不需要的东西；把钱挥霍掉的，是 prodigal。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "钱往外跑：留下空钱袋",
+          "textZh": "仍抓词源里“往外花散”的意思：一个人不停买买买，钱像从袋口跑出去，最后只剩空袋。形容这种花法是 prodigal；把这样的人称为 a prodigal，就是挥霍无度的人。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "挥霍的；败家子",
+          "explanationZh": "作形容词表示挥霍钱财、时间或资源，含不赞同；可用 prodigal habits。作可数名词 a prodigal 指败家子、挥霍无度的人。不要与 prodigy“神童”混淆。",
+          "collocations": [
+            {
+              "phrase": "prodigal habits",
+              "meaningZh": "挥霍的习惯"
+            },
+            {
+              "phrase": "a prodigal",
+              "meaningZh": "挥霍无度的人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "profligate",
+          "comparisonZh": "作形容词都可指挥霍；profligate 还可批评放荡不检点，prodigal 此处着重花费无度。",
+          "sources": [
+            "weichen_gre",
+            "zhangwei_original3000",
+            "zhangwei_dedicated_2021"
+          ]
+        },
+        {
+          "word": "spendthrift",
+          "comparisonZh": "作名词都指花钱无度的人；spendthrift 更直接，prodigal 较书面。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Prodigal habits die hard.",
+          "translationZh": "挥霍的习惯很难改掉。",
+          "explanationZh": "die hard 是习语，表示难以消除，不是字面的死亡。",
+          "sourceAttribution": "张巍GRE核心词汇3000，原书第192页（PDF第194页）"
+        },
+        {
+          "textEn": "The million-dollar lottery winner was such a prodigal that his windfall was exhausted after only a few years.",
+          "translationZh": "那个中彩票赢得百万的人如此挥霍，意外之财仅几年就花光了。",
+          "explanationZh": "such a...that... 表示如此……以至于；a prodigal 是名词，指挥霍无度的人。",
+          "sourceAttribution": "GRE核心词汇考法精析，原书PDF第793页"
+        }
+      ]
+    },
+    {
+      "number": 6694,
+      "word": "profane",
+      "ipa": "/prəˈfeɪn/",
+      "pos": "v.",
+      "coreMeaningZh": "亵渎",
+      "coreEn": "to treat something sacred with disrespect or contempt",
+      "coreImageZh": "参观者把滑稽玩具摆上庄重祭台并嬉笑，男孩严肃制止，表现不敬地对待神圣事物。",
+      "mnemonics": [
+        {
+          "method": "庙外的做法，带到神圣处",
+          "textZh": "profane 的词源中 pro- 表示在前，fanum 表示神庙，原意是神庙之外、非神圣的。想象把随意嬉闹的做法带到神圣祭台前，不再尊重它；动词 profane 就是亵渎。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "FAN：拿神圣物开玩笑",
+          "textZh": "借 profane 里看得到的 fan“扇子”联想：有人竟拿庄重的圣物当扇子嬉笑扇风，旁人赶紧制止。把不尊重神圣事物的动作，连到 profane，亵渎。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "亵渎",
+          "explanationZh": "这里是及物动词，宾语通常是神圣场所、祭坛或受到敬重的事物，强调不敬地对待。不是本词形容词“世俗的”用法；单纯非宗教并不等于亵渎。",
+          "collocations": [
+            {
+              "phrase": "profane an altar",
+              "meaningZh": "亵渎祭坛"
+            },
+            {
+              "phrase": "profane a sacred place",
+              "meaningZh": "亵渎神圣场所"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "desecrate",
+          "comparisonZh": "都指亵渎神圣事物；desecrate 常突出损毁、污损等行为，profane 也可通过轻慢使用造成亵渎。",
+          "sources": [
+            "B"
+          ]
+        },
+        {
+          "word": "defile",
+          "comparisonZh": "可指玷污清洁或纯洁；profane 更明确针对神圣事物的不敬。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Invading troops profaned the altar by playing poker on it.",
+          "translationZh": "入侵部队在祭坛上打扑克，亵渎了祭坛。",
+          "explanationZh": "by doing 表示通过某行为；it 指 altar。",
+          "sourceAttribution": "GRE核心词汇考法精析，原书PDF第794页"
+        },
+        {
+          "textEn": "The infidels profaned the holy shrine.",
+          "translationZh": "那些不信奉该宗教的人亵渎了神圣的圣殿。",
+          "explanationZh": "profaned 是过去式，直接接被亵渎的对象；infidels 是旧式、带宗教立场的称呼，现代叙述宜谨慎使用。",
+          "sourceAttribution": "https://dictionary.cambridge.org/us/thesaurus/profane"
+        }
+      ]
+    },
+    {
+      "number": 6695,
+      "word": "proffer",
+      "ipa": "/ˈprɑːfər/",
+      "pos": "v.; n.",
+      "coreMeaningZh": "献出，提供",
+      "coreEn": "to offer something for acceptance; an offer",
+      "coreImageZh": "男孩看到同伴口渴，主动把自己的水杯递到对方面前，对方伸手接受，表现献出、提供。",
+      "mnemonics": [
+        {
+          "method": "OFFER：主动送到面前",
+          "textZh": "proffer 和熟悉的 offer“提供”同源，读音也押韵。想象同伴需要帮助，你主动把援手送到面前，让他选择接受；这种主动提供，记 proffer。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "向前递出：让对方选择接受",
+          "textZh": "proffer 的词源有“向前提供”的意思。想象客人进门，你将一杯茶礼貌地递到面前；这个递出、提供的动作是 proffer，所作的提供也可叫 a proffer。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "献出，提供",
+          "explanationZh": "作动词较正式，通常及物，可接帮助、建议、解释或物品；强调提出供对方接受，不保证对方接受。作名词 a proffer 指一次提供或提议。",
+          "collocations": [
+            {
+              "phrase": "proffer advice",
+              "meaningZh": "提出建议"
+            },
+            {
+              "phrase": "a proffer of help",
+              "meaningZh": "提供帮助的提议"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "offer",
+          "comparisonZh": "最常见的近义词；proffer 更正式，也常含礼貌主动地递出。"
+        },
+        {
+          "word": "tender",
+          "comparisonZh": "都可指正式提出或提供；tender 常用于提交辞呈、报价等正式场合。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He proffered advice on how best to proceed.",
+          "translationZh": "他就怎样继续最为妥当提出了建议。",
+          "explanationZh": "on 引出建议内容；how best to proceed 表示如何最好地继续。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/proffer"
+        },
+        {
+          "textEn": "She proffered her assistance in helping the two sides reach a compromise.",
+          "translationZh": "她主动提供帮助，协助双方达成妥协。",
+          "explanationZh": "proffered her assistance 表示主动提供帮助；help somebody do 表示帮助某人做。",
+          "sourceAttribution": "GRE核心词汇考法精析，原书PDF第794页"
+        }
+      ]
+    }
+  ]
+}

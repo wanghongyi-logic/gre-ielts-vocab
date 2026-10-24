@@ -1,0 +1,333 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6351,
+      "word": "irrigate",
+      "ipa": "/ˈɪrɪɡeɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "灌溉",
+      "coreEn": "to supply land or crops with water",
+      "coreImageZh": "姐姐把软管里的水引向干燥菜畦，土壤逐渐湿润，蔬菜得到水分。这种给土地和庄稼供水的做法叫 irrigate 灌溉。",
+      "mnemonics": [
+        {
+          "method": "IRRIGATE ↔ RIVER + GATE，开闸引水入田",
+          "textZh": "把 irrigate 的形音联到 river（河）和 gate（闸门）。打开河边的闸门，水沿渠道进入干田，庄稼得到水分；由开闸引水，记住 irrigate 灌溉。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "IR- + RIG-，把水送进去润湿",
+          "textZh": "irrigate 的词源中，ir- 来自表示进入的 in-，rig- 表示润湿。想象水通过管道进入干燥土壤，把菜根周围慢慢润湿；这就是 irrigate 灌溉。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "灌溉",
+          "explanationZh": "及物动词，接 land、fields、crops 等，指人为供水以帮助作物生长。另有冲洗伤口或身体部位的医学义，本页用农田供水义。",
+          "collocations": [
+            {
+              "phrase": "irrigate farmland",
+              "meaningZh": "灌溉农田"
+            },
+            {
+              "phrase": "irrigated crops",
+              "meaningZh": "得到灌溉的作物"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "water",
+          "comparisonZh": "在给土地或植物供水这一义上接近；water 更日常，也可指给一盆花浇水。"
+        },
+        {
+          "word": "moisten",
+          "comparisonZh": "都可使变湿；moisten 只说明湿润，irrigate 强调为土地或庄稼供水。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The waters in these three rivers irrigate the plains of Punjab.",
+          "translationZh": "这三条河的水灌溉着旁遮普平原。",
+          "explanationZh": "waters 指这些河流的水，irrigate 的宾语是得到水分的平原。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/irrigate"
+        },
+        {
+          "textEn": "None of the water from Lake Powell is used to irrigate the area.",
+          "translationZh": "鲍威尔湖的水完全没有被用于灌溉这一地区。",
+          "explanationZh": "None of 表示没有任何，is used to 后接动词原形说明用途。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/irrigate"
+        }
+      ]
+    },
+    {
+      "number": 6352,
+      "word": "irritate",
+      "ipa": "/ˈɪrɪteɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "惹恼；使不耐烦",
+      "coreEn": "to annoy someone, especially through repeated disturbance",
+      "coreImageZh": "姐姐正在读书，男孩不断敲桌，害她分心皱眉。这个反复的声音惹恼了她，体现 irritate。",
+      "mnemonics": [
+        {
+          "method": "IRRITATE ↔ 一日太多，重复打扰惹人烦",
+          "textZh": "把 irritate 的声音近似联成“一日太”：同一个铃声一日响得太多，反复打断你做事，终于把你惹烦。由重复打扰引起烦躁，记住 irritate。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "IRRITATE ↔ IRATE，把人惹得愤怒",
+          "textZh": "irritate 的整体词形让你联到 irate（愤怒的）。想象有人不停打断说话，原本平静的人终于变得 irate；使人恼怒的打扰就是 irritate。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "惹恼；使不耐烦",
+          "explanationZh": "及物动词，通常接被惹恼的人；常强调小事不断重复，使人烦躁。另可表示使皮肤等发炎不适，宾语换成身体部位时要按语境理解。",
+          "collocations": [
+            {
+              "phrase": "irritate someone intensely",
+              "meaningZh": "使某人十分烦躁"
+            },
+            {
+              "phrase": "be irritated by noise",
+              "meaningZh": "因噪声而恼火"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "annoy",
+          "comparisonZh": "都表示使人烦恼，使用范围很接近；irritate 常突出不断刺激形成的不耐烦。"
+        },
+        {
+          "word": "irk",
+          "comparisonZh": "都表示使烦恼或不快；irk 常用于具体事情令人不满意。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "That man really irritates me!",
+          "translationZh": "那个人真让我恼火！",
+          "explanationZh": "really 加强语气，irritates 与第三人称单数主语一致。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/irritate"
+        },
+        {
+          "textEn": "The noise was beginning to irritate me intensely.",
+          "translationZh": "那噪声开始让我非常烦躁。",
+          "explanationZh": "was beginning to 表示烦躁逐渐出现，intensely 加强程度。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/irritate"
+        }
+      ]
+    },
+    {
+      "number": 6353,
+      "word": "issue",
+      "ipa": "/ˈɪʃuː/",
+      "pos": "n.",
+      "coreMeaningZh": "有争议的议题；待讨论的问题",
+      "coreEn": "a matter that people discuss or disagree about",
+      "coreImageZh": "男孩想举办球赛，同学想组织郊游，老师让两人讨论到底选哪种活动。这个需要讨论决定、双方意见不同的问题，就是 issue 议题。",
+      "mnemonics": [
+        {
+          "method": "ISSUE ↔ 一休，大家请他评理",
+          "textZh": "把 issue 的声音联到熟悉的一休：两人意见不合，请一休帮忙评理，他先问“你们争的到底是什么问题？”抓住那个需要讨论的问题，记住 issue 议题。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "ISSUE ↔ TISSUE，纸巾引发的议题",
+          "textZh": "把 issue 联到只多一个开头字母的 tissue（纸巾）。有人主张餐厅免费提供纸巾，有人主张收费，大家开始讨论；由纸巾引出的争议议题，记住 issue。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "有争议的议题；待讨论的问题",
+          "explanationZh": "可数名词，本页指人们正在讨论或争论的重要问题。常与 discuss、raise、address 连用；另可指一期刊物，或作动词表示发布、流出。",
+          "collocations": [
+            {
+              "phrase": "raise an issue",
+              "meaningZh": "提出一个议题"
+            },
+            {
+              "phrase": "discuss a controversial issue",
+              "meaningZh": "讨论一个有争议的问题"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "question",
+          "comparisonZh": "在有待讨论解决的问题这一义上接近；question 还可指直接向人提出的问句。"
+        },
+        {
+          "word": "matter",
+          "comparisonZh": "都可指需要考虑的事情；issue 更突出讨论、争议或重要性，matter 的范围更广。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The party was divided on this issue.",
+          "translationZh": "该党在这个议题上存在分歧。",
+          "explanationZh": "be divided on 表示对某个问题意见不一。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/issue_1"
+        },
+        {
+          "textEn": "This evening we're debating the issue of education funding.",
+          "translationZh": "今晚我们讨论教育经费这个议题。",
+          "explanationZh": "the issue of 引出具体议题，are debating 表示正在或计划中的讨论。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/issue_1"
+        }
+      ]
+    },
+    {
+      "number": 6354,
+      "word": "jabber",
+      "ipa": "/ˈdʒæbər/",
+      "pos": "vi.",
+      "coreMeaningZh": "快而含糊地说；叽里咕噜地说",
+      "coreEn": "to talk so rapidly or indistinctly that speech is hard to understand",
+      "coreImageZh": "男孩急着讲赛车经历，说得又快又含糊，姐姐听不清，只好请他放慢。jabber 就是这种叽里咕噜、快而不清楚地说。",
+      "mnemonics": [
+        {
+          "method": "JABBER ↔ 加倍，语速加倍听不清",
+          "textZh": "把 jabber 的声音近似联成“加倍”：兴奋的人把语速加倍，一口气说个不停，别人根本听不清。由快得含糊的说话声，记住 jabber。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "JABBER ↔ JAB，话像快拳接连打出",
+          "textZh": "把 jabber 联到 jab（短促的一拳）。想象说话像连打快拳，词一个接一个急促冒出，听的人来不及分辨；这种快而不清的话就是 jabber。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "快而含糊地说；叽里咕噜地说",
+          "explanationZh": "常作不及物动词，jabber about something 表示围绕某事急促含糊地说；也可接说出的内容。通常带说话太快、令人听不明白的评价。",
+          "collocations": [
+            {
+              "phrase": "jabber about something",
+              "meaningZh": "叽里咕噜地说某事"
+            },
+            {
+              "phrase": "jabber away",
+              "meaningZh": "喋喋不休地快说"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "gabble",
+          "comparisonZh": "都指说得太快、含糊难懂，意思很接近。"
+        },
+        {
+          "word": "chatter",
+          "comparisonZh": "都可指不停说话；chatter 常是轻松闲聊，不一定含糊难懂。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "What is he jabbering about now?",
+          "translationZh": "他现在又在叽里咕噜说什么？",
+          "explanationZh": "jabber about 的宾语被疑问词 what 提到句首。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/jabber_1"
+        },
+        {
+          "textEn": "She rushed into the room jabbering something about a dog.",
+          "translationZh": "她冲进房间，急急忙忙地说着有关一只狗的什么事。",
+          "explanationZh": "jabbering 短语伴随 rushed，说明进房间时说话的状态。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/jabber"
+        }
+      ]
+    },
+    {
+      "number": 6355,
+      "word": "jape",
+      "ipa": "/dʒeɪp/",
+      "pos": "v.",
+      "coreMeaningZh": "嘲弄；取笑",
+      "coreEn": "to mock someone or make fun of something",
+      "coreImageZh": "男孩认真做出一只略歪的陶杯，同学却拿它取笑，姐姐提醒他别嘲弄别人的作品；jape 在这里指嘲弄。",
+      "mnemonics": [
+        {
+          "method": "JAPE ↔ APE，学猿猴的样子取笑人",
+          "textZh": "把 jape 联到 ape（猿）：有人故意学着猿猴的动作，模仿同伴走路来取笑他。由学样子嘲弄别人，记住 jape。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "JAPE ↔ 假拍，假装拍手其实在嘲弄",
+          "textZh": "把 jape 的声音近似联成“假拍”：别人出了小差错，有人却夸张地假装拍手叫好，明明是在嘲弄他。由这阵讽刺的假掌声，记住 jape。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "嘲弄；取笑",
+          "explanationZh": "可作不及物动词，指说笑或嘲弄；也可作及物动词，接被取笑的人或事。较少见，常带文学色彩。名词 jape 则是一句玩笑或恶作剧。",
+          "collocations": [
+            {
+              "phrase": "jape about something",
+              "meaningZh": "拿某事开玩笑"
+            },
+            {
+              "phrase": "jape with someone",
+              "meaningZh": "与某人说笑"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "mock",
+          "comparisonZh": "在嘲弄、取笑这一义上接近；mock 更常用，侮辱或轻蔑意味也可更强。"
+        },
+        {
+          "word": "joke",
+          "comparisonZh": "都可表示说笑；jape 可带嘲弄意味，joke 的范围更广。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "the characters in Oscar Wilde's plays jape with a readiness and sophistication that is rarely, if ever, encountered in real life",
+          "translationZh": "奥斯卡·王尔德剧中的人物说起俏皮话来既敏捷又老练，现实中即使有，也很少见。",
+          "explanationZh": "主语是剧中人物，that 引导的从句修饰 readiness and sophistication，形容他们说笑的特点。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/jape"
+        },
+        {
+          "textEn": "He japed about my crooked clay cup until I asked him to stop.",
+          "translationZh": "他一直拿我歪斜的陶杯取笑，直到我请他停下。",
+          "explanationZh": "japed about 引出取笑的事情，until 表示这种行为持续到何时。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    }
+  ]
+}

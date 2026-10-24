@@ -1,0 +1,337 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6436,
+      "word": "mannered",
+      "ipa": "/ˈmænəd/",
+      "pos": "adj.",
+      "coreMeaningZh": "做作的；不自然的",
+      "coreEn": "artificial and not natural in behaviour or style",
+      "coreImageZh": "男孩故意用夸张的鞠躬和手势打招呼，姐姐觉得像刻意表演，劝他自然一点；mannered 指行为或表现做作、不自然。",
+      "mnemonics": [
+        {
+          "method": "MANNERED ↔ MANNER，礼节做过了头",
+          "textZh": "从熟词 manner（方式、举止）联到 mannered：打个招呼也刻意摆姿势、拖长声音，把普通礼节演得过了头。由过度修饰的 manner，记住 mannered，做作的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MANNERED ↔ MAN + RED，红毯前刻意摆姿势",
+          "textZh": "把 mannered 的词形联到 man 和 red（男子、红色）：男子走到红毯上，为了显得高贵，故意挺胸、夸张鞠躬，每个动作都像摆拍。由红毯前不自然的表演，记住 mannered。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "做作的；不自然的",
+          "explanationZh": "通常带批评意味，指说话、动作或艺术风格显得刻意、不自然。它不同于 well-mannered（有礼貌的）；单独的 mannered 不只是礼貌好。",
+          "collocations": [
+            {
+              "phrase": "a mannered performance",
+              "meaningZh": "做作的表演"
+            },
+            {
+              "phrase": "a mannered style",
+              "meaningZh": "矫饰的风格"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "affected",
+          "comparisonZh": "在做作、不自然这一义上接近；affected 常强调装出来的举止，mannered 也常评价艺术风格。"
+        },
+        {
+          "word": "artificial",
+          "comparisonZh": "都可表示不自然；artificial 范围更广，还可表示人工制造，mannered 专指刻意修饰的表现。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His prose style is far too mannered and self-conscious.",
+          "translationZh": "他的散文风格过于矫饰，刻意得很。",
+          "explanationZh": "far too 强调过度，self-conscious 在此指过分留意表现而不自然。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mannered"
+        },
+        {
+          "textEn": "If you arrange your picture too systematically, the results can look very mannered.",
+          "translationZh": "如果把画面安排得过于刻板，效果可能显得很做作。",
+          "explanationZh": "if 引出条件，look 后接形容词说明看起来的效果。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/mannered"
+        }
+      ]
+    },
+    {
+      "number": 6437,
+      "word": "manumit",
+      "ipa": "/ˌmænjʊˈmɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "解放奴隶",
+      "coreEn": "to release a person from slavery",
+      "coreImageZh": "历史剧中的主人宣布解除对成年人的奴役，将解放文书交给他，对方成为自由人；manumit 指解放奴隶。",
+      "mnemonics": [
+        {
+          "method": "MANUMIT：手松开，让人获得自由",
+          "textZh": "manumit 的词源由“手”和“放开、释放”组成。借熟词 manual（手工的）抓住 manu- 的手：原本象征控制的手张开，受奴役的人终于获得自由。由松手解除奴役，记住 manumit。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MANUMIT ↔ MAN + PERMIT，准许他成为自由人",
+          "textZh": "把 manumit 的词形联到 man 和 permit（人、准许）：一份正式文书准许受奴役的人脱离奴役，他从此可以自己决定去留。由给予自由的许可，记住 manumit，解放奴隶。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "解放奴隶",
+          "explanationZh": "正式及物动词，宾语是受奴役的人，常用于历史叙述。manumitted、manumitting 末尾 t 双写；不是普通放假或准许离开房间。",
+          "collocations": [
+            {
+              "phrase": "manumit an enslaved person",
+              "meaningZh": "解放一名受奴役者"
+            },
+            {
+              "phrase": "be manumitted",
+              "meaningZh": "被解除奴役"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "emancipate",
+          "comparisonZh": "在解除奴役这一义上接近；emancipate 还可表示摆脱其他控制，manumit 专指使奴隶获得自由。"
+        },
+        {
+          "word": "enfranchise",
+          "comparisonZh": "在解放、使自由这一义上接近；enfranchise 另常表示给予选举权，manumit 专指解除奴役。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "the document manumitted the enslaved men",
+          "translationZh": "这份文件使那些受奴役的男子获得了自由。",
+          "explanationZh": "document 作主语，manumitted 表示文件产生的解放效力。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/manumit"
+        },
+        {
+          "textEn": "After the war, some Black Continental soldiers were manumitted; many, however, were not.",
+          "translationZh": "战后，一些大陆军中的黑人士兵被解除奴役，但还有许多人没有获得自由。",
+          "explanationZh": "were manumitted 是被动语态；后半句省略 manumitted，与前半句形成对照。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/manumit"
+        }
+      ]
+    },
+    {
+      "number": 6438,
+      "word": "manuscript",
+      "ipa": "/ˈmænjuskrɪpt/",
+      "pos": "n.",
+      "coreMeaningZh": "手稿；尚未出版的稿件",
+      "coreEn": "a handwritten text or an unpublished written work",
+      "coreImageZh": "作者在纸上用笔写作，告诉男孩这是自己亲手写的故事初稿，随后整理成一叠；manuscript 指手稿，也可指尚未出版的作品稿件。",
+      "mnemonics": [
+        {
+          "method": "MANUSCRIPT：手写的 SCRIPT",
+          "textZh": "manuscript 的词源包含“用手”和“写下”。借 manual（手工的）抓住 manu-，再联到 script（文字稿）：作者亲手写下的一页页文字，合起来就是 manuscript，手稿。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MANUSCRIPT ↔ MENU + SCRIPT，菜单先写成稿",
+          "textZh": "把 manuscript 的整体词形联到 menu 和 script（菜单、文字稿）：餐厅要印新菜单，先拿纸笔把菜名一项项写成稿，再交去排印。由印刷前亲手写好的菜单稿，记住 manuscript。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "手稿；尚未出版的稿件",
+          "explanationZh": "可指手写的书或文献，也可指尚未出版的作品稿件，现代稿件不一定手写。可说 submit a manuscript，in manuscript 表示以稿本形式。",
+          "collocations": [
+            {
+              "phrase": "a handwritten manuscript",
+              "meaningZh": "一份手写稿"
+            },
+            {
+              "phrase": "submit a manuscript",
+              "meaningZh": "提交稿件"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "draft",
+          "comparisonZh": "都可指作品稿件；draft 突出尚待修改的版本，manuscript 可以已定稿但尚未出版。"
+        },
+        {
+          "word": "handwritten text",
+          "comparisonZh": "在手写文稿这一义上接近；manuscript 也能指现代非手写的出版前稿件。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I read her poems in manuscript.",
+          "translationZh": "我读过她诗作的稿本。",
+          "explanationZh": "in manuscript 表示以稿本而非已出版书籍的形式。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/manuscript"
+        },
+        {
+          "textEn": "He submitted the manuscript to an editor at Longman.",
+          "translationZh": "他把稿件交给了朗文的一位编辑。",
+          "explanationZh": "submit something to someone 表示向某人提交某物。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/manuscript"
+        }
+      ]
+    },
+    {
+      "number": 6439,
+      "word": "mar",
+      "ipa": "/mɑː(r)/",
+      "pos": "vt.",
+      "coreMeaningZh": "损坏；破坏美感或效果",
+      "coreEn": "to damage something or make it less good or successful",
+      "coreImageZh": "男孩的画笔不慎划过完成的花朵画，留下深色长痕，姐姐指出这道痕破坏了画的美感；mar 指损坏或削弱原本的美好。",
+      "mnemonics": [
+        {
+          "method": "MAR ↔ MARK，一道坏痕毁了美感",
+          "textZh": "把 mar 联到熟词 mark（痕迹）：漂亮画面上突然多了一道难看的墨痕，原来的美感被破坏。由损坏画面的 mark，记住 mar。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MAR ↔ 抹，湿墨抹坏了画",
+          "textZh": "把 mar 的声音联到“抹”：画还没干就用手去抹，鲜明的花瓣被抹成一团，整幅画的效果被毁了。由一抹破坏美感，记住 mar，损坏、削弱。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "损坏；破坏美感或效果",
+          "explanationZh": "常用于某个缺点、意外或不良行为破坏整体美感、质量或成功，常见被动结构 be marred by。过去式和分词为 marred，现在分词为 marring。",
+          "collocations": [
+            {
+              "phrase": "mar the beauty of something",
+              "meaningZh": "破坏某物的美感"
+            },
+            {
+              "phrase": "be marred by violence",
+              "meaningZh": "因暴力而蒙上阴影"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "spoil",
+          "comparisonZh": "都可表示破坏效果或乐趣；spoil 更常用且范围广，mar 常突出局部缺陷损害整体。"
+        },
+        {
+          "word": "taint",
+          "comparisonZh": "在损害质量、玷污这一义上接近；taint 常带污染或坏影响的意味，mar 可泛指削弱美感或效果。",
+          "sources": [
+            "weichen_gre",
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The game was marred by the behaviour of rowdy fans.",
+          "translationZh": "吵闹球迷的行为破坏了这场比赛的观感。",
+          "explanationZh": "was marred by 是被动结构，by 后说明造成损害的因素。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mar"
+        },
+        {
+          "textEn": "A frown marred his handsome features.",
+          "translationZh": "皱眉损害了他俊朗面容的美感。",
+          "explanationZh": "frown 作主语，features 指面部容貌。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mar"
+        }
+      ]
+    },
+    {
+      "number": 6440,
+      "word": "mash",
+      "ipa": "/mæʃ/",
+      "pos": "vt.",
+      "coreMeaningZh": "捣碎；压成软泥",
+      "coreEn": "to crush food into a soft mass",
+      "coreImageZh": "男孩用叉子把熟土豆块反复压碎，碗里逐渐变成土豆泥，姐姐说明做法；mash 指把食物压碎或捣成软泥。",
+      "mnemonics": [
+        {
+          "method": "MASH ↔ SMASH，软土豆压成泥",
+          "textZh": "把 mash 的整体词形联到 smash（砸碎）：不去砸硬东西，而是用叉子压熟软的土豆，块状土豆一点点变成泥。由把软食物压碎，记住 mash。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MASH ↔ 妈试，妈妈试着压土豆",
+          "textZh": "把 mash 的声音联到“妈试”：妈妈试着做土豆泥，用叉子反复压软土豆，直到碗里没有大块。由妈妈试做土豆泥的动作，记住 mash，捣碎。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "捣碎；压成软泥",
+          "explanationZh": "常用于熟土豆、水果等软食物，表示压碎成软团或泥状。可以直接接宾语，也可说 mash something up；mashed potatoes 是土豆泥。",
+          "collocations": [
+            {
+              "phrase": "mash potatoes",
+              "meaningZh": "把土豆捣成泥"
+            },
+            {
+              "phrase": "mash the fruit up",
+              "meaningZh": "把水果捣碎"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "crush",
+          "comparisonZh": "都可表示压碎；crush 范围广，mash 通常指把食物压成软泥。"
+        },
+        {
+          "word": "pulp",
+          "comparisonZh": "都可指使变成浆或软团；pulp 更强调浆状结果，也可用于纸等材料。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Mash the fruit up with a fork.",
+          "translationZh": "用叉子把水果捣碎。",
+          "explanationZh": "祈使句中 mash ... up 表示捣碎，with 引出工具。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mash_2"
+        },
+        {
+          "textEn": "Mash the potatoes, adding warm milk and butter.",
+          "translationZh": "把土豆捣成泥，同时加入温牛奶和黄油。",
+          "explanationZh": "adding 短语说明同时进行的动作。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/dictionary/english/mash"
+        }
+      ]
+    }
+  ]
+}

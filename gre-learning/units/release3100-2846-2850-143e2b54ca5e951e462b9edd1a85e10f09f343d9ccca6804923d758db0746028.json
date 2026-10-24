@@ -1,0 +1,333 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6466,
+      "word": "minatory",
+      "ipa": "/ˈmɪnətəri/",
+      "pos": "adj.",
+      "coreMeaningZh": "带威胁的；有凶兆的",
+      "coreEn": "threatening harm or suggesting that something bad may happen",
+      "coreImageZh": "低沉乌云逼近，树枝被风吹动，男孩和姐姐赶在雨前收起衣物；这些预示恶劣天气的迹象具有 minatory，带来威胁、显出凶兆的意味。",
+      "mnemonics": [
+        {
+          "method": "MINATORY ↔ MENACE，威胁已经逼近",
+          "textZh": "把 minatory 联到形音相近的 menace（威胁）：黑云压低、狂风渐起，还没下雨就已经显出危险。由 menace 的威胁感，记住 minatory，带威胁的、有凶兆的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MINATORY ↔ 命难逃离，凶兆令人担心",
+          "textZh": "把 minatory 的整体声音联到“命难逃离”：故事人物看见山口落石不断，担心再往前就难以脱险。由预示危险的落石征兆，记住 minatory，带来威胁的。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "带威胁的；有凶兆的",
+          "explanationZh": "正式用语，可形容话语、语气、姿态或预示危险的迹象。threatening 偏明确威胁，ominous 偏令人觉得坏事将发生；minatory 可以落在这两个方向。",
+          "collocations": [
+            {
+              "phrase": "a minatory tone",
+              "meaningZh": "带威胁的语气"
+            },
+            {
+              "phrase": "minatory clouds",
+              "meaningZh": "预示恶劣天气的乌云"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "threatening",
+          "comparisonZh": "都表示带威胁；threatening 更常用，minatory 较正式，可带警告或凶兆意味。"
+        },
+        {
+          "word": "ominous",
+          "comparisonZh": "都可表示不祥；ominous 偏预示坏事，minatory 还可指有人发出的直接威胁。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Minatory clouds gathered above the village.",
+          "translationZh": "预示恶劣天气的乌云在村庄上空聚集。",
+          "explanationZh": "minatory 修饰 clouds，强调乌云令人预感危险。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "Reinforced by various verbal asperities, it lent their cricket a relentless, minatory edge.",
+          "translationZh": "加上各种尖刻言辞，它让他们的板球打法显出一种咄咄逼人、充满威胁的劲头。",
+          "explanationZh": "Reinforced by 是过去分词短语，minatory 修饰 edge，指带威胁的气势。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/minatory"
+        }
+      ]
+    },
+    {
+      "number": 6467,
+      "word": "ministration",
+      "ipa": "/ˌmɪnɪˈstreɪʃn/",
+      "pos": "n.",
+      "coreMeaningZh": "帮助；照料",
+      "coreEn": "the act of giving help or care to someone",
+      "coreImageZh": "姐姐劳累后坐下，男孩为她递水并盖好毯子，让她舒服地休息；这些细致的帮助和照料就是 ministration。",
+      "mnemonics": [
+        {
+          "method": "MINISTRATION ↔ MINI + STATION，小站提供照料",
+          "textZh": "把 ministration 的整体词形联到 mini 和 station（小型的、站点）：路边的小服务站虽不大，却有人递水、扶人坐下，细心帮助疲惫的旅客。由小站里的周到服务，记住 ministration，帮助和照料。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MINISTRATION ↔ MINISTER，服务不只是职位",
+          "textZh": "minister 常见于部长、牧师，也可作动词表示照料。想到一位平时站在讲台上的牧师，走下台给疲惫的人端水、搬椅子：职位之外真正为人服务，便是 ministration 所指的照料。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "帮助；照料",
+          "explanationZh": "较正式，也可略带幽默，帮助照料义常用复数 ministrations，尤其指具体的体贴服务。可说 under someone’s ministrations；不等于 administration 所指的一般管理。",
+          "collocations": [
+            {
+              "phrase": "tender ministrations",
+              "meaningZh": "温柔体贴的照料"
+            },
+            {
+              "phrase": "under someone’s ministrations",
+              "meaningZh": "在某人的照料下"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "care",
+          "comparisonZh": "都可指照料；care 最常用，ministrations 更突出一项项具体而体贴的照料行为。"
+        },
+        {
+          "word": "assistance",
+          "comparisonZh": "都可指帮助；assistance 范围更广，也包括技术或工作援助，ministration 常偏对人的照顾。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He recovered swiftly under the nurse’s expert ministrations.",
+          "translationZh": "在护士熟练的照料下，他很快康复了。",
+          "explanationZh": "under 表示在某种照料之下，ministrations 使用常见复数形式。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/ministrations"
+        },
+        {
+          "textEn": "But even the objects that have no signs of mold receive the tender ministrations of Kvamm and her team.",
+          "translationZh": "但即使没有霉菌迹象的物品，也会受到克瓦姆和她团队的细心照料。",
+          "explanationZh": "that 引导定语从句修饰 objects；ministrations 在这里把细心照料用于物品。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/ministration"
+        }
+      ]
+    },
+    {
+      "number": 6468,
+      "word": "mingle",
+      "ipa": "/ˈmɪŋɡl/",
+      "pos": "vt.",
+      "coreMeaningZh": "混合；结合",
+      "coreEn": "to mix different things so that they come together",
+      "coreImageZh": "男孩把分开的红色与蓝色木珠倒入同一浅盘，再用手轻轻拌匀，原本分开的两种珠子混到一起；mingle 在这里表示混合。",
+      "mnemonics": [
+        {
+          "method": "MINGLE ↔ SINGLE，不再单一就混起来",
+          "textZh": "把 mingle 联到相近词形 single（单一的）：原本只有红珠的盘子又加入蓝珠，不再是 single 的单一颜色，而是两种混在一起。由单一变混合，记住 mingle。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MINGLE ↔ 拧个，拧开瓶盖混饮料",
+          "textZh": "把 mingle 的整体声音联到“拧个”：拧开果汁瓶盖，把果汁倒进茶里，茶香和果香混在一起。由拧个瓶盖后两种饮料相混，记住 mingle，混合。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "混合；结合",
+          "explanationZh": "混合义可及物也可不及物，常见 mingle A with B 或 A and B mingle。常用于声音、情绪、颜色和物质的混合，不一定混到完全分不清各部分；社交义是另一常见用法。",
+          "collocations": [
+            {
+              "phrase": "mingle fact and fiction",
+              "meaningZh": "将事实与虚构混合"
+            },
+            {
+              "phrase": "mingle with something",
+              "meaningZh": "与某物混合"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "mix",
+          "comparisonZh": "都可表示混合；mix 最通用，mingle 常带不同成分交织而各自仍可辨认的感觉。"
+        },
+        {
+          "word": "meld",
+          "comparisonZh": "在融合这一义上接近；meld 常强调结合成较统一的整体，mingle 未必融合得那么彻底。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The sounds of laughter and singing mingled in the evening air.",
+          "translationZh": "笑声和歌声交织在傍晚的空气中。",
+          "explanationZh": "mingled 是不及物动词过去式，表示两种声音混在一起。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mingle"
+        },
+        {
+          "textEn": "He felt a kind of happiness mingled with regret.",
+          "translationZh": "他感到一种夹杂着遗憾的幸福。",
+          "explanationZh": "mingled with regret 是过去分词短语，修饰 happiness。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mingle"
+        }
+      ]
+    },
+    {
+      "number": 6469,
+      "word": "mint",
+      "ipa": "/mɪnt/",
+      "pos": "adj.",
+      "coreMeaningZh": "无损坏的；完好如新的",
+      "coreEn": "in perfect condition, as if new",
+      "coreImageZh": "男孩取出保存多年的玩具车，姐姐仔细看车身和轮子，发现没有划痕或损坏，像刚买来一样；mint 形容这种完好如新的状态。",
+      "mnemonics": [
+        {
+          "method": "MINT：刚铸好的硬币，还没有磨损",
+          "textZh": "mint 也指铸币厂或铸造硬币。想到刚出厂的硬币，表面完整、边缘清晰，还没有经过流通磨损：像刚铸好一样，就是 mint，完好如新。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MINT ↔ MIND，留心保护仍像新的一样",
+          "textZh": "把 mint 的整体词形联到 mind（留心）：每次拿出收藏车都留心轻放，收回时还包好，多年后仍一点划痕也没有。由一直 mind、小心保护，记住 mint，完好如新的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "无损坏的；完好如新的",
+          "explanationZh": "目标义最常见于 in mint condition，形容物品保存完好，像新的一样，常用于旧车、邮票、收藏品。这里不是薄荷义，也不表示物品必须刚生产。",
+          "collocations": [
+            {
+              "phrase": "in mint condition",
+              "meaningZh": "完好如新"
+            },
+            {
+              "phrase": "keep something in mint condition",
+              "meaningZh": "把某物保存得完好如新"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "pristine",
+          "comparisonZh": "都可形容完好无损；pristine 还可表示未受污染或未被改变，mint 常谈物品的新旧状态。"
+        },
+        {
+          "word": "intact",
+          "comparisonZh": "都可表示完整无损；intact 不一定像新的一样，mint 对保存状态要求更高。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "All clothes are in mint condition and less than two years old.",
+          "translationZh": "所有衣服都完好如新，而且购置还不到两年。",
+          "explanationZh": "in mint condition 作表语，and 连接两个状态描述。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/in-mint-condition"
+        },
+        {
+          "textEn": "Alex’s old Cadillac is in mint condition.",
+          "translationZh": "亚历克斯的旧凯迪拉克保存得完好如新。",
+          "explanationZh": "old 与 in mint condition 并不矛盾，说明车虽旧但保存很好。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/us/dictionary/english/in-mint-condition"
+        }
+      ]
+    },
+    {
+      "number": 6470,
+      "word": "minute",
+      "ipa": "/maɪˈnjuːt/",
+      "pos": "adj.",
+      "coreMeaningZh": "仔细的；细致入微的",
+      "coreEn": "very careful and detailed, attending to even the smallest points",
+      "coreImageZh": "男孩用放大镜依次查看模型屋顶和窗边的细小接缝，连很小的歪斜都认真检查；minute 在这里指检查细致入微。",
+      "mnemonics": [
+        {
+          "method": "MINUTE：连微小处也看，就是细致",
+          "textZh": "minute 作形容词既可表示极小的，也可表示细致入微的。想到检查衣服时，连极小的针脚都不放过：从 minute 的小细节，连到 minute 的仔细检查。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MINUTE ↔ 一分钟盯一针，检查特别细",
+          "textZh": "熟悉的 minute 是一分钟。想象验收刺绣时，一针就认真看足一分钟，连最小的松线也检查出来。借一分钟盯一针的耐心，记住形容词 minute，细致入微；这个形容词读 /maɪˈnjuːt/。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "仔细的；细致入微的",
+          "explanationZh": "形容词可指微小，也可指检查、描述等极为细致；这里选细致义，常修饰 examination、inspection、description。读音重音在后，与名词“一分钟”/ˈmɪnɪt/ 不同。",
+          "collocations": [
+            {
+              "phrase": "a minute examination",
+              "meaningZh": "细致入微的检查"
+            },
+            {
+              "phrase": "a minute description",
+              "meaningZh": "极为详尽的描述"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "detailed",
+          "comparisonZh": "都表示详尽细致；detailed 最通用，minute 往往强调连很小的部分都顾及。"
+        },
+        {
+          "word": "thorough",
+          "comparisonZh": "都可形容仔细检查；thorough 偏全面彻底，minute 偏注意细微之处。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She remembered everything in minute detail.",
+          "translationZh": "她对每一件事都记得极为详尽。",
+          "explanationZh": "in minute detail 表示极为详细地。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/us/definition/english/minute2"
+        },
+        {
+          "textEn": "The party was planned in the minutest detail.",
+          "translationZh": "这场聚会的筹划细致到了每一个微小环节。",
+          "explanationZh": "was planned 是被动语态，in the minutest detail 表示极其细致地。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/minute"
+        }
+      ]
+    }
+  ]
+}

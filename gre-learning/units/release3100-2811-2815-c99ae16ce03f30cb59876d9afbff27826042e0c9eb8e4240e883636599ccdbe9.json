@@ -1,0 +1,330 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6431,
+      "word": "malicious",
+      "ipa": "/məˈlɪʃəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "恶意的；蓄意伤害人的",
+      "coreEn": "intending to harm someone or hurt their feelings",
+      "coreImageZh": "同学故意把男孩的纸船压扁，并说就是想让他难过，姐姐指出这带着恶意；malicious 指故意伤害别人的。",
+      "mnemonics": [
+        {
+          "method": "MALICIOUS ↔ 骂你，故意说难听话",
+          "textZh": "把 malicious 的声音联到“骂你”：有人并非无意说错话，而是专挑难听的话骂人，故意让对方伤心。由存心伤人的话，记住 malicious，恶意的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MALICIOUS ↔ DELICIOUS，甜礼物里的坏心眼",
+          "textZh": "把 malicious 的整体词形联到 delicious（美味的）：有人假装送美味蛋糕，却特意送上一块烧焦的蛋糕来羞辱朋友。由表面送甜礼、心里故意伤人，记住 malicious。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "恶意的；蓄意伤害人的",
+          "explanationZh": "强调有伤害别人、损坏名誉或造成损失的意图，常修饰 gossip、rumour、comment 等。计算机语境中的 malicious software 指意在造成损害的软件。",
+          "collocations": [
+            {
+              "phrase": "malicious gossip",
+              "meaningZh": "恶意流言"
+            },
+            {
+              "phrase": "a malicious remark",
+              "meaningZh": "恶意的话"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "spiteful",
+          "comparisonZh": "都可表示故意伤人；spiteful 常带怨恨、报复或使坏的意味，malicious 更概括蓄意危害。"
+        },
+        {
+          "word": "harmful",
+          "comparisonZh": "都与危害有关；harmful 只说产生伤害，未必有意，malicious 明确涉及坏意图。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Has someone been spreading malicious gossip?",
+          "translationZh": "是不是有人一直在散播恶意流言？",
+          "explanationZh": "现在完成进行时强调近期持续的散播行为。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/malicious"
+        },
+        {
+          "textEn": "There is no truth whatsoever to the malicious rumours.",
+          "translationZh": "这些恶意谣言毫无真实根据。",
+          "explanationZh": "no truth whatsoever 强调完全没有真实性。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/malicious"
+        }
+      ]
+    },
+    {
+      "number": 6432,
+      "word": "mandatory",
+      "ipa": "/ˈmændətəri/",
+      "pos": "adj.",
+      "coreMeaningZh": "强制的；必须遵守的",
+      "coreEn": "required by a law or rule",
+      "coreImageZh": "男孩想不戴头盔出发，老师说明这是必须遵守的规定，男孩戴好头盔；mandatory 指规定必须做的、强制性的。",
+      "mnemonics": [
+        {
+          "method": "MANDATORY ↔ MONDAY，周一必须参加",
+          "textZh": "把 mandatory 的词形联到 Monday（星期一）：学校规定周一的集会人人必须参加，不能随意缺席。由周一必须参加的安排，记住 mandatory，强制的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MANDATORY ↔ 满到位，一个也不能少",
+          "textZh": "把 mandatory 的声音联到“满到位”：点名时老师要求全员到位，因为这项活动是规定必须参加的。由一个也不能少的硬性规定，记住 mandatory。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "强制的；必须遵守的",
+          "explanationZh": "表示法律、规则或制度要求必须做，常用 be mandatory for someone 或 It is mandatory to do something。与 optional（可选择的）相对，不等于只是强烈建议。",
+          "collocations": [
+            {
+              "phrase": "mandatory attendance",
+              "meaningZh": "强制出席"
+            },
+            {
+              "phrase": "a mandatory requirement",
+              "meaningZh": "必须遵守的要求"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "compulsory",
+          "comparisonZh": "都表示按规定必须做，常可互换；compulsory 常用于课程、教育、服役，mandatory 常见于正式规则。"
+        },
+        {
+          "word": "required",
+          "comparisonZh": "都可表示必须的；required 使用更广，mandatory 特别突出规则或权威要求。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The offence carries a mandatory life sentence.",
+          "translationZh": "该罪行依法必须判处终身监禁。",
+          "explanationZh": "carries 表示某罪对应的刑罚，mandatory 强调判罚由规定要求。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mandatory"
+        },
+        {
+          "textEn": "It is mandatory for blood banks to test all donated blood for the virus.",
+          "translationZh": "血库必须检测所有捐献血液是否含有这种病毒。",
+          "explanationZh": "It is mandatory for ... to ... 表示某人或机构必须做某事。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mandatory"
+        }
+      ]
+    },
+    {
+      "number": 6433,
+      "word": "mangle",
+      "ipa": "/ˈmæŋɡl/",
+      "pos": "vt.",
+      "coreMeaningZh": "弄砸；把……处理得很糟",
+      "coreEn": "to spoil something by doing or performing it badly",
+      "coreImageZh": "男孩试讲时把内容说乱，自己也承认讲砸了，姐姐指出顺序和名字都混了；mangle 可指把语言、表演或事情弄得一团糟。",
+      "mnemonics": [
+        {
+          "method": "MANGLE ↔ 忙了，忙乱中弄砸了",
+          "textZh": "把 mangle 的声音联到“忙了”：上台前忙得慌，讲故事时把人物名字和事情顺序全说乱，好故事被讲砸了。由忙乱中把事弄砸，记住 mangle。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MANGLE ↔ ANGLE，角度错了作品毁了",
+          "textZh": "在 mangle 的词形里抓住熟词 angle（角度）：制作相框时把各个角度做错，拼起来歪七扭八，整件作品被弄砸。由错误角度毁掉成品，记住 mangle。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "弄砸；把……处理得很糟",
+          "explanationZh": "本页指因笨拙、错误或不了解而把话语、表演、事情弄砸，可接 a name、a speech、a song 等。另有撕裂或压坏物体的义项，具体意思取决于宾语。",
+          "collocations": [
+            {
+              "phrase": "mangle a speech",
+              "meaningZh": "把演讲讲砸"
+            },
+            {
+              "phrase": "mangle someone’s name",
+              "meaningZh": "把某人的名字念得面目全非"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ruin",
+          "comparisonZh": "都能表示弄坏、毁掉；ruin 范围更广，mangle 常突出说错、演坏或处理笨拙。"
+        },
+        {
+          "word": "botch",
+          "comparisonZh": "都可表示笨拙地把事做砸；botch 常强调做工或任务失败，mangle 常用于语言或表演被处理得乱七八糟。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I find it strange the way he mangles the English language.",
+          "translationZh": "我觉得他把英语说得乱七八糟的样子很奇怪。",
+          "explanationZh": "the way 引出方式，mangles 指把语言用得很糟。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mangle_1"
+        },
+        {
+          "textEn": "you've mangled this so badly that we'll have to do it over",
+          "translationZh": "你把这件事弄得太糟了，我们不得不重做。",
+          "explanationZh": "so badly that 引出结果，do it over 表示重新做。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/mangle"
+        }
+      ]
+    },
+    {
+      "number": 6434,
+      "word": "mangy",
+      "ipa": "/ˈmeɪndʒi/",
+      "pos": "adj.",
+      "coreMeaningZh": "卑劣的；可鄙的",
+      "coreEn": "mean and contemptible",
+      "coreImageZh": "棕衣同学想把别人的铅笔盒藏起来再诬赖男孩，姐姐斥责这个卑鄙手段；mangy 在这里形容可鄙、卑劣的。",
+      "mnemonics": [
+        {
+          "method": "MANGY ↔ MEAN GUY，一个卑鄙家伙",
+          "textZh": "把 mangy 的整体声音联到 mean guy（卑鄙的家伙）：那人偷偷藏起别人的东西，还故意栽赃无辜者，手段令人鄙视。由 mean guy 的卑鄙行为，记住 mangy。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MANGY ↔ MANGO，烂芒果冒充好货",
+          "textZh": "把 mangy 的近似词形联到 mango（芒果）：一个商贩把烂芒果藏在好果下面，故意当优质水果卖。由欺骗顾客的卑劣手段，记住 mangy，可鄙的。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "卑劣的；可鄙的",
+          "explanationZh": "本页选较少见的贬义，形容人或手段卑劣可鄙，如 a mangy trick。更常见的义是动物患疥癣或东西破旧，不能把这些义在所有语境中混用。",
+          "collocations": [
+            {
+              "phrase": "a mangy trick",
+              "meaningZh": "卑劣的手段"
+            },
+            {
+              "phrase": "a mangy excuse",
+              "meaningZh": "可鄙的借口"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "contemptible",
+          "comparisonZh": "在令人鄙视这一义上接近；contemptible 明确表示可鄙，mangy 还常用于破旧或患疥癣的东西。"
+        },
+        {
+          "word": "mean",
+          "comparisonZh": "在卑鄙、不厚道这一义上接近；mean 更常用，另可表示吝啬等，需结合语境。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "That was a mangy trick to play on a friend.",
+          "translationZh": "对朋友耍这种手段真卑鄙。",
+          "explanationZh": "That 指前文行为，to play on a friend 说明手段针对朋友。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "They refused to support his mangy scheme.",
+          "translationZh": "他们拒绝支持他那个卑劣的计谋。",
+          "explanationZh": "refused to support 表示拒绝支持，mangy 评价计谋可鄙。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6435,
+      "word": "mania",
+      "ipa": "/ˈmeɪniə/",
+      "pos": "n.",
+      "coreMeaningZh": "狂热；强烈的热衷",
+      "coreEn": "an extremely strong enthusiasm or desire for something",
+      "coreImageZh": "男孩兴奋地谈起火车模型，反复说还想收集更多，姐姐指出他对火车十分着迷；mania 在这里指强烈的热衷或狂热。",
+      "mnemonics": [
+        {
+          "method": "MANIA ↔ MANY，收了许多还想收",
+          "textZh": "把 mania 的词形联到 many（许多）：一个人已经收了许多火车模型，却天天想买更多，谈起模型就兴奋得停不下来。由 many 件还不满足的着迷，记住 mania，狂热。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MANIA ↔ 迷你啊，迷上微型世界",
+          "textZh": "把 mania 的声音联到“迷你啊”：看到小小的家具和房屋就忍不住赞叹“迷你啊”，每天都想搭新的微型房间，心里总惦记着它们。由对迷你世界的强烈热衷，记住 mania。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "狂热；强烈的热衷",
+          "explanationZh": "本页指对某事特别强烈的热衷，常说 a mania for something，也可放在某项活动后表示热潮。另有医学上的躁狂义，不能把日常爱好直接当作医学诊断。",
+          "collocations": [
+            {
+              "phrase": "a mania for collecting",
+              "meaningZh": "收藏狂热"
+            },
+            {
+              "phrase": "football mania",
+              "meaningZh": "足球热潮"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "craze",
+          "comparisonZh": "都可表示热潮或狂热兴趣；craze 常指一时流行，mania 更强调热衷的强烈程度。"
+        },
+        {
+          "word": "enthusiasm",
+          "comparisonZh": "都可指热情；enthusiasm 较中性，mania 通常强得多，有时显得过度。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She attacked fashion's mania for thinness.",
+          "translationZh": "她抨击时尚界对纤瘦的狂热追求。",
+          "explanationZh": "attacked 在这里是抨击，mania for 后接追求的对象。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mania_1"
+        },
+        {
+          "textEn": "Football mania is sweeping the country.",
+          "translationZh": "足球热潮正席卷全国。",
+          "explanationZh": "is sweeping 是现在进行时，比喻热潮迅速遍及各地。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mania_1"
+        }
+      ]
+    }
+  ]
+}

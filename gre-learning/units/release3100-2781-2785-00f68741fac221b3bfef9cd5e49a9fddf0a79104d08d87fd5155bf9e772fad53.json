@@ -1,0 +1,330 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6401,
+      "word": "liability",
+      "ipa": "/ˌlaɪəˈbɪləti/",
+      "pos": "n.",
+      "coreMeaningZh": "责任；法律上的赔偿义务",
+      "coreEn": "legal responsibility for something, especially damage or debt",
+      "coreImageZh": "搬运员承认自己打坏花盆，并承担赔偿责任；liability 指对损失等应负的责任。",
+      "mnemonics": [
+        {
+          "method": "LIABILITY ↔ LIE + ABILITY，有本事说谎也得担责",
+          "textZh": "把 liability 的整体声音联到 lie（说谎）和 ability（能力）：弄坏花盆的人本想凭说谎本事推掉赔偿，证据却摆在眼前，最终必须承担责任。由不能靠说谎逃掉的责任，记住 liability。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "LIABILITY ↔ RELIABILITY，可靠的人主动担责",
+          "textZh": "把 liability 的整体词形联到 reliability（可靠性）：一个可靠的搬运工不推卸自己造成的损坏，主动承担赔偿责任。由可靠的人愿意承担的责任，记住 liability。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "责任；法律上的赔偿义务",
+          "explanationZh": "本页指法律上的责任或赔偿义务，常见 liability for damage。还可指债务或不利因素；责任义不等于所有日常分工。",
+          "collocations": [
+            {
+              "phrase": "accept liability",
+              "meaningZh": "承认并承担责任"
+            },
+            {
+              "phrase": "liability for damage",
+              "meaningZh": "对损害的赔偿责任"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "responsibility",
+          "comparisonZh": "在应为某事负责这一义上接近；responsibility 更广，liability 常指法律或赔偿责任。"
+        },
+        {
+          "word": "accountability",
+          "comparisonZh": "都涉及承担责任；accountability 强调必须解释行为并接受问责，liability 更常强调法律后果或赔偿义务。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The company cannot accept liability for any damage caused by natural disasters.",
+          "translationZh": "公司不承担自然灾害造成的任何损失的赔偿责任。",
+          "explanationZh": "liability for 引出责任所涉及的损害，caused by 修饰 damage。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/liability"
+        },
+        {
+          "textEn": "The defendant admitted liability to compensate the claimant.",
+          "translationZh": "被告承认有责任赔偿索赔人。",
+          "explanationZh": "admitted liability 表示承认责任，to compensate 说明应承担的赔偿义务。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/liability"
+        }
+      ]
+    },
+    {
+      "number": 6402,
+      "word": "liberal",
+      "ipa": "/ˈlɪbərəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "慷慨的；大方的",
+      "coreEn": "generous in giving or providing something",
+      "coreImageZh": "店主大方地把许多苹果送给两人，布袋装得满满；liberal 在这里形容慷慨、给予丰厚。",
+      "mnemonics": [
+        {
+          "method": "LIBERAL ↔ LIBRARY，图书馆大方借书",
+          "textZh": "把 liberal 的整体词形联到 library（图书馆）：想象一间社区图书馆，把一大批好书免费借给大家，毫不吝惜。由图书馆慷慨分享的做法，记住 liberal。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "LIBERAL ↔ 礼不薄，送礼特别大方",
+          "textZh": "把 liberal 的整体声音联到“礼不薄”：朋友来做客，主人送出满满一篮水果，礼物一点也不薄。由礼物丰厚、出手大方，记住 liberal。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "慷慨的；大方的",
+          "explanationZh": "本页取慷慨、大量给予义，常用 liberal with money/advice，也可修饰 amounts 表示用量充足。另有思想开放或自由主义义，具体取义由搭配决定。",
+          "collocations": [
+            {
+              "phrase": "be liberal with money",
+              "meaningZh": "用钱大方"
+            },
+            {
+              "phrase": "a liberal amount",
+              "meaningZh": "充足的数量"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "generous",
+          "comparisonZh": "在慷慨给予这一义上接近；generous 更常用，liberal 也常形容给出的数量充足。"
+        },
+        {
+          "word": "unstinting",
+          "comparisonZh": "都可表示给予时毫不吝惜；unstinting 更强调不设限制、持续大力提供，liberal 可泛指大方或量多。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She is very liberal with her money.",
+          "translationZh": "她花钱或给钱十分大方。",
+          "explanationZh": "liberal with 后接慷慨提供或使用的东西。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/liberal_1"
+        },
+        {
+          "textEn": "We ate cake with liberal amounts of whipped cream.",
+          "translationZh": "我们吃了配有大量打发奶油的蛋糕。",
+          "explanationZh": "liberal amounts of 表示数量充足，with 引出蛋糕的搭配。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/liberal_1"
+        }
+      ]
+    },
+    {
+      "number": 6403,
+      "word": "libertine",
+      "ipa": "/ˈlɪbərtiːn/",
+      "pos": "n.",
+      "coreMeaningZh": "放荡不羁者；浪荡子",
+      "coreEn": "a person who pursues pleasure without moral restraint, especially in sexual relationships",
+      "coreImageZh": "戏里的男子追逐享乐，对感情毫无责任心，姐姐向男孩说明他一贯的放荡生活；libertine 指这样不受道德约束、沉迷享乐的人。",
+      "mnemonics": [
+        {
+          "method": "LIBERTINE ↔ LIBERTY，把自由变成放纵",
+          "textZh": "把 libertine 的整体词形联到 liberty（自由）：故事里的浪荡子把自由当作借口，只顾追逐男女欢愉，不肯对伴侣负责。由把自由用成放纵的人，记住 libertine。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "LIBERTINE ↔ 礼不听，道德规劝全不听",
+          "textZh": "把 libertine 的整体声音联到“礼不听”：小说中的浪荡子听见亲友劝他尊重感情、遵守道德，却摆手不听，仍只顾寻欢作乐。由对礼义规劝全不听的放荡者，记住 libertine。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "放荡不羁者；浪荡子",
+          "explanationZh": "通常是带贬义的可数名词，多见于文学或历史人物描述，常指在男女关系上放纵、不顾道德责任的人。不是普通爱玩、外向或重视自由的人。",
+          "collocations": [
+            {
+              "phrase": "a notorious libertine",
+              "meaningZh": "臭名昭著的浪荡子"
+            },
+            {
+              "phrase": "a life as a libertine",
+              "meaningZh": "放荡不羁的生活"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rake",
+          "comparisonZh": "都可指放荡好色的男子；rake 常见于旧文学中的浪荡公子，libertine 更突出无视道德约束。"
+        },
+        {
+          "word": "profligate",
+          "comparisonZh": "作为名词都可指放荡者；profligate 还常突出挥霍浪费，libertine 多强调道德与男女关系上的放纵。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She considers him an arrogant, dandified libertine.",
+          "translationZh": "她认为他是个傲慢、衣着花哨的浪荡子。",
+          "explanationZh": "consider someone + 名词短语，表示把某人看作某种人；dandified 指刻意打扮得时髦。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/us/dictionary/english/libertine"
+        },
+        {
+          "textEn": "The infamous libertine Casanova was more complex than the sexual braggart he is often depicted as.",
+          "translationZh": "臭名昭著的浪荡子卡萨诺瓦，比人们常把他描绘成的那个吹嘘情事的人更为复杂。",
+          "explanationZh": "more complex than 引出比较，be depicted as 表示被描绘成。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/us/dictionary/english/libertine"
+        }
+      ]
+    },
+    {
+      "number": 6404,
+      "word": "licentious",
+      "ipa": "/laɪˈsenʃəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "放荡的；纵欲而不顾道德的",
+      "coreEn": "sexually unrestrained and disregarding accepted moral standards",
+      "coreImageZh": "两人读到故事人物在男女关系上毫无节制，姐姐说明他的放荡行为；licentious 形容不受性道德约束的放纵。",
+      "mnemonics": [
+        {
+          "method": "LICENTIOUS ↔ LICENSE，给放纵发许可证",
+          "textZh": "把 licentious 的整体词形联到 license（许可证）：小说中的人物仿佛给自己发了一张任意纵欲的许可证，把感情责任和道德约束都抛开。由给自己无限放纵的许可，记住 licentious。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "LICENTIOUS ↔ LIE + SENTENCE，情话句句是谎言",
+          "textZh": "把 licentious 的整体声音联到 lie（谎言）和 sentence（句子）：故事里的浪荡人物给不同情人写下同样的甜言蜜语，句句都是谎言，只想满足自己的欲望。由只顾纵欲、不顾感情道德的行为，记住 licentious。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "放荡的；纵欲而不顾道德的",
+          "explanationZh": "正式且带批评意味，主要形容性行为或男女关系不受道德约束，也可形容相关生活方式、作品内容。它不只是思想开放或穿着随意。",
+          "collocations": [
+            {
+              "phrase": "licentious behaviour",
+              "meaningZh": "放荡的行为"
+            },
+            {
+              "phrase": "a licentious lifestyle",
+              "meaningZh": "纵欲的生活方式"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "dissolute",
+          "comparisonZh": "都可形容放荡、不顾道德；dissolute 常兼指酒色等生活腐化，licentious 更突出性方面的无节制。"
+        },
+        {
+          "word": "lewd",
+          "comparisonZh": "都可涉及性方面的不当；lewd 常指猥亵的言行或内容，licentious 更突出放纵而无道德约束。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He preached to these throngs of people twice daily, urging them to give up their licentious and unjust ways.",
+          "translationZh": "他每天向这些成群的人布道两次，敦促他们放弃放荡而不公正的行为。",
+          "explanationZh": "urging 是分词短语，补充说明布道的内容；give up 后接行为方式。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/licentious"
+        },
+        {
+          "textEn": "The licentious play was closed by the police.",
+          "translationZh": "这出内容淫荡的戏被警方叫停了。",
+          "explanationZh": "licentious 修饰 play，was closed 是被动语态，表示演出被叫停。",
+          "sourceAttribution": "Cambridge Thesaurus https://dictionary.cambridge.org/thesaurus/licentious"
+        }
+      ]
+    },
+    {
+      "number": 6405,
+      "word": "liken",
+      "ipa": "/ˈlaɪkən/",
+      "pos": "vt.",
+      "coreMeaningZh": "把……比作；指出相似",
+      "coreEn": "to compare someone or something to another and describe a similarity",
+      "coreImageZh": "姐姐把人生比作画中的旅程，说明都会经历曲折、继续向前；liken 指指出相似之处，把一事物比作另一事物。",
+      "mnemonics": [
+        {
+          "method": "LIKEN：LIKE的相像，变成比作",
+          "textZh": "liken 来自 like（相似的）加动词后缀 -en。看到弯弯的月亮像小船，就把月亮比作小船；由“像”到“把……比作”，抓住 liken。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "LIKEN ↔ 来看，云像什么？",
+          "textZh": "把 liken 的整体声音联到“来看”：叫朋友来看天上的云，一会儿把它比作小狗，一会儿比作帆船。由请人来看并说出相似之处，记住 liken，把……比作。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "把……比作；指出相似",
+          "explanationZh": "通常用 liken A to B，把A比作B，强调两者相似。也常用被动 be likened to。比较不表示两者所有方面都相同。",
+          "collocations": [
+            {
+              "phrase": "liken life to a journey",
+              "meaningZh": "把人生比作旅程"
+            },
+            {
+              "phrase": "be likened to",
+              "meaningZh": "被比作"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "compare",
+          "comparisonZh": "在指出相似这一义上接近；compare 也可比较差异，liken 更集中于把一事物比作另一事物。"
+        },
+        {
+          "word": "analogize",
+          "comparisonZh": "都可通过相似之处作类比；analogize 更强调类推，liken 常直接说某物像另一物。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Life is often likened to a journey.",
+          "translationZh": "人生常被比作一段旅程。",
+          "explanationZh": "is likened to 为被动结构，说明人生被拿来与旅程相比。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/liken-to"
+        },
+        {
+          "textEn": "He once likened his job to fire-fighting.",
+          "translationZh": "他曾把自己的工作比作救火。",
+          "explanationZh": "liken his job to 后接 fire-fighting，用救火比喻工作的特点。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/liken"
+        }
+      ]
+    }
+  ]
+}

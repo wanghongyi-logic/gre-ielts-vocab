@@ -1,0 +1,330 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6346,
+      "word": "invincible",
+      "ipa": "/ɪnˈvɪnsəbl/",
+      "pos": "adj.",
+      "coreMeaningZh": "不可战胜的",
+      "coreEn": "too strong to be defeated or overcome",
+      "coreImageZh": "男孩连续挑战姐姐，却始终没赢过她。老师说她在这项比赛中无人能击败；invincible 表示不可战胜的。",
+      "mnemonics": [
+        {
+          "method": "IN- + VICTORY，同族的征服与胜利",
+          "textZh": "invincible 的 in- 表示不，vinc- 与 victory（胜利）的词源同出征服。想象对手无论怎么进攻，都无法从他手里夺走 victory；不能被征服，就是 invincible。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INVINCIBLE ↔ WIN，谁也赢不了他",
+          "textZh": "把 invincible 中的 vin 声音联到 win（赢）：大家轮番挑战，却没有一个人能 win against him，赢过他。由这个谁也打不败的对手，记住 invincible。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不可战胜的",
+          "explanationZh": "形容强大到无法被击败的人、队伍或力量；也可形容无法动摇的信念。语气很强，实际叙述中常配 seem 或 almost，表达看起来或近乎无敌。",
+          "collocations": [
+            {
+              "phrase": "an invincible team",
+              "meaningZh": "不可战胜的队伍"
+            },
+            {
+              "phrase": "seem invincible",
+              "meaningZh": "显得不可战胜"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "unbeatable",
+          "comparisonZh": "在无法被击败这一义上接近；unbeatable 较常用，也能夸价格或品质无人能及。"
+        },
+        {
+          "word": "unconquerable",
+          "comparisonZh": "都可指不能被征服；unconquerable 还常形容意志、精神不屈。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The team seemed invincible.",
+          "translationZh": "这支队伍似乎不可战胜。",
+          "explanationZh": "seemed 说明这是当时给人的印象。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/invincible"
+        },
+        {
+          "textEn": "The loss proved that the team is not invincible.",
+          "translationZh": "这次失利证明这支队伍并非不可战胜。",
+          "explanationZh": "proved 后的 that 从句说明这场失利证明了什么。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/invincible"
+        }
+      ]
+    },
+    {
+      "number": 6347,
+      "word": "invoke",
+      "ipa": "/ɪnˈvoʊk/",
+      "pos": "vt.",
+      "coreMeaningZh": "启用；实施，使生效",
+      "coreEn": "to put a rule or procedure into effect",
+      "coreImageZh": "两人争着使用剪刀，老师启用轮流使用的规定，随后同学等待、男孩先用。invoke 在这里表示启用并实施一项规则。",
+      "mnemonics": [
+        {
+          "method": "INVOKE ↔ VOICE，把规则叫出来用",
+          "textZh": "invoke 与 voice（声音）同属呼喊的词源家族。想象老师把现成规则明确说出来，要求大家从现在照着做；从叫来规则到实际启用，记住 invoke。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INVOKE ↔ IN + VOTE，投票后启用规则",
+          "textZh": "把 invoke 联到 in（在……中）和 vote（投票）。班级在投票后启用轮流发言规则，大家开始按顺序说话；由表决后让规则实际运作，记住 invoke 启用。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "启用；实施，使生效",
+          "explanationZh": "本页取把规则、程序或权力付诸实施义，常用 invoke a rule/law。它也可表示援引某人为依据或请求神灵帮助；这些用法的宾语和语境不同。",
+          "collocations": [
+            {
+              "phrase": "invoke a rule",
+              "meaningZh": "启用一项规则"
+            },
+            {
+              "phrase": "invoke emergency powers",
+              "meaningZh": "动用紧急权力"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "implement",
+          "comparisonZh": "都可表示实施；implement 广泛用于计划和政策，invoke 常指在具体情形下启用已有规则或权力。"
+        },
+        {
+          "word": "enforce",
+          "comparisonZh": "在使规定发挥效力这一点上接近；enforce 更强调强制执行、确保遵守。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It is unlikely that libel laws will be invoked.",
+          "translationZh": "不大可能会动用诽谤相关法律。",
+          "explanationZh": "It is unlikely that 表示某事不太可能，will be invoked 是被动结构。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/invoke"
+        },
+        {
+          "textEn": "The suspect invoked his right to an attorney.",
+          "translationZh": "嫌疑人行使了请律师的权利。",
+          "explanationZh": "invoke a right 表示在具体情形下动用已有权利。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/invoke"
+        }
+      ]
+    },
+    {
+      "number": 6348,
+      "word": "irate",
+      "ipa": "/aɪˈreɪt/",
+      "pos": "adj.",
+      "coreMeaningZh": "极其愤怒的",
+      "coreEn": "extremely angry",
+      "coreImageZh": "男孩发现玩具车被摔坏，气得涨红脸，严厉追问是谁干的。他此刻非常愤怒，正是 irate。",
+      "mnemonics": [
+        {
+          "method": "IRATE ↔ I RATE，我给它差评",
+          "textZh": "把 irate 看成 I（我）和 rate（评价）的联想：服务糟糕得让人怒不可遏，拍着桌说“我一定给差评！”由愤怒的评价者，记住 irate。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "IRATE ↔ 爱惹，终于把人惹火",
+          "textZh": "把 irate 的声音近似联成“爱惹”：一个人总爱惹事，终于把对方惹得满脸怒气。抓住那个被惹得极其愤怒的人，记住 irate。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "极其愤怒的",
+          "explanationZh": "形容当下非常愤怒的状态，可修饰 customer、viewer 等人，也可修饰表达愤怒的电话或信件。与表示一贯容易发火的 irascible 不同。",
+          "collocations": [
+            {
+              "phrase": "an irate customer",
+              "meaningZh": "极为愤怒的顾客"
+            },
+            {
+              "phrase": "sound irate",
+              "meaningZh": "听起来非常生气"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "furious",
+          "comparisonZh": "都表示非常愤怒；furious 常突出强烈激动，irate 常见于投诉或抗议语境。"
+        },
+        {
+          "word": "enraged",
+          "comparisonZh": "都可表示极其愤怒；enraged 更突出被某事激怒后的状态。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She sounded extremely irate.",
+          "translationZh": "她听起来极其愤怒。",
+          "explanationZh": "sounded 后接形容词，extremely 加强愤怒程度。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/irate"
+        },
+        {
+          "textEn": "Irate viewers called the television network to complain about the show.",
+          "translationZh": "愤怒的观众打电话给电视台，投诉这个节目。",
+          "explanationZh": "to complain 表示打电话的目的，about 引出投诉内容。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/irate"
+        }
+      ]
+    },
+    {
+      "number": 6349,
+      "word": "ironclad",
+      "ipa": "/ˈaɪərnklæd/",
+      "pos": "adj.",
+      "coreMeaningZh": "牢不可破的；非常可靠的",
+      "coreEn": "so firm or secure that it cannot be broken or challenged",
+      "coreImageZh": "男孩问姐姐能否保守礼物的秘密，姐姐坚定地保证绝不泄露。这份牢靠的保证，体现 ironclad 牢不可破、非常可靠。",
+      "mnemonics": [
+        {
+          "method": "IRON + CLAD，给承诺穿上铁甲",
+          "textZh": "ironclad 原指包着铁甲；iron 是铁，clad 与 clothe（给……穿衣）同族。想象承诺披上铁做的外衣，怎么也打不破；由铁甲般牢固，记住 ironclad。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "IRONCLAD ↔ IRON + GLAD，铁定保证让人放心",
+          "textZh": "把 ironclad 联到 iron（铁）和 glad（高兴）：得到一份铁定不会变的保证，你终于放下心，高兴起来。由令人放心的牢靠保证，记住 ironclad。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "牢不可破的；非常可靠的",
+          "explanationZh": "常形容保证、合同、证据等牢靠到不能被推翻或逃避。字面上也可指覆有铁甲的；本页用比喻义，强调不可破、没有明显漏洞。",
+          "collocations": [
+            {
+              "phrase": "an ironclad guarantee",
+              "meaningZh": "牢不可破的保证"
+            },
+            {
+              "phrase": "ironclad proof",
+              "meaningZh": "不可推翻的证据"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "firm",
+          "comparisonZh": "都可表示坚定牢靠；ironclad 程度更强，强调不能被打破或动摇。"
+        },
+        {
+          "word": "unbreakable",
+          "comparisonZh": "在不能被破坏或违背这一义上接近；unbreakable 也常形容实际物体不易碎。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The company has an ironclad policy against revealing secrets to competitors.",
+          "translationZh": "公司有一项绝不允许向竞争对手泄露秘密的严格规定。",
+          "explanationZh": "against 后接动名词，说明规定所禁止的行为。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/ironclad"
+        },
+        {
+          "textEn": "He has an ironclad alibi.",
+          "translationZh": "他有无可推翻的不在场证明。",
+          "explanationZh": "ironclad 修饰 alibi，强调证明没有明显漏洞。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/ironclad"
+        }
+      ]
+    },
+    {
+      "number": 6350,
+      "word": "irradicable",
+      "ipa": "/ɪˈrædɪkəbl/",
+      "pos": "adj.",
+      "coreMeaningZh": "无法根除的",
+      "coreEn": "impossible to uproot or eliminate",
+      "coreImageZh": "姐姐拔去杂草的地上部分，留下的根却再次冒出新芽。杂草总是长回来，表现 irradicable 难以根除。",
+      "mnemonics": [
+        {
+          "method": "IR- + RADIC- ↔ RADISH，根牢牢留在土里",
+          "textZh": "irradicable 的否定前缀 ir- 配上表示根的 radic-；radish（萝卜）也来自这个根词。想象拔萝卜时根牢牢留在地里，怎么拔也拔不净；由根除不了，记住 irradicable。",
+          "kind": "etymology",
+          "weak": true,
+          "original": true
+        },
+        {
+          "method": "IRRADICABLE ↔ RADICAL，彻底改革也除不净",
+          "textZh": "把 irradicable 联到 radical（彻底的）：一项彻底改革想消除旧习惯，可旧习惯又冒出来。由彻底整治仍不能根除的顽疾，记住 irradicable。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "无法根除的",
+          "explanationZh": "较少见的形容词，既可形容拔不净的杂草，也可比喻难以消除的偏见或习惯。与 ineradicable 意思相近；名词常用 habit、prejudice、weed。",
+          "collocations": [
+            {
+              "phrase": "an irradicable habit",
+              "meaningZh": "无法根除的习惯"
+            },
+            {
+              "phrase": "irradicable prejudice",
+              "meaningZh": "难以根除的偏见"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ineradicable",
+          "comparisonZh": "都表示无法根除、不能彻底消除，语义非常接近；ineradicable 更常见。"
+        },
+        {
+          "word": "deep-rooted",
+          "comparisonZh": "都可形容根深蒂固；deep-rooted 强调形成已深，未必断言绝对不能根除。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The weed proved irradicable and grew back every spring.",
+          "translationZh": "这株杂草怎么也除不净，每年春天都重新长出。",
+          "explanationZh": "proved 加形容词表示结果证明如此，grew back 指重新长出。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "He feared that the prejudice had become irradicable.",
+          "translationZh": "他担心这种偏见已经变得无法根除。",
+          "explanationZh": "feared 后接 that 从句，had become 表示先前已经形成的状态。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    }
+  ]
+}

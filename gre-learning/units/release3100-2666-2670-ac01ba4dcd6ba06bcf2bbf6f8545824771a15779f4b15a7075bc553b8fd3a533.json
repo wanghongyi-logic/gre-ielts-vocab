@@ -1,0 +1,333 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6286,
+      "word": "incriminate",
+      "ipa": "/ɪnˈkrɪmɪneɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "归罪于；使受到犯罪指控",
+      "coreEn": "to accuse of a crime or show involvement in wrongdoing",
+      "coreImageZh": "男孩向老师说明同学未经允许拿走了他的玩具车，并指着同学手里的车提出指控。把某人与所指的过错联系起来，指出他应负责任，就是这里 incriminate 的意思。",
+      "mnemonics": [
+        {
+          "method": "INCRIMINATE，CRIME 被指到谁身上",
+          "textZh": "incriminate 的 crimin- 与 crime（犯罪）同源。想象调查者把一宗 crime 与某人连起来，指出他参与其中：把犯罪指到某人身上，就是 incriminate。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INCRIMINATE ↔ CREAM + ATE，嘴边奶油成证据",
+          "textZh": "把 incriminate 的声音联到 cream（奶油）和 ate（吃了）。蛋糕不见了，有人指着男孩嘴边的奶油说“就是他吃的”。这点奶油使他受到偷吃的指控，记住 incriminate。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "归罪于；使受到犯罪指控",
+          "explanationZh": "及物动词，可以是人提出指控，也可以是证据使某人与罪行或过错联系起来。常见 incriminate someone in something 和 incriminate oneself；指控或牵连本身不等于法院定罪。",
+          "collocations": [
+            {
+              "phrase": "incriminate someone",
+              "meaningZh": "归罪于某人"
+            },
+            {
+              "phrase": "incriminating evidence",
+              "meaningZh": "使人受到犯罪怀疑的证据"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "accuse",
+          "comparisonZh": "都可表示指控；accuse 的适用范围更广，incriminate 常突出犯罪或不当行为及相关证据。"
+        },
+        {
+          "word": "indict",
+          "comparisonZh": "都可涉及犯罪指控；indict 通常是正式起诉，incriminate 不要求走到起诉程序。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Material found at the crime scene incriminates the defendant.",
+          "translationZh": "犯罪现场发现的物品使被告受到犯罪指控。",
+          "explanationZh": "物证作主语，说明其将被告与犯罪联系起来。",
+          "sourceAttribution": "Merriam-Webster，词典收录的完整句。 https://www.merriam-webster.com/dictionary/incriminate"
+        },
+        {
+          "textEn": "in exchange for a reduced sentence, the thief agreed to incriminate his accomplice",
+          "translationZh": "为了换取减刑，窃贼同意指控他的同伙。",
+          "explanationZh": "保留词典原有小写形式；agreed to 后接动词原形。",
+          "sourceAttribution": "Merriam-Webster，词典收录的完整句。 https://www.merriam-webster.com/dictionary/incriminate"
+        }
+      ]
+    },
+    {
+      "number": 6287,
+      "word": "incubate",
+      "ipa": "/ˈɪŋkjəbeɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "孵卵；使卵在适宜条件下发育",
+      "coreEn": "to keep eggs warm so that the young develop and hatch",
+      "coreImageZh": "母鸡安稳地伏在蛋上，用体温给蛋保暖，帮助蛋内小鸡逐渐发育。incubate 在这里就是持续孵卵。",
+      "mnemonics": [
+        {
+          "method": "INCUBATE，伏在蛋上保温",
+          "textZh": "incubate 来自表示伏卧在上面的拉丁词，cub- 与躺卧有关。想到母鸡伏在蛋上，用身体持续保温，便能把 incubate 记成孵卵。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "IN + CUBE，蛋住进暖方盒",
+          "textZh": "把 incubate 联想到 in（在里面）和 cube（方块）：一枚蛋放在温暖的方盒里，盒内持续保持适宜温度，帮助小鸡发育。这间暖暖的方块小屋提示人工孵卵。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "孵卵；使卵在适宜条件下发育",
+          "explanationZh": "孵卵义强调保温和发育过程，不等于蛋已破壳，也不是下蛋。可说母鸟 incubates eggs；另可用于培养细胞、病原体潜伏或酝酿想法，本页以孵卵为主。",
+          "collocations": [
+            {
+              "phrase": "incubate eggs",
+              "meaningZh": "孵卵"
+            },
+            {
+              "phrase": "artificially incubate eggs",
+              "meaningZh": "人工孵卵"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "brood",
+          "comparisonZh": "作动词表示伏在蛋上孵卵时接近；brood 也可表示忧思，且人工孵化通常用 incubate。"
+        },
+        {
+          "word": "hatch",
+          "comparisonZh": "都与幼体从卵中发育出来有关；hatch 突出孵出或破壳，incubate 突出此前保温发育过程，不能处处互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The female bird incubates the eggs.",
+          "translationZh": "雌鸟孵这些蛋。",
+          "explanationZh": "incubates 接 eggs，强调母鸟的孵卵行为。",
+          "sourceAttribution": "Merriam-Webster，词典收录的完整句。 https://www.merriam-webster.com/dictionary/incubate"
+        },
+        {
+          "textEn": "The female bird incubates the eggs for about 16 days.",
+          "translationZh": "雌鸟孵卵约十六天。",
+          "explanationZh": "for 引出孵卵持续的时间。",
+          "sourceAttribution": "Cambridge，词典收录的完整句。 https://dictionary.cambridge.org/us/dictionary/english/incubate"
+        }
+      ]
+    },
+    {
+      "number": 6288,
+      "word": "inculpate",
+      "ipa": "/ɪnˈkʌlpeɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "归罪于；指控",
+      "coreEn": "to attribute guilt or fault to someone",
+      "coreImageZh": "成年人询问花盆是谁打碎的，男孩指出同学刚才踢的红球砸中了花盆，把这件事的过错归在他身上。inculpate 就是指责某人有过错、应负责任。",
+      "mnemonics": [
+        {
+          "method": "INCULPATE ↔ CUP + PLATE，碎杯盘算谁的错",
+          "textZh": "把 inculpate 的后半声音联到 cup（杯子）和 plate（盘子）。杯盘摔碎后，主人指着一个人说“是你弄坏的”。把过错归到那个人身上，就是 inculpate。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INCULPATE ↔ 硬扣赔，先把过错扣给你",
+          "textZh": "把 inculpate 的声音联到“硬扣赔”：有人硬把打碎东西的责任扣到你头上，接着要你赔。把过错扣给某人，就是 inculpate。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "归罪于；指控",
+          "explanationZh": "较正式且不常见的及物动词，指把罪责或过错归于某人，常见于法律或调查语境。主语可以是指控者、陈述或证据。与 exculpate（开脱罪责）方向相反，但不能理解成已作定罪判决。",
+          "collocations": [
+            {
+              "phrase": "inculpate someone",
+              "meaningZh": "归罪于某人"
+            },
+            {
+              "phrase": "inculpatory evidence",
+              "meaningZh": "归罪性证据"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "incriminate",
+          "comparisonZh": "在归罪、使卷入犯罪指控这一义上很接近；inculpate 更偏正式法律用语，incriminate 更常见。"
+        },
+        {
+          "word": "blame",
+          "comparisonZh": "都可把过错归给人；blame 用途更广、更日常，不一定涉及犯罪或正式指控。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Over the years, Pearcy has given numerous different accounts of the crime — at times blaming Dailey and other times inculpating himself.",
+          "translationZh": "多年来，皮尔西对这起犯罪给出过许多不同说法，时而责怪戴利，时而把罪责归于自己。",
+          "explanationZh": "inculpating himself 与 blaming Dailey 并列，显示归罪对象不同。",
+          "sourceAttribution": "Merriam-Webster，词典收录的完整句。 https://www.merriam-webster.com/dictionary/inculpate"
+        },
+        {
+          "textEn": "The witness’s account inculpated the driver, but the investigation was not yet complete.",
+          "translationZh": "证人的叙述把过错归于司机，但调查尚未完成。",
+          "explanationZh": "inculpated 表示归责，不表示调查已经得出最终结论。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6289,
+      "word": "indelible",
+      "ipa": "/ɪnˈdeləbl/",
+      "pos": "adj.",
+      "coreMeaningZh": "难以忘怀的；不可磨灭的",
+      "coreEn": "lasting in memory and impossible to forget",
+      "coreImageZh": "男孩看到旧照片，仍清楚记得多年前和姐姐第一次看见海上彩虹的经历；这段美好记忆多年后仍无法忘怀。",
+      "mnemonics": [
+        {
+          "method": "IN- + DELETE，记忆删不掉",
+          "textZh": "indelible 的词源中 in- 表示不，del- 与 delete（删除）同源。把那段难忘经历想成心里删不掉的文件：不可删除的印象，就是 indelible。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INDELIBLE ↔ INCREDIBLE，震撼到多年难忘",
+          "textZh": "把 indelible 的整体词形联到 incredible（难以置信的）。第一次看到壮观的海上彩虹，你惊叹 incredible，多年后仍记得每种颜色。由惊人的经历留下难忘印象，记住 indelible。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "难以忘怀的；不可磨灭的",
+          "explanationZh": "本页是记忆或影响难以消退的比喻义，常修饰 impression、memory、mark。也有墨迹无法擦除的字面义。难忘不一定美好，痛苦经历同样可以留下 indelible impression。",
+          "collocations": [
+            {
+              "phrase": "an indelible impression",
+              "meaningZh": "不可磨灭的印象"
+            },
+            {
+              "phrase": "leave an indelible mark",
+              "meaningZh": "留下难以磨灭的影响"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "unforgettable",
+          "comparisonZh": "在难以忘记这一义上最接近；unforgettable 更直接修饰经历、人或时刻，indelible 常与印象、痕迹搭配。"
+        },
+        {
+          "word": "lasting",
+          "comparisonZh": "都可形容长久保留的影响；lasting 强调持续，indelible 更强，强调难以消除。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The experience made an indelible impression on me.",
+          "translationZh": "这次经历给我留下了不可磨灭的印象。",
+          "explanationZh": "make an impression on someone 是给某人留下印象。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/indelible"
+        },
+        {
+          "textEn": "Her unhappy childhood left an indelible mark.",
+          "translationZh": "她不幸的童年留下了不可磨灭的影响。",
+          "explanationZh": "mark 是比喻性的影响，并非皮肤上的实际痕迹。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/indelible"
+        }
+      ]
+    },
+    {
+      "number": 6290,
+      "word": "indemnity",
+      "ipa": "/ɪnˈdemnəti/",
+      "pos": "n.",
+      "coreMeaningZh": "损失赔偿；赔偿金",
+      "coreEn": "compensation paid for damage or loss",
+      "coreImageZh": "母亲为投保手机的损坏申请赔偿，审核通过后领到赔偿款。这笔钱用来补偿手机损失，体现 indemnity 的赔偿之义。",
+      "mnemonics": [
+        {
+          "method": "INDEMNITY，把 DAMAGE 的损失补回来",
+          "textZh": "indemnity 的词源含“不受损失”的意思，demn- 来自表示损失的拉丁词。可联到熟悉的 damage：东西损坏后，用赔偿金补回损失，便是 indemnity。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INDEMNITY ↔ 应得 MONEY，赔给受损的人",
+          "textZh": "把 indemnity 的整体声音联到“应得 money”。手机受损，保险按约赔付，这是补偿损失应得的钱，不是额外奖励。由应得的赔偿 money，记住 indemnity。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "损失赔偿；赔偿金",
+          "explanationZh": "在赔偿金义上可数，复数 indemnities；常说 pay an indemnity 或 seek an indemnity。另可指损失保障或某种责任豁免，不应把所有保险费用都叫赔偿金。",
+          "collocations": [
+            {
+              "phrase": "pay an indemnity",
+              "meaningZh": "支付赔偿金"
+            },
+            {
+              "phrase": "an indemnity for damage",
+              "meaningZh": "损害赔偿金"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "compensation",
+          "comparisonZh": "在补偿损失的款项这一义上接近；compensation 范围更广，也可表示薪酬，indemnity 较正式，常见于保险或法律。"
+        },
+        {
+          "word": "damages",
+          "comparisonZh": "在法律上的损害赔偿金义上接近；damages 通常用复数，常涉及侵权或违约赔偿，不等同普通 damage。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Our client will seek an indemnity from the vendor for a breach of contract.",
+          "translationZh": "我们的客户将就违约向卖方索赔。",
+          "explanationZh": "seek an indemnity from 表示向某方要求赔偿。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/indemnity"
+        },
+        {
+          "textEn": "The government paid the family an indemnity for the missing pictures.",
+          "translationZh": "政府因画作遗失而向那家人支付了赔偿金。",
+          "explanationZh": "pay someone an indemnity for something 指为某项损失支付赔偿。",
+          "sourceAttribution": "Collins，词典收录的完整句。 https://www.collinsdictionary.com/dictionary/english/indemnity"
+        }
+      ]
+    }
+  ]
+}

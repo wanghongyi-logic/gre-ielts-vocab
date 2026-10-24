@@ -1,0 +1,333 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6306,
+      "word": "infuse",
+      "ipa": "/ɪnˈfjuːz/",
+      "pos": "vt.",
+      "coreMeaningZh": "灌输；使充满某种感情或品质",
+      "coreEn": "to fill someone or something with a quality or feeling",
+      "coreImageZh": "姐姐弹起轻快吉他曲，让原本提不起精神的男孩和同学渐渐振作、跟着拍手；音乐给活动注入活力。",
+      "mnemonics": [
+        {
+          "method": "INFUSE，像把活力倒进去",
+          "textZh": "infuse 源自表示“倒入”的拉丁词，in- 表示进入，fus- 对应倾倒。把抽象的信心想成倒进团队的一壶水：原本没精神的人渐渐充满信心，这就是 infuse。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INFUSE ↔ 音符，给房间注入快乐",
+          "textZh": "把 infuse 的开头声音联到“音符”。冷清的房间响起欢快的音符，大家跟着笑起来、拍起手；音乐仿佛把快乐注入了整个房间。由音符带来的情绪充盈，记住 infuse。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "灌输；使充满某种感情或品质",
+          "explanationZh": "常见 infuse A into B（把品质A注入B）与 infuse B with A（使B充满A）两种结构。可说活力、信心、悲伤等，不限于积极情绪。另有泡茶或输注等义，本页选择抽象品质进入并充满的用法。",
+          "collocations": [
+            {
+              "phrase": "infuse confidence into a team",
+              "meaningZh": "给团队注入信心"
+            },
+            {
+              "phrase": "infuse a story with warmth",
+              "meaningZh": "使故事充满温情"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "imbue",
+          "comparisonZh": "在使人或事物充满某种感情、品质这一义上接近，常用 imbue something with something；不泛指所有倒入动作。"
+        },
+        {
+          "word": "instill",
+          "comparisonZh": "都可用于灌输信念或品质；instill 更突出逐渐培养，infuse 更突出注入后充满。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her novels are infused with sadness.",
+          "translationZh": "她的小说充满悲伤。",
+          "explanationZh": "被动结构 be infused with 描述作品整体带有一种情绪。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/infuse"
+        },
+        {
+          "textEn": "The pulling down of the Berlin Wall infused the world with optimism.",
+          "translationZh": "柏林墙被推倒使世界充满乐观情绪。",
+          "explanationZh": "事件作主语，infused the world with optimism 表示使人们充满乐观。",
+          "sourceAttribution": "Cambridge，词典收录的完整句。 https://dictionary.cambridge.org/us/dictionary/english/infuse"
+        }
+      ]
+    },
+    {
+      "number": 6307,
+      "word": "ingenious",
+      "ipa": "/ɪnˈdʒiːniəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "聪明的；富有创造才能的；巧妙的",
+      "coreEn": "clever and inventive, especially in solving a problem",
+      "coreImageZh": "男孩想让绘本立起来却没有书架；姐姐把硬纸板折成稳固的三角书托，将书斜靠其上，巧妙解决问题。",
+      "mnemonics": [
+        {
+          "method": "INGENIOUS ↔ GENIUS，巧思像小天才",
+          "textZh": "看到 ingenious，联到熟悉的 genius（天才）。没有书架，他却把纸板折成稳固书托，巧妙解决了问题。把巧妙的新办法和 ingenious 连在一起。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INGENIOUS ↔ ENGINE，巧做一部小机器",
+          "textZh": "把 ingenious 联到 engine（发动机）。想象有人只用旧零件就设计出能转动的小发动机，普通材料被他组合成巧妙装置；这份会想办法、会创造的本领就是 ingenious。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "聪明的；富有创造才能的；巧妙的",
+          "explanationZh": "可形容人有巧思，也可形容方案、工具或做法巧妙且有新意。常见 an ingenious solution/device。不要与 ingenuous（天真坦率的）混淆；ingenious 关注聪明创造，未必表示诚实或天真。",
+          "collocations": [
+            {
+              "phrase": "an ingenious solution",
+              "meaningZh": "巧妙的解决办法"
+            },
+            {
+              "phrase": "an ingenious inventor",
+              "meaningZh": "富有巧思的发明者"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "clever",
+          "comparisonZh": "都可表示聪明；ingenious 更突出有创意地解决问题，clever 的范围更广。",
+          "sources": [
+            "zhangwei_original3000"
+          ]
+        },
+        {
+          "word": "inventive",
+          "comparisonZh": "都突出能想出新方法或新事物；inventive 常直接强调创造力，ingenious 也强调办法巧妙有效。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His plots are always very ingenious.",
+          "translationZh": "他的情节设计总是很巧妙。",
+          "explanationZh": "plots 指故事情节，ingenious 评价设计的巧思。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/ingenious"
+        },
+        {
+          "textEn": "She's very ingenious when it comes to finding excuses.",
+          "translationZh": "说到找借口，她很有一套新点子。",
+          "explanationZh": "when it comes to 限定具体领域，这里的聪明带有调侃意味。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/ingenious"
+        }
+      ]
+    },
+    {
+      "number": 6308,
+      "word": "ingest",
+      "ipa": "/ɪnˈdʒest/",
+      "pos": "vt.",
+      "coreMeaningZh": "摄入；咽下",
+      "coreEn": "to take food or another substance into the body by swallowing",
+      "coreImageZh": "男孩拿起盘中的一小片苹果送入口中，咀嚼并咽下；姐姐说明食物从口进入身体就是摄入。",
+      "mnemonics": [
+        {
+          "method": "IN- + GEST，把东西带进体内",
+          "textZh": "ingest 的词源中 in- 表示进入，gest- 来自“携带”。把一口食物从嘴边送进身体，像把东西带过入口：记住 ingest 是把食物摄入身体。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INGEST ↔ DIGEST，先吃进去再消化",
+          "textZh": "把 ingest 与熟悉的 digest（消化）并排想：食物先通过嘴进去，才能在身体里消化。用“一口进去”对照“进去以后消化”，把 ingest 的摄入动作记清。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "摄入；咽下",
+          "explanationZh": "较正式或专业的及物动词，宾语可为食物、液体或其他物质。强调通过口摄入身体，不等于营养已被吸收，也不等于消化完成。日常说吃东西一般用 eat。",
+          "collocations": [
+            {
+              "phrase": "ingest food",
+              "meaningZh": "摄入食物"
+            },
+            {
+              "phrase": "accidentally ingest a substance",
+              "meaningZh": "意外吞入某种物质"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "swallow",
+          "comparisonZh": "都可指咽下；swallow 更具体指吞咽动作，ingest 更正式，强调物质进入身体。"
+        },
+        {
+          "word": "consume",
+          "comparisonZh": "用于吃喝时接近；consume 还可表示消耗资源，不能在所有语境替换 ingest。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Food is the major source of ingested bacteria.",
+          "translationZh": "食物是被摄入细菌的主要来源。",
+          "explanationZh": "ingested 作过去分词修饰 bacteria，指随着摄入进入体内的细菌。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/ingest"
+        },
+        {
+          "textEn": "Grazing animals ingest dioxins through eating contaminated plants.",
+          "translationZh": "食草动物通过吃受污染的植物摄入二噁英。",
+          "explanationZh": "through eating 交代摄入途径。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/ingest"
+        }
+      ]
+    },
+    {
+      "number": 6309,
+      "word": "ingrained",
+      "ipa": "/ɪnˈɡreɪnd/",
+      "pos": "adj.",
+      "coreMeaningZh": "根深蒂固的；牢固形成的",
+      "coreEn": "firmly established and difficult to change",
+      "coreImageZh": "奶奶把鞋摆齐，男孩为了腾位置把鞋挪得不齐；奶奶随即习惯性重新摆齐，说明这是保持了几十年的根深蒂固的习惯。",
+      "mnemonics": [
+        {
+          "method": "IN + GRAIN，深入木纹难擦掉",
+          "textZh": "用 in（在里面）与 grain（木纹）联想 ingrained：颜色渗进木头纹理，擦表面也去不掉。习惯若像深入木纹的颜色一样难除，就是根深蒂固的 ingrained。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INGRAINED ↔ TRAINED，练久成了下意识",
+          "textZh": "把 ingrained 的整体词形联到 trained（训练过的）。天天训练进门就把鞋摆齐，久了不用想也会做；那种已经扎进日常、很难改掉的习惯，便是 ingrained。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "根深蒂固的；牢固形成的",
+          "explanationZh": "常形容长期形成且难以改变的习惯、态度或观念，常与 deeply 搭配，也可用 ingrained in somebody。不要直接把它等同于天生的；许多 ingrained habits 是后天反复养成的。另可指深入表层难去除的污垢，本页以习惯为主。",
+          "collocations": [
+            {
+              "phrase": "a deeply ingrained habit",
+              "meaningZh": "根深蒂固的习惯"
+            },
+            {
+              "phrase": "ingrained in daily life",
+              "meaningZh": "深深扎根于日常生活"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "deep-rooted",
+          "comparisonZh": "都比喻形成很深、难以改变，常可共同修饰习惯或偏见。"
+        },
+        {
+          "word": "entrenched",
+          "comparisonZh": "都可指牢固建立而难改变；entrenched 也常形容制度、利益或立场，范围与语境不完全相同。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Morals tend to be deeply ingrained.",
+          "translationZh": "道德观念往往根深蒂固。",
+          "explanationZh": "tend to 表示通常倾向，deeply 加强牢固形成的程度。",
+          "sourceAttribution": "Collins，词典收录的完整句。 https://www.collinsdictionary.com/dictionary/english/ingrained"
+        },
+        {
+          "textEn": "From ingrained habit he paused to straighten up the bed.",
+          "translationZh": "出于根深蒂固的习惯，他停下来把床铺整理整齐。",
+          "explanationZh": "from 表原因，习惯驱使他自然做出整理动作。",
+          "sourceAttribution": "Collins，词典收录的完整句。 https://www.collinsdictionary.com/dictionary/english/ingrained"
+        }
+      ]
+    },
+    {
+      "number": 6310,
+      "word": "ingratiating",
+      "ipa": "/ɪnˈɡreɪʃieɪtɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "逢迎的；意在讨好以博取好感的",
+      "coreEn": "trying too hard to please someone and gain their favor",
+      "coreImageZh": "蓝衣同学满脸讨好地夸老师的普通花画，随后请求让自己不用选拔直接当小组长；男孩看出其赞美是为了博得偏爱。",
+      "mnemonics": [
+        {
+          "method": "IN + GRATI，挤进别人的好感里",
+          "textZh": "ingratiating 所属词族源自拉丁语“进入好感”，grati- 与 favor、grace 所表示的恩惠好感有关。想象一个人刻意陪笑、只为挤进老师的偏爱里，便是逢迎讨好。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "INGRATIATING ↔ GREAT GREETING，夸得过头的招呼",
+          "textZh": "把 ingratiating 联到 great greeting：一见老师就笑着喊“您真great，谁都比不过您！”，紧接着想要特殊照顾。由热情得过头、带着目的的招呼，记住 ingratiating。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "逢迎的；意在讨好以博取好感的",
+          "explanationZh": "本页选择带贬意的逢迎义，常修饰 smile、manner、tone，强调想让对方喜欢自己，往往显得过分或不真诚。普通礼貌、友好微笑不自动等于 ingratiating；旧用法也可仅指讨人喜欢，要看语境。",
+          "collocations": [
+            {
+              "phrase": "an ingratiating smile",
+              "meaningZh": "讨好的笑容"
+            },
+            {
+              "phrase": "an ingratiating manner",
+              "meaningZh": "逢迎的举止"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "fawning",
+          "comparisonZh": "都可形容为了讨好而显得过分顺从、奉承；fawning 通常贬意更明显。"
+        },
+        {
+          "word": "flattering",
+          "comparisonZh": "都可能赞美以博取好感；flattering 还可单纯表示令人受用或显得好看，未必有逢迎企图。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He wasn’t just helpful—he was positively ingratiating.",
+          "translationZh": "他不只是热心帮忙，简直是在刻意讨好。",
+          "explanationZh": "positively 在这里加强语气，表示简直、确实，不是积极乐观。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/ingratiating"
+        },
+        {
+          "textEn": "I am not an ingratiating sort of person.",
+          "translationZh": "我不是那种会刻意讨好别人的人。",
+          "explanationZh": "sort of person 描述人的类型，ingratiating 修饰这种待人方式。",
+          "sourceAttribution": "Cambridge（收录 Hansard 语料），词典收录的完整句。 https://dictionary.cambridge.org/dictionary/english/ingratiating"
+        }
+      ]
+    }
+  ]
+}

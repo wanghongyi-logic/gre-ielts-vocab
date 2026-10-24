@@ -1,0 +1,330 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6566,
+      "word": "pacify",
+      "ipa": "/ˈpæsɪfaɪ/",
+      "pos": "v.",
+      "coreMeaningZh": "使平静，安慰",
+      "coreEn": "to calm someone who is angry, upset, or agitated",
+      "coreImageZh": "男孩看到画被碰湿后生气，同学道歉并帮他吸掉水，男孩渐渐平静；pacify 就是使人平静、安抚。",
+      "mnemonics": [
+        {
+          "method": "PAC：把怒气变成和平",
+          "textZh": "pacify 的 pac 来自表示“和平”的拉丁词根，-ify 表示使成为。想象争吵声慢慢停下，大家恢复平和；把愤怒安抚成平静，就是 pacify。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "给情绪带来和平",
+          "textZh": "沿着 pacify 的“使和平”来记：孩子哭闹时，家人轻声安慰，孩子渐渐平静。让心里的冲突安静下来，就是 pacify，安抚。",
+          "kind": "semantic_image",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "使平静，安慰",
+          "explanationZh": "及物动词，常接生气、焦躁或哭闹的人，表示使其平静。可通过安慰、解释或满足合理要求来安抚；也有平定某地区的用法。",
+          "collocations": [
+            {
+              "phrase": "pacify a crying child",
+              "meaningZh": "安抚哭泣的孩子"
+            },
+            {
+              "phrase": "pacify an angry crowd",
+              "meaningZh": "安抚愤怒的人群"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "soothe",
+          "comparisonZh": "都可指安抚；soothe 更强调温和地缓解不安或痛苦。"
+        },
+        {
+          "word": "placate",
+          "comparisonZh": "都可使人息怒；placate 常强调用行动或让步化解不满。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The baby could not be pacified.",
+          "translationZh": "怎么也安抚不好那个婴儿。",
+          "explanationZh": "could not be pacified 是被动结构，表示无法让婴儿平静。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/pacify"
+        },
+        {
+          "textEn": "The speech was designed to pacify the irate crowd.",
+          "translationZh": "这场讲话旨在平息愤怒人群的情绪。",
+          "explanationZh": "be designed to 表示旨在，irate 意为非常愤怒的。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/pacify"
+        }
+      ]
+    },
+    {
+      "number": 6567,
+      "word": "padding",
+      "ipa": "/ˈpædɪŋ/",
+      "pos": "n.",
+      "coreMeaningZh": "夸张，废话",
+      "coreEn": "unnecessary material added to make writing longer or an account seem fuller",
+      "coreImageZh": "男孩为了把作文写长，反复加上无关的话；删去这些凑篇幅的废话后，文章更清楚。padding 指这种多余的填充内容。",
+      "mnemonics": [
+        {
+          "method": "PAD：给文章塞填充物",
+          "textZh": "pad 可以表示垫、填塞。想象枕头靠填料鼓起来，文章也被塞进一堆不必要的话；没有增加实质，只撑大篇幅，这些就是 padding，凑数的废话。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "把小事垫得过分丰满",
+          "textZh": "仍用 pad 的“填塞”来记：本来一两句话能说清的小事，被不断添枝加叶，讲得远比事实丰满。那些多加的铺陈，就是 padding。",
+          "kind": "semantic_image",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "夸张，废话",
+          "explanationZh": "通常为不可数名词。此处指写作、演讲或叙述里为了增加篇幅而添加的无关内容，也可涉及添枝加叶、夸大；不是所有细节描写都属于 padding。",
+          "collocations": [
+            {
+              "phrase": "unnecessary padding",
+              "meaningZh": "不必要的填充内容"
+            },
+            {
+              "phrase": "cut out the padding",
+              "meaningZh": "删去凑篇幅的废话"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "verbiage",
+          "comparisonZh": "都可指冗长空泛的话；padding 更突出为撑大篇幅而加进去的内容。"
+        },
+        {
+          "word": "embellishment",
+          "comparisonZh": "表示添枝加叶时相关；embellishment 也可指有价值的润饰，不一定是废话。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Some of the quotations are useful, others are little more than padding.",
+          "translationZh": "有些引文有用，另一些不过是凑篇幅的内容。",
+          "explanationZh": "little more than 表示几乎只是，others 指其余引文。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/padding"
+        },
+        {
+          "textEn": "Of the sonnet eleven of the lines are mere padding and say nothing.",
+          "translationZh": "这首十四行诗中有十一行只是凑数，言之无物。",
+          "explanationZh": "mere 强调仅仅是；say nothing 在这里表示没有实质内容。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/padding"
+        }
+      ]
+    },
+    {
+      "number": 6568,
+      "word": "paean",
+      "ipa": "/ˈpiːən/",
+      "pos": "n.",
+      "coreMeaningZh": "欢乐颂，赞扬",
+      "coreEn": "a joyful song or an enthusiastic expression of praise",
+      "coreImageZh": "男孩与邻居为照顾花园的老人唱起赞歌，歌声表达喜悦和赞扬；paean 指这样的颂歌，也指热情的赞颂。",
+      "mnemonics": [
+        {
+          "method": "向神明唱的感谢歌",
+          "textZh": "paean 源于古希腊献给阿波罗的感谢赞歌。想象人们摆脱灾难后聚在一起，唱歌表达感谢与欢喜；这种热情赞颂就是 paean。",
+          "kind": "etymology",
+          "weak": true,
+          "original": true
+        },
+        {
+          "method": "一首歌装满赞美",
+          "textZh": "把 paean 固定在 a paean of praise 里：庆祝会上，大家不是闲聊，而是把对一个人的感谢唱成歌。整首歌都在赞扬，记 paean，赞歌。",
+          "kind": "phrase_anchor",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "欢乐颂，赞扬",
+          "explanationZh": "文学或正式用语，可数名词。可指颂歌，也可指热情赞扬某人或某事的文章、作品或言辞；常用 a paean to 引出赞颂对象。",
+          "collocations": [
+            {
+              "phrase": "a paean to freedom",
+              "meaningZh": "对自由的赞歌"
+            },
+            {
+              "phrase": "a paean of praise",
+              "meaningZh": "热情的颂赞"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hymn",
+          "comparisonZh": "都可指颂歌；hymn 常有宗教背景，paean 也可赞颂世俗事物。"
+        },
+        {
+          "word": "tribute",
+          "comparisonZh": "都可表达赞扬与敬意；tribute 范围更广，paean 更强调热烈赞颂。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The song is a paean to solitude and independence.",
+          "translationZh": "这首歌赞颂独处与独立。",
+          "explanationZh": "a paean to 引出歌曲赞颂的对象。",
+          "sourceAttribution": "https://dictionary.cambridge.org/us/dictionary/english/paean?topic=praising-and-applauding"
+        },
+        {
+          "textEn": "His retirement party featured many paeans for his long years of service to the company.",
+          "translationZh": "他的退休聚会上，人们纷纷赞颂他多年来为公司的服务。",
+          "explanationZh": "featured 表示以……为重要内容，paeans 的复数表示多种赞颂。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/paean"
+        }
+      ]
+    },
+    {
+      "number": 6569,
+      "word": "palatial",
+      "ipa": "/pəˈleɪʃl/",
+      "pos": "adj.",
+      "coreMeaningZh": "宫殿般奢华的",
+      "coreEn": "very large, grand, and richly decorated like a palace",
+      "coreImageZh": "男孩走进高大门厅，看到华丽吊灯、宽阔楼梯和精美装饰，觉得酒店像宫殿；palatial 就是宫殿般宏大奢华的。",
+      "mnemonics": [
+        {
+          "method": "PALACE：像宫殿一样",
+          "textZh": "palatial 和 palace（宫殿）同源。想象普通房门一打开，里面却是高大厅堂和华丽吊灯，仿佛进了宫殿；这样的宏大奢华，就是 palatial。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "把住处住成宫殿",
+          "textZh": "继续用 palace 联想 palatial：本来只是去旅馆过夜，房间却宽大华美，像王宫套房。由宫殿般的住处，记 palatial，宏大奢华的。",
+          "kind": "semantic_image",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "宫殿般奢华的",
+          "explanationZh": "常放在名词前，形容房屋、酒店或大厅像宫殿一样宽敞气派、装饰华丽。不必是真正的宫殿，也不只是价格贵。",
+          "collocations": [
+            {
+              "phrase": "a palatial hotel",
+              "meaningZh": "宫殿般奢华的酒店"
+            },
+            {
+              "phrase": "a palatial mansion",
+              "meaningZh": "宏大华丽的宅邸"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "luxurious",
+          "comparisonZh": "都可指豪华的；luxurious 强调舒适享受，palatial 还突出宫殿般的规模和气派。"
+        },
+        {
+          "word": "sumptuous",
+          "comparisonZh": "都可形容奢华华美；sumptuous 也常修饰食物和织物，palatial 多用于建筑空间。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They lived in a palatial apartment.",
+          "translationZh": "他们住在一套宫殿般豪华的公寓里。",
+          "explanationZh": "palatial 修饰 apartment，突出公寓宽敞华丽。",
+          "sourceAttribution": "https://dictionary.cambridge.org/us/dictionary/english/palatial"
+        },
+        {
+          "textEn": "A strange silence seemed to hang over the palatial mansion.",
+          "translationZh": "一片奇异的寂静似乎笼罩着那座豪华宅邸。",
+          "explanationZh": "seem to 表示似乎，hang over 在这里描述气氛笼罩。",
+          "sourceAttribution": "https://dictionary.cambridge.org/us/dictionary/english/palatial"
+        }
+      ]
+    },
+    {
+      "number": 6570,
+      "word": "pall",
+      "ipa": "/pɔːl/",
+      "pos": "v.",
+      "coreMeaningZh": "失去兴趣（指事物失去吸引力）",
+      "coreEn": "to become less interesting or enjoyable over time",
+      "coreImageZh": "男孩起初兴奋地观看玩具表演，重复看了以后渐渐无聊，最后转身做别的事；pall 指原本有趣的事逐渐失去吸引力。",
+      "mnemonics": [
+        {
+          "method": "褪色了，趣味也淡了",
+          "textZh": "pall 的动词词源与“变苍白、褪色”有关。想象一款游戏刚开始色彩鲜亮，玩久了在心里像褪了色，越来越无趣；游戏逐渐失去吸引力，就是 pall。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "老笑话的光彩褪了",
+          "textZh": "仍沿着 pall 的“褪去光彩”来记：同一个笑话第一次逗人大笑，反复讲后便没人想听。笑话的吸引力像颜色一样淡下去，就是 pall。",
+          "kind": "semantic_image",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "失去兴趣（指事物失去吸引力）",
+          "explanationZh": "这里是不及物动词，主语通常是活动、娱乐、魅力等，表示它们渐渐不再有趣或令人愉快。可用 pall on somebody 表示开始使某人感到厌倦，不是人主动放弃兴趣。",
+          "collocations": [
+            {
+              "phrase": "begin to pall",
+              "meaningZh": "开始失去吸引力"
+            },
+            {
+              "phrase": "pall on somebody",
+              "meaningZh": "开始使某人厌倦"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "become dull",
+          "comparisonZh": "都可表示变得乏味；pall 更强调原有吸引力随时间减退。"
+        },
+        {
+          "word": "lose its appeal",
+          "comparisonZh": "与目标义接近，强调事物不再像以前那样吸引人。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Already the allure of meals in restaurants had begun to pall.",
+          "translationZh": "下馆子吃饭的诱惑力已经开始减退。",
+          "explanationZh": "主语是 allure，had begun to pall 表示此前已开始失去吸引力。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/pall"
+        },
+        {
+          "textEn": "He found that his retirement hobbies began to pall after a couple of years.",
+          "translationZh": "他发现，退休后的爱好过了几年便开始变得无趣。",
+          "explanationZh": "that 从句的主语是 hobbies，pall 描述这些爱好的吸引力减退。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pall"
+        }
+      ]
+    }
+  ]
+}
