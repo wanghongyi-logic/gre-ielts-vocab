@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6371,
+      "word": "ken",
+      "ipa": "/ken/",
+      "pos": "n.",
+      "coreMeaningZh": "视野范围",
+      "coreEn": "the range of vision; what one can see",
+      "coreImageZh": "男孩看见远处红船，红船驶到海岬后便看不见了；ken 在这里指眼睛能够看见的范围。",
+      "mnemonics": [{"method":"KEN 借音“看”：看得到的范围","textZh":"ken 借音“看”：眼前看得到哪里，视野就到哪里。由“看”的范围，记 ken，视野范围。","kind":"invented_association","original":true},{"method":"KEN 联到 CAM：取景框就是看得见的范围","textZh":"ken 的读音联到 cam（摄像头，如 webcam）。镜头取景框内能看见，框外看不到：ken，视野范围。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "视野范围",
+          "explanationZh": "本页为较少见的字面义，表示目力所及的范围。within/in one’s ken 可表示在视野内，beyond/out of one’s ken 表示看不见。现代英语中也常比喻知识或理解范围。",
+          "collocations": [
+            {
+              "phrase": "within one’s ken",
+              "meaningZh": "在某人的视野范围内"
+            },
+            {
+              "phrase": "beyond one’s ken",
+              "meaningZh": "超出某人的视野或理解范围"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sight",
+          "comparisonZh": "在看得到的范围这一义上接近；sight 更日常，ken 的字面视觉用法较少见。"
+        },
+        {
+          "word": "view",
+          "comparisonZh": "都可涉及眼前可见范围；view 也常指景色或观点，ken 还常比喻理解范围。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The boat passed beyond our ken as it rounded the headland.",
+          "translationZh": "小船绕过海岬，驶出了我们的视野。",
+          "explanationZh": "as 引导时间从句，beyond our ken 表示离开我们能看见的范围。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "The distant lighthouse was still within his ken.",
+          "translationZh": "远处的灯塔仍在他的视野之内。",
+          "explanationZh": "within 后接范围，still 表示到那时仍看得见。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6372,
+      "word": "kidnap",
+      "ipa": "/ˈkɪdnæp/",
+      "pos": "vt.",
+      "coreMeaningZh": "绑架；劫持勒索",
+      "coreEn": "to seize and hold someone illegally, often to demand a ransom",
+      "coreImageZh": "舞台上，反派扣住一个人并索要赎金，姐姐说明这是绑架；kidnap 指非法劫持、扣留人，常用来勒索。",
+      "mnemonics": [{"method":"KID + NAP：孩子小睡时被绑走","textZh":"kidnap 完整拆成 kid（孩子）和 nap（小睡）。孩子正小睡，却被人偷偷绑走索要赎金：kidnap，绑架、劫持勒索。","kind":"invented_association","original":true},{"method":"KID + WRAP：把孩子强行裹住带走","textZh":"kidnap 的声音联到 kid（孩子）和 wrap（裹住）。把孩子强行裹住带走，就是 kidnap，绑架。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "绑架；劫持勒索",
+          "explanationZh": "及物动词，接被绑架的人，不限于儿童。常用被动式 be kidnapped，也可与 for ransom 连用。常见过去式 kidnapped，名词 kidnapping 表示绑架行为。",
+          "collocations": [
+            {
+              "phrase": "be kidnapped for ransom",
+              "meaningZh": "遭绑架勒索"
+            },
+            {
+              "phrase": "kidnap a businessman",
+              "meaningZh": "绑架一名商人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "abduct",
+          "comparisonZh": "都可指非法劫持人；kidnap 常让人想到扣留或索赎，abduct 不一定涉及赎金。"
+        },
+        {
+          "word": "seize",
+          "comparisonZh": "都可指强行抓住；seize 范围更广，本身不一定表示绑架。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Two businessmen have been kidnapped by terrorists.",
+          "translationZh": "两名商人遭到了恐怖分子的绑架。",
+          "explanationZh": "have been kidnapped 是现在完成时的被动式，by 后说明实施者。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/kidnap"
+        },
+        {
+          "textEn": "The terrorists were planning to kidnap one of the president’s sons.",
+          "translationZh": "那些恐怖分子当时正计划绑架总统的一个儿子。",
+          "explanationZh": "were planning to do 表示当时正在谋划，one of 后接复数名词。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/kidnap"
+        }
+      ]
+    },
+    {
+      "number": 6373,
+      "word": "kindle",
+      "ipa": "/ˈkɪndl/",
+      "pos": "vt.",
+      "coreMeaningZh": "点燃；使燃起",
+      "coreEn": "to start a fire burning",
+      "coreImageZh": "老师把火柴靠近干柴，柴火渐渐燃起；kindle 在这里指把火点起来。",
+      "mnemonics": [{"method":"KINDLE 联到 CANDLE：把蜡烛点起来","textZh":"kindle 与 candle（蜡烛）外形、读音都相近。把 candle 点起来，让烛火燃起：kindle，点燃、使燃起。","kind":"invented_association","original":true},{"method":"KINDLE 阅读器：燃起阅读热情","textZh":"Kindle 电子阅读器的名字，就是 kindle。好书让阅读热情燃起来；由阅读器联到被点燃的热情，记 kindle，点燃、使燃起。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "点燃；使燃起",
+          "explanationZh": "可作及物动词，接 fire、flame 等；也可作不及物动词，表示火开始燃起。比喻用法可表示激起兴趣或感情，本页先记字面点火义。",
+          "collocations": [
+            {
+              "phrase": "kindle a fire",
+              "meaningZh": "点起一堆火"
+            },
+            {
+              "phrase": "kindle a flame",
+              "meaningZh": "点燃火焰"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ignite",
+          "comparisonZh": "在点燃这一义上接近；ignite 常突出起火的一瞬，kindle 可强调让火逐渐燃起。"
+        },
+        {
+          "word": "light",
+          "comparisonZh": "都可表示点燃；light 更日常，也可用于灯或蜡烛。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We watched as the fire slowly kindled.",
+          "translationZh": "我们看着火慢慢燃起来。",
+          "explanationZh": "这里 kindle 是不及物动词，fire 作主语，slowly 描写燃起的过程。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/kindle"
+        },
+        {
+          "textEn": "We set up our tents and kindled a fire.",
+          "translationZh": "我们搭好帐篷，点起了一堆火。",
+          "explanationZh": "and 连接两个过去的动作，kindled 后直接接 a fire。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/dictionary/english/kindle"
+        }
+      ]
+    },
+    {
+      "number": 6374,
+      "word": "knack",
+      "ipa": "/næk/",
+      "pos": "n.",
+      "coreMeaningZh": "诀窍；巧妙的做法",
+      "coreEn": "a clever way of doing something successfully",
+      "coreImageZh": "男孩拧不开罐盖，姐姐用布包住盖子再拧，终于打开；knack 指把事情做成的巧妙办法或诀窍。",
+      "mnemonics": [{"method":"KNACK 联到 KNOCK：敲开有诀窍","textZh":"knack 与 knock（敲）只差中间元音。敲核桃不靠蛮力，找准接缝轻敲就容易打开。由 knock 的巧办法，记 knack，诀窍。","kind":"invented_association","original":true},{"method":"KNACK 借音 SNACK：撕包装的窍门","textZh":"knack 的读音像 snack（零食）去掉开头的 s。零食袋硬扯不开，沿锯齿缺口一撕就开：打开 snack 的这个小窍门，就是 knack。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "诀窍；巧妙的做法",
+          "explanationZh": "常用 get/have the knack 表示掌握或具备诀窍。knack for/of doing 可表示擅长某事；there is a knack to it 强调某件事有巧妙做法。",
+          "collocations": [
+            {
+              "phrase": "get the knack",
+              "meaningZh": "掌握诀窍"
+            },
+            {
+              "phrase": "a knack for doing something",
+              "meaningZh": "做某事的本领或诀窍"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "trick",
+          "comparisonZh": "在巧妙办法这一义上接近；trick 还可指把戏或欺骗，knack 不必有骗术意味。"
+        },
+        {
+          "word": "technique",
+          "comparisonZh": "都可指做事的方法；technique 更系统或专业，knack 常是实践中掌握的小窍门。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It's easy, once you've got the knack.",
+          "translationZh": "一旦掌握诀窍，这就很容易了。",
+          "explanationZh": "once 引导时间或条件从句，get the knack 表示掌握诀窍。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/knack"
+        },
+        {
+          "textEn": "Making omelettes isn't difficult, but there's a knack to it.",
+          "translationZh": "做煎蛋卷并不难，但其中有个诀窍。",
+          "explanationZh": "Making omelettes 作主语，there is a knack to it 表示这件事有巧妙做法。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/knack"
+        }
+      ]
+    },
+    {
+      "number": 6375,
+      "word": "kilter",
+      "ipa": "/ˈkɪltər/",
+      "pos": "n.",
+      "coreMeaningZh": "平衡；正常协调状态",
+      "coreEn": "a normal, balanced or properly working condition",
+      "coreImageZh": "小桌摇晃不稳，姐姐用木垫垫住短桌脚，小桌恢复平稳；kilter 指正常平衡、协调的状态。",
+      "mnemonics": [{"method":"KILTER 联到 FILTER：调回正常状态","textZh":"kilter 与 filter（滤镜）只差开头字母。变形 filter 把脸拉歪，关掉它，五官比例恢复正常协调。由调回正常的状态，记 kilter。","kind":"invented_association","original":true},{"method":"KILTER 联到 TILT：把倾斜的天平调正","textZh":"kilter 的读音联到 tilt（倾斜）。天平一倾斜就失去平衡，调正后才恢复 kilter，平衡、正常协调状态。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "平衡；正常协调状态",
+          "explanationZh": "常见于 out of kilter，表示失去平衡、不协调或运作失常；in kilter 表示处于正常状态。可说机器、身体节律，也可说意见与整体不一致。",
+          "collocations": [
+            {
+              "phrase": "out of kilter",
+              "meaningZh": "失去平衡；运作失常"
+            },
+            {
+              "phrase": "in kilter",
+              "meaningZh": "正常协调"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "balance",
+          "comparisonZh": "都涉及平衡；balance 更通用，可指重量或力量相抵，kilter 多出现在 in/out of kilter 中，兼有正常运作之意。"
+        },
+        {
+          "word": "order",
+          "comparisonZh": "在正常运作状态上接近；in working order 多说设备能用，in kilter 还可说整体协调。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His views are out of kilter with world opinion.",
+          "translationZh": "他的观点与世界舆论不一致。",
+          "explanationZh": "out of kilter with 表示与某种整体意见不协调。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/kilter"
+        },
+        {
+          "textEn": "Long flights throw my sleeping pattern out of kilter for days.",
+          "translationZh": "长途飞行会把我的睡眠规律打乱好几天。",
+          "explanationZh": "throw something out of kilter 表示使某事失去正常状态。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/kilter"
+        }
+      ]
+    }
+  ]
+}

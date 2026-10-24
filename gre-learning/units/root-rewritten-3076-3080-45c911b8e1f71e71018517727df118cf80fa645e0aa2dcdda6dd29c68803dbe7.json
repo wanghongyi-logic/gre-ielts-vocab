@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6696,
+      "word": "prohibitive",
+      "ipa": "/prəˈhɪbətɪv/",
+      "pos": "adj.",
+      "coreMeaningZh": "（价格高得）抑制购买的",
+      "coreEn": "so expensive that it prevents or discourages purchase or use",
+      "coreImageZh": "男孩想买外套，看到价签后再看自己钱袋，最终把外套放回，表现价格高到让人买不起。",
+      "mnemonics": [{"method":"熟词联想｜PROHIBIT，高价把购买拦住","textZh":"prohibitive 里有 prohibit（禁止、阻止）。价格高得让人不敢买，仿佛在 prohibit 购买：prohibitive，贵得抑制购买的。","kind":"invented_association","original":true},{"method":"熟词组合｜PRO + HIGH + BIT，一点点也贵得买不起","textZh":"把 prohibitive 联到 pro + high（高的）+ bit（一点点）+ -ive：只买一小 bit，价格也高得让人却步。prohibitive，（价格高得）抑制购买的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "（价格高得）抑制购买的",
+          "explanationZh": "本课专指价格或费用高到使人难以购买或使用，常修饰 cost、price、fees。比 expensive 更强，重点不只是贵，而是贵到构成实际阻碍。",
+          "collocations": [
+            {
+              "phrase": "prohibitive costs",
+              "meaningZh": "高得难以承受的费用"
+            },
+            {
+              "phrase": "prohibitive prices",
+              "meaningZh": "让人买不起的价格"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "unaffordable",
+          "comparisonZh": "都指负担不起；prohibitive 强调价格形成购买或使用的障碍。"
+        },
+        {
+          "word": "exorbitant",
+          "comparisonZh": "强调价格高得离谱；prohibitive 强调高价造成的阻碍。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Hotel prices in the major cities are high but not prohibitive.",
+          "translationZh": "大城市的酒店价格很高，但还没高到让人住不起。",
+          "explanationZh": "but not 对比“贵”和“贵到构成阻碍”，区分本词的程度。",
+          "sourceAttribution": "https://dictionary.cambridge.org/us/dictionary/english/prohibitive"
+        },
+        {
+          "textEn": "The cost of a nursing home is prohibitive.",
+          "translationZh": "养老院的费用高得难以负担。",
+          "explanationZh": "The cost 是主语；is prohibitive 表示费用高到构成使用障碍。",
+          "sourceAttribution": "https://dictionary.cambridge.org/us/dictionary/english/prohibitive"
+        }
+      ]
+    },
+    {
+      "number": 6697,
+      "word": "prologue",
+      "ipa": "/ˈproʊlɑːɡ/",
+      "pos": "n.",
+      "coreMeaningZh": "序言",
+      "coreEn": "an introductory part before the main body of a story or play",
+      "coreImageZh": "男孩翻开书先读开头的背景介绍，再翻到故事正文，表现正文前面的序言。",
+      "mnemonics": [{"method":"熟词近形｜DIALOGUE，正戏前先讲段背景","textZh":"prologue 与 dialogue（对话）都以 logue 结尾。正戏开场前，用一小段对话交代故事背景，这段开场引子就是 prologue，序言。","kind":"invented_association","original":true},{"method":"整词近形｜PRO + LOGO，正片之前的片头","textZh":"把 prologue 对照 pro + logo（标志）：电影正片开始前，先有片头 logo 亮相。由先于正片的开场部分，记 prologue，序言、开场白。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "序言",
+          "explanationZh": "可数名词，指书、戏剧或故事正文前的引入部分，常介绍背景。常用 a prologue to a book；与 epilogue“结语、尾声”位置相反。",
+          "collocations": [
+            {
+              "phrase": "a prologue to the book",
+              "meaningZh": "书的序言"
+            },
+            {
+              "phrase": "read the prologue",
+              "meaningZh": "阅读序言"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "preface",
+          "comparisonZh": "都可指书前的文字；preface 常由作者说明写作缘由，prologue 常为故事铺设背景。"
+        },
+        {
+          "word": "introduction",
+          "comparisonZh": "范围更广，可指各种介绍；prologue 特别指作品开头的引入部分。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The essay provides a prologue to the book.",
+          "translationZh": "这篇文章为这本书作了序。",
+          "explanationZh": "provide a prologue to 表示为……提供序言；to 引出所介绍的作品。",
+          "sourceAttribution": "https://dictionary.cambridge.org/us/dictionary/english/prologue"
+        },
+        {
+          "textEn": "The prologue is an example of the author at his best.",
+          "translationZh": "这篇序言展现了作者最佳的写作水平。",
+          "explanationZh": "at his best 表示处于最佳水平，修饰作者的表现。",
+          "sourceAttribution": "https://dictionary.cambridge.org/us/dictionary/english/prologue"
+        }
+      ]
+    },
+    {
+      "number": 6698,
+      "word": "prolong",
+      "ipa": "/prəˈlɔːŋ/",
+      "pos": "v.",
+      "coreMeaningZh": "延长，拖延",
+      "coreEn": "to make something last longer or extend farther",
+      "coreImageZh": "男孩在活动原本要结束时请求继续，老师同意后大家又接着做，表现把持续时间延长。",
+      "mnemonics": [{"method":"熟词联想｜LONG，把持续时间拉长","textZh":"prolong 末尾就是 long（长）。把一件已经开始的事拉得更 long，让它持续更久：prolong，延长、拖延。","kind":"invented_association","original":true},{"method":"整词近形｜PRO + LUNG，高手一口气把音拖长","textZh":"把 prolong 对照 pro（高手）+ lung（肺）：唱歌高手用 lung 里的气，把一个音拖得更久。prolong，延长、拖延。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "延长，拖延",
+          "explanationZh": "及物动词，常延长生命、停留、活动或困境的持续时间，也可指范围延长。prolong 强调持续得更久；postpone 常是把开始推迟，两者不等同。",
+          "collocations": [
+            {
+              "phrase": "prolong a stay",
+              "meaningZh": "延长停留"
+            },
+            {
+              "phrase": "prolong the discussion",
+              "meaningZh": "延长讨论"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "extend",
+          "comparisonZh": "都能表示延长；extend 还能扩大范围、面积，prolong 更常指持续时间。"
+        },
+        {
+          "word": "protract",
+          "comparisonZh": "也指拖长，通常更强调不必要、令人厌烦的延长。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Additives are used to prolong the shelf life of packaged food.",
+          "translationZh": "添加剂被用来延长包装食品的保质期。",
+          "explanationZh": "be used to do 表示被用来做；shelf life 指保质期。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/prolong"
+        },
+        {
+          "textEn": "High interest rates were prolonging the recession.",
+          "translationZh": "高利率使经济衰退持续得更久。",
+          "explanationZh": "were prolonging 是过去进行时，强调当时正在延长这一状态。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/prolong"
+        }
+      ]
+    },
+    {
+      "number": 6699,
+      "word": "promulgate",
+      "ipa": "/ˈprɑːməlɡeɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "正式宣布",
+      "coreEn": "to announce something officially or publicly",
+      "coreImageZh": "负责人面对集会师生宣读新规则，男孩认真听，随后规则被张贴供大家查看，表现正式宣布。",
+      "mnemonics": [{"method":"熟词组合｜PROMOTE + GATE，在门口公开宣告","textZh":"把 promulgate 联到 promote（宣传）+ gate（大门）：在大门口公开宣读新规则，让众人都知道。promulgate，正式宣布。","kind":"invented_association","original":true},{"method":"PRO + MUG + DATE：举杯正式公布婚期","textZh":"把 promulgate 的字形联到 pro + mug（杯子）+ date（日期）：举起杯子，向在场众人正式公布婚礼日期。promulgate，正式宣布。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "正式宣布",
+          "explanationZh": "较正式的及物动词，常接 law、constitution、rules 等，表示正式公布。也可表示传播思想；本课集中在正式宣布，不能仅用私下告知来代替。",
+          "collocations": [
+            {
+              "phrase": "promulgate a law",
+              "meaningZh": "颁布法律"
+            },
+            {
+              "phrase": "promulgate new rules",
+              "meaningZh": "正式公布新规则"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "proclaim",
+          "comparisonZh": "都含公开宣布；proclaim 更可带庄严、响亮宣布的色彩。"
+        },
+        {
+          "word": "announce",
+          "comparisonZh": "范围广，日常消息也能用；promulgate 更正式，常针对规则或制度。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The law was promulgated in February 1993.",
+          "translationZh": "这部法律于1993年2月公布。",
+          "explanationZh": "was promulgated 是被动语态；in 引出公布时间。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/promulgate"
+        },
+        {
+          "textEn": "The new constitution was promulgated in 2006.",
+          "translationZh": "新宪法于2006年公布。",
+          "explanationZh": "constitution 指宪法；was promulgated 表示被正式公布。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/promulgate"
+        }
+      ]
+    },
+    {
+      "number": 6700,
+      "word": "proofread",
+      "ipa": "/ˈpruːfriːd/",
+      "pos": "v.",
+      "coreMeaningZh": "校对",
+      "coreEn": "to read written material carefully to find and correct errors",
+      "coreImageZh": "男孩逐行查看稿件，用笔圈出错误再改正，表现阅读检查、校对文字。",
+      "mnemonics": [{"method":"熟词组合｜PROOF + READ，读出错字，留下证据","textZh":"把 proofread 联到 proof（证据）+ read（读）：读出错字并圈出来，拿出“这里有错”的证据，再改正。proofread，校对。","kind":"invented_association","original":true},{"method":"PRO + FREE + AD：免费广告也要逐字查错","textZh":"把 proofread 的字形联到 pro（专业人士）+ free（免费的）+ ad（广告）：专业人士做的免费广告，也要逐字查错再发布。proofread，校对。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "校对",
+          "explanationZh": "可接 essay、report、paper 等。原形读 /ˈpruːfriːd/，过去式和过去分词拼写仍为 proofread，但后半读 /red/。重点是检查文字错误，不等同于重写文章。",
+          "collocations": [
+            {
+              "phrase": "proofread an essay",
+              "meaningZh": "校对文章"
+            },
+            {
+              "phrase": "proofread carefully",
+              "meaningZh": "仔细校对"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "check",
+          "comparisonZh": "可泛指检查各种问题；proofread 专指阅读并检查文字错误。"
+        },
+        {
+          "word": "edit",
+          "comparisonZh": "可包括调整结构和内容；proofread 通常更集中于文字层面的错误。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He proofread the essay carefully.",
+          "translationZh": "他仔细校对了这篇文章。",
+          "explanationZh": "这里 proofread 为过去式，后半读 /red/；carefully 修饰校对动作。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/proofread"
+        },
+        {
+          "textEn": "She proofread the paper carefully.",
+          "translationZh": "她仔细校对了这篇论文。",
+          "explanationZh": "paper 在此指论文；proofread 的过去式拼写不变。",
+          "sourceAttribution": "GRE核心词汇考法精析，原书PDF第799页"
+        }
+      ]
+    }
+  ]
+}

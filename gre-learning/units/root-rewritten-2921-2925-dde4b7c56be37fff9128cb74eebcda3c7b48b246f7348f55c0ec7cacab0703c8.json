@@ -1,0 +1,269 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6541,
+      "word": "oblique",
+      "ipa": "/əˈbliːk/",
+      "pos": "adj.",
+      "coreMeaningZh": "斜的",
+      "coreEn": "slanting rather than straight or at a right angle",
+      "coreImageZh": "男孩把尺子转斜，与桌边形成斜角，姐姐指给他看；oblique 是倾斜的，不是水平或竖直的。",
+      "mnemonics": [{"method":"A BRICK：桌腿垫一块砖，桌面就斜了","textZh":"oblique 的声音联到 a brick（一块砖）。只在桌子的一条腿下垫一块砖，桌面就会倾斜；oblique，斜的。","kind":"invented_association","original":true},{"method":"A BIKE：转弯时车身倾斜","textZh":"oblique 的声音联到 a bike（一辆自行车）。骑车转弯时，车身往一侧倾斜：oblique，斜的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "斜的",
+          "explanationZh": "可形容线条、方向或角度倾斜。at an oblique angle to 表示与某物成斜角；另有“间接的、不直说的”引申义。",
+          "collocations": [
+            {
+              "phrase": "an oblique line",
+              "meaningZh": "斜线"
+            },
+            {
+              "phrase": "at an oblique angle",
+              "meaningZh": "成斜角"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "slanting",
+          "comparisonZh": "都表示斜的；slanting 更直观常用，oblique 较正式。"
+        },
+        {
+          "word": "diagonal",
+          "comparisonZh": "都可描述斜向；diagonal 常指对角线方向，oblique 不必连接两个对角。"
+        },
+        {
+          "word": "askew",
+          "comparisonZh": "都可表示斜的；askew 常强调歪斜、不端正，oblique 可以是有意安排的斜向。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It lies between the plain and the sea at an oblique angle to the coastline.",
+          "translationZh": "它位于平原与海之间，与海岸线成斜角。",
+          "explanationZh": "at an oblique angle to 说明相对方向。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/oblique"
+        },
+        {
+          "textEn": "This muscle runs obliquely downwards inside the abdominal cavity.",
+          "translationZh": "这块肌肉在腹腔内斜向下延伸。",
+          "explanationZh": "obliquely 是副词，修饰延伸的方向。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/oblique"
+        }
+      ]
+    },
+    {
+      "number": 6542,
+      "word": "obsess",
+      "ipa": "/əbˈses/",
+      "pos": "v.",
+      "coreMeaningZh": "迷住；使困扰",
+      "coreEn": "to fill the mind so completely that other thoughts are difficult",
+      "coreImageZh": "男孩拿起点心后仍盯着没拼完的拼图，又放下点心回去摆弄；obsess 是占据心思，使人反复惦记或困扰。",
+      "mnemonics": [{"method":"OBSERVE → OBSESS：看完还一直想着","textZh":"obsess 的词形联到 observe（观察）。不只是 observe 一下，而是看过后满脑子还是它，怎么也放不下：obsess，迷住、使困扰。","kind":"invented_association","original":true},{"method":"POSSESS → OBSESS：脑子被一个念头占满","textZh":"obsess 联到 possess（占有）。一个念头把脑子占满，让人反复想、怎么也放不下；obsess，迷住、使困扰。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "迷住；使困扰",
+          "explanationZh": "作及物动词时常用被动形式 be obsessed with/by，表示心思被某事占据；不及物用法 obsess over/about 表示反复挂念。",
+          "collocations": [
+            {
+              "phrase": "be obsessed with something",
+              "meaningZh": "对某事着迷"
+            },
+            {
+              "phrase": "obsess over a problem",
+              "meaningZh": "反复挂念一个问题"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "preoccupy",
+          "comparisonZh": "都可指占据心思；obsess 通常更强，带难以摆脱的意味。"
+        },
+        {
+          "word": "haunt",
+          "comparisonZh": "都可使人反复想着；haunt 常与挥之不去的不快记忆或担忧有关。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He's obsessed by computers.",
+          "translationZh": "他迷上了电脑。",
+          "explanationZh": "be obsessed by 表示心思被某事占据。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/obsess"
+        },
+        {
+          "textEn": "She's completely obsessed with him.",
+          "translationZh": "她完全迷上了他。",
+          "explanationZh": "completely 加强程度，with 后接迷恋的对象。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/obsess"
+        }
+      ]
+    },
+    {
+      "number": 6543,
+      "word": "obstreperous",
+      "ipa": "/əbˈstrepərəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "不听话的，任性的",
+      "coreEn": "noisy and difficult to control",
+      "coreImageZh": "姐姐请男孩把鼓声放轻，他却一边叫嚷一边继续敲；obstreperous 指吵闹、不听劝、难以管束的。",
+      "mnemonics": [{"method":"UPSTAIRS RAPPERS：楼上吵不停，劝也不听","textZh":"obstreperous 的声音联到 upstairs rappers（楼上的说唱歌手）。楼上唱得震天响，劝他们安静也不肯听：obstreperous，不听话的、任性的。","kind":"invented_association","original":true,"weak":true},{"method":"OOPS + TROUBLE US：又来任性惹麻烦","textZh":"把 obstreperous 联到 oops（哎呀）+ trouble us（给我们惹麻烦）。小孩怎么劝也不听，老是任性惹麻烦：obstreperous，不听话的、任性的。","kind":"invented_association","original":true,"weak":true}],
+      "usage": [
+        {
+          "senseZh": "不听话的，任性的",
+          "explanationZh": "正式且通常带贬义，不只是不听话，还常伴有吵闹、抗拒约束。可形容儿童、人群或顾客。",
+          "collocations": [
+            {
+              "phrase": "an obstreperous child",
+              "meaningZh": "吵闹不听话的孩子"
+            },
+            {
+              "phrase": "an obstreperous crowd",
+              "meaningZh": "喧闹难管的人群"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "unruly",
+          "comparisonZh": "都指难管束；obstreperous 更突出吵闹和抗拒，unruly 不一定有声音。"
+        },
+        {
+          "word": "boisterous",
+          "comparisonZh": "都可形容喧闹；boisterous 可只是活泼热闹，obstreperous 通常含不听劝。"
+        },
+        {
+          "word": "refractory",
+          "comparisonZh": "都可表示抗拒管束；refractory 强调难控制，obstreperous 通常还带吵闹。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "You know I have no intention of being awkward and obstreperous.",
+          "translationZh": "你知道，我无意为难人或吵闹不听劝。",
+          "explanationZh": "being obstreperous 表示表现得难管、吵闹。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/obstreperous"
+        },
+        {
+          "textEn": "If that is so, it should be told bluntly not to be so obstreperous.",
+          "translationZh": "如果真是这样，就该直截了当地告诉它不要如此任性抗拒。",
+          "explanationZh": "not to be so obstreperous 表示要求对方停止吵闹抗拒的态度。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/obstreperous"
+        }
+      ]
+    },
+    {
+      "number": 6544,
+      "word": "obstruct",
+      "ipa": "/əbˈstrʌkt/",
+      "pos": "v.",
+      "coreMeaningZh": "妨碍，给…制造困难",
+      "coreEn": "to block or hinder movement or progress",
+      "coreImageZh": "玩具箱挡住通道，男孩端着托盘被迫停下，姐姐移开箱子后他才能通过；obstruct 是阻挡、妨碍事情顺利进行。",
+      "mnemonics": [{"method":"CONSTRUCT ↔ OBSTRUCT：施工也会堵路","textZh":"construct 是建造，obstruct 和它共用 struct。工程一开建，道路常被围挡堵住：建造是 construct，妨碍通行就是 obstruct。","kind":"word_family","original":true},{"method":"ABSTRACT ↔ OBSTRUCT：太抽象，挡住理解","textZh":"obstruct 和 abstract（抽象的）词形很近。解释太 abstract，听的人反而更难懂，理解就被挡住了；obstruct，阻碍。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "妨碍，给…制造困难",
+          "explanationZh": "可指实物挡住通道，也可指阻挠工作、调查或进程。是及物动词，直接接被阻挡或被妨碍的对象。",
+          "collocations": [
+            {
+              "phrase": "obstruct the entrance",
+              "meaningZh": "堵住入口"
+            },
+            {
+              "phrase": "obstruct progress",
+              "meaningZh": "妨碍进展"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hinder",
+          "comparisonZh": "都表示妨碍；hinder 常指使进展更困难，obstruct 可强调挡住通路或主动阻挠。"
+        },
+        {
+          "word": "impede",
+          "comparisonZh": "都指阻碍进展；impede 偏使行动缓慢困难，obstruct 更突出障碍挡在前面。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They were charged with obstructing the police in the course of their duty.",
+          "translationZh": "他们被指控妨碍警察执行公务。",
+          "explanationZh": "obstruct the police 指阻碍警察工作。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/us/definition/english/obstruct"
+        },
+        {
+          "textEn": "He accused terrorists of attempting to obstruct the peace process.",
+          "translationZh": "他指责恐怖分子企图阻挠和平进程。",
+          "explanationZh": "obstruct the peace process 表示妨碍和平进程推进。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/us/definition/english/obstruct"
+        }
+      ]
+    },
+    {
+      "number": 6545,
+      "word": "odium",
+      "ipa": "/ˈəʊdiəm/",
+      "pos": "n.",
+      "coreMeaningZh": "憎恶，讨厌",
+      "coreEn": "strong hatred or disgust",
+      "coreImageZh": "有人把垃圾倒在花坛旁，男孩和姐姐皱眉避开，流露出强烈反感；odium 是憎恶、厌恶。",
+      "mnemonics": [{"method":"OPIUM → ODIUM：鸦片之害，让人痛恨","textZh":"odium 和 opium（鸦片）只差一个字母。想到鸦片带来的毒害与苦难，自然生出强烈的憎恶：odium，憎恶、讨厌。","kind":"invented_association","original":true},{"method":"“哦，敌人！”：见到仇敌，心生憎恶","textZh":"odium 的声音联到“哦，敌人！”见到伤害过自己的仇敌，强烈的厌恶涌上来：odium，憎恶、讨厌。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "憎恶，讨厌",
+          "explanationZh": "正式的不可数名词，常指因恶劣行为而引起的强烈厌恶，尤其是公众的憎恶；比普通 dislike 语气更强。",
+          "collocations": [
+            {
+              "phrase": "public odium",
+              "meaningZh": "公众的憎恶"
+            },
+            {
+              "phrase": "incur odium",
+              "meaningZh": "招致憎恶"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hatred",
+          "comparisonZh": "都指憎恨；odium 常带因可鄙行为而受到公众厌恶的意味。"
+        },
+        {
+          "word": "detestation",
+          "comparisonZh": "都表示强烈厌恶；detestation 可强调个人感受，odium 常涉及众人的鄙视。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He had to bear the odium of neglecting his family",
+          "translationZh": "他不得不承受因疏于照顾家庭而招来的憎恶。",
+          "explanationZh": "bear the odium of 表示承受某种行为招来的厌恶。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/odium"
+        },
+        {
+          "textEn": "time did nothing to diminish the odium in which the traitor lived out his days",
+          "translationZh": "时间丝毫没有减轻人们对那个叛徒的憎恶，他就在这种憎恶中度过余生。",
+          "explanationZh": "in which 引导定语从句，说明他余生所处的受人憎恶的状态。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/odium"
+        }
+      ]
+    }
+  ]
+}

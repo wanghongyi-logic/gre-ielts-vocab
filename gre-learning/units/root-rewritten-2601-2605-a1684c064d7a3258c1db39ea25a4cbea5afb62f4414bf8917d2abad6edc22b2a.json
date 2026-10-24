@@ -1,0 +1,276 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6221,
+      "word": "hoard",
+      "ipa": "/hɔːrd/",
+      "pos": "v.",
+      "coreMeaningZh": "贮藏；囤积；秘藏",
+      "coreEn": "to collect and keep a supply, often hidden or for later use",
+      "coreImageZh": "储藏室里堆着越积越多的粮食，主人继续存入，不肯拿出来用。",
+      "mnemonics": [{"method":"HOARD ↔ BOARD：藏在木板下","textZh":"hoard 和 board（木板）只差首字母。钱币藏在地板 board 下，只添不取，越积越多：hoard，秘藏、囤积。","kind":"invented_association","original":true},{"method":"HOARD ↔ HOLD：留住，不肯放","textZh":"把 hoard 联到 hold（留住）：旧东西也 hold 住，只收不扔，越积越多，就是 hoard，囤积。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "贮藏；囤积；秘藏",
+          "explanationZh": "可指为将来使用而大量存起食物、钱财或物品，也常暗示不愿分享、过量囤积或藏起来。并非所有普通收藏都叫 hoard。过去式和过去分词为 hoarded。",
+          "collocations": [
+            {
+              "phrase": "hoard food",
+              "meaningZh": "囤积食物",
+              "usageZh": "强调积存供日后使用。"
+            },
+            {
+              "phrase": "hoard cash",
+              "meaningZh": "囤积现金",
+              "usageZh": "把钱留住而不花或不投入使用。"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stockpile",
+          "comparisonZh": "都可表示大量储备。stockpile 常用于有计划的物资储备，hoard 更容易带有藏着不放或过度囤积的意味。"
+        },
+        {
+          "word": "stash",
+          "comparisonZh": "都可表示藏存。stash 较口语，重在放到隐蔽或安全处，不一定积累很多。"
+        },
+        {
+          "word": "store",
+          "comparisonZh": "都能指贮存。store 最中性，只说明保存起来，未必具有 hoard 的大量积攒意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The prisoners used to hoard scraps of food in secret places.",
+          "translationZh": "囚犯过去常把食物碎屑囤藏在秘密的地方。",
+          "explanationZh": "食物被积存到隐蔽处，突出秘藏。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary，完整例句。 https://www.oxfordlearnersdictionaries.com/definition/english/hoard_2"
+        },
+        {
+          "textEn": "He had the habit of hoarding old magazines that interested him.",
+          "translationZh": "他有囤存自己感兴趣的旧杂志的习惯。",
+          "explanationZh": "旧杂志不断积存，突出囤积的习惯。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary，完整例句。 https://www.oxfordlearnersdictionaries.com/definition/english/hoard_2"
+        }
+      ]
+    },
+    {
+      "number": 6222,
+      "word": "homage",
+      "ipa": "/ˈhɑːmɪdʒ/",
+      "pos": "n.",
+      "coreMeaningZh": "尊敬；敬意",
+      "coreEn": "respect or admiration expressed toward someone or something",
+      "coreImageZh": "人们在纪念像前静静站立，向受尊敬的人致意。",
+      "mnemonics": [{"method":"HOMAGE ↔ HOME + AGE：在家敬长辈","textZh":"把 homage 的字形接到 home（家）和 age（年龄）。家里年纪最长的长辈进门，晚辈起身让座：从 home 里的敬老，记住 homage，敬意。","kind":"invented_association","original":true},{"method":"HOMAGE ↔ IMAGE：向画像致敬","textZh":"把 homage 开头的 h 遮住、o 看成 i，就认出 image（画像）。向英雄的 image 献花、鞠躬，就是表达 homage，敬意。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "尊敬；敬意",
+          "explanationZh": "常见 pay homage to somebody/something，指以言语、仪式或作品表达敬意。也可指艺术作品向前人致敬。historical homage 还涉及臣属效忠，现代用法不一定表示服从。",
+          "collocations": [
+            {
+              "phrase": "pay homage to somebody",
+              "meaningZh": "向某人致敬",
+              "usageZh": "pay 不表示实际付款。"
+            },
+            {
+              "phrase": "in homage to somebody",
+              "meaningZh": "为向某人致敬",
+              "usageZh": "说明作品或行动的纪念、致敬目的。"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "obeisance",
+          "comparisonZh": "都可指表达尊敬。obeisance 更容易带有恭顺、屈身行礼或服从的意味；homage 也可指艺术上的致敬。",
+          "source": "weichen_gre"
+        },
+        {
+          "word": "tribute",
+          "comparisonZh": "都可表示敬意。tribute 更常指具体的赞辞、纪念作品或致敬行动，homage 常强调由此表达的尊敬。"
+        },
+        {
+          "word": "respect",
+          "comparisonZh": "都表示尊敬。respect 范围更广，可指内心的态度；homage 常强调表现出来的崇敬。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The kings of France paid homage to no one.",
+          "translationZh": "法国国王不向任何人俯首致敬。",
+          "explanationZh": "历史语境中的敬意含有臣服意味。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary，完整例句。 https://www.oxfordlearnersdictionaries.com/definition/english/homage"
+        },
+        {
+          "textEn": "They stood in silent homage around the grave.",
+          "translationZh": "他们围站在墓旁，默默致敬。",
+          "explanationZh": "silent homage 表示用默立表达敬意。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary，完整例句。 https://www.oxfordlearnersdictionaries.com/definition/english/homage"
+        }
+      ]
+    },
+    {
+      "number": 6223,
+      "word": "homely",
+      "ipa": "/ˈhoʊmli/",
+      "pos": "adj.",
+      "coreMeaningZh": "其貌不扬的；朴素简单的",
+      "coreEn": "plain or unattractive in appearance; simple and unpretentious",
+      "coreImageZh": "一只外形笨拙、没有花纹的陶壶，虽不漂亮却结实实用。",
+      "mnemonics": [{"method":"HOME + -LY：回家就不讲排场","textZh":"homely 里完整的 home（家）很好认。回到家，换下礼服，穿上普通家居服：不华丽、不讲排场，正是 homely 的家常朴素。","kind":"word_components","original":true},{"method":"HOMELY ↔ LONELY：丑小鸭孤零零","textZh":"homely 和 lonely（孤单的）只差两个字母。想到童话中的丑小鸭：因为其貌不扬，孤零零地站在一边。lonely 带回 homely 的“不漂亮”。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "其貌不扬的；朴素简单的",
+          "explanationZh": "美式英语中形容人常指不漂亮、其貌不扬，带有负面评价；朴素简单义可用于物品或表达。英式英语还可表示像家一样舒适温馨，不能看到 homely 就一律译成丑陋。",
+          "collocations": [
+            {
+              "phrase": "a homely face",
+              "meaningZh": "其貌不扬的脸",
+              "usageZh": "美式英语中的外貌评价。"
+            },
+            {
+              "phrase": "homely truths",
+              "meaningZh": "朴素的道理",
+              "usageZh": "强调简单平实，并非丑陋的真理。"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "plain",
+          "comparisonZh": "形容外貌时都可表示不漂亮；形容物品时也可表示朴素。plain 还可表示清楚的，该义不能换成 homely。"
+        },
+        {
+          "word": "unattractive",
+          "comparisonZh": "都可指外表缺乏吸引力。unattractive 也可形容方案或价格没有吸引力，homely 通常不能这样替换。"
+        },
+        {
+          "word": "unpretentious",
+          "comparisonZh": "在朴素、不讲排场义上相近。unpretentious 不表示长得不好看，不能替换 homely face 中的 homely。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She has a homely face.",
+          "translationZh": "她的脸其貌不扬。",
+          "explanationZh": "美式英语的其貌不扬义。",
+          "sourceAttribution": "Merriam-Webster，完整例句。 https://www.merriam-webster.com/dictionary/homely"
+        },
+        {
+          "textEn": "He's a bit homely but nice.",
+          "translationZh": "他长得不太好看，但人很好。",
+          "explanationZh": "外貌评价与性格评价形成对照。",
+          "sourceAttribution": "Merriam-Webster，完整例句。 https://www.merriam-webster.com/dictionary/homely"
+        }
+      ]
+    },
+    {
+      "number": 6224,
+      "word": "homily",
+      "ipa": "/ˈhɑːməli/",
+      "pos": "n.",
+      "coreMeaningZh": "冗长乏味的道德讲演或训诫",
+      "coreEn": "a tedious moralizing lecture or admonition",
+      "coreImageZh": "长者反复讲做人道理，听者从端坐认真听到困倦厌烦，训话仍未结束。",
+      "mnemonics": [{"method":"HOMILY ↔ HOLY：圣坛前讲个没完","textZh":"把 homily 联到 holy（神圣的）。圣坛前讲怎样做个 holy 的人，道德规矩翻来覆去说个没完：homily，冗长乏味的道德说教。","kind":"invented_association","original":true},{"method":"整词近形｜HOMILY ↔ FAMILY，家训讲个没完","textZh":"family 的开头 fa 换成 ho，就成 homily。你只忘了关灯，长辈却从节俭讲到做人，一番家庭训话说个没完：family 带回 homily，长篇说教。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "冗长乏味的道德讲演或训诫",
+          "explanationZh": "本条取带不满意味的说教义：把如何做人、如何生活等道理讲得冗长乏味。也有宗教讲道义，但不能把每次简短实用的提醒都叫作 homily。复数 homilies。",
+          "collocations": [
+            {
+              "phrase": "deliver a homily",
+              "meaningZh": "发表一通说教",
+              "usageZh": "常表示听者觉得道德训话过多。"
+            },
+            {
+              "phrase": "a homily on honesty",
+              "meaningZh": "关于诚实的说教",
+              "usageZh": "on 后接说教主题。"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "lecture",
+          "comparisonZh": "在训话义上可互换。lecture 也指正规的授课、演讲，并不天然带乏味或道德说教意味。"
+        },
+        {
+          "word": "sermon",
+          "comparisonZh": "都可表示令人厌烦的道德说教，也都有宗教语境。sermon 的宗教讲道义更常见，具体语气须看上下文。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She delivered a homily on the virtues of family life.",
+          "translationZh": "她就家庭生活的美德讲了一番道理。",
+          "explanationZh": "道德训话义，主题是家庭生活的美德。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary，完整例句。 https://www.oxfordlearnersdictionaries.com/definition/english/homily"
+        },
+        {
+          "textEn": "I don’t need a little homily from him about how to lead my life.",
+          "translationZh": "我不需要他来对我该怎样生活说三道四。",
+          "explanationZh": "I don’t need 表明说话者厌烦别人的训诫。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary，完整例句。 https://www.oxfordlearnersdictionaries.com/definition/english/homily"
+        }
+      ]
+    },
+    {
+      "number": 6225,
+      "word": "homogenize",
+      "ipa": "/həˈmɑːdʒənaɪz/",
+      "pos": "v.",
+      "coreMeaningZh": "使统一化；使同质化",
+      "coreEn": "to make things uniform or similar",
+      "coreImageZh": "老师把桌上唯一的红木盒漆成与两侧蓝木盒一样的蓝色，让三个盒子的外观统一。",
+      "mnemonics": [{"method":"HOMOGENIZE ↔ HOME + GENE：家家复制同一套基因","textZh":"把 homogenize 的字形联到 home（家）+ gene（基因）再接 -ize。让一排 home 复制同一套“建筑基因”，屋内屋外都变成一个样：homogenize，使统一化、同质化。","kind":"invented_association","original":true},{"method":"HOMOGENIZE ↔ 合模挤泥：同一模子，成一个样","textZh":"homogenize 借音“合模挤泥”：泥团挤进同一个模子，压出来都成一个样。homogenize，使统一化、同质化。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "使统一化；使同质化",
+          "explanationZh": "强调把原本不同的事物处理得相同或相似。可用于制度、文化、产品，也用于把物质混合均匀。讨论文化时常带消除特色的负面意味。英式拼写也作 homogenise。",
+          "collocations": [
+            {
+              "phrase": "homogenize culture",
+              "meaningZh": "使文化同质化"
+            },
+            {
+              "phrase": "homogenize the curriculum",
+              "meaningZh": "使课程设置统一化"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "standardize",
+          "comparisonZh": "都可表示使一致。standardize 强调按既定标准统一；homogenize 强调结果变得相似，未必有正式标准。"
+        },
+        {
+          "word": "uniformize",
+          "comparisonZh": "都可表示使统一或一致。uniformize 使用较少；日常谈规范流程通常用 standardize 更自然。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The new curriculum is an attempt to homogenize education throughout the county.",
+          "translationZh": "新的课程设置旨在使全县教育统一化。",
+          "explanationZh": "统一课程与教育安排。",
+          "sourceAttribution": "Merriam-Webster，完整句。 https://www.merriam-webster.com/dictionary/homogenize"
+        },
+        {
+          "textEn": "Rather than trying to homogenize our culture, we can actually thrive by celebrating our diversity.",
+          "translationZh": "与其设法让文化趋同，不如欣赏我们的多样性，从中获得发展。",
+          "explanationZh": "同质化与保留多样性形成对比。",
+          "sourceAttribution": "Collins COBUILD Advanced Learner’s Dictionary，完整句。 https://www.collinsdictionary.com/dictionary/english/homogenize"
+        }
+      ]
+    }
+  ]
+}

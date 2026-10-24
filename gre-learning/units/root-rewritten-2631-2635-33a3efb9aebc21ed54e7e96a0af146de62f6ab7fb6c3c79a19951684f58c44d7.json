@@ -1,0 +1,287 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6251,
+      "word": "impeccable",
+      "ipa": "/ɪmˈpekəbəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "无瑕的；无可挑剔的",
+      "coreEn": "free from faults and beyond reasonable criticism",
+      "coreImageZh": "姐姐准备参加聚会，男孩注意到她的外套、丝巾和鞋子搭配得十分协调，连小细节也周到，称赞她的穿衣品味无可挑剔。",
+      "mnemonics": [{"method":"IMPECCABLE ↔ IM + PICK + ABLE：挑不出毛病","textZh":"把 impeccable 的 pecc 借音联到 pick（挑毛病），用 im-（不）和 -able（能）串起全词：不能被挑出毛病，就是 impeccable，无可挑剔。","kind":"invented_association","original":true},{"method":"IMPECCABLE ↔ 一拍可播：这一遍挑不出毛病","textZh":"impeccable 借音“一拍可播”：这一遍表演拍完就能播，无须剪改，一处毛病也挑不出。impeccable，无瑕的、无可挑剔的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "无瑕的；无可挑剔的",
+          "explanationZh": "常用于品味、礼貌、表现、资历等，强调没有可指摘的错误或缺点。比 merely good 更强，带明显赞许。",
+          "collocations": [
+            {
+              "phrase": "impeccable taste",
+              "meaningZh": "无可挑剔的品味"
+            },
+            {
+              "phrase": "impeccable manners",
+              "meaningZh": "无可挑剔的举止"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "flawless",
+          "comparisonZh": "在没有缺点这一义上非常接近。flawless 也常用于物件或外表，impeccable 尤其常形容举止、品味、记录。",
+          "sources": [
+            "zhangwei_original3000"
+          ]
+        },
+        {
+          "word": "consummate",
+          "comparisonZh": "形容技艺达到极高水平时相近。consummate 强调技能娴熟、造诣完整，impeccable 更强调找不出瑕疵。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "faultless",
+          "comparisonZh": "都表示没有错误。faultless 直接着眼于错误不存在，impeccable 常进一步表达高度赞赏。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She has impeccable taste in music.",
+          "translationZh": "她在音乐方面的品味无可挑剔。",
+          "explanationZh": "impeccable 赞赏她的音乐品味。",
+          "sourceAttribution": "Merriam-Webster，完整句。 https://www.merriam-webster.com/dictionary/impeccable"
+        },
+        {
+          "textEn": "Her academic credentials are impeccable.",
+          "translationZh": "她的学术资历无可指摘。",
+          "explanationZh": "credentials 指资历或资格，impeccable 表示没有值得质疑的瑕疵。",
+          "sourceAttribution": "Collins，所收录的完整例句。 https://www.collinsdictionary.com/dictionary/english/impeccable"
+        }
+      ]
+    },
+    {
+      "number": 6252,
+      "word": "impending",
+      "ipa": "/ɪmˈpendɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "即将发生的",
+      "coreEn": "about to happen or arrive soon",
+      "coreImageZh": "男孩和姐姐看见乌云压来、树叶被风吹动，便留在门廊屋檐下等候。雨还未落，征兆已让他们知道大雨将至；impending 就是即将来临的。",
+      "mnemonics": [{"method":"IMPENDING ↔ I’M ENDING：一说收尾，散场在即","textZh":"把 impending 联到 I’m ending（我正在收尾），整组多一个 p。演讲者说“I’m ending my talk”，听众知道散场就在眼前：impending，即将发生的。","kind":"invented_association","original":true},{"method":"IMPENDING ↔ I’M BENDING：弯得快撑不住了","textZh":"把 impending 联到 I’m bending（我正弯下去），整组只把 b 换成 p。树枝被压得越来越弯，仿佛在喊“I’m bending！”断裂眼看就要发生：impending，即将发生的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "即将发生的",
+          "explanationZh": "通常放在名词前，表示事件很快会发生，常用于灾难、危险等令人担忧的事，但也能形容婚礼、庆典等。它不表示事情已经发生，也不是 immanent 的内在义。",
+          "collocations": [
+            {
+              "phrase": "an impending storm",
+              "meaningZh": "即将到来的暴风雨"
+            },
+            {
+              "phrase": "an impending marriage",
+              "meaningZh": "即将举行的婚礼"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "imminent",
+          "comparisonZh": "都指即将发生，尤其常用于危险。imminent 往往更强调迫在眉睫，impending 可用于预期不久将发生的事件。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "upcoming",
+          "comparisonZh": "都可以指即将到来。upcoming 更中性，常用于已安排的活动；impending 更容易带期待或忧虑的情绪。"
+        },
+        {
+          "word": "approaching",
+          "comparisonZh": "都可表示正在临近。approaching 还可描述人或物在空间上的靠近，impending 主要用于事件在时间上将发生。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He'd spoken to Simon that morning of his impending marriage.",
+          "translationZh": "那天早上，他曾向西蒙谈起自己即将举行的婚礼。",
+          "explanationZh": "impending 可以描述喜事，并非只能修饰灾祸。",
+          "sourceAttribution": "Collins，所收录的完整例句。 https://www.collinsdictionary.com/dictionary/english/impending"
+        },
+        {
+          "textEn": "The impending layoffs sapped morale.",
+          "translationZh": "即将到来的裁员打击了士气。",
+          "explanationZh": "裁员尚未发生，预期本身已经影响了人们的情绪。",
+          "sourceAttribution": "Collins，所收录的完整例句。 https://www.collinsdictionary.com/dictionary/english/impending"
+        }
+      ]
+    },
+    {
+      "number": 6253,
+      "word": "impenitent",
+      "ipa": "/ɪmˈpenɪtənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "不悔悟的",
+      "coreEn": "not feeling sorry for wrongdoing",
+      "coreImageZh": "男孩故意推倒了朋友搭的积木塔；朋友难过地指出这件事伤害了自己，男孩却承认是故意的、仍不觉得自己有错，毫无悔意。",
+      "mnemonics": [{"method":"IM- + PEN + INTENT：检讨里也没有改过的意图","textZh":"把 impenitent 联到 im-（不）+ pen（笔）+ intent（意图）。拿起笔写检讨，却连改过的意图也没有：impenitent，不悔悟的。","kind":"invented_association","original":true},{"method":"IMPENITENT ↔ IMPATIENT：一提认错就不耐烦","textZh":"impenitent 的整体字形像 impatient（不耐烦的）。你劝他认错，他立刻不耐烦地回嘴：“我就是没错！”不愿认错，也不觉得后悔：impenitent，不悔悟的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "不悔悟的",
+          "explanationZh": "正式用语，指做错事后没有悔恨或羞愧，常说 remain impenitent about。重点是不悔改，不是证明一个人无辜，也不只是性格坚定或不愿改变观点。",
+          "collocations": [
+            {
+              "phrase": "remain impenitent",
+              "meaningZh": "仍不悔悟"
+            },
+            {
+              "phrase": "impenitent about past wrongdoing",
+              "meaningZh": "对过去的过错毫无悔意"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "unrepentant",
+          "comparisonZh": "在做错事却不后悔这一义上非常接近，通常可以互换；两者都较正式。"
+        },
+        {
+          "word": "remorseless",
+          "comparisonZh": "都能表示没有悔意。remorseless 还常突出冷酷、无情，impenitent 更集中在不承认或不悔恨自身过错。"
+        },
+        {
+          "word": "unashamed",
+          "comparisonZh": "都可表示不感到羞愧。unashamed 也可用于合理地坦然表达喜好，并不一定像 impenitent 一样涉及过错。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "To this day she remains impenitent about her criminal past.",
+          "translationZh": "直到今天，她对自己过去的犯罪行为仍毫无悔意。",
+          "explanationZh": "remains impenitent 强调至今仍不悔悟。",
+          "sourceAttribution": "Cambridge Dictionary，完整句。 https://dictionary.cambridge.org/us/dictionary/english/impenitent"
+        },
+        {
+          "textEn": "The unit has been for the most part impenitent.",
+          "translationZh": "这个单位在大多数时候一直毫无悔意。",
+          "explanationZh": "这里把不悔悟的态度用于一个集体。",
+          "sourceAttribution": "Collins，所收录的完整例句。 https://www.collinsdictionary.com/dictionary/english/impenitent"
+        }
+      ]
+    },
+    {
+      "number": 6254,
+      "word": "imperative",
+      "ipa": "/ɪmˈperətɪv/",
+      "pos": "adj.",
+      "coreMeaningZh": "命令的；强制性的；迫切的",
+      "coreEn": "commanding compliance or urgently requiring action",
+      "coreImageZh": "洗手池的水快漫出来，姐姐发现必须立刻关水、不能拖延；她马上关掉水龙头，男孩明白这是一件迫切需要处理的事。",
+      "mnemonics": [{"method":"IMPERATIVE ↔ EMPEROR：皇帝的命令必须执行","textZh":"imperative 的 impera 联到 emperor（皇帝）。皇帝下旨，不是在征求建议，而是要求必须照办：imperative，命令的、强制性的。","kind":"word_family","original":true},{"method":"IMPERATIVE ↔ 硬派：不是商量，是命令","textZh":"imperative 的 imper 借音联到“硬派”，后接 -ative。任务硬派下来，不问愿不愿意，就是命令你去做：imperative，命令的、强制性的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "命令的；强制性的；迫切的",
+          "explanationZh": "可形容语气或要求具有命令性，也可表示某事极其重要、迫切需要做。常用 it is imperative that 或 imperative to do；后接 that 从句时常用动词原形。另有名词命令、要务及语法上的祈使义，此处主记形容词。",
+          "collocations": [
+            {
+              "phrase": "an imperative tone",
+              "meaningZh": "命令式的语气"
+            },
+            {
+              "phrase": "an imperative need",
+              "meaningZh": "迫切的需要"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "mandatory",
+          "comparisonZh": "在强制性的意义上相近。mandatory 通常由规定、制度要求，imperative 还可能是情势紧迫而非明文规定。"
+        },
+        {
+          "word": "urgent",
+          "comparisonZh": "在需要立即处理这一义上接近。urgent 更直接强调时间紧迫，imperative 往往同时强调不可不做。"
+        },
+        {
+          "word": "exigent",
+          "comparisonZh": "都可表示迫切、需要立即关注。exigent 更正式且可另指要求苛刻的，不能用于 imperative 的全部命令义。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "People resented his imperative tone of voice.",
+          "translationZh": "人们反感他那命令式的语气。",
+          "explanationZh": "imperative 在此形容要求别人服从的说话方式。",
+          "sourceAttribution": "Merriam-Webster，完整句。 https://www.merriam-webster.com/dictionary/imperative"
+        },
+        {
+          "textEn": "It is absolutely imperative that we finish by next week.",
+          "translationZh": "我们务必在下周之前完成，这件事刻不容缓。",
+          "explanationZh": "imperative that 后的 finish 用原形，表达必须及时完成。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary，完整句。 https://www.oxfordlearnersdictionaries.com/us/definition/english/imperative_1"
+        }
+      ]
+    },
+    {
+      "number": 6255,
+      "word": "imperial",
+      "ipa": "/ɪmˈpɪriəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "巨大的；令人惊叹的",
+      "coreEn": "impressively large or magnificent",
+      "coreImageZh": "男孩与姐姐站在广场上，仰望高柱林立、横跨广场一侧的巨大图书馆；人在建筑前显得很小，男孩惊叹它的宏大规模。",
+      "mnemonics": [{"method":"IMPERIAL ↔ EMPIRE：帝国宫殿的宏大气派","textZh":"imperial 的主要字形联到 empire（帝国）。想到帝国的宫殿，宽阔大厅、高大立柱，气派大得令人惊叹：imperial，宏大壮丽的。","kind":"word_family","original":true},{"method":"IMPERIAL ↔ IMPRESS + -IAL：宏大得让人难忘","textZh":"把 imperial 的字形联到 impress（给人深刻印象），再接 -ial。群山绵延到天边，宏大的规模让人难忘：imperial，巨大的、令人惊叹的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "巨大的；令人惊叹的",
+          "explanationZh": "本条取规模宏大、气象壮丽的书面义，不是最常见的帝国的、皇家的，也不是英制的。形容建筑或构想时，应有规模或气势上的惊人之处；只说面积较大，用 large 更自然。",
+          "collocations": [
+            {
+              "phrase": "an imperial city",
+              "meaningZh": "气象宏大的城市"
+            },
+            {
+              "phrase": "imperial grandeur",
+              "meaningZh": "宏伟壮丽的气势"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "grand",
+          "comparisonZh": "同可形容规模和气派宏大。grand 更常用；imperial 在此义更书面，且容易让人联想到帝王。"
+        },
+        {
+          "word": "magnificent",
+          "comparisonZh": "同可表示壮丽、令人赞叹。magnificent 可赞美表演等，不一定强调体量巨大。"
+        },
+        {
+          "word": "imposing",
+          "comparisonZh": "都可形容建筑体量或气势令人印象深刻。imposing 更突出视觉上的威势，不必暗示帝王般的华美。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "An oak of imperial proportions towered over the garden.",
+          "translationZh": "一棵体量巨大、气势不凡的橡树高高耸立在花园里。",
+          "explanationZh": "of imperial proportions 描写橡树惊人的体量和气势；towered over the garden 加强高大壮观的视觉效果，不涉及皇家归属。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "The mountains rose in imperial splendor above the valley.",
+          "translationZh": "群山以雄伟壮丽的姿态耸立在山谷之上。",
+          "explanationZh": "imperial 修饰 splendor，突出自然景观的宏伟壮丽和令人惊叹的气势，不表示帝国或皇家的。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    }
+  ]
+}

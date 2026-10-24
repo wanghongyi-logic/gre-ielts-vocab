@@ -1,0 +1,266 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6631,
+      "word": "pigment",
+      "ipa": "/ˈpɪɡmənt/",
+      "pos": "n./v.",
+      "coreMeaningZh": "颜料；给…上颜色",
+      "coreEn": "a substance used to give color; to color something with it",
+      "coreImageZh": "男孩把蓝色颜料加入浅色黏土并揉匀，黏土逐渐变蓝；pigment 是颜料，也可作动词，指给材料着色。",
+      "mnemonics": [{"method":"BIG + PEN：大彩笔涂出鲜艳颜色","textZh":"把 pigment 的字形联到 big（大）+ pen（笔）：一支大彩笔，在纸上涂出鲜艳颜色；由涂色的笔，联想到着色的颜料。pigment，颜料；给……上颜色。","kind":"invented_association","original":true},{"method":"熟词组合｜PIG + MINT，给小猪刷薄荷绿","textZh":"把 pigment 联成 pig + mint：给小猪模型刷上 mint 那样的薄荷绿，用的就是 pigment，颜料；刷上颜色，也可用 pigment。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "颜料；给…上颜色",
+          "explanationZh": "作名词可数或不可数，指赋予材料颜色的物质，也可指生物色素。作动词指用颜料着色，较专业，常见过去分词 pigmented；日常涂画多用 paint 或 color。",
+          "collocations": [
+            {
+              "phrase": "blue pigment",
+              "meaningZh": "蓝色颜料"
+            },
+            {
+              "phrase": "pigmented material",
+              "meaningZh": "着色的材料"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "colorant",
+          "comparisonZh": "对应名词，泛指着色物质；pigment 通常指颜料或色素。"
+        },
+        {
+          "word": "color",
+          "comparisonZh": "作动词都可表示着色；color 更通用，pigment 较强调颜料或色素的作用。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Red pigment is mixed into the ink.",
+          "translationZh": "红色颜料被混入墨水中。",
+          "explanationZh": "is mixed into 是被动结构，表示一种物质被加入另一种物质。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pigment"
+        },
+        {
+          "textEn": "The clay was pigmented with a small amount of blue powder.",
+          "translationZh": "黏土用少量蓝色粉末着了色。",
+          "explanationZh": "was pigmented with 是被动结构，with 引出用于着色的材料。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6632,
+      "word": "pillory",
+      "ipa": "/ˈpɪləri/",
+      "pos": "v.",
+      "coreMeaningZh": "当众嘲弄",
+      "coreEn": "to expose someone to public ridicule or contempt",
+      "coreImageZh": "表演者忘了动作，观众中的人当众模仿取笑，使她羞窘地站在台上；pillory，把人置于公开的嘲弄之中。",
+      "mnemonics": [{"method":"熟词近形｜PILLOW，枕头礼帽惹来嘲笑","textZh":"pillory 的前五个字母与 pillow（枕头）相同。把枕头顶在头上当礼帽，路人当众指着他笑：pillory，当众嘲弄。","kind":"invented_association","original":true},{"method":"熟词近形｜PILLAR，柱前示众受人取笑","textZh":"把 pillory 对照 pillar（柱子）：被带到柱前示众，遭人当众嘲笑。由柱前受嘲弄，记 pillory，当众嘲弄。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "当众嘲弄",
+          "explanationZh": "及物动词，常用 pillory somebody for something 或 be pilloried by/in the press，语气强于普通批评，强调公开贬斥、嘲弄，使人难堪。不是朋友间双方愉快的打趣。",
+          "collocations": [
+            {
+              "phrase": "pillory somebody for a mistake",
+              "meaningZh": "因失误而当众嘲弄某人"
+            },
+            {
+              "phrase": "be pilloried in the press",
+              "meaningZh": "遭到媒体公开抨击"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "vilify",
+          "comparisonZh": "都可指严厉贬斥；vilify 强调辱骂、诋毁，pillory 特别强调公开让人受鄙视或嘲弄。",
+          "sources": [
+            "zhangwei_original3000",
+            "weichen_gre",
+            "B"
+          ]
+        },
+        {
+          "word": "ridicule",
+          "comparisonZh": "都可指嘲弄；ridicule 不一定在公众面前，pillory 的公开羞辱意味更强。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The press pilloried the judge for her decision.",
+          "translationZh": "新闻界因那位法官的裁决而公开抨击她。",
+          "explanationZh": "pilloried somebody for something 表示因某事公开批评某人。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pillory"
+        },
+        {
+          "textEn": "He resigned after being pilloried by the press.",
+          "translationZh": "他在遭到新闻界公开抨击后辞职了。",
+          "explanationZh": "after being pilloried 是介词后的被动动名词结构，说明辞职前发生的事。",
+          "sourceAttribution": "陈琦／周书林 GRE核心词汇考法精析，pillory 原书例句，PDF物理页753"
+        }
+      ]
+    },
+    {
+      "number": 6633,
+      "word": "pilot",
+      "ipa": "/ˈpaɪlət/",
+      "pos": "adj./v.",
+      "coreMeaningZh": "初步的，试验性的；带领通过",
+      "coreEn": "done as an initial trial; to guide through a difficult course",
+      "coreImageZh": "学校先试行新的借还流程，老师带男孩一步步完成，再查看哪里需要改进；pilot 可指试验性的，也可指带领通过。",
+      "mnemonics": [{"method":"熟义联想｜PILOT，飞行员带你穿过难关","textZh":"pilot（飞行员）把飞机带过风暴区，也可借来表示带人通过难关。pilot 作动词，带领通过。","kind":"invented_association","original":true},{"method":"熟词变形｜PLOT 插入 I，先拍一段剧情试试","textZh":"plot（剧情）插入 i，成了 pilot。先拍一小段剧情试试观众反应，再决定正式拍：pilot，试验性的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "初步的，试验性的；带领通过",
+          "explanationZh": "形容词通常放在名词前，如 pilot study、pilot project，表示先小范围试验。动词是及物动词，可用 pilot somebody/something through，强调帮助通过复杂路程或程序。",
+          "collocations": [
+            {
+              "phrase": "a pilot study",
+              "meaningZh": "初步试验研究"
+            },
+            {
+              "phrase": "pilot a proposal through a committee",
+              "meaningZh": "推动提案通过委员会审议"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "experimental",
+          "comparisonZh": "对应试验性的形容词义；pilot 更突出正式推广前的小规模试行。"
+        },
+        {
+          "word": "guide",
+          "comparisonZh": "对应带领通过的动词义；guide 更通用，pilot 常暗示过程复杂或需要熟练引导。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The group conducted a pilot program.",
+          "translationZh": "这个团体开展了一项试点计划。",
+          "explanationZh": "conducted 表示开展；pilot 放在 program 前表示试验性的。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pilot"
+        },
+        {
+          "textEn": "She piloted a bill on the rights of part-time workers through parliament.",
+          "translationZh": "她推动一项有关兼职工作者权利的法案通过议会。",
+          "explanationZh": "pilot something through 表示引导某事顺利通过复杂程序；on 引出法案涉及的内容。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/pilot_2"
+        }
+      ]
+    },
+    {
+      "number": 6634,
+      "word": "pinnacle",
+      "ipa": "/ˈpɪnəkl/",
+      "pos": "n.",
+      "coreMeaningZh": "顶峰（发展或成就的最高点）",
+      "coreEn": "the highest point of development or achievement",
+      "coreImageZh": "男孩看过音乐家早年的小型演出，如今又见证他在隆重典礼上获得职业生涯最高荣誉；pinnacle，发展或成就的顶峰。",
+      "mnemonics": [{"method":"熟词组合｜PIN + NAIL，像针尖、钉尖一样的顶峰","textZh":"pinnacle 与 pin（针）+ nail（钉子）只差两个字母。针尖、钉尖都尖尖地指向顶端；把山峰想成一个尖顶，记 pinnacle，顶峰，也指成就的最高点。","kind":"invented_association","original":true},{"method":"MIRACLE：创造奇迹，登上成就顶峰","textZh":"pinnacle 的声音近 miracle（奇迹）：创造事业奇迹，登上成就的最高点。pinnacle，顶峰、巅峰。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "顶峰（发展或成就的最高点）",
+          "explanationZh": "本义项通常用单数，常说 the pinnacle of a career/success 或 at/reach the pinnacle，指发展或成就的最高阶段。也可指尖峰、建筑尖顶。",
+          "collocations": [
+            {
+              "phrase": "reach the pinnacle of success",
+              "meaningZh": "达到成功的顶峰"
+            },
+            {
+              "phrase": "at the pinnacle of a career",
+              "meaningZh": "处于事业巅峰"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "zenith",
+          "comparisonZh": "都能指发展或成就的最高点；zenith 也可指天文学中的天顶。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "apogee",
+          "comparisonZh": "都可比喻发展达到顶点；apogee 也有天文学中的远地点义。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He spent more than twenty years at the pinnacle of his profession.",
+          "translationZh": "他在自己行业的巅峰位置上待了二十多年。",
+          "explanationZh": "spent 后接时间；at the pinnacle of 说明所处的成就地位。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/pinnacle"
+        },
+        {
+          "textEn": "She is at the pinnacle of her profession.",
+          "translationZh": "她正处于职业生涯的巅峰。",
+          "explanationZh": "at 表示处于某个阶段或位置；of her profession 限定顶峰所属的领域。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/pinnacle"
+        }
+      ]
+    },
+    {
+      "number": 6635,
+      "word": "pinpoint",
+      "ipa": "/ˈpɪnpɔɪnt/",
+      "pos": "adj./v.",
+      "coreMeaningZh": "非常精确的；精确定位或确认",
+      "coreEn": "extremely precise; to locate or identify something exactly",
+      "coreImageZh": "男孩沿线寻找丢失的针，用放大镜确认地板缝里的针尖，再把磁棒准确伸到那个位置，精确定位了小针。",
+      "mnemonics": [{"method":"熟词组合｜PIN + POINT，针尖落在准确一点","textZh":"pin（针）与 point（尖端）合成 pinpoint：像针尖落在一个小点上，精确地指出位置。pinpoint，精确定位；非常精确的。","kind":"invented_association","original":true},{"method":"整词近形｜PING-PONG，高手的精准落点","textZh":"pinpoint 与 ping-pong（乒乓球）近形。高手一球打中指定的小点，落点分毫不差：pinpoint，非常精确的；精确定位。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "非常精确的；精确定位或确认",
+          "explanationZh": "作形容词多置于名词前，常形容精度、控制或位置；作及物动词，既能精确定位地点，也能准确找出原因、问题或时间。相比 find，pinpoint 更强调精确。",
+          "collocations": [
+            {
+              "phrase": "pinpoint accuracy",
+              "meaningZh": "极高的精确度"
+            },
+            {
+              "phrase": "pinpoint the cause",
+              "meaningZh": "准确找出原因"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "precise",
+          "comparisonZh": "对应形容词义，都强调精确；pinpoint 更有精确到一点的意味。"
+        },
+        {
+          "word": "identify",
+          "comparisonZh": "对应动词的确认义；identify 泛指识别，pinpoint 还强调准确确定具体位置或原因。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The pitcher showed pinpoint control of his fastball.",
+          "translationZh": "这名投手对快速球的控制极为精准。",
+          "explanationZh": "pinpoint 作形容词修饰 control；of his fastball 说明控制的对象。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pinpoint"
+        },
+        {
+          "textEn": "They were finally able to pinpoint the cause of the fire.",
+          "translationZh": "他们终于能够准确找出起火的原因。",
+          "explanationZh": "be able to 后接动词原形；pinpoint 的宾语是 the cause。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pinpoint"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6601,
+      "word": "pedant",
+      "ipa": "/ˈpedənt/",
+      "pos": "n.",
+      "coreMeaningZh": "书呆子，墨守成规之人",
+      "coreEn": "a person excessively concerned with minor rules and details",
+      "coreImageZh": "大家急着完成活动海报，一位同学却反复挑剔无关紧要的纸边对齐和格式，不肯讨论实际安排，体现 pedant，拘泥细节的书呆子。",
+      "mnemonics": [{"method":"PEDANT：只会“背单”，不肯变通","textZh":"pedant 的声音联到“背单”。只管背书上的字句，遇到实际问题还死守原话、不肯变通，就是 pedant，书呆子、墨守成规的人。","kind":"invented_association","original":true},{"method":"PEANUT：把字句当花生，嚼个没完","textZh":"pedant 的词形联到 peanut（花生）。把字句当花生，咬文嚼字没个完，却不懂实际变通：pedant，书呆子、墨守成规的人。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "书呆子，墨守成规之人",
+          "explanationZh": "可数名词，通常带贬义。不是泛指爱读书的人，而是指过分炫耀知识、挑剔细节或死守形式规则的人。形容词为 pedantic，相关名词 pedantry 指这种迂腐作风。",
+          "collocations": [
+            {
+              "phrase": "a grammar pedant",
+              "meaningZh": "过分挑剔语法细节的人"
+            },
+            {
+              "phrase": "a pedant about details",
+              "meaningZh": "拘泥细节的人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "nitpicker",
+          "comparisonZh": "都可指爱挑小毛病的人；nitpicker 更口语，pedant 常涉及学问或正式规则。"
+        },
+        {
+          "word": "formalist",
+          "comparisonZh": "都可能拘泥形式；formalist 也可中性指某种形式主义立场，pedant 通常是对人的贬评。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A pedant will always insist that you ask for ‘fewer’ items rather than ‘less’.",
+          "translationZh": "拘泥规则的人总会坚持让你说“fewer items”，而不是“less items”。",
+          "explanationZh": "insist that 引出坚持的内容；rather than 表示选择前者而非后者。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/pedant"
+        },
+        {
+          "textEn": "Perhaps only a pedant—or a hypocrite—would fuss about that kind of imprecision.",
+          "translationZh": "也许只有迂腐的人或伪君子才会对那种不精确之处大惊小怪。",
+          "explanationZh": "插入语补充另一类人；fuss about 表示为某事过分计较。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pedant"
+        }
+      ]
+    },
+    {
+      "number": 6602,
+      "word": "predestine",
+      "ipa": "/ˌpriːˈdestɪn/",
+      "pos": "v.",
+      "coreMeaningZh": "预先注定",
+      "coreEn": "to determine or settle someone’s fate beforehand",
+      "coreImageZh": "男孩读童话：婴儿时期就被预言将来成为国王，翻到后面，长大后的主人公果然接受王冠；predestine，预先注定。",
+      "mnemonics": [{"method":"PRE + DESTINY：命运早已写定","textZh":"predestine 联到 pre-（提前）和 destiny（命运）。命运不是后来碰巧形成，而是提前定下：predestine，预先注定。","kind":"word_family","original":true},{"method":"PRE + DESIGN：命运像提前设计好","textZh":"predestine 联到 pre（预先）和 design（设计）。像一个人物的命运早已由作者 design 好，后来只能沿着既定情节走：predestine，预先注定。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "预先注定",
+          "explanationZh": "及物动词，常见被动形式 be predestined to do something，表示仿佛由命运或神意预先决定；也可接 for 加名词。语气较正式，不等同于普通的事先计划。",
+          "collocations": [
+            {
+              "phrase": "be predestined to do something",
+              "meaningZh": "注定会做某事"
+            },
+            {
+              "phrase": "be predestined for greatness",
+              "meaningZh": "注定将成就非凡"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "doom",
+          "comparisonZh": "在预先注定命运义上相近；doom 通常注定坏结果，predestine 不限于坏结果。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "predetermine",
+          "comparisonZh": "都指预先决定；predetermine 可用于普通条件与安排，predestine 更有命运色彩。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Our victory in the tournament was seemingly predestined.",
+          "translationZh": "我们在锦标赛中的胜利似乎早已注定。",
+          "explanationZh": "was predestined 是被动结构；seemingly 表示看起来如此，并非断言命运事实。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/predestine"
+        },
+        {
+          "textEn": "It seems she was predestined to be famous.",
+          "translationZh": "看来她注定会出名。",
+          "explanationZh": "It seems 引出判断；be predestined to 后接动词原形，说明被注定的结果。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/predestined"
+        }
+      ]
+    },
+    {
+      "number": 6603,
+      "word": "peep",
+      "ipa": "/piːp/",
+      "pos": "n.",
+      "coreMeaningZh": "一瞥",
+      "coreEn": "a brief, sometimes secret, look",
+      "coreImageZh": "男孩从排练室门缝短暂看了一眼里面的排练，随即收回目光继续走；这一瞥就是 a peep。",
+      "mnemonics": [{"method":"PEEK ↔ PEEP：只换末字母，还是偷看","textZh":"peep 与 peek（偷看）只差最后一个字母，两个词都不是一直盯着看，而是偷偷、短暂地看一眼。由熟悉的 peek，记 peep，一瞥。","kind":"invented_association","original":true},{"method":"p-ee-p：眼睛只从缝里露一下","textZh":"把 peep 的 ee 看成一双眼睛，两边的 p 是遮挡。眼睛从两侧遮挡之间只露一下，马上收回：peep，偷偷的一瞥。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "一瞥",
+          "explanationZh": "本义项是可数名词，常用单数，搭配 take/have a peep at；强调短暂看一眼，也可能带偷偷看的意味。peep 还可作动词，或表示微弱声响，须靠搭配区分。",
+          "collocations": [
+            {
+              "phrase": "take a peep at something",
+              "meaningZh": "瞥一眼某物"
+            },
+            {
+              "phrase": "a peep through the keyhole",
+              "meaningZh": "从钥匙孔里的一瞥"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "glance",
+          "comparisonZh": "都指短暂一看；glance 不一定偷偷看，peep 常有透过缝隙或隐蔽观看的意味。"
+        },
+        {
+          "word": "peek",
+          "comparisonZh": "在快速或偷偷看一眼的义项上很接近；两者都可作名词或动词。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Dave took a quick peep at the last page.",
+          "translationZh": "戴夫飞快地瞥了一眼最后一页。",
+          "explanationZh": "took a peep 把看一眼作为一个动作；at 引出观看对象。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/peep_2"
+        },
+        {
+          "textEn": "I took a peep through the keyhole.",
+          "translationZh": "我从钥匙孔里瞥了一眼。",
+          "explanationZh": "through 表示视线穿过的通道，而不是观看对象。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/peep_2"
+        }
+      ]
+    },
+    {
+      "number": 6604,
+      "word": "peeve",
+      "ipa": "/piːv/",
+      "pos": "v.",
+      "coreMeaningZh": "打扰，惹恼",
+      "coreEn": "to annoy or irritate someone",
+      "coreImageZh": "男孩正安静读书，旁边反复敲桌子的声音让他皱眉、失去耐心；这种使人烦恼的作用就是 peeve，惹恼。",
+      "mnemonics": [{"method":"PEACE ↔ PEEVE：清静被打扰，心里就烦","textZh":"peeve 联到近形近音的 peace（平静）。本来安安静静，peace 被人打破，心里烦躁起来；peeve，打扰、惹恼。","kind":"invented_association","original":true},{"method":"PEEVE：“皮”得让人心烦","textZh":"peeve 的声音联到“皮”。孩子太皮，反复捣乱，让人心烦气恼：peeve，惹恼。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "打扰，惹恼",
+          "explanationZh": "通常作及物动词，较口语。常见 be peeved at/about something，表示对某事恼火；多是日常小事引起的不满，而非强烈仇恨。作名词时可表示烦心事，尤其在 pet peeve 中。",
+          "collocations": [
+            {
+              "phrase": "be peeved about something",
+              "meaningZh": "为某事烦恼不满"
+            },
+            {
+              "phrase": "peeve somebody",
+              "meaningZh": "惹恼某人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "annoy",
+          "comparisonZh": "都表示惹恼；annoy 最通用，peeve 更口语，常指小事引起的烦躁。"
+        },
+        {
+          "word": "irritate",
+          "comparisonZh": "都表示使人烦躁；irritate 还可用于身体刺激，peeve 通常指情绪上的不满。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She is constantly peeved by his habit of humming show tunes while she is trying to focus on her work.",
+          "translationZh": "她努力集中精力工作时，他总哼音乐剧歌曲的习惯不断惹她烦恼。",
+          "explanationZh": "is peeved by 是被动结构；while 从句强调哼唱与她专心工作同时发生。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/peeve"
+        },
+        {
+          "textEn": "It peeved me that he kept tapping his pen during the lesson.",
+          "translationZh": "他上课时不停敲笔，这让我很烦。",
+          "explanationZh": "It 是形式主语，that 从句说明真正惹恼人的事情；kept tapping 表示反复持续的动作。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6605,
+      "word": "penitent",
+      "ipa": "/ˈpenɪtənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "悔过的",
+      "coreEn": "feeling or showing sincere regret for wrongdoing",
+      "coreImageZh": "男孩弄坏同学的模型后，低头道歉，主动拿来材料帮忙修复；真心为过错后悔的样子就是 penitent，悔过的。",
+      "mnemonics": [{"method":"PEN + INTENT：悔过书里写明改过意愿","textZh":"把 penitent 联到 pen（笔）和 intent（意图）。用笔写下认错、改过的打算，真诚表示悔意：penitent，悔过的。","kind":"invented_association","original":true},{"method":"“赔你钱”：真心认错，愿意补偿","textZh":"penitent 的声音联到“赔你钱”。弄坏了别人的东西，真心认错，愿意赔偿：penitent，悔过的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "悔过的",
+          "explanationZh": "形容词，可形容人、神情或态度，强调为自己的过错真心后悔；不只是因为结果不利而遗憾。可用 be penitent about something；名词 penitence 表示悔意。",
+          "collocations": [
+            {
+              "phrase": "a penitent expression",
+              "meaningZh": "悔过的神情"
+            },
+            {
+              "phrase": "be penitent about the past",
+              "meaningZh": "为过去的过错悔恨"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "contrite",
+          "comparisonZh": "都指为过错深感悔恨；contrite 常突出内心诚恳的懊悔，penitent 也常带认错、求宽恕的意味。",
+          "sources": [
+            "weichen_gre",
+            "zhangwei_original3000",
+            "B"
+          ]
+        },
+        {
+          "word": "remorseful",
+          "comparisonZh": "都强调做错后的悔意；remorseful 更突出内心自责的痛苦。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Robert Gates sat before them, almost penitent about the past.",
+          "translationZh": "罗伯特·盖茨坐在他们面前，似乎对过去怀着悔意。",
+          "explanationZh": "almost penitent 是补充描述主语状态的形容词短语；about 引出后悔的事情。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/penitent"
+        },
+        {
+          "textEn": "She is deeply penitent.",
+          "translationZh": "她深感悔恨。",
+          "explanationZh": "penitent 作表语；deeply 加强悔意的程度。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/penitent"
+        }
+      ]
+    }
+  ]
+}

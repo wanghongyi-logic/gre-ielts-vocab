@@ -1,0 +1,261 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6701,
+      "word": "propensity",
+      "ipa": "/prəˈpensəti/",
+      "pos": "n.",
+      "coreMeaningZh": "倾向，癖好",
+      "coreEn": "a natural tendency or preference to behave in a particular way",
+      "coreImageZh": "男孩放着其他活动不选，一次次拿起画笔，表现自然偏向某种活动的倾向。",
+      "mnemonics": [{"method":"熟词组合｜PRO + PENS，总是站在钢笔这一边","textZh":"把 propensity 联成 pro（赞成）+ pens（钢笔），后面是 -ity。选钢笔还是键盘，他总是偏向 pens：这种偏好就是 propensity，倾向、癖好。","kind":"invented_association","original":true},{"method":"PRO + PENALTY：受罚了，还是忍不住再犯","textZh":"把 propensity 的字形联到 pro + penalty（处罚）：他屡受处罚，仍忍不住反复做同一件事，显出很强的行为倾向。propensity，倾向、癖好。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "倾向，癖好",
+          "explanationZh": "较正式，可说 a propensity for something/doing something 或 a propensity to do something。指较稳定、自然的倾向，常用于不良习惯，但不一定是负面的。",
+          "collocations": [
+            {
+              "phrase": "a propensity to exaggerate",
+              "meaningZh": "爱夸大的倾向"
+            },
+            {
+              "phrase": "a propensity for taking risks",
+              "meaningZh": "爱冒险的倾向"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "bent",
+          "comparisonZh": "都能表示自然倾向；bent 常用于某方面的兴趣或天赋，propensity 也常指行为习惯。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "inclination",
+          "comparisonZh": "较通用，可表示较轻的意愿；propensity 更突出较稳定的自然倾向。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He showed a propensity for violence.",
+          "translationZh": "他表现出暴力倾向。",
+          "explanationZh": "show a propensity for 后接名词，表示表现出某种倾向。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/propensity"
+        },
+        {
+          "textEn": "She has a propensity to exaggerate.",
+          "translationZh": "她有夸大的倾向。",
+          "explanationZh": "a propensity to do 表示倾向于做某事；exaggerate 指夸大。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/propensity"
+        }
+      ]
+    },
+    {
+      "number": 6702,
+      "word": "propriety",
+      "ipa": "/prəˈpraɪəti/",
+      "pos": "n.",
+      "coreMeaningZh": "适当，得体",
+      "coreEn": "the quality of being suitable or socially appropriate",
+      "coreImageZh": "男孩在安静场合压低声音、轻轻放书，不打扰旁人，表现行为适当得体。",
+      "mnemonics": [{"method":"熟词联想｜PROPER，做得恰到好处","textZh":"从 propriety 联到 proper（适当的）：行为 proper，合乎场合、掌握分寸，这份得体就是 propriety。","kind":"invented_association","original":true},{"method":"整词近形｜PROPERTY，别人的东西不乱动","textZh":"把 propriety 对照 property（财产）：对别人的 property 不乱碰、不乱拿，行为懂得分寸。propriety，得体、适当。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "适当，得体",
+          "explanationZh": "本课作不可数名词，表示行为或做法是否合适，常用 the propriety of something。不是单纯漂亮或昂贵；复数 the proprieties 另指礼仪规范。",
+          "collocations": [
+            {
+              "phrase": "the propriety of a decision",
+              "meaningZh": "决定是否妥当"
+            },
+            {
+              "phrase": "behave with propriety",
+              "meaningZh": "举止得体"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "appropriateness",
+          "comparisonZh": "都指适当、合宜；propriety 常特别涉及社会规范或行为是否得体。"
+        },
+        {
+          "word": "suitability",
+          "comparisonZh": "广指适合用途或情境；propriety 更常评价行为、言语或做法。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She conducted herself with propriety.",
+          "translationZh": "她举止得体。",
+          "explanationZh": "conduct oneself 表示举止、行事；with propriety 说明方式得体。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/propriety"
+        },
+        {
+          "textEn": "They debated the propriety of the punishment that he was given.",
+          "translationZh": "他们讨论了对他所作惩罚是否妥当。",
+          "explanationZh": "the propriety of 表示……的妥当性；that 从句修饰 punishment。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/propriety"
+        }
+      ]
+    },
+    {
+      "number": 6703,
+      "word": "proscribe",
+      "ipa": "/proʊˈskraɪb/",
+      "pos": "v.",
+      "coreMeaningZh": "禁止，排斥",
+      "coreEn": "to forbid or rule something out officially",
+      "coreImageZh": "管理人员明确禁止在草坪踢球，男孩听后把球抱起离开，表现规则不准某种行为。",
+      "mnemonics": [{"method":"PRO + NO + CRIME：规定对犯罪说不","textZh":"把 proscribe 的字形联到 pro + no（不）+ crime（犯罪）：在规定里对 crime 明确说 no。proscribe，禁止。","kind":"invented_association","original":true},{"method":"整词近形｜PRO + STRIKE，从名单划掉，不准参加","textZh":"proscribe 与 pro + strike 只差两个字母。把某人的名字从名单上 strike out（划掉），不准再参加：proscribe，排斥、禁止。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "禁止，排斥",
+          "explanationZh": "正式及物动词，常由法律、规定或官方禁止某行为或组织。不要与 prescribe“规定、开处方”混淆：proscribe 说不许做，prescribe 指定应该做。",
+          "collocations": [
+            {
+              "phrase": "proscribe a practice",
+              "meaningZh": "禁止某种做法"
+            },
+            {
+              "phrase": "proscribed organizations",
+              "meaningZh": "被取缔的组织"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "disallow",
+          "comparisonZh": "都表示不允许；disallow 使用更广，proscribe 更正式，常指官方禁令。",
+          "sources": [
+            "B"
+          ]
+        },
+        {
+          "word": "prohibit",
+          "comparisonZh": "都可指正式禁止；proscribe 还常含宣布某事有害或违法、予以排斥。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Officials promptly proscribed the procedure.",
+          "translationZh": "官员迅速禁止了这种做法。",
+          "explanationZh": "promptly 表示迅速；proscribed 直接接被禁止的做法。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/proscribe"
+        },
+        {
+          "textEn": "Membership of any proscribed organization is a serious matter.",
+          "translationZh": "加入任何被取缔的组织都是严肃的问题。",
+          "explanationZh": "proscribed 作过去分词修饰 organization；Membership 是主语。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/proscribe"
+        }
+      ]
+    },
+    {
+      "number": 6704,
+      "word": "prosecution",
+      "ipa": "/ˌprɑːsɪˈkjuːʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "实行，执行",
+      "coreEn": "the carrying out or continued pursuit of an activity or plan",
+      "coreImageZh": "男孩指着清理计划与同伴分工，随后一起搬放材料、清理桌面，表现把计划付诸实行的执行过程。",
+      "mnemonics": [{"method":"熟词组合｜PRO + SECTION，专业部门把计划执行下去","textZh":"prosecution 比 pro + section 多一个 u。计划交给 pro（专业的）section（部门），不能只停在纸上，要继续实行下去：prosecution，实行、执行。","kind":"invented_association","original":true},{"method":"整词近形｜PRO + EXECUTION，把任务执行下去","textZh":"把 prosecution 对照 pro + execution（执行）：把已开始的任务持续执行下去，而不只停留在计划里。prosecution，实行、执行。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "实行，执行",
+          "explanationZh": "本课是较正式的不可数名词，表示把活动、计划等付诸实行或持续推进，常用 prosecution of a policy/work。日常更常见的“起诉”是另一义，此处不取；普通表达执行常用 implementation 或 carrying out。",
+          "collocations": [
+            {
+              "phrase": "the prosecution of a policy",
+              "meaningZh": "政策的执行"
+            },
+            {
+              "phrase": "the prosecution of the work",
+              "meaningZh": "工作的实施推进"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "implementation",
+          "comparisonZh": "都可指落实计划或政策；prosecution 更书面，也强调持续推进某项活动。"
+        },
+        {
+          "word": "execution",
+          "comparisonZh": "都可表示执行；execution 强调付诸行动，prosecution 可强调一路推进的过程。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The committee supervised the prosecution of the plan.",
+          "translationZh": "委员会监督了计划的执行。",
+          "explanationZh": "prosecution of the plan 指计划的实行，不是对计划提起诉讼。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "Careful planning helped the prosecution of the work.",
+          "translationZh": "周密的计划有助于工作的实施。",
+          "explanationZh": "helped 后接名词短语；the prosecution of the work 指把工作推进下去。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6705,
+      "word": "proselytize",
+      "ipa": "/ˈprɑːsələtaɪz/",
+      "pos": "v.",
+      "coreMeaningZh": "（使）改变信仰",
+      "coreEn": "to try to persuade someone to adopt a different religious faith",
+      "coreImageZh": "成年人向男孩介绍自己的宗教并劝他接受，男孩倾听后说出对方的用意，表现劝人改变信仰。",
+      "mnemonics": [{"method":"熟词组合｜PRO + SELL IT，推介信仰，劝人改信","textZh":"把 proselytize 联到 pro（高手）+ sell it（把它推介出去），结尾是 -ize。把自己的信仰推介给别人，劝人改信：proselytize，使人改变信仰。","kind":"invented_association","original":true},{"method":"PRO + SELECT + -IZE：劝人改选信仰","textZh":"把 proselytize 的字形联到 pro + select（选择）+ -ize：劝别人重新选择信仰，改选你所信奉的那一种。proselytize，使人改变信仰。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "（使）改变信仰",
+          "explanationZh": "较正式，常带不赞同色彩，可不及物，也可直接接被劝说的人。重点常在试图劝人改信，不保证对方真的改信。也可用于政治立场等，本课聚焦宗教信仰。",
+          "collocations": [
+            {
+              "phrase": "proselytize for a religion",
+              "meaningZh": "为某宗教劝人改信"
+            },
+            {
+              "phrase": "try to proselytize someone",
+              "meaningZh": "试图劝某人改变信仰"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "convert",
+          "comparisonZh": "在改变宗教信仰时意义接近；convert 更可强调实际改信的结果，proselytize 常指主动劝说的过程。"
+        },
+        {
+          "word": "evangelize",
+          "comparisonZh": "都可涉及传教；evangelize 尤常指传播基督教福音，proselytize 可针对不同宗教，强调争取改信者。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Missionaries were sent to proselytize in rural areas of the country.",
+          "translationZh": "传教士被派往该国乡村地区，劝人接受他们的宗教信仰。",
+          "explanationZh": "were sent to do 表示被派去做；这里 proselytize 不带直接宾语。",
+          "sourceAttribution": "https://dictionary.cambridge.org/us/dictionary/english/proselytize"
+        },
+        {
+          "textEn": "Television has provided the evangelists with yet another platform for their proselytizing.",
+          "translationZh": "电视又为这些传教者提供了一个劝人改信的平台。",
+          "explanationZh": "provide somebody with something 表示给某人提供某物；proselytizing 在这里作名词性用法。",
+          "sourceAttribution": "https://dictionary.cambridge.org/us/dictionary/english/proselytize"
+        }
+      ]
+    }
+  ]
+}

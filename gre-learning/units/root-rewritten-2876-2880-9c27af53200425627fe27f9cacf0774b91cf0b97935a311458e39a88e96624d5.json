@@ -1,0 +1,258 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6496,
+      "word": "moth-eaten",
+      "ipa": "/ˈmɒθ iːtn/",
+      "pos": "adj.",
+      "coreMeaningZh": "过时的；陈旧不合时宜的",
+      "coreEn": "outdated or no longer useful or acceptable",
+      "coreImageZh": "男孩翻看老式服装画册，想照着穿去现代聚会，姐姐指出那套样式早已过时；moth-eaten 在这里形容陈旧、不合时宜的东西。",
+      "mnemonics": [{"method":"MOTH + EATEN：蛀旧的衣服，陈旧的想法","textZh":"moth-eaten 是 moth（蛾）加 eaten（吃过、啃过的）。被蛾蛀过的衣服又老又旧；拿它形容一个想法，就是说那想法也陈旧、不合时宜。","kind":"word_components","original":true,"weak":false},{"method":"MOTHER + TEEN：妈妈少女时代的旧装扮","textZh":"把 moth-eaten 的整体词形联到 mother（妈妈）和 teen（青少年）：妈妈还是 teen 时流行的那套装扮，放到今天已经不合时宜。由时代变了却仍沿用旧样，记 moth-eaten，过时的、陈旧不合时宜的。","kind":"invented_association","original":true,"weak":false}],
+      "usage": [
+        {
+          "senseZh": "过时的；陈旧不合时宜的",
+          "explanationZh": "本义指虫蛀的、破旧的，也可带贬意形容过时的思想、制度或说辞。评价是否过时取决于语境，旧式服装并不总是不合适。",
+          "collocations": [
+            {
+              "phrase": "moth-eaten ideas",
+              "meaningZh": "陈旧过时的想法"
+            },
+            {
+              "phrase": "a moth-eaten theory",
+              "meaningZh": "过时的理论"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "outdated",
+          "comparisonZh": "都可指已经过时；outdated 较中性，moth-eaten 更形象，常带嘲讽或嫌弃。"
+        },
+        {
+          "word": "antiquated",
+          "comparisonZh": "都可指陈旧不合时宜；antiquated 较正式，moth-eaten 借虫蛀旧物表达贬意。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I think that the subject of erosion of sovereignty is getting a little moth-eaten.",
+          "translationZh": "我觉得主权受侵蚀这个话题已经有点陈旧过时了。",
+          "explanationZh": "is getting 表示逐渐变得，moth-eaten 评价话题陈旧。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/dictionary/english/moth-eaten"
+        },
+        {
+          "textEn": "The so-called \"special relationship\" always looks moth-eaten when we're in office.",
+          "translationZh": "我们执政时，所谓的“特殊关系”看起来总是陈旧过时。",
+          "explanationZh": "looks 后接形容词，表示显得陈旧。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/moth-eaten"
+        }
+      ]
+    },
+    {
+      "number": 6497,
+      "word": "motile",
+      "ipa": "/ˈməʊtaɪl/",
+      "pos": "adj.",
+      "coreMeaningZh": "能运动的；具有运动能力的",
+      "coreEn": "capable of spontaneous movement",
+      "coreImageZh": "男孩看见小蝌蚪摆尾游过水盘，姐姐说明它能主动移动；motile 形容具有运动能力、能自行运动的生物。",
+      "mnemonics": [{"method":"MOBILE：只换一个字母，仍抓住能动","textZh":"motile 与 mobile（移动的）只差一个字母。借 mobile 的移动感，想到生物能自行移动，便记住 motile，具有运动能力的。","kind":"word_family","original":true,"weak":false},{"method":"莫呆了：别一直呆着，动起来","textZh":"motile 可读作 /ˈmoʊtaɪl/，近音联到“莫呆了”：别一直呆着，动起来。由“动起来”提示活动能力，记 motile，能运动的。","kind":"invented_association","original":true,"weak":false}],
+      "usage": [
+        {
+          "senseZh": "能运动的；具有运动能力的",
+          "explanationZh": "常见于生物学，形容细胞、微生物等能自行运动；不只是“可被搬动”，也不表示它此刻必定正在移动。",
+          "collocations": [
+            {
+              "phrase": "motile bacteria",
+              "meaningZh": "能运动的细菌"
+            },
+            {
+              "phrase": "motile cells",
+              "meaningZh": "能运动的细胞"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "mobile",
+          "comparisonZh": "都可指能移动；mobile 用途更广，motile 常强调生物具有主动运动能力。"
+        },
+        {
+          "word": "moving",
+          "comparisonZh": "都与运动有关；moving 通常指正在移动，motile 指有这种能力。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The problem was that, under a microscope, Escherichia coli, Salmonella, and other motile bacteria almost instantly swam out of frame.",
+          "translationZh": "问题是，在显微镜下，大肠杆菌、沙门氏菌和其他能运动的细菌几乎立刻就游出了视野。",
+          "explanationZh": "motile 修饰 bacteria，说明这些细菌能够运动。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/motile"
+        },
+        {
+          "textEn": "Sperm and certain spores are motile.",
+          "translationZh": "精子和某些孢子具有运动能力。",
+          "explanationZh": "are motile 说明具有运动能力，不限定此刻的动作。",
+          "sourceAttribution": "Dictionary.com https://www.dictionary.com/browse/motile"
+        }
+      ]
+    },
+    {
+      "number": 6498,
+      "word": "motivate",
+      "ipa": "/ˈməʊtɪveɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "激励；激发行动",
+      "coreEn": "to give someone a reason or desire to act",
+      "coreImageZh": "男孩遇到难处想放弃练琴，姐姐鼓励他先练好短短一段，他重新抬手练习；motivate 指激发他行动的动力。",
+      "mnemonics": [{"method":"MOTIVE：给人一个愿意行动的理由","textZh":"motivate 里能认出 motive（动机）的主体：给人一个想去做的理由，就能把人从不愿动推到主动做。由激发行动动机，记 motivate，激励。","kind":"word_family","original":true,"weak":false},{"method":"谋地位：想争取更好位置，就有干劲","textZh":"把 motivate 的整体声音联到“谋地位”：想争取更好的位置，就有了努力的动力。由这个愿望激发行动，记 motivate，激励。","kind":"invented_association","original":true,"weak":false}],
+      "usage": [
+        {
+          "senseZh": "激励；激发行动",
+          "explanationZh": "常用 motivate somebody to do something，表示激励某人做某事；be motivated by 表示受到某种动机驱使，不保证动机一定高尚。",
+          "collocations": [
+            {
+              "phrase": "motivate students",
+              "meaningZh": "激励学生"
+            },
+            {
+              "phrase": "motivate someone to act",
+              "meaningZh": "激励某人行动"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "inspire",
+          "comparisonZh": "都可激发行动；inspire 常突出感召或灵感，motivate 更明确使人产生去做的动力。"
+        },
+        {
+          "word": "encourage",
+          "comparisonZh": "都可鼓励人；encourage 可只是支持或劝勉，motivate 强调激发意愿。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She's very good at motivating her students.",
+          "translationZh": "她很擅长激励学生。",
+          "explanationZh": "be good at 后接动名词 motivating。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/motivate"
+        },
+        {
+          "textEn": "The plan is designed to motivate employees to work more efficiently.",
+          "translationZh": "这个计划旨在激励员工更高效地工作。",
+          "explanationZh": "motivate somebody to do 表示激励某人做某事。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/motivate"
+        }
+      ]
+    },
+    {
+      "number": 6499,
+      "word": "motley",
+      "ipa": "/ˈmɒtli/",
+      "pos": "adj.",
+      "coreMeaningZh": "混杂的；多种多样的",
+      "coreEn": "made up of many different and sometimes incongruous elements",
+      "coreImageZh": "男孩发现花束里各种颜色、形状的花混在一起，姐姐喜欢它丰富多样的样子；motley 形容由不同种类杂合而成的。",
+      "mnemonics": [{"method":"MULTI：不是单一一种，而是多种混合","textZh":"把 motley 的整体形音联到 multi，借 multimedia（多媒体）认出“多”：不是单一一种，而是多种混在一起，便是 motley，混杂的、多种多样的。","kind":"invented_association","original":true,"weak":false},{"method":"MOSTLY：大多是红色，还混着蓝与绿","textZh":"motley 的字形与 mostly（大多）很近：mostly red，大多是红色，里面还混着蓝色、绿色，不是清一色。由多种颜色混在一起，记 motley，混杂的、多种多样的。","kind":"invented_association","original":true,"weak":false}],
+      "usage": [
+        {
+          "senseZh": "混杂的；多种多样的",
+          "explanationZh": "常修饰 group、crew、collection，强调成员或成分各不相同，常暗含不协调或杂乱；并不是单纯“数量多”。",
+          "collocations": [
+            {
+              "phrase": "a motley crew",
+              "meaningZh": "各色人等组成的一群"
+            },
+            {
+              "phrase": "a motley collection",
+              "meaningZh": "杂七杂八的收藏"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "eclectic",
+          "comparisonZh": "都含多来源、多种类；eclectic 常强调广泛选择、兼收并蓄，motley 更突出混杂甚至不协调。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "assorted",
+          "comparisonZh": "都可表示混合种类；assorted 常中性描述搭配好的多样物品，motley 更容易带杂乱感。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She had a motley group of friends at college.",
+          "translationZh": "她大学时的朋友来自各不相同的类型。",
+          "explanationZh": "motley group 强调成员多样，而非人数本身。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/motley"
+        },
+        {
+          "textEn": "The audience was a motley crew of students and tourists.",
+          "translationZh": "观众是学生和游客混在一起的各色人群。",
+          "explanationZh": "a crew of 在这里指一群人。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/motley"
+        }
+      ]
+    },
+    {
+      "number": 6500,
+      "word": "mottle",
+      "ipa": "/ˈmɒtl/",
+      "pos": "vt.",
+      "coreMeaningZh": "使布满杂色斑点",
+      "coreEn": "to mark with irregular spots of different colours or shades",
+      "coreImageZh": "男孩用蘸了蓝颜料的海绵在白陶罐上轻拍，罐身逐渐出现不规则蓝斑；mottle 指使表面布满深浅或颜色不同的斑点。",
+      "mnemonics": [{"method":"抹一点、涂一块：留下杂色斑点","textZh":"把 mottle 的声音联到“抹、涂”这两个动作：不是整面刷成一色，而是这里抹一点、那里涂一块，留下深浅不一的色斑。由抹涂出斑点，记 mottle，使布满杂色斑点。","kind":"invented_association","original":true,"weak":false},{"method":"MOTTLE ↔ BOTTLE：颜料瓶滴出杂色斑点","textZh":"mottle 与 bottle（瓶子）只差开头字母。不同颜色的颜料从瓶口点滴落下，在纸上留下杂色斑点；由点点着色，记 mottle，使布满杂色斑点。","kind":"invented_association","original":true,"weak":false}],
+      "usage": [
+        {
+          "senseZh": "使布满杂色斑点",
+          "explanationZh": "及物动词，常见被动 be mottled with/by，表示表面有不规则的色斑；与规则条纹或均匀染色不同。",
+          "collocations": [
+            {
+              "phrase": "mottle a surface",
+              "meaningZh": "使表面布满杂色斑点"
+            },
+            {
+              "phrase": "be mottled with blue",
+              "meaningZh": "带有蓝色斑点"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "speckle",
+          "comparisonZh": "都可指使布满斑点；speckle 常偏细小点状，mottle 也包括较大、不规则的色块。"
+        },
+        {
+          "word": "dapple",
+          "comparisonZh": "都可指斑驳点缀；dapple 常用于光影或动物花纹，mottle 更强调深浅颜色不规则。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His skin was mottled by a lifetime of working outdoors in the hot sun.",
+          "translationZh": "他一辈子在烈日下做户外工作，皮肤因此布满斑点。",
+          "explanationZh": "was mottled by 表示造成斑点的原因。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/dictionary/english/mottle?topic=patterns-and-shapes"
+        },
+        {
+          "textEn": "The damp had mottled the old photographs.",
+          "translationZh": "潮气使那些旧照片布满了斑点。",
+          "explanationZh": "had mottled 是过去完成时，描述先前造成的变化。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/dictionary/english/mottle?topic=patterns-and-shapes"
+        }
+      ]
+    }
+  ]
+}

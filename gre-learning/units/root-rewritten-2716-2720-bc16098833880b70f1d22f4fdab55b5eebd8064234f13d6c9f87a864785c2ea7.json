@@ -1,0 +1,258 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6336,
+      "word": "intimidate",
+      "ipa": "/ɪnˈtɪmɪdeɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "威吓；恐吓",
+      "coreEn": "to frighten or threaten someone into submission",
+      "coreImageZh": "舞台反派威胁男孩不许说出真相，男孩害怕地后退。反派用恐惧逼人服从，这就是 intimidate 威吓。",
+      "mnemonics": [{"method":"INTIMIDATE ↔ TIMID，吓得人胆怯","textZh":"intimidate 里面完整留着 timid（胆怯的）。不是安慰他，而是用威胁把他吓成 timid：使人不敢开口、不敢反抗，就是 intimidate，威吓。","kind":"word_family","original":true},{"method":"INTIMIDATE 联到 IN TIME + DATE：指定期限，威胁后果","textZh":"intimidate 的字形联到 in time（及时）和 date（日期）。指定一个截止日期，威胁你“必须及时完成，否则让你好看！”：intimidate，威吓、恐吓。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "威吓；恐吓",
+          "explanationZh": "常用 intimidate somebody into doing something，表示用恐惧或威胁逼人做某事；也可说 be intimidated by somebody，表示被某人吓住或压倒。",
+          "collocations": [
+            {
+              "phrase": "intimidate someone into silence",
+              "meaningZh": "威吓某人使其沉默"
+            },
+            {
+              "phrase": "be intimidated by threats",
+              "meaningZh": "被威胁吓住"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "frighten",
+          "comparisonZh": "都可使人害怕；intimidate 常含威胁或逼迫服从的目的，frighten 不一定。"
+        },
+        {
+          "word": "cow",
+          "comparisonZh": "都可指用恐惧使人屈服；cow 更强调已把对方吓得不敢反抗。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They were accused of intimidating people into voting for them.",
+          "translationZh": "他们被指控恐吓人们投票支持他们。",
+          "explanationZh": "accuse somebody of doing 指控某人做某事；intimidate…into… 表示威吓迫使。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/intimidate"
+        },
+        {
+          "textEn": "She refused to be intimidated by their threats.",
+          "translationZh": "她拒绝被他们的威胁吓倒。",
+          "explanationZh": "refuse to be intimidated 表示不肯屈服于威吓。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/intimidate"
+        }
+      ]
+    },
+    {
+      "number": 6337,
+      "word": "intoxicant",
+      "ipa": "/ɪnˈtɑːksɪkənt/",
+      "pos": "n.",
+      "coreMeaningZh": "使人醉的东西；酒精饮料",
+      "coreEn": "a substance that causes intoxication, especially an alcoholic drink",
+      "coreImageZh": "叔叔喝了杯里的酒，随后脸红、神情微醺。姐姐指出酒能使人醉；intoxicant 指这种使人醉的东西，尤其酒精饮料。",
+      "mnemonics": [{"method":"INTOXICANT ↔ IN TAXI, CAN'T，醉了不能自己开","textZh":"intoxicant 借音连到 in taxi, can't：喝了这杯，can't drive（不能开车），只能坐进 taxi。让人喝醉、不能自己开车的这杯酒，就是 intoxicant，致醉饮料。","kind":"invented_association","original":true},{"method":"INTOXICANT 里有 TOXIC：酒精使人醉","textZh":"intoxicant 里完整包含 toxic（有毒的）。酒精这种有毒物质能使人喝醉；由它的致醉作用，记 intoxicant，使人醉的物质。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "使人醉的东西；酒精饮料",
+          "explanationZh": "可数名词，指能使人醉或产生中毒式兴奋的物质，尤其酒精饮料。不是“喝醉的人”；复数 intoxicants 常见于规定或正式描述。",
+          "collocations": [
+            {
+              "phrase": "alcoholic intoxicants",
+              "meaningZh": "含酒精的致醉饮料"
+            },
+            {
+              "phrase": "under the influence of intoxicants",
+              "meaningZh": "受致醉物质影响"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "alcohol",
+          "comparisonZh": "酒精作为致醉物时意思相关；alcohol 是具体物质，也可泛指酒，intoxicant 是按作用命名的类别。"
+        },
+        {
+          "word": "liquor",
+          "comparisonZh": "在酒类这一义上接近；liquor 通常指烈酒，intoxicant 的范围更广。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The use of intoxicants and stimulants is prohibited.",
+          "translationZh": "禁止使用致醉物质和兴奋剂。",
+          "explanationZh": "The use of… 作主语，is prohibited 表示被禁止。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/intoxicant"
+        },
+        {
+          "textEn": "He was driving under the influence of intoxicants.",
+          "translationZh": "他在受致醉物质影响的情况下开车。",
+          "explanationZh": "under the influence of 指受到某物作用，句中说明驾驶时的状态。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/intoxicant"
+        }
+      ]
+    },
+    {
+      "number": 6338,
+      "word": "intrepid",
+      "ipa": "/ɪnˈtrepɪd/",
+      "pos": "adj.",
+      "coreMeaningZh": "无畏的；勇敢的",
+      "coreEn": "resolutely fearless in the face of danger or difficulty",
+      "coreImageZh": "男孩看到木桥有点犹豫，姐姐却镇定地走上桥，带他继续前进。面对困难仍勇敢行动，体现 intrepid 无畏。",
+      "mnemonics": [{"method":"INTREPID 借音 IN + RAPID：迅速冲进险境","textZh":"intrepid 借音连到 in（进去）和 rapid（迅速的）。面对危险，仍迅速冲进去救人：由这份不畏危险的勇气，记 intrepid，无畏的、勇敢的。","kind":"invented_association","original":true},{"method":"INTREPID 借音 IN + TRAP + IT：有陷阱，也不畏惧","textZh":"把 intrepid 联到 in + trap（陷阱）+ it。明知前方有陷阱，也不畏缩：intrepid，无畏的、勇敢的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "无畏的；勇敢的",
+          "explanationZh": "形容面对危险、未知或困难仍勇敢的人，常见 intrepid explorer。语气较正式，有时也带轻松夸张的称赞；不等于做事毫无判断。",
+          "collocations": [
+            {
+              "phrase": "an intrepid explorer",
+              "meaningZh": "无畏的探险者"
+            },
+            {
+              "phrase": "an intrepid reporter",
+              "meaningZh": "勇敢的记者"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "fearless",
+          "comparisonZh": "都表示不畏惧；intrepid 常突出冒险或克服困难中的坚定勇气。"
+        },
+        {
+          "word": "courageous",
+          "comparisonZh": "都可形容勇敢；courageous 也常强调虽有恐惧仍采取正确行动。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Traders and missionaries often proved themselves to be intrepid explorers.",
+          "translationZh": "商人和传教士常常证明自己也是无畏的探险者。",
+          "explanationZh": "prove oneself to be 表示通过行动证明自己是某种人。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/intrepid"
+        },
+        {
+          "textEn": "The intrepid Weather Channel star is renowned for showing up just when everyone else is shipping out.",
+          "translationZh": "这位无畏的天气频道明星以在别人纷纷撤离时赶到现场而闻名。",
+          "explanationZh": "be renowned for 表示以……闻名；show up 与 ship out 在句中形成到达与离开的对比。",
+          "sourceAttribution": "Merriam-Webster，页面例句 https://www.merriam-webster.com/dictionary/intrepid"
+        }
+      ]
+    },
+    {
+      "number": 6339,
+      "word": "intrigue",
+      "ipa": "/ɪnˈtriːɡ/",
+      "pos": "vt.",
+      "coreMeaningZh": "激起兴趣；引起好奇",
+      "coreEn": "to arouse curiosity and make someone want to know more",
+      "coreImageZh": "蓝盒子里传出轻响，男孩被吸引，凑近圆孔想知道里面是什么。intrigue 表示激起好奇、让人想进一步了解。",
+      "mnemonics": [{"method":"INTRIGUE ↔ TRICK，小戏法勾起好奇","textZh":"intrigue 的重读部分联到 trick（小戏法）。硬币明明在掌心，却一下消失：这个 trick 让你追问“怎么做到的？”勾起探究兴趣，就是 intrigue。","kind":"invented_association","original":true},{"method":"INTRIGUE 联到 IN + TRIGGER：触发好奇心","textZh":"intrigue 的字形联到 in 和 trigger（触发）。像按下开关，触发你的好奇心，让你忍不住想弄明白：intrigue，激起兴趣、引发好奇。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "激起兴趣；引起好奇",
+          "explanationZh": "本页取及物动词义，宾语是被吸引的人，常见 be intrigued by。作名词时，intrigue 还可表示阴谋。",
+          "collocations": [
+            {
+              "phrase": "be intrigued by something",
+              "meaningZh": "被某事勾起好奇"
+            },
+            {
+              "phrase": "intrigue the audience",
+              "meaningZh": "激起观众的兴趣"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "interest",
+          "comparisonZh": "都可表示使人感兴趣；intrigue 常特别突出神秘、新奇或难以解释带来的好奇。"
+        },
+        {
+          "word": "fascinate",
+          "comparisonZh": "都可吸引注意；fascinate 常强调深深吸引，intrigue 更强调想进一步弄明白。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The idea intrigued her.",
+          "translationZh": "这个想法引起了她的兴趣。",
+          "explanationZh": "主语是引起兴趣的事物，her 是被吸引的人。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/intrigue_1"
+        },
+        {
+          "textEn": "There was something about him that intrigued her.",
+          "translationZh": "他身上有某种东西勾起了她的好奇心。",
+          "explanationZh": "that 引导定语从句，说明是哪一种让她好奇的特质。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/intrigue_1"
+        }
+      ]
+    },
+    {
+      "number": 6340,
+      "word": "inundate",
+      "ipa": "/ˈɪnʌndeɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "淹没",
+      "coreEn": "to cover land or another area with a large amount of water",
+      "coreImageZh": "姐姐向水槽加水，水位逐渐上升，最终盖过低矮的模型陆地。inundate 表示大量水涌来并淹没某处。",
+      "mnemonics": [{"method":"INUNDATE 联到 IN + UNDER：全浸在水面下","textZh":"inundate 联到 in 和 under（在下面）：洪水涌来，东西全浸在水里，到了水面下面。由全在水下的状态，记 inundate，淹没。","kind":"invented_association","original":true},{"method":"INUNDATE 联到 IN + UPDATE：更新通知淹没收件箱","textZh":"inundate 联到 in 和 update（更新）。更新通知不断涌进来，把收件箱都“淹没”了：inundate，淹没。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "淹没",
+          "explanationZh": "及物动词，本页指水淹没地区，常用被动 be inundated。也可比喻信件、工作等多到令人应付不过来；不是只有一点水溅到表面。",
+          "collocations": [
+            {
+              "phrase": "inundate low-lying land",
+              "meaningZh": "淹没低洼地"
+            },
+            {
+              "phrase": "be inundated with water",
+              "meaningZh": "被水淹没"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "flood",
+          "comparisonZh": "在水淹没地区这一义上接近；flood 更常见，也可作名词。"
+        },
+        {
+          "word": "submerge",
+          "comparisonZh": "都可表示使处于水下；submerge 也可指把一个物体主动沉入水中，inundate 通常强调水涌来覆盖地区。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Flood waters inundate the river plain each spring.",
+          "translationZh": "每年春天，洪水都会淹没这片河流平原。",
+          "explanationZh": "each spring 表示规律发生的时间，inundate 后接被水覆盖的地区。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/inundate"
+        },
+        {
+          "textEn": "Many sheep were lost in the floods and the city was inundated.",
+          "translationZh": "洪水中许多羊丧生，城市也被淹没了。",
+          "explanationZh": "两个被动结构并列，was inundated 表示城市被洪水覆盖。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/inundate"
+        }
+      ]
+    }
+  ]
+}

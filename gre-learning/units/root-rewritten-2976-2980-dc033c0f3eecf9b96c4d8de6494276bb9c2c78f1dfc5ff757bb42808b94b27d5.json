@@ -1,0 +1,258 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6596,
+      "word": "patriot",
+      "ipa": "/ˈpeɪtriət/",
+      "pos": "n.",
+      "coreMeaningZh": "爱国者",
+      "coreEn": "a person who loves and supports their country",
+      "coreImageZh": "洪灾后，男孩与志愿者一起清理家乡的公共活动室，希望自己的国家和同胞过得更好，体现 patriot，爱国者。",
+      "mnemonics": [{"method":"PATRIOT：“爱国者”导弹的名字","textZh":"把 patriot 和新闻中的“爱国者”导弹名称连在一起：Patriot 对应的名字就是“爱国者”。回到指人的普通名词，patriot 就是热爱祖国的人。","kind":"phrase_anchor","original":true},{"method":"PAT + ROOT：轻拍故土，不忘自己的根","textZh":"patriot 的词形联到 pat（轻拍）和 root（根）。轻拍脚下故土，不忘自己的根；爱着祖国的 patriot，就是爱国者。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "爱国者",
+          "explanationZh": "可数名词，复数 patriots；强调对国家的热爱与支持，不限于军人。patriotic 是形容词，patriotism 是表示爱国心的名词。",
+          "collocations": [
+            {
+              "phrase": "a true patriot",
+              "meaningZh": "真正的爱国者"
+            },
+            {
+              "phrase": "a devoted patriot",
+              "meaningZh": "忠诚的爱国者"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "lover of one’s country",
+          "comparisonZh": "解释性的近义表达，直接说明热爱自己的国家，不涉及特定政治立场。"
+        },
+        {
+          "word": "nationalist",
+          "comparisonZh": "两者都可能重视国家利益，但 nationalist 常含民族独立或国家至上的政治立场，并非所有语境都能替换 patriot。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was a great patriot who devoted his life to serving his country.",
+          "translationZh": "他是一位把一生奉献给国家的伟大爱国者。",
+          "explanationZh": "who 引导定语从句；devote one’s life to 后接动名词 serving。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/patriot"
+        },
+        {
+          "textEn": "I wouldn’t say I’m a great patriot, but I would never betray my country.",
+          "translationZh": "我不会说自己是个伟大的爱国者，但我绝不会背叛自己的国家。",
+          "explanationZh": "wouldn’t say 表达较谦抑的自我评价，but 引出坚定的对比。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/patriot"
+        }
+      ]
+    },
+    {
+      "number": 6597,
+      "word": "patronize",
+      "ipa": "/ˈpeɪtrənaɪz/",
+      "pos": "v.",
+      "coreMeaningZh": "赞助；以高人一等的态度对待",
+      "coreEn": "to support financially; to treat someone with condescending superiority",
+      "coreImageZh": "资助人买下男孩的画来支持他，却又像哄不懂事的孩子般说话；patronize 既可指赞助，也可指以高人一等的态度对待。",
+      "mnemonics": [{"method":"PAY + TRAIN：出资支持年轻画家学画","textZh":"patronize 的前半声音联到 pay（付钱）和 train（培训），后面接上常见的 -ize。替年轻画家付培训费，支持他学习绘画：patronize，资助、赞助。","kind":"invented_association","original":true},{"method":"PARENT + EYES：把别人当不懂事的孩子看","textZh":"patronize 的声音联到 parent（家长）和 eyes（眼睛）。像家长看小孩那样看待一个成年人，自以为比他懂得多：patronize，以居高临下的态度对待。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "赞助；以高人一等的态度对待",
+          "explanationZh": "通常直接接人或机构作宾语。赞助义多用于艺术等事业；居高临下义带贬义，常出现在 Don’t patronize me。另有光顾商家的意思，须根据宾语与语境区分。",
+          "collocations": [
+            {
+              "phrase": "patronize the arts",
+              "meaningZh": "赞助艺术事业"
+            },
+            {
+              "phrase": "patronize somebody",
+              "meaningZh": "以高人一等的态度对待某人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "champion",
+          "comparisonZh": "在支持事业的义项上相近；champion 更强调积极维护和倡导，patronize 可突出给予资助。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "talk down to",
+          "comparisonZh": "在居高临下义上相近；talk down to 更具体地强调说话时把对方当成不懂事的人。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The family patronizes the arts.",
+          "translationZh": "这个家族赞助艺术事业。",
+          "explanationZh": "patronizes 为第三人称单数；the arts 指艺术事业的整体。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/patronize"
+        },
+        {
+          "textEn": "Don't patronize me. I know what I'm doing.",
+          "translationZh": "别用高人一等的态度对待我。我知道自己在做什么。",
+          "explanationZh": "否定祈使句表达抗议；what 从句作 know 的宾语，说明说话人能够自主判断。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/patronize"
+        }
+      ]
+    },
+    {
+      "number": 6598,
+      "word": "province",
+      "ipa": "/ˈprɒvɪns/",
+      "pos": "n.",
+      "coreMeaningZh": "职能范围",
+      "coreEn": "a person’s area of responsibility, authority, or expertise",
+      "coreImageZh": "男孩把布置问题交给美术老师，把音响问题交给负责设备的老师，各人处理自己的职责范围，体现 province。",
+      "mnemonics": [{"method":"PROVIDE → PROVINCE：负责提供哪一块服务","textZh":"province 和 provide（提供）词形相近。你在岗位上负责 provide 哪些服务，那一块就是你的 province：职能范围。","kind":"invented_association","original":true},{"method":"PRINCE：王子负责封地内的事务","textZh":"province 的词形联到 prince（王子）。一位 prince 掌管一片封地，封地的事务归他负责；由“归他管的那一块”，记 province，职能范围。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "职能范围",
+          "explanationZh": "本义项常用单数，表示职责、专长或活动领域，而不是地理上的省。常见 the province of somebody 以及 within/outside somebody’s province；sole 或 exclusive 可强调专属范围。",
+          "collocations": [
+            {
+              "phrase": "within somebody’s province",
+              "meaningZh": "在某人的职权范围内"
+            },
+            {
+              "phrase": "outside somebody’s province",
+              "meaningZh": "超出某人的职责范围"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sphere",
+          "comparisonZh": "都可指活动或职责范围；sphere 较广泛，province 常强调某人适合或有责任处理的领域。"
+        },
+        {
+          "word": "domain",
+          "comparisonZh": "都可指领域；domain 也能指知识、权力等范围，不一定强调职责归属。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Such decisions are normally the province of higher management.",
+          "translationZh": "这种决策通常属于高层管理者的职权范围。",
+          "explanationZh": "the province of 表示属于谁负责的领域；normally 说明通常情况。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/province"
+        },
+        {
+          "textEn": "Love should no longer be the sole province of the poet.",
+          "translationZh": "爱情不应再只是诗人的专属领域。",
+          "explanationZh": "sole 表示唯一的、专属的；no longer 表示不再如此。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/province"
+        }
+      ]
+    },
+    {
+      "number": 6599,
+      "word": "peck",
+      "ipa": "/pek/",
+      "pos": "n./v.",
+      "coreMeaningZh": "大量；不情愿地小口咬",
+      "coreEn": "a large quantity; to eat reluctantly in small bites",
+      "coreImageZh": "男孩没胃口，只小口啄食盘中的午饭，后来面对一大堆杂乱的餐具；peck 可指小口吃，也可用 a peck of 比喻大量。",
+      "mnemonics": [{"method":"PACK ↔ PECK：一大包，一大堆","textZh":"peck 与 pack（包；一群）只差中间元音。看到 pack，就想到一大包、一大群；peck 作名词也可记“一大堆”，如 a peck of trouble，一大堆麻烦。","kind":"invented_association","original":true},{"method":"PICK ↔ PECK：挑来挑去，只吃一点","textZh":"peck 与 pick（挑）只差中间元音。吃饭时挑来挑去，只碰一小口，不情愿地吃；这种小口啄食，就是 peck at food。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "大量；不情愿地小口咬",
+          "explanationZh": "小口吃义常用 peck at food，通常暗示没胃口或不愿多吃。名词大量义较旧或较口语化，常见 a peck of trouble；它与容量单位 peck 相关，但比喻用法不表示精确容量。",
+          "collocations": [
+            {
+              "phrase": "peck at one’s food",
+              "meaningZh": "没胃口地小口吃东西"
+            },
+            {
+              "phrase": "a peck of trouble",
+              "meaningZh": "一大堆麻烦"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "nibble",
+          "comparisonZh": "都可指小口吃；nibble 不一定含不情愿，peck at food 往往暗示食欲不佳。"
+        },
+        {
+          "word": "a lot",
+          "comparisonZh": "在大量义上接近；a lot 用途普遍，a peck 多用于较固定或带口语色彩的表达。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Now you're in a peck of trouble.",
+          "translationZh": "现在你惹了一大堆麻烦。",
+          "explanationZh": "be in trouble 表示陷入麻烦；a peck of 加强数量或程度。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/peck"
+        },
+        {
+          "textEn": "She sat nervously pecking at her food.",
+          "translationZh": "她紧张地坐着，小口小口地吃着东西。",
+          "explanationZh": "pecking at her food 是伴随动作；nervously 描写她当时紧张的状态。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/peck-at"
+        }
+      ]
+    },
+    {
+      "number": 6600,
+      "word": "pedagogue",
+      "ipa": "/ˈpedəɡɒɡ/",
+      "pos": "n.",
+      "coreMeaningZh": "教育者，老师",
+      "coreEn": "a teacher or educator, sometimes an overly formal one",
+      "coreImageZh": "老师向男孩示范怎样观察发芽种子，再引导他自己说明发现；这位正式教授知识的人就是 pedagogue，教育者。",
+      "mnemonics": [{"method":"PEDAGOGUE：“陪他过”学习难关","textZh":"pedagogue 的声音联到“陪他过”。学生遇到难题，老师陪着他一步步弄懂、过关；pedagogue，教育者、老师。","kind":"invented_association","original":true},{"method":"PEDAL + GO：教你蹬车往前走","textZh":"pedagogue 的声音联到 pedal（蹬踏板）和 go（前进）。喊着“Pedal！Go！”，教你一步步学会骑车的是老师：pedagogue，教师、教育者。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "教育者，老师",
+          "explanationZh": "较正式或偏旧的可数名词。可以泛指教师，但现代语境中有时带教条、刻板、爱说教的意味；普通中性介绍职业通常用 teacher 或 educator。",
+          "collocations": [
+            {
+              "phrase": "a skilled pedagogue",
+              "meaningZh": "有教学技巧的教育者"
+            },
+            {
+              "phrase": "an experienced pedagogue",
+              "meaningZh": "经验丰富的教师"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "teacher",
+          "comparisonZh": "都指教师；teacher 是一般中性词，pedagogue 更正式，也可能有刻板说教的意味。"
+        },
+        {
+          "word": "educator",
+          "comparisonZh": "都可指教育工作者；educator 常含较广的教育实践或理念，pedagogue 较突出教学者本人。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Carroll balances it all as a full-time pedagogue.",
+          "translationZh": "卡罗尔在担任全职教师的同时兼顾这一切。",
+          "explanationZh": "as 引出身份；balances it all 指在多项事务之间保持平衡。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pedagogue"
+        },
+        {
+          "textEn": "They are attracted to personalities that feel to them more like friends than pedagogues.",
+          "translationZh": "他们更容易被那些让他们感觉像朋友、而非说教老师的人吸引。",
+          "explanationZh": "that 从句修饰 personalities；more like A than B 比较给人的两种感觉。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pedagogue"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6531,
+      "word": "nocturnal",
+      "ipa": "/nɒkˈtɜːnl/",
+      "pos": "adj.",
+      "coreMeaningZh": "夜间的；夜间活动的",
+      "coreEn": "happening or active at night",
+      "coreImageZh": "夜幕降临后，猫头鹰睁眼飞出树洞，在附近树枝上活动，男孩与姐姐安静地观察；nocturnal 指夜间发生或夜间活动的。",
+      "mnemonics": [{"method":"NOON + TURN：把昼夜作息翻过来","textZh":"nocturnal 的词形联到 noon（正午）和 turn（翻转），再接上 -al。把白天活动的作息翻过来，改在夜里活动：nocturnal，夜间的、夜间活动的。","kind":"invented_association","original":true},{"method":"KNOCK + TUNNEL：在黑暗中摸索","textZh":"nocturnal 的声音联到 knock（敲）和 tunnel（隧道）。在漆黑的隧道里敲着墙摸索，仿佛在夜间行动：nocturnal，夜间的、夜间活动的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "夜间的；夜间活动的",
+          "explanationZh": "可形容发生在夜里的活动，也可形容习惯夜间活动的动物。它不等于“每天晚上都发生”，后者通常用 nightly。",
+          "collocations": [
+            {
+              "phrase": "nocturnal animals",
+              "meaningZh": "夜间活动的动物"
+            },
+            {
+              "phrase": "a nocturnal visit",
+              "meaningZh": "夜间来访"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "nighttime",
+          "comparisonZh": "形容夜间发生的事时相近；nighttime 不强调动物的夜行习性。"
+        },
+        {
+          "word": "nightly",
+          "comparisonZh": "都与夜晚有关；nightly 常表示每晚或每夜一次，nocturnal 不要求每天重复。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "These animals are strictly nocturnal.",
+          "translationZh": "这些动物只在夜间活动。",
+          "explanationZh": "strictly nocturnal 强调其活动时间局限于夜间。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/nocturnal"
+        },
+        {
+          "textEn": "These insects are largely nocturnal.",
+          "translationZh": "这些昆虫主要在夜间活动。",
+          "explanationZh": "largely 表示主要如此，并非绝对。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/nocturnal"
+        }
+      ]
+    },
+    {
+      "number": 6532,
+      "word": "nomad",
+      "ipa": "/ˈnəʊmæd/",
+      "pos": "n.; adj.",
+      "coreMeaningZh": "游牧的；居无定所的人",
+      "coreEn": "a person who moves from place to place rather than living in one fixed home",
+      "coreImageZh": "男孩和家人收起帐篷，带着羊群向新的草地迁移；nomad 是随牧场等条件迁移、没有固定住处的人。",
+      "mnemonics": [{"method":"NOMAD：“挪马的”，住处也跟着挪","textZh":"nomad 的声音联到“挪马的”。人赶着马一起换草场，住处也跟着挪，不在一处固定住下：nomad，游牧者。","kind":"invented_association","original":true},{"method":"NO BED：没有固定的床，也没有固定的家","textZh":"nomad 的词形联到 no bed（没有床）。走到哪儿睡到哪儿，没有固定的床、也没有固定的家；nomad，居无定所的人。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "游牧的；居无定所的人",
+          "explanationZh": "通常作可数名词，指游牧者，也可泛指经常迁移、没有固定居所的人。形容词可用 nomad，日常更常用 nomadic；普通的一次旅行不一定构成游牧生活。",
+          "collocations": [
+            {
+              "phrase": "a nomad tribe",
+              "meaningZh": "游牧部落"
+            },
+            {
+              "phrase": "live as a nomad",
+              "meaningZh": "过居无定所的生活"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "wanderer",
+          "comparisonZh": "都可指四处迁移的人；wanderer 更强调游走，nomad 常含没有固定住所或游牧生活的意思。"
+        },
+        {
+          "word": "nomadic",
+          "comparisonZh": "表示游牧的时与形容词 nomad 相近；nomadic 是更常见的形容词形式，不能直接替代名词“游牧者”。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The Tuareg are the largest tribe of nomads in the desert.",
+          "translationZh": "图阿雷格人是这片沙漠中最大的游牧部族。",
+          "explanationZh": "nomads 指以迁移为生活方式的游牧者。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/nomad"
+        },
+        {
+          "textEn": "They were nomads who hunted game and tended their herds of cattle.",
+          "translationZh": "他们是以狩猎和照料牛群为生的游牧者。",
+          "explanationZh": "who 从句补充这些游牧者的生活方式。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/nomad"
+        }
+      ]
+    },
+    {
+      "number": 6533,
+      "word": "nominal",
+      "ipa": "/ˈnɒmɪnl/",
+      "pos": "adj.",
+      "coreMeaningZh": "不重要的；微不足道的",
+      "coreEn": "so small or insignificant as to matter very little",
+      "coreImageZh": "男孩以为借玩具要付很多钱，姐姐却只收了一枚小硬币；nominal 可形容少得几乎可以忽略、只是象征性的费用。",
+      "mnemonics": [{"method":"NOMINATE：有个名头，分量却很小","textZh":"nominal 联到 nominate（提名），两词都抓住“名”。收费只是名义上收一点，数额几乎可以忽略：nominal，微不足道的。","kind":"word_family","original":true},{"method":"NO + MAIN：不是主要大头，只是微小一点","textZh":"nominal 的词形联到 no（没有）+ main（主要的），再接 -al。不是主要的大头，只是微不足道的一点：nominal，微不足道的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "不重要的；微不足道的",
+          "explanationZh": "这里强调数量、费用或作用小得不值得重视，常说 nominal fee/charge。也有“名义上的”这一相关含义，但不能把所有 nominal 都简单译为“不重要的”。",
+          "collocations": [
+            {
+              "phrase": "a nominal fee",
+              "meaningZh": "象征性的小额费用"
+            },
+            {
+              "phrase": "a nominal contribution",
+              "meaningZh": "微不足道的贡献"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "trifling",
+          "comparisonZh": "都可表示微不足道；trifling 常含不值得认真考虑的评价，nominal 常用于费用或作用。"
+        },
+        {
+          "word": "token",
+          "comparisonZh": "形容费用或姿态时可接近；token 强调象征性，nominal 强调只是很少或仅有名义上的意义。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We only pay a nominal rent.",
+          "translationZh": "我们只支付很少的租金。",
+          "explanationZh": "nominal rent 指远低于通常数额、近乎象征性的租金。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/nominal"
+        },
+        {
+          "textEn": "The amounts involved are nominal.",
+          "translationZh": "涉及的金额微不足道。",
+          "explanationZh": "nominal 作表语，说明金额小得不重要。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/nominal"
+        }
+      ]
+    },
+    {
+      "number": 6534,
+      "word": "nonplus",
+      "ipa": "/ˌnɒnˈplʌs/",
+      "pos": "v.",
+      "coreMeaningZh": "使迷惑；使困窘",
+      "coreEn": "to confuse someone so much that they do not know what to say or do",
+      "coreImageZh": "男孩把玩具零件拿起又放下，面对奇怪的连接方式愣住，不知道下一步怎么办；nonplus 就是使人迷惑得不知所措。",
+      "mnemonics": [{"method":"NON + PLUS：一句也加不上来","textZh":"non- 是不，plus 是加。突然被问住，想要回应，却连一句话也加不上来，不知该怎么办：nonplus，使人困惑、困窘。","kind":"word_components","original":true},{"method":"NO PLANS：没有计划，一下没了主意","textZh":"nonplus 的词形联到 no plans（没有计划）。突遇一个问题，自己 no plans，一下没了主意，不知如何应对：nonplus，使人困惑、困窘。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "使迷惑；使困窘",
+          "explanationZh": "是及物动词，常见于 be nonplussed by something，表示被某事弄得困惑、无所适从。过去式与过去分词通常写 nonplussed，美式英语也有 nonplused。",
+          "collocations": [
+            {
+              "phrase": "be nonplussed by a question",
+              "meaningZh": "被一个问题弄得不知所措"
+            },
+            {
+              "phrase": "look nonplussed",
+              "meaningZh": "显得困惑不解"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "perplex",
+          "comparisonZh": "都可表示使困惑；nonplus 更突出一时不知道该说什么或怎么办。"
+        },
+        {
+          "word": "disconcert",
+          "comparisonZh": "都可使人失去镇定；disconcert 偏不安、尴尬，nonplus 偏迷惑而卡住。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Branson seemed a little nonplussed at Ellie’s refusal.",
+          "translationZh": "埃莉的拒绝似乎让布兰森有点不知所措。",
+          "explanationZh": "nonplussed at 表示面对某件事困惑、无从应对。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/us/definition/english/nonplussed"
+        },
+        {
+          "textEn": "He was rather nonplussed by her question.",
+          "translationZh": "她的问题让他很不知所措。",
+          "explanationZh": "be nonplussed by 表示被某事弄得迷惑。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/us/definition/english/nonplussed"
+        }
+      ]
+    },
+    {
+      "number": 6535,
+      "word": "notch",
+      "ipa": "/nɒtʃ/",
+      "pos": "v.",
+      "coreMeaningZh": "通过努力获得",
+      "coreEn": "to achieve a success or score",
+      "coreImageZh": "男孩认真准备，奋力跳远，最终获得奖牌；notch 在这里是通过努力取得成绩。",
+      "mnemonics": [{"method":"MATCH ↔ NOTCH：赢下一场比赛","textZh":"notch 与 match（比赛）词形、声音相近。靠努力赢下一场 match，就 notch a win，取得一场胜利；notch，取得成绩。","kind":"invented_association","original":true},{"method":"CATCH → NOTCH：抓住机会，取得成绩","textZh":"notch 联到 catch（抓住）。机会来了，努力 catch 住，把它变成实实在在的成绩；notch，取得成绩。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "通过努力获得",
+          "explanationZh": "常用于取得胜利、进球或成就，尤其见于体育报道。可说 notch a win，也可说 notch up a victory；一般不用于随手拿到普通物品。",
+          "collocations": [
+            {
+              "phrase": "notch a win",
+              "meaningZh": "取得一场胜利"
+            },
+            {
+              "phrase": "notch up a victory",
+              "meaningZh": "赢得一次胜利"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "achieve",
+          "comparisonZh": "都可指取得成果；achieve 用途更广，notch 常突出添上一项胜利或成绩。"
+        },
+        {
+          "word": "score",
+          "comparisonZh": "比赛中取得进球或分数时相近；score 还可泛指得分，notch 常强调记录下一项成果。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The team has notched up 20 goals already this season.",
+          "translationZh": "这支球队本赛季已经攻入20球。",
+          "explanationZh": "notch up 后接成绩，表示累计取得。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/notch_2"
+        },
+        {
+          "textEn": "Steve Bull notched his 200th goal for Wolves as they beat Leicester 3-0.",
+          "translationZh": "狼队以3比0击败莱斯特队时，史蒂夫·布尔攻入了他为狼队打进的第200球。",
+          "explanationZh": "notch 直接接 goal，表示取得一次进球。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/notch"
+        }
+      ]
+    }
+  ]
+}

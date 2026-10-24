@@ -1,0 +1,268 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6681,
+      "word": "prepossessing",
+      "ipa": "/ˌpriːpəˈzesɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "给人好感的，有魅力的",
+      "coreEn": "attractive and likely to make a favorable first impression",
+      "coreImageZh": "男孩带着自然微笑走进社团，礼貌问候，同伴放松神情欢迎他，表现初见就让人产生好感。",
+      "mnemonics": [{"method":"熟词组合｜PRE + POSSESS，先把你的心吸引住","textZh":"把 prepossessing 联到 pre-（先）+ possess（占有）：还没开口，亲切的模样就先把你的心吸引住。prepossessing，给人好感的、有魅力的。","kind":"invented_association","original":true},{"method":"PRE + PROCESSING：照片先修得讨人喜欢","textZh":"prepossessing 与 pre + processing（处理）近形。照片先做一番修饰处理，呈现出讨人喜欢的样子：prepossessing，给人好感的、有魅力的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "给人好感的，有魅力的",
+          "explanationZh": "较正式，常形容外表或初见印象有吸引力，尤其常见于 not very prepossessing 等否定结构。它不保证品德好或能力强，只说明给人的第一印象讨喜。",
+          "collocations": [
+            {
+              "phrase": "a prepossessing appearance",
+              "meaningZh": "讨人喜欢的外表"
+            },
+            {
+              "phrase": "not very prepossessing",
+              "meaningZh": "不太引人好感的"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "enchanting",
+          "comparisonZh": "都可表示有魅力；enchanting 更强，常有令人着迷的意味，prepossessing 偏重初见好感。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "appealing",
+          "comparisonZh": "都表示有吸引力；appealing 用途更广，prepossessing 较正式且常说外表印象。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He wasn't a very prepossessing sort of person.",
+          "translationZh": "他不是那种特别招人喜欢的人。",
+          "explanationZh": "not very 减弱肯定程度；a sort of person 表示一种类型的人。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/prepossessing"
+        },
+        {
+          "textEn": "The box didn't look very prepossessing, but the necklace inside was beautiful.",
+          "translationZh": "盒子看着不太起眼，但里面的项链很漂亮。",
+          "explanationZh": "but 连接外观与内容的反差；prepossessing 说的是盒子给人的外观印象。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/prepossessing"
+        }
+      ]
+    },
+    {
+      "number": 6682,
+      "word": "preposterous",
+      "ipa": "/prɪˈpɒstərəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "荒谬的，不符合常理的",
+      "coreEn": "so unreasonable that it goes against common sense",
+      "coreImageZh": "男孩把漏勺举在头顶想挡雨，成人指出雨会从孔里落下，再用水壶演示，表现主意不合常理。",
+      "mnemonics": [{"method":"PRE + POT + HEROES：把锅当救世英雄","textZh":"把 preposterous 的字形联到 pre + pot（锅）+ heroes（英雄）：竟把几口锅当成拯救世界的英雄，荒谬得不合常理。preposterous，荒谬的。","kind":"invented_association","original":true},{"method":"熟词组合｜PRE + POSTER，获奖海报先挂出来","textZh":"preposterous 里能看到 pre-（事先）+ poster（海报）：电影还没拍，获奖海报倒提前挂出来了。preposterous，荒谬的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "荒谬的，不符合常理的",
+          "explanationZh": "语气较强，指主张、建议或行为荒唐到不合常理，常含惊讶、恼怒。可说 a preposterous idea，也常用 It is preposterous to do something；不是单纯罕见或新奇。",
+          "collocations": [
+            {
+              "phrase": "a preposterous idea",
+              "meaningZh": "荒唐的主意"
+            },
+            {
+              "phrase": "a preposterous claim",
+              "meaningZh": "荒谬的说法"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "absurd",
+          "comparisonZh": "都表示不合常理；preposterous 通常语气更强，容易带惊讶或不满。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "nonsensical",
+          "comparisonZh": "都能表示荒谬；nonsensical 侧重缺乏道理或意义，preposterous 更强调荒唐得令人难以接受。",
+          "sources": [
+            "weichen_gre",
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "These claims are absolutely preposterous!",
+          "translationZh": "这些说法简直荒谬至极！",
+          "explanationZh": "absolutely 加强否定评价；claims 指提出的主张或说法。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/preposterous"
+        },
+        {
+          "textEn": "It’s preposterous to suggest that everything was her fault!",
+          "translationZh": "说一切都是她的错，简直荒唐！",
+          "explanationZh": "It 是形式主语，真正内容是 to suggest...；that 从句说明所提出的说法。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/preposterous"
+        }
+      ]
+    },
+    {
+      "number": 6683,
+      "word": "prescience",
+      "ipa": "/ˈpresiəns/",
+      "pos": "n.",
+      "coreMeaningZh": "预知，先见",
+      "coreEn": "knowledge or insight about events before they happen",
+      "coreImageZh": "男孩提前看出椅子摆得太密会妨碍入场，先留出通道；来宾到场顺利通过，表现对后来情况的先见。",
+      "mnemonics": [{"method":"熟词组合｜PRE + SCIENCE，科学让你先看一步","textZh":"把 prescience 联到 pre-（事先）+ science（科学）：用科学提前看出未来的变化，有了 prescience，预知、先见。","kind":"invented_association","original":true},{"method":"整词近形｜PRESENCE，仿佛提前在场看过","textZh":"presence（在场）中间加上 ci，就是 prescience。事情还没发生，却仿佛已在场看过，提前知道会怎样：prescience，预知、先见。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "预知，先见",
+          "explanationZh": "不可数名词，较正式，指在事情发生前就知道、看出或准确预料其发展。既能用于人的先见之明，也能用于宗教语境的预知；本课取日常可理解的事前洞察。",
+          "collocations": [
+            {
+              "phrase": "show prescience",
+              "meaningZh": "表现出先见之明"
+            },
+            {
+              "phrase": "with remarkable prescience",
+              "meaningZh": "以非凡的先见"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "foresight",
+          "comparisonZh": "都可表示先见；foresight 还强调提前考虑和准备，prescience 更突出事先知道或预料准确。"
+        },
+        {
+          "word": "foreknowledge",
+          "comparisonZh": "更直接指提前知道；prescience 往往带洞察敏锐、令人赞叹的意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He predicted their response with amazing prescience.",
+          "translationZh": "他凭着惊人的先见，预料到了他们的反应。",
+          "explanationZh": "with 引出所凭借的能力；their response 是预料的内容。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/prescience"
+        },
+        {
+          "textEn": "Her prescience as an investor is impressive.",
+          "translationZh": "她作为投资者所展现的先见令人印象深刻。",
+          "explanationZh": "as an investor 说明评价所处的角色；impressive 表示令人赞叹。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/prescience"
+        }
+      ]
+    },
+    {
+      "number": 6684,
+      "word": "prescription",
+      "ipa": "/prɪˈskrɪpʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "处方；规定，传统的规矩",
+      "coreEn": "a doctor’s written directions; an established rule or custom",
+      "coreImageZh": "医生在诊室写出处方交给成人，成人带男孩去药房递交，药师照方查看药物，表现医生开具的用药凭据。",
+      "mnemonics": [{"method":"熟词组合｜PRE + SCRIPT，先写好用药脚本","textZh":"把 prescription 联到 pre-（预先）+ script（脚本）：医生先把用药要求写成一份“脚本”，再照它执行。prescription，处方；也指规定。","kind":"invented_association","original":true},{"method":"整词近形｜DESCRIPTION，医生写下的用药说明","textZh":"prescription 与 description（描述、说明）只差开头。医生写明用什么药、怎样使用，这份具体的用药说明，就是 prescription，处方。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "处方；规定，传统的规矩",
+          "explanationZh": "处方义通常可数，指医生开出的用药指示或凭据；这里也保留较正式的规定、传统规矩义。处方可用 prescription for；泛指做事规矩时常用复数 prescriptions，需结合语境理解。",
+          "collocations": [
+            {
+              "phrase": "write a prescription",
+              "meaningZh": "开处方"
+            },
+            {
+              "phrase": "traditional prescriptions",
+              "meaningZh": "传统规矩"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rule",
+          "comparisonZh": "对应规定义，日常更常用；prescription 强调规定人应当如何做。"
+        },
+        {
+          "word": "custom",
+          "comparisonZh": "对应传统规矩义，指沿袭的习惯；prescription 更着重其约束或指示作用。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The doctor gave me a prescription for antibiotics.",
+          "translationZh": "医生给我开了一张抗生素处方。",
+          "explanationZh": "give somebody a prescription 表示给某人开处方；for 引出所开药物。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/prescription"
+        },
+        {
+          "textEn": "The club still follows the traditional prescriptions for formal dinners.",
+          "translationZh": "俱乐部仍遵循正式宴会的传统规矩。",
+          "explanationZh": "follows 在此表示遵守；prescriptions 指规定的做法，不是医疗处方。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6685,
+      "word": "presumptuous",
+      "ipa": "/prɪˈzʌmptʃuəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "傲慢的",
+      "coreEn": "overconfident in a way that treats others as less deserving of respect",
+      "coreImageZh": "男孩没征求同伴意见便指挥大家换座，同伴停下来表示不满，表现自以为有权作主的傲慢。",
+      "mnemonics": [{"method":"熟词组合｜PRE + SUM + TO US，还没商量就全归我们","textZh":"把 presumptuous 联到 pre（提前）+ sum（总额）+ to us（给我们）：还没征求别人意见，就提前把总额全算给我们，一副理所应当的样子。presumptuous，傲慢的。","kind":"invented_association","original":true},{"method":"PRESS + UP + TO US：挤上来，就擅自替我们作主","textZh":"把 presumptuous 的字形联到 press（挤）+ up（上来）+ to us（向我们）：挤到面前就擅自替我们作主，一副理所当然的样子。presumptuous，傲慢的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "傲慢的",
+          "explanationZh": "强调过分自信、自以为有资格替别人作主，从而不尊重人。常用 It is presumptuous of somebody to do something；比普通的自信更带贬义。",
+          "collocations": [
+            {
+              "phrase": "a presumptuous attitude",
+              "meaningZh": "傲慢的态度"
+            },
+            {
+              "phrase": "presumptuous of someone to decide",
+              "meaningZh": "某人擅自决定，显得傲慢"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "overweening",
+          "comparisonZh": "同样含过分自负；presumptuous 更突出自以为有权越界，overweening 更突出自信或骄傲过了头。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "arrogant",
+          "comparisonZh": "都可表示傲慢；arrogant 泛指自高自大，presumptuous 常体现为擅作主张。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Isn’t it rather presumptuous of you to decide what he needs?",
+          "translationZh": "你替他决定需要什么，不是有些自以为是吗？",
+          "explanationZh": "of you 指做出这一行为的人；what he needs 是 decide 的宾语从句。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/presumptuous"
+        },
+        {
+          "textEn": "The presumptuous doctor didn't even bother to explain to me the treatment that I would be receiving.",
+          "translationZh": "那个傲慢的医生甚至懒得向我解释我将接受的治疗。",
+          "explanationZh": "not even bother to do 表示连做某事都懒得；that 从句修饰 treatment。",
+          "sourceAttribution": "GRE核心词汇考法精析，原书PDF第787页"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6441,
+      "word": "masquerade",
+      "ipa": "/ˌmæskəˈreɪd/",
+      "pos": "vi.",
+      "coreMeaningZh": "伪装；冒充",
+      "coreEn": "to pretend to be someone or something else",
+      "coreImageZh": "演员原本扮商人，却戴上王冠冒充国王，姐姐指出他的真实身份；masquerade as 指伪装成某人或某种身份。",
+      "mnemonics": [{"method":"MASK PARADE：戴面具扮成别人","textZh":"把 masquerade 的整体声音联到 mask parade（面具游行）：戴上 mask，换装出场，让人看不出真正身份。由戴面具扮成别人，记 masquerade，伪装、冒充。","kind":"invented_association","original":true,"weak":false},{"method":"MASTER + GRADE：没有大师水平，却冒充大师","textZh":"把 masquerade 的整体形音联到 master（大师）和 grade（等级）：本无大师水平，却装成大师级人物。由冒充别人的身份，记 masquerade，伪装、冒充。","kind":"invented_association","original":true,"weak":false}],
+      "usage": [
+        {
+          "senseZh": "伪装；冒充",
+          "explanationZh": "作动词时常用 masquerade as，表示伪装成某种人或事物，往往带欺骗意味。也可作名词表示化装舞会或伪装行为。",
+          "collocations": [
+            {
+              "phrase": "masquerade as a doctor",
+              "meaningZh": "冒充医生"
+            },
+            {
+              "phrase": "gossip masquerading as news",
+              "meaningZh": "冒充新闻的流言"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "pose as",
+          "comparisonZh": "都可表示冒充某种身份；pose as 常突出自称或摆出身份，masquerade as 带掩盖真相的意味。"
+        },
+        {
+          "word": "pretend to be",
+          "comparisonZh": "都表示假装成；pretend to be 更常用，也可用于无意欺骗的游戏，masquerade 常强调伪装。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The local paper is full of gossip masquerading as news.",
+          "translationZh": "这份地方报纸充斥着冒充新闻的流言。",
+          "explanationZh": "masquerading as news 是分词短语，修饰 gossip。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/masquerade_2"
+        },
+        {
+          "textEn": "He masqueraded as a doctor and fooled everyone.",
+          "translationZh": "他冒充医生，骗过了所有人。",
+          "explanationZh": "masqueraded as 后接冒充的身份，与 fooled 并列说明结果。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/masquerade"
+        }
+      ]
+    },
+    {
+      "number": 6442,
+      "word": "mastery",
+      "ipa": "/ˈmɑːstəri/",
+      "pos": "n.",
+      "coreMeaningZh": "精通；高超技艺",
+      "coreEn": "great knowledge or skill in a subject or activity",
+      "coreImageZh": "乐师熟练而流畅地演奏，姐姐称赞她把难段也处理得很轻松，男孩十分佩服；mastery 指对某种技能的精通。",
+      "mnemonics": [{"method":"MASTER：大师所拥有的精通","textZh":"mastery 里完整保留 master（大师）。master 是精通的人，mastery 就是大师般熟练掌握的本领：精通、高超技艺。","kind":"word_family","original":true,"weak":false},{"method":"MYSTERY：别人看不懂，你已能讲透","textZh":"把 mastery 近形联到 mystery（谜）：一道题在别人眼里还是 mystery，你却能轻松讲清。由“难不倒我”的熟练本领，记 mastery，精通。","kind":"invented_association","original":true,"weak":false}],
+      "usage": [
+        {
+          "senseZh": "精通；高超技艺",
+          "explanationZh": "通常不可数，常用 mastery of a subject、language 或 instrument 表示精通。也有掌控、控制的义项，如 mastery over something，需由语境区分。",
+          "collocations": [
+            {
+              "phrase": "mastery of a language",
+              "meaningZh": "精通一种语言"
+            },
+            {
+              "phrase": "technical mastery",
+              "meaningZh": "技术上的精湛"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "proficiency",
+          "comparisonZh": "都可表示熟练精通；mastery 通常强调很高程度、掌握得全面，proficiency 可指达到熟练水平。"
+        },
+        {
+          "word": "expertise",
+          "comparisonZh": "都可表示专门知识或技能；expertise 强调某领域的专业本领，mastery 强调掌握得精熟。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She has mastery of several languages.",
+          "translationZh": "她精通好几种语言。",
+          "explanationZh": "mastery of 后接精通的领域。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mastery"
+        },
+        {
+          "textEn": "He shows complete mastery of the instrument.",
+          "translationZh": "他表现出对这件乐器的娴熟驾驭。",
+          "explanationZh": "complete 加强精通的程度，shows 表示展现。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/mastery"
+        }
+      ]
+    },
+    {
+      "number": 6443,
+      "word": "matriculate",
+      "ipa": "/məˈtrɪkjuleɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "正式注册入学",
+      "coreEn": "to officially become a student at a college or university",
+      "coreImageZh": "姐姐到大学办理正式入学登记，老师确认后让她签名，她成为新生；matriculate 指在学校尤其大学正式注册入学。",
+      "mnemonics": [{"method":"MATRIX：入学名单里，正式添上你这一行","textZh":"matriculate 前半的 matric- 可借 matrix（矩阵）来认。把入学名单看成一张排列整齐的表格，正式添上你的姓名，便表示已注册入学；由被列入这张表，记 matriculate。","kind":"word_family","original":true,"weak":false},{"method":"METRIC + LATE：达到入学要求，注册别迟到","textZh":"把 matriculate 的字形联到 metric（指标）和 late（迟）：学业指标达到了，接着要赶在截止前办好入学注册，别 late。由正式办妥入学手续，记 matriculate，注册入学。","kind":"invented_association","original":true,"weak":false}],
+      "usage": [
+        {
+          "senseZh": "正式注册入学",
+          "explanationZh": "正式用语，常作不及物动词，搭配 matriculate at a university，表示正式登记成为学生；也可作及物动词，由学校作主语表示录取或登记学生。",
+          "collocations": [
+            {
+              "phrase": "matriculate at a university",
+              "meaningZh": "在大学注册入学"
+            },
+            {
+              "phrase": "matriculate as a student",
+              "meaningZh": "正式注册成为学生"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "enrol",
+          "comparisonZh": "在登记入学这一义上接近；enrol 还可指报名课程或组织，matriculate 较正式，常用于大学。"
+        },
+        {
+          "word": "register",
+          "comparisonZh": "在办理入学登记这一义上接近；register 范围更广，可登记各种资料，matriculate 专指成为学生。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She matriculated in 1995.",
+          "translationZh": "她于1995年正式注册入学。",
+          "explanationZh": "matriculated 是过去式，in 后给出入学年份。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/matriculate"
+        },
+        {
+          "textEn": "She matriculated at the state university.",
+          "translationZh": "她在州立大学正式注册入学。",
+          "explanationZh": "matriculate at 后接学校。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/matriculate"
+        }
+      ]
+    },
+    {
+      "number": 6444,
+      "word": "maven",
+      "ipa": "/ˈmeɪvn/",
+      "pos": "n.",
+      "coreMeaningZh": "专家；行家",
+      "coreEn": "a person with extensive knowledge and experience in a field",
+      "coreImageZh": "男孩询问植物叶片发黄的原因，园丁俯身观察并向他讲解，姐姐称他是园艺行家；maven 指对某领域很有经验和知识的专家。",
+      "mnemonics": [{"method":"没问，行家已经看出门道","textZh":"借“没问”的近音记 maven：你还没开口问，他已经看出问题在哪。由这一眼就懂门道的本领，记 maven，行家、专家。","kind":"invented_association","original":true,"weak":false},{"method":"MAY WIN：知识问答，行家最有望赢","textZh":"把 maven 连到近音 may win（可能获胜）：行业知识问答里，最被看好能赢的，就是熟悉门道的行家。由 may win 带出懂行的人，记 maven。","kind":"invented_association","original":true,"weak":false}],
+      "usage": [
+        {
+          "senseZh": "专家；行家",
+          "explanationZh": "主要用于美式英语，指某领域知识丰富、经验多的行家，常放在领域名词后，如 a fashion maven。比普通爱好者更强调懂行。",
+          "collocations": [
+            {
+              "phrase": "a fashion maven",
+              "meaningZh": "时尚行家"
+            },
+            {
+              "phrase": "a gardening maven",
+              "meaningZh": "园艺专家"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "expert",
+          "comparisonZh": "都可指专家；expert 更通用正式，maven 常用于美式表达，带熟谙门道的感觉。"
+        },
+        {
+          "word": "virtuoso",
+          "comparisonZh": "在行家、技艺精湛者这一义上接近；virtuoso 多用于艺术技艺，maven 可用于各种知识或兴趣领域。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Walter’s a baseball maven and knows Hank Aaron’s statistics by heart.",
+          "translationZh": "沃尔特是棒球行家，对汉克·阿伦的各项数据烂熟于心。",
+          "explanationZh": "by heart 表示熟记在心，后半句具体说明他为何是行家。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/dictionary/english/maven"
+        },
+        {
+          "textEn": "The money maven takes her own advice.",
+          "translationZh": "这位理财行家自己也遵循她给出的建议。",
+          "explanationZh": "money 修饰 maven 指理财领域，takes her own advice 表示自己照建议行事。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/dictionary/english/maven"
+        }
+      ]
+    },
+    {
+      "number": 6445,
+      "word": "mawkish",
+      "ipa": "/ˈmɔːkɪʃ/",
+      "pos": "adj.",
+      "coreMeaningZh": "过分感伤的；肉麻的",
+      "coreEn": "excessively sentimental in an embarrassing or unpleasant way",
+      "coreImageZh": "男孩排练与玩具熊告别，夸张地擦泪，姐姐觉得只是暂时收起玩具却演得过分伤感；mawkish 指令人觉得腻烦的过度感伤。",
+      "mnemonics": [{"method":"MOCK KISS：假吻却煽情过头","textZh":"把 mawkish 连到 mock kiss（假装的亲吻）：只是演一个告别吻，却哭诉得像永远不能相见。由演得过头、让人觉得肉麻的感伤，记 mawkish。","kind":"invented_association","original":true,"weak":false},{"method":"MAKE A WISH：愿望许得甜过了头","textZh":"把 mawkish 的词形联到 make a wish（许愿）：一开口就是“生生世世，永远永远”，祝愿甜得过了头，听着反而肉麻。由这种过分煽情，记 mawkish，过分感伤的、肉麻的。","kind":"invented_association","original":true,"weak":false}],
+      "usage": [
+        {
+          "senseZh": "过分感伤的；肉麻的",
+          "explanationZh": "常带批评意味，形容故事、表演或表达感情过分煽情，让人觉得尴尬、腻烦；不等于所有真诚的悲伤，也不必然表示说谎。",
+          "collocations": [
+            {
+              "phrase": "a mawkish ending",
+              "meaningZh": "过分煽情的结尾"
+            },
+            {
+              "phrase": "mawkish sentimentality",
+              "meaningZh": "令人腻烦的伤感"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "cloying",
+          "comparisonZh": "在感情过甜、令人腻烦这一义上接近；cloying 也可形容味道或其他令人厌腻的事物。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "sentimental",
+          "comparisonZh": "都可表示感伤；sentimental 可较中性，mawkish 明确强调过度而令人不适。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A sordid, sentimental plot unwinds, with an inevitable mawkish ending.",
+          "translationZh": "一个龌龊又煽情的故事展开，结尾免不了过分感伤。",
+          "explanationZh": "plot 指故事情节；with 短语补充说明结尾的特点。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/mawkish"
+        },
+        {
+          "textEn": "She writes the children mawkish, insincere letters from different places.",
+          "translationZh": "她从不同地方给孩子们写来肉麻而不真诚的信。",
+          "explanationZh": "write someone letters 是双宾语结构，两个形容词共同修饰 letters。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/us/dictionary/english/mawkish"
+        }
+      ]
+    }
+  ]
+}

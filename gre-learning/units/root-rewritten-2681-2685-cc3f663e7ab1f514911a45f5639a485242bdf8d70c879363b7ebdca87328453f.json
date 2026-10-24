@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6301,
+      "word": "infirm",
+      "ipa": "/ɪnˈfɜːrm/",
+      "pos": "adj.",
+      "coreMeaningZh": "身体虚弱的；体弱的",
+      "coreEn": "physically weak, especially because of illness or age",
+      "coreImageZh": "奶奶身体虚弱，站起来有些吃力，需要扶手和手杖支撑，便先坐着休息。infirm 表示身体衰弱、缺乏力量。",
+      "mnemonics": [{"method":"IN- + FIRM：腿脚不再稳固","textZh":"infirm 里完整的 firm 是稳固的，in- 表示不。腿脚不再 firm，站不稳、走不远：infirm，身体虚弱的。","kind":"word_components","original":true},{"method":"INFIRM ↔ 迎风：弱不禁风","textZh":"把 infirm 的声音联到“迎风”。身体弱得迎风就站不稳，正是“弱不禁风”：infirm，身体虚弱的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "身体虚弱的；体弱的",
+          "explanationZh": "较正式，常指长期疾病或衰老造成的身体虚弱，不能简单等同懒惰。也有意志不坚定的旧义，本页不用。谈论具体的人宜说 an infirm person 等描述，避免把疾病当作全部身份。",
+          "collocations": [
+            {
+              "phrase": "physically infirm",
+              "meaningZh": "身体虚弱的"
+            },
+            {
+              "phrase": "become increasingly infirm",
+              "meaningZh": "变得越来越虚弱"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "frail",
+          "comparisonZh": "在身体虚弱这一义上接近；frail 还常强调体质纤弱、经不起负担，infirm 常涉及疾病或年老。"
+        },
+        {
+          "word": "weak",
+          "comparisonZh": "都可表示无力；weak 范围更广，可以暂时疲劳，也可说论点薄弱。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Father was becoming increasingly infirm.",
+          "translationZh": "父亲的身体正变得越来越虚弱。",
+          "explanationZh": "increasingly 表示程度逐渐加深。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/infirm"
+        },
+        {
+          "textEn": "The clinic provides free care for elderly and infirm people who lack health insurance.",
+          "translationZh": "这家诊所为没有医疗保险的年老体弱者提供免费照护。",
+          "explanationZh": "who 从句限定接受照护的人；infirm 描述身体状态。",
+          "sourceAttribution": "Merriam-Webster，词典收录的完整句。 https://www.merriam-webster.com/dictionary/infirm"
+        }
+      ]
+    },
+    {
+      "number": 6302,
+      "word": "inflame",
+      "ipa": "/ɪnˈfleɪm/",
+      "pos": "vt.",
+      "coreMeaningZh": "使加剧；激化",
+      "coreEn": "to make anger or a difficult situation more intense",
+      "coreImageZh": "男孩和红衣同学原本为比赛结果争执，蓝衣同学插话嘲讽，使两人更加生气，口角也更激烈。inflame 就是使已有的情绪或冲突加剧。",
+      "mnemonics": [{"method":"IN + FLAME：往火上再添一把","textZh":"inflame 里完整的 flame 是火焰。争执已经冒火，又往里添一把 flame，火势就更大：inflame，使矛盾加剧、激化。","kind":"invented_association","original":true},{"method":"INFLAME ↔ IN + BLAME：责怪插进来，更吵了","textZh":"把 inflame 的 f 换成 b，就像 in + blame（责怪）。两个人正在争吵，你又插进来 blame 谁对谁错，不但没劝和，反而激化了冲突：inflame，使加剧。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "使加剧；激化",
+          "explanationZh": "及物动词，可接 emotions、anger、tensions 或 situation，强调激起强烈情绪或使已有局面更糟。另有使发炎等身体义，不能把所有火焰场景都当作本页的比喻义。",
+          "collocations": [
+            {
+              "phrase": "inflame tensions",
+              "meaningZh": "加剧紧张关系"
+            },
+            {
+              "phrase": "inflame the situation",
+              "meaningZh": "使局势恶化"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "aggravate",
+          "comparisonZh": "在使问题或局势加重这一义上接近；aggravate 范围更广，inflame 常突出情绪或冲突升温。"
+        },
+        {
+          "word": "intensify",
+          "comparisonZh": "都可表示加剧；intensify 本身中性，可用于积极或消极事物，inflame 通常带负面情绪。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her defiance inflamed his jealousy yet further.",
+          "translationZh": "她的反抗使他的嫉妒进一步加剧。",
+          "explanationZh": "yet further 明确表示在原有程度上继续加重。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/inflame"
+        },
+        {
+          "textEn": "The situation was further inflamed by the arrival of the security forces.",
+          "translationZh": "安全部队的到来使局势进一步恶化。",
+          "explanationZh": "被动式说明造成局势加剧的原因。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/inflame"
+        }
+      ]
+    },
+    {
+      "number": 6303,
+      "word": "infelicitous",
+      "ipa": "/ˌɪnfɪˈlɪsɪtəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "不适当的；不合时宜的",
+      "coreEn": "inappropriate or poorly chosen for the occasion",
+      "coreImageZh": "男孩正为损坏的帆船模型难过，朋友却笑说它像一堆废木头。玩笑落在别人伤心的时候，格外不合适，体现 infelicitous 的不合时宜。",
+      "mnemonics": [{"method":"INFELICITOUS ↔ IN- + FEEL + CITE：不看气氛，乱引话","textZh":"把 infelicitous 的字形联到 in-（不）+ feel（感受）+ cite（引用），再接 -ous。不 feel 现场气氛，哀悼时却 cite 一段喜庆的话：infelicitous，不适当、不合时宜的。","kind":"invented_association","original":true},{"method":"INFELICITOUS ↔ IN- + DELICIOUS：话说得不对味","textZh":"把 infelicitous 的字形联到 in-（不）和 delicious（美味的）。把“味道”移到说话上：这句话放在这个场合，听来很不对味，就是 infelicitous，不适当、不合时宜的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "不适当的；不合时宜的",
+          "explanationZh": "正式用语，常形容 remark、choice、phrasing 等选择不恰当或时机不合适。可以并无恶意却效果尴尬；与恶毒或故意侮辱不同。另有不幸、不愉快义，本页取不合时宜义。",
+          "collocations": [
+            {
+              "phrase": "an infelicitous remark",
+              "meaningZh": "不合时宜的话"
+            },
+            {
+              "phrase": "infelicitous wording",
+              "meaningZh": "不恰当的措辞"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "inappropriate",
+          "comparisonZh": "在不适合场合这一义上接近；inappropriate 更常用且范围更广，infelicitous 常谈措辞或选择失当。"
+        },
+        {
+          "word": "ill-judged",
+          "comparisonZh": "都可表示考虑不周而不得体；ill-judged 更强调判断错误，infelicitous 更强调实际表达或时机的效果。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The use of the word 'predominately' was not occasional nor infelicitous.",
+          "translationZh": "使用“predominately”这个词既不是偶尔为之，也并非用词不当。",
+          "explanationZh": "not...nor...把两项评价都否定，infelicitous 指用词不当。",
+          "sourceAttribution": "Collins，词典收录的完整句。 https://www.collinsdictionary.com/dictionary/english/infelicitous"
+        },
+        {
+          "textEn": "The style is engaging, but the choice of words is sometimes infelicitous.",
+          "translationZh": "文风引人入胜，但用词有时不够恰当。",
+          "explanationZh": "but 对比整体文风与具体措辞。",
+          "sourceAttribution": "Collins，词典收录的完整句。 https://www.collinsdictionary.com/dictionary/english/infelicitous"
+        }
+      ]
+    },
+    {
+      "number": 6304,
+      "word": "influx",
+      "ipa": "/ˈɪnflʌks/",
+      "pos": "n.",
+      "coreMeaningZh": "大量涌入；流入",
+      "coreEn": "the arrival of many people or things into a place",
+      "coreImageZh": "展馆开门后，一批游客接连穿过入口，原本清静的门内逐渐热闹起来；讲解员说明这是一股新游客的涌入，男孩让开通道欢迎他们。",
+      "mnemonics": [{"method":"INFLUX ↔ IN + FLOCKS：一群群地涌进来","textZh":"influx 的声音联到 in + flocks（群）。人们成群结队，向里 in 涌进来：influx，大量涌入。","kind":"invented_association","original":true},{"method":"INFLUX ↔ IN + FLOW：像水流一样向里涌","textZh":"influx 的字形像 in-flow：in 是向里，flow 是流动。大量的人或水一路向里 flow，不断涌进来：influx，大量涌入、流入。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "大量涌入；流入",
+          "explanationZh": "通常用单数，常见 an influx of people/money/goods into a place，强调数量较多、向内到来。不是逐滴滴入，也不是指进入的人本身。反方向的大批离去或流出不叫 influx。",
+          "collocations": [
+            {
+              "phrase": "an influx of visitors",
+              "meaningZh": "游客的大量涌入"
+            },
+            {
+              "phrase": "an influx of money into the market",
+              "meaningZh": "资金涌入市场"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "inflow",
+          "comparisonZh": "在向内流入这一义上接近；inflow 常用于资金或液体，influx 更容易突出一批人或物集中到来。"
+        },
+        {
+          "word": "inrush",
+          "comparisonZh": "都可指涌入；inrush 更强调迅速、突然，influx 不一定来得很急。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Many cities saw a large influx of migrant workers.",
+          "translationZh": "许多城市出现了大批外来务工者涌入。",
+          "explanationZh": "see 在这里表示经历、出现，influx of 引出涌入的人群。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/influx"
+        },
+        {
+          "textEn": "The hotel has received a large influx of guests.",
+          "translationZh": "这家酒店接待了大批涌来的客人。",
+          "explanationZh": "a large influx of 强调一批客人大量到来。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/influx"
+        }
+      ]
+    },
+    {
+      "number": 6305,
+      "word": "infuriate",
+      "ipa": "/ɪnˈfjʊərieɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "激怒；使非常愤怒",
+      "coreEn": "to make someone extremely angry",
+      "coreImageZh": "红毛衣同学故意用红蜡笔乱涂男孩认真画好的蓝色帆船，男孩由平静变得非常生气。",
+      "mnemonics": [{"method":"INFURIATE ↔ FURIOUS：把人惹到大发雷霆","textZh":"把 infuriate 联到 furious（大发雷霆的），两词都有明显的 furi。一句话让对方变得 furious，正是 infuriate：使人非常愤怒，激怒。","kind":"word_family","original":true},{"method":"INFURIATE ↔ FUR + ATE：毛皮被虫吃坏了","textZh":"infuriate 里能认出 fur（毛皮）和 ate（吃了）。打开衣柜，心爱的毛皮衣服竟被虫子 ate 出几个大洞，主人顿时气炸了：fur 被 ate，infuriate，激怒。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "激怒；使非常愤怒",
+          "explanationZh": "及物动词，宾语是被激怒的人，强调强烈愤怒而非轻微烦恼。可用事情作主语，也常见 be infuriated by/at something。名词 fury 是怒气，infuriate 则是使别人产生这种情绪。",
+          "collocations": [
+            {
+              "phrase": "infuriate the audience",
+              "meaningZh": "激怒观众"
+            },
+            {
+              "phrase": "be infuriated by an insult",
+              "meaningZh": "因侮辱而大怒"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "enrage",
+          "comparisonZh": "都表示使人非常愤怒，通常可在及物结构中替换；不只是使人有点不耐烦。"
+        },
+        {
+          "word": "anger",
+          "comparisonZh": "都可表示使人生气；anger 更一般，infuriate 的愤怒程度通常更强。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her silence infuriated him even more.",
+          "translationZh": "她的沉默使他更加愤怒。",
+          "explanationZh": "silence 作主语，him 是被激怒的人，even more 强调程度加深。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/infuriate"
+        },
+        {
+          "textEn": "Are you doing this on purpose just to infuriate me?",
+          "translationZh": "你这样做是故意只为激怒我吗？",
+          "explanationZh": "on purpose 表示故意，to infuriate me 交代目的。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/infuriate"
+        }
+      ]
+    }
+  ]
+}

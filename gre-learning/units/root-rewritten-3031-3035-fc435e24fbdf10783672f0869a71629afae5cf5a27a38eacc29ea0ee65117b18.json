@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6651,
+      "word": "plump",
+      "ipa": "/plʌmp/",
+      "pos": "adj./v.",
+      "coreMeaningZh": "丰满的；鼎力支持，赞不绝口",
+      "coreEn": "full and rounded; to support someone or something strongly",
+      "coreImageZh": "男孩把饲料撒在食盆里，圆滚滚的母鸡摇摆着走来啄食，身体饱满圆润，显得很丰满。",
+      "mnemonics": [{"method":"熟词变形｜PLUM 又鼓出一个 P","textZh":"plump 比 plum（李子）多一个 p，好像圆李子又鼓出一块。plump，圆润丰满的。","kind":"invented_association","original":true},{"method":"熟词变形｜PUMP，给支持的人打气","textZh":"plump 比 pump（打气）多一个 l。坚定地给自己支持的人打气、撑腰，就联到 plump for，鼎力支持。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "丰满的；鼎力支持，赞不绝口",
+          "explanationZh": "形容词表示饱满圆润，可形容脸颊、果实或垫子；形容人时须注意语境。支持义常用 plump for somebody/something，表示坚决支持某人或某项选择；不能把 for 省略后直接套用这一结构。",
+          "collocations": [
+            {
+              "phrase": "plump cheeks",
+              "meaningZh": "圆润的脸颊"
+            },
+            {
+              "phrase": "plump for a candidate",
+              "meaningZh": "鼎力支持一名候选人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "chubby",
+          "comparisonZh": "对应丰满义，常形容脸颊或儿童略胖圆润；plump 也能形容果实、垫子。"
+        },
+        {
+          "word": "endorse",
+          "comparisonZh": "对应支持义，强调认可、支持；endorse 通常直接接宾语，plump 在此常接 for。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His aunt pinched his plump cheeks.",
+          "translationZh": "他的姑妈捏了捏他圆润的脸颊。",
+          "explanationZh": "plump 修饰 cheeks；pinched 是轻捏的动作。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/plump"
+        },
+        {
+          "textEn": "The local paper plumped for the independent candidate.",
+          "translationZh": "当地报纸鼎力支持那位独立候选人。",
+          "explanationZh": "plumped for 是过去式，for 引出支持的对象。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6652,
+      "word": "plunge",
+      "ipa": "/plʌndʒ/",
+      "pos": "v.",
+      "coreMeaningZh": "突然下降",
+      "coreEn": "to fall or drop suddenly and sharply",
+      "coreImageZh": "原本平稳飞行的小飞机忽然机头朝下，迅速跌落到软垫上；它的高度突然下降。",
+      "mnemonics": [{"method":"整词近形｜PLUG，拔塞子，水猛冲下去","textZh":"plunge 比 plug（塞子）多了 n 和 e。拔掉排水口的 plug，水猛地往下冲：plunge，突然下降。","kind":"invented_association","original":true},{"method":"整词近形｜PLANE，飞机猛地向下俯冲","textZh":"把 plunge 对照 plane（飞机）：机头朝下猛地俯冲，迅速掉高度。plunge，突然下降。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "突然下降",
+          "explanationZh": "本义作不及物动词，表示高度、数量或价格突然大幅下降。可用 plunge to 加终点，或 plunge by 加下降幅度；比普通的 fall 更突出突然、剧烈。",
+          "collocations": [
+            {
+              "phrase": "prices plunge",
+              "meaningZh": "价格暴跌"
+            },
+            {
+              "phrase": "plunge to a record low",
+              "meaningZh": "骤降至历史低点"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "plummet",
+          "comparisonZh": "都表示急剧下降；plummet 更鲜明地让人想到直线下坠。"
+        },
+        {
+          "word": "drop",
+          "comparisonZh": "范围较广，下降可以很小或很慢；plunge 明确强调突然大幅下降。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The stock market plunged yesterday.",
+          "translationZh": "股市昨天暴跌了。",
+          "explanationZh": "plunged 为过去式，yesterday 指明时间；这里描述市场急跌。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/plunge"
+        },
+        {
+          "textEn": "The moose population has plunged in recent years.",
+          "translationZh": "近年来驼鹿的数量骤减。",
+          "explanationZh": "has plunged 用现在完成时，表示近年的变化影响到现在。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/plunge"
+        }
+      ]
+    },
+    {
+      "number": 6653,
+      "word": "polarize",
+      "ipa": "/ˈpəʊləraɪz/",
+      "pos": "v.",
+      "coreMeaningZh": "使分开对立，使两极分化",
+      "coreEn": "to divide people or opinions into sharply opposing groups",
+      "coreImageZh": "同学们讨论郊游地点，一派坚持去海边，另一派坚持爬山，最后分坐桌子两端互不相让；这个问题使大家分成了对立的两派。",
+      "mnemonics": [{"method":"熟词联想｜POLAR BEAR 的 POLAR，走向相反两极","textZh":"从 polar bear（北极熊）的 polar 认出“极”。polarize 把原本聚在一起的意见推向相反两极：使分开对立，使两极分化。","kind":"invented_association","original":true},{"method":"POPULAR + -IZE：热门话题，让人分成两派","textZh":"把 polarize 对照 popular（受欢迎的）+ -ize：一个热门话题引起争论，支持者和反对者各站一边。polarize，使分开对立、使两极分化。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "使分开对立，使两极分化",
+          "explanationZh": "可及物，也可不及物。polarize public opinion 表示使公众意见分化；opinion polarizes 表示意见自行分化。重点是形成明显对立，不只是把东西分成任意几组。",
+          "collocations": [
+            {
+              "phrase": "polarize public opinion",
+              "meaningZh": "使公众意见两极分化"
+            },
+            {
+              "phrase": "a polarized debate",
+              "meaningZh": "两派尖锐对立的争论"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "divide",
+          "comparisonZh": "可泛指分开；polarize 特别指分成意见相反的两极。"
+        },
+        {
+          "word": "split into opposing camps",
+          "comparisonZh": "直接说明分成对立阵营，是这里 polarize 的释义性表达。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Public opinion has polarized on this issue.",
+          "translationZh": "公众在这个问题上的意见已经两极分化。",
+          "explanationZh": "has polarized 为不及物用法；on this issue 说明争议话题。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/polarize"
+        },
+        {
+          "textEn": "The issue has polarized public opinion.",
+          "translationZh": "这个问题使公众意见两极分化了。",
+          "explanationZh": "has polarized 为及物用法；public opinion 是受影响的宾语。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/polarize"
+        }
+      ]
+    },
+    {
+      "number": 6654,
+      "word": "polished",
+      "ipa": "/ˈpɒlɪʃt/",
+      "pos": "adj.",
+      "coreMeaningZh": "有教养的，举止优雅得体的",
+      "coreEn": "refined and socially graceful in manner",
+      "coreImageZh": "男孩礼貌地请客人入座，客人洒了茶时，他从容递上餐巾，温和地安慰对方；举止得体，显得很有教养。",
+      "mnemonics": [{"method":"熟义联想｜POLISH，把举止也打磨光亮","textZh":"polish 是擦亮、打磨。表面经过 polish 会光亮，言谈举止经过打磨也会优雅得体：polished，有教养的。","kind":"invented_association","original":true},{"method":"熟词近形｜POLITE，礼貌又得体","textZh":"polished 的开头 poli- 很像 polite（有礼貌的）。说话礼貌、举止得体，便显得 polished，优雅有教养。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "有教养的，举止优雅得体的",
+          "explanationZh": "用于人或 manners，表示社交举止优雅、成熟得体，常带赞赏意味。此义不只是受过学校教育，也不同于物体被擦亮或表演技巧娴熟的意思。",
+          "collocations": [
+            {
+              "phrase": "polished manners",
+              "meaningZh": "优雅得体的举止"
+            },
+            {
+              "phrase": "a polished host",
+              "meaningZh": "举止得体的主人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "refined",
+          "comparisonZh": "都可表示有修养、举止高雅；refined 还可形容品味或风格精致。"
+        },
+        {
+          "word": "suave",
+          "comparisonZh": "都可形容社交举止圆熟；suave 有时暗含过分圆滑，polished 通常更中性或赞赏。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He is polished, charming, articulate and an excellent negotiator.",
+          "translationZh": "他举止优雅，富有魅力，善于表达，而且是一位出色的谈判者。",
+          "explanationZh": "多个表语并列描述这个人；articulate 在此表示表达清楚流畅。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/polished"
+        },
+        {
+          "textEn": "Her polished manners put the nervous guests at ease.",
+          "translationZh": "她优雅得体的举止让紧张的客人放松下来。",
+          "explanationZh": "put somebody at ease 表示让人感到自在；polished 描述待人接物的修养。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6655,
+      "word": "politic",
+      "ipa": "/ˈpɒlətɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "合时宜的，明智的",
+      "coreEn": "wise and tactful in handling a particular situation",
+      "coreImageZh": "男孩没有在老师忙着扶展架时提要求，而是先帮忙稳住架子，等老师腾出手再商量；这种看准时机的处理很明智。",
+      "mnemonics": [{"method":"整词近形｜POLITE，说话看分寸","textZh":"politic 与 polite（礼貌的）近形：该说的话礼貌说，不该说的暂不说，是合时宜、明智的做法。politic，处事有分寸。","kind":"invented_association","original":true},{"method":"熟词变形｜POLITICS 去掉 S，处事讲时机","textZh":"politics（政治）去掉 s，就是 politic。处理政治问题讲究分寸和时机；politic，合时宜、明智的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "合时宜的，明智的",
+          "explanationZh": "常用于决定、回应或处事方式，强调顾及现实情势、时机和人际关系。有时暗含策略性，不等于单纯的诚实善良；也不同于 political“政治的”。",
+          "collocations": [
+            {
+              "phrase": "a politic decision",
+              "meaningZh": "明智而合时宜的决定"
+            },
+            {
+              "phrase": "It is politic to do something",
+              "meaningZh": "做某事是明智的"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "prudent",
+          "comparisonZh": "都强调明智；prudent 更偏谨慎避险，politic 更偏看准情势、得体处事。"
+        },
+        {
+          "word": "tactful",
+          "comparisonZh": "都可表示处事得体；tactful 更突出不伤人感情，politic 也强调策略效果。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It seemed politic to say nothing.",
+          "translationZh": "当时似乎保持沉默才是明智的。",
+          "explanationZh": "It 是形式主语，to say nothing 是真正主语；seemed 表示当时的判断。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/politic"
+        },
+        {
+          "textEn": "It would not be politic to ignore them.",
+          "translationZh": "忽视他们不会是明智的做法。",
+          "explanationZh": "would not be politic 表示这样做不合时宜；ignore 是忽视。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/politic"
+        }
+      ]
+    }
+  ]
+}

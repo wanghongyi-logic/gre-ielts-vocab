@@ -1,0 +1,259 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6606,
+      "word": "penury",
+      "ipa": "/ˈpenjəri/",
+      "pos": "n.",
+      "coreMeaningZh": "贫穷；吝啬，节俭",
+      "coreEn": "extreme poverty; extreme and often stingy frugality",
+      "coreImageZh": "男孩先看贫困家庭为一顿饭发愁的历史场景，再看有钱的旧宅主人舍不得花钱修灯；penury 可指极度贫穷，也可指极端吝啬。",
+      "mnemonics": [{"method":"PENNY → PENURY：穷得只剩几枚硬币","textZh":"penury 联到 penny（便士，小硬币）。兜里只有几枚 penny，连基本生活都难以维持；这般贫穷，就是 penury。","kind":"invented_association","original":true},{"method":"“贫与饥”：贫穷得吃不饱","textZh":"penury 的声音联到“贫与饥”。贫穷到连饭都吃不饱，就是 penury，贫穷。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "贫穷；吝啬，节俭",
+          "explanationZh": "通常不可数且较正式。最常用的是极度贫穷义，常见 in penury、be reduced to penury；吝啬义较少见，指极端节省甚至舍不得必要开支，不是普通的良好节俭。",
+          "collocations": [
+            {
+              "phrase": "live in penury",
+              "meaningZh": "生活在赤贫之中"
+            },
+            {
+              "phrase": "be reduced to penury",
+              "meaningZh": "沦为赤贫"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "indigence",
+          "comparisonZh": "都指贫穷匮乏；penury 往往突出严重而令人窘迫的贫困。这里不以 indigence 替换吝啬义。",
+          "sources": [
+            "zhangwei_dedicated_2021",
+            "B"
+          ]
+        },
+        {
+          "word": "stinginess",
+          "comparisonZh": "对应吝啬义，强调不愿花钱；不等于缺钱造成的贫困。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He died in penury.",
+          "translationZh": "他在贫困中去世。",
+          "explanationZh": "in penury 作状语，说明去世时的经济处境。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/penury"
+        },
+        {
+          "textEn": "They were reduced to penury.",
+          "translationZh": "他们沦落到了赤贫的境地。",
+          "explanationZh": "be reduced to 后接不好的状态，表示处境恶化到那种程度。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/penury"
+        }
+      ]
+    },
+    {
+      "number": 6607,
+      "word": "perambulate",
+      "ipa": "/pəˈræmbjuleɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "徒步穿越，走过",
+      "coreEn": "to walk through or around a place",
+      "coreImageZh": "男孩与同伴从公园入口步行，经过花圃、池塘和林间小路，走遍园中各处；perambulate，徒步走过、游览。",
+      "mnemonics": [{"method":"“陪俺，不累！”：一起慢慢走","textZh":"perambulate 的声音联到“陪俺，不累！”陪着俺慢慢步行，穿街走巷，不急着赶路：perambulate，徒步穿越、走过。","kind":"invented_association","original":true,"weak":true},{"method":"PER + RAMBO + LATE：兰博穿林，走到天晚","textZh":"把 perambulate 联到 per（每）+ Rambo（兰博）+ late（晚）。想象兰博徒步穿过树林，走到天色已晚：perambulate，徒步穿越、走过。","kind":"invented_association","original":true,"weak":true}],
+      "usage": [
+        {
+          "senseZh": "徒步穿越，走过",
+          "explanationZh": "较正式、偏旧或带幽默感。可直接接地点，表示步行走过该地；也可不接宾语，表示闲逛。与普通 walk 相比更书面，并不要求竞走或快速赶路。",
+          "collocations": [
+            {
+              "phrase": "perambulate the park",
+              "meaningZh": "步行游览公园"
+            },
+            {
+              "phrase": "perambulate through the town",
+              "meaningZh": "步行穿过小镇"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "walk",
+          "comparisonZh": "最普通的步行用词；perambulate 更书面，常含逛一逛或巡视某地的意味。"
+        },
+        {
+          "word": "traverse",
+          "comparisonZh": "都可表示穿过一片区域；traverse 不限定步行，也不一定悠闲。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We decided to lazily perambulate the entire length of the esplanade and enjoy the fresh air.",
+          "translationZh": "我们决定悠闲地走遍滨海步道，享受清新的空气。",
+          "explanationZh": "decided to 后接动词原形；perambulate 直接接表示路线长度的宾语。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/perambulate"
+        },
+        {
+          "textEn": "Local juries were expected to perambulate the forests to gather evidence.",
+          "translationZh": "当地陪审团被要求步行巡视森林，以收集证据。",
+          "explanationZh": "were expected to 是被动结构；to gather evidence 表示巡视的目的。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/perambulate"
+        }
+      ]
+    },
+    {
+      "number": 6608,
+      "word": "perfidy",
+      "ipa": "/ˈpɜːfɪdi/",
+      "pos": "n.",
+      "coreMeaningZh": "不忠，背信弃义",
+      "coreEn": "deliberate disloyalty or betrayal of trust",
+      "coreImageZh": "同学答应保守礼物的秘密，却马上把藏处告诉别人，还带人来偷看；这种背弃承诺的行为就是 perfidy，背信弃义。",
+      "mnemonics": [{"method":"“破”FAITH：打破别人对你的信任","textZh":"把 perfidy 联到“破”+ faith（信任），再接 -y。把别人交给你的信任打破，背弃自己的承诺：perfidy，背信弃义。","kind":"invented_association","original":true},{"method":"PER + FIFTY：为五十块钱出卖信用","textZh":"perfidy 的词形联到 per（每）和 fifty（五十）。每拿五十块小利，就把答应别人的话抛在脑后，见利忘义：perfidy，背信弃义。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "不忠，背信弃义",
+          "explanationZh": "正式、强烈贬义的名词，常作不可数名词指背信行为或不忠的性质，也可用复数 perfidies 表示具体背叛事件。形容词为 perfidious。不是一般的小失误，而涉及信任或忠诚的破坏。",
+          "collocations": [
+            {
+              "phrase": "an act of perfidy",
+              "meaningZh": "背信弃义的行为"
+            },
+            {
+              "phrase": "be guilty of perfidy",
+              "meaningZh": "有背信弃义之举"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "treachery",
+          "comparisonZh": "都强调对信任的背叛；treachery 也常用于危险的欺骗或出卖。"
+        },
+        {
+          "word": "disloyalty",
+          "comparisonZh": "都指不忠；disloyalty 范围较广，perfidy 的谴责意味更强。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They are guilty of perfidy.",
+          "translationZh": "他们有背信弃义的行为。",
+          "explanationZh": "be guilty of 后接所犯的错误或不当行为；不一定是在陈述法院判决。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/perfidy"
+        },
+        {
+          "textEn": "His wife's perfidy was a moment of uncharacteristic weakness.",
+          "translationZh": "他妻子的不忠是一时软弱，并非她一贯的作风。",
+          "explanationZh": "所有格修饰 perfidy；uncharacteristic 表示与平时性格或行为不符。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/perfidy"
+        }
+      ]
+    },
+    {
+      "number": 6609,
+      "word": "perforate",
+      "ipa": "/ˈpɜːfəreɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "打孔，穿透",
+      "coreEn": "to make a hole or holes through something",
+      "coreImageZh": "男孩把纸放进打孔器，压下手柄后取出带孔的纸，再装进活页夹；perforate，把纸等材料打穿成孔。",
+      "mnemonics": [{"method":"PER + FORK + ATE：每次用叉，留下小孔","textZh":"把 perforate 联到 per（每）+ fork（叉子）+ ate（吃过）。每次用叉子叉过的软食物上，都留下小孔：perforate，打孔、刺穿。","kind":"invented_association","original":true},{"method":"DECORATE：剪出小孔做窗花","textZh":"perforate 的词形联到 decorate（装饰）。做剪纸装饰，在纸上剪出一个个小孔；perforate，打孔、穿透。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "打孔，穿透",
+          "explanationZh": "及物动词，直接接被打孔的材料或被穿透的部位；可用 with 表示工具。常见过去分词 perforated，形容打孔的纸、金属板等；并不要求只有一个孔。",
+          "collocations": [
+            {
+              "phrase": "perforate a sheet of paper",
+              "meaningZh": "给一张纸打孔"
+            },
+            {
+              "phrase": "perforated paper",
+              "meaningZh": "打孔的纸"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "pierce",
+          "comparisonZh": "都可指刺穿；pierce 更强调尖物穿入，perforate 更突出留下孔洞。"
+        },
+        {
+          "word": "punch",
+          "comparisonZh": "在打孔义上相近；punch 常突出用工具冲孔，也有拳击等其他义项。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Cover the bowl with aluminum foil, and then use a fork to perforate the foil.",
+          "translationZh": "用铝箔盖住碗，然后用叉子在铝箔上戳孔。",
+          "explanationZh": "两个祈使分句说明先后步骤；use something to do 表示用某物做某事。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/perforate"
+        },
+        {
+          "textEn": "The explosion perforated his eardrum.",
+          "translationZh": "爆炸使他的鼓膜穿孔。",
+          "explanationZh": "explosion 作主语，perforated 说明造成穿孔的结果。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/perforate"
+        }
+      ]
+    },
+    {
+      "number": 6610,
+      "word": "perimeter",
+      "ipa": "/pəˈrɪmɪtə(r)/",
+      "pos": "n.",
+      "coreMeaningZh": "边界，界限",
+      "coreEn": "the outer boundary of an area",
+      "coreImageZh": "男孩与同伴沿着操场外围走，从大门出发，顺着围栏转过各个角落再回到大门；这圈外缘就是 perimeter，边界。",
+      "mnemonics": [{"method":"PER + METER：沿边一米米量","textZh":"perimeter 联到 per（每）和 meter（米）：沿着边缘，每一米都量过去，绕出一整圈。围住里面区域的这圈边界，就是 perimeter。","kind":"invented_association","original":true},{"method":"PER + LIMIT：每一段界限围成外围","textZh":"perimeter 的词形联到 per（每）和 limit（界限）。每一段 limit 连起来，围出一块地方的外围：perimeter，边界、界限。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "边界，界限",
+          "explanationZh": "可数名词。地理场景指一片区域的外缘，常见 around/along the perimeter of；数学中也指这条外缘的总长度，即周长，不是面积。",
+          "collocations": [
+            {
+              "phrase": "along the perimeter",
+              "meaningZh": "沿着边界"
+            },
+            {
+              "phrase": "the perimeter of the site",
+              "meaningZh": "场地的外围"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "boundary",
+          "comparisonZh": "都指边界；boundary 可指分隔两个区域的界线，perimeter 特别强调包围一片区域的外缘。"
+        },
+        {
+          "word": "periphery",
+          "comparisonZh": "都可指外围；periphery 还可引申为某种活动或群体的边缘地带。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Guards patrol the perimeter of the estate.",
+          "translationZh": "警卫在庄园外围巡逻。",
+          "explanationZh": "patrol 直接接巡视的区域；of the estate 指明是哪处外围。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/perimeter"
+        },
+        {
+          "textEn": "The river marks the eastern perimeter of our land.",
+          "translationZh": "这条河标示出我们土地的东部边界。",
+          "explanationZh": "marks 在这里表示标明；eastern 修饰 perimeter，限定边界的方位。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/perimeter"
+        }
+      ]
+    }
+  ]
+}

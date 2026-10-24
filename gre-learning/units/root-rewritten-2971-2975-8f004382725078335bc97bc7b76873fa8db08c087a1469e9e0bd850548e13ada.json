@@ -1,0 +1,261 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6591,
+      "word": "partial",
+      "ipa": "/ˈpɑːʃl/",
+      "pos": "adj.",
+      "coreMeaningZh": "偏袒的，偏爱的；部分的，不完整的",
+      "coreEn": "unfairly favoring one side; incomplete or involving only part of something",
+      "coreImageZh": "两张画摆在面前，男孩只顾夸赞好友的草草之作，还把奖章颁给他，旁边认真作画的同学十分困惑。评判偏向自己人，就是 partial，偏袒的。",
+      "mnemonics": [{"method":"PART → PARTIAL：只是一部分，还没完整","textZh":"partial 中完整的 part 就是“部分”。只交一 part 的答案，剩下的没写完，这份答案就是 partial，部分的、不完整的。","kind":"word_family","original":true},{"method":"PARTY → PARTIAL：只向着自己一派","textZh":"partial 与 party（党派）词形相近。只向着自己的 party，不管另一方有没有道理，就是 partial，偏袒的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "偏袒的，偏爱的；部分的，不完整的",
+          "explanationZh": "表示不完整时可修饰 solution、success 等；表示不公正地偏袒时常作表语，也可说 partial towards somebody。be partial to 表示很喜欢、偏爱某人或某物，不必含不公平之意。",
+          "collocations": [
+            {
+              "phrase": "be partial to something",
+              "meaningZh": "偏爱某物"
+            },
+            {
+              "phrase": "a partial solution",
+              "meaningZh": "部分解决办法"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "partisan",
+          "comparisonZh": "在偏袒一方的义项上相近；partisan 常涉及派别、阵营，partial 也可用于私人偏好或不公判断。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "incomplete",
+          "comparisonZh": "在部分的、不完整的义项上相近；incomplete 直接强调未完整，不能替代 partial 的偏袒义。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The resulting assessment is necessarily partial and subjective.",
+          "translationZh": "由此作出的评估必然带有偏向和主观性。",
+          "explanationZh": "partial 与 subjective 并列作表语，这里不是只完成了一部分的意思。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/partial"
+        },
+        {
+          "textEn": "It was only a partial solution to the problem.",
+          "translationZh": "这只是对该问题的部分解决。",
+          "explanationZh": "partial 修饰 solution，说明问题并未得到完全解决；only 加强这一限制。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/partial"
+        }
+      ]
+    },
+    {
+      "number": 6592,
+      "word": "particularize",
+      "ipa": "/pəˈtɪkjələraɪz/",
+      "pos": "v.",
+      "coreMeaningZh": "详述，具体说明",
+      "coreEn": "to describe or state something in detail",
+      "coreImageZh": "男孩没有只说“我丢了背包”，而是说明蓝色包身、星星图案和前面的浅色小袋；工作人员据此辨认。这种把细节一一说清的行为，就是 particularize，详述。",
+      "mnemonics": [{"method":"PARTICULAR → PARTICULARIZE：把话说到具体处","textZh":"particular 有具体的意思。particularize 就是把话说得具体，说明哪一项、多少、怎样，而不是笼统带过：详述，具体说明。","kind":"word_family","original":true},{"method":"PART + COLOR + SIZE：每部分的颜色、尺寸都说清","textZh":"particularize 的声音联到 part（部分）+ color（颜色）+ size（尺寸）。每个部分是什么颜色、多大尺寸，都一项项说清楚：particularize，详述、具体说明。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "详述，具体说明",
+          "explanationZh": "较正式的用语，可直接接 details、complaints、reasons 等内容作宾语，也可不接宾语，表示进一步展开细节。英式英语也写 particularise；重点是从笼统陈述转向具体说明。",
+          "collocations": [
+            {
+              "phrase": "particularize a complaint",
+              "meaningZh": "具体说明投诉内容"
+            },
+            {
+              "phrase": "particularize the reasons",
+              "meaningZh": "详述理由"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "specify",
+          "comparisonZh": "都可表示具体说明；specify 常明确指出某项要求或事实，particularize 更强调逐一展开细节。"
+        },
+        {
+          "word": "detail",
+          "comparisonZh": "作动词时都可指详述；detail 更常用，particularize 较正式。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "My lawyer advised me to particularize all my complaints against my landlord.",
+          "translationZh": "我的律师建议我详细说明对房东的所有不满。",
+          "explanationZh": "advise somebody to do something 表示建议某人做某事；against 引出投诉所针对的人。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/particularize"
+        },
+        {
+          "textEn": "Mr Johnson particularizes the general points he wants to make.",
+          "translationZh": "约翰逊先生把他想表达的概括性观点作了具体阐述。",
+          "explanationZh": "particularizes 的宾语是 the general points；he wants to make 修饰 points。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/particularize"
+        }
+      ]
+    },
+    {
+      "number": 6593,
+      "word": "partition",
+      "ipa": "/pɑːˈtɪʃn/",
+      "pos": "n.",
+      "coreMeaningZh": "分割，划分",
+      "coreEn": "the act or process of dividing something into separate parts",
+      "coreImageZh": "男孩和朋友在大活动室中间摆好屏风，一边留给阅读，一边用来做手工。一个空间被划分成不同区域，这就是 partition，分割、划分。",
+      "mnemonics": [{"method":"PART IT：把它分成几部分","textZh":"partition 联到 part（部分）和 part it（把它分开）：把一个整体分成几个 part，就是 partition，分割、划分。","kind":"invented_association","original":true},{"method":"“把地分”：划成各自的区域","textZh":"partition 的声音联到“把地分”。把一块地划成几部分，各有各的区域：partition，分割、划分。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "分割，划分",
+          "explanationZh": "本义项是名词，指将整体分成若干部分的行为或状态；常用 the partition of A into B，也常谈领土的划分。另可指隔墙、屏风等分隔物，但这里重点是划分本身。",
+          "collocations": [
+            {
+              "phrase": "the partition of a territory",
+              "meaningZh": "对一片领土的分割"
+            },
+            {
+              "phrase": "partition into separate areas",
+              "meaningZh": "划分成不同区域"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "division",
+          "comparisonZh": "在划分行为这一义项上相近；division 用途更广，partition 常强调把整体分成独立部分。"
+        },
+        {
+          "word": "separation",
+          "comparisonZh": "都可指分开；separation 不一定把一个原有整体划成有明确边界的部分。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The partition of India occurred in 1947.",
+          "translationZh": "印度的分治发生于1947年。",
+          "explanationZh": "The partition of India 是名词短语作主语，occurred 表示发生。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/partition?q=partition"
+        },
+        {
+          "textEn": "Both sides agreed to the partition of the disputed territory.",
+          "translationZh": "双方同意对有争议的领土进行分割。",
+          "explanationZh": "agree to 后接名词短语，the partition 指双方接受的划分方案或行为。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/partition?q=partition"
+        }
+      ]
+    },
+    {
+      "number": 6594,
+      "word": "patina",
+      "ipa": "/ˈpætɪnə/",
+      "pos": "n.",
+      "coreMeaningZh": "外表；氛围，气场",
+      "coreEn": "a surface appearance or an aura associated with something",
+      "coreImageZh": "一间普通的新店摆上旧木家具，配上柔和灯光，顿时显得古雅而有格调；男孩和朋友停下来欣赏。覆盖在空间表面的这种风格与气息，就是 patina。",
+      "mnemonics": [{"method":"PAINT → PATINA：表面披上一层色彩","textZh":"patina 的词形联到 paint（油漆）。一层 paint 改变外表，不改变里面；patina 也可指表面呈现的一层样子或气息。","kind":"invented_association","original":true},{"method":"PATIENCE：耐心等岁月添上一层旧色","textZh":"patina 的词形联到 patience（耐心）。耐心等岁月流过，器物表面慢慢添上一层旧色；patina，表面呈现的一层样子或气息。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "外表；氛围，气场",
+          "explanationZh": "常以单数出现，用 a patina of 加抽象名词表示表面的气息或格调，例如成功感、体面感。它既可指自然积累的气质，也能暗示只是一层外观，未必代表真实内涵。",
+          "collocations": [
+            {
+              "phrase": "a patina of respectability",
+              "meaningZh": "一层体面的外表"
+            },
+            {
+              "phrase": "a patina of sophistication",
+              "meaningZh": "一种老练世故的气息"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "aura",
+          "comparisonZh": "都可指散发出的气氛或气场；patina 更有表面覆盖一层的比喻，aura 不必强调表面。"
+        },
+        {
+          "word": "veneer",
+          "comparisonZh": "都可比喻外表的一层；veneer 常更明确暗示掩饰真实情况，patina 也可中性地指积累的格调。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Although the winery is brand-new, it has been constructed and decorated to give it a patina of old-world quaintness.",
+          "translationZh": "尽管这家酒庄是新建的，它的建筑和装饰却让它具有旧世界的古雅气息。",
+          "explanationZh": "Although 引导让步从句；to give it… 说明建造与装饰所要营造的效果。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/patina"
+        },
+        {
+          "textEn": "He looked relaxed and elegant and had the patina of success.",
+          "translationZh": "他显得从容优雅，带着成功人士的气度。",
+          "explanationZh": "looked 后接形容词，had the patina of success 用表层光泽比喻外在的成功气场。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/patina"
+        }
+      ]
+    },
+    {
+      "number": 6595,
+      "word": "patrician",
+      "ipa": "/pəˈtrɪʃn/",
+      "pos": "n./adj.",
+      "coreMeaningZh": "贵族，名门望族；贵族的，地位高的",
+      "coreEn": "a member of the nobility; belonging to a high-ranking family",
+      "coreImageZh": "男孩走进贵族旧宅，看家族肖像与老宅主人留下的礼服，理解 patrician 指贵族或贵族的。",
+      "mnemonics": [{"method":"PA + RICH：父辈富有显赫的名门","textZh":"patrician 的词形联到 pa（爸爸）和 rich（富有的），接上常见的 -ian 人物尾。父辈富有显赫，几代都是名门望族；patrician，出身名门的、贵族的。","kind":"invented_association","original":true},{"method":"POLITICIAN：几代显赫的政治世家","textZh":"patrician 的词形联到 politician（政治人物）。几代人都在政界显赫的家族，是地位很高的名门望族：patrician，贵族的、出身名门的。","kind":"invented_association","original":true,"weak":true}],
+      "usage": [
+        {
+          "senseZh": "贵族，名门望族；贵族的，地位高的",
+          "explanationZh": "名词为可数名词，指贵族或出身显赫的人；形容词可修饰 family、background，也可形容具有贵族气派的举止与声音。属于较正式用词，并不表示一个人的品格更高尚。",
+          "collocations": [
+            {
+              "phrase": "a patrician family",
+              "meaningZh": "贵族家庭"
+            },
+            {
+              "phrase": "a Roman patrician",
+              "meaningZh": "一位古罗马贵族"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "noble",
+          "comparisonZh": "作名词时都可指贵族；noble 也能作形容词表示高尚的，patrician 强调出身或阶层。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "aristocrat",
+          "comparisonZh": "都指贵族；patrician 还常用于古罗马贵族身份或世家气质。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She comes from an old patrician family.",
+          "translationZh": "她出身于一个古老的贵族家庭。",
+          "explanationZh": "comes from 表示出身；patrician 作形容词修饰 family。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/patrician_2"
+        },
+        {
+          "textEn": "She was rather intimidated by his measured, patrician tones.",
+          "translationZh": "他那缓慢有度、带贵族气派的语调让她颇感畏怯。",
+          "explanationZh": "was intimidated by 表示被……震慑；measured 与 patrician 并列修饰 tones。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/patrician_2"
+        }
+      ]
+    }
+  ]
+}

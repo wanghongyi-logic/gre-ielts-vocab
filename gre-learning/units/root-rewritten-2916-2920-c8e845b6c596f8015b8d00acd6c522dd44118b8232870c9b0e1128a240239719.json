@@ -1,0 +1,265 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6536,
+      "word": "nudge",
+      "ipa": "/nʌdʒ/",
+      "pos": "v.",
+      "coreMeaningZh": "说服某人做某事",
+      "coreEn": "to gently encourage someone to take action",
+      "coreImageZh": "男孩本来不敢尝试折纸，姐姐温和鼓励他先折一步，他终于动手；nudge 是轻轻推动、劝人采取行动。",
+      "mnemonics": [{"method":"JUDGE ↔ NUDGE：不硬逼，轻轻劝动","textZh":"nudge 与 judge（评委）只差开头字母。想让 judge 改变看法，不硬逼，只轻轻提醒、劝一劝：nudge，温和地推动、说服。","kind":"invented_association","original":true},{"method":"NUDGE：“挪着”，轻轻往前一步","textZh":"nudge 的声音联到“挪着”。不是一下推倒，而是轻轻让人往前挪一步；从推动身体，想到劝人迈出行动的一步：nudge，温和地推动、劝说。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "说服某人做某事",
+          "explanationZh": "强调轻柔、逐步的推动，而非强迫。常用 nudge somebody into doing something，也可用 nudge somebody to do something。",
+          "collocations": [
+            {
+              "phrase": "nudge somebody into acting",
+              "meaningZh": "温和地促使某人行动"
+            },
+            {
+              "phrase": "nudge somebody to try",
+              "meaningZh": "劝某人试一试"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "persuade",
+          "comparisonZh": "都可表示劝说；persuade 可强调说服成功，nudge 更强调轻轻推动的方式。"
+        },
+        {
+          "word": "encourage",
+          "comparisonZh": "都可指鼓励行动；nudge 常含不太直接、轻微推动的意味。"
+        },
+        {
+          "word": "goad",
+          "comparisonZh": "都可推动某人行动；goad 常带刺激、逼促意味，nudge 通常更轻柔。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She tried to nudge him into changing his mind.",
+          "translationZh": "她试着温和地劝他改变主意。",
+          "explanationZh": "nudge somebody into doing 表示促使某人做某事。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/nudge_1"
+        },
+        {
+          "textEn": "British tour companies are nudging clients to travel further afield.",
+          "translationZh": "英国旅游公司正引导客户去更远的地方旅行。",
+          "explanationZh": "nudge somebody to do 表示劝促某人采取行动。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/nudge"
+        }
+      ]
+    },
+    {
+      "number": 6537,
+      "word": "nugatory",
+      "ipa": "/ˈnjuːɡətəri/",
+      "pos": "adj.",
+      "coreMeaningZh": "无关紧要的",
+      "coreEn": "of little importance or consequence",
+      "coreImageZh": "男孩担心纸盒上一小片装饰略歪，姐姐打开盒子放入物品，表明这点小差别无关紧要；nugatory 指微不足道、不重要。",
+      "mnemonics": [{"method":"NO GOOD + STORY：略过也无妨的小故事","textZh":"nugatory 的声音联到 no good（没用）+ story（故事）。没什么价值的小故事，略过也不影响正事：nugatory，无关紧要的。","kind":"invented_association","original":true,"weak":true},{"method":"“牛轧糖粒”：少一小粒，无关大局","textZh":"nugatory 的声音联到“牛轧（gá）糖粒”。一大包糖掉了一小粒，少这一点不影响大局：nugatory，无关紧要的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "无关紧要的",
+          "explanationZh": "语气正式，表示事情、区别或贡献小到不值得重视。也可表示无效、没有实际作用，需结合上下文区分。",
+          "collocations": [
+            {
+              "phrase": "a nugatory difference",
+              "meaningZh": "无关紧要的差别"
+            },
+            {
+              "phrase": "a nugatory contribution",
+              "meaningZh": "微不足道的贡献"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "trivial",
+          "comparisonZh": "都可表示无关紧要；trivial 更常用，nugatory 较正式。"
+        },
+        {
+          "word": "inconsequential",
+          "comparisonZh": "都强调没有重要后果；nugatory 还可表示缺乏价值或实际效力。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "the book is entertaining, but its contributions to Shakespearean scholarship are nugatory",
+          "translationZh": "这本书读来有趣，但它对莎士比亚研究的贡献微不足道。",
+          "explanationZh": "nugatory 作表语，评价贡献不大。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/nugatory"
+        },
+        {
+          "textEn": "It looks like a nugatory technical tweak.",
+          "translationZh": "这看起来只是一个无关紧要的技术微调。",
+          "explanationZh": "nugatory 修饰 tweak，强调改动影响很小。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/nugatory"
+        }
+      ]
+    },
+    {
+      "number": 6538,
+      "word": "nurture",
+      "ipa": "/ˈnɜːtʃə(r)/",
+      "pos": "v.",
+      "coreMeaningZh": "培育，培养",
+      "coreEn": "to care for and encourage growth or development",
+      "coreImageZh": "男孩给幼苗浇水，把花盆放到适合的光照处，并持续照料；nurture 是细心培育，让事物成长。",
+      "mnemonics": [{"method":"NURSE → NURTURE：照料着长大","textZh":"nurse 是护士，也有护理、照料的意思。看到 nurture，联到 nurse：不是照看一下就走，而是持续照料，让孩子好好长大。nurture，就是这样培育、培养。","kind":"word_family","original":true},{"method":"NATURE ↔ NURTURE：天生，还是养成","textZh":"nurture 与熟词 nature（自然、天性）词形相近。能力是天生就有，还是后来培养的？nature 记天生，nurture 记后天培养。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "培育，培养",
+          "explanationZh": "可指照料幼小生命，也可指培养才能、关系或想法，通常强调一段时间内持续给予支持。",
+          "collocations": [
+            {
+              "phrase": "nurture a talent",
+              "meaningZh": "培养才能"
+            },
+            {
+              "phrase": "nurture young plants",
+              "meaningZh": "培育幼苗"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "foster",
+          "comparisonZh": "都可指促进发展；foster 常用于希望、能力或关系，nurture 更突出细心照料。",
+          "sources": [
+            "B"
+          ]
+        },
+        {
+          "word": "cultivate",
+          "comparisonZh": "培养技能、兴趣时相近；cultivate 更突出有意识地发展，nurture 更突出持续支持。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "These delicate plants need careful nurturing.",
+          "translationZh": "这些娇嫩的植物需要细心培育。",
+          "explanationZh": "nurturing 作名词性用法，指培育过程。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/nurture_1"
+        },
+        {
+          "textEn": "My father nurtured a love of art in me.",
+          "translationZh": "父亲培养了我对艺术的热爱。",
+          "explanationZh": "nurture a love of 表示逐渐培养某种热爱。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/nurture_1"
+        }
+      ]
+    },
+    {
+      "number": 6539,
+      "word": "obedient",
+      "ipa": "/əˈbiːdiənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "服从的，顺从的",
+      "coreEn": "willing to do what one is told",
+      "coreImageZh": "姐姐提醒男孩在路边停下，男孩马上照做，安静等她一起走；obedient 是愿意听从指示的。",
+      "mnemonics": [{"method":"OBEY → OBEDIENT：肯听，也肯照做","textZh":"obedient 连到 obey（服从）。别人吩咐后，不只是听见，而是愿意 obey，照着去做；这样听话、顺从，就是 obedient。","kind":"word_family","original":true},{"method":"OBEDIENT：“哦，别顶”，听话照做","textZh":"obedient 的声音联到“哦，别顶”：别顶嘴，听从吩咐。肯服从、不顶撞，就是 obedient，顺从的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "服从的，顺从的",
+          "explanationZh": "常形容人或动物愿意听从指示。obedient to somebody/something 表示服从某人、意愿或规则。",
+          "collocations": [
+            {
+              "phrase": "obedient to instructions",
+              "meaningZh": "服从指示"
+            },
+            {
+              "phrase": "an obedient child",
+              "meaningZh": "听话的孩子"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "compliant",
+          "comparisonZh": "都表示愿意遵从；compliant 也常用于符合规定，obedient 更直接指听从命令。"
+        },
+        {
+          "word": "submissive",
+          "comparisonZh": "都可指顺从；submissive 更强调不反抗、甘居受支配地位。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was always obedient to his father's wishes.",
+          "translationZh": "他一向听从父亲的意愿。",
+          "explanationZh": "obedient to 后接所服从的意愿。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/obedient"
+        },
+        {
+          "textEn": "He was very respectful at home and obedient to his parents.",
+          "translationZh": "他在家很有礼貌，也很听父母的话。",
+          "explanationZh": "obedient to his parents 表示服从父母。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/obedient"
+        }
+      ]
+    },
+    {
+      "number": 6540,
+      "word": "obliging",
+      "ipa": "/əˈblaɪdʒɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "乐于助人的",
+      "coreEn": "willing and eager to help",
+      "coreImageZh": "男孩看见姐姐抱书不便开门，主动扶住门让她通过；obliging 是热心、乐于帮忙的。",
+      "mnemonics": [{"method":"OBLIGATION → OBLIGING：把别人的难处也当自己的事","textZh":"obliging 联到 obligation（义务）。把别人的难处也当成自己的 obligation，主动伸手相助：obliging，乐于助人的。","kind":"word_family","original":true},{"method":"OBEYING：别人请帮忙，总乐意答应","textZh":"obliging 联到 obeying（听从）。别人请他帮个忙，他总乐意照着做，有求必应：obliging，乐于助人的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "乐于助人的",
+          "explanationZh": "通常含赞许意味，强调愿意为别人提供方便。不要与 obliged（感激的，或不得不的）混淆。",
+          "collocations": [
+            {
+              "phrase": "an obliging neighbour",
+              "meaningZh": "热心助人的邻居"
+            },
+            {
+              "phrase": "very obliging staff",
+              "meaningZh": "非常乐于助人的员工"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "helpful",
+          "comparisonZh": "都表示有帮助或乐于助人；obliging 更突出愿意满足别人请求的态度。"
+        },
+        {
+          "word": "accommodating",
+          "comparisonZh": "都强调愿意提供方便；accommodating 还可指愿意调整安排以配合别人。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They were very obliging and offered to wait for us.",
+          "translationZh": "他们很热心，主动提出等我们。",
+          "explanationZh": "obliging 描述愿意提供方便的态度。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/obliging"
+        },
+        {
+          "textEn": "He is an extremely pleasant and obliging man.",
+          "translationZh": "他是一个非常和善、乐于助人的人。",
+          "explanationZh": "obliging 与 pleasant 并列，共同描述人的性情。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/obliging"
+        }
+      ]
+    }
+  ]
+}

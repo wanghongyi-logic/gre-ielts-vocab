@@ -1,0 +1,255 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6581,
+      "word": "paramount",
+      "ipa": "/ˈpærəmaʊnt/",
+      "pos": "adj.",
+      "coreMeaningZh": "最重要的",
+      "coreEn": "more important than anything else",
+      "coreImageZh": "男孩急着骑车出发，亲人却先帮助他检查头盔；比赶时间更优先的安全是 paramount，最重要的。",
+      "mnemonics": [{"method":"MOUNT：放在山峰最高处","textZh":"paramount 中的 mount 联到山峰。把最重要的事放在峰顶，其他考虑都排在下面；重要性高于其他一切，就是 paramount，最重要的。","kind":"invented_association","original":true},{"method":"PAIR + AMOUNT：两笔开支，先保最要紧的","textZh":"paramount 的词形联到 pair（一对）和 amount（金额）。房租和零食两笔开支摆在眼前，先保最要紧的房租：paramount，最重要的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "最重要的",
+          "explanationZh": "形容某事比其他所有事情都更重要。可作表语，如 Safety is paramount，也常见于 of paramount importance、paramount concern 等搭配。",
+          "collocations": [
+            {
+              "phrase": "of paramount importance",
+              "meaningZh": "具有首要重要性的"
+            },
+            {
+              "phrase": "a paramount concern",
+              "meaningZh": "首要考虑"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "supreme",
+          "comparisonZh": "都可表示至高或首要；paramount 常谈重要性和优先级，supreme 也常谈权力或程度。"
+        },
+        {
+          "word": "primary",
+          "comparisonZh": "都可指首要；primary 有时只是主要或最初，paramount 更明确高于其他一切。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "This matter is of paramount importance.",
+          "translationZh": "这件事至关重要。",
+          "explanationZh": "of paramount importance 相当于 extremely important，并突出首要地位。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/paramount"
+        },
+        {
+          "textEn": "The welfare of the child must always be the court’s paramount consideration.",
+          "translationZh": "儿童的福祉必须始终是法院的首要考虑。",
+          "explanationZh": "paramount 修饰 consideration；must always be 强调这一优先次序。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/paramount"
+        }
+      ]
+    },
+    {
+      "number": 6582,
+      "word": "paranoid",
+      "ipa": "/ˈpærənɔɪd/",
+      "pos": "adj.",
+      "coreMeaningZh": "多疑的，对他人极端恐惧和怀疑的",
+      "coreEn": "unreasonably fearful or excessively suspicious of other people",
+      "coreImageZh": "同学好意来还铅笔，男孩却紧紧护住文具，仍怀疑对方想偷东西；这种缺乏根据的过度疑心表现出 paranoid。",
+      "mnemonics": [{"method":"PAIR + ANNOYED：两人一恼火，就疑心针对自己","textZh":"paranoid 的声音联到 pair（一对人）和 annoyed（恼火的）。看到旁边两人有点恼火，就猜他们在针对自己、要害自己；paranoid，过度多疑的。","kind":"invented_association","original":true},{"method":"“怕人害”：总觉得别人要害自己","textZh":"paranoid 的声音联到“怕人害”。总怀疑别人会伤害自己，疑心重得过了头：paranoid，过度多疑的。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "多疑的，对他人极端恐惧和怀疑的",
+          "explanationZh": "这里指日常语境中的过度猜疑或无根据的恐惧，常用 paranoid about something 或 paranoid that… 描述担忧内容。它也有临床相关用法，但日常形容某人多疑并不等于作医学诊断。",
+          "collocations": [
+            {
+              "phrase": "paranoid about something",
+              "meaningZh": "对某事过度疑虑"
+            },
+            {
+              "phrase": "paranoid that somebody…",
+              "meaningZh": "疑神疑鬼地认为某人……"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "suspicious",
+          "comparisonZh": "都可指怀疑他人；suspicious 可以有合理依据，paranoid 通常强调过度或不合理。"
+        },
+        {
+          "word": "distrustful",
+          "comparisonZh": "都可指不信任别人；paranoid 的恐惧和猜疑程度通常更强。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I guess I was just being paranoid.",
+          "translationZh": "我想我只是疑神疑鬼罢了。",
+          "explanationZh": "was being 加形容词突出当时的表现，just 有不过是的意味。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/paranoid"
+        },
+        {
+          "textEn": "She's a little paranoid about her job.",
+          "translationZh": "她对自己的工作有些过分担忧。",
+          "explanationZh": "paranoid about 引出担忧的事情，a little 在语气上有所缓和。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/paranoid"
+        }
+      ]
+    },
+    {
+      "number": 6583,
+      "word": "paraphrase",
+      "ipa": "/ˈpærəfreɪz/",
+      "pos": "v.",
+      "coreMeaningZh": "转述，意译，改写",
+      "coreEn": "to express the same meaning in different words",
+      "coreImageZh": "老师说不要在走廊奔跑，男孩改用“走廊里慢慢走”向朋友转述；换了说法而保留原意，就是 paraphrase。",
+      "mnemonics": [{"method":"PAIR OF PHRASES：一对说法，同一个意思","textZh":"paraphrase 联到 pair of phrases（一对说法）：一个说“请勿入内”，一个换成“不要进去”。措辞不同，意思不变，就是 paraphrase，改写、转述。","kind":"invented_association","original":true},{"method":"PARAGRAPH：同一段意思，换自己的说法","textZh":"paraphrase 的词形联到 paragraph（段落）。读完一段 paragraph，不照搬原句，而用自己的话把同样的意思说出来：paraphrase，改写、转述。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "转述，意译，改写",
+          "explanationZh": "可作及物或不及物动词，表示换一种措辞表达原意，常为了更容易理解。可接原话、文章或说话者作宾语；与逐字引用不同，也不必像 summarize 那样压缩内容。",
+          "collocations": [
+            {
+              "phrase": "paraphrase a passage",
+              "meaningZh": "换言转述一段文字"
+            },
+            {
+              "phrase": "paraphrase something in simpler language",
+              "meaningZh": "用更简单的语言转述某事"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rephrase",
+          "comparisonZh": "都可表示换一种说法；rephrase 常用于句子措辞调整，paraphrase 也可重述较长内容。"
+        },
+        {
+          "word": "restate",
+          "comparisonZh": "都可表示重新表达；restate 不一定明显改变措辞，paraphrase 通常强调换词而保留意思。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Try to paraphrase the question before you answer it.",
+          "translationZh": "回答问题前，试着先用自己的话转述一下题目。",
+          "explanationZh": "try to do 表示尝试做某事，before 从句说明先转述后回答。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/paraphrase_1"
+        },
+        {
+          "textEn": "Baxter paraphrased the contents of the press release.",
+          "translationZh": "巴克斯特用自己的话转述了新闻稿的内容。",
+          "explanationZh": "paraphrased 后直接接宾语 the contents，press release 指新闻稿。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/paraphrase"
+        }
+      ]
+    },
+    {
+      "number": 6584,
+      "word": "parch",
+      "ipa": "/pɑːtʃ/",
+      "pos": "v.",
+      "coreMeaningZh": "炙烤；烤干，晒干",
+      "coreEn": "to make something extremely dry, especially through heat",
+      "coreImageZh": "烈日持续照着院子里的花盆，原本湿润的土变得干燥发硬，男孩伸手查看；阳光把土晒干，就是 parch。",
+      "mnemonics": [{"method":"MARCH ↔ PARCH：行军晒得口干","textZh":"parch 与 march（行军）只差开头字母。烈日下 march，晒得嘴唇干裂、喉咙冒烟；parch，就是这样烤干、使干渴。","kind":"invented_association","original":true},{"method":"PEACH：鲜桃晒成桃干","textZh":"parch 的词形联到 peach（桃子）。切片的 peach 在烈日下失去水分，鲜桃晒成了桃干；parch，晒干、烤干。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "炙烤；烤干，晒干",
+          "explanationZh": "可作及物或不及物动词，常说烈日、干旱或热风使土地、植物等极度干燥，也可说喉咙被热气烤得干渴。parched 常作形容词表示干透的、口渴难耐的。",
+          "collocations": [
+            {
+              "phrase": "parch the land",
+              "meaningZh": "把土地晒得干透"
+            },
+            {
+              "phrase": "a parched throat",
+              "meaningZh": "干渴的喉咙"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "dry",
+          "comparisonZh": "都可表示使干燥；parch 往往强调极干，并常与热或缺水有关。"
+        },
+        {
+          "word": "scorch",
+          "comparisonZh": "都可与强热有关；scorch 更强调灼焦或烫坏，parch 主要强调水分被耗尽。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The hot desert sun had parched the land.",
+          "translationZh": "沙漠里的烈日已把土地晒得干透。",
+          "explanationZh": "had parched 是过去完成时，强调土地在所述过去时刻已被晒干。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/parch"
+        },
+        {
+          "textEn": "A drought is parching much of the country.",
+          "translationZh": "干旱正使该国大片地区变得干燥。",
+          "explanationZh": "is parching 是现在进行时，表示干燥过程正在持续；much of 指很大一部分。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/parch"
+        }
+      ]
+    },
+    {
+      "number": 6585,
+      "word": "parenthesis",
+      "ipa": "/pəˈrenθəsɪs/",
+      "pos": "n.",
+      "coreMeaningZh": "间断，插曲",
+      "coreEn": "an interruption in the continuity of an activity or period",
+      "coreImageZh": "男孩和朋友正画长卷，忽然下雨，只好到屋檐下等候；雨停后，他们回到画桌继续。夹在绘画前后的这段停顿，就是 parenthesis，间断。",
+      "mnemonics": [{"method":"PARENT：爸妈中途插一句","textZh":"parenthesis 开头就是 parent（父母）。正在说一件事，parent 插进来一句，话题暂时岔开；这个中间插入的小段，就是 parenthesis，间断、插曲。","kind":"invented_association","original":true},{"method":"PARIS + THESIS：论文中间的巴黎插曲","textZh":"parenthesis 的词形联到 Paris（巴黎）和 thesis（论文）。论文写到一半，一趟巴黎之旅成了中间的插曲：parenthesis，间断、插曲。","kind":"invented_association","original":true}],
+      "usage": [
+        {
+          "senseZh": "间断，插曲",
+          "explanationZh": "在这个较书面的义项中，parenthesis 指连续活动或人生进程里插入的一段间歇，不是标点本身。常见 a parenthesis of silence 等结构；复数为 parentheses。",
+          "collocations": [
+            {
+              "phrase": "a parenthesis of silence",
+              "meaningZh": "一阵插入其间的沉默"
+            },
+            {
+              "phrase": "a brief parenthesis",
+              "meaningZh": "一段短暂的间断"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "interruption",
+          "comparisonZh": "都指连续进程被打断；parenthesis 更有夹在前后主线之间的一段插曲的意味。"
+        },
+        {
+          "word": "interlude",
+          "comparisonZh": "都可指中间插入的一段时间；interlude 也常用于表演间奏或较轻松的插曲。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The parenthesis of war interrupted the course of his life.",
+          "translationZh": "战争这一插曲打断了他的人生进程。",
+          "explanationZh": "The parenthesis of war 作主语，把战争看作插入原有生活的一段中断。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/parenthesis"
+        },
+        {
+          "textEn": "There was a parenthesis of silence when the microphone momentarily lost power.",
+          "translationZh": "麦克风短暂断电时，现场出现了一阵沉默。",
+          "explanationZh": "There was 引出一段沉默，when 从句说明这段间断发生的原因和时刻。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/parenthesis"
+        }
+      ]
+    }
+  ]
+}
