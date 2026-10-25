@@ -1,0 +1,323 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6341,
+      "word": "inure",
+      "ipa": "/ɪˈnjʊr/",
+      "pos": "vt.",
+      "coreMeaningZh": "使习惯接受不好的事",
+      "coreEn": "to accustom someone to something unpleasant",
+      "coreImageZh": "男孩起初抱怨钟的滴答声太烦，无法专心看书，后来却放松下来继续读书；姐姐说，他听了许多天，已经逐渐习惯。inure 强调反复接触使人习惯原本不舒服的事，并不表示那声音变得好听了。",
+      "mnemonics": [
+        {
+          "method": "IN USE → INURE",
+          "textZh": "in use 是“正在使用”。把空格去掉，再将 s 换成 r，便得到 inure。想象一台老机器每天都 in use，刚来的工人总被它的响声扰乱思路，待久了却能照常做事。机器仍在用，响声也没消失，反复接触却使人逐渐习惯了这种烦扰。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "INJURE 去掉 J",
+          "textZh": "injure 是“伤害”，去掉 j 恰好得到 inure。想象一位演员初次遭到尖刻批评时很受伤，后来听多了，渐渐能平静面对，不再每次都被刺痛。injure 抓住原本伤人的刺激，inure 则抓住反复经历后习惯承受的变化。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "使习惯接受不好的事",
+          "explanationZh": "常用 inure somebody/oneself to something，to 是介词，后接名词或动名词；多指不舒服、严酷或令人不快的事。be inured to 表示已经习惯、不再强烈受影响。",
+          "collocations": [
+            {
+              "phrase": "be inured to hardship",
+              "meaningZh": "习惯艰苦"
+            },
+            {
+              "phrase": "inure oneself to criticism",
+              "meaningZh": "使自己习惯批评"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "accustom",
+          "comparisonZh": "都表示使习惯；inure 通常专指习惯令人不快的事，accustom 的对象更广。"
+        },
+        {
+          "word": "harden",
+          "comparisonZh": "在使人能承受不良条件这一义上接近；harden 还常突出变得不敏感或强硬。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The prisoners quickly became inured to the harsh conditions.",
+          "translationZh": "囚犯们很快就习惯了恶劣的环境。",
+          "explanationZh": "became inured to 表示逐渐形成习惯，to 后接所适应的环境。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/inure-to"
+        },
+        {
+          "textEn": "He gradually inured himself to her absence.",
+          "translationZh": "他渐渐使自己习惯了她不在身边。",
+          "explanationZh": "inured himself to 用反身代词表示使自己适应。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/inure-to"
+        }
+      ]
+    },
+    {
+      "number": 6342,
+      "word": "inveigh",
+      "ipa": "/ɪnˈveɪ/",
+      "pos": "vi.",
+      "coreMeaningZh": "激烈抗议；强烈抨击",
+      "coreEn": "to complain or protest vehemently",
+      "coreImageZh": "主持人刚提出要撤走社区垃圾桶，姐姐就站出来，直指这种安排不合理，不能让大家生活在脏乱中。inveigh 强调以激烈言辞表达强烈反对。",
+      "mnemonics": [
+        {
+          "method": "inVEIGH / WEIGH",
+          "textZh": "weigh 是“称重”。把 w 换成 v，再在前面加 in，就得到 inveigh。想象顾客付了一公斤的钱，秤上却只有八百克；他指着秤愤怒地斥责：“你这样缺斤少两太不公平！”WEIGH 这次称重引出的，不是平静询价，而是一番强烈抗议。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "IN VAIN → INVEIGH",
+          "textZh": "in vain 是“徒劳”，读 /ɪn veɪn/；去掉末尾的 /n/，就接近 inveigh 的 /ɪnˈveɪ/。想象居民几次温和反映问题都 in vain，这次终于站到台前，严厉抨击不合理的安排。前面的徒劳引出后面的激烈抗议，但 inveigh 本身不表示抗议一定无效。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "激烈抗议；强烈抨击",
+          "explanationZh": "不及物动词，通常与 against 连用，后接被抨击的人、行为或制度。它表示言语上的激烈批评，不等于实际动手攻击，也不只是轻轻抱怨。",
+          "collocations": [
+            {
+              "phrase": "inveigh against injustice",
+              "meaningZh": "激烈抨击不公"
+            },
+            {
+              "phrase": "inveigh against a policy",
+              "meaningZh": "强烈反对一项政策"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "protest",
+          "comparisonZh": "都可表示反对；inveigh 更强调激烈的言辞，protest 也可指较平静的异议或公开行动。"
+        },
+        {
+          "word": "rail",
+          "comparisonZh": "在猛烈抱怨、抨击这一义上很接近，二者都常接 against；rail 另有铁轨等名词义。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A lot of his writings inveigh against luxury and riches.",
+          "translationZh": "他的许多文章都猛烈抨击奢侈生活和财富。",
+          "explanationZh": "writings 作复数主语，inveigh against 引出批评对象。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/inveigh"
+        },
+        {
+          "textEn": "Officials and commentators spewed vitriol about Germany, inveighing particularly against unfair German trade practices.",
+          "translationZh": "官员和评论人士对德国恶语相向，尤其激烈抨击德国不公平的贸易做法。",
+          "explanationZh": "inveighing 短语补充说明言语攻击的具体对象。",
+          "sourceAttribution": "Merriam-Webster，页面例句 https://www.merriam-webster.com/dictionary/inveigh"
+        }
+      ]
+    },
+    {
+      "number": 6343,
+      "word": "inventory",
+      "ipa": "/ˈɪnvəntɔːri/",
+      "pos": "n.",
+      "coreMeaningZh": "概括要点的简介；概要",
+      "coreEn": "a short account of the main points",
+      "coreImageZh": "姐姐拿着一张只有几项图示的纸，向男孩介绍厚观察册中的主要发现。那一页把许多记录归拢成容易浏览的要点，让人先看清整体；inventory 在这里指这样的简介或概要。",
+      "mnemonics": [
+        {
+          "method": "INVENTOR + Y",
+          "textZh": "把 inventory 最后的 y 暂时遮住，就能看见完整的 inventor（发明家）。想象发明家在展台前先递上一张卡：用途、原理、特点各列一条，观众有兴趣再读厚厚的说明书。这张小卡把发明的主要内容介绍清楚，让人迅速把握要点，便是一份 inventory。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "INVENTORY 清单",
+          "textZh": "inventory 的常见义是“物品清单”：仓库有些什么，一张表逐项列清。把要盘点的对象换成已有发现和主要观点，就得到一份“信息清单”，零散内容被归拢成清楚的全貌。“概要”这一义项，便可沿着“盘点物品→梳理内容”的路线来记。",
+          "kind": "semantic_image",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "概括要点的简介；概要",
+          "explanationZh": "本页取较少见的概要、概括主要内容义，可用 an inventory of knowledge/findings。更常见的义是物品清单或存货；这里概括的是信息要点，不一定在盘点商品。",
+          "collocations": [
+            {
+              "phrase": "an inventory of current knowledge",
+              "meaningZh": "现有知识的概要"
+            },
+            {
+              "phrase": "an informative inventory",
+              "meaningZh": "信息丰富的简介"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "summary",
+          "comparisonZh": "在概括主要内容这一义上接近；summary 更普通、适用范围更广。"
+        },
+        {
+          "word": "outline",
+          "comparisonZh": "都可列出要点；outline 更突出框架和层次，inventory 常有逐项汇总已有认识的意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The report provides an inventory of what scientists know about the lake.",
+          "translationZh": "这份报告概述了科学家对这座湖泊的已有认识。",
+          "explanationZh": "an inventory of 后接被概括的知识内容。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "She opened her talk with a brief inventory of the main findings.",
+          "translationZh": "她在讲话开头简要概括了主要发现。",
+          "explanationZh": "open…with… 表示以……开头，brief 强调简明。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6344,
+      "word": "invidious",
+      "ipa": "/ɪnˈvɪdiəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "惹人反感的；易引起不满的",
+      "coreEn": "unfair or offensive in a way that causes resentment",
+      "coreImageZh": "男孩夸自己的蓝船是唯一值得看的作品，又贬低同伴的红船；同伴抱起双臂，明显不满。invidious 形容这种不公平、容易惹人反感的比较，重点不是他喜爱自己的船，而是抬高自己时贬低了别人。",
+      "mnemonics": [
+        {
+          "method": "ENVY / ENVIOUS",
+          "textZh": "invidious 与 envy（嫉妒）确实同源，可以从“引起不好的感受”这条线进入。看到别人获奖而嫉妒，是自己感到 envious；老师却说“只有他有本事，其他人都不行”，这种不公平的比较会惹起大家的不满，便是 invidious。一个记感受嫉妒的人，一个记招来反感的说法，不要把两者当成同义词。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "inVIDious / VIDeo",
+          "textZh": "inVIDious 中的 VID，正好也是 video（视频）的开头。想象全组一起完成了项目，庆功视频却只保留一个人的贡献，还把其他人说成毫无用处；大家看到这段 video，自然很反感。VID 把你带回这段不公平的比较。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "惹人反感的；易引起不满的",
+          "explanationZh": "常修饰 comparison、distinction、position 等，强调不公平、令人不快，或容易引起嫉妒和怨恨。不是一般难看的外观；另可表示怀有嫉妒的，本页聚焦招致反感。",
+          "collocations": [
+            {
+              "phrase": "an invidious comparison",
+              "meaningZh": "令人反感的不公平比较"
+            },
+            {
+              "phrase": "an invidious distinction",
+              "meaningZh": "招致不满的区别对待"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "offensive",
+          "comparisonZh": "都可指惹人反感；invidious 常涉及不公平比较或区别对待，offensive 的原因更广。"
+        },
+        {
+          "word": "unfair",
+          "comparisonZh": "在不公而使人不满这一义上接近；unfair 直接评价不公，invidious 更突出招致怨恨或反感。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It would be invidious to single out any one person to thank.",
+          "translationZh": "只挑出某一个人来感谢会引起其他人的不满。",
+          "explanationZh": "It 为形式主语，to single out… 是真正主语，说明为何可能招致反感。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/invidious"
+        },
+        {
+          "textEn": "Union leaders called the new rules ‘invidious and divisive’.",
+          "translationZh": "工会领导人称新规定令人反感，而且会制造分裂。",
+          "explanationZh": "call something 加形容词表示把某事评价为……。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/invidious"
+        }
+      ]
+    },
+    {
+      "number": 6345,
+      "word": "invigorate",
+      "ipa": "/ɪnˈvɪɡəreɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "使恢复精神；使充满活力",
+      "coreEn": "to give someone fresh energy or strength",
+      "coreImageZh": "男孩起初低着头坐在长椅上，显得没精打采；听姐姐的建议起身走动后，他抬起头，笑着说自己又精神十足了。invigorate 描写散步和清新空气给他带来新的活力，使原本疲倦的人重新振作。",
+      "mnemonics": [
+        {
+          "method": "IN + VIGOR + ATE",
+          "textZh": "vigor 是“精力、活力”，在 inVIGORate 中完整保留。把 in- 想成“注入”，-ate 看作动词结尾：仿佛给快没电的人重新充上 vigor。原本肩膀耷拉、做什么都提不起劲，得到这股力量后，站直了，脚步也轻快起来。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "inviGOrate / GO",
+          "textZh": "inviGOrate 中藏着 GO（走，出发）。想象训练前队员们个个没精打采，教练放起振奋的音乐，大家跟着节奏站起来，喊着“Go！Go！”奔向场地。这个 GO 像重新打开的活力开关，把“懒得动”变成“有劲出发”。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "使恢复精神；使充满活力",
+          "explanationZh": "及物动词，宾语可以是恢复精神的人，也可以是获得新动力的组织或活动。人作宾语时，常指运动、清新空气等使其重新有活力。",
+          "collocations": [
+            {
+              "phrase": "invigorate the body",
+              "meaningZh": "使身体恢复活力"
+            },
+            {
+              "phrase": "feel invigorated",
+              "meaningZh": "感到精神焕发"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "energize",
+          "comparisonZh": "都表示使充满精力或动力；energize 也常指鼓舞人采取行动。"
+        },
+        {
+          "word": "refresh",
+          "comparisonZh": "都可表示使恢复精神；refresh 常强调消除疲劳、恢复清爽感，invigorate 更突出增添力量。",
+          "sources": [
+            "zhangwei_original3000"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The cold water invigorated him.",
+          "translationZh": "冷水使他精神一振。",
+          "explanationZh": "主语是带来精神变化的事物，him 是受到影响的人。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/invigorate"
+        },
+        {
+          "textEn": "They felt refreshed and invigorated after the walk.",
+          "translationZh": "散步之后，他们感觉清爽而精神焕发。",
+          "explanationZh": "felt 后并列两个过去分词形容词，after 引出使状态改变的活动。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/invigorate"
+        }
+      ]
+    }
+  ]
+}

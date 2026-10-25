@@ -1,0 +1,336 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6486,
+      "word": "momentum",
+      "ipa": "/məˈmentəm/",
+      "pos": "n.",
+      "coreMeaningZh": "动力；势头",
+      "coreEn": "the force or impetus that keeps an activity developing",
+      "coreImageZh": "院子里落满树叶，男孩先挥起扫帚，姐姐看见后也加入，旁边的男子随后一起动手。原本一个人的清扫变成大家共同推进，姐姐说越干越有劲。momentum 指事情开始发展后逐渐积累的动力和势头；这里的干劲在行动和相互带动中增强。",
+      "mnemonics": [
+        {
+          "method": "MOTION / MOMENTUM",
+          "textZh": "MOTION 是运动，MOMENTUM 与它都有表示“移动”的词源背景。先想一个向坡下滚的雪球：它越滚越大、越滚越快，越来越难拦下来。再把这幅画面搬到一个计划上，开始只有一个人在做，随后人和资源不断加入，事情越来越有推进力。这种积累起来的势头，就是 momentum 的日常引申义。",
+          "kind": "word_family",
+          "original": true,
+          "weak": false
+        },
+        {
+          "method": "MOMENTOUS / MOMENTUM",
+          "textZh": "刚学的 MOMENTOUS 强调影响重大，MOMENTUM 强调发展的势头。球队取得一场改变处境的重大胜利，是 a momentous win；赢完后信心增强，配合更顺，接着连续拿分，便是在积累 momentum。把 MOMENTOUS 的 OUS 换成 UM，词尾的 /s/ 也换成 /m/：前者看这件事有多重要，后者看它带起了多强的势头。",
+          "kind": "word_family",
+          "original": true,
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "动力；势头",
+          "explanationZh": "通常不可数；gain/gather momentum 表示势头增强，lose momentum 表示势头减弱。物理中也指动量。",
+          "collocations": [
+            {
+              "phrase": "gather momentum",
+              "meaningZh": "势头增强"
+            },
+            {
+              "phrase": "lose momentum",
+              "meaningZh": "失去势头"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "impetus",
+          "comparisonZh": "都可指推动力；impetus 常突出促使行动开始的刺激，momentum 更强调已经发展起来的持续势头。"
+        },
+        {
+          "word": "drive",
+          "comparisonZh": "都可涉及向前的动力；drive 常指人的干劲或主动推动，momentum 也可属于整个过程。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The fight for his release gathers momentum each day.",
+          "translationZh": "争取释放他的行动每天都在壮大。",
+          "explanationZh": "gathers momentum 表示行动的势头不断增强。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/momentum"
+        },
+        {
+          "textEn": "She gave fresh momentum to the campaign.",
+          "translationZh": "她为这场运动增添了新的动力。",
+          "explanationZh": "give momentum to 表示给某项行动带来推动力。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/momentum"
+        }
+      ]
+    },
+    {
+      "number": 6487,
+      "word": "mongrel",
+      "ipa": "/ˈmʌŋɡrəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "混种的；混合来源的",
+      "coreEn": "of mixed breed, origin or character",
+      "coreImageZh": "小狗坐在两只大狗之间，一只大狗满身卷毛，另一只身上有明显的棕白花色。男孩发现，小狗的卷毛像妈妈，花色又像爸爸；姐姐说明它的父母属于不同品种。mongrel 在这里形容混种的，强调小狗的血统来自不同品种，身上结合了两边的特征。",
+      "mnemonics": [
+        {
+          "method": "MINGLE / MONGREL",
+          "textZh": "刚学过的 MINGLE 是把不同成分混合起来，MONGREL 与它有真实的词源亲缘，也连着“混合”这层意思。想象两种犬的特征汇到同一只小狗身上：卷毛来自这一边，花色来自另一边。mingle 让你想到混在一起的过程，mongrel 则描述这种混合来源的结果，常用于混种犬。",
+          "kind": "word_family",
+          "original": true,
+          "weak": false
+        },
+        {
+          "method": "AMONG + REL(atives)",
+          "textZh": "AMONG RELATIVES 是“在亲属中”。把狗狗家族画成一张合影，小狗站在自己的犬类亲属中，父母和祖辈能看出不止一种品种，血统来源是混合的。AMONG 去掉开头 A，接上 RELATIVES 的前三个字母 REL，正好成为 MONGREL。借家族合影记住来源混合，而不只盯着小狗单独的外形。",
+          "kind": "invented_association",
+          "original": true,
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "混种的；混合来源的",
+          "explanationZh": "形容词常修饰 dog，也能描述混合来源的风格。作名词可指混种狗；用于人时具有侮辱性，不用来称呼混合族裔的人。",
+          "collocations": [
+            {
+              "phrase": "a mongrel dog",
+              "meaningZh": "一只混种狗"
+            },
+            {
+              "phrase": "a mongrel style",
+              "meaningZh": "一种混合来源的风格"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "crossbred",
+          "comparisonZh": "谈动物混种时接近；crossbred 较中性，并常强调品种间繁育，mongrel 也可暗示血统不明。"
+        },
+        {
+          "word": "hybrid",
+          "comparisonZh": "都可指混合来源；hybrid 广泛用于技术、植物和形式组合，mongrel 更常用于狗。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They adopted a friendly mongrel dog from the shelter.",
+          "translationZh": "他们从收容所领养了一只友善的混种狗。",
+          "explanationZh": "mongrel 作形容词修饰 dog，不评价小狗的好坏。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "The building has a mongrel style that combines several architectural traditions.",
+          "translationZh": "这座建筑风格混杂，融合了几种建筑传统。",
+          "explanationZh": "mongrel 修饰 style，表示混合来源的风格。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6488,
+      "word": "monochromatic",
+      "ipa": "/ˌmɒnəʊkrəˈmætɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "单调无聊的；缺少变化的",
+      "coreEn": "lacking variety, creativity or excitement",
+      "coreImageZh": "男孩一开始兴致勃勃地看桌上的折纸花，指过一朵又一朵，却发现满桌几乎都是相同的样子。看得越多，他越提不起精神，姐姐也托着脸显出无聊。monochromatic 在这里借“一种调子”形容缺少变化：重复摆了很多，却没有带来新的趣味。",
+      "mnemonics": [
+        {
+          "method": "MONO + CHROMATIC",
+          "textZh": "学过的 CHROMATIC 与颜色有关，MONO- 表示单一，合起来 monochromatic 本来可以指单色的。想象一本旅行册，每页都只用同一种颜色，内容也总是同一条街、同一座房子，看了十页仍像在看第一页。由“只有一种颜色”转到“只有一种调子”，就能记住这里缺少变化、令人乏味的引申义。",
+          "kind": "word_components",
+          "original": true,
+          "weak": false
+        },
+        {
+          "method": "MONO + ROMANTIC",
+          "textZh": "ROMANTIC 是浪漫的。想象有人每次约会都送同样的花、去同一家店、连讲的笑话都原样重复；原本想浪漫，渐渐却只剩 MONO（单一）的一套。把 ROMANTIC 的 N 去掉，在 R 前补 CH，再接前缀 MONO，就写成 MONOCHROMATIC。借“浪漫安排变成反复重播”，记住缺少变化带来的单调。",
+          "kind": "invented_association",
+          "original": true,
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "单调无聊的；缺少变化的",
+          "explanationZh": "比喻义可评价缺少变化的作品、方法或体验；其常见本义是单色的。单色作品也可以很精彩，必须有语境才能把它理解成无聊。",
+          "collocations": [
+            {
+              "phrase": "a monochromatic approach",
+              "meaningZh": "一种缺少变化的方法"
+            },
+            {
+              "phrase": "a monochromatic account",
+              "meaningZh": "一篇平板乏味的叙述"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "monotonous",
+          "comparisonZh": "都可指缺乏变化而无聊；monotonous 更常用，monochromatic 的比喻义带“没有丰富色彩”的形象。"
+        },
+        {
+          "word": "dull",
+          "comparisonZh": "都可指乏味；dull 还可指迟钝或暗淡，monochromatic 在本义中只表示单色，并不必然无聊。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I have reservations about this rigidly monochromatic approach.",
+          "translationZh": "我对这种僵化而单一的方法持保留意见。",
+          "explanationZh": "have reservations about 表示对某事有所保留；monochromatic 指方法缺少变化。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/monochromatic"
+        },
+        {
+          "textEn": "It was a monochromatic, under-waterish, caterpillar-crawl of a trip.",
+          "translationZh": "那是一趟单调沉闷、仿佛水下行进又像毛虫爬行般缓慢的旅程。",
+          "explanationZh": "monochromatic 与后面的形象表达一起描绘单调、迟缓的体验。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/monochromatic"
+        }
+      ]
+    },
+    {
+      "number": 6489,
+      "word": "monologue",
+      "ipa": "/ˈmɒnəlɒɡ/",
+      "pos": "n.",
+      "coreMeaningZh": "独白",
+      "coreEn": "a speech or dramatic passage delivered by one person",
+      "coreImageZh": "红色幕布前只有男孩一人站在舞台中央。他一手放在胸前，讲起离家后的想念，又伸手表达继续向前走的决心；台下的姐姐一直听着，最后在他鞠躬时鼓掌。monologue 指这一段由一个人持续讲述的独白，台下可以有听众，台上却没有另一位角色接话。",
+      "mnemonics": [
+        {
+          "method": "DIALOGUE / MONOLOGUE",
+          "textZh": "DIALOGUE 是对话，几个人你一句、我一句，话语来回传递。现在让其他角色退下，只留下一个演员把心里的念头连续说出来：把 DIALOGUE 开头的 DIA 换成表示“单一”的 MONO，就得到 MONOLOGUE。两词共同的 LOGUE 与说话有关，变化的是从来回对话，转成一个人的独白。",
+          "kind": "word_family",
+          "original": true,
+          "weak": false
+        },
+        {
+          "method": "VLOG",
+          "textZh": "VLOG 是视频博客。想象博主把镜头固定好，从头到尾独自讲述第一次远行的感受，没有采访，也没有别人接话，这一整段就像对镜头说的 monologue。VLOG 去掉 V，留下 LOG，接上不发音的 UE，再在前面加 MONO，便拼出 MONOLOGUE。观众可以很多，讲述者只有一个。",
+          "kind": "invented_association",
+          "original": true,
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "独白",
+          "explanationZh": "可指戏剧中一个角色的长段台词，也可指一个人主导的长篇讲话。独白可以有听众，不要求说话者物理上独处。",
+          "collocations": [
+            {
+              "phrase": "deliver a monologue",
+              "meaningZh": "表演一段独白"
+            },
+            {
+              "phrase": "an opening monologue",
+              "meaningZh": "开场独白"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "soliloquy",
+          "comparisonZh": "都可指戏剧独白；soliloquy 更强调角色把内心想法说给自己听，monologue 也可直接面向听众。"
+        },
+        {
+          "word": "speech",
+          "comparisonZh": "都可是一人发言；speech 范围广，可指演说，monologue 更突出连续的一人话语或戏剧片段。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She delivered her monologue in a deadpan voice.",
+          "translationZh": "她用毫无表情的声音念完了独白。",
+          "explanationZh": "deliver a monologue 表示表演或说出一段独白。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/monologue"
+        },
+        {
+          "textEn": "The play begins with the main character's monologue.",
+          "translationZh": "这出戏以主角的独白开场。",
+          "explanationZh": "begins with 表示以某内容开始，所有格表明独白属于主角。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/monologue"
+        }
+      ]
+    },
+    {
+      "number": 6490,
+      "word": "monotonous",
+      "ipa": "/məˈnɒtənəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "单调无聊的",
+      "coreEn": "tediously unvarying or repetitive",
+      "coreImageZh": "男孩和姐姐坐在桌边折纸，旁边已经堆起一摞折好的纸，他手里仍在重复同样的步骤。做着做着，他托住脸，又张嘴打起哈欠，抱怨总是同一个动作。monotonous 写的是这种反复而没有变化的单调，乏味来自一遍遍照样重来。",
+      "mnemonics": [
+        {
+          "method": "MONO + TONE + -OUS",
+          "textZh": "MONO- 表示单一，TONE 是音调；mono 加 tone 构成 monotone，再去掉 e、加 -ous，就成为 monotonous。想象有人讲一个本该惊险的故事，却从头到尾只用同一种音调，连追逐和脱险都没有起伏，听众渐渐打起哈欠。由“一种调子说到底”，再联到每天重复相同步骤的单调工作。",
+          "kind": "word_components",
+          "original": true,
+          "weak": false
+        },
+        {
+          "method": "mOnOtOnOus",
+          "textZh": "把 mOnOtOnOus 里的四个 O 圈出来：前面隔一个字母就又是同样的圆圈，O、O、O、O，一路没有新花样。把这串字母想成传送带，面前不断经过一模一样的圆环，你整天只负责拿起、检查、放下，动作一遍遍重来。重复的 O 本身就演出了那种缺少变化、做久了让人厌倦的感觉。",
+          "kind": "invented_association",
+          "original": true,
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "单调无聊的",
+          "explanationZh": "常修饰工作、日常安排、饮食或声音，强调由于反复不变而令人厌倦，不等于所有安静或简单的事。",
+          "collocations": [
+            {
+              "phrase": "monotonous work",
+              "meaningZh": "单调无聊的工作"
+            },
+            {
+              "phrase": "a monotonous routine",
+              "meaningZh": "一成不变的日常安排"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "repetitive",
+          "comparisonZh": "都可指反复重复；repetitive 未必带无聊评价，monotonous 明确表示重复得令人厌倦。",
+          "sources": [
+            "zhangwei_original3000"
+          ]
+        },
+        {
+          "word": "jejune",
+          "comparisonZh": "都可评价乏味；jejune 还可指思想幼稚、缺乏内容，monotonous 更强调反复不变。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "New secretaries came and went with monotonous regularity.",
+          "translationZh": "新秘书来来去去，频繁得一成不变。",
+          "explanationZh": "with monotonous regularity 强调同类事情反复发生，令人厌倦。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/monotonous"
+        },
+        {
+          "textEn": "The office workers were asked if they found their work monotonous.",
+          "translationZh": "办公室职员被问到是否觉得工作单调乏味。",
+          "explanationZh": "find something + 形容词 表示觉得某事具有某种性质。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/monotonous"
+        }
+      ]
+    }
+  ]
+}

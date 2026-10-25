@@ -1,0 +1,320 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6321,
+      "word": "insubordinate",
+      "ipa": "/ˌɪnsəˈbɔːrdɪnət/",
+      "pos": "adj.",
+      "coreMeaningZh": "不服从权威的；抗命的",
+      "coreEn": "refusing to obey a person in authority",
+      "coreImageZh": "老师指着球筐，要求下课收球；男孩却把球抱在胸前，回答：“我听见了，可我就是不放！”insubordinate 形容的正是听清权威的要求却拒不服从，而不是没听见或忘了做。",
+      "mnemonics": [
+        {
+          "method": "IN + SUBORDINATE",
+          "textZh": "subordinate 指“从属的、受上级管辖的”，sub- 像 subway 中的“在下”；前面再加否定的 in-。想象组织图上，一个下属本来连着上级的指挥线，现在却把这条线剪断，说“你的命令我不听”：insubordinate 抓住的是拒绝服从，不是职位高低。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "insuBORDinate / BOARD",
+          "textZh": "把 board（板；黑板）去掉 a，就看到 insuBORDinate 中的 BORD。老师把“停止玩球”写满黑板，学生明明看见，还抱着球说“偏不”。一看见 insuBORDinate 里的 BORD，就把那句“命令我也不听”接回来。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不服从权威的；抗命的",
+          "explanationZh": "形容拒绝服从上级、老师、长官等权威，重点是上下级关系中的抗命。可修饰人或行为，常用 be insubordinate to someone；一般观点不同并不自动等于抗命。",
+          "collocations": [
+            {
+              "phrase": "insubordinate behavior",
+              "meaningZh": "不服从上级的行为"
+            },
+            {
+              "phrase": "an insubordinate employee",
+              "meaningZh": "不服从指挥的员工"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "disobedient",
+          "comparisonZh": "都表示不服从；disobedient 更一般，也可指孩子不听父母，insubordinate 强调对上级权威的抗拒。"
+        },
+        {
+          "word": "defiant",
+          "comparisonZh": "都有公开抗拒的意味；defiant 可反抗各种压力，不一定涉及上下级命令。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His behavior was unprofessional and insubordinate.",
+          "translationZh": "他的行为既不专业，又不服从上级。",
+          "explanationZh": "and 连接两个形容词，分别评价专业表现和服从权威的态度。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/insubordinate"
+        },
+        {
+          "textEn": "In industry, a worker who is grossly insubordinate is threatened with discharge.",
+          "translationZh": "在工业领域，严重不服从管理的工人面临被解雇的威胁。",
+          "explanationZh": "who 引导定语从句修饰 worker，grossly 表示程度严重。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/insubordinate"
+        }
+      ]
+    },
+    {
+      "number": 6322,
+      "word": "insurgent",
+      "ipa": "/ɪnˈsɜːrdʒənt/",
+      "pos": "n.",
+      "coreMeaningZh": "叛乱者；反抗既定政权的人",
+      "coreEn": "a person who rises in revolt against an established government",
+      "coreImageZh": "舞台上，披红披肩的角色面对戴王冠的国王，宣称要推翻他的统治，还举起拳头表示反抗。这里的 insurgent 指反抗既定政权的叛乱者；他挑战的是统治权，不只是和别人吵架。",
+      "mnemonics": [
+        {
+          "method": "inSURGEnt，反抗的人潮涌起",
+          "textZh": "inSURGEnt 中完整的 SURGE 是“涌起、猛冲”，两词也确实同源。想象一股人潮像浪一样涌向王宫，要推翻国王：由 surge 的“涌起”记住“起来反抗”，insurgent 就是其中的叛乱者。这里的 in- 不是否定，不能理解成“不涌起”。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "URGENT：王宫告急",
+          "textZh": "insURGENT 里藏着完整的 urgent（紧急的）。国王收到一封盖着 URGENT 的告急信：“有人起兵反抗，要推翻您的统治！”信上的“紧急”带你回想造成这场危机的人，那就是 insurgent，叛乱者。用“叛乱使王宫告急”把两个词扣在一起。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "叛乱者；反抗既定政权的人",
+          "explanationZh": "这里是可数名词，常见复数 insurgents，指反抗政府或既定政权的人。也可作形容词表示叛乱的；本页保留人物身份义，不把普通争执者都叫 insurgent。",
+          "collocations": [
+            {
+              "phrase": "an insurgent group",
+              "meaningZh": "叛乱组织"
+            },
+            {
+              "phrase": "talks with the insurgents",
+              "meaningZh": "与叛乱者的谈判"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rebel",
+          "comparisonZh": "表示反抗既定政权的叛乱者时接近；rebel 也可泛指反叛习俗或规则的人。"
+        },
+        {
+          "word": "revolutionary",
+          "comparisonZh": "在反抗现有统治的人这一层面可接近；revolutionary 常强调寻求根本制度变革，二者不总能互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Insurgents are trying to gain control of the country's transportation system.",
+          "translationZh": "叛乱者正试图控制该国的交通运输系统。",
+          "explanationZh": "are trying to 表示正在尝试，gain control of 表示取得对某物的控制。",
+          "sourceAttribution": "Merriam-Webster https://www.merriam-webster.com/dictionary/insurgent"
+        },
+        {
+          "textEn": "By early yesterday, the insurgents had taken control of the country's main military air base.",
+          "translationZh": "到昨天早些时候，叛乱者已经控制了该国的主要军用空军基地。",
+          "explanationZh": "By 引出过去的截止时间，had taken 使用过去完成时。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/insurgent"
+        }
+      ]
+    },
+    {
+      "number": 6323,
+      "word": "intangible",
+      "ipa": "/ɪnˈtændʒəbl/",
+      "pos": "adj.",
+      "coreMeaningZh": "无形的；无法触摸的",
+      "coreEn": "existing without a physical form that can be touched",
+      "coreImageZh": "姐姐扶着帆船，男孩拿布擦拭，又问能不能把姐姐的关爱拿在手里。帆船能碰到、能拿住，关爱却没有可握住的形体：intangible 说的是这种真实存在但无形的事物，不是说关爱不存在。",
+      "mnemonics": [
+        {
+          "method": "IN · TANG · IBLE",
+          "textZh": "tang- 的词源线索是“触摸”，-ible 表示“能够”，前面的 in- 表否定。手指能碰到奖杯的金属，是 tangible；荣誉却没有可让手指碰到的形体，是 intangible。把“不能触摸”串起来，记住它的无形，而不是把它误当成虚假。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "TANG：糖在手，关爱拿不到",
+          "textZh": "inTANGible 中的 TANG，借拼写想到“糖”的拼音 tang。朋友把一颗糖放进你手心，糖能握住；这份关爱却不能再从掌心拎出来。用“摸得到的糖，摸不到的关爱”记 intangible。词中 tang 读 /tændʒ/，不是汉语“糖”的读音。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "无形的；无法触摸的",
+          "explanationZh": "形容真实存在但没有可触摸形体的事物，如信任、名誉或利益；还可含难以准确描述、衡量的意味。不是说它不存在。商业语境常见 intangible assets 无形资产。",
+          "collocations": [
+            {
+              "phrase": "intangible benefits",
+              "meaningZh": "无形的好处"
+            },
+            {
+              "phrase": "an intangible quality",
+              "meaningZh": "难以触摸或准确界定的特质"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "immaterial",
+          "comparisonZh": "在非物质、无形这一义上接近；immaterial 还常表示不重要或不相关，不是本页的意思。"
+        },
+        {
+          "word": "impalpable",
+          "comparisonZh": "在不能触摸、难以感知这一义上接近；impalpable 较少见，也可用于难以捉摸的事物。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The old building had an intangible air of sadness about it.",
+          "translationZh": "那座老建筑笼罩着一种无形的悲伤气氛。",
+          "explanationZh": "an air of 表示某种气氛，intangible 说明它不是能抓握的实体。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/intangible_2"
+        },
+        {
+          "textEn": "The benefits are intangible.",
+          "translationZh": "这些好处是无形的。",
+          "explanationZh": "intangible 作表语，说明好处没有可直接触摸的形体。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/intangible_2"
+        }
+      ]
+    },
+    {
+      "number": 6324,
+      "word": "integral",
+      "ipa": "/ˈɪntɪɡrəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "完整的；齐全的",
+      "coreEn": "complete and containing all the necessary parts",
+      "coreImageZh": "男孩把绿色拼块补进木框的空位，红、蓝、黄、绿四块终于拼成没有缺口的整体。这里的 integral 形容整个拼板“完整、齐全”：应有部分都到位，不只是说其中一块很重要。",
+      "mnemonics": [
+        {
+          "method": "INTEGRAte，拼成一个整体",
+          "textZh": "integrate 是“整合、合成整体”，integral 与它同源，也共享 INTEGRA。把玩具车散落的车轮、车身和车轴全部装回去，完成 integrate 的整合，便得到 an integral whole：各部分齐全的完整整体。前者说整合的动作，后者在这里说完整的状态。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "INTEGER 的“整”",
+          "textZh": "integer 是“整数”，如 3、4，而不是 3.5。它与 integral 同源，背后都有“完整”的意思。借 integer 的“整”字，记住 integral 的“完整”：一套零件全部到齐，一个不缺，才组成 an integral whole。两词形近，读音却别混：integer 的 g 读 /dʒ/，integral 的 g 读 /ɡ/。",
+          "kind": "word_family",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "完整的；齐全的",
+          "explanationZh": "这里指完整、具备全部应有部分，常用于一个系统或整体。另一个很常见的意思是不可或缺的，如 an integral part；本页的目标是整体齐全，而非只强调某个部分重要。",
+          "collocations": [
+            {
+              "phrase": "an integral system",
+              "meaningZh": "完整的系统"
+            },
+            {
+              "phrase": "an integral whole",
+              "meaningZh": "完整的整体"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "complete",
+          "comparisonZh": "在具备全部应有部分这一义上接近；complete 更日常，也可表示某事已完成。"
+        },
+        {
+          "word": "whole",
+          "comparisonZh": "在整体完整、不缺部分这一义上接近；whole 常用于整个某物，integral 较正式。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The separate sections now form an integral whole.",
+          "translationZh": "这些分开的部分现在构成了一个完整的整体。",
+          "explanationZh": "form 表示构成，an integral whole 强调各部分合起来齐全统一。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "The restored model is integral, with no part missing.",
+          "translationZh": "修复后的模型完整无缺，没有任何部分缺失。",
+          "explanationZh": "with no part missing 补充说明完整的具体含义。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6325,
+      "word": "integrity",
+      "ipa": "/ɪnˈteɡrəti/",
+      "pos": "n.",
+      "coreMeaningZh": "正直；诚实守原则",
+      "coreEn": "honesty and firm adherence to moral principles",
+      "coreImageZh": "男孩在公园捡起钱包，说“这不是我的”，随后把它交回失主手中。他没有把捡到的财物占为己有，而是照着诚实的原则做事；integrity 指的就是这种正直、守原则的品质。",
+      "mnemonics": [
+        {
+          "method": "INTEGRal / INTEGRity",
+          "textZh": "integral 是“完整的”，integrity 与它同源。把品格想成一个完整圆盘：撒一次谎、私吞一点钱，都像从圆盘上掰走一角。有 integrity 的人不为眼前好处把原则缺掉一块；-ity 把这种道德上的“完整”变成一种品质。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "inteGRITy，守住原则的硬气",
+          "textZh": "inteGRITy 里完整藏着 grit（坚毅、勇气）。有人拿钱让你改掉不利证据，你顶住压力，仍把事实如实写下。grit 提醒守原则所需的硬气：不是任性硬撑，而是即使吃亏，也不撒谎、不徇私。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "正直；诚实守原则",
+          "explanationZh": "不可数名词，强调诚实、坚持道德原则，常见 a person of integrity。另可指事物的完整性，如结构或领土完整；本页聚焦人的正直品质。",
+          "collocations": [
+            {
+              "phrase": "a person of integrity",
+              "meaningZh": "正直的人"
+            },
+            {
+              "phrase": "professional integrity",
+              "meaningZh": "职业操守"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "honesty",
+          "comparisonZh": "都表示诚实；integrity 还强调稳定的道德原则与言行一致。"
+        },
+        {
+          "word": "probity",
+          "comparisonZh": "都可指正直廉洁；probity 较正式，常强调可信的道德品行。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I have always regarded him as a man of integrity.",
+          "translationZh": "我一直认为他是个正直的人。",
+          "explanationZh": "regard someone as 表示把某人看作，a man of integrity 指正直的人。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/integrity"
+        },
+        {
+          "textEn": "She was praised for her fairness and high integrity.",
+          "translationZh": "她因公正和高尚的操守而受到赞扬。",
+          "explanationZh": "be praised for 表示因某种品质或行为受到表扬。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/integrity"
+        }
+      ]
+    }
+  ]
+}

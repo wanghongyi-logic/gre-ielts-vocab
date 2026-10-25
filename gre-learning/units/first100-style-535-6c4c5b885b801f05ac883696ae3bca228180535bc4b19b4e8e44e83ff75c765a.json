@@ -1,0 +1,323 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6296,
+      "word": "infamous",
+      "ipa": "/ˈɪnfəməs/",
+      "pos": "adj.",
+      "coreMeaningZh": "臭名昭著的；因坏事出名的",
+      "coreEn": "well known for something bad",
+      "coreImageZh": "红衣同学走近时，男孩和姐姐立刻认出了他。两人谈到他多次骗人，而且这种坏名声已经被大家熟知，神情也变得警惕。infamous 不是普通的出名，而是因为坏事广为人知、臭名昭著。",
+      "mnemonics": [
+        {
+          "method": "IN + FAMOUS",
+          "textZh": "infamous 里完整保留着 famous（出名的）的字形，但不能把它简单译成“不出名”。可以把前面的 in- 想成给名声打了一个负号：一个商人骗了许多人，名字传遍各地，大家听说他时却都皱眉。仍然是有名，只不过有的是坏名声。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "MOUS / MOUSE",
+          "textZh": "infamous 末尾的 MOUS 添上 e，就变成 mouse（老鼠）。想象童话里的一个老鼠惯偷，偷过东边的麦子，又骗走西边的奶酪；事情传开以后，各家粮仓一听到它的名字就提高警惕。这只 mouse 出名，是因为人人都听说过它做的坏事。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "臭名昭著的；因坏事出名的",
+          "explanationZh": "指广为人知的坏名声，常用 infamous for something/doing something。不能按 in- 简单理解成不出名；也不是 famous 的程度加强版。有时可用作轻微、幽默的抱怨。",
+          "collocations": [
+            {
+              "phrase": "infamous for cheating",
+              "meaningZh": "因作弊而臭名昭著"
+            },
+            {
+              "phrase": "an infamous reputation",
+              "meaningZh": "恶名"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "notorious",
+          "comparisonZh": "在因坏事而广为人知这一义上很接近；notorious 的日常使用范围更广，infamous 常有较强谴责色彩。"
+        },
+        {
+          "word": "ill-famed",
+          "comparisonZh": "都表示名声不好；ill-famed 较少见，infamous 更常见，不只是知名度低。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He's infamous for his bigoted sense of humor.",
+          "translationZh": "他因带有偏见的幽默而名声很坏。",
+          "explanationZh": "for 后解释恶名来自何处；bigoted 指顽固偏执、有偏见。",
+          "sourceAttribution": "Cambridge，词典收录的完整句。 https://dictionary.cambridge.org/us/dictionary/english/infamous"
+        },
+        {
+          "textEn": "The list included the infamous George Drake, a double murderer.",
+          "translationZh": "名单上有臭名昭著的乔治·德雷克，他是杀害两人的凶手。",
+          "explanationZh": "同位语说明其恶名的具体原因。",
+          "sourceAttribution": "Cambridge，词典收录的完整句。 https://dictionary.cambridge.org/us/dictionary/english/infamous"
+        }
+      ]
+    },
+    {
+      "number": 6297,
+      "word": "infatuate",
+      "ipa": "/ɪnˈfætʃueɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "使迷恋；使着迷到失去理智",
+      "coreEn": "to inspire foolish or excessive love or admiration",
+      "coreImageZh": "新玩具火车摆到面前，男孩就放下手边的拼图，趴近桌子一直盯着它。姐姐提醒已经到了吃饭时间，他仍舍不得离开。infatuate 是使人迷恋到难以理性安排注意力和行动；这里是这辆新火车让他着迷，连该做的事也顾不上。",
+      "mnemonics": [
+        {
+          "method": "IN + FATU + ATE",
+          "textZh": "infatuate 中的 fatu- 来自拉丁语“愚蠢的”，整个词原有“使人变傻”的意味。想象一个人被新认识的对象迷住，对方一句随口的夸奖，他就认定是特别的承诺；朋友指出明显问题，他却一点也听不进去。迷恋压过判断力，正是这个词要抓住的感觉。",
+          "kind": "etymology",
+          "original": true
+        },
+        {
+          "method": "FATUATE / FATE",
+          "textZh": "把 infatuate 中的 FATUATE 去掉中间的 UAT，就剩下 fate（命运）。想象他只与对方见过一面，就把所有巧合都当成 fate 的安排，认定两人命中注定，连对方是什么样的人都还没弄清。那种“命运选中了我们”的幻想，让他一下迷昏了头。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "使迷恋；使着迷到失去理智",
+          "explanationZh": "及物动词，表示使某人产生不理智或过分的爱慕；不一定只用于爱情，也可用于城市生活、物品等。日常更常见 be infatuated with someone/something。它比普通 like 或 attract 强，不意味着成熟、持久的爱。",
+          "collocations": [
+            {
+              "phrase": "infatuate someone",
+              "meaningZh": "使某人迷恋"
+            },
+            {
+              "phrase": "be infatuated with someone",
+              "meaningZh": "迷恋某人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "captivate",
+          "comparisonZh": "都能表示强烈吸引；captivate 不一定有失去理智的负面意味，infatuate 更强调盲目迷恋。"
+        },
+        {
+          "word": "enchant",
+          "comparisonZh": "都可表示令人着迷；enchant 常偏愉悦和魅力，infatuate 更突出不理性的爱慕。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "City life infatuated them.",
+          "translationZh": "城市生活使他们着迷。",
+          "explanationZh": "城市生活作主语，infatuated 是及物动词过去式。",
+          "sourceAttribution": "Merriam-Webster，词典收录的完整句。 https://www.merriam-webster.com/dictionary/infatuate"
+        },
+        {
+          "textEn": "She was completely infatuated with him.",
+          "translationZh": "她完全迷上了他。",
+          "explanationZh": "be infatuated with 是最常见的状态表达。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/us/definition/english/infatuated"
+        }
+      ]
+    },
+    {
+      "number": 6298,
+      "word": "incommensurate",
+      "ipa": "/ˌɪnkəˈmenʃərət/",
+      "pos": "adj.",
+      "coreMeaningZh": "不相称的；不成比例的",
+      "coreEn": "not proportionate or corresponding in amount or degree",
+      "coreImageZh": "男孩指着自己花了整个下午整理好的三箱书，又看向桌上仅有的一枚硬币。大量劳动和这么少的报酬摆在一起，他觉得两边差得太远。incommensurate 指程度、数量或价值不相称，这里就是回报与付出不成比例。",
+      "mnemonics": [
+        {
+          "method": "IN + COM + MENSUR + ATE",
+          "textZh": "incommensurate 中的 in- 表示“不”，com- 是“共同”，mensur- 来自“衡量”。想象把付出和回报放到一架天平两边：一边堆满劳动与时间，另一边却只有一点点报酬。两边不能相称地对应起来，就抓住了 incommensurate 的“不成比例”。",
+          "kind": "etymology",
+          "original": true
+        },
+        {
+          "method": "INCOM / INCOME",
+          "textZh": "incommensurate 开头的 INCOM 添上 e，就是 income（收入）。想象你接手的工作量翻了三倍，月底一看 income，却和原来完全一样，甚至更少。把增长的劳动和没有相应增长的收入并排一比，这份收入就显得与付出很不相称。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不相称的；不成比例的",
+          "explanationZh": "常接 with，也见 to，比较大小、程度、重要性或回报等是否相称。可能过大也可能过小，不一定总是不足。与数学中无法用共同尺度比较的 incommensurable 有联系，但本页取普通比例不合适义。",
+          "collocations": [
+            {
+              "phrase": "incommensurate with the effort",
+              "meaningZh": "与付出不相称"
+            },
+            {
+              "phrase": "an incommensurate reward",
+              "meaningZh": "不相称的回报"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "disproportionate",
+          "comparisonZh": "在比例不相称这一义上接近；disproportionate 更常见，incommensurate 较正式。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "inadequate",
+          "comparisonZh": "在回报或资源太少、不足以匹配需要时接近；inadequate 只强调不足，incommensurate 也可指过多。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Our income is incommensurate to our wants",
+          "translationZh": "我们的收入与我们的需求不相称。",
+          "explanationZh": "to 引出比较对象。",
+          "sourceAttribution": "Collins，词典收录的完整句。 https://www.collinsdictionary.com/dictionary/english/incommensurate"
+        },
+        {
+          "textEn": "This level of investment is incommensurate with the percentage of the health care workforce that is made up of nurses.",
+          "translationZh": "这种投资水平与护士在医疗工作者中所占的比例不相称。",
+          "explanationZh": "with 后给出比较基准，that 从句修饰 workforce。",
+          "sourceAttribution": "Merriam-Webster，词典收录的完整句。 https://www.merriam-webster.com/dictionary/incommensurate"
+        }
+      ]
+    },
+    {
+      "number": 6299,
+      "word": "infiltrate",
+      "ipa": "/ˈɪnfɪltreɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "秘密潜入；渗透进入",
+      "coreEn": "to enter a place or organization secretly",
+      "coreImageZh": "戏剧排练中，男孩扮演要潜入营帐的角色。他趁守卫没有注意，压低身子从布景门边悄悄进去，最后已到了帐内，还用手势示意安静。infiltrate 强调不引人察觉地进入内部，像一点点渗进去，而不是正面闯入。",
+      "mnemonics": [
+        {
+          "method": "IN + FILTR / FILTER",
+          "textZh": "infiltrate 里的 filtr- 和 filter（过滤器、过滤）属于同一词族，in- 提示进入。想象水穿过过滤层的细小空隙，慢慢渗入另一侧，没有猛然冲破挡板。把这个动作换成人，就是避开察觉、悄悄进入一个组织或地方的内部。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "FILT / FILM",
+          "textZh": "infiltrate 中的 FILT，把最后的 t 换成 m，就变成 film（电影）。想象一部特工 film：主角不从大门冲进去，而是穿上普通工作人员的服装，混在人群中进入对方基地；镜头转到内部，他已经到了，守卫还一无所知。这个悄无声息的潜入过程，就是 infiltrate。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "秘密潜入；渗透进入",
+          "explanationZh": "可直接接地点或组织，也可用 infiltrate into。常涉及秘密获取信息；本页分镜采用戏剧排练，不是现实行动指导。另可指液体或气体缓慢渗入，不应把每一次普通进入都叫 infiltrate。",
+          "collocations": [
+            {
+              "phrase": "infiltrate an organization",
+              "meaningZh": "秘密渗入一个组织"
+            },
+            {
+              "phrase": "infiltrate into a group",
+              "meaningZh": "潜入一个团体"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "penetrate",
+          "comparisonZh": "都可表示进入内部；penetrate 不一定秘密，也可指穿透物体，infiltrate 强调隐蔽进入。"
+        },
+        {
+          "word": "slip into",
+          "comparisonZh": "在悄悄进入某地时接近；slip into 较日常，也可指迅速换上衣物，不能一概互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The headquarters had been infiltrated by enemy spies.",
+          "translationZh": "总部已被敌方间谍秘密潜入。",
+          "explanationZh": "过去完成时被动式表示总部在那之前已被渗入。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/infiltrate"
+        },
+        {
+          "textEn": "Rebel forces were infiltrated into the country.",
+          "translationZh": "叛军被秘密派入该国。",
+          "explanationZh": "被动式表示有人把这些部队秘密送入，不是普通公开进入。",
+          "sourceAttribution": "Oxford，词典收录的完整句。 https://www.oxfordlearnersdictionaries.com/definition/english/infiltrate"
+        }
+      ]
+    },
+    {
+      "number": 6300,
+      "word": "infinite",
+      "ipa": "/ˈɪnfɪnət/",
+      "pos": "adj.",
+      "coreMeaningZh": "无限的；无尽的",
+      "coreEn": "without limits or end",
+      "coreImageZh": "桌上已经排了几枚圆片，男孩又从碗里拿来一枚，接在末尾。老师借这个动作说明：无论数到多大的整数，还能再加一，所以没有最大的那个。infinite 指没有尽头、没有限度；这里无限的是整数，不是桌上这一小排实物。",
+      "mnemonics": [
+        {
+          "method": "IN + FINITE",
+          "textZh": "finite 是“有限的”，前面加上否定的 in-，便成了 infinite。想象一盒棋子再多，终究会拿完，所以数量是 finite；可数字不是盒里的东西，数到任何一个，都能再往后数一个。一个有最后一枚，一个没有最后一个数，区别就在这道界限。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "FINI / FINISH",
+          "textZh": "infinite 中的 FINI，也在 finish（完成、结束）里；两词都连到“尽头、界限”的词源。想象一条画在纸上的路，每当你准备画上终点，纸又展开一段，路也继续伸过去。这条路永远等不到 finish 的那一刻，就是一条想象中无尽的路。",
+          "kind": "word_family",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "无限的；无尽的",
+          "explanationZh": "可以严格表示没有尽头或界限，例如无限数列；日常也常夸张表示多得难以衡量，如 infinite patience。不是单纯很长或很大就数学上无限，分镜中的有限圆片只是解释数可以继续增加。",
+          "collocations": [
+            {
+              "phrase": "an infinite number of possibilities",
+              "meaningZh": "无数种可能性"
+            },
+            {
+              "phrase": "infinite patience",
+              "meaningZh": "无穷的耐心"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "endless",
+          "comparisonZh": "都可表示无尽；endless 更日常，也常形容让人觉得漫长的事情，infinite 更适合数学等严格语境。"
+        },
+        {
+          "word": "limitless",
+          "comparisonZh": "都表示没有限制；limitless 常强调范围或潜力不受限，infinite 也可严格指数量无穷。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She has infinite patience when she's dealing with children.",
+          "translationZh": "她和孩子们打交道时有无穷的耐心。",
+          "explanationZh": "这里是日常夸张，不是对耐心做数学测量。",
+          "sourceAttribution": "Merriam-Webster，词典收录的完整句。 https://www.merriam-webster.com/dictionary/infinite"
+        },
+        {
+          "textEn": "There seemed to be an infinite number of possibilities.",
+          "translationZh": "似乎有无数种可能性。",
+          "explanationZh": "an infinite number of 后接复数名词 possibilities。",
+          "sourceAttribution": "Merriam-Webster，词典收录的完整句。 https://www.merriam-webster.com/dictionary/infinite"
+        }
+      ]
+    }
+  ]
+}

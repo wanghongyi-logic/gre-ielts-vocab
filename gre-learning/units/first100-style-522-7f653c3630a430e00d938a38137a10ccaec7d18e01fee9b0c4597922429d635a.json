@@ -1,0 +1,336 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6231,
+      "word": "husk",
+      "ipa": "/hʌsk/",
+      "pos": "v.",
+      "coreMeaningZh": "剥去外皮；去壳",
+      "coreEn": "to remove the outer covering from seeds or fruit",
+      "coreImageZh": "男孩把包住玉米的绿色外叶一层层拉开，黄色玉米粒逐渐露了出来。husk 在这里是动词，指剥去这种外皮或壳；去掉的是外层包裹，不是把玉米粒从玉米棒上掰下来。",
+      "mnemonics": [
+        {
+          "method": "HUSKy，脱掉末尾 Y",
+          "textZh": "husky 是熟悉的“哈士奇”。把末尾 y 想成它披着的一件小外衣，脱下这层衣，HUSKY 就剩 HUSK。再把动作移到玉米上：剥掉裹在外面的绿叶，露出里面的籽粒；文字少了一层，玉米也脱了一层。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "MASK，给玉米摘面罩",
+          "textZh": "mask 是面罩；把 MASK 开头的 ma 换成 hu，就得到 HUSK，后面的 SK 原样留下。想象玉米戴着一张绿叶面罩，你把它向外掀开，里面一排排黄玉米粒才露面。这里的 husk 就是摘掉外层包裹，而不是切开里面的东西。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "剥去外皮；去壳",
+          "explanationZh": "及物动词，宾语通常是玉米、椰子等带外皮的果实或作物，表示去掉其自然包覆层。husk 作名词也指这种外皮；动词不是给果实套上壳，而是去掉它。",
+          "collocations": [
+            {
+              "phrase": "husk corn",
+              "meaningZh": "剥玉米皮"
+            },
+            {
+              "phrase": "husk coconuts",
+              "meaningZh": "给椰子去外皮"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "shuck",
+          "comparisonZh": "去掉玉米外皮时，两词很接近。shuck 还常指剥牡蛎壳，husk 主要用于作物的外皮。"
+        },
+        {
+          "word": "shell",
+          "comparisonZh": "都可表示去壳。shell 常指剥坚果、豌豆或蛋的壳；husk 更突出谷物或果实外面的皮、苞叶等。"
+        },
+        {
+          "word": "peel",
+          "comparisonZh": "都涉及去掉外层。peel 更常用于水果、蔬菜的皮，也可泛指揭下一层；husk 的对象和外层类型更具体。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Are you going to husk all that corn by yourself?",
+          "translationZh": "你打算一个人把那些玉米皮全剥完吗？",
+          "explanationZh": "husk 后直接接 corn，表示剥玉米皮。",
+          "sourceAttribution": "Dictionary.com，Vocabulary.com 释义说明中的完整问句。 https://www.dictionary.com/browse/husk"
+        },
+        {
+          "textEn": "Her strong voice echoed across the fields as she husked corn.",
+          "translationZh": "她一边剥玉米皮，一边发出洪亮的声音，回荡在田野间。",
+          "explanationZh": "husked 是 husk 的过去式，动作是去掉外皮。",
+          "sourceAttribution": "Dictionary.com，Examples 栏所收录的完整句。 https://www.dictionary.com/browse/husked"
+        }
+      ]
+    },
+    {
+      "number": 6232,
+      "word": "husky",
+      "ipa": "/ˈhʌski/",
+      "pos": "adj.",
+      "coreMeaningZh": "（声音）沙哑的；粗哑的",
+      "coreEn": "low and rough in sound",
+      "coreImageZh": "男孩一手碰着喉咙，问自己今天说话为什么这么哑，对方听后劝他让嗓子歇一歇。husky 描写的是嗓音粗哑、不清亮的质感，不等于说话声音大；这里也没有说他已经完全发不出声。",
+      "mnemonics": [
+        {
+          "method": "HUSKY，哈士奇叫哑了",
+          "textZh": "husky 既可作犬名“哈士奇”，也能形容声音粗哑。想象那只 husky 在门口叫了半天，最后仍能出声，却只剩低哑的“汪”。熟悉的狗名和同一个词的嗓音义叠在一起：a husky voice，粗哑的声音。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "RUSTY，嗓子像生了锈",
+          "textZh": "rusty（生锈的）与 husky 都有中间的 US 和末尾 Y，只需把 r、t 分别换成 h、k。想象一扇 rusty 的旧门，转动时发出不再清亮的粗涩声音；再把这个声音移到嗓子上，说话也像蒙着一层锈。借 rusty 的粗涩感，抓住 husky 的沙哑音色。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "（声音）沙哑的；粗哑的",
+          "explanationZh": "描述低沉而略粗糙的嗓音，可能由感冒、喊叫、激动造成，也可能是本来的音色，有时甚至显得迷人。不是所有 husky 声音都刺耳。",
+          "collocations": [
+            {
+              "phrase": "a husky voice",
+              "meaningZh": "低沉沙哑的嗓音"
+            },
+            {
+              "phrase": "husky with emotion",
+              "meaningZh": "因激动而嗓音沙哑"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hoarse",
+          "comparisonZh": "都可形容声音沙哑。hoarse 更常让人想到感冒、喊叫后的嗓音受损；husky 还可形容自然、富有吸引力的低哑音色。"
+        },
+        {
+          "word": "raspy",
+          "comparisonZh": "都突出声音粗糙。raspy 更强调摩擦般的沙沙声；husky 通常兼有低沉的感觉。"
+        },
+        {
+          "word": "gruff",
+          "comparisonZh": "都可描述低而粗的声音。gruff 还容易带生硬、不友善的态度；husky 本身不说明态度。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The singer had a husky voice.",
+          "translationZh": "这位歌手的嗓音低沉沙哑。",
+          "explanationZh": "husky 描述嗓音质感。",
+          "sourceAttribution": "Cambridge Academic Content Dictionary，完整句。 https://dictionary.cambridge.org/us/dictionary/english/husky?topic=describing-qualities-of-the-human-voice"
+        },
+        {
+          "textEn": "You sound husky - do you have a cold?",
+          "translationZh": "你的声音有些沙哑，是感冒了吗？",
+          "explanationZh": "感冒可能造成沙哑的声音。",
+          "sourceAttribution": "Cambridge Advanced Learner’s Dictionary，完整句。 https://dictionary.cambridge.org/us/dictionary/english/husky?topic=describing-qualities-of-the-human-voice"
+        }
+      ]
+    },
+    {
+      "number": 6233,
+      "word": "hybrid",
+      "ipa": "/ˈhaɪbrɪd/",
+      "pos": "n.",
+      "coreMeaningZh": "杂交品种；混合物",
+      "coreEn": "something produced by combining different kinds or origins",
+      "coreImageZh": "温室桌上有红、白、粉红三盆玫瑰。园丁指着中间的粉红玫瑰，说明它是另外两个品种杂交培育出的后代。这个 hybrid 是新培育出的植株，不是把两种花插进同一个花盆；hybrid 也可泛指结合不同成分的混合体。",
+      "mnemonics": [
+        {
+          "method": "车尾的 HYBRID",
+          "textZh": "想起混合动力汽车车尾的 HYBRID 标识：同一辆车里既有发动机，也有电动机，两套来源不同的动力共同工作。这个熟悉的实物把 hybrid 接到“混合体”；换到育种，来自两个不同品种的后代就是 a hybrid，杂交品种。",
+          "kind": "semantic_image",
+          "original": true
+        },
+        {
+          "method": "hyBRID / BRIDge",
+          "textZh": "bridge（桥）的前四个字母 BRID，就藏在 hyBRID 的后半。想象一座桥把木结构和钢结构合在同一套设计里，既不是纯木桥，也不是纯钢桥。借 bridge 的连接作用，把不同来源接成一个新整体，联到 hybrid 的“混合体”。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "杂交品种；混合物",
+          "explanationZh": "可数名词。生物语境指不同品种等杂交形成的后代；一般语境指把不同来源、风格或系统结合起来的事物。常用 a hybrid of A and B。也可作形容词。",
+          "collocations": [
+            {
+              "phrase": "a hybrid of two varieties",
+              "meaningZh": "两个品种的杂交后代"
+            },
+            {
+              "phrase": "a hybrid of jazz and rock",
+              "meaningZh": "爵士与摇滚的混合风格"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "crossbreed",
+          "comparisonZh": "在动植物杂交后代义上相近。crossbreed 主要是生物育种用语；hybrid 还能指风格、产品等混合体。"
+        },
+        {
+          "word": "mixture",
+          "comparisonZh": "都可表示混合物。mixture 范围更广，成分可以只是放在一起；hybrid 往往强调结合不同类型而形成一种新事物。"
+        },
+        {
+          "word": "composite",
+          "comparisonZh": "都可指多种成分组合成的整体。composite 常突出组合结构或材料；hybrid 更强调来源或类型不同。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The band plays a hybrid of jazz and rock.",
+          "translationZh": "这支乐队演奏爵士与摇滚的混合风格音乐。",
+          "explanationZh": "名词 hybrid 指两种风格融合的产物。",
+          "sourceAttribution": "Merriam-Webster，完整句。 https://www.merriam-webster.com/dictionary/hybrid"
+        },
+        {
+          "textEn": "All these brightly coloured hybrids are so lovely in the garden.",
+          "translationZh": "这些色彩鲜艳的杂交品种种在花园里真漂亮。",
+          "explanationZh": "hybrids 是名词复数，指杂交培育的植物。",
+          "sourceAttribution": "Collins COBUILD Advanced Learner’s Dictionary，完整句。 https://www.collinsdictionary.com/dictionary/english/hybrid"
+        }
+      ]
+    },
+    {
+      "number": 6234,
+      "word": "hymn",
+      "ipa": "/hɪm/",
+      "pos": "n.",
+      "coreMeaningZh": "赞歌；赞美诗",
+      "coreEn": "a song of praise, especially a religious song",
+      "coreImageZh": "小礼拜堂里，男孩问这是不是赞美上帝的歌，领唱者随即唱出“愿荣耀归于上帝，感谢你的慈爱”。hymn 是带有赞颂意味的歌，尤其指宗教赞美诗；这里唱出的正是对上帝的感谢与赞美。",
+      "mnemonics": [
+        {
+          "method": "HIM，唱着赞美他",
+          "textZh": "hymn 与 him（他）同音，都读 /hɪm/；hymn 最后的 n 不发音。想到唱诗班唱“Praise him!”（赞美他！），把感谢和敬意唱给所信仰的神。耳朵听见 him，脑中出现这首赞美诗，拼写则留下安静不出声的 n。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "HUM，那首赞歌还在心里",
+          "textZh": "hum 是轻声哼唱，读 /hʌm/；把中间元音换成 /ɪ/，就得到 hymn 的 /hɪm/。想象礼拜已经结束，你走在回家路上，还在 hum 刚才那首感谢与赞美的歌。hum 提醒哼唱的动作，hymn 则是仍留在心里的那首赞歌。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "赞歌；赞美诗",
+          "explanationZh": "通常指宗教场合唱的赞美诗，也可指赞美某人或某事的歌曲。a hymn to something 还能比喻高度赞颂某事物的作品，不一定真的配乐。",
+          "collocations": [
+            {
+              "phrase": "sing a hymn",
+              "meaningZh": "唱赞美诗"
+            },
+            {
+              "phrase": "a hymn to freedom",
+              "meaningZh": "对自由的赞歌"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "anthem",
+          "comparisonZh": "都可指庄重的歌曲。anthem 常代表国家、团体或共同理想；hymn 通常突出宗教赞美，二者并非任何场合都可替换。"
+        },
+        {
+          "word": "psalm",
+          "comparisonZh": "宗教赞歌语境有交集。psalm 尤其指《圣经·诗篇》中的诗歌；hymn 范围更广，不限于《诗篇》。"
+        },
+        {
+          "word": "paean",
+          "comparisonZh": "都可指热烈赞颂。paean 可用于赞辞、文章或歌曲，不限宗教；hymn 更容易使人想到歌唱和礼拜。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I like singing hymns.",
+          "translationZh": "我喜欢唱赞美诗。",
+          "explanationZh": "hymns 是赞美诗的复数。",
+          "sourceAttribution": "Collins COBUILD Advanced Learner’s Dictionary，完整句。 https://www.collinsdictionary.com/dictionary/english/hymn"
+        },
+        {
+          "textEn": "The novel is a hymn to childhood and innocence.",
+          "translationZh": "这部小说是一曲献给童年与纯真的赞歌。",
+          "explanationZh": "a hymn to 把充满赞颂的作品比作赞歌。",
+          "sourceAttribution": "Merriam-Webster，完整句。 https://www.merriam-webster.com/dictionary/hymn"
+        }
+      ]
+    },
+    {
+      "number": 6235,
+      "word": "hypnotic",
+      "ipa": "/hɪpˈnɑːtɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "催眠的",
+      "coreEn": "tending to induce sleep",
+      "coreImageZh": "男孩坐在列车上，说车轮声一下一下让他越来越困；过了一会儿，他闭上眼睛，头也慢慢歪向一边。hypnotic 在这里形容有催眠作用的规律节奏，使人逐渐困倦，并不是有人在施法控制他。",
+      "mnemonics": [
+        {
+          "method": "HYPNO + TIC",
+          "textZh": "hypno- 连到希腊语里“睡眠”的词源，接形容词词尾 -tic，组成 hypnotic。把 HYPNO 想成渐渐合拢的眼皮：声音不急不慢，一遍又一遍，听着就越来越困。它描写的是使人进入这种困倦状态的作用。",
+          "kind": "etymology",
+          "original": true
+        },
+        {
+          "method": "TIC，滴答滴答",
+          "textZh": "hypnotic 末尾的 TIC 读 /tɪk/，和 tick（滴答声）同音。想象钟摆左右摆动，tick、tick，一下又一下，眼睛跟着它转，眼皮也渐渐沉下来。抓住词尾这阵不变的滴答声，便能把 hypnotic 和催眠般的规律节奏连起来。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "催眠的",
+          "explanationZh": "指使人产生睡意，可形容声音、节奏或效果。也可表示催眠术的；另有令人着迷、牢牢吸引注意力义，但不应把所有 hypnotic 都译成困倦。",
+          "collocations": [
+            {
+              "phrase": "a hypnotic effect",
+              "meaningZh": "催眠作用"
+            },
+            {
+              "phrase": "a hypnotic rhythm",
+              "meaningZh": "令人昏昏欲睡的节奏"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sleep-inducing",
+          "comparisonZh": "在引起睡意这一义上很接近。sleep-inducing 直接说明使人想睡，不包含 hypnotic 的催眠术或令人着迷义。"
+        },
+        {
+          "word": "soporific",
+          "comparisonZh": "都能表示催眠的。soporific 更正式，有时带单调无聊、令人困倦的贬义；hypnotic 也可描述悦耳的重复节奏。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The psychologist put her into a hypnotic state.",
+          "translationZh": "心理学家使她进入了催眠状态。",
+          "explanationZh": "hypnotic 修饰 state，描述催眠状态。",
+          "sourceAttribution": "Merriam-Webster，完整句。 https://www.merriam-webster.com/dictionary/hypnotic"
+        },
+        {
+          "textEn": "Riding in a car often has a hypnotic effect on babies.",
+          "translationZh": "坐车常会让婴儿产生睡意。",
+          "explanationZh": "本句的 hypnotic effect 是令人入睡的作用。",
+          "sourceAttribution": "Merriam-Webster，完整句。 https://www.merriam-webster.com/dictionary/hypnotic"
+        }
+      ]
+    }
+  ]
+}

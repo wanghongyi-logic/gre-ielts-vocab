@@ -1,0 +1,320 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6331,
+      "word": "interim",
+      "ipa": "/ˈɪntərɪm/",
+      "pos": "n.",
+      "coreMeaningZh": "中间的间隔时期；过渡期",
+      "coreEn": "the time between two events or periods",
+      "coreImageZh": "上一节课已经结束，下一节还没开始。男孩在课桌前拧开水瓶，姐姐提醒他可以趁这段间隔喝水休息；interim 指的正是前一件事已结束、后一件事尚未开始的中间时期。",
+      "mnemonics": [
+        {
+          "method": "INTER，前后两件事之间",
+          "textZh": "interim 的 inter- 带着“之间”的线索。把时间线分成“旧安排结束｜等待｜新安排开始”，中间那段等待就是 the interim。若新家还没收拾好，先在亲戚家住几天，就可以说 in the interim：在这段过渡期间。",
+          "kind": "etymology",
+          "original": true
+        },
+        {
+          "method": "INTERim / INTERmediate",
+          "textZh": "intermediate（中间的、中级的）常见于 intermediate English：处在初级和高级之间。interim 和它都以 INTER 开头；把熟悉的“中间”从水平高低移到时间先后，就想到前一阶段和后一阶段之间的空档。interim 在这里是那段时间，不是说水平中等。",
+          "kind": "word_family",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "中间的间隔时期；过渡期",
+          "explanationZh": "名词常用 in the interim，表示在两件事之间的这段时间。也可作形容词表示临时的、过渡期间的，如 interim arrangements；这里主要记时间间隔。",
+          "collocations": [
+            {
+              "phrase": "in the interim",
+              "meaningZh": "在此期间"
+            },
+            {
+              "phrase": "the interim between two events",
+              "meaningZh": "两个事件之间的间隔"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "interval",
+          "comparisonZh": "都可表示两件事之间的一段时间；interval 范围更广，也可指空间间距。"
+        },
+        {
+          "word": "interlude",
+          "comparisonZh": "都可指中间的一段时间；interlude 更常带短暂插入、暂时休息的意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Despite everything that had happened in the interim, they had remained good friends.",
+          "translationZh": "尽管这期间发生了种种事情，他们仍然是好朋友。",
+          "explanationZh": "Despite 引出让步，in the interim 指两次相关事件之间的时期。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/interim_2"
+        },
+        {
+          "textEn": "The new secretary starts in June, but in the interim we're having to type our own letters.",
+          "translationZh": "新秘书六月才开始工作，在此之前我们得自己打信。",
+          "explanationZh": "but 连接转折，in the interim 指现在到新秘书到岗之间。",
+          "sourceAttribution": "Cambridge https://dictionary.cambridge.org/us/dictionary/english/in-the-interim"
+        }
+      ]
+    },
+    {
+      "number": 6332,
+      "word": "interlock",
+      "ipa": "/ˌɪntərˈlɑːk/",
+      "pos": "vi./vt.",
+      "coreMeaningZh": "互相扣住；紧密连接",
+      "coreEn": "to fit or fasten together securely",
+      "coreImageZh": "红拼块的凹口和蓝拼块的凸头原本分开，男孩把它们对准推合，凸头嵌进凹口，两块连成一体。interlock 强调彼此咬合、互相扣住，不是简单把两件东西挨着放。",
+      "mnemonics": [
+        {
+          "method": "INTER + LOCK",
+          "textZh": "inter- 表示“相互”，lock 是“锁住”。想象两只手的手指交错扣紧：不是左手、右手各自握拳，而是你扣住我、我扣住你。这个“互相锁在一起”就是 interlock，拼图、齿轮和链环都能这样连接。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "interlOCk：O 圆环，C 开口钩",
+          "textZh": "把 interlOCk 中挨在一起的 O 和 C 看成两件小金属扣：O 是圆环，C 是开口钩。让 C 穿进 O，再扣住，原先各自独立的两件就互相牵在一起。看到 OC 这对字母，便能在脑中做出“钩进环里”的动作。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "互相扣住；紧密连接",
+          "explanationZh": "既可表示各部分自行相互扣合，也可表示把它们扣在一起。常见 interlock with，强调形状相配或互相穿扣后牢固连接，不只是挨在旁边。",
+          "collocations": [
+            {
+              "phrase": "interlock with each other",
+              "meaningZh": "彼此扣合"
+            },
+            {
+              "phrase": "interlocking pieces",
+              "meaningZh": "互相咬合的部件"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "join",
+          "comparisonZh": "在把各部分连起来这一义上接近；join 较宽泛，未必通过相互咬合。"
+        },
+        {
+          "word": "mesh",
+          "comparisonZh": "用于齿轮等相互咬合时接近；mesh 还可比喻计划或活动配合协调。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Once the parts are interlocked, the structure stands firm.",
+          "translationZh": "各部件一旦互相扣合，结构便稳固了。",
+          "explanationZh": "Once 引出条件，are interlocked 表示已扣合的状态。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/interlock"
+        },
+        {
+          "textEn": "The parts of a machine have to interlock for it to work well: gears must interlock with each other, for example.",
+          "translationZh": "机器各部件必须互相连接才能正常运转，例如齿轮必须彼此咬合。",
+          "explanationZh": "for it to work well 说明目的，冒号后用齿轮说明互相咬合。",
+          "sourceAttribution": "Dictionary.com，词条解释中的完整句 https://www.dictionary.com/browse/interlock"
+        }
+      ]
+    },
+    {
+      "number": 6333,
+      "word": "interminable",
+      "ipa": "/ɪnˈtɜːrmɪnəbl/",
+      "pos": "adj.",
+      "coreMeaningZh": "无尽头的；冗长得令人厌烦的",
+      "coreEn": "lasting or seeming to last without end",
+      "coreImageZh": "台上的人还在讲，男孩已经掩嘴打哈欠，后来又托着脸等结束；姐姐也说讲话“没完没了”。interminable 描写这种冗长得令人厌烦、仿佛看不到终点的感受，不必真的永远不停。",
+      "mnemonics": [
+        {
+          "method": "IN + TERMIN + ABLE",
+          "textZh": "termin- 表示“终结、界限”，可借 terminal（终点站）记住；in- 是“不”，-able 是“能够”。想象坐上一辆总也到不了终点站的车：每次以为快到了，前面却还有一段。interminable 把“无法结束”连起来，常用来抱怨事情长得像没有尽头。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "interMINable，最后一个 MIN 又来了",
+          "textZh": "interMINable 中的 MIN 像计时器上表示“分钟”的 min。发言人说“最后一分钟”，你盯着计时器等它归零；刚到零，他又补一句“再讲最后一分钟”。听众等着散场，这个本该结束讲话的 MIN 却一次次续上。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "无尽头的；冗长得令人厌烦的",
+          "explanationZh": "常带厌烦或不耐，表示持续太久、似乎没有终点，不一定真的永远持续。常修饰 wait、speech、meeting 等。",
+          "collocations": [
+            {
+              "phrase": "an interminable wait",
+              "meaningZh": "漫长得没完没了的等待"
+            },
+            {
+              "phrase": "interminable meetings",
+              "meaningZh": "冗长无休止的会议"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "endless",
+          "comparisonZh": "都可表示无尽或仿佛无尽；endless 也能中性甚至积极地形容机会，interminable 通常带厌烦。"
+        },
+        {
+          "word": "never-ending",
+          "comparisonZh": "都可表示没有结束的迹象；interminable 更常强调时间拖得令人难受。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The drive seemed interminable.",
+          "translationZh": "这趟车程仿佛没完没了。",
+          "explanationZh": "seemed 表示主观感受，不是在断言车程真的永远不会结束。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/interminable"
+        },
+        {
+          "textEn": "It was a day of interminable meetings.",
+          "translationZh": "那是被冗长会议占满的一天。",
+          "explanationZh": "a day of 加活动，说明这一天的主要内容；interminable 体现厌烦。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/interminable"
+        }
+      ]
+    },
+    {
+      "number": 6334,
+      "word": "interregnum",
+      "ipa": "/ˌɪntəˈreɡnəm/",
+      "pos": "n.",
+      "coreMeaningZh": "新旧统治或领导更替之间的空缺期",
+      "coreEn": "a gap between successive rulers or leaders",
+      "coreImageZh": "舞台中央的王座一直空着，王冠放在旁边的小凳上。姐姐解释旧王已经退位、新王还未登基；interregnum 指的就是这段新旧统治交接中的空缺期，不是国王暂时离座休息。",
+      "mnemonics": [
+        {
+          "method": "INTER + REGNUM，两个 REIGN 之间",
+          "textZh": "inter- 是“之间”，regnum 的词源意思是“统治”，与 reign（统治时期）同源；把 reign 中的 i 去掉，就得到词里的 REGN。旧王的 reign 已结束，新王的 reign 还没开始，两段统治之间留下的空白，就是 interregnum。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "inteRRegnum，两任 RULER",
+          "textZh": "抓住 inteRRegnum 中并排的两个 R，各借 ruler（统治者）的首字母。把它们想成两张接班日程卡：第一位 ruler 的任期到昨天为止，第二位下周才上任。两张卡之间空出的几天，没有新统治者接上；这段“前任已走、后任未到”的空档就落在两个 R 之间。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "新旧统治或领导更替之间的空缺期",
+          "explanationZh": "可数名词，常指旧统治结束、新统治开始之间没有正式统治者的时期，也可用于组织领导空缺。还可泛指连续过程中的中断；这里强调新旧领导更替之间的空档。",
+          "collocations": [
+            {
+              "phrase": "a brief interregnum",
+              "meaningZh": "短暂的领导空缺期"
+            },
+            {
+              "phrase": "an interregnum between two reigns",
+              "meaningZh": "两任统治之间的空缺期"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "interim",
+          "comparisonZh": "都可指两阶段之间的时期；interregnum 常特别涉及统治或领导空缺，interim 更一般。"
+        },
+        {
+          "word": "hiatus",
+          "comparisonZh": "都可表示连续过程的中断或空档；hiatus 不特指领导更替。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "At the moment we are condemned to an interregnum for two whole months.",
+          "translationZh": "眼下我们不得不经历整整两个月的领导空缺期。",
+          "explanationZh": "be condemned to 在这里表示不得不承受，for 引出持续时间。",
+          "sourceAttribution": "Collins https://www.collinsdictionary.com/dictionary/english/interregnum"
+        },
+        {
+          "textEn": "Every time a pope dies, there's an interregnum period before a new one is elected by the cardinals.",
+          "translationZh": "每当一位教皇去世，在枢机主教选出新教皇之前都会有一段空缺期。",
+          "explanationZh": "Every time 引出重复情形，before 清楚界定空缺期的结束点。",
+          "sourceAttribution": "Merriam-Webster，词条说明中的完整句 https://www.merriam-webster.com/dictionary/interregnum"
+        }
+      ]
+    },
+    {
+      "number": 6335,
+      "word": "interrogate",
+      "ipa": "/ɪnˈterəɡeɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "质问；审问",
+      "coreEn": "to question someone formally and systematically",
+      "coreImageZh": "老师俯身面对男孩，先问他何时最后见到玩具车，再追问当时谁在旁边、谁拿过车。她不是随口聊天，而是围绕事实连续、细致地盘问；interrogate 强调这种有目的的质问或审问，不一定伴随威胁。",
+      "mnemonics": [
+        {
+          "method": "INTER · ROG · ATE",
+          "textZh": "inter- 带着“在……之间”的线索，rog- 是“问”，-ate 构成动词。想象一张桌子两边，问题不断递过去：“几点见到的？当时谁在？后来去了哪里？”回答一个，还要核对下一个细节。interrogate 不只是问候一句，而是为了弄清事实正式、系统地盘问。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "interroGATE",
+          "textZh": "interroGATE 的结尾恰好是 gate（大门）。想象城门守卫拦下来客，不是只问“你好吗”，而是逐项查问姓名、来处、来意，还要求解释前后不一致的回答。这道 GATE 只有盘问清楚后才放行，一看到门口就想起那串连续的问题。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "质问；审问",
+          "explanationZh": "及物动词，强调正式、系统或持续地问很多问题，常带审查意味；接人作宾语，about 引出追问内容。也可在技术语境指查询机器数据，本页取问人事实义。",
+          "collocations": [
+            {
+              "phrase": "interrogate a suspect",
+              "meaningZh": "审问嫌疑人"
+            },
+            {
+              "phrase": "interrogate someone about something",
+              "meaningZh": "就某事盘问某人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "question",
+          "comparisonZh": "都可表示向人提问；interrogate 更强调正式、持续或系统地追问。"
+        },
+        {
+          "word": "grill",
+          "comparisonZh": "在严厉盘问这一义上接近；grill 较口语，常突出连续尖锐的问题。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was interrogated by the police for over 12 hours.",
+          "translationZh": "他被警方审问了十二个多小时。",
+          "explanationZh": "was interrogated 是被动语态，for 引出持续时间。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/interrogate"
+        },
+        {
+          "textEn": "Soon after we arrived, I was interrogated about my parents and our home life.",
+          "translationZh": "我们刚到不久，我就被盘问父母和家庭生活的情况。",
+          "explanationZh": "about 后接盘问涉及的内容，Soon after 表示刚刚……之后。",
+          "sourceAttribution": "Oxford https://www.oxfordlearnersdictionaries.com/definition/english/interrogate"
+        }
+      ]
+    }
+  ]
+}

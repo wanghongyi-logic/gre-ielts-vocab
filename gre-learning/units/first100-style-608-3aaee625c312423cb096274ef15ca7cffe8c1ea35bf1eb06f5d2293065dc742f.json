@@ -1,0 +1,320 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6661,
+      "word": "poseur",
+      "ipa": "/pəʊˈzɜː(r)/",
+      "pos": "n.",
+      "coreMeaningZh": "故作姿态、不真诚的人",
+      "coreEn": "someone who puts on an insincere manner to impress others",
+      "coreImageZh": "青年穿着画家围裙，靠在画架旁摆出很懂艺术的姿态；男孩递来画笔，他却往后躲，说只想谈艺术，最后又对着镜子摆架势。poseur 指刻意表演某种身份或品位、装腔作势的人，画面把他展示派头与回避实际创作放在一起。",
+      "mnemonics": [
+        {
+          "method": "POSE / POSEUR",
+          "textZh": "pose 是摆姿势、作姿态，poseur 从法语借来，原本就有‘摆姿态的人’这条线索。想象一个人抱着厚厚的哲学书拍照，专挑几个深奥词挂在嘴边，却只为让旁人以为自己是思想家。POSE 留在词首，提醒这个人忙着经营的是一副不真实的形象。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "POKER / POSEUR",
+          "textZh": "一个刚学 poker（扑克）的人，没玩过几局，却到处自称职业高手，背熟几句术语就装老练；别人邀他实际玩一局，他又忙着找借口。POKER 把 K 换成 S，再在 R 前加 U，就成为 POSEUR。要记住的是他冒充高手的身份，而不只是牌局里的一次虚张声势。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "故作姿态、不真诚的人",
+          "explanationZh": "可数名词，带贬义，批评的是为了给别人留下某种印象而装出并非真心的姿态。不等于单纯初学者，也不等于职业模特；复数 poseurs。",
+          "collocations": [
+            {
+              "phrase": "an intellectual poseur",
+              "meaningZh": "假充知识分子的人"
+            },
+            {
+              "phrase": "dismiss someone as a poseur",
+              "meaningZh": "认为某人只是装样子而不屑一顾"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "poser",
+          "comparisonZh": "在装模作样者这个义项上很接近；poser 另可指难题。"
+        },
+        {
+          "word": "pretender",
+          "comparisonZh": "泛指冒充者或假装者；poseur 更侧重装出品味、气质或态度。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I am sometimes accused of being an inveterate poseur.",
+          "translationZh": "我有时被指责是个习惯装模作样的人。",
+          "explanationZh": "be accused of being... 是被指责为……；inveterate 表示积习已深的。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/poseur"
+        },
+        {
+          "textEn": "He called himself an artist, but his friends thought he was a poseur.",
+          "translationZh": "他自称艺术家，但朋友们觉得他只是在装样子。",
+          "explanationZh": "called himself... 是自称；but 引出朋友对其真实性的怀疑。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6662,
+      "word": "posit",
+      "ipa": "/ˈpɒzɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "假定，断定",
+      "coreEn": "to put forward or assume something as a basis for reasoning",
+      "coreImageZh": "遥控小车不动，男孩先提出‘电池没电了’这个解释，再翻开车底更换电池，重新操作遥控器来检验。posit 是先把某个判断或解释提出来，当作继续推理、检查的起点；提出这一点时，结论还没有由后面的检验给出。",
+      "mnemonics": [
+        {
+          "method": "POSITION / POSIT",
+          "textZh": "position 是位置，去掉结尾 ION，就留下 POSIT；两词的来源都连着‘放置’。想象先把一张写着‘每段路程一样长’的卡放在推理的起始位置，再据此计算全程。posit 就像把一个主张稳稳摆上桌，让后面的论证从这里开始。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "POST IT",
+          "textZh": "post it 可以提醒‘把它贴出来’：研究小组把一个待验证的解释写在便笺上，先贴到白板中央，再围绕它讨论怎样检验。POST IT 连起来，去掉 POST 末尾那个 T，便得到 POSIT。贴上去的是供推理使用的假设，之后还要让证据来检验它。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "假定，断定",
+          "explanationZh": "较正式，常见 posit something 或 posit that 从句。表示把某事提出或认作推理基础，不表示已经证明它；若译为“断定”，也须结合论证语境。",
+          "collocations": [
+            {
+              "phrase": "posit a theory",
+              "meaningZh": "提出一种理论"
+            },
+            {
+              "phrase": "posit that something is true",
+              "meaningZh": "假定某事为真"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "postulate",
+          "comparisonZh": "都可表示提出或接受一个前提以便推论；postulate 常见于理论、学术论述。"
+        },
+        {
+          "word": "assume",
+          "comparisonZh": "范围更广，可指日常未经证明便认为；posit 更突出把想法提出作为论证起点。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Most religions posit the existence of life after death.",
+          "translationZh": "大多数宗教都假定人死后仍有生命存在。",
+          "explanationZh": "posit 接名词短语 the existence of...；after death 修饰生命存在的时间。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/posit"
+        },
+        {
+          "textEn": "She posits that ideas of gender are socially constructed.",
+          "translationZh": "她提出，性别观念是由社会建构的。",
+          "explanationZh": "posits 后接 that 从句；are socially constructed 是被动结构。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/posit"
+        }
+      ]
+    },
+    {
+      "number": 6663,
+      "word": "postulate",
+      "ipa": "n. /ˈpɒstʃələt/；v. /ˈpɒstʃəleɪt/",
+      "pos": "n./v.",
+      "coreMeaningZh": "假定，假设；假定为真",
+      "coreEn": "an assumed starting premise; to accept something as true for reasoning",
+      "coreImageZh": "男孩先说定每栋模型房都住着一家人，把小人放到房子旁，再依照这个前提给每家放一只菜篮。作为推算起点的这项假设，可以叫 a postulate；先把它设定为真、据此往下推，就是动词 postulate。",
+      "mnemonics": [
+        {
+          "method": "POST + LATE",
+          "textZh": "post 是邮递，late 是晚了。信还没收到，先按‘邮递晚了’这个假设推下去：若只是运输延误，就再查预计送达时间。POST 加 LATE，中间补一个 U，拼成 POSTULATE。信件究竟为何迟到仍待核实，眼下先用这个前提安排下一步。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "POPULATE / POSTULATE",
+          "textZh": "populate 是让某地有人居住，和熟悉的 population（人口）同族。设计一个新村庄时，还没逐户确认入住人数，就先假定每户四人，据此估算供水量。POPULATE 把第三个字母 P 换成 ST，就成 POSTULATE；人口安排提醒那项先设定、再据以计算的前提。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "假定，假设；假定为真",
+          "explanationZh": "名词可数，指作为推理起点接受的假设或公设；动词常接名词或 that 从句，指假定为真。名词结尾通常读 /lət/，动词结尾读 /leɪt/。假定不等于已经证实。",
+          "collocations": [
+            {
+              "phrase": "a basic postulate",
+              "meaningZh": "一个基本假设"
+            },
+            {
+              "phrase": "postulate a relationship",
+              "meaningZh": "假定存在某种关系"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "premise",
+          "comparisonZh": "对应名词义，都是推理所依据的前提；postulate 强调被先行接受为真的假设。"
+        },
+        {
+          "word": "posit",
+          "comparisonZh": "对应动词义，都可表示提出并暂时接受某事作为推论基础。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Work done in the laboratory showed that his postulates were probably correct.",
+          "translationZh": "实验室完成的研究表明，他的假设很可能是正确的。",
+          "explanationZh": "done in the laboratory 修饰 Work；probably 保留不完全确定的语气。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/postulate_2"
+        },
+        {
+          "textEn": "They postulated a 500-year lifespan for a plastic container.",
+          "translationZh": "他们假定塑料容器的寿命为五百年。",
+          "explanationZh": "postulated 后接 a...lifespan；for 引出所讨论的对象。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/postulate_1"
+        }
+      ]
+    },
+    {
+      "number": 6664,
+      "word": "potable",
+      "ipa": "/ˈpəʊtəbəl/",
+      "pos": "n./adj.",
+      "coreMeaningZh": "饮品，尤指有酒精饮料；适于饮用的",
+      "coreEn": "a beverage, especially an alcoholic one; safe and suitable to drink",
+      "coreImageZh": "男孩拿杯子想舀溪水，成人抬手提醒：看着清也不一定能喝；随后递给他自带的饮用水，男孩把瓶里的水倒进杯中，再坐下饮用。potable 说的是水适合饮用，画面把外观清澈与确实可供饮用区分开来。",
+      "mnemonics": [
+        {
+          "method": "POT + ABLE",
+          "textZh": "借字形把 POT（壶）和 ABLE（能）合起来，想一只饮水壶里装着备好的饮用水，旁边的杯子等着接水喝。把 ABLE 落在‘能够饮用’上，POTABLE 就从这只盛水壶连到水的可饮用性质。把‘可饮用的东西’当作名词，potables 也可指饮品，尤其酒类。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "PORTABLE / POTABLE",
+          "textZh": "portable 是便携的，拿掉 R，就得到 POTABLE。远足前检查随身水瓶，可以连问两件事：瓶子方便携带吗，里面的水适合饮用吗？前一个看 portable，后一个看 potable；只少一个 R，却把‘带得走’和‘喝得下’分成了两个清楚的检查点。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "饮品，尤指有酒精饮料；适于饮用的",
+          "explanationZh": "形容词常用于 potable water，强调水达到饮用要求，不只是看着清澈。名词较正式，常用复数 potables 指饮品，尤其是酒类；形容词本身不含酒精的意思。",
+          "collocations": [
+            {
+              "phrase": "potable water",
+              "meaningZh": "适于饮用的水"
+            },
+            {
+              "phrase": "a selection of potables",
+              "meaningZh": "多种饮品，尤指酒类"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "drinkable",
+          "comparisonZh": "对应形容词义，都可指能喝；drinkable 也可侧重味道尚可，potable 常强调安全合格。"
+        },
+        {
+          "word": "beverage",
+          "comparisonZh": "对应名词义，泛指饮料；potables 更正式，也更容易特指酒类。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "All sites have electrical hookups and the campground has several potable water stations.",
+          "translationZh": "所有营位都有电源接口，营地还设有几处饮用水供应点。",
+          "explanationZh": "and 连接两个分句；potable 修饰 water，表示水适合饮用。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/potable"
+        },
+        {
+          "textEn": "The bar offered a wide selection of potables.",
+          "translationZh": "这家酒吧供应多种酒类饮品。",
+          "explanationZh": "potables 是名词复数；a wide selection of 表示种类丰富。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6665,
+      "word": "potentate",
+      "ipa": "/ˈpəʊtənˌteɪt/",
+      "pos": "n.",
+      "coreMeaningZh": "有权势的人",
+      "coreEn": "a person who holds great power, especially a ruler",
+      "coreImageZh": "信使来到宝座前，展开文书请统治者作决定；统治者抬手发令，侍从躬身领命，信使随后离开。男孩看出，事情由这个人拍板，众人也听他调遣。potentate 指这样掌握很大权力的人，尤其是君主、统治者。",
+      "mnemonics": [
+        {
+          "method": "POTENT",
+          "textZh": "potent 是强有力的，potentate 和它同属表示‘力量、权力’的词族。把强大的力量集中到一个人手里：他一句话能调动军队、决定政务，身边的人等着领命。potent 强调力量强，potentate 则把目光落在掌握大权的人身上。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "PATENT + ATE",
+          "textZh": "patent 是专利，ate 是‘吃’的过去式。想象一位专利巨头把同行的生意一块块‘吃下’，最后连行业怎样运转都由他说了算，成了能左右整个行业的权势人物。把 PATENT 与 ATE 连成 PATENTATE，再把第一个 A 换成 O，就得到 POTENTATE。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "有权势的人",
+          "explanationZh": "可数名词，较正式或文学化，常指权势很大的统治者，也可泛指有巨大影响力的人。重点是掌权，不是单纯富有或力气大。",
+          "collocations": [
+            {
+              "phrase": "a local potentate",
+              "meaningZh": "地方权势人物"
+            },
+            {
+              "phrase": "a powerful potentate",
+              "meaningZh": "权势显赫的统治者"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ruler",
+          "comparisonZh": "都可指统治者；potentate 更突出权势很大。"
+        },
+        {
+          "word": "sovereign",
+          "comparisonZh": "侧重君主或最高统治者的地位；potentate 也可泛指有权势的人。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The potentate ordered the city gates to be opened.",
+          "translationZh": "那位统治者下令打开城门。",
+          "explanationZh": "ordered...to be opened 表示命令某物被打开；potentate 是握有发号施令权力的人。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "As far as he was concerned she was a visiting potentate; he was afraid of making a mistake.",
+          "translationZh": "在他看来，她是位来访的权势人物；他生怕出差错。",
+          "explanationZh": "as far as he was concerned 表示就他而言；分号连接两个完整分句。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/potentate"
+        }
+      ]
+    }
+  ]
+}

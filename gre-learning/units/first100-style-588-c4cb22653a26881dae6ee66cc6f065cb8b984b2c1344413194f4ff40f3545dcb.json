@@ -1,0 +1,320 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6561,
+      "word": "outset",
+      "ipa": "/ˈaʊtset/",
+      "pos": "n.",
+      "coreMeaningZh": "开端，开始",
+      "coreEn": "the beginning of an activity or process",
+      "coreImageZh": "向导和两个孩子还在山路入口，先检查有没有带够水，随后背起行囊迈步出发；男孩提醒大家，这趟行程才刚开始。outset 指事情展开的起始阶段，画面把它落在准备妥当、刚踏上路的这一刻。",
+      "mnemonics": [
+        {
+          "method": "SET OUT / OUTSET",
+          "textZh": "SET OUT 是“出发、开始做”，把两个词前后调换并合起来，就得到 OUTSET。想象探险队整理好背包，刚 set out 踏出营地，这一刻正是整趟旅程的 outset。短语描述开始行动，名词给开始的阶段一个名字；常见的 at the outset 就是“在一开始”。",
+          "kind": "phrase_anchor",
+          "original": true
+        },
+        {
+          "method": "SUNSET / OUTSET",
+          "textZh": "SUNSET 是日落，把前面的 SUN 换成 OUT，保留 SET，就拼成 OUTSET。用一张左右对照图记：左边 sunset，太阳沉下去，一天接近结束；右边 outset，一项新工作刚打开第一页。相同的 SET 连住字形，一边收尾、一边起步的对照则帮你分清，outset 指开端。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "开端，开始",
+          "explanationZh": "常用于 at the outset（在开始时）和 from the outset（从一开始）。后面可接 of 说明某个过程的开端。",
+          "collocations": [
+            {
+              "phrase": "at the outset",
+              "meaningZh": "在开始时"
+            },
+            {
+              "phrase": "from the outset",
+              "meaningZh": "从一开始"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "beginning",
+          "comparisonZh": "意思接近；beginning 很通用，outset 多见于固定介词搭配。"
+        },
+        {
+          "word": "start",
+          "comparisonZh": "都表示开始；start 更口语化，也可作动词，outset 是名词。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I made it clear right from the outset that I disapproved.",
+          "translationZh": "我从一开始就明确表示不赞同。",
+          "explanationZh": "right 强调从最开始起，that 从句说明明确表达的内容。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/outset"
+        },
+        {
+          "textEn": "You should have made that clear right at the outset.",
+          "translationZh": "你本该在一开始就把那件事说清楚。",
+          "explanationZh": "should have done 表示过去本应做却没有做。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/outset"
+        }
+      ]
+    },
+    {
+      "number": 6562,
+      "word": "outwit",
+      "ipa": "/ˌaʊtˈwɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "欺瞒，以智取胜",
+      "coreEn": "to defeat or deceive someone by being cleverer",
+      "coreImageZh": "男孩让伙伴猜小东西藏在哪只手里，伙伴指中一只，他摊开却是空的；最后另一只手亮出东西，伙伴才发现自己猜错、中了招。outwit 表示用机智或巧计胜过别人，这里赢的是心思和判断，而不是力气。",
+      "mnemonics": [
+        {
+          "method": "OUT + WIT",
+          "textZh": "WIT 是机智，out- 表示胜过；outwit 就是让自己的机智胜过对方。想象追赶者守在大门口，机灵的主人公却留下假脚印，把人引去另一条路，自己从侧门脱身。把胜负放在 WIT 上，就能记住这个词强调动脑筋、用巧计占上风。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "OUTFIT / OUTWIT",
+          "textZh": "OUTFIT 是一套服装，把 F 换成 W，其他字母不动，就成了 OUTWIT。想象侦探换上一套清洁工的 outfit，追踪者只盯着穿西装的人，竟让他推着清洁车从眼前离开。这套伪装衣服帮他用计胜过对手，也让 OUTFIT 和 OUTWIT 的一字之差有了具体画面。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "欺瞒，以智取胜",
+          "explanationZh": "及物动词，常用于聪明地击败、骗过对手。重点是智谋胜出，不一定有恶意；过去式和过去分词为 outwitted。",
+          "collocations": [
+            {
+              "phrase": "outwit an opponent",
+              "meaningZh": "以智胜过对手"
+            },
+            {
+              "phrase": "outwit a rival",
+              "meaningZh": "智胜竞争者"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "outsmart",
+          "comparisonZh": "意思很接近，都强调靠聪明办法占上风。"
+        },
+        {
+          "word": "outmaneuver",
+          "comparisonZh": "都可以智取胜；outmaneuver 更强调策略安排或行动调度。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Somehow he always manages to outwit his opponents.",
+          "translationZh": "不知怎么的，他总能以智谋胜过对手。",
+          "explanationZh": "manage to do 表示设法成功做到。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/outwit"
+        },
+        {
+          "textEn": "Seeing how cleverly he had been outwitted he made no complaint.",
+          "translationZh": "看到自己是怎样被巧妙地智胜的，他没有抱怨。",
+          "explanationZh": "Seeing 引出原因，had been outwitted 表示此前已经被人以智取胜。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/outwit"
+        }
+      ]
+    },
+    {
+      "number": 6563,
+      "word": "overlap",
+      "ipa": "/ˌəʊvəˈlæp/",
+      "pos": "v.",
+      "coreMeaningZh": "(与…)部分重叠",
+      "coreEn": "to cover part of something or share part of its area, time, or content",
+      "coreImageZh": "男孩把黄色透明片的一边搭到蓝色片上，两片都还露着各自的部分，中间相叠处显出绿色，朋友也指着那里确认。overlap 就是两样东西占到同一块区域：这里共用了一部分位置，却没有完全重合。",
+      "mnemonics": [
+        {
+          "method": "OVER + LAP",
+          "textZh": "OVER 提醒在上面，LAP 作动词有把一部分搭到另一物上面的意思，合成 overlap。想象铺屋顶瓦片：上一片的下缘压住下一片的上缘，每片仍露出大部分，只有接缝处搭在一起。抓住这条一片盖过另一片边缘的接缝，部分重叠就不再只是抽象定义。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "OVERLAY / OVERLAP",
+          "textZh": "OVERLAY 表示在上面覆盖一层，把末尾 Y 换成 P，就是 OVERLAP。想象在图片软件里 overlay 一张透明图层，再把它向旁边拖开；两张图只有中间一块还盖在一起，那一块就是它们 overlap 的地方。前者提醒添加覆盖层的操作，后者提醒两者共有的区域，六个相同字母帮你成对辨认。",
+          "kind": "word_family",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "(与…)部分重叠",
+          "explanationZh": "可作及物或不及物动词，表示空间部分相盖，也可表示时间重合或内容相同。overlap with 可引出另一方；不是必须完全覆盖。",
+          "collocations": [
+            {
+              "phrase": "overlap each other",
+              "meaningZh": "彼此部分重叠"
+            },
+            {
+              "phrase": "overlap with something",
+              "meaningZh": "与某事物部分重合"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "partly cover",
+          "comparisonZh": "指空间相盖时意思接近，直接强调只盖住一部分。"
+        },
+        {
+          "word": "coincide",
+          "comparisonZh": "在时间或内容上相同时相关；coincide 可指完全一致，overlap 通常只重合一部分。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A fish’s scales overlap each other.",
+          "translationZh": "鱼鳞彼此部分重叠。",
+          "explanationZh": "each other 表示相互，overlap 描述鱼鳞层层搭接。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1"
+        },
+        {
+          "textEn": "You will need to overlap the pieces of wood slightly.",
+          "translationZh": "你需要把这些木片稍微叠搭在一起。",
+          "explanationZh": "overlap 在这里是及物动词，slightly 表示只重叠一点。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1"
+        }
+      ]
+    },
+    {
+      "number": 6564,
+      "word": "overt",
+      "ipa": "/əʊˈvɜːt/",
+      "pos": "adj.",
+      "coreMeaningZh": "明显的，公开的",
+      "coreEn": "openly shown rather than hidden or secret",
+      "coreImageZh": "老师问谁愿意支持义卖，男孩当着全班高高举手，直接说“我支持，算我一个”，老师也给出肯定回应。overt 形容态度或行动公开显露出来，他把支持明明白白摆在大家面前，无须别人猜测。",
+      "mnemonics": [
+        {
+          "method": "COVERT / OVERT",
+          "textZh": "COVERT 是隐蔽的，去掉开头 C，就变成反义的 OVERT。可以把这个 C 想成一层 cover：支持藏在遮盖后，是 covert；拿掉遮盖，人走到大家面前明确表态，就是 overt。只差一个 C 的两个词，一藏一露，字形变化和意思变化正好相互提醒。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "OVERTURE / OVERT",
+          "textZh": "OVERTURE 是歌剧等作品的序曲，删去结尾 URE，前面完整留下 OVERT；两词的历史来源都与“打开”有关。想象序曲响起，一场演出由此打开帷幕，再把这份“打开”转到人的态度上：把支持摆到台前，公开让人看见。序曲的开场画面给 OVERT 一个入口，从打开走到公开。",
+          "kind": "etymology",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "明显的，公开的",
+          "explanationZh": "较正式，常放在名词前，形容行为或态度公开可见、没有隐藏。常与 covert（隐蔽的）相对；重点不只是容易理解。",
+          "collocations": [
+            {
+              "phrase": "overt support",
+              "meaningZh": "公开支持"
+            },
+            {
+              "phrase": "overt hostility",
+              "meaningZh": "明显的敌意"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "open",
+          "comparisonZh": "表示公开、不隐瞒时相近；open 用法更广。"
+        },
+        {
+          "word": "explicit",
+          "comparisonZh": "都可强调清楚可见；explicit 更强调表达明确，overt 更强调没有隐藏。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "There was little overt support for the project.",
+          "translationZh": "公开支持这个项目的人很少。",
+          "explanationZh": "little 修饰不可数名词 support，表示公开表达的支持很少。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/overt"
+        },
+        {
+          "textEn": "Although there is no overt hostility, Black and White students do not mix much.",
+          "translationZh": "虽然没有明显的敌意，黑人学生与白人学生之间却很少交往。",
+          "explanationZh": "Although 引出让步，overt hostility 指表露出来的敌意。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/overt"
+        }
+      ]
+    },
+    {
+      "number": 6565,
+      "word": "overture",
+      "ipa": "/ˈəʊvətʃʊə(r)/",
+      "pos": "n.",
+      "coreMeaningZh": "前言；序曲",
+      "coreEn": "an introductory part or an orchestral opening to a longer musical work",
+      "coreImageZh": "男孩坐在剧院里，看见红幕还合着，台前乐队却已经演奏起来，便问家人为什么还没开幕就有音乐；家人告诉他这是序曲，随后幕布才拉开。overture 在这里是为正式舞台表演作引入的开场音乐，先把观众带进作品的气氛。",
+      "mnemonics": [
+        {
+          "method": "OVERT + -URE",
+          "textZh": "OVERT 是公开的，沿词源可以抓住“打开”；OVERTURE 与它同族，保留完整 OVERT，再加 URE。把这次“打开”想成打开一场演出：演员尚未展开故事，乐队先奏一段音乐，为后面的戏作引入。它在音乐里的作用，就像文章开头的前言，先替正篇开门。",
+          "kind": "etymology",
+          "original": true
+        },
+        {
+          "method": "OVERTURN / OVERTURE",
+          "textZh": "OVERTURN 是翻倒，把最后的 N 换成 E，就拼成 OVERTURE。想象一部讲海上冒险的舞台剧，船被风浪掀翻是重要情节；故事还没演到那里，开场音乐已经先奏出翻船前紧张的风浪主题。用这段预告 OVERTURN 情节的开场乐，把近形的 OVERTURE 记成序曲。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "前言；序曲",
+          "explanationZh": "可数名词，可指歌剧等大型作品的开场乐曲，也可比喻某件大事的前奏或引子。表示某部作品的序曲常用 overture to；表示为后续活动揭幕的前奏可用 overture for。",
+          "collocations": [
+            {
+              "phrase": "the overture to an opera",
+              "meaningZh": "一部歌剧的序曲"
+            },
+            {
+              "phrase": "an overture to a larger work",
+              "meaningZh": "一部较大作品的引子"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "prelude",
+          "comparisonZh": "都可指序曲或前奏；prelude 的应用更广，overture 常指大型音乐作品的开场曲。"
+        },
+        {
+          "word": "introduction",
+          "comparisonZh": "都可指引入正文的部分；introduction 很通用，overture 更有序幕、前奏的意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The programme opened with the overture to Wagner's Flying Dutchman.",
+          "translationZh": "节目以瓦格纳《漂泊的荷兰人》的序曲开场。",
+          "explanationZh": "opened with 表示以……开场，overture to 引出序曲所属作品。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/overture"
+        },
+        {
+          "textEn": "The parade down Main Street served as the overture for a weekend of fun and festivities.",
+          "translationZh": "主街上的游行为一个欢乐喜庆的周末拉开了序幕。",
+          "explanationZh": "served as 表示充当，overture 在这里比喻后续活动的前奏。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/overture"
+        }
+      ]
+    }
+  ]
+}

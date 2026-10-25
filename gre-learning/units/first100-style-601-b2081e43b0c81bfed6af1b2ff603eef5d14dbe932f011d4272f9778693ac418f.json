@@ -1,0 +1,326 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6626,
+      "word": "petty",
+      "ipa": "/ˈpeti/",
+      "pos": "adj.",
+      "coreMeaningZh": "细微的，不重要的",
+      "coreEn": "small and of little importance",
+      "coreImageZh": "男孩捏着纸花上一小片皱起的花瓣，担心要不要重做；同伴把花放进整丛装饰，说明这点瑕疵不影响使用，两人继续布置。petty 评价的是问题细小、无关紧要，并不是整件作品出了大毛病。",
+      "mnemonics": [
+        {
+          "method": "P(R)ETTY",
+          "textZh": "pretty 是“漂亮的”，只抽掉一个 R，就成 petty。想象一张漂亮海报少了一个很小的装饰点，整体仍然好看，却有人坚持全部重画。用 PRETTY 少一点的字形变化，提醒自己 petty problem 只是小问题，不必当成大灾难。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "PENNY / PETTY",
+          "textZh": "penny 是一便士。活动总预算有一千英镑，两份报价只差一便士，这点差额实在不值得争论。把 PENNY 中间的 NN 换成 TT，就得到 PETTY；一枚小小 penny 带回“细小、不重要”的分量。这里评价的是差额对这次预算的影响，不是说一便士对任何人都没价值。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "细微的，不重要的",
+          "explanationZh": "通常用于名词前，常带不赞许意味，形容问题、争执或规则琐碎而不重要。形容人时还可指小心眼，但这里的重点是不重要的小事。",
+          "collocations": [
+            {
+              "phrase": "petty details",
+              "meaningZh": "琐碎细节"
+            },
+            {
+              "phrase": "petty disputes",
+              "meaningZh": "无关紧要的争执"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "paltry",
+          "comparisonZh": "都可指少得不重要；paltry 更常强调数量或价值不足，petty 常形容事情琐碎。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "trivial",
+          "comparisonZh": "都表示不重要；trivial 侧重分量轻，petty 常含不值得计较的态度。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I don't want to hear any more about your petty squabbles.",
+          "translationZh": "我不想再听你们那些无聊的小争吵了。",
+          "explanationZh": "any more 表示再；petty 修饰 squabbles，指出争吵无足轻重。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/petty"
+        },
+        {
+          "textEn": "The removal of petty restrictions has made life easier.",
+          "translationZh": "取消那些琐碎的限制让生活更轻松了。",
+          "explanationZh": "The removal 是单数主语；has made 后接宾语和形容词补足语。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/petty"
+        }
+      ]
+    },
+    {
+      "number": 6627,
+      "word": "phenomenal",
+      "ipa": "/fəˈnɒmɪnl/",
+      "pos": "adj.",
+      "coreMeaningZh": "不寻常的，非凡的",
+      "coreEn": "remarkably unusual or impressive",
+      "coreImageZh": "男孩听钢琴演奏时托腮入神，演奏者起身后，他和观众一起鼓掌，感叹这么难的曲子也弹得精彩。phenomenal 在这里是超出寻常、让人惊叹的出色，不只是“还不错”。",
+      "mnemonics": [
+        {
+          "method": "PHENOMENON / PHENOMENAL",
+          "textZh": "phenomenon 不仅是“现象”，也可以指令人惊叹的人或事：一个孩子展现惊人的演奏才能，大家称他 a phenomenon。把 PHENOMENON 末尾的 ON 换成 AL，就成 PHENOMENAL，用来形容这样的非凡表现。这里借的是“引人惊叹的奇才、奇事”这一层，不是说所有现象都很出色。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "for NOMINAL",
+          "textZh": "演出只收象征性的费用，for nominal fees，台上的水准却高得令人惊叹。借英式弱读 for /fə/ 加 nominal /ˈnɒmɪnəl/，连起来近似 phenomenal 的声音。用“收费 nominal，演出 phenomenal”这组反差记：费用微不足道，表现却非同一般。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不寻常的，非凡的",
+          "explanationZh": "此处是常用的赞叹义，形容成绩、能力、增长或成功非常出色、超乎寻常。学术语境也可表示现象的，不能把那个义项套到所有用法里。",
+          "collocations": [
+            {
+              "phrase": "phenomenal success",
+              "meaningZh": "非凡的成功"
+            },
+            {
+              "phrase": "phenomenal growth",
+              "meaningZh": "惊人的增长"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "extraordinary",
+          "comparisonZh": "都表示非同寻常；phenomenal 常带更强的赞叹意味。"
+        },
+        {
+          "word": "uncanny",
+          "comparisonZh": "在超乎寻常义上相近；uncanny 常带奇异、难以解释的感觉，phenomenal 常强调惊人的出色表现。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The product has been a phenomenal success.",
+          "translationZh": "这个产品取得了非凡的成功。",
+          "explanationZh": "a success 表示一件成功的事；phenomenal 修饰 success。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/phenomenal"
+        },
+        {
+          "textEn": "He has a phenomenal memory for facts and figures.",
+          "translationZh": "他对事实和数字有着惊人的记忆力。",
+          "explanationZh": "memory for 表示对某类信息的记忆力；facts and figures 指事实和数字。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/phenomenal"
+        }
+      ]
+    },
+    {
+      "number": 6628,
+      "word": "philanthropic",
+      "ipa": "/ˌfɪlənˈθrɒpɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "博爱的，为他人着想的",
+      "coreEn": "concerned with helping others and improving their welfare",
+      "coreImageZh": "桌上叠着成摞冬衣，男孩跟志愿者一起把衣物交给来领取的人；志愿者说明不用付钱，能帮到对方就好。philanthropic 指关心他人福祉、愿意为公益出力，这里是把衣物作为帮助送出，而不是做买卖。",
+      "mnemonics": [
+        {
+          "method": "PHIL + ANTHROP + IC",
+          "textZh": "phil- 表示“爱”，anthrop- 表示“人”，-ic 构成形容词，三部分拼成 philanthropic。把“爱人”展开成具体行动：不只照顾自己熟悉的人，也愿意拿出时间、钱和物资，让有需要的人过得好些。这个词常落在慈善和公益上，不是只说一个人待人亲切。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "FILL AND DROP IT",
+          "textZh": "把捐赠袋 fill（装满），再 drop it（放进去），送进收集衣物的捐赠箱，留给需要帮助的人。借 FILL AND DROP IT 的连读声形想起 philanthropic；and 轻读 /ən/，但英语词中要读 /θrɒp/，词尾是 /ɪk/，不是照搬 drop it。装满后送给别人，留下的是助人的心意。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "博爱的，为他人着想的",
+          "explanationZh": "较正式，常修饰组织、活动、捐赠或目标，强调帮助有需要的人、促进他人福祉。它不只是交往中的友好，也不一定仅限于捐钱。",
+          "collocations": [
+            {
+              "phrase": "philanthropic work",
+              "meaningZh": "公益慈善工作"
+            },
+            {
+              "phrase": "philanthropic donations",
+              "meaningZh": "慈善捐赠"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "charitable",
+          "comparisonZh": "都涉及慈善帮助；charitable 更直接指施助或捐赠，philanthropic 常用于有组织的公益事业。"
+        },
+        {
+          "word": "benevolent",
+          "comparisonZh": "都含为别人着想；benevolent 可泛指善意，philanthropic 更常涉及改善他人的生活。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We are volunteers with philanthropic financing.",
+          "translationZh": "我们是由慈善资金支持的志愿者。",
+          "explanationZh": "with philanthropic financing 说明资金支持的性质。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/philanthropic"
+        },
+        {
+          "textEn": "Part of this fortune is used for philanthropic causes.",
+          "translationZh": "这笔财富的一部分被用于公益慈善事业。",
+          "explanationZh": "is used for 表示被用于；causes 在这里指事业或目标。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/philanthropic"
+        }
+      ]
+    },
+    {
+      "number": 6629,
+      "word": "piddling",
+      "ipa": "/ˈpɪdlɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "微不足道的",
+      "coreEn": "too small or unimportant to deserve much attention",
+      "coreImageZh": "男孩把筹款盒倒空，桌上的零钱却连种子都买不够；他对着这点钱摊开双手，又托着下巴发愁。piddling 在这里强调筹到的数量少得难以起作用，与买种子的需要相比实在微不足道。",
+      "mnemonics": [
+        {
+          "method": "PUDDING",
+          "textZh": "满心等一大碗 pudding（布丁），端来的却只有小指甲大的一点，连尝味都嫌少：a piddling portion。把 PUDDING 的 U 换成 I，再在第二个 D 后添 L，就成 PIDDLING。整碗布丁缩成可怜的一小点，记住的是少得不值一提，而不是布丁这种食物不重要。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "PIDDLE + ING",
+          "textZh": "piddle around 可以说人在琐事上磨蹭：本该写重要报告，却一直挪笔筒、摆橡皮，忙的都是不值一提的小事。PIDDLE 去掉末尾不发音的 E，再接 ING，就是 PIDDLING。由“拿琐事打发时间”的动作，联到形容小事或微小数额的“不足挂齿”。",
+          "kind": "word_family",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "微不足道的",
+          "explanationZh": "非正式且常含轻视语气，通常放在名词前，形容数量少得可怜或事情微不足道，如金额、工作或异议。不是一般中性的 small。",
+          "collocations": [
+            {
+              "phrase": "a piddling amount",
+              "meaningZh": "少得可怜的数量"
+            },
+            {
+              "phrase": "a piddling objection",
+              "meaningZh": "微不足道的异议"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "trifling",
+          "comparisonZh": "都指不值得重视；piddling 更口语化，轻视语气也更明显。"
+        },
+        {
+          "word": "insignificant",
+          "comparisonZh": "都可指微不足道；insignificant 较中性或正式，piddling 带嫌其太少、太小的态度。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was paid a piddling amount of money.",
+          "translationZh": "他得到的报酬少得可怜。",
+          "explanationZh": "was paid 是被动语态；a piddling amount of money 表示很少的一笔钱。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/piddling"
+        },
+        {
+          "textEn": "I spent all day doing piddling little jobs.",
+          "translationZh": "我一整天都在做些无足轻重的小活儿。",
+          "explanationZh": "spend time doing something 表示花时间做某事；piddling 表达对琐事的不满。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/piddling"
+        }
+      ]
+    },
+    {
+      "number": 6630,
+      "word": "piebald",
+      "ipa": "/ˈpaɪbɔːld/",
+      "pos": "adj.",
+      "coreMeaningZh": "混合的，杂糅而成的",
+      "coreEn": "made up of different and sometimes incongruous elements",
+      "coreImageZh": "男孩把蓝色牛仔布、带花纹的布和粗针织布拼成一块桌垫；拼好以后，各块的颜色、花样和质地仍明显不同。piebald 在这里形容不同成分杂糅在一起，不是整块布原本就有一种统一的材质或图案。",
+      "mnemonics": [
+        {
+          "method": "magPIE + BALD",
+          "textZh": "magpie 是黑白相间的喜鹊，pie 也是喜鹊的旧称；bald 在这个词里用“有白斑”的旧义，不是说秃头。PIE 加 BALD，先想起身上深浅斑块混杂的动物，再把色块换成来源不同的材料、风格或人群：piebald 也能形容这样杂糅而成的整体。",
+          "kind": "etymology",
+          "original": true
+        },
+        {
+          "method": "PIE + BALD",
+          "textZh": "这次把 pie 当成吃的派、bald 当成“光秃的”：一张派的一块铺红果馅，一块铺黑巧克力，另一块却光秃秃露着饼皮。几种不一样的部分并排凑成一张派，正好把 PIE + BALD 的整词拼写和“杂糅在一起”的样子拴住。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "混合的，杂糅而成的",
+          "explanationZh": "本义项较少见，指不同甚至不协调的成分混在一起。更常见的是杂色、尤其黑白斑驳义；谈混合的风格、构成时应结合上下文理解，日常普通混合通常用 mixed。",
+          "collocations": [
+            {
+              "phrase": "a piebald mixture of styles",
+              "meaningZh": "多种风格杂糅的组合"
+            },
+            {
+              "phrase": "a piebald collection",
+              "meaningZh": "杂糅的集合"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "mixed",
+          "comparisonZh": "都可表示混合；mixed 更普通、适用面更广，piebald 更强调各异成分拼在一起的效果。"
+        },
+        {
+          "word": "heterogeneous",
+          "comparisonZh": "都强调组成成分不同；heterogeneous 较技术性，piebald 更有杂糅、斑驳的形象感。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The room contained a piebald mixture of old and modern furniture.",
+          "translationZh": "房间里混杂着老式和现代家具。",
+          "explanationZh": "a mixture of A and B 表示两类事物的混合；piebald 强调风格杂糅。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "Their music was a piebald blend of folk songs and jazz.",
+          "translationZh": "他们的音乐是民歌与爵士乐杂糅而成的。",
+          "explanationZh": "a blend of 后接两种组成成分；piebald 在这里不是指颜色。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6711,
+      "word": "provident",
+      "ipa": "/ˈprɑːvɪdənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "有远见的；节俭的",
+      "coreEn": "planning for future needs and careful with resources",
+      "coreImageZh": "男孩平时把零钱存进储蓄罐，说要省着留给以后；等自行车车胎需要修理时，他取出早已存好的钱。provident 指能为未来需要提前作准备，也常包含节省资源、不过度花费的意思。",
+      "mnemonics": [
+        {
+          "method": "PROVIDE",
+          "textZh": "provide 是提供，PROVIDE 后添 NT 就能拼成 PROVIDENT；两词的词源都含‘提前看见’。想一个人现在就看见冬天会缺粮，于是丰收时先留出一部分，把未来所需提前 provide 好。由提前看见需要，到节省并准备资源，远见与节俭便连在同一个动作里。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "PRESIDENT",
+          "textZh": "president 是总统，把其中的 E 换成 O、S 换成 V，就得到 PROVIDENT。想一位总统做预算时，既考虑眼下开支，也预留资金应对未来的灾害和维修，不把资源一次用光。让这位 president 把目光放到多年以后，并为那时留下准备，就是 provident 的远见。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "有远见的",
+          "explanationZh": "较正式，强调预想到未来需要并作好准备，常形容人、安排或措施。与 providential“天意般幸运的”不同：provident 是主动筹划。",
+          "collocations": [
+            {
+              "phrase": "provident planning",
+              "meaningZh": "有远见的规划"
+            }
+          ]
+        },
+        {
+          "senseZh": "节俭的",
+          "explanationZh": "指谨慎使用钱财或资源，尤其为了未来留有余地；不等于舍不得满足合理需要的吝啬。",
+          "collocations": [
+            {
+              "phrase": "a provident household",
+              "meaningZh": "勤俭持家的家庭"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "prudent",
+          "comparisonZh": "都可指考虑周全；prudent 广指判断谨慎，provident 更突出为未来需要预作安排。",
+          "sources": [
+            "zhangwei_original3000",
+            "zhangwei_dedicated_2021",
+            "B"
+          ]
+        },
+        {
+          "word": "frugal",
+          "comparisonZh": "在节俭义上接近；frugal 强调少浪费、少花费，provident 还常含为将来储备。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The more provident of them had taken out insurance against flooding.",
+          "translationZh": "他们中更有远见的人已经投保了洪水险。",
+          "explanationZh": "the more provident of them 指其中更会未雨绸缪的人；take out insurance 表示投保。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/provident"
+        },
+        {
+          "textEn": "It is possible to be provident without being miserly.",
+          "translationZh": "人可以节俭而不吝啬。",
+          "explanationZh": "without being miserly 将合理节省与吝啬区分开来。",
+          "sourceAttribution": "GRE核心词汇考法精析，原书PDF第806页"
+        }
+      ]
+    },
+    {
+      "number": 6712,
+      "word": "providential",
+      "ipa": "/ˌprɑːvɪˈdenʃəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "天意的，幸运的",
+      "coreEn": "fortunately timely, as if arranged by a higher power",
+      "coreImageZh": "男孩走在路上，雨刚落下，身旁恰好就是能遮雨的候车亭；他和同伴躲进去，感叹巧得像老天帮忙。providential 形容帮助或好结果来得幸运而及时，仿佛有天意安排。",
+      "mnemonics": [
+        {
+          "method": "PROVIDENCE",
+          "textZh": "providence 与 provide（提供）同源，常指上天的眷顾与安排，providential 是相应的形容词。想一个迷路的人又渴又累，正需要帮助时，转弯就遇见有人送来水和指路，巧得像有只看不见的手提前替他备好。把恰好被提供的帮助想成天意照管，就能感到 providential 的幸运意味。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "PROVIDENT / PROVIDENTIAL",
+          "textZh": "provident 后添 IAL 就成 providential，但一个重在人有准备，一个重在好运恰到好处。出门前想到可能下雨，主动带好雨伞，这是 provident；忘了带伞，雨刚落下却恰好走到能避雨的屋檐下，这份巧合便显得 providential。把‘自己先备好’与‘幸运地刚好得到’分开，两个近形词便不再混用。",
+          "kind": "word_family",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "天意的，幸运的",
+          "explanationZh": "较正式，指好事来得恰巧、及时，仿佛有天意相助；不一定是在作宗教断言。常修饰 escape、arrival、help 等。别与强调提前准备的 provident 混淆。",
+          "collocations": [
+            {
+              "phrase": "a providential escape",
+              "meaningZh": "天意般幸运的脱险"
+            },
+            {
+              "phrase": "a providential arrival",
+              "meaningZh": "恰逢其时的幸运到来"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "fortunate",
+          "comparisonZh": "都指幸运；providential 更突出恰好及时、仿佛有天意帮助。"
+        },
+        {
+          "word": "lucky",
+          "comparisonZh": "最常见的幸运表达；providential 更正式，也更强调有利巧合似乎别有安排。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We had made a providential escape.",
+          "translationZh": "我们幸运地逃过了一劫，仿佛得到天意相助。",
+          "explanationZh": "had made 为过去完成时；a providential escape 指异常幸运的脱险。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/providential"
+        },
+        {
+          "textEn": "It seemed providential that he should arrive at just that moment.",
+          "translationZh": "他偏偏在那个时刻到来，简直像是天意。",
+          "explanationZh": "that 从句说明被认为幸运的事；should 在这里表达恰巧发生的意味。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/providential"
+        }
+      ]
+    },
+    {
+      "number": 6713,
+      "word": "provisory",
+      "ipa": "/prəˈvaɪzəri/",
+      "pos": "adj.",
+      "coreMeaningZh": "有附带条件的；临时的",
+      "coreEn": "subject to a condition, or arranged only for the time being",
+      "coreImageZh": "老师暂时把活动室借给孩子们，先提出用完必须收拾干净的条件；孩子们使用后把材料装箱、擦好桌子，再离开房间。provisory 可形容附带条件的安排，也可表示暂时施行、尚未长期确定。",
+      "mnemonics": [
+        {
+          "method": "PROVISO / PROVIDED THAT",
+          "textZh": "provided that 是‘条件是、只要’，proviso 就是附带条件，后加 RY 可拼成 PROVISORY。想老师答应借出器材，却把一句 provided that 接在后面：‘条件是用完按时归还。’答应并非毫无限制，后面还有必须满足的一项要求；这个 proviso 使借用安排成为 provisory。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "PRO + VISITOR",
+          "textZh": "pro 是专业人士，visitor 是访客。一位外来的专业讲师来学校短期授课，只拿到临时通行证，课程结束就要交回，不能凭它长期出入。把 PRO 和 VISITOR 连起来，删去 VISITOR 中的 IT，再在末尾添 Y，就得到 PROVISORY；访客临时获准使用的证件，记住了暂定安排的这一面。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "有附带条件的",
+          "explanationZh": "较少见、较正式，表示许可、安排等受到条件限制，满足条件才适用。日常可用 conditional 表达。",
+          "collocations": [
+            {
+              "phrase": "provisory permission",
+              "meaningZh": "有附带条件的许可"
+            }
+          ]
+        },
+        {
+          "senseZh": "临时的",
+          "explanationZh": "也可表示只在现阶段适用，不是长期安排；此义常用 provisional 或 temporary。两义相关，但临时安排不一定另有附加条件。",
+          "collocations": [
+            {
+              "phrase": "a provisory arrangement",
+              "meaningZh": "临时安排"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "conditional",
+          "comparisonZh": "对应有附带条件义，强调成立与否取决于条件；不自动含临时的意思。"
+        },
+        {
+          "word": "provisional",
+          "comparisonZh": "对应临时义，指正式确定前先采用的安排；不必表示有明确附加条件。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A new building was opened as a provisory museum in 1967.",
+          "translationZh": "一座新建筑于1967年启用，暂作博物馆。",
+          "explanationZh": "as 引出临时用途；provisory 修饰 museum，表示并非最终固定安排。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/provisory"
+        },
+        {
+          "textEn": "Permission to use the room was provisory: we had to leave it clean.",
+          "translationZh": "使用这间屋子的许可附有条件：我们离开时必须收拾干净。",
+          "explanationZh": "冒号后说明具体条件；这里 provisory 强调有条件，而不是仅仅时间短。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6714,
+      "word": "provoke",
+      "ipa": "/prəˈvoʊk/",
+      "pos": "v.",
+      "coreMeaningZh": "激怒；驱使，激起",
+      "coreEn": "to make someone angry or cause a feeling, reaction, or action",
+      "coreImageZh": "男孩刚搭好积木便提醒同伴别推，同伴仍故意将它推倒；男孩从惊讶转为生气，开口责问。provoke 在这里是激怒别人，更广泛地也能表示激起某种情绪、反应或行动。",
+      "mnemonics": [
+        {
+          "method": "PROVE + OK",
+          "textZh": "prove 是证明，OK 是‘好了吗、行了吗’。想有人故意当众证明同伴说错，还得意地追问：‘这下证明你错了，OK？’对方终于被这番挑衅激怒。把 OK 插进 PROVE 的 V 与 E 之间，就得到 PROVOKE；记住证明之后仍咄咄逼人的那一问，如何把怒气激出来。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "PROVIDE",
+          "textZh": "provide 是提供，将其中的 I 换成 O、D 换成 K，就成 PROVOKE。课堂上大家原本安静，一位同学提供了一个意外的新观点，立刻引起追问、赞同和反驳，讨论由此展开。provide 给出一个刺激，provoke 写它激起的反应；这一路还能记住 provoke 不只引出怒气，也能引发讨论。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "激怒",
+          "explanationZh": "及物动词，可说 provoke somebody，也可用 provoke somebody into doing something，表示刺激某人作出反应。常含故意挑衅，但不必每次都如此。",
+          "collocations": [
+            {
+              "phrase": "provoke someone into an argument",
+              "meaningZh": "激得某人与人争论"
+            }
+          ]
+        },
+        {
+          "senseZh": "驱使，激起",
+          "explanationZh": "可接 reaction、laughter、discussion 等，表示引发情绪、反应或行动，不一定是愤怒；也不一定是行为者有意造成。",
+          "collocations": [
+            {
+              "phrase": "provoke discussion",
+              "meaningZh": "引发讨论"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "goad",
+          "comparisonZh": "都可指刺激某人行动；goad 更强调反复催逼或刺激，provoke 更强调引出的反应。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "instigate",
+          "comparisonZh": "在激起行动或争端时接近；instigate 强调煽动、发起，常用于坏事，provoke 也可无意引发反应。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He just says those things because he's trying to provoke you.",
+          "translationZh": "他说那些话，只是想激怒你。",
+          "explanationZh": "because 引出原因；try to provoke somebody 表示试图惹某人生气。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/provoke"
+        },
+        {
+          "textEn": "His remarks provoked both tears and laughter.",
+          "translationZh": "他的话既催人泪下，又引人发笑。",
+          "explanationZh": "both...and... 连接两种反应；这里 provoke 表示激起，而非单指激怒。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/provoke"
+        }
+      ]
+    },
+    {
+      "number": 6715,
+      "word": "prowl",
+      "ipa": "/praʊl/",
+      "pos": "v.",
+      "coreMeaningZh": "巡游以猎取食物；徘徊",
+      "coreEn": "to move quietly about in search of prey, or wander around looking for something",
+      "coreImageZh": "猫沿着墙边和草丛悄悄移动，走一段又停下来观察；男孩和同伴在旁观察，指出它正在四处寻找猎物。prowl 是带着搜寻目标偷偷或警觉地巡游、徘徊，常用来写动物觅食时的行动。",
+      "mnemonics": [
+        {
+          "method": "PR + OWL",
+          "textZh": "owl 是猫头鹰，在前面添 PR 就成 PROWL，结尾仍保留 owl 的 /aʊl/ 声音。想一只夜出的猫头鹰，在林边安静地来回搜寻，留意草叶下的动静，寻找可以捕捉的猎物。把 owl 带来的夜间、悄悄搜寻的画面放进 prowl，记住的是巡游觅食的行动。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "CRAWL",
+          "textZh": "crawl 是爬行，把 C 换成 P、A 换成 O，就得到 PROWL。先想贴近地面慢慢移动的姿态，再看一只猫伏低身子，沿墙根转来转去，观察哪里藏着猎物。crawl 帮你记低伏的动作，prowl 则把重点放在悄悄四处搜寻，既有行走方式，也有寻找的目的。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "巡游以猎取食物；徘徊",
+          "explanationZh": "可及物也可不及物。常描述动物悄悄走动觅食，也可形容人在某处转悠寻找东西。人作主语时，有时带鬼祟、伺机而动的意味，要看语境。",
+          "collocations": [
+            {
+              "phrase": "prowl around the garden",
+              "meaningZh": "在花园里悄悄游走"
+            },
+            {
+              "phrase": "prowl the streets",
+              "meaningZh": "在街上徘徊游荡"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "roam",
+          "comparisonZh": "都可指四处走动；roam 较中性，prowl 常含悄悄寻找猎物或机会的意味。"
+        },
+        {
+          "word": "stalk",
+          "comparisonZh": "在捕猎场景中接近；stalk 更强调悄悄接近某个目标，prowl 可以还在四处寻找目标。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He moved like a tiger prowling the jungle.",
+          "translationZh": "他行走的样子像一只在丛林里潜行觅食的老虎。",
+          "explanationZh": "like 引出比喻；prowling the jungle 修饰 tiger，表示老虎正在丛林中巡游。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/prowl"
+        },
+        {
+          "textEn": "I prowled the store looking for sales.",
+          "translationZh": "我在商店里四处转悠，寻找打折商品。",
+          "explanationZh": "looking for sales 表示转悠时的目的；这里 prowl 是寻找商品的比喻用法。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/prowl"
+        }
+      ]
+    }
+  ]
+}

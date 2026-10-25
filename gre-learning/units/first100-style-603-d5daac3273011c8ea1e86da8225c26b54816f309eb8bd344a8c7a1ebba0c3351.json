@@ -1,0 +1,320 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6636,
+      "word": "piquant",
+      "ipa": "/ˈpiːkənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "令人振奋的，令人感兴趣的",
+      "coreEn": "pleasantly stimulating or intriguingly lively",
+      "coreImageZh": "男孩起初托着脸，觉得木偶戏没什么特别；舞台暗门里忽然探出木偶，他便坐直、向前凑着追看，赞叹这个转折有意思。piquant 写这种新鲜、带点意外趣味的刺激，让平常的内容一下变得引人入胜。",
+      "mnemonics": [
+        {
+          "method": "PIQUE / PIQUANT",
+          "textZh": "pique 可以指“激起兴趣”，piquant 是它的同族词：一个新鲜细节 pique your interest，能这样勾起兴趣的细节就是 piquant。拼写上把 PIQUE 的 E 换成 ANT，得到 PIQUANT。两词都与“轻轻刺一下”的词源有关，像给原本平淡的谈话添一点鲜活刺激。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "PEEK + ANT",
+          "textZh": "想象从微型舞台的缝里 peek（瞥）一眼，竟看见一只 ant（蚂蚁）撑着小伞走出来；这个出乎意料的小细节让故事变得 piquant，新鲜有趣。把 PEEK 与 ANT 连起来借声，ANT 轻读为 /ənt/，便贴近 /ˈpiːkənt/；按这里的读音，qu 不额外加 /w/。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "令人振奋的，令人感兴趣的",
+          "explanationZh": "此处为较书面的比喻义，形容细节、故事或幽默新鲜有趣、带一点刺激。常见的另一义是味道辛辣开胃，但这里不是在描述食物，也不等同于一般的振奋士气。",
+          "collocations": [
+            {
+              "phrase": "piquant details",
+              "meaningZh": "引人入胜的细节"
+            },
+            {
+              "phrase": "a piquant sense of humor",
+              "meaningZh": "俏皮有趣的幽默感"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stimulating",
+          "comparisonZh": "都能表示令人兴奋或活跃思考；piquant 常带新鲜、机智或略有挑逗意味。"
+        },
+        {
+          "word": "intriguing",
+          "comparisonZh": "都能引人兴趣；intriguing 常带神秘感，piquant 更突出活泼而有刺激性的趣味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "There may well have been a piquant novelty about her books when they came out.",
+          "translationZh": "她的书刚出版时，很可能带有一种令人感兴趣的新鲜感。",
+          "explanationZh": "may well have been 表示对过去的合理推测；came out 指书出版。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/piquant"
+        },
+        {
+          "textEn": "Her piquant account of the dinner kept everyone listening.",
+          "translationZh": "她对那顿晚餐的趣味叙述让大家一直听得入神。",
+          "explanationZh": "account 在这里是叙述；keep somebody doing 表示使某人持续做某事。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6637,
+      "word": "pique",
+      "ipa": "/piːk/",
+      "pos": "v.",
+      "coreMeaningZh": "激起，刺激",
+      "coreEn": "to awaken or stimulate interest or curiosity",
+      "coreImageZh": "女孩把盒子放到正在看书的男孩面前，提醒他里面有声音；他把书合上，伸手摸盒盖，又凑近追问里面究竟是什么。盒子把他的注意力从书上拉过来，pique 在这里就是激起好奇心，并不表示谜底已经揭晓。",
+      "mnemonics": [
+        {
+          "method": "PEEK / PIQUE",
+          "textZh": "peek（偷看、瞥一眼）和 pique 都读 /piːk/。盒盖只露出一条缝，你不知道里面装着什么，好奇心被激起来，忍不住想 peek 一眼。想偷看的动作帮你记 pique your curiosity：激起的是心里的好奇，不是 pique 本身就表示偷看。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "PEAK / PIQUE",
+          "textZh": "peak（山峰）也与 pique 同音。地图上出现一座你从未见过的高峰，你立刻想知道山顶是什么样：这个 peak piques your interest。山峰是引发兴趣的对象，pique 则是“激起”的动作；兴趣刚被勾起，不必已经达到 peak 所说的最高点。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "激起，刺激",
+          "explanationZh": "常用及物结构 pique somebody’s interest/curiosity，表示激起某人的兴趣或好奇心。过去式和过去分词是 piqued。另有使恼怒义以及名词的不悦义，不能把它们混入这个搭配。",
+          "collocations": [
+            {
+              "phrase": "pique somebody’s curiosity",
+              "meaningZh": "激起某人的好奇心"
+            },
+            {
+              "phrase": "pique somebody’s interest",
+              "meaningZh": "引起某人的兴趣"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "arouse",
+          "comparisonZh": "都可表示激起兴趣或情感；arouse 适用范围更广。"
+        },
+        {
+          "word": "stimulate",
+          "comparisonZh": "都可表示刺激兴趣；stimulate 也常用于促进活动、增长或思考。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Brightly colored objects pique a baby's interest.",
+          "translationZh": "色彩鲜艳的物体会引起婴儿的兴趣。",
+          "explanationZh": "objects 是复数主语，因此用 pique；a baby’s interest 是宾语。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pique"
+        },
+        {
+          "textEn": "This phenomenon piqued Dr Morris' interest.",
+          "translationZh": "这一现象引起了莫里斯博士的兴趣。",
+          "explanationZh": "piqued 是过去式；interest 前的所有格说明是谁的兴趣。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/pique"
+        }
+      ]
+    },
+    {
+      "number": 6638,
+      "word": "pirate",
+      "ipa": "/ˈpaɪrət/",
+      "pos": "v.",
+      "coreMeaningZh": "盗版，盗用",
+      "coreEn": "to copy or take another’s work without authorization",
+      "coreImageZh": "画家已经明确拒绝授权，男人仍把她画的海盗图放进扫描仪，复制成一摞相同的画；后来她在摊位上发现这些印件，当面指出是偷印的。pirate 在这里不是说画里的海盗，而是未经授权盗印、盗用别人的作品。",
+      "mnemonics": [
+        {
+          "method": "PIRATE 海盗",
+          "textZh": "先想熟悉的 pirate（海盗）：他把不属于自己的东西据为己有。把场景从船上移到作品上，有人不经作者许可，把作品复制后当自己的货品出售，这就是动词 pirate。原作可以还在作者手里，被夺走的是对作品使用的正当控制，不必真的抢走那本书。",
+          "kind": "semantic_image",
+          "original": true
+        },
+        {
+          "method": "PRIVATE / PIRATE",
+          "textZh": "private 是“私有的”，先想到一份属于作者的手稿：别人没有取得许可，却擅自复制来卖。把 PRIVATE 的 V 去掉，再让 R 和 I 调换位置，就拼成 PIRATE。用“别人的东西，不能擅拿”连接盗用；这里的关键是未经授权，不是作品必须尚未公开。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "盗版，盗用",
+          "explanationZh": "及物动词，常接 software、music、work 等，指未经许可复制、使用或出售。过去分词 pirated 常放在名词前，表示盗版的。作名词时可指海盗。",
+          "collocations": [
+            {
+              "phrase": "pirate software",
+              "meaningZh": "盗版软件（动作）"
+            },
+            {
+              "phrase": "pirated copies",
+              "meaningZh": "盗版复制品"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "steal",
+          "comparisonZh": "都涉及未经允许拿走或占用；pirate 在本义中更具体地指非法复制、使用作品。"
+        },
+        {
+          "word": "plagiarize",
+          "comparisonZh": "都可能侵犯他人作品权益；plagiarize 强调把别人的创作冒充自己的，pirate 强调未经许可复制或使用，不一定冒充作者。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was accused of pirating their invention.",
+          "translationZh": "他被指控盗用了他们的发明。",
+          "explanationZh": "be accused of 后接动名词，pirating 表示盗用的行为。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pirate"
+        },
+        {
+          "textEn": "Jones was accused of having pirated the scientist’s work.",
+          "translationZh": "琼斯被指控盗用了那位科学家的成果。",
+          "explanationZh": "having pirated 是完成式动名词，说明盗用发生在指控之前。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/pirate_2"
+        }
+      ]
+    },
+    {
+      "number": 6639,
+      "word": "pitiless",
+      "ipa": "/ˈpɪtiləs/",
+      "pos": "adj.",
+      "coreMeaningZh": "没有同情心的",
+      "coreEn": "showing no compassion for someone’s suffering",
+      "coreImageZh": "雨中男孩抱着已经淋湿的纸箱，请求到门廊下暂避；门卫举手拦住他，又伸手指着一旁说“出去”，男孩只好低着头离开。pitiless 形容面对别人的困境仍毫不怜悯，连这点暂时的遮雨之处也不愿让给他。",
+      "mnemonics": [
+        {
+          "method": "PITY + LESS",
+          "textZh": "pity 是“同情、怜悯”，-less 表示“没有”：把 PITY 的 Y 换成 I，再加 LESS，就成 PITILESS。想象求助者已冷得发抖，对方却把温暖的门关上，连一点 pity 都不给。LESS 在这里不是“少一点”，而是没有那份怜悯。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "PITIFUL / PITILESS",
+          "textZh": "把 pitiful（可怜的）和 pitiless（无情的）放进同一幅画：流落街头的人衣衫单薄，处境 pitiful；旁人看见他的难处却冷冷推开他，态度 pitiless。两词共享 PITI，词尾却把角色分开：前者让人同情，后者不肯同情，别把“可怜”与“无情”记反。",
+          "kind": "word_family",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "没有同情心的",
+          "explanationZh": "形容人、目光、态度或行为缺少怜悯，语气较强，常带谴责意味。与 pitiful“可怜的”不同：pitiless 描述不给同情的一方，而不是值得同情的一方。",
+          "collocations": [
+            {
+              "phrase": "a pitiless look",
+              "meaningZh": "冷酷无情的目光"
+            },
+            {
+              "phrase": "pitiless treatment",
+              "meaningZh": "毫无怜悯的对待"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "merciless",
+          "comparisonZh": "都表示不留情、没有怜悯；merciless 常强调毫不宽恕，pitiless 强调不为别人的痛苦所动。"
+        },
+        {
+          "word": "callous",
+          "comparisonZh": "都可指冷酷；callous 更突出对别人的感受或痛苦麻木。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The soldiers were pitiless toward their enemy.",
+          "translationZh": "这些士兵对敌人毫不留情。",
+          "explanationZh": "be pitiless toward somebody 表示对某人没有怜悯。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pitiless"
+        },
+        {
+          "textEn": "He saw the pitiless eyes of his enemy.",
+          "translationZh": "他看见了敌人冷酷无情的眼神。",
+          "explanationZh": "pitiless 修饰 eyes，以眼神表现人的冷酷。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/pitiless"
+        }
+      ]
+    },
+    {
+      "number": 6640,
+      "word": "pittance",
+      "ipa": "/ˈpɪtəns/",
+      "pos": "n.",
+      "coreMeaningZh": "少量津贴，微薄报酬",
+      "coreEn": "a very small allowance or payment",
+      "coreImageZh": "男孩搬完盆栽，伸手询问工钱，拿到的却只有掌心里几枚零钱；到了面包摊，摊主告诉他，这些钱连一个面包也买不起。pittance 指少得可怜的一点报酬或津贴，画面用辛苦劳动与买不起面包的反差，突出钱少得很不够用。",
+      "mnemonics": [
+        {
+          "method": "PITY / PITTANCE",
+          "textZh": "pity 是怜悯，pittance 与它同源，早先可指出于慈善给的一小份东西。沿着这条线想：本来是怜悯别人，给一点接济；后来连辛苦工作的报酬也只剩这么一点，少得让人同情。PIT- 的共同开头连着 pity，把‘一点施舍般的钱’转到今天微薄工资、津贴的用法。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "DISTANCE / PITTANCE",
+          "textZh": "送货员跑过很长的 distance（距离），鞋底都磨薄了，结账时却只拿到几枚硬币。DISTANCE 把开头 D 换成 P、第三个字母 S 换成 T，就成为 PITTANCE。长距离和少得可怜的工钱形成反差，提醒这个词常含‘给这么点，实在太少了’的不满。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "少量津贴，微薄报酬",
+          "explanationZh": "可数名词，通常用单数 a pittance，指少得不足以维持生活或与付出不相称的钱。常用于工资、津贴、养老金，带嫌其太少的意味，而非中性的少量。",
+          "collocations": [
+            {
+              "phrase": "work for a pittance",
+              "meaningZh": "为微薄报酬工作"
+            },
+            {
+              "phrase": "pay somebody a pittance",
+              "meaningZh": "付给某人少得可怜的报酬"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "peanuts",
+          "comparisonZh": "两者都可指少得可怜的钱；peanuts 是非正式复数用法，pittance 通常用单数。"
+        },
+        {
+          "word": "small allowance",
+          "comparisonZh": "都可指少量津贴；small allowance 较中性，pittance 强调少得不够用或不合理。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She could barely survive on the pittance she received as a pension.",
+          "translationZh": "她几乎无法靠那一点养老金维持生活。",
+          "explanationZh": "survive on 表示靠某种收入维持生活；she received 是省略关系代词的定语从句。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/pittance"
+        },
+        {
+          "textEn": "The internship offers only a pittance for a salary, but it is a great opportunity to gain experience.",
+          "translationZh": "这份实习的报酬虽然微薄，却是积累经验的好机会。",
+          "explanationZh": "but 连接转折；only a pittance 强调工资少得可怜。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/pittance"
+        }
+      ]
+    }
+  ]
+}

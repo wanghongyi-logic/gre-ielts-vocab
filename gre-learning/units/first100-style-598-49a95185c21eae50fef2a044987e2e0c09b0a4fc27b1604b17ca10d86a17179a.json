@@ -1,0 +1,326 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6611,
+      "word": "periodical",
+      "ipa": "/ˌpɪəriˈɒdɪkl/",
+      "pos": "adj.",
+      "coreMeaningZh": "周期性的，有固定间隔的",
+      "coreEn": "occurring or recurring at regular intervals",
+      "coreImageZh": "老师和男孩约好每周同一时间检查盆栽，随后又在约定的观察时间量高度、翻记录本，补上新的观察结果。periodical 强调按一定间隔反复发生，这项检查不是想起来才做，而是隔一周就再次来到。",
+      "mnemonics": [
+        {
+          "method": "PERIOD + -ICAL",
+          "textZh": "PERIOD 可以指一段时间或周期，接上形容词结尾 -ICAL，组成 PERIODICAL。想象在日历上每隔七天圈出一天，每一个 period 走完，同一项检查就再次出现。一个个相等的时间段把事件串起来，便形成 periodical 的定期、周期性。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "PERIODICAL 期刊",
+          "textZh": "periodical 作名词可以指期刊。想象你订了一份月刊，每个月到相同的发行日，新一期就送来，书架上按月份排成一列。一本具体的 periodical 背后，正是按期出现的出版节奏；从每月等新刊的经验，就能提取形容词 periodical 的有固定间隔。",
+          "kind": "semantic_image",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "周期性的，有固定间隔的",
+          "explanationZh": "本义项是形容词，常放在 visits、checks、inspection 等名词前；periodic 更常见，也表示周期性。periodical 作名词则是定期出版的期刊，要根据句中位置区分。",
+          "collocations": [
+            {
+              "phrase": "periodical visits",
+              "meaningZh": "定期探访"
+            },
+            {
+              "phrase": "periodical checks",
+              "meaningZh": "定期检查"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "periodic",
+          "comparisonZh": "在定期、周期性义上基本相同，periodic 更常见。"
+        },
+        {
+          "word": "regular",
+          "comparisonZh": "都可形容有规律发生；regular 含义更广，也可表示普通的、惯常的或规则的。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She made periodical visits to her dentist.",
+          "translationZh": "她定期去看牙医。",
+          "explanationZh": "periodical 修饰 visits；made visits to 表示去拜访或就诊。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/periodical"
+        },
+        {
+          "textEn": "The equipment needs periodical checks to keep it working safely.",
+          "translationZh": "这些设备需要定期检查，以保持安全运行。",
+          "explanationZh": "needs 后接名词短语；to keep 表目的，keep it working 表示使其保持运行。",
+          "sourceAttribution": "自编"
+        }
+      ]
+    },
+    {
+      "number": 6612,
+      "word": "perish",
+      "ipa": "/ˈperɪʃ/",
+      "pos": "vi.",
+      "coreMeaningZh": "死亡，消亡",
+      "coreEn": "to die or cease to exist",
+      "coreImageZh": "男孩发现一盆久未浇水的植物完全干枯，拿起水壶想补救；老师查看枯叶后说明，它已经枯死，浇水也救不回来了，随后把花盆移走。perish 在这里是生命真正走到终点，留下的是死亡后的枯枝，而不只是暂时缺水打蔫。",
+      "mnemonics": [
+        {
+          "method": "PER- + IRE",
+          "textZh": "perish 的拉丁语来源由表示完全的 PER- 和表示去、走的 IRE 组成，原意像“彻底离去”。想象一株植物的生命力一点点消退，最后完全离开，只剩枯干的枝条；把这种无法再回来的离去，接到 perish 的死亡、消亡。词源里的离去强调的是生命或存在的终止。",
+          "kind": "etymology",
+          "original": true
+        },
+        {
+          "method": "CHERISH / PERISH",
+          "textZh": "CHERISH 是珍爱，把开头 CH 换成 P，后面的 ERISH 不动，就得到 PERISH。想象孩子很 cherish 一盆花，细心照料；另一个故事里的花却长期无人照看，最终 perish。两词长长的尾部相同，一幅是珍惜着让它好好活，一幅是生命消亡，用这组结果不同的花盆记住 PERISH。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "死亡，消亡",
+          "explanationZh": "本义项是不及物动词，不直接接被杀死的对象。比 die 更正式，可指人在灾难中死亡，也可指文明、语言等消亡。常见 perish in a fire、perish at sea。",
+          "collocations": [
+            {
+              "phrase": "perish in a fire",
+              "meaningZh": "在火灾中丧生"
+            },
+            {
+              "phrase": "perish at sea",
+              "meaningZh": "在海上遇难"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "die",
+          "comparisonZh": "都可表示死亡；die 最常用，perish 更正式，也可表示事物消亡。"
+        },
+        {
+          "word": "cease to exist",
+          "comparisonZh": "解释性的近义表达，指不再存在，可用于文明、制度或其他事物。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The sailors perished at sea.",
+          "translationZh": "那些水手在海上遇难。",
+          "explanationZh": "perished 为不及物动词；at sea 表示在海上。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/perish"
+        },
+        {
+          "textEn": "Many ancient languages have perished over time.",
+          "translationZh": "许多古代语言已随着时间消亡。",
+          "explanationZh": "现在完成时说明从过去到现在形成的结果；over time 表示随着时间推移。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/perish"
+        }
+      ]
+    },
+    {
+      "number": 6613,
+      "word": "permanent",
+      "ipa": "/ˈpɜːmənənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "永恒的",
+      "coreEn": "lasting or intended to remain indefinitely",
+      "coreImageZh": "男孩指着新建的纪念园，问活动结束后这里是否还会留下；老师说明这是要永久保留的纪念园，他于是给树浇水，离开时仍回头看它。permanent 强调长期固定存在，纪念园会在活动结束后继续留下，而不是只为当天临时布置。",
+      "mnemonics": [
+        {
+          "method": "PER- + MAN-",
+          "textZh": "permanent 的拉丁语来源含有 PER-（始终、贯穿）和 MAN-（留下、停留），合起来就是持续留下。想象展览结束时，临时展板一块块撤走，馆藏的核心作品却一直留在原处，往后仍供人观看。抓住这份不随短期活动撤去的留存，便能理解 permanent 的长期、永久。",
+          "kind": "etymology",
+          "original": true
+        },
+        {
+          "method": "PERM / PERMANENT",
+          "textZh": "理发店里的 PERM 指烫发，这个短词正是从 PERMANENT 缩出来的。临时做出的卷发可能很快散开，perm 则让卷曲保持较长时间，因此借用了持久的意思。用这个四字母的日常发型词去找回完整 PERMANENT，也能提醒自己：它在生活用语里常表示稳定、长久，并非所有东西真的永远不变。",
+          "kind": "word_family",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "永恒的",
+          "explanationZh": "形容词，与 temporary“暂时的”相对。常表示长期存在或原本打算无限期保留，不保证现实中绝不会改变；permanent damage 指难以逆转的损害，permanent job 指非临时职位。",
+          "collocations": [
+            {
+              "phrase": "a permanent home",
+              "meaningZh": "永久的家"
+            },
+            {
+              "phrase": "a permanent record",
+              "meaningZh": "永久记录"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "enduring",
+          "comparisonZh": "都指持久；enduring 强调经得起时间，permanent 强调不是临时安排。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "lasting",
+          "comparisonZh": "都可指长期持续；lasting 更着重效果或影响延续很久。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She made a permanent home in this country.",
+          "translationZh": "她在这个国家建立了永久的家。",
+          "explanationZh": "made a home 表示安家；permanent 强调长期定居而非暂住。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/permanent"
+        },
+        {
+          "textEn": "The transcripts will serve as a permanent record of the proceedings.",
+          "translationZh": "这些文字记录将作为整个议事过程的永久记录。",
+          "explanationZh": "serve as 表示充当；of the proceedings 说明记录的内容。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/permanent"
+        }
+      ]
+    },
+    {
+      "number": 6614,
+      "word": "persecute",
+      "ipa": "/ˈpɜːsɪkjuːt/",
+      "pos": "v.",
+      "coreMeaningZh": "迫害，折磨",
+      "coreEn": "to subject someone persistently to cruel or unfair treatment",
+      "coreImageZh": "几位同学因为一个孩子的口音不同，先拒绝让他一起踢球，又围着指点嘲笑；男孩向老师说明他们总因口音欺负他，老师便过来陪伴这个难过的孩子。persecute 强调有针对性地反复不公对待，抓住对方的身份差异持续排斥、折磨他。",
+      "mnemonics": [
+        {
+          "method": "PER- + SECUT-",
+          "textZh": "persecute 的词源中，PER- 有彻底、一直的意味，SECUT- 同跟随、追逐有关，原来的组合含有敌意追赶。想象一个人走到哪里，都有人跟上来刁难，换个地方仍摆脱不了同一群人的恶意。把跟随变成带敌意的不放过，就能抓住 persecute 持续迫害、折磨的特点。",
+          "kind": "etymology",
+          "original": true
+        },
+        {
+          "method": "PROSECUTE / PERSECUTE",
+          "textZh": "PROSECUTE 是起诉，把开头 PRO 换成 PER，后面的 SECUTE 原样保留，就是 PERSECUTE。想象两份报道：一份说检方就具体犯罪提出指控，用 prosecute；另一份说有人仅因宗教信仰不同，便长期受到威胁和排斥，用 persecute。相同的长尾帮你认形，法律追诉与不公迫害的区别帮你避免把两词混用。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "迫害，折磨",
+          "explanationZh": "及物动词，直接接受害者，强调持续、恶意或不公的对待，常因宗教、身份或信念而发生；常用 be persecuted for。不要与 prosecute“起诉”混淆。",
+          "collocations": [
+            {
+              "phrase": "persecute somebody for their beliefs",
+              "meaningZh": "因某人的信仰而迫害他"
+            },
+            {
+              "phrase": "religious persecution",
+              "meaningZh": "宗教迫害"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "oppress",
+          "comparisonZh": "都涉及不公伤害；oppress 常突出权力压迫，persecute 更强调持续针对某人或某群体。"
+        },
+        {
+          "word": "torment",
+          "comparisonZh": "都可表示折磨；torment 强调身心痛苦，persecute 更常含反复恶意针对。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The country's leaders relentlessly persecuted those who fought against the regime.",
+          "translationZh": "该国领导人无情地迫害那些反抗该政权的人。",
+          "explanationZh": "those who 引出一类人；relentlessly 强调迫害持续而毫不留情。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/persecute"
+        },
+        {
+          "textEn": "They were persecuted for their beliefs.",
+          "translationZh": "他们因自己的信仰而遭到迫害。",
+          "explanationZh": "were persecuted 是被动结构；for 引出遭受迫害的原因。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/persecute"
+        }
+      ]
+    },
+    {
+      "number": 6615,
+      "word": "persevere",
+      "ipa": "/ˌpɜːsəˈvɪə(r)/",
+      "pos": "vi.",
+      "coreMeaningZh": "坚持不懈，不屈不挠",
+      "coreEn": "to keep trying despite difficulty or discouragement",
+      "coreImageZh": "男孩学骑车时车身歪斜，一度停下来用脚撑住；老师鼓励他稳住再来，他重新握好车把，说还想继续练，后来又向前骑出去。persevere 强调遇到困难仍继续尝试，这次没掌握，不等于就此放弃。",
+      "mnemonics": [
+        {
+          "method": "PER- + SEVERE",
+          "textZh": "PER- 表示彻底，SEVERE 是严格的；persevere 的历史来源含有严格坚持、坚定遵守的意思。想象学琴的人对自己约定每天认真练习，难段一时弹不好，第二天仍照约定坐回琴前。把严格守住自己的决定连到不因困难停下，就能理解 persevere 的坚持不懈。",
+          "kind": "etymology",
+          "original": true
+        },
+        {
+          "method": "PRESERVE / PERSEVERE",
+          "textZh": "PRESERVE 是保存，开头是 PRE；PERSEVERE 是坚持，开头是 PER，拼写还多一个 E。想象研究者先把一份古老手稿 preserve 在保护盒里，随后多年反复查证，仍 persevere in deciphering it，坚持解读它。一个让已有的东西留存，一个让努力的行动继续，借这两项相连的工作分清易混词。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "坚持不懈，不屈不挠",
+          "explanationZh": "不及物动词，常用 persevere in/with something 或 persevere in doing something；强调遇到困难、反对或挫折仍继续努力，通常带赞许意味。",
+          "collocations": [
+            {
+              "phrase": "persevere in one's efforts",
+              "meaningZh": "坚持不懈地努力"
+            },
+            {
+              "phrase": "persevere with a task",
+              "meaningZh": "坚持完成一项任务"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "persist",
+          "comparisonZh": "都表示坚持；persist 也可表示问题或现象持续，persevere 更突出克服困难的努力。",
+          "sources": [
+            "B"
+          ]
+        },
+        {
+          "word": "keep trying",
+          "comparisonZh": "常用的解释性表达；persevere 更正式，且特别强调困难中不放弃。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She persevered in her studies and graduated near the top of her class.",
+          "translationZh": "她坚持努力学习，毕业时成绩名列前茅。",
+          "explanationZh": "persevered in 后接努力的领域；and 连接两个过去时谓语。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/persevere"
+        },
+        {
+          "textEn": "Even though he was tired, he persevered and finished the race.",
+          "translationZh": "尽管很累，他还是坚持下来，跑完了比赛。",
+          "explanationZh": "Even though 引出让步从句；persevered 不带直接宾语。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/persevere"
+        }
+      ]
+    }
+  ]
+}

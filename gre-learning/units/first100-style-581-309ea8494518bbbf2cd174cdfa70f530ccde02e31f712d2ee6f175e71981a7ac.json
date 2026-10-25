@@ -1,0 +1,320 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6526,
+      "word": "nibble",
+      "ipa": "/ˈnɪbl/",
+      "pos": "v.",
+      "coreMeaningZh": "小口咬",
+      "coreEn": "to eat by taking small bites",
+      "coreImageZh": "姐姐提醒别把饼干一口塞进去，男孩每次只咬边缘一点，手里还留着大部分饼干。nibble 强调小口地咬、常常一口口地啃，关键是每一口很小，不只是吃东西的速度慢。",
+      "mnemonics": [
+        {
+          "method": "LITTLE BITES",
+          "textZh": "little bites 是“一小口一小口”。借 LITTLE 的字形，把开头 L 换成 N，中间 TT 换成两个 bite（咬）的 B，就拼成 NIBBLE。想象两颗小小的 B 轮流咬饼干边缘，每次只咬掉一点；双 B 提醒连续的小口咬，也帮你记住 nibble 中间要写两个 b。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "DRIBBLE / NIBBLE",
+          "textZh": "dribble 除了“运球”，也指液体一点点滴流：杯沿的果汁慢慢 dribble 下来，旁边的小鼠则一点点 nibble 饼干。把 DRIBBLE 开头的 DR 换成 N，就是 NIBBLE；两词都押 /ɪbəl/ 的韵，一个少量地滴，一个小口地啃。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "小口咬",
+          "explanationZh": "可直接接食物作宾语，也可用 nibble at/on something，强调每次只吃一点点，常见于不饿、试吃或慢慢啃的情景。",
+          "collocations": [
+            {
+              "phrase": "nibble a biscuit",
+              "meaningZh": "小口咬饼干"
+            },
+            {
+              "phrase": "nibble at something",
+              "meaningZh": "一点点啃某物"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "peck at",
+          "comparisonZh": "都可表示小口地吃；peck at 常带吃得少或没胃口的意味。"
+        },
+        {
+          "word": "bite",
+          "comparisonZh": "都涉及咬；bite 不限制大小或次数，nibble 强调小口、常反复地咬。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He started to nibble his biscuit.",
+          "translationZh": "他开始小口咬饼干。",
+          "explanationZh": "nibble 直接接食物，表示一点点吃。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/nibble"
+        },
+        {
+          "textEn": "She nibbled at the corner of a piece of dry toast.",
+          "translationZh": "她小口啃着一片干吐司的边角。",
+          "explanationZh": "nibble at 突出小口啃某个部位。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/nibble"
+        }
+      ]
+    },
+    {
+      "number": 6527,
+      "word": "nicety",
+      "ipa": "/ˈnaɪsəti/",
+      "pos": "n.",
+      "coreMeaningZh": "准确；精确",
+      "coreEn": "careful precision and attention to fine details",
+      "coreImageZh": "男孩用尺量盒口，再细调盖子的位置，最后盖子平整地盖上；差一点点也不能随便将就。nicety 在这里指对细微差距的精确把握，不是笼统地夸这个盒子做得漂亮。",
+      "mnemonics": [
+        {
+          "method": "NINETY / NICETY",
+          "textZh": "NINETY（九十）的第二个 N 换成 C，就拼成 NICETY。木工要做一个 ninety-degree angle（九十度角），量到八十九度半也不能当成已经合格，还得细调。把这个严格对准九十度的画面，连到 to a nicety：分寸拿捏得十分精确。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "NICE + TY",
+          "textZh": "nice 不只表示“好的、友善的”；在 a nice distinction 里，它说的是细微、需要仔细辨别的区别。nice 后面接 -ty，就得到 nicety。想象修表师辨出两枚小零件之间极细的差别，选出恰好合用的一枚：这里要记的是细致的辨别与准确的拿捏，不是“人很好”。",
+          "kind": "word_family",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "准确；精确",
+          "explanationZh": "表示精确、细致时是正式用法，常见于 to a nicety，意为“十分准确地”。复数 niceties 常另指细节或细微差别，不能一律译成准确。",
+          "collocations": [
+            {
+              "phrase": "to a nicety",
+              "meaningZh": "十分准确地"
+            },
+            {
+              "phrase": "nicety of detail",
+              "meaningZh": "细节的精确细致"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "precision",
+          "comparisonZh": "都可指精确；precision 更常用，nicety 往往强调细微之处的准确拿捏。"
+        },
+        {
+          "word": "exactness",
+          "comparisonZh": "都可指准确无误；exactness 着重与标准吻合，nicety 可带细致辨别的意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He judged the distance to a nicety.",
+          "translationZh": "他把距离判断得十分准确。",
+          "explanationZh": "to a nicety 修饰判断，表示精确无误。",
+          "sourceAttribution": "https://dictionary.cambridge.org/us/dictionary/english-italian/to-a-nicety"
+        },
+        {
+          "textEn": "For he is very wise, and weighs all things to a nicety in the scales of his malice.",
+          "translationZh": "因为他十分精明，会怀着恶意把一切都权衡得极其精确。",
+          "explanationZh": "to a nicety 表示权衡得极其精细；句中带有负面语气。",
+          "sourceAttribution": "https://www.dictionary.com/browse/nicety"
+        }
+      ]
+    },
+    {
+      "number": 6528,
+      "word": "nil",
+      "ipa": "/nɪl/",
+      "pos": "n.",
+      "coreMeaningZh": "不存在；零",
+      "coreEn": "zero; nothing",
+      "coreImageZh": "球落在筐外，两人弯腰查看空筐，男孩说“一个也没进，还是零”。nil 指进筐的数量为零，不是场景里没有球，也不是只进了很少几个。",
+      "mnemonics": [
+        {
+          "method": "Nothing Is Left",
+          "textZh": "用 Nothing Is Left（什么都没剩下）的三个首字母，拼出 N-I-L。点心盒里的最后一块饼干被拿走，盒中数量变成 0；Nothing Is Left 提醒你，nil 是一个也没有，不是还剩一点点。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "BILL 金额为 NIL",
+          "textZh": "餐厅给中奖客人免单，BILL（账单）上的应付金额划成 0：金额是 NIL。字形上，把 BILL 的 B 换成 N，再去掉一个 L，就得到 NIL；读音也保留 /ɪl/，把开头 /b/ 换成 /n/。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不存在；零",
+          "explanationZh": "可表示数量为零或完全不存在。英式英语常用它读足球等比赛的零分；almost/virtually nil 表示几乎为零。",
+          "collocations": [
+            {
+              "phrase": "three–nil",
+              "meaningZh": "三比零"
+            },
+            {
+              "phrase": "almost nil",
+              "meaningZh": "几乎为零"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "zero",
+          "comparisonZh": "都可表示零；zero 适用范围更广，nil 常见于英式体育比分或表示数量不存在。"
+        },
+        {
+          "word": "nothing",
+          "comparisonZh": "都可表示没有；nothing 更日常，nil 常用来概括数量或可能性为零。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They beat us one-nil in the final.",
+          "translationZh": "他们在决赛中以一比零击败了我们。",
+          "explanationZh": "one-nil 表示一比零的比分。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/nil"
+        },
+        {
+          "textEn": "Their legal rights are virtually nil.",
+          "translationZh": "他们几乎没有法律权利。",
+          "explanationZh": "virtually nil 表示几乎不存在。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/nil"
+        }
+      ]
+    },
+    {
+      "number": 6529,
+      "word": "nip",
+      "ipa": "/nɪp/",
+      "pos": "n.; v.",
+      "coreMeaningZh": "少量；小口吃喝",
+      "coreEn": "a small portion; to drink in small amounts",
+      "coreImageZh": "男孩只想尝一点，姐姐从三明治上取下一小块递给他，盘里仍留着大部分。nip 在这里是从整份里取出的一小份，强调量少；不是整块三明治，也不着重反复啃咬的动作。",
+      "mnemonics": [
+        {
+          "method": "SIP / NIP",
+          "textZh": "sip 是“小口抿”，把 SIP 的 S 换成 N 就得到 NIP，读音也只从 /sɪp/ 换成 /nɪp/。客人想尝尝酒味，只抿一小口，没有喝下一整杯，这一小口酒可以叫 a nip。用 sip 搭桥时，记得 nip 的饮用义尤其常用于酒。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "SNIP 去掉 S",
+          "textZh": "snip 是“剪下一小段”，把它开头的 S 剪掉，便露出 NIP。想象从一大块面包边上掐下一丁点：nip 也能表示掐、咬下一小块，留下的这一小份则是 a nip。借“剪一点、掐一点”的动作，把完整词形和“少量”连起来。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "少量；小口吃喝",
+          "explanationZh": "作名词可指一小份；a nip of something 表示少量某物，尤常指一小口烈酒。作动词表示小口喝时，通常指饮酒，不宜泛指各种饮料。",
+          "collocations": [
+            {
+              "phrase": "a nip of bread",
+              "meaningZh": "一点面包"
+            },
+            {
+              "phrase": "a nip of whisky",
+              "meaningZh": "一小口威士忌"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "bit",
+          "comparisonZh": "都可指少量；a bit of 很常用，nip 更强调小小的一份，饮料语境常指酒。"
+        },
+        {
+          "word": "sip",
+          "comparisonZh": "都可表示小口饮用；sip 可以用于茶、水等，nip 的饮用义通常指酒。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I'll have just a nip of your sandwich.",
+          "translationZh": "我只吃一点你的三明治。",
+          "explanationZh": "a nip of 表示一小份，强调量少。",
+          "sourceAttribution": "https://www.merriam-webster.com/dictionary/nip"
+        },
+        {
+          "textEn": "She had a habit of taking an occasional nip from a flask of cognac.",
+          "translationZh": "她习惯偶尔从装着干邑白兰地的小酒壶里喝一小口。",
+          "explanationZh": "take a nip 表示喝一小口酒。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/nip"
+        }
+      ]
+    },
+    {
+      "number": 6530,
+      "word": "nitpick",
+      "ipa": "/ˈnɪtpɪk/",
+      "pos": "v.",
+      "coreMeaningZh": "吹毛求疵",
+      "coreEn": "to criticize unimportant details",
+      "coreImageZh": "纸房子已经搭得完整，男孩仍凑近指着屋顶小角，说还有一点点歪；姐姐让他也看看整个房子。nitpick 是揪住这种不影响整体的小毛病挑剔，重点是小题大做，不是认真修正重要错误。",
+      "mnemonics": [
+        {
+          "method": "NIT + PICK",
+          "textZh": "nit 是虱卵，pick 是挑；NIT + PICK 拼成 nitpick。想象有人像从发丝间找极小的虱卵那样，专在一份作品里挑微不足道的毛病：整体已经很好，他仍盯着几乎看不见的小错不放。这个“小到虱卵也要挑出来”的形象，带出吹毛求疵。",
+          "kind": "etymology",
+          "original": true
+        },
+        {
+          "method": "KNIT + PICK",
+          "textZh": "knit（编织）开头的 K 不发音，去掉它，再接 PICK，就拼出 NITPICK。你织好一整条暖和漂亮的围巾，对方却一直挑一个不影响使用的小线头。把这次对针织品的过分挑剔，同 KNIT /nɪt/ 的声音一起记下来。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "吹毛求疵",
+          "explanationZh": "常含贬义，指把注意力放在无关紧要的小错上，不是认真指出重大问题。可用 nitpick about/over something；nitpicking 也可指这类挑剔行为。",
+          "collocations": [
+            {
+              "phrase": "nitpick over details",
+              "meaningZh": "对细节吹毛求疵"
+            },
+            {
+              "phrase": "nitpick about wording",
+              "meaningZh": "对措辞挑小毛病"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "quibble",
+          "comparisonZh": "都可指为琐碎之处挑剔；quibble 常侧重字眼、细节或小小异议。"
+        },
+        {
+          "word": "carp",
+          "comparisonZh": "都带挑剔意味；carp 更强调不断抱怨找茬，nitpick 更聚焦微小细节。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "You're always nitpicking - it's so annoying!",
+          "translationZh": "你总是吹毛求疵，真烦人！",
+          "explanationZh": "always nitpicking 表示反复挑小毛病，语气不满。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/nitpick"
+        },
+        {
+          "textEn": "I do not believe that this is nitpicking.",
+          "translationZh": "我不认为这是在吹毛求疵。",
+          "explanationZh": "否认自己的批评只是针对无关紧要的细节。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/nitpick"
+        }
+      ]
+    }
+  ]
+}

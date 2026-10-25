@@ -1,0 +1,323 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6676,
+      "word": "preface",
+      "ipa": "/ˈprefəs/",
+      "pos": "n.",
+      "coreMeaningZh": "序言",
+      "coreEn": "an opening section that introduces a book and its purpose",
+      "coreImageZh": "男孩翻开书，看见故事前面还有一页，便问老师这是什么。老师指着这部分解释：作者先说说为什么写这本书；男孩随后才翻向后面的内容。preface 就是放在正文前的序言，先交代写作缘由、背景等。",
+      "mnemonics": [
+        {
+          "method": "PRE + FACE",
+          "textZh": "借字形把 preface 看成 pre-（在前）加 face（面对）：正文登场之前，先让作者来与读者‘见个面’。作者说这本书为什么写、想写给谁，交代完再请读者往后看。这次安排在正文之前的简短见面，就像一本书的 preface。",
+          "kind": "invented_association",
+          "original": true
+        },
+        {
+          "method": "PREPARE / PREFACE",
+          "textZh": "prepare 是准备，把第二个 P 换成 F、第二个 R 换成 C，就从 PREPARE 得到 PREFACE。读者初次打开一本书，还不知道写作背景；序言先交代这些来龙去脉，像出发前的一张路线图，让读者能够 prepare for the main text，为进入正文做好准备。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "序言",
+          "explanationZh": "可数名词，通常指书前介绍写作目的、背景或范围的部分，常由作者本人写。常说 the preface to a book；这里不取动词“以……作开场白”的用法。",
+          "collocations": [
+            {
+              "phrase": "the preface to a book",
+              "meaningZh": "一本书的序言"
+            },
+            {
+              "phrase": "write a preface",
+              "meaningZh": "写序言"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "introduction",
+          "comparisonZh": "都能指介绍性开篇；introduction 可直接引入主题，preface 通常交代写作背景和目的。"
+        },
+        {
+          "word": "foreword",
+          "comparisonZh": "也是书前文字，但 foreword 常由作者之外的人撰写，preface 通常由作者自写。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I read it in the preface to her new book.",
+          "translationZh": "我是在她新书的序言里读到这件事的。",
+          "explanationZh": "in 指在序言中；to her new book 说明是哪本书的序言。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/preface_1"
+        },
+        {
+          "textEn": "In his preface he claimed that he had created a new kind of music.",
+          "translationZh": "他在序言中声称自己创造了一种新的音乐。",
+          "explanationZh": "that 引出 claimed 的内容；had created 表示在作此声称之前已经创造。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/preface_1"
+        }
+      ]
+    },
+    {
+      "number": 6677,
+      "word": "pregnant",
+      "ipa": "/ˈpreɡnənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "重要的，意味深长的",
+      "coreEn": "full of meaning or unspoken significance",
+      "coreImageZh": "男孩问老师刚才读得怎么样，老师托着下巴停了一会儿，没有马上评价；男孩从这个停顿里感到还有重要的话，随后凑近听她指着稿子讲解。a pregnant pause 是意味深长的停顿，让人觉得尚未说出口的内容正在酝酿。",
+      "mnemonics": [
+        {
+          "method": "PREGNANT 怀孕的",
+          "textZh": "pregnant 最熟悉的意思是怀孕的，身体里正孕育着尚未出生的生命。把‘里面有东西正在酝酿’移到一句话或一阵沉默里：话还没有说透，深意却已经蓄在那里。因此 a pregnant remark 是意味深长的话，a pregnant pause 则是让人感觉有重要内容将要说出的停顿。",
+          "kind": "semantic_image",
+          "original": true
+        },
+        {
+          "method": "PRE + GRANT",
+          "textZh": "grant 可以指资助款。想主持人在宣布谁获得资助之前，忽然停住，台下的人屏息等待：名字还没念出，这几秒却装满了期待，正是一段 pregnant pause。把 PRE（事先）与 GRANT 连成 PREGRANT，再把第二个 R 换成 N，就得到 PREGNANT，停顿与那项即将宣布的重要决定也连在了一起。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "重要的，意味深长的",
+          "explanationZh": "此处是较正式的引申义，强调意味丰富或含有未明说的重要内容，常修饰 pause、silence，也可用 pregnant with meaning。不是任何普通的“重要”都适合用 pregnant。",
+          "collocations": [
+            {
+              "phrase": "a pregnant pause",
+              "meaningZh": "意味深长的停顿"
+            },
+            {
+              "phrase": "pregnant with meaning",
+              "meaningZh": "富有意味的"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "meaningful",
+          "comparisonZh": "都可表示有深意；pregnant 更突出蕴含着尚未明说的内容。"
+        },
+        {
+          "word": "significant",
+          "comparisonZh": "也可表示重要或有意味；significant 范围更广，pregnant 的修辞色彩更强。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her silences were pregnant with criticism.",
+          "translationZh": "她的沉默饱含批评的意味。",
+          "explanationZh": "pregnant with 引出沉默中蕴含的内容；silences 指多次沉默。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/pregnant"
+        },
+        {
+          "textEn": "There was a pregnant pause before she replied.",
+          "translationZh": "她回答之前有一阵意味深长的停顿。",
+          "explanationZh": "before 引出回答之前的时间；pause 是短暂停顿。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/pregnant"
+        }
+      ]
+    },
+    {
+      "number": 6678,
+      "word": "premeditate",
+      "ipa": "/prɪˈmedɪˌteɪt/",
+      "pos": "v.",
+      "coreMeaningZh": "预谋",
+      "coreEn": "to think out and plan an action before doing it",
+      "coreImageZh": "同伴还没来，男孩就先看看球架，打开柜子寻找藏球的位置，想好后关上柜门，等着对方转身时照计划行动。premeditate 的关键是事情发生之前已经认真盘算，动作还没开始，办法已在心里安排好。",
+      "mnemonics": [
+        {
+          "method": "PRE + MEDITATE",
+          "textZh": "pre- 是事先，meditate 是沉思，合起来正好是 PREMEDITATE。还没动手，他已经在脑子里把做法走过一遍：先等什么时机，再做哪一步，出现变化又怎么办。把沉思放在行动之前，就抓住了‘预先谋划’；用于坏事时，便是有意的预谋。",
+          "kind": "word_components",
+          "original": true
+        },
+        {
+          "method": "PRE + ME + DICTATE",
+          "textZh": "pre- 是事先，me 是我，dictate 是口述。想‘我’在事情开始前，就把整套安排口述给搭档：何时到场、在哪里等、谁先开口，都提前说定。将 PRE、ME、DICTATE 连成 PREMEDICTATE，再删去 C，正好成为 PREMEDITATE；这份事先留下的口述计划，显示行动早已谋划好。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "预谋",
+          "explanationZh": "可及物接计划的行为，也可不接宾语，强调行动前已经考虑或筹划。常用于不当行为或犯罪语境；过去分词 premeditated 很常见，表示有预谋的，而非一时冲动。",
+          "collocations": [
+            {
+              "phrase": "premeditate an attack",
+              "meaningZh": "预谋一次袭击"
+            },
+            {
+              "phrase": "a premeditated act",
+              "meaningZh": "有预谋的行为"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "plan",
+          "comparisonZh": "都可表示计划；plan 最通用，premeditate 强调事先蓄意考虑，常有负面语境。"
+        },
+        {
+          "word": "prearrange",
+          "comparisonZh": "指事先把安排做好；premeditate 可以只是在头脑中盘算，未必已作外部安排。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They premeditated the murder.",
+          "translationZh": "他们预谋了这起谋杀。",
+          "explanationZh": "premeditated 是过去式，直接接计划中的行为，强调事先谋划。",
+          "sourceAttribution": "https://dictionary.cambridge.org/us/thesaurus/premeditate"
+        },
+        {
+          "textEn": "The police believe the crime was premeditated.",
+          "translationZh": "警方认为这起犯罪是有预谋的。",
+          "explanationZh": "believe 后接省略 that 的从句；was premeditated 表示经过事先策划。",
+          "sourceAttribution": "https://dictionary.cambridge.org/dictionary/english/premeditated"
+        }
+      ]
+    },
+    {
+      "number": 6679,
+      "word": "preoccupation",
+      "ipa": "/priˌɒkjuˈpeɪʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "非常关心，全神贯注",
+      "coreEn": "intense attention or concern that occupies the mind",
+      "coreImageZh": "男孩低头摆弄飞机模型，同伴走到身旁叫他出去休息，他仍盯着零件没有回应；同伴再次招呼，他才抬起头。preoccupation 指心思被某件事占得很满，专注或挂念到其他事情不容易进入注意力。",
+      "mnemonics": [
+        {
+          "method": "PRE + OCCUPATION",
+          "textZh": "occupation 除了职业，也有占据的意思；前面加上 pre-，可以把 preoccupation 想成一件事先占住了心里的位置。脑中那张工作台已经被模型零件铺满，别人的问话一时连落脚处都没有。由空间被占满想到心思被占满，就能理解这种全神贯注或特别挂念。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "PRE + OCCASION",
+          "textZh": "occasion 是某个场合。重要演出还没到，他的心却早已全在那天：走路想着开场，吃饭想着座位，别人换了话题他也没跟上。把 PRE 放到 OCCASION 前，再在第二个 C 后插入 UP、把 S 改成 T，就拼成 PREOCCUPATION；场合尚未来到，心思已经被它占住。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "非常关心，全神贯注",
+          "explanationZh": "常用 preoccupation with something，指对某事持续关注、牵挂或专注，以至忽略别的事。作不可数名词可指这种状态；作可数名词也可指反复挂心的事情。",
+          "collocations": [
+            {
+              "phrase": "preoccupation with work",
+              "meaningZh": "对工作的专注或过度关注"
+            },
+            {
+              "phrase": "in a state of preoccupation",
+              "meaningZh": "处于全神贯注或心事重重的状态"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "absorption",
+          "comparisonZh": "都可表示全神贯注；absorption 更常强调完全投入活动，preoccupation 还可含忧虑、牵挂。"
+        },
+        {
+          "word": "obsession",
+          "comparisonZh": "在心思被某事占住的意义上接近；obsession 更强，常有难以摆脱、过度痴迷的意味。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She found his preoccupation with money irritating.",
+          "translationZh": "她觉得他一心惦记金钱很让人心烦。",
+          "explanationZh": "find something irritating 表示觉得某事烦人；with 引出过度关注的对象。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/preoccupation"
+        },
+        {
+          "textEn": "She spoke slowly, in a state of preoccupation.",
+          "translationZh": "她心事重重，慢慢地说着话。",
+          "explanationZh": "in a state of... 表示处于某种状态；这里的 preoccupation 指心思被别的事情占住。",
+          "sourceAttribution": "https://www.oxfordlearnersdictionaries.com/definition/english/preoccupation"
+        }
+      ]
+    },
+    {
+      "number": 6680,
+      "word": "preponderant",
+      "ipa": "/prɪˈpɒndərənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "占优势的，更重要的",
+      "coreEn": "greater than others in importance, influence, or amount",
+      "coreImageZh": "孩子们把筹码投进所选活动的盒子，画着树木的户外活动一箱明显更多，随后大家拿出背包、水壶等出行用品。preponderant 写的是比较中更占分量的一方，可以是数量、力量、影响或重要性上的优势。",
+      "mnemonics": [
+        {
+          "method": "PRE- + PONDER-",
+          "textZh": "pre- 有在前、超过的意思，ponder- 与 pound（磅）同属重量词族。想把双方的支持放在天平上，一边的筹码重得多，明显压过另一边。由实际分量更重，转到某种意见或力量更有分量，就能理解 preponderant：在比较中占优势、更重要。",
+          "kind": "word_family",
+          "original": true
+        },
+        {
+          "method": "PRE + POWER + ANT",
+          "textZh": "power 是力量，ant 是蚂蚁；想象蚂蚁搬运比赛中，一只蚂蚁轻松搬起别的几只合力才搬得动的食物，它在力量上明显领先。用 PRE（领先）把 POWER 和 ANT 连起来，再把 W 换成 ND，恰好得到 PREPONDERANT，领先的蚂蚁便把力量上的优势具体化了。",
+          "kind": "invented_association",
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "占优势的，更重要的",
+          "explanationZh": "较正式，既可表示数量或力量上占优势，也可表示影响或重要性更大。常修饰 influence、role、factor；重点是相较其他因素更有分量，而不一定是绝对唯一。",
+          "collocations": [
+            {
+              "phrase": "a preponderant influence",
+              "meaningZh": "占主导的影响"
+            },
+            {
+              "phrase": "a preponderant factor",
+              "meaningZh": "更有分量的因素"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "predominant",
+          "comparisonZh": "都指占主导或优势；preponderant 尤其突出在比较中分量更重。"
+        },
+        {
+          "word": "paramount",
+          "comparisonZh": "强调重要性最高、首要；preponderant 强调超过其他因素，范围也包括数量和力量。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "This is still a possible outcome but no longer the preponderant probability.",
+          "translationZh": "这仍是一个可能的结果，但已不再是可能性占优势的结果。",
+          "explanationZh": "still 与 no longer 对照仍然和不再；preponderant 表示相较其他可能性更占优势。",
+          "sourceAttribution": "张巍GRE核心词汇3000，原书第190页（PDF第192页）"
+        },
+        {
+          "textEn": "The innovation was preponderant compared to the similar systems of the competitors.",
+          "translationZh": "与竞争者的类似系统相比，这项创新占有优势。",
+          "explanationZh": "compared to 引出比较对象；preponderant 是表语，表示占优势。",
+          "sourceAttribution": "https://www.collinsdictionary.com/dictionary/english/preponderant"
+        }
+      ]
+    }
+  ]
+}
