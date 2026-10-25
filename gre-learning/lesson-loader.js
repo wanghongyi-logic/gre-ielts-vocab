@@ -1,5 +1,5 @@
 import {waitForLocal,preferVerifiedLocal} from './offline-async.js';
-import {hostedMediaPaths,isHostedMediaEntry} from './hosted-media.js';
+import {hostedMediaPaths} from './hosted-media.js';
 import {createMediaControl} from './offline-control.js';
 import {videoMode} from './offline-preferences.js';
 import {localAsset} from './offline-packs.js';
@@ -161,7 +161,8 @@ export class LessonLoader {
   const meta=this.index.get(Number(number));if(!meta)throw new Error('Lesson is not reviewed and ready');
   if(isStorybookCatalog(this.catalog)) {
    if(videoMode()==='none'){const unit=await this.resource(meta.unit,signal,priority),entry=unit.entries?.find(e=>e.number===meta.number);if(!entry||entry.word!==meta.word)throw new Error('Incompatible lesson');validateEntry(entry);return {entry,media:null};}
-   const refs=meta.storyMedia,allowNetwork=isHostedMediaEntry(meta,this.catalog.entries.indexOf(meta));
+   // Per-asset hosting below allows retained images without fetching retired videos.
+   const refs=meta.storyMedia,allowNetwork=[refs?.poster,refs?.video,refs?.staticPoster].some(ref=>ref&&this.hostedMediaPaths.has(ref.url));
    if(progressive){
     let availablePosterURL=null;
     const posterRead=this.optionalMedia(refs?.poster,signal,priority,allowNetwork,30000).then(url=>{availablePosterURL=url;return url;});
@@ -222,4 +223,5 @@ export class LessonLoader {
  }
  destroy(){this.cancel();for(const job of this.mediaReads.values())job.controller.abort();this.mediaReads.clear();this.localMediaReads.clear();this.nextUnit?.controller.abort();this.nextUnit=null;for(const job of this.textReads.values())job.controller.abort();this.textReads.clear();this.cache.clear();this.bytes=0;for(const url of this.mediaCache.values())URL.revokeObjectURL(url);this.mediaCache.clear();}
 }
+
 
