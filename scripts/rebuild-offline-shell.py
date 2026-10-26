@@ -1,37 +1,161 @@
-from pathlib import Path
-import json,hashlib,re
-root=Path(__file__).resolve().parent.parent
-p=root/'gre-learning/shell-manifest.json';data=json.loads(p.read_text());data['build']='183-offline1320-v34'
-assert "OFFLINE_EDITION='"+data['build']+"'" in (root/'gre-learning/offline-preferences.js').read_text(), 'Settings readiness edition must match shell build'
-paths=[x['url'] for x in data['assets']]
-for name in ['approved-mnemonic-records.js','hosted-media.js','offline-zip.js','offline-packs.js','offline-copy-worker.js','offline-manager.js','offline-range.js','offline-export.js','offline-export-ui.js','offline-export-worker.js','offline-export-hash.js','offline-preferences.js','offline-batch.js','offline-control.js','offline-releases.js','offline-releases.css','settings-storybook.css','frontmatter-turn.js','frontmatter-turn.css','botanical-margin.js','botanical-selection.js','botanical-growth.js','botanical-progress.js','botanical-tip-flower.webp','botanical-margin.css','botanical-vine.webp','botanical-sage-wash.webp','book-paper-face.webp','images/botanical-progress-bookmark.png','images/bookbinding-inlay.webp']:
- path='gre-learning/'+name
- if path not in paths:paths.append(path)
-# Cache all small lesson text files, never pre-cache all video assets.
-catalog=json.loads((root/'gre-learning/catalog.json').read_text())
-for unit in catalog['units']:
- path='gre-learning/'+unit['url']
- if path not in paths:paths.append(path)
-data['assets']=[{'url':path,'sha256':hashlib.sha256((root/path).read_bytes()).hexdigest(),'bytes':(root/path).stat().st_size} for path in paths]
-p.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
-sw=root/'sw.js';s=sw.read_text();control=(root/'gre-learning/offline-control.js').read_text().replace('export function ','function ');block='// BEGIN GENERATED MEDIA CONTROL\n'+control+'// END GENERATED MEDIA CONTROL\n'
-if '// BEGIN GENERATED MEDIA CONTROL' in s:s=re.sub(r'// BEGIN GENERATED MEDIA CONTROL\n.*?// END GENERATED MEDIA CONTROL\n',lambda _:block,s,flags=re.S)
-else:s=block+s
-policy=(root/'gre-learning/hosted-media.js').read_text().replace('export const ','const ').replace('export function ','function ');policy_block='// BEGIN GENERATED HOSTED MEDIA POLICY\n'+policy+'// END GENERATED HOSTED MEDIA POLICY\n'
-if '// BEGIN GENERATED HOSTED MEDIA POLICY' in s:s=re.sub(r'// BEGIN GENERATED HOSTED MEDIA POLICY\n.*?// END GENERATED HOSTED MEDIA POLICY\n',lambda _:policy_block,s,flags=re.S)
-else:s=policy_block+s
-s=re.sub(r"const BUILD='[^']+';","const BUILD='"+data['build']+"';",s);s=re.sub(r'const SHELL_ASSETS = .*?;\n', 'const SHELL_ASSETS = '+json.dumps(data['assets'],separators=(',',':'))+';\n',s,count=1);sw.write_text(s)
-# Catalog media references survive optional removal of hosted videos and illustrations.
-import gzip,datetime
-p=root/'asset-manifest.json';m=json.loads(p.read_text());m['releaseBuild']=data['build'];m['generatedAt']=datetime.datetime.now(datetime.timezone.utc).isoformat();m['readyAssetContract']='text+poster+video';m['availablePairedLessons']=catalog['publishedCount'];m['availableTextLessons']=catalog['publishedCount'];m['offlinePackageWords']=200
-old={a['path']:a for a in m['assets']}
-for entry in catalog['entries']:
- for ref in [entry.get('storyMedia',{}).get(role) for role in ['video','poster','staticPoster']]:
-  if ref:old.setdefault('gre-learning/'+ref['url'],{'path':'gre-learning/'+ref['url']})
-for path in paths:old.setdefault(path,{'path':path})
-for path,a in list(old.items()):
- if not (root/path).is_file() and path.startswith('gre-learning/story-media/') and path.endswith(('.mp4','.webm','.png','.webp','.jpg','.jpeg','.avif','.gif')):
-  del old[path];continue
- b=(root/path).read_bytes();h=hashlib.sha256(b).hexdigest();gz=a.get('gzipBytes') if a.get('sha256')==h else len(gzip.compress(b,mtime=0));a.update(loading='shell' if path in paths else 'on-demand',bytes=len(b),sha256=h,gzipBytes=gz)
-m['availablePairedLessons']=sum(all((root/'gre-learning'/ref['url']).is_file() for ref in [entry.get('storyMedia',{}).get(role) for role in ['video','poster','staticPoster']] if ref) for entry in catalog['entries'])
-m['assets']=list(old.values());m['totals']={k:sum(a[k] for a in m['assets']) for k in ['bytes','gzipBytes']};p.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n')
+"""Rehash the offline shell without treating a sparse checkout as a deletion.
+
+This command intentionally does not change catalog/media availability counts.
+Content publication is separate. Existing unavailable asset records are retained,
+so a layout-only release need not download the complete media library.
+"""
+from pathlib import Path, PurePosixPath
+import argparse
+import datetime
+import gzip
+import hashlib
+import json
+import re
+from urllib.parse import unquote, urlsplit
+
+
+def local_reference(source, reference):
+    """Resolve a relative web dependency to a repository-relative path."""
+    parsed = urlsplit(reference)
+    if parsed.scheme or parsed.netloc or not parsed.path or parsed.path.startswith('/'):
+        return None
+    parts = []
+    for part in (PurePosixPath(source).parent / unquote(parsed.path)).parts:
+        if part == '..':
+            if not parts:
+                return None
+            parts.pop()
+        elif part not in ('', '.'):
+            parts.append(part)
+    return '/'.join(parts)
+
+
+def dependencies(path, text):
+    """Find local shell dependencies, excluding lesson/video data requests."""
+    suffix = PurePosixPath(path).suffix
+    if suffix in ('.html', '.htm'):
+        references = re.findall(r'''(?:src|href)\s*=\s*["']([^"']+)["']''', text)
+        references += re.findall(r'''\bimport\s*\(\s*["']([^"']+)["']''', text)
+    elif suffix in ('.js', '.mjs'):
+        references = re.findall(r'''\bfrom\s*["']([^"']+)["']|\bimport\s*(?:\(\s*)?["']([^"']+)["']|\bnew\s+URL\(\s*["']([^"']+)["']\s*,\s*import\.meta\.url''', text)
+        references = [next(value for value in match if value) for match in references]
+        references = [value for value in references if value.startswith('.')]
+    elif suffix == '.css':
+        references = re.findall(r'''url\(\s*["']?([^"')\s]+)|@import\s*["']([^"']+)["']''', text)
+        references = [next(value for value in match if value) for match in references]
+    else:
+        return []
+    shell_extensions = {'.js', '.mjs', '.css', '.webmanifest', '.png', '.webp', '.jpg', '.jpeg', '.svg', '.ico', '.woff', '.woff2'}
+    return [resolved for ref in references if (resolved := local_reference(path, ref)) and PurePosixPath(resolved).suffix in shell_extensions]
+
+
+def digest_record(path, data):
+    return {'url': path, 'sha256': hashlib.sha256(data).hexdigest(), 'bytes': len(data)}
+
+
+def replace_one(pattern, replacement, source, label):
+    result, count = re.subn(pattern, replacement, source, count=1, flags=re.S)
+    if count != 1:
+        raise ValueError(f'Missing {label}; no files were written')
+    return result
+
+
+def rebuild(root, build=None, dry_run=False):
+    shell_path = root / 'gre-learning/shell-manifest.json'
+    shell = json.loads(shell_path.read_text())
+    current_build = shell['build']
+    build = build or current_build
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]*', build):
+        raise ValueError('Invalid build identifier')
+
+    # Prepare all generated bytes first. An invalid dependency must never leave
+    # half of a release rewritten. Boot-time identifiers follow the shell build.
+    generated = {}
+    for path, pattern, prefix in [
+        ('gre-learning/offline-preferences.js', r"export const OFFLINE_EDITION='[^']+';", "export const OFFLINE_EDITION="),
+        ('gre-learning/update.js', r"const build = '[^']+';", 'const build = '),
+    ]:
+        source = (root / path).read_text()
+        generated[path] = replace_one(pattern, lambda _: prefix + "'" + build + "';", source, path).encode()
+
+    known = {asset['url']: dict(asset) for asset in shell['assets']}
+    pending = list(known)
+    if 'index.html' not in known:
+        pending.append('index.html')
+    scanned = set()
+    while pending:
+        path = pending.pop()
+        if path in scanned:
+            continue
+        scanned.add(path)
+        file = root / path
+        if not file.is_file():
+            if path not in known:
+                raise FileNotFoundError(f'New shell dependency is missing: {path}')
+            continue
+        data = generated.get(path, file.read_bytes())
+        known[path] = digest_record(path, data)
+        if file.suffix in ('.js', '.mjs', '.css', '.html', '.htm'):
+            for dependency in dependencies(path, data.decode()):
+                if dependency not in scanned:
+                    pending.append(dependency)
+    shell['build'] = build
+    shell['assets'] = list(known.values())
+    generated['gre-learning/shell-manifest.json'] = (json.dumps(shell, ensure_ascii=False, indent=2) + '\n').encode()
+
+    sw = (root / 'sw.js').read_text()
+    for path, name in [('gre-learning/offline-control.js', 'MEDIA CONTROL'), ('gre-learning/hosted-media.js', 'HOSTED MEDIA POLICY')]:
+        source = (root / path).read_text().replace('export const ', 'const ').replace('export function ', 'function ')
+        block = f'// BEGIN GENERATED {name}\n{source}// END GENERATED {name}\n'
+        marker = f'// BEGIN GENERATED {name}'
+        if marker in sw:
+            sw = replace_one(re.escape(marker) + r'\n.*?' + re.escape(f'// END GENERATED {name}') + r'\n', lambda _: block, sw, name)
+        else:
+            sw = block + sw
+    sw = replace_one(r"const BUILD='[^']+';", lambda _: "const BUILD='" + build + "';", sw, 'service-worker build')
+    sw = replace_one(r'const SHELL_ASSETS = .*?;\n', lambda _: 'const SHELL_ASSETS = ' + json.dumps(shell['assets'], separators=(',', ':')) + ';\n', sw, 'service-worker shell list')
+    generated['sw.js'] = sw.encode()
+
+    manifest = json.loads((root / 'asset-manifest.json').read_text())
+    manifest['releaseBuild'] = build
+    manifest['generatedAt'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    assets = {asset['path']: dict(asset) for asset in manifest['assets']}
+    for path in known:
+        # The historical global asset list can omit import-only shell resources.
+        # Keep that omission when this checkout has no bytes to measure gzip;
+        # the shell's existing exact size/hash contract remains untouched.
+        if path in generated or (root / path).is_file():
+            assets.setdefault(path, {'path': path})
+    retained = 0
+    for path, asset in assets.items():
+        file = root / path
+        if path not in generated and not file.is_file():
+            # A partial checkout or intentionally unhosted media file is not
+            # evidence that the release dropped this asset.
+            if not all(key in asset for key in ('bytes', 'sha256')):
+                raise ValueError(f'No metadata for absent asset: {path}')
+            retained += 1
+            continue
+        data = generated.get(path, file.read_bytes() if file.is_file() else b'')
+        sha = hashlib.sha256(data).hexdigest()
+        gz = asset.get('gzipBytes') if asset.get('sha256') == sha else None
+        asset.update(loading='shell' if path in known else 'on-demand', bytes=len(data), sha256=sha,
+                     gzipBytes=gz if gz is not None else len(gzip.compress(data, mtime=0)))
+    manifest['assets'] = list(assets.values())
+    # Some original records have no measured gzip size. Preserve that fact,
+    # matching the existing manifest's sum of known compressed sizes.
+    manifest['totals'] = {key: sum(asset.get(key, 0) for asset in manifest['assets']) for key in ('bytes', 'gzipBytes')}
+    generated['asset-manifest.json'] = (json.dumps(manifest, ensure_ascii=False, indent=2) + '\n').encode()
+    changed = [path for path, data in generated.items() if not (root / path).is_file() or (root / path).read_bytes() != data]
+    if not dry_run:
+        for path in changed:
+            (root / path).write_bytes(generated[path])
+    return {'build': build, 'shellAssets': len(known), 'retainedAbsentAssets': retained, 'changed': changed, 'dryRun': dry_run}
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--build', help='New shell build; defaults to the existing shell-manifest build')
+    parser.add_argument('--dry-run', action='store_true', help='Validate and report without writing any files')
+    args = parser.parse_args()
+    print(json.dumps(rebuild(Path(__file__).resolve().parent.parent, args.build, args.dry_run), ensure_ascii=False, indent=2))

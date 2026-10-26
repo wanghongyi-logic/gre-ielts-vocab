@@ -27,7 +27,7 @@ export function installPreparedPages({loader,entries,picker,window:win=window,do
     const loaded=await waitForLocal(()=>loader.pair(number,controller.signal,priority,{progressive:true}),{signal:controller.signal,timeoutMs:0});
     if(controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
     const root=doc.createElement('div');root.className='prepared-page';
-    root.innerHTML=renderWordPage(loaded.entry,loaded.media,{...neighboringNumbers(entries,number),total:entries.length});
+    root.innerHTML=renderWordPage(loaded.entry,loaded.media,{...neighboringNumbers(entries,number),ordinal:entries.findIndex(entry=>entry.number===number)+1,total:entries.length});
     page.root=root;page.loaded=loaded;
     root.querySelectorAll('[id]').forEach(node=>{node.dataset.preparedId=node.id;node.id=`prepared-${number}-${node.id}`;});
     if(loaded.mediaReady){

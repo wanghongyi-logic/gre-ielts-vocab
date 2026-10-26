@@ -31,6 +31,17 @@ export function paperViewportBounds(rect,{left=0,top=0,width,height},safeTop=0,e
  return {left:x,top:y,width:Math.max(0,right-x),height:Math.max(0,bottom-y)};
 }
 
+// cloneNode copies the reading tree, but not a nested pane's scroll position.
+// Apply this only after the impression is connected and has its final geometry;
+// a detached/unsized scroll box would clamp the copied offset back to zero.
+export function copyReadingScrollState(source,impression){
+ const originals=source.querySelectorAll('.reading-scroll');
+ impression.querySelectorAll('.reading-scroll').forEach((pane,index)=>{
+  const original=originals[index];if(!original)return;
+  pane.scrollTop=original.scrollTop;pane.scrollLeft=original.scrollLeft;
+ });
+}
+
 const INTERACTIVE='video[controls],audio[controls],a,button,input,textarea,select,option,summary,label,[contenteditable]:not([contenteditable="false"]),[role="button"],[role="link"],[role="slider"],[role="textbox"],[data-no-swipe],dialog';
 export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepared=()=>null,prepareNeighbor=null,onNavigate,onTurnActivity=()=>{},window:win=window,document:doc=document}) {
   const feedback=doc.createElement('div');
@@ -119,6 +130,10 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepare
     paperShadow=doc.createElement('div');paperShadow.className='paper-turn-shadow';
     paperFold=doc.createElement('div');paperFold.className='paper-turn-fold';
     paper.append(paperFace,paperShadow,paperFold);doc.body.append(paper);
+    // The outgoing face retains the exact visible reading position. A new word
+    // beneath it opens at its beginning, including previously prepared roots.
+    copyReadingScrollState(article,impression);
+    destination.root.querySelectorAll('.reading-scroll').forEach(pane=>{pane.scrollTop=0;pane.scrollLeft=0;});
     paperDirection=direction;surface.style.opacity='0';return true;
   }
   function paintPaper(progress,direction=paperDirection) {
@@ -320,6 +335,10 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepare
   listen(win,'blur',()=>{pointers.clear();reset();});listen(win,'pagehide',()=>{pointers.clear();reset();});
   const viewportChanged=()=>{syncSafeArea();reset();};
   listen(win,'scroll',()=>{syncSafeArea();if(gesture||(paper&&(win.scrollX!==paperScrollX||win.scrollY!==paperScrollY)))reset();},{passive:true});
+  // A vertical touch belongs to the native reading pane, never to a word turn.
+  // Capture is required because element scroll events do not bubble. This also
+  // retires a frozen paper impression if scroll momentum wins the gesture.
+  listen(surface,'scroll',event=>{if(event.target?.matches?.('.reading-scroll')&&(gesture||paper))reset();},{passive:true,capture:true});
   listen(win,'resize',viewportChanged);listen(win,'orientationchange',viewportChanged);
   if(win.visualViewport?.addEventListener){listen(win.visualViewport,'resize',viewportChanged);listen(win.visualViewport,'scroll',viewportChanged);}
   if(motionPreference?.addEventListener)listen(motionPreference,'change',reset);

@@ -5,22 +5,31 @@ import {escapeLearningText as escape} from './render.js';
 
 // The contents is another leaf of the book. Keep the reading DOM in place so
 // returning to it preserves the same word, media controller and reading spot.
-export function installContents({main,picker,search,entries,getSelected,navigate,getRemembered=()=>null,getReadingPosition=()=>null,onBeforeOpen=()=>{},onOpen=()=>{},onClose=()=>{},onTransition=()=>{},prepareReading=()=>{}}) {
+export function installContents({main,picker,search,entries,getSelected,navigate,getRemembered=()=>null,getReadingPosition=()=>null,readingScroll=null,onBeforeOpen=()=>{},onOpen=()=>{},onClose=()=>{},onTransition=()=>{},prepareReading=()=>{}}) {
  const doc=main.ownerDocument,win=doc.defaultView;
  const opener=doc.getElementById('open-search');
  const title=doc.getElementById('picker-title'),results=doc.getElementById('word-results');
  const count=doc.getElementById('search-count');
  let saved=null,restoreFrame=0,leaf=null,gestureRestored=false;
  const turns=installFrontmatterTurn({main,onActivity:onTransition,window:win,document:doc});
+ // In landscape, frontmatter and the reading leaf own separate scrollports.
+ // Portrait keeps its original document scroll and browser-chrome coordinates.
+ const readingPosition=()=>readingScroll?{scrollX:0,scrollY:readingScroll.metrics().scrollY}:{scrollX:win.scrollX,scrollY:win.scrollY};
+ const restoreReading=position=>readingScroll?readingScroll.to(position.scrollY,{left:position.scrollX}):win.scrollTo({left:position.scrollX,top:position.scrollY,behavior:'instant'});
+ const leafPosition=()=>readingScroll?.landscape?{scrollX:picker.scrollLeft||0,scrollY:picker.scrollTop||0}:{scrollX:win.scrollX,scrollY:win.scrollY};
+ function scrollLeaf(position){
+  const options={left:position.scrollX||0,top:position.scrollY||0,behavior:'instant'};
+  if(readingScroll?.landscape)picker.scrollTo(options);else win.scrollTo(options);
+ }
  function preparationFailed(){win.history.replaceState(null,'',leaf==='settings'?'#/settings':'#/contents');count.textContent='这一页暂时无法打开，请再点一次重试';picker.removeAttribute('aria-busy');}
  function reveal(change){
-  turns.begin({source:picker,direction:'next',prepare:()=>{change();const ready=previewReading(saved,false);win.scrollTo({top:0,left:0,behavior:'instant'});return ready;},commit:()=>{main.focus({preventScroll:true});onClose({restored:false});}});
+  turns.begin({source:picker,direction:'next',prepare:()=>{change();const ready=previewReading(saved,false);restoreReading({scrollX:0,scrollY:0});return ready;},commit:()=>{main.focus({preventScroll:true});onClose({restored:false});}});
  }
 
  const readingPositions=new Map();
  // Keep the underlying reading position too when an update happens in Settings.
  try{const position=JSON.parse(win.sessionStorage?.getItem('gre-update-position-v1'));const reading=position?.reading;if(position?.hash===win.location.hash&&Date.now()-position.at<120000&&entries.some(entry=>entry.number===reading?.number))readingPositions.set(reading.number,{scrollX:Number(reading.scrollX)||0,scrollY:Number(reading.scrollY)||0});}catch{}
- win.addEventListener('gre-update-capture',event=>{const number=getSelected();const position=picker.open?saved:readingPositions.get(number);if(position)event.detail.reading={number:position.number??number,scrollX:position.scrollX,scrollY:position.scrollY};});
+ win.addEventListener('gre-update-capture',event=>{const number=getSelected();const position=picker.open?saved:readingPositions.get(number)||getReadingPosition(number)||readingPosition();if(position&&number!=null)event.detail.reading={number:position.number??number,scrollX:position.scrollX,scrollY:position.scrollY};});
  // Hash history must not race the book's explicit reading-position restore.
  if(win.history&&'scrollRestoration' in win.history)win.history.scrollRestoration='manual';
  const isRoute=hash=>/^#\/?(?:contents|settings)\/?$/.test(hash);
@@ -41,18 +50,19 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   picker.style.setProperty('visibility','hidden');
   try{
    if(show)picker.show();syncLeaf();
-   win.scrollTo({top:0,left:0,behavior:'instant'});
+   scrollLeaf({scrollX:0,scrollY:0});
    if(leaf==='contents'){
     const row=results.querySelector('[aria-current="page"]');
-    if(row){const rect=row.getBoundingClientRect(),viewport=win.visualViewport;const height=viewport?.height||win.innerHeight,offset=viewport?.offsetTop||0;
-     if(rect.height>0)win.scrollTo({top:Math.max(0,win.scrollY+rect.top+rect.height/2-offset-height/2),left:0,behavior:'instant'});
+    if(row){const rect=row.getBoundingClientRect(),viewport=win.visualViewport,landscape=readingScroll?.landscape;
+     const height=landscape?picker.clientHeight:viewport?.height||win.innerHeight,offset=landscape?picker.getBoundingClientRect().top:viewport?.offsetTop||0;
+     if(rect.height>0)scrollLeaf({scrollX:0,scrollY:Math.max(0,leafPosition().scrollY+rect.top+rect.height/2-offset-height/2)});
     }
    }
   }finally{if(visibility)picker.style.setProperty('visibility',visibility,priority);else picker.style.removeProperty('visibility');}
  }
 
- function captureReading(){const number=getSelected();if(number!=null&&!turns.busy&&!picker.open&&win.location.hash===readingHash(number))readingPositions.set(number,{scrollX:win.scrollX,scrollY:win.scrollY});}
- win.addEventListener('scroll',captureReading,{passive:true});
+ function captureReading(){const number=getSelected();if(number!=null&&!turns.busy&&!picker.open&&win.location.hash===readingHash(number))readingPositions.set(number,readingPosition());}
+ if(readingScroll)readingScroll.onScroll(captureReading);else win.addEventListener('scroll',captureReading,{passive:true});
  function renderResults(){
   syncLeaf();
   const selected=currentEntry(),matches=filterEntries(entries,search.value),filtered=Boolean(search.value.trim());
@@ -70,7 +80,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   win.cancelAnimationFrame(restoreFrame);
   const selected=currentEntry();
   onBeforeOpen();
-  const position=readingPositions.get(selected?.number)||getReadingPosition(selected?.number)||{scrollX:win.scrollX,scrollY:win.scrollY};
+  const position=getReadingPosition(selected?.number)||readingPositions.get(selected?.number)||readingPosition();
   saved={number:selected?.number,hash:readingHash(selected?.number),...position,focus:doc.activeElement,title:doc.title,ready:getSelected()!=null};
   search.value='';renderResults();
   turns.begin({source:main,direction:'previous',visual:Boolean(main.querySelector('.reading-layout')),prepare:()=>{
@@ -83,7 +93,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   main.hidden=false;main.inert=false;doc.body.classList.remove('is-contents-open');picker.close();
   opener.setAttribute('aria-expanded','false');doc.getElementById('open-settings')?.setAttribute('aria-expanded','false');doc.getElementById('open-settings')?.classList.remove('is-current');
   if(restore&&snapshot?.title)doc.title=snapshot.title;
-  if(restore&&snapshot)win.scrollTo({left:snapshot.scrollX,top:snapshot.scrollY,behavior:'instant'});
+  if(restore&&snapshot)restoreReading(snapshot);
   picker.removeAttribute('aria-busy');
   return prepareReading();
  }
@@ -91,7 +101,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
   if(restore&&snapshot){
    const target=snapshot.focus?.isConnected&&snapshot.focus!==doc.body&&!picker.contains(snapshot.focus)?snapshot.focus:main;
    target?.focus({preventScroll:true});
-   restoreFrame=win.requestAnimationFrame(()=>{restoreFrame=0;if(!picker.open&&getSelected()===snapshot.number)win.scrollTo({left:snapshot.scrollX,top:snapshot.scrollY,behavior:'instant'});});
+   restoreFrame=win.requestAnimationFrame(()=>{restoreFrame=0;if(!picker.open&&getSelected()===snapshot.number)restoreReading(snapshot);});
   }
   onClose({restored:Boolean(restore&&snapshot)});
  }
@@ -154,7 +164,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
  }
  function previewTurn(direction){
   if(preview)return;
-  preview={scrollX:win.scrollX,scrollY:win.scrollY,focus:doc.activeElement,title:doc.title,hash:win.location.hash};
+  preview={...leafPosition(),focus:doc.activeElement,title:doc.title,hash:win.location.hash};
   const origin=preview,snapshot=saved;
   turns.begin({source:picker,direction,interactive:true,prepare:()=>previewReading(snapshot,true),commit:()=>{
    preview=null;gestureRestored=true;
@@ -163,7 +173,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
    preview=null;main.hidden=true;main.inert=true;doc.body.classList.add('is-contents-open');picker.show();
    // A newer Back/Forward or bookmark route owns the URL; rollback restores only
    // the visual source, then deferRoute applies that newer destination once.
-   doc.title=origin.title;win.scrollTo({left:origin.scrollX,top:origin.scrollY,behavior:'instant'});
+   doc.title=origin.title;scrollLeaf(origin);
    origin.focus?.isConnected&&origin.focus.focus?.({preventScroll:true});syncLeaf(origin.hash);onOpen();
   }}).then(()=>{releaseGesture();preview=null;});
  }

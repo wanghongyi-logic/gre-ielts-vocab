@@ -1,4 +1,5 @@
 import {installBotanicalMargin} from './botanical-margin.js';
+import {installReadingScroll} from './reading-scroll.js';
 // The highlighted bookmark describes the reading location, except while the
 // directory is open. Programmatic scrolling owns one explicit, cancelable target.
 export function sectionAtPosition(sections,{scrollY=0,height=0,scrollHeight=0}={}) {
@@ -10,7 +11,7 @@ export function sectionAtPosition(sections,{scrollY=0,height=0,scrollHeight=0}={
  for(const section of sections){if(section.top<=line)current=section.id;else break;}
  return current;
 }
-export function installBookmarkNavigation({surface,picker,window:win=window,document:doc=document}) {
+export function installBookmarkNavigation({surface,picker,window:win=window,document:doc=document,scroll=installReadingScroll({surface,window:win,document:doc})}) {
  const nav=doc.querySelector('.bookmarks'),directory=doc.getElementById('open-search');
  installBotanicalMargin(nav);
  const links=[...nav.querySelectorAll('[data-section]')];
@@ -25,14 +26,14 @@ export function installBookmarkNavigation({surface,picker,window:win=window,docu
   directory.classList.toggle('is-current',inDirectory);directory.setAttribute('aria-expanded',String(inDirectory));
   links.forEach(link=>{const active=!picker.open&&link.dataset.section===reading;link.classList.toggle('is-current',active);if(active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
  }
- function position(){return sectionAtPosition(sections.map(element=>({id:element.id,top:element.getBoundingClientRect().top+win.scrollY})),{scrollY:win.scrollY,height:win.innerHeight,scrollHeight:doc.documentElement.scrollHeight});}
+ function position(){return sectionAtPosition(sections.map(element=>({id:element.id,top:scroll.top(element)})),scroll.metrics());}
  function update(){frame=0;if(suspended)return;reading=pending?.id||position()||'word-title';paint();}
  function schedule(){if(!frame)frame=win.requestAnimationFrame(update);}
  function cancelTarget(){pending=null;win.cancelAnimationFrame(settleFrame);settleFrame=0;}
- function sync(){if(picker.open&&pending){win.scrollTo({top:win.scrollY,behavior:'instant'});cancelTarget();}if(!suspended)reading=pending?.id||position()||'word-title';paint();}
+ function sync(){if(picker.open&&pending){scroll.to(scroll.metrics().scrollY);cancelTarget();}if(!suspended)reading=pending?.id||position()||'word-title';paint();}
  function settle(){
   if(!pending)return;
-  const y=win.scrollY;
+  const y=scroll.metrics().scrollY;
   pending.still=Math.abs(y-pending.last)<.5?pending.still+1:0;pending.last=y;
   if(pending.still>=4&&win.performance.now()-pending.started>100){const id=pending.id;cancelTarget();reading=id;paint();return;}
   settleFrame=win.requestAnimationFrame(settle);
@@ -41,18 +42,18 @@ export function installBookmarkNavigation({surface,picker,window:win=window,docu
   if(suspended)return false;
   const target=doc.getElementById(id);if(!target||!surface.contains(target))return false;
   cancelTarget();
-  pending={id,last:win.scrollY,still:0,started:win.performance.now()};reading=pending.id;paint();
-  if(id==='word-title')win.scrollTo({top:0,left:0,behavior:reduced()?'instant':'smooth'});
-  else target.scrollIntoView({behavior:reduced()?'instant':'smooth',block:'start'});
+  pending={id,last:scroll.metrics().scrollY,still:0,started:win.performance.now()};reading=pending.id;paint();
+  if(id==='word-title')scroll.to(0,{behavior:reduced()?'instant':'smooth'});
+  else scroll.intoView(target,{behavior:reduced()?'instant':'smooth'});
   settleFrame=win.requestAnimationFrame(settle);return true;
  }
  function interrupt(event){
   if(event.type==='keydown'&&!['ArrowUp','ArrowDown','PageUp','PageDown','Home','End',' '].includes(event.key))return;
   if(event.target?.closest?.('.bookmarks,dialog'))return;
-  if(pending){win.scrollTo({top:win.scrollY,behavior:'instant'});cancelTarget();schedule();}
+  if(pending){scroll.to(scroll.metrics().scrollY);cancelTarget();schedule();}
  }
  doc.body.addEventListener('transitionend',schedule);
- win.addEventListener('scroll',schedule,{passive:true});win.addEventListener('resize',()=>{cancelTarget();schedule();});
+ scroll.onScroll(schedule);scroll.onLayout(()=>{cancelTarget();schedule();});win.addEventListener('resize',()=>{cancelTarget();schedule();});
  for(const type of ['wheel','touchstart','pointerdown'])win.addEventListener(type,interrupt,{passive:true});
  doc.addEventListener('keydown',interrupt);
  picker.addEventListener('close',sync);

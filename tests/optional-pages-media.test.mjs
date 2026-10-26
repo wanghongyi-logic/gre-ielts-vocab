@@ -56,7 +56,7 @@ test('live activation retries deferred preparation after closing settings or ope
   vm.runInContext(block,ctx);const event={detail:{waits:[]}};handler(event);while(!release)await new Promise(r=>setImmediate(r));ctx.renderGeneration++;release();await Promise.all(event.detail.waits);
   assert.equal(ctx.renderedLibraryRevision,1);assert.equal(destroyed,2,'frontmatter invalidation must retry, never retain stale text-only DOM');
  }
- assert.match(source,/preserveScroll&&selectedNumber===number\?window.scrollY:0/,'only the same word retains current live scroll; a new destination opens at top');
+ assert.match(source,/preserveScroll&&selectedNumber===number\?readingScroll\.metrics\(\)\.scrollY:0/,'only the same word retains current live scroll; a new destination opens at top');
  assert.ok(source.indexOf('const scrollPosition=')>source.indexOf('const adopt=()=>{'),'scroll is captured at adoption, not before async media preparation');
  assert.ok(!block.includes('location.reload'));
 });

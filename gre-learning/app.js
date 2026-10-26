@@ -8,6 +8,7 @@ import {installContents} from './contents.js';
 import {installStoryMedia} from './story-media.js';
 import {installReadingPosition} from './reading-position.js';
 import {installBookmarkNavigation} from './bookmark-navigation.js';
+import {installReadingScroll} from './reading-scroll.js';
 const catalog=expandCatalog(await fetch(new URL('./catalog.json',import.meta.url),{cache:'no-cache'}).then(response=>{if(!response.ok)throw new Error('Lesson index unavailable');return response.json();}));
 installMobileZoomGuard();
 // Mount the settings rail before bookmark decoration; storage failures must not stop navigation.
@@ -16,14 +17,15 @@ const entries=catalog.entries;
 document.getElementById('release-summary').textContent=`词汇学习 · 已收录 ${entries.length} 词`;
 const loader=new LessonLoader(catalog);
 const main=document.getElementById('word-content'),picker=document.getElementById('word-picker'),search=document.getElementById('word-search'),counter=document.getElementById('word-counter');
-const bookmarks=installBookmarkNavigation({surface:main,picker});
+const readingScroll=installReadingScroll({surface:main});
+const bookmarks=installBookmarkNavigation({surface:main,picker,scroll:readingScroll});
 let motion=installStoryMedia(main,{picker});
 const pages=installPreparedPages({loader,entries,picker});
 const swipe=installWordSwipe({surface:main,hintHost:main.parentNode,picker,getNeighbor:direction=>neighboringNumbers(entries,selectedNumber)[direction],getPrepared:direction=>pages.get(neighboringNumbers(entries,selectedNumber)[direction]),prepareNeighbor:direction=>pages.prepare(neighboringNumbers(entries,selectedNumber)[direction]),onNavigate:navigate,onTurnActivity:active=>motion.setTurning(active,{preservePresentation:true})});
 let selectedNumber,current,currentMedia,speech,renderGeneration=0,pendingSection=null;
 let libraryRevision=0,renderedLibraryRevision=0,libraryRefreshEpoch=0,libraryRefreshJob=null;
-const reading=installReadingPosition({entries,surface:main,picker,getSelected:()=>selectedNumber});
-const contents=installContents({main,picker,search,entries,getSelected:()=>selectedNumber,getRemembered:reading.remember,getReadingPosition:reading.position,onBeforeOpen:()=>reading.capture({force:true}),navigate,prepareReading:()=>motion.prepareReveal(),onOpen:()=>{swipe.cancel();if(current){renderGeneration++;main.removeAttribute('aria-busy');pages.adjacent(selectedNumber);}bookmarks.sync();motion.sync();window.speechSynthesis?.cancel();},onClose:()=>{requestAnimationFrame(()=>{reading.restore();reading.capture();bookmarks.sync();});motion.sync();},onTransition:active=>motion.setTurning(active)});
+const reading=installReadingPosition({entries,surface:main,picker,getSelected:()=>selectedNumber,scroll:readingScroll});
+const contents=installContents({main,picker,search,entries,getSelected:()=>selectedNumber,getRemembered:reading.remember,getReadingPosition:reading.position,readingScroll,onBeforeOpen:()=>reading.capture({force:true}),navigate,prepareReading:()=>motion.prepareReveal(),onOpen:()=>{swipe.cancel();if(current){renderGeneration++;main.removeAttribute('aria-busy');pages.adjacent(selectedNumber);}bookmarks.sync();motion.sync();window.speechSynthesis?.cancel();},onClose:()=>{requestAnimationFrame(()=>{reading.restore();reading.capture();bookmarks.sync();});motion.sync();},onTransition:active=>motion.setTurning(active)});
 window.addEventListener('gre-update-can-reload',event=>{if(swipe.busy||main.hasAttribute('aria-busy')||main.hasAttribute('data-contents-turning')||libraryRefreshJob){event.detail.blocked=true;event.detail.readingPreparation=true;}});
 // Only the updater, after verifying a ready controller, requests this idle
 // cleanup. Storage mutation blockers are checked separately and never overridden.
@@ -64,7 +66,7 @@ async function render({preserveScroll=false}={}){
  }
  page=pages.take(number);if(!page)return;
  const adopt=()=>{
- const scrollPosition=preserveScroll&&selectedNumber===number?window.scrollY:0;
+ const scrollPosition=preserveScroll&&selectedNumber===number?readingScroll.metrics().scrollY:0;
  motion.destroy();main.querySelectorAll('video').forEach(video=>{video.pause();video.removeAttribute('src');video.load();});bookmarks.suspend();motion=page.motion;
  current=page.loaded.entry;currentMedia=page.loaded.media;selectedNumber=number;renderedLibraryRevision=mediaRevision;
  main.removeAttribute('aria-busy');
@@ -75,7 +77,7 @@ async function render({preserveScroll=false}={}){
  main.querySelectorAll('[data-prepared-id]').forEach(node=>{node.id=node.dataset.preparedId;delete node.dataset.preparedId;});
  const speakButton=main.querySelector('[data-speak]');
  if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window)){speakButton.disabled=true;speakButton.title='此浏览器暂不支持朗读';}
- if(!picker.open)window.scrollTo({top:scrollPosition,behavior:'instant'});
+ if(!picker.open)readingScroll.to(scrollPosition);
  reading.adopted(number);watchChapters();swipe.rendered(`${current.word}，第 ${position.index+1} 个词，共 ${entries.length} 个`);if(picker.open)motion.setTurning(true);motion.activate();pages.adjacent(number);
  if(picker.open&&inContents)contents.renderResults();
  if(pendingSection){const section=pendingSection;pendingSection=null;bookmarks.navigate(section);}
@@ -83,7 +85,7 @@ async function render({preserveScroll=false}={}){
  };
  if(picker.open&&!inContents)contents.reveal(adopt);else adopt();
 }
-document.querySelector('.skip-link').addEventListener('click',event=>{event.preventDefault();const target=picker.open?document.getElementById('picker-title'):main;target.focus();target.scrollIntoView({block:'start',behavior:'instant'});});
+document.querySelector('.skip-link').addEventListener('click',event=>{event.preventDefault();const target=picker.open?document.getElementById('picker-title'):main;target.focus({preventScroll:true});if(picker.open)target.scrollIntoView({block:'start',behavior:'instant'});else readingScroll.to(0);});
 document.addEventListener('click',event=>{
  const link=event.target.closest('[data-section]');if(link){event.preventDefault();if(picker.open){pendingSection=link.dataset.section;contents.close();return;}bookmarks.navigate(link.dataset.section);return;}
  const page=event.target.closest('[data-page]');if(page&&!page.disabled){swipe.go(page.dataset.page);return;}
