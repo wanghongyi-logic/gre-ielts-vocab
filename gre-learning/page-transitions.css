@@ -1,0 +1,13 @@
+/* Only these two small, empty layers animate. The reading DOM and decoded
+   media are never cloned, transformed, repainted into canvas, or reparented. */
+:root{--page-transitions-ready:1}
+.page-transition{position:fixed;z-index:19;overflow:hidden;pointer-events:none;contain:strict;isolation:isolate;opacity:1}
+.page-transition-wash{position:absolute;inset:0;opacity:0;background:var(--journal-paper,var(--paper,#faf5e9));background-image:linear-gradient(110deg,#fffdf41a,transparent 45%,#a6916e09);will-change:opacity}
+.page-transition-edge{position:absolute;left:0;top:0;bottom:0;width:88px;opacity:0;transform:translate3d(-88px,0,0);background:linear-gradient(90deg,transparent 0%,#a9977207 22%,#b1a17b16 43%,#fffdf04d 51%,#fffdf01a 66%,transparent 100%);will-change:transform,opacity}
+.page-transition[data-direction="previous"] .page-transition-edge{background:linear-gradient(270deg,transparent 0%,#a9977207 22%,#b1a17b16 43%,#fffdf04d 51%,#fffdf01a 66%,transparent 100%)}
+.page-transition.is-revealing{animation:page-paper-reveal 150ms cubic-bezier(.2,.7,.2,1) both}
+.page-transition.is-loading .page-transition-wash{opacity:1!important}
+#word-content.is-swiping,#word-content.is-swipe-settling{will-change:auto}
+.is-page-transition-source{pointer-events:none}
+@keyframes page-paper-reveal{from{opacity:1}to{opacity:0}}
+@media(prefers-reduced-motion:reduce){.page-transition{display:none!important}.page-transition,.page-transition *{animation:none!important;will-change:auto}}

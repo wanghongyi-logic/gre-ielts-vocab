@@ -42,6 +42,51 @@ export function copyReadingScrollState(source,impression){
  });
 }
 
+// A transition contains only two empty paint layers. The live reading tree,
+// decoded poster and video remain where they are until atomic page adoption.
+export function createPageTransition({source,direction='next',kind='word',window:win=window,document:doc=document}){
+ const styled=win.getComputedStyle?.(doc.documentElement).getPropertyValue('--page-transitions-ready').trim()==='1';
+ if(!styled)return null;
+ const rect=source.getBoundingClientRect(),v=win.visualViewport;
+ const viewport={left:v?.offsetLeft||0,top:v?.offsetTop||0,width:v?.width||win.innerWidth,height:v?.height||win.innerHeight};
+ const foreedge=doc.querySelector?.('.bookmarks.paper-foreedge')?.getBoundingClientRect?.();
+ const bounds=paperViewportBounds(rect,viewport,0,foreedge?.width>0?foreedge.left:Infinity);
+ if(!bounds.width||!bounds.height)return null;
+ const layer=doc.createElement('div');layer.className='page-transition';layer.dataset.kind=kind;layer.dataset.direction=direction;
+ layer.inert=true;layer.setAttribute('aria-hidden','true');
+ Object.assign(layer.style,{left:`${bounds.left}px`,top:`${bounds.top}px`,width:`${bounds.width}px`,height:`${bounds.height}px`});
+ const wash=doc.createElement('div');wash.className='page-transition-wash';
+ const edge=doc.createElement('div');edge.className='page-transition-edge';
+ layer.append(wash,edge);doc.body.append(layer);
+ const transition={layer,wash,edge,width:bounds.width,direction};paintPageTransition(transition,0,direction);return transition;
+}
+export function paintPageTransition(transition,progress,direction=transition.direction){
+ const p=Math.max(0,Math.min(1,progress));transition.direction=direction;
+ transition.layer.dataset.direction=direction;transition.layer.dataset.progress=p.toFixed(3);
+ // Only compositor-friendly properties change while a finger/animation moves.
+ transition.wash.style.opacity=String(Math.pow(p,1.22));
+ transition.edge.style.opacity=String(Math.sin(Math.PI*p)*.66);
+ const across=transition.width+88,x=(direction==='next'?1-p:p)*across-88;
+ transition.edge.style.transform=`translate3d(${x.toFixed(2)}px,0,0)`;
+}
+export function revealPageTransition(transition,{window:win=window,reduced=false}={}){
+ if(!transition)return ()=>{};
+ const layer=transition.layer;let animation,timer,removed=false;
+ const remove=()=>{if(removed)return;removed=true;win.clearTimeout(timer);layer.remove();};
+ if(reduced){remove();return remove;}
+ layer.dataset.phase='revealing';
+ // The destination is already adopted and backed by its decoded poster. Fade
+ // the small paper layer away; never animate or reparent the document itself.
+ if(typeof layer.animate==='function'){
+  animation=layer.animate([{opacity:1},{opacity:0}],{duration:150,easing:'cubic-bezier(.2,.7,.2,1)',fill:'forwards'});
+  animation.finished.then(remove,remove);
+ }else{
+  layer.classList.add('is-revealing');
+  layer.addEventListener('animationend',remove,{once:true});timer=win.setTimeout(remove,220);
+ }
+ return ()=>{animation?.cancel();remove();};
+}
+
 const INTERACTIVE='video[controls],audio[controls],a,button,input,textarea,select,option,summary,label,[contenteditable]:not([contenteditable="false"]),[role="button"],[role="link"],[role="slider"],[role="textbox"],[data-no-swipe],dialog';
 export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepared=()=>null,prepareNeighbor=null,onNavigate,onTurnActivity=()=>{},window:win=window,document:doc=document}) {
   const feedback=doc.createElement('div');
@@ -73,7 +118,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepare
   let gesture=null,pointerId=null,phase='idle',timer=null,frame=null,pressTimer=null,suppressUntil=0,enterDirection=null;
   let pendingTurn=0;
   let paperScrollX=0,paperScrollY=0;
-  let paper=null,paperFace=null,paperFold=null,paperShadow=null,paperProgress=0,paperDirection=null,focusAfterTurn=false;
+  let paper=null,paperProgress=0,paperDirection=null,focusAfterTurn=false,revealCleanup=null;
   const motionPreference=win.matchMedia?.('(prefers-reduced-motion: reduce)');
   const reduced=()=>Boolean(motionPreference?.matches);
   const selected=()=>{
@@ -87,83 +132,40 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepare
     const id=pointerId;pointerId=null;
     if(id!==null && surface.hasPointerCapture?.(id)) {try{surface.releasePointerCapture(id);}catch{}}
   }
-  // The reading layout never scales or slides. A disposable, inert impression of
-  // the visible paper peels away; a curved reverse and its shadow follow the hand.
-  // Videos are painted once onto canvas so the impression cannot start playback.
+  // Keep the actual page and media in place. A tiny paper wash follows the
+  // gesture, covers the atomic adoption, then reveals the prepared destination.
   function makePaper(direction) {
     if(reduced())return;
     if(paper&&paperDirection===direction)return true;
-    if(paper){paper.remove();paper=null;surface.style.removeProperty('opacity');}
+    if(paper){paper.layer.remove();paper=null;}
+    revealCleanup?.();revealCleanup=null;
     const destination=getPrepared(direction);
     if(!destination)return false;
     const article=surface.querySelector('.reading-layout');
     if(!article)return;
-    const rect=article.getBoundingClientRect(),v=syncSafeArea();
-    const foreedge=doc.querySelector?.('.bookmarks.paper-foreedge')?.getBoundingClientRect?.();
-    const edgeLeft=foreedge?.width>0?foreedge.left:Infinity;
-    const bounds=paperViewportBounds(rect,v,safeArea.getBoundingClientRect().height,edgeLeft);
-    const {left,top,width,height}=bounds;
-    if(!width||!height)return;
+    syncSafeArea();
+    paper=createPageTransition({source:article,direction,kind:'word',window:win,document:doc});
+    if(!paper)return false;
     onTurnActivity(true);
     paperScrollX=win.scrollX;paperScrollY=win.scrollY;
-    paper=doc.createElement('div');paper.className='paper-turn';if(Number.isFinite(edgeLeft))paper.dataset.bookEdge='sculpted';
-    paper.setAttribute('aria-hidden','true');paper.inert=true;paper.dataset.direction=direction;
-    Object.assign(paper.style,{left:`${left}px`,top:`${top}px`,width:`${width}px`,height:`${height}px`});
-    const underneath=doc.createElement('div');underneath.className='paper-turn-underneath';
-    underneath.append(destination.root);paper.append(underneath);
-    Object.assign(destination.root.style,{width:`${rect.width}px`,position:'absolute',top:'0',left:`${rect.left-left}px`});
-    paper.dataset.destination=String(destination.number);
-    paperFace=doc.createElement('div');paperFace.className='paper-turn-face';
-    const impression=article.cloneNode(true);
-    impression.querySelectorAll('[id]').forEach(node=>node.removeAttribute('id'));
-    impression.removeAttribute('aria-labelledby');
-    const originals=article.querySelectorAll('video');
-    impression.querySelectorAll('video').forEach((video,index)=>{
-      const original=originals[index],canvas=doc.createElement('canvas');
-      canvas.className=video.className;canvas.style.cssText=video.style.cssText;
-      canvas.width=original.videoWidth||1;canvas.height=original.videoHeight||1;
-      try{if(original.readyState<2)throw new Error('poster');canvas.getContext('2d').drawImage(original,0,0);video.replaceWith(canvas);}
-      catch{video.closest('.story-illustration')?.querySelector('.story-poster')?.style.removeProperty('opacity');video.remove();}
-    });
-    Object.assign(impression.style,{position:'absolute',top:`${rect.top-top}px`,left:`${rect.left-left}px`,width:`${rect.width}px`,margin:'0'});
-    paperFace.append(impression);
-    paperShadow=doc.createElement('div');paperShadow.className='paper-turn-shadow';
-    paperFold=doc.createElement('div');paperFold.className='paper-turn-fold';
-    paper.append(paperFace,paperShadow,paperFold);doc.body.append(paper);
-    // The outgoing face retains the exact visible reading position. A new word
-    // beneath it opens at its beginning, including previously prepared roots.
-    copyReadingScrollState(article,impression);
-    destination.root.querySelectorAll('.reading-scroll').forEach(pane=>{pane.scrollTop=0;pane.scrollLeft=0;});
-    paperDirection=direction;surface.style.opacity='0';return true;
+    paper.layer.dataset.destination=String(destination.number);
+    paperDirection=direction;return true;
   }
   function paintPaper(progress,direction=paperDirection) {
     paperProgress=progress;
     if(!paper)return;
-    paperDirection=direction;paper.dataset.direction=direction;
-    // Bow is strongest halfway through the turn, flat at both resting poses.
-    const bend=Math.sin(Math.PI*progress),edge=100-progress*112;
-    const curl=Math.min(23,progress*55)*Math.pow(Math.max(0,1-progress),.45);
-    const bow=3.4*bend,flip=x=>direction==='next'?x:100-x;
-    const crease=edge-bow;
-    const points=[[flip(0),0],[flip(crease),0],[flip(crease),100],[flip(0),100]];
-    paperFace.style.clipPath=`polygon(${points.map(([x,y])=>`${x}% ${y}%`).join(',')})`;
-    paperFold.style.width=`${curl}%`;
-    paperFold.style.left=`${direction==='next'?edge-curl:100-edge}%`;
-    paperFold.style.transform=`skewY(${(direction==='next'?-1:1)*bend*2.3}deg)`;
-    paperFold.style.opacity=String(Math.min(1,progress*18)*(1-Math.max(0,(progress-.9)*10)));
-    paperShadow.style.left=`${flip(edge)}%`;
-    paperShadow.style.opacity=String(bend*.23);
-    paper.style.setProperty('--paper-bow',`${bow*3}px`);
-    paper.dataset.progress=progress.toFixed(3);
+    paperDirection=direction;paintPageTransition(paper,progress,direction);
   }
-  function cleanStyle() {
-    paper?.remove();paper=null;paperFace=null;paperFold=null;paperShadow=null;paperProgress=0;paperDirection=null;
+  function cleanStyle({reveal=false}={}) {
+    revealCleanup?.();revealCleanup=null;
+    if(reveal&&paper)revealCleanup=revealPageTransition(paper,{window:win,reduced:reduced()});else paper?.layer.remove();
+    paper=null;paperProgress=0;paperDirection=null;
     surface.classList.remove('is-swiping','is-swipe-settling');
     surface.style.removeProperty('transform');surface.style.removeProperty('opacity');surface.style.removeProperty('transition');
     feedback.hidden=true;feedback.classList.remove('is-ready','is-boundary');onTurnActivity(false);
   }
-  function reset() {
-    pendingTurn++;clearTimer();gesture=null;touchId=null;phase='idle';enterDirection=null;focusAfterTurn=false;releaseCapture();cleanStyle();syncSafeArea();
+  function reset(options={}) {
+    pendingTurn++;clearTimer();gesture=null;touchId=null;phase='idle';enterDirection=null;focusAfterTurn=false;releaseCapture();cleanStyle(options);syncSafeArea();
   }
   function animatePaper(target,duration,complete) {
     const from=paperProgress,start=win.performance.now();
@@ -180,7 +182,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepare
     clearTimer();gesture=null;touchId=null;releaseCapture();feedback.hidden=true;
     if(!wasDragging||reduced()||!paper){reset();return;}
     phase='returning';surface.classList.remove('is-swiping');surface.classList.add('is-swipe-settling');
-    animatePaper(0,260,reset);
+    animatePaper(0,180,reset);
   }
   function go(direction) {
     if(phase==='preparing')reset();
@@ -195,9 +197,9 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepare
       if(blocked()||selected()||getNeighbor(direction)!==number){reset();return;}
       enterDirection=direction;phase='leaving';
       if(reduced()){onTurnActivity(true);onNavigate(number);return;}
-      if(!makePaper(direction)){reset();return;}
+      if(!makePaper(direction)){onTurnActivity(true);onNavigate(number);return;}
       surface.classList.remove('is-swiping');surface.classList.add('is-swipe-settling');
-      animatePaper(1,Math.max(180,440*(1-paperProgress)),()=>onNavigate(number));
+      animatePaper(1,Math.max(130,240*(1-paperProgress)),()=>onNavigate(number));
     }
     if(getPrepared(direction)){commit();return true;}
     // Readiness is bounded by the preparation manager. Never peel onto a blank.
@@ -214,11 +216,12 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepare
     if(phase!=='leaving'){reset();return;}
     clearTimer();gesture=null;touchId=null;releaseCapture();
     // Cached pages settle immediately; a slow fetch gets a quiet loading state.
-    if(paper)timer=win.setTimeout(()=>{paper?.classList.add('is-loading');},180);
+    if(paper)timer=win.setTimeout(()=>{paper?.layer.classList.add('is-loading');},180);
   }
   function rendered(announcement) {
     const focus=focusAfterTurn;
-    reset();status.textContent=announcement;
+    const reveal=phase==='leaving'&&paperProgress>=.99;
+    reset({reveal});status.textContent=announcement;
     if(focus)surface.focus({preventScroll:true});
   }
   function draw() {

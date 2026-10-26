@@ -1,6 +1,6 @@
 // Keep the viewport contract shared with tablet-landscape.css. The DOM stays
 // intact when rotating; only the owner of vertical reading movement changes.
-export const TABLET_LEARNING_QUERY='(min-width: 760px) and (min-height: 400px) and (max-aspect-ratio: 21/10) and (orientation: landscape)';
+export const TABLET_LEARNING_QUERY='(min-width: 600px) and (min-height: 280px) and (orientation: landscape)';
 
 export function installReadingScroll({surface,window:win=window,document:doc=document}) {
  const query=win.matchMedia?.(TABLET_LEARNING_QUERY);

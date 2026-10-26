@@ -3,6 +3,12 @@ import {startSwipe,moveSwipe,SWIPE} from './swipe.js';
 import {installFrontmatterTurn} from './frontmatter-turn.js';
 import {escapeLearningText as escape} from './render.js';
 
+export function centeredContentsScrollTop({scrollY=0,rowTop=0,rowHeight=0,viewportTop=0,viewportHeight=0,headerHeight=0}) {
+ const header=Math.max(0,Math.min(viewportHeight,headerHeight));
+ const available=Math.max(0,viewportHeight-header);
+ return Math.max(0,scrollY+rowTop+rowHeight/2-viewportTop-header-available/2);
+}
+
 // The contents is another leaf of the book. Keep the reading DOM in place so
 // returning to it preserves the same word, media controller and reading spot.
 export function installContents({main,picker,search,entries,getSelected,navigate,getRemembered=()=>null,getReadingPosition=()=>null,readingScroll=null,onBeforeOpen=()=>{},onOpen=()=>{},onClose=()=>{},onTransition=()=>{},prepareReading=()=>{}}) {
@@ -10,6 +16,11 @@ export function installContents({main,picker,search,entries,getSelected,navigate
  const opener=doc.getElementById('open-search');
  const title=doc.getElementById('picker-title'),results=doc.getElementById('word-results');
  const count=doc.getElementById('search-count');
+ const stickyHeader=picker.querySelector('.contents-sticky-header');
+ // Storage controls mount after .contents-tools. Keep that optional, long
+ // settings leaf outside the directory's sticky search header.
+ const settingsHost=doc.getElementById('offline-settings');
+ if(stickyHeader?.contains(settingsHost))stickyHeader.after(settingsHost);
  let saved=null,restoreFrame=0,leaf=null,gestureRestored=false;
  const turns=installFrontmatterTurn({main,onActivity:onTransition,window:win,document:doc});
  // In landscape, frontmatter and the reading leaf own separate scrollports.
@@ -45,7 +56,7 @@ export function installContents({main,picker,search,entries,getSelected,navigate
  }
  function prepareLeaf({show=false}={}){
   // Keep the destination laid out but unpainted while measuring its actual
-  // current row (including desktop columns). No frame or smooth scroll is used.
+  // current row in the one-column index. No frame or smooth scroll is used.
   const visibility=picker.style.getPropertyValue('visibility'),priority=picker.style.getPropertyPriority('visibility');
   picker.style.setProperty('visibility','hidden');
   try{
@@ -55,7 +66,8 @@ export function installContents({main,picker,search,entries,getSelected,navigate
     const row=results.querySelector('[aria-current="page"]');
     if(row){const rect=row.getBoundingClientRect(),viewport=win.visualViewport,landscape=readingScroll?.landscape;
      const height=landscape?picker.clientHeight:viewport?.height||win.innerHeight,offset=landscape?picker.getBoundingClientRect().top:viewport?.offsetTop||0;
-     if(rect.height>0)scrollLeaf({scrollX:0,scrollY:Math.max(0,leafPosition().scrollY+rect.top+rect.height/2-offset-height/2)});
+     const headerHeight=stickyHeader?.getBoundingClientRect().height||0;
+     if(rect.height>0)scrollLeaf({scrollX:0,scrollY:centeredContentsScrollTop({scrollY:leafPosition().scrollY,rowTop:rect.top,rowHeight:rect.height,viewportTop:offset,viewportHeight:height,headerHeight})});
     }
    }
   }finally{if(visibility)picker.style.setProperty('visibility',visibility,priority);else picker.style.removeProperty('visibility');}

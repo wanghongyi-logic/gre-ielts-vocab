@@ -1,22 +1,59 @@
-/* Portrait keeps its original flow; only a roomy landscape reader owns scroll. */
+/* A borderless page in both orientations; only landscape owns a reading pane. */
+:root,html {background-color:var(--journal-paper,var(--paper));background-image:var(--journal-face);background-size:auto,384px 384px;}
+body {width:100%;max-width:none;box-shadow:none;}
+.reading-layout,.book-spread,.book-continuation {border:0;border-radius:0;box-shadow:none;}
+.book-spread::before,.book-spread::after,.word-hero::after {content:none;display:none;}
 .reading-scroll {display:contents;}
 .reading-scroll > .book-continuation {grid-column:1 / -1;}
 .tablet-word-turns {display:none;}
+.word-hero {container-type:inline-size;}
+.word-meta {display:flex;align-items:center;gap:10px;min-height:44px;}
+.word-meta .pronunciation {font-size:min(20px,calc((100cqi - 84px) / var(--ipa-fit,10)));white-space:nowrap;line-height:1.5;}
+.word-meta .part-of-speech {flex:none;display:inline;margin:0;font-size:16px;line-height:1.5;white-space:nowrap;color:var(--muted);}
+.word-hero .pronounce-button {position:relative;isolation:isolate;flex:none;width:44px;height:44px;padding:0;border:0;background:transparent;color:var(--terra);}
+.word-hero .pronounce-button::before {content:'';position:absolute;inset:6px;z-index:-1;border-radius:50%;background:#ad644b12;transition:background-color 140ms ease;}
+.word-hero .pronounce-button svg {width:20px;height:20px;stroke-width:1.65;}
+.word-hero .pronounce-button.is-speaking {background:transparent;color:var(--moss);}
+.word-hero .pronounce-button.is-speaking::before {background:#5365481b;}
+.word-hero .pronounce-button:active::before {background:#ad644b25;}
 
-@media (min-width:760px) and (min-height:400px) and (max-aspect-ratio:21/10) and (orientation:landscape) {
+/* Portrait is the original single, normally scrolling reading flow. */
+@media (orientation:portrait) {
+ body {padding:0 calc(var(--bookmark-gutter) + 4px) 0 max(0px,env(safe-area-inset-left));transition:none;}
+ .reading-layout {width:100%;max-width:820px;margin:0 auto;padding:0;}
+ .reading-layout .book-spread,.text-only-reading .book-spread {display:block;margin:0;border:0;box-shadow:none;background:none;}
+ .opening-page {display:block;min-width:0;padding:0;}
+ .opening-page .word-hero {padding:24px clamp(22px,4vw,38px) 0;min-height:0;}
+ .word-hero h1 {font-size:clamp(54px,10vw,76px);line-height:1.15;white-space:nowrap;overflow-wrap:normal;margin-bottom:10px;}
+ .word-hero .long-headword {min-height:0;font-size:min(76px,calc(96cqi / var(--headword-fit)));}
+ .story-illustration {width:min(calc(100% - 36px),500px);max-width:500px;margin:12px auto 0;}
+ .memory-page,.text-only-reading .memory-page {padding:24px clamp(22px,4vw,38px) 0;}
+ .memory-page .scene-opening {padding:0;}
+ .book-continuation {margin:0;padding:0 clamp(22px,4vw,38px);background:none;}
+ .book-chapter {max-width:none;}
+}
+@media (min-width:520px) and (orientation:portrait) {
+ .tablet-word-turns {display:flex;align-items:center;justify-content:space-between;padding:12px 32px;}
+ .tablet-word-turns button {display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:50%;background:transparent;color:var(--moss);}
+ .tablet-folio {font-size:15px;color:var(--muted);font-variant-numeric:tabular-nums;}
+ .tablet-folio b {font-weight:500;}
+ .scene-lead,.mnemonic > p,.sense > p,.equivalent > p,.example figcaption {font-size:20px;line-height:1.85;}
+ .english-meaning {font-size:21px;}
+}
+
+@media (min-width:600px) and (min-height:280px) and (orientation:landscape) {
  html {height:100%;overflow:hidden;overscroll-behavior:none;scroll-padding:0;}
  body {
-  --tablet-edge:clamp(16px,2.2vh,26px);
+  --tablet-edge:8px;
   height:100vh;height:100dvh;min-height:0;overflow:hidden;overscroll-behavior:none;
-  padding:max(var(--tablet-edge),env(safe-area-inset-top)) calc(var(--bookmark-gutter) + 18px)
+  padding:max(var(--tablet-edge),env(safe-area-inset-top)) calc(var(--bookmark-gutter) + 4px)
    max(var(--tablet-edge),env(safe-area-inset-bottom)) max(var(--tablet-edge),env(safe-area-inset-left));
   transition:none;
  }
  #word-content {height:100%;min-height:0;padding:0;overflow:hidden;}
  .reading-layout {
-  width:100%;height:100%;max-width:1440px;margin:0 auto;padding:0;
-  border:1px solid #c9bea7;border-radius:3px;isolation:isolate;
-  box-shadow:2px 3px 0 #d6ccb8,0 6px 24px #50422808;
+  width:100%;height:100%;max-width:1760px;margin:0 auto;padding:0;
+  border:0;border-radius:0;isolation:isolate;box-shadow:none;
   background-color:var(--journal-paper);background-image:var(--journal-face);background-size:auto,384px 384px;
  }
  .book-spread,.text-only-reading .book-spread {
@@ -28,7 +65,7 @@
  .opening-page,.text-only-reading .opening-page {
   display:flex;flex-direction:column;grid-column:1;grid-row:1;position:relative;
   height:100%;min-height:0;min-width:0;padding:0 clamp(20px,2.5vw,38px);overflow:hidden;
-  border-right:1px solid #d8ceb7;background:linear-gradient(270deg,#c7b58f0e,transparent 12%);
+  border:0;background:none;
  }
  .word-hero,.text-only-reading .word-hero {
   flex:none;width:100%;min-height:0;padding:clamp(22px,3.5vh,34px) 0 0;container-type:inline-size;
@@ -40,7 +77,7 @@
  .word-hero .long-headword {font-size:min(64px,calc(96cqi / var(--headword-fit)));}
  .word-meta {font-size:19px;min-height:36px;gap:12px;}
  .pronounce-button {width:44px;height:44px;}
- .part-of-speech {font-size:15px;line-height:1.5;margin-top:6px;color:var(--muted);}
+ .word-meta .part-of-speech {font-size:16px;}
  .story-illustration {
   flex:1 1 0;display:flex;flex-direction:column;min-height:0;width:100%;max-width:none;
   aspect-ratio:auto;margin:12px auto 0;overflow:hidden;background:none;
@@ -106,23 +143,44 @@
  .paper-turn .reading-scroll {height:100%;}
 }
 
-@media (min-width:760px) and (min-height:400px) and (max-height:680px) and (max-aspect-ratio:21/10) and (orientation:landscape) {
+@media (min-width:600px) and (min-height:280px) and (max-height:680px) and (orientation:landscape) {
  .word-hero,.text-only-reading .word-hero {padding-top:18px;}
  .word-hero h1 {font-size:min(58px,18cqi);margin-bottom:7px;}
  .word-hero .long-headword {font-size:min(58px,calc(96cqi / var(--headword-fit)));}
  .word-meta {font-size:17px;}
- .part-of-speech {font-size:14px;margin-top:3px;}
+ .word-meta .part-of-speech {font-size:15px;}
  .story-illustration {margin-top:6px;}
  .story-dialogue-band {min-height:40px;}
  .tablet-word-turns {padding:10px 0 12px;}
  .memory-page,.text-only-reading .memory-page {padding-top:22px;}
 }
 
-/* Browser chrome on a high-density Mini can leave less than 480 CSS px.
-   Wide phone landscapes are excluded by aspect ratio, not by shrinking text. */
-@media (min-width:760px) and (min-height:400px) and (max-height:519px) and (max-aspect-ratio:21/10) and (orientation:landscape) {
+/* Compact landscape: iPhone browser chrome and high-density small tablets. */
+@media (min-width:600px) and (min-height:280px) and (max-height:519px) and (orientation:landscape) {
  .word-hero h1 {font-size:min(48px,16cqi);}
  .word-hero .long-headword {font-size:min(48px,calc(96cqi / var(--headword-fit)));}
  .story-dialogue-band {min-height:32px;}
  .tablet-word-turns {padding:8px 0;}
+}
+@media (min-width:600px) and (min-height:280px) and (max-height:480px) and (orientation:landscape) {
+ .book-spread,.text-only-reading .book-spread {grid-template-columns:minmax(190px,35%) minmax(0,1fr);}
+ .opening-page,.text-only-reading .opening-page {padding:0 16px;}
+ .word-hero,.text-only-reading .word-hero {padding-top:6px;}
+ .word-hero h1 {font-size:min(42px,17cqi);margin-bottom:1px;}
+ .word-hero .long-headword {font-size:min(42px,calc(96cqi / var(--headword-fit)));}
+ .word-meta {gap:7px;}
+ .word-meta .pronunciation {font-size:min(17px,calc((100cqi - 76px) / var(--ipa-fit,10)));}
+ .word-meta .part-of-speech {font-size:13px;}
+ .story-illustration {margin-top:0;}
+ .story-dialogue-band {min-height:32px;}
+ .story-dialogue {font-size:12px;line-height:1.4;padding:5px 8px;}
+ .tablet-word-turns {padding:4px 0;}
+ .tablet-word-turns button {border:0;}
+ .reading-scroll {padding:0 20px;scroll-padding-block:14px;}
+ .memory-page,.text-only-reading .memory-page {padding-top:14px;}
+ .scene-lead,.mnemonic > p,.sense > p,.equivalent > p,.example figcaption {font-size:18px;line-height:1.8;}
+ .english-meaning {font-size:19px;}
+ .word-meaning {font-size:24px;}
+ .mnemonic h3,.sense h3,.equivalent h3 {font-size:21px;}
+ .chapter-heading h2 {font-size:25px;}
 }

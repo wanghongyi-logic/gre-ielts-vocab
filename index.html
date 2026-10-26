@@ -8,6 +8,8 @@
  <link rel="stylesheet" href="./gre-learning/frontmatter-turn.css">
  <link rel="stylesheet" href="./gre-learning/botanical-margin.css" data-botanical-margin-style>
  <link rel="stylesheet" href="./gre-learning/tablet-landscape.css">
+ <link rel="stylesheet" href="./gre-learning/contents-layout.css">
+ <link rel="stylesheet" href="./gre-learning/page-transitions.css">
  <link rel="preload" as="image" href="./gre-learning/botanical-vine.webp">
  <link rel="preload" as="image" href="./gre-learning/botanical-sage-wash.webp">
  <link rel="preload" as="image" href="./gre-learning/book-paper-face.webp">
@@ -20,9 +22,11 @@
  <nav class="bookmarks paper-foreedge botanical-margin" aria-label="页边书签"><div class="margin-art" aria-hidden="true"><span class="margin-vine margin-vine-ground"></span><span class="margin-vine margin-vine-saved"></span></div><button class="bookmark contents-bookmark margin-control" id="open-search" type="button" aria-label="打开单词目录，查找单词" aria-controls="word-picker" aria-expanded="false" title="目录"><svg class="margin-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 6.2 19 5.7M5 12.1l13.5-.2M4.8 18.1l14-.4"/></svg><span class="margin-label">目录</span></button><div class="bookmark-list" id="bookmark-list"><a class="bookmark margin-control is-current" href="#word-title" data-section="word-title" aria-label="单词" title="单词" aria-current="location"><svg class="margin-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><text x="12" y="21" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="currentColor" stroke="none">A</text></svg><span class="margin-label">单词</span></a><a class="bookmark margin-control" href="#memory" data-section="memory" aria-label="记忆" title="记忆"><svg class="margin-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 12C2.1 11.3 3.9 2.3 8.2 3.1c3 .4 3.8 5 3.8 8.9Zm0 0c1.2-9.6 9.9-8 8.8-3.8-.6 3-5 3.8-8.8 3.8Zm0 0c9.7 1.3 8 10.1 3.8 8.8-3-.6-3.8-5-3.8-8.8Zm0 0c-1.1 9.8-10 8-8.8 3.9.6-3 5-4 8.8-3.9Z"/></svg><span class="margin-label">记忆</span></a><a class="bookmark margin-control" href="#usage" data-section="usage" aria-label="用法" title="用法"><svg class="margin-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="15.5" cy="7.5" r="4.4"/><path d="m12.3 10.7-9 9M5.4 17.6l2 2M8 15l2 2"/></svg><span class="margin-label">用法</span></a><a class="bookmark margin-control" href="#context-examples" data-section="context-examples" aria-label="例句" title="例句"><svg class="margin-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 5C5.2 8 3 11.3 3 15.3c0 2.3 1.3 3.7 3.2 3.7 2 0 3.3-1.5 3.3-3.3 0-1.7-1.1-3-2.8-3.2.1-2.3 1.3-4.8 2.8-7.5Zm11 0c-4.3 3-6.5 6.3-6.5 10.3 0 2.3 1.3 3.7 3.2 3.7 2 0 3.3-1.5 3.3-3.3 0-1.7-1.1-3-2.8-3.2.1-2.3 1.3-4.8 2.8-7.5Z"/></svg><span class="margin-label">例句</span></a><a class="bookmark margin-control" href="#comparison" data-section="comparison" aria-label="等价词" title="等价词"><svg class="margin-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m7 3-.8 18M17 3l.5 18M5.5 5l-.4 14M18.5 5l.6 14"/></svg><span class="margin-label">等价词</span></a></div></nav>
  <dialog id="word-picker" class="contents-page" aria-labelledby="picker-title" aria-modal="false">
   <div class="contents-sheet">
-   <header class="contents-heading"><h1 id="picker-title" tabindex="-1">目录</h1><span class="word-counter sr-only" id="word-counter">— / —</span></header>
-   <div class="contents-tools">
-    <label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input id="word-search" type="search" placeholder="找一个词或释义" autocomplete="off" aria-label="搜索目录中的英文或中文释义" aria-controls="word-results"></label>
+   <div class="contents-sticky-header">
+    <header class="contents-heading"><h1 id="picker-title" tabindex="-1">目录</h1><span class="word-counter sr-only" id="word-counter">— / —</span></header>
+    <div class="contents-tools">
+     <label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input id="word-search" type="search" placeholder="找一个词或释义" autocomplete="off" enterkeyhint="search" aria-label="搜索目录中的英文或中文释义" aria-controls="word-results"></label>
+    </div>
    </div>
    <div class="contents-list-heading"><p id="search-count" class="search-count" aria-live="polite"></p><span class="contents-ordinal-label">词序</span></div>
    <ol id="word-results" class="word-results" aria-label="本册单词，按阅读顺序排列"></ol>
