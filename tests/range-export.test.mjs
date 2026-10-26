@@ -91,8 +91,10 @@ for(const [label,start,end] of [['interior',2,5],['first boundary',1,2],['last b
   assert.deepEqual(parsed.manifest.wordIds,targets.map(entry=>entry.number));
   assert.deepEqual(new Set(parsed.files.map(file=>file.wordId)),new Set(targets.map(entry=>entry.number)));
   assert.equal(parsed.files.length,targets.length*3);assert.equal(reads.length,targets.length*6);
-  assert.deepEqual(progress.filter(p=>p.phase==='scan'),targets.map((_,i)=>({phase:'scan',completed:i+1,total:targets.length})));
-  assert.deepEqual(progress.filter(p=>p.phase==='pack').at(-1),{phase:'pack',completed:targets.length*3+1,total:targets.length*3+1});
+  assert.deepEqual(progress.filter(p=>p.phase==='scan').map(({phase,completed,total})=>({phase,completed,total})),[0,...targets.map((_,i)=>i+1)].map(completed=>({phase:'scan',completed,total:targets.length})));
+  assert.ok(progress.every(p=>p.packageIndex===1&&p.packageTotal===1&&p.range.start===start&&p.range.end===end));
+  assert.ok(progress.every((p,i)=>i===0||p.scanned>=progress[i-1].scanned));
+  const last=progress.filter(p=>p.phase==='pack').at(-1);assert.deepEqual({phase:last.phase,completed:last.completed,total:last.total},{phase:'pack',completed:targets.length*3+1,total:targets.length*3+1});
   assert.deepEqual(f.catalog,before);await result.cleanup();
  });
 }
@@ -131,7 +133,7 @@ test('missing and partially saved words are skipped only within the selected ran
  f.blobs.delete(f.byOrdinal[3].storyMedia.poster.url);
  const before=await snapshots(f.blobs),catalogBefore=structuredClone(f.catalog);
  const result=await exportSavedResources(f.catalog,{range,readSource:ref=>f.blobs.get(ref.url),onProgress:p=>progress.push(p)});
- assert.equal(result.complete,2);assert.equal(result.skipped,3);assert.equal(result.packages[0].name,'GRE-5-6.zip');
+ assert.equal(result.complete,2);assert.equal(result.skipped,3);assert.equal(result.packages[0].name,'GRE-2-6.zip');
  const [parsed]=await readPackages(result,f.catalog);
  assert.deepEqual(parsed.manifest.wordIds,f.catalog.entries.filter(entry=>[5,6].includes(entry.displayOrdinal)).map(entry=>entry.number));
  assert.equal(parsed.files.length,6);assert.equal(progress.filter(p=>p.phase==='scan').at(-1).total,5);
@@ -188,13 +190,13 @@ test('no-range export retains all-word behavior, source order, skip counts, and 
  assert.equal(progress.filter(p=>p.phase==='scan').at(-1).total,7);await unchanged(f.blobs,before);await result.cleanup();
 });
 
-test('range and existing all-word export preserve the 200-word split and shared-asset deduplication',async()=>{
+test('range and existing all-word export use the 100-word split and shared-asset deduplication',async()=>{
  const f=fixture(),shared=f.byOrdinal[0].storyMedia;
  const catalog={entries:Array.from({length:203},(_,i)=>({number:1000+i*13,displayOrdinal:i+1,storyMedia:shared})),units:[]};
  for(const range of [undefined,{start:2,end:202}]){
   const result=await exportSavedResources(catalog,{range,readSource:ref=>f.blobs.get(ref.url)});
   const parsed=await readPackages(result,catalog),expected=range?catalog.entries.slice(1,202):catalog.entries;
-  assert.deepEqual(result.packages.map(pack=>pack.words),[200,expected.length-200]);
+  assert.deepEqual(result.packages.map(pack=>pack.words),[100,100,expected.length-200]);
   assert.deepEqual(parsed.flatMap(pack=>pack.manifest.wordIds),expected.map(entry=>entry.number));
   assert.ok(parsed.every(pack=>pack.files.length===3));await result.cleanup();
  }

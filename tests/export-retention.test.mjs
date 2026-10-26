@@ -191,8 +191,8 @@ test('failure during a replacement preserves the prior files, URLs, and range la
 for(const completion of ['reject','return'])test(`cancelled replacement preserves old output when exporter later ${completion==='reject'?'rejects':'returns a candidate'}`,async()=>{
  const f=fixture();await f.ui.export.onclick();const old=snapshot(f),previous=f.results[0],label=f.ui.result?.textContent,pending=deferred();
  f.setExporter(()=>pending.promise);setRange(f,2,4);const task=f.ui.export.onclick();await tick();
- const current=f.calls.at(-1);current.onProgress({phase:'pack',completed:2,total:4});assert.equal(f.ui.progress.value,2);f.ui.cancel.onclick();assert.equal(current.signal.aborted,true);
- current.onProgress({phase:'pack',completed:4,total:4});assert.equal(f.ui.progress.value,2,'late progress after cancel is ignored');
+ const current=f.calls.at(-1);current.onProgress({packageIndex:1,packageTotal:1,range:{start:1,end:4},scanned:2,selectedCount:4,phase:'pack',completed:2,total:4});assert.equal(f.ui.progress.value,2);f.ui.cancel.onclick();assert.equal(current.signal.aborted,true);
+ current.onProgress({packageIndex:1,packageTotal:1,range:{start:1,end:4},scanned:2,selectedCount:4,phase:'pack',completed:4,total:4});assert.equal(f.ui.progress.value,2,'late progress after cancel is ignored');
  let candidate;if(completion==='reject')pending.reject(aborted());else{candidate=f.makeResult('cancelled.zip');pending.resolve(candidate);}await task;
  if(candidate)assert.equal(candidate.cleanupCalls,1,'late returned output belongs to the cancelled attempt and must be cleaned');
  assertRetained(f,f,old,previous);assert.equal(f.ui.result?.textContent,label);assert.equal(f.created.length,1);assert.deepEqual(f.revoked,[]);assert.equal(f.busy,false);f.assertUnchanged();
@@ -222,10 +222,10 @@ test('unmounting during replacement aborts and cleans its late candidate while r
 test('progress belongs only to the active export and stale callbacks cannot touch replacement progress',async()=>{
  const f=fixture();await f.ui.export.onclick();const oldProgress=f.calls[0].onProgress,pending=deferred();f.setExporter(()=>pending.promise);
  const replacing=f.ui.export.onclick();await tick();assert.equal(f.ui.progress.hidden,false);assert.equal(f.ui.progress.hasAttribute('value'),false);
- oldProgress({phase:'pack',completed:99,total:99});assert.equal(f.ui.progress.hasAttribute('value'),false);f.assertUnchanged();
- f.calls.at(-1).onProgress({phase:'scan',completed:2,total:4});assert.equal(f.ui.progress.value,2);assert.equal(f.ui.progress.max,4);f.assertUnchanged();
+ oldProgress({packageIndex:1,packageTotal:1,range:{start:1,end:4},scanned:2,selectedCount:4,phase:'pack',completed:99,total:99});assert.equal(f.ui.progress.hasAttribute('value'),false);f.assertUnchanged();
+ f.calls.at(-1).onProgress({packageIndex:1,packageTotal:1,range:{start:1,end:4},scanned:2,selectedCount:4,phase:'scan',completed:2,total:4});assert.equal(f.ui.progress.value,2);assert.equal(f.ui.progress.max,4);f.assertUnchanged();
  pending.resolve(f.makeResult('new-progress.zip'));await replacing;const status=f.ui.status.textContent;
- oldProgress({phase:'pack',completed:99,total:99});f.calls.at(-1).onProgress({phase:'pack',completed:88,total:99});assert.equal(f.ui.status.textContent,status);assert.equal(f.ui.progress.hidden,true);f.assertUnchanged();
+ oldProgress({packageIndex:1,packageTotal:1,range:{start:1,end:4},scanned:2,selectedCount:4,phase:'pack',completed:99,total:99});f.calls.at(-1).onProgress({packageIndex:1,packageTotal:1,range:{start:1,end:4},scanned:2,selectedCount:4,phase:'pack',completed:88,total:99});assert.equal(f.ui.status.textContent,status);assert.equal(f.ui.progress.hidden,true);f.assertUnchanged();
 });
 
 test('queued replacement lock is abortable without exporting again or retiring existing files',async()=>{
@@ -339,4 +339,22 @@ test('late explicit discard from an older mount cannot clean an already-retired 
  assert.equal(previous.cleanupCalls,1);await f.handle.cleanup({discard:true});await f.handle.cleanup({discard:true});
  assert.equal(previous.cleanupCalls,1,'a payload already retired by replacement must not be cleaned twice');assertRetained(f,next,old,current);assert.equal(f.revoked.length,1);
  await next.handle.cleanup();const remounted=f.mount(structuredClone(f.catalog));assertRetained(f,remounted,old,current);assert.equal(f.created.length,2);
+});
+
+// This test adds the new 100-word batch presentation contract to the same
+// transactional UI fixture; it does not replace the existing lifetime checks.
+test('package progress labels distinguish windows and phases while overall checked words stay visible',async()=>{
+ const f=fixture(),pending=deferred();f.setExporter(()=>pending.promise);
+ const running=f.ui.export.onclick();await tick();const current=f.calls.at(-1);
+ current.onProgress({phase:'scan',completed:23,total:100,packageIndex:2,packageTotal:3,range:{start:101,end:200},scanned:123,selectedCount:201,skipped:2});
+ assert.equal(f.ui.progress.value,23);assert.equal(f.ui.progress.max,100);
+ assert.match(f.ui.progress.getAttribute('aria-label'),/第 2\/3 包检查进度/);
+ assert.match(f.ui.status.textContent,/第 2\/3 包 · 第 101–200 词 · 检查词条 23\/100 · 总计已检查 123\/201 词/);
+ current.onProgress({phase:'pack',completed:1,total:295,packageIndex:2,packageTotal:3,range:{start:101,end:200},scanned:200,selectedCount:201,skipped:2});
+ assert.match(f.ui.status.textContent,/写入文件 1\/295 · 总计已检查 200\/201 词/);
+ assert.match(f.ui.progress.getAttribute('aria-label'),/写入进度/);f.assertUnchanged();
+ pending.resolve(f.makeResult('GRE-1-100.zip',{packages:3}));await running;
+ assert.equal(links(f).length,3);assert.match(f.ui.status.textContent,/3 个 ZIP 已生成，请逐包保存/);
+ assert.match(links(f)[0].textContent,/保存第 1\/3 包/);assert.match(links(f)[2].textContent,/保存第 3\/3 包/);
+ assert.equal(f.calls.length,1);f.assertUnchanged();
 });

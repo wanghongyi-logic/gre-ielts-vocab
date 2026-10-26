@@ -1,8 +1,8 @@
 {
   "kind": "vocabulary-production-assets",
   "schemaVersion": 1,
-  "releaseBuild": "204-offline3500-v63",
-  "generatedAt": "2026-10-26T17:39:14.823588+00:00",
+  "releaseBuild": "204-offline3500-v64",
+  "generatedAt": "2026-10-26T17:47:31.401471+00:00",
   "assetLoading": "lazy-content-addressed",
   "preview": false,
   "presentation": "storybook-reviewed-order",
@@ -387,7 +387,7 @@
       "path": "gre-learning/update.js",
       "loading": "shell",
       "bytes": 8169,
-      "sha256": "510ecb2af9b5982b5a615ac8c6711ac045fde2dc0930a17b649cdf79b013cc2a",
+      "sha256": "260e5488098e622ace58b68781d021825743c3dd6d0f5bdee838006aaab4747e",
       "gzipBytes": 2686
     },
     {
@@ -618,7 +618,7 @@
       "path": "gre-learning/offline-preferences.js",
       "loading": "shell",
       "bytes": 1262,
-      "sha256": "90d91844c74925937226171401d505089a1ef0a553b7b532d71efcbdc9d824bf",
+      "sha256": "03e77014b8b1021ce6939d80c9d1b8330dc82e52d1fe8fd5eebd52ec7e67bb02",
       "gzipBytes": 598
     },
     {
@@ -674,13 +674,15 @@
       "path": "gre-learning/images/botanical-progress-bookmark.png",
       "loading": "shell",
       "bytes": 527866,
-      "sha256": "9186e8d6cb8afa43db2ca647e00dec592591b1733d974f780465f4d955456b93"
+      "sha256": "9186e8d6cb8afa43db2ca647e00dec592591b1733d974f780465f4d955456b93",
+      "gzipBytes": 486207
     },
     {
       "path": "gre-learning/images/bookbinding-inlay.webp",
       "loading": "shell",
       "bytes": 17080,
-      "sha256": "90d03a7a65dc1697837c5d45769c8dd9c58fc8077ded12f4b796d100ceea8752"
+      "sha256": "90d03a7a65dc1697837c5d45769c8dd9c58fc8077ded12f4b796d100ceea8752",
+      "gzipBytes": 17108
     },
     {
       "path": "gre-learning/botanical-margin.js",
@@ -1056,16 +1058,16 @@
     {
       "path": "gre-learning/offline-export.js",
       "loading": "shell",
-      "bytes": 15765,
-      "sha256": "079af5575c0c1bfac034816232d630362ad113023347a216c3ef6f410c624958",
-      "gzipBytes": 5482
+      "bytes": 16862,
+      "sha256": "8b26accc861b982f3e73789ae65f6d3bb6afb1bd1b782653e8753300c1da080e",
+      "gzipBytes": 5888
     },
     {
       "path": "gre-learning/offline-export-ui.js",
       "loading": "shell",
-      "bytes": 8687,
-      "sha256": "34f92c58fbb42ea7f980c5a121a345c8d7a4d7629b809e442e729026826284d7",
-      "gzipBytes": 3329
+      "bytes": 9437,
+      "sha256": "890185282ff512847f996784ceda5e17478a88f2256df9a8e752459b94b785bb",
+      "gzipBytes": 3678
     },
     {
       "path": "gre-learning/offline-export-worker.js",
@@ -3500,7 +3502,8 @@
       "path": "gre-learning/units/release183-0331-0335-b85e1dd5442fa8770588c5f9c592ca771fcf94ae100a18a4a6b5d23aaad165ba.json",
       "loading": "shell",
       "bytes": 16477,
-      "sha256": "b85e1dd5442fa8770588c5f9c592ca771fcf94ae100a18a4a6b5d23aaad165ba"
+      "sha256": "b85e1dd5442fa8770588c5f9c592ca771fcf94ae100a18a4a6b5d23aaad165ba",
+      "gzipBytes": 6999
     },
     {
       "path": "gre-learning/units/release183-0336-0340-0922971b3e526c3a297dcfe14339d2b55c635187b5c995d7ae715e6dc01a6076.json",
@@ -3512,127 +3515,148 @@
       "path": "gre-learning/units/release183-0341-0345-7b4477d4efa6f9ab6a3bc1ea17481d6bace2cf9b3016b9ece33469e2361a7ea2.json",
       "loading": "shell",
       "bytes": 14652,
-      "sha256": "7b4477d4efa6f9ab6a3bc1ea17481d6bace2cf9b3016b9ece33469e2361a7ea2"
+      "sha256": "7b4477d4efa6f9ab6a3bc1ea17481d6bace2cf9b3016b9ece33469e2361a7ea2",
+      "gzipBytes": 6206
     },
     {
       "path": "gre-learning/units/release183-0346-0350-f178f480b3355b273e8afbf500b3d71871060d29c61a88c99d4db6799e0233ab.json",
       "loading": "shell",
       "bytes": 16339,
-      "sha256": "f178f480b3355b273e8afbf500b3d71871060d29c61a88c99d4db6799e0233ab"
+      "sha256": "f178f480b3355b273e8afbf500b3d71871060d29c61a88c99d4db6799e0233ab",
+      "gzipBytes": 7074
     },
     {
       "path": "gre-learning/units/release183-0351-0355-6725f5a65197758123a85e913399e913c4ce3ab6e0b9e0f863a49b415485acd2.json",
       "loading": "shell",
       "bytes": 16560,
-      "sha256": "6725f5a65197758123a85e913399e913c4ce3ab6e0b9e0f863a49b415485acd2"
+      "sha256": "6725f5a65197758123a85e913399e913c4ce3ab6e0b9e0f863a49b415485acd2",
+      "gzipBytes": 7162
     },
     {
       "path": "gre-learning/units/release183-0356-0360-e14496e76d882aa6015f68f5d09b3a5e5819206f4f1dfabe54c7b051de035575.json",
       "loading": "shell",
       "bytes": 16394,
-      "sha256": "e14496e76d882aa6015f68f5d09b3a5e5819206f4f1dfabe54c7b051de035575"
+      "sha256": "e14496e76d882aa6015f68f5d09b3a5e5819206f4f1dfabe54c7b051de035575",
+      "gzipBytes": 7028
     },
     {
       "path": "gre-learning/units/release183-0361-0365-31334d791129ea93a7284e8dce261c125cff84b5ec38e382aaea776c11968f3d.json",
       "loading": "shell",
       "bytes": 17608,
-      "sha256": "31334d791129ea93a7284e8dce261c125cff84b5ec38e382aaea776c11968f3d"
+      "sha256": "31334d791129ea93a7284e8dce261c125cff84b5ec38e382aaea776c11968f3d",
+      "gzipBytes": 7628
     },
     {
       "path": "gre-learning/units/release183-0366-0370-19474acc8ddf1a132b8229b85609e10360a9759faa7cedd1ddd1d9293966f8df.json",
       "loading": "shell",
       "bytes": 18241,
-      "sha256": "19474acc8ddf1a132b8229b85609e10360a9759faa7cedd1ddd1d9293966f8df"
+      "sha256": "19474acc8ddf1a132b8229b85609e10360a9759faa7cedd1ddd1d9293966f8df",
+      "gzipBytes": 7740
     },
     {
       "path": "gre-learning/units/release183-0371-0375-459bb8ec9b67e7f6834ca747afb1a58a91eba8e6618c9d53026edf392b8b4a11.json",
       "loading": "shell",
       "bytes": 19056,
-      "sha256": "459bb8ec9b67e7f6834ca747afb1a58a91eba8e6618c9d53026edf392b8b4a11"
+      "sha256": "459bb8ec9b67e7f6834ca747afb1a58a91eba8e6618c9d53026edf392b8b4a11",
+      "gzipBytes": 8478
     },
     {
       "path": "gre-learning/units/release183-0376-0380-77b9d03fd057f7cd8774559e11c5cbf92162553ec3b214eac9bfd251b40f05f3.json",
       "loading": "shell",
       "bytes": 19110,
-      "sha256": "77b9d03fd057f7cd8774559e11c5cbf92162553ec3b214eac9bfd251b40f05f3"
+      "sha256": "77b9d03fd057f7cd8774559e11c5cbf92162553ec3b214eac9bfd251b40f05f3",
+      "gzipBytes": 8476
     },
     {
       "path": "gre-learning/units/release183-0381-0385-0c9e951a33127da9c64cce22ff6d9453301300adb42c36acf2b1d7a13619779c.json",
       "loading": "shell",
       "bytes": 18053,
-      "sha256": "0c9e951a33127da9c64cce22ff6d9453301300adb42c36acf2b1d7a13619779c"
+      "sha256": "0c9e951a33127da9c64cce22ff6d9453301300adb42c36acf2b1d7a13619779c",
+      "gzipBytes": 7753
     },
     {
       "path": "gre-learning/units/release183-0386-0390-f751bcc30fe3eba0f86f08030263be765d7e88c1e67aa4a43cde1ab9a43fc204.json",
       "loading": "shell",
       "bytes": 17855,
-      "sha256": "f751bcc30fe3eba0f86f08030263be765d7e88c1e67aa4a43cde1ab9a43fc204"
+      "sha256": "f751bcc30fe3eba0f86f08030263be765d7e88c1e67aa4a43cde1ab9a43fc204",
+      "gzipBytes": 7701
     },
     {
       "path": "gre-learning/units/release183-0391-0395-3ecd109aad1808e8b2b8e0c21e2834cbacbb4370394e7072ed27b57fb5d0e9b4.json",
       "loading": "shell",
       "bytes": 17313,
-      "sha256": "3ecd109aad1808e8b2b8e0c21e2834cbacbb4370394e7072ed27b57fb5d0e9b4"
+      "sha256": "3ecd109aad1808e8b2b8e0c21e2834cbacbb4370394e7072ed27b57fb5d0e9b4",
+      "gzipBytes": 7405
     },
     {
       "path": "gre-learning/units/release183-0396-0400-a2c2def7d0d1452fc4622947d783de7b6a4dba3938ba413625c3a3a850596dc3.json",
       "loading": "shell",
       "bytes": 17233,
-      "sha256": "a2c2def7d0d1452fc4622947d783de7b6a4dba3938ba413625c3a3a850596dc3"
+      "sha256": "a2c2def7d0d1452fc4622947d783de7b6a4dba3938ba413625c3a3a850596dc3",
+      "gzipBytes": 7441
     },
     {
       "path": "gre-learning/units/release183-0401-0405-3f900248337d2d0f84feddc7c896615bcc788721f211293c31515509c4ef3059.json",
       "loading": "shell",
       "bytes": 17965,
-      "sha256": "3f900248337d2d0f84feddc7c896615bcc788721f211293c31515509c4ef3059"
+      "sha256": "3f900248337d2d0f84feddc7c896615bcc788721f211293c31515509c4ef3059",
+      "gzipBytes": 7953
     },
     {
       "path": "gre-learning/units/release183-0406-0410-1a7c718e760893d086aae0c2d54008049c449f46d36cfb494e7432c7da10f59d.json",
       "loading": "shell",
       "bytes": 16237,
-      "sha256": "1a7c718e760893d086aae0c2d54008049c449f46d36cfb494e7432c7da10f59d"
+      "sha256": "1a7c718e760893d086aae0c2d54008049c449f46d36cfb494e7432c7da10f59d",
+      "gzipBytes": 7050
     },
     {
       "path": "gre-learning/units/release183-0411-0415-141c3a3f2cec78bd8f5a68865aa1ef394bb91937e3f6a89a3b9d0afd88114b0f.json",
       "loading": "shell",
       "bytes": 16327,
-      "sha256": "141c3a3f2cec78bd8f5a68865aa1ef394bb91937e3f6a89a3b9d0afd88114b0f"
+      "sha256": "141c3a3f2cec78bd8f5a68865aa1ef394bb91937e3f6a89a3b9d0afd88114b0f",
+      "gzipBytes": 6999
     },
     {
       "path": "gre-learning/units/release183-0416-0420-897ddc846db846635f2f167c1cf984d678397363e76d2869dd59d608926d1603.json",
       "loading": "shell",
       "bytes": 16187,
-      "sha256": "897ddc846db846635f2f167c1cf984d678397363e76d2869dd59d608926d1603"
+      "sha256": "897ddc846db846635f2f167c1cf984d678397363e76d2869dd59d608926d1603",
+      "gzipBytes": 6811
     },
     {
       "path": "gre-learning/units/release183-0421-0425-f5b4a36c1bb0bd7f645e0a63301a1337bc83ea8f50c3ea3126b4c0ccd4c2823a.json",
       "loading": "shell",
       "bytes": 14921,
-      "sha256": "f5b4a36c1bb0bd7f645e0a63301a1337bc83ea8f50c3ea3126b4c0ccd4c2823a"
+      "sha256": "f5b4a36c1bb0bd7f645e0a63301a1337bc83ea8f50c3ea3126b4c0ccd4c2823a",
+      "gzipBytes": 6574
     },
     {
       "path": "gre-learning/units/release183-0426-0430-94ac9f5a619d5c0b841c3f6e5ea58bfee75c651df5f69ba2902704e0a0f3edfe.json",
       "loading": "shell",
       "bytes": 15594,
-      "sha256": "94ac9f5a619d5c0b841c3f6e5ea58bfee75c651df5f69ba2902704e0a0f3edfe"
+      "sha256": "94ac9f5a619d5c0b841c3f6e5ea58bfee75c651df5f69ba2902704e0a0f3edfe",
+      "gzipBytes": 6607
     },
     {
       "path": "gre-learning/units/release183-0431-0435-caab660c95a492222fa8be1dcb5dddc7b9891d6e2ec8dd9ce609aeddbe985ba4.json",
       "loading": "shell",
       "bytes": 14855,
-      "sha256": "caab660c95a492222fa8be1dcb5dddc7b9891d6e2ec8dd9ce609aeddbe985ba4"
+      "sha256": "caab660c95a492222fa8be1dcb5dddc7b9891d6e2ec8dd9ce609aeddbe985ba4",
+      "gzipBytes": 6364
     },
     {
       "path": "gre-learning/units/release183-0436-0440-13faf2c5a4fb06121b201c025d3f4500c3b41331c535aadd52a334b8e0d8eeab.json",
       "loading": "shell",
       "bytes": 14631,
-      "sha256": "13faf2c5a4fb06121b201c025d3f4500c3b41331c535aadd52a334b8e0d8eeab"
+      "sha256": "13faf2c5a4fb06121b201c025d3f4500c3b41331c535aadd52a334b8e0d8eeab",
+      "gzipBytes": 6331
     },
     {
       "path": "gre-learning/units/release183-0441-0445-61f30c567affdac19a1883827864019860e4acacd90fc0082c507f3502093d88.json",
       "loading": "shell",
       "bytes": 14872,
-      "sha256": "61f30c567affdac19a1883827864019860e4acacd90fc0082c507f3502093d88"
+      "sha256": "61f30c567affdac19a1883827864019860e4acacd90fc0082c507f3502093d88",
+      "gzipBytes": 6239
     },
     {
       "path": "gre-learning/units/release183-0446-0450-1e4bdd1ede1d31959bf990a344cf9b95b589b466fa09e3ce3f73f4758c52ce63.json",
@@ -3644,355 +3668,414 @@
       "path": "gre-learning/units/release183-0451-0455-0d6ae58cb6ee8fbdfb750f2be9cfe6ef2eefaace0fdd2c969f90eaf76e8c813e.json",
       "loading": "shell",
       "bytes": 14245,
-      "sha256": "0d6ae58cb6ee8fbdfb750f2be9cfe6ef2eefaace0fdd2c969f90eaf76e8c813e"
+      "sha256": "0d6ae58cb6ee8fbdfb750f2be9cfe6ef2eefaace0fdd2c969f90eaf76e8c813e",
+      "gzipBytes": 6273
     },
     {
       "path": "gre-learning/units/release183-0456-0460-081fe98b2fee2fb477c96b12e39233072ab6d025ad8905df777b93b2c86c6998.json",
       "loading": "shell",
       "bytes": 14620,
-      "sha256": "081fe98b2fee2fb477c96b12e39233072ab6d025ad8905df777b93b2c86c6998"
+      "sha256": "081fe98b2fee2fb477c96b12e39233072ab6d025ad8905df777b93b2c86c6998",
+      "gzipBytes": 6229
     },
     {
       "path": "gre-learning/units/release183-0461-0465-cc70203d674a462b07bf4fdffb745934b5a7a9366113d0edc6855305810aaa92.json",
       "loading": "shell",
       "bytes": 14575,
-      "sha256": "cc70203d674a462b07bf4fdffb745934b5a7a9366113d0edc6855305810aaa92"
+      "sha256": "cc70203d674a462b07bf4fdffb745934b5a7a9366113d0edc6855305810aaa92",
+      "gzipBytes": 6392
     },
     {
       "path": "gre-learning/units/release183-0466-0470-8fb3cea4caf12e9a3992f8b1b6597842bd302391765e20bc74bf1eeaf7523deb.json",
       "loading": "shell",
       "bytes": 14706,
-      "sha256": "8fb3cea4caf12e9a3992f8b1b6597842bd302391765e20bc74bf1eeaf7523deb"
+      "sha256": "8fb3cea4caf12e9a3992f8b1b6597842bd302391765e20bc74bf1eeaf7523deb",
+      "gzipBytes": 6341
     },
     {
       "path": "gre-learning/units/release183-0471-0475-005b0465c5031404ed84d68d2e81451a5f2a26efe92ae4bdec017584eeb0e7bd.json",
       "loading": "shell",
       "bytes": 14601,
-      "sha256": "005b0465c5031404ed84d68d2e81451a5f2a26efe92ae4bdec017584eeb0e7bd"
+      "sha256": "005b0465c5031404ed84d68d2e81451a5f2a26efe92ae4bdec017584eeb0e7bd",
+      "gzipBytes": 6314
     },
     {
       "path": "gre-learning/units/release183-0476-0480-63e6f5285a0d48d3b74767154d58bf5b7a207cd50d2fb8e4af75eecc1c761f33.json",
       "loading": "shell",
       "bytes": 15364,
-      "sha256": "63e6f5285a0d48d3b74767154d58bf5b7a207cd50d2fb8e4af75eecc1c761f33"
+      "sha256": "63e6f5285a0d48d3b74767154d58bf5b7a207cd50d2fb8e4af75eecc1c761f33",
+      "gzipBytes": 6694
     },
     {
       "path": "gre-learning/units/release183-0481-0485-0f0a7f350edd71201d5aa1f3809231885d37e83f3f24b6614349fd8b38e82569.json",
       "loading": "shell",
       "bytes": 16731,
-      "sha256": "0f0a7f350edd71201d5aa1f3809231885d37e83f3f24b6614349fd8b38e82569"
+      "sha256": "0f0a7f350edd71201d5aa1f3809231885d37e83f3f24b6614349fd8b38e82569",
+      "gzipBytes": 7072
     },
     {
       "path": "gre-learning/units/release183-0486-0490-6c973e249d6bd53e74d3853e7f5e92dc69c41faebd7db504efe9bc9ae19dc931.json",
       "loading": "shell",
       "bytes": 15757,
-      "sha256": "6c973e249d6bd53e74d3853e7f5e92dc69c41faebd7db504efe9bc9ae19dc931"
+      "sha256": "6c973e249d6bd53e74d3853e7f5e92dc69c41faebd7db504efe9bc9ae19dc931",
+      "gzipBytes": 6679
     },
     {
       "path": "gre-learning/units/release183-0491-0495-56392a45732300e94b7776a6a8f731bef03a7061e58ef629f456ac79fb044b5a.json",
       "loading": "shell",
       "bytes": 16735,
-      "sha256": "56392a45732300e94b7776a6a8f731bef03a7061e58ef629f456ac79fb044b5a"
+      "sha256": "56392a45732300e94b7776a6a8f731bef03a7061e58ef629f456ac79fb044b5a",
+      "gzipBytes": 6895
     },
     {
       "path": "gre-learning/units/release183-0496-0500-28415a16d38cb6ce8dbfa23b29458fd702937401e9dfeee9eff4e74e681ae85f.json",
       "loading": "shell",
       "bytes": 15924,
-      "sha256": "28415a16d38cb6ce8dbfa23b29458fd702937401e9dfeee9eff4e74e681ae85f"
+      "sha256": "28415a16d38cb6ce8dbfa23b29458fd702937401e9dfeee9eff4e74e681ae85f",
+      "gzipBytes": 6699
     },
     {
       "path": "gre-learning/units/release183-0501-0505-754367ec4c1c398374b7e737f7c66499194b1bd5d16f4fa699857ba3c64bd1ed.json",
       "loading": "shell",
       "bytes": 16475,
-      "sha256": "754367ec4c1c398374b7e737f7c66499194b1bd5d16f4fa699857ba3c64bd1ed"
+      "sha256": "754367ec4c1c398374b7e737f7c66499194b1bd5d16f4fa699857ba3c64bd1ed",
+      "gzipBytes": 6939
     },
     {
       "path": "gre-learning/units/release183-0506-0510-dc45d0816631415ca77c6561136505af8dadcac189ae12ddd088d9eb2846d436.json",
       "loading": "shell",
       "bytes": 16021,
-      "sha256": "dc45d0816631415ca77c6561136505af8dadcac189ae12ddd088d9eb2846d436"
+      "sha256": "dc45d0816631415ca77c6561136505af8dadcac189ae12ddd088d9eb2846d436",
+      "gzipBytes": 6892
     },
     {
       "path": "gre-learning/units/release183-0511-0515-8ce2071dc1d519ce275d51c21e6fc4a3804dbeb1bc8255827c6551c52d018262.json",
       "loading": "shell",
       "bytes": 16792,
-      "sha256": "8ce2071dc1d519ce275d51c21e6fc4a3804dbeb1bc8255827c6551c52d018262"
+      "sha256": "8ce2071dc1d519ce275d51c21e6fc4a3804dbeb1bc8255827c6551c52d018262",
+      "gzipBytes": 7099
     },
     {
       "path": "gre-learning/units/release183-0516-0520-31cc83d829c75044e1c21bbd12f5ddcdc3c8139cf793d910c0741eb76b2ca688.json",
       "loading": "shell",
       "bytes": 14357,
-      "sha256": "31cc83d829c75044e1c21bbd12f5ddcdc3c8139cf793d910c0741eb76b2ca688"
+      "sha256": "31cc83d829c75044e1c21bbd12f5ddcdc3c8139cf793d910c0741eb76b2ca688",
+      "gzipBytes": 6150
     },
     {
       "path": "gre-learning/units/release183-0521-0525-7ab64006540623e9bb197944efd16d651ed9f0df467f5457661808dec668bab2.json",
       "loading": "shell",
       "bytes": 13929,
-      "sha256": "7ab64006540623e9bb197944efd16d651ed9f0df467f5457661808dec668bab2"
+      "sha256": "7ab64006540623e9bb197944efd16d651ed9f0df467f5457661808dec668bab2",
+      "gzipBytes": 6096
     },
     {
       "path": "gre-learning/units/release183-0526-0530-326584140107e2066be7ab3570fe5c6f45b40e48011dc80890efe83ec2906c70.json",
       "loading": "shell",
       "bytes": 13080,
-      "sha256": "326584140107e2066be7ab3570fe5c6f45b40e48011dc80890efe83ec2906c70"
+      "sha256": "326584140107e2066be7ab3570fe5c6f45b40e48011dc80890efe83ec2906c70",
+      "gzipBytes": 5605
     },
     {
       "path": "gre-learning/units/release183-0531-0535-48b6be7f1d8fdeb009e8ddda7cde4e8683df79600bd2e98e4bfe8a5b30060ceb.json",
       "loading": "shell",
       "bytes": 13698,
-      "sha256": "48b6be7f1d8fdeb009e8ddda7cde4e8683df79600bd2e98e4bfe8a5b30060ceb"
+      "sha256": "48b6be7f1d8fdeb009e8ddda7cde4e8683df79600bd2e98e4bfe8a5b30060ceb",
+      "gzipBytes": 5918
     },
     {
       "path": "gre-learning/units/release183-0536-0540-d8243ca00c7cd9f7fc1f0e5df2203b2de159fa5911e547ece2e6de401df7b7d7.json",
       "loading": "shell",
       "bytes": 13676,
-      "sha256": "d8243ca00c7cd9f7fc1f0e5df2203b2de159fa5911e547ece2e6de401df7b7d7"
+      "sha256": "d8243ca00c7cd9f7fc1f0e5df2203b2de159fa5911e547ece2e6de401df7b7d7",
+      "gzipBytes": 5922
     },
     {
       "path": "gre-learning/units/release183-0541-0545-eb122954193d7d183fef8194cc20a5af37cf05ea9f8e5ec09370ee48b183842c.json",
       "loading": "shell",
       "bytes": 13478,
-      "sha256": "eb122954193d7d183fef8194cc20a5af37cf05ea9f8e5ec09370ee48b183842c"
+      "sha256": "eb122954193d7d183fef8194cc20a5af37cf05ea9f8e5ec09370ee48b183842c",
+      "gzipBytes": 5606
     },
     {
       "path": "gre-learning/units/release183-0546-0550-3f88e80288216f47564b67141652a0dc5823b62a1a688836b595135890e62c90.json",
       "loading": "shell",
       "bytes": 14393,
-      "sha256": "3f88e80288216f47564b67141652a0dc5823b62a1a688836b595135890e62c90"
+      "sha256": "3f88e80288216f47564b67141652a0dc5823b62a1a688836b595135890e62c90",
+      "gzipBytes": 6137
     },
     {
       "path": "gre-learning/units/release183-0551-0555-1083da1cbf9e39885590c0840d862811d598c366ba4daa43bbbb556aa809d589.json",
       "loading": "shell",
       "bytes": 13985,
-      "sha256": "1083da1cbf9e39885590c0840d862811d598c366ba4daa43bbbb556aa809d589"
+      "sha256": "1083da1cbf9e39885590c0840d862811d598c366ba4daa43bbbb556aa809d589",
+      "gzipBytes": 5864
     },
     {
       "path": "gre-learning/units/release183-0556-0560-5835f5a11d3cb81ec2ded1d3bf2ec42cfc059fc3ad920210e40d51f9e079e41d.json",
       "loading": "shell",
       "bytes": 14019,
-      "sha256": "5835f5a11d3cb81ec2ded1d3bf2ec42cfc059fc3ad920210e40d51f9e079e41d"
+      "sha256": "5835f5a11d3cb81ec2ded1d3bf2ec42cfc059fc3ad920210e40d51f9e079e41d",
+      "gzipBytes": 5933
     },
     {
       "path": "gre-learning/units/release183-0561-0565-42e1d6c7d33c7cd49912b45881f4c0ed575ff67dbcfd8bdc3162e24cd2a6892e.json",
       "loading": "shell",
       "bytes": 13135,
-      "sha256": "42e1d6c7d33c7cd49912b45881f4c0ed575ff67dbcfd8bdc3162e24cd2a6892e"
+      "sha256": "42e1d6c7d33c7cd49912b45881f4c0ed575ff67dbcfd8bdc3162e24cd2a6892e",
+      "gzipBytes": 5511
     },
     {
       "path": "gre-learning/units/release183-0566-0570-f1542c6443af9cdad444c3193b81da0486996d614f853db1ce1df5f0df1b332a.json",
       "loading": "shell",
       "bytes": 13949,
-      "sha256": "f1542c6443af9cdad444c3193b81da0486996d614f853db1ce1df5f0df1b332a"
+      "sha256": "f1542c6443af9cdad444c3193b81da0486996d614f853db1ce1df5f0df1b332a",
+      "gzipBytes": 5950
     },
     {
       "path": "gre-learning/units/release183-0571-0575-3b6ab7382f9b906e539861ce7f399b342626b780fe7a93132c78e6992ba937fa.json",
       "loading": "shell",
       "bytes": 13918,
-      "sha256": "3b6ab7382f9b906e539861ce7f399b342626b780fe7a93132c78e6992ba937fa"
+      "sha256": "3b6ab7382f9b906e539861ce7f399b342626b780fe7a93132c78e6992ba937fa",
+      "gzipBytes": 5935
     },
     {
       "path": "gre-learning/units/release183-0576-0580-4347b58457749a15ab94f8abbc966ffbb06556b703d40a1ca21a0f485a71a75a.json",
       "loading": "shell",
       "bytes": 13548,
-      "sha256": "4347b58457749a15ab94f8abbc966ffbb06556b703d40a1ca21a0f485a71a75a"
+      "sha256": "4347b58457749a15ab94f8abbc966ffbb06556b703d40a1ca21a0f485a71a75a",
+      "gzipBytes": 5736
     },
     {
       "path": "gre-learning/units/release183-0581-0585-15bae64b898c77d768b08832f42e32ae2e261ddd9b48b36f993031995391600d.json",
       "loading": "shell",
       "bytes": 13282,
-      "sha256": "15bae64b898c77d768b08832f42e32ae2e261ddd9b48b36f993031995391600d"
+      "sha256": "15bae64b898c77d768b08832f42e32ae2e261ddd9b48b36f993031995391600d",
+      "gzipBytes": 5473
     },
     {
       "path": "gre-learning/units/release183-0586-0590-ea094d8f36fd9c0d318485cd2a3b03e1295a795b848dbec769af02c15aeff18d.json",
       "loading": "shell",
       "bytes": 12709,
-      "sha256": "ea094d8f36fd9c0d318485cd2a3b03e1295a795b848dbec769af02c15aeff18d"
+      "sha256": "ea094d8f36fd9c0d318485cd2a3b03e1295a795b848dbec769af02c15aeff18d",
+      "gzipBytes": 5298
     },
     {
       "path": "gre-learning/units/release183-0591-0595-f4c199c7e708351d16d621cfa1c3073d95acd914f4c9f8483c4ae2631889d0df.json",
       "loading": "shell",
       "bytes": 13428,
-      "sha256": "f4c199c7e708351d16d621cfa1c3073d95acd914f4c9f8483c4ae2631889d0df"
+      "sha256": "f4c199c7e708351d16d621cfa1c3073d95acd914f4c9f8483c4ae2631889d0df",
+      "gzipBytes": 5582
     },
     {
       "path": "gre-learning/units/release183-0596-0600-4ded8c7736537769f9678116d449a6008d18b974d7e1c38a47ed4e921310a103.json",
       "loading": "shell",
       "bytes": 13996,
-      "sha256": "4ded8c7736537769f9678116d449a6008d18b974d7e1c38a47ed4e921310a103"
+      "sha256": "4ded8c7736537769f9678116d449a6008d18b974d7e1c38a47ed4e921310a103",
+      "gzipBytes": 5896
     },
     {
       "path": "gre-learning/units/release183-0601-0605-cd21222d133bbfdfb7976a2987cbbfe0db90067427b7850cd80a200a281311aa.json",
       "loading": "shell",
       "bytes": 12988,
-      "sha256": "cd21222d133bbfdfb7976a2987cbbfe0db90067427b7850cd80a200a281311aa"
+      "sha256": "cd21222d133bbfdfb7976a2987cbbfe0db90067427b7850cd80a200a281311aa",
+      "gzipBytes": 5437
     },
     {
       "path": "gre-learning/units/release183-0606-0610-e5ea0297232224bb81131d25491759b6151ce713931e532d8f352ac4c4dc0726.json",
       "loading": "shell",
       "bytes": 13747,
-      "sha256": "e5ea0297232224bb81131d25491759b6151ce713931e532d8f352ac4c4dc0726"
+      "sha256": "e5ea0297232224bb81131d25491759b6151ce713931e532d8f352ac4c4dc0726",
+      "gzipBytes": 5827
     },
     {
       "path": "gre-learning/units/release183-0611-0615-97868f21e6d59e9e509a374b85e3fe920fa9aa5edceba9dbca6e97df4ed6ee36.json",
       "loading": "shell",
       "bytes": 12978,
-      "sha256": "97868f21e6d59e9e509a374b85e3fe920fa9aa5edceba9dbca6e97df4ed6ee36"
+      "sha256": "97868f21e6d59e9e509a374b85e3fe920fa9aa5edceba9dbca6e97df4ed6ee36",
+      "gzipBytes": 5422
     },
     {
       "path": "gre-learning/units/release183-0616-0620-91ac8c54575cb25a398e4f3dd8b1a6453fd3d149e1b920dfb0647df62ce52e05.json",
       "loading": "shell",
       "bytes": 12521,
-      "sha256": "91ac8c54575cb25a398e4f3dd8b1a6453fd3d149e1b920dfb0647df62ce52e05"
+      "sha256": "91ac8c54575cb25a398e4f3dd8b1a6453fd3d149e1b920dfb0647df62ce52e05",
+      "gzipBytes": 5185
     },
     {
       "path": "gre-learning/units/release183-0621-0625-8073207ebeabba92b5ddf4d6468b8716f4f703f66ee10430fa3aa68e899903e5.json",
       "loading": "shell",
       "bytes": 13442,
-      "sha256": "8073207ebeabba92b5ddf4d6468b8716f4f703f66ee10430fa3aa68e899903e5"
+      "sha256": "8073207ebeabba92b5ddf4d6468b8716f4f703f66ee10430fa3aa68e899903e5",
+      "gzipBytes": 5519
     },
     {
       "path": "gre-learning/units/release183-0626-0630-224be83c2d01fcc86ab960d0a1cc5c047716a3491ea10a8b1ee6edbd4cb3f021.json",
       "loading": "shell",
       "bytes": 13005,
-      "sha256": "224be83c2d01fcc86ab960d0a1cc5c047716a3491ea10a8b1ee6edbd4cb3f021"
+      "sha256": "224be83c2d01fcc86ab960d0a1cc5c047716a3491ea10a8b1ee6edbd4cb3f021",
+      "gzipBytes": 5493
     },
     {
       "path": "gre-learning/units/release183-0631-0635-1a018d16ee5c9e3b63908d9efcbc9ff04f1e3049df9ed97291b4d8002ece0303.json",
       "loading": "shell",
       "bytes": 11994,
-      "sha256": "1a018d16ee5c9e3b63908d9efcbc9ff04f1e3049df9ed97291b4d8002ece0303"
+      "sha256": "1a018d16ee5c9e3b63908d9efcbc9ff04f1e3049df9ed97291b4d8002ece0303",
+      "gzipBytes": 4965
     },
     {
       "path": "gre-learning/units/release183-0636-0640-39df50c43e13259cb708bb94ced1a4cc53efa4a4bbd13583047eae3b210a6521.json",
       "loading": "shell",
       "bytes": 11983,
-      "sha256": "39df50c43e13259cb708bb94ced1a4cc53efa4a4bbd13583047eae3b210a6521"
+      "sha256": "39df50c43e13259cb708bb94ced1a4cc53efa4a4bbd13583047eae3b210a6521",
+      "gzipBytes": 5003
     },
     {
       "path": "gre-learning/units/release183-0641-0645-0ffc15aae320c72647cfe808d08408bb7aa7240db29da36bb43c34b92cae2437.json",
       "loading": "shell",
       "bytes": 11826,
-      "sha256": "0ffc15aae320c72647cfe808d08408bb7aa7240db29da36bb43c34b92cae2437"
+      "sha256": "0ffc15aae320c72647cfe808d08408bb7aa7240db29da36bb43c34b92cae2437",
+      "gzipBytes": 5073
     },
     {
       "path": "gre-learning/units/release183-0646-0650-6fdf8b2f74695e138e1a6101c7ab8503bc16029ca4d736b0741a8e7d2519cbb1.json",
       "loading": "shell",
       "bytes": 11924,
-      "sha256": "6fdf8b2f74695e138e1a6101c7ab8503bc16029ca4d736b0741a8e7d2519cbb1"
+      "sha256": "6fdf8b2f74695e138e1a6101c7ab8503bc16029ca4d736b0741a8e7d2519cbb1",
+      "gzipBytes": 4966
     },
     {
       "path": "gre-learning/units/release183-0651-0655-2db85c9cbcb53373bbf6133cdbf0931302b822fbd7da0e708310bef22964dca2.json",
       "loading": "shell",
       "bytes": 11262,
-      "sha256": "2db85c9cbcb53373bbf6133cdbf0931302b822fbd7da0e708310bef22964dca2"
+      "sha256": "2db85c9cbcb53373bbf6133cdbf0931302b822fbd7da0e708310bef22964dca2",
+      "gzipBytes": 4738
     },
     {
       "path": "gre-learning/units/release183-0656-0660-249328d3d7ce55d77ecb5e2d8c10bd67df82d4ab334f87f859fd2fc2d8426227.json",
       "loading": "shell",
       "bytes": 11459,
-      "sha256": "249328d3d7ce55d77ecb5e2d8c10bd67df82d4ab334f87f859fd2fc2d8426227"
+      "sha256": "249328d3d7ce55d77ecb5e2d8c10bd67df82d4ab334f87f859fd2fc2d8426227",
+      "gzipBytes": 4968
     },
     {
       "path": "gre-learning/units/release183-0661-0665-fbfebb702ac60a53fee29b0a49483c02d3ae9a7d94e9f2956c1303e2b183c423.json",
       "loading": "shell",
       "bytes": 11168,
-      "sha256": "fbfebb702ac60a53fee29b0a49483c02d3ae9a7d94e9f2956c1303e2b183c423"
+      "sha256": "fbfebb702ac60a53fee29b0a49483c02d3ae9a7d94e9f2956c1303e2b183c423",
+      "gzipBytes": 4824
     },
     {
       "path": "gre-learning/units/release183-0666-0670-2d8c11f5decfb30baec9118f50af55f13f1789c65d865e39608f0ffc867cd115.json",
       "loading": "shell",
       "bytes": 11452,
-      "sha256": "2d8c11f5decfb30baec9118f50af55f13f1789c65d865e39608f0ffc867cd115"
+      "sha256": "2d8c11f5decfb30baec9118f50af55f13f1789c65d865e39608f0ffc867cd115",
+      "gzipBytes": 4762
     },
     {
       "path": "gre-learning/units/release183-0671-0675-18f574af84857ab8e4b81c6db9fbea2f8e467ffa1e162962e6a6d92cfd36a7bd.json",
       "loading": "shell",
       "bytes": 11171,
-      "sha256": "18f574af84857ab8e4b81c6db9fbea2f8e467ffa1e162962e6a6d92cfd36a7bd"
+      "sha256": "18f574af84857ab8e4b81c6db9fbea2f8e467ffa1e162962e6a6d92cfd36a7bd",
+      "gzipBytes": 4810
     },
     {
       "path": "gre-learning/units/release183-0676-0680-5e48e4848995dd0e176ebe30980ff2b60d4fd2ceb3f7198786e53053d87e5f3f.json",
       "loading": "shell",
       "bytes": 11295,
-      "sha256": "5e48e4848995dd0e176ebe30980ff2b60d4fd2ceb3f7198786e53053d87e5f3f"
+      "sha256": "5e48e4848995dd0e176ebe30980ff2b60d4fd2ceb3f7198786e53053d87e5f3f",
+      "gzipBytes": 4862
     },
     {
       "path": "gre-learning/units/release183-0681-0685-a77ad5a65be24ef3f277befe724a6663a709a05792c3f750adce730596a9612b.json",
       "loading": "shell",
       "bytes": 13637,
-      "sha256": "a77ad5a65be24ef3f277befe724a6663a709a05792c3f750adce730596a9612b"
+      "sha256": "a77ad5a65be24ef3f277befe724a6663a709a05792c3f750adce730596a9612b",
+      "gzipBytes": 5607
     },
     {
       "path": "gre-learning/units/release183-0686-0690-c21c28912113d9685af489786c1cc6ad31d94e8d41c40ed22beef472fd6a9eca.json",
       "loading": "shell",
       "bytes": 14505,
-      "sha256": "c21c28912113d9685af489786c1cc6ad31d94e8d41c40ed22beef472fd6a9eca"
+      "sha256": "c21c28912113d9685af489786c1cc6ad31d94e8d41c40ed22beef472fd6a9eca",
+      "gzipBytes": 6165
     },
     {
       "path": "gre-learning/units/release183-0691-0695-01e040b8baddb286b1b7f44b91f2c646651232203b69a392400ff63d2ec049e1.json",
       "loading": "shell",
       "bytes": 15054,
-      "sha256": "01e040b8baddb286b1b7f44b91f2c646651232203b69a392400ff63d2ec049e1"
+      "sha256": "01e040b8baddb286b1b7f44b91f2c646651232203b69a392400ff63d2ec049e1",
+      "gzipBytes": 6344
     },
     {
       "path": "gre-learning/units/release183-0696-0700-cb9080978e662215ce2d9faf21247732c66cc10dde17fcda7840e4d1df7eda48.json",
       "loading": "shell",
       "bytes": 13052,
-      "sha256": "cb9080978e662215ce2d9faf21247732c66cc10dde17fcda7840e4d1df7eda48"
+      "sha256": "cb9080978e662215ce2d9faf21247732c66cc10dde17fcda7840e4d1df7eda48",
+      "gzipBytes": 5610
     },
     {
       "path": "gre-learning/units/release183-0701-0705-3a61b512d55bb0ad6ead101db73dcf7543f874542953bc853374e624a871042d.json",
       "loading": "shell",
       "bytes": 13368,
-      "sha256": "3a61b512d55bb0ad6ead101db73dcf7543f874542953bc853374e624a871042d"
+      "sha256": "3a61b512d55bb0ad6ead101db73dcf7543f874542953bc853374e624a871042d",
+      "gzipBytes": 5643
     },
     {
       "path": "gre-learning/units/release183-0706-0710-9eaed63051c7d8df27d73d826b0bcd5f3caf7b26d68a3a14f82a479078092601.json",
       "loading": "shell",
       "bytes": 13452,
-      "sha256": "9eaed63051c7d8df27d73d826b0bcd5f3caf7b26d68a3a14f82a479078092601"
+      "sha256": "9eaed63051c7d8df27d73d826b0bcd5f3caf7b26d68a3a14f82a479078092601",
+      "gzipBytes": 5563
     },
     {
       "path": "gre-learning/units/release183-0711-0715-6c9d9c20656cf49a704ec60ef60476a0c1f98e1501e2d981a315c12b0487d65f.json",
       "loading": "shell",
       "bytes": 13674,
-      "sha256": "6c9d9c20656cf49a704ec60ef60476a0c1f98e1501e2d981a315c12b0487d65f"
+      "sha256": "6c9d9c20656cf49a704ec60ef60476a0c1f98e1501e2d981a315c12b0487d65f",
+      "gzipBytes": 5947
     },
     {
       "path": "gre-learning/units/release183-0716-0720-0da7bb80b88cbb5e9333d4f76e912a5873c7221473b9f5123499ee6b19d2451d.json",
       "loading": "shell",
       "bytes": 14049,
-      "sha256": "0da7bb80b88cbb5e9333d4f76e912a5873c7221473b9f5123499ee6b19d2451d"
+      "sha256": "0da7bb80b88cbb5e9333d4f76e912a5873c7221473b9f5123499ee6b19d2451d",
+      "gzipBytes": 5910
     },
     {
       "path": "gre-learning/units/release183-0721-0725-4d38583c9c29b404e2bff9037ba1500a23d1ee971810b78f2155c44bbfcd65e9.json",
       "loading": "shell",
       "bytes": 14259,
-      "sha256": "4d38583c9c29b404e2bff9037ba1500a23d1ee971810b78f2155c44bbfcd65e9"
+      "sha256": "4d38583c9c29b404e2bff9037ba1500a23d1ee971810b78f2155c44bbfcd65e9",
+      "gzipBytes": 5907
     },
     {
       "path": "gre-learning/units/release183-0726-0730-9724e426834c497ed897381a0b894081fba3f768dd12681b8a76dfb1ad6bea22.json",
       "loading": "shell",
       "bytes": 14138,
-      "sha256": "9724e426834c497ed897381a0b894081fba3f768dd12681b8a76dfb1ad6bea22"
+      "sha256": "9724e426834c497ed897381a0b894081fba3f768dd12681b8a76dfb1ad6bea22",
+      "gzipBytes": 5884
     },
     {
       "path": "gre-learning/units/release183-0731-0735-1c3605a73fbd2ea91dbb27ceb1c4c6e6f5797094a48d3580a79c3323ca479f59.json",
       "loading": "shell",
       "bytes": 14147,
-      "sha256": "1c3605a73fbd2ea91dbb27ceb1c4c6e6f5797094a48d3580a79c3323ca479f59"
+      "sha256": "1c3605a73fbd2ea91dbb27ceb1c4c6e6f5797094a48d3580a79c3323ca479f59",
+      "gzipBytes": 6098
     },
     {
       "path": "gre-learning/units/release183-0736-0740-1cf396bb3500fc15887480d3534d7a071967dc7de8e819d7a2cd90b41424abf4.json",
       "loading": "shell",
       "bytes": 13662,
-      "sha256": "1cf396bb3500fc15887480d3534d7a071967dc7de8e819d7a2cd90b41424abf4"
+      "sha256": "1cf396bb3500fc15887480d3534d7a071967dc7de8e819d7a2cd90b41424abf4",
+      "gzipBytes": 5888
     },
     {
       "path": "gre-learning/units/release183-0741-0745-208fd372c810778c884af6e1def90003e1a9b8b7d5af1d469fc2261b2f49917c.json",
       "loading": "shell",
       "bytes": 12926,
-      "sha256": "208fd372c810778c884af6e1def90003e1a9b8b7d5af1d469fc2261b2f49917c"
+      "sha256": "208fd372c810778c884af6e1def90003e1a9b8b7d5af1d469fc2261b2f49917c",
+      "gzipBytes": 5584
     },
     {
       "path": "gre-learning/units/release183-0746-0750-020c5264daad90b4bf7ebbc1aedc6328db40e9b6923e4e47e98e999b3ef2ef3d.json",
@@ -4016,13 +4099,15 @@
       "path": "gre-learning/units/release183-0761-0765-b3272f8d4f864c4b40a7ec546000f166995e7c39970e2aafca7dae1f4cd262ce.json",
       "loading": "shell",
       "bytes": 12973,
-      "sha256": "b3272f8d4f864c4b40a7ec546000f166995e7c39970e2aafca7dae1f4cd262ce"
+      "sha256": "b3272f8d4f864c4b40a7ec546000f166995e7c39970e2aafca7dae1f4cd262ce",
+      "gzipBytes": 5532
     },
     {
       "path": "gre-learning/units/release183-0766-0770-506c71a128cebb5d1d58dfaf83207eca7fd6e58717ec07a97ceae2fb9cfcca3a.json",
       "loading": "shell",
       "bytes": 13458,
-      "sha256": "506c71a128cebb5d1d58dfaf83207eca7fd6e58717ec07a97ceae2fb9cfcca3a"
+      "sha256": "506c71a128cebb5d1d58dfaf83207eca7fd6e58717ec07a97ceae2fb9cfcca3a",
+      "gzipBytes": 5703
     },
     {
       "path": "gre-learning/units/release183-0771-0775-797e8d958fc4980378f2701b5e7768293d05690f47bc19d2a83d3904144aadf7.json",
@@ -4046,25 +4131,29 @@
       "path": "gre-learning/units/release183-0786-0790-5907925509351fcc3ea28b3f3a94fb0f7eb34caab97aa48a8a22aaa58c99a637.json",
       "loading": "shell",
       "bytes": 14141,
-      "sha256": "5907925509351fcc3ea28b3f3a94fb0f7eb34caab97aa48a8a22aaa58c99a637"
+      "sha256": "5907925509351fcc3ea28b3f3a94fb0f7eb34caab97aa48a8a22aaa58c99a637",
+      "gzipBytes": 6245
     },
     {
       "path": "gre-learning/units/release183-0791-0795-4b6bebd96368cd04ca8ad09269f94594a7745fe8404a5de4ce09bad037c86c12.json",
       "loading": "shell",
       "bytes": 16464,
-      "sha256": "4b6bebd96368cd04ca8ad09269f94594a7745fe8404a5de4ce09bad037c86c12"
+      "sha256": "4b6bebd96368cd04ca8ad09269f94594a7745fe8404a5de4ce09bad037c86c12",
+      "gzipBytes": 6998
     },
     {
       "path": "gre-learning/units/release183-0796-0800-d21ae472f195d190181b55d796f91c503542eaa79d9abf1ce9da89febc10138c.json",
       "loading": "shell",
       "bytes": 14383,
-      "sha256": "d21ae472f195d190181b55d796f91c503542eaa79d9abf1ce9da89febc10138c"
+      "sha256": "d21ae472f195d190181b55d796f91c503542eaa79d9abf1ce9da89febc10138c",
+      "gzipBytes": 6378
     },
     {
       "path": "gre-learning/units/release183-0801-0805-40c254201089dfa9f16d291055a09e746013d713e62776d310cbc7f37d9d9bdf.json",
       "loading": "shell",
       "bytes": 13871,
-      "sha256": "40c254201089dfa9f16d291055a09e746013d713e62776d310cbc7f37d9d9bdf"
+      "sha256": "40c254201089dfa9f16d291055a09e746013d713e62776d310cbc7f37d9d9bdf",
+      "gzipBytes": 5924
     },
     {
       "path": "gre-learning/units/release183-0806-0810-3419dab5ed4d7164c76dc378eda3f89b8cbf5fdbe1148ccc0b952c89869d2b96.json",
@@ -4100,939 +4189,1093 @@
       "path": "gre-learning/units/release183-0831-0835-6798d92ee8657ccc1d9f03285c78682343f0bb92628fe1b7628946770d9d7659.json",
       "loading": "shell",
       "bytes": 15117,
-      "sha256": "6798d92ee8657ccc1d9f03285c78682343f0bb92628fe1b7628946770d9d7659"
+      "sha256": "6798d92ee8657ccc1d9f03285c78682343f0bb92628fe1b7628946770d9d7659",
+      "gzipBytes": 6114
     },
     {
       "path": "gre-learning/units/release183-0836-0840-b9ca24c1d1c6f6832627f86f29a4ea74de8c8f7fbcabd8a8741bf07e130ee6a5.json",
       "loading": "shell",
       "bytes": 14926,
-      "sha256": "b9ca24c1d1c6f6832627f86f29a4ea74de8c8f7fbcabd8a8741bf07e130ee6a5"
+      "sha256": "b9ca24c1d1c6f6832627f86f29a4ea74de8c8f7fbcabd8a8741bf07e130ee6a5",
+      "gzipBytes": 6386
     },
     {
       "path": "gre-learning/units/release183-0841-0845-9837095e0ce904983690079cb6f96021fb0bf61989de7460fd694aee6777428b.json",
       "loading": "shell",
       "bytes": 14640,
-      "sha256": "9837095e0ce904983690079cb6f96021fb0bf61989de7460fd694aee6777428b"
+      "sha256": "9837095e0ce904983690079cb6f96021fb0bf61989de7460fd694aee6777428b",
+      "gzipBytes": 6304
     },
     {
       "path": "gre-learning/units/release183-0846-0850-d42a8d02aa0fc4c1fe42e8ba3adf123cc2e075ee743d792cca571eabd9063468.json",
       "loading": "shell",
       "bytes": 15062,
-      "sha256": "d42a8d02aa0fc4c1fe42e8ba3adf123cc2e075ee743d792cca571eabd9063468"
+      "sha256": "d42a8d02aa0fc4c1fe42e8ba3adf123cc2e075ee743d792cca571eabd9063468",
+      "gzipBytes": 6421
     },
     {
       "path": "gre-learning/units/release183-0851-0855-9a56f1c8c8f6601a7af10357401555be4844ee09837de80aed1dea5bc97dbf48.json",
       "loading": "shell",
       "bytes": 15108,
-      "sha256": "9a56f1c8c8f6601a7af10357401555be4844ee09837de80aed1dea5bc97dbf48"
+      "sha256": "9a56f1c8c8f6601a7af10357401555be4844ee09837de80aed1dea5bc97dbf48",
+      "gzipBytes": 6481
     },
     {
       "path": "gre-learning/units/release183-0856-0860-8f981a1db00e6a4a664e9b373db43e9e7bea5da1c071ec532be0e99676a297d1.json",
       "loading": "shell",
       "bytes": 13172,
-      "sha256": "8f981a1db00e6a4a664e9b373db43e9e7bea5da1c071ec532be0e99676a297d1"
+      "sha256": "8f981a1db00e6a4a664e9b373db43e9e7bea5da1c071ec532be0e99676a297d1",
+      "gzipBytes": 5542
     },
     {
       "path": "gre-learning/units/release183-0861-0865-5e50036aef835b178aca58431515397d03ad9f2594cc8c710d48f819a48357f0.json",
       "loading": "shell",
       "bytes": 14608,
-      "sha256": "5e50036aef835b178aca58431515397d03ad9f2594cc8c710d48f819a48357f0"
+      "sha256": "5e50036aef835b178aca58431515397d03ad9f2594cc8c710d48f819a48357f0",
+      "gzipBytes": 6189
     },
     {
       "path": "gre-learning/units/release183-0866-0870-d66d8996cad9c35f6d8f005fbffe01579d2e2e8355c2b64cbf7e0ae2b328cf72.json",
       "loading": "shell",
       "bytes": 14282,
-      "sha256": "d66d8996cad9c35f6d8f005fbffe01579d2e2e8355c2b64cbf7e0ae2b328cf72"
+      "sha256": "d66d8996cad9c35f6d8f005fbffe01579d2e2e8355c2b64cbf7e0ae2b328cf72",
+      "gzipBytes": 6152
     },
     {
       "path": "gre-learning/units/release183-0871-0875-80066c25f4cf77f8599d312d06d9442e0794029a67736db4fbcbb9e5650ff5ee.json",
       "loading": "shell",
       "bytes": 14577,
-      "sha256": "80066c25f4cf77f8599d312d06d9442e0794029a67736db4fbcbb9e5650ff5ee"
+      "sha256": "80066c25f4cf77f8599d312d06d9442e0794029a67736db4fbcbb9e5650ff5ee",
+      "gzipBytes": 6409
     },
     {
       "path": "gre-learning/units/release183-0876-0880-5375977de0604bbf9f4cf75e55bdb6a2d5ddf9e9b0438fedda89806e92d2a184.json",
       "loading": "shell",
       "bytes": 14872,
-      "sha256": "5375977de0604bbf9f4cf75e55bdb6a2d5ddf9e9b0438fedda89806e92d2a184"
+      "sha256": "5375977de0604bbf9f4cf75e55bdb6a2d5ddf9e9b0438fedda89806e92d2a184",
+      "gzipBytes": 6334
     },
     {
       "path": "gre-learning/units/release183-0881-0885-6c1e491efae4196016721b9f643966be36c6f2bc719f7821a08477cbc97a06db.json",
       "loading": "shell",
       "bytes": 14139,
-      "sha256": "6c1e491efae4196016721b9f643966be36c6f2bc719f7821a08477cbc97a06db"
+      "sha256": "6c1e491efae4196016721b9f643966be36c6f2bc719f7821a08477cbc97a06db",
+      "gzipBytes": 6182
     },
     {
       "path": "gre-learning/units/release183-0886-0890-8ef303d326b19e08fac18b2bb7eec0dedcafeeae593f740cec46fd57db5cdd3b.json",
       "loading": "shell",
       "bytes": 13786,
-      "sha256": "8ef303d326b19e08fac18b2bb7eec0dedcafeeae593f740cec46fd57db5cdd3b"
+      "sha256": "8ef303d326b19e08fac18b2bb7eec0dedcafeeae593f740cec46fd57db5cdd3b",
+      "gzipBytes": 5870
     },
     {
       "path": "gre-learning/units/release183-0891-0895-194f414bbd74d06f786f485d71b447acaad0c3f393b90c4e633e68e8683f29f8.json",
       "loading": "shell",
       "bytes": 15527,
-      "sha256": "194f414bbd74d06f786f485d71b447acaad0c3f393b90c4e633e68e8683f29f8"
+      "sha256": "194f414bbd74d06f786f485d71b447acaad0c3f393b90c4e633e68e8683f29f8",
+      "gzipBytes": 6465
     },
     {
       "path": "gre-learning/units/release183-0896-0900-2bd85a60d2b8b8d615f65969622eb1aef48b3f50d0d84edc1ae67af268938679.json",
       "loading": "shell",
       "bytes": 12835,
-      "sha256": "2bd85a60d2b8b8d615f65969622eb1aef48b3f50d0d84edc1ae67af268938679"
+      "sha256": "2bd85a60d2b8b8d615f65969622eb1aef48b3f50d0d84edc1ae67af268938679",
+      "gzipBytes": 5872
     },
     {
       "path": "gre-learning/units/release183-0901-0905-f0e32fc28162a2200f168d0366037c2b3636eaeed78f683b73620a5534babb8d.json",
       "loading": "shell",
       "bytes": 13162,
-      "sha256": "f0e32fc28162a2200f168d0366037c2b3636eaeed78f683b73620a5534babb8d"
+      "sha256": "f0e32fc28162a2200f168d0366037c2b3636eaeed78f683b73620a5534babb8d",
+      "gzipBytes": 5850
     },
     {
       "path": "gre-learning/units/release183-0906-0910-af4fbb1c5ef8ff55d549e17b4d0d40bb6d5dcf6bbea87cf8976d5fbd5355c577.json",
       "loading": "shell",
       "bytes": 12714,
-      "sha256": "af4fbb1c5ef8ff55d549e17b4d0d40bb6d5dcf6bbea87cf8976d5fbd5355c577"
+      "sha256": "af4fbb1c5ef8ff55d549e17b4d0d40bb6d5dcf6bbea87cf8976d5fbd5355c577",
+      "gzipBytes": 5602
     },
     {
       "path": "gre-learning/units/release183-0911-0915-ca10b795f7bb87dc6dd6e2b82fc09d35771fa8dc34196ef1502f8ff27ec4cdc8.json",
       "loading": "shell",
       "bytes": 14387,
-      "sha256": "ca10b795f7bb87dc6dd6e2b82fc09d35771fa8dc34196ef1502f8ff27ec4cdc8"
+      "sha256": "ca10b795f7bb87dc6dd6e2b82fc09d35771fa8dc34196ef1502f8ff27ec4cdc8",
+      "gzipBytes": 6288
     },
     {
       "path": "gre-learning/units/release183-0916-0920-fe66b3be47786485ba6f63a387975a4221c33bb9917e8de03f8d665ff331ba7f.json",
       "loading": "shell",
       "bytes": 14030,
-      "sha256": "fe66b3be47786485ba6f63a387975a4221c33bb9917e8de03f8d665ff331ba7f"
+      "sha256": "fe66b3be47786485ba6f63a387975a4221c33bb9917e8de03f8d665ff331ba7f",
+      "gzipBytes": 6143
     },
     {
       "path": "gre-learning/units/release183-0921-0925-216bea661656804d565a127a5613395e681684e20cbae52fc364dac3acc6e346.json",
       "loading": "shell",
       "bytes": 13736,
-      "sha256": "216bea661656804d565a127a5613395e681684e20cbae52fc364dac3acc6e346"
+      "sha256": "216bea661656804d565a127a5613395e681684e20cbae52fc364dac3acc6e346",
+      "gzipBytes": 5837
     },
     {
       "path": "gre-learning/units/release183-0926-0930-28f3b3d16b0ee711f7c0a330817a2bb3e16e9af414766f603d1a21774b60d73d.json",
       "loading": "shell",
       "bytes": 13424,
-      "sha256": "28f3b3d16b0ee711f7c0a330817a2bb3e16e9af414766f603d1a21774b60d73d"
+      "sha256": "28f3b3d16b0ee711f7c0a330817a2bb3e16e9af414766f603d1a21774b60d73d",
+      "gzipBytes": 5731
     },
     {
       "path": "gre-learning/units/release183-0931-0935-57412ef3c4a83c01a24b31563d688e07c7f6e8c95c831e1807536df5f4f7f172.json",
       "loading": "shell",
       "bytes": 13536,
-      "sha256": "57412ef3c4a83c01a24b31563d688e07c7f6e8c95c831e1807536df5f4f7f172"
+      "sha256": "57412ef3c4a83c01a24b31563d688e07c7f6e8c95c831e1807536df5f4f7f172",
+      "gzipBytes": 5624
     },
     {
       "path": "gre-learning/units/release183-0936-0940-dd721f5ebf1280a446855b43f5846744b6bce9940b83cb929ace8bfd87dbd8d7.json",
       "loading": "shell",
       "bytes": 13904,
-      "sha256": "dd721f5ebf1280a446855b43f5846744b6bce9940b83cb929ace8bfd87dbd8d7"
+      "sha256": "dd721f5ebf1280a446855b43f5846744b6bce9940b83cb929ace8bfd87dbd8d7",
+      "gzipBytes": 5803
     },
     {
       "path": "gre-learning/units/release183-0941-0945-8637c1a6abdebe99f52530ff13819d3551a8b9cf3467ed6e2de6832560656022.json",
       "loading": "shell",
       "bytes": 14537,
-      "sha256": "8637c1a6abdebe99f52530ff13819d3551a8b9cf3467ed6e2de6832560656022"
+      "sha256": "8637c1a6abdebe99f52530ff13819d3551a8b9cf3467ed6e2de6832560656022",
+      "gzipBytes": 6285
     },
     {
       "path": "gre-learning/units/release183-0946-0950-39a70a27cb18ae1d92c2792ceca32e2068ae423f5381b0e9a9b680acefcf9b6b.json",
       "loading": "shell",
       "bytes": 13740,
-      "sha256": "39a70a27cb18ae1d92c2792ceca32e2068ae423f5381b0e9a9b680acefcf9b6b"
+      "sha256": "39a70a27cb18ae1d92c2792ceca32e2068ae423f5381b0e9a9b680acefcf9b6b",
+      "gzipBytes": 5989
     },
     {
       "path": "gre-learning/units/release183-0951-0955-aa6f43988a9c7b837d0ef0c70788bcd58ad15cc8009f3c392c0159169994dca0.json",
       "loading": "shell",
       "bytes": 14162,
-      "sha256": "aa6f43988a9c7b837d0ef0c70788bcd58ad15cc8009f3c392c0159169994dca0"
+      "sha256": "aa6f43988a9c7b837d0ef0c70788bcd58ad15cc8009f3c392c0159169994dca0",
+      "gzipBytes": 6121
     },
     {
       "path": "gre-learning/units/release183-0956-0960-4b86c9849a9897d0fffcab4a6b97777f8a0f4923362eab704fb493230cd3cb98.json",
       "loading": "shell",
       "bytes": 13450,
-      "sha256": "4b86c9849a9897d0fffcab4a6b97777f8a0f4923362eab704fb493230cd3cb98"
+      "sha256": "4b86c9849a9897d0fffcab4a6b97777f8a0f4923362eab704fb493230cd3cb98",
+      "gzipBytes": 5703
     },
     {
       "path": "gre-learning/units/release183-0961-0965-7ce23b9cda5b358b7aaccad45ee312d105789023eaf051172ec85ba5beba7fd0.json",
       "loading": "shell",
       "bytes": 13221,
-      "sha256": "7ce23b9cda5b358b7aaccad45ee312d105789023eaf051172ec85ba5beba7fd0"
+      "sha256": "7ce23b9cda5b358b7aaccad45ee312d105789023eaf051172ec85ba5beba7fd0",
+      "gzipBytes": 5778
     },
     {
       "path": "gre-learning/units/release183-0966-0970-5db5f0eae829bea2b3099456bcc27017a9f612154c46848c2b7563d5e1cc4d0b.json",
       "loading": "shell",
       "bytes": 14232,
-      "sha256": "5db5f0eae829bea2b3099456bcc27017a9f612154c46848c2b7563d5e1cc4d0b"
+      "sha256": "5db5f0eae829bea2b3099456bcc27017a9f612154c46848c2b7563d5e1cc4d0b",
+      "gzipBytes": 6068
     },
     {
       "path": "gre-learning/units/release183-0971-0975-0bb6d52cc4d367d82fded8fbd72040e2b75c2ce046e48ccb70e7d76372fd1669.json",
       "loading": "shell",
       "bytes": 12842,
-      "sha256": "0bb6d52cc4d367d82fded8fbd72040e2b75c2ce046e48ccb70e7d76372fd1669"
+      "sha256": "0bb6d52cc4d367d82fded8fbd72040e2b75c2ce046e48ccb70e7d76372fd1669",
+      "gzipBytes": 5543
     },
     {
       "path": "gre-learning/units/release183-0976-0980-9356f8b118bfad7e4012af071b1a0ae49449dd3be7b2573351686b9c40bd5817.json",
       "loading": "shell",
       "bytes": 13164,
-      "sha256": "9356f8b118bfad7e4012af071b1a0ae49449dd3be7b2573351686b9c40bd5817"
+      "sha256": "9356f8b118bfad7e4012af071b1a0ae49449dd3be7b2573351686b9c40bd5817",
+      "gzipBytes": 5685
     },
     {
       "path": "gre-learning/units/release183-0981-0985-4ff1ba35fe2165850621a8430d7dcf663f107e2431c7529a44e39c49631271eb.json",
       "loading": "shell",
       "bytes": 12862,
-      "sha256": "4ff1ba35fe2165850621a8430d7dcf663f107e2431c7529a44e39c49631271eb"
+      "sha256": "4ff1ba35fe2165850621a8430d7dcf663f107e2431c7529a44e39c49631271eb",
+      "gzipBytes": 5386
     },
     {
       "path": "gre-learning/units/release183-0986-0990-6b8590980fa45eb1beab3409f3fc90eede3ade8fcd56a63960b301b34fcc8c02.json",
       "loading": "shell",
       "bytes": 12556,
-      "sha256": "6b8590980fa45eb1beab3409f3fc90eede3ade8fcd56a63960b301b34fcc8c02"
+      "sha256": "6b8590980fa45eb1beab3409f3fc90eede3ade8fcd56a63960b301b34fcc8c02",
+      "gzipBytes": 5386
     },
     {
       "path": "gre-learning/units/release183-0991-0995-88b26a26fbcf22b3237c4af33bf3b5c19eb440946f24ae8191f1430114402b78.json",
       "loading": "shell",
       "bytes": 12364,
-      "sha256": "88b26a26fbcf22b3237c4af33bf3b5c19eb440946f24ae8191f1430114402b78"
+      "sha256": "88b26a26fbcf22b3237c4af33bf3b5c19eb440946f24ae8191f1430114402b78",
+      "gzipBytes": 5116
     },
     {
       "path": "gre-learning/units/release183-0996-1000-7baa190b9e9458e2a63332a2128f3fc3124c3f2264a185cd2d731a4ef160b46b.json",
       "loading": "shell",
       "bytes": 13568,
-      "sha256": "7baa190b9e9458e2a63332a2128f3fc3124c3f2264a185cd2d731a4ef160b46b"
+      "sha256": "7baa190b9e9458e2a63332a2128f3fc3124c3f2264a185cd2d731a4ef160b46b",
+      "gzipBytes": 5588
     },
     {
       "path": "gre-learning/units/release183-1001-1005-3c3f9e6ba7edb7d3926df51e0524cc93739b75f96e53e8cabaad4477c1d883a8.json",
       "loading": "shell",
       "bytes": 15123,
-      "sha256": "3c3f9e6ba7edb7d3926df51e0524cc93739b75f96e53e8cabaad4477c1d883a8"
+      "sha256": "3c3f9e6ba7edb7d3926df51e0524cc93739b75f96e53e8cabaad4477c1d883a8",
+      "gzipBytes": 6130
     },
     {
       "path": "gre-learning/units/release183-1006-1010-8ea7ba6b1de8cbc510194f0df6486fe663834127afe62ba9d5fd061a089a7632.json",
       "loading": "shell",
       "bytes": 12981,
-      "sha256": "8ea7ba6b1de8cbc510194f0df6486fe663834127afe62ba9d5fd061a089a7632"
+      "sha256": "8ea7ba6b1de8cbc510194f0df6486fe663834127afe62ba9d5fd061a089a7632",
+      "gzipBytes": 5414
     },
     {
       "path": "gre-learning/units/release183-1011-1015-96e2b6e338ade8b5d12737f02a35393bdfd14458f6c6648a6cff41b97478e27b.json",
       "loading": "shell",
       "bytes": 13758,
-      "sha256": "96e2b6e338ade8b5d12737f02a35393bdfd14458f6c6648a6cff41b97478e27b"
+      "sha256": "96e2b6e338ade8b5d12737f02a35393bdfd14458f6c6648a6cff41b97478e27b",
+      "gzipBytes": 5795
     },
     {
       "path": "gre-learning/units/release183-1016-1020-33c293dc680899c22a12dceab83d193f030d439d344eb23d3c0520124d802561.json",
       "loading": "shell",
       "bytes": 14850,
-      "sha256": "33c293dc680899c22a12dceab83d193f030d439d344eb23d3c0520124d802561"
+      "sha256": "33c293dc680899c22a12dceab83d193f030d439d344eb23d3c0520124d802561",
+      "gzipBytes": 5943
     },
     {
       "path": "gre-learning/units/release183-1021-1025-f6a41a32ccc78b104fccb6dc6ec20a782f3af68aefc3a1bf50b4c8a2b80c5726.json",
       "loading": "shell",
       "bytes": 14057,
-      "sha256": "f6a41a32ccc78b104fccb6dc6ec20a782f3af68aefc3a1bf50b4c8a2b80c5726"
+      "sha256": "f6a41a32ccc78b104fccb6dc6ec20a782f3af68aefc3a1bf50b4c8a2b80c5726",
+      "gzipBytes": 5693
     },
     {
       "path": "gre-learning/units/release183-1026-1030-34869feffd94ee14847210d69b23842a1c84f052c3c31638e2a6f9cd063593d8.json",
       "loading": "shell",
       "bytes": 14177,
-      "sha256": "34869feffd94ee14847210d69b23842a1c84f052c3c31638e2a6f9cd063593d8"
+      "sha256": "34869feffd94ee14847210d69b23842a1c84f052c3c31638e2a6f9cd063593d8",
+      "gzipBytes": 5814
     },
     {
       "path": "gre-learning/units/release183-1031-1035-7413aa2b5c7e968edfe0d257ad63ab8c09e2dd617d3b375f1cbafe6109df048d.json",
       "loading": "shell",
       "bytes": 14224,
-      "sha256": "7413aa2b5c7e968edfe0d257ad63ab8c09e2dd617d3b375f1cbafe6109df048d"
+      "sha256": "7413aa2b5c7e968edfe0d257ad63ab8c09e2dd617d3b375f1cbafe6109df048d",
+      "gzipBytes": 5626
     },
     {
       "path": "gre-learning/units/release183-1036-1040-11b794cd40bde80848177890f0f1ae708782256174a4f4cbdf57d6819d28944f.json",
       "loading": "shell",
       "bytes": 13772,
-      "sha256": "11b794cd40bde80848177890f0f1ae708782256174a4f4cbdf57d6819d28944f"
+      "sha256": "11b794cd40bde80848177890f0f1ae708782256174a4f4cbdf57d6819d28944f",
+      "gzipBytes": 5529
     },
     {
       "path": "gre-learning/units/release183-1041-1045-7fe6ae814b9e8d35ec8ba1bd9da7714b209bed7199127f764743afc9466b166e.json",
       "loading": "shell",
       "bytes": 13069,
-      "sha256": "7fe6ae814b9e8d35ec8ba1bd9da7714b209bed7199127f764743afc9466b166e"
+      "sha256": "7fe6ae814b9e8d35ec8ba1bd9da7714b209bed7199127f764743afc9466b166e",
+      "gzipBytes": 5447
     },
     {
       "path": "gre-learning/units/release183-1046-1050-c5eaa56e58624c29f1c491ba46ac692b75bf7cd9a3e8e63831e4822750612e7a.json",
       "loading": "shell",
       "bytes": 14522,
-      "sha256": "c5eaa56e58624c29f1c491ba46ac692b75bf7cd9a3e8e63831e4822750612e7a"
+      "sha256": "c5eaa56e58624c29f1c491ba46ac692b75bf7cd9a3e8e63831e4822750612e7a",
+      "gzipBytes": 6094
     },
     {
       "path": "gre-learning/units/release183-1051-1055-27ea3d9e5e389903e0e490f690358e3635c8a5ba8161ef386f36c325cb01462b.json",
       "loading": "shell",
       "bytes": 14159,
-      "sha256": "27ea3d9e5e389903e0e490f690358e3635c8a5ba8161ef386f36c325cb01462b"
+      "sha256": "27ea3d9e5e389903e0e490f690358e3635c8a5ba8161ef386f36c325cb01462b",
+      "gzipBytes": 6005
     },
     {
       "path": "gre-learning/units/release183-1056-1060-1c6b1042c515e2d9c68516b8978b83710071db4dc655ef57265f8963d6f4d2e8.json",
       "loading": "shell",
       "bytes": 15245,
-      "sha256": "1c6b1042c515e2d9c68516b8978b83710071db4dc655ef57265f8963d6f4d2e8"
+      "sha256": "1c6b1042c515e2d9c68516b8978b83710071db4dc655ef57265f8963d6f4d2e8",
+      "gzipBytes": 6374
     },
     {
       "path": "gre-learning/units/release183-1061-1065-ec43a23cfd133f556577b9733c9d2985aa5646fa1b4b612673e6a29d342a8821.json",
       "loading": "shell",
       "bytes": 15175,
-      "sha256": "ec43a23cfd133f556577b9733c9d2985aa5646fa1b4b612673e6a29d342a8821"
+      "sha256": "ec43a23cfd133f556577b9733c9d2985aa5646fa1b4b612673e6a29d342a8821",
+      "gzipBytes": 6382
     },
     {
       "path": "gre-learning/units/release183-1066-1070-85bea73e6085cd100e047a35139552e3097470c191b866b3d3bbe25cc266b1ca.json",
       "loading": "shell",
       "bytes": 14032,
-      "sha256": "85bea73e6085cd100e047a35139552e3097470c191b866b3d3bbe25cc266b1ca"
+      "sha256": "85bea73e6085cd100e047a35139552e3097470c191b866b3d3bbe25cc266b1ca",
+      "gzipBytes": 5839
     },
     {
       "path": "gre-learning/units/release183-1071-1075-b9a3fa80de08fd9cc5e705934ec2548cbf01ec928e2d289776b0236cfa6185f9.json",
       "loading": "shell",
       "bytes": 14396,
-      "sha256": "b9a3fa80de08fd9cc5e705934ec2548cbf01ec928e2d289776b0236cfa6185f9"
+      "sha256": "b9a3fa80de08fd9cc5e705934ec2548cbf01ec928e2d289776b0236cfa6185f9",
+      "gzipBytes": 5694
     },
     {
       "path": "gre-learning/units/release183-1076-1080-9d8ae76573e50f8bd241901e469f406ca5c39f29f02e1e60475d3500530efecf.json",
       "loading": "shell",
       "bytes": 13921,
-      "sha256": "9d8ae76573e50f8bd241901e469f406ca5c39f29f02e1e60475d3500530efecf"
+      "sha256": "9d8ae76573e50f8bd241901e469f406ca5c39f29f02e1e60475d3500530efecf",
+      "gzipBytes": 5635
     },
     {
       "path": "gre-learning/units/release183-1081-1085-be72eee2bab2e52a285da3380c6d715ec73deacaef43511dd4d561f75b87504f.json",
       "loading": "shell",
       "bytes": 13719,
-      "sha256": "be72eee2bab2e52a285da3380c6d715ec73deacaef43511dd4d561f75b87504f"
+      "sha256": "be72eee2bab2e52a285da3380c6d715ec73deacaef43511dd4d561f75b87504f",
+      "gzipBytes": 5452
     },
     {
       "path": "gre-learning/units/release183-1086-1090-18278ecebb2c72745ee12e64722c45937ed35fe85a534e8e909bad2d58226252.json",
       "loading": "shell",
       "bytes": 13344,
-      "sha256": "18278ecebb2c72745ee12e64722c45937ed35fe85a534e8e909bad2d58226252"
+      "sha256": "18278ecebb2c72745ee12e64722c45937ed35fe85a534e8e909bad2d58226252",
+      "gzipBytes": 5475
     },
     {
       "path": "gre-learning/units/release183-1091-1095-c670f117acd7f399db3dc035e89130b1b452cb2694f31601a468246583b96565.json",
       "loading": "shell",
       "bytes": 14234,
-      "sha256": "c670f117acd7f399db3dc035e89130b1b452cb2694f31601a468246583b96565"
+      "sha256": "c670f117acd7f399db3dc035e89130b1b452cb2694f31601a468246583b96565",
+      "gzipBytes": 5878
     },
     {
       "path": "gre-learning/units/release183-1096-1100-6b3d2f951a32a7eb5b31a007e6735ce9ce2b027ff6543fc08da85d197770529c.json",
       "loading": "shell",
       "bytes": 14177,
-      "sha256": "6b3d2f951a32a7eb5b31a007e6735ce9ce2b027ff6543fc08da85d197770529c"
+      "sha256": "6b3d2f951a32a7eb5b31a007e6735ce9ce2b027ff6543fc08da85d197770529c",
+      "gzipBytes": 5857
     },
     {
       "path": "gre-learning/units/release183-1101-1105-d19e29446279410e1ff484f46aae784bf4997a471a8640bf23b76b4f734e0a04.json",
       "loading": "shell",
       "bytes": 14010,
-      "sha256": "d19e29446279410e1ff484f46aae784bf4997a471a8640bf23b76b4f734e0a04"
+      "sha256": "d19e29446279410e1ff484f46aae784bf4997a471a8640bf23b76b4f734e0a04",
+      "gzipBytes": 5769
     },
     {
       "path": "gre-learning/units/release183-1106-1110-3f9beaf0b14b1ef46cc3d8223a6b7f54b42e632c9d1170b0e6956811fc410e76.json",
       "loading": "shell",
       "bytes": 12780,
-      "sha256": "3f9beaf0b14b1ef46cc3d8223a6b7f54b42e632c9d1170b0e6956811fc410e76"
+      "sha256": "3f9beaf0b14b1ef46cc3d8223a6b7f54b42e632c9d1170b0e6956811fc410e76",
+      "gzipBytes": 5247
     },
     {
       "path": "gre-learning/units/release183-1111-1115-5229ec6392c8a7a3abd5e29563a71fc6a1b621292fe6b0c91a4686b6989dc5da.json",
       "loading": "shell",
       "bytes": 12458,
-      "sha256": "5229ec6392c8a7a3abd5e29563a71fc6a1b621292fe6b0c91a4686b6989dc5da"
+      "sha256": "5229ec6392c8a7a3abd5e29563a71fc6a1b621292fe6b0c91a4686b6989dc5da",
+      "gzipBytes": 5020
     },
     {
       "path": "gre-learning/units/release183-1116-1120-5d1964b34b487d63dcbfde690c8f7170cf233d8596dd94c2a44eb7997eefafb0.json",
       "loading": "shell",
       "bytes": 12198,
-      "sha256": "5d1964b34b487d63dcbfde690c8f7170cf233d8596dd94c2a44eb7997eefafb0"
+      "sha256": "5d1964b34b487d63dcbfde690c8f7170cf233d8596dd94c2a44eb7997eefafb0",
+      "gzipBytes": 5295
     },
     {
       "path": "gre-learning/units/release183-1121-1125-f6bdccb89575d28a7ab5f74b83e0fb0189a0fa6b6dff3ff08b365f48ce0b5156.json",
       "loading": "shell",
       "bytes": 13758,
-      "sha256": "f6bdccb89575d28a7ab5f74b83e0fb0189a0fa6b6dff3ff08b365f48ce0b5156"
+      "sha256": "f6bdccb89575d28a7ab5f74b83e0fb0189a0fa6b6dff3ff08b365f48ce0b5156",
+      "gzipBytes": 5764
     },
     {
       "path": "gre-learning/units/release183-1126-1130-ea099c8728f7edfd519ebc05fd3ada3d5ba0281c5dc40c64fc749d5405a37cf3.json",
       "loading": "shell",
       "bytes": 13082,
-      "sha256": "ea099c8728f7edfd519ebc05fd3ada3d5ba0281c5dc40c64fc749d5405a37cf3"
+      "sha256": "ea099c8728f7edfd519ebc05fd3ada3d5ba0281c5dc40c64fc749d5405a37cf3",
+      "gzipBytes": 5395
     },
     {
       "path": "gre-learning/units/release183-1131-1135-d8cbafb0acaae4a1c1d26c77b8e8eb148a6ef8bc7731f2cdfc55fcb7e590c4bb.json",
       "loading": "shell",
       "bytes": 13911,
-      "sha256": "d8cbafb0acaae4a1c1d26c77b8e8eb148a6ef8bc7731f2cdfc55fcb7e590c4bb"
+      "sha256": "d8cbafb0acaae4a1c1d26c77b8e8eb148a6ef8bc7731f2cdfc55fcb7e590c4bb",
+      "gzipBytes": 5701
     },
     {
       "path": "gre-learning/units/release183-1136-1140-33fd94d4d9cb1001f6827f5537c2f95a752b147a6bc4703b5c8fc515eb0f73b1.json",
       "loading": "shell",
       "bytes": 12341,
-      "sha256": "33fd94d4d9cb1001f6827f5537c2f95a752b147a6bc4703b5c8fc515eb0f73b1"
+      "sha256": "33fd94d4d9cb1001f6827f5537c2f95a752b147a6bc4703b5c8fc515eb0f73b1",
+      "gzipBytes": 5233
     },
     {
       "path": "gre-learning/units/release183-1141-1145-e1f72015e300f2695e5db98f0e4c1f19e1875a2522bbb3fb718db2796ecef201.json",
       "loading": "shell",
       "bytes": 13955,
-      "sha256": "e1f72015e300f2695e5db98f0e4c1f19e1875a2522bbb3fb718db2796ecef201"
+      "sha256": "e1f72015e300f2695e5db98f0e4c1f19e1875a2522bbb3fb718db2796ecef201",
+      "gzipBytes": 5897
     },
     {
       "path": "gre-learning/units/release183-1146-1150-b280903aa6635f08cbe8958e6ac0de22ef287912e6a602ea566deac4e84bfd8e.json",
       "loading": "shell",
       "bytes": 14670,
-      "sha256": "b280903aa6635f08cbe8958e6ac0de22ef287912e6a602ea566deac4e84bfd8e"
+      "sha256": "b280903aa6635f08cbe8958e6ac0de22ef287912e6a602ea566deac4e84bfd8e",
+      "gzipBytes": 6181
     },
     {
       "path": "gre-learning/units/release183-1151-1155-05958746c55c6b9f59c92a192d23d8f4bea2afca2c99163e222041ff5f8dff2d.json",
       "loading": "shell",
       "bytes": 15281,
-      "sha256": "05958746c55c6b9f59c92a192d23d8f4bea2afca2c99163e222041ff5f8dff2d"
+      "sha256": "05958746c55c6b9f59c92a192d23d8f4bea2afca2c99163e222041ff5f8dff2d",
+      "gzipBytes": 6432
     },
     {
       "path": "gre-learning/units/release183-1156-1160-d09b7e55194b0e9840fe4a7e51924dac7836e3aa202e8770ce251d5fd2f8c05c.json",
       "loading": "shell",
       "bytes": 14913,
-      "sha256": "d09b7e55194b0e9840fe4a7e51924dac7836e3aa202e8770ce251d5fd2f8c05c"
+      "sha256": "d09b7e55194b0e9840fe4a7e51924dac7836e3aa202e8770ce251d5fd2f8c05c",
+      "gzipBytes": 6400
     },
     {
       "path": "gre-learning/units/release183-1161-1165-6630a2bb17a0317ad362aec5c1f1739f92cb2d51a60c7db22b058fd50081f687.json",
       "loading": "shell",
       "bytes": 17307,
-      "sha256": "6630a2bb17a0317ad362aec5c1f1739f92cb2d51a60c7db22b058fd50081f687"
+      "sha256": "6630a2bb17a0317ad362aec5c1f1739f92cb2d51a60c7db22b058fd50081f687",
+      "gzipBytes": 7333
     },
     {
       "path": "gre-learning/units/release183-1166-1170-75b57ff2cd16c389f02671d852df853f08adf3b55f60cc625b059b3450d34377.json",
       "loading": "shell",
       "bytes": 16138,
-      "sha256": "75b57ff2cd16c389f02671d852df853f08adf3b55f60cc625b059b3450d34377"
+      "sha256": "75b57ff2cd16c389f02671d852df853f08adf3b55f60cc625b059b3450d34377",
+      "gzipBytes": 6848
     },
     {
       "path": "gre-learning/units/release183-1171-1175-88ea17f4e88822197d92a6636481731a4049a3f98c0a0d57571a47afa9c27933.json",
       "loading": "shell",
       "bytes": 15553,
-      "sha256": "88ea17f4e88822197d92a6636481731a4049a3f98c0a0d57571a47afa9c27933"
+      "sha256": "88ea17f4e88822197d92a6636481731a4049a3f98c0a0d57571a47afa9c27933",
+      "gzipBytes": 6550
     },
     {
       "path": "gre-learning/units/release183-1176-1180-f2885c0444d60562f532702b2eb0c83d1767a32e96a84c76125d2547b8fb9298.json",
       "loading": "shell",
       "bytes": 15798,
-      "sha256": "f2885c0444d60562f532702b2eb0c83d1767a32e96a84c76125d2547b8fb9298"
+      "sha256": "f2885c0444d60562f532702b2eb0c83d1767a32e96a84c76125d2547b8fb9298",
+      "gzipBytes": 6555
     },
     {
       "path": "gre-learning/units/release183-1181-1185-2a18c86002b43ee49778ac5547d23900736419d4a5226434860e4909d5611a77.json",
       "loading": "shell",
       "bytes": 14278,
-      "sha256": "2a18c86002b43ee49778ac5547d23900736419d4a5226434860e4909d5611a77"
+      "sha256": "2a18c86002b43ee49778ac5547d23900736419d4a5226434860e4909d5611a77",
+      "gzipBytes": 5884
     },
     {
       "path": "gre-learning/units/release183-1186-1190-fbfb57ddb377bf39387548ed29ace68192e4298e58d2f6cc2691afad65012724.json",
       "loading": "shell",
       "bytes": 14994,
-      "sha256": "fbfb57ddb377bf39387548ed29ace68192e4298e58d2f6cc2691afad65012724"
+      "sha256": "fbfb57ddb377bf39387548ed29ace68192e4298e58d2f6cc2691afad65012724",
+      "gzipBytes": 6153
     },
     {
       "path": "gre-learning/units/release183-1191-1195-d0097dc1bf07691ccd6597dd382f5059676d5c7cb1b057f9deca52c89480809a.json",
       "loading": "shell",
       "bytes": 13634,
-      "sha256": "d0097dc1bf07691ccd6597dd382f5059676d5c7cb1b057f9deca52c89480809a"
+      "sha256": "d0097dc1bf07691ccd6597dd382f5059676d5c7cb1b057f9deca52c89480809a",
+      "gzipBytes": 5535
     },
     {
       "path": "gre-learning/units/release183-1196-1200-de4e7455b2bb5ef3e3ca03ce23903405a4588df8fcc748d20352a49edab5db6c.json",
       "loading": "shell",
       "bytes": 14449,
-      "sha256": "de4e7455b2bb5ef3e3ca03ce23903405a4588df8fcc748d20352a49edab5db6c"
+      "sha256": "de4e7455b2bb5ef3e3ca03ce23903405a4588df8fcc748d20352a49edab5db6c",
+      "gzipBytes": 6024
     },
     {
       "path": "gre-learning/units/release183-1201-1205-14fd09bde25b820dc1d8a453aacf158546e91ab03506d35f332d0c8b2e5d729f.json",
       "loading": "shell",
       "bytes": 13673,
-      "sha256": "14fd09bde25b820dc1d8a453aacf158546e91ab03506d35f332d0c8b2e5d729f"
+      "sha256": "14fd09bde25b820dc1d8a453aacf158546e91ab03506d35f332d0c8b2e5d729f",
+      "gzipBytes": 5420
     },
     {
       "path": "gre-learning/units/release183-1206-1210-414e4997cc14a0b35098920ae2afb2884caa3ac2cf6b50cff1368102d15a6a27.json",
       "loading": "shell",
       "bytes": 13478,
-      "sha256": "414e4997cc14a0b35098920ae2afb2884caa3ac2cf6b50cff1368102d15a6a27"
+      "sha256": "414e4997cc14a0b35098920ae2afb2884caa3ac2cf6b50cff1368102d15a6a27",
+      "gzipBytes": 5572
     },
     {
       "path": "gre-learning/units/release183-1211-1215-d93d6a05eb58e238b0ea33583205bc1edfa4e826ed18059530e950062d860e13.json",
       "loading": "shell",
       "bytes": 13950,
-      "sha256": "d93d6a05eb58e238b0ea33583205bc1edfa4e826ed18059530e950062d860e13"
+      "sha256": "d93d6a05eb58e238b0ea33583205bc1edfa4e826ed18059530e950062d860e13",
+      "gzipBytes": 5709
     },
     {
       "path": "gre-learning/units/release183-1216-1220-539ce8a2884d404990b84cab317a377be3da804a464d7b539cb7ff335e0a8c54.json",
       "loading": "shell",
       "bytes": 14230,
-      "sha256": "539ce8a2884d404990b84cab317a377be3da804a464d7b539cb7ff335e0a8c54"
+      "sha256": "539ce8a2884d404990b84cab317a377be3da804a464d7b539cb7ff335e0a8c54",
+      "gzipBytes": 5911
     },
     {
       "path": "gre-learning/units/release183-1221-1225-a9da8e31cad7739eb6a36daf2e1d17006a08333951b36d3ba916b6e242344878.json",
       "loading": "shell",
       "bytes": 14697,
-      "sha256": "a9da8e31cad7739eb6a36daf2e1d17006a08333951b36d3ba916b6e242344878"
+      "sha256": "a9da8e31cad7739eb6a36daf2e1d17006a08333951b36d3ba916b6e242344878",
+      "gzipBytes": 5928
     },
     {
       "path": "gre-learning/units/release183-1226-1230-2bffe6e281f1fc17020513366a2a1b45637ffbcf27c3670b993d24586f6640f7.json",
       "loading": "shell",
       "bytes": 13930,
-      "sha256": "2bffe6e281f1fc17020513366a2a1b45637ffbcf27c3670b993d24586f6640f7"
+      "sha256": "2bffe6e281f1fc17020513366a2a1b45637ffbcf27c3670b993d24586f6640f7",
+      "gzipBytes": 5638
     },
     {
       "path": "gre-learning/units/release183-1231-1235-d7ba0baf1ac9741fb543013e8154f61690142d99f48ecff541b81351ff21836c.json",
       "loading": "shell",
       "bytes": 13295,
-      "sha256": "d7ba0baf1ac9741fb543013e8154f61690142d99f48ecff541b81351ff21836c"
+      "sha256": "d7ba0baf1ac9741fb543013e8154f61690142d99f48ecff541b81351ff21836c",
+      "gzipBytes": 5519
     },
     {
       "path": "gre-learning/units/release183-1236-1240-0ec28b00c0f1358865b6dffea90746c90b297feeaf1e1bd7208100fbdff92def.json",
       "loading": "shell",
       "bytes": 13841,
-      "sha256": "0ec28b00c0f1358865b6dffea90746c90b297feeaf1e1bd7208100fbdff92def"
+      "sha256": "0ec28b00c0f1358865b6dffea90746c90b297feeaf1e1bd7208100fbdff92def",
+      "gzipBytes": 5776
     },
     {
       "path": "gre-learning/units/release183-1241-1245-bece72f4b3e6a74d92bc8116de9f8563fe31a02eaf050fbd1d0c611e887e0495.json",
       "loading": "shell",
       "bytes": 14650,
-      "sha256": "bece72f4b3e6a74d92bc8116de9f8563fe31a02eaf050fbd1d0c611e887e0495"
+      "sha256": "bece72f4b3e6a74d92bc8116de9f8563fe31a02eaf050fbd1d0c611e887e0495",
+      "gzipBytes": 6240
     },
     {
       "path": "gre-learning/units/release183-1246-1250-e25755f882f7fbc03572757ea1150c3ad72a74048ddfb00c223c8ebf85c70f53.json",
       "loading": "shell",
       "bytes": 14271,
-      "sha256": "e25755f882f7fbc03572757ea1150c3ad72a74048ddfb00c223c8ebf85c70f53"
+      "sha256": "e25755f882f7fbc03572757ea1150c3ad72a74048ddfb00c223c8ebf85c70f53",
+      "gzipBytes": 6081
     },
     {
       "path": "gre-learning/units/release183-1251-1255-2001ee06ffbf5621187e3be166cc9cd490a6a5c1bddd9fa73bf31dc82cefbc85.json",
       "loading": "shell",
       "bytes": 16235,
-      "sha256": "2001ee06ffbf5621187e3be166cc9cd490a6a5c1bddd9fa73bf31dc82cefbc85"
+      "sha256": "2001ee06ffbf5621187e3be166cc9cd490a6a5c1bddd9fa73bf31dc82cefbc85",
+      "gzipBytes": 6757
     },
     {
       "path": "gre-learning/units/release183-1256-1260-526bfb0402fcdea96e733f3324a912eaf9616455b28849cf5fd866b127102d78.json",
       "loading": "shell",
       "bytes": 15983,
-      "sha256": "526bfb0402fcdea96e733f3324a912eaf9616455b28849cf5fd866b127102d78"
+      "sha256": "526bfb0402fcdea96e733f3324a912eaf9616455b28849cf5fd866b127102d78",
+      "gzipBytes": 6786
     },
     {
       "path": "gre-learning/units/release183-1261-1265-001fc7f02d6c03d2a906a3a18d403ca24bc525e3887973e3b0aff74ab17e10e4.json",
       "loading": "shell",
       "bytes": 15886,
-      "sha256": "001fc7f02d6c03d2a906a3a18d403ca24bc525e3887973e3b0aff74ab17e10e4"
+      "sha256": "001fc7f02d6c03d2a906a3a18d403ca24bc525e3887973e3b0aff74ab17e10e4",
+      "gzipBytes": 6816
     },
     {
       "path": "gre-learning/units/release183-1266-1270-fb6c77fde12aaef1c0aa4800bcd1343123f05f738409e7e14d668d46cf7508f3.json",
       "loading": "shell",
       "bytes": 16077,
-      "sha256": "fb6c77fde12aaef1c0aa4800bcd1343123f05f738409e7e14d668d46cf7508f3"
+      "sha256": "fb6c77fde12aaef1c0aa4800bcd1343123f05f738409e7e14d668d46cf7508f3",
+      "gzipBytes": 6474
     },
     {
       "path": "gre-learning/units/release183-1271-1275-d6c26d430ed0f9b25f9611efd85ad44fde8ac03c76c226056c4d2ee2ce95d411.json",
       "loading": "shell",
       "bytes": 15210,
-      "sha256": "d6c26d430ed0f9b25f9611efd85ad44fde8ac03c76c226056c4d2ee2ce95d411"
+      "sha256": "d6c26d430ed0f9b25f9611efd85ad44fde8ac03c76c226056c4d2ee2ce95d411",
+      "gzipBytes": 6431
     },
     {
       "path": "gre-learning/units/release183-1276-1280-d5f8d0615bee4614d9f39c922e34fa6fcb52bcf622df9b22e48b823c231b53c7.json",
       "loading": "shell",
       "bytes": 15415,
-      "sha256": "d5f8d0615bee4614d9f39c922e34fa6fcb52bcf622df9b22e48b823c231b53c7"
+      "sha256": "d5f8d0615bee4614d9f39c922e34fa6fcb52bcf622df9b22e48b823c231b53c7",
+      "gzipBytes": 6380
     },
     {
       "path": "gre-learning/units/release183-1281-1285-38e42f5e0a891729621ab0353d155e5d60d11f198e9e9623ba306f742ca765d6.json",
       "loading": "shell",
       "bytes": 14515,
-      "sha256": "38e42f5e0a891729621ab0353d155e5d60d11f198e9e9623ba306f742ca765d6"
+      "sha256": "38e42f5e0a891729621ab0353d155e5d60d11f198e9e9623ba306f742ca765d6",
+      "gzipBytes": 5983
     },
     {
       "path": "gre-learning/units/release183-1286-1290-0e6043d63b72f6de839c737ff48116a40db6263d5deb53ef0b40988e3ed2d861.json",
       "loading": "shell",
       "bytes": 14697,
-      "sha256": "0e6043d63b72f6de839c737ff48116a40db6263d5deb53ef0b40988e3ed2d861"
+      "sha256": "0e6043d63b72f6de839c737ff48116a40db6263d5deb53ef0b40988e3ed2d861",
+      "gzipBytes": 6099
     },
     {
       "path": "gre-learning/units/release183-1291-1295-18860abb8e9594cc4344e5e99791af822858fff3443998bc98eb015ebaad16e1.json",
       "loading": "shell",
       "bytes": 14941,
-      "sha256": "18860abb8e9594cc4344e5e99791af822858fff3443998bc98eb015ebaad16e1"
+      "sha256": "18860abb8e9594cc4344e5e99791af822858fff3443998bc98eb015ebaad16e1",
+      "gzipBytes": 6075
     },
     {
       "path": "gre-learning/units/release183-1296-1300-919b72b78aeff197770800dae3c35eb0c5f523ffe80c391eed38ca332c68f31a.json",
       "loading": "shell",
       "bytes": 14493,
-      "sha256": "919b72b78aeff197770800dae3c35eb0c5f523ffe80c391eed38ca332c68f31a"
+      "sha256": "919b72b78aeff197770800dae3c35eb0c5f523ffe80c391eed38ca332c68f31a",
+      "gzipBytes": 5757
     },
     {
       "path": "gre-learning/units/release183-1301-1305-564ef3c8332cc10702c7c2af0f81e286dac73c2fdc3deeafdd08f799ba2a8b73.json",
       "loading": "shell",
       "bytes": 14945,
-      "sha256": "564ef3c8332cc10702c7c2af0f81e286dac73c2fdc3deeafdd08f799ba2a8b73"
+      "sha256": "564ef3c8332cc10702c7c2af0f81e286dac73c2fdc3deeafdd08f799ba2a8b73",
+      "gzipBytes": 6213
     },
     {
       "path": "gre-learning/units/release183-1306-1310-3e742af40e60eb2090f1ce0ad6e95e77273b5372051e92ad345037a39cdb903e.json",
       "loading": "shell",
       "bytes": 14996,
-      "sha256": "3e742af40e60eb2090f1ce0ad6e95e77273b5372051e92ad345037a39cdb903e"
+      "sha256": "3e742af40e60eb2090f1ce0ad6e95e77273b5372051e92ad345037a39cdb903e",
+      "gzipBytes": 5940
     },
     {
       "path": "gre-learning/units/release183-1311-1315-f8b9a725c3b3b7f3a5f33ebfae4c1da208c5ae7c2aa5896ddaa57406c25d9352.json",
       "loading": "shell",
       "bytes": 14611,
-      "sha256": "f8b9a725c3b3b7f3a5f33ebfae4c1da208c5ae7c2aa5896ddaa57406c25d9352"
+      "sha256": "f8b9a725c3b3b7f3a5f33ebfae4c1da208c5ae7c2aa5896ddaa57406c25d9352",
+      "gzipBytes": 5977
     },
     {
       "path": "gre-learning/units/release183-1316-1320-36ec0bb26b5abe4be172d2f8a44cf0240fecb85c5c9bca992c15a63a3863bfea.json",
       "loading": "shell",
       "bytes": 13832,
-      "sha256": "36ec0bb26b5abe4be172d2f8a44cf0240fecb85c5c9bca992c15a63a3863bfea"
+      "sha256": "36ec0bb26b5abe4be172d2f8a44cf0240fecb85c5c9bca992c15a63a3863bfea",
+      "gzipBytes": 5627
     },
     {
       "path": "sw.js",
       "loading": "on-demand",
       "bytes": 203200,
-      "sha256": "1607cf000f92ec158b7b39c02de03dabe9e29ede208a6d48aa6ede743120ddef",
-      "gzipBytes": 58094
+      "sha256": "6c160a821c6cfd275517827fc20feb4e1dbdbee90384e4235029558bba17c92c",
+      "gzipBytes": 58090
     },
     {
       "path": "gre-learning/shell-manifest.json",
       "loading": "on-demand",
       "bytes": 183560,
-      "sha256": "1455fa1f17a08b67016ccf99b1a5dd3669f92653a5a2a48210e36d3042b33b51",
-      "gzipBytes": 42163
+      "sha256": "363ecd49a23184701968bfd623ec2da059e8c892554db5a946c811caae065320",
+      "gzipBytes": 42158
     },
     {
       "path": "gre-learning/units/release184-1341-1345-b67f58ae1d73e315626cfe263ea7ddd801ee6522acd80c9bc92b0eeb251645c9.json",
       "loading": "shell",
       "bytes": 14342,
-      "sha256": "b67f58ae1d73e315626cfe263ea7ddd801ee6522acd80c9bc92b0eeb251645c9"
+      "sha256": "b67f58ae1d73e315626cfe263ea7ddd801ee6522acd80c9bc92b0eeb251645c9",
+      "gzipBytes": 5649
     },
     {
       "path": "gre-learning/units/release184-1521-1525-8cf738ce5a61fb1a6e872fe60b2e712f46811ccc9e71cda66a9e507dd884f6d6.json",
       "loading": "shell",
       "bytes": 13242,
-      "sha256": "8cf738ce5a61fb1a6e872fe60b2e712f46811ccc9e71cda66a9e507dd884f6d6"
+      "sha256": "8cf738ce5a61fb1a6e872fe60b2e712f46811ccc9e71cda66a9e507dd884f6d6",
+      "gzipBytes": 5491
     },
     {
       "path": "gre-learning/units/release184-1506-1510-953806424ee4c69b01e22c43d2aa95654f872fdde8a66e44783ea89a00205182.json",
       "loading": "shell",
       "bytes": 14125,
-      "sha256": "953806424ee4c69b01e22c43d2aa95654f872fdde8a66e44783ea89a00205182"
+      "sha256": "953806424ee4c69b01e22c43d2aa95654f872fdde8a66e44783ea89a00205182",
+      "gzipBytes": 5992
     },
     {
       "path": "gre-learning/units/release184-1471-1475-ee1a378603ec6136838fca46650e4d64de10a8fa36152ff5ee0d70321648273a.json",
       "loading": "shell",
       "bytes": 13662,
-      "sha256": "ee1a378603ec6136838fca46650e4d64de10a8fa36152ff5ee0d70321648273a"
+      "sha256": "ee1a378603ec6136838fca46650e4d64de10a8fa36152ff5ee0d70321648273a",
+      "gzipBytes": 5749
     },
     {
       "path": "gre-learning/units/release184-1406-1410-b5b7cbcf2d2503275224523e6083e80df164c29c7ba0442a4ec754aa461ca848.json",
       "loading": "shell",
       "bytes": 14463,
-      "sha256": "b5b7cbcf2d2503275224523e6083e80df164c29c7ba0442a4ec754aa461ca848"
+      "sha256": "b5b7cbcf2d2503275224523e6083e80df164c29c7ba0442a4ec754aa461ca848",
+      "gzipBytes": 5805
     },
     {
       "path": "gre-learning/units/release184-1436-1440-460d6a16820fe3884e9df895f85da0e320cba68cabbe60d08a362055850a4d22.json",
       "loading": "shell",
       "bytes": 14227,
-      "sha256": "460d6a16820fe3884e9df895f85da0e320cba68cabbe60d08a362055850a4d22"
+      "sha256": "460d6a16820fe3884e9df895f85da0e320cba68cabbe60d08a362055850a4d22",
+      "gzipBytes": 5990
     },
     {
       "path": "gre-learning/units/release184-1546-1550-84b0988ab7ca9b94727f50490a74e58637f3c759786e91d1f6591b4f618b3ac5.json",
       "loading": "shell",
       "bytes": 13872,
-      "sha256": "84b0988ab7ca9b94727f50490a74e58637f3c759786e91d1f6591b4f618b3ac5"
+      "sha256": "84b0988ab7ca9b94727f50490a74e58637f3c759786e91d1f6591b4f618b3ac5",
+      "gzipBytes": 5829
     },
     {
       "path": "gre-learning/units/release184-1441-1445-f703645950c6f23f5e5fd3d799404fb3a3de24ec53907e0468c65a99d0731924.json",
       "loading": "shell",
       "bytes": 14350,
-      "sha256": "f703645950c6f23f5e5fd3d799404fb3a3de24ec53907e0468c65a99d0731924"
+      "sha256": "f703645950c6f23f5e5fd3d799404fb3a3de24ec53907e0468c65a99d0731924",
+      "gzipBytes": 6117
     },
     {
       "path": "gre-learning/units/release184-1556-1560-5ee574f287703c8da3ddb34bfe3eed3f37f692a665d4e6420b79b3586fd86e7f.json",
       "loading": "shell",
       "bytes": 13812,
-      "sha256": "5ee574f287703c8da3ddb34bfe3eed3f37f692a665d4e6420b79b3586fd86e7f"
+      "sha256": "5ee574f287703c8da3ddb34bfe3eed3f37f692a665d4e6420b79b3586fd86e7f",
+      "gzipBytes": 5753
     },
     {
       "path": "gre-learning/units/release184-1501-1505-b41567c2f30f9776557ffcc4e499ad6061b21917611d7675609ba6f92f36b62d.json",
       "loading": "shell",
       "bytes": 13565,
-      "sha256": "b41567c2f30f9776557ffcc4e499ad6061b21917611d7675609ba6f92f36b62d"
+      "sha256": "b41567c2f30f9776557ffcc4e499ad6061b21917611d7675609ba6f92f36b62d",
+      "gzipBytes": 5620
     },
     {
       "path": "gre-learning/units/release184-1526-1530-88a6fbf1edb56c8786a606c0db0a807ceac4839aae2f718b0d8c2e6ca2780af7.json",
       "loading": "shell",
       "bytes": 13403,
-      "sha256": "88a6fbf1edb56c8786a606c0db0a807ceac4839aae2f718b0d8c2e6ca2780af7"
+      "sha256": "88a6fbf1edb56c8786a606c0db0a807ceac4839aae2f718b0d8c2e6ca2780af7",
+      "gzipBytes": 5525
     },
     {
       "path": "gre-learning/units/release184-1411-1415-ad00adb3f9643eb167b03d5d5a85255a9bb856355e744e5d45a5c8ec2f7e2fb4.json",
       "loading": "shell",
       "bytes": 14168,
-      "sha256": "ad00adb3f9643eb167b03d5d5a85255a9bb856355e744e5d45a5c8ec2f7e2fb4"
+      "sha256": "ad00adb3f9643eb167b03d5d5a85255a9bb856355e744e5d45a5c8ec2f7e2fb4",
+      "gzipBytes": 5846
     },
     {
       "path": "gre-learning/units/release184-1421-1425-1292274f3a2482332f4d612dac997d288cc7b96b38b61f340161a8f57746aaf8.json",
       "loading": "shell",
       "bytes": 14164,
-      "sha256": "1292274f3a2482332f4d612dac997d288cc7b96b38b61f340161a8f57746aaf8"
+      "sha256": "1292274f3a2482332f4d612dac997d288cc7b96b38b61f340161a8f57746aaf8",
+      "gzipBytes": 5976
     },
     {
       "path": "gre-learning/units/release184-1566-1570-3f25daa821a84c56c9cd24d6c1c9c78afce9fe62413776ea0819fea159b212b2.json",
       "loading": "shell",
       "bytes": 14573,
-      "sha256": "3f25daa821a84c56c9cd24d6c1c9c78afce9fe62413776ea0819fea159b212b2"
+      "sha256": "3f25daa821a84c56c9cd24d6c1c9c78afce9fe62413776ea0819fea159b212b2",
+      "gzipBytes": 6084
     },
     {
       "path": "gre-learning/units/release184-1481-1485-bcfa8e73cfd10ac720dc1a176c8faf1e5b06458f221e19cee710c539de953abc.json",
       "loading": "shell",
       "bytes": 13164,
-      "sha256": "bcfa8e73cfd10ac720dc1a176c8faf1e5b06458f221e19cee710c539de953abc"
+      "sha256": "bcfa8e73cfd10ac720dc1a176c8faf1e5b06458f221e19cee710c539de953abc",
+      "gzipBytes": 5533
     },
     {
       "path": "gre-learning/units/release184-1586-1590-56ac125ded9b098079209be6c94e9e7b0b868282057432dc9a4ebfc086c68368.json",
       "loading": "shell",
       "bytes": 13629,
-      "sha256": "56ac125ded9b098079209be6c94e9e7b0b868282057432dc9a4ebfc086c68368"
+      "sha256": "56ac125ded9b098079209be6c94e9e7b0b868282057432dc9a4ebfc086c68368",
+      "gzipBytes": 5771
     },
     {
       "path": "gre-learning/units/release184-1331-1335-ca44dc94a1894c6784b35e57562107af55e58a56ae3dfcf58c571207ef9f073f.json",
       "loading": "shell",
       "bytes": 14944,
-      "sha256": "ca44dc94a1894c6784b35e57562107af55e58a56ae3dfcf58c571207ef9f073f"
+      "sha256": "ca44dc94a1894c6784b35e57562107af55e58a56ae3dfcf58c571207ef9f073f",
+      "gzipBytes": 6191
     },
     {
       "path": "gre-learning/units/release184-1466-1470-256ebdedbc3d61d09657255582955ab41b1ec2822a56491456229ad29b559360.json",
       "loading": "shell",
       "bytes": 13270,
-      "sha256": "256ebdedbc3d61d09657255582955ab41b1ec2822a56491456229ad29b559360"
+      "sha256": "256ebdedbc3d61d09657255582955ab41b1ec2822a56491456229ad29b559360",
+      "gzipBytes": 5446
     },
     {
       "path": "gre-learning/units/release184-1596-1600-d1d5a273cc55cfe6e50a2475a110693b8d8ada0597686aa47e8a69b195525482.json",
       "loading": "shell",
       "bytes": 15623,
-      "sha256": "d1d5a273cc55cfe6e50a2475a110693b8d8ada0597686aa47e8a69b195525482"
+      "sha256": "d1d5a273cc55cfe6e50a2475a110693b8d8ada0597686aa47e8a69b195525482",
+      "gzipBytes": 6349
     },
     {
       "path": "gre-learning/units/release184-1326-1330-47851e584d43c2cb0dc3a3a9457bd603adfdb1e5da1e28dd7fb48c35f51ef7ca.json",
       "loading": "shell",
       "bytes": 15915,
-      "sha256": "47851e584d43c2cb0dc3a3a9457bd603adfdb1e5da1e28dd7fb48c35f51ef7ca"
+      "sha256": "47851e584d43c2cb0dc3a3a9457bd603adfdb1e5da1e28dd7fb48c35f51ef7ca",
+      "gzipBytes": 6665
     },
     {
       "path": "gre-learning/units/release184-1346-1350-e1eb41e7bbad5263125d9611a2f0118d298a5506a44fea7b7b7201508eb48eba.json",
       "loading": "shell",
       "bytes": 14382,
-      "sha256": "e1eb41e7bbad5263125d9611a2f0118d298a5506a44fea7b7b7201508eb48eba"
+      "sha256": "e1eb41e7bbad5263125d9611a2f0118d298a5506a44fea7b7b7201508eb48eba",
+      "gzipBytes": 5937
     },
     {
       "path": "gre-learning/units/release184-1581-1585-647264606c38a27acf911f81f2e5b869d10aeb23474bacac1d1923a6fa2d27af.json",
       "loading": "shell",
       "bytes": 14322,
-      "sha256": "647264606c38a27acf911f81f2e5b869d10aeb23474bacac1d1923a6fa2d27af"
+      "sha256": "647264606c38a27acf911f81f2e5b869d10aeb23474bacac1d1923a6fa2d27af",
+      "gzipBytes": 6154
     },
     {
       "path": "gre-learning/units/release184-1356-1360-d4b85cabd2aa407ed6e5842123a82f07c390182f5adee632d6ce3031e4c08f45.json",
       "loading": "shell",
       "bytes": 16075,
-      "sha256": "d4b85cabd2aa407ed6e5842123a82f07c390182f5adee632d6ce3031e4c08f45"
+      "sha256": "d4b85cabd2aa407ed6e5842123a82f07c390182f5adee632d6ce3031e4c08f45",
+      "gzipBytes": 6407
     },
     {
       "path": "gre-learning/units/release184-1381-1385-16d04a694f0f3d688aed37a37fde461e70bbca30bbc9254ffa81e098503e96dc.json",
       "loading": "shell",
       "bytes": 14285,
-      "sha256": "16d04a694f0f3d688aed37a37fde461e70bbca30bbc9254ffa81e098503e96dc"
+      "sha256": "16d04a694f0f3d688aed37a37fde461e70bbca30bbc9254ffa81e098503e96dc",
+      "gzipBytes": 5729
     },
     {
       "path": "gre-learning/units/release184-1541-1545-5076a749a31d9daeae2df13d30da045c61b1bda6f5e96b9c46ad4ed38246df67.json",
       "loading": "shell",
       "bytes": 13991,
-      "sha256": "5076a749a31d9daeae2df13d30da045c61b1bda6f5e96b9c46ad4ed38246df67"
+      "sha256": "5076a749a31d9daeae2df13d30da045c61b1bda6f5e96b9c46ad4ed38246df67",
+      "gzipBytes": 5830
     },
     {
       "path": "gre-learning/units/release184-1401-1405-952304f3945158997a4160b866e73eedf06599d07b3599a2622fae44e721d631.json",
       "loading": "shell",
       "bytes": 14458,
-      "sha256": "952304f3945158997a4160b866e73eedf06599d07b3599a2622fae44e721d631"
+      "sha256": "952304f3945158997a4160b866e73eedf06599d07b3599a2622fae44e721d631",
+      "gzipBytes": 5648
     },
     {
       "path": "gre-learning/units/release184-1551-1555-fc46b46fa238d99cf227fa79e6836ae29bda53ec630b2a6ad28b86ae9ccf0377.json",
       "loading": "shell",
       "bytes": 13376,
-      "sha256": "fc46b46fa238d99cf227fa79e6836ae29bda53ec630b2a6ad28b86ae9ccf0377"
+      "sha256": "fc46b46fa238d99cf227fa79e6836ae29bda53ec630b2a6ad28b86ae9ccf0377",
+      "gzipBytes": 5576
     },
     {
       "path": "gre-learning/units/release184-1461-1465-5f0281805a44af626ec17cc3f39dd5e4fcb911bfb2ce856b9d38cd2b44ce86f2.json",
       "loading": "shell",
       "bytes": 13614,
-      "sha256": "5f0281805a44af626ec17cc3f39dd5e4fcb911bfb2ce856b9d38cd2b44ce86f2"
+      "sha256": "5f0281805a44af626ec17cc3f39dd5e4fcb911bfb2ce856b9d38cd2b44ce86f2",
+      "gzipBytes": 5711
     },
     {
       "path": "gre-learning/units/release184-1591-1595-b45ee98aea6b3bd5d7429e4d44cc2aee14ab8df77f54c385e6ccf5e265a61905.json",
       "loading": "shell",
       "bytes": 14573,
-      "sha256": "b45ee98aea6b3bd5d7429e4d44cc2aee14ab8df77f54c385e6ccf5e265a61905"
+      "sha256": "b45ee98aea6b3bd5d7429e4d44cc2aee14ab8df77f54c385e6ccf5e265a61905",
+      "gzipBytes": 6219
     },
     {
       "path": "gre-learning/units/release184-1511-1515-e9f72e3afdcc774583cb6f7f3d8579f8fc4b813088268f2076711b5df1ca2abb.json",
       "loading": "shell",
       "bytes": 13384,
-      "sha256": "e9f72e3afdcc774583cb6f7f3d8579f8fc4b813088268f2076711b5df1ca2abb"
+      "sha256": "e9f72e3afdcc774583cb6f7f3d8579f8fc4b813088268f2076711b5df1ca2abb",
+      "gzipBytes": 5638
     },
     {
       "path": "gre-learning/units/release184-1561-1565-209a6ec8cdff8dd0ef41f1a7d9b2ff62e1e54de85abd12e96fcc80a81e891341.json",
       "loading": "shell",
       "bytes": 13149,
-      "sha256": "209a6ec8cdff8dd0ef41f1a7d9b2ff62e1e54de85abd12e96fcc80a81e891341"
+      "sha256": "209a6ec8cdff8dd0ef41f1a7d9b2ff62e1e54de85abd12e96fcc80a81e891341",
+      "gzipBytes": 5657
     },
     {
       "path": "gre-learning/units/release184-1321-1325-2e2c7b73ef83e47d640f4d675154ecefecea80b4e6e89b9871963bd20b5d67a4.json",
       "loading": "shell",
       "bytes": 15107,
-      "sha256": "2e2c7b73ef83e47d640f4d675154ecefecea80b4e6e89b9871963bd20b5d67a4"
+      "sha256": "2e2c7b73ef83e47d640f4d675154ecefecea80b4e6e89b9871963bd20b5d67a4",
+      "gzipBytes": 6178
     },
     {
       "path": "gre-learning/units/release184-1416-1420-ba35e0e36079259ae0e62e10474ce8a7d26f697c040b9af802d69e308431cb0d.json",
       "loading": "shell",
       "bytes": 13633,
-      "sha256": "ba35e0e36079259ae0e62e10474ce8a7d26f697c040b9af802d69e308431cb0d"
+      "sha256": "ba35e0e36079259ae0e62e10474ce8a7d26f697c040b9af802d69e308431cb0d",
+      "gzipBytes": 5635
     },
     {
       "path": "gre-learning/units/release184-1531-1535-2abaf964896400f5bf24d208f15772446fd6caf6b078c998e09938d6920b7148.json",
       "loading": "shell",
       "bytes": 13806,
-      "sha256": "2abaf964896400f5bf24d208f15772446fd6caf6b078c998e09938d6920b7148"
+      "sha256": "2abaf964896400f5bf24d208f15772446fd6caf6b078c998e09938d6920b7148",
+      "gzipBytes": 5841
     },
     {
       "path": "gre-learning/units/release184-1431-1435-5818fecd8044a18082929a6895e5e086cc5acfe088fcb8dd5a107a0434ba24f9.json",
       "loading": "shell",
       "bytes": 14694,
-      "sha256": "5818fecd8044a18082929a6895e5e086cc5acfe088fcb8dd5a107a0434ba24f9"
+      "sha256": "5818fecd8044a18082929a6895e5e086cc5acfe088fcb8dd5a107a0434ba24f9",
+      "gzipBytes": 6149
     },
     {
       "path": "gre-learning/units/release184-1386-1390-f781afe637a4b5b95dfab8bbc7708bd5f48a149cfd28229e62625c59a09672cb.json",
       "loading": "shell",
       "bytes": 14645,
-      "sha256": "f781afe637a4b5b95dfab8bbc7708bd5f48a149cfd28229e62625c59a09672cb"
+      "sha256": "f781afe637a4b5b95dfab8bbc7708bd5f48a149cfd28229e62625c59a09672cb",
+      "gzipBytes": 5976
     },
     {
       "path": "gre-learning/units/release184-1361-1365-2fa4a6ae9a73d06479fc81696116acf3dfe87dd909db617e2164e27280cd7545.json",
       "loading": "shell",
       "bytes": 15370,
-      "sha256": "2fa4a6ae9a73d06479fc81696116acf3dfe87dd909db617e2164e27280cd7545"
+      "sha256": "2fa4a6ae9a73d06479fc81696116acf3dfe87dd909db617e2164e27280cd7545",
+      "gzipBytes": 6178
     },
     {
       "path": "gre-learning/units/release184-1391-1395-959e8310ed127b6f861a1f6a0d0b8adfaeef85e748da40ba96586d5818010e87.json",
       "loading": "shell",
       "bytes": 15083,
-      "sha256": "959e8310ed127b6f861a1f6a0d0b8adfaeef85e748da40ba96586d5818010e87"
+      "sha256": "959e8310ed127b6f861a1f6a0d0b8adfaeef85e748da40ba96586d5818010e87",
+      "gzipBytes": 6124
     },
     {
       "path": "gre-learning/units/release184-1336-1340-350a11d7370c1561ee11f2bf7298192a411428f851e4ff8b4a7897835ecd7d07.json",
       "loading": "shell",
       "bytes": 14542,
-      "sha256": "350a11d7370c1561ee11f2bf7298192a411428f851e4ff8b4a7897835ecd7d07"
+      "sha256": "350a11d7370c1561ee11f2bf7298192a411428f851e4ff8b4a7897835ecd7d07",
+      "gzipBytes": 5879
     },
     {
       "path": "gre-learning/units/release184-1491-1495-0524dee91f4b37451484dcd55511ce44c20fd69dbc8647026ab8e4c0ea07530a.json",
       "loading": "shell",
       "bytes": 13083,
-      "sha256": "0524dee91f4b37451484dcd55511ce44c20fd69dbc8647026ab8e4c0ea07530a"
+      "sha256": "0524dee91f4b37451484dcd55511ce44c20fd69dbc8647026ab8e4c0ea07530a",
+      "gzipBytes": 5470
     },
     {
       "path": "gre-learning/units/release184-1456-1460-d445b20da25af903a635cdc669c0ebab013e9e63447d307d9b8af55b45e715e4.json",
       "loading": "shell",
       "bytes": 13080,
-      "sha256": "d445b20da25af903a635cdc669c0ebab013e9e63447d307d9b8af55b45e715e4"
+      "sha256": "d445b20da25af903a635cdc669c0ebab013e9e63447d307d9b8af55b45e715e4",
+      "gzipBytes": 5613
     },
     {
       "path": "gre-learning/units/release184-1351-1355-76c19327ed80491f4494ed14ba7fea1f65f2f728b17f8b0f4458cc75ca7ab374.json",
       "loading": "shell",
       "bytes": 14746,
-      "sha256": "76c19327ed80491f4494ed14ba7fea1f65f2f728b17f8b0f4458cc75ca7ab374"
+      "sha256": "76c19327ed80491f4494ed14ba7fea1f65f2f728b17f8b0f4458cc75ca7ab374",
+      "gzipBytes": 5982
     },
     {
       "path": "gre-learning/units/release184-1366-1370-814e433872e5b80762be2478abaaeaecabec66f163495b1e61b75617168a62c4.json",
       "loading": "shell",
       "bytes": 14535,
-      "sha256": "814e433872e5b80762be2478abaaeaecabec66f163495b1e61b75617168a62c4"
+      "sha256": "814e433872e5b80762be2478abaaeaecabec66f163495b1e61b75617168a62c4",
+      "gzipBytes": 5672
     },
     {
       "path": "gre-learning/units/release184-1426-1430-ebb5decba57d0f158e019103e43a1d9dc977f08eb126ce20275c3d8cf0be8793.json",
       "loading": "shell",
       "bytes": 14298,
-      "sha256": "ebb5decba57d0f158e019103e43a1d9dc977f08eb126ce20275c3d8cf0be8793"
+      "sha256": "ebb5decba57d0f158e019103e43a1d9dc977f08eb126ce20275c3d8cf0be8793",
+      "gzipBytes": 6060
     },
     {
       "path": "gre-learning/units/release184-1571-1575-023454c22eb6549b55d90bf26710a32f0ee009a7ef869428b3d27b5656109c3d.json",
       "loading": "shell",
       "bytes": 14022,
-      "sha256": "023454c22eb6549b55d90bf26710a32f0ee009a7ef869428b3d27b5656109c3d"
+      "sha256": "023454c22eb6549b55d90bf26710a32f0ee009a7ef869428b3d27b5656109c3d",
+      "gzipBytes": 6005
     },
     {
       "path": "gre-learning/units/release184-1396-1400-fe8a8323d29841a87d433ff61ab8cfaa68f41bd428b9d529ad9ecce01ec5c6a7.json",
       "loading": "shell",
       "bytes": 14302,
-      "sha256": "fe8a8323d29841a87d433ff61ab8cfaa68f41bd428b9d529ad9ecce01ec5c6a7"
+      "sha256": "fe8a8323d29841a87d433ff61ab8cfaa68f41bd428b9d529ad9ecce01ec5c6a7",
+      "gzipBytes": 5882
     },
     {
       "path": "gre-learning/units/release184-1376-1380-204bb19d466d2f5a55c7a25f8ef19c43f42d2816d3d1a3229acd6327fa323610.json",
       "loading": "shell",
       "bytes": 14666,
-      "sha256": "204bb19d466d2f5a55c7a25f8ef19c43f42d2816d3d1a3229acd6327fa323610"
+      "sha256": "204bb19d466d2f5a55c7a25f8ef19c43f42d2816d3d1a3229acd6327fa323610",
+      "gzipBytes": 5931
     },
     {
       "path": "gre-learning/units/release184-1516-1520-e7842bf27078cc07e21651687c475c8a9d4016f99996f827199c57d50973c984.json",
       "loading": "shell",
       "bytes": 13562,
-      "sha256": "e7842bf27078cc07e21651687c475c8a9d4016f99996f827199c57d50973c984"
+      "sha256": "e7842bf27078cc07e21651687c475c8a9d4016f99996f827199c57d50973c984",
+      "gzipBytes": 5710
     },
     {
       "path": "gre-learning/units/release184-1476-1480-2135098ee4448200c0c49af57c39c2f4fdded3e36f666358246e744777ca518c.json",
       "loading": "shell",
       "bytes": 13235,
-      "sha256": "2135098ee4448200c0c49af57c39c2f4fdded3e36f666358246e744777ca518c"
+      "sha256": "2135098ee4448200c0c49af57c39c2f4fdded3e36f666358246e744777ca518c",
+      "gzipBytes": 5497
     },
     {
       "path": "gre-learning/units/release184-1451-1455-32111bd965cac1099ac754c9625ac90a5097f753e3b882f71e1bf883007587fd.json",
       "loading": "shell",
       "bytes": 14049,
-      "sha256": "32111bd965cac1099ac754c9625ac90a5097f753e3b882f71e1bf883007587fd"
+      "sha256": "32111bd965cac1099ac754c9625ac90a5097f753e3b882f71e1bf883007587fd",
+      "gzipBytes": 5850
     },
     {
       "path": "gre-learning/units/release184-1486-1490-202c69518054695d7242836853fcfc4ddca925aff8df3e708bbb14f94d079899.json",
       "loading": "shell",
       "bytes": 13644,
-      "sha256": "202c69518054695d7242836853fcfc4ddca925aff8df3e708bbb14f94d079899"
+      "sha256": "202c69518054695d7242836853fcfc4ddca925aff8df3e708bbb14f94d079899",
+      "gzipBytes": 5650
     },
     {
       "path": "gre-learning/units/release184-1371-1375-7cb0de89cae3b22c3ec9b9b3a42033326b6b44bea51579d674688f20fdcdf8be.json",
       "loading": "shell",
       "bytes": 14841,
-      "sha256": "7cb0de89cae3b22c3ec9b9b3a42033326b6b44bea51579d674688f20fdcdf8be"
+      "sha256": "7cb0de89cae3b22c3ec9b9b3a42033326b6b44bea51579d674688f20fdcdf8be",
+      "gzipBytes": 5918
     },
     {
       "path": "gre-learning/units/release184-1576-1580-d8a9f76198408efee5b85682bd8f1ea902a0a0f56d61bff384c7001b2c526c71.json",
       "loading": "shell",
       "bytes": 14282,
-      "sha256": "d8a9f76198408efee5b85682bd8f1ea902a0a0f56d61bff384c7001b2c526c71"
+      "sha256": "d8a9f76198408efee5b85682bd8f1ea902a0a0f56d61bff384c7001b2c526c71",
+      "gzipBytes": 6222
     },
     {
       "path": "gre-learning/units/release184-1536-1540-b0b0373a286bfbb2f7c84b55d19dc826d36cb29e978b0a48341f8f32051fcf71.json",
       "loading": "shell",
       "bytes": 13717,
-      "sha256": "b0b0373a286bfbb2f7c84b55d19dc826d36cb29e978b0a48341f8f32051fcf71"
+      "sha256": "b0b0373a286bfbb2f7c84b55d19dc826d36cb29e978b0a48341f8f32051fcf71",
+      "gzipBytes": 5727
     },
     {
       "path": "gre-learning/units/release184-1496-1500-2ed23ce3d2889d33ae64b8ce5cbbd0a9d5aec4c09e97bab4046e67a8fa1e52f3.json",
       "loading": "shell",
       "bytes": 14386,
-      "sha256": "2ed23ce3d2889d33ae64b8ce5cbbd0a9d5aec4c09e97bab4046e67a8fa1e52f3"
+      "sha256": "2ed23ce3d2889d33ae64b8ce5cbbd0a9d5aec4c09e97bab4046e67a8fa1e52f3",
+      "gzipBytes": 5983
     },
     {
       "path": "gre-learning/units/release184-1446-1450-6c337038a4140ff24b51982c11aaef656249678250bcafa2c4cbbedbb464f10c.json",
       "loading": "shell",
       "bytes": 14348,
-      "sha256": "6c337038a4140ff24b51982c11aaef656249678250bcafa2c4cbbedbb464f10c"
+      "sha256": "6c337038a4140ff24b51982c11aaef656249678250bcafa2c4cbbedbb464f10c",
+      "gzipBytes": 6128
     },
     {
       "path": "tests/audit-pack-index-performance.mjs",
@@ -5143,583 +5386,680 @@
       "path": "gre-learning/units/release189-1786-1790-ffe158965dd5ce408e1f9e355ba1c8f50b2e25e8d3b09dc471bf1c9b70188f14.json",
       "loading": "shell",
       "bytes": 19311,
-      "sha256": "ffe158965dd5ce408e1f9e355ba1c8f50b2e25e8d3b09dc471bf1c9b70188f14"
+      "sha256": "ffe158965dd5ce408e1f9e355ba1c8f50b2e25e8d3b09dc471bf1c9b70188f14",
+      "gzipBytes": 7723
     },
     {
       "path": "gre-learning/units/release189-1891-1895-44975c7335af54b4c3c161713a44f58d3ff4a8fb203abf0a2ffbe61c8f93c492.json",
       "loading": "shell",
       "bytes": 17961,
-      "sha256": "44975c7335af54b4c3c161713a44f58d3ff4a8fb203abf0a2ffbe61c8f93c492"
+      "sha256": "44975c7335af54b4c3c161713a44f58d3ff4a8fb203abf0a2ffbe61c8f93c492",
+      "gzipBytes": 7152
     },
     {
       "path": "gre-learning/units/release189-1761-1765-941a5bb31754b73689ffdc20114087775a8f287a2629db9cea606425da3c3e4b.json",
       "loading": "shell",
       "bytes": 17649,
-      "sha256": "941a5bb31754b73689ffdc20114087775a8f287a2629db9cea606425da3c3e4b"
+      "sha256": "941a5bb31754b73689ffdc20114087775a8f287a2629db9cea606425da3c3e4b",
+      "gzipBytes": 7427
     },
     {
       "path": "gre-learning/units/release189-1886-1890-5638975b0e0864d95da0acd087b6cc215f0a55dac5481dc0e33aef218fde589d.json",
       "loading": "shell",
       "bytes": 17181,
-      "sha256": "5638975b0e0864d95da0acd087b6cc215f0a55dac5481dc0e33aef218fde589d"
+      "sha256": "5638975b0e0864d95da0acd087b6cc215f0a55dac5481dc0e33aef218fde589d",
+      "gzipBytes": 6911
     },
     {
       "path": "gre-learning/units/release189-1721-1725-de714aee5de1daf0f7ec041b14123def1bc7133ce0ccd598b4da8a6b8854d42d.json",
       "loading": "shell",
       "bytes": 15513,
-      "sha256": "de714aee5de1daf0f7ec041b14123def1bc7133ce0ccd598b4da8a6b8854d42d"
+      "sha256": "de714aee5de1daf0f7ec041b14123def1bc7133ce0ccd598b4da8a6b8854d42d",
+      "gzipBytes": 6388
     },
     {
       "path": "gre-learning/units/release189-1846-1850-faeea8d28261a6716072d78600d0fd414b1b0579164183ce22af5c0780d08cd0.json",
       "loading": "shell",
       "bytes": 20040,
-      "sha256": "faeea8d28261a6716072d78600d0fd414b1b0579164183ce22af5c0780d08cd0"
+      "sha256": "faeea8d28261a6716072d78600d0fd414b1b0579164183ce22af5c0780d08cd0",
+      "gzipBytes": 7751
     },
     {
       "path": "gre-learning/units/release189-1611-1615-7e4fe6860cffa72d0211e35ef2bbe73fa1ab35fb1952f5b4ca96cf3a672347f4.json",
       "loading": "shell",
       "bytes": 15668,
-      "sha256": "7e4fe6860cffa72d0211e35ef2bbe73fa1ab35fb1952f5b4ca96cf3a672347f4"
+      "sha256": "7e4fe6860cffa72d0211e35ef2bbe73fa1ab35fb1952f5b4ca96cf3a672347f4",
+      "gzipBytes": 6527
     },
     {
       "path": "gre-learning/units/release189-1876-1880-c2031baff4dcac1db634ebf00fecce4f438f2757a36165e8656aa43c4009e43f.json",
       "loading": "shell",
       "bytes": 16938,
-      "sha256": "c2031baff4dcac1db634ebf00fecce4f438f2757a36165e8656aa43c4009e43f"
+      "sha256": "c2031baff4dcac1db634ebf00fecce4f438f2757a36165e8656aa43c4009e43f",
+      "gzipBytes": 6848
     },
     {
       "path": "gre-learning/units/release189-1756-1760-cc772a4c16cc87c456a4317be51e5edeae3cd100daa893f158d5653c357fa04b.json",
       "loading": "shell",
       "bytes": 17644,
-      "sha256": "cc772a4c16cc87c456a4317be51e5edeae3cd100daa893f158d5653c357fa04b"
+      "sha256": "cc772a4c16cc87c456a4317be51e5edeae3cd100daa893f158d5653c357fa04b",
+      "gzipBytes": 7603
     },
     {
       "path": "gre-learning/units/release189-1841-1845-3858748cd6808b92e0ca56afc793c3007cfc33b1be3807b01387e078b0e3b338.json",
       "loading": "shell",
       "bytes": 17000,
-      "sha256": "3858748cd6808b92e0ca56afc793c3007cfc33b1be3807b01387e078b0e3b338"
+      "sha256": "3858748cd6808b92e0ca56afc793c3007cfc33b1be3807b01387e078b0e3b338",
+      "gzipBytes": 6796
     },
     {
       "path": "gre-learning/units/release189-1771-1775-b6de6464afd94cf2c15f614194f2236cc0eb079644dbf8a48eb5f6ae29a5c39a.json",
       "loading": "shell",
       "bytes": 20866,
-      "sha256": "b6de6464afd94cf2c15f614194f2236cc0eb079644dbf8a48eb5f6ae29a5c39a"
+      "sha256": "b6de6464afd94cf2c15f614194f2236cc0eb079644dbf8a48eb5f6ae29a5c39a",
+      "gzipBytes": 8849
     },
     {
       "path": "gre-learning/units/release189-1766-1770-ee23e7f19c10aefbeac9ebb08242dd1768ffd65fb8695f4a40851bd841640789.json",
       "loading": "shell",
       "bytes": 17528,
-      "sha256": "ee23e7f19c10aefbeac9ebb08242dd1768ffd65fb8695f4a40851bd841640789"
+      "sha256": "ee23e7f19c10aefbeac9ebb08242dd1768ffd65fb8695f4a40851bd841640789",
+      "gzipBytes": 7257
     },
     {
       "path": "gre-learning/units/release189-1836-1840-bd3af19da4d83c223ee56da9137085b2acc9f8218eff84ed3ff5168248af607e.json",
       "loading": "shell",
       "bytes": 16620,
-      "sha256": "bd3af19da4d83c223ee56da9137085b2acc9f8218eff84ed3ff5168248af607e"
+      "sha256": "bd3af19da4d83c223ee56da9137085b2acc9f8218eff84ed3ff5168248af607e",
+      "gzipBytes": 6792
     },
     {
       "path": "gre-learning/units/release189-1726-1730-c86cd5f4e47a53679572576dc7b301919fce3bcfdc0a1dedcf17de04a155bcea.json",
       "loading": "shell",
       "bytes": 15879,
-      "sha256": "c86cd5f4e47a53679572576dc7b301919fce3bcfdc0a1dedcf17de04a155bcea"
+      "sha256": "c86cd5f4e47a53679572576dc7b301919fce3bcfdc0a1dedcf17de04a155bcea",
+      "gzipBytes": 6723
     },
     {
       "path": "gre-learning/units/release189-1651-1655-5b17df7bda27d1793d5bb2fb44138e2710ef4a9838901b3c5e6c2e5370eccfbe.json",
       "loading": "shell",
       "bytes": 15082,
-      "sha256": "5b17df7bda27d1793d5bb2fb44138e2710ef4a9838901b3c5e6c2e5370eccfbe"
+      "sha256": "5b17df7bda27d1793d5bb2fb44138e2710ef4a9838901b3c5e6c2e5370eccfbe",
+      "gzipBytes": 6527
     },
     {
       "path": "gre-learning/units/release189-1631-1635-c16c87f0a4e4e17e1f7e2cb5a350a66938038a3c6c6a30fbd6e60f9f48fccc55.json",
       "loading": "shell",
       "bytes": 14458,
-      "sha256": "c16c87f0a4e4e17e1f7e2cb5a350a66938038a3c6c6a30fbd6e60f9f48fccc55"
+      "sha256": "c16c87f0a4e4e17e1f7e2cb5a350a66938038a3c6c6a30fbd6e60f9f48fccc55",
+      "gzipBytes": 6178
     },
     {
       "path": "gre-learning/units/release189-1646-1650-30ecb133f9ba526b7ee07c64618046fca8a89ec680f0980716e380c8379383f1.json",
       "loading": "shell",
       "bytes": 15448,
-      "sha256": "30ecb133f9ba526b7ee07c64618046fca8a89ec680f0980716e380c8379383f1"
+      "sha256": "30ecb133f9ba526b7ee07c64618046fca8a89ec680f0980716e380c8379383f1",
+      "gzipBytes": 6809
     },
     {
       "path": "gre-learning/units/release189-1811-1815-2b4642932d0a345375e54d0bfed24871eb8eac8b226ed4a38c5c7ba26cfa898a.json",
       "loading": "shell",
       "bytes": 17627,
-      "sha256": "2b4642932d0a345375e54d0bfed24871eb8eac8b226ed4a38c5c7ba26cfa898a"
+      "sha256": "2b4642932d0a345375e54d0bfed24871eb8eac8b226ed4a38c5c7ba26cfa898a",
+      "gzipBytes": 7017
     },
     {
       "path": "gre-learning/units/release189-1871-1875-cfbfb50ec50d4b1ad5a550e1246bd137c996b7770e8e35d223092344e17ef6bd.json",
       "loading": "shell",
       "bytes": 19039,
-      "sha256": "cfbfb50ec50d4b1ad5a550e1246bd137c996b7770e8e35d223092344e17ef6bd"
+      "sha256": "cfbfb50ec50d4b1ad5a550e1246bd137c996b7770e8e35d223092344e17ef6bd",
+      "gzipBytes": 7543
     },
     {
       "path": "gre-learning/units/release189-1821-1825-8051f17feba6e1040c79d2b122608c1858a713d23787051e8c1c8eea85d7414f.json",
       "loading": "shell",
       "bytes": 18346,
-      "sha256": "8051f17feba6e1040c79d2b122608c1858a713d23787051e8c1c8eea85d7414f"
+      "sha256": "8051f17feba6e1040c79d2b122608c1858a713d23787051e8c1c8eea85d7414f",
+      "gzipBytes": 7412
     },
     {
       "path": "gre-learning/units/release189-1881-1885-df131b524a03ee95054085bdc2283d80d3fe311cbe74c6335cafe55f1c2f1b1e.json",
       "loading": "shell",
       "bytes": 17566,
-      "sha256": "df131b524a03ee95054085bdc2283d80d3fe311cbe74c6335cafe55f1c2f1b1e"
+      "sha256": "df131b524a03ee95054085bdc2283d80d3fe311cbe74c6335cafe55f1c2f1b1e",
+      "gzipBytes": 7149
     },
     {
       "path": "gre-learning/units/release189-1661-1665-6dfc5f832d2c8d13bc25b049a8b5c251883bc68568f55375313f17fda31fda39.json",
       "loading": "shell",
       "bytes": 16182,
-      "sha256": "6dfc5f832d2c8d13bc25b049a8b5c251883bc68568f55375313f17fda31fda39"
+      "sha256": "6dfc5f832d2c8d13bc25b049a8b5c251883bc68568f55375313f17fda31fda39",
+      "gzipBytes": 6806
     },
     {
       "path": "gre-learning/units/release189-1751-1755-ca1c713b7067266bacb23ce1fa615da8e616d5a1b329396d276f7ddd4f60a627.json",
       "loading": "shell",
       "bytes": 17305,
-      "sha256": "ca1c713b7067266bacb23ce1fa615da8e616d5a1b329396d276f7ddd4f60a627"
+      "sha256": "ca1c713b7067266bacb23ce1fa615da8e616d5a1b329396d276f7ddd4f60a627",
+      "gzipBytes": 7416
     },
     {
       "path": "gre-learning/units/release189-1671-1675-d522853f077336659f36c3dc0eb4da33cc925c9e4cded1124c1ed4265b8b08d5.json",
       "loading": "shell",
       "bytes": 15733,
-      "sha256": "d522853f077336659f36c3dc0eb4da33cc925c9e4cded1124c1ed4265b8b08d5"
+      "sha256": "d522853f077336659f36c3dc0eb4da33cc925c9e4cded1124c1ed4265b8b08d5",
+      "gzipBytes": 6612
     },
     {
       "path": "gre-learning/units/release189-1626-1630-600667f4098eded0cd14cdc79efd9be9493c5f8be090c9865b877a295e367f95.json",
       "loading": "shell",
       "bytes": 15073,
-      "sha256": "600667f4098eded0cd14cdc79efd9be9493c5f8be090c9865b877a295e367f95"
+      "sha256": "600667f4098eded0cd14cdc79efd9be9493c5f8be090c9865b877a295e367f95",
+      "gzipBytes": 6264
     },
     {
       "path": "gre-learning/units/release189-1776-1780-2efdf5fed7009192be2aedf6121fdd34b61bd595076c863b8edeb785ddf03151.json",
       "loading": "shell",
       "bytes": 18921,
-      "sha256": "2efdf5fed7009192be2aedf6121fdd34b61bd595076c863b8edeb785ddf03151"
+      "sha256": "2efdf5fed7009192be2aedf6121fdd34b61bd595076c863b8edeb785ddf03151",
+      "gzipBytes": 7675
     },
     {
       "path": "gre-learning/units/release189-1781-1785-312e07632f45894a8e00fb79af7c96407523dd0270e6c2a5fb66a669891bd6e2.json",
       "loading": "shell",
       "bytes": 19341,
-      "sha256": "312e07632f45894a8e00fb79af7c96407523dd0270e6c2a5fb66a669891bd6e2"
+      "sha256": "312e07632f45894a8e00fb79af7c96407523dd0270e6c2a5fb66a669891bd6e2",
+      "gzipBytes": 7767
     },
     {
       "path": "gre-learning/units/release189-1736-1740-820091e3551055363d0c0cb9e06da78e374c895220962fbbf2d52056421e6403.json",
       "loading": "shell",
       "bytes": 15246,
-      "sha256": "820091e3551055363d0c0cb9e06da78e374c895220962fbbf2d52056421e6403"
+      "sha256": "820091e3551055363d0c0cb9e06da78e374c895220962fbbf2d52056421e6403",
+      "gzipBytes": 6390
     },
     {
       "path": "gre-learning/units/release189-1621-1625-ae1326bab984c964f40763b924e1e4f2a32ef210139003cebdc9ad1afe617952.json",
       "loading": "shell",
       "bytes": 12870,
-      "sha256": "ae1326bab984c964f40763b924e1e4f2a32ef210139003cebdc9ad1afe617952"
+      "sha256": "ae1326bab984c964f40763b924e1e4f2a32ef210139003cebdc9ad1afe617952",
+      "gzipBytes": 5594
     },
     {
       "path": "gre-learning/units/release189-1701-1705-a22f2bf698fac6d5f37eb85d899a3bfd08759b2f7b29293b61cca70c2008fc07.json",
       "loading": "shell",
       "bytes": 15461,
-      "sha256": "a22f2bf698fac6d5f37eb85d899a3bfd08759b2f7b29293b61cca70c2008fc07"
+      "sha256": "a22f2bf698fac6d5f37eb85d899a3bfd08759b2f7b29293b61cca70c2008fc07",
+      "gzipBytes": 6462
     },
     {
       "path": "gre-learning/units/release189-1636-1640-85d30530105724853051660faf780b87ee95be243f4c68f98d43ee0e3e9857f9.json",
       "loading": "shell",
       "bytes": 15438,
-      "sha256": "85d30530105724853051660faf780b87ee95be243f4c68f98d43ee0e3e9857f9"
+      "sha256": "85d30530105724853051660faf780b87ee95be243f4c68f98d43ee0e3e9857f9",
+      "gzipBytes": 6582
     },
     {
       "path": "gre-learning/units/release189-1696-1700-bb3eaecf87a22c32a7de1cf105e71f0b98401c7a300e41431c8eaa2c710d7a90.json",
       "loading": "shell",
       "bytes": 16214,
-      "sha256": "bb3eaecf87a22c32a7de1cf105e71f0b98401c7a300e41431c8eaa2c710d7a90"
+      "sha256": "bb3eaecf87a22c32a7de1cf105e71f0b98401c7a300e41431c8eaa2c710d7a90",
+      "gzipBytes": 6674
     },
     {
       "path": "gre-learning/units/release189-1681-1685-ee3e34fbab7acf8ef0d09667d56f8f43c121fae96a46d37831c4cf9f68efb61a.json",
       "loading": "shell",
       "bytes": 16137,
-      "sha256": "ee3e34fbab7acf8ef0d09667d56f8f43c121fae96a46d37831c4cf9f68efb61a"
+      "sha256": "ee3e34fbab7acf8ef0d09667d56f8f43c121fae96a46d37831c4cf9f68efb61a",
+      "gzipBytes": 6812
     },
     {
       "path": "gre-learning/units/release189-1741-1745-3728d9204b4dbd33d80f25f36747f81928ba1cb311455837b46bb990d95482d5.json",
       "loading": "shell",
       "bytes": 16351,
-      "sha256": "3728d9204b4dbd33d80f25f36747f81928ba1cb311455837b46bb990d95482d5"
+      "sha256": "3728d9204b4dbd33d80f25f36747f81928ba1cb311455837b46bb990d95482d5",
+      "gzipBytes": 7111
     },
     {
       "path": "gre-learning/units/release189-1861-1865-616436b68777f705e964f5de48a4d7420196f7685d29b62fe889191e70d30c8e.json",
       "loading": "shell",
       "bytes": 18964,
-      "sha256": "616436b68777f705e964f5de48a4d7420196f7685d29b62fe889191e70d30c8e"
+      "sha256": "616436b68777f705e964f5de48a4d7420196f7685d29b62fe889191e70d30c8e",
+      "gzipBytes": 7674
     },
     {
       "path": "gre-learning/units/release189-1831-1835-047cbad954c8208b4a9cb8dd99714f416e1a9331c7d220facf49f96404c7f45c.json",
       "loading": "shell",
       "bytes": 18477,
-      "sha256": "047cbad954c8208b4a9cb8dd99714f416e1a9331c7d220facf49f96404c7f45c"
+      "sha256": "047cbad954c8208b4a9cb8dd99714f416e1a9331c7d220facf49f96404c7f45c",
+      "gzipBytes": 7382
     },
     {
       "path": "gre-learning/units/release189-1606-1610-8f72aa7f640137e1803b9babbf30af1451092a683a27d725619e59a955f76335.json",
       "loading": "shell",
       "bytes": 15809,
-      "sha256": "8f72aa7f640137e1803b9babbf30af1451092a683a27d725619e59a955f76335"
+      "sha256": "8f72aa7f640137e1803b9babbf30af1451092a683a27d725619e59a955f76335",
+      "gzipBytes": 6473
     },
     {
       "path": "gre-learning/units/release189-1601-1605-64562627a9a7b5841765c59843c31b8ff05d89623952b16ab20a84e8ed2b125c.json",
       "loading": "shell",
       "bytes": 15522,
-      "sha256": "64562627a9a7b5841765c59843c31b8ff05d89623952b16ab20a84e8ed2b125c"
+      "sha256": "64562627a9a7b5841765c59843c31b8ff05d89623952b16ab20a84e8ed2b125c",
+      "gzipBytes": 6415
     },
     {
       "path": "gre-learning/units/release189-1716-1720-1368724e1963e5ca75c7bb11b12df93c85973a37379309650386b9c66fc8b24c.json",
       "loading": "shell",
       "bytes": 16118,
-      "sha256": "1368724e1963e5ca75c7bb11b12df93c85973a37379309650386b9c66fc8b24c"
+      "sha256": "1368724e1963e5ca75c7bb11b12df93c85973a37379309650386b9c66fc8b24c",
+      "gzipBytes": 6750
     },
     {
       "path": "gre-learning/units/release189-1801-1805-83cffeb0ec9babd9ccaba407a4a04dc97e3df42ea7c50172b87eb7d0787dbe39.json",
       "loading": "shell",
       "bytes": 18781,
-      "sha256": "83cffeb0ec9babd9ccaba407a4a04dc97e3df42ea7c50172b87eb7d0787dbe39"
+      "sha256": "83cffeb0ec9babd9ccaba407a4a04dc97e3df42ea7c50172b87eb7d0787dbe39",
+      "gzipBytes": 7563
     },
     {
       "path": "gre-learning/units/release189-1731-1735-772038104924964d4d51415540f1ab0aa66aa40d9feea1e792eff5b911f4ab18.json",
       "loading": "shell",
       "bytes": 15719,
-      "sha256": "772038104924964d4d51415540f1ab0aa66aa40d9feea1e792eff5b911f4ab18"
+      "sha256": "772038104924964d4d51415540f1ab0aa66aa40d9feea1e792eff5b911f4ab18",
+      "gzipBytes": 6533
     },
     {
       "path": "gre-learning/units/release189-1676-1680-2dbf306c4fa10a8d6be7918046a74df530c9b4813f6c2a588bcfe81fbb5b7ab6.json",
       "loading": "shell",
       "bytes": 15817,
-      "sha256": "2dbf306c4fa10a8d6be7918046a74df530c9b4813f6c2a588bcfe81fbb5b7ab6"
+      "sha256": "2dbf306c4fa10a8d6be7918046a74df530c9b4813f6c2a588bcfe81fbb5b7ab6",
+      "gzipBytes": 6791
     },
     {
       "path": "gre-learning/units/release189-1746-1750-9026f09ca03c463ca7671d6a3ddac4ff0311b0fec9f7df8d3186c5d571588945.json",
       "loading": "shell",
       "bytes": 17348,
-      "sha256": "9026f09ca03c463ca7671d6a3ddac4ff0311b0fec9f7df8d3186c5d571588945"
+      "sha256": "9026f09ca03c463ca7671d6a3ddac4ff0311b0fec9f7df8d3186c5d571588945",
+      "gzipBytes": 7464
     },
     {
       "path": "gre-learning/units/release189-1616-1620-12539ca6434a0faaeb0674711b429ddb67f25b017b0bcff1bb39d423d46caa46.json",
       "loading": "shell",
       "bytes": 16095,
-      "sha256": "12539ca6434a0faaeb0674711b429ddb67f25b017b0bcff1bb39d423d46caa46"
+      "sha256": "12539ca6434a0faaeb0674711b429ddb67f25b017b0bcff1bb39d423d46caa46",
+      "gzipBytes": 6714
     },
     {
       "path": "gre-learning/units/release189-1816-1820-df3f72684c64400b2531e0eb400358c4e3a09eb43d3e3e47efa7b69f8ad728ae.json",
       "loading": "shell",
       "bytes": 18556,
-      "sha256": "df3f72684c64400b2531e0eb400358c4e3a09eb43d3e3e47efa7b69f8ad728ae"
+      "sha256": "df3f72684c64400b2531e0eb400358c4e3a09eb43d3e3e47efa7b69f8ad728ae",
+      "gzipBytes": 7576
     },
     {
       "path": "gre-learning/units/release189-1686-1690-3573202d2b8cea399ef9a207ab1384c5bb3cfd22cba1d77978ed890ca9759da6.json",
       "loading": "shell",
       "bytes": 16227,
-      "sha256": "3573202d2b8cea399ef9a207ab1384c5bb3cfd22cba1d77978ed890ca9759da6"
+      "sha256": "3573202d2b8cea399ef9a207ab1384c5bb3cfd22cba1d77978ed890ca9759da6",
+      "gzipBytes": 6757
     },
     {
       "path": "gre-learning/units/release189-1656-1660-5f6ef8fd5806426745764ec3af23ebf866c80dafb385e5e70cdf525119936929.json",
       "loading": "shell",
       "bytes": 15662,
-      "sha256": "5f6ef8fd5806426745764ec3af23ebf866c80dafb385e5e70cdf525119936929"
+      "sha256": "5f6ef8fd5806426745764ec3af23ebf866c80dafb385e5e70cdf525119936929",
+      "gzipBytes": 6597
     },
     {
       "path": "gre-learning/units/release189-1641-1645-592470efff6e4b8599b0bcb57befbe45716453626511c5ef8257d2079451ec6b.json",
       "loading": "shell",
       "bytes": 15206,
-      "sha256": "592470efff6e4b8599b0bcb57befbe45716453626511c5ef8257d2079451ec6b"
+      "sha256": "592470efff6e4b8599b0bcb57befbe45716453626511c5ef8257d2079451ec6b",
+      "gzipBytes": 6488
     },
     {
       "path": "gre-learning/units/release189-1806-1810-4937a46775b3db6528ed798784eff06353175cd396efeabb85c9d6012bea20c5.json",
       "loading": "shell",
       "bytes": 17412,
-      "sha256": "4937a46775b3db6528ed798784eff06353175cd396efeabb85c9d6012bea20c5"
+      "sha256": "4937a46775b3db6528ed798784eff06353175cd396efeabb85c9d6012bea20c5",
+      "gzipBytes": 7099
     },
     {
       "path": "gre-learning/units/release189-1856-1860-c633db86adecf1fa38ee71af80fc3609acac6b2febd3378719331e4d2d629946.json",
       "loading": "shell",
       "bytes": 18433,
-      "sha256": "c633db86adecf1fa38ee71af80fc3609acac6b2febd3378719331e4d2d629946"
+      "sha256": "c633db86adecf1fa38ee71af80fc3609acac6b2febd3378719331e4d2d629946",
+      "gzipBytes": 7105
     },
     {
       "path": "gre-learning/units/release189-1791-1795-2e03e7a15a35438283e2945b9e04131aa4387f5d2d13864516b4c2a7c817e764.json",
       "loading": "shell",
       "bytes": 19658,
-      "sha256": "2e03e7a15a35438283e2945b9e04131aa4387f5d2d13864516b4c2a7c817e764"
+      "sha256": "2e03e7a15a35438283e2945b9e04131aa4387f5d2d13864516b4c2a7c817e764",
+      "gzipBytes": 7817
     },
     {
       "path": "gre-learning/units/release189-1851-1855-30ecc569cecf6554e2f4f59c4852059b4e24bd6f16e1fee6fbf4d0038da3ab07.json",
       "loading": "shell",
       "bytes": 17713,
-      "sha256": "30ecc569cecf6554e2f4f59c4852059b4e24bd6f16e1fee6fbf4d0038da3ab07"
+      "sha256": "30ecc569cecf6554e2f4f59c4852059b4e24bd6f16e1fee6fbf4d0038da3ab07",
+      "gzipBytes": 7036
     },
     {
       "path": "gre-learning/units/release189-1691-1695-f44e9788ec6935e8e0b2d51cfe5c8f59d82e0ecd7bd52f54fb1ae2ca9a7e2d2c.json",
       "loading": "shell",
       "bytes": 15726,
-      "sha256": "f44e9788ec6935e8e0b2d51cfe5c8f59d82e0ecd7bd52f54fb1ae2ca9a7e2d2c"
+      "sha256": "f44e9788ec6935e8e0b2d51cfe5c8f59d82e0ecd7bd52f54fb1ae2ca9a7e2d2c",
+      "gzipBytes": 6645
     },
     {
       "path": "gre-learning/units/release189-1796-1800-7234b13b0d2efe659192f02239ee585221c26a15eacc3d48e1b55b514442b40f.json",
       "loading": "shell",
       "bytes": 20486,
-      "sha256": "7234b13b0d2efe659192f02239ee585221c26a15eacc3d48e1b55b514442b40f"
+      "sha256": "7234b13b0d2efe659192f02239ee585221c26a15eacc3d48e1b55b514442b40f",
+      "gzipBytes": 8155
     },
     {
       "path": "gre-learning/units/release189-1666-1670-9fd8b4815ed4755aba9d470b60bc07a06636f08006ba261e8178e86612a08928.json",
       "loading": "shell",
       "bytes": 15300,
-      "sha256": "9fd8b4815ed4755aba9d470b60bc07a06636f08006ba261e8178e86612a08928"
+      "sha256": "9fd8b4815ed4755aba9d470b60bc07a06636f08006ba261e8178e86612a08928",
+      "gzipBytes": 6523
     },
     {
       "path": "gre-learning/units/release189-1706-1710-3ebd3d10cd00a0b446fec9372cf14349ae66de2e9b917d54a95867b496acca64.json",
       "loading": "shell",
       "bytes": 16527,
-      "sha256": "3ebd3d10cd00a0b446fec9372cf14349ae66de2e9b917d54a95867b496acca64"
+      "sha256": "3ebd3d10cd00a0b446fec9372cf14349ae66de2e9b917d54a95867b496acca64",
+      "gzipBytes": 6847
     },
     {
       "path": "gre-learning/units/release189-1826-1830-00fb952d20837317a02d874c4e99dc20fb312001d3d8391da5264d4d4767401b.json",
       "loading": "shell",
       "bytes": 18758,
-      "sha256": "00fb952d20837317a02d874c4e99dc20fb312001d3d8391da5264d4d4767401b"
+      "sha256": "00fb952d20837317a02d874c4e99dc20fb312001d3d8391da5264d4d4767401b",
+      "gzipBytes": 7513
     },
     {
       "path": "gre-learning/units/release189-1711-1715-66f34cb4eba946561097d78fac762c2c82426f5986983cf37f53a94f14f5b679.json",
       "loading": "shell",
       "bytes": 15402,
-      "sha256": "66f34cb4eba946561097d78fac762c2c82426f5986983cf37f53a94f14f5b679"
+      "sha256": "66f34cb4eba946561097d78fac762c2c82426f5986983cf37f53a94f14f5b679",
+      "gzipBytes": 6270
     },
     {
       "path": "gre-learning/units/release189-1866-1870-bbdb2dfa0d9aa2c2ca48e95eb5bb45b19d5ceef5953cb5e3d438a3536f2b012e.json",
       "loading": "shell",
       "bytes": 19016,
-      "sha256": "bbdb2dfa0d9aa2c2ca48e95eb5bb45b19d5ceef5953cb5e3d438a3536f2b012e"
+      "sha256": "bbdb2dfa0d9aa2c2ca48e95eb5bb45b19d5ceef5953cb5e3d438a3536f2b012e",
+      "gzipBytes": 7604
     },
     {
       "path": "gre-learning/units/release190-1896-1900-28357876f5e8978df05cfb58901f08690083b498961d41f28e0ccc2bcf744ad3.json",
       "loading": "shell",
       "bytes": 17000,
-      "sha256": "28357876f5e8978df05cfb58901f08690083b498961d41f28e0ccc2bcf744ad3"
+      "sha256": "28357876f5e8978df05cfb58901f08690083b498961d41f28e0ccc2bcf744ad3",
+      "gzipBytes": 6839
     },
     {
       "path": "gre-learning/units/release190-1901-1905-5898e887f2c22e8c834056115895dc0f31c568f84803cabc8e40d57ae0ada642.json",
       "loading": "shell",
       "bytes": 17532,
-      "sha256": "5898e887f2c22e8c834056115895dc0f31c568f84803cabc8e40d57ae0ada642"
+      "sha256": "5898e887f2c22e8c834056115895dc0f31c568f84803cabc8e40d57ae0ada642",
+      "gzipBytes": 6867
     },
     {
       "path": "gre-learning/units/release190-1906-1910-fa8cd5011764eb2bb55c2aa5d0cc531685ecdbd7513c5db32380d56ee53755ff.json",
       "loading": "shell",
       "bytes": 17501,
-      "sha256": "fa8cd5011764eb2bb55c2aa5d0cc531685ecdbd7513c5db32380d56ee53755ff"
+      "sha256": "fa8cd5011764eb2bb55c2aa5d0cc531685ecdbd7513c5db32380d56ee53755ff",
+      "gzipBytes": 6896
     },
     {
       "path": "gre-learning/units/release190-1911-1915-64f826490973baec1701a33f113fe9865ac9328844a45562770177b7c4bea730.json",
       "loading": "shell",
       "bytes": 18194,
-      "sha256": "64f826490973baec1701a33f113fe9865ac9328844a45562770177b7c4bea730"
+      "sha256": "64f826490973baec1701a33f113fe9865ac9328844a45562770177b7c4bea730",
+      "gzipBytes": 7504
     },
     {
       "path": "gre-learning/units/release190-1916-1920-a976931194b3e3673a07009405f1de5b8d0ce89118eb520595784a0172bc2641.json",
       "loading": "shell",
       "bytes": 17035,
-      "sha256": "a976931194b3e3673a07009405f1de5b8d0ce89118eb520595784a0172bc2641"
+      "sha256": "a976931194b3e3673a07009405f1de5b8d0ce89118eb520595784a0172bc2641",
+      "gzipBytes": 6700
     },
     {
       "path": "gre-learning/units/release190-1921-1925-bd9a6c09eef8c7342aa531aeaa751431467c0b654d5286f72a1e6d316dd2f1d7.json",
       "loading": "shell",
       "bytes": 17160,
-      "sha256": "bd9a6c09eef8c7342aa531aeaa751431467c0b654d5286f72a1e6d316dd2f1d7"
+      "sha256": "bd9a6c09eef8c7342aa531aeaa751431467c0b654d5286f72a1e6d316dd2f1d7",
+      "gzipBytes": 6773
     },
     {
       "path": "gre-learning/units/release190-1926-1930-1a3bae6f4e790780ae51a9f63a5d510ca97ed796e816e4d3a59b029281a5673e.json",
       "loading": "shell",
       "bytes": 16660,
-      "sha256": "1a3bae6f4e790780ae51a9f63a5d510ca97ed796e816e4d3a59b029281a5673e"
+      "sha256": "1a3bae6f4e790780ae51a9f63a5d510ca97ed796e816e4d3a59b029281a5673e",
+      "gzipBytes": 6683
     },
     {
       "path": "gre-learning/units/release190-1931-1935-403baacf796dceda9656a0c862b9c781f2f17ba04dfb51736be4093363798750.json",
       "loading": "shell",
       "bytes": 15414,
-      "sha256": "403baacf796dceda9656a0c862b9c781f2f17ba04dfb51736be4093363798750"
+      "sha256": "403baacf796dceda9656a0c862b9c781f2f17ba04dfb51736be4093363798750",
+      "gzipBytes": 6049
     },
     {
       "path": "gre-learning/units/release190-1936-1940-e7a528b4fc8df3b25617bfc9c7e31d7440d192b4a06169e677d95e8f0216b752.json",
       "loading": "shell",
       "bytes": 13444,
-      "sha256": "e7a528b4fc8df3b25617bfc9c7e31d7440d192b4a06169e677d95e8f0216b752"
+      "sha256": "e7a528b4fc8df3b25617bfc9c7e31d7440d192b4a06169e677d95e8f0216b752",
+      "gzipBytes": 5529
     },
     {
       "path": "gre-learning/units/release190-1941-1945-aaf73f5006ea1e41636e3112f2fd6bec3cfbbf427c2158d864e658dcbcf0bfc2.json",
       "loading": "shell",
       "bytes": 14576,
-      "sha256": "aaf73f5006ea1e41636e3112f2fd6bec3cfbbf427c2158d864e658dcbcf0bfc2"
+      "sha256": "aaf73f5006ea1e41636e3112f2fd6bec3cfbbf427c2158d864e658dcbcf0bfc2",
+      "gzipBytes": 6067
     },
     {
       "path": "gre-learning/units/release190-1946-1950-9fdbd16a92782fafa3eee05b9db00f40141e1644833db004126d5d20acb1e93c.json",
       "loading": "shell",
       "bytes": 14661,
-      "sha256": "9fdbd16a92782fafa3eee05b9db00f40141e1644833db004126d5d20acb1e93c"
+      "sha256": "9fdbd16a92782fafa3eee05b9db00f40141e1644833db004126d5d20acb1e93c",
+      "gzipBytes": 6131
     },
     {
       "path": "gre-learning/units/release190-1951-1955-7d4531742b7c2002694528e47e583affda02ddd71baf191a95fc691d83799555.json",
       "loading": "shell",
       "bytes": 15852,
-      "sha256": "7d4531742b7c2002694528e47e583affda02ddd71baf191a95fc691d83799555"
+      "sha256": "7d4531742b7c2002694528e47e583affda02ddd71baf191a95fc691d83799555",
+      "gzipBytes": 6489
     },
     {
       "path": "gre-learning/units/release190-1956-1960-092201d0aeb73794e98072edf5565dfa7f2506c217d85e76c92e01c0c916069e.json",
       "loading": "shell",
       "bytes": 15806,
-      "sha256": "092201d0aeb73794e98072edf5565dfa7f2506c217d85e76c92e01c0c916069e"
+      "sha256": "092201d0aeb73794e98072edf5565dfa7f2506c217d85e76c92e01c0c916069e",
+      "gzipBytes": 6554
     },
     {
       "path": "gre-learning/units/release190-1961-1965-b9fae71c82b4872db468c69b4367b8ba50156329affe60a91ba5913d8d53ccf3.json",
       "loading": "shell",
       "bytes": 16958,
-      "sha256": "b9fae71c82b4872db468c69b4367b8ba50156329affe60a91ba5913d8d53ccf3"
+      "sha256": "b9fae71c82b4872db468c69b4367b8ba50156329affe60a91ba5913d8d53ccf3",
+      "gzipBytes": 7018
     },
     {
       "path": "gre-learning/units/release190-1966-1970-380b4907a78b7eadc0ba85db825326a926cdebb349cc23c35ff37f6cfc33a5ae.json",
       "loading": "shell",
       "bytes": 16394,
-      "sha256": "380b4907a78b7eadc0ba85db825326a926cdebb349cc23c35ff37f6cfc33a5ae"
+      "sha256": "380b4907a78b7eadc0ba85db825326a926cdebb349cc23c35ff37f6cfc33a5ae",
+      "gzipBytes": 6776
     },
     {
       "path": "gre-learning/units/release190-1971-1975-aa8cb96e6232e126254b74f5c399a766f35fd7359e9bc43bbdfd358f658f0730.json",
       "loading": "shell",
       "bytes": 17414,
-      "sha256": "aa8cb96e6232e126254b74f5c399a766f35fd7359e9bc43bbdfd358f658f0730"
+      "sha256": "aa8cb96e6232e126254b74f5c399a766f35fd7359e9bc43bbdfd358f658f0730",
+      "gzipBytes": 7042
     },
     {
       "path": "gre-learning/units/release190-1976-1980-3470ae7d864d8301c743480d4d8b2a8722cd9927d7ef6aba1539a1715f4680e1.json",
       "loading": "shell",
       "bytes": 17431,
-      "sha256": "3470ae7d864d8301c743480d4d8b2a8722cd9927d7ef6aba1539a1715f4680e1"
+      "sha256": "3470ae7d864d8301c743480d4d8b2a8722cd9927d7ef6aba1539a1715f4680e1",
+      "gzipBytes": 6951
     },
     {
       "path": "gre-learning/units/release190-1981-1985-faca54f31b99a8e8ee404d0532fc6bde43bb0e6fa24ea7495353890c1c982ed6.json",
       "loading": "shell",
       "bytes": 17875,
-      "sha256": "faca54f31b99a8e8ee404d0532fc6bde43bb0e6fa24ea7495353890c1c982ed6"
+      "sha256": "faca54f31b99a8e8ee404d0532fc6bde43bb0e6fa24ea7495353890c1c982ed6",
+      "gzipBytes": 7418
     },
     {
       "path": "gre-learning/units/release190-1986-1990-7c0ecc7b072b996ff96fa251693d9d8a6efd94d136e41574a37dfbb86bcdbf7d.json",
       "loading": "shell",
       "bytes": 18908,
-      "sha256": "7c0ecc7b072b996ff96fa251693d9d8a6efd94d136e41574a37dfbb86bcdbf7d"
+      "sha256": "7c0ecc7b072b996ff96fa251693d9d8a6efd94d136e41574a37dfbb86bcdbf7d",
+      "gzipBytes": 7679
     },
     {
       "path": "gre-learning/units/release190-1991-1995-3df4374344364fb6707aeed8746208eeb45f3cc5915f789f44c2743413fd272c.json",
       "loading": "shell",
       "bytes": 19180,
-      "sha256": "3df4374344364fb6707aeed8746208eeb45f3cc5915f789f44c2743413fd272c"
+      "sha256": "3df4374344364fb6707aeed8746208eeb45f3cc5915f789f44c2743413fd272c",
+      "gzipBytes": 7744
     },
     {
       "path": "gre-learning/units/release190-1996-2000-f3690503bca1657072256700ac7e0acdb291aa63a1e374cbaebb1fde109547ae.json",
       "loading": "shell",
       "bytes": 16999,
-      "sha256": "f3690503bca1657072256700ac7e0acdb291aa63a1e374cbaebb1fde109547ae"
+      "sha256": "f3690503bca1657072256700ac7e0acdb291aa63a1e374cbaebb1fde109547ae",
+      "gzipBytes": 6986
     },
     {
       "path": "gre-learning/units/release190-2001-2005-209a50094c5d04c04d4fddb8310a849ba1a85eaddb74c1dd84df6071b3774e85.json",
       "loading": "shell",
       "bytes": 16595,
-      "sha256": "209a50094c5d04c04d4fddb8310a849ba1a85eaddb74c1dd84df6071b3774e85"
+      "sha256": "209a50094c5d04c04d4fddb8310a849ba1a85eaddb74c1dd84df6071b3774e85",
+      "gzipBytes": 6847
     },
     {
       "path": "gre-learning/units/release190-2006-2010-1c1f0c58478585c0ae1462032d58f4201bb8db7a15f749c6bb6b3ca2bdfad3f1.json",
       "loading": "shell",
       "bytes": 16937,
-      "sha256": "1c1f0c58478585c0ae1462032d58f4201bb8db7a15f749c6bb6b3ca2bdfad3f1"
+      "sha256": "1c1f0c58478585c0ae1462032d58f4201bb8db7a15f749c6bb6b3ca2bdfad3f1",
+      "gzipBytes": 7188
     },
     {
       "path": "gre-learning/units/release190-2011-2015-23e7f557dbeec04a847bed438cf1549884ac0b5dff0114ce36c3515467c46bde.json",
       "loading": "shell",
       "bytes": 18666,
-      "sha256": "23e7f557dbeec04a847bed438cf1549884ac0b5dff0114ce36c3515467c46bde"
+      "sha256": "23e7f557dbeec04a847bed438cf1549884ac0b5dff0114ce36c3515467c46bde",
+      "gzipBytes": 7674
     },
     {
       "path": "gre-learning/units/release190-2016-2020-bac7a791c27d704593d5c9779932f0d993b3d640a977d859bcffaaab145af75b.json",
       "loading": "shell",
       "bytes": 16208,
-      "sha256": "bac7a791c27d704593d5c9779932f0d993b3d640a977d859bcffaaab145af75b"
+      "sha256": "bac7a791c27d704593d5c9779932f0d993b3d640a977d859bcffaaab145af75b",
+      "gzipBytes": 6796
     },
     {
       "path": "gre-learning/units/release190-2021-2025-d41f9436a46c766567f22f19a90c4ede4c0c47e2b22aae118d60d2a5093b5cb2.json",
       "loading": "shell",
       "bytes": 15374,
-      "sha256": "d41f9436a46c766567f22f19a90c4ede4c0c47e2b22aae118d60d2a5093b5cb2"
+      "sha256": "d41f9436a46c766567f22f19a90c4ede4c0c47e2b22aae118d60d2a5093b5cb2",
+      "gzipBytes": 6583
     },
     {
       "path": "gre-learning/units/release190-2026-2030-19fb6410ba5506e364c8823ffbf55553998d2a10c3b00c5c44c04cbe6ce5f608.json",
       "loading": "shell",
       "bytes": 18632,
-      "sha256": "19fb6410ba5506e364c8823ffbf55553998d2a10c3b00c5c44c04cbe6ce5f608"
+      "sha256": "19fb6410ba5506e364c8823ffbf55553998d2a10c3b00c5c44c04cbe6ce5f608",
+      "gzipBytes": 7621
     },
     {
       "path": "gre-learning/units/release190-2031-2035-fc2cfde49e9c52f0b46e9fe13c2eef28773739836d2e2f79be4e79d16a050e63.json",
       "loading": "shell",
       "bytes": 18166,
-      "sha256": "fc2cfde49e9c52f0b46e9fe13c2eef28773739836d2e2f79be4e79d16a050e63"
+      "sha256": "fc2cfde49e9c52f0b46e9fe13c2eef28773739836d2e2f79be4e79d16a050e63",
+      "gzipBytes": 7465
     },
     {
       "path": "gre-learning/units/release190-2036-2040-c00829bd26ee149119813170b27f67272fbe4da5a817d3b091e78b504a6214c8.json",
       "loading": "shell",
       "bytes": 16573,
-      "sha256": "c00829bd26ee149119813170b27f67272fbe4da5a817d3b091e78b504a6214c8"
+      "sha256": "c00829bd26ee149119813170b27f67272fbe4da5a817d3b091e78b504a6214c8",
+      "gzipBytes": 6770
     },
     {
       "path": "gre-learning/units/release190-2041-2045-c5fd180d1b9d35514fce339d707b93c5688a7b1ed5ed697d37a4228a8f6a6194.json",
       "loading": "shell",
       "bytes": 18841,
-      "sha256": "c5fd180d1b9d35514fce339d707b93c5688a7b1ed5ed697d37a4228a8f6a6194"
+      "sha256": "c5fd180d1b9d35514fce339d707b93c5688a7b1ed5ed697d37a4228a8f6a6194",
+      "gzipBytes": 7858
     },
     {
       "path": "gre-learning/units/release190-2046-2050-7302f836cb0cefb13dbc83646858049e5248ce6c83008c8363ac2ddd1d4f0dfd.json",
       "loading": "shell",
       "bytes": 18393,
-      "sha256": "7302f836cb0cefb13dbc83646858049e5248ce6c83008c8363ac2ddd1d4f0dfd"
+      "sha256": "7302f836cb0cefb13dbc83646858049e5248ce6c83008c8363ac2ddd1d4f0dfd",
+      "gzipBytes": 7623
     },
     {
       "path": "gre-learning/units/release190-2051-2055-6e0bbbe78301f6da3d9660b8d4a9e539f4bbb49d77381de3182eaee75811ca93.json",
       "loading": "shell",
       "bytes": 16329,
-      "sha256": "6e0bbbe78301f6da3d9660b8d4a9e539f4bbb49d77381de3182eaee75811ca93"
+      "sha256": "6e0bbbe78301f6da3d9660b8d4a9e539f4bbb49d77381de3182eaee75811ca93",
+      "gzipBytes": 6752
     },
     {
       "path": "gre-learning/units/release190-2056-2060-fc4eb8024f6c8a4e00c1f5d986533785473ece687076cea2358e73fbf2c2b106.json",
       "loading": "shell",
       "bytes": 22493,
-      "sha256": "fc4eb8024f6c8a4e00c1f5d986533785473ece687076cea2358e73fbf2c2b106"
+      "sha256": "fc4eb8024f6c8a4e00c1f5d986533785473ece687076cea2358e73fbf2c2b106",
+      "gzipBytes": 9397
     },
     {
       "path": "gre-learning/units/release190-2061-2065-9f5db68d5f7195b0224fc89265e32203f37a7e93a2b68dfbb4119066e844ffd9.json",
       "loading": "shell",
       "bytes": 20423,
-      "sha256": "9f5db68d5f7195b0224fc89265e32203f37a7e93a2b68dfbb4119066e844ffd9"
+      "sha256": "9f5db68d5f7195b0224fc89265e32203f37a7e93a2b68dfbb4119066e844ffd9",
+      "gzipBytes": 8518
     },
     {
       "path": "gre-learning/units/release190-2066-2070-aa407b2a1e0241327846f1fc3f1ecaf17a61e602773ad09c1c6da18620ac5b00.json",
       "loading": "shell",
       "bytes": 21171,
-      "sha256": "aa407b2a1e0241327846f1fc3f1ecaf17a61e602773ad09c1c6da18620ac5b00"
+      "sha256": "aa407b2a1e0241327846f1fc3f1ecaf17a61e602773ad09c1c6da18620ac5b00",
+      "gzipBytes": 8849
     },
     {
       "path": "gre-learning/units/release190-2071-2075-63d2aa47a4cd7a11911d3cf2dac5f6272d0d3cdbc34de9a17fc5d16acd99bcf0.json",
       "loading": "shell",
       "bytes": 22948,
-      "sha256": "63d2aa47a4cd7a11911d3cf2dac5f6272d0d3cdbc34de9a17fc5d16acd99bcf0"
+      "sha256": "63d2aa47a4cd7a11911d3cf2dac5f6272d0d3cdbc34de9a17fc5d16acd99bcf0",
+      "gzipBytes": 9204
     },
     {
       "path": "gre-learning/units/release190-2076-2080-260c3db7f3e12f3cfb41fda71aab938698fd5e060a32012e502857ff03904909.json",
       "loading": "shell",
       "bytes": 20146,
-      "sha256": "260c3db7f3e12f3cfb41fda71aab938698fd5e060a32012e502857ff03904909"
+      "sha256": "260c3db7f3e12f3cfb41fda71aab938698fd5e060a32012e502857ff03904909",
+      "gzipBytes": 8516
     },
     {
       "path": "gre-learning/units/release190-2081-2085-1a34337bc5e953646f5f174fd009c68deffd04544b22566d3be193196746653c.json",
       "loading": "shell",
       "bytes": 19268,
-      "sha256": "1a34337bc5e953646f5f174fd009c68deffd04544b22566d3be193196746653c"
+      "sha256": "1a34337bc5e953646f5f174fd009c68deffd04544b22566d3be193196746653c",
+      "gzipBytes": 7971
     },
     {
       "path": "gre-learning/units/release190-2086-2090-8af94523c876e9b65513f1309a2ad7ae1116f77e4b79513304db29493985187e.json",
@@ -5737,25 +6077,29 @@
       "path": "gre-learning/units/release190-2096-2100-16a2bc91b37eca23a5a72b402a168db7379d8dfe0b2233296bd7230deb694b94.json",
       "loading": "shell",
       "bytes": 21771,
-      "sha256": "16a2bc91b37eca23a5a72b402a168db7379d8dfe0b2233296bd7230deb694b94"
+      "sha256": "16a2bc91b37eca23a5a72b402a168db7379d8dfe0b2233296bd7230deb694b94",
+      "gzipBytes": 9061
     },
     {
       "path": "gre-learning/units/release190-2101-2105-660c218e3e09c4a9490ce88d10340bc641287611978b8788732ae3c5c40d8811.json",
       "loading": "shell",
       "bytes": 20438,
-      "sha256": "660c218e3e09c4a9490ce88d10340bc641287611978b8788732ae3c5c40d8811"
+      "sha256": "660c218e3e09c4a9490ce88d10340bc641287611978b8788732ae3c5c40d8811",
+      "gzipBytes": 8513
     },
     {
       "path": "gre-learning/units/release190-2106-2110-a6800dbea6cbb77b2d9a2980952aff5c0d7748fccf103b21de90cd5bd1a30f45.json",
       "loading": "shell",
       "bytes": 20369,
-      "sha256": "a6800dbea6cbb77b2d9a2980952aff5c0d7748fccf103b21de90cd5bd1a30f45"
+      "sha256": "a6800dbea6cbb77b2d9a2980952aff5c0d7748fccf103b21de90cd5bd1a30f45",
+      "gzipBytes": 8240
     },
     {
       "path": "gre-learning/units/release190-2111-2115-1997ecfad45a1cf1bd78c06c50db31d62256a4e404e2eb920d534964bc1f0f28.json",
       "loading": "shell",
       "bytes": 19349,
-      "sha256": "1997ecfad45a1cf1bd78c06c50db31d62256a4e404e2eb920d534964bc1f0f28"
+      "sha256": "1997ecfad45a1cf1bd78c06c50db31d62256a4e404e2eb920d534964bc1f0f28",
+      "gzipBytes": 8068
     },
     {
       "path": "gre-learning/units/release190-2116-2120-c4f3ed7b4fa29a7523c24313b25f350e7abed8d090acb770b58ace2d0cac701f.json",
@@ -5767,109 +6111,127 @@
       "path": "gre-learning/units/release190-2121-2125-8f20aca9a842220e0f3a8b584bec892fb076d20bd460979e93207f6c738ec2d5.json",
       "loading": "shell",
       "bytes": 16507,
-      "sha256": "8f20aca9a842220e0f3a8b584bec892fb076d20bd460979e93207f6c738ec2d5"
+      "sha256": "8f20aca9a842220e0f3a8b584bec892fb076d20bd460979e93207f6c738ec2d5",
+      "gzipBytes": 6774
     },
     {
       "path": "gre-learning/units/release190-2126-2130-d5625b9e44c807db28bd8c158f089df51e6af3dde9508b8a9817bd30a2babf59.json",
       "loading": "shell",
       "bytes": 16459,
-      "sha256": "d5625b9e44c807db28bd8c158f089df51e6af3dde9508b8a9817bd30a2babf59"
+      "sha256": "d5625b9e44c807db28bd8c158f089df51e6af3dde9508b8a9817bd30a2babf59",
+      "gzipBytes": 6946
     },
     {
       "path": "gre-learning/units/release190-2131-2135-67b569e5d8083866e6a7f8036c33ece95194ba1a01fe1bc7d51186ff6b437c14.json",
       "loading": "shell",
       "bytes": 16700,
-      "sha256": "67b569e5d8083866e6a7f8036c33ece95194ba1a01fe1bc7d51186ff6b437c14"
+      "sha256": "67b569e5d8083866e6a7f8036c33ece95194ba1a01fe1bc7d51186ff6b437c14",
+      "gzipBytes": 6868
     },
     {
       "path": "gre-learning/units/release190-2136-2140-05ccf890c514e5b4be92584818891b824ea1d27f5157cd87ccd0319deb5494f5.json",
       "loading": "shell",
       "bytes": 16396,
-      "sha256": "05ccf890c514e5b4be92584818891b824ea1d27f5157cd87ccd0319deb5494f5"
+      "sha256": "05ccf890c514e5b4be92584818891b824ea1d27f5157cd87ccd0319deb5494f5",
+      "gzipBytes": 6831
     },
     {
       "path": "gre-learning/units/release190-2141-2145-e7b537c6f64f588345ec6e3cb6904a3165a5482a38c019a5671367052acacdba.json",
       "loading": "shell",
       "bytes": 17018,
-      "sha256": "e7b537c6f64f588345ec6e3cb6904a3165a5482a38c019a5671367052acacdba"
+      "sha256": "e7b537c6f64f588345ec6e3cb6904a3165a5482a38c019a5671367052acacdba",
+      "gzipBytes": 6905
     },
     {
       "path": "gre-learning/units/release190-2146-2150-9388168c96ec2cc7a991c030f715ea12c82c628495b30d0bb5fb67e97ae6ecd5.json",
       "loading": "shell",
       "bytes": 16508,
-      "sha256": "9388168c96ec2cc7a991c030f715ea12c82c628495b30d0bb5fb67e97ae6ecd5"
+      "sha256": "9388168c96ec2cc7a991c030f715ea12c82c628495b30d0bb5fb67e97ae6ecd5",
+      "gzipBytes": 6699
     },
     {
       "path": "gre-learning/units/release190-2151-2155-78966ef7944609f4f47accee1faeadf036fa511eafe3261e54ad6baf2ccca697.json",
       "loading": "shell",
       "bytes": 17180,
-      "sha256": "78966ef7944609f4f47accee1faeadf036fa511eafe3261e54ad6baf2ccca697"
+      "sha256": "78966ef7944609f4f47accee1faeadf036fa511eafe3261e54ad6baf2ccca697",
+      "gzipBytes": 7051
     },
     {
       "path": "gre-learning/units/release190-2156-2160-7109ff8ec485437cd3ee94934c8c7127547df3ea1e496b781fe5fe522740cf2f.json",
       "loading": "shell",
       "bytes": 16964,
-      "sha256": "7109ff8ec485437cd3ee94934c8c7127547df3ea1e496b781fe5fe522740cf2f"
+      "sha256": "7109ff8ec485437cd3ee94934c8c7127547df3ea1e496b781fe5fe522740cf2f",
+      "gzipBytes": 7046
     },
     {
       "path": "gre-learning/units/release190-2161-2165-70b1e0cd164cfde1fafc04716c8b08c9fa2b5826e43c218163ad1fc88be13bf3.json",
       "loading": "shell",
       "bytes": 16482,
-      "sha256": "70b1e0cd164cfde1fafc04716c8b08c9fa2b5826e43c218163ad1fc88be13bf3"
+      "sha256": "70b1e0cd164cfde1fafc04716c8b08c9fa2b5826e43c218163ad1fc88be13bf3",
+      "gzipBytes": 6782
     },
     {
       "path": "gre-learning/units/release190-2166-2170-7bc53a71fee0b8e0d3b0de7d174ffb31174d2e8303ed8597952f29cfe002ef9e.json",
       "loading": "shell",
       "bytes": 15247,
-      "sha256": "7bc53a71fee0b8e0d3b0de7d174ffb31174d2e8303ed8597952f29cfe002ef9e"
+      "sha256": "7bc53a71fee0b8e0d3b0de7d174ffb31174d2e8303ed8597952f29cfe002ef9e",
+      "gzipBytes": 6513
     },
     {
       "path": "gre-learning/units/release190-2171-2175-e62249bdb4de53a47721b90a7e51b23952c61b3c527c3673ed3d64eef3dbdb16.json",
       "loading": "shell",
       "bytes": 14327,
-      "sha256": "e62249bdb4de53a47721b90a7e51b23952c61b3c527c3673ed3d64eef3dbdb16"
+      "sha256": "e62249bdb4de53a47721b90a7e51b23952c61b3c527c3673ed3d64eef3dbdb16",
+      "gzipBytes": 5890
     },
     {
       "path": "gre-learning/units/release190-2176-2180-8fb841e213d2cad54b9e4e46db766b5e90aa6ec9e207549fc34acc4d3a651211.json",
       "loading": "shell",
       "bytes": 14362,
-      "sha256": "8fb841e213d2cad54b9e4e46db766b5e90aa6ec9e207549fc34acc4d3a651211"
+      "sha256": "8fb841e213d2cad54b9e4e46db766b5e90aa6ec9e207549fc34acc4d3a651211",
+      "gzipBytes": 6102
     },
     {
       "path": "gre-learning/units/release190-2181-2185-376f4f1aba87dc1f7be4d49665f1ff8d89bf1992dac719a23a362b71fe90b708.json",
       "loading": "shell",
       "bytes": 14186,
-      "sha256": "376f4f1aba87dc1f7be4d49665f1ff8d89bf1992dac719a23a362b71fe90b708"
+      "sha256": "376f4f1aba87dc1f7be4d49665f1ff8d89bf1992dac719a23a362b71fe90b708",
+      "gzipBytes": 5970
     },
     {
       "path": "gre-learning/units/release190-2186-2190-02d34273daa38d36fa84a2fcae5d731fd709a560c157e400da72dc1b33a8eece.json",
       "loading": "shell",
       "bytes": 13677,
-      "sha256": "02d34273daa38d36fa84a2fcae5d731fd709a560c157e400da72dc1b33a8eece"
+      "sha256": "02d34273daa38d36fa84a2fcae5d731fd709a560c157e400da72dc1b33a8eece",
+      "gzipBytes": 5725
     },
     {
       "path": "gre-learning/units/release190-2191-2195-69c4dd2c0c49f91dbd3adafd326c1080e09211d6960a7aa3707b106c1f7d008f.json",
       "loading": "shell",
       "bytes": 14229,
-      "sha256": "69c4dd2c0c49f91dbd3adafd326c1080e09211d6960a7aa3707b106c1f7d008f"
+      "sha256": "69c4dd2c0c49f91dbd3adafd326c1080e09211d6960a7aa3707b106c1f7d008f",
+      "gzipBytes": 5983
     },
     {
       "path": "gre-learning/units/release190-2196-2200-ab11880c1fee8fe817577b30d51900cc1889ffa3e2f1cfcef8943811d0a4f3d9.json",
       "loading": "shell",
       "bytes": 13103,
-      "sha256": "ab11880c1fee8fe817577b30d51900cc1889ffa3e2f1cfcef8943811d0a4f3d9"
+      "sha256": "ab11880c1fee8fe817577b30d51900cc1889ffa3e2f1cfcef8943811d0a4f3d9",
+      "gzipBytes": 5668
     },
     {
       "path": "gre-learning/units/release190-2201-2205-7768411794b46df8e00faae160c161826b462a8f6cd6cf833e5001c1f8ba73ec.json",
       "loading": "shell",
       "bytes": 13741,
-      "sha256": "7768411794b46df8e00faae160c161826b462a8f6cd6cf833e5001c1f8ba73ec"
+      "sha256": "7768411794b46df8e00faae160c161826b462a8f6cd6cf833e5001c1f8ba73ec",
+      "gzipBytes": 5908
     },
     {
       "path": "gre-learning/units/release190-2206-2210-b9a2f06a81df55a51ed120f4071223686fd65f643ca6389276ea05add6f689e0.json",
       "loading": "shell",
       "bytes": 12191,
-      "sha256": "b9a2f06a81df55a51ed120f4071223686fd65f643ca6389276ea05add6f689e0"
+      "sha256": "b9a2f06a81df55a51ed120f4071223686fd65f643ca6389276ea05add6f689e0",
+      "gzipBytes": 5249
     },
     {
       "path": "gre-learning/units/release190-2211-2215-b205c24b446c6acd87ee4dc2fdbd0f4af68fd8daa99503f56094ee1f74cec081.json",
@@ -25612,8 +25974,8 @@
     }
   ],
   "totals": {
-    "bytes": 924267430,
-    "gzipBytes": 892242139
+    "bytes": 924269277,
+    "gzipBytes": 895032385
   },
   "retainedHistoricalAssets": 212,
   "availableTextLessons": 3500,

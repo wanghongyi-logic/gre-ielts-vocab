@@ -3,7 +3,7 @@ import {CRC32,SHA256} from './offline-export-hash.js';
 import {safePath,MAX_ENTRY,indexZip} from './offline-zip.js';
 import {resolveSavedRange} from './offline-range.js';
 
-const CHUNK=1024*1024,MAX_MEMORY=24*1024*1024;
+const CHUNK=1024*1024,MAX_MEMORY=24*1024*1024,WORDS_PER_PACKAGE=100;
 const EXPORT_DIR='gre-offline-exports-v1',SESSION_LOCK='gre-offline-export-session-v1:',STALE_AFTER=24*60*60*1000;
 const SESSION_NAME=/^export-([0-9]{13})-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/;
 const encoder=new TextEncoder();
@@ -25,7 +25,7 @@ function header(path,size,crc,offset,central=false){
 }
 export async function writeStoreZip(items,sink,{signal,onProgress=()=>{}}={}){
  if(!items.length||items.length>20000)throw new Error('资源数量不支持导出');
- const directoryBytes=items.reduce((n,item)=>n+46+encoder.encode(item.path).length,0);if(directoryBytes>20*1024*1024)throw new Error('所选范围目录超过安全单包上限');const estimate=items.reduce((n,item)=>n+(item.bytes??item.blob?.size??0)+76+2*encoder.encode(item.path).length,22);if(estimate>=0xffffffff)throw new Error('所选范围超过 ZIP32 的单包大小上限，无法导出；不会自动拆包');
+ const directoryBytes=items.reduce((n,item)=>n+46+encoder.encode(item.path).length,0);if(directoryBytes>20*1024*1024)throw new Error('所选范围目录超过安全单包上限');const estimate=items.reduce((n,item)=>n+(item.bytes??item.blob?.size??0)+76+2*encoder.encode(item.path).length,22);if(estimate>=0xffffffff)throw new Error('当前分包超过 ZIP32 大小上限，请缩小所选范围');
  let offset=0;const directory=[],paths=new Set();
  for(let i=0;i<items.length;i++){
   cancelled(signal);const item=items[i],{path,crc}=item;
@@ -131,21 +131,27 @@ export async function exportSavedResources(catalog,{signal,onProgress=()=>{},rea
  // against that full catalog, not against display ordinals or a renumbered copy.
  const selectedRange=range===undefined?null:resolveSavedRange(catalog,range?.start,range?.end),selected=selectedRange?new Set(selectedRange.ids):null;
  const entries=selected?catalog.entries.filter(entry=>selected.has(entry.number)):catalog.entries;
+ // Fixed ordinal windows keep missing words in their original segment; they
+ // never pull a later word forward just to fill a package.
+ const ordinals=new Map(catalog.entries.map((entry,index)=>[entry,entry.displayOrdinal??index+1])),ordinal=entry=>ordinals.get(entry);
+ const start=selectedRange?.start??Math.min(...entries.map(ordinal)),end=selectedRange?.end??Math.max(...entries.map(ordinal)),batches=[];
+ for(let from=start;Number.isFinite(from)&&from<=end;from+=WORDS_PER_PACKAGE){const to=Math.min(from+WORDS_PER_PACKAGE-1,end);batches.push({start:from,end:to,entries:[]});}
+ for(const entry of entries)batches[Math.floor((ordinal(entry)-start)/WORDS_PER_PACKAGE)].entries.push(entry);
  const session='export-'+Date.now()+'-'+crypto.randomUUID(),outputs=[],skippedOrdinals=[];let skipped=0,complete=0,sink=null,memoryBytes=0,released=false,release=()=>{};
  const cleanup=async()=>{if(released)return;try{await removeSession(session);released=true;}finally{release();}};
- let group=[],assets=new Map(),bytes=0;
+ let group=[],assets=new Map(),bytes=0,batch=null,batchIndex=0,scanned=0;
+ const report=(phase,completed,total)=>onProgress({phase,completed,total,packageIndex:batchIndex+1,packageTotal:batches.length,range:{start:batch.start,end:batch.end},scanned,selectedCount:entries.length,skipped});
  const prepareSink=async()=>{if(!sink)sink=await createSink(session,'part-'+(outputs.length+1)+'.zip',signal,MAX_MEMORY-memoryBytes);return sink;};
  async function flush(){
   if(!group.length)return;
   const number=outputs.length+1,hasVariants=[...assets.values()].some(a=>a.record?.kind==='owned-local-variant'),manifest=hasVariants?{format:'gre-owned-local-variants-v1',trust:'owned-local-not-official',files:[...assets.values()].map((a,i)=>({...a.record,archivePath:'media/'+i+'.bin',start:undefined}))}:{format:'gre-offline-pack-v1',packId:session+'-'+number,version:'1',wordIds:group.map(e=>e.number),files:[...assets.values()].map(({path,role,wordId,ref})=>({path,role,wordId,bytes:ref.bytes,sha256:ref.sha256}))};
   const manifestBlob=new Blob([JSON.stringify(manifest)]);if(manifestBlob.size>20*1024*1024)throw new Error('所选范围元数据超过安全单包上限');const mhash=await fingerprints(manifestBlob,signal),items=[{path:'manifest.json',blob:manifestBlob,crc:mhash.crc},...[...assets.values()].map((a,i)=>({path:hasVariants?'media/'+i+'.bin':a.path,bytes:a.stored.bytes,sha256:a.stored.sha256,crc:a.crc,readBlob:async()=>{return readSource(a.ref);}}))];
-  const ordinals=group.map(entry=>entry.displayOrdinal||catalog.entries.indexOf(entry)+1);
-  const name=`GRE-${selectedRange?selectedRange.start:ordinals[0]}-${selectedRange?selectedRange.end:ordinals.at(-1)}.zip`;
+  const name=`GRE-${batch.start}-${batch.end}.zip`;
   await prepareSink();
   try{
-   await writeStoreZip(items,sink,{signal,onProgress:p=>onProgress({...p,phase:'pack'})});const file=await sink.finish();cancelled(signal);await indexZip(file);cancelled(signal);
+   await writeStoreZip(items,sink,{signal,onProgress:p=>report('pack',p.completed,p.total)});const file=await sink.finish();cancelled(signal);await indexZip(file);cancelled(signal);
    if(sink.kind==='memory')memoryBytes+=file.size;
-   outputs.push({name,file,words:group.length});sink=null;
+   outputs.push({name,file,words:group.length,range:{start:batch.start,end:batch.end},packageIndex:batchIndex+1,packageTotal:batches.length});sink=null;
   }catch(error){await sink.abort();sink=null;throw error;}
   group=[];assets=new Map();bytes=0;
  }
@@ -155,9 +161,11 @@ export async function exportSavedResources(catalog,{signal,onProgress=()=>{},rea
   // one asset at a time when writing, and the exact written bytes are checked
   // again before the temporary package can be finalized. The small Blob
   // fallback also caps retained output across all packages.
-  await prepareSink();
-  for(let i=0;i<entries.length;i++){
-   cancelled(signal);const entry=entries[i],found=[];
+  for(batchIndex=0;batchIndex<batches.length;batchIndex++){
+   batch=batches[batchIndex];cancelled(signal);report('scan',0,batch.entries.length);
+   await prepareSink();
+   for(let i=0;i<batch.entries.length;i++){
+   cancelled(signal);const entry=batch.entries[i],found=[];
    for(const role of ['poster','video','staticPoster']){
     const originalRef=entry.storyMedia?.[role];if(!originalRef)continue;const ref={...originalRef,wordId:entry.number,role},path='gre-learning/'+ref.url;
     if(!safePath(path)||!Number.isSafeInteger(ref.bytes)||ref.bytes<0||ref.bytes>MAX_ENTRY)throw new Error('资源信息不支持导出');
@@ -170,12 +178,15 @@ export async function exportSavedResources(catalog,{signal,onProgress=()=>{},rea
    if(found.length&&entry.storyMedia?.video&&found.some(a=>a.role==='video')){
     const extra=found.filter(a=>!assets.has(a.path)).reduce((n,a)=>n+a.stored.bytes,0);
     if(sink?.kind==='memory'&&memoryBytes+bytes+extra>MAX_MEMORY)throw memoryError();
-    // One selected range always produces one ZIP; unsupported size fails explicitly.
+    // Each fixed window contains at most 100 selected words. Resources shared
+    // across windows are included again so every ZIP imports independently.
     group.push(entry);for(const a of found)if(!assets.has(a.path)){assets.set(a.path,a);bytes+=a.stored.bytes;}complete++;
-   }else{skipped++;skippedOrdinals.push(entry.displayOrdinal??catalog.entries.indexOf(entry)+1);}
-   onProgress({phase:'scan',completed:i+1,total:entries.length});
+   }else{skipped++;skippedOrdinals.push(ordinal(entry));}
+   scanned++;report('scan',i+1,batch.entries.length);
+   }
+   await flush();if(sink){await sink.abort();sink=null;}
   }
-  await flush();if(sink){await sink.abort();sink=null;}if(!outputs.length)throw Object.assign(new Error(selected?'所选范围内没有完整保存的资源可导出':'本机还没有完整保存的资源可导出'),{selectedCount:entries.length,complete:0,skipped,skippedOrdinals});cancelled(signal);
-  return {packages:outputs,complete,skipped,skippedOrdinals,selectedCount:entries.length,cleanup};
+  if(!outputs.length)throw Object.assign(new Error(selected?'所选范围内没有完整保存的资源可导出':'本机还没有完整保存的资源可导出'),{selectedCount:entries.length,complete:0,skipped,skippedOrdinals});cancelled(signal);
+  return {packages:outputs,complete,skipped,skippedOrdinals,selectedCount:entries.length,plannedPackages:batches.length,cleanup};
  }catch(error){if(sink)await sink.abort().catch(()=>{});await cleanup().catch(()=>{});throw error;}
 }

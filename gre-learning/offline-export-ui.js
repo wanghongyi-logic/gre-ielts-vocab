@@ -18,14 +18,14 @@ function retireOutput(previous){
 export function mountSavedExport({host,catalog,isBusy,setBusy}){
  const section=document.createElement('div');
  section.className='library-export-row';
- section.innerHTML=`<details class="library-disclosure library-range-row" data-export-range><summary><span>导出已保存资源</span><span class="library-disclosure-mark" aria-hidden="true">+</span></summary><div class="library-disclosure-body">${savedRangeFields('export')}<p>所选范围生成一个 ZIP，已压缩资源按压缩后的版本导出。缺少资源的词会计入未导出数量。</p><div class="library-range-feedback"><button type="button" data-export-cancel hidden>取消导出</button><progress data-export-progress hidden aria-label="导出进度"></progress><p role="status" aria-live="polite" data-export-status></p><div data-export-files></div><button type="button" class="library-text-action" data-export-close hidden>收起导出文件</button></div></div></details>`;
+ section.innerHTML=`<details class="library-disclosure library-range-row" data-export-range><summary><span>导出已保存资源</span><span class="library-disclosure-mark" aria-hidden="true">+</span></summary><div class="library-disclosure-body">${savedRangeFields('export')}<p>所选范围每 100 词生成一个 ZIP，最后不足 100 词单独一包。缺资源的词会跳过，不跨包补齐；全缺资源的分段不生成文件。已压缩资源按原保存版本导出。生成后请逐包点击保存，并在浏览器或“文件”中确认。</p><div class="library-range-feedback"><button type="button" data-export-cancel hidden>取消导出</button><progress data-export-progress hidden aria-label="导出进度"></progress><p role="status" aria-live="polite" data-export-status></p><div data-export-files></div><button type="button" class="library-text-action" data-export-close hidden>收起导出文件</button></div></div></details>`;
  host.querySelector('.library-import-feedback').after(section);
  const button=section.querySelector('[data-export]'),cancel=section.querySelector('[data-export-cancel]'),progress=section.querySelector('[data-export-progress]'),status=section.querySelector('[data-export-status]'),files=section.querySelector('[data-export-files]'),close=section.querySelector('[data-export-close]');
  const range=bindSavedRange(section,catalog,{prefix:'export',verb:'导出',defaultAll:true}),key=catalogIdentity(catalog);
  let operation=null,output=retainedSavedExport?.catalogKey===key?retainedSavedExport:null,disposed=false,teardown=null;
  const abortError=()=>new DOMException('已取消导出','AbortError');
  const checkCancelled=current=>{if(disposed||current.controller.signal.aborted)throw abortError();};
- const summary=current=>{const selected=current.range.end-current.range.start+1,skipped=current.result.skipped??Math.max(0,selected-current.result.complete);return `选定 ${selected} 词 · 完整导出 ${current.result.complete} 词 · 缺资源未导出 ${skipped} 词 · ${current.result.packages.length} 个 ZIP`;};
+ const summary=current=>{const selected=current.range.end-current.range.start+1,skipped=current.result.skipped??Math.max(0,selected-current.result.complete);return `选定 ${selected} 词 · 完整导出 ${current.result.complete} 词 · 缺资源未导出 ${skipped} 词 · ${current.result.packages.length} 个 ZIP 已生成，请逐包保存`;};
  function syncOutput(){files.hidden=Boolean(output?.collapsed);close.hidden=!output;close.textContent=files.hidden?'展开导出文件':'收起导出文件';close.setAttribute('aria-expanded',String(!files.hidden));}
 
  function renderOutput(current,target){
@@ -36,7 +36,7 @@ export function mountSavedExport({host,catalog,isBusy,setBusy}){
    let asset=current.assets[i];
    if(!asset){const file=new File([pack.file],pack.name,{type:'application/zip'});asset={file,url:URL.createObjectURL(file)};current.assets.push(asset);}
    const {file,url}=asset,link=document.createElement('a');
-   link.href=url;link.download=pack.name;link.className='library-text-action';link.textContent=`保存 ${pack.name}`;row.append(link);
+   link.href=url;link.download=pack.name;link.className='library-text-action';link.textContent=`保存第 ${i+1}/${current.result.packages.length} 包 · ${pack.name}（${pack.words} 词）`;row.append(link);
    let canShare=false;try{canShare=Boolean(navigator.share&&navigator.canShare?.({files:[file]}));}catch{}
    if(canShare){
     const share=document.createElement('button');share.type='button';share.className='library-text-action';share.textContent='分享';
@@ -65,7 +65,9 @@ export function mountSavedExport({host,catalog,isBusy,setBusy}){
      signal:current.controller.signal,range:current.range,
      onProgress:p=>{
       if(disposed||operation!==current||current.controller.signal.aborted)return;
-      progress.max=p.total;progress.value=p.completed;status.textContent=`${p.phase==='scan'?'检查':'导出'} ${p.completed}/${p.total}${p.skipped?` · 缺资源未导出 ${p.skipped} 词`:''}`;
+      // This bar is explicitly per phase/package, never the library download or
+      // study progress. Overall checked words remain monotonic across packs.
+      progress.max=p.total||1;progress.value=p.completed;progress.setAttribute('aria-label',`第 ${p.packageIndex}/${p.packageTotal} 包${p.phase==='scan'?'检查':'写入'}进度`);status.textContent=`第 ${p.packageIndex}/${p.packageTotal} 包 · 第 ${p.range.start}–${p.range.end} 词 · ${p.phase==='scan'?'检查词条':'写入文件'} ${p.completed}/${p.total} · 总计已检查 ${p.scanned}/${p.selectedCount} 词${p.skipped?` · 缺资源未导出 ${p.skipped} 词`:''}`;
      }
     });
    };
@@ -80,7 +82,7 @@ export function mountSavedExport({host,catalog,isBusy,setBusy}){
    try{if(previous&&previous!==output)await retireOutput(previous);}catch(error){if(!disposed)status.textContent=`${summary(output)} · 清理旧文件未完成：${error.message}`;}
   }catch(error){
    let cleanupError;if(candidate){try{await retireOutput(candidate);}catch(cause){cleanupError=cause;}}
-   if(!disposed){status.textContent=cleanupError?`清理临时文件未完成：${cleanupError.message}`:current.controller.signal.aborted||error?.name==='AbortError'?(output?summary(output):''):`导出未完成：${error.message}`;syncOutput();}
+   if(!disposed){status.textContent=cleanupError?`清理临时文件未完成：${cleanupError.message}`:current.controller.signal.aborted||error?.name==='AbortError'?(output?`已取消本次导出 · ${summary(output)}`:'已取消导出'):`导出未完成：${error.message}`;syncOutput();}
   }finally{
    if(operation===current){operation=null;setBusy(false);range.sync(disposed||isBusy());cancel.hidden=true;progress.hidden=true;}
   }
