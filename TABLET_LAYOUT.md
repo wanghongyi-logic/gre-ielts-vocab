@@ -5,7 +5,9 @@ GRE/IELTS dashboard. Primary target: Huawei MatePad Mini, landscape 16:10.
 
 ## Layout contract
 
-- Landscape from 760 CSS pixels wide and 480 pixels high uses a fixed-height book.
+- Landscape from 760 CSS pixels wide and 400 pixels high uses a fixed-height book;
+  a 21:10 maximum aspect ratio excludes wide phone landscapes. This also covers
+  a high-density Mini with browser chrome reducing the visible height.
 - The left 37% holds the headword, pronunciation, original media controller and
   previous/next controls. No live media node is moved or duplicated on rotation.
 - The right reading pane owns vertical scrolling. Body copy is 20px, the English
@@ -38,7 +40,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 tests/rebuild-offline-shell.test.py
 
 ## Layout-only publication
 
-`scripts/rebuild-offline-shell.py --build 204-offline3500-v61` refreshes the shell
+`scripts/rebuild-offline-shell.py --build 204-offline3500-v62` refreshes the shell
 version and hashes. It preserves absent media/lesson metadata in sparse
 checkouts rather than treating missing working files as withdrawn content.
 The content catalog, authored word lessons and hosted-media ranges are unchanged.

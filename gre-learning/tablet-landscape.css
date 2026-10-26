@@ -3,7 +3,7 @@
 .reading-scroll > .book-continuation {grid-column:1 / -1;}
 .tablet-word-turns {display:none;}
 
-@media (min-width:760px) and (min-height:480px) and (orientation:landscape) {
+@media (min-width:760px) and (min-height:400px) and (max-aspect-ratio:21/10) and (orientation:landscape) {
  html {height:100%;overflow:hidden;overscroll-behavior:none;scroll-padding:0;}
  body {
   --tablet-edge:clamp(16px,2.2vh,26px);
@@ -106,7 +106,7 @@
  .paper-turn .reading-scroll {height:100%;}
 }
 
-@media (min-width:760px) and (min-height:480px) and (max-height:680px) and (orientation:landscape) {
+@media (min-width:760px) and (min-height:400px) and (max-height:680px) and (max-aspect-ratio:21/10) and (orientation:landscape) {
  .word-hero,.text-only-reading .word-hero {padding-top:18px;}
  .word-hero h1 {font-size:min(58px,18cqi);margin-bottom:7px;}
  .word-hero .long-headword {font-size:min(58px,calc(96cqi / var(--headword-fit)));}
@@ -116,4 +116,13 @@
  .story-dialogue-band {min-height:40px;}
  .tablet-word-turns {padding:10px 0 12px;}
  .memory-page,.text-only-reading .memory-page {padding-top:22px;}
+}
+
+/* Browser chrome on a high-density Mini can leave less than 480 CSS px.
+   Wide phone landscapes are excluded by aspect ratio, not by shrinking text. */
+@media (min-width:760px) and (min-height:400px) and (max-height:519px) and (max-aspect-ratio:21/10) and (orientation:landscape) {
+ .word-hero h1 {font-size:min(48px,16cqi);}
+ .word-hero .long-headword {font-size:min(48px,calc(96cqi / var(--headword-fit)));}
+ .story-dialogue-band {min-height:32px;}
+ .tablet-word-turns {padding:8px 0;}
 }
