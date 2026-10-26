@@ -1,0 +1,400 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7046,
+      "word": "substantial",
+      "ipa": "/səbˈstænʃl/",
+      "pos": "adj.",
+      "coreMeaningZh": "有重大意义的",
+      "coreEn": "important, worthwhile, or of real consequence",
+      "mnemonics": [
+        {
+          "method": "SUB 台下 STAND 起立，SHALL 重视重大议题",
+          "textZh": "借sub + stand + shall的声音 /səb stænd ʃəl/记substantial /səbˈstænʃl/：sub在下，stand站起，shall提示“应当”。想象台下的人为关系大家未来的议题站起来，郑重表示：这件大事应当重视。substantial，有重大意义的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUB 地下 STATION 通车，改变全城，意义重大",
+          "textZh": "把substantial的整体词形联想成sub + station + -al：sub在地下，station是车站，-al提示形容词。想象一个地下车站开通，原来被河流隔开的居民终于能方便地往来，上学、就医都因此改变。这次通车有重大意义，就是substantial。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "有重要价值或影响，不是小修小补",
+          "explanationZh": "substantial修饰reform、change等时，可强调变化有重要价值或影响，值得认真看待，不只是无关紧要的调整。“有重大意义”也不必表示好处：重要的变化可能带来好或坏的结果。",
+          "collocations": [
+            {
+              "phrase": "a substantial reform",
+              "meaningZh": "有重大意义的改革"
+            },
+            {
+              "phrase": "a substantial change",
+              "meaningZh": "重大变化"
+            }
+          ]
+        },
+        {
+          "senseZh": "有分量、值得重视的理由",
+          "explanationZh": "substantial reasons强调理由有实际分量、价值或作用，不是说理由条数很多。判断含义要看所修饰的内容：substantial sums着重金额大，substantial house可指大而坚固的房屋，不能把这些意思混成“有重大意义”。",
+          "collocations": [
+            {
+              "phrase": "substantial reasons",
+              "meaningZh": "有分量的理由"
+            },
+            {
+              "phrase": "a substantial contribution",
+              "meaningZh": "重要贡献"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "important",
+          "comparisonZh": "important是范围很广的“重要”，可说明人、事、决定或价值。substantial在当前义项里强调重要性有实际分量、值得重视，语气较正式；不表示单纯身材高大或数量很多。"
+        },
+        {
+          "word": "significant",
+          "comparisonZh": "significant可表示影响或意义足以引起注意，也可强调某件事象征什么。substantial在当前义项偏重实际价值、影响或分量。significant的统计学用法或“意味深长”的用法，不能机械换成substantial。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "a substantial reform",
+          "translationZh": "一项有重大意义的改革",
+          "explanationZh": "substantial评价改革的重要价值，而不是在数改革有多少项。"
+        },
+        {
+          "textEn": "substantial reasons",
+          "translationZh": "有分量的理由",
+          "explanationZh": "强调理由具有真正的价值或作用；不是只说理由数量多。"
+        }
+      ],
+      "coreImageZh": "以前去对岸的学校要沿着弯曲的山路绕行，现在一座桥直接连通了两岸。母亲说明通学变方便了，男孩迈上桥头，站稳看向新的通路。这对大家的生活是一项 substantial improvement：有重大意义的改善，而不是仅仅说桥很大或很结实。"
+    },
+    {
+      "number": 7047,
+      "word": "substantiate",
+      "ipa": "/səbˈstænʃieɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "证实",
+      "coreEn": "to support or establish a claim with evidence",
+      "mnemonics": [
+        {
+          "method": "SUB 嘴下有 STAIN，证实 SHE ATE 她吃过",
+          "textZh": "借sub + stain + she ate的整段声音 /səb steɪn ʃi eɪt/记substantiate。sub在下面，stain是污渍，she ate是“她吃过”：她嘴角下有果酱渍，再加上吃东西的照片，证实她确实吃过。substantiate：拿出证据来证实。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUB + STAND + SHEET EIGHT：第八张表支撑说法",
+          "textZh": "借sub + stand + sheet eight记substantiate：sub在下面，stand站住，sheet eight是第八张表。想象一项结论下面垫着这张数据表，表里的证据让说法站得住。整段 /səb stænd ʃiːt eɪt/近音提醒：substantiate，用证据证实。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "substantiate a claim：以证据支持、证实主张",
+          "explanationZh": "substantiate是较正式的及物动词，直接接claim、accusation、charge等。人可以拿出证据来证实说法，测试结果或资料也可以作主语；重点不是反复声称，而是提供能支撑说法的依据。",
+          "collocations": [
+            {
+              "phrase": "substantiate a claim",
+              "meaningZh": "证实一项主张"
+            },
+            {
+              "phrase": "substantiate an accusation",
+              "meaningZh": "证实一项指控"
+            }
+          ]
+        },
+        {
+          "senseZh": "被证据支持；尚未得到证实",
+          "explanationZh": "常见被动式be substantiated，可用by引出证据或提供证据的一方，也可用with说明所用证据。could not be substantiated表示现有依据不能证实，不自动等于已经证明其为假。",
+          "collocations": [
+            {
+              "phrase": "be substantiated by evidence",
+              "meaningZh": "得到证据证实"
+            },
+            {
+              "phrase": "cannot be substantiated",
+              "meaningZh": "无法得到证实"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "corroborate",
+          "comparisonZh": "corroborate常指新证据进一步支持一个已有的说法，起佐证、相互印证作用。substantiate强调提出足以支撑主张的证据；可以佐证已有说法，也可以着重建立它的证据基础。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "verify",
+          "comparisonZh": "verify常强调通过检查、核对确认事实或细节是否准确，如核验信息。substantiate更突出给某项主张提供支撑证据，不只是把记录对一遍；具体语境里两者可以重合。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The results of the tests substantiated his claims.",
+          "translationZh": "测试结果证实了他的主张。",
+          "explanationZh": "results作主语，claims作直接宾语；测试结果提供支撑，而不是本人只作口头保证。"
+        },
+        {
+          "textEn": "They made accusations which could not be substantiated.",
+          "translationZh": "他们提出了一些无法得到证实的指控。",
+          "explanationZh": "could not be substantiated是被动式，说明指控缺少足够证据支持，不直接断言其已被证伪。"
+        }
+      ],
+      "coreImageZh": "男孩说壶会漏水，老师追问证据。壶原有的裂缝处渗出水珠，壶底与托盘内出现浅浅的湿迹；男孩指向这处真实的渗水。这个可观察的证据 substantiates his claim：证实了他的说法，而不是仅仅把断言再说一遍。"
+    },
+    {
+      "number": 7048,
+      "word": "substantive",
+      "ipa": "/ˈsʌbstəntɪv/",
+      "pos": "adj.",
+      "coreMeaningZh": "本质的，关键的",
+      "coreEn": "concerning the real, essential, or important substance of a matter",
+      "mnemonics": [
+        {
+          "method": "SUB + START + IVE：修好核心，真正启动",
+          "textZh": "借sub + start + -ive记substantive的整个词形：sub在表面之下，start是启动，-ive表示性质。想象设备不再只是换个漂亮外壳，而是修好了底下的核心，真的能够START运行。这样的改动触及本质、抓住关键：substantive。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUB + STONE + TIVE：底下的基石才是关键",
+          "textZh": "把substantive借听成sub + stone + tive：sub在下面，stone是石头，尾段tive读/tɪv/。想象建筑下面真正承重的基石，不是墙上花纹；拿掉基石，整栋建筑就出问题。substantive关注本质的、关键的东西，不只看外表。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "substantive issue / discussion：触及实质或关键内容",
+          "explanationZh": "substantive是较正式的形容词。谈到issue、discussion或argument时，强调真实、重要的内容，而非只谈表面形式或无关紧要的细节。讨论很长不一定就是substantive，关键在于是否触及实质。",
+          "collocations": [
+            {
+              "phrase": "substantive issues",
+              "meaningZh": "实质性问题；关键问题"
+            },
+            {
+              "phrase": "substantive discussions",
+              "meaningZh": "触及实质内容的讨论"
+            }
+          ]
+        },
+        {
+          "senseZh": "substantive change：改变关键内容，而非只作象征性调整",
+          "explanationZh": "substantive changes通常指影响实际内容或产生根本区别的改动，不只是换措辞、改排版或作姿态。改动即使很小，也可能触及关键；本义不以改动数量或篇幅大小来判断。",
+          "collocations": [
+            {
+              "phrase": "substantive changes",
+              "meaningZh": "实质性改变"
+            },
+            {
+              "phrase": "more symbolic than substantive",
+              "meaningZh": "象征意义大于实质内容"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "fundamental",
+          "comparisonZh": "fundamental更强调构成基础、影响最核心部分，如基本原则或根本原因。substantive强调有关实际重要内容，而非形式或表面；一项实质性讨论不一定在讨论最底层的原理。"
+        },
+        {
+          "word": "essential",
+          "comparisonZh": "essential常强调不可缺少、对某活动绝对必要，也可表示本质的。substantive强调触及事情的实质或关键内容，不必断言每个实质性细节都不可缺少。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "These changes are more symbolic than substantive.",
+          "translationZh": "这些改动的象征意义大于其实质内容。",
+          "explanationZh": "symbolic与substantive对比，批评改动更多停留在象征层面，没有相应触及关键内容。"
+        },
+        {
+          "textEn": "The report concluded that no substantive changes were necessary.",
+          "translationZh": "报告得出的结论是，无须作实质性改变。",
+          "explanationZh": "no substantive changes限定为无须改变实质内容，并不排除调整措辞、排版等形式细节。"
+        }
+      ],
+      "coreImageZh": "男孩起初看着凳面褪色的油漆，老师却指出承重凳腿已经开裂。他蹲下来查看，认识到必须先修好凳腿，才能安全坐。这个裂纹关乎凳子的实际功能，才是 substantive problem：本质的、关键的问题，而不只是表面装饰不好看。"
+    },
+    {
+      "number": 7049,
+      "word": "subterfuge",
+      "ipa": "/ˈsʌbtəfjuːdʒ/",
+      "pos": "n.",
+      "coreMeaningZh": "诡计",
+      "coreEn": "A deceptive device or way of behaving used to conceal, escape, or evade.",
+      "mnemonics": [
+        {
+          "method": "SUB 桌下藏小货，TO 买家吹成 HUGE 巨货：诡计",
+          "textZh": "把subterfuge借听成sub + to + huge：sub在下面，to是向，huge是巨大的。卖家把真正的小件藏在桌下，却向买家谎称这是一件巨型货物，用大包装遮住真相。这种为蒙骗别人而掩饰事实的手段，就是subterfuge，诡计。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUB 桌下转 TO FRIDGE 冰箱，藏起证据耍诡计",
+          "textZh": "借sub + to + fridge的整段声音记subterfuge：sub在下面，to是朝向，fridge是冰箱。想象一个人把咬过的蛋糕从桌底悄悄转进冰箱，再指着空桌子说“我一口也没吃”。藏起真相再骗人，是subterfuge：诡计。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "用欺骗或掩饰达到目的",
+          "explanationZh": "subterfuge强调暗中采用的欺骗手段，常为隐藏真实意图、逃避责任或达到某个目的。不是所有聪明办法或公开策略都叫subterfuge；通常含不诚实的意味。",
+          "collocations": [
+            {
+              "phrase": "use subterfuge",
+              "meaningZh": "使用欺骗手段"
+            },
+            {
+              "phrase": "by subterfuge",
+              "meaningZh": "通过诡计"
+            }
+          ]
+        },
+        {
+          "senseZh": "既可泛指手段，也可指一项具体诡计",
+          "explanationZh": "泛指这种做法时可作不可数名词；说一项具体花招时可用a subterfuge，复数为subterfuges。a political subterfuge指政治上的掩饰手段，不只是政策或一般安排。",
+          "collocations": [
+            {
+              "phrase": "a political subterfuge",
+              "meaningZh": "一项政治诡计"
+            },
+            {
+              "phrase": "resort to subterfuge",
+              "meaningZh": "诉诸欺骗手段"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "chicanery",
+          "comparisonZh": "都可指欺骗、耍手段。chicanery更突出复杂安排或巧言诡辩来蒙骗别人；subterfuge更突出为了掩饰、躲避或达成目的而采用的具体花招。chicanery通常不可数，subterfuge还可数。",
+          "sources": [
+            "zhangwei_original3000",
+            "B"
+          ]
+        },
+        {
+          "word": "deception",
+          "comparisonZh": "deception范围更广，泛指故意让人信以为真的欺骗，也可包括魔术中的障眼法。subterfuge通常更具体，突出隐藏意图或逃避问题的计策，不与所有deception场景完全等同。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Journalists often use subterfuge to obtain material for stories.",
+          "translationZh": "记者常用隐蔽的手段获取报道素材。",
+          "explanationZh": "use subterfuge把这种做法作为手段；这里突出隐瞒身份或意图，不是说所有采访都属于诡计。"
+        },
+        {
+          "textEn": "obtained the papers by subterfuge",
+          "translationZh": "通过诡计取得了那些文件",
+          "explanationZh": "by subterfuge说明取得文件所用的欺骗手段，而不是公开、直接索取。"
+        }
+      ],
+      "coreImageZh": "玩具车还在桌上，收纳箱仍是空的。男孩却用蓝布盖住车，朝门外喊“妈妈，我已经收好了！”他想用遮掩制造收拾完成的假象，逃避真正整理。这种欺瞒的小计谋就是 subterfuge：诡计；并不表示妈妈已经上当。"
+    },
+    {
+      "number": 7050,
+      "word": "subvert",
+      "ipa": "/səbˈvɜːt/",
+      "pos": "vt.",
+      "coreMeaningZh": "颠覆",
+      "coreEn": "To undermine or overthrow a system, especially by attacking it secretly or indirectly.",
+      "mnemonics": [
+        {
+          "method": "SUB 暗中动 VOTE 选票，颠覆正常选举",
+          "textZh": "借sub + vote的整段形音记subvert：sub在下面，vote是选票。想象有人在桌底偷偷篡改选票，让正常选举失去作用。不是公开赢得选举，而是从内部破坏制度，这就是subvert：颠覆。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUB 暗下 HURT 根基，把制度从内部弄垮",
+          "textZh": "把subvert借听成sub + hurt：sub提示下面，hurt是伤害。想象一套制度像一座建筑，有人不在门外公开反对，却在底下不断伤害它的根基，让规则失效、权威垮掉。这种从内部破坏、颠覆，就是subvert。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "颠覆制度、权威或既有秩序",
+          "explanationZh": "subvert常接government、system、authority等，强调从根基上破坏，尤其秘密或间接的攻击。它可以描述企图颠覆，并不保证对方已经倒台；正常反对或批评本身不等于subvert。",
+          "collocations": [
+            {
+              "phrase": "subvert the government",
+              "meaningZh": "颠覆政府"
+            },
+            {
+              "phrase": "subvert a political system",
+              "meaningZh": "破坏、颠覆政治制度"
+            }
+          ]
+        },
+        {
+          "senseZh": "破坏一项程序应有的作用",
+          "explanationZh": "它也可接electoral process等制度性程序，指通过操纵或腐蚀使其违背本来目的。当前及物用法直接接被破坏的对象，不是在subvert后加to才接对象。",
+          "collocations": [
+            {
+              "phrase": "subvert the electoral process",
+              "meaningZh": "破坏选举程序"
+            },
+            {
+              "phrase": "attempt to subvert a system",
+              "meaningZh": "企图颠覆一套制度"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "undermine",
+          "comparisonZh": "两词都可指暗中损害权威或制度。undermine更广，重在逐渐削弱，也可说削弱信心；subvert更突出从根基上破坏制度、秩序或使其偏离本来作用，不是所有轻微削弱都到颠覆的程度。",
+          "sources": [
+            "zhangwei_original3000"
+          ]
+        },
+        {
+          "word": "overthrow",
+          "comparisonZh": "都可译推翻、颠覆。overthrow通常突出以力量使掌权者或政府下台；subvert更常突出秘密或间接侵蚀制度，可处于企图或破坏过程中，不一定已经完成政权更替。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They conspired to subvert the government.",
+          "translationZh": "他们密谋颠覆政府。",
+          "explanationZh": "conspired to表明密谋的目标；这句话没有断言政府已经倒台。"
+        },
+        {
+          "textEn": "trying to subvert the electoral process",
+          "translationZh": "企图破坏选举程序",
+          "explanationZh": "subvert直接接electoral process，强调损害制度程序，不是赢得一次合法投票。"
+        }
+      ],
+      "coreImageZh": "原本两个人的选票都放在托盘里，按规则每一票都应计入。同伴却拿走男孩的浅蓝票，只留下自己的米白票，并宣布“只算我的票，结果就由我定”。他从内部破坏了共同决定的规则：subvert the voting process，颠覆、破坏投票程序，而不是简单地搬动一张纸。"
+    }
+  ]
+}

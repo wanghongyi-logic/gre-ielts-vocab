@@ -1,0 +1,393 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6961,
+      "word": "sneer",
+      "ipa": "/snɪr/",
+      "pos": "v.",
+      "coreMeaningZh": "（轻蔑地）嘲笑",
+      "coreEn": "to smile or speak in a way that shows contempt",
+      "mnemonics": [
+        {
+          "method": "s + NEAR，靠近却遭嘲笑",
+          "textZh": "NEAR 是靠近，前接 /s/，声音就近似 sneer。你刚凑近，对方嘴角一歪：“你也配跟我比？”这声瞧不起人的嘲笑，就是 sneer。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STEER → SNEER，嘲笑新手开车",
+          "textZh": "STEER 是掌方向，t 换成 n 就是 sneer。新手转方向盘有些笨拙，老手歪嘴冷笑：“这也叫会开车？”记住的不是驾驶，而是轻蔑的嘲笑。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "针对人或事，常接 at",
+          "explanationZh": "sneer 可指轻蔑地笑，也可指用言语讥讽。sneer at someone/something 表示嘲笑某人或某事；它比普通 laugh 更明确地传达看不起、觉得对方不值一提的态度。",
+          "collocations": [
+            {
+              "phrase": "sneer at someone",
+              "meaningZh": "轻蔑地嘲笑某人"
+            },
+            {
+              "phrase": "sneer at an idea",
+              "meaningZh": "对一个想法嗤之以鼻"
+            }
+          ]
+        },
+        {
+          "senseZh": "引出讥讽的话，也可作名词",
+          "explanationZh": "sneer 可跟在直接引语后，表示带着讥讽说出那句话；这体现其及物用法，不应照搬为 sneer someone。名词 a sneer 指轻蔑的表情或讥讽的话。过去式为 sneered，现在分词为 sneering。",
+          "collocations": [
+            {
+              "phrase": "a contemptuous sneer",
+              "meaningZh": "轻蔑的冷笑"
+            },
+            {
+              "phrase": "say something with a sneer",
+              "meaningZh": "带着讥讽说某事"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "scoff",
+          "comparisonZh": "都可表示轻蔑或不以为然。scoff 常着重嘲弄、否定某种说法，显得不相信或不当回事；sneer 更容易突出面部表情、语调或措辞里对人的鄙视。"
+        },
+        {
+          "word": "jeer",
+          "comparisonZh": "都能表示嘲弄。jeer 常让人想到粗鲁的起哄或嘲笑声；sneer 则着重轻蔑态度，既可以说出口，也可以只是一副不屑的表情，不必喧闹。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "“You obviously don't know what you're talking about,” she sneered.",
+          "translationZh": "“显然，你根本不知道自己在说什么。”她讥讽地说道。",
+          "explanationZh": "sneered 接在引语后，标明说话者带着轻蔑语气，而不是客观指出错误。"
+        },
+        {
+          "textEn": "'Hypocrite,' he sneered.",
+          "translationZh": "“伪君子。”他轻蔑地说道。",
+          "explanationZh": "用 sneered 引出挖苦人的称呼；这个词同时交代了说话动作和看不起对方的态度。"
+        }
+      ],
+      "coreImageZh": "男孩兴冲冲地拿出自己的小船画，同伴却眯起眼睛，带着轻蔑的笑挖苦它不值得给人看。男孩听后低下头，随后认真地说，不喜欢也别这样嘲笑。sneer 指用轻蔑的表情、笑容或语气嘲弄别人；画面中的笑不是友善玩笑，而是在表达瞧不起。"
+    },
+    {
+      "number": 6962,
+      "word": "soak",
+      "ipa": "/soʊk/",
+      "pos": "v.",
+      "coreMeaningZh": "使……湿透；浸泡",
+      "coreEn": "to make thoroughly wet, or leave something in liquid",
+      "mnemonics": [
+        {
+          "method": "SOAP → SOAK，洗前先泡透",
+          "textZh": "SOAP 是肥皂，末尾 p 换成 k，就是 soak。泥巴干在球衣上，光抹肥皂搓不掉，先整件浸入水盆泡透：soak。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SOCK → SOAK，袜子一拧滴水",
+          "textZh": "SOCK 是袜子，c 换成 a 就是 soak。一脚踩进水坑，袜子从里到外湿透，一拧还滴水：soak，浸透。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "把东西放进液体里浸泡",
+          "explanationZh": "soak something in water 常指为了清洗、软化等目的把东西泡在水中；也可由被浸泡的东西作主语，表示泡着。与快速冲洗不同，soak 通常强调让液体有时间渗进去。",
+          "collocations": [
+            {
+              "phrase": "soak beans overnight",
+              "meaningZh": "把豆子浸泡一夜"
+            },
+            {
+              "phrase": "soak a cloth in warm water",
+              "meaningZh": "把布浸在温水里"
+            }
+          ]
+        },
+        {
+          "senseZh": "湿透；吸入或吸收",
+          "explanationZh": "soak 也可表示使衣服、土壤等充分湿润，不一定要整个浸在水里。be soaked 表示已经湿透；soak up 表示吸收液体，也可引申为吸收知识、尽情感受气氛。",
+          "collocations": [
+            {
+              "phrase": "be soaked with sweat",
+              "meaningZh": "被汗水浸透"
+            },
+            {
+              "phrase": "soak up water",
+              "meaningZh": "吸收水分"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "saturate",
+          "comparisonZh": "都可表示使物体充分吸水。saturate 更突出吸收到饱和、已经充满；soak 常突出浸在液体中一段时间，也可说被雨水湿透。浸泡过程未必已经达到完全饱和。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "drench",
+          "comparisonZh": "都可表示使湿透。drench 常着重大量水一下子淋上、浇上，或结果是浑身湿透；soak 还很常用于有意浸泡，如泡豆子、泡衣服，不限于从外面淋湿。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "You should soak those dirty clothes before you wash them.",
+          "translationZh": "你应该先把那些脏衣服泡一泡，再清洗。",
+          "explanationZh": "soak ... before you wash ... 把浸泡与后续清洗分开，显示 soak 并不是 wash 的简单替换。"
+        },
+        {
+          "textEn": "I was soaked by the rain.",
+          "translationZh": "我被雨淋得湿透了。",
+          "explanationZh": "was soaked 描写湿透的结果，by the rain 指明原因；这里没有人为把东西放进水盆的动作。"
+        }
+      ],
+      "coreImageZh": "男孩把干燥的蓝布放进盆水，按母亲的提醒让水浸进布里。再提起来时，整块布颜色变深，软软垂着，水滴不断落回盆中。soak 在这里表示使物体湿透；从干布到吸满水、提起还滴水的变化，表现了水已经浸透，而不是只沾湿一点。"
+    },
+    {
+      "number": 6963,
+      "word": "sodden",
+      "ipa": "/ˈsɑːdən/",
+      "pos": "adj.",
+      "coreMeaningZh": "湿透的，浸透的",
+      "coreEn": "thoroughly wet, often heavy with absorbed water",
+      "mnemonics": [
+        {
+          "method": "SUDDEN → SODDEN，突然泼得湿透",
+          "textZh": "SUDDEN（突然的）把 u 换成 o，就是 sodden。整桶水突然翻在厚坐垫上，吸满水的垫子湿得沉甸甸：sodden，湿透的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SADDEN → SODDEN，相册泡坏真难过",
+          "textZh": "SADDEN 是“使难过”，来自 SAD。把 a 换成 o，就成 sodden：珍藏相册泡在水里，每页都软湿黏连，看得主人难过；相册已 sodden，湿透了。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不只是表面有水，而是吸水湿透",
+          "explanationZh": "sodden 常描写衣服、头发、鞋子或土地吸进大量水后的状态，往往带有沉重、软塌或令人不舒服的感觉。可放在名词前，也可用 be sodden with 交代浸透它的液体。",
+          "collocations": [
+            {
+              "phrase": "sodden clothes",
+              "meaningZh": "湿透的衣服"
+            },
+            {
+              "phrase": "be sodden with rain",
+              "meaningZh": "被雨水浸透"
+            }
+          ]
+        },
+        {
+          "senseZh": "以形容词为主，注意动词及复合形式",
+          "explanationZh": "本页主要记形容词。sodden 也可作动词，表示使浸透或变得湿透，词形有 soddened、soddening；阅读中还可见 rain-sodden 这样的复合形容词，表示被雨水浸透的。不要因外形像过去分词就把形容词用法漏掉。",
+          "collocations": [
+            {
+              "phrase": "rain-sodden ground",
+              "meaningZh": "雨水浸透的地面"
+            },
+            {
+              "phrase": "sodden shoes",
+              "meaningZh": "湿透的鞋子"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "soaked",
+          "comparisonZh": "描写被水浸透时很接近。soaked 用途更广，也容易让人联想到浸泡或被淋湿的过程；sodden 更常突出吸水后的湿重、不舒服的状态。两者都不只是稍有潮气。"
+        },
+        {
+          "word": "drenched",
+          "comparisonZh": "都可描写湿透。drenched 常让人想到被大量水淋浇；sodden 更常把注意力放在衣物、地面等已经吸足水的状态，而不强调水怎样到来。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We stripped off our sodden clothes.",
+          "translationZh": "我们脱下了湿透的衣服。",
+          "explanationZh": "sodden 放在 clothes 前，说明衣服已彻底浸湿；stripped off 是脱下，而不是只拂去表面水珠。"
+        },
+        {
+          "textEn": "His grey jersey and trousers were sodden with the rain.",
+          "translationZh": "他的灰色毛衣和裤子都被雨水浸透了。",
+          "explanationZh": "were sodden with the rain 用表语描写湿透的状态，with 指明造成这种状态的雨水。"
+        }
+      ],
+      "coreImageZh": "男孩回到门廊，手中的红围巾吸饱了雨水，沉甸甸地垂着，水滴在脚前积起小水滩。母亲提醒围巾已经湿透，先不要戴到脖子上。sodden 形容浸透了水、湿重的状态；这里强调的是围巾已经满含水分，而不只是表面有一点潮湿。"
+    },
+    {
+      "number": 6964,
+      "word": "solder",
+      "ipa": "/ˈsɑːdər/",
+      "pos": "v.",
+      "coreMeaningZh": "焊接；使牢固结合",
+      "coreEn": "to join metal parts using melted solder; to unite firmly",
+      "mnemonics": [
+        {
+          "method": "SOLID → SOLDER，焊得牢固",
+          "textZh": "SOLID 是坚固，和 solder 同源。熔化焊料接好两根金属线，冷却后牢牢连成一体：solder，焊接，使牢固结合。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SOLDIER → SOLDER，焊好玩具兵",
+          "textZh": "SOLDIER（士兵）去掉 i，就是 solder。金属玩具士兵的脚与底座断开，师傅用熔化的焊料接好，让它重新站稳：solder，焊接。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "用焊料连接金属部件",
+          "explanationZh": "solder 可作动词，指熔化焊料，让金属部件连接起来；也可作名词，指所用的焊料。常用于电线、接线端子和电路板等，不是把任意东西“粘上”都叫 solder。美式读音中 l 通常不发音。",
+          "collocations": [
+            {
+              "phrase": "solder wires together",
+              "meaningZh": "把电线焊接在一起"
+            },
+            {
+              "phrase": "solder a wire to a terminal",
+              "meaningZh": "把电线焊接到接线端子上"
+            }
+          ]
+        },
+        {
+          "senseZh": "比喻像焊接一样牢固结合",
+          "explanationZh": "solder 也可比喻把友谊、群体等牢固地联结起来。这个引申义保留了把分开的部分接牢的意味；不是泛指随便放到一起，也不表示双方一定完全相同。",
+          "collocations": [
+            {
+              "phrase": "solder a friendship",
+              "meaningZh": "使友谊牢固"
+            },
+            {
+              "phrase": "solder parts together",
+              "meaningZh": "把部件焊接起来"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "weld",
+          "comparisonZh": "都可指连接金属，但不能不分工艺地互换。solder 通常熔化熔点较低的焊料来连接金属表面，不熔化母材；weld 指焊接，常涉及使接合处材料熔合或通过压力结合。两者也都可比喻紧密联结。"
+        },
+        {
+          "word": "unite",
+          "comparisonZh": "在“使牢固结合”的比喻义上接近。unite 泛指使联合、团结，不限定方式；solder 带有像把金属接头焊牢一样的形象。技术语境里的 solder 则不能只译成泛泛的 unite。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Wires are soldered onto the circuit board.",
+          "translationZh": "电线被焊接到电路板上。",
+          "explanationZh": "are soldered onto 表示通过焊接固定到板上；不是一般的粘贴或摆放。"
+        },
+        {
+          "textEn": "He then soldered the wire to the telephone terminal.",
+          "translationZh": "随后，他把电线焊接到了电话的接线端子上。",
+          "explanationZh": "soldered A to B 表示把 A 焊接到 B 上，wire 与 terminal 都是具体金属连接对象。"
+        }
+      ],
+      "coreImageZh": "男孩看着夹具固定的两段铜线，询问怎样把接头连牢。维修师用电烙铁和焊料完成接合，随后把工具放回支架，接头处留下小小的银色焊点。solder 在这里是用焊料把金属部件焊接起来；从分开的端头到牢固相连，也能帮助理解它引申的‘使牢固结合’。"
+    },
+    {
+      "number": 6965,
+      "word": "solemnity",
+      "ipa": "/səˈlemnəti/",
+      "pos": "n.",
+      "coreMeaningZh": "庄严；严肃",
+      "coreEn": "a serious, dignified quality or manner",
+      "mnemonics": [
+        {
+          "method": "SOLEMN + ITY，庄重这一性质",
+          "textZh": "solemn 表示“庄重、严肃的”，接名词后缀 -ity，成为 solemnity。宣誓时收起笑容，郑重说出承诺：把这份庄重本身叫 solemnity。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SO, LEMON TEA，郑重敬一杯",
+          "textZh": "借 SO, LEMON TEA（那么，柠檬茶吧）的声音记 solemnity。向退休老师致敬时，大家站直、双手递茶，认真致谢：一杯普通茶，敬出了 solemnity，庄严郑重。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "庄严、肃穆的气氛",
+          "explanationZh": "常用来描述仪式、重要场合或言语具有的郑重分量。在这个意义上通常是不可数名词；solemnity of ... 指某个场合、举止或话语的庄严性。庄严不等于悲伤，正式宣誓也可以充满 solemnity。",
+          "collocations": [
+            {
+              "phrase": "the solemnity of the occasion",
+              "meaningZh": "场合的庄严气氛"
+            },
+            {
+              "phrase": "with great solemnity",
+              "meaningZh": "十分郑重地"
+            }
+          ]
+        },
+        {
+          "senseZh": "严肃郑重的神态或表达",
+          "explanationZh": "可以修饰人的声音、表情或举止所传达的认真与庄重。若说打破 solemnity，通常是打断了原本严肃的气氛，而不是打破某件实体物品。",
+          "collocations": [
+            {
+              "phrase": "a tone of solemnity",
+              "meaningZh": "庄重的语气"
+            },
+            {
+              "phrase": "break the solemnity",
+              "meaningZh": "打破庄严肃穆的气氛"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "gravity",
+          "comparisonZh": "两者都可指严肃郑重的态度。gravity 更突出事情有分量、值得认真看待，也可指形势严重；solemnity 更容易带出仪式感、敬意与庄严氛围。"
+        },
+        {
+          "word": "seriousness",
+          "comparisonZh": "seriousness 泛指认真、不轻浮，也可指问题的严重程度；solemnity 范围较窄，突出庄重肃穆。认真做一道题可以是 seriousness，却通常不必称为 solemnity。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her voice conveyed the solemnity of the passage.",
+          "translationZh": "她的声音传达出那段文字的庄重意味。",
+          "explanationZh": "the solemnity of the passage 指文字所带的庄严分量；conveyed 表明这种意味由声音表现出来。"
+        },
+        {
+          "textEn": "The visiting statesman was welcomed with appropriate solemnity.",
+          "translationZh": "人们以合乎礼仪的庄重方式欢迎来访的政治家。",
+          "explanationZh": "with appropriate solemnity 描写欢迎的方式，体现正式场合应有的庄重，并不表示欢迎者悲伤。"
+        }
+      ],
+      "coreImageZh": "男孩和老师站在纪念碑前，碑下静放着一束白花。老师提醒安静肃立、表达敬意，男孩也郑重回应，随后两人认真地站着致意。solemnity 是庄严、严肃这种气氛或态度；这里的肃静不是偶然没人说话，而是因为他们以恭敬郑重的方式对待纪念仪式。"
+    }
+  ]
+}

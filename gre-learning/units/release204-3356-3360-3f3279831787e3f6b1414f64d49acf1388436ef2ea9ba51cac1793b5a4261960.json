@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6976,
+      "word": "spate",
+      "ipa": "/speɪt/",
+      "pos": "n.",
+      "coreMeaningZh": "一大批；短时间内接连发生的大量事物；洪水",
+      "coreEn": "a large number or sudden rush of things; a flood",
+      "mnemonics": [
+        {
+          "method": "SPACE → SPATE，邮件挤满空间",
+          "textZh": "SPACE 是空间，c 换成 t 就是 spate。几分钟内邮件一封接一封涌来，邮箱 space 都不够：a spate of messages，短时间涌来的一大批消息。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SKATE → SPATE，滑冰客一下涌来",
+          "textZh": "SKATE 是滑冰，k 换成 p 就是 spate。冰场刚开门，一批又一批滑冰客接连到来，窗口很快排长队：短时间涌来大量顾客，a spate of arrivals。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "短时间涌来或接连发生的一大批",
+          "explanationZh": "通常用单数 a spate of，后接消息、事件、投诉等。常用于不愉快的事，但不限定为坏事，也可说一批新书集中问世。",
+          "collocations": [
+            {
+              "phrase": "a spate of complaints",
+              "meaningZh": "短时间内接连出现的大量投诉"
+            },
+            {
+              "phrase": "a spate of new books",
+              "meaningZh": "集中出版的一大批新书"
+            }
+          ]
+        },
+        {
+          "senseZh": "河水暴涨；洪水般涌动",
+          "explanationZh": "in spate / in full spate 常见于英式表达，描述河水比平时更多、流势更猛。由洪水的形象可理解大量事物集中涌来的感觉。",
+          "collocations": [
+            {
+              "phrase": "a river in spate",
+              "meaningZh": "水势暴涨的河流"
+            },
+            {
+              "phrase": "in full spate",
+              "meaningZh": "汹涌奔流；正说个不停"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "flood",
+          "comparisonZh": "都可用洪水比喻大量涌来的事物。a flood of letters 与 a spate of letters 接近；spate 尤其常用来概括一段时间接连出现的同类事件。"
+        },
+        {
+          "word": "series",
+          "comparisonZh": "series 只说一系列，并不保证数量特别多或时间很集中；spate 强调大量、成批涌来的感觉。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A spate of books on the subject have come out recently.",
+          "translationZh": "最近，一大批有关这一主题的书出版了。",
+          "explanationZh": "a spate of books 表示新书集中涌现，说明 spate 不只搭配坏事。"
+        },
+        {
+          "textEn": "After heavy rain, the river was in spate.",
+          "translationZh": "大雨过后，河水暴涨。",
+          "explanationZh": "in spate 描写河水水量增加、流势变猛，是洪水相关的用法。"
+        }
+      ],
+      "coreImageZh": "桌上原本只有一封信，邮递员却端来满满一盘，说今天这一大批都是给男孩的。男孩看着集中送来的许多信封，惊讶怎么一下来了这么多。spate 表示一大批、短时间内大量涌来的事物；新送来的满盘信件与原有的一封形成对比，突出集中涌来的数量。"
+    },
+    {
+      "number": 6977,
+      "word": "sleek",
+      "ipa": "/sliːk/",
+      "pos": "adj.",
+      "coreMeaningZh": "时髦优美的；线条流畅的；光滑有光泽的",
+      "coreEn": "stylish and gracefully shaped; smooth and glossy",
+      "mnemonics": [
+        {
+          "method": "SILK → SLEEK，丝绸光滑优美",
+          "textZh": "把 SILK（丝绸）与 SLEEK 整体相联。丝绸礼服顺滑垂下，贴合身形，没有多余褶皱：sleek，光滑而线条优美。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SLEEVE → SLEEK，袖子剪裁利落",
+          "textZh": "SLEEVE 是袖子，把末尾 ve 换成 k，就成 sleek。西装袖子顺着手臂垂下，不鼓不皱、线条利落：sleek，时髦优美。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "设计、衣着时髦而线条优美",
+          "explanationZh": "常用于汽车、游艇、设备或服装，突出外形流畅、精致利落，并不只是“正在流行”。",
+          "collocations": [
+            {
+              "phrase": "a sleek design",
+              "meaningZh": "流畅时髦的设计"
+            },
+            {
+              "phrase": "a sleek sports car",
+              "meaningZh": "线条优美的跑车"
+            }
+          ]
+        },
+        {
+          "senseZh": "毛发或表面光滑有光泽",
+          "explanationZh": "形容毛发时，常含梳理整齐、健康有光泽的感觉。比较级 sleeker，最高级 sleekest。",
+          "collocations": [
+            {
+              "phrase": "sleek hair",
+              "meaningZh": "顺滑有光泽的头发"
+            },
+            {
+              "phrase": "sleek fur",
+              "meaningZh": "光滑油亮的皮毛"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "elegant",
+          "comparisonZh": "都可表示优美雅致。elegant 可评价举止、风格乃至解决办法；sleek 描写外形时更突出平滑流畅、利落精致的线条。",
+          "sources": [
+            "zhangwei_original3000"
+          ]
+        },
+        {
+          "word": "stylish",
+          "comparisonZh": "都可表示时髦好看。stylish 强调有品位、有风格；sleek 常进一步让人想到流畅、整洁、无多余突起的外形。",
+          "sources": [
+            "zhangwei_original3000"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Who owns that sleek black car parked outside your house?",
+          "translationZh": "停在你家外面的那辆线条优美的黑色汽车是谁的？",
+          "explanationZh": "sleek 赞赏汽车流畅、精致的外形。"
+        },
+        {
+          "textEn": "The cat had sleek fur.",
+          "translationZh": "那只猫的皮毛光滑油亮。",
+          "explanationZh": "这里是皮毛顺滑、有光泽的具体义。"
+        }
+      ],
+      "coreImageZh": "讲解员请男孩观察银色轿车的车身线条，他沿着低矮修长的轮廓看过去，赞叹它简洁漂亮、很有型。sleek 在这里形容外形时髦优美、线条流畅；重点是整个设计干净利落的轮廓，不只是金属表面发亮。"
+    },
+    {
+      "number": 6978,
+      "word": "speck",
+      "ipa": "/spek/",
+      "pos": "n.",
+      "coreMeaningZh": "小点；微粒；一点点",
+      "coreEn": "a very small spot or particle",
+      "mnemonics": [
+        {
+          "method": "SPEAK → SPECK，说话落下小点",
+          "textZh": "SPEAK 是说话，把 a 换成 c，就是 speck。对着白纸说话，一点唾沫落在纸上，留下几乎看不见的小点：speck，一点点。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "sPECK，鸟嘴只啄起一粒",
+          "textZh": "PECK 是啄，前添 s 就是 speck。小鸟低头一啄，嘴尖只叼着一粒面包屑：那么小的一粒，就是 a speck。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "很小的点或微粒",
+          "explanationZh": "可指表面上的斑点、微小颗粒，也可指远处看起来很小的物体；不一定是污渍。",
+          "collocations": [
+            {
+              "phrase": "a speck of dust",
+              "meaningZh": "一粒灰尘"
+            },
+            {
+              "phrase": "a speck in the distance",
+              "meaningZh": "远处的一个小点"
+            }
+          ]
+        },
+        {
+          "senseZh": "极少的一点",
+          "explanationZh": "a speck of 后接物质名词，强调数量极微；not a speck of 常表示连一点也没有。",
+          "collocations": [
+            {
+              "phrase": "not a speck of dirt",
+              "meaningZh": "一点污垢也没有"
+            },
+            {
+              "phrase": "specks of paint",
+              "meaningZh": "点点油漆"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "spot",
+          "comparisonZh": "都可表示点或斑点。speck 特别强调微小；spot 的大小限制没那么强，还可表示地点。"
+        },
+        {
+          "word": "particle",
+          "comparisonZh": "都可指微粒。particle 是较中性的颗粒称呼，常用于科学描述；speck 更突出肉眼看到的一丁点。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The ship was now just a speck in the distance.",
+          "translationZh": "那艘船此时在远处只剩一个小点。",
+          "explanationZh": "船本身不小，但在远处看起来像一个 speck。"
+        },
+        {
+          "textEn": "There isn't a speck of dust anywhere in the house.",
+          "translationZh": "屋里到处都一尘不染。",
+          "explanationZh": "not a speck of dust 强调连一粒灰尘都没有。"
+        }
+      ],
+      "coreImageZh": "宽大的白画布上只有一个很小的深蓝点，男孩指着它询问，画师解释那只是一点点蓝颜料。speck 是细小的斑点或微粒；大片白色衬出这一点的微小，也让人想到少到只有一点点的量。"
+    },
+    {
+      "number": 6979,
+      "word": "spectator",
+      "ipa": "/ˈspekteɪtər/",
+      "pos": "n.",
+      "coreMeaningZh": "观众；旁观者",
+      "coreEn": "a person watching an event without taking part",
+      "mnemonics": [
+        {
+          "method": "SPECT + ATOR，看比赛的人",
+          "textZh": "SPECT 表示“看”，在 INSPECT（检查）里也能看见；-ator 表示做某事的人。SPECT + ATOR：坐在看台看比赛、自己不下场的人，就是 spectator，观众。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SPEAK LATER，先看再聊",
+          "textZh": "借 SPEAK LATER（待会儿再说）的近音记 spectator。比赛正精彩，朋友想聊天，你指指球场：“先看，待会儿再说。”这会儿你们是观众，spectators。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "观看比赛或活动的人",
+          "explanationZh": "是可数名词，常用于现场观看体育比赛、游行或表演的人；不表示参赛者。",
+          "collocations": [
+            {
+              "phrase": "thousands of spectators",
+              "meaningZh": "成千上万的观众"
+            },
+            {
+              "phrase": "a spectator sport",
+              "meaningZh": "适合观看的体育运动"
+            }
+          ]
+        },
+        {
+          "senseZh": "未参与的旁观者",
+          "explanationZh": "也可强调只是看着事情发生，没有参与或干预。目击者义侧重在场看见，并不自动含有法律作证含义。",
+          "collocations": [
+            {
+              "phrase": "a mere spectator",
+              "meaningZh": "仅仅是一个旁观者"
+            },
+            {
+              "phrase": "a passive spectator",
+              "meaningZh": "被动的旁观者"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "onlooker",
+          "comparisonZh": "都可指在旁观看的人。onlooker 常用于围观某一事件的人；spectator 更常用于有安排的比赛或活动。"
+        },
+        {
+          "word": "audience",
+          "comparisonZh": "都与观众有关。audience 通常把听讲或看演出的人看成一个群体；spectator 指一个观看者，复数 spectators 可逐个计数。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Thousands of spectators lined the route of the royal procession.",
+          "translationZh": "成千上万的观众站在王室游行路线的两旁。",
+          "explanationZh": "spectators 是沿途观看游行的人，不是游行队伍成员。"
+        },
+        {
+          "textEn": "I think soccer is the best spectator sport there is.",
+          "translationZh": "我认为足球是最适合观赏的体育运动。",
+          "explanationZh": "spectator sport 指供人观看、具有观赏性的运动。"
+        }
+      ],
+      "coreImageZh": "男孩和母亲坐在观众席，专注地看着女琴手演奏。演出结束后，他们仍在座位上为她鼓掌。spectator 是观看演出、比赛等活动的观众或旁观者；男孩参与的是观看和欣赏，而不是上台演奏。"
+    },
+    {
+      "number": 6980,
+      "word": "spectrum",
+      "ipa": "/ˈspektrəm/",
+      "pos": "n.",
+      "coreMeaningZh": "光谱；范围；系列",
+      "coreEn": "a band of light colours; a range of related things",
+      "mnemonics": [
+        {
+          "method": "SPECT + RUM，看见彩色光带",
+          "textZh": "spect- 表示“看”，像 inspect（检查）中的 SPECT；连同结尾 -rum，记 SPECTRUM。白光穿过三棱镜，眼前展开一条彩色光带：可见光谱。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SPEAK + DRUM，声音展开频谱",
+          "textZh": "借 SPEAK（说话）和 DRUM（鼓）的声音记 spectrum。先说话，再敲鼓，屏幕分别画出从低频到高频的分布：spectrum 不仅是光谱，也可表示声音的频谱。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "按波长展开的光谱",
+          "explanationZh": "白光分解后可形成按顺序排列的色带；也用于更广的电磁波范围。复数常用 spectra。",
+          "collocations": [
+            {
+              "phrase": "the visible spectrum",
+              "meaningZh": "可见光谱"
+            },
+            {
+              "phrase": "the colours of the spectrum",
+              "meaningZh": "光谱中的各种颜色"
+            }
+          ]
+        },
+        {
+          "senseZh": "相关事物的一整段范围或系列",
+          "explanationZh": "常用 a broad/wide/full spectrum of，强调从一端到另一端的一系列不同类型或程度，而不只是数量多。",
+          "collocations": [
+            {
+              "phrase": "a broad spectrum of opinions",
+              "meaningZh": "广泛而多样的意见"
+            },
+            {
+              "phrase": "across the political spectrum",
+              "meaningZh": "横跨各种政治立场"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "range",
+          "comparisonZh": "都可表示范围。range 用途更广，也可指价格或距离的上下限；spectrum 往往突出相关事物从一端到另一端呈现的多样性。"
+        },
+        {
+          "word": "continuum",
+          "comparisonZh": "都可表达从一端延伸到另一端。continuum 特别强调连续变化、没有清晰分界；spectrum 可突出不同颜色、立场或类别覆盖的范围。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A spectrum is formed by a ray of light passing through a prism.",
+          "translationZh": "一束光穿过三棱镜，可形成光谱。",
+          "explanationZh": "白光经三棱镜分解后可展开为彩色光带，这是 spectrum 的光谱义。"
+        },
+        {
+          "textEn": "The courses cover the full spectrum of levels.",
+          "translationZh": "这些课程涵盖了全部水平层次。",
+          "explanationZh": "full spectrum 表示从初级到高级的完整范围。"
+        }
+      ],
+      "coreImageZh": "白光照进三棱镜后展开成一片彩光，落在白屏上，形成从红到紫的连续色带。男孩跟着老师观察，发现白光中包含许多颜色。spectrum 在这里指光谱：不同颜色的光按顺序展开形成的色带；由这一连续系列，也可理解它表示‘范围、系列’的引申义。"
+    }
+  ]
+}

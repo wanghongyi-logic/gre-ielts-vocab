@@ -1,0 +1,393 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6876,
+      "word": "sapient",
+      "ipa": "/ˈseɪpiənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "聪明的，有洞察力的",
+      "coreEn": "wise and discerning; showing sound, insightful judgment",
+      "coreImageZh": "母亲看着收下的一碗豆子，提议全煮来吃。男孩稍作思考，提醒她留一些做种，来年才能继续收获；母亲听后露出认可的神情。sapient 形容有智慧、富于洞察力的判断，男孩没有只顾眼前一餐，而是看到了全部吃掉之后对未来种植的影响。",
+      "mnemonics": [
+        {
+          "method": "SAPI + ENT：能辨明事理",
+          "textZh": "sapi- 来自拉丁语“有智慧、能辨别”，-ent 是形容词结尾。遇事不被表象骗过、能判断真相，就是 sapient：聪明有智慧的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "PATIENT 地想，聪明地答",
+          "textZh": "sapient 与 PATIENT（有耐心的）整体很像，后面 ient 相同。别人急着抢答，他耐心看出题里的陷阱，给出聪明而有见识的回答。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "有智慧和敏锐判断力的",
+          "explanationZh": "这是较正式、较少用于日常闲谈的形容词，常写人的洞察、判断、建议或思考。重点是看清情形、作出明智判断，不是单纯算得快、记得多，也不必限定为年长者。",
+          "collocations": [
+            {
+              "phrase": "sapient advice",
+              "meaningZh": "明智的建议"
+            },
+            {
+              "phrase": "a sapient judgment",
+              "meaningZh": "富有洞察力的判断"
+            }
+          ]
+        },
+        {
+          "senseZh": "词性与相关词",
+          "explanationZh": "sapient 修饰人或事物；sapience 是相应的名词，表示智慧、洞察力。在谈论生物或虚构物种时，sapient 也可侧重具备较高的智慧与推理能力；不要仅凭能感觉到刺激，就断定具备这种智慧。",
+          "collocations": [
+            {
+              "phrase": "a sapient observer",
+              "meaningZh": "有洞察力的观察者"
+            },
+            {
+              "phrase": "sapient beings",
+              "meaningZh": "有智慧的生命体"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "wise",
+          "comparisonZh": "表示有智慧、判断明智时接近。wise 更日常，sapient 更正式，尤其强调深刻的见识和敏锐的判断。"
+        },
+        {
+          "word": "sagacious",
+          "comparisonZh": "表示睿智、富有洞察力时非常接近。两者都不只是普通的聪明；sagacious 常突出精明而敏锐的判断，sapient 也可带较庄重、学术或文学的语气。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her sapient advice helped us see beyond the immediate problem.",
+          "translationZh": "她明智的建议帮助我们看到了眼前问题之外的情况。",
+          "explanationZh": "sapient 修饰 advice，强调建议有见识、能把眼光放得更远。"
+        },
+        {
+          "textEn": "The committee needed a sapient leader, not merely a confident speaker.",
+          "translationZh": "委员会需要一位有洞察力的领导者，而不仅仅是一位自信的演说者。",
+          "explanationZh": "not merely 把判断智慧与表达自信区分开；sapient 评价的是看问题和作决定的能力。"
+        }
+      ]
+    },
+    {
+      "number": 6877,
+      "word": "sarcasm",
+      "ipa": "/ˈsɑːrkæzəm/",
+      "pos": "n.",
+      "coreMeaningZh": "讽刺，挖苦",
+      "coreEn": "sharp, mocking language, often using words opposite to the intended meaning",
+      "coreImageZh": "男孩不小心碰翻水杯，桌面洒了一片水。同伴却笑着说他‘真够小心的’，男孩听出挖苦，皱眉说明自己不是故意的，同伴这才收起笑意。sarcasm 指带刺的讽刺或挖苦；这里表面上夸人小心，实际借刚发生的失误嘲弄对方，说的是反话。",
+      "mnemonics": [
+        {
+          "method": "SARC 撕肉，讽刺的话刺痛人",
+          "textZh": "sarcasm 的源头是“撕肉”，sarc- 表示肉。借 SHARK（鲨鱼）的近音想象：鲨鱼咬肉，讽刺的话刺痛人心——对迟到者说“你可真准时”。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "“啥，夸咱？”原来是讽刺",
+          "textZh": "把 sarcasm 的整段声音联想成“啥，夸咱？”考试考砸了，却听见“你可真是天才”；刚以为在夸自己，才发现是在讽刺。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "常借反话表达带刺的嘲弄",
+          "explanationZh": "通常是不可数名词，可指说话方式或语气。常用表面赞扬传达实际批评，但重点是挖苦、嘲弄的意味，不是一切相反表达，也不是单独一个轻蔑眼神。语气、情境和双方关系会影响一句话是否被听成挖苦。",
+          "collocations": [
+            {
+              "phrase": "with heavy sarcasm",
+              "meaningZh": "带着浓重的讽刺意味"
+            },
+            {
+              "phrase": "a hint of sarcasm",
+              "meaningZh": "一丝挖苦的意味"
+            }
+          ]
+        },
+        {
+          "senseZh": "与机智应答、一般反讽的区别",
+          "explanationZh": "sarcastic 是形容词，sarcastically 是副词。sarcasm 往往针对某人或某种行为，带尖刻意味；机智应答可以友善，事情与预期相反也可以构成 irony，却不因此自动成为 sarcasm。",
+          "collocations": [
+            {
+              "phrase": "a sarcastic remark",
+              "meaningZh": "一句挖苦的话"
+            },
+            {
+              "phrase": "biting sarcasm",
+              "meaningZh": "尖刻的讽刺"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "irony",
+          "comparisonZh": "在说反话、用字面意思的反面传达意图时有交集。irony 范围更广，还可指事情与预期相反；sarcasm 更突出语言中的挖苦、嘲弄，不能把两者在所有语境下互换。"
+        },
+        {
+          "word": "mockery",
+          "comparisonZh": "在嘲弄、让人难堪时接近。mockery 还包括模仿、动作等取笑方式，不一定说反话；sarcasm 更常体现为尖刻的语言表达。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "“Excellent planning,” she said with sarcasm as they missed the last bus.",
+          "translationZh": "他们错过末班车时，她挖苦地说：“计划得真周到。”",
+          "explanationZh": "错过末班车的事实与 Excellent planning 的表面赞扬相反，with sarcasm 明确这不是诚恳的称赞。"
+        },
+        {
+          "textEn": "There was no hint of sarcasm in his apology.",
+          "translationZh": "他的道歉里没有丝毫挖苦的意味。",
+          "explanationZh": "no hint of sarcasm 否定的是语气中的嘲弄，让人理解这番道歉并非借机说反话。"
+        }
+      ]
+    },
+    {
+      "number": 6878,
+      "word": "sate",
+      "ipa": "/seɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "使饱足，充分满足",
+      "coreEn": "to satisfy an appetite, desire, or need completely, sometimes to the point of having no wish for more",
+      "coreImageZh": "男孩已经吃到一餐的尾声，告诉母亲再吃几口就够了。他吃下剩下的饭，把汤匙放回碗中，满足地说自己一点也不饿了，随后停止进食。sate 表示充分满足食欲或其他欲求，这顿饭让男孩从还想再吃一点，变成了已经足够、不再需要添饭的状态。",
+      "mnemonics": [
+        {
+          "method": "ATE：已经吃饱，充分满足",
+          "textZh": "sate 中完整藏着 ATE（吃了）。面前的饭已经吃光，肚子饱得直摆手：sate 就是充分满足，尤其把食欲喂足。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STATE：宣布“我满足了”",
+          "textZh": "sate 与 STATE（声明）整体字形近。吃完丰盛一餐，郑重声明：“够了，我完全满足了！”从声明满足，记住 sate 的“使充分满足”。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "使需求得到充分满足",
+          "explanationZh": "sate 是及物动词，较正式，可接 hunger、thirst、appetite、curiosity 等，强调满足到足够、不再急切想要的程度。也可能暗示过量之后失去兴趣，但不必每次都理解成吃撑或厌恶。",
+          "collocations": [
+            {
+              "phrase": "sate one’s hunger",
+              "meaningZh": "充分满足饥饿感"
+            },
+            {
+              "phrase": "sate one’s curiosity",
+              "meaningZh": "充分满足好奇心"
+            }
+          ]
+        },
+        {
+          "senseZh": "与 satiate 的关系",
+          "explanationZh": "sate 与 satiate 在充分满足食欲、口渴、欲望或好奇心等用法中高度接近，常可互换；不能按食物和水给两词划分界限。sated 常描述已经满足的状态；sated with 引出让人得到满足或感到过量的事物。",
+          "collocations": [
+            {
+              "phrase": "feel sated",
+              "meaningZh": "感到已经满足"
+            },
+            {
+              "phrase": "be sated with rich food",
+              "meaningZh": "吃足了丰盛的食物"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "satiate",
+          "comparisonZh": "在充分满足食欲、口渴、欲望或兴趣时通常可互换，两者都可能带有满足过头、不想再要的意味。没有固定的食物与饮水之分。"
+        },
+        {
+          "word": "satisfy",
+          "comparisonZh": "在满足需求或欲望时接近。satisfy 的适用范围更广，也可指达到要求、使人信服；sate 更集中于充分满足一种欲求，不宜用来替换 satisfy a legal requirement。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A large bowl of noodles sated his hunger.",
+          "translationZh": "一大碗面条让他吃饱了。",
+          "explanationZh": "sated 的宾语是 hunger，说明一顿食物把饥饿感充分满足了；句子没有说他吃得难受。"
+        },
+        {
+          "textEn": "The detailed explanation finally sated her curiosity.",
+          "translationZh": "那番详细的解释终于充分满足了她的好奇心。",
+          "explanationZh": "把 curiosity 当作可以得到满足的欲求；finally 表明先前的疑问到此获得了足够的解答。"
+        }
+      ]
+    },
+    {
+      "number": 6879,
+      "word": "satiate",
+      "ipa": "/ˈseɪʃieɪt/（动词）；/ˈseɪʃiət/（形容词）",
+      "pos": "vt.；adj.",
+      "coreMeaningZh": "vt. 使饱足，充分或过分满足；adj. 饱足的",
+      "coreEn": "verb: to satisfy a need or desire fully or excessively; adjective: fully satisfied or filled",
+      "coreImageZh": "男孩走了很久，回到家觉得口渴，拿起桌上的水杯喝水。喝过后，他把杯子放低，告诉母亲自己已经喝够，随后将杯子放回桌上，不再继续喝。satiate 在这里表示使一种需求得到充分满足，清水满足了男孩的口渴，让他从急着喝水变为舒适、满足。",
+      "mnemonics": [
+        {
+          "method": "SATI + ATE：使之满足",
+          "textZh": "sati- 表示“足够、满足”，-ate 可构成动词。食物已经足够，把饥饿完全满足了，就是 satiate：使饱足、充分满足。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SAY SHE ATE：她吃饱了",
+          "textZh": "把 satiate 的声音连成 SAY SHE ATE（说她吃过了）。主人还想添饭，她连忙摆手：“告诉他，我已经吃饱了！”",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "动词：使欲求得到充分满足",
+          "explanationZh": "读 /ˈseɪʃieɪt/，及物，较正式，可接人，也可接 hunger、thirst、curiosity、desire 等。可以只是充分满足，也可以表示过量满足之后失去继续追求的兴趣；需由上下文判断，不强行附加恶心或损害。",
+          "collocations": [
+            {
+              "phrase": "satiate one’s thirst",
+              "meaningZh": "充分解渴"
+            },
+            {
+              "phrase": "satiate a desire for adventure",
+              "meaningZh": "充分满足冒险的欲望"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容词与常用分词",
+          "explanationZh": "形容词 satiate 读 /ˈseɪʃiət/，末尾与动词不同，表示饱足、满足的，较少见。实际表达“感到满足”也常用 satiated。动词 satiate 与 sate 近义，食物、饮水和抽象欲求均可涉及，不按场景硬分工。",
+          "collocations": [
+            {
+              "phrase": "feel satiated",
+              "meaningZh": "感到已经满足"
+            },
+            {
+              "phrase": "satiate with food",
+              "meaningZh": "吃得饱足的"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sate",
+          "comparisonZh": "在充分或过量满足食欲、口渴和欲望时高度接近，常可互换。两词都可能强调已经足够、不再想要，不存在 satiate 只用于喝水的限制。"
+        },
+        {
+          "word": "satisfy",
+          "comparisonZh": "满足需要或欲望时接近。satiate 更突出完全满足乃至满足过量；satisfy 较通用，还可用于满足条件、消除疑虑等不能直接换成 satiate 的语境。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The meal satiated the hikers’ hunger.",
+          "translationZh": "这顿饭充分满足了徒步者们的饥饿感。",
+          "explanationZh": "satiated 作及物动词的过去式，宾语是 hunger；它同样可以用于食物带来的饱足。"
+        },
+        {
+          "textEn": "After weeks of sightseeing, she felt satiated and wanted a quiet day at home.",
+          "translationZh": "连着几周观光之后，她觉得已经游览得够多，只想在家安静待一天。",
+          "explanationZh": "felt satiated 表示观光的愿望已经得到充分满足，后面的休息愿望进一步表现她暂时不想继续游览。"
+        }
+      ]
+    },
+    {
+      "number": 6880,
+      "word": "scandalous",
+      "ipa": "/ˈskændələs/",
+      "pos": "adj.",
+      "coreMeaningZh": "引起反感的，丢脸的",
+      "coreEn": "shocking or disgraceful because it violates accepted standards of proper or moral behavior",
+      "coreImageZh": "灰衣男子从捐款罐里拿走硬币，男孩立即说明这是帮助灾民的钱。男子仍把钱收向自己的衣袋，男孩震惊地谴责他连善款都偷，男子这才停下，露出难堪的神情。scandalous 形容严重违背道德、令人震惊和愤慨的行为；这里的可耻之处，是把救助他人的善款据为己有。",
+      "mnemonics": [
+        {
+          "method": "SCANDAL + OUS：丑闻般丢脸",
+          "textZh": "scandal 是“丑闻”，-ous 把它变成形容词。把救灾款拿去挥霍，丑闻一传开，人人反感：scandalous，令人愤慨、丢脸的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "扔出 SANDAL 凉鞋，真丢脸",
+          "textZh": "scandalous 的主体像 SANDAL（凉鞋），末尾 -ous 是形容词结尾。颁奖时，有人不服结果，竟把凉鞋朝获奖者扔过去；这番侮辱人的举动实在丢脸，令人反感。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "令人震惊、反感或蒙羞的行为",
+          "explanationZh": "常评价行为、待遇、决定或社会状况，表示它们严重违背得体或道德标准。语气通常比一般的“不太合适”强；并非所有令人尴尬的小失误、不同寻常的穿着或恶心的气味都适合用 scandalous。",
+          "collocations": [
+            {
+              "phrase": "scandalous behavior",
+              "meaningZh": "令人反感、不体面的行为"
+            },
+            {
+              "phrase": "a scandalous abuse of power",
+              "meaningZh": "令人震惊的滥用职权"
+            }
+          ]
+        },
+        {
+          "senseZh": "强烈谴责与伤害名誉的相关用法",
+          "explanationZh": "可用于价格、待遇等，强调离谱得让人愤慨。修饰 rumors 或 allegations 时，还可能指有损名誉、带诽谤性质的内容；仅凭这个形容词，不能认定传言所说的事已经被证实。scandalously 是副词。",
+          "collocations": [
+            {
+              "phrase": "scandalous prices",
+              "meaningZh": "高得离谱的价格"
+            },
+            {
+              "phrase": "scandalous rumors",
+              "meaningZh": "有损名誉的传言"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "unseemly",
+          "comparisonZh": "在不体面、不合乎场合要求、令人反感的行为上接近。unseemly 可以只是不得体；scandalous 通常批评更强，常带令人震惊、丢脸或违背道德标准的意味。",
+          "sources": [
+            "B"
+          ]
+        },
+        {
+          "word": "disgraceful",
+          "comparisonZh": "在行为可耻、使人蒙羞时接近。disgraceful 直接强调可耻；scandalous 还常突出事情严重到让旁观者震惊或愤慨。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It was scandalous that donations meant for the shelter were spent on private holidays.",
+          "translationZh": "本应用于收容所的捐款竟被拿去支付私人度假开支，这实在令人愤慨。",
+          "explanationZh": "It was scandalous that 后的整件事受到强烈谴责，理由在于捐款用途被滥用，而非普通账目疏漏。"
+        },
+        {
+          "textEn": "The report exposed the scandalous treatment of the workers.",
+          "translationZh": "这份报告揭露了工人们所遭受的令人愤慨的待遇。",
+          "explanationZh": "scandalous 修饰 treatment，对待遇作出强烈的道德评价；exposed 表示把原本不为人知的情况揭露出来。"
+        }
+      ]
+    }
+  ]
+}

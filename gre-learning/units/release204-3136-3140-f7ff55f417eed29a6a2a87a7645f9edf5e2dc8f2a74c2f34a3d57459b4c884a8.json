@@ -1,0 +1,332 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6756,
+      "word": "rash",
+      "ipa": "/ræʃ/",
+      "pos": "adj.",
+      "coreMeaningZh": "草率的，仓促的",
+      "coreEn": "acting or decided without enough care or thought about possible consequences",
+      "coreImageZh": "朋友已经伸手提醒，男孩却说不用看，没弄清对岸往哪儿落脚就向水坑跳去；结果双脚落进水里，鞋子全湿了，才后悔自己没有先观察。rash 指贸然行动、没有想清后果，这次跳得快不是关键，省掉了该有的判断才是。",
+      "mnemonics": [
+        {
+          "method": "RUSH 急着发送，RASH 草率出错",
+          "textZh": "RUSH（匆忙）把 u 换成 a，就是 RASH，读音也只换了中间的元音。想象一封邮件刚写完，你便急着按发送，连收件人都没有看，结果把私下的抱怨发给了被抱怨的人。手指急着往前冲，该做的检查却被丢在后面。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "CRASH 转弯撞车，RASH 少了谨慎",
+          "textZh": "CRASH（碰撞）去掉开头的 c，就是 RASH。想象骑车人还没看清转角，就猛地拐过去，车头砰地撞上路旁的木栏。那一声 crash 发生之前，缺的正是先看一眼、想一想的谨慎。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "草率的，仓促的",
+          "explanationZh": "形容人、决定或行动未经充分考虑，常暗示风险或不良后果。重点不是速度本身，而是缺少谨慎；a rash decision 是草率决定。与名词 rash（皮疹）不要混淆。",
+          "collocations": [
+            {
+              "phrase": "a rash decision",
+              "meaningZh": "草率的决定"
+            },
+            {
+              "phrase": "a rash promise",
+              "meaningZh": "轻率的承诺"
+            },
+            {
+              "phrase": "be rash to do something",
+              "meaningZh": "做某事显得草率"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hasty",
+          "comparisonZh": "都可指仓促；hasty 侧重匆忙、考虑不足，rash 更突出冒失和没有顾及后果。"
+        },
+        {
+          "word": "reckless",
+          "comparisonZh": "都含缺少谨慎；reckless 往往更强烈地表示不顾危险，rash 常是贸然作出某个决定。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Think twice before doing anything rash.",
+          "translationZh": "做任何冒失的事之前都要三思。",
+          "explanationZh": "Think twice 是三思、慎重考虑；before 后接 doing，提醒先考虑后果。"
+        },
+        {
+          "textEn": "This is what happens when you make rash decisions.",
+          "translationZh": "草率作决定就会出现这种情况。",
+          "explanationZh": "what happens 作表语；when 引出造成眼前结果的行为，rash 修饰 decisions。"
+        }
+      ]
+    },
+    {
+      "number": 6757,
+      "word": "raspy",
+      "ipa": "/ˈræspi/",
+      "pos": "adj.",
+      "coreMeaningZh": "（声音）粗哑的，刺耳的",
+      "coreEn": "having a rough, scraping quality, especially in the voice",
+      "coreImageZh": "男孩拿着书开口朗读，却摸着喉咙说自己的声音像在刮东西；朋友也听出嗓音发沙，劝他先停下，最后书合在膝上。raspy 描写这种粗糙、干涩、带摩擦感的音色，不是只说他讲得响，或声音很低。",
+      "mnemonics": [
+        {
+          "method": "RASP + Y：刮擦般的粗哑嗓音",
+          "textZh": "rasp 可以指用粗糙表面刮擦，也指那种刺耳的摩擦声；加上 -y，就形成 raspy。想象砂纸来回蹭过木板，声音沙沙发涩，不像光滑琴弦那样圆润。再把这股刮擦感放到嗓音里，听到的便是干哑、带毛边的声音。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RUSTY，嗓音像生了锈",
+          "textZh": "把 RASPY 和 RUSTY（生锈的）联在一起：嗓音仿佛生了锈的门轴，一开口便粗哑、发涩，不再圆润。借这种“生锈的声音”记 raspy。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "声音刺耳的，沙哑粗糙的",
+          "explanationZh": "常形容嗓音沙哑、干涩，带刮擦般的粗糙感，也可描写其他刺耳声音。它不等于高音或大声；低沉的声音也可以 raspy。",
+          "collocations": [
+            {
+              "phrase": "a raspy voice",
+              "meaningZh": "沙哑刺耳的嗓音"
+            },
+            {
+              "phrase": "a raspy tone",
+              "meaningZh": "粗哑的语调"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hoarse",
+          "comparisonZh": "都常形容沙哑嗓音；hoarse 更侧重嗓子嘶哑，raspy 更突出带刮擦感的粗糙音色。"
+        },
+        {
+          "word": "grating",
+          "comparisonZh": "都可指声音刺耳难听；grating 更强调令人不舒服，raspy 更具体地描写沙哑粗涩的质感。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her voice was raspy from yelling so much.",
+          "translationZh": "她喊得太多，声音变得沙哑。",
+          "explanationZh": "from yelling so much 交代声音沙哑的原因；raspy 描述音色而非说话音量。"
+        },
+        {
+          "textEn": "Both men sang in a deep, raspy tone.",
+          "translationZh": "两名男子都用低沉而沙哑的嗓音唱歌。",
+          "explanationZh": "in a...tone 表示以某种音调或音色；deep 与 raspy 并列，说明低沉和粗哑可以同时存在。"
+        }
+      ]
+    },
+    {
+      "number": 6758,
+      "word": "ratify",
+      "ipa": "/ˈræt̬əfaɪ/",
+      "pos": "vt.",
+      "coreMeaningZh": "正式认可，批准",
+      "coreEn": "to give formal approval to an agreement, decision, or plan",
+      "coreImageZh": "会议先就章程进行正式表决，成员举手表示同意；表决通过后，负责人再签字，最后举起已签署的文件。ratify 是按规定程序作出正式批准，把已经讨论的章程确认下来，而不只是点头说自己喜欢这个主意。",
+      "mnemonics": [
+        {
+          "method": "RAT：IF I签字，才算批准",
+          "textZh": "RAT（老鼠）国王指着协议说：“IF I（如果我）正式签字，这项协议才算获准。”借 RAT—IF—I 的连读，记 ratify——正式批准。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RAT- + -FY",
+          "textZh": "ratify 的词源中，rat- 联系“已确定”，-fy 有“使成为”的作用。想象协议草案上的意见已经讨论完，却仍躺在待批文件夹里；有权批准的机构正式确认后，它才从待定的方案变成确定获准的协议。商量得差不多，与正式定下来，还隔着这一步。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "正式认可，批准",
+          "explanationZh": "及物动词，常用于条约、协议、修正案或决定，强调有权机构依程序正式确认。签署与批准在某些程序中是不同步骤，不能认为所有签字都等于 ratify；具体以制度安排为准。",
+          "collocations": [
+            {
+              "phrase": "ratify a treaty",
+              "meaningZh": "正式批准条约"
+            },
+            {
+              "phrase": "ratify an agreement",
+              "meaningZh": "正式批准协议"
+            },
+            {
+              "phrase": "ratify an amendment",
+              "meaningZh": "批准修正案"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "approve",
+          "comparisonZh": "批准、赞成的范围更广；ratify 特别强调对已有协议或决定作正式确认。"
+        },
+        {
+          "word": "endorse",
+          "comparisonZh": "可指公开支持、认可；ratify 通常涉及正式批准程序，普通支持不一定使协议获得效力。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The treaty was ratified by all the member states.",
+          "translationZh": "该条约获得了所有成员国的正式批准。",
+          "explanationZh": "was ratified 是被动语态，by 引出批准主体；member states 指成员国。"
+        },
+        {
+          "textEn": "A number of countries have refused to ratify the treaty.",
+          "translationZh": "一些国家已拒绝批准该条约。",
+          "explanationZh": "A number of 后接复数名词；have refused to ratify 表示拒绝完成正式批准。"
+        }
+      ]
+    },
+    {
+      "number": 6759,
+      "word": "ratiocination",
+      "ipa": "/ˌræʃiɑːsəˈneɪʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "推理",
+      "coreEn": "the process of reaching a conclusion through careful, logical reasoning",
+      "coreImageZh": "男孩先查看倒下花盆旁的泥土，又对照窗台上的猫爪印，把两处痕迹联系起来，推断应该是小猫经过时碰倒了花盆。ratiocination 指这样从证据一步步形成判断的推理过程；这些痕迹支持他的判断，但还不能断定事情一定如此。",
+      "mnemonics": [
+        {
+          "method": "RATIOCIN + ATION，逐步推理",
+          "textZh": "RATIOCIN 的拉丁来源是“推算、推理”，-ation 表示过程。侦探不是凭感觉猜，而是把每条线索连起来，一步步推出结论：这段严密思考就是 ratiocination。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RATIO + CINema，电影里算比例",
+          "textZh": "借 RATIO（比例）+ CINema（电影）+ 常见词尾 -ation 联想：推理电影里，侦探用照片中人物与门框的比例推算身高，再一步步排除嫌疑人。记这段从证据推出结论的 ratiocination。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "推理",
+          "explanationZh": "正式名词，通常不可数，强调有条理的逻辑思考过程，常见于哲学、论证或侦探文学。它比一般 thinking 更突出依据、步骤及推导关系，不等于直觉猜测。",
+          "collocations": [
+            {
+              "phrase": "a process of ratiocination",
+              "meaningZh": "推理过程"
+            },
+            {
+              "phrase": "powers of ratiocination",
+              "meaningZh": "推理能力"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "reasoning",
+          "comparisonZh": "意义最接近，也更常用；ratiocination 更正式或带文学色彩，突出有步骤的逻辑推演。"
+        },
+        {
+          "word": "deduction",
+          "comparisonZh": "可表示从前提推出结论的演绎推理；ratiocination 范围更广，不必专指演绎这一种方法。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "As an expert in ratiocination, the detective Sherlock Holmes has few rivals.",
+          "translationZh": "作为推理专家，侦探夏洛克·福尔摩斯几乎无人能敌。",
+          "explanationZh": "As an expert in... 交代身份；has few rivals 表示很少有人能与之匹敌。"
+        },
+        {
+          "textEn": "The detective in the story is known for his gifts of observation and ratiocination.",
+          "translationZh": "故事中的侦探以观察和推理方面的天赋闻名。",
+          "explanationZh": "be known for 表示因……而出名；observation 与 ratiocination 并列，区分收集线索和逻辑推导。"
+        }
+      ]
+    },
+    {
+      "number": 6760,
+      "word": "ration",
+      "ipa": "/ˈræʃən/",
+      "pos": "vt.",
+      "coreMeaningZh": "定量配给，限量供应",
+      "coreEn": "to control the amount of a limited supply that each person may receive or use",
+      "coreImageZh": "水壶里剩水不多，老师先用透明小杯量出限定的一份，再把这份水倒进男孩的杯子，还要给后面的孩子留够。ration 不只是把水分给别人，而是在总量有限时控制每人的份额，不能让先来的人随意多拿。",
+      "mnemonics": [
+        {
+          "method": "RATIO 算份额，RATION 限量发",
+          "textZh": "RATION 的前五个字母就是 RATIO（比例），两词也有计算、衡量的共同来源。想象只剩六块饼干，却还有三个人要一起赶路，于是先算出每人能领两块，再按这个份额发下去。不是谁伸手快就多拿，而是算定每一份后控制分配。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "NATION 缺粮，RATION 定量配给",
+          "textZh": "NATION（国家）把首字母 n 换成 r，就是 RATION。想象一个粮食供应紧张的国家，居民拿着配给票排队，每户只能领取票上写明的数量；粮店即使还存着米，也不能让前面的人把后面人的份额买走。这个 nation 把有限粮食按规定份额分给居民。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "按比例分配，定量配给",
+          "explanationZh": "及物用法通常指供应有限时限制每人或每次可获得的数量，而不是普通分享。be rationed to 后接限定的份额。作名词时 ration 可指配给量，但本课重点是分配这一动作。",
+          "collocations": [
+            {
+              "phrase": "ration water",
+              "meaningZh": "定量配给水"
+            },
+            {
+              "phrase": "ration food",
+              "meaningZh": "定量配给食物"
+            },
+            {
+              "phrase": "be rationed to a fixed amount",
+              "meaningZh": "被限定为固定配额"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "allocate",
+          "comparisonZh": "可指分配资源、资金或时间；ration 除分配外还强调供应受限和份额控制。"
+        },
+        {
+          "word": "apportion",
+          "comparisonZh": "侧重按份额分配；ration 更常突出物资不足时限制可领用数量，不一定人人份额相等。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Eggs were rationed during the war.",
+          "translationZh": "战争期间鸡蛋实行定量配给。",
+          "explanationZh": "were rationed 是被动语态；during the war 给出实行配给的时期。"
+        },
+        {
+          "textEn": "The villagers are rationed to two litres of water a day.",
+          "translationZh": "村民每天每人限领两升水。",
+          "explanationZh": "be rationed to 后接限定数量；a day 表示每天，两升是此例中的配额。"
+        }
+      ]
+    }
+  ]
+}

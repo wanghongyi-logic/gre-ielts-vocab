@@ -1,0 +1,376 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6821,
+      "word": "residue",
+      "ipa": "/ˈrezɪduː/",
+      "pos": "n.",
+      "coreMeaningZh": "剩余物",
+      "coreEn": "material left behind after the rest has been removed or a process has finished",
+      "coreImageZh": "男孩把最后一小块蛋糕吃完，发现盘子里仍留着棕色碎屑，母亲也指给他看。residue 表示某个过程结束后留下的残留物；蛋糕已经吃掉，留在盘中的这些碎屑就是 residue。",
+      "mnemonics": [
+        {
+          "method": "RESID- 留下来，RESIDUE 剩下来",
+          "textZh": "residue 来自表示“留下”的拉丁语词族，resid- 是主要词干。想象倒空一杯茶：茶水流走了，茶渣留在杯底；留下的这些东西就是 residue，剩余物。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RESCUE 救回人，RESIDUE 剩碎片",
+          "textZh": "residue 和 RESCUE（救援）的整体字形相近。想象沉船事故后，救援者把人救回，海滩上仍留着船体的碎片：rescue 救回了人，船留下的残余物是 residue。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "残留物，剩余物",
+          "explanationZh": "指取走主要部分或某个过程结束后留下的物质，常见于油渍、粉末、农药等残留。既可把一层或一些残留当作整体，也可用复数 residues 指不同残留物或残留成分。",
+          "collocations": [
+            {
+              "phrase": "a greasy residue",
+              "meaningZh": "油腻的残留物"
+            },
+            {
+              "phrase": "pesticide residues",
+              "meaningZh": "农药残留"
+            },
+            {
+              "phrase": "leave a residue on the surface",
+              "meaningZh": "在表面留下残留物"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "remainder",
+          "comparisonZh": "都可指剩下的部分；remainder 范围更广，可说剩余时间、人数或数量，residue 更常突出处理、使用或移除后留下的物质。"
+        },
+        {
+          "word": "detritus",
+          "comparisonZh": "在遗留的碎屑、废物这一用法中接近；detritus 常指破坏、磨损、分解后留下的杂碎，residue 也可以是薄薄的油膜或化学残留，不一定是碎片。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The sauce left a greasy residue on the pan.",
+          "translationZh": "酱汁在锅上留下了一层油腻的残留物。",
+          "explanationZh": "left a greasy residue 表示产生并留下残留；on the pan 说明残留的位置。"
+        },
+        {
+          "textEn": "The chemical process leaves a greasy residue.",
+          "translationZh": "这一化学过程会留下油腻的残留物。",
+          "explanationZh": "residue 指过程结束后剩下的物质，不是过程本身，也不一定是大块废料。"
+        }
+      ]
+    },
+    {
+      "number": 6822,
+      "word": "resign",
+      "ipa": "/rɪˈzaɪn/",
+      "pos": "vt. / vi.",
+      "coreMeaningZh": "辞职，放弃（职位）",
+      "coreEn": "to formally give up a job, office, or position",
+      "coreImageZh": "男孩主动告诉教练自己要辞去队长职务，随后把红色队长袖标交还。教练接过袖标，表示会另选队长，男孩不再担任这一职务。resign 表示辞职、辞去职位，重点是本人主动放弃所任的职务。",
+      "mnemonics": [
+        {
+          "method": "RE + SIGN，签字交回职位",
+          "textZh": "resign 里完整保留 sign（签字），历史构词带有取消、交还的方向。想象你在辞职信上签名，把原来的职位正式交还：这次 sign 是为了 resign。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "DESIGN 新生活，RESIGN 旧职位",
+          "textZh": "design（设计、规划）和 resign 只差第一个字母，读音也只换开头辅音。设计好自己的新生活后，辞去原来的工作：design 新生活，resign 旧职位。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "辞去职位；辞职",
+          "explanationZh": "作及物动词时，直接宾语是放弃的职位，如 resign one’s post；作不及物动词时可单独使用，或用 from 接离开的机构、组织，用 as 接原来的职务。辞职通常通过本人正式提出，但也可能是在外界压力下作出的决定。",
+          "collocations": [
+            {
+              "phrase": "resign one’s post",
+              "meaningZh": "辞去职务"
+            },
+            {
+              "phrase": "resign from the company",
+              "meaningZh": "从公司辞职"
+            },
+            {
+              "phrase": "resign as chair",
+              "meaningZh": "辞去主席职务"
+            }
+          ]
+        },
+        {
+          "senseZh": "听任，接受无法改变的事情",
+          "explanationZh": "resign oneself to something 是另一用法，表示不再抗拒、接受不愉快的现实。此时并不是辞职；to 是介词，后接名词或动名词。",
+          "collocations": [
+            {
+              "phrase": "resign oneself to defeat",
+              "meaningZh": "接受失败的现实"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "quit",
+          "comparisonZh": "在离开工作时接近；quit 更口语，也能说戒掉习惯、停止活动，resign 更突出正式辞去职位，不能拿来泛指停止任何事情。"
+        },
+        {
+          "word": "renounce",
+          "comparisonZh": "都可表示正式放弃；renounce 常接权利、主张、信仰等，强调公开宣布不再拥有或支持，resign 在本义中主要接职位或职务。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "My father resigned his directorship last year.",
+          "translationZh": "我父亲去年辞去了董事职务。",
+          "explanationZh": "resigned 后直接接 his directorship，展示及物用法：辞去某项职务。"
+        },
+        {
+          "textEn": "Two members resigned from the board in protest.",
+          "translationZh": "两名成员辞去董事会职务以示抗议。",
+          "explanationZh": "resigned from the board 是不及物动词加 from 短语，说明离开的组织；in protest 说明辞职的原因或态度。"
+        }
+      ]
+    },
+    {
+      "number": 6823,
+      "word": "resilience",
+      "ipa": "/rɪˈzɪliəns/",
+      "pos": "n.",
+      "coreMeaningZh": "恢复能力",
+      "coreEn": "the ability to recover or adapt after difficulty, or to return to an earlier shape after pressure",
+      "coreImageZh": "男孩用手掌压住海绵，海绵中间凹下、变扁；他抬起手后，海绵又恢复了原来的厚实形状。resilience 表示受压、受损或遇到困难后恢复的能力，这里用海绵撤去压力后自行回弹的变化，把这种恢复能力表现出来。",
+      "mnemonics": [
+        {
+          "method": "RE + SILI + ENCE，弹回原样",
+          "textZh": "resilience 的词源图景是“跳回来”：re- 是回来，sili- 来自表示跳跃的词根，-ence 构成名词。海绵压扁后又弹回原样；人受挫后也能重新振作，这就是恢复能力。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RE-SILENCE，风波后恢复平静",
+          "textZh": "resilience 的整体字形很像 re-silence：再一次回到 silence（安静）。受到打击时心里一团乱，过后又能平静下来，重新振作；这种恢复过来的能力，就是 resilience。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "从打击或困难中恢复的能力，韧性",
+          "explanationZh": "通常不可数，可说人、群体或系统遭遇挫折后恢复、适应的能力。它不等于从不难过或从未受损，重点是经历冲击以后仍能调整、重新运作或振作。",
+          "collocations": [
+            {
+              "phrase": "emotional resilience",
+              "meaningZh": "情绪复原力"
+            },
+            {
+              "phrase": "show great resilience",
+              "meaningZh": "表现出很强的恢复能力"
+            },
+            {
+              "phrase": "build resilience",
+              "meaningZh": "培养应对挫折和恢复的能力"
+            }
+          ]
+        },
+        {
+          "senseZh": "受压变形后恢复原状的能力",
+          "explanationZh": "用于材料时，重点是压力解除后能恢复形状；可用于橡胶等材料，不只是容易弯曲。",
+          "collocations": [
+            {
+              "phrase": "the resilience of rubber",
+              "meaningZh": "橡胶的回弹能力"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "elasticity",
+          "comparisonZh": "谈材料恢复形状时接近；elasticity 强调受力变形后回到原状的弹性，resilience 也常用于人从挫折中恢复或系统应对冲击的能力。"
+        },
+        {
+          "word": "tenacity",
+          "comparisonZh": "都可以赞扬面对困难不轻易败下阵来的品质；tenacity 重在坚持、不放手，resilience 重在遭遇冲击后能够恢复、适应，并不是完全相同的能力。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "This comeback says much for the resilience of the team.",
+          "translationZh": "这次逆转充分说明了这支队伍的复原能力。",
+          "explanationZh": "comeback 是从落后或受挫中恢复；resilience 描写球队重新振作、扭转局面的能力。"
+        },
+        {
+          "textEn": "The foam quickly regained its shape, demonstrating its resilience.",
+          "translationZh": "这块泡沫很快恢复了原来的形状，显示出它的回弹能力。",
+          "explanationZh": "这里 resilience 是材料义，关键是受压后恢复形状，不是仅仅能够被压扁。"
+        }
+      ]
+    },
+    {
+      "number": 6824,
+      "word": "resolute",
+      "ipa": "/ˈrezəluːt/",
+      "pos": "adj.",
+      "coreMeaningZh": "坚定的",
+      "coreEn": "firmly determined in purpose or belief, rather than easily discouraged or persuaded to change",
+      "coreImageZh": "男孩正在捡拾地上的废纸，同伴觉得太多，劝他算了。他却明确表示今天一定要清理完，继续把纸团捡进袋中，又看向剩下的废纸。resolute 表示坚定的、意志坚决的，男孩认定了要完成的事，没有因劝退而动摇，并继续付诸行动。",
+      "mnemonics": [
+        {
+          "method": "SOLVE 解开疑问，RESOLUTE 不再犹豫",
+          "textZh": "solve 是解决问题；resolute 与它属于同一个表示解开、解决的词族。问题想明白了，疑问解开了，人便下定决心，不再摇摆：resolute，坚定的。中间的 solu- 也能在 solution（解决办法）里找到。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "ABSOLUTE 的“不”，RESOLUTE 的态度",
+          "textZh": "absolute（绝对的）和 resolute 的后半部分同为 solute，整词外形也相近。别人反复劝你改变主意，你仍给出一个绝对的“不”：这样的态度很坚定，resolute。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "坚定的，坚决的",
+          "explanationZh": "描述人、态度或行动有明确决心，不容易因压力、困难而动摇。常含肯定意味，但不自动等于固执不听劝；要说拒绝任何妥协时，intransigent 的意味更强。",
+          "collocations": [
+            {
+              "phrase": "remain resolute",
+              "meaningZh": "保持坚定"
+            },
+            {
+              "phrase": "resolute opposition",
+              "meaningZh": "坚决的反对"
+            },
+            {
+              "phrase": "a resolute leader",
+              "meaningZh": "意志坚定的领导者"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "steadfast",
+          "comparisonZh": "都可表示坚定、不动摇；steadfast 常突出长期忠于信念、关系或承诺，resolute 更突出作出决定后坚定执行的决心。"
+        },
+        {
+          "word": "intransigent",
+          "comparisonZh": "在态度坚定、不肯改变立场时接近；intransigent 更突出不愿妥协，常带批评意味，resolute 本身并不表示拒绝合理协商。",
+          "sources": [
+            "zhangwei_original3000"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her voice sounded calm and resolute.",
+          "translationZh": "她的声音听起来平静而坚定。",
+          "explanationZh": "resolute 与 calm 并列，说明坚定可以平静地表达，不一定靠大声说话。"
+        },
+        {
+          "textEn": "He became even more resolute in his opposition to the plan.",
+          "translationZh": "他反对这项计划的态度变得更加坚定了。",
+          "explanationZh": "resolute in his opposition 表示在反对这件事上立场坚定；more 表示程度进一步加强。"
+        }
+      ]
+    },
+    {
+      "number": 6825,
+      "word": "resonant",
+      "ipa": "/ˈrezənənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "（声音）洪亮的，共鸣的",
+      "coreEn": "deep, full, and continuing to ring or echo",
+      "coreImageZh": "男孩敲响铜锣后放下木槌，和老师一起倾听。男孩说锣声又响又浑厚，老师也指出停手后仍有余音回荡。resonant 形容声音洪亮、浑厚而富有共鸣，锣声的饱满和持续回响体现了这种声音特点。",
+      "mnemonics": [
+        {
+          "method": "RE + SON + ANT，声音响回来",
+          "textZh": "resonant 的主要结构可记作 re-（回、再）+ son（声音）+ -ant。敲响大钟，洪亮的声音在钟楼里久久回荡：resonant，洪亮而有共鸣的。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RESIDENT 住户，RESONANT 嗓门",
+          "textZh": "resonant 和 resident（住户）的整体字形、三拍声音都很接近。想象楼里一位住户嗓门特别洪亮，一开口，整个楼道都能听见回声：resonant，洪亮而有共鸣的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "声音浑厚、洪亮而有回响的",
+          "explanationZh": "多形容嗓音、钟声、乐器声等，重点不只是音量大，还在于声音饱满、有共鸣或余音。也可形容有利于声音共鸣的空间或物体。",
+          "collocations": [
+            {
+              "phrase": "a deep resonant voice",
+              "meaningZh": "低沉而洪亮的嗓音"
+            },
+            {
+              "phrase": "resonant tones",
+              "meaningZh": "浑厚回响的音调"
+            },
+            {
+              "phrase": "a resonant bell",
+              "meaningZh": "声音洪亮悠长的钟"
+            }
+          ]
+        },
+        {
+          "senseZh": "富于共鸣、能唤起感受的",
+          "explanationZh": "较文学性的延伸用法，可形容语言、形象或经历具有唤起情感、记忆的力量。它不等于听觉上的音量很大。",
+          "collocations": [
+            {
+              "phrase": "resonant with meaning",
+              "meaningZh": "意味深长、富于共鸣"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sonorous",
+          "comparisonZh": "描写声音深沉、洪亮、饱满时非常接近；sonorous 常突出声音宏亮悦耳的质感，resonant 还突出共鸣和持续回响。"
+        },
+        {
+          "word": "resounding",
+          "comparisonZh": "在声音洪亮、回荡时接近；resounding 还常表示成功、胜利或回答十分明确有力，resonant 不能在这些固定延伸搭配中随意替换它。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He has a deep, resonant voice.",
+          "translationZh": "他的嗓音低沉而洪亮。",
+          "explanationZh": "resonant 修饰 voice，描写声音饱满、有共鸣，不是说他说话内容一定有说服力。"
+        },
+        {
+          "textEn": "The bell’s resonant tones filled the hall.",
+          "translationZh": "钟声浑厚回荡，充满了大厅。",
+          "explanationZh": "resonant tones 指有余音和回响的声音；filled the hall 补足声音在空间中传播的情景。"
+        }
+      ]
+    }
+  ]
+}

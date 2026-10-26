@@ -1,0 +1,393 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7001,
+      "word": "steep",
+      "ipa": "/stiːp/",
+      "pos": "adj.",
+      "coreMeaningZh": "陡峭的；过分的，过高的",
+      "coreEn": "sharply sloping; unreasonably high in price or demands",
+      "mnemonics": [
+        {
+          "method": "STEP 一步抬很高，STEEP 台阶真陡",
+          "textZh": "STEP（台阶）与 STEEP 几乎整个字形相同。眼前的楼梯陡陡地向上升，每跨一步都得把腿抬高，手还要抓牢扶手：这样的台阶很 steep，陡峭。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SLEEP 一躺就滑，STEEP 坡上睡不稳",
+          "textZh": "SLEEP（睡觉）与 STEEP 整体形音相近。想象刚在斜坡上躺下，身体就往下滑，根本睡不稳：坡太 steep，太陡了。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "坡面或台阶陡峭",
+          "explanationZh": "形容坡、山路、楼梯等斜度很大，升降急。steep 不只是“高”：一座很高但坡缓的山，不能只凭高度说它 steep。",
+          "collocations": [
+            {
+              "phrase": "a steep slope",
+              "meaningZh": "陡坡"
+            },
+            {
+              "phrase": "steep stairs",
+              "meaningZh": "陡峭的楼梯"
+            }
+          ]
+        },
+        {
+          "senseZh": "价格、收费或要求过高",
+          "explanationZh": "非正式用法可说价格或要求高得不合理，常见 a bit steep。另有 a steep rise/fall，强调变化幅度大、来得急，不等于最终数值很高。",
+          "collocations": [
+            {
+              "phrase": "steep prices",
+              "meaningZh": "过高的价格"
+            },
+            {
+              "phrase": "a bit steep",
+              "meaningZh": "有点太贵；要求有点过分"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "precipitous",
+          "comparisonZh": "在“十分陡峭”时接近。precipitous 更正式，常突出接近垂直、甚至危险；steep 可一般描述坡度很大。precipitous 另有“仓促的”之义，不能据此给 steep 添上该义。"
+        },
+        {
+          "word": "exorbitant",
+          "comparisonZh": "在价格或收费“过高、不合理”时接近。exorbitant 是较正式而强烈的批评；steep 的此义更口语，可说 a bit steep，语气未必那么重。exorbitant 不用来描述普通山坡的陡度。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The stairs are very steep.",
+          "translationZh": "这楼梯很陡。",
+          "explanationZh": "steep 评价楼梯的倾斜程度，不是说楼层很多。"
+        },
+        {
+          "textEn": "Their rates are pretty steep.",
+          "translationZh": "他们的收费相当高。",
+          "explanationZh": "rates 指收费标准；pretty steep 是口语里的“相当贵”，不是“很漂亮的坡”。"
+        }
+      ],
+      "coreImageZh": "石阶从男孩面前陡陡地向上升。他抬头看了看，扶住栏杆，小心把一只脚踩上第一阶，再让另一只脚跟上站稳。steep 在这里指陡峭，重点是坡度大、上升急，而不只是台阶很多或山很高。"
+    },
+    {
+      "number": 7002,
+      "word": "stench",
+      "ipa": "/stentʃ/",
+      "pos": "n.",
+      "coreMeaningZh": "臭气，恶臭",
+      "coreEn": "a strong and very unpleasant smell",
+      "mnemonics": [
+        {
+          "method": "STINK 发臭，STENCH 臭气冲鼻",
+          "textZh": "STINK（发臭）与 STENCH 同源。掀开忘倒的垃圾桶，里面的东西在 stink，冲到鼻子里的那股浓烈臭气就是 stench：由发臭的东西，记住冲出来的恶臭。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "BENCH 下藏臭鱼，STENCH 冲鼻来",
+          "textZh": "BENCH（长椅）和 STENCH 都收在 /entʃ/，主要字形 ENCH 也相同。走近长椅，发现底下遗留的鱼已经腐坏，臭得人捂住鼻子退开：bench 下的 stench，恶臭。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "强烈难闻的实际气味",
+          "explanationZh": "常用 the stench of something 指某物发出的臭味，也可用 an awful/unbearable stench 强调难以忍受。它本身就含明显负面评价，不是中性的“气味”。",
+          "collocations": [
+            {
+              "phrase": "the stench of sewage",
+              "meaningZh": "污水的恶臭"
+            },
+            {
+              "phrase": "an unbearable stench",
+              "meaningZh": "难以忍受的恶臭"
+            }
+          ]
+        },
+        {
+          "senseZh": "比喻令人厌恶的不良气息",
+          "explanationZh": "the stench of corruption 等把腐败、背叛的恶劣性质写成“臭气”。这是评价性的比喻，不表示现场真的能闻到某种化学气味。",
+          "collocations": [
+            {
+              "phrase": "the stench of corruption",
+              "meaningZh": "腐败的恶臭；腐败气息"
+            },
+            {
+              "phrase": "the stench of betrayal",
+              "meaningZh": "背叛的恶劣气息"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stink",
+          "comparisonZh": "作名词表示“恶臭”时接近，stink 更口语。它还可在 kick up a stink 中表示大吵大闹、强烈抗议；这一用法不能机械换成 stench。stink 也常作动词，而本条 stench 是名词。"
+        },
+        {
+          "word": "reek",
+          "comparisonZh": "作名词时同样指浓烈难闻的气味，两者在许多实际臭味语境里可互换，不必硬分成某一种臭源。reek 另可作“散发臭味”的动词；写某物在发臭时，不要把名词 stench 直接放到动词位置。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The stench of rotting fish filled the hut.",
+          "translationZh": "腐鱼的恶臭充满了小屋。",
+          "explanationZh": "the stench of 指臭味的来源；filled 表示气味弥漫整个空间。"
+        },
+        {
+          "textEn": "The stench of treachery hung in the air.",
+          "translationZh": "空气里弥漫着背叛的恶劣气息。",
+          "explanationZh": "这里的 stench 是比喻，把背叛写成令人厌恶、挥之不去的臭气。"
+        }
+      ],
+      "coreImageZh": "厨余桶里留着烂菜和果皮，男孩闻到气味后皱眉捏住鼻子，赶紧把桶盖合上。盖好后，臭味不再直接从敞口冲出来，他才放松一些。stench 指强烈、令人难以忍受的臭气，不是一般的气味。"
+    },
+    {
+      "number": 7003,
+      "word": "stentorian",
+      "ipa": "/stenˈtɔːriən/",
+      "pos": "adj.",
+      "coreMeaningZh": "声音洪亮的",
+      "coreEn": "extremely loud and powerful, especially of a voice",
+      "mnemonics": [
+        {
+          "method": "STENTOR + IAN，一人喊出五十人的声量",
+          "textZh": "STENTOR 是《伊利亚特》中以大嗓门闻名的传令者，诗中说他一人的声音抵得上五十人。名字 STENTOR 加 -ian，成为 stentorian：像他那样，嗓音特别洪亮有力。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TEN-STORY 十层楼，也听得见",
+          "textZh": "借 TEN-STORY（十层楼高的）的近音与字形联想 stentorian。楼下有人放声喊，十层楼上的人也听得清清楚楚：嗓门洪亮，声音传得远。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "修饰洪亮、有力的嗓音",
+          "explanationZh": "较正式，常放在 voice 前，突出声音洪亮、传播有力。它说的是声量和力度，不保证声音悦耳，也不必然带有愤怒。",
+          "collocations": [
+            {
+              "phrase": "a stentorian voice",
+              "meaningZh": "洪亮有力的嗓音"
+            },
+            {
+              "phrase": "a stentorian shout",
+              "meaningZh": "洪亮的喊声"
+            }
+          ]
+        },
+        {
+          "senseZh": "描述说话或喊话的声调",
+          "explanationZh": "in stentorian tones 可跟在 spoke、called 等动词后，说明说话时嗓门洪亮；不是副词形式，也不表示“内容严厉”或“说得有理”。",
+          "collocations": [
+            {
+              "phrase": "in stentorian tones",
+              "meaningZh": "用洪亮的声调"
+            },
+            {
+              "phrase": "speak in stentorian tones",
+              "meaningZh": "用洪亮的声调说话"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "loud",
+          "comparisonZh": "两者都说音量大，但 loud 是宽泛普通词，可说音乐、机器或人声；stentorian 更正式，尤其突出嗓音强有力、能传得远。普通音量偏大未必值得用 stentorian。"
+        },
+        {
+          "word": "booming",
+          "comparisonZh": "形容声音时，两者都可表示洪亮有力。booming 还特别带有低沉、轰隆般的音色；stentorian 主要突出声量与力量，不要求低音。booming 的经济“繁荣”义也不能换成 stentorian。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He spoke in stentorian tones.",
+          "translationZh": "他说话声如洪钟。",
+          "explanationZh": "in stentorian tones 说明他说话嗓门洪亮，不是在评价话的内容。"
+        },
+        {
+          "textEn": "the professor's stentorian voice was enough to keep even the drowsiest student awake",
+          "translationZh": "教授洪亮的嗓音足以让最困倦的学生也保持清醒。",
+          "explanationZh": "stentorian voice 突出声音的强度；保留词典原例的小写开头与无句末标点。"
+        }
+      ],
+      "coreImageZh": "操场一边的教练放声招呼集合，另一边原本低头看球的男孩立刻转过身，挥手表示听见了。隔着一大片草地，声音仍传得清楚有力。stentorian 指嗓音洪亮、声量有力，不是声音刺耳，也不表示说话的人正在生气。"
+    },
+    {
+      "number": 7004,
+      "word": "sterile",
+      "ipa": "/ˈsterəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "贫瘠的；无菌的",
+      "coreEn": "unable to support growth or produce crops; free from living microorganisms",
+      "mnemonics": [
+        {
+          "method": "STERIL- 不结果，荒地颗粒无收",
+          "textZh": "sterile 源自拉丁语 sterilis，意思是“不结果、没有产出的”，主要字形 STERIL- 留在词中。想象播过种的荒地始终长不出庄稼：sterile，贫瘠的。它另有“无菌的”义，但贫瘠土地并不等于没有细菌。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STARE ALL day，盯了一季也不长",
+          "textZh": "借 STARE ALL 的近音联到美式 sterile。农人每天 STARE ALL day（整天盯着看），望着已经播种的土地，一季过去仍没长出庄稼：这块地贫瘠，没有产出。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "土地贫瘠，难以产出作物",
+          "explanationZh": "形容 soil、land、desert 等不能有效支持作物或植被生长；不只是外观看着空。还可比喻讨论、创作没有成果，但不能把所有“干净、空白”都叫 sterile。",
+          "collocations": [
+            {
+              "phrase": "sterile soil",
+              "meaningZh": "贫瘠的土壤"
+            },
+            {
+              "phrase": "sterile land",
+              "meaningZh": "贫瘠的土地"
+            }
+          ]
+        },
+        {
+          "senseZh": "器具或环境处于无菌状态",
+          "explanationZh": "常形容 equipment、water、conditions 等没有活的微生物，强于肉眼看起来 clean（干净）。本词也有生物不能繁殖的意思，但“贫瘠”“不育”“无菌”要按所修饰对象区分，不能互相推出。",
+          "collocations": [
+            {
+              "phrase": "sterile equipment",
+              "meaningZh": "无菌器具"
+            },
+            {
+              "phrase": "under sterile conditions",
+              "meaningZh": "在无菌条件下"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "barren",
+          "comparisonZh": "形容土地贫瘠、不长庄稼时接近。barren 也常突出荒凉、植被稀少的景象；sterile 在土地义上着重没有产出。barren 不能用来表示医疗器具已经无菌。"
+        },
+        {
+          "word": "germ-free",
+          "comparisonZh": "在“没有微生物、无菌”的义项上可对应，表达直观。germ-free 不带 sterile 的土地贫瘠、不能繁殖或讨论无成果等意思；谈荒地时不能以为两词仍可互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It was a small oasis surrounded by sterile desert.",
+          "translationZh": "那是一小片绿洲，四周是贫瘠的沙漠。",
+          "explanationZh": "sterile desert 与 oasis 对照，强调荒漠不利于植物生长，不表示沙漠没有微生物。"
+        },
+        {
+          "textEn": "The experiment was performed under sterile conditions.",
+          "translationZh": "这项实验是在无菌条件下进行的。",
+          "explanationZh": "under sterile conditions 是实验环境的无菌条件，不是说实验没有成果。"
+        }
+      ],
+      "coreImageZh": "旁边的土床已经长满绿苗，这一块地却仍光秃秃的，硬土里夹着碎石。男孩蹲下查看，园丁解释，这块地太贫瘠，植物难以生长。sterile 在这里指贫瘠、难有产出的；它另有“无菌的”意思，但这幅图并不是说土里没有微生物。"
+    },
+    {
+      "number": 7005,
+      "word": "stickler",
+      "ipa": "/ˈstɪklər/",
+      "pos": "n.",
+      "coreMeaningZh": "坚持细节的人，一丝不苟的人",
+      "coreEn": "a person who insists on exactness or on strict observance of a particular standard",
+      "mnemonics": [
+        {
+          "method": "STICKER 贴纸也得对齐",
+          "textZh": "STICKER（贴纸）与 STICKLER 几乎整个字形相同。负责人盯着一排贴纸，有一张稍微贴歪，也坚持揭下重贴。连这种细节都不肯将就的人，就是 a stickler。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STICKL-ER：裁判连脚尖都要看",
+          "textZh": "stickler 早期指裁判，来自旧词 stickle“担任裁判”，-er 指人。想象裁判连脚尖越线一点也要吹哨，坚持规则，对细节一丝不苟：stickler。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "坚持某项具体标准",
+          "explanationZh": "通常用 a stickler for something，说明他特别坚持哪一种标准，如准确、守时或礼节。不是笼统地说他什么都完美，也不自动等于脾气固执。",
+          "collocations": [
+            {
+              "phrase": "a stickler for accuracy",
+              "meaningZh": "严格要求准确的人"
+            },
+            {
+              "phrase": "a stickler for punctuality",
+              "meaningZh": "非常讲究守时的人"
+            }
+          ]
+        },
+        {
+          "senseZh": "对细节一丝不苟，可赞也可嫌",
+          "explanationZh": "可肯定认真，也可带“太较真”的轻微不满，需看语境。stickler 是可数名词，单数通常要有 a；可说 be a stickler，但不能把它直接当形容词使用。",
+          "collocations": [
+            {
+              "phrase": "a stickler for detail",
+              "meaningZh": "对细节一丝不苟的人"
+            },
+            {
+              "phrase": "a stickler for the rules",
+              "meaningZh": "坚持严格遵守规则的人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "perfectionist",
+          "comparisonZh": "都可能形容对细节要求高的人。perfectionist 追求事情尽善尽美；stickler 常是坚持某项具体标准，如守时或按规章办事，不必处处追求完美。"
+        },
+        {
+          "word": "martinet",
+          "comparisonZh": "在严格要求别人遵守规则、纪律时接近。martinet 更正式，突出严苛的纪律要求；stickler 范围较宽，也能只对用词准确或守时非常认真。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Lucy was a stickler for perfection, and everything had to be exactly right.",
+          "translationZh": "露西事事追求完美，一切都必须准确无误。",
+          "explanationZh": "for perfection 指明她坚持的标准；不是单独用 stickler 就等于“完美”。"
+        },
+        {
+          "textEn": "He was a stickler when it came to office manners.",
+          "translationZh": "说到办公室礼节，他是个一丝不苟的人。",
+          "explanationZh": "when it came to 限定范围：他在办公室礼节上特别较真。"
+        }
+      ],
+      "coreImageZh": "男孩觉得三只杯子摆得差不多了，姑姑却仍指着那只朝向不同的杯柄，坚持连它也要和另外两只一致。男孩转好杯子，她才满意。a stickler 就是特别坚持标准和细节的人，连这种小差别也不肯将就。"
+    }
+  ]
+}

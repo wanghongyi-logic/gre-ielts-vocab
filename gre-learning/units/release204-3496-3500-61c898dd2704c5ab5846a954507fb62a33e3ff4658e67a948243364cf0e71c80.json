@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7116,
+      "word": "tinge",
+      "ipa": "/tɪndʒ/",
+      "pos": "vt.",
+      "coreMeaningZh": "给…着上少量的色彩",
+      "coreEn": "to give something a slight amount or shade of colour",
+      "mnemonics": [
+        {
+          "method": "CHANGE 只改一点颜色：白纸添上一抹粉",
+          "textZh": "用完整熟词 CHANGE（改变）近音联想 tinge。想象画画时，不把整张白纸涂满，只用很淡的粉色轻轻扫过一角；纸还是以白色为主，只添了一抹粉。由完整 CHANGE 的声音和“颜色只改一点”的画面，记住 TINGE：给……着上少量的色彩。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "“添汁”一滴，把清水染上一点粉",
+          "textZh": "用完整中文“添汁”近音联想 tinge。想象往一杯清水里只添一滴红色果汁，轻轻搅开，水只显出淡淡的粉色，仍然透亮。“添汁”这个动作给清水着上了少量色彩，由这整块声音和淡色画面记住 TINGE：略微染色。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "使物体略带某种颜色：tinge something + colour",
+          "explanationZh": "tinge 作及物动词，后面接被染上颜色的物体，也可再接 blue 等词说明颜色。它强调略微添上一层色，不一定是拿颜料有意去涂；墨水沾染或脸颊泛红也可以这样说。",
+          "collocations": [
+            {
+              "phrase": "tinged his fingers blue",
+              "meaningZh": "使他的手指略染蓝色"
+            },
+            {
+              "phrase": "tinged her pale cheeks",
+              "meaningZh": "给她苍白的面颊染上少量色彩"
+            }
+          ]
+        },
+        {
+          "senseZh": "带着一抹颜色：be tinged with something",
+          "explanationZh": "被动结构 be tinged with 后可接颜色，表示某物略带这种色调。tinged 也可直接放在名词后说明其状态，如带一点蓝色的白花瓣。重点是色调轻微，不限定只染一小块地方，也不要求物体透明。",
+          "collocations": [
+            {
+              "phrase": "white petals tinged with blue",
+              "meaningZh": "略带蓝色的白花瓣"
+            },
+            {
+              "phrase": "tinged with crimson",
+              "meaningZh": "略染绯红色"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "tint",
+          "comparisonZh": "tint 与 tinge 在“给物体略加颜色”时很接近，不能硬分成一个深、一个浅。tint 常用于头发、睫毛等着色；tinge 也常描写面颊、花瓣或物体略沾色。具体是否人为，要看上下文，不由这两个词单独决定。"
+        },
+        {
+          "word": "colour",
+          "comparisonZh": "colour 作动词可泛指着色、涂色，本身不限定颜色只加一点。tinge 则特别突出少量、略微染上色调；所以大面积浓重涂色可以说 colour，却不宜只凭“变了颜色”就一律说 tinge。美式拼写是 color。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The ink tinged his fingers blue.",
+          "translationZh": "墨水使他的手指略染上蓝色。",
+          "explanationZh": "The ink 是造成着色的主语，his fingers 是被着色的宾语，blue 说明染上的颜色；不要求手指被涂成完全不透底色的蓝。",
+          "sourceAttribution": "Merriam-Webster Dictionary — https://www.merriam-webster.com/dictionary/tinge"
+        },
+        {
+          "textEn": "Pink tinged her pale cheeks.",
+          "translationZh": "她苍白的面颊泛起淡淡的粉红色。",
+          "explanationZh": "Pink 在这里是表示颜色的名词，作主语；tinged 是过去式，her pale cheeks 是宾语。句子只写颜色变化，没有说明泛红的原因。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary — https://www.oxfordlearnersdictionaries.com/definition/english/tinge_1"
+        }
+      ],
+      "coreImageZh": "男孩用滴管往清水中加少量红色，水里逐渐散开淡淡的粉色，仍然透亮。tinge 指使略带某种颜色；不是把整碗染成浓重不透明的红色。"
+    },
+    {
+      "number": 7117,
+      "word": "tinker",
+      "ipa": "/ˈtɪŋkər/",
+      "pos": "v.",
+      "coreMeaningZh": "乱修，乱调整",
+      "coreEn": "thoughtlessly",
+      "mnemonics": [
+        {
+          "method": "THINKER 先想清楚，TINKER 别乱修",
+          "textZh": "把整个 tinker 与熟词 THINKER（思考者）放在一起看。想象两人修钟：一人先想清齿轮怎样配合，另一人没弄明白就拿起工具，左拧一点、右拨一下。用“先思考，别乱调”的对照，记 tinker：乱修、乱调整。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TINKER 像“听课”，没听懂就乱修",
+          "textZh": "tinker 的整词读音可近音联想“听课”。维修课还没听懂，他就急着拆开旧闹钟，这儿拨一下、那儿拧一下，却没找到毛病。把“课没听懂就乱修”的画面挂在 tinker 上，记住乱修、乱调整。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "对机器、零件等乱修乱调",
+          "explanationZh": "常用 tinker with，表示一点点试着修或调整，常暗示不熟练、缺少系统方法。它也能中性地指爱好者试着改进，不保证修好，也不一定已把东西弄坏。",
+          "collocations": [
+            {
+              "phrase": "tinker with a machine",
+              "meaningZh": "摆弄、试着调整机器"
+            },
+            {
+              "phrase": "tinker in the garage",
+              "meaningZh": "在车库里摆弄修理"
+            }
+          ]
+        },
+        {
+          "senseZh": "对制度、计划只作零碎调整",
+          "explanationZh": "可用于抽象事物，批评只在细枝末节上改来改去，没有处理根本问题。at the edges 突出改动只触及边缘，不是彻底重建。",
+          "collocations": [
+            {
+              "phrase": "tinker with the system",
+              "meaningZh": "对系统作零碎调整"
+            },
+            {
+              "phrase": "tinker at the edges",
+              "meaningZh": "只在边缘小修小补"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "fiddle with",
+          "comparisonZh": "在反复摆弄零件、试着调整这一义上接近，fiddle with 更口语，也可指无聊或紧张时摸弄钥匙；这种无修理目的的小动作不能一律换成 tinker with。"
+        },
+        {
+          "word": "tamper with",
+          "comparisonZh": "都可能是乱动、乱改东西，但 tamper with 更强调未经许可的干预，尤其带破坏意味；tinker with 可以是善意却不熟练的修补，不自动含擅自破坏。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was tinkering in the garage.",
+          "translationZh": "他当时在车库里摆弄修理。",
+          "explanationZh": "tinkering 作不及物动词，in the garage 交代地点，未说明修理对象和结果；不能凭这一句断定已修坏东西。",
+          "sourceAttribution": "Merriam-Webster，tinker verb 编辑例句（自动新闻例句之前）：https://www.merriam-webster.com/dictionary/tinker"
+        },
+        {
+          "textEn": "The government is merely tinkering at the edges of a much wider problem.",
+          "translationZh": "政府只是在一个大得多的问题边缘做些小修小补。",
+          "explanationZh": "merely 和 at the edges 强调改动有限，没有触及更大问题的核心，是对零碎调整的批评。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary，tinker verb 编辑例句：https://www.oxfordlearnersdictionaries.com/definition/english/tinker_2"
+        }
+      ],
+      "coreImageZh": "男孩还没弄懂玩具车哪里出了问题，就凭感觉调弄车轮。家人指出他仍未找到问题。tinker 在这里指没有明确办法地乱修、乱调整，画面并没有表示车已修好。"
+    },
+    {
+      "number": 7118,
+      "word": "truism",
+      "ipa": "/ˈtruːɪzəm/",
+      "pos": "n.",
+      "coreMeaningZh": "陈词滥调",
+      "coreEn": "used by many people",
+      "mnemonics": [
+        {
+          "method": "TRUE＋-ISM：真得不必再说",
+          "textZh": "TRUE 是“真的”，也是 truism 的真实词基，后接构成名词的 -ism。重点不只是说得对，而是对得太明显，大家早已知道：讲了半天，听众只想说“这还用说吗？”由这种明显的真话，记 truism：老生常谈、陈词滥调。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TOURISM 攻略只说大实话",
+          "textZh": "把整个 truism 与熟词 TOURISM（旅游）近形联想。你想问一天怎样安排行程，对方却反复说“一天只有二十四小时”，没有给任何具体路线。话当然没错，但明显得人人都知道。用“旅游咨询只听到大实话”，记 truism。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "显然为真的老生常谈",
+          "explanationZh": "可数名词，指明显正确、大家早已知道的道理，常因没有新意而被嫌多余。原义中的“陈词滥调”限定这类真话，不是所有重复的话、谬论或老笑话。",
+          "collocations": [
+            {
+              "phrase": "an obvious truism",
+              "meaningZh": "一句显而易见的道理"
+            },
+            {
+              "phrase": "repeat a truism",
+              "meaningZh": "重复一条老生常谈"
+            }
+          ]
+        },
+        {
+          "senseZh": "用 that 从句说出那条明显道理",
+          "explanationZh": "It is a truism that… 后面给出具体内容。说它是 truism 是承认道理明显，并不等于否认它正确；某些场合重提常识仍可作为提醒。",
+          "collocations": [
+            {
+              "phrase": "It is a truism that…",
+              "meaningZh": "……是众所周知的道理"
+            },
+            {
+              "phrase": "the truism that…",
+              "meaningZh": "……这一条老生常谈"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "platitude",
+          "comparisonZh": "两者都可指缺乏新意的套话。truism 着重这话明显为真；platitude 更着重陈腐、空泛、说了也没帮助，并不以显然为真作为同样突出的判断重点。"
+        },
+        {
+          "word": "cliché",
+          "comparisonZh": "都可能是听得太多的话，但 cliché 范围更宽，还可指用滥的表达、情节或人物套路，不要求表达一个真命题。truism 限于显而易见的道理，不能把任何老套桥段都叫 truism。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It is a truism that past success is no guarantee of future success.",
+          "translationZh": "过去的成功并不保证未来也会成功，这是人人都知道的道理。",
+          "explanationZh": "that 从句给出那条显然的道理；no guarantee 是不保证，不是说过去成功就一定会在以后失败。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary，truism 编辑例句：https://www.oxfordlearnersdictionaries.com/definition/english/truism"
+        },
+        {
+          "textEn": "ended his letter with the overused truism, “You can't win them all!”",
+          "translationZh": "在信末用了那句被说滥的老话：“你不可能每次都赢！”",
+          "explanationZh": "overused 明说这条道理已被反复讲过。它强调不可能事事获胜，并不是否认这次失败值得认真分析。",
+          "sourceAttribution": "Merriam-Webster，truism 编辑例语（自动新闻例句之前）：https://www.merriam-webster.com/dictionary/truism"
+        }
+      ],
+      "coreImageZh": "桌上早已有水迹，男孩却郑重地说“水洒在桌上，桌面当然就湿了”。女孩指出这是谁都知道的话，真正的问题是接下来怎么办。truism 指这种显而易见、没有提供新信息的道理，不只是任意一句重复的话。"
+    },
+    {
+      "number": 7119,
+      "word": "tirade",
+      "ipa": "英 /taɪˈreɪd/；美 /ˈtaɪreɪd/",
+      "pos": "n.",
+      "coreMeaningZh": "长篇抨击性演讲",
+      "coreEn": "a long, angry speech attacking or criticizing someone or something",
+      "mnemonics": [
+        {
+          "method": "TRADE 交易纠纷，引出长篇怒斥",
+          "textZh": "把完整熟词 TRADE（交易）与 TIRADE 作整体近形联想。想象买来的东西缺了零件，买家在这场交易后越说越气，连着十分钟数落卖家：哪里偷工减料，哪里言而无信，一条接着一条。这不是简单抱怨一句，而是一通长篇怒斥——a tirade。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TIE＋RED：领带没解，脸先气红",
+          "textZh": "用两个完整熟词 TIE（领带）和 RED（红色的）近音联想 tirade。想象经理气冲冲地进门，领带还没解，脸已经气红了；他对着大家连讲十分钟，逐项指责工作上的失误，别人连插话的机会都没有。领带 TIE、红脸 RED，加上一通停不下来的怒斥，带出 tirade“长篇抨击性演讲”。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "一通长篇、愤怒的抨击",
+          "explanationZh": "tirade 是可数名词，重点是持续较久、语气激烈的责骂或批评。它不要求站在讲台上作正式演讲，日常对着某人长篇发火也可以这样说；普通长讲话或一句尖刻话，并不自动构成 tirade。",
+          "collocations": [
+            {
+              "phrase": "launched into a tirade",
+              "meaningZh": "开始长篇怒斥"
+            }
+          ]
+        },
+        {
+          "senseZh": "说明抨击的对象或话题",
+          "explanationZh": "against 后接所攻击的人或事，at 可以指出怒斥朝向谁，about 则引出所抱怨的话题。这个词突出说话的长度和激烈方式，并不保证指控属实，也不表示指控一定虚假。",
+          "collocations": [
+            {
+              "phrase": "a tirade at the team",
+              "meaningZh": "朝全队发出的一通怒斥"
+            },
+            {
+              "phrase": "a tirade about the failures",
+              "meaningZh": "围绕种种失败展开的一通抨击"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rant",
+          "comparisonZh": "两者都可指激烈的抱怨或责骂。rant 更突出大声、愤怒地说个不停，也可围绕不满发泄；tirade 尤其突出长篇连续地攻击或责备某个对象。它们有很大交集，不必人为规定 rant 一定更短。"
+        },
+        {
+          "word": "diatribe",
+          "comparisonZh": "同样可指长篇、愤怒的抨击，和 tirade 很接近。diatribe 较正式，明确可以指口头讲话或成篇文字；tirade 常用于描述一通长篇怒斥。不要把所有批评文章或任何长演讲都叫作它们。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She launched into a tirade of abuse against politicians.",
+          "translationZh": "她开始对政客们长篇大骂。",
+          "explanationZh": "launched into 表示开始，against politicians 明确了抨击对象；of abuse 点明这是一通辱骂，不是平静的政策讨论。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary — https://www.oxfordlearnersdictionaries.com/definition/english/tirade"
+        },
+        {
+          "textEn": "The coach directed a tirade at the team after the loss.",
+          "translationZh": "输掉比赛后，教练对全队长篇怒斥。",
+          "explanationZh": "怒斥明确指向全队，并且发生在失利之后；句中没有进一步交代具体责骂内容。",
+          "sourceAttribution": "Merriam-Webster Dictionary — https://www.merriam-webster.com/dictionary/tirade"
+        }
+      ],
+      "coreImageZh": "管理人员因花坛被踩坏、垃圾乱扔，持续严厉地批评这种行为。男孩说已经听他批评很久，成人仍带怒意继续说。tirade 指长篇激烈的痛斥；这段动画只是其中一段，不是整场演说，也没有动手伤人。"
+    },
+    {
+      "number": 7120,
+      "word": "toady",
+      "ipa": "英 /ˈtəʊdi/；美 /ˈtoʊdi/",
+      "pos": "n./v.",
+      "coreMeaningZh": "马屁精；拍马屁",
+      "coreEn": "a person who flatters someone powerful to gain favour; to behave in this servile way",
+      "mnemonics": [
+        {
+          "method": "TODAY 今天评升职，忙着拍马屁",
+          "textZh": "把完整熟词 TODAY（今天）与 TOADY 作整体近形联想。想象老板今天决定谁升职，有个人立刻围着老板吹捧：“您连选一支笔，都比我们高明得多！”他并非真心佩服，而是盼着自己得到职位。这样盯着今天的好处、忙着讨好上级的人，就是 a toady（马屁精）；他正在做的事，就是 toady（拍马屁）。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TOADY 投递吹捧信，只为换好处",
+          "textZh": "用完整中文“投递”的两拍声音近音联想 toady。想象有人投递一封求职信，里面不谈自己的本领，却把收信的老板吹得无所不能：“您的每个决定都英明，谁也比不上您！”他满纸奉承，只盼老板赏给他一个职位。这种为讨好有权势的人而换取好处的做法，就是 toady；这样的人是 a toady。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "名词：为了好处而奉承别人的人",
+          "explanationZh": "toady 是可数名词，复数 toadies，带明显贬义，通常指过分讨好地位较高者、希望得到照顾或帮助的人。真诚赞美、正常礼貌或单纯尊敬，并不因此变成拍马屁。名词指人，不是泛指一次赞美。",
+          "collocations": [
+            {
+              "phrase": "a real toady",
+              "meaningZh": "一个十足的马屁精"
+            },
+            {
+              "phrase": "the office toady",
+              "meaningZh": "办公室里的马屁精"
+            }
+          ]
+        },
+        {
+          "senseZh": "动词：向某人谄媚、拍马屁",
+          "explanationZh": "动词常用不及物结构 toady to somebody，to 后接所奉承的人。它强调以低姿态、过分恭维来讨好对方，通常带有求取好处的目的，而不是单纯照顾别人。过去式和过去分词是 toadied，现在分词是 toadying。",
+          "collocations": [
+            {
+              "phrase": "toady to him",
+              "meaningZh": "向他拍马屁"
+            },
+            {
+              "phrase": "toadying to his boss",
+              "meaningZh": "正在奉承他的老板"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sycophant",
+          "comparisonZh": "名词，与 toady 都指为了好处而奉承有权势者的人。sycophant 较正式，toady 较口语；两者都带贬义。它们不是泛指所有追随者或真诚支持者，也不能直接拿这个名词替换动词 toady。"
+        },
+        {
+          "word": "fawn",
+          "comparisonZh": "在动词义上相近：都可表示卑躬屈膝地讨好。fawn 常与 on 或 over 连用，突出过分赞美、殷勤关注；toady 常接 to，更突出向地位较高者低声下气地求宠。这里比较的是 fawn 的动词义，不是“小鹿”的名词义。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She's a real toady to the boss.",
+          "translationZh": "她真是老板面前的一个马屁精。",
+          "explanationZh": "这里 toady 前有 a，是指人的可数名词；整句话带有对过分讨好老板的批评，而不是称赞她有礼貌。",
+          "sourceAttribution": "Merriam-Webster Dictionary — https://www.merriam-webster.com/dictionary/toady"
+        },
+        {
+          "textEn": "I’m not prepared to toady to him just to save my job.",
+          "translationZh": "我不愿意仅仅为了保住工作就向他拍马屁。",
+          "explanationZh": "这里 toady 作动词，后面的 to 引出奉承对象；说话人明确拒绝为了保住工作而谄媚，并不是正在实施这个行为。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary — https://www.oxfordlearnersdictionaries.com/definition/english/toady_2"
+        }
+      ],
+      "coreImageZh": "男孩为了被选为队长，夸张地讨好老师，说她讲什么都对。老师说明选队长看表现、不靠奉承，男孩没有因此得到特殊待遇。toady 既可指这种马屁精，也可指为了好处而奉承的行为。"
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6901,
+      "word": "scrutable",
+      "ipa": "/ˈskruːtəbəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "可以理解的",
+      "coreEn": "capable of being understood, interpreted, or deciphered",
+      "coreImageZh": "男孩站在餐桌旁，带着期待的神情望着盘里的饼干，还没开口索要，母亲就笑着问他是不是想吃。男孩承认自己的心思一下被看穿了。scrutable 形容可以理解、能够解读的事物，这里容易读懂的是男孩流露在目光和表情里的愿望。",
+      "mnemonics": [
+        {
+          "method": "SCRUT + ABLE：能查明的",
+          "textZh": "scrut- 表示“检查、探究”，-able 表示“能够”。事情有线索，认真查看就能弄明白，便是 scrutable：可以理解、可以查明的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SCREW + TABLE：桌子结构看得懂",
+          "textZh": "把 scrutable 的整段声音联想成 SCREW + TABLE（螺丝、桌子）。透明桌板让每颗螺丝如何连接都看得清，结构并不神秘，一看就能理解。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "对象能被理解或看透",
+          "explanationZh": "可形容心思、动机、表情，也可指过程或信息能够被解读。它说的是对象可以被理解，不是观察者特别聪明或有洞察力。a scrutable motive 是看得懂的动机，不等于动机值得赞同。",
+          "collocations": [
+            {
+              "phrase": "scrutable motives",
+              "meaningZh": "可以看透的动机"
+            },
+            {
+              "phrase": "a scrutable expression",
+              "meaningZh": "容易读懂的表情"
+            }
+          ]
+        },
+        {
+          "senseZh": "较少用的肯定形式",
+          "explanationZh": "scrutable 比 inscrutable 少见，日常通常用 understandable、clear 等。inscrutable 是难以理解或看透，scrutable 则是可理解；与 scrutinize 的仔细检查意思相联系，但经过检查的东西不一定就能被理解。",
+          "collocations": [
+            {
+              "phrase": "be scrutable to others",
+              "meaningZh": "能被他人理解"
+            },
+            {
+              "phrase": "make the process scrutable",
+              "meaningZh": "使过程变得可以理解"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "comprehensible",
+          "comparisonZh": "在可以理解的意义上很接近。comprehensible 更常用于文字、解释、过程等是否能被理解；scrutable 较少用，也适合强调动机、表情等能被解读或看穿。"
+        },
+        {
+          "word": "understandable",
+          "comparisonZh": "在能理解、能看懂时接近。understandable 更常用，也可以表示某种反应情有可原；scrutable 主要关乎能够解读，不自动包含体谅或认可。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His motive was entirely scrutable: he wanted everyone’s attention.",
+          "translationZh": "他的动机完全可以看透：他想得到所有人的关注。",
+          "explanationZh": "scrutable 描述的是 motive 能被理解，冒号后的内容说明看透了什么，并未评价动机是否正当。"
+        },
+        {
+          "textEn": "Once the steps were explained, the process became scrutable.",
+          "translationZh": "各个步骤解释清楚后，这个过程就可以理解了。",
+          "explanationZh": "became scrutable 表示原来难懂的过程变得可解读，强调的是过程而不是听者的能力。"
+        }
+      ]
+    },
+    {
+      "number": 6902,
+      "word": "scuff",
+      "ipa": "/skʌf/",
+      "pos": "v.",
+      "coreMeaningZh": "（使）磨损",
+      "coreEn": "to scrape or rub a surface so that it becomes marked or rough, or to become damaged in this way",
+      "coreImageZh": "男孩在院子里拿鞋头蹭粗糙的石沿，母亲提醒他停下。他把脚移回平地，低头发现鞋面已经磨花，停止摩擦后，那些擦痕仍留在鞋上。scuff 表示摩擦使表面擦损、变粗或留下磨痕，画面中的鞋并没有整个破掉，却失去了原先平整光滑的表面。",
+      "mnemonics": [
+        {
+          "method": "CUFF 袖口，磨出了毛边",
+          "textZh": "scuff 的主要字形和读音是 CUFF（袖口）。袖口总在桌边蹭来蹭去，布面磨出毛边：scuff，磨损、擦伤表面。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STUFF 塞进去，鞋面磨花了",
+          "textZh": "scuff 与 STUFF（塞）整体只差中间一个字母。把鞋硬塞进狭窄的鞋柜，来回蹭擦，鞋面都磨花了。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "摩擦导致表面磨花、擦损",
+          "explanationZh": "常用于鞋、皮革、地板、家具等表面因接触、拖擦而出现痕迹或变粗。可以是一次摩擦造成的，也可以是反复使用的结果；不必磨穿或整件损坏，单纯沾泥也不一定是 scuff。",
+          "collocations": [
+            {
+              "phrase": "scuff your shoes",
+              "meaningZh": "把鞋面磨花"
+            },
+            {
+              "phrase": "scuff the floor",
+              "meaningZh": "擦伤地板表面"
+            }
+          ]
+        },
+        {
+          "senseZh": "使磨损与变磨损",
+          "explanationZh": "及物用法由人或物使另一个表面擦损；不及物用法则以易受损的表面作主语，如 The leather scuffs easily。还可作名词，指擦痕；另有拖着脚走的动作义，不能把每次拖步都当成已经造成磨损。",
+          "collocations": [
+            {
+              "phrase": "scuff easily",
+              "meaningZh": "容易擦损"
+            },
+            {
+              "phrase": "scuff marks",
+              "meaningZh": "摩擦留下的擦痕"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "scrape",
+          "comparisonZh": "在粗糙接触、擦去或擦伤表面时接近。scrape 可指刮擦这个动作，也可用来清除东西；scuff 更常突出摩擦后留下的磨花、擦损。"
+        },
+        {
+          "word": "scratch",
+          "comparisonZh": "在刮伤表面、留下痕迹时有交集。scratch 常让人想到较细的划痕或用尖硬物划过；scuff 可以是较宽、较浅的一片磨痕，不一定出现清楚的细线。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He scuffed his new shoes against the rough stone step.",
+          "translationZh": "他把新鞋蹭在粗糙的石阶上，磨花了鞋面。",
+          "explanationZh": "scuffed 是及物动词，his new shoes 是受损对象，against 说明与什么发生摩擦。"
+        },
+        {
+          "textEn": "This leather scuffs easily, so handle it with care.",
+          "translationZh": "这种皮革容易擦损，拿放时要小心。",
+          "explanationZh": "leather 作主语，scuffs 是不及物用法，说材料本身容易出现磨痕。"
+        }
+      ]
+    },
+    {
+      "number": 6903,
+      "word": "scurrilous",
+      "ipa": "/ˈskʌrələs/；美 /ˈskɜːrələs/",
+      "pos": "adj.",
+      "coreMeaningZh": "说粗话的",
+      "coreEn": "using coarse, insulting language, or containing abusive or maliciously defamatory remarks",
+      "coreImageZh": "男子面对不同意见，烦躁地用粗话打断讨论。男孩皱起眉头，抬手要求有话好好说，不要满嘴粗话；男子随后暂时停口。scurrilous 可以形容言语粗鄙、带辱骂意味的说话方式，这里让人反感的不是他提出反对，而是用恶劣的言辞对待别人。",
+      "mnemonics": [
+        {
+          "method": "SQUIRREL 满口粗话",
+          "textZh": "scurrilous 的主体声音可联想 SQUIRREL（松鼠），末尾 -ous 构成形容词。漫画松鼠抢不到坚果，就满口粗话骂人：scurrilous，粗俗谩骂的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SCURRIL + OUS：丑角式粗话",
+          "textZh": "scurril- 来自表示“丑角式粗俗玩笑”的拉丁词干，-ous 是形容词结尾。靠低俗笑话和脏话逗人的丑角，提醒你 scurrilous 是粗鄙谩骂的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "粗俗、带辱骂意味的言语或说话方式",
+          "explanationZh": "可形容说话者满口粗话，也常修饰言论、文章等，强调粗鄙、侮辱、恶毒的表达。它比单纯大声、没礼貌或偶尔发出一句口头禅更重；可以用很平静的音量说出 scurrilous remarks。",
+          "collocations": [
+            {
+              "phrase": "scurrilous language",
+              "meaningZh": "粗鄙的辱骂言语"
+            },
+            {
+              "phrase": "scurrilous remarks",
+              "meaningZh": "恶毒粗俗的评论"
+            }
+          ]
+        },
+        {
+          "senseZh": "含恶意攻击、诽谤的指控或传言",
+          "explanationZh": "现代书面语也常用来形容意图损害他人名誉的恶毒指控、攻击或传言，不要求每句话都含脏字。scurrilous accusations 是对指控本身的负面定性，不能把措辞尖锐但有根据的正常批评一概如此称呼。",
+          "collocations": [
+            {
+              "phrase": "scurrilous accusations",
+              "meaningZh": "恶意诽谤性的指控"
+            },
+            {
+              "phrase": "a scurrilous attack on someone",
+              "meaningZh": "对某人的恶毒攻击"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "abusive",
+          "comparisonZh": "在含有辱骂、侮辱性语言时接近。abusive 范围更广，也可描述虐待行为；scurrilous 常突出言语粗鄙、恶毒，或恶意损害他人名誉。"
+        },
+        {
+          "word": "vituperative",
+          "comparisonZh": "在激烈辱骂、恶毒谴责的语言上接近。vituperative 更强调痛骂、严厉斥责的攻击性；scurrilous 尤其容易带出粗俗或诽谤意味，不能把所有强烈批评都视为诽谤。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The speaker’s scurrilous insults drove several listeners out of the room.",
+          "translationZh": "讲话者粗鄙恶毒的辱骂使几位听众离开了房间。",
+          "explanationZh": "scurrilous 修饰 insults，评价的是辱骂的恶毒、粗俗，不只是说话音量很大。"
+        },
+        {
+          "textEn": "The article made scurrilous accusations without offering evidence.",
+          "translationZh": "那篇文章提出恶意诽谤性的指控，却没有提供证据。",
+          "explanationZh": "scurrilous 修饰 accusations，突出伤害名誉的恶意；不要求这些指控一定用脏字写成。"
+        }
+      ]
+    },
+    {
+      "number": 6904,
+      "word": "scurvy",
+      "ipa": "/ˈskɜːvi/；美 /ˈskɜːrvi/",
+      "pos": "adj.",
+      "coreMeaningZh": "卑劣的，可鄙的",
+      "coreEn": "despicable or contemptible, arousing disgust or scorn",
+      "coreImageZh": "男孩正准备吃午饭，同伴却擅自拿走盘里唯一的面包，还故意叫他饿着。男孩指着自己的空盘，明确反对这种欺负人的做法，对方仍得意地拿着面包。scurvy 在这里用作形容词，表示卑劣、可鄙；明知是别人的午饭，仍夺走并嘲弄对方挨饿，正是让人鄙视的地方。",
+      "mnemonics": [
+        {
+          "method": "CURVE 心眼弯，做事卑劣",
+          "textZh": "scurvy 的主要字形和声音像 CURVE（弯曲）。把“弯”联想成歪心眼：为了占便宜，故意陷害别人，做法卑劣可鄙。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SURVEY 作假，手段卑劣",
+          "textZh": "scurvy 与 SURVEY（调查）的整体字形相近。调查结果对自己不利，就偷偷篡改数据、嫁祸别人；这种做法真卑劣。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "强烈贬斥卑劣的行为或人",
+          "explanationZh": "这个形容词义带旧式色彩。作形容词时表示可鄙、令人厌恶，常用于伎俩、行为或人，重点是品行、做法引起轻蔑。a scurvy trick 是卑劣的花招，不是一般小失误，也不等于外表脏或身体不好。",
+          "collocations": [
+            {
+              "phrase": "a scurvy trick",
+              "meaningZh": "一个卑劣的花招"
+            },
+            {
+              "phrase": "a scurvy act",
+              "meaningZh": "一种可鄙的行为"
+            }
+          ]
+        },
+        {
+          "senseZh": "与同形疾病名词分开",
+          "explanationZh": "scurvy 作名词还表示坏血病，即与维生素 C 缺乏有关的疾病；这里学习的是形容词的道德评价。患病与品格是不同的问题，不能把疾病名称直接理解成对患者的贬斥。",
+          "collocations": [
+            {
+              "phrase": "scurvy treatment of a friend",
+              "meaningZh": "对朋友的卑劣对待"
+            },
+            {
+              "phrase": "a scurvy betrayal",
+              "meaningZh": "一次可鄙的背叛"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "despicable",
+          "comparisonZh": "在卑劣、可鄙、令人产生道德厌恶时很接近。despicable 较直接地强调行为或人值得鄙视；scurvy 也带强烈厌恶感，通常不是轻描淡写地说不喜欢。"
+        },
+        {
+          "word": "contemptible",
+          "comparisonZh": "在值得轻蔑、令人鄙视时接近。contemptible 范围较广；scurvy 常把可鄙与令人反感、卑劣的感觉放在一起，不能用来评价一般不顺心的事情。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "That was a scurvy trick to play on someone who trusted you.",
+          "translationZh": "对一个信任你的人耍那种花招，实在卑劣。",
+          "explanationZh": "scurvy 放在 trick 前作形容词，谴责的是利用信任欺骗人的做法。"
+        },
+        {
+          "textEn": "They called his betrayal a scurvy act.",
+          "translationZh": "他们把他的背叛称为一种可鄙的行为。",
+          "explanationZh": "a scurvy act 是对行为的道德评价；句中的 called 说明这是他们作出的评价，与疾病名词无关。"
+        }
+      ]
+    },
+    {
+      "number": 6905,
+      "word": "secluded",
+      "ipa": "/sɪˈkluːdɪd/",
+      "pos": "adj.",
+      "coreMeaningZh": "僻静的，隐蔽的",
+      "coreEn": "away from other people or screened from view",
+      "coreImageZh": "母子沿着小径走到树丛后，发现里面还藏着一处带长凳的小空地。密实的绿篱把外面的视线挡住，他们停下来环顾，觉得这里清静又少有人打扰。secluded 形容地点僻静、隐蔽，画面中的小角落因为树木的围护，与外面的来往和喧闹隔开了。",
+      "mnemonics": [
+        {
+          "method": "INCLUDED 列入，SECLUDED 藏起",
+          "textZh": "secluded 与 INCLUDED（包括在内的）整体字形相近。地图列出了大路，却没把树林深处的小屋画进去；那座小屋隐蔽僻静，便是 secluded。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SEA 被 CLOUD 遮住，海湾隐蔽",
+          "textZh": "把 secluded 的主要声音联想成 SEA + CLOUDED（海面被云遮住）。云雾遮住偏僻海湾，里面的小屋远远看不见，安静又隐蔽。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "地方僻静、隐蔽",
+          "explanationZh": "常形容海滩、小屋、花园角落等，强调与人群或外界视线隔开。地方可以因为树木、山谷或位置而隐蔽，并不一定距离城市很远；也不自动说明危险或荒废。",
+          "collocations": [
+            {
+              "phrase": "a secluded beach",
+              "meaningZh": "一处僻静的海滩"
+            },
+            {
+              "phrase": "a secluded corner of the garden",
+              "meaningZh": "花园里一个隐蔽清静的角落"
+            }
+          ]
+        },
+        {
+          "senseZh": "人与生活远离外界",
+          "explanationZh": "也可形容独处、少与外界接触的人或生活，如 a secluded life。单词本身不决定这种隔绝是自愿还是被迫；若只说一个人退休了，不能因此称他 secluded。",
+          "collocations": [
+            {
+              "phrase": "lead a secluded life",
+              "meaningZh": "过隐居的生活"
+            },
+            {
+              "phrase": "a secluded cottage",
+              "meaningZh": "一间僻静隐蔽的小屋"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "retired",
+          "comparisonZh": "在形容地方隐蔽、偏僻清静的用法中与 secluded 接近，如 retired village。retired 更常见的退休义不在这个对应范围；形容退休的人时，不能换成 secluded。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "isolated",
+          "comparisonZh": "在远离他人、与外界隔开时接近。isolated 更广，可强调地理上孤立、缺少联系甚至孤独无援；secluded 描写地方时更突出避开人群或视线的隐蔽清静。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They found a secluded spot behind the trees.",
+          "translationZh": "他们在树后找到了一处隐蔽清静的地方。",
+          "explanationZh": "secluded 修饰 spot，behind the trees 交代遮挡视线的位置，并未要求那里非常遥远。"
+        },
+        {
+          "textEn": "The writer led a secluded life in a small village.",
+          "translationZh": "这位作家在一个小村庄过着隐居的生活。",
+          "explanationZh": "a secluded life 形容少与外界接触的生活状态；句子没有说他一定感到孤独。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6951,
+      "word": "slovenly",
+      "ipa": "/ˈslʌvənli/",
+      "pos": "adj.",
+      "coreMeaningZh": "邋遢的，不整洁的",
+      "coreEn": "untidy and careless, especially about personal appearance or habits",
+      "mnemonics": [
+        {
+          "method": "SL(ow) + OVEN + LY，烤完拖着不收拾",
+          "textZh": "借 SLOW（慢）的 SL 和 OVEN（烤箱），再接 -ly，记 SLOVENLY。烤完东西却迟迟不收拾，油污、碎屑堆着，围裙也脏兮兮：slovenly，邋遢、不整洁的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "LOVELY → SLOVENLY，漂亮衣服穿邋遢",
+          "textZh": "把 slovenly 整体近形联到 LOVELY（漂亮的）。漂亮外套总揉成团，沾了污渍也不洗，皱巴巴穿出去：衣服原本 lovely，人却穿得 slovenly。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "邋遢、不整洁，带不赞许的评价",
+          "explanationZh": "slovenly 常形容个人外表、衣着和生活习惯，重点是疏于整理、马虎随便。它也能批评做事草率，但并不是说衣服价格低或款式普通；整洁与否要看实际打理的状态。",
+          "collocations": [
+            {
+              "phrase": "a slovenly appearance",
+              "meaningZh": "邋遢的外表"
+            },
+            {
+              "phrase": "slovenly habits",
+              "meaningZh": "邋遢的习惯"
+            }
+          ]
+        },
+        {
+          "senseZh": "词尾 -ly 不代表这里是副词",
+          "explanationZh": "slovenly 在这里是形容词，可以放在名词前，也可以放在 looked、seemed 等后面作表语。它的名词形式 slovenliness 表示邋遢、不整洁；词典也收副词用法，但不要因此把本词的形容词义读成“邋遢地”。",
+          "collocations": [
+            {
+              "phrase": "look slovenly",
+              "meaningZh": "显得邋遢"
+            },
+            {
+              "phrase": "a slovenly manner of working",
+              "meaningZh": "马虎草率的工作方式"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "unkempt",
+          "comparisonZh": "在外表凌乱、疏于打理的用法上接近，尤其可比较衣着、头发或房间的不整洁。unkempt 更直接描写未经梳理、收拾的外观；slovenly 还容易带出马虎、懒于打理的习惯评价，但不能仅凭一次凌乱就推断一个人的全部性格。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "sloppy",
+          "comparisonZh": "在衣着不整洁、做事马虎的意思上很接近。sloppy 使用范围较广，还能形容湿乎乎的状态或过分感伤的表达；这些其他义并不能机械换成 slovenly。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His stained shirt and rumpled trousers made him look slovenly.",
+          "translationZh": "沾着污渍的衬衫和皱巴巴的裤子让他显得邋遢。",
+          "explanationZh": "look 后接形容词 slovenly 作表语，评价的是衣着未整理好的状态。"
+        },
+        {
+          "textEn": "Her slovenly habits left the kitchen in a mess.",
+          "translationZh": "她不爱收拾的邋遢习惯让厨房乱成一团。",
+          "explanationZh": "slovenly 修饰 habits，把杂乱与反复疏于整理的习惯联系起来。"
+        }
+      ],
+      "coreImageZh": "叔叔准备出门，衬衫却皱巴巴的，前襟还留着饭渍。男孩提醒他衣服没收拾，叔叔摊开手，表示懒得整理，能穿就行。slovenly 形容因疏于打理而显得邋遢、不整洁；皱而没有清理的衣服，加上随意应付的态度，把个人仪表上的不整洁表现了出来。"
+    },
+    {
+      "number": 6952,
+      "word": "sluggard",
+      "ipa": "/ˈslʌɡərd/",
+      "pos": "n.",
+      "coreMeaningZh": "懒人",
+      "coreEn": "a person who is habitually unwilling to work or make an effort",
+      "mnemonics": [
+        {
+          "method": "SLUGG + ARD，懒散的人",
+          "textZh": "slugg- 保留古语中“懒散”的意思，-ard 表示具有某种特点的人。SLUGG + ARD 拼成 sluggard：别人忙着搬东西，他有力气却一直躺着，什么活都推给别人。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SLOW GUARD，慢吞吞的懒守卫",
+          "textZh": "借 SLOW GUARD（慢吞吞的守卫）的近音记 sluggard。巡逻时间到了，他却把腿搭在凳上：“再等会儿。”不是走不快，而是不愿干活：懒人。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "可数名词：一贯懒于出力的人",
+          "explanationZh": "sluggard 是对人的贬义称呼，复数为 sluggards，强调惯常不愿劳动或努力。它不是中性的“动作慢的人”；疲劳、生病或行动不便造成的迟缓，不能直接据此称为 sluggard。",
+          "collocations": [
+            {
+              "phrase": "a lazy sluggard",
+              "meaningZh": "一个懒人"
+            },
+            {
+              "phrase": "a group of sluggards",
+              "meaningZh": "一群懒于出力的人"
+            }
+          ]
+        },
+        {
+          "senseZh": "与形容状态的词分开",
+          "explanationZh": "sluggish 常作形容词，说动作、反应或进展迟缓；sluggard 在这里是名词，说某个懒惰的人。用 a sluggard 指人时包含评价，而 sluggish traffic 只是说交通行进缓慢，不能改成 sluggard traffic。",
+          "collocations": [
+            {
+              "phrase": "call someone a sluggard",
+              "meaningZh": "称某人是懒人"
+            },
+            {
+              "phrase": "turn into a sluggard",
+              "meaningZh": "变成一个懒人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "idler",
+          "comparisonZh": "都可指不愿劳动、游手好闲的人。idler 突出闲着不做事，sluggard 更突出惯常懒于出力的习性；是否只是暂时无事可做，仍要看上下文，不能把所有闲着的人都贴上这个标签。"
+        },
+        {
+          "word": "lazybones",
+          "comparisonZh": "都可用来称呼懒人。lazybones 更口语化，有时带玩笑式嗔怪，如催人起床；sluggard 通常更像对懒惰习性的贬评，具体轻重仍由说话语气和情境决定。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The story contrasts a diligent farmer with a sluggard who refuses to help.",
+          "translationZh": "这个故事把勤劳的农夫与一个不肯帮忙的懒人作了对比。",
+          "explanationZh": "a sluggard 是可数名词短语，who refuses to help 说明这里指的是不愿出力的人。"
+        },
+        {
+          "textEn": "The manager complained that the sluggards left all the work to their colleagues.",
+          "translationZh": "经理抱怨那些懒人把所有工作都留给了同事。",
+          "explanationZh": "sluggards 是复数，后面的 left all the work to their colleagues 交代这一批评所针对的行为。"
+        }
+      ],
+      "coreImageZh": "男孩拿着扫帚，请天天躺着的叔叔帮忙清扫落叶。叔叔仍舒舒服服地靠在椅子上，摆摆手说懒得动，让男孩来扫。sluggard 是指习惯性懒惰、不愿动手做事的人；叔叔总把活儿推给别人，自己继续躺着，这种一贯不愿出力的态度正是这个词所指。"
+    },
+    {
+      "number": 6953,
+      "word": "slumber",
+      "ipa": "/ˈslʌmbər/",
+      "pos": "vi.",
+      "coreMeaningZh": "睡着",
+      "coreEn": "to sleep, often peacefully",
+      "mnemonics": [
+        {
+          "method": "SUMMER → SLUMBER，夏午睡着",
+          "textZh": "把 slumber 整体近形联到 SUMMER（夏天）。夏日午后躺到凉席上，风扇轻转，眼睛慢慢闭上：summer 午后，人已 slumber，睡着了。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "NUMBER，数着数着睡着",
+          "textZh": "NUMBER（数字）与 slumber 都收在 /ʌmbər/。睡前一个个数数字，数到一半便不再继续：number 停了，人睡着了，slumber。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不及物动词：处于睡眠中",
+          "explanationZh": "slumber 表示睡觉、睡着，语气比日常的 sleep 更偏书面或文学表达，常让人想到安静的睡眠。它可以描写已经在睡的状态，不一定专指从清醒到睡着的那一瞬间，也不必限定为很浅或很深的睡眠。",
+          "collocations": [
+            {
+              "phrase": "slumber peacefully",
+              "meaningZh": "安静地睡着"
+            },
+            {
+              "phrase": "slumber through the night",
+              "meaningZh": "安睡一夜"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词与比喻用法",
+          "explanationZh": "slumber 也可作名词表示睡眠，如 fall into a deep slumber。比喻用法可指某物处于休眠、暂未活跃的状态；是否真的有人在睡，需要看主语和情境。",
+          "collocations": [
+            {
+              "phrase": "fall into a deep slumber",
+              "meaningZh": "进入深沉的睡眠"
+            },
+            {
+              "phrase": "wake from slumber",
+              "meaningZh": "从睡梦中醒来"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sleep",
+          "comparisonZh": "在处于睡眠状态的意思上最接近。sleep 是日常通用词，slumber 更偏书面、富有描写色彩；两者本身都不要求睡眠一定很浅，也不等同于“开始入睡”这一变化。"
+        },
+        {
+          "word": "doze",
+          "comparisonZh": "在轻轻睡着、打盹的情境中有交集。doze 明确偏向浅睡或短暂打盹；slumber 也可说一般睡眠甚至 deep slumber，所以不能在所有句子中互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The child slumbered peacefully beside her mother.",
+          "translationZh": "孩子在母亲身边安静地睡着。",
+          "explanationZh": "slumbered 是不及物动词，peacefully 说明睡眠安宁，beside her mother 表示所在的位置。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "While the town slumbered, the bakers began their work.",
+          "translationZh": "小镇上的人还在睡梦中时，面包师们已经开始工作。",
+          "explanationZh": "the town 借小镇指镇上的居民，slumbered 营造清晨人们尚未醒来的安静气氛。",
+          "sourceAttribution": "自编"
+        }
+      ],
+      "coreImageZh": "父亲放松地靠在椅子上，说自己困了，想先睡一会儿。随后他闭上眼睛，安稳睡着；男孩轻声回应，不去打扰。slumber 在这里是不及物动词，表示睡着、处于睡眠中。父亲放松的身体、闭着的双眼和持续安睡的状态，把这个意思呈现了出来。"
+    },
+    {
+      "number": 6954,
+      "word": "sly",
+      "ipa": "/slaɪ/",
+      "pos": "adj.",
+      "coreMeaningZh": "狡猾的",
+      "coreEn": "clever at hiding one’s intentions or using indirect, deceptive methods",
+      "mnemonics": [
+        {
+          "method": "SHY → SLY，装害羞偷拿点心",
+          "textZh": "SHY（害羞）把 h 换成 l，就是 sly。狐狸装害羞，说“不好意思挑”，趁大家安慰时偷偷拿走最大点心：表面 shy，实际 sly，狡猾。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "FLY → SLY，苍蝇假装飞走",
+          "textZh": "FLY（苍蝇、飞）把 f 换成 s，就是 sly。漫画苍蝇假装飞出窗口，等人转身就绕回来偷果酱：假离开、真偷吃，很 sly。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "善于隐藏目的、暗中用计",
+          "explanationZh": "sly 常带负面意味，形容人不够坦率、藏着心思，或用不易被看出的办法达到目的。它不只是聪明，也不等于害羞、少说话；要有隐瞒意图或耍小计谋的具体情境。",
+          "collocations": [
+            {
+              "phrase": "a sly trick",
+              "meaningZh": "一个狡猾的小计谋"
+            },
+            {
+              "phrase": "a sly attempt to avoid blame",
+              "meaningZh": "暗中设法逃避责备的举动"
+            }
+          ]
+        },
+        {
+          "senseZh": "也可表示调皮、心照不宣",
+          "explanationZh": "sly smile 或 sly grin 有时指暗含意味、略带调皮的笑，不一定严重恶毒。固定表达 on the sly 表示偷偷地、瞒着别人；判断语气轻重时，仍要看藏着的究竟是什么心思。",
+          "collocations": [
+            {
+              "phrase": "a sly smile",
+              "meaningZh": "暗含意味、略带狡黠的微笑"
+            },
+            {
+              "phrase": "do something on the sly",
+              "meaningZh": "瞒着别人偷偷做某事"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "cunning",
+          "comparisonZh": "在狡猾、善于用计达到目的的意思上接近。cunning 更可强调计策巧妙、会算计；sly 尤其容易突出掩藏真实意图、不露声色地行动。两者都有轻重不同的用法，不能只按聪明程度机械排序。"
+        },
+        {
+          "word": "tricky",
+          "comparisonZh": "用于人或做法带欺骗性、不可靠时与 sly 接近。tricky 也常说事情棘手、难处理，如 a tricky problem；这种“有难度”的意思不能用 sly 来替换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It was a sly attempt to make someone else take the blame.",
+          "translationZh": "这是一个想让别人背锅的狡猾企图。",
+          "explanationZh": "sly 修饰 attempt，强调把真实目的藏起来，试图让别人承担责任。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "She gave him a sly smile, keeping the birthday surprise to herself.",
+          "translationZh": "她对他露出一丝狡黠的微笑，没有透露生日惊喜。",
+          "explanationZh": "这里的 sly smile 带调皮、心照不宣的意味，不是恶意欺骗；具体情境决定了语气。",
+          "sourceAttribution": "自编"
+        }
+      ],
+      "coreImageZh": "同伴惦记着盘里最后一块饼干，便指着窗外，假称看见了小猫。男孩转开注意时，他趁机拿起饼干；男孩回头发现空盘和他手中的饼干，识破了这套小计谋。sly 形容狡猾、善于掩藏真实目的的做法，同伴表面是在提醒看猫，实际却想偷偷得到饼干。"
+    },
+    {
+      "number": 6955,
+      "word": "smarmy",
+      "ipa": "/ˈsmɑːrmi/",
+      "pos": "adj.",
+      "coreMeaningZh": "虚情假意的，过分恭维的",
+      "coreEn": "excessively flattering or friendly in an oily, insincere way",
+      "mnemonics": [
+        {
+          "method": "SMART，夸得假惺惺",
+          "textZh": "把 smarmy 近形联到 SMART（聪明的）。明明对方答错了，却为了求他帮忙连连夸“您真 smart”：过分恭维，热情又不真诚，smarmy。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "抹蜜，嘴甜心不诚",
+          "textZh": "借“抹蜜”的近音记 smarmy。有求于人时，嘴像抹蜜，尽说好话；一遭拒绝，笑脸马上消失：油滑、虚情假意的奉承。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "过分热情、恭维，却显得不真诚",
+          "explanationZh": "smarmy 是带贬义的非正式形容词，常评价一个人的态度、说话方式或笑容：礼貌、赞美多得让人感到油滑，背后像是另有所求。真诚赞美、正常待客热情或普通礼貌，并不因此就是 smarmy。",
+          "collocations": [
+            {
+              "phrase": "a smarmy manner",
+              "meaningZh": "油滑奉承的态度"
+            },
+            {
+              "phrase": "smarmy compliments",
+              "meaningZh": "虚情假意、过头的恭维话"
+            }
+          ]
+        },
+        {
+          "senseZh": "看态度和情境，而非只看一个笑容",
+          "explanationZh": "a smarmy smile 说的是结合情境显得虚假讨好的笑，不是某种面部特征。比较级是 smarmier，最高级是 smarmiest；名词 smarminess 表示这种令人反感的油滑奉承。",
+          "collocations": [
+            {
+              "phrase": "a smarmy smile",
+              "meaningZh": "显得虚假讨好的笑容"
+            },
+            {
+              "phrase": "sound smarmy",
+              "meaningZh": "听起来油滑而不真诚"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ingratiating",
+          "comparisonZh": "都可形容刻意讨好、想获得别人好感的态度。ingratiating 主要突出取悦对方的企图；smarmy 通常更强地表达说话者的反感，觉得这份热情油滑、过头或不真诚。"
+        },
+        {
+          "word": "obsequious",
+          "comparisonZh": "在过分恭维、逢迎讨好的情境中接近。obsequious 更突出卑躬屈膝、过度顺从；smarmy 更突出甜言蜜语和假热情，未必表现为对每个要求都顺从。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His smarmy compliments made her distrust his offer of help.",
+          "translationZh": "他那些虚情假意的恭维话，让她对他的帮忙提议起了疑心。",
+          "explanationZh": "smarmy 修饰 compliments，既指出恭维过头，也传达听者觉得不真诚的负面评价。",
+          "sourceAttribution": "自编"
+        },
+        {
+          "textEn": "The salesman adopted a smarmy tone as soon as he learned she was wealthy.",
+          "translationZh": "那名推销员一得知她很有钱，立刻换上了一副油滑奉承的语气。",
+          "explanationZh": "as soon as 引出的态度变化说明了这里为何觉得讨好另有所图，不是因为推销员这个职业本身。",
+          "sourceAttribution": "自编"
+        }
+      ],
+      "coreImageZh": "同伴满脸热情地凑近男孩，一边夸他最聪明，一边请求借走红色小车。男孩听出这些夸奖只是为了借车，直说这样夸个不停太假了，同伴便露出尴尬。smarmy 形容虚情假意、过分恭维的讨好；看似热情的赞美，实际是在迎合对方以达到自己的目的。"
+    }
+  ]
+}

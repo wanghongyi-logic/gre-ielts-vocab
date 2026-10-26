@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7006,
+      "word": "stiff",
+      "ipa": "/stɪf/",
+      "pos": "adj.",
+      "coreMeaningZh": "僵硬的，无法弯曲的；艰苦的，费力的",
+      "coreEn": "hard to bend or move; difficult and requiring considerable effort",
+      "mnemonics": [
+        {
+          "method": "STICK 木棍，STIFF 掰不弯",
+          "textZh": "STICK（木棍）和 STIFF 整体形音接近。想象一根又厚又硬的木棍，两手用力也很难掰弯：这根 stick 很 stiff，硬而不易弯曲。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STUFF 塞得满，STIFF 硬邦邦",
+          "textZh": "STUFF（塞满）与 STIFF 整体形音相近。给布偶的胳膊不停塞填料，塞到关节都弯不动：stuff 得太满，整条胳膊变得 stiff，僵硬了。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "材料难弯，身体僵硬",
+          "explanationZh": "形容物体不易弯折、活动，或肌肉关节僵硬不灵活。原表“无法弯曲”保留，但实际程度可轻可重；a bit stiff 不等于绝对不能弯。",
+          "collocations": [
+            {
+              "phrase": "a stiff brush",
+              "meaningZh": "硬毛刷"
+            },
+            {
+              "phrase": "a stiff neck",
+              "meaningZh": "僵硬的脖子"
+            }
+          ]
+        },
+        {
+          "senseZh": "任务费力，竞争或阻力强",
+          "explanationZh": "a stiff climb/test 指需要很大努力的攀登或考验；stiff competition/resistance 则突出竞争激烈、阻力强。不要把所有困难都解释为物理上的硬。",
+          "collocations": [
+            {
+              "phrase": "a stiff climb",
+              "meaningZh": "费力的攀登"
+            },
+            {
+              "phrase": "stiff competition",
+              "meaningZh": "激烈的竞争"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rigid",
+          "comparisonZh": "描述物体不易弯曲时接近。rigid 往往更突出定型、不易变形；stiff 可有程度差别，也常说运动后肌肉发僵。说 a stiff climb 的费力义时，不能换成 rigid climb。"
+        },
+        {
+          "word": "arduous",
+          "comparisonZh": "在任务艰苦、需要很大努力时接近。arduous 常强调持续付出精力的艰难过程；stiff 可说一次考验、强劲竞争或阻力。arduous 不表示刷毛、纸板僵硬。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The windows were stiff and she couldn't get them open.",
+          "translationZh": "窗子很紧涩，她怎么也打不开。",
+          "explanationZh": "stiff 描述窗子的活动不灵活，不是说玻璃本身坚硬。"
+        },
+        {
+          "textEn": "It was a stiff climb to the top of the hill.",
+          "translationZh": "登上山顶很费力。",
+          "explanationZh": "stiff climb 指攀登费劲，不直接等于“山很高”。"
+        }
+      ],
+      "coreImageZh": "男孩拿起厚纸板，双手试着把它弯起来，纸板却只略有弧度，几乎仍是直的；桌旁的薄纸倒能轻松卷起。stiff 在这里指硬而不易弯曲，不是脆得一掰就断，也不一定绝对不能弯。"
+    },
+    {
+      "number": 7007,
+      "word": "stigma",
+      "ipa": "/ˈstɪɡmə/",
+      "pos": "n.",
+      "coreMeaningZh": "耻辱，污名",
+      "coreEn": "a mark of disgrace or a negative social label attached to someone or something",
+      "mnemonics": [
+        {
+          "method": "STIGMA 烙下的印，留在名声上",
+          "textZh": "stigma 经拉丁语来自希腊语，原指刺出或烙出的记号。把 STIGMA 联到难以抹去的污名印：原本皮肤上的印，比喻成名声上的印，别人总凭这个坏标签评价一个人。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STICK + MA，贴给妈妈的坏标签",
+          "textZh": "借 STICK（粘贴）和 MA（妈）的近音联想 stigma。妈妈只是重返工作，却被人无端贴上“不顾家”的标签：这种被社会贴上的负面印记，就是 stigma，污名。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "附着在身份或处境上的污名",
+          "explanationZh": "常说 stigma attached to/associated with something，指人们对某种身份、经历或处境的负面评价。污名不证明当事人真的做错了事，也不等于当事人自己感到羞愧。",
+          "collocations": [
+            {
+              "phrase": "social stigma",
+              "meaningZh": "社会污名"
+            },
+            {
+              "phrase": "stigma attached to something",
+              "meaningZh": "附着在某事上的污名"
+            }
+          ]
+        },
+        {
+          "senseZh": "减轻或消除污名",
+          "explanationZh": "可用 reduce/remove stigma 描述减少排斥或负面标签。该义可作不可数名词，也可用 a stigma 表示一种污名；词典另有植物“柱头”等义，本条不混入原表的耻辱义。",
+          "collocations": [
+            {
+              "phrase": "reduce stigma",
+              "meaningZh": "减轻污名"
+            },
+            {
+              "phrase": "carry a stigma",
+              "meaningZh": "背负污名"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "shame",
+          "comparisonZh": "在“耻辱、失去尊重”时接近，但 shame 也常指个人内心的羞愧；stigma 更突出社会贴上的负面标签。一个人可以遭受 stigma，却并不认为自己应感到 shame。"
+        },
+        {
+          "word": "disgrace",
+          "comparisonZh": "都能涉及名誉受损。disgrace 常说因被认为行为不当而失去尊重，也可指令人羞耻的人或事；stigma 强调附着在某种身份、经历上的坏标签，尤其可来自不公平的社会偏见。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "There is no longer any stigma attached to being divorced.",
+          "translationZh": "离婚已不再被贴上羞耻的标签。",
+          "explanationZh": "这是词典例句中的社会评价；attached to 引出污名所附着的处境，不是对任何地区现状的普遍事实断言。"
+        },
+        {
+          "textEn": "There's a social stigma attached to receiving welfare.",
+          "translationZh": "领取福利救济带有社会污名。",
+          "explanationZh": "social stigma 指他人的负面评价；句子描述一种污名，不表示领取救济本身可耻。"
+        }
+      ],
+      "coreImageZh": "男孩曾意外弄坏过书，同学却一直叫他“破坏王”，抱紧书不让他碰。他解释那次只是意外，不该总被这样称呼。stigma 指附着在人身上的耻辱、污名，像这个持续影响别人看法的坏标签；这种标签并不证明一个人本来就有错。"
+    },
+    {
+      "number": 7008,
+      "word": "stint",
+      "ipa": "/stɪnt/",
+      "pos": "vi.",
+      "coreMeaningZh": "吝惜，节省",
+      "coreEn": "to use, give, or provide only a limited or small amount",
+      "mnemonics": [
+        {
+          "method": "PRINT 省着用墨，STINT 不肯多给",
+          "textZh": "PRINT（打印）和 STINT 都收在 /ɪnt/，主要字形 INT 相同。打印店为了省墨，把每页颜色调得很淡，连本来需要的墨也不肯多用：stint on ink，在用墨上吝惜。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STING 像被蜇，STINT 花钱就心疼",
+          "textZh": "STING（蜇、刺痛）与 STINT 几乎整个字形相同。老板每掏一枚硬币都像被蜜蜂蜇了一下，心疼得缩手，连招待客人的点心也只肯买一点：stint，吝惜不肯多给。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "在某项供应或开支上吝惜",
+          "explanationZh": "主表为不及物动词，常用 stint on something，表示在食物、材料、费用等方面只肯提供或使用少量。重点是给得或用得少，不是把东西存进银行。",
+          "collocations": [
+            {
+              "phrase": "stint on food",
+              "meaningZh": "在食物供应上吝惜"
+            },
+            {
+              "phrase": "stint on materials",
+              "meaningZh": "在材料上省着用"
+            }
+          ]
+        },
+        {
+          "senseZh": "否定句中表示不吝惜、不惜投入",
+          "explanationZh": "常见 never/don’t stint on，也可用 stint with praise。否定后意思是给得充分：不吝赞美、不在质量上省。注意本条vi.，不要误用为表示一段任期的名词 a stint。",
+          "collocations": [
+            {
+              "phrase": "not stint on quality",
+              "meaningZh": "不在质量上省"
+            },
+            {
+              "phrase": "not stint with praise",
+              "meaningZh": "不吝赞美"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "skimp",
+          "comparisonZh": "在“用得、给得太少”时很接近，二者都常接 on。skimp 更明显带有低于实际所需、偷省的意味；stint 可表示吝惜，也常在否定句中称赞提供得充分。"
+        },
+        {
+          "word": "economize",
+          "comparisonZh": "在“少花、少用以节省”时接近，常接 on。economize 比较中性，强调比平时节约；stint 更容易突出不肯多给或供给受限，不能把所有精打细算都说成小气。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She never stints on the food at her parties.",
+          "translationZh": "她办聚会时从不在食物上吝惜。",
+          "explanationZh": "never stints on 表示给得充分，而不是聚会上从不吃东西。"
+        },
+        {
+          "textEn": "the entrées would be worth these prices if the restaurant didn't stint on the side dishes so much",
+          "translationZh": "如果餐厅不在配菜上那么小气，这些主菜就值这个价。",
+          "explanationZh": "stint on the side dishes 指配菜给得太少；保留词典原例的小写开头与无句末标点。"
+        }
+      ],
+      "coreImageZh": "壶里明明还有大半壶果汁，男孩却只给同学倒了少量就停下，说要省着点。同学看着杯子问：“才这么一点？”stint 在这里指吝惜、节省，在使用或提供某物时只肯给少量；不是名词“一段任期”的意思。"
+    },
+    {
+      "number": 7009,
+      "word": "sequel",
+      "ipa": "/ˈsiːkwəl/",
+      "pos": "n.",
+      "coreMeaningZh": "结果",
+      "coreEn": "something that follows an earlier event, especially as its result",
+      "mnemonics": [
+        {
+          "method": "SEQU 跟在后面，SEQUEL 结果随后来",
+          "textZh": "sequel 来自表示“跟随”的拉丁语 sequi。看到 SEQU-EL，想起前事身后跟来的结果：先打翻墨水，随后整页染黑；跟着前事发生的后续结果，就是 a sequel。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "S + EQUAL 近音，等号后跟着后果",
+          "textZh": "EQUAL（等于）的读音前接 /s/，便带回 sequel 的整词读音。把因果画成一条小算式：“打翻墨水＝整页染黑”。等号后跟来的这件事，就是前事引出的结果。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "前一事件之后的结果或发展",
+          "explanationZh": "常用 a sequel to something，表示前一事件之后接着发生、或由它引起的事情。这里的“结果”具体指事情的后续发展，不是任意计算结果的通用说法。",
+          "collocations": [
+            {
+              "phrase": "a sequel to the accident",
+              "meaningZh": "事故之后发生的事"
+            },
+            {
+              "phrase": "an unexpected sequel",
+              "meaningZh": "意想不到的后续发展"
+            }
+          ]
+        },
+        {
+          "senseZh": "通常用单数；不等于整个过程的终局",
+          "explanationZh": "这一事件义常用单数，可说某事 has/had a sequel。它着眼“后来接着怎样”，不保证已到最终结局；电影、小说的“续集”是另一个常见义。",
+          "collocations": [
+            {
+              "phrase": "have a sequel",
+              "meaningZh": "有后续发展"
+            },
+            {
+              "phrase": "a direct sequel to an event",
+              "meaningZh": "某事件直接引出的后续结果"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "consequence",
+          "comparisonZh": "表示一件事引起的结果时接近。consequence 更直接突出因果关系，且常说不利后果；sequel 着眼后来接着发生的事，有时只是后续发展，不能一概加上严重或负面的意味。"
+        },
+        {
+          "word": "outcome",
+          "comparisonZh": "在结果义上可以相近。outcome 常指过程结束时的结果，如谈判或比赛的结局；sequel 则强调前一事件之后发生的另一发展，不必是最终结局。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "There was an interesting sequel to these events later in the year.",
+          "translationZh": "那年晚些时候，这些事件又有了一个有趣的后续发展。",
+          "explanationZh": "sequel to these events 指后续事件；later in the year 明确了它发生在原事件之后。"
+        },
+        {
+          "textEn": "The affair had a strange sequel.",
+          "translationZh": "这件事后来出现了一个奇怪的后续发展。",
+          "explanationZh": "had a sequel 是事情后来又有发展，不是在说它被拍成了续集。"
+        }
+      ],
+      "coreImageZh": "男孩本想轻轻踩一下水洼，脚落进浅水却溅起水花，把自己的裤腿弄湿了。他低头指着湿处，发现刚才那一脚带来的结果。sequel 在这里指前一件事之后随之发生的结果或后续发展。"
+    },
+    {
+      "number": 7010,
+      "word": "stitch",
+      "ipa": "/stɪtʃ/",
+      "pos": "n.",
+      "coreMeaningZh": "突然剧痛",
+      "coreEn": "a sudden sharp pain, especially in the side of the body",
+      "mnemonics": [
+        {
+          "method": "SWITCH 一按，STITCH 侧腹突然痛",
+          "textZh": "SWITCH（开关）和 STITCH 几乎整个字形相同。跑得好好的，侧腹突然一阵刺痛，仿佛疼痛的 switch 被按下，逼得人停步捂住侧腰：a stitch，突然袭来的局部刺痛。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STICK 刺进去，STITCH 像针扎一下",
+          "textZh": "STITCH 与 STICK（刺入、戳入）有真实词源联系，早期的 stitch 就指刺痛。借 stick 的刺入动作想象：跑步时侧腹忽然像被针扎了一下。这一阵突然的刺痛，是 a stitch；并不是真的扎入了针。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "局部突然刺痛，尤其是侧腹",
+          "explanationZh": "这一名词义通常用单数，常说 get/have a stitch。它不是所有强烈疼痛的总称，通常指身体一侧、尤其跑步时出现的突然尖锐疼痛。",
+          "collocations": [
+            {
+              "phrase": "get a stitch",
+              "meaningZh": "突然感到侧腹刺痛"
+            },
+            {
+              "phrase": "a stitch in the side",
+              "meaningZh": "身体侧面的一阵刺痛"
+            }
+          ]
+        },
+        {
+          "senseZh": "活动中突然痛，不是缝针或单纯发痒",
+          "explanationZh": "跑步或大笑的语境中，a stitch 常指这一阵侧腹痛。注意与 in stitches（笑得前仰后合）以及伤口缝针的复数 stitches 区分。",
+          "collocations": [
+            {
+              "phrase": "have a stitch",
+              "meaningZh": "感到一阵侧腹痛"
+            },
+            {
+              "phrase": "a stitch while running",
+              "meaningZh": "跑步时的侧腹刺痛"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "pang",
+          "comparisonZh": "在突然一阵强烈疼痛时接近。pang 可指身体疼痛，也常指愧疚、嫉妒等情绪猛然刺痛；stitch 在此是身体局部、尤其侧面的尖锐痛，不能直接替换 a pang of guilt。"
+        },
+        {
+          "word": "cramp",
+          "comparisonZh": "在运动时突然痛的语境可能接近，但 cramp 通常强调肌肉痉挛、抽筋，可在腿等部位发生；stitch 主要指侧腹的针刺般疼痛。不能仅凭“很痛”就把所有 cramp 都称作 stitch。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Can we slow down? I've got a stitch.",
+          "translationZh": "我们能慢一点吗？我的侧腹突然痛起来了。",
+          "explanationZh": "got a stitch 指出现侧腹刺痛；slow down 提供了正在运动的语境。"
+        },
+        {
+          "textEn": "I got a stitch while I was running.",
+          "translationZh": "我跑步时突然侧腹刺痛。",
+          "explanationZh": "while I was running 明确了疼痛发生的场景，不是跑步时缝了一针。"
+        }
+      ],
+      "coreImageZh": "男孩原地跑步热身，忽然停下来，皱着眉按住右侧腹部，喊出突然一阵刺痛；停下后仍捂着同一处，显得不舒服。stitch 在这里指身体局部突然的刺痛，尤其是运动时出现的侧腹痛。"
+    }
+  ]
+}

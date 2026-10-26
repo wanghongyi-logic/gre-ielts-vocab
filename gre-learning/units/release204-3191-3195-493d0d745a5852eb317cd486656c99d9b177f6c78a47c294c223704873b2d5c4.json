@@ -1,0 +1,386 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6811,
+      "word": "repress",
+      "ipa": "/rɪˈpres/",
+      "pos": "vt.",
+      "coreMeaningZh": "镇压；阻止正常的表达、活动或发展",
+      "coreEn": "to hold back an emotion or expression, or to control people and opposition by force",
+      "coreImageZh": "男孩在图书馆里有些忍不住想笑，女孩提醒他保持安静。他轻掩嘴边，把笑声忍住，随后放下手，继续安静看书。repress 在这里表示压住、抑制已经涌起的情绪或冲动，不让它显露出来；男孩压住的是想笑出声的冲动。",
+      "mnemonics": [
+        {
+          "method": "RE·PRESS：把表达压回去",
+          "textZh": "re- 表示“回去”，press 是“按压”。一句想说的话刚到嘴边，就被强压回去，不准表达；把声音、活动或反抗压住，就是 repress。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "EXPRESS说出来，REPRESS压下去",
+          "textZh": "express 是把想法表达出来，repress 则像反着做。你想 express 不满，对方却不许开口，把话硬压住；这样的压制就是 repress。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "抑制表达或发展",
+          "explanationZh": "及物，常接 anger、desire、a smile 等，表示压住情绪、欲望或表现，也可说压制活动和发展。本条动画里的 repress a laugh 指忍住想笑出声的冲动，不是把已经发生的事从记忆中删除。",
+          "collocations": [
+            {
+              "phrase": "repress a laugh",
+              "meaningZh": "忍住笑声"
+            },
+            {
+              "phrase": "repress one’s anger",
+              "meaningZh": "压住怒气"
+            },
+            {
+              "phrase": "repress the expression of emotion",
+              "meaningZh": "抑制情感的表达"
+            }
+          ]
+        },
+        {
+          "senseZh": "镇压，压制",
+          "explanationZh": "也可指用强制力量控制反对行动或群体，限制其活动与自由，常见被动用法。",
+          "collocations": [
+            {
+              "phrase": "repress opposition",
+              "meaningZh": "镇压反对力量"
+            },
+            {
+              "phrase": "be brutally repressed",
+              "meaningZh": "受到残酷镇压"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stifle",
+          "comparisonZh": "在抑制表达或冲动时接近，如 stifle a laugh 与 repress a laugh 都可说忍住笑。stifle 常突出堵住、使其无法发出的感觉，repress 更突出把已经存在的情绪或活动压下去。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "quell",
+          "comparisonZh": "在压制骚乱或强烈情绪时接近；quell 常突出使它平息下来，repress 侧重施压、限制其表现或活动，不一定意味着内在原因已经消失。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He burst in, making no effort to repress his fury.",
+          "translationZh": "他冲了进来，丝毫没有试着压住怒火。",
+          "explanationZh": "making no effort to repress 表示没有努力克制，fury 是他不加掩饰的强烈愤怒。"
+        },
+        {
+          "textEn": "The government was quick to repress any opposition.",
+          "translationZh": "政府迅速镇压了任何反对活动。",
+          "explanationZh": "repress 在这里接 opposition，表示以强制手段压制反对力量，而不是个人忍住情绪。"
+        }
+      ]
+    },
+    {
+      "number": 6812,
+      "word": "reprieve",
+      "ipa": "/rɪˈpriːv/",
+      "pos": "vt.",
+      "coreMeaningZh": "暂缓执行刑罚；给予暂时缓解",
+      "coreEn": "to delay carrying out a punishment, or to spare someone or something from a difficulty for a time",
+      "coreImageZh": "法官查看材料后宣布暂缓执行刑罚，先进行复核。原本忧虑的男子松了一口气，却仍留在座位上等候。reprieve 表示暂缓执行刑罚，也可指给予暂时的缓解；男子得到的是延期，而不是罪责被撤销或刑罚被永久免除。",
+      "mnemonics": [
+        {
+          "method": "RELIEF：暂缓带来宽慰",
+          "textZh": "reprieve 与 relief（宽慰）整体近音。原定今天执行的刑罚获准暂缓，当事人顿时感到 relief；让眼前压力暂时停下来的这次缓期，就是 reprieve。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RE＋BRIEF：只缓一阵",
+          "textZh": "reprieve 的主要声音 prieve 很像 brief（短暂的）。刑罚暂不执行，却不是永远取消：得到的是一段 brief 的喘息时间，提醒 reprieve 的“暂缓、暂时缓解”。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "暂缓执行刑罚",
+          "explanationZh": "及物，可接受刑者，常用被动 be reprieved，表示刑罚的执行暂时推迟。它不等于认定无罪或永久取消处罚，是否进一步改变处罚要看后续决定。",
+          "collocations": [
+            {
+              "phrase": "reprieve a prisoner",
+              "meaningZh": "暂缓对囚犯执行刑罚"
+            },
+            {
+              "phrase": "be reprieved",
+              "meaningZh": "获暂缓执行刑罚"
+            }
+          ]
+        },
+        {
+          "senseZh": "给予暂时缓解",
+          "explanationZh": "也可用于原本面临关闭、撤销或其他困难的人或事物，表示暂时避免那种后果。同形名词可说 a reprieve from something，强调一段喘息机会。",
+          "collocations": [
+            {
+              "phrase": "reprieve a threatened institution",
+              "meaningZh": "使面临关闭的机构暂时得以保留"
+            },
+            {
+              "phrase": "a reprieve from the heat",
+              "meaningZh": "暂时摆脱酷热的喘息"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "respite",
+          "comparisonZh": "在暂时缓解、喘息机会的意思上接近，respite 常用作名词；reprieve 本条主要是动词，表示给予这种暂缓或缓解，也可作名词。比较时要同时保留短暂性和词性区别。"
+        },
+        {
+          "word": "defer",
+          "comparisonZh": "都涉及推迟，但 defer 通常直接接被推迟的事情，如 defer a decision；reprieve 在刑罚义常接受刑的人，重点是暂缓对他的刑罚执行，不能机械地把两者宾语原样互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was sentenced to death but then reprieved.",
+          "translationZh": "他被判处死刑，但随后获准暂缓执行。",
+          "explanationZh": "was reprieved 表示执行被暂时推迟，but then 引出判刑后出现的这一变化，并不说明已经撤销罪责。"
+        },
+        {
+          "textEn": "The library has been reprieved and will remain open for at least another year.",
+          "translationZh": "图书馆暂时避免了关闭，至少还会继续开放一年。",
+          "explanationZh": "has been reprieved 把暂缓的对象扩展到原本面临关闭的图书馆，another year 交代得到的延长时间。"
+        }
+      ]
+    },
+    {
+      "number": 6813,
+      "word": "reproach",
+      "ipa": "/rɪˈproʊtʃ/",
+      "pos": "vt.",
+      "coreMeaningZh": "批评，责备",
+      "coreEn": "to express disappointment or displeasure with someone because of something they have done or failed to do",
+      "coreImageZh": "女孩独自收拾活动后散落的彩纸，见男孩回来，失望地责备他答应帮忙却跑去玩了。男孩低头道歉，随后动手一起收拾。reproach 表示责备，常带着失望或不满，女孩责怪的是男孩没有遵守先前的承诺。",
+      "mnemonics": [
+        {
+          "method": "APPROACH：走上前来责备",
+          "textZh": "reproach 与 approach（靠近）整词很像。对方先 approach，走到你面前，再指出你失约的过错，当面责备；这番责备就是 reproach。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RE + COACH：教练又责备了",
+          "textZh": "借 re-（再）与 COACH（教练）的连读声音记 reproach。队员又故意推人犯规，教练当面责备：“你不能这样对待对手！”这番责备，就是 reproach。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "责备某人",
+          "explanationZh": "及物，常用 reproach somebody for something 或 for doing something，表示因对方做了或没做某事而责备，常带失望、不满的情绪。也可用 with 引出被责备的行为，但 for 更便于日常掌握。",
+          "collocations": [
+            {
+              "phrase": "reproach somebody for being late",
+              "meaningZh": "因迟到而责备某人"
+            },
+            {
+              "phrase": "reproach somebody with cruelty",
+              "meaningZh": "责备某人的残酷"
+            }
+          ]
+        },
+        {
+          "senseZh": "自责",
+          "explanationZh": "reproach oneself 表示因自己的行为感到内疚、责怪自己，不一定需要向别人说出口。",
+          "collocations": [
+            {
+              "phrase": "reproach oneself for a mistake",
+              "meaningZh": "为一个错误而自责"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "blame",
+          "comparisonZh": "都可表示责怪，但 blame 也能单纯把责任归到某人身上；reproach 常突出因为失望或不满而向对方表达责备。"
+        },
+        {
+          "word": "chide",
+          "comparisonZh": "在带不满地责备时接近；chide 常显得较温和，reproach 更容易强调对方辜负了期待，也常用于 reproach oneself 表示自责。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Nobody has a right to reproach me.",
+          "translationZh": "谁都没有权利责备我。",
+          "explanationZh": "reproach 直接接宾语 me，have a right to do 表示有权做某事。"
+        },
+        {
+          "textEn": "He reproached himself for not telling her the truth.",
+          "translationZh": "他因没有告诉她真相而自责。",
+          "explanationZh": "reproached himself 是自责，for not telling her the truth 说明内疚的原因。"
+        }
+      ]
+    },
+    {
+      "number": 6814,
+      "word": "reprobate",
+      "ipa": "/ˈreprəbeɪt/",
+      "pos": "n.; adj.",
+      "coreMeaningZh": "品行败坏的人；堕落的，放荡的",
+      "coreEn": "a morally corrupt or unprincipled person; morally corrupt or unprincipled",
+      "coreImageZh": "朋友质问男子为什么总骗别人的钱，他却握着钱袋，满不在乎地说自己根本不在意，朋友失望地转开脸。reprobate 作名词，指品行败坏、缺乏道德原则的人；男子反复欺骗别人，又毫无悔意，正体现了这个词的强烈贬义。",
+      "mnemonics": [
+        {
+          "method": "RE·PROB·ATE：品行不过关",
+          "textZh": "prob 的词源联系“检验、证明合格”，re- 在这里有反向、否定的作用。reprobate 的早期意思是“被判不合格、遭否定的”，后来用于品行败坏的人：做人底线一次次不过关。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "PRO BAIT：专门下饵骗钱",
+          "textZh": "reprobate 整体可联到 re＋pro＋bait：一再像“专业下饵者”那样，拿假投资当 bait（诱饵），专骗别人的救命钱。这个毫无道德底线的人，就是 reprobate。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "道德败坏的人",
+          "explanationZh": "作可数名词，可说 a reprobate 或复数 reprobates，评价一个人不讲原则、行为败坏，语气较强。不能仅因一次普通失误或成绩不好就按这个词理解。",
+          "collocations": [
+            {
+              "phrase": "a shameless reprobate",
+              "meaningZh": "一个无耻的败类"
+            },
+            {
+              "phrase": "an unprincipled reprobate",
+              "meaningZh": "一个毫无原则的败类"
+            }
+          ]
+        },
+        {
+          "senseZh": "堕落的、放荡的",
+          "explanationZh": "作形容词时，描述道德败坏的人或行为，可修饰 person、conduct 等。本条学习名词和形容词，不把另有的动词谴责义混作这里的词性。",
+          "collocations": [
+            {
+              "phrase": "reprobate conduct",
+              "meaningZh": "道德败坏的行为"
+            },
+            {
+              "phrase": "a reprobate judge",
+              "meaningZh": "一个道德败坏的法官"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "scoundrel",
+          "comparisonZh": "作名词指卑鄙、无原则的人时接近；scoundrel 常突出不诚实、损人利己，reprobate 更宽泛地评价道德或生活行为败坏。scoundrel 不是本词形容词用法的直接替代。"
+        },
+        {
+          "word": "degenerate",
+          "comparisonZh": "在道德败坏的形容词或名词用法上接近；degenerate 容易带从较好状态衰败下来的意味，reprobate 主要评价当前缺乏道德原则，不一定交代变化过程。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was known as a dishonest reprobate.",
+          "translationZh": "他以不诚实、道德败坏而为人所知。",
+          "explanationZh": "a dishonest reprobate 中 reprobate 是可数名词，指那样一个人，而不是一次不当行为。"
+        },
+        {
+          "textEn": "The judge was notorious for his reprobate conduct.",
+          "translationZh": "那位法官因道德败坏的行为而臭名昭著。",
+          "explanationZh": "reprobate 作形容词修饰 conduct，was notorious for 表示因不光彩的事情而出名。"
+        }
+      ]
+    },
+    {
+      "number": 6815,
+      "word": "reproof",
+      "ipa": "/rɪˈpruːf/",
+      "pos": "n.",
+      "coreMeaningZh": "批评，责备",
+      "coreEn": "an expression of blame or disapproval directed at a fault",
+      "coreImageZh": "女孩正在介绍自己的画，男孩却急着插话，老师指出别人讲话时不该一直插嘴。男孩听了这番批评，答应等女孩讲完，随后安静地听她继续介绍。reproof 是名词，表示针对过错的一番责备或批评，画面中指的就是老师纠正男孩插嘴行为的那番话。",
+      "mnemonics": [
+        {
+          "method": "RE + PROOF：再摆证据来责备",
+          "textZh": "借 RE（再）和 PROOF（证据）的完整词形记 reproof。同样的错又犯了，老师再次把证据摆出来，严肃指出你的问题；这番批评责备就是 reproof。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "APPROVE反过来：不是赞许",
+          "textZh": "reproof 与 approve（赞许）有相近的主要音形，词源也联系“认可与否定”。老师没有 approve 你的做法，而是指出错处，给了一番 reproof：不是赞许，是责备。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "批评，责备，反对",
+          "explanationZh": "名词，较正式，通常是对某种过错表示责备或不赞同，而不只是一般意见不同。表示这种批评的态度时可不可数，表示一番或一次责备时可数。它可以温和，也可以严厉，要看修饰语和语境。",
+          "collocations": [
+            {
+              "phrase": "a mild reproof",
+              "meaningZh": "一番温和的责备"
+            },
+            {
+              "phrase": "words of reproof",
+              "meaningZh": "责备的话"
+            },
+            {
+              "phrase": "in a tone of reproof",
+              "meaningZh": "以责备的语气"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rebuke",
+          "comparisonZh": "作名词表示责备时接近；rebuke 往往更尖锐、严厉，reproof 本身的力度不固定，可以是一句温和的不赞同，也可以加 severe 表示严厉。"
+        },
+        {
+          "word": "reprimand",
+          "comparisonZh": "作名词时都可指责备；reprimand 常有上级、组织等正式训诫的意味，reproof 不要求这种身份或程序。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His words were a mixture of pity and reproof.",
+          "translationZh": "他的话里既有同情，也有责备。",
+          "explanationZh": "reproof 在这里不可数，与 pity 并列，说明话语中包含的两种态度。"
+        },
+        {
+          "textEn": "She received a mild reproof from the teacher.",
+          "translationZh": "她受到老师一番温和的责备。",
+          "explanationZh": "a mild reproof 表示一次具体的责备，mild 说明语气并不严厉。"
+        }
+      ]
+    }
+  ]
+}

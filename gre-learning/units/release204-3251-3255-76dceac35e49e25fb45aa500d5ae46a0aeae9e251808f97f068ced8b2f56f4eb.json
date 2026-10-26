@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6871,
+      "word": "salve",
+      "ipa": "英 /sælv/ 或 /sɑːv/；美 /sæv/",
+      "pos": "vt.",
+      "coreMeaningZh": "减轻，缓解",
+      "coreEn": "to ease or soothe pain, distress, hurt feelings, or guilt",
+      "coreImageZh": "男孩被同伴的嘲笑伤了心，低着头显得很难过。同伴认真道歉，承认不该嘲笑他；男孩听后抬起头，神情放松，说自己好受了些。salve 在这里表示安抚、减轻内心的痛苦，真诚的道歉像抚平伤处一样，缓和了男孩受伤的感情。",
+      "mnemonics": [
+        {
+          "method": "SAVE 心情：缓解难过",
+          "textZh": "salve 整体看着像 SAVE（挽救）。朋友受了伤害，一句真诚的道歉把他的心情救回来：salve 是缓解痛苦、难过或内疚。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SALVE 先安抚，SOLVE 再解题",
+          "textZh": "salve 与 SOLVE（解决）整体只差中间的元音字母。题不会做已经够烦，先安慰一下、缓解焦虑，再去解决题目。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "缓解痛苦或受伤的感情",
+          "explanationZh": "这是较正式的及物动词，可指使疼痛、苦恼、受伤的自尊或感情得到舒缓。宾语直接跟在动词后，重点是减轻不适，不必表示根本问题已经彻底消除。",
+          "collocations": [
+            {
+              "phrase": "salve hurt feelings",
+              "meaningZh": "安抚受伤的感情"
+            },
+            {
+              "phrase": "salve wounded pride",
+              "meaningZh": "安抚受挫的自尊"
+            }
+          ]
+        },
+        {
+          "senseZh": "减轻内疚与相关名词",
+          "explanationZh": "salve one's conscience 常表示做某件事来减轻自己的内疚；有时暗示主要是求得心安，未必真正弥补了全部过错。名词 salve 原指涂抹的药膏，也可比喻有安抚作用的事物。",
+          "collocations": [
+            {
+              "phrase": "salve one's conscience",
+              "meaningZh": "减轻内疚，使自己心安"
+            },
+            {
+              "phrase": "a salve for wounded pride",
+              "meaningZh": "能安抚受挫自尊的事物"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "soothe",
+          "comparisonZh": "表示缓解痛苦、苦恼或受伤的感情时很接近。soothe 更常用，范围也更广；salve 较正式，尤其常与 conscience、feelings、pride 等搭配。"
+        },
+        {
+          "word": "assuage",
+          "comparisonZh": "在减轻痛苦、内疚或不安时接近，也有正式色彩。assuage 还常用于 hunger、thirst 等需求；不能把它的所有宾语搭配直接搬给 salve。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He offered to repair the toy to salve his conscience.",
+          "translationZh": "他提出修好玩具，以减轻自己的内疚。",
+          "explanationZh": "to salve his conscience 说明提出修理的目的：让自己少一些内疚，句子没有保证所有损害都已弥补。"
+        },
+        {
+          "textEn": "Her kind words helped salve his wounded pride.",
+          "translationZh": "她温和的话语帮助安抚了他受挫的自尊。",
+          "explanationZh": "wounded pride 指自尊受到打击，并非身体受伤；salve 在这里表示舒缓这份难受。"
+        }
+      ]
+    },
+    {
+      "number": 6872,
+      "word": "sanctify",
+      "ipa": "/ˈsæŋktɪfaɪ/",
+      "pos": "vt.",
+      "coreMeaningZh": "使神圣；把……奉为神圣",
+      "coreEn": "to make or declare something holy, or to give it a sacred and inviolable status",
+      "coreImageZh": "祭司将一只朴素的木杯献给神殿，把它放在石台上，庄重地举行祝圣仪式，并宣布它从此专用于祭礼。男孩在旁肃静观看，随后低头致意。sanctify 表示使某物成为神圣的、赋予它神圣地位；木杯的外形没有改变，改变的是它从普通器物成为受到敬重的祭器。",
+      "mnemonics": [
+        {
+          "method": "SANCT + IFY：使之神圣",
+          "textZh": "sanct- 表示“神圣”，-ify 表示“使成为”。为普通场所举行仪式，将它奉为圣地，就是 sanctify：使它神圣化。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SANTA 被封圣",
+          "textZh": "把 sanctify 的前部读音联想成 SANTA（圣诞老人），再接表示“使成为”的 -ify：故事里，大家把送礼老人奉成圣人，使他神圣化。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "使物品或场所成为神圣的",
+          "explanationZh": "常用于宗教语境，表示通过仪式等把某物、某处分别出来，用于神圣目的。重点在赋予或确认神圣地位，而不是物品发光、获得超自然能力；具体仪式因传统而异。",
+          "collocations": [
+            {
+              "phrase": "sanctify a place of worship",
+              "meaningZh": "使一处礼拜场所成为神圣之地"
+            },
+            {
+              "phrase": "sanctify an altar",
+              "meaningZh": "祝圣祭坛"
+            }
+          ]
+        },
+        {
+          "senseZh": "把某物奉为神圣不可侵犯的",
+          "explanationZh": "可引申指让传统、制度、权利等获得特殊尊崇或道德上的认可。它不一定是在称赞这种做法，也可能批评人们把本可讨论的事物神圣化。另有使人净化、摆脱罪恶的宗教义，需按上下文区分。",
+          "collocations": [
+            {
+              "phrase": "sanctify a tradition",
+              "meaningZh": "把一种传统奉为神圣"
+            },
+            {
+              "phrase": "rights sanctified by tradition",
+              "meaningZh": "被传统赋予神圣地位的权利"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "consecrate",
+          "comparisonZh": "在通过宗教仪式把某物或场所用于神圣目的时接近。consecrate 更容易强调正式奉献、专供宗教用途的行动；sanctify 也可泛指赋予神圣地位。"
+        },
+        {
+          "word": "hallow",
+          "comparisonZh": "表示使神圣或把某人某物尊为神圣时非常接近，也有庄重、文学或宗教色彩。hallow 还常突出因记忆、传统等而受到极深的敬重。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The ceremony sanctified the new altar.",
+          "translationZh": "这场仪式使新祭坛成为神圣之物。",
+          "explanationZh": "sanctified 后直接接 the new altar，说明被赋予神圣地位的对象；仪式本身不表示物体发生了外形变化。"
+        },
+        {
+          "textEn": "They refused to sanctify the custom merely because it was old.",
+          "translationZh": "他们不愿仅仅因为这个习俗历史悠久，就把它奉为神圣。",
+          "explanationZh": "这里是引申义，指把习俗置于不可质疑的地位；merely because 表明历史悠久不足以成为这种尊崇的唯一理由。"
+        }
+      ]
+    },
+    {
+      "number": 6873,
+      "word": "sanctuary",
+      "ipa": "/ˈsæŋktʃuəri/",
+      "pos": "n.",
+      "coreMeaningZh": "避难所",
+      "coreEn": "a safe place that provides refuge and protection; also, the safety or protection found there",
+      "coreImageZh": "男孩在风雨中来到小屋门口，屋主招呼他进去躲避。他走进干燥的屋内，放松下来；门外的大雨还在下，屋顶和墙壁却为他挡住了风雨。sanctuary 在这里指提供保护、让人免受威胁的避难所，这间小屋成了男孩可以安心停留的庇护之处。",
+      "mnemonics": [
+        {
+          "method": "SANCT + UARY：圣地护人",
+          "textZh": "sanct- 表示“神圣”，-uary 表示场所。受到保护的圣地，可以让被追赶的人暂避危险；sanctuary 就可指避难所。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "山丘窝里，躲进去避难",
+          "textZh": "把 sanctuary 的整段声音试联想成“山丘窝里”：遇到追赶，躲进山丘里隐蔽的小窝，找到一个避难所。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "提供安全与保护的地方",
+          "explanationZh": "作可数名词时，可以是让人躲避威胁、风雨或困境的避难处，也可以是保护动物的场所。重点在提供庇护和安全，不一定是宗教建筑。复数是 sanctuaries。",
+          "collocations": [
+            {
+              "phrase": "a sanctuary for refugees",
+              "meaningZh": "难民的避难所"
+            },
+            {
+              "phrase": "a wildlife sanctuary",
+              "meaningZh": "野生动物保护区"
+            }
+          ]
+        },
+        {
+          "senseZh": "庇护这个状态；宗教义",
+          "explanationZh": "表示安全、庇护本身时常作不可数名词，用 seek、find 或 take sanctuary。它也保留了圣所、宗教建筑中神圣区域的含义；具体说的是地方、庇护状态还是宗教空间，要看上下文。",
+          "collocations": [
+            {
+              "phrase": "seek sanctuary",
+              "meaningZh": "寻求庇护"
+            },
+            {
+              "phrase": "find sanctuary in a place",
+              "meaningZh": "在某处找到庇护"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "refuge",
+          "comparisonZh": "在避难处或得到保护这一义项上很接近，也可说 seek refuge。sanctuary 更容易带出安宁、免受威胁的感觉，并另有圣所和动物保护区等用法。"
+        },
+        {
+          "word": "haven",
+          "comparisonZh": "表示安全的容身处时接近，常带令人安心、适合停留的意味。haven 也可指某类人喜爱的好去处；sanctuary 的避难与保护意味通常更明确。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The family found sanctuary in a nearby village.",
+          "translationZh": "这一家人在附近的村庄得到了庇护。",
+          "explanationZh": "found sanctuary 中 sanctuary 作不可数名词，指获得安全与保护的状态。"
+        },
+        {
+          "textEn": "The island is a sanctuary for seabirds.",
+          "translationZh": "这座岛是海鸟的保护地。",
+          "explanationZh": "a sanctuary 指一个具体的受保护场所；for seabirds 说明得到庇护的对象是海鸟。"
+        }
+      ]
+    },
+    {
+      "number": 6874,
+      "word": "showcase",
+      "ipa": "/ˈʃoʊkeɪs/",
+      "pos": "vt.",
+      "coreMeaningZh": "展示（优点）",
+      "coreEn": "to display something or someone in a way that highlights attractive qualities or strengths",
+      "coreImageZh": "老师请男孩展示自己最得意的画。男孩双手举着红花绿叶的作品，让老师看清画面；老师欣赏它的配色，称赞画得漂亮，男孩也露出自信的笑容。showcase 在这里表示把作品的长处突出展示出来，让原本属于创作者的好手艺被别人看见、欣赏。",
+      "mnemonics": [
+        {
+          "method": "SHOW + CASE：展柜展示优点",
+          "textZh": "SHOW 是展示，CASE 是柜子。把得意作品摆进展柜，让人看见最出色的地方；showcase 作动词就是展示优点或实力。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SNOW CASE：雪景摆进展示柜",
+          "textZh": "把 showcase 整体看成近形短语 SNOW CASE：把精巧的雪景模型摆进玻璃柜，展示自己的制作本领。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "突出展示值得欣赏的一面",
+          "explanationZh": "及物动词，后面直接接作品、产品、才能或长处。它通常不只是让人看见，而是安排一种展示方式，让出色、有吸引力的一面更显眼。可以用于展览、演出、宣传或实际演示。",
+          "collocations": [
+            {
+              "phrase": "showcase new talent",
+              "meaningZh": "展示新人的才华"
+            },
+            {
+              "phrase": "showcase a product’s strengths",
+              "meaningZh": "展示产品的长处"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词用法与词形",
+          "explanationZh": "作名词可指玻璃展示柜，也可指展示才能或成果的场合、平台。名词常用 a showcase for；动词则直接接宾语。过去式 showcased，-ing 形式 showcasing，去掉词尾不发音的 e。",
+          "collocations": [
+            {
+              "phrase": "a showcase for young artists",
+              "meaningZh": "展示年轻艺术家才华的平台"
+            },
+            {
+              "phrase": "showcase local craftsmanship",
+              "meaningZh": "展示当地精湛的手工艺"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "display",
+          "comparisonZh": "在把物品、作品或能力展现给人看时接近。display 比较中性；showcase 通常更突出经过安排，把优点或吸引人的一面展现出来。"
+        },
+        {
+          "word": "highlight",
+          "comparisonZh": "在突出某个长处或亮点时有交集。highlight 可以只是在文字或讲话中强调重点；showcase 通常包含让人实际看到或体验其表现的展示过程。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The exhibition showcases the students’ best work.",
+          "translationZh": "这场展览展示了学生们最出色的作品。",
+          "explanationZh": "showcases 后面直接接作品；best 说明选出来的是最能体现水平的一部分。"
+        },
+        {
+          "textEn": "The demonstration showcased the camera’s low-light performance.",
+          "translationZh": "这次演示展现了这台相机在弱光下的出色表现。",
+          "explanationZh": "showcased 强调通过演示让观众看见性能长处，不只是说这台相机摆在现场。"
+        }
+      ]
+    },
+    {
+      "number": 6875,
+      "word": "sanitary",
+      "ipa": "英 /ˈsænətri/；美 /ˈsænəteri/",
+      "pos": "adj.",
+      "coreMeaningZh": "卫生的，清洁的",
+      "coreEn": "clean and maintained in conditions that help protect health",
+      "coreImageZh": "母亲拿着干净的餐盘，提醒男孩先把桌面擦净。男孩用抹布清除污迹和碎屑，确认桌面干净后，母亲才把盘子摆上去。sanitary 形容清洁、符合卫生要求的环境或条件；画面通过清理用餐位置，表现为准备食物和用餐保持卫生的做法。",
+      "mnemonics": [
+        {
+          "method": "SANIT + ARY：维护健康的",
+          "textZh": "sanit- 来自拉丁语“健康”，-ary 表示“与……有关的”。饮水和餐具干净、不危害健康，就是 sanitary：卫生的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUNNY DAIRY：奶场清洁又卫生",
+          "textZh": "把 sanitary 的主要读音联想成 SUNNY DAIRY（阳光充足的奶场）。阳光照进来，奶桶刷得干干净净，操作台也清洁卫生。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "清洁、符合卫生要求的",
+          "explanationZh": "常形容环境、设施、操作或储存方式，强调有助于避免污物和不卫生状况带来的健康问题。并不是用来泛指一个人体格健壮；一个地方看着整齐，也不自动说明所有卫生条件都合格。",
+          "collocations": [
+            {
+              "phrase": "sanitary conditions",
+              "meaningZh": "卫生条件"
+            },
+            {
+              "phrase": "keep the kitchen sanitary",
+              "meaningZh": "保持厨房清洁卫生"
+            }
+          ]
+        },
+        {
+          "senseZh": "与环境卫生及废物处理有关的",
+          "explanationZh": "也可放在名词前，说明设施或措施与卫生管理有关，如清洁用水、厕所、污水处理等。反义词有 unsanitary、insanitary，表示不卫生的。sanitary 不要求达到完全无菌的程度。",
+          "collocations": [
+            {
+              "phrase": "sanitary facilities",
+              "meaningZh": "卫生设施"
+            },
+            {
+              "phrase": "sanitary waste disposal",
+              "meaningZh": "符合卫生要求的废物处理"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hygienic",
+          "comparisonZh": "在清洁、符合卫生要求、能维护健康这一意义上非常接近。hygienic 也常形容个人习惯和操作方式；sanitary 常用于环境、设施与卫生条件。"
+        },
+        {
+          "word": "clean",
+          "comparisonZh": "表示清洁时有交集，但 clean 更宽泛，可以只是没有可见污渍。sanitary 还强调卫生条件是否有利于健康；普通的干净不一定等于完全无菌。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Food must be prepared in sanitary conditions.",
+          "translationZh": "食物必须在卫生的条件下制作。",
+          "explanationZh": "sanitary 修饰 conditions，说明制作食物的环境与操作条件应符合卫生要求。"
+        },
+        {
+          "textEn": "The campsite lacked adequate sanitary facilities.",
+          "translationZh": "这个营地缺乏足够的卫生设施。",
+          "explanationZh": "sanitary facilities 指厕所、洗漱等与环境卫生有关的设施，不是在说营地里的人身体是否健康。"
+        }
+      ]
+    }
+  ]
+}

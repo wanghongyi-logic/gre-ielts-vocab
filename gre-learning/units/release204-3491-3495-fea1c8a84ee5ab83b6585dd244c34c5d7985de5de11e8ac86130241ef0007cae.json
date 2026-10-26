@@ -1,0 +1,403 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7111,
+      "word": "thwart",
+      "ipa": "/θwɔːt/",
+      "pos": "vt.",
+      "coreMeaningZh": "阻挠",
+      "coreEn": "to prevent a person from achieving a purpose, or stop a plan or attempt from succeeding",
+      "mnemonics": [
+        {
+          "method": "THOUGHT 以为能偷吃，计划却被阻挠",
+          "textZh": "用完整熟词 THOUGHT（think 的过去式，“原以为”）近音联想 thwart。想象孩子原以为能偷吃冰箱里的蛋糕，妈妈却提前把蛋糕收走，偷吃计划没能实现。由 THOUGHT 的声音和“原以为能做到，偏被拦住”的反差，记住 THWART：阻挠，使计划受阻。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "THE WALL 横在路上，阻挠过关计划",
+          "textZh": "用完整熟悉词组 THE WALL（那堵墙）近音联想 thwart。想象桌上的迷宫游戏：你正要把小车推向终点，一堵墙却横在必经之路上，小车过不去，原定过关计划被阻挠。记住整块 THE WALL 和挡住目标的画面，就能联到 THWART：阻挠。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "阻挠计划或企图：thwart a plan / an attempt",
+          "explanationZh": "thwart 是及物动词，后面可接某人的计划、企图，也可接想实现目标的人。它强调目标的实现受到阻碍，不只是口头表示不同意；直接说某个企图 was thwarted，通常表示该企图被挫败。若前面是 try to 等表达，则只是试图阻挠，并未保证成功。",
+          "collocations": [
+            {
+              "phrase": "thwart somebody’s plans",
+              "meaningZh": "阻挠某人的计划"
+            },
+            {
+              "phrase": "thwarted the attempt at a coup",
+              "meaningZh": "挫败了政变企图"
+            }
+          ]
+        },
+        {
+          "senseZh": "因某种障碍受阻：be thwarted by / in",
+          "explanationZh": "被动结构中，by 后可说造成阻碍的人或原因，in 后可说明在哪项尝试中受阻。阻碍不一定来自某人的恶意；身体条件、天气等客观因素也可能使愿望无法实现。这里谈的是目标受阻，不是单纯感到不高兴。",
+          "collocations": [
+            {
+              "phrase": "was thwarted by poor eyesight",
+              "meaningZh": "因视力差而受阻"
+            },
+            {
+              "phrase": "thwarted in her attempt",
+              "meaningZh": "在她的尝试中受阻"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "frustrate",
+          "comparisonZh": "frustrate 在“使计划或努力落空”时与 thwart 接近；thwart 更突出有阻力拦住目标。frustrate 还常指让人烦恼、沮丧，单纯的情绪意义不能直接换成 thwart。",
+          "sources": [
+            "B",
+            "zhangwei_original3000"
+          ]
+        },
+        {
+          "word": "sabotage",
+          "comparisonZh": "sabotage 常突出破坏性干扰，尤其是蓄意破坏，使计划无法成功；也可借指客观因素毁掉机会。thwart 主要交代目标受阻，不必损坏实物，也不必有人故意作对。两者在阻挠计划时接近，但并非所有用法都能互换。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His ambition to be a painter was thwarted by poor eyesight.",
+          "translationZh": "他想当画家的志向因视力差而受挫。",
+          "explanationZh": "was thwarted by 是被动结构，poor eyesight 是造成阻碍的客观原因；句子没有说有人故意破坏他的计划。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary — https://www.oxfordlearnersdictionaries.com/definition/english/thwart"
+        },
+        {
+          "textEn": "The army thwarted the attempt at a coup.",
+          "translationZh": "军队挫败了这次政变企图。",
+          "explanationZh": "thwarted 直接接 the attempt，表示该企图被阻止，而不只是军队表达了反对意见。",
+          "sourceAttribution": "Merriam-Webster Dictionary — https://www.merriam-webster.com/dictionary/thwart"
+        }
+      ],
+      "coreImageZh": "男孩想把红色玩具车沿桌面路线推到另一头，女孩双手把木挡板保持横在路上。男孩把车推近，车头抵住挡板停下，未能达到原来的目标。thwart 指阻挠、使计划不能实现，不只是口头反对。"
+    },
+    {
+      "number": 7112,
+      "word": "ticklish",
+      "ipa": "/ˈtɪklɪʃ/",
+      "pos": "adj.",
+      "coreMeaningZh": "易怒的；棘手的，对技巧要求高的",
+      "coreEn": "easily offended or upset; difficult or sensitive to deal with and therefore requiring care or skill",
+      "mnemonics": [
+        {
+          "method": "TICKLE 挠一下就躲，敏感话题一碰就恼",
+          "textZh": "TICKLE 是“挠痒”，加真实形容词后缀 -ish 构成 ticklish。想象一根羽毛轻挠脚底，人立刻缩脚；把这种“一碰就有反应”的画面联到谈话：有人特别介意自己的外貌，话题一碰到这里就容易恼火。完整 TICKLE 帮你记住 ticklish 的主体，也带出“敏感、容易被冒犯”的意思。这里只借身体敏感作联想，不是说怕痒的人都脾气差。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TICK LIST 婚礼名单逐项勾，取舍棘手要谨慎",
+          "textZh": "把 TICK LIST（打勾清单）整块近音联想成 ticklish：tick 是打勾，list 是名单。想象婚礼座位有限，名单上的朋友却都很亲近；请谁、不请谁都怕伤感情，笔停在名字旁边，不能随便打勾。由整块 TICK LIST 和难以下笔的画面，记住 TICKLISH：棘手的，需要技巧和谨慎处理的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "对某个话题敏感、容易被冒犯：ticklish about something",
+          "explanationZh": "说某人 ticklish about 某件事，是指这个话题容易惹他不快，让他觉得被冒犯。这里的“易怒”不是说他任何时候都会大发脾气，也不只是说他当下正在生气。ticklish 另有“怕痒”的字面义，谈话中的敏感则是另一种用法。",
+          "collocations": [
+            {
+              "phrase": "ticklish about his looks",
+              "meaningZh": "对自己的外貌很敏感"
+            },
+            {
+              "phrase": "ticklish about his baldness",
+              "meaningZh": "对自己秃头这件事很敏感"
+            }
+          ]
+        },
+        {
+          "senseZh": "棘手、需要技巧或谨慎的事：a ticklish problem / situation",
+          "explanationZh": "ticklish 可修饰 problem、situation、task 等，表示事情难处理，尤其需要小心、技巧或顾及人的感受。它不只是“工作量大”，也不要求一定有身体危险；邀请谁、如何解释某个决定，都可能很棘手。",
+          "collocations": [
+            {
+              "phrase": "a ticklish problem",
+              "meaningZh": "一个棘手的问题"
+            },
+            {
+              "phrase": "a ticklish situation",
+              "meaningZh": "需要谨慎处理的局面"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "touchy",
+          "comparisonZh": "touchy 形容人时也指敏感、容易不快或被冒犯，与 ticklish 的第一义接近；形容话题时，也可表示容易触动情绪、需要谨慎谈论。ticklish 还可说需要技巧处理的任务，不一定涉及某人被冒犯；而“怕痒”不能一般用 touchy 替换。"
+        },
+        {
+          "word": "delicate",
+          "comparisonZh": "delicate 在“需要细心、谨慎处理”的问题或局面中与 ticklish 接近。delicate 还可指易碎、纤细、精巧或味道清淡，这些意义不能直接换成 ticklish；它也不等于说一个人容易发怒。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "he's ticklish about his looks, so it's wisest to avoid the subject altogether",
+          "translationZh": "他对自己的外貌很敏感，所以最好完全避开这个话题。",
+          "explanationZh": "ticklish about 说明使他容易不快的具体话题。后半句给出避开该话题的建议，并没有说他对一切事情都易怒。",
+          "sourceAttribution": "Merriam-Webster Dictionary — https://www.merriam-webster.com/dictionary/ticklish"
+        },
+        {
+          "textEn": "It's quite a ticklish problem deciding how many people to invite to the wedding.",
+          "translationZh": "决定邀请多少人参加婚礼，是个相当棘手的问题。",
+          "explanationZh": "ticklish 修饰 problem，强调这个决定难处理、需要谨慎。原句讨论的是邀请人数，没有说婚礼已经办完，也没有说问题无法解决。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary — https://www.oxfordlearnersdictionaries.com/definition/english/ticklish"
+        }
+      ],
+      "coreImageZh": "男孩小心捏住积木塔中一块蓝色积木的突出端，稍稍试着移动便停下来，避免牵动上面的塔。母亲提醒他这一步很棘手、要稳而慢。ticklish 在这里形容需要技巧和谨慎处理；积木仍嵌在塔内，不能说任务已经完成。"
+    },
+    {
+      "number": 7113,
+      "word": "tiff",
+      "ipa": "/tɪf/",
+      "pos": "n./v.",
+      "coreMeaningZh": "小争吵",
+      "coreEn": "petty quarrel",
+      "mnemonics": [
+        {
+          "method": "STIFF 僵着脸，刚有过 TIFF",
+          "textZh": "把 TIFF 与完整熟词 STIFF（僵硬的）放在一起看。两个朋友为谁先选电影拌了几句嘴，随后一个僵着脸，另一个也不肯先开口。看到这个小小的僵局，就想起 tiff：一次小争吵，也可作动词表示拌嘴。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TIP 小费，引出 TIFF 小争吵",
+          "textZh": "把 tiff /tɪf/ 近音联到熟词 TIP（小费）/tɪp/，只注意末尾声音不同。朋友吃完饭，对小费给多少意见不一，拌了几句嘴，事情并不严重。用 TIP 引出的这次小争吵记 tiff，不是争吵都得为了钱。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "名词：一场小争吵",
+          "explanationZh": "可数名词，语气较轻，常用于朋友、情侣之间不太严重的口角。have a tiff with somebody 表示与某人闹了点别扭；不等于决裂，也不能保证当场和好。",
+          "collocations": [
+            {
+              "phrase": "have a tiff with somebody",
+              "meaningZh": "与某人发生小争吵"
+            },
+            {
+              "phrase": "a lovers’ tiff",
+              "meaningZh": "情侣间的小口角"
+            }
+          ]
+        },
+        {
+          "senseZh": "动词：为小事拌嘴",
+          "explanationZh": "作不及物动词，表示发生不太严重的争吵；不直接接被争吵的人作宾语。可说两人偶尔拌嘴，人物之间仍未必有深仇大恨。",
+          "collocations": [
+            {
+              "phrase": "occasionally tiff",
+              "meaningZh": "偶尔拌嘴"
+            },
+            {
+              "phrase": "tiff about small matters",
+              "meaningZh": "为小事争吵"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "quarrel",
+          "comparisonZh": "两者都可作名词或不及物动词表示争吵。quarrel 范围更广，可能很激烈并伤害关系；tiff 通常把事情说得较轻，指小口角。"
+        },
+        {
+          "word": "squabble",
+          "comparisonZh": "两者都可作名词或动词，常涉及小事。squabble 更突出吵吵嚷嚷、幼稚地争执；tiff 更容易让人想到熟人间较轻的小别扭，不必特别吵闹。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She was upset because she’d had a tiff with her boyfriend.",
+          "translationZh": "她很烦恼，因为她和男朋友发生了一点口角。",
+          "explanationZh": "had a tiff 是名词用法，with her boyfriend 指出争吵对象。小争吵也会令人烦恼，不等于毫无情绪影响。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary，tiff noun 编辑例句：https://www.oxfordlearnersdictionaries.com/definition/english/tiff_1"
+        },
+        {
+          "textEn": "like any couple, they occasionally tiff, but it's never anything serious",
+          "translationZh": "像其他伴侣一样，他们偶尔也拌嘴，但从不是什么严重的事",
+          "explanationZh": "tiff 在这里作不及物动词，主语是 they；occasionally 表示偶尔，后半句说明这些争执都不严重。",
+          "sourceAttribution": "Merriam-Webster，tiff verb 编辑例语（新闻例句之前）：https://www.merriam-webster.com/dictionary/tiff"
+        }
+      ],
+      "coreImageZh": "两个孩子为谁先用桌上的蓝蜡笔争了几句，各自坚持自己先说、自己该先用，随后暂时闭嘴，仍有些别扭。tiff 指这种短小的小争吵；他们没有抢蜡笔或动手打架。"
+    },
+    {
+      "number": 7114,
+      "word": "tightfisted",
+      "ipa": "/ˌtaɪtˈfɪstɪd/",
+      "pos": "adj.",
+      "coreMeaningZh": "吝啬的",
+      "coreEn": "stingy",
+      "mnemonics": [
+        {
+          "method": "TIGHT＋FIST：把钱攥紧，不肯松手",
+          "textZh": "TIGHT 是紧的，FIST 是拳头；tightfisted 的主体就是“紧握的拳头”。想象钱已经攥在手里，明明该付、该给，却总舍不得松手。由握钱不放的画面，记 tightfisted：吝啬的，不肯花钱或给钱。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TIGHT FIT 挤着穿，也舍不得换",
+          "textZh": "把 tightfisted 的大主干近形联到熟词组合 TIGHT FIT（穿得紧）。想象衣服已勒得难受，他明明买得起合身的，却连该换的新衣也舍不得花钱买。用“衣服紧巴巴，花钱更紧巴巴”的场景，记 tightfisted：吝啬的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "形容人吝啬，不肯花钱或给钱",
+          "explanationZh": "带批评意味，强调不愿意，而不只是没有钱。可形容一个人对日常支出、酬劳或赠予过分抠门；普通节俭并不自动等于 tightfisted。",
+          "collocations": [
+            {
+              "phrase": "a tightfisted person",
+              "meaningZh": "一个吝啬的人"
+            },
+            {
+              "phrase": "a tightfisted employer",
+              "meaningZh": "一位抠门的雇主"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容机构或其支出做法过于抠门",
+          "explanationZh": "也可把公司、机构当作支出者，批评其不肯拿出足够的钱。说奖金方面很抠，评价的是给付态度，不是技术上支付不了。",
+          "collocations": [
+            {
+              "phrase": "a tightfisted company",
+              "meaningZh": "一家花钱抠门的公司"
+            },
+            {
+              "phrase": "tightfisted when it comes to bonuses",
+              "meaningZh": "在发奖金这件事上很抠门"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stingy",
+          "comparisonZh": "都可批评人不大方、不肯花钱或给钱。stingy 使用范围更广，也能说食物分量太少或赞扬给得少；tightfisted 更鲜明地让人想到把钱握紧、不肯拿出来。"
+        },
+        {
+          "word": "miserly",
+          "comparisonZh": "都可用于吝啬的人或做法。miserly 更容易突出守财奴般的贪吝和囤积钱财；tightfisted 直接强调不愿花、不愿给，不必补出享受囤钱的动机。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The company's tightfisted owner won't raise the workers' salaries.",
+          "translationZh": "这家公司的老板很吝啬，不肯给工人加薪。",
+          "explanationZh": "tightfisted 修饰 owner，后面的不肯加薪说明其抠门表现；不会仅凭任何一次未加薪就断定某人吝啬。",
+          "sourceAttribution": "Merriam-Webster，tightfisted 编辑例句（新闻例句之前）：https://www.merriam-webster.com/dictionary/tightfisted"
+        },
+        {
+          "textEn": "He had the reputation of being one of the most tight-fisted and demanding of employers.",
+          "translationZh": "人们认为他是最吝啬、要求也最苛刻的雇主之一。",
+          "explanationZh": "tight-fisted 评价花钱方面吝啬，demanding 另说要求高。原文采用连字符拼写，原样保留，含义与 tightfisted 相同。",
+          "sourceAttribution": "Collins COBUILD，tight-fisted 编辑例句：https://www.collinsdictionary.com/dictionary/english/tight-fisted"
+        }
+      ],
+      "coreImageZh": "男孩为班级买彩纸请求父亲出一枚硬币。父亲明明有钱，却连一枚也舍不得拿出来；硬币仍在桌上、罐子还是空的。tightfisted 指吝啬、不愿花钱，不是没钱或合理节俭。"
+    },
+    {
+      "number": 7115,
+      "word": "timeworn",
+      "ipa": "/ˈtaɪmwɔːn/",
+      "pos": "adj.",
+      "coreMeaningZh": "陈腐的",
+      "coreEn": "used or repeated for so long that it has become stale and unoriginal",
+      "mnemonics": [
+        {
+          "method": "TIME + WORN：多年说烂的老套话",
+          "textZh": "TIME 是“时间”，WORN 是“用旧的”，来自熟词 wear；两部分合起来构成 timeworn。想象同一份演讲稿年年被拿出来读，纸边都磨毛了，内容却还是那几句大家早已听腻的套话。时间过去，稿纸用旧，话也说旧了：TIMEWORN，陈腐的、老套的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "“太晚！”这套笑话早就听腻了",
+          "textZh": "用完整中文“太晚”近音联想 timeworn。想象有人兴冲冲地要讲一个“新笑话”，才说出开头，听众就齐声接出结尾：“太晚！这套笑话早就听腻了。”把“太晚”的声音和人人会接的老套话连在一起，记住 TIMEWORN：陈腐的，反复使用而没有新意的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "说腻了的笑话、套话：timeworn joke / speech",
+          "explanationZh": "timeworn 修饰笑话、演讲或说法时，强调使用、重复得太久，已经没有新意。它带有“又是老一套”的评价，不只是中性地说这句话年代久；一句老话仍可能说得对，只是表达方式让人听腻了。",
+          "collocations": [
+            {
+              "phrase": "a timeworn joke",
+              "meaningZh": "一个说烂了的老笑话"
+            },
+            {
+              "phrase": "timeworn speech",
+              "meaningZh": "老生常谈的讲话"
+            }
+          ]
+        },
+        {
+          "senseZh": "拿出陈旧的借口：a timeworn excuse",
+          "explanationZh": "timeworn 可说一个借口是反复用过的老套路，缺乏新意，但这个词本身并不能证明借口一定虚假。它还可以按字面形容物品年久磨损；谈借口时着重的是内容陈腐，不是纸张或声音真的磨坏了。",
+          "collocations": [
+            {
+              "phrase": "a timeworn excuse",
+              "meaningZh": "一个老掉牙的借口"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hackneyed",
+          "comparisonZh": "hackneyed 也指说法、题材等被用得太多，因而陈腐乏味，和 timeworn 的这一义很近。timeworn 更容易使人想到长时间沿用，也有实物年久磨损的意义；hackneyed 一般不是形容房屋或衣物真的磨旧。"
+        },
+        {
+          "word": "stale",
+          "comparisonZh": "stale 形容笑话、点子等时，也指失去新鲜感、让人觉得老套。timeworn 更突出长期使用留下的陈旧感。stale 还可说食物不新鲜、空气污浊，或人因重复工作而缺少新想法，这些意义不能全换成 timeworn。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He gave us the same timeworn speech about the need to work hard.",
+          "translationZh": "他又对我们讲了同一套关于需要努力工作的老生常谈。",
+          "explanationZh": "same 和 timeworn 一起突出这番话已反复说过、听来老套。句子批评的是讲话缺少新意，并没有否定努力工作本身的必要性。",
+          "sourceAttribution": "Merriam-Webster Dictionary — https://www.merriam-webster.com/dictionary/timeworn"
+        },
+        {
+          "textEn": "a timeworn excuse",
+          "translationZh": "一个老掉牙的借口",
+          "explanationZh": "timeworn 修饰 excuse，表示这个借口是反复使用的旧套路；并未单凭这一形容词证明它一定不真实。",
+          "sourceAttribution": "Collins English Dictionary — https://www.collinsdictionary.com/dictionary/english/timeworn"
+        }
+      ],
+      "coreImageZh": "男孩作文又用“光阴似箭，日月如梭”作开头，老师指出这个开头用得太多、没有新意。男孩开始思索别的写法。timeworn 在这里指因反复使用而陈旧乏味的表达，不是书本破损。"
+    }
+  ]
+}

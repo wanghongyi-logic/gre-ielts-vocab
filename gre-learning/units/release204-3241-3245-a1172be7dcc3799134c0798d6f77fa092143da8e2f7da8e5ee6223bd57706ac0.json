@@ -1,0 +1,417 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6861,
+      "word": "runic",
+      "ipa": "/ˈruːnɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "含秘密寓意的，神秘的",
+      "coreEn": "having a secret or magical meaning; also, relating to runes or runic writing",
+      "coreImageZh": "长者念出“月牙低下头，木门转过身”的谜谣，男孩领会其中的暗示，按动月牙形门扣，推开了木门。runic 在这里取文学性的“含秘密寓意、神秘的”一义，形容那段表面像歌谣、实际上藏着开门提示的话。",
+      "mnemonics": [
+        {
+          "method": "RUNE + IC，古文字里的秘密",
+          "textZh": "rune 指古代北欧的如尼文字，这个词的历史还联系着秘密、神秘之意。rune 去掉词尾 e，再接形容词后缀 -ic，得到 runic。想象石头上刻着外人看不懂的神秘符号，藏着只有知情人才懂的寓意。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RUN IT，运行神秘密码",
+          "textZh": "RUNIC 的整体字形很像 RUN IT（运行它）。屏幕上是一串看不懂的符号，只有输入暗号并运行，才显出隐藏的信息：runic，含秘密寓意的、神秘的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "含秘密或魔法意义的",
+          "explanationZh": "这一文学性用法常形容诗谣、话语、符号或标记，强调其中藏着秘密含义或带有魔法意味。不是任何暂时不知道原因的东西都适合叫 runic。",
+          "collocations": [
+            {
+              "phrase": "runic rhymes",
+              "meaningZh": "含秘密寓意的诗谣"
+            },
+            {
+              "phrase": "runic markings",
+              "meaningZh": "带秘密或魔法含义的标记"
+            }
+          ]
+        },
+        {
+          "senseZh": "与符文或古北欧文化有关的",
+          "explanationZh": "另一常见义是符文的、用符文写成的。runes 是古代日耳曼民族使用的字母；runic inscription 可以只是符文铭文，并不一定含有密码或魔法。也可修饰与古斯堪的纳维亚文化有关的诗歌、神话。",
+          "collocations": [
+            {
+              "phrase": "a runic inscription",
+              "meaningZh": "符文铭文"
+            },
+            {
+              "phrase": "the runic alphabet",
+              "meaningZh": "符文字母表"
+            },
+            {
+              "phrase": "runic mythology",
+              "meaningZh": "古北欧神话"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "cryptic",
+          "comparisonZh": "在含义隐晦、需要解读时接近；cryptic 更常用，可形容难懂的话、线索或信息，runic 在这一文学义中常带秘密、古老或魔法的联想。"
+        },
+        {
+          "word": "mysterious",
+          "comparisonZh": "都可带神秘感；mysterious 范围很广，任何难以解释的事物都可能如此，runic 的秘密寓意义更具体，通常落在有待解读的话语、诗谣或符号上。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The poem’s runic lines concealed a warning.",
+          "translationZh": "这首诗那些含秘密寓意的诗行中藏着一则警告。",
+          "explanationZh": "runic 修饰 lines，concealed a warning 说明这些诗行的神秘性来自隐藏的信息。"
+        },
+        {
+          "textEn": "The stone bears a runic inscription.",
+          "translationZh": "这块石头上刻着符文铭文。",
+          "explanationZh": "runic inscription 在这里指以符文字母写成的铭文；单凭这一表达，不能断定文字一定含有魔法或密码。"
+        }
+      ]
+    },
+    {
+      "number": 6862,
+      "word": "rupture",
+      "ipa": "/ˈrʌptʃər/",
+      "pos": "vt.；vi.；n.",
+      "coreMeaningZh": "（使）破裂，胀破",
+      "coreEn": "to break or burst open, or cause something to do so; a break in something or in a relationship",
+      "coreImageZh": "男孩还想把红气球吹得更大，又往里吹了一口气。气球被撑破，圆鼓的球体瘪了下去，薄皮上留下明显的裂口，他惊讶地查看破处。rupture 表示破裂、胀破，强调原本完整的外壁因压力或拉力而裂开，这里是气球皮承受不住而破了。",
+      "mnemonics": [
+        {
+          "method": "RUPT + URE，撑到破裂",
+          "textZh": "rupt- 是表示破裂的词根，rupture 把这个“破裂”动作带出来。想象气球越吹越大，终于砰地胀破：rupture，破裂、胀破。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "CAPTURE 捕大鱼，RUPTURE 撑破网",
+          "textZh": "rupture 和 capture（捕获）的主要结尾 pture 相同。想捕一条大鱼，鱼却猛烈挣扎，把网撑破：capture 没成，网先 rupture，破裂了。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物：使破裂；不及物：破裂",
+          "explanationZh": "常用于管道、容器、膜等在压力或外力作用下破裂，也可用于身体组织。及物时接被破坏的对象；不及物时由该对象作主语。破裂可以只是出现一个裂口，不要求碎成许多片。",
+          "collocations": [
+            {
+              "phrase": "rupture a pipe",
+              "meaningZh": "使管道破裂"
+            },
+            {
+              "phrase": "a pipe ruptures",
+              "meaningZh": "管道破裂"
+            },
+            {
+              "phrase": "a ruptured container",
+              "meaningZh": "破裂的容器"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词及关系破裂的比喻",
+          "explanationZh": "作名词时表示破裂、裂口或关系的决裂，通常可数。用于关系时语气较强、较正式；一般的争论或暂时中断不一定构成 rupture。",
+          "collocations": [
+            {
+              "phrase": "a rupture in the pipe",
+              "meaningZh": "管道上的裂口"
+            },
+            {
+              "phrase": "a rupture in relations",
+              "meaningZh": "关系破裂"
+            },
+            {
+              "phrase": "rupture diplomatic relations",
+              "meaningZh": "使外交关系破裂"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "burst",
+          "comparisonZh": "在因压力等突然胀破时接近；burst 很常用，尤其突出突然迸开，rupture 也可指外力造成的撕裂或关系决裂，语气较正式。"
+        },
+        {
+          "word": "break",
+          "comparisonZh": "都可表示破裂；break 范围更广，杯子摔坏、机器停转、规则被违反等都可用，rupture 更突出原本完整、连续的东西出现裂口或断裂。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The pipe ruptured because of high water pressure.",
+          "translationZh": "管道因水压过高而破裂了。",
+          "explanationZh": "ruptured 是不及物动词，The pipe 是发生破裂的主语，because of 引出原因。"
+        },
+        {
+          "textEn": "High water pressure ruptured the pipe.",
+          "translationZh": "过高的水压使管道破裂了。",
+          "explanationZh": "同样的事件改为及物结构：High water pressure 作主语，the pipe 是被破坏的直接宾语。"
+        }
+      ]
+    },
+    {
+      "number": 6863,
+      "word": "ruse",
+      "ipa": "/ruːz/",
+      "pos": "n.",
+      "coreMeaningZh": "诡计",
+      "coreEn": "a trick designed to mislead someone by creating a false impression",
+      "coreImageZh": "同伴谎称窗外有只大鸟，让男孩转头去看，自己却趁机拿走了盘里的饼干。男孩回过头，看见空盘和同伴手中的饼干，识破了这个小把戏。ruse 指为了达到目的而故意误导别人的诡计，这里的假消息就是用来转移注意力的花招。",
+      "mnemonics": [
+        {
+          "method": "ROSE 看玫瑰，RUSE 偷摆惊喜",
+          "textZh": "ruse 与 rose（玫瑰）只差一个字母。让朋友转头看玫瑰，趁机把生日蛋糕摆到他身后：看花是借口，ruse 是这招转移注意的小计策。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RUSH 催你快买，RUSE 假倒计时",
+          "textZh": "ruse 与 rush（赶快）只差最后一个字母。网页催你“最后一分钟，快买”，计时归零却重新开始：让你 rush 下单的倒计时，原来是 ruse，诡计。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "故意让人误判的花招",
+          "explanationZh": "可数名词，强调制造假象、隐藏真实意图，使别人产生错误判断。可以用于恶意欺骗，也可以是无伤大雅的小计策；单纯聪明、并不误导人的方法不一定是 ruse。",
+          "collocations": [
+            {
+              "phrase": "a clever ruse",
+              "meaningZh": "巧妙的诡计"
+            },
+            {
+              "phrase": "an elaborate ruse",
+              "meaningZh": "精心设计的骗局"
+            },
+            {
+              "phrase": "use a ruse",
+              "meaningZh": "使用计策"
+            }
+          ]
+        },
+        {
+          "senseZh": "说明目的或识破计策",
+          "explanationZh": "a ruse to do something 中，不定式交代计策的真实目的；see through a ruse 表示看穿表象，发现背后意图。",
+          "collocations": [
+            {
+              "phrase": "a ruse to distract somebody",
+              "meaningZh": "分散某人注意力的计策"
+            },
+            {
+              "phrase": "see through the ruse",
+              "meaningZh": "识破诡计"
+            },
+            {
+              "phrase": "fall for a ruse",
+              "meaningZh": "中了计"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "trick",
+          "comparisonZh": "在欺骗或戏弄人的花招上很接近，trick 更常用，也可表示技巧、魔术等，不一定都在隐瞒真实意图；ruse 更突出有意制造误导性假象。"
+        },
+        {
+          "word": "stratagem",
+          "comparisonZh": "都可指为了达到目的而设计的计策；stratagem 常出现在对抗情境中，强调巧妙地制胜、绕过障碍或出其不意，ruse 更集中于让对方误判。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The phone call was a ruse to get him out of the room.",
+          "translationZh": "那通电话是把他引出房间的计策。",
+          "explanationZh": "a ruse to... 交代电话背后的真实目的，说明它并不只是表面上的普通来电。"
+        },
+        {
+          "textEn": "She quickly saw through the ruse.",
+          "translationZh": "她很快就识破了这个诡计。",
+          "explanationZh": "see through 表示看穿伪装或假象；这里不是字面上的透过某物看。"
+        }
+      ]
+    },
+    {
+      "number": 6864,
+      "word": "rustle",
+      "ipa": "/ˈrʌsəl/",
+      "pos": "vi.",
+      "coreMeaningZh": "快速地行动",
+      "coreEn": "to move or work quickly and energetically; also, to make a soft series of rubbing sounds",
+      "coreImageZh": "男孩还坐在椅上磨蹭，母亲在门口催他赶快出发。他立刻站起来，快步走过去，回应自己马上就到，随后在门边站定。rustle 在这里取较少见的口语义，表示迅速、有劲地行动起来，画面表现的是他从迟迟不动转为利落地赶过去。",
+      "mnemonics": [
+        {
+          "method": "RUSH 得急，RUSTLE 得快",
+          "textZh": "rustle 的主要重读声音 /rʌs/ 接近 rush（急忙）的 /rʌʃ/，后面还带 /əl/。催促一句“快，动作麻利点！”人便急忙起身做事：rustle，快速行动。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RUSSELL 赶讲座，RUSTLE 快行动",
+          "textZh": "rustle 与逻辑学家罗素的姓 RUSSELL 同音。想象讲座快开始了，罗素收起文稿，迅速穿过走廊，赶紧忙活起来：rustle，快速行动。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "快速而有劲地行动、忙活",
+          "explanationZh": "本词这里是不及物的较少见用法，主要见于美加口语，强调动作迅速、积极忙活。语境要能看出人在赶紧做事，而不只是物体发出轻响。",
+          "collocations": [
+            {
+              "phrase": "rustle around",
+              "meaningZh": "赶紧四处忙活"
+            },
+            {
+              "phrase": "rustle to get things done",
+              "meaningZh": "赶紧把事情办好"
+            }
+          ]
+        },
+        {
+          "senseZh": "另一个常见义：沙沙作响",
+          "explanationZh": "rustle 更常用来描写叶子、纸张、衣裙等摩擦时发出细碎的沙沙声。判断时看主语和上下文：人在赶着做事，与树叶随风作响，是不同的义项。",
+          "collocations": [
+            {
+              "phrase": "leaves rustle in the wind",
+              "meaningZh": "树叶在风中沙沙作响"
+            },
+            {
+              "phrase": "paper rustles",
+              "meaningZh": "纸张沙沙作响"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hurry",
+          "comparisonZh": "在赶快行动时接近；hurry 更常用，突出时间紧、速度快，rustle 的这一口语义还常带积极忙活、行动有劲的感觉。"
+        },
+        {
+          "word": "hustle",
+          "comparisonZh": "在迅速忙活、积极行动时接近，两词都可较口语；hustle 还有催促、推挤、设法获取等用法，不是每处都能换成 rustle。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Rustle around and see what you can find.",
+          "translationZh": "赶紧四处找找，看能找到什么。",
+          "explanationZh": "rustle around 是祈使句中的快速行动用法，后半句说明忙活的目的是寻找东西。"
+        },
+        {
+          "textEn": "The trees rustled in the wind.",
+          "translationZh": "树木在风中沙沙作响。",
+          "explanationZh": "这里的主语是 trees，in the wind 交代声音产生的环境，rustled 使用较常见的沙沙作响义。"
+        }
+      ]
+    },
+    {
+      "number": 6865,
+      "word": "saccharine",
+      "ipa": "/ˈsækərɪn/",
+      "pos": "adj.",
+      "coreMeaningZh": "甜的，甜腻的；过分甜蜜而做作的",
+      "coreEn": "sugar-like or sweet; excessively sweet in manner or excessively sentimental",
+      "coreImageZh": "母亲告诉男孩，杯里的饮料多加了糖。男孩端起来尝了一口，觉得甜得像糖浆，随后把杯子放回桌上，摆手表示喝不下。saccharine 在这里形容浓重得发腻的甜味；这种过头的甜，也常用来比喻言语或感情表达甜蜜得不自然。",
+      "mnemonics": [
+        {
+          "method": "SACCHAR + INE，甜得像糖",
+          "textZh": "sacchar- 是表示糖的词干，saccharine 表示像糖那样甜。甜味放在食物里是甜腻；放在话语和笑容里，就像糖加得过量，甜得做作。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUGAR IN，糖放太多了",
+          "textZh": "把 saccharine 的整体声音近似联到 sugar in（把糖放进去）。一勺接一勺，糖放得太多，甜到发腻；说话也是糖放过头，甜得做作：saccharine。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "糖一样甜；甜得发腻",
+          "explanationZh": "味觉义可以表示含糖的、像糖一样甜的；在一般描写中也常突出甜得过头。并非每次出现都必然贬义，具体语境决定是说明甜味，还是嫌它甜腻。",
+          "collocations": [
+            {
+              "phrase": "a saccharine taste",
+              "meaningZh": "糖一样的甜味；甜腻的味道"
+            },
+            {
+              "phrase": "saccharine sweetness",
+              "meaningZh": "糖一般的甜味；过分的甜腻"
+            }
+          ]
+        },
+        {
+          "senseZh": "甜腻做作或过分感伤",
+          "explanationZh": "形容微笑、语气、故事或音乐时，常带贬义，指出甜蜜或感伤过度，让人觉得不自然。它不是所有“虚假”或“做作”的通用说法，通常还带着过甜的情绪色彩。saccharine 是形容词；saccharin 则是“糖精”这个物质名词。",
+          "collocations": [
+            {
+              "phrase": "a saccharine smile",
+              "meaningZh": "甜腻做作的微笑"
+            },
+            {
+              "phrase": "a saccharine love story",
+              "meaningZh": "过分甜腻感伤的爱情故事"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "cloying",
+          "comparisonZh": "在甜得过头、令人发腻的用法中接近，两者都可描写味道或情感表达。cloying 更强调过量后让人厌倦；saccharine 还可以在较中性的语境中表示像糖一样甜。",
+          "sources": [
+            "weichen_gre",
+            "B"
+          ]
+        },
+        {
+          "word": "sentimental",
+          "comparisonZh": "描写感伤的故事、音乐或表达时有交集。sentimental 可以只是感情丰富或容易感伤；saccharine 通常进一步批评这种情感甜腻过度，不能把两者的评价强度一概看成相同。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The drink had an unpleasantly saccharine taste.",
+          "translationZh": "这杯饮料甜得发腻，让人不舒服。",
+          "explanationZh": "unpleasantly 明确表达“令人不快”的负面评价，说明这里的 saccharine 是甜得过头、让人发腻，而非仅仅表示有甜味。"
+        },
+        {
+          "textEn": "Her saccharine praise made him uncomfortable.",
+          "translationZh": "她甜腻做作的赞美让他感到不自在。",
+          "explanationZh": "saccharine 修饰 praise，批评赞美过分甜美、不够自然，而不是说她谈到了糖。"
+        }
+      ]
+    }
+  ]
+}

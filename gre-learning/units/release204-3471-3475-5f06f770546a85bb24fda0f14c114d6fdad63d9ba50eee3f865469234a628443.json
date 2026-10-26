@@ -1,0 +1,393 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7091,
+      "word": "tarnish",
+      "ipa": "/ˈtɑːnɪʃ/; /ˈtɑːrnɪʃ/",
+      "pos": "vt.",
+      "coreMeaningZh": "玷污",
+      "coreEn": "to damage the good reputation, image, or esteem of somebody or something",
+      "mnemonics": [
+        {
+          "method": "TENNIS 打假球，冠军的声誉被玷污",
+          "textZh": "把完整熟词 TENNIS（网球）与 tarnish 作近音联想。想象一位网球冠军收钱打假球，事情曝光后，球迷不再相信他的比赛是公平的，原本光彩的名声蒙上了污点。记住 TENNIS 假球丑闻带来的后果：tarnish，玷污、损害名誉。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TOWN + WISH：借全镇愿望骗钱，镇长名声被玷污",
+          "textZh": "把完整熟词 TOWN（小镇）和 WISH（愿望）连起来，近音联想 tarnish。想象小镇居民的共同愿望是修一座新桥，镇长以此募集捐款，却把钱据为己有。事情曝光后，原先受尊敬的镇长失去了大家的信任。记住 TOWN 的 WISH 被利用来骗钱的后果：tarnish，玷污名誉。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "玷污名誉：tarnish somebody’s reputation",
+          "explanationZh": "tarnish 后接 reputation、good name 等，可说丑闻或不当行为损害了一个人或机构的好名声。重点是原有的好评价受损，不只是对方觉得不高兴，也不要求名声已经彻底毁掉。",
+          "collocations": [
+            {
+              "phrase": "tarnish somebody’s reputation",
+              "meaningZh": "玷污某人的名誉"
+            },
+            {
+              "phrase": "tarnish the family’s good name",
+              "meaningZh": "有损家族的好名声"
+            }
+          ]
+        },
+        {
+          "senseZh": "形象蒙上污点：be tarnished",
+          "explanationZh": "常用被动形式，强调名声或公众形象受到损害；也可用 tarnished 修饰 public image。名誉受损不等于法律已经认定有罪，未经证实的指控也可能影响他人评价。金属失去光泽是另一个常见意思，在名誉语境中不要按字面理解为变黑。",
+          "collocations": [
+            {
+              "phrase": "be tarnished",
+              "meaningZh": "名誉受损；蒙上污点"
+            },
+            {
+              "phrase": "a tarnished public image",
+              "meaningZh": "受损的公众形象"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "taint",
+          "comparisonZh": "taint 与 tarnish 都可表示名誉、形象被坏事玷污。taint 也可说品质受到不良影响或污染，范围更广；tarnish 在名誉语境中更突出原本光彩、良好的评价受损。两词都不必意味着已经彻底毁坏。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "stain",
+          "comparisonZh": "stain 用于 reputation 等抽象对象时，也表示给名誉留下污点，与 tarnish 接近。字面上 stain 常说留下难除的斑迹或染色，tarnish 常说金属失去光泽，这些实体义不能随意互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The scandal tarnished his reputation.",
+          "translationZh": "那桩丑闻玷污了他的名誉。",
+          "explanationZh": "scandal 是造成损害的事情，his reputation 是及物动词 tarnished 的宾语；不是说他的身体被弄脏。"
+        },
+        {
+          "textEn": "Reputations can be easily tarnished.",
+          "translationZh": "名誉很容易受到玷污。",
+          "explanationZh": "can be tarnished 是及物动词的被动结构，强调好名声容易受损；can 表示可能性，并不是声称所有人的名誉都已经受损。"
+        }
+      ],
+      "coreImageZh": "男孩把姐姐做的模型船说成自己的成果。母亲指出真相，提醒冒领功劳会损害他的信誉，男孩低下头反省。tarnish 在这里指玷污、损害名声；不诚实损害的是别人对他的信任，船本身没有变脏或损坏。"
+    },
+    {
+      "number": 7092,
+      "word": "tasty",
+      "ipa": "/ˈteɪsti/",
+      "pos": "adj.",
+      "coreMeaningZh": "美味的；令人愉悦的",
+      "coreEn": "having a pleasant, appetizing flavour; figuratively, strikingly attractive or interesting",
+      "mnemonics": [
+        {
+          "method": "TASTE 好味道 → TASTY，美味又可口",
+          "textZh": "从完整熟词 TASTE（味道）记它的形容词 tasty。想象刚做好的番茄汤，酸甜和咸味搭配得正好，你尝了一口又想再喝：这不是仅仅“有味道”，而是味道令人喜欢，所以说它 TASTY，美味可口。把 TASTE 的好味道与 TASTY 连成一幅回味的画面。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "NASTY？尝一口，竟是美味！",
+          "textZh": "把完整熟词 NASTY（糟糕的、令人不快的）与 tasty 作近形、近音联想。想象一块巧克力布丁外形歪歪扭扭，你先怀疑它会很 NASTY；尝了一口，却发现浓香可口，立刻改口夸它 TASTY。记住“以为难吃，结果美味”的反差。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "美味可口：形容食物或饮品",
+          "explanationZh": "tasty 最常说食物、饮品有让人喜欢的味道，可放在名词前，也可放在 be 后作表语。它不只形容咸食，甜点也可以 tasty；单是外观漂亮，还不能保证入口美味。比较级 tastier，最高级 tastiest。",
+          "collocations": [
+            {
+              "phrase": "a tasty meal",
+              "meaningZh": "一顿可口的饭"
+            },
+            {
+              "phrase": "tasty snacks",
+              "meaningZh": "美味的小吃"
+            }
+          ]
+        },
+        {
+          "senseZh": "引申为吸引人、让人感兴趣",
+          "explanationZh": "谈消息、谈资或诱人的前景时，tasty 可借“有滋味”表达很吸引人、让人感兴趣。此时不是能吃的东西，也不宜把所有“令人愉悦的”场合都机械换成 tasty；普通地夸风景、心情时，需要按语境另选词。",
+          "collocations": [
+            {
+              "phrase": "a tasty bit of gossip",
+              "meaningZh": "一则引人兴趣的闲话"
+            },
+            {
+              "phrase": "a tasty prospect",
+              "meaningZh": "一个诱人的前景"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "delicious",
+          "comparisonZh": "delicious 与 tasty 都可赞食物味道好，delicious 通常是更强的称赞，强调非常好吃或气味怡人；tasty 多强调有滋味、可口。delicious 也有偏文学的“极愉快”用法，但不能据此把两词在任何愉悦语境中互换。"
+        },
+        {
+          "word": "appealing",
+          "comparisonZh": "appealing 表示有吸引力、令人感兴趣，与 tasty 的引申义相近，适用范围更广。食物看起来 appealing，可能只是外观或描述诱人；tasty 更直接评价实际味道好。appealing 的“恳求同情”义则与 tasty 无关。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I thought the food was very tasty.",
+          "translationZh": "我觉得食物很美味。",
+          "explanationZh": "tasty 在 was 后评价食物的味道；I thought 表达说话者的看法，不是声称每个人都会喜欢。"
+        },
+        {
+          "textEn": "a tasty bit of gossip",
+          "translationZh": "一则引人兴趣的闲话。",
+          "explanationZh": "这里把闲话比作有滋味的东西，tasty 表示吸引人、让人感兴趣；并不是说这则消息一定真实或值得传播。"
+        }
+      ],
+      "coreImageZh": "男孩咬了一小口已经放凉的面包，随后把面包拿离嘴边，开心地说又香又软、真好吃。tasty 指美味可口、让味觉感到愉悦；这里是尝过之后的评价，不只是面包看起来漂亮。"
+    },
+    {
+      "number": 7093,
+      "word": "tatty",
+      "ipa": "/ˈtæti/",
+      "pos": "adj.",
+      "coreMeaningZh": "破旧的，褴褛的",
+      "coreEn": "worn, frayed, or shabby from much use or poor care",
+      "mnemonics": [
+        {
+          "method": "TEDDY 小熊抱了多年，磨破又掉毛",
+          "textZh": "把完整熟词 TEDDY（泰迪玩具熊）与 tatty 作近音、近形联想。想象小时候的 TEDDY 一直抱到现在，绒毛磨秃了，耳朵接缝也裂开，虽舍不得扔，外观已经破破旧旧。记住磨破掉毛的老 TEDDY：tatty，破旧的、褴褛的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "“他踢”：鞋踢到开口，破旧不堪",
+          "textZh": "把自然中文“他踢”的两拍声音近音联想成 tatty。想象他总穿同一双鞋踢球，踢了一年又一年，鞋头裂开了口，边缘也磨得起毛。记住“他踢”出来的那双破旧鞋：tatty，破旧的、褴褛的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "衣物、物件破旧：tatty + 名词",
+          "explanationZh": "tatty 常说衣服、地毯等因长期使用或缺乏照料而磨损、破旧、不整洁。它评价外观状况，不只是东西年代久；保存完好的古物不一定 tatty，也不必每件 tatty 物品都有大破洞。",
+          "collocations": [
+            {
+              "phrase": "a tatty shirt",
+              "meaningZh": "一件破旧的衬衫"
+            },
+            {
+              "phrase": "a tatty carpet",
+              "meaningZh": "一块破旧的地毯"
+            }
+          ]
+        },
+        {
+          "senseZh": "地方显得残旧：be / become tatty",
+          "explanationZh": "tatty 也能形容旅馆、餐馆等地方，看起来缺乏维护、破旧寒酸。可放在 be 或 become 后描述状况；它主要是英式非正式表达，比较级 tattier，最高级 tattiest。别仅因价格便宜就说 tatty。",
+          "collocations": [
+            {
+              "phrase": "be very tatty",
+              "meaningZh": "显得很破旧"
+            },
+            {
+              "phrase": "become increasingly tatty",
+              "meaningZh": "变得越来越破旧"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "shabby",
+          "comparisonZh": "shabby 与 tatty 都可形容衣物、建筑或物件因使用而破旧，当前义非常接近；tatty 尤其偏英式、非正式。shabby 还可形容待人不公、卑劣，这种行为义不能机械换成 tatty。"
+        },
+        {
+          "word": "ragged",
+          "comparisonZh": "ragged 形容衣物时更明确突出破损、撕裂，形容人时可指穿着破衣服；tatty 范围较宽，磨旧、失于照料或外观寒酸也可以，不一定已经撕开。ragged 表示边缘不齐、表现不整齐时，也不总能换成 tatty。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "a tatty shirt",
+          "translationZh": "一件破旧的衬衫。",
+          "explanationZh": "tatty 直接修饰 shirt，评价衬衫磨旧、外观不佳；不是单说款式过时。"
+        },
+        {
+          "textEn": "There were a lot of guest houses which were very tatty.",
+          "translationZh": "有很多小旅馆都十分破旧。",
+          "explanationZh": "which were very tatty 描述这些小旅馆的状况，可见 tatty 不限于衣服；原句没有说明房价或住客的品行。"
+        }
+      ],
+      "coreImageZh": "母子查看衣架上的蓝外套：颜色已经褪去，袖口和下摆磨破起毛。tatty 形容东西破旧、褴褛的样子，不是在评价使用它的人；外套到最后仍然破旧，没有突然修好。"
+    },
+    {
+      "number": 7094,
+      "word": "taunt",
+      "ipa": "/tɔːnt/",
+      "pos": "vt.",
+      "coreMeaningZh": "嘲弄性质疑，挑衅",
+      "coreEn": "to mock, insult, or challenge somebody in a way intended to upset or provoke them",
+      "mnemonics": [
+        {
+          "method": "TENT 搭不起来，他偏笑你“还敢露营？”",
+          "textZh": "把完整熟词 TENT（帐篷）与 taunt 作近音联想。想象你正在搭帐篷，旁边的人不帮忙，却指着倒下的支架笑：“连 TENT 都搭不起来，还敢来露营？”他不是认真问问题，而是故意嘲笑你的失误、激你生气。记住 TENT 旁这句带刺的挑衅：taunt，嘲弄、奚落地挑衅。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "WANT 想赢？他偏嘲笑“就凭你！”",
+          "textZh": "把完整熟词 WANT（想要）与 taunt 作近音联想。想象你说自己 WANT（想要）赢得比赛，对手却凑过来讥笑：“想赢？就凭你？有本事来呀！”他拿你的愿望当笑料，故意激你应战。记住从 WANT 想赢引出的嘲弄挑战：taunt，带着讥笑挑衅别人。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "嘲弄、奚落某人：taunt somebody about something",
+          "explanationZh": "taunt 直接接被嘲弄的人，常指拿弱点、失败或某个特征说难听的话，故意让对方难受或生气。about 引出被取笑的内容。它不是中性地求证问题，也不等于友好的开玩笑。",
+          "collocations": [
+            {
+              "phrase": "taunt somebody about their clothes",
+              "meaningZh": "拿某人的衣着嘲弄他"
+            },
+            {
+              "phrase": "continually taunt somebody",
+              "meaningZh": "不断嘲弄某人"
+            }
+          ]
+        },
+        {
+          "senseZh": "用带刺的话挑衅：taunt somebody with something",
+          "explanationZh": "with 可引出用于嘲弄的称呼或话语，强调“用什么来奚落”。taunt 常有激怒或激将的意味，但不保证对方真的生气、还击或接受挑战。现在学的是及物动词；taunt 另可作名词指嘲弄的话。",
+          "collocations": [
+            {
+              "phrase": "taunt somebody with nicknames",
+              "meaningZh": "用外号嘲弄某人"
+            },
+            {
+              "phrase": "taunt the visiting team",
+              "meaningZh": "嘲弄、挑衅客队"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "mock",
+          "comparisonZh": "mock 与 taunt 都可表示不友善地取笑。mock 更常突出轻蔑地嘲笑，有时通过模仿对方言行来讽刺；taunt 更突出把带刺的话指向某人、激怒或挑衅对方。mock 的“模拟的”形容词义与这里无关。"
+        },
+        {
+          "word": "jeer",
+          "comparisonZh": "jeer 与 taunt 都可表示奚落、嘲弄；jeer 常突出大声嘲笑、喊难听的话，如人群起哄，taunt 则不一定大声，更强调针对性侮辱或挑衅。jeer at somebody 很常见，jeer somebody 也成立；taunt somebody 通常直接接人。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Other youths taunted him about his clothes.",
+          "translationZh": "其他年轻人拿他的衣着嘲弄他。",
+          "explanationZh": "him 是被嘲弄的人，about his clothes 是被取笑的内容；原句没有说他的衣服一定脏旧。"
+        },
+        {
+          "textEn": "The other children taunted him with nicknames.",
+          "translationZh": "其他孩子用外号嘲弄他。",
+          "explanationZh": "with nicknames 表示拿外号作为奚落的手段；taunted 明确这不是善意昵称，但原句并未说出具体用了哪些外号。"
+        }
+      ],
+      "coreImageZh": "同伴带着讥笑问男孩：就你这水平，还敢再投一次？男孩感到不舒服，认真要求对方别嘲笑自己。taunt 指带着嘲弄挑衅别人，不是善意鼓励或普通提问；这里也没有靠赢球来换取尊重。"
+    },
+    {
+      "number": 7095,
+      "word": "taut",
+      "ipa": "/tɔːt/",
+      "pos": "adj.",
+      "coreMeaningZh": "紧绷的",
+      "coreEn": "stretched tight, with no looseness or slack; also showing tension",
+      "mnemonics": [
+        {
+          "method": "TAUGHT 教过我拉绳：不能松垂，要紧绷",
+          "textZh": "用完整熟词 TAUGHT 记 taut，两词都读 /tɔːt/。TAUGHT 是 teach（教）的过去式和过去分词。想象老师曾教你系晾衣绳：先固定一头，再拉紧另一头，消去中间的松垂，最后系牢。记住老师 TAUGHT 过的这一步：绳子要 TAUT，紧绷而不松弛。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TIGHT 拉得紧，鼓面就 TAUT 紧绷",
+          "textZh": "从完整熟词 TIGHT（紧的）近音联想 taut。想象给一面小鼓蒙皮：原先软软垂下的鼓皮，被四周一点点拉紧、固定，最后平展绷住，敲下去能弹回来。记住鼓面从松垂到 TIGHT 的状态：TAUT，拉紧、紧绷的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "绳、弦、表面拉紧：keep / pull something taut",
+          "explanationZh": "taut 形容绳子、琴弦、布面等被拉紧而不松垂的状态。可直接修饰名词，也可放在 keep 或 pull 后，说明要保持或形成的状态。它是形容词，表示“紧绷”，不是这里的动作词“拉”。",
+          "collocations": [
+            {
+              "phrase": "taut violin strings",
+              "meaningZh": "绷紧的小提琴弦"
+            },
+            {
+              "phrase": "keep the rope taut",
+              "meaningZh": "让绳子保持绷紧"
+            }
+          ]
+        },
+        {
+          "senseZh": "人显出紧张：a voice / face taut with emotion",
+          "explanationZh": "taut 也可描述声音、脸部或身体显出的紧绷感，常与紧张、愤怒有关；with 后可说明情绪来源。紧绷并不只因愤怒，也不等于物体很硬：一根柔软的线拉紧以后也可以 taut。",
+          "collocations": [
+            {
+              "phrase": "a voice taut with anger",
+              "meaningZh": "因愤怒而紧绷的声音"
+            },
+            {
+              "phrase": "taut nerves",
+              "meaningZh": "紧绷的神经"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "tight",
+          "comparisonZh": "tight 与 taut 在绳、线或表面拉紧、不松弛时接近。tight 的范围更广，还可说衣服贴身、预算紧、控制严；taut 更突出被拉绷或显出紧张，不能把每个 tight 搭配都换成 taut。"
+        },
+        {
+          "word": "tense",
+          "comparisonZh": "tense 可形容肌肉、金属线等绷紧，也常说人、气氛或局势紧张；taut 既可说实体绷住，也可说表情、声音显出的紧张感。tense 的语法“时态”名词义与 taut 无关。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Keep the rope taut.",
+          "translationZh": "让绳子保持绷紧。",
+          "explanationZh": "keep + 宾语 + 形容词：taut 说明 rope 要保持的状态；句子没有说要把绳子拉断。"
+        },
+        {
+          "textEn": "The rope was drawn taut.",
+          "translationZh": "绳子被拉得紧绷。",
+          "explanationZh": "was drawn 是被动的拉动动作，taut 说明拉后的绷紧状态；不要把 taut 误当这个句子的过去式动词。"
+        }
+      ],
+      "coreImageZh": "男孩双手握着系在木柱上的松绳，屈肘把手收回腰腹附近，站稳后持续拉住。原先下垂的绳子被拉直，没有松垂，呈现 taut 所说的紧绷状态。"
+    }
+  ]
+}

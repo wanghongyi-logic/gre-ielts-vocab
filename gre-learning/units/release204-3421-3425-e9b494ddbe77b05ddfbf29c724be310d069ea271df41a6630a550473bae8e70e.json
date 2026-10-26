@@ -1,0 +1,402 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7041,
+      "word": "submissive",
+      "ipa": "/səbˈmɪsɪv/",
+      "pos": "adj.",
+      "coreMeaningZh": "服从的，顺从的，恭顺的",
+      "coreEn": "ready to accept another person's authority and obey without resistance",
+      "mnemonics": [
+        {
+          "method": "SUBMIT 叫交就交，SUBMISSIVE 言听计从",
+          "textZh": "想到表单上熟悉的 SUBMIT（提交）按钮：对方要求交什么，他就立即点提交，不争辩、不提出自己的意见。submit与submissive同词族，submiss-接表示性质的-ive，把这副“叫交就交”的样子记成submissive：服从的、恭顺的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUB 低头听 MISS 老师，SUBMISSIVE 顺从",
+          "textZh": "借sub + Miss + -ive记整个词：sub在下，Miss可用来称呼女老师，-ive表示某种性质。想象学生低着头，Miss一开口，他就连连点头，毫不质疑地照做。sub-miss-ive，服从的、顺从的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "形容愿意服从、很少抗拒的人",
+          "explanationZh": "submissive强调接受别人的权威或意志，不争辩地照做。它常带过分顺从或处于弱势的意味，不只是礼貌、友善，也不意味着这个人一定赞同对方的观点。可用于人的性格或在某种关系中的表现。",
+          "collocations": [
+            {
+              "phrase": "a submissive person",
+              "meaningZh": "顺从的人"
+            },
+            {
+              "phrase": "submissive employees",
+              "meaningZh": "恭顺听命的员工"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容显出恭顺态度的回答或举止",
+          "explanationZh": "submissive也能修饰reply、manner、attitude等，表示那次回答或举止显出接受支配、不反抗的态度；不必据一次表现断定一个人的全部性格。修饰动作时用副词submissively；submissiveness是这种顺从的性质。",
+          "collocations": [
+            {
+              "phrase": "a submissive reply",
+              "meaningZh": "恭顺的回答"
+            },
+            {
+              "phrase": "a submissive manner",
+              "meaningZh": "恭顺的举止"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "obedient",
+          "comparisonZh": "obedient强调按要求或命令行事，可以是中性或赞许的“听话、守规矩”。submissive更突出接受别人的控制、不抗拒，常带过分顺从的意味；认真遵守规则不一定表示缺少自主意见。"
+        },
+        {
+          "word": "amenable",
+          "comparisonZh": "amenable形容人易于说服、愿意接受建议或配合，语气通常比submissive温和。submissive突出服从权威、不抵抗；一个amenable的人仍可能讨论、提出条件，而不必凡事顺从。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "it's not in her nature to be submissive",
+          "translationZh": "她的天性不是逆来顺受、任人支配。",
+          "explanationZh": "in her nature谈性格倾向；not明确否定她会毫无抵抗地服从。"
+        },
+        {
+          "textEn": "a submissive reply",
+          "translationZh": "一个恭顺的回答",
+          "explanationZh": "submissive修饰reply，描述回答所表现的顺从态度，而不只是音量轻。"
+        }
+      ],
+      "coreImageZh": "老师让男孩先坐下等候安排。他低头接受，没有争辩，随后坐到凳子上，说自己会听从安排，并安静等待。submissive 形容这种顺从、恭顺的态度；重点是愿意照对方的要求做，不只是安静地坐着。"
+    },
+    {
+      "number": 7042,
+      "word": "subservient",
+      "ipa": "/səbˈsɜːviənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "奉承的，屈从的",
+      "coreEn": "excessively willing to obey or please someone in authority",
+      "mnemonics": [
+        {
+          "method": "SUB 压低自己，SERVANT 般卑躬屈膝",
+          "textZh": "借sub + servant记subservient：sub是“在下”，servient的大段形音像 servant（仆人）/ˈsɜːvənt/。想象一个角色把自己放得很低，对权贵弯腰陪笑，连对方的错误也不敢反对。subservient：奉承的、屈从的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUB 低头答 SIR, WE AREN’T，不敢反对上司",
+          "textZh": "借 sub + “Sir, we aren’t.” 记 subservient。sub 提示放低姿态；sir we aren’t /sɜː wi ɑːnt/ 近音连到 servient /ˈsɜːviənt/。上司问“你们在反对我吗？”，几个人明知命令不妥，仍低头陪笑答：“Sir, we aren’t.”（先生，我们没有。）为讨好权威而不敢反对，就是 subservient：奉承、屈从的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "subservient to：对某人或权力过分屈从",
+          "explanationZh": "subservient to somebody/something常带贬义，批评人或机构过分服从权力、缺乏独立判断。to后接所屈从的对象。奉承可以表现为附和、讨好和服侍，不只限于说赞美的话。",
+          "collocations": [
+            {
+              "phrase": "be subservient to authority",
+              "meaningZh": "屈从于权威"
+            },
+            {
+              "phrase": "be subservient to the government",
+              "meaningZh": "对政府唯命是从"
+            }
+          ]
+        },
+        {
+          "senseZh": "subservient role / attitude：卑躬屈膝的角色或态度",
+          "explanationZh": "修饰role或attitude时，强调在关系中把自己置于一味顺从的位置。正常提供服务、尊重别人，并不因此就是subservient。这个词另可正式表示地位或重要性较低，但不能把所有次要职责都读成奉承。",
+          "collocations": [
+            {
+              "phrase": "take a subservient role",
+              "meaningZh": "扮演屈从的角色"
+            },
+            {
+              "phrase": "a subservient attitude",
+              "meaningZh": "卑躬屈膝的态度"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "obsequious",
+          "comparisonZh": "obsequious更突出刻意讨好重要人物，往往表现为过分热情、陪笑或奉承。subservient还突出服从与受支配的关系，可能是被迫或不情愿地屈从，不一定处处显得热情。"
+        },
+        {
+          "word": "amenable",
+          "comparisonZh": "amenable强调愿意接受建议、易于说服或配合，通常没有强烈贬义。subservient强调过度服从或讨好、缺少自主；愿意听取合理建议不等于卑躬屈膝。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The press was accused of being subservient to the government.",
+          "translationZh": "新闻界被指责对政府唯命是从。",
+          "explanationZh": "be subservient to写出屈从对象；was accused of保留“被指责”的语气，并非句外另作事实判定。"
+        },
+        {
+          "textEn": "She refused to take a subservient role in their marriage.",
+          "translationZh": "她拒绝在他们的婚姻中处于一味屈从的位置。",
+          "explanationZh": "subservient role描述关系中的服从地位；refused明确表示她不接受这种安排。"
+        }
+      ],
+      "coreImageZh": "同伴要求男孩想加入游戏就得什么都听他的。男孩立刻倾身陪笑，奉承说“你说什么都对”，随后仍低姿态等候指示。subservient 形容这种过分逢迎、屈从的态度，不是平等合作，也不只是普通的礼貌。"
+    },
+    {
+      "number": 7043,
+      "word": "subside",
+      "ipa": "/səbˈsaɪd/",
+      "pos": "vi.",
+      "coreMeaningZh": "下陷，下沉，减弱",
+      "coreEn": "to settle downward, recede, or become less intense",
+      "mnemonics": [
+        {
+          "method": "SUB 向下，SIDE 岸边水位退下去",
+          "textZh": "借sub + side记完整的subside：sub提示“向下”，side是“边侧”。想象站在河岸一侧，岸边水位沿刻度慢慢下降，原来淹着的石头重新露出。subside：水退下去、下沉；强烈的情绪也可以逐渐减弱。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SOME SIGHED 长叹一口气，怒气渐渐平息",
+          "textZh": "争吵终于停止，Some sighed.（有些人长叹了一口气。）some sighed /sʌm saɪd/近音连到subside /səbˈsaɪd/：人不再争吵，长叹一口气，怒气和紧张渐渐平息。subside，减弱、平息下来。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "地面下陷；水位回落",
+          "explanationZh": "subside是不及物动词：地面、建筑物或水本身发生变化，不直接接被下沉的宾语。土地或房屋subside指往下沉陷；洪水subside指水位回落、退去，并不是使别的东西淹没。",
+          "collocations": [
+            {
+              "phrase": "the ground subsides",
+              "meaningZh": "地面下陷"
+            },
+            {
+              "phrase": "flood waters subside",
+              "meaningZh": "洪水退去"
+            }
+          ]
+        },
+        {
+          "senseZh": "强度减弱，渐渐平息",
+          "explanationZh": "怒气、风暴、疼痛、笑声等作主语时，subside表示强度减弱或渐渐平息，不必已经完全消失。常与gradually连用。过去式和过去分词为subsided，现在分词为subsiding。",
+          "collocations": [
+            {
+              "phrase": "anger subsides",
+              "meaningZh": "怒气渐消"
+            },
+            {
+              "phrase": "the storm subsides",
+              "meaningZh": "风暴渐渐减弱"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sink",
+          "comparisonZh": "在向下沉这一物理义上接近。sink可指沉入水中、陷进软地或降低位置，不一定缓慢；subside常写地面沉降或洪水退落。怒气渐消不能通常换成anger sinks。sink也有及物用法，而这里的subside是不及物动词。"
+        },
+        {
+          "word": "abate",
+          "comparisonZh": "两者都可表示风势、怒气等强度减弱。abate较正式，强调程度下降；subside常突出动荡或激动渐渐平息。abate还可直接接宾语表示使减轻，subside不这样使用。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Weak foundations caused the house to subside.",
+          "translationZh": "薄弱的地基导致房屋下陷。",
+          "explanationZh": "the house是subside的逻辑主语；cause后接宾语和不定式，并不使subside本身变成及物动词。"
+        },
+        {
+          "textEn": "After his anger had subsided, he was able to look at things rationally.",
+          "translationZh": "怒气消退后，他能够理性地看待事情了。",
+          "explanationZh": "anger作主语，had subsided表示在能够理性思考之前，怒气已经平息。"
+        }
+      ],
+      "coreImageZh": "男孩和母亲在岸上看着起伏的水面，决定先等一等。波峰逐渐变低，后来只剩轻缓波纹，最后水面接近平静。这里的 subside 指波浪逐渐减弱、平息；不是水被抽走，也不是有人把水面压低。"
+    },
+    {
+      "number": 7044,
+      "word": "subsidiary",
+      "ipa": "/səbˈsɪdiəri/",
+      "pos": "adj.",
+      "coreMeaningZh": "次要的",
+      "coreEn": "related to something else but of secondary importance",
+      "mnemonics": [
+        {
+          "method": "SUB 下有四本 DIARY，日记只作次要材料",
+          "textZh": "借sub + si + diary拼起整个subsidiary：sub在下，si借中文“四”，diary是日记。想象主报告放在上面，下面四本日记只用来补充细节，不能取代主报告。subsidiary：次要的、辅助的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUB + CITY + ARY：主城之外，配套区是次要的",
+          "textZh": "subsidiary的主体sidi近音city（城市），前有sub“在下”，后有形容词尾巴-ary。想象城市沙盘上，主城区醒目居中，配套小城区低一层，只作辅助：借sub + city + ary的整段声音记subsidiary，次要的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "subsidiary matter / information：次要事项或补充信息",
+          "explanationZh": "subsidiary修饰matter、detail或information，表示与主要事务有关，但地位或重要性次一等，常起补充、辅助作用。次要不等于毫无价值，更不一定可以删除。",
+          "collocations": [
+            {
+              "phrase": "a subsidiary matter",
+              "meaningZh": "次要事项"
+            },
+            {
+              "phrase": "subsidiary information",
+              "meaningZh": "补充信息；次要信息"
+            }
+          ]
+        },
+        {
+          "senseZh": "subsidiary to：相对于主要事物处于次要地位",
+          "explanationZh": "subsidiary to something把比较对象写出来，强调主次关系。英式英语的subsidiary subject可指较主修课程学习深度浅的辅修科目。这里使用形容词；名词a subsidiary常指子公司，是另一种用法。",
+          "collocations": [
+            {
+              "phrase": "be subsidiary to the main purpose",
+              "meaningZh": "相对于主要目的处于次要地位"
+            },
+            {
+              "phrase": "a subsidiary subject",
+              "meaningZh": "辅修科目；非主修科目"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "peripheral",
+          "comparisonZh": "peripheral在讨论问题时强调处于核心之外、不是重点，有时暗示相关性有限。subsidiary更突出相对于主要部分的重要性较低，常仍与主要任务紧密相关并起辅助作用。peripheral的物理外围义不能处处替换subsidiary。",
+          "sources": [
+            "B"
+          ]
+        },
+        {
+          "word": "ancillary",
+          "comparisonZh": "ancillary强调给主要工作提供支援的辅助功能，也可表示附加而较次要。subsidiary更直接比较主次或重要性；某项辅助服务可以不可缺少，不能因ancillary就断言它没有价值。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "a subsidiary matter",
+          "translationZh": "一项次要事务",
+          "explanationZh": "subsidiary作形容词修饰matter，把该事项放在主要事务之外的次要位置。"
+        },
+        {
+          "textEn": "subsidiary details",
+          "translationZh": "辅助性的细节",
+          "explanationZh": "details提供补充支撑，不是主干；subsidiary说明这些细节相对主要内容的地位。"
+        }
+      ],
+      "coreImageZh": "排练时，女孩在中央承担主要表演，男孩在侧边关注她，并说明自己只在需要时配合主角。他的剧情角色是 subsidiary：次要的、起配合作用的。主次说的是角色任务的重要性，不是演员本人低人一等。"
+    },
+    {
+      "number": 7045,
+      "word": "subsidy",
+      "ipa": "/ˈsʌbsədi/",
+      "pos": "n.",
+      "coreMeaningZh": "补助金，津贴",
+      "coreEn": "money granted to help meet costs or support an activity",
+      "mnemonics": [
+        {
+          "method": "SUB + STUDY：学习缺钱，补助金托住",
+          "textZh": "借sub + study记subsidy：sub在下，sidy的大段形音像study（学习）/ˈstʌdi/。想象学生学习费用有缺口，学校在下面垫上一笔钱，让学习能够继续。这笔支援费用的钱，就是subsidy：补助金、津贴。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "买 SOME CD 缺的钱，由 SUBSIDY 补上",
+          "textZh": "some CD是“某张光盘”，/sʌm siː diː/近音连到subsidy /ˈsʌbsədi/。想象社区学习室要买教学光盘，公共机构补上采购费用；记住some CD和这笔补来的钱，subsidy就是补助金，不是光盘本身。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "政府或机构提供的资金补助",
+          "explanationZh": "subsidy通常指政府或机构为降低成本、维持服务或支持某项活动提供的资金，不只是个人工资之外的额外薪酬。常见于农业、公共交通等领域；说一笔补助可用a subsidy，复数是subsidies。",
+          "collocations": [
+            {
+              "phrase": "agricultural subsidies",
+              "meaningZh": "农业补贴"
+            },
+            {
+              "phrase": "subsidies for public transit",
+              "meaningZh": "公共交通补助"
+            }
+          ]
+        },
+        {
+          "senseZh": "for / to / on：说明补助用途、接受者或对象",
+          "explanationZh": "subsidies for可引出支持的用途或对象，subsidies to可引出领取方，subsidies on可说明被补贴的商品或服务。subsidy也可不可数地概括补助支持的水平；不是所有津贴都一定称subsidy。",
+          "collocations": [
+            {
+              "phrase": "subsidies to farmers",
+              "meaningZh": "给农民的补贴"
+            },
+            {
+              "phrase": "subsidies on basic goods and services",
+              "meaningZh": "基本商品和服务补贴"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "grant",
+          "comparisonZh": "grant指政府或机构为特定用途拨给的钱，范围较广，常见于研究、教育或项目资助。subsidy更突出帮助承担成本、支持某项活动或压低服务价格；具体语境可重合，但不是所有grant都强调降低成本。"
+        },
+        {
+          "word": "allowance",
+          "comparisonZh": "allowance常指按期或按特定用途给予个人的钱，如生活、差旅津贴，也可指儿童零花钱。subsidy更常着眼政府或机构对成本、生产或服务的资金支持；儿童零花钱通常不叫subsidy。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The city is increasing subsidies for public transit.",
+          "translationZh": "该市正在增加对公共交通的补助。",
+          "explanationZh": "subsidies用复数，for引出所支持的公共交通；increasing表示增加补助。"
+        },
+        {
+          "textEn": "The Arts Council granted them a small subsidy.",
+          "translationZh": "艺术委员会给了他们一笔小额补助。",
+          "explanationZh": "a small subsidy是一笔补助；granted说明拨给，机构也可以是提供补助的一方。"
+        }
+      ],
+      "coreImageZh": "工作人员说明这笔钱是政府提供的助学补助，随后把装钱的信封沿桌面推到男孩一侧。男孩说，这笔资助能帮助自己继续上学。subsidy 指这样的补助金、津贴；这里是支持教育用途的资助，不是工资或私人礼物。"
+    }
+  ]
+}

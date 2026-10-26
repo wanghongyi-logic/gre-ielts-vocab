@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6941,
+      "word": "skimp",
+      "ipa": "/skɪmp/",
+      "pos": "adj.（少见）；v.",
+      "coreMeaningZh": "缺乏的，不足的；节省花费，给得不足",
+      "coreEn": "to use or provide less time, effort, money, or material than is needed; scanty as an uncommon adjective",
+      "mnemonics": [
+        {
+          "method": "SKIP → SKIMP，省掉该做的",
+          "textZh": "在 SKIP（跳过）的 p 前加 m，就是 skimp。修屋顶时跳过必要工序、少铺该用的材料：不是节省得聪明，而是投入不足。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SHRIMP，虾仁只给两粒",
+          "textZh": "SHRIMP（虾）与 skimp 都押 /ɪmp/。虾仁炒饭里翻半天只见两小粒虾仁：店家 skimp on the shrimp，虾给得太省。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "常见动词：在必要投入上省得过头",
+          "explanationZh": "常用 skimp on 加钱、材料、时间、检查或其他需要投入的东西，表示给得少、用得不足，常带不赞同的意味。它也可表示因经济拮据而节衣缩食，不能仅凭这个词就断定一个人品格吝啬；一般的合理节约可用 save 或 economize。",
+          "collocations": [
+            {
+              "phrase": "skimp on materials",
+              "meaningZh": "在材料上省得过头"
+            },
+            {
+              "phrase": "skimp on preparation",
+              "meaningZh": "准备工作做得不足"
+            }
+          ]
+        },
+        {
+          "senseZh": "少见形容词：缺乏的、不足的",
+          "explanationZh": "skimp 确有形容词用法，意思接近 scanty，描述数量不足；这一用法较少见，普通表达更常用 scanty 或 skimpy。动词还可直接接被草率对待的工作或被削减的投入，但学习时先掌握常见的 skimp on 结构。",
+          "collocations": [
+            {
+              "phrase": "skimp resources",
+              "meaningZh": "不足的资源（少见形容词用法）"
+            },
+            {
+              "phrase": "skimp and save",
+              "meaningZh": "节衣缩食、攒钱"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "economize",
+          "comparisonZh": "在节约开支方面有交集。economize 可以是合理减少费用，并不必然损害结果；skimp 常让人觉得投入不够，特别是 skimp on something 所指的事项本来需要更多资源。"
+        },
+        {
+          "word": "scanty",
+          "comparisonZh": "对应少见的形容词 skimp，表示数量少或不足。它不能直接替换动词 skimp on；例如 scanty supplies 描写物资不足，而 skimp on supplies 说的是供应时给得太省。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The contractor skimped on materials, and the roof soon began to leak.",
+          "translationZh": "承包商在材料上省得过头，屋顶很快就开始漏水。",
+          "explanationZh": "skimped on materials 表示材料投入不足；后半句交代这种节省造成了质量问题。"
+        },
+        {
+          "textEn": "We had to skimp and save for months to afford the trip.",
+          "translationZh": "为了负担这趟旅行的费用，我们不得不节衣缩食攒了好几个月的钱。",
+          "explanationZh": "skimp and save 表示压低花费、攒钱；这句话说明预算有限，并不必然是在责骂他们吝啬。"
+        }
+      ],
+      "coreImageZh": "母亲为了省布钱，做出的窗帘短了一大截，挂上后仍露着大片窗户。她原以为这样能省钱，男孩却指出连窗户都遮不住，省过头了。skimp 常表示在必要投入上给得不足、用得太省；这块遮不全窗户的短帘，说明材料虽省下了，却没能完成原本的用途。"
+    },
+    {
+      "number": 6942,
+      "word": "scruple",
+      "ipa": "/ˈskruːpəl/",
+      "pos": "n.",
+      "coreMeaningZh": "（良心上的）不安，顾忌",
+      "coreEn": "a feeling of doubt about whether an action is morally right",
+      "mnemonics": [
+        {
+          "method": "SCRUP-，良心里硌着小石子",
+          "textZh": "scruple 来自表示“小尖石”的拉丁词，SCRUP- 这一大块保留了石子的线索。想占别人一点便宜，心里却像硌着小石子，怎么也不安：scruple，良心上的顾忌。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SCREW + PULL，想拿又收手",
+          "textZh": "借 SCREW（螺丝）和 PULL（拉）的连读声音记 scruple。想把邻居的螺丝盒拉到身边，顺手拿一颗，心里却觉得不妥，伸出的手又收回：scruple，良心上的顾忌。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "因道德或原则而有顾忌",
+          "explanationZh": "scruple 说的是对某个做法是否正当感到不安，常用复数 scruples。have scruples about doing something 表示对做某事有良心顾忌；如果只是担心做不好或害怕受罚，不一定属于这个意思。",
+          "collocations": [
+            {
+              "phrase": "moral scruples",
+              "meaningZh": "道德上的顾忌"
+            },
+            {
+              "phrase": "have scruples about lying",
+              "meaningZh": "对撒谎有良心上的顾忌"
+            }
+          ]
+        },
+        {
+          "senseZh": "没有顾忌的表达",
+          "explanationZh": "have no scruples about doing something 或 without scruple 表示在这件事上没有良心顾忌，常用来批评不择手段。它指行为受到良心约束的程度，不是泛指一个人做任何决定都不犹豫。",
+          "collocations": [
+            {
+              "phrase": "without scruple",
+              "meaningZh": "毫无良心顾忌地"
+            },
+            {
+              "phrase": "have no scruples about cheating",
+              "meaningZh": "对作弊毫无顾忌"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "compunction",
+          "comparisonZh": "在内疚、良心不安或道德顾忌上接近。scruple 更突出基于原则，对某项行为是否正当有所保留；compunction 更容易突出良心刺痛、觉得对不起别人。两者都可涉及尚未做出的行为，不必硬分成事前与事后。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "qualm",
+          "comparisonZh": "在对做法是否妥当感到忐忑时接近。qualm 可以是较笼统的一阵疑虑或不安；scruple 更明确地联系道德原则。qualm 的其他含义不能都换成 scruple。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She had scruples about taking credit for someone else’s work.",
+          "translationZh": "她对把别人的成果说成自己的这件事有良心上的顾忌。",
+          "explanationZh": "had scruples about 后接 taking，顾忌来自冒领他人成果是否正当，而不是怕自己做不好。"
+        },
+        {
+          "textEn": "He lied to the customers without scruple.",
+          "translationZh": "他毫无良心顾忌地欺骗顾客。",
+          "explanationZh": "without scruple 表示说谎时没有受到良心约束，带有批评意味。"
+        }
+      ],
+      "coreImageZh": "男孩捡到一个钱包，同伴劝他趁没人看见就留下。他低头看着钱包，仍觉得过意不去，认真说明这不是他们的，拿着心里不安。scruple 指良心上的顾忌；即使无人发现，他也因占有他人物品不妥而迟疑，这份来自道德原则的不安正是这个词的重点。"
+    },
+    {
+      "number": 6943,
+      "word": "slack",
+      "ipa": "/slæk/",
+      "pos": "adj.",
+      "coreMeaningZh": "松弛的；疏忽的，大意的",
+      "coreEn": "not pulled tight; failing to give enough care or attention",
+      "mnemonics": [
+        {
+          "method": "sLACK，缺少认真",
+          "textZh": "LACK 是缺少，前面加 s 就是 slack。该核对的金额也不核，只说“差不多”：lack of care，缺少认真，做事松懈。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STACK，捆书的绳没拉紧",
+          "textZh": "STACK（一摞）把 t 换成 l，得到 slack。一摞书外绕着绳，绳子却软软垂下、没拉紧：绳是 slack，松弛的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "没有绷紧、松弛的",
+          "explanationZh": "用于绳子、帆、肌肉等，表示没有拉紧或失去应有的紧张度。go slack 表示变松；slack 与完全断开、脱落并不是一回事。",
+          "collocations": [
+            {
+              "phrase": "a slack rope",
+              "meaningZh": "松弛的绳子"
+            },
+            {
+              "phrase": "go slack",
+              "meaningZh": "变得松弛"
+            }
+          ]
+        },
+        {
+          "senseZh": "疏忽、懈怠或不够严格的",
+          "explanationZh": "用于工作、管理或行为，表示没有给予应有的认真、注意或约束，常带批评意味。可以说 slack about doing something；仅仅动作慢或暂时休息，并不足以说明一个人疏于尽责。",
+          "collocations": [
+            {
+              "phrase": "slack supervision",
+              "meaningZh": "疏于管理"
+            },
+            {
+              "phrase": "be slack about checking details",
+              "meaningZh": "疏于检查细节"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "loose",
+          "comparisonZh": "在绳子或材料没有拉紧的意思上接近。loose 的范围更广，也可指松动、未固定或衣服宽松；slack 常突出缺乏张力或绷紧程度。loose 不能无条件替换 slack 的工作疏忽义。"
+        },
+        {
+          "word": "remiss",
+          "comparisonZh": "在疏于尽责、没有给予必要注意的意思上接近。remiss 更直接把缺点归于职责上的疏忽；slack 还可形容约束不严、工作松懈，以及绳索的物理松弛。两词在绳子是否绷紧的用法上不相等。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The rope was slack, so we pulled it tight.",
+          "translationZh": "绳子松松的，于是我们把它拉紧了。",
+          "explanationZh": "slack 作表语，说明绳子没有绷紧；后面的 pulled it tight 给出相反状态。"
+        },
+        {
+          "textEn": "He was slack about checking the figures before submitting the report.",
+          "translationZh": "提交报告前，他疏于核对数据。",
+          "explanationZh": "slack about checking 说明没有给核对工作应有的认真和注意，不是说数据本身松动。"
+        }
+      ],
+      "coreImageZh": "晾衣绳两端都系在杆上，中间却松松地垂成弧线。男孩问为何耷拉下来，母亲解释它没有绷紧。slack 可以形容松弛、缺乏张力的状态；这根绳子并没有断开，也没有挂着重物，只是留了松量，因而不像拉紧的绳子那样绷直。"
+    },
+    {
+      "number": 6944,
+      "word": "slake",
+      "ipa": "/sleɪk/",
+      "pos": "vt.",
+      "coreMeaningZh": "使满足（尤指解渴）",
+      "coreEn": "to satisfy thirst or another strong desire",
+      "mnemonics": [
+        {
+          "method": "sLAKE，一杯水解渴",
+          "textZh": "LAKE 是湖，前添 s 就是 slake。湖水经过处理送到水杯里，跑步回来一饮而尽，口渴平息：slake one’s thirst，解渴。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SNAKE → SLAKE，蛇也来解渴",
+          "textZh": "SNAKE（蛇）把 n 换成 l，就得到 slake。旱天里，蛇找到一碟清水，伸头饮水解渴：这碟水 slakes its thirst。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "使口渴或强烈欲求得到满足",
+          "explanationZh": "最典型的搭配是 slake one’s thirst，表示解渴；也可接 curiosity、desire 等，表示使某种渴求得到满足、减弱。它比 satisfy 更有书面或描写色彩，不是把所有“让某人高兴”都说成 slake。",
+          "collocations": [
+            {
+              "phrase": "slake one’s thirst",
+              "meaningZh": "解渴"
+            },
+            {
+              "phrase": "slake one’s curiosity",
+              "meaningZh": "满足好奇心"
+            }
+          ]
+        },
+        {
+          "senseZh": "及物结构与语义范围",
+          "explanationZh": "直接宾语通常是被满足的口渴或欲求，不是单独用人作宾语。可以说 slake her thirst，不宜只说 slake her 来表示让她满意。满足到什么程度由上下文交代，词本身不必表示过量，也不保证这种欲求从此永远消失。",
+          "collocations": [
+            {
+              "phrase": "slake a thirst for knowledge",
+              "meaningZh": "满足求知欲"
+            },
+            {
+              "phrase": "slake a desire for adventure",
+              "meaningZh": "满足冒险的愿望"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "quench",
+          "comparisonZh": "在解渴及满足强烈渴求时很接近，如 quench one’s thirst 与 slake one’s thirst。quench 另可表示熄灭火焰或压下某种情感，这些用法不能都直接换成 slake。"
+        },
+        {
+          "word": "satisfy",
+          "comparisonZh": "在使需求或愿望得到满足时接近，satisfy 的范围更广，也常用于达到要求、使某人满意。slake 更典型地联系口渴或强烈渴求，不可因为两者中文都能译为满足就处处互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A glass of cool water slaked her thirst.",
+          "translationZh": "一杯凉水解了她的渴。",
+          "explanationZh": "slaked 直接接 her thirst，说明得到满足的是口渴这项需求。"
+        },
+        {
+          "textEn": "The explanation did little to slake his curiosity.",
+          "translationZh": "这番解释几乎没能满足他的好奇心。",
+          "explanationZh": "did little to slake 表示作用很小，说明 slake 可用于求知欲，也允许上下文明确说明尚未满足。"
+        }
+      ],
+      "coreImageZh": "母亲提醒口渴的男孩慢慢喝水，他举起杯子喝了一口，随后放低水杯，笑着说终于不渴了。slake 表示使某种渴求得到满足，最常见的搭配就是 slake one’s thirst。这里口渴因饮水而消退，把“解渴、满足需要”的意思清楚地表现了出来。"
+    },
+    {
+      "number": 6945,
+      "word": "slant",
+      "ipa": "/slænt/",
+      "pos": "n.；adj.",
+      "coreMeaningZh": "（看问题的）角度，看法；倾斜的",
+      "coreEn": "a particular way of looking at something; sloping rather than straight or level",
+      "mnemonics": [
+        {
+          "method": "SLANG → SLANT，球迷的角度",
+          "textZh": "SLANG（俚语）末尾 g 换成 t，就是 slant。球迷满篇用俚语夸自家球员，整场比赛都从偶像的表现来讲：语言是 slang，看问题的角度是 slant。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "PLANT → SLANT，向窗外斜",
+          "textZh": "PLANT（植物）首字母 p 换成 s，就成 slant。窗边的植物不是笔直向上，而是斜向阳光：看这株 plant 的倾斜，记 slant。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "名词：看待、讲述问题的角度",
+          "explanationZh": "常用 a slant on something，指看待或呈现某件事的特定角度。a fresh slant 可以是有启发的新视角；报道带有某种 slant 时，也可能是在强调一方的立场，但这个词并不自动表示恶意造假。",
+          "collocations": [
+            {
+              "phrase": "a fresh slant on the issue",
+              "meaningZh": "看这个问题的新角度"
+            },
+            {
+              "phrase": "put a different slant on the story",
+              "meaningZh": "从不同角度讲述这件事"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容词：倾斜的；相关名词结构",
+          "explanationZh": "slant 也可作形容词，表示斜的、倾斜的，如 a slant line。表示物体处于倾斜位置时，还常用名词结构 at a slant 或 on a slant；同根的 slanted、slanting 也用于描写倾斜。",
+          "collocations": [
+            {
+              "phrase": "a slant line",
+              "meaningZh": "一条斜线"
+            },
+            {
+              "phrase": "at a slant",
+              "meaningZh": "倾斜着"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "perspective",
+          "comparisonZh": "在看待事物的角度、观点上接近。perspective 可指较广的观察立场或理解框架；slant 常突出一次讲述、评论或处理某件事时采用的特别角度，可能带个人倾向，但不必然不诚实。"
+        },
+        {
+          "word": "sloping",
+          "comparisonZh": "对应 slant 的倾斜形容词义，表示不是水平或竖直而呈斜向。sloping 常直接修饰屋顶、地面等；它不能替换 a fresh slant on an issue 中表示观点的名词 slant。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her experience gave her a different slant on the problem.",
+          "translationZh": "她的经历让她对这个问题有了不同的看法。",
+          "explanationZh": "a different slant on 指不同的观察或理解角度；句子没有说她故意歪曲事实。"
+        },
+        {
+          "textEn": "She drew a slant line across the page.",
+          "translationZh": "她在纸上画了一条斜线。",
+          "explanationZh": "slant 在这里作形容词，修饰 line，描写线条的斜向形状，而不是某种意见。"
+        }
+      ],
+      "coreImageZh": "桌上同样是半杯水，男孩先觉得“只剩半杯”，显得失望；母亲提醒换个角度看，杯里“还剩半杯”，他便露出笑容。slant 在这里指看待事情的角度或看法。水量从未改变，变化的是关注已失去的部分，还是仍然拥有的部分，这正体现了同一事实可以有不同的看法。"
+    }
+  ]
+}

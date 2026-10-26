@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7026,
+      "word": "stringent",
+      "ipa": "/ˈstrɪndʒənt/",
+      "pos": "adj.",
+      "coreMeaningZh": "严格的",
+      "coreEn": "very strict and demanding, especially of rules, controls, or requirements",
+      "mnemonics": [
+        {
+          "method": "STRING 绷得紧，STRINGENT 规矩不放松",
+          "textZh": "看到 STRINGENT 中完整的 STRING（绳线），想起展品前绷紧的一道界线：不准跨过，不准触碰，谁来都不能破例。线绷得紧，规矩也管得紧；stringent，严格的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STRANGER 来访，STRINGENT 查证不通融",
+          "textZh": "STRANGER（陌生人）与 STRINGENT 的主要字形、声音相近。陌生访客来到实验室门口，证件、预约、陪同人员，缺一项都不能进去：这套入内规定十分 stringent，严格得不能通融。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "正式用语，常说规定、标准和要求很严格",
+          "explanationZh": "stringent 常修饰 rules、regulations、criteria、requirements 等，表示限制紧、条件严，必须达到或遵守。它比一般的 strict 更突出条件严苛、余地小，但本身不等于不合理。",
+          "collocations": [
+            {
+              "phrase": "stringent requirements",
+              "meaningZh": "严格的要求"
+            },
+            {
+              "phrase": "stringent safety standards",
+              "meaningZh": "严格的安全标准"
+            }
+          ]
+        },
+        {
+          "senseZh": "通常评价制度或条件，不是笼统描写人的性格",
+          "explanationZh": "可说 under stringent conditions 或 meet stringent standards，分别表示在严格条件下、达到严格标准。若只想说老师管学生很严，用 strict teacher 更通常；不要把 stringent 机械套到每个“严格的人”上。",
+          "collocations": [
+            {
+              "phrase": "under stringent conditions",
+              "meaningZh": "在严格条件下"
+            },
+            {
+              "phrase": "meet stringent standards",
+              "meaningZh": "达到严格标准"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "draconian",
+          "comparisonZh": "都能形容严厉的规定。draconian 语气更重，常批评措施或惩罚极端严酷；stringent 强调要求严格、限制紧，不自动断言残酷或过度。严格的安全标准可称 stringent，不必因此称 draconian。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "exacting",
+          "comparisonZh": "都可形容要求很高。exacting 更突出需要投入很多精力、细致与准确，能说 exacting work 或 exacting standards；stringent 更突出规则和条件收得紧、必须遵守。工作费力细致，不必同时有严密限制。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "stringent air quality regulations",
+          "translationZh": "严格的空气质量法规",
+          "explanationZh": "stringent 修饰 regulations，指出法规要求严，不能随意放宽。"
+        },
+        {
+          "textEn": "Licences are only granted under the most stringent conditions.",
+          "translationZh": "只有在极为严格的条件下才会发放许可证。",
+          "explanationZh": "under ... conditions 说明发证所受的严格条件；only进一步突出限制。"
+        }
+      ],
+      "coreImageZh": "男孩拿着一枚苹果站在美术馆门外，问能否只带这一个进去。工作人员礼貌示停，说明食物一律不能带入；男孩只能留在门外。stringent 形容规定严格、要求不轻易放宽，重点是不准例外，而不是工作人员发脾气。"
+    },
+    {
+      "number": 7027,
+      "word": "strip",
+      "ipa": "/strɪp/",
+      "pos": "vt.",
+      "coreMeaningZh": "脱衣，剥去",
+      "coreEn": "to remove clothing or a covering layer from someone or something",
+      "mnemonics": [
+        {
+          "method": "TRIP 淋湿衣，STRIP 脱下来",
+          "textZh": "TRIP（旅行）与 STRIP 整体形音很近。一次淋雨的旅行结束，你回到浴室，把湿衣服脱下来放进洗衣篮。旅行带回湿衣，strip off the wet clothes：脱去湿衣。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SLIP OFF 顺手脱下，STRIP 去掉外层",
+          "textZh": "SLIP OFF 是把衣服轻快地脱下。试完外套，让它顺着肩膀滑下，放回衣架：slip it off。借 SLIP 与 STRIP 的整体近形近音，记住这个去掉外层的动作：strip 可以脱衣，也可以剥去覆盖物。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "剥去覆盖层：注意两个宾语的顺序",
+          "explanationZh": "strip 可接被剥掉的覆盖物，也可接原先被覆盖的物体。strip A off/from B 是把A从B上剥去；strip B of A 是把B上的A剥去。重点是去掉覆盖层、使里面显露，不是把物品切成细条。",
+          "collocations": [
+            {
+              "phrase": "strip paint from wood",
+              "meaningZh": "剥去木头上的油漆"
+            },
+            {
+              "phrase": "strip a tree of its bark",
+              "meaningZh": "剥去树皮"
+            }
+          ]
+        },
+        {
+          "senseZh": "脱衣：可接人，也可用 strip off 接衣物",
+          "explanationZh": "strip somebody 表示脱去某人的衣服；strip off 后可接脱下的衣物。单独 strip 也可不接宾语，表示脱衣，往往指脱去大部分或全部衣服。过去式、过去分词为 stripped，-ing 形式为 stripping。",
+          "collocations": [
+            {
+              "phrase": "strip off a wet shirt",
+              "meaningZh": "脱下湿衬衫"
+            },
+            {
+              "phrase": "strip somebody to the waist",
+              "meaningZh": "脱去某人上半身的衣物"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "remove",
+          "comparisonZh": "remove 是一般的移走、去除，范围很宽；strip 在本义常强调除掉衣服或表层，使原本覆盖的部分显露。移走一把椅子用 remove，不能因此用 strip；去除油漆时二者可以重合。"
+        },
+        {
+          "word": "undress",
+          "comparisonZh": "谈脱衣时二者接近，也都可接被脱衣的人。undress 是日常的脱衣或替人脱衣；strip 更容易突出脱去大部分或全部衣服，也能说剥去油漆、树皮。undress 不能普遍替换这些去覆盖层的用法。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He stripped off his shirt.",
+          "translationZh": "他脱下了衬衫。",
+          "explanationZh": "strip off 后直接接衣物 his shirt，支持本条的及物脱衣用法。"
+        },
+        {
+          "textEn": "Strip off all the existing paint.",
+          "translationZh": "把原有的油漆全部剥去。",
+          "explanationZh": "命令句直接以 strip 开头，all the existing paint 是被去掉的覆盖层。"
+        }
+      ],
+      "coreImageZh": "男孩抓住旧墙纸的上角，先揭开一段，再把整张纸从墙面剥下来。蓝色墙纸垂在他的手里，底下的浅黄色墙面露了出来。这里的 strip 指剥去覆盖物；动作的重点是把表面的一层拿掉。"
+    },
+    {
+      "number": 7028,
+      "word": "strut",
+      "ipa": "/strʌt/",
+      "pos": "vi.",
+      "coreMeaningZh": "趾高气扬地走",
+      "coreEn": "to walk with an exaggeratedly proud manner, with the head up and chest out",
+      "mnemonics": [
+        {
+          "method": "STREET 当秀场，STRUT 昂首走",
+          "textZh": "借 STREET（街道）的整节近音联想 STRUT：刚赢比赛的人把整条街当作自己的秀场，胸膛挺起、下巴抬高，得意地走过众人面前。这就是 strut，趾高气扬地走。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        },
+        {
+          "method": "STRAIGHT 挺直身，STRUT 走得傲",
+          "textZh": "借 STRAIGHT（直的）的整节近音联想 STRUT：腰板挺得笔直，下巴抬得老高，仿佛每个人都该看着自己；他这样昂首挺胸、得意地走过去，便是在 strut。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不及物：用方向或地点说明走到哪里",
+          "explanationZh": "本义的 strut 通常不直接接人或地点作宾语，可用 strut around、strut into a room 等说得意地踱来踱去、昂首走入。过去式和过去分词为 strutted，-ing 形式为 strutting，双写t。",
+          "collocations": [
+            {
+              "phrase": "strut around",
+              "meaningZh": "趾高气扬地踱来踱去"
+            },
+            {
+              "phrase": "strut into a room",
+              "meaningZh": "昂首得意地走进房间"
+            }
+          ]
+        },
+        {
+          "senseZh": "关键是得意炫示的步态，不是速度快",
+          "explanationZh": "strut 常带自负、显摆意味，突出抬头挺胸、觉得自己重要；不只说自信，也不只说大步或快走。它也可以描写动物神气地走路。普通挺直身体的姿势，若没有行走和得意意味，并不足以叫strut。",
+          "collocations": [
+            {
+              "phrase": "strut proudly",
+              "meaningZh": "得意地昂首走"
+            },
+            {
+              "phrase": "strut past the crowd",
+              "meaningZh": "趾高气扬地从人群前走过"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "swagger",
+          "comparisonZh": "两者都能表示神气、自负地走，重合很大。swagger 更突出夸张的自信和得意姿态；strut 常让人看到抬头挺胸、把自己看得很重要的步态。两者都可能含有自负、炫示的意味，不是单纯的中性“走路”。"
+        },
+        {
+          "word": "stride",
+          "comparisonZh": "stride 主要表示朝某方向大步走，可因为着急、坚定或生气；strut 的关键是趾高气扬、炫示自己，不规定步子一定很大。为了赶车大步走是stride，未必是strut。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The players strutted and posed for the cameras.",
+          "translationZh": "球员们得意地昂首走动，并对着镜头摆姿势。",
+          "explanationZh": "strutted 是不及物动词；posed另说摆姿势，两者共同呈现炫示的样子。"
+        },
+        {
+          "textEn": "the cat strutted proudly onto the porch with a bird in its mouth",
+          "translationZh": "那只猫嘴里叼着一只鸟，得意地昂首走上门廊",
+          "explanationZh": "strutted 后接 onto the porch 表方向；动物也可以有神气的步态。原词典例保持小写开头、无句号。"
+        }
+      ],
+      "coreImageZh": "男孩挺起胸、抬着下巴，神气地向前迈步，还让同伴看自己走得多威风。走到前面后，他收脚站稳，仍一脸得意。strut 指这样趾高气扬地走，重点是走路时摆出的骄傲姿态，不只是站得笔直。"
+    },
+    {
+      "number": 7029,
+      "word": "spike",
+      "ipa": "/spaɪk/",
+      "pos": "v.",
+      "coreMeaningZh": "激励",
+      "coreEn": "to add vitality, interest, or a lively flavor to something",
+      "mnemonics": [
+        {
+          "method": "SPICE 添点味，SPIKE 添活力",
+          "textZh": "SPICE 是香料，与 SPIKE 整体形音很近。平淡的汤里加一点香料，立刻有了鲜明滋味；平淡的活动里添一点趣味，也就活了起来。由“添味”记 spike：给原本平淡的东西增添活力。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SPEAK 讲个笑话，SPIKE 活跃演讲",
+          "textZh": "SPEAK（说话）/spiːk/ 与 SPIKE /spaɪk/ 的首尾声音相同。讲演本来干巴巴，讲话人穿插一个贴切的笑话，台下马上有了笑声：不只 speak，还把演讲讲活了——spike，增添趣味与活力。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "增添活力或趣味：对象通常是演讲、文字、活动等",
+          "explanationZh": "这里的“激励”具体指给事物增添活力、趣味或滋味，不是普通的“鼓励某人去做某事”；不能把 encourage somebody to do something 普遍换成 spike somebody to do something。",
+          "collocations": [
+            {
+              "phrase": "spike a speech with humor",
+              "meaningZh": "用幽默为演讲增添趣味"
+            },
+            {
+              "phrase": "spike a story with lively details",
+              "meaningZh": "用生动细节为故事增色"
+            }
+          ]
+        },
+        {
+          "senseZh": "spike A with B：给A加入B，使其更有劲",
+          "explanationZh": "A 是被增添滋味或活力的事物，with 后的B是添加的成分。食物中加一点味道鲜明的配料也能用这一义。spike另有给饮料下药、阻止发表、急升等义，须由宾语和上下文辨认。过去式spiked，-ing形式spiking。",
+          "collocations": [
+            {
+              "phrase": "spike a broth with peppers",
+              "meaningZh": "在汤里加辣椒提味"
+            },
+            {
+              "phrase": "a speech spiked with humor",
+              "meaningZh": "穿插幽默、更加生动的演讲"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "enliven",
+          "comparisonZh": "在“使更有趣、更有活力”这一义上二者接近。enliven是一般的活跃、增色；spike常让人想到加入一味鲜明成分，常见spike A with B。说幽默使演讲生动可用两者，但spike的下药、尖峰等其他义不能换成enliven。"
+        },
+        {
+          "word": "liven up",
+          "comparisonZh": "liven up也表示使人或事物更活跃、更有趣，用法较日常，而且可以不及物地表示自己热闹起来；本条spike是及物的“给某物添活力”。The party livened up这种自发变热闹，不能原样换成The party spiked。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "spiked the speech with humor",
+          "translationZh": "用幽默为演讲增添了趣味",
+          "explanationZh": "spiked是过去式；the speech是被增色的对象，with humor说明添加了什么。"
+        },
+        {
+          "textEn": "spike the broth with peppers",
+          "translationZh": "在汤里加辣椒提味",
+          "explanationZh": "同一“添味、增色”义用于食物；不是给人鼓劲，也不是偷偷下药。"
+        }
+      ],
+      "coreImageZh": "男孩讲故事时，忽然模仿小鸭子的动作，插入鞋子进水的笑话，把同伴逗得笑起来。同伴说，加上这段笑话，故事真有趣。这里的 spike 指给故事增添趣味和活力，不是泛指鼓励某个人。"
+    },
+    {
+      "number": 7030,
+      "word": "stultify",
+      "ipa": "/ˈstʌltɪfaɪ/",
+      "pos": "vt.",
+      "coreMeaningZh": "使无效，抑制",
+      "coreEn": "to dull or inhibit someone's abilities, or make something ineffective",
+      "mnemonics": [
+        {
+          "method": "MULTIPLY 表格加倍，STULTIFY 办事失效",
+          "textZh": "MULTIPLY（成倍增加）/ˈmʌltɪplaɪ/ 与 STULTIFY /ˈstʌltɪfaɪ/ 的整体声音相近。办一件小事，审批表却一倍倍增加；忙着重复填表，真正的工作反而做不成。表格 multiply，繁文缛节却 stultify 工作——使它难以发挥作用。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STILL TILL FIVE，枯坐到五点，本领用不上",
+          "textZh": "一屋子能干的人，却被规定整天不准讨论、不准试做，只能静坐到下班：STILL（不动）TILL（直到）FIVE（五点）。有本领也用不出来，工作成了空转。借这三拍近音记 stultify：抑制能力，使之无法发挥。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "抑制能力：使人或思考活动变得迟钝、僵化",
+          "explanationZh": "stultify可直接接人，也可接creativity、critical thinking等能力或思考活动，常用于批评死板制度、单调工作或僵化训练：它们使头脑失去活力、新想法难以产生。不是一次普通的打断，也不是要求人安静片刻。",
+          "collocations": [
+            {
+              "phrase": "stultify creativity",
+              "meaningZh": "抑制创造力"
+            },
+            {
+              "phrase": "stultify critical thinking",
+              "meaningZh": "压制批判性思考"
+            }
+          ]
+        },
+        {
+          "senseZh": "使无效：让制度、努力或行动发挥不了作用",
+          "explanationZh": "stultify也可表示削弱或破坏效能，使某事难以真正起作用；不一定是法律上正式宣布无效。它常带负面评价，语体较正式。过去式和过去分词为stultified，-ing形式为stultifying。",
+          "collocations": [
+            {
+              "phrase": "stultify an initiative",
+              "meaningZh": "使一项举措难以奏效"
+            },
+            {
+              "phrase": "be stultified by bureaucracy",
+              "meaningZh": "受官僚程序牵制而难以发挥效能"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "inhibit",
+          "comparisonZh": "inhibit泛指抑制发生、减缓进程，也能说使人拘谨、不敢行动；stultify更容易突出把头脑或能力压钝、使事情失去活力和效能。暂时紧张得不敢发言可用inhibit，未必达到stultify的僵化或失效意味。"
+        },
+        {
+          "word": "negate",
+          "comparisonZh": "在“使不起作用”这一义上二者接近。negate更突出抵消效果、使之归零；stultify既可使效果落空，也可强调长期钝化、抑制能力。谈头脑被死板训练压得不会思考，stultify比negate更贴切；negate另有否认存在之义。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The government has been stultified by bureaucracy.",
+          "translationZh": "官僚程序使政府难以有效运作。",
+          "explanationZh": "被动结构be stultified by点出抑制效能的原因：不是政府消失了，而是有职能却难以发挥。"
+        },
+        {
+          "textEn": "Cults stultify their members' critical thinking abilities.",
+          "translationZh": "邪教会压制成员的批判性思考能力。",
+          "explanationZh": "stultify直接接能力名词短语，具体说明被压制的是独立审视、判断的能力。"
+        }
+      ],
+      "coreImageZh": "男孩本来兴致勃勃地准备画画，老师却规定只能照着灰色的圆画，不许自由发挥。他停下笔，失望地说自己的点子都用不上了，纸上仍一片空白。这里的 stultify 指把思考和创造力压住，使能力难以发挥。"
+    }
+  ]
+}

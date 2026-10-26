@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6966,
+      "word": "solid",
+      "ipa": "/ˈsɑːlɪd/",
+      "pos": "adj.",
+      "coreMeaningZh": "有理有据的；可靠的",
+      "coreEn": "well supported by facts or sound reasoning",
+      "mnemonics": [
+        {
+          "method": "SOLID GROUND，理由站得住",
+          "textZh": "SOLID GROUND 是坚实地面。把脚下“站得稳”移到理由上：经过核实的事实像牢固地基，撑住结论。solid reasons，有理有据的理由。",
+          "kind": "reviewed_method",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SO + LID，所以就是这个盖子",
+          "textZh": "SO 是所以，LID 是盖子，连写就是 SOLID。盖子大小、螺纹、内侧果酱都和罐口吻合：“所以，就是它的盖子。”判断有据可查，solid。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "理由、论证有可靠根据",
+          "explanationZh": "solid 修饰 reasons、argument 等，表示有事实或合理推理支持，经得住检验。它是对依据质量的肯定，不是说别人已经同意，也不等于任何结论都绝无出错可能。",
+          "collocations": [
+            {
+              "phrase": "solid reasons for a decision",
+              "meaningZh": "作出决定的充分理由"
+            },
+            {
+              "phrase": "a solid argument",
+              "meaningZh": "有理有据的论证"
+            }
+          ]
+        },
+        {
+          "senseZh": "证据、信息可信",
+          "explanationZh": "solid evidence、solid information 强调证据或信息靠得住，不是传言或空泛推测。solid basis 则把这种支持概括为可据以判断、行动的可靠基础。",
+          "collocations": [
+            {
+              "phrase": "solid evidence",
+              "meaningZh": "可靠的证据"
+            },
+            {
+              "phrase": "a solid basis for the claim",
+              "meaningZh": "支持该说法的可靠依据"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sound",
+          "comparisonZh": "修饰 reasoning、argument、reasons 时都表示可靠、合理。sound 更突出推理没有明显错误或根本缺陷；solid 常突出支撑充分、基础稳固。二者都不是在这里谈物质的声音或硬度。"
+        },
+        {
+          "word": "well-founded",
+          "comparisonZh": "都可表示有充分根据。well-founded 直接强调某种看法、怀疑或担忧建立在理由之上；solid 还常修饰证据、信息和论证本身，说明它们可靠而有分量。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Some solid evidence was what was required.",
+          "translationZh": "当时需要的是一些可靠的证据。",
+          "explanationZh": "solid evidence 把要求落在证据的可靠性上；不是要求更多未经核实的说法。"
+        },
+        {
+          "textEn": "He has a solid alibi.",
+          "translationZh": "他有可靠的不在场证明。",
+          "explanationZh": "solid 修饰 alibi，强调这份不在场证明有根据、经得住查验，而非描写物体坚硬。"
+        }
+      ],
+      "coreImageZh": "男孩指着杯壁的裂缝，说明水正从那里渗出，所以杯子漏了。同伴也看见了水迹，确认这个判断有直接证据，不是猜测。solid 在这里形容理由、证据或判断有理有据、可靠；裂缝和渗水支持了结论，重点不是杯子作为物体是否坚硬。"
+    },
+    {
+      "number": 6967,
+      "word": "soliloquy",
+      "ipa": "/səˈlɪləkwi/",
+      "pos": "n.",
+      "coreMeaningZh": "自言自语；（尤指戏剧中的）独白",
+      "coreEn": "speech in which someone voices thoughts to themselves, especially in a play",
+      "mnemonics": [
+        {
+          "method": "SOLI + LOQU + Y，独自说话",
+          "textZh": "soli- 表示“独自”，loqu- 表示“说话”，加结尾 -y：SOLI + LOQU + Y 拼成 soliloquy。台上只剩演员一人，把心里的问题说给自己听：独白。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SO, LITTLE QUEEN，自问自答",
+          "textZh": "借 SO, LITTLE QUEEN（那么，小女王）的近音记 soliloquy。女演员独自站在台上，拿着王冠自问：“那么，小女王，你现在怎么办？”没有别人答话，她继续说出自己的心事：这段自言自语就是独白。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "戏剧人物向自己说出心声",
+          "explanationZh": "可数时指一段独白，不可数时可指这种表现手法。观众能听见人物的内心活动，但角色是在对自己说话，而不是把台词当成与另一人物的正常对话。",
+          "collocations": [
+            {
+              "phrase": "deliver a soliloquy",
+              "meaningZh": "表演一段独白"
+            },
+            {
+              "phrase": "Hamlet’s soliloquy",
+              "meaningZh": "哈姆雷特的独白"
+            }
+          ]
+        },
+        {
+          "senseZh": "自言自语的行为或一段话",
+          "explanationZh": "也可用于戏剧之外，指把自己的想法独自说出口。词风较正式或文学化；日常聊天通常直接说 talk to oneself。关键是对自己说，不是仅仅说得久，也不是完全没有出声的思考。",
+          "collocations": [
+            {
+              "phrase": "speak in soliloquy",
+              "meaningZh": "以自言自语的方式说话"
+            },
+            {
+              "phrase": "an angry soliloquy",
+              "meaningZh": "一段愤怒的自言自语"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "monologue",
+          "comparisonZh": "两者都可能译为“独白”，但 monologue 范围更广：一个人长篇说话可以面对观众或另一人物。soliloquy 特别强调说给自己听、把内心想法外化，因此不能把所有 monologue 都当成 soliloquy。"
+        },
+        {
+          "word": "self-talk",
+          "comparisonZh": "都涉及对自己说话。self-talk 常见于日常或心理学语境，也可以包括心里默念；soliloquy 通常指说出来的一段话，尤其是戏剧人物的独白，文学色彩更强。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Hamlet's soliloquy begins with “To be or not to be.”",
+          "translationZh": "哈姆雷特的这段独白以“生存还是毁灭”开头。",
+          "explanationZh": "soliloquy 指人物将内心疑问说给自己听的独白；观众听到他的思考，并不把这变成他与观众的日常对话。"
+        },
+        {
+          "textEn": "Hamlet's soliloquy is probably the most famous in English drama.",
+          "translationZh": "哈姆雷特的独白大概是英国戏剧中最著名的独白。",
+          "explanationZh": "soliloquy 作可数名词，the most famous 后省略了重复的 soliloquy；in English drama 限定比较范围。"
+        }
+      ],
+      "coreImageZh": "小舞台上只有男孩一人。他先轻声问自己该留下还是回去找朋友，停下来思考，随后又把自己的决定说了出来。soliloquy 是自言自语的独白，尤其指戏剧角色把内心想法说给自己听；这里没有对话对象，两次发言呈现的是同一个人的犹豫和决定。"
+    },
+    {
+      "number": 6968,
+      "word": "solitude",
+      "ipa": "/ˈsɑːlətuːd/",
+      "pos": "n.",
+      "coreMeaningZh": "独处；离群独居",
+      "coreEn": "the state of being alone or apart from other people",
+      "mnemonics": [
+        {
+          "method": "SOLI + TUDE，独自的状态",
+          "textZh": "soli- 表示“独自”，-tude 表示状态，拼成 solitude。舞台上 solo（独奏）只有一人；回到房间独自读书，享受的也是 solitude，独处。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SO LONG, DUDE，朋友走后独处",
+          "textZh": "借 SO LONG, DUDE（再见，哥们儿）的近音记 solitude。送走朋友，独自坐下读书；热闹退去，留下一段安静的独处。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "独处的状态或时间",
+          "explanationZh": "通常是不可数名词，指与他人分开、独自待着的状态。既可能出于主动选择，也可能由环境造成；能否享受这种状态，要看上下文。in solitude 表示独自、在独处中。",
+          "collocations": [
+            {
+              "phrase": "in solitude",
+              "meaningZh": "独自；在独处中"
+            },
+            {
+              "phrase": "enjoy solitude",
+              "meaningZh": "享受独处"
+            }
+          ]
+        },
+        {
+          "senseZh": "远离人群的清静生活",
+          "explanationZh": "常和 seek、need、peace 等搭配，表示寻找或需要不受打扰的独处。描述地点时可强调那里远离人群的清静，但 solitude 本身不保证风景美，也不必包含悲伤。",
+          "collocations": [
+            {
+              "phrase": "seek solitude",
+              "meaningZh": "寻求独处"
+            },
+            {
+              "phrase": "peace and solitude",
+              "meaningZh": "宁静与独处"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "seclusion",
+          "comparisonZh": "两者都涉及远离他人。seclusion 更强调退隐、避开人群或外界接触；solitude 更直接描述独自一人的状态，可以只是下午的一小段独处，并不一定是长期隐居。"
+        },
+        {
+          "word": "isolation",
+          "comparisonZh": "两者都可描述与他人分离。isolation 更突出隔绝、缺少联系，常带被动或不利意味；solitude 可以是主动选择、令人愉快的独处。具体情绪仍由上下文决定。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She wished to work on her novel in solitude.",
+          "translationZh": "她希望独自写自己的小说。",
+          "explanationZh": "wished to 表示这是她主动寻求的独处；in solitude 强调写作时没有他人相伴或打扰。"
+        },
+        {
+          "textEn": "He enjoyed the peace and solitude of the woods.",
+          "translationZh": "他享受林中的宁静与独处。",
+          "explanationZh": "enjoyed 明确给出积极态度，说明 solitude 并不等于痛苦的孤独感。"
+        }
+      ],
+      "coreImageZh": "男孩坐在林边长椅上，告诉母亲自己想安静待一会儿。母亲沿小路离开，最后只剩他平静地坐着，享受周围的清静。solitude 指独处、远离他人相伴的状态；这里的独处是自愿的，不等于被抛弃，也不必带着悲伤。"
+    },
+    {
+      "number": 6969,
+      "word": "solvent",
+      "ipa": "/ˈsɑːlvənt/",
+      "pos": "adj.；n.",
+      "coreMeaningZh": "有偿债能力的；溶剂",
+      "coreEn": "able to pay all debts; a substance that dissolves another substance",
+      "mnemonics": [
+        {
+          "method": "SOLVE，解决全部还债问题",
+          "textZh": "solvent 开头完整保留 SOLVE（解决）。资产足够解决全部欠款，不只是付得起眼前一笔：能 solve 这道还债题，就是 solvent，有偿债能力的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SO LENT，所以借给他",
+          "textZh": "SO 是所以，LENT 是借出的过去式。SO LENT 中添 v，便是 SOLVENT。查清他还得起全部债务，所以把钱借给他：看重的是他的偿债能力。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "财务上有能力偿还债务",
+          "explanationZh": "常用于个人、公司或机构的财务状况。重点是有能力偿还全部债务，并不是必须已经没有欠款，也不等于利润很高；remain solvent 强调继续维持这种能力。",
+          "collocations": [
+            {
+              "phrase": "remain solvent",
+              "meaningZh": "维持偿债能力"
+            },
+            {
+              "phrase": "a solvent company",
+              "meaningZh": "有偿债能力的公司"
+            }
+          ]
+        },
+        {
+          "senseZh": "能够溶解别的物质的溶剂",
+          "explanationZh": "作名词时指用来溶解其他物质的物质，通常为液体。水能使糖溶解时，水是 solvent，糖是被溶解的物质；不能把两者倒过来。",
+          "collocations": [
+            {
+              "phrase": "an organic solvent",
+              "meaningZh": "有机溶剂"
+            },
+            {
+              "phrase": "dissolve in a solvent",
+              "meaningZh": "溶解在溶剂中"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "financially sound",
+          "comparisonZh": "都可形容财务状况可靠。solvent 专门落在偿债能力上；financially sound 范围更宽，也可评价资金结构、经营状况等，不能仅凭盈利就断定 solvent。"
+        },
+        {
+          "word": "dissolving agent",
+          "comparisonZh": "在化学义中可指起溶解作用的物质，与名词 solvent 接近。solvent 是通常使用的专门名称；这个对应关系不适用于形容词“有偿债能力的”。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The company managed to remain solvent during the recession.",
+          "translationZh": "这家公司在经济衰退期间设法保持了偿债能力。",
+          "explanationZh": "remain solvent 强调在困难时期仍能偿债，并未宣称公司没有借款。"
+        },
+        {
+          "textEn": "Water is a solvent for sugar",
+          "translationZh": "水是糖的溶剂。",
+          "explanationZh": "水使糖溶解，所以 solvent 指水而非糖；这里是名词。"
+        }
+      ],
+      "coreImageZh": "母亲已经准备好足够的钱，告诉供应商全部欠款都付得清。她把钱交过去，供应商收到后确认全部欠款已经结清，男孩在旁看懂了这次付款。solvent 在这里形容有偿付能力，关键是能够偿清全部债务，而不只是手里有些现金或完成一次普通购物付款。"
+    },
+    {
+      "number": 6970,
+      "word": "somatic",
+      "ipa": "/soʊˈmætɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "身体的；躯体的",
+      "coreEn": "relating to the body rather than the mind",
+      "mnemonics": [
+        {
+          "method": "SO + MAT + IC，身体真正动起来",
+          "textZh": "SO 是所以，MAT 是垫子；把 SO + MAT + IC 连成 SOMATIC。光在脑中想动作不够，所以站到垫子上真正伸手、抬腿：关注身体这一层面，somatic。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SOMAT + IC，身体的",
+          "textZh": "somat- 来自表示“身体”的希腊词，-ic 表示“……的”，合起来就是 somatic。手臂的酸痛、皮肤的触感，都是身体层面的感觉：somatic sensations。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "身体层面，与心理层面相对",
+          "explanationZh": "somatic 描述身体或身体感受，语气较正式。somatic symptoms 是身体表现出来的症状，但 somatic 本身并不等于“疾病的”，也不能仅凭这个词判断症状由什么原因造成。",
+          "collocations": [
+            {
+              "phrase": "somatic sensations",
+              "meaningZh": "身体感觉"
+            },
+            {
+              "phrase": "somatic symptoms",
+              "meaningZh": "躯体症状"
+            }
+          ]
+        },
+        {
+          "senseZh": "生物学中的体细胞",
+          "explanationZh": "somatic cells 指体细胞，与生殖细胞相区别，例如皮肤或肌肉中的细胞。这里是细胞类别，不是在说细胞有病。",
+          "collocations": [
+            {
+              "phrase": "somatic cells",
+              "meaningZh": "体细胞"
+            },
+            {
+              "phrase": "somatic cell division",
+              "meaningZh": "体细胞分裂"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "bodily",
+          "comparisonZh": "表示“身体的”时最接近。bodily 更常见、更直白；somatic 常见于医学、心理学或生物学讨论，尤其用于与心理或生殖细胞作区分。"
+        },
+        {
+          "word": "physical",
+          "comparisonZh": "谈人的身体状况时可以接近 somatic，但 physical 的范围更广，还能表示物质的、物理的。physical sciences 不能换成 somatic sciences。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "a somatic disorder that was once thought to be “all in the patient's head”",
+          "translationZh": "一种曾被认为“全是患者想出来的”的躯体疾病",
+          "explanationZh": "somatic 修饰 disorder，指出身体层面的疾病；病义来自 disorder，而不是 somatic 自身。这是一段名词短语。"
+        },
+        {
+          "textEn": "Such cells, called somatic cells, make up most of the human body, such as skin and muscle cells.",
+          "translationZh": "这类细胞称为体细胞，构成人体的大部分，例如皮肤细胞和肌肉细胞。",
+          "explanationZh": "somatic cells 是体细胞，不是“患病细胞”；后面的例子把这个生物学用法具体化。"
+        }
+      ],
+      "coreImageZh": "运动后的男孩坐在长椅上揉着腿，告诉教练心情挺好，只是腿上的肌肉酸。教练确认，他说的是身体上的感觉。somatic 形容与身体有关的事物；这里的腿部肌肉感受属于身体层面，而这个词本身并不等于患病，也不能单凭它判断症状的成因。"
+    }
+  ]
+}

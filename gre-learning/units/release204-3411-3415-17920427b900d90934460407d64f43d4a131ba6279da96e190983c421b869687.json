@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7031,
+      "word": "stupor",
+      "ipa": "/ˈstuːpər/",
+      "pos": "n.",
+      "coreMeaningZh": "迟钝，麻痹，无知觉",
+      "coreEn": "a state of greatly dulled awareness and responsiveness",
+      "mnemonics": [
+        {
+          "method": "STUPID 脑子发木，STUPOR 感觉钝住",
+          "textZh": "熟悉的 STUPID（愚笨的）和 STUPOR 共享 STUP，词源都连着“麻木、发愣”。想象一个人醉得呆坐，听见问话也很难回应：不是在评价智力，而是在说意识和感觉都钝住了。这种昏沉麻木的状态，就是 stupor。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STOP HER！醉得发懵，先拦住她",
+          "textZh": "她已醉得神志不清，连问话也很少回应，却还在摸酒杯。朋友赶紧喊“STOP HER!”（拦住她！）。把 stop her 连读，her轻读，借整句声音记 stupor：醉得昏沉、感觉迟钝的状态。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "状态名词：in a stupor / in a state of stupor",
+          "explanationZh": "stupor指意识、感觉和反应明显变钝的状态，常见于醉酒、药物作用或强烈打击之后。它不只是动作慢，也不是说一个人天生不聪明。常用in a stupor或in a state of stupor，表示处于昏沉麻木中。",
+          "collocations": [
+            {
+              "phrase": "in a stupor",
+              "meaningZh": "处于昏沉麻木的状态"
+            },
+            {
+              "phrase": "a drunken stupor",
+              "meaningZh": "醉酒后的神志昏沉"
+            }
+          ]
+        },
+        {
+          "senseZh": "进入与脱离：into / from 表示状态变化",
+          "explanationZh": "fall into a stupor表示陷入昏沉状态；rouse somebody from a stupor表示使人从这种状态中清醒过来。“麻痹、无知觉”在这里着重意识和感受受到抑制，不等同于某个肢体的瘫痪；也不能把所有stupor都理解为完全昏迷。",
+          "collocations": [
+            {
+              "phrase": "fall into a stupor",
+              "meaningZh": "陷入昏沉麻木状态"
+            },
+            {
+              "phrase": "rouse somebody from a stupor",
+              "meaningZh": "使某人从昏沉状态中清醒"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "daze",
+          "comparisonZh": "daze也指受惊、受打击或迷糊而发懵的状态，常用in a daze；stupor更突出感觉和反应被明显压钝，甚至对周围很少觉察。两者可重合，但一时茫然未必重到stupor的程度。"
+        },
+        {
+          "word": "lethargy",
+          "comparisonZh": "lethargy重在缺乏精力、提不起劲、不愿活动；stupor重在意识、感觉和对外界的反应变钝。一个人很没精神，却仍能清楚交谈，可以有lethargy而未必处于stupor。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He drank himself into a stupor.",
+          "translationZh": "他喝得神志昏沉。",
+          "explanationZh": "drink oneself into a stupor表示因喝酒而进入这种状态；into突出状态变化。"
+        },
+        {
+          "textEn": "She was led away in a state of stupor.",
+          "translationZh": "她神志昏沉地被领走了。",
+          "explanationZh": "in a state of stupor说明她当时意识和反应迟钝；被领走的动作与状态同时发生。"
+        }
+      ],
+      "coreImageZh": "听到自己做的陶碗摔坏了，男孩呆坐着，目光发直。同伴在旁边伸手招呼、再次问话，他仍迟迟没有回应。stupor 指这种意识和反应明显变钝的昏沉麻木状态；这里是受打击后的发怔，不是说他的手脚瘫痪了。"
+    },
+    {
+      "number": 7032,
+      "word": "stunt",
+      "ipa": "/stʌnt/",
+      "pos": "vt.",
+      "coreMeaningZh": "阻碍(成长)",
+      "coreEn": "to prevent normal growth or development",
+      "mnemonics": [
+        {
+          "method": "STUDENT 营养跟不上，STUNT 成长受阻",
+          "textZh": "把 STUNT 与整体近形的 STUDENT（学生）并排看。一个正在长身体的学生长期营养不足，身体没有正常长起来；本该长高，却被缺养拖住。由 student 的成长受阻，记 stunt：阻碍正常生长。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STUCK 根被卡住，STUNT 长不大",
+          "textZh": "STUCK（卡住的）/stʌk/ 与 STUNT /stʌnt/ 的整节声音相近。想象小树的根挤在太小的盆里，伸展不开，整株迟迟长不大。根 stuck，长势被卡住；stunt，就是阻碍正常成长。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物：可接生长者，也可接 growth/development",
+          "explanationZh": "stunt可直接接植物、人等生长者，也可接growth、development，表示使其未能长到或发展到正常应有的程度。它着重正常发育受到妨碍，不是泛指在路上挡了一下，也不必意味着生长完全停止。",
+          "collocations": [
+            {
+              "phrase": "stunt plant growth",
+              "meaningZh": "妨碍植物正常生长"
+            },
+            {
+              "phrase": "stunt a child's development",
+              "meaningZh": "阻碍孩子正常发育"
+            }
+          ]
+        },
+        {
+          "senseZh": "可说能力、创造力等发展受阻",
+          "explanationZh": "除了身体或植物的生长，stunt也可用于创造力、情感和事业等未能充分发展。stunted可作形容词表示发育不良、发展受限。过去式stunted，-ing形式stunting，不双写词尾t；名词stunt的“特技”是另一义。",
+          "collocations": [
+            {
+              "phrase": "stunt creativity",
+              "meaningZh": "阻碍创造力的发展"
+            },
+            {
+              "phrase": "stunted emotional development",
+              "meaningZh": "受到阻碍的情感发展"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hinder",
+          "comparisonZh": "hinder是范围很广的妨碍，使事情难做或进展困难；stunt专门突出正常生长、发展没有充分实现。交通堵塞hinders a journey，但一般不说stunts a journey；谈儿童发育或植物长势受阻时可以重合。"
+        },
+        {
+          "word": "check",
+          "comparisonZh": "这里比较check的“抑制、遏止增长”义，不是“检查”。check可指控制某种增长或势头，未必使对象发育不良；stunt强调生长或发展低于本应达到的程度。check bacterial growth是遏制细菌繁殖，不能自动等同于把某个个体长成矮小。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The constant winds had stunted the growth of plants and bushes.",
+          "translationZh": "持续的风妨碍了植物和灌木的生长。",
+          "explanationZh": "stunted直接接the growth，指出正常长势受到外部条件抑制；不表示植物都已死亡。"
+        },
+        {
+          "textEn": "His illness had not stunted his creativity.",
+          "translationZh": "他的病并没有阻碍其创造力的发展。",
+          "explanationZh": "creativity是抽象的发展对象；not说明疾病虽存在，却没有造成这种抑制。"
+        }
+      ],
+      "coreImageZh": "同一天种下的两株苗，一株高大，另一株却明显矮小。男孩询问原因，园艺老师指向矮苗，说明它长期缺水，正常生长受到了妨碍。stunt 指阻碍生长或发展；矮苗是一直没有正常长起来，不是眼前忽然缩小了。"
+    },
+    {
+      "number": 7033,
+      "word": "sturdy",
+      "ipa": "/ˈstɜːrdi/",
+      "pos": "adj.",
+      "coreMeaningZh": "强健的，结实的",
+      "coreEn": "physically strong, or strongly built and not easily damaged",
+      "mnemonics": [
+        {
+          "method": "STUDY 厚书堆满桌，STURDY 桌子稳稳撑住",
+          "textZh": "STUDY（学习）与 STURDY 整体近形，只多一个 r。为了 study，厚厚的书一本本堆上书桌，桌腿却稳稳承住，不摇晃、不散架。把这张结实的学习桌留在眼前：sturdy，就是结构结实、经得住用。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STIR TEA 搅大桶茶，STURDY 双臂结实",
+          "textZh": "STIR TEA 是“搅茶”，整句 /stɜːr tiː/ 与 sturdy /ˈstɜːrdi/ 近音。想象奶茶师傅用一双结实有力的胳膊，稳稳搅动满满一大桶茶。由 stir tea 的动作，抓住 sturdy 的意思：身体强健、结实有力。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "形容物品：结构结实，经得起使用",
+          "explanationZh": "sturdy可形容桌子、鞋、工具、车辆等，突出结构牢固、不容易损坏。它不等于体积大，也不只说材料摸起来硬；一件小而轻的东西同样可以很sturdy。比较级sturdier，最高级sturdiest。",
+          "collocations": [
+            {
+              "phrase": "sturdy boots",
+              "meaningZh": "结实耐穿的靴子"
+            },
+            {
+              "phrase": "a sturdy table",
+              "meaningZh": "牢固的桌子"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容身体：强壮健康、体格结实",
+          "explanationZh": "用于人、动物或身体部位时，sturdy指体格强健结实，常放在名词前，如sturdy legs。它不是单说胖或体重高；也可延伸形容坚定的意志或立场，但谈体格时仍以身体的健壮有力为重。",
+          "collocations": [
+            {
+              "phrase": "a sturdy build",
+              "meaningZh": "结实的体格"
+            },
+            {
+              "phrase": "sturdy legs",
+              "meaningZh": "强健的双腿"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "robust",
+          "comparisonZh": "robust与sturdy都可形容身体强健、器物结实。sturdy常让人想到结实的体格或牢固的构造；robust还广用于健康状况、系统、经济等能承受考验、不易衰弱的状态，不能在所有这些抽象搭配中直接换成sturdy。"
+        },
+        {
+          "word": "strong",
+          "comparisonZh": "strong是更宽泛的“强、有力”，可谈肌肉、意志、证据，甚至味道。sturdy通常突出健壮的身体或结实的结构；strong evidence是有力证据，却不宜按“结实耐用”的意思机械换成sturdy evidence。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "a sturdy pair of boots",
+          "translationZh": "一双结实的靴子",
+          "explanationZh": "sturdy修饰boots，着眼于鞋子的结构和耐用性，不是鞋码或重量。"
+        },
+        {
+          "textEn": "a man of sturdy build",
+          "translationZh": "一个体格结实的男人",
+          "explanationZh": "of sturdy build说明身体强健结实；build在这里指体格，不是建造动作。"
+        }
+      ],
+      "coreImageZh": "男孩先坐在木长凳的一侧，问它是否结实。同伴也坐了下来，长凳承住两个人，仍平直稳固，没有变形。sturdy 指结构结实、经得起使用；这里的关键是增加承重后依然牢固，不只是看起来很大。"
+    },
+    {
+      "number": 7034,
+      "word": "stygian",
+      "ipa": "/ˈstɪdʒiən/",
+      "pos": "adj.",
+      "coreMeaningZh": "极其暗的",
+      "coreEn": "extremely dark, often in a gloomy or frightening way",
+      "mnemonics": [
+        {
+          "method": "STAGE IN 黑暗里，STYGIAN 舞台全黑",
+          "textZh": "想象舞台熄掉全部灯，演员和布景一起消失在黑暗里：a STAGE IN darkness。把 stage in 两词连读 /steɪdʒ ɪn/，借它的整段近音联想 stygian /ˈstɪdʒiən/。这不是灯光略暗，而是黑得几乎什么都看不见。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "石梯间不见天，STYGIAN 黑得看不见",
+          "textZh": "借“石梯间”三个字的连读声，联想 stygian /ˈstɪdʒiən/。想象地底一段没有窗的石梯间，灯也灭了；台阶就在脚下，却连下一阶也看不见。把整段声音和这片深黑连住：stygian，极其暗的。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "文学用词：极暗，常带阴森感",
+          "explanationZh": "stygian常用于洞穴、森林深处、地下空间等极暗的环境，语气比普通dark强，往往还带阴森、令人不安的感觉。它是文学色彩较浓的形容词，不是日常描述“房间稍暗”的中性词。",
+          "collocations": [
+            {
+              "phrase": "stygian darkness",
+              "meaningZh": "阴森的极度黑暗"
+            },
+            {
+              "phrase": "a stygian cave",
+              "meaningZh": "漆黑阴森的洞穴"
+            }
+          ]
+        },
+        {
+          "senseZh": "通常放在名词前；也可写作Stygian",
+          "explanationZh": "它常作定语，修饰blackness、gloom或某处空间。Stygian与小写stygian都可见；词源联系希腊神话中的冥河Styx，因此大写形式常保留神话色彩。现代形容黑暗时，不要求对象真的与神话有关。",
+          "collocations": [
+            {
+              "phrase": "Stygian gloom",
+              "meaningZh": "阴森幽暗"
+            },
+            {
+              "phrase": "stygian blackness",
+              "meaningZh": "漆黑一片"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "pitch-dark",
+          "comparisonZh": "pitch-dark强调完全黑、光线几乎没有，谈物理黑暗时很接近stygian。stygian更有文学和阴森可怖的气氛；pitch-dark本身不要求这种神话联想或情绪色彩。"
+        },
+        {
+          "word": "gloomy",
+          "comparisonZh": "gloomy可指光线昏暗、令人压抑，但未必黑到几乎看不见；stygian通常把黑暗程度推得更重。gloomy还常形容人心情低落或前景悲观，不能把这些用法都机械换成stygian。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "the stygian blackness of the cave",
+          "translationZh": "洞穴里阴森的漆黑",
+          "explanationZh": "stygian修饰blackness，把洞穴的黑暗写得极深，并带令人不安的气氛。"
+        },
+        {
+          "textEn": "lost in the stygian reaches of the deep forest",
+          "translationZh": "迷失在森林深处漆黑的地带",
+          "explanationZh": "stygian修饰reaches，描述森林深处的幽暗区域，不是在说人物性格阴暗。"
+        }
+      ],
+      "coreImageZh": "男孩站在洞口向里看，深处漆黑，辨不清里面有什么。他打开手电，灯光只照到入口附近，远处仍黑得看不见。stygian 强调极其黑暗，不是普通的阴天或光线稍暗。"
+    },
+    {
+      "number": 7035,
+      "word": "subdue",
+      "ipa": "/səbˈduː/",
+      "pos": "vt.",
+      "coreMeaningZh": "使顺从，征服",
+      "coreEn": "to defeat and bring under control",
+      "mnemonics": [
+        {
+          "method": "SUB 压在下，DO 照着做：SUBDUE 使其服从",
+          "textZh": "借 subway（地铁）里的 sub-记“在下面”，再把 subdue 后半的 /duː/ 连到熟悉的 do（做）。原本抗拒的人被压住，低下头，开始照命令做：压在下、照着做，合起来记 subdue——制服，使顺从。这里的 do 是借音联想。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUM DUE 欠款逼低头，SUBDUE 把人压服",
+          "textZh": "SUM DUE 指到期应付的款额，/sʌm djuː/ 与 subdue /səbˈdjuː/ 整体近音。想象故事中的债主举着一张巨额到期账单，逼得原本抗拒的人低头听命。由 sum due 的整段声，记 subdue：压服对方，使其顺从。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物：制服、征服并控制住",
+          "explanationZh": "subdue直接接被制服的人、反抗力量或地区，常含凭力量压住反抗、使其听命的意思。它不只是比赛中赢了一分，也不一定表示对方心甘情愿地赞同。过去式subdued，-ing形式subduing。",
+          "collocations": [
+            {
+              "phrase": "subdue the rebels",
+              "meaningZh": "镇压并制服反叛者"
+            },
+            {
+              "phrase": "subdue an opponent",
+              "meaningZh": "制服对手"
+            }
+          ]
+        },
+        {
+          "senseZh": "也可把恐惧、冲动等压住",
+          "explanationZh": "从控制外部反抗延伸，subdue也可直接接fear、anger、an urge等，表示靠意志或其他力量让情绪、冲动受到控制。它着重压住强度或作用，不必保证这种感受永远消失。",
+          "collocations": [
+            {
+              "phrase": "subdue one's fears",
+              "meaningZh": "克制内心的恐惧"
+            },
+            {
+              "phrase": "subdue an urge",
+              "meaningZh": "压住一种冲动"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "conquer",
+          "comparisonZh": "conquer与subdue都能表示征服、克服。conquer突出取得支配或战胜对象，也可说登顶山峰、赢得市场；subdue尤其突出打败之后压住反抗、让对象受控制。征服领土时可重合，成功登顶一座山却不宜直接换成subdue。"
+        },
+        {
+          "word": "defeat",
+          "comparisonZh": "defeat通常只说明在战争、比赛或竞争中胜过对方；subdue更强调制服并压制其反抗。一场球赛赢了对手可以用defeat，不必暗示把对方置于控制之下；这种控制意味是subdue的重要区别。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Troops were called in to subdue the rebels.",
+          "translationZh": "军队被调来制服反叛者。",
+          "explanationZh": "subdue接the rebels，表示用武力镇压、使反抗力量受控制，而非只是劝说其同意。"
+        },
+        {
+          "textEn": "She struggled to subdue her fears.",
+          "translationZh": "她努力压住内心的恐惧。",
+          "explanationZh": "subdue接fears，把内在情绪看作需要控制的力量；struggled强调控制得并不轻松。"
+        }
+      ],
+      "coreImageZh": "扳手腕时，伙伴一开始用力抵抗，说自己不会轻易认输。男孩逐渐把他相握的手压低，最后压到软垫上；伙伴停止抵抗，承认认输，两人随即松手。这里的 subdue 指克服对方的抵抗、把对方压服，不只是一般地赢得一场比赛。"
+    }
+  ]
+}

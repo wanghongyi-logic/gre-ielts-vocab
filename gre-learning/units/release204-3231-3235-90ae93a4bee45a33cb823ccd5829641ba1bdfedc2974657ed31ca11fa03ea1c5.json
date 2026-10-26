@@ -1,0 +1,422 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6851,
+      "word": "rite",
+      "ipa": "/raɪt/",
+      "pos": "n.",
+      "coreMeaningZh": "仪式，典礼",
+      "coreEn": "a formal or customary ceremonial act, often with a prescribed order or religious significance",
+      "coreImageZh": "主持者宣布入会仪式开始，男孩按要求举起右手，郑重承诺遵守约定、帮助伙伴，宣誓结束后再放下手。rite 表示仪式或礼仪行为，重点是按照一定形式完成具有象征意义的言语和动作，这里是新成员正式加入社团的入会仪式。",
+      "mnemonics": [
+        {
+          "method": "RIGHT 步骤做对，RITE 仪式完成",
+          "textZh": "rite 与 right（正确的）同音。主持人提醒：肃立、宣誓、领取纪念章，每一步都要做对；按 right 的程序完成这场 rite，仪式。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "WRITE 写下誓言，RITE 郑重入会",
+          "textZh": "rite 与 write（写）同音。入会典礼上，每人先写下承诺，再当众宣读：write 不只是记笔记，而成为 rite，仪式的一部分。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "仪式、礼仪行为",
+          "explanationZh": "通常是可数名词，常用复数 rites，指具有规定形式或传统意义的仪式行为，尤其常见于宗教、入会、丧葬等场合。也可以是非宗教的仪式，但不是任何随手做的动作。",
+          "collocations": [
+            {
+              "phrase": "perform a rite",
+              "meaningZh": "举行仪式"
+            },
+            {
+              "phrase": "religious rites",
+              "meaningZh": "宗教仪式"
+            },
+            {
+              "phrase": "initiation rites",
+              "meaningZh": "入会仪式"
+            },
+            {
+              "phrase": "funeral rites",
+              "meaningZh": "丧葬礼仪"
+            }
+          ]
+        },
+        {
+          "senseZh": "带仪式意味的惯例或人生阶段",
+          "explanationZh": "rite of passage 指标志身份或人生阶段改变的仪式，也可比喻成长中某种标志性经历。用于惯例时，通常强调反复遵行、带象征意义，不是把所有日常习惯都说成 rite。",
+          "collocations": [
+            {
+              "phrase": "a rite of passage",
+              "meaningZh": "成长或身份转变的标志性仪式"
+            },
+            {
+              "phrase": "an annual rite",
+              "meaningZh": "一年一度的仪式性惯例"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ritual",
+          "comparisonZh": "在仪式或规定动作上很接近；ritual 也常指按固定方式反复进行的一整套行为，甚至日常习惯，rite 更常突出某项正式或传统的仪式行为。"
+        },
+        {
+          "word": "ceremony",
+          "comparisonZh": "都可指正式仪式；ceremony 常指一场完整活动，rite 可指其中具有特定意义、按规定进行的仪式行为，但两词在许多场合有重叠。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They performed a traditional rite to welcome new members.",
+          "translationZh": "他们举行了一项传统仪式，欢迎新成员加入。",
+          "explanationZh": "performed a rite 表示举行仪式；to welcome new members 交代仪式的目的。"
+        },
+        {
+          "textEn": "Graduation can be a rite of passage into adult life.",
+          "translationZh": "毕业可以成为迈入成年生活的一项标志性经历。",
+          "explanationZh": "rite of passage 突出从一个人生阶段进入另一个阶段，不是说毕业仅仅是一种普通习惯。"
+        }
+      ]
+    },
+    {
+      "number": 6852,
+      "word": "rive",
+      "ipa": "/raɪv/",
+      "pos": "vt.；vi.",
+      "coreMeaningZh": "撕开",
+      "coreEn": "to tear or split apart forcefully, or to become split; often used figuratively of deep divisions",
+      "coreImageZh": "男孩抓牢一张牛皮纸，用力向两边拉，纸张从上缘裂开，裂口逐渐延长，最后分成两块带毛边的纸片。rive 表示用力撕开、劈裂，画面表现的是把原本连成一体的东西强行分开。",
+      "mnemonics": [
+        {
+          "method": "RIVER 河流，RIVE 裂开山地",
+          "textZh": "rive 的完整字形就在 river（河流）里。想象河流不断冲刷山地，像把地面撕开一道深口子：river 把大地 rive，撕开。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "DRIVE 打入楔子，RIVE 劈开木头",
+          "textZh": "drive 的后面含着完整的 rive，声音也只多开头的 /d/。把楔子用力打入木头，木头沿纹理裂成两半：drive 楔子进去，把木头 rive，撕开。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "用力撕开、劈开；裂开",
+          "explanationZh": "及物用法直接接被撕裂、劈开的对象，也可不及物表示裂开，语气较书面。过去式通常为 rived，过去分词常见 riven，也可用 rived；注意 riven 的读音为 /ˈrɪvən/，与原形的长元音不同。",
+          "collocations": [
+            {
+              "phrase": "rive something apart",
+              "meaningZh": "把某物撕裂"
+            },
+            {
+              "phrase": "rive something in two",
+              "meaningZh": "把某物劈成两半"
+            },
+            {
+              "phrase": "wood riven by force",
+              "meaningZh": "被外力劈开的木头"
+            }
+          ]
+        },
+        {
+          "senseZh": "比喻：使严重分裂",
+          "explanationZh": "现代常见过去分词 riven，描述组织、群体或内心被冲突等分裂。be riven by/with... 引出造成深刻分裂的原因，不只是普通的意见不一致。",
+          "collocations": [
+            {
+              "phrase": "be riven by conflict",
+              "meaningZh": "因冲突而严重分裂"
+            },
+            {
+              "phrase": "a party riven by disputes",
+              "meaningZh": "因争端而分裂的政党"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "split",
+          "comparisonZh": "都可表示分开、劈开；split 更常用，范围也更广，不一定带强烈撕裂感，rive 较书面，常用在有力度的撕裂或比喻性分裂中。"
+        },
+        {
+          "word": "rend",
+          "comparisonZh": "都可表示强力撕裂，语气均较书面；rend 往往更突出猛烈撕扯，rive 也可突出劈裂，且 riven 很常用于群体被争端分裂的比喻。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The old tree was riven by lightning.",
+          "translationZh": "那棵老树被闪电劈开了。",
+          "explanationZh": "was riven 是被动结构，riven 为 rive 的过去分词，by lightning 说明劈裂的原因。"
+        },
+        {
+          "textEn": "The organization was riven by internal disputes.",
+          "translationZh": "这个组织因内部争端而严重分裂。",
+          "explanationZh": "riven 在这里是比喻用法，把争端造成的组织分裂描写为被撕向不同方向。"
+        }
+      ]
+    },
+    {
+      "number": 6853,
+      "word": "roil",
+      "ipa": "/rɔɪl/",
+      "pos": "vt.",
+      "coreMeaningZh": "激怒",
+      "coreEn": "to make someone angry or emotionally agitated",
+      "coreImageZh": "男孩原本满意地看着自己的树画，同伴却指着画嘲笑难看，还叫他扔掉。男孩的笑容消失，眉头越皱越紧，最后生气地要求对方停止嘲笑。roil 在这里表示激怒、使烦躁，是同伴的嘲讽搅乱了他的平静，把他惹得发火。",
+      "mnemonics": [
+        {
+          "method": "OIL 火上浇油，ROIL 怒火更旺",
+          "textZh": "roil 的完整后半是 oil（油），两者的主要声音 /ɔɪl/ 也一样。别人已经生气，你还继续讥讽，像火上浇油，把人彻底激怒：roil。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "BOIL 怒气沸腾，ROIL 激怒",
+          "textZh": "roil 与 boil（沸腾）只差第一个字母。对方恶意歪曲你的话，怒气像锅里的水一样沸腾起来：这句话把你 roil，激怒了。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "激怒、使情绪激动",
+          "explanationZh": "这一义项是及物用法，直接接被激怒的人。可描写言论、挑衅等引起怒气或强烈不安，语气较书面；常见的口语近义词是 rile。",
+          "collocations": [
+            {
+              "phrase": "roil somebody",
+              "meaningZh": "激怒某人"
+            },
+            {
+              "phrase": "be roiled by a remark",
+              "meaningZh": "被一句话激怒"
+            }
+          ]
+        },
+        {
+          "senseZh": "搅动、扰乱的相关用法",
+          "explanationZh": "roil 还可指搅起泥沙使液体浑浊，或使局面、市场等动荡。也可不及物描述水流、情绪翻腾；这些是相关义项，不能一律翻译成“激怒”。",
+          "collocations": [
+            {
+              "phrase": "roil the water",
+              "meaningZh": "搅浑水"
+            },
+            {
+              "phrase": "roil the markets",
+              "meaningZh": "使市场动荡"
+            },
+            {
+              "phrase": "emotions roil inside somebody",
+              "meaningZh": "情绪在某人心中翻腾"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rile",
+          "comparisonZh": "在惹怒人的义项上很接近，rile 本就是 roil 的变体。rile 更常用于烦躁、恼怒的日常表达；roil 还广泛用于液体翻腾、局面动荡等义项。"
+        },
+        {
+          "word": "irritate",
+          "comparisonZh": "在使人恼怒时接近；irritate 可表示较轻的烦躁，也可指刺激皮肤等生理作用，roil 的情绪用法常使人想到内心受到强烈搅动。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His mocking comments roiled the audience.",
+          "translationZh": "他那些嘲弄的话激怒了听众。",
+          "explanationZh": "roiled 直接接 the audience，听众是情绪受到影响的人；mocking comments 说明激怒他们的原因。"
+        },
+        {
+          "textEn": "Financial markets have been roiled by the banking crisis.",
+          "translationZh": "金融市场受到银行业危机的冲击而动荡不安。",
+          "explanationZh": "have been roiled 是被动结构，这里是扰乱、使动荡的用法，不是说市场像人一样生气。"
+        }
+      ]
+    },
+    {
+      "number": 6854,
+      "word": "rookie",
+      "ipa": "/ˈrʊki/",
+      "pos": "n.",
+      "coreMeaningZh": "新兵；新手；菜鸟",
+      "coreEn": "a person who is new to a job or activity, or an athlete in a first professional season",
+      "coreImageZh": "男孩第一天来参加足球训练，坦言自己还不会传球。教练耐心教他先站稳，他认真调整姿势，尝试把球传过去。rookie 指刚进入某个领域、经验还少的新手，画面中的男孩正在从最基本的技能学起。",
+      "mnemonics": [
+        {
+          "method": "COOKIE 店第一天，ROOKIE 还不会",
+          "textZh": "rookie 与 cookie（曲奇饼干）只差第一个字母。第一天到饼干店上班，连量杯和烤盘怎么用都要请教：做 cookie 的这个人还是 rookie，菜鸟。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "BOOK 在手，ROOKIE 刚上手",
+          "textZh": "rookie 的主要重读部分 rook 和 book（书）只换开头辅音；末尾还有 /i/。想象刚上岗的新手，一边翻操作手册 book，一边笨拙地照着做：还没熟练上手的 rookie。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "刚入行的新手、新兵",
+          "explanationZh": "可数名词，复数 rookies，语气较口语，常用于工作、活动、军警训练等场景。强调资历浅、经验不足，不等于这个人笨，也不表示他永远做不好。",
+          "collocations": [
+            {
+              "phrase": "a rookie",
+              "meaningZh": "一名新手"
+            },
+            {
+              "phrase": "a rookie mistake",
+              "meaningZh": "新手容易犯的错误"
+            },
+            {
+              "phrase": "a rookie police officer",
+              "meaningZh": "初入职的警员"
+            }
+          ]
+        },
+        {
+          "senseZh": "体育中的首年新人",
+          "explanationZh": "尤其在北美体育语境中，指进入某项职业运动或联盟的首年新人。他可能已经受过多年训练，不是从来没有参加过这项运动。",
+          "collocations": [
+            {
+              "phrase": "a rookie season",
+              "meaningZh": "新秀赛季"
+            },
+            {
+              "phrase": "a rookie player",
+              "meaningZh": "新秀球员"
+            },
+            {
+              "phrase": "Rookie of the Year",
+              "meaningZh": "年度最佳新秀"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "novice",
+          "comparisonZh": "都表示经验不足的新手；novice 较中性，可用于许多技能和活动，rookie 更口语，尤其常见于军警、工作和体育。"
+        },
+        {
+          "word": "newcomer",
+          "comparisonZh": "都可能指新来的人；newcomer 只强调刚到一个地方或群体，可能已经经验丰富，rookie 通常还强调在当前角色中的新手阶段。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "There are three rookies in the starting lineup.",
+          "translationZh": "首发阵容中有三名新秀。",
+          "explanationZh": "rookies 是可数名词复数，starting lineup 指首发阵容；这里的新秀是体育语境中的新人。"
+        },
+        {
+          "textEn": "As a rookie, she often asked experienced colleagues for advice.",
+          "translationZh": "刚入行时，她经常向有经验的同事请教。",
+          "explanationZh": "As a rookie 交代她处于新手阶段；向同事请教体现经验尚在积累，不是对能力的永久判断。"
+        }
+      ]
+    },
+    {
+      "number": 6855,
+      "word": "rote",
+      "ipa": "/roʊt/",
+      "pos": "n.",
+      "coreMeaningZh": "死记硬背",
+      "coreEn": "learning or remembering through repetition rather than through understanding",
+      "coreImageZh": "男孩对着书反复念“三三得九”，合上书后，却向老师承认自己只会背，还没有弄明白。他记住了口诀的声音，却没有理解其中的意思。rote 指依靠反复重复的机械记忆，画面呈现的正是会背诵却未理解的学习状态。",
+      "mnemonics": [
+        {
+          "method": "WROTE 写了十遍，ROTE 仍没懂",
+          "textZh": "rote 与 wrote（写了）同音。定义抄了十遍，能一字不差写出来，换个例子却不会解释：这是 rote，死记硬背。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "ROUTE 站名背熟，ROTE 换路不会",
+          "textZh": "rote 与 route（路线）整体字形只差一个 u。公交站名背得滚瓜烂熟，临时改道却完全不会换乘：只有 rote，死记硬背，没有真正理解路线。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "靠反复重复来记忆",
+          "explanationZh": "通常是不可数名词，by rote 表示靠反复背诵、机械记忆，而不是通过理解来掌握。它描述学习方式；能背出来本身并不能证明已经理解。",
+          "collocations": [
+            {
+              "phrase": "learn by rote",
+              "meaningZh": "死记硬背"
+            },
+            {
+              "phrase": "memorize something by rote",
+              "meaningZh": "靠机械重复记住某事"
+            },
+            {
+              "phrase": "recite by rote",
+              "meaningZh": "机械地背诵"
+            }
+          ]
+        },
+        {
+          "senseZh": "作定语：机械重复式的",
+          "explanationZh": "常见于 rote learning、rote memorization，也可泛指不加思考的重复或照做。不是所有复习、练习都叫 rote；关键是依赖固定重复，而非理解和灵活运用。",
+          "collocations": [
+            {
+              "phrase": "rote learning",
+              "meaningZh": "机械式学习"
+            },
+            {
+              "phrase": "rote memorization",
+              "meaningZh": "死记硬背"
+            },
+            {
+              "phrase": "rote repetition",
+              "meaningZh": "机械重复"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "memorization",
+          "comparisonZh": "都涉及记住内容；memorization 只说明记忆的过程，可以同时理解内容，rote 更突出靠重复记住而非靠理解。"
+        },
+        {
+          "word": "mechanical repetition",
+          "comparisonZh": "在机械地反复做同一件事上接近；这个短语还可描述动作或工作流程，不一定为了记忆，rote 常与学习、背诵联系在一起。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She learned the poem by rote but could not explain its meaning.",
+          "translationZh": "她靠反复背诵记住了那首诗，却解释不出它的意思。",
+          "explanationZh": "by rote 说明学习方式，后半句用不能解释含义来突出记住字句与理解内容的区别。"
+        },
+        {
+          "textEn": "The teacher asked for understanding, not just rote repetition.",
+          "translationZh": "老师要求理解，而不只是机械重复。",
+          "explanationZh": "rote 放在 repetition 前作定语，not just 表明只会重复还不足以满足学习要求。"
+        }
+      ]
+    }
+  ]
+}

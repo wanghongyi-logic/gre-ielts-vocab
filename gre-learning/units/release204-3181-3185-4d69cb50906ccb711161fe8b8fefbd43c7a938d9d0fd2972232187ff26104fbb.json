@@ -1,0 +1,340 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6801,
+      "word": "rend",
+      "ipa": "/rend/",
+      "pos": "vt.",
+      "coreMeaningZh": "撕裂，猛拉",
+      "coreEn": "to tear or pull something apart with great force",
+      "coreImageZh": "男孩抓牢废牛皮纸的两侧，用力向外拉扯，纸中间裂开，最后分成两块带毛边的纸片。rend 表示猛力撕裂、扯开，突出材料在拉扯下被分开的动作，而不是用剪刀整齐地剪开。",
+      "mnemonics": [
+        {
+          "method": "BEND",
+          "textZh": "BEND（弯曲）与 rend 只差第一个字母，读音也同以 /end/ 收尾。想象你拿着一张硬纸，先把它弯成弧形，纸还连在一起，这只是 bend；随后抓住两边猛力拉开，纸终于裂成两片。眼前的变化从弯而不断，推进到用力扯裂，后一个动作才是 rend。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RENT",
+          "textZh": "rend 的常用过去式、过去分词是 rent，恰好与 RENT（租用）同形。想象你租来一件演出披风，转身时布料被钉子勾住，你没有停下，却用力一扯，背后裂开了一个大口子。等你拿回出租店时，披风早已被扯坏，店主看到的是被撕裂之后留下的破口。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "撕裂，猛拉",
+          "explanationZh": "较文学化或旧式，强调用强力撕裂、扯开；日常表达更常用 tear 或 rip。常见过去式与过去分词为 rent，也可见 rended。引申可说尖叫划破空气，或冲突使群体分裂。",
+          "collocations": [
+            {
+              "phrase": "rend something in two",
+              "meaningZh": "把某物猛力撕成两半"
+            },
+            {
+              "phrase": "rend something to shreds",
+              "meaningZh": "把某物撕成碎片"
+            },
+            {
+              "phrase": "rend the air",
+              "meaningZh": "划破空气，响彻空中"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "tear",
+          "comparisonZh": "都可表示撕开；tear 使用最广，强调用拉力使材料分开，rend 通常更强烈、更有文学色彩，突出猛力扯裂。"
+        },
+        {
+          "word": "rip",
+          "comparisonZh": "都可指撕裂；rip 常突出一下子顺着接缝或某条线拉开，rend 更着重动作猛烈，未必沿着整齐的线。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They rent the cloth to shreds.",
+          "translationZh": "他们把布撕成了碎片。",
+          "explanationZh": "rent 在这里是 rend 的过去式；to shreds 表示撕裂后形成的结果。"
+        },
+        {
+          "textEn": "Loud screams rent the air.",
+          "translationZh": "响亮的尖叫声划破了空气。",
+          "explanationZh": "rent 是引申用法，把声音突然穿透周围空气写得像一次猛烈的撕裂。"
+        }
+      ]
+    },
+    {
+      "number": 6802,
+      "word": "renovate",
+      "ipa": "/ˈrenəveɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "修缮，翻新",
+      "coreEn": "to repair and improve an old building or object so that it is in good condition again",
+      "coreImageZh": "旧长凳的木板松动，表面的漆也斑驳脱落。工匠扶正、加固木板，再重新刷漆，让旧长凳恢复整洁、牢固的样子。renovate 表示修缮、翻新旧物或建筑，使原有的东西重新焕发面貌。",
+      "mnemonics": [
+        {
+          "method": "RE·NOV·ATE：重新变新",
+          "textZh": "re- 表示“重新”，nov 表示“新”，-ate 构成动词。旧屋修漏水、刷墙面、换破窗，再次像新的一样；把旧物修缮翻新，就是 renovate。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "人挪位，旧屋翻新",
+          "textZh": "屋里的人先挪位，给师傅腾出地方补墙、换窗、重新刷漆。借“人挪位”的三拍近音，记 renovate：把旧屋修缮翻新。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "修复，维修",
+          "explanationZh": "及物，常用于旧建筑、房间或家具的修缮、翻新，通常不只是解决一个小故障，还包括清理、整修或改善整体状况。可用 newly renovated 形容刚翻修好的建筑；不必把原物完全拆掉重建。",
+          "collocations": [
+            {
+              "phrase": "renovate an old house",
+              "meaningZh": "翻修一幢老房子"
+            },
+            {
+              "phrase": "renovate the kitchen",
+              "meaningZh": "翻新厨房"
+            },
+            {
+              "phrase": "a newly renovated building",
+              "meaningZh": "一栋刚翻修好的建筑"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "refurbish",
+          "comparisonZh": "在翻新建筑、房间或家具时接近；refurbish 常突出清理、重新装饰或更换陈设使其焕然一新，renovate 还容易包含对旧结构和损坏部分的整修。"
+        },
+        {
+          "word": "restore",
+          "comparisonZh": "都可使旧物恢复良好状态；restore 更突出恢复原貌或原有状态，renovate 可在整修时加入新的材料、设施或布局，不一定完全复原。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We renovated the kitchen three years ago.",
+          "translationZh": "三年前，我们翻新了厨房。",
+          "explanationZh": "renovated 直接接 the kitchen，表示对已有厨房进行整修，而不是新建一个厨房。"
+        },
+        {
+          "textEn": "They spent the summer renovating a farmhouse in Kent.",
+          "translationZh": "他们花了一个夏天翻修肯特郡的一幢农舍。",
+          "explanationZh": "spent the summer renovating 表示整个夏天投入在翻修上，renovating 接已有的农舍作为对象。"
+        }
+      ]
+    },
+    {
+      "number": 6803,
+      "word": "repartee",
+      "ipa": "/ˌrepɑːrˈtiː/",
+      "pos": "n.",
+      "coreMeaningZh": "打趣，善意的玩笑",
+      "coreEn": "quick, clever, and amusing replies exchanged in conversation",
+      "coreImageZh": "女孩打趣男孩的帽子太大，快把他藏起来了，男孩马上接道：“正好，太阳也找不到我了！”他顺着女孩的话，把帽子大巧妙地说成遮阳的好处。repartee 就是这样反应敏捷、带着幽默的机智应答。",
+      "mnemonics": [
+        {
+          "method": "RE＋PARTY：聚会里妙语回敬",
+          "textZh": "repartee 的整体声音像 re＋party。聚会上朋友笑你“今天终于不迟到了”，你立刻接“我怕错过你夸我”；这番轻松机智的打趣回敬，就是 repartee。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RE·PART：话锋回敬",
+          "textZh": "repartee 的词源曾指击剑中“回敬的一击”：re- 向回，part 联系“发出、分出”。把语言想成来回交锋的剑：朋友抛来一句玩笑，你马上机智地回敬一句，这就是 repartee。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "打趣，善意的玩笑",
+          "explanationZh": "通常不可数，重在对话中的机智应答或有来有往的诙谐交锋，不只是一个人讲了个笑话。常用 witty repartee 或 engage in repartee。可带一点锋芒，但在本目标义中侧重轻松、友善的打趣。",
+          "collocations": [
+            {
+              "phrase": "witty repartee",
+              "meaningZh": "机智的打趣应答"
+            },
+            {
+              "phrase": "engage in repartee",
+              "meaningZh": "互相机智地打趣"
+            },
+            {
+              "phrase": "a gift for repartee",
+              "meaningZh": "机敏应答的天赋"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "banter",
+          "comparisonZh": "都可指轻松互相打趣；banter 更突出友好的逗趣和调侃，repartee 更突出应答迅速、话接得巧，不要求每次都持续很久。"
+        },
+        {
+          "word": "retort",
+          "comparisonZh": "在迅速回话时接近；retort 可以是尖锐甚至生气的反驳，并不一定幽默，repartee 通常带机智和诙谐。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The two comedians engaged in witty repartee.",
+          "translationZh": "两位喜剧演员展开了机智诙谐的对话。",
+          "explanationZh": "engaged in 表示参与这种有来有往的交谈，witty 强调应答巧妙。"
+        },
+        {
+          "textEn": "She has a gift for repartee.",
+          "translationZh": "她很擅长机智应答。",
+          "explanationZh": "a gift for 表示在某方面有天赋，这里指接话敏捷、幽默。"
+        }
+      ]
+    },
+    {
+      "number": 6804,
+      "word": "repatriate",
+      "ipa": "/ˌriːˈpeɪtrieɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "遣返",
+      "coreEn": "to send or bring someone back to their own country",
+      "coreImageZh": "旅客和男孩滞留国外，工作人员为他们安排了回国航班，将登机凭证交到旅客手中，他们带着行李走向登机口。repatriate 表示把身在国外的人送回本国，重点是返回自己的国家。",
+      "mnemonics": [
+        {
+          "method": "RE·PATRI·ATE：送回祖国",
+          "textZh": "re- 表示“回去”，patri 联系“祖国”，-ate 构成动词。把身在外国的人送回他自己的国家，就是 repatriate，遣返。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "PATRIOT：把他送回故国",
+          "textZh": "patriot（爱国者）与 repatriate 的主要部分 patriate 整体很像。想象一位身在异国的爱国者，终于被安排登机、送回自己的祖国；送他回本国的动作，就是 repatriate。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "遣返",
+          "explanationZh": "及物，常用 repatriate somebody to their own country 或 be repatriated from a foreign country。核心是把人送回本国，可出于救助、战后安排或其他原因；这个词本身不保证自愿，也不必然表示强制驱逐。另可用于把资金或财产送回本国，但本条重点是人员返回。",
+          "collocations": [
+            {
+              "phrase": "repatriate citizens",
+              "meaningZh": "将本国公民接回国"
+            },
+            {
+              "phrase": "repatriate prisoners of war",
+              "meaningZh": "遣返战俘"
+            },
+            {
+              "phrase": "be repatriated to one’s home country",
+              "meaningZh": "被送回本国"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "return",
+          "comparisonZh": "在把人送回时接近；return somebody to a place 可以送回任意原来的地点，repatriate 特别指送回本国，目的地范围更明确。"
+        },
+        {
+          "word": "deport",
+          "comparisonZh": "在把外国人送离现居国、遣返回国时可能重合；deport 着重依法将非公民强制送出某国，repatriate 着重返回本国，也可用于主动救助或自愿回国，不能一概互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The refugees were forcibly repatriated.",
+          "translationZh": "这些难民被强制遣返。",
+          "explanationZh": "forcibly 明确指出这一次遣返带有强制性，不能仅凭 repatriated 就断定所有遣返都是强制的。"
+        },
+        {
+          "textEn": "Tourists who are injured or fall sick are repatriated.",
+          "translationZh": "受伤或生病的游客会被送回本国。",
+          "explanationZh": "who 引导定语从句说明哪些游客；这里是安排人员回国，体现 repatriate 也可用于帮助而非惩罚。"
+        }
+      ]
+    },
+    {
+      "number": 6805,
+      "word": "repeal",
+      "ipa": "/rɪˈpiːl/",
+      "pos": "vt.",
+      "coreMeaningZh": "撤销，废除（法律等）",
+      "coreEn": "to officially end the force of a law, rule, or similar authoritative decision",
+      "coreImageZh": "校长宣布校方废除旧的禁球规定，随后取下告示，告诉男孩可以在这片球场踢球了。男孩放下足球，准备开始踢球。repeal 表示正式废除法律或规定，使它不再生效；这里撤下告示，是校方已经取消规定的结果。",
+      "mnemonics": [
+        {
+          "method": "APPEAL后REPEAL：呼吁废法",
+          "textZh": "repeal 与 appeal（呼吁、上诉）有相近的 peal 主体，也有“召唤”的共同词源。人们 appeal，呼吁撤掉不合理法律；法律最终被正式 repeal，废除了。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RE＋PEEL：废法告示揭下来",
+          "textZh": "repeal 的声音像 re＋peel（剥下）。墙上贴着旧法令，正式废除后，工作人员把那张告示 peel off，揭下来；告示被揭下，提醒旧法已经 repeal。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "撤销，废除（法律等）",
+          "explanationZh": "及物，常接 law、act、ban、rule 等，表示由有权决定的人或机构正式取消其效力。不是仅仅不遵守，也不是只提出反对；可以部分废除，也可以全部废除。repeal 也可作名词表示废除这件事。",
+          "collocations": [
+            {
+              "phrase": "repeal a law",
+              "meaningZh": "废除一项法律"
+            },
+            {
+              "phrase": "repeal a ban",
+              "meaningZh": "撤销一项禁令"
+            },
+            {
+              "phrase": "repeal an outdated rule",
+              "meaningZh": "废除一项过时规定"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rescind",
+          "comparisonZh": "都可指正式撤销，使原决定失效；rescind 常用于命令、决定、协议等，repeal 尤其常用于法律或规则的废除。"
+        },
+        {
+          "word": "abrogate",
+          "comparisonZh": "在正式废除法律或协议时接近；abrogate 语体更正式，也可涉及条约、义务等，repeal 更常着眼于取消现行法律或规则的效力。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The committee does not have the power to repeal the ban.",
+          "translationZh": "该委员会无权撤销这项禁令。",
+          "explanationZh": "the power to repeal 强调是否具有正式取消禁令的权限，而不只是委员会愿不愿意。"
+        },
+        {
+          "textEn": "The council voted to repeal the outdated rule.",
+          "translationZh": "议会投票决定废除那项过时规定。",
+          "explanationZh": "voted to repeal 表示通过投票作出废除决定；outdated 说明被废除的是已经不适合当前情况的旧规则。"
+        }
+      ]
+    }
+  ]
+}

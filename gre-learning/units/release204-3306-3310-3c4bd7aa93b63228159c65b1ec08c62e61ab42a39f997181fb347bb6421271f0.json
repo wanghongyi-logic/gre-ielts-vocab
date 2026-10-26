@@ -1,0 +1,386 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6926,
+      "word": "shiftless",
+      "ipa": "/ˈʃɪftləs/",
+      "pos": "adj.",
+      "coreMeaningZh": "胸无大志的，懒惰的",
+      "coreEn": "lacking initiative or ambition and unwilling to make an effort",
+      "mnemonics": [
+        {
+          "method": "SHIFT + LESS，懒得动",
+          "textZh": "用 SHIFT（移动）和 -less（没有）联想 shiftless：活就在眼前，他却懒得挪一下，反复说“明天再做”，等别人收尾。记“不肯尽责、懒散的”。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SHIRTLESS → SHIFTLESS，光着膀子不干活",
+          "textZh": "SHIRTLESS（没穿上衣的）把 r 换成 f，就是 shiftless。大家整理房间，他却光着膀子躺着吃零食：“我懒得动，你们干吧。”",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "懒散、缺乏进取心",
+          "explanationZh": "这是带贬义的形容词，可批评一个人缺少主动性、不愿努力或承担责任。“胸无大志”在这里不是单纯没有宏大目标，而是对应该做的事也缺乏动力、拖着不做。",
+          "collocations": [
+            {
+              "phrase": "a shiftless attitude",
+              "meaningZh": "懒散不思进取的态度"
+            },
+            {
+              "phrase": "a shiftless idler",
+              "meaningZh": "懒散无为的人"
+            }
+          ]
+        },
+        {
+          "senseZh": "根据态度和行为判断",
+          "explanationZh": "常含无所作为、让事情落空的意味，不能只因为某人失业、收入低、休息或身体疲惫就这样评价。它也不等于“不上轮班”，这里不是按工作班次解释 shift。",
+          "collocations": [
+            {
+              "phrase": "lead a shiftless life",
+              "meaningZh": "过着懒散无为的生活"
+            },
+            {
+              "phrase": "shiftless behavior",
+              "meaningZh": "懒散不负责任的行为"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "lazy",
+          "comparisonZh": "在不愿付出努力的意义上接近。lazy 更通用，也可描述一时想偷懒；shiftless 往往还强调缺乏主动性或进取心、长期不愿把事情做好。"
+        },
+        {
+          "word": "indolent",
+          "comparisonZh": "在好逸恶劳、不愿行动的意义上接近。indolent 较正式，突出懒惰、喜好安逸；shiftless 更容易带出没有进取心、不愿自立或尽责的评价。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His shiftless attitude left the rest of the team to finish his work.",
+          "translationZh": "他懒散不尽责的态度，让团队其他人不得不替他完成工作。",
+          "explanationZh": "shiftless attitude 的判断有后面的行为结果支撑：他没有履行自己的工作责任。"
+        },
+        {
+          "textEn": "She rejected the claim that people without jobs were necessarily shiftless.",
+          "translationZh": "她不认同没有工作的人就一定懒散无为的说法。",
+          "explanationZh": "她否定的是“没有工作就必然懒惰”这一判断；necessarily 把两者说成必然关系，而 rejected 说明她不接受这个说法。"
+        }
+      ],
+      "coreImageZh": "积木散在地上，母亲提醒男孩已经拖了好几天，他却仍靠在椅子里，双手枕到脑后，满不在乎地说总有人会收拾。shiftless 形容懒散、不愿努力、缺乏主动性；这里不是暂时休息，而是明知该做的事一拖再拖，只盼别人替自己承担。"
+    },
+    {
+      "number": 6927,
+      "word": "shipshape",
+      "ipa": "/ˈʃɪpˌʃeɪp/",
+      "pos": "adj.",
+      "coreMeaningZh": "井然有序的",
+      "coreEn": "neat, tidy, and in good order",
+      "mnemonics": [
+        {
+          "method": "SHIP + SHAPE，船整理到好状态",
+          "textZh": "SHIP 是船，SHAPE 也能指状态。准备出航，绳索盘好、工具归位、甲板干净：船处于整齐妥当的状态，shipshape。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "CHIP SHOP，店里样样归位",
+          "textZh": "借 CHIP SHOP（炸鱼薯条店）的两拍近音记 shipshape。打烊后擦净柜台、码齐纸盒、餐具归位：整间店井井有条，shipshape。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "整洁、安排得有条理",
+          "explanationZh": "可形容房间、车辆、船只或物品处于整齐、收拾妥当的状态。它不仅是没有污渍，还常带一切安置得当、看起来利落的感觉；不局限于船上的场景。",
+          "collocations": [
+            {
+              "phrase": "keep the room shipshape",
+              "meaningZh": "让房间保持整洁有序"
+            },
+            {
+              "phrase": "get everything shipshape",
+              "meaningZh": "把一切收拾得井井有条"
+            }
+          ]
+        },
+        {
+          "senseZh": "常与保持、恢复状态搭配",
+          "explanationZh": "常放在 keep、get、leave 等词后说明整理后的状态，也能放在名词前。它不是“外形像船”，也不表示房间必须一件东西都没有。",
+          "collocations": [
+            {
+              "phrase": "leave the cabin shipshape",
+              "meaningZh": "把船舱整理好再离开"
+            },
+            {
+              "phrase": "a shipshape workshop",
+              "meaningZh": "整洁有序的工作间"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "tidy",
+          "comparisonZh": "在整洁、物品各归其位的意义上接近。tidy 是更通用的日常词；shipshape 往往带整理妥帖、保持良好状态的整体感觉。"
+        },
+        {
+          "word": "orderly",
+          "comparisonZh": "在有条理、安排整齐的意义上接近。orderly 也可描写队伍、程序或行为有秩序；shipshape 更常用于环境和物品收拾得整洁妥当，不能替换所有抽象的有序。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We spent the afternoon getting the workshop shipshape.",
+          "translationZh": "我们花了一下午把工作间收拾得井井有条。",
+          "explanationZh": "getting the workshop shipshape 是把工作间整理到某种状态；shipshape 在这里作宾语补足语。"
+        },
+        {
+          "textEn": "She keeps her small apartment shipshape.",
+          "translationZh": "她把自己的小公寓保持得整洁有序。",
+          "explanationZh": "keeps ... shipshape 表示持续维持整洁状态，不是临时把房间摆成某种形状。"
+        }
+      ],
+      "coreImageZh": "书本和铅笔原先散放在桌上，母亲提醒后，男孩把书叠齐，把铅笔并拢放好，再向母亲展示收拾后的桌面。shipshape 形容整洁、井然有序的状态；东西没有被藏起来，而是各归其位，桌面清爽又方便使用，正是这个词强调的整理妥当。"
+    },
+    {
+      "number": 6928,
+      "word": "shoal",
+      "ipa": "/ʃoʊl/",
+      "pos": "adj.",
+      "coreMeaningZh": "浅的",
+      "coreEn": "shallow, especially of water",
+      "mnemonics": [
+        {
+          "method": "SHALLOW → SHOAL，水浅就碰底",
+          "textZh": "把 shoal 与 SHALLOW（浅的）连起来记。测深杆才探下去一点就碰到底：这片水不深，可说 shallow water，也可说 shoal water。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SHORE 岸边，船底快碰沙底",
+          "textZh": "SHORE（岸）与 shoal 近音。船靠近岸边，水越来越浅，船底快碰到沙底：岸边这片浅水，shoal water。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "形容词：水浅、不深",
+          "explanationZh": "这个形容词用法较少见，常出现在水域、航行等描写中，通常放在 water、waters 等名词前。日常更常说 shallow；这里的 shoal 不是鱼群或沙洲的名词。",
+          "collocations": [
+            {
+              "phrase": "shoal water",
+              "meaningZh": "浅水"
+            },
+            {
+              "phrase": "shoal waters near the coast",
+              "meaningZh": "沿岸的浅水域"
+            }
+          ]
+        },
+        {
+          "senseZh": "用词性区分同形词",
+          "explanationZh": "a shoal 可指浅滩或沙洲，a shoal of fish 则表示一群鱼；这些都是名词结构。shoal waters 中 shoal 修饰 waters，描述的是水深很小，不能理解成“鱼群的水”。",
+          "collocations": [
+            {
+              "phrase": "the shoal parts of the river",
+              "meaningZh": "河流中水浅的部分"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "shallow",
+          "comparisonZh": "在水深很小的形容词义上直接接近，shallow water 与 shoal water 可以对应。shallow 更常用、范围更广，还能形容容器浅、知识或思考肤浅；不能把这些用法都机械换成 shoal。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The chart marked the shoal waters near the island.",
+          "translationZh": "航海图标出了岛屿附近的浅水域。",
+          "explanationZh": "shoal 是形容词，修饰 waters，说明水深很小；不是表示一群鱼的名词。"
+        },
+        {
+          "textEn": "The boat could not enter the shoal channel.",
+          "translationZh": "这条船无法驶入水浅的航道。",
+          "explanationZh": "shoal channel 指水深不足的航道，could not enter 表现出水深对这条船的限制。"
+        }
+      ],
+      "coreImageZh": "父亲站在海湾近岸的水中，男孩留在沙岸上，好奇地问这里有多深。父亲指着脚边回答，水很浅，只到脚踝。shoal 在这里是形容词，表示水浅；水线只没过父亲脚边的一小段，与水面上露出的整个身形形成对照，让人直观看出这片水域深度很小。"
+    },
+    {
+      "number": 6929,
+      "word": "shopworn",
+      "ipa": "/ˈʃɑːpˌwɔːrn/",
+      "pos": "adj.",
+      "coreMeaningZh": "陈旧的",
+      "coreEn": "worn or faded from display in a shop; stale from repeated use",
+      "mnemonics": [
+        {
+          "method": "SHOP + WORN，店里放磨旧了",
+          "textZh": "SHOP 是商店，WORN 是磨旧的。店里展示很久的样书，被顾客翻得封面褪色、书角卷起：还没卖掉，却已经 shopworn，陈旧了。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "小破碗，用旧了",
+          "textZh": "借“小破碗”的近音记 shopworn。碗用了许多年，花纹淡了、边沿磨了；看见这只旧碗，就想到 shopworn 的“陈旧、失去新鲜感”。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "形容实物：因久放、反复展示而显旧",
+          "explanationZh": "常用于商店里的样品、书籍、衣物等，突出褪色、弄脏或磨损的样子。它不只交代物品存在了多久；一件年代久远却保存完好的物品，不一定显得 shopworn。",
+          "collocations": [
+            {
+              "phrase": "shopworn merchandise",
+              "meaningZh": "因陈列和触碰而显旧的商品"
+            },
+            {
+              "phrase": "a shopworn display copy",
+              "meaningZh": "被翻旧的陈列样书"
+            }
+          ]
+        },
+        {
+          "senseZh": "比喻义：陈腐、因反复使用而乏味",
+          "explanationZh": "修饰笑话、论点、情节、借口等时，表示用得太多、太熟悉，已经缺乏新意，通常含负面评价。它评价的是表达或想法的陈旧乏味，不直接证明内容虚假。",
+          "collocations": [
+            {
+              "phrase": "a shopworn joke",
+              "meaningZh": "老掉牙的笑话"
+            },
+            {
+              "phrase": "a shopworn argument",
+              "meaningZh": "陈腐的论点"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hackneyed",
+          "comparisonZh": "在笑话、措辞或想法因反复使用而陈腐的用法中接近。hackneyed 着重缺乏新意；shopworn 还可描写实物因久放和触碰而磨旧，不能把那一义也直接换成 hackneyed。"
+        },
+        {
+          "word": "worn-out",
+          "comparisonZh": "在物品陈旧、磨损的用法中有交集。worn-out 常强调已经用坏、耗尽使用价值；shopworn 可以只是样品表面显旧，未必已经不能使用。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The shop offered a discount on its shopworn display copy.",
+          "translationZh": "商店给那本被翻旧的陈列样书打了折。",
+          "explanationZh": "shopworn 修饰 display copy，说明样书因陈列和反复翻看而显旧；这里不是说书的内容老套。"
+        },
+        {
+          "textEn": "The speech was full of shopworn phrases.",
+          "translationZh": "这篇演讲充满了陈词滥调。",
+          "explanationZh": "shopworn phrases 指被使用得太多、听来缺乏新意的表达，属于从实物磨旧引申出的比喻义。"
+        }
+      ],
+      "coreImageZh": "书店柜台上的蓝封面书已经显得陈旧，男孩纳闷它还没卖出去，怎么就旧了。店员解释，这本书陈列太久，又被反复翻看，早已磨旧了。shopworn 可以形容商品因在店中久放、展示和触碰而失去新鲜外观；这本尚未售出却已经显旧的样书，正是这种状态。"
+    },
+    {
+      "number": 6930,
+      "word": "shred",
+      "ipa": "/ʃred/",
+      "pos": "n.",
+      "coreMeaningZh": "一点点，极少量",
+      "coreEn": "a very small amount; a small scrap or narrow strip",
+      "mnemonics": [
+        {
+          "method": "THREAD，一丝线索",
+          "textZh": "THREAD（线）与 shred 的主要声音 /red/ 相同。侦探在外套上只找到一丝断线：那么少的一点，也可能成为 a shred of evidence，一丁点证据。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SHARED，分到一点肉丝",
+          "textZh": "SHARED 是 share（分享）的过去式，去掉 a 就是 shred。最后一小片鸡肉还要分给几个人，每人只得一点肉丝：a shred，极少的一点。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "名词：极少的一点",
+          "explanationZh": "常用 a shred of 加 evidence、truth、hope、dignity 等，强调数量少到极点。常见于否定语境，但并非只能用在否定句里；a shred of hope 也可以表示尚存的一线希望。",
+          "collocations": [
+            {
+              "phrase": "not a shred of evidence",
+              "meaningZh": "没有丝毫证据"
+            },
+            {
+              "phrase": "a shred of hope",
+              "meaningZh": "一线希望"
+            },
+            {
+              "phrase": "without a shred of doubt",
+              "meaningZh": "毫无疑问地"
+            }
+          ]
+        },
+        {
+          "senseZh": "具体碎片与同形动词",
+          "explanationZh": "shred 还可以指撕下、切下的细条或碎片，复数为 shreds；从细碎的小片很自然地引申到抽象的“一点点”。作动词时则表示撕碎、切成细条，过去式和过去分词通常为 shredded。",
+          "collocations": [
+            {
+              "phrase": "shreds of paper",
+              "meaningZh": "碎纸条"
+            },
+            {
+              "phrase": "tear something to shreds",
+              "meaningZh": "把某物撕成碎片"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "trace",
+          "comparisonZh": "在极少量的证据、希望或某种特征等用法中接近。a trace of 强调微量或残留痕迹，a shred of 更有只剩极小碎片的意味；两者的具体搭配不能一概互换。"
+        },
+        {
+          "word": "modicum",
+          "comparisonZh": "两者都可表示少量。modicum 较正式，常指某种能力、品质等虽少却仍有的一点；shred 更突出极其微少，尤其常见于 not a shred of 这样的强调否定中。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "There was not a shred of evidence to support the claim.",
+          "translationZh": "没有丝毫证据支持这一说法。",
+          "explanationZh": "not a shred of evidence 强调连极少的一点证据都没有；to support the claim 说明所需证据要支持什么。"
+        },
+        {
+          "textEn": "She still had a shred of hope that the missing letter would be found.",
+          "translationZh": "她仍抱着一线希望，盼着那封失踪的信能被找到。",
+          "explanationZh": "a shred of hope 用在肯定句里，表示希望很微弱，却尚未完全消失。"
+        }
+      ],
+      "coreImageZh": "看到玩具盒空了，男孩就断言是同桌拿走了玩具；母亲提醒他，连半点证据都没有，不能乱猜。男孩收起笃定的态度，开始迟疑。shred 在这里表示极少的一点，not a shred of evidence 就是连一丁点证据也没有；母亲的提醒，把这种强调“丝毫没有”的用法表现了出来。"
+    }
+  ]
+}

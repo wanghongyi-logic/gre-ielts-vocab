@@ -2,8 +2,8 @@
 // Rebuild the shell after changing this policy; the worker receives the same code.
 // These explicit ranges include only reviewed, uploaded hash-bound assets.
 // Retired videos remain local/import-only; existing images keep their hosting.
-export const HOSTED_MEDIA_ORDINAL_RANGES = [[3100,3300]];
-export const HOSTED_IMAGE_ORDINAL_RANGES = [[2600,3300]];
+export const HOSTED_MEDIA_ORDINAL_RANGES = [[3100,3500]];
+export const HOSTED_IMAGE_ORDINAL_RANGES = [[2600,3500]];
 const inHostedRanges = (entry,index,ranges) => {
  const ordinal=entry.displayOrdinal??index+1;
  return ranges.some(([first,last])=>ordinal>=first&&ordinal<=last);

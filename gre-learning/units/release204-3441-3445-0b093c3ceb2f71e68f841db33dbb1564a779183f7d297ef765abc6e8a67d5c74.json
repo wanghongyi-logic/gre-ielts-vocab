@@ -1,0 +1,393 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7061,
+      "word": "supplement",
+      "ipa": "n. /ˈsʌplɪmənt/; v. /ˈsʌplɪment/",
+      "pos": "n./v.",
+      "coreMeaningZh": "增补，补充",
+      "coreEn": "something added to make an existing thing more complete; add such an extra part",
+      "mnemonics": [
+        {
+          "method": "SOUP 少点酸，LEMON 补一片",
+          "textZh": "把完整 SOUP（汤）和 LEMON（柠檬）连起来，近音联想 supplement。想象一碗汤味道还不完整，再加一片柠檬补足酸味：汤仍是原来的汤，柠檬是额外的补充。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUPPLY MEANT：补给到了，缺的一天补上",
+          "textZh": "借熟词 SUPPLY（补给）和 MEANT（mean 的过去式，意为）近音联想 supplement。露营口粮只够两天，补给的到来意味着再添一天的份量，而不是把原有口粮丢掉；这额外的一份就是 supplement。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "名词：原有事物之外的补充物或补充内容",
+          "explanationZh": "supplement 作名词时读 /ˈsʌplɪmənt/，通常可数，指为了使原有事物更完整而增加的部分。a supplement to 后接所补充的对象，可指报告的补充内容、经费的补充来源等；原有部分并未被替换。",
+          "collocations": [
+            {
+              "phrase": "a supplement to the main report",
+              "meaningZh": "主报告的补充内容"
+            },
+            {
+              "phrase": "a useful supplement",
+              "meaningZh": "一项有用的补充"
+            }
+          ]
+        },
+        {
+          "senseZh": "动词：在原有基础上增加，使之更充足",
+          "explanationZh": "作动词时尾音读 /ment/，与名词的弱读 /mənt/ 区别开。supplement A with B 是用 B 来补充 A，A 是原有的东西，B 是额外加入的部分；也可直接说 supplement an income，表示增加收入来源。",
+          "collocations": [
+            {
+              "phrase": "supplement an income",
+              "meaningZh": "补充收入"
+            },
+            {
+              "phrase": "supplement the report with more data",
+              "meaningZh": "给报告增补更多数据"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "addition",
+          "comparisonZh": "名词都可指新增的部分。addition 范围较广，只说明加了东西；supplement 更突出这部分用来补足、完善已有事物，而不是取代它。"
+        },
+        {
+          "word": "augment",
+          "comparisonZh": "动词都可表示在原有基础上增加。augment 更突出数量、规模或价值的增长；supplement 更突出提供额外部分，使原有内容或资源更完整、更充足。此处只比较动词义。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "a supplement to the main report",
+          "translationZh": "主报告的补充内容",
+          "explanationZh": "supplement 是可数名词，to 后说明它补充的是主报告。"
+        },
+        {
+          "textEn": "He supplements his income by giving private lessons.",
+          "translationZh": "他通过私人授课来补充收入。",
+          "explanationZh": "supplements 后接 income 作宾语；私人授课带来原有收入之外的额外收入。"
+        }
+      ],
+      "coreImageZh": "男孩发现书里缺少路线图，老师把一张路线图放在书旁，补上原有材料没有提供的信息。supplement 可以指补充的材料，也可以表示增补；原来的书仍保留，并没有被替换。"
+    },
+    {
+      "number": 7062,
+      "word": "supposition",
+      "ipa": "/ˌsʌpəˈzɪʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "猜想，推测",
+      "coreEn": "an idea treated as possible or true without conclusive proof; the act of making such a guess",
+      "mnemonics": [
+        {
+          "method": "SO，POSITION 在哪？没看见，只能猜",
+          "textZh": "把完整 SO（那么）和 POSITION（位置）连读，近音联想 supposition。朋友问钥匙的位置，你没看见，只能猜它在沙发下面；这个未获证实的位置猜想，就是 supposition。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUPPOSE“我猜”，变成 SUPPOSITION“一个猜想”",
+          "textZh": "从熟悉的 I suppose（我猜、我想）连到同族名词 supposition（一个猜想）：把“我猜他已经出发”这句话写在纸上，它仍只是一个猜想，还不是已经核实的事实。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "可数：一个尚未证实的猜想",
+          "explanationZh": "supposition 是较正式的名词，指认为可能成立、却还没有确证的想法。它可以有线索支持，也可能后来被证实；不能把“尚未证实”理解成“一定错误”。supposition that 后可接猜想的具体内容。",
+          "collocations": [
+            {
+              "phrase": "a reasonable supposition",
+              "meaningZh": "一个合理的猜想"
+            },
+            {
+              "phrase": "on the supposition that",
+              "meaningZh": "在假定……的前提下"
+            }
+          ]
+        },
+        {
+          "senseZh": "不可数：推测这种判断方式，而非已知事实",
+          "explanationZh": "当 supposition 不指某一个具体猜想，而泛指凭未充分证实的信息作推断时，通常不可数。pure 或 mere 常强调只是推测；以推测为依据，不等于已有确凿证明。",
+          "collocations": [
+            {
+              "phrase": "pure supposition",
+              "meaningZh": "纯属推测"
+            },
+            {
+              "phrase": "be based on supposition",
+              "meaningZh": "以推测为依据"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "assumption",
+          "comparisonZh": "两者都可指未证明却暂时当真的想法，很多语境可以互换。assumption 常强调被接受为判断或行动前提的假定；supposition 较正式，常把这个想法的推测性摆在前景，但不必全无依据。"
+        },
+        {
+          "word": "conjecture",
+          "comparisonZh": "两者都可指缺少确证的推测。conjecture 更直接突出根据不充分知识作猜测；supposition 也可作为接下来讨论、调查或推理时暂用的假定。两词都不自动表示猜错。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It seems a reasonable supposition.",
+          "translationZh": "这似乎是一个合理的猜想。",
+          "explanationZh": "a 表示一个具体猜想；reasonable 评价它合情合理，并不等于已经证明。"
+        },
+        {
+          "textEn": "This is just idle supposition.",
+          "translationZh": "这只不过是毫无根据的臆测。",
+          "explanationZh": "这里的 supposition 不可数，idle 和 just 强调缺乏可靠根据，而不是陈述事实。"
+        }
+      ],
+      "coreImageZh": "盒子一直盖着，男孩只能猜里面可能是积木。母亲提醒他：盒子还没打开，这只是猜想。supposition 是尚未证实的假定或猜测，不是已经看见的事实。"
+    },
+    {
+      "number": 7063,
+      "word": "surcharge",
+      "ipa": "/ˈsɜːrtʃɑːrdʒ/",
+      "pos": "v./n.",
+      "coreMeaningZh": "过高收费",
+      "coreEn": "charge too much, or an excessive charge; distinguish this from an ordinary extra fee",
+      "mnemonics": [
+        {
+          "method": "SIR，CHARGE 太高了！这钱多收了",
+          "textZh": "把完整 SIR（先生）和 CHARGE（收费）连读，近音联想 surcharge。结账时明明只买了一杯十元的饮料，店员却要收一百元；你指着账单说：“SIR，CHARGE 太高了！”这个超过应收金额的收费，就抓住了 surcharge 的过高收费义。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SEARCH 查账，LARGE 大账单里多收了钱",
+          "textZh": "把完整 SEARCH（查找）和 LARGE（大的）连读，近音联想 surcharge。面对一张金额异常大的账单，你逐项查找，发现同一道菜被重复收费三次；查出的不是正常消费多，而是多收了钱。记住这张查出过高收费的大账单。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "过高收费：收取超过适当数额的钱",
+          "explanationZh": "surcharge 可作动词，表示向某人收取过高费用，后面可直接接付费者；名词也有过高收费这一义项。重点是金额超过应收或适当标准，不只是总价很高。谈明确的多收费时，overcharge 往往更直截了当。",
+          "collocations": [
+            {
+              "phrase": "surcharge a customer",
+              "meaningZh": "向顾客收取过高费用（须由语境明确多收）"
+            },
+            {
+              "phrase": "an excessive surcharge",
+              "meaningZh": "一笔过高的额外收费"
+            }
+          ]
+        },
+        {
+          "senseZh": "区分常见的中性义：在基本价格外另收附加费",
+          "explanationZh": "当代 surcharge 也常指基本价格之外的附加费，或收取这种费用。fuel surcharge 是燃油附加费；是否合理，要看具体金额和收费依据，不能一看到 surcharge 就断言商家乱收费。表示附加在什么之上，常接 on；说明收费原因，可接 for。",
+          "collocations": [
+            {
+              "phrase": "a fuel surcharge",
+              "meaningZh": "燃油附加费，本身不表示过高"
+            },
+            {
+              "phrase": "a surcharge for excess baggage",
+              "meaningZh": "超重行李附加费，本身不表示不合理"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "overcharge",
+          "comparisonZh": "在过高收费义上两者相近，overcharge 直接表明收得太多，也可作名词表示多收的金额。surcharge 另有中性的附加收费义；谈正常附加费时，不能换成 overcharge。"
+        },
+        {
+          "word": "gouge",
+          "comparisonZh": "在动词过高收费义上可接近。gouge 语气更强，常批评利用对方处境迫使其支付不公平高价；surcharge 的过高收费义不必含这层剥削色彩，而中性附加费义更不能随便换成 gouge。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "contends that with the present tax structure, the state's lower-income residents are being surcharged and the wealthiest residents are getting off too lightly",
+          "translationZh": "声称按照现行税制，该州低收入居民被征收了过高税费，而最富有的居民承担的却太少",
+          "explanationZh": "这里用动词的被动形式；与富人负担过轻的对比，明确指向收费或征收负担过高。"
+        },
+        {
+          "textEn": "There is a 2% surcharge on credit card users.",
+          "translationZh": "信用卡使用者需额外支付百分之二的附加费。",
+          "explanationZh": "这里是可数名词的一般附加费义；仅凭百分之二和 surcharge 这个词，还不能认定收费过高。"
+        }
+      ],
+      "coreImageZh": "摊上只有一个普通苹果，桌边放着两枚硬币。摊贩却开价八枚，男孩指出平常只要两枚，认为收费过高。这里用 surcharge 的过高收费义；一般的附加费并不一定是不合理收费。"
+    },
+    {
+      "number": 7064,
+      "word": "suspend",
+      "ipa": "/səˈspend/",
+      "pos": "vi.",
+      "coreMeaningZh": "暂停，中止",
+      "coreEn": "stop operating for a time, with the possibility of continuing later",
+      "mnemonics": [
+        {
+          "method": "SO，SPEND 先暂停，卡里钱不够",
+          "textZh": "用完整 SO（所以）和 SPEND（花钱）近音联想 suspend。购物进行到一半，发现卡里余额不够：所以，花钱这件事先停，等钱补足再继续。记住的是活动暂时中止，而不是永远结束。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUSPECT 怀疑有故障，机器运行先暂停",
+          "textZh": "把完整熟词 SUSPECT（怀疑）与 SUSPEND 近形近音联想：工人怀疑机器出了故障，运行先暂停，检查完再决定是否继续。从“怀疑有问题”连到“暂时停止运作”，记住 suspend 的暂停、中止。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不及物：活动或运作暂时中止",
+          "explanationZh": "suspend 有不及物用法，表示停止运作一段时间，后面不接直接宾语；重点是暂时中断，并不自动表示永久取消。不要因此把所有 suspend 句式都当成不及物。",
+          "collocations": [
+            {
+              "phrase": "suspend temporarily",
+              "meaningZh": "暂时停止运作（不及物结构）"
+            },
+            {
+              "phrase": "suspend for a period",
+              "meaningZh": "暂停一段时间（不及物结构）"
+            }
+          ]
+        },
+        {
+          "senseZh": "辨清更常见的及物用法与被动结构",
+          "explanationZh": "当 suspend 后直接接 operations、production 等对象时，表示使业务或生产暂停，是及物用法。be suspended 表示被暂停，同样来自及物结构；不能因为被动句后面没有宾语，就误判成不及物。下面两条原例用于辨清这一区别。",
+          "collocations": [
+            {
+              "phrase": "suspend operations",
+              "meaningZh": "暂停业务或运作（及物）"
+            },
+            {
+              "phrase": "be suspended",
+              "meaningZh": "被暂停（及物动词的被动式）"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "pause",
+          "comparisonZh": "比较不及物的暂停义，两者都指暂时停下。pause 更日常，常指说话或做事短暂停顿后继续；suspend 的不及物义偏向活动、运作中断一段时间，不必只是瞬间停顿。"
+        },
+        {
+          "word": "halt",
+          "comparisonZh": "比较不及物的停止义，两者可相近。halt 强调停下来，可突然发生，也不保证后来恢复；suspend 在这里强调暂时停止运作，通常留有恢复的可能。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The company was forced to suspend operations.",
+          "translationZh": "这家公司被迫暂停运营。",
+          "explanationZh": "这是及物用法对照：operations 是 suspend 的直接宾语，表示使运营暂停；不是不及物结构。"
+        },
+        {
+          "textEn": "Production has been suspended while safety checks are carried out.",
+          "translationZh": "在开展安全检查期间，生产已经暂停。",
+          "explanationZh": "has been suspended 是及物动词的被动式，表示生产被暂停；不是不及物用法。while 说明暂停期间正在进行安全检查。"
+        }
+      ],
+      "coreImageZh": "雨中，男孩原本把篮球举在胸前准备练习；老师示意暂停，他便把球放低，站着等待雨停后再继续。这里的 suspend 表示暂时停止，而不是永久取消，也不是把东西悬挂起来。"
+    },
+    {
+      "number": 7065,
+      "word": "suture",
+      "ipa": "/ˈsuːtʃər/",
+      "pos": "n./v.",
+      "coreMeaningZh": "缝合",
+      "coreEn": "the joining of wound edges with stitches; join or close them in this way",
+      "mnemonics": [
+        {
+          "method": "FUTURE 等愈合，现在先缝合",
+          "textZh": "把完整熟词 FUTURE（未来）和 SUTURE 近形近音连起来记。想象一张前后对照图：现在，医生用线把手术切口两边缝拢；FUTURE 未来，伤口逐渐愈合。现在这个用线缝合的动作叫 suture，不是把将来的自然愈合叫作 suture。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUIT YOUR：你的西装破了，把裂口缝合",
+          "textZh": "借完整 SUIT（西装）和 YOUR（你的）的连读，近音联想 suture。你的西装开裂了，用线把裂口两边缝到一起；再联到医生用缝线合拢手术切口的画面。抓住“用线把两边缝在一起”，就是 suture 的缝合。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "名词：缝合，也可指缝合线或针脚",
+          "explanationZh": "医学语境中，suture 可以指用线缝合组织的操作，也可以指用来缝合的线或形成的针脚。复数 sutures 通常指具体缝线、针脚，不只是泛泛的“连接”。它与伤口自然愈合不是同一件事。",
+          "collocations": [
+            {
+              "phrase": "surgical sutures",
+              "meaningZh": "外科缝合线或针脚"
+            },
+            {
+              "phrase": "the removal of sutures",
+              "meaningZh": "拆除缝合线，即拆线"
+            }
+          ]
+        },
+        {
+          "senseZh": "动词：用缝线合拢伤口或切口",
+          "explanationZh": "suture 作动词时通常及物，后接被缝合的伤口、切口或组织。它强调用缝线使两边合拢；仅仅消毒、包扎或等待愈合，不等于 suturing。过去式和过去分词都是 sutured。",
+          "collocations": [
+            {
+              "phrase": "suture a wound",
+              "meaningZh": "缝合伤口"
+            },
+            {
+              "phrase": "suture an incision",
+              "meaningZh": "缝合手术切口"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stitch",
+          "comparisonZh": "在医学缝合语境中，名词 stitch 可指一针，动词 stitch 可指把伤口缝拢，与 suture 接近。stitch 更日常，范围也包括衣物缝纫；suture 较专业，并可指缝合材料或整个缝合过程。"
+        },
+        {
+          "word": "sew up",
+          "comparisonZh": "在缝拢伤口的动词义上，sew up 是较普通的表达。它也可用于缝好衣物裂口；suture 在当代常用的医学语境中更明确指用缝线合拢身体组织，不能泛指任意修补方式。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Spider thread could be used by microsurgeons as sutures after operations.",
+          "translationZh": "蜘蛛丝可能被显微外科医生用作术后的缝合线。",
+          "explanationZh": "这里 sutures 是复数名词，指缝合用的线；could 表示可能性，并不是说所有缝合都使用蜘蛛丝。"
+        },
+        {
+          "textEn": "The surgeon sutured the incision.",
+          "translationZh": "外科医生缝合了切口。",
+          "explanationZh": "sutured 是及物动词的过去式，incision 是被缝合的切口。"
+        }
+      ],
+      "coreImageZh": "医护人员双手展示一块独立的缝合训练模型：三道短缝线横跨模拟切口，把两边连接在一起。她略微调整模型角度，让男孩看清已经缝合的结果。suture 可指缝合，也可表示进行缝合；画面展示的是教具，不是真实人体伤口。"
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6981,
+      "word": "spendthrift",
+      "ipa": "/ˈspendθrɪft/",
+      "pos": "n.; adj.",
+      "coreMeaningZh": "挥霍者，败家子；挥霍的，不节俭的",
+      "coreEn": "a person who wastes money; wasteful with money",
+      "mnemonics": [
+        {
+          "method": "SPEND + THRIFT，把家底花掉",
+          "textZh": "SPEND 是花费；THRIFT 在这个词里保留“积蓄、财富”的旧义。SPEND + THRIFT：把攒下的家底随意花掉，见什么买什么，就是 spendthrift，挥霍者。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SPEND，钱就 DRIFT 走",
+          "textZh": "借 SPEND（花钱）和 DRIFT（漂走）的声音记 spendthrift。他买了一堆用不上的东西，钱像叶子一样顺水漂走：越 spend，钱越 drift，挥霍无度。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "名词：挥霍钱财的人",
+          "explanationZh": "可数名词，复数 spendthrifts；批评的是花钱没有节制，不是收入低，也不是偶尔购买贵重物品。",
+          "collocations": [
+            {
+              "phrase": "a notorious spendthrift",
+              "meaningZh": "出了名的挥霍者"
+            },
+            {
+              "phrase": "a reckless spendthrift",
+              "meaningZh": "不计后果的败家子"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容词：挥霍的",
+          "explanationZh": "常放在名词前，修饰人、消费方式或习惯，带有不赞成的意味。",
+          "collocations": [
+            {
+              "phrase": "spendthrift habits",
+              "meaningZh": "挥霍的习惯"
+            },
+            {
+              "phrase": "spendthrift consumers",
+              "meaningZh": "花钱无度的消费者"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "wastrel",
+          "comparisonZh": "都可指败家子。spendthrift 直接突出乱花钱；wastrel 还可批评一个人虚度光阴、游手好闲。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "profligate",
+          "comparisonZh": "作形容词时都可表示挥霍的。spendthrift 主要指金钱；profligate 还可涉及资源浪费或放纵的生活方式。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "the spendthrift managed to blow all of his inheritance in a single year",
+          "translationZh": "那个败家子竟在一年内挥霍掉了全部遗产。",
+          "explanationZh": "spendthrift 作名词指人；blow 在这里指挥霍掉。"
+        },
+        {
+          "textEn": "His spendthrift ways will cost us all dearly.",
+          "translationZh": "他挥霍无度的作风会让我们所有人付出沉重代价。",
+          "explanationZh": "spendthrift 修饰 ways，指乱花钱的习惯。"
+        }
+      ],
+      "coreImageZh": "男孩本来已经有不少小车，却又冲动买回一大堆同类玩具，双手拿着的钱包已经空了。母亲问为什么还买这么多，他承认一时想买，把零花钱全花光了。spendthrift 可指挥霍者，也可形容挥霍的；这里的问题是不考虑需要和花费地乱买，并不是单纯买东西或手头没钱。"
+    },
+    {
+      "number": 6982,
+      "word": "spent",
+      "ipa": "/spent/",
+      "pos": "adj.",
+      "coreMeaningZh": "精疲力竭的；用废的，耗尽的",
+      "coreEn": "exhausted; used up",
+      "mnemonics": [
+        {
+          "method": "SPEND → SPENT，精力花光",
+          "textZh": "SPENT 是 SPEND（花费）的过去分词。钱花光，钱包空；精力花光，人也没劲了：spent，已耗尽、精疲力竭的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SPRINT → SPENT，冲刺后力气耗尽",
+          "textZh": "SPRINT 是冲刺，与 spent 整体形音相近。最后几十米全力冲过终点，人累得直不起身：sprint 到最后，已经 spent，体力耗尽。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "人：精疲力竭",
+          "explanationZh": "指体力或精神能量已经耗尽，程度强于一般的 tired；常用作表语。",
+          "collocations": [
+            {
+              "phrase": "feel completely spent",
+              "meaningZh": "感到精疲力竭"
+            },
+            {
+              "phrase": "physically and emotionally spent",
+              "meaningZh": "身心俱疲"
+            }
+          ]
+        },
+        {
+          "senseZh": "物或力量：用废、失效",
+          "explanationZh": "表示所需的能量、成分或效力已被消耗，不等于从未使用的废品。",
+          "collocations": [
+            {
+              "phrase": "spent fuel",
+              "meaningZh": "乏燃料，用过的燃料"
+            },
+            {
+              "phrase": "a spent force",
+              "meaningZh": "已失去影响力的人或事物"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "exhausted",
+          "comparisonZh": "形容人时，两者都可表示精疲力竭。spent 突出能量已经用尽；exhausted 更常见，也能形容供应被耗尽。"
+        },
+        {
+          "word": "used-up",
+          "comparisonZh": "形容资源时都强调已经用尽。used-up 意义直白；spent 还常用于用过的燃料、弹壳等专门搭配。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "he plopped down in his chair, completely spent, and then fell asleep",
+          "translationZh": "他扑通坐进椅子里，精疲力竭，随后就睡着了。",
+          "explanationZh": "completely spent 形容坐下时已经耗尽体力。"
+        },
+        {
+          "textEn": "Several spent cartridges have already been found.",
+          "translationZh": "已经发现了几个打过的弹壳。",
+          "explanationZh": "spent cartridges 指已经发射过的弹药留下的弹壳，不是全新的子弹。"
+        }
+      ],
+      "coreImageZh": "扫完落叶后，男孩坐在长凳上，肩膀低垂，双手无力地放在腿边。他告诉母亲自己一点劲都没了，母亲让他坐着歇会儿，最后他继续低头休息。spent 在这里指精疲力竭、体力已经耗尽，不只是觉得无聊或不愿劳动。旁边扫拢的落叶和放下的耙子说明他刚完成了劳动。"
+    },
+    {
+      "number": 6983,
+      "word": "slump",
+      "ipa": "/slʌmp/",
+      "pos": "n.; v.",
+      "coreMeaningZh": "暴跌，急剧下降；低迷",
+      "coreEn": "a sharp fall or a period of poor performance; to fall sharply",
+      "mnemonics": [
+        {
+          "method": "SLIDE + JUMP，价格猛地向下跳",
+          "textZh": "把 SLIDE（滑落）和 JUMP（跳）的两个动作合在一起，记 SLUMP。价格曲线像脚下一滑，猛地向下跳落一大截：SL—UMP，暴跌、急剧下降。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SLEEP → SLUMP，生意像睡着了",
+          "textZh": "把 SLUMP 与 SLEEP（睡觉）整体并排：都以 SL 开头、P 收尾。原本热闹的商场像睡着一样，顾客骤减，销量猛跌：slump，暴跌、低迷。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "动词：价格、销量等大幅下跌",
+          "explanationZh": "通常作不及物动词。slump by 接下降的幅度，slump to 接下降后达到的数值，不能混用。",
+          "collocations": [
+            {
+              "phrase": "sales slump",
+              "meaningZh": "销售额急剧下降"
+            },
+            {
+              "phrase": "slump by 20 percent",
+              "meaningZh": "下降百分之二十"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词：下降或低迷期",
+          "explanationZh": "a slump in 后接下滑的项目；in a slump 表示处于低迷状态，也可形容运动员或球队表现不佳。",
+          "collocations": [
+            {
+              "phrase": "a slump in demand",
+              "meaningZh": "需求骤降"
+            },
+            {
+              "phrase": "be in a slump",
+              "meaningZh": "处于低迷期"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "plunge",
+          "comparisonZh": "都可指价格或数量急剧下跌。plunge 更突出突然、幅度大；slump 也可指下降之后持续不振。"
+        },
+        {
+          "word": "decline",
+          "comparisonZh": "都能表达下降。decline 较中性，可缓慢、逐步发生；slump 通常突出明显下滑或低迷。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Real estate prices slumped during the recession.",
+          "translationZh": "经济衰退期间，房地产价格大幅下跌。",
+          "explanationZh": "slumped 是不及物动词，主语 prices 指下跌的价格。"
+        },
+        {
+          "textEn": "The economy's been in a slump since last year.",
+          "translationZh": "经济自去年以来一直处于低迷状态。",
+          "explanationZh": "in a slump 描写持续的低迷，而不只是一瞬间的下跌。"
+        }
+      ],
+      "coreImageZh": "菜摊上并排放着两个钱盘：左边堆满硬币，右边只剩寥寥几枚。摊主说明左边是昨天的收入、右边是今天的，男孩发现收入一下少了很多。slump 在这里指急剧下降；钱盘的强烈对比表现的是从原先较高的水平明显跌落，而不是一直收入少。"
+    },
+    {
+      "number": 6984,
+      "word": "spiny",
+      "ipa": "/ˈspaɪni/",
+      "pos": "adj.",
+      "coreMeaningZh": "棘手的，麻烦的；多刺的",
+      "coreEn": "difficult to deal with; covered with sharp points",
+      "mnemonics": [
+        {
+          "method": "SPINE + Y，多刺所以棘手",
+          "textZh": "SPINE 也指动植物的刺，去 e 加 y 就是 spiny。把难题想成满身尖刺的球，哪边下手都扎手：多刺，进而棘手、麻烦。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SHINY → SPINY，亮奖杯却扎手",
+          "textZh": "SHINY 是闪亮的，h 换成 p 就是 spiny。闪亮奖杯忽然长满尖刺，明明就在眼前，却怎么拿都扎手：spiny，棘手的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "抽象：问题棘手、难处理",
+          "explanationZh": "形容问题充满障碍或麻烦，处理起来需要小心；并不是说问题真的长了刺。",
+          "collocations": [
+            {
+              "phrase": "a spiny problem",
+              "meaningZh": "一个棘手的问题"
+            },
+            {
+              "phrase": "a spiny issue",
+              "meaningZh": "一个难处理的议题"
+            }
+          ]
+        },
+        {
+          "senseZh": "具体：动植物多刺",
+          "explanationZh": "表示表面长有尖刺或刺状突起，不等于表面粗糙或有毛。",
+          "collocations": [
+            {
+              "phrase": "spiny leaves",
+              "meaningZh": "多刺的叶子"
+            },
+            {
+              "phrase": "a spiny cactus",
+              "meaningZh": "一株多刺的仙人掌"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "thorny",
+          "comparisonZh": "两者都可指多刺，也都可比喻问题棘手。两者都让人想到不好下手的刺。"
+        },
+        {
+          "word": "problematic",
+          "comparisonZh": "在抽象义上都可指有问题、难处理。problematic 也能表示某做法存在隐患或值得质疑；spiny 更突出处理中的困难和障碍。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "this promises to be a spiny problem to negotiate",
+          "translationZh": "这看来会是个需要协商解决的棘手问题。",
+          "explanationZh": "spiny 修饰 problem，用的是“难处理”的比喻义。"
+        },
+        {
+          "textEn": "The spiny leaves may be light or dark green.",
+          "translationZh": "这些多刺的叶子可能是浅绿色，也可能是深绿色。",
+          "explanationZh": "这里的 spiny 是具体的“多刺”，与棘手问题共享不好碰的联想。"
+        }
+      ],
+      "coreImageZh": "风筝线在桌上缠成了一大团乱结，男孩和母亲低头观察，都觉得不好下手。男孩明白不能硬拉，得慢慢寻找线头，最后两人仍在琢磨这团线。spiny 在这里形容问题棘手、难处理：线并没有长刺，难处在于纠缠复杂，不能轻易解决。"
+    },
+    {
+      "number": 6985,
+      "word": "spleen",
+      "ipa": "/spliːn/",
+      "pos": "n.",
+      "coreMeaningZh": "怒气，怨恨",
+      "coreEn": "anger or bitter resentment",
+      "mnemonics": [
+        {
+          "method": "SPLEN-，想到发脾气",
+          "textZh": "SPLEN- 是“脾”的词根，对应整个 spleen 的本义。旧时欧洲把坏脾气与脾脏相联系；借中文“发脾气”，记 spleen 引申的怒气、怨恨。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SCREEN → SPLEEN，屏幕前憋一肚子气",
+          "textZh": "SCREEN 是屏幕，与 spleen 同押 /iːn/，后面的 EEN 也相同。屏幕上有人反复恶意辱骂，你盯着 screen，憋了一肚子 spleen：怒气、怨恨。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不可数名词：怒气、怨恨",
+          "explanationZh": "在这个较正式或文学性的义项中通常不可数；常指积在心里的愤怒或怨意，不是泛指一切情绪。",
+          "collocations": [
+            {
+              "phrase": "vent one’s spleen",
+              "meaningZh": "发泄怒气"
+            },
+            {
+              "phrase": "bitter spleen",
+              "meaningZh": "强烈的怨愤"
+            }
+          ]
+        },
+        {
+          "senseZh": "向某人或某事发泄怨愤",
+          "explanationZh": "vent one’s spleen on somebody 常指把怒气发在某人身上；against 可引出被指责或怨恨的对象。",
+          "collocations": [
+            {
+              "phrase": "vent one’s spleen on someone",
+              "meaningZh": "向某人泄愤"
+            },
+            {
+              "phrase": "vent one’s spleen against something",
+              "meaningZh": "发泄对某事的怨愤"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "anger",
+          "comparisonZh": "都可指愤怒。anger 最普通、范围广；spleen 较正式，常带积怨、苦涩或想把怒气发泄出来的意味。"
+        },
+        {
+          "word": "resentment",
+          "comparisonZh": "都可指怨愤。resentment 常由被不公平对待引起；spleen 更突出带怒气的怨意，并常见于发泄不满的表达。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "vented her spleen and felt much better for having done so",
+          "translationZh": "她发泄了怒气，之后感觉好多了。",
+          "explanationZh": "vented her spleen 指把积在心里的怒气发泄出来。"
+        },
+        {
+          "textEn": "His latest book vents his spleen against everything he hates about his country.",
+          "translationZh": "他的新书发泄了他对本国一切令他厌恶之事的怨愤。",
+          "explanationZh": "vents his spleen against 说明怨愤通过书中的批评表达出来。"
+        }
+      ],
+      "coreImageZh": "积木塔又被碰倒了，男孩抱着双臂、皱着眉，心里还憋着气。他把不满说给女孩听；女孩道歉并提出陪他重搭，男孩随后放下双臂，但怒气还没有完全消散。spleen 在这里不是指身体器官，而是怒气、怨恨，尤其是积在心里、又向别人发泄出来的不满。"
+    }
+  ]
+}

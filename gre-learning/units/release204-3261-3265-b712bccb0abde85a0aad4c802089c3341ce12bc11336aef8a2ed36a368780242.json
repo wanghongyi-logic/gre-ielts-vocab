@@ -1,0 +1,392 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6881,
+      "word": "satirize",
+      "ipa": "/ˈsætəraɪz/",
+      "pos": "vt.",
+      "coreMeaningZh": "讽刺",
+      "coreEn": "to use satire to expose and ridicule the faults of a person, institution, or practice",
+      "coreImageZh": "男孩在短剧中挺起胸、指着自己，夸张地扮演一个只让别人干活、却把功劳全揽到自己身上的人。同伴看懂了这种自鸣得意的表演，笑着说他把抢功劳的人演活了；表演结束，男孩又恢复自然的神情。satirize 表示用讽刺手法揭露、嘲弄某种毛病，这段小品借夸张的角色行为，批评了坐享其成又爱抢功的做法。",
+      "mnemonics": [
+        {
+          "method": "SATIR + IZE：把讽刺写出来",
+          "textZh": "satir- 是“讽刺文学”的词干，-ize 构成动词。漫画把贪官画成抱着钱袋喊清廉的人，就是 satirize：借夸张和反话讽刺。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SAT—RISE：坐站动作也能讽刺",
+          "textZh": "把 satirize 的整段声音联想成 SAT—RISE（坐着—站起），中间带一个轻音。讽刺短剧里，官员只会跟着领导坐下、站起，毫无自己的主见；演员用这套动作讽刺他们。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "用讽刺手法揭露问题",
+          "explanationZh": "及物动词，直接接被讽刺的人、制度、习俗或社会现象。常借夸张、反讽、幽默等让缺点显得可笑，既可以出现在小说、漫画、电影里，也可以用于表演或言语；不等于所有逗笑或直接辱骂。",
+          "collocations": [
+            {
+              "phrase": "satirize social conventions",
+              "meaningZh": "讽刺社会习俗"
+            },
+            {
+              "phrase": "satirize political hypocrisy",
+              "meaningZh": "讽刺政治上的虚伪"
+            }
+          ]
+        },
+        {
+          "senseZh": "相关词与拼写",
+          "explanationZh": "satire 是名词，表示讽刺手法或讽刺作品；satirical 是形容词。satirize 是美式及通用拼写，英式也常写 satirise。与 sarcasm 相比，satirize 更强调用讽刺手法揭露问题，不要求每次都对某人说一句反话。",
+          "collocations": [
+            {
+              "phrase": "a novel that satirizes bureaucracy",
+              "meaningZh": "一部讽刺官僚作风的小说"
+            },
+            {
+              "phrase": "satirize a public figure",
+              "meaningZh": "讽刺一位公众人物"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ridicule",
+          "comparisonZh": "在使某人或某事显得可笑时接近。ridicule 可是直接嘲笑；satirize 更突出运用讽刺手法揭露缺点或荒谬，并不只是让对方难堪。"
+        },
+        {
+          "word": "lampoon",
+          "comparisonZh": "在用讽刺性文字、漫画或表演嘲弄人物、行为时很接近。lampoon 常突出尖锐的嘲讽性描写，satirize 的对象和讽刺方式更广。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The cartoon satirizes officials who take credit for other people’s work.",
+          "translationZh": "这幅漫画讽刺那些把别人的功劳揽到自己身上的官员。",
+          "explanationZh": "satirizes 直接接 officials，后面的定语从句说明被揭露的具体问题是抢功，而不是官员身份本身。"
+        },
+        {
+          "textEn": "The novel satirizes a society obsessed with appearances.",
+          "translationZh": "这部小说讽刺了一个过分看重表面形象的社会。",
+          "explanationZh": "satirizes 的对象可以是整个社会风气；obsessed with appearances 点明作品所批评的倾向。"
+        }
+      ]
+    },
+    {
+      "number": 6882,
+      "word": "saturnine",
+      "ipa": "/ˈsætərnaɪn/",
+      "pos": "adj.",
+      "coreMeaningZh": "忧郁的，阴沉的",
+      "coreEn": "gloomy, grave, and forbidding in mood, expression, or disposition",
+      "coreImageZh": "阳光照着公园，邻居叔叔却低着目光坐在长椅上，眉头沉着，始终没有笑意。男孩友好地邀请他出去走走，他只冷淡地说没意思，随后又垂下目光沉默。saturnine 形容阴沉、沉郁而少欢的神态或气质，画面中的明亮天气与叔叔沉重的神情形成了对照。",
+      "mnemonics": [
+        {
+          "method": "SATURN 的阴沉面孔",
+          "textZh": "saturnine 的主体是 SATURN（土星），-ine 是形容词结尾。旧时占星传统把土星与阴沉忧郁联系起来；想象土星阴影下的一张闷闷不乐的脸。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SAT AT NINE：九点仍闷坐着",
+          "textZh": "把 saturnine 的声音联想成 SAT AT NINE（九点钟坐着）。舞会热闹，他却独自坐在角落，九点了仍一脸阴沉，谁也不想理。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "阴沉、沉郁的神态或性情",
+          "explanationZh": "偏正式、文学色彩，可描述人的性情、表情或外貌给人的印象。常有严肃、少欢、难以亲近的感觉，不只是安静，也不一定指某一次短暂伤心。单凭这个形容词不能作心理疾病判断。",
+          "collocations": [
+            {
+              "phrase": "a saturnine expression",
+              "meaningZh": "阴沉的表情"
+            },
+            {
+              "phrase": "a saturnine disposition",
+              "meaningZh": "沉郁的性情"
+            }
+          ]
+        },
+        {
+          "senseZh": "词源与实际使用范围",
+          "explanationZh": "与 Saturn 有历史词源联系，旧占星观念解释的是这个词怎样形成，并不是科学上认定某颗行星决定人的性格。现代描写中，重点仍是可观察到的阴沉神态或沉郁气质。",
+          "collocations": [
+            {
+              "phrase": "a saturnine man",
+              "meaningZh": "一个神情阴沉的男人"
+            },
+            {
+              "phrase": "a saturnine face",
+              "meaningZh": "一张阴沉的脸"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sullen",
+          "comparisonZh": "在闷闷不乐、少言而不愿亲近他人的状态上接近。sullen 更容易带生闷气、怨怼或不愿配合的意味；saturnine 可描述较一贯的沉郁气质或阴沉外貌，不必每次都含赌气。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "gloomy",
+          "comparisonZh": "在情绪低沉、神色阴郁时接近。gloomy 更常用，也能形容天气、房间或前景；saturnine 主要用于人的气质、表情，通常更凝重、难以亲近。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His saturnine expression made the cheerful greeting feel awkward.",
+          "translationZh": "他阴沉的表情让那声热情的问候显得有些尴尬。",
+          "explanationZh": "saturnine 修饰 expression，描述外在神态带给人的感受，并未据此断言他的具体想法或健康状况。"
+        },
+        {
+          "textEn": "The novel’s saturnine narrator rarely finds anything amusing.",
+          "translationZh": "这部小说里性情沉郁的叙述者很少觉得有什么事情好笑。",
+          "explanationZh": "saturnine 描写人物较稳定的气质，后面的 rarely 表现他不容易被逗乐，而不只是偶尔一次沉默。"
+        }
+      ]
+    },
+    {
+      "number": 6883,
+      "word": "saunter",
+      "ipa": "/ˈsɔːntər/",
+      "pos": "vi.",
+      "coreMeaningZh": "闲逛，漫步",
+      "coreEn": "to walk in a relaxed, unhurried manner",
+      "coreImageZh": "男孩和母亲沿着公园小路慢慢往前走。母亲说不用赶时间，男孩一边走，一边望向路旁的花草，还轻松地聊着沿途的景色。saunter 表示悠闲、不紧不慢地漫步，画面里的两人享受的是边走边看的过程，而不是急着赶到某个地方。",
+      "mnemonics": [
+        {
+          "method": "SAUNA 后，慢悠悠走",
+          "textZh": "saunter 的整体声音可以联想 SAUNA（桑拿）。蒸完桑拿，整个人松下来，不赶时间，沿着走廊慢悠悠地漫步。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "COUNTER 之间，悠闲逛逛",
+          "textZh": "saunter 与 COUNTER（柜台）的整体字形相近，但元音不同。逛商场没有购物清单，在柜台之间随意走走看看：saunter，闲逛、漫步。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不紧不慢地走",
+          "explanationZh": "不及物动词，强调放松、悠闲的步态，可用 along、through、into、over 等接路线或方向。走得慢只是外在表现，重要的是不赶时间；不能仅因受伤、疲倦走不快就称为 saunter。",
+          "collocations": [
+            {
+              "phrase": "saunter along the river",
+              "meaningZh": "沿河悠闲漫步"
+            },
+            {
+              "phrase": "saunter into the room",
+              "meaningZh": "不紧不慢地走进房间"
+            }
+          ]
+        },
+        {
+          "senseZh": "语气与名词用法",
+          "explanationZh": "通常中性或带轻松自在的感觉；如果大家都在等某人，他却悠闲地走来，语境也可能含不满。也可作可数名词，表示一次闲逛。过去式 sauntered，-ing 形式 sauntering。",
+          "collocations": [
+            {
+              "phrase": "saunter over to a friend",
+              "meaningZh": "悠闲地走到朋友身边"
+            },
+            {
+              "phrase": "go for a saunter",
+              "meaningZh": "出去闲逛一会儿"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stroll",
+          "comparisonZh": "在轻松、不赶时间地步行时很接近。stroll 常用于休闲散步；saunter 也突出从容甚至略显漫不经心的走路姿态。"
+        },
+        {
+          "word": "amble",
+          "comparisonZh": "都可以指缓慢、轻松地走。amble 更容易让人想到平稳、舒缓的步子；saunter 更突出闲适、不着急的感觉，具体语气仍看上下文。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We sauntered along the river after lunch.",
+          "translationZh": "午饭后，我们沿着河边悠闲地散步。",
+          "explanationZh": "sauntered 表示放松、不赶路地走；along the river 交代路线。"
+        },
+        {
+          "textEn": "He sauntered into the meeting ten minutes late.",
+          "translationZh": "他迟到了十分钟，却仍不紧不慢地走进会场。",
+          "explanationZh": "动作本身仍是从容地走，但迟到的语境让这种不着急显得不够顾及他人；并非 saunter 在所有句子里都含批评。"
+        }
+      ]
+    },
+    {
+      "number": 6884,
+      "word": "savant",
+      "ipa": "/səˈvɑːnt/；亦读 /ˈsævənt/",
+      "pos": "n.",
+      "coreMeaningZh": "博学之士，学者",
+      "coreEn": "a learned person, especially someone with deep knowledge of a particular field",
+      "coreImageZh": "男孩指着石头里的螺旋纹理，向学者请教它是什么。学者仔细查看标本，解释这是来自古代海洋的菊石化石；男孩听后，再看向标本时多了理解和兴趣。savant 指学识深厚的人，尤其是在某一领域具有专门知识的学者，画面通过她对化石的准确解释，表现了这种专业学识。",
+      "mnemonics": [
+        {
+          "method": "SERVANT 原来是博学者",
+          "textZh": "savant 与 SERVANT（仆人）的整体形音相近。大家只当他是端茶的仆人，谁知古书和天文问题他都答得上来：原来是位博学之士。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SAVE ANT：学者救蚂蚁",
+          "textZh": "把 savant 的整段读音联想成 SAVE ANT（救蚂蚁）。这位学者连蚂蚁的种类和习性都研究得清楚，知道怎样救活它；见识丰富，是位 savant。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "博学或某领域造诣很深的人",
+          "explanationZh": "可数名词，复数 savants，语气较正式。既可泛指博学之士，也常指在科学、文学等某一领域知识很深的人，不要求样样精通；判断依据是知识和能力，而非年龄、衣着或社会身份。",
+          "collocations": [
+            {
+              "phrase": "a savant in ancient history",
+              "meaningZh": "一位古代史领域的学者"
+            },
+            {
+              "phrase": "a scientific savant",
+              "meaningZh": "一位科学领域的博学之士"
+            }
+          ]
+        },
+        {
+          "senseZh": "与智慧、专业能力的区别",
+          "explanationZh": "这里侧重深厚学识。sage 更侧重明智的判断与人生见识，sapient 是形容词；savant 则是称呼人的名词。有时也用来形容某一方面有非凡才能的人，具体含义应结合语境，不能仅凭这个称呼推断一个人的其他能力。",
+          "collocations": [
+            {
+              "phrase": "a literary savant",
+              "meaningZh": "一位文学学者"
+            },
+            {
+              "phrase": "a gathering of savants",
+              "meaningZh": "一次学者聚会"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "scholar",
+          "comparisonZh": "在指有学问、从事或熟悉学术研究的人时接近。scholar 更常用，适用范围较广；savant 语气更正式，通常突出知识深厚或专长出众。"
+        },
+        {
+          "word": "polymath",
+          "comparisonZh": "在称赞一个人博学时有交集。polymath 特别强调跨多个学科的广博知识；savant 可以只在某一领域学识很深，不能把任何专门学者都叫作 polymath。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The museum invited a savant in ancient languages to examine the inscription.",
+          "translationZh": "博物馆邀请了一位精通古代语言的学者来研究这段铭文。",
+          "explanationZh": "a savant in 后接知识领域，说明此人的专长；这里的赞誉来自专业学识。"
+        },
+        {
+          "textEn": "She was respected as a savant whose knowledge of plants spanned many regions.",
+          "translationZh": "她熟悉多个地区的植物，因此作为一位博学之士受到尊重。",
+          "explanationZh": "as a savant 说明她受到尊重的身份；后面的定语从句给出学识广博的具体依据。"
+        }
+      ]
+    },
+    {
+      "number": 6885,
+      "word": "savory",
+      "ipa": "/ˈseɪvəri/",
+      "pos": "adj.",
+      "coreMeaningZh": "令人愉悦的",
+      "coreEn": "pleasing and satisfying to the mind; more commonly, pleasantly flavorful or salty rather than sweet",
+      "coreImageZh": "男孩跑完比赛，在终点旁扶着膝盖缓气。同伴祝贺他终于获胜，他站直身体，欣喜地握起拳头，体会着这场胜利带来的痛快和满足。savory 在这里取较少见的比喻义，形容令人愉悦、值得回味的体验；盼望已久的胜利，像好滋味一样让人慢慢品味。",
+      "mnemonics": [
+        {
+          "method": "FLAVOR 香，感觉愉悦",
+          "textZh": "savory 与 FLAVOR（风味）共享醒目的 avor 主干。好风味让人尝着舒服、心情愉快：savory 可以表示令人愉悦的，不只是在说咸味。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SAY “VERY good”：真让人愉快",
+          "textZh": "把 savory 的整段声音联想成 SAY VERY，接一句自然的评价“very good！”尝到好味道，忍不住说太好了，感到愉悦。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "比喻：让人愉悦、值得回味的",
+          "explanationZh": "这是较少见、带修辞色彩的用法，可以形容某种让人满足、觉得有滋味的成功或结果，如 a savory triumph。它不是 happy 的通用替代词：通常不说 a savory person 来表示一个人很快乐。",
+          "collocations": [
+            {
+              "phrase": "a savory triumph",
+              "meaningZh": "令人满足、回味无穷的胜利"
+            },
+            {
+              "phrase": "a particularly savory victory",
+              "meaningZh": "一场格外令人痛快的胜利"
+            }
+          ]
+        },
+        {
+          "senseZh": "更常见的食物义",
+          "explanationZh": "日常更常用来形容食物味道鲜美、有香味，或与甜味相对的咸香味。savory 不等于必须很咸，也不要求很辣；具体读成“美味的”还是“咸口的”，要看是否在与 sweet 对比。英式常写 savoury。",
+          "collocations": [
+            {
+              "phrase": "savory dishes",
+              "meaningZh": "咸香可口的菜肴"
+            },
+            {
+              "phrase": "sweet and savory snacks",
+              "meaningZh": "甜味和咸味小吃"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "gratifying",
+          "comparisonZh": "在评价成功、结果等令人满足时接近。gratifying 更常见，也可表达努力得到认可后的满足；savory 在这一比喻义中更有“值得品味、格外有滋味”的修辞色彩，不能在所有愉快语境里自由互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "After years of defeat, the championship was a savory triumph for the team.",
+          "translationZh": "在经历多年失败之后，这次夺冠对全队来说是一场格外令人痛快的胜利。",
+          "explanationZh": "savory triumph 把胜利写成一种值得回味的满足；years of defeat 说明为什么这次成功格外有滋味。"
+        },
+        {
+          "textEn": "The pie has a savory mushroom filling.",
+          "translationZh": "这个馅饼里是鲜香的蘑菇馅。",
+          "explanationZh": "这里用常见食物义，描述馅料的风味，不是说馅料具有人的快乐情绪。"
+        }
+      ]
+    }
+  ]
+}

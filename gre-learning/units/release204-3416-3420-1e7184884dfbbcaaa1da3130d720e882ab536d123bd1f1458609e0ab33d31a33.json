@@ -1,0 +1,393 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7036,
+      "word": "subject",
+      "ipa": "/ˈsʌbdʒekt/",
+      "pos": "adj.",
+      "coreMeaningZh": "取决于(其他因素的)，受制于",
+      "coreEn": "dependent on a condition, or under an authority or influence",
+      "mnemonics": [
+        {
+          "method": "SUBJECT 学科怎么选？受制于课表",
+          "textZh": "先借熟悉的 subject（学科）想起整个单词。你想选一门课，课表却与必修课冲突，只好放弃；能否选成，取决于课表这个条件。由“选 subject 受限制”，记形容词 subject to：取决于某条件、受其制约。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "OBJECT 物品过安检，SUBJECT 受规则约束",
+          "textZh": "把完整的 OBJECT（物品）与 SUBJECT 并排看，主体 BJECT 相同，整词读音也相近。行李中的每件物品都得按规定接受安检，不能因为主人说不查就免查。由 object 受检查规则约束，记 subject to：受制于、须接受。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "subject to + 条件：是否成立要看条件",
+          "explanationZh": "在be subject to approval、subject to availability这类结构中，subject是形容词，表示须经批准、须有名额等条件满足，事情才可成立。to是介词，后接条件名词；不是不定式标记。形容词重音在第一音节。",
+          "collocations": [
+            {
+              "phrase": "subject to approval",
+              "meaningZh": "须经批准，以批准为条件"
+            },
+            {
+              "phrase": "subject to availability",
+              "meaningZh": "须视是否有名额、存货等而定"
+            }
+          ]
+        },
+        {
+          "senseZh": "subject to + 约束或影响：须服从、可能遭受",
+          "explanationZh": "subject to rules表示受规则约束，subject to review表示须接受审查；subject to change则是可能更改，不是“主题变更”。后者强调容易受某种变化或影响，并不保证该变化必定发生。这里用形容词subject，不加过去分词词尾-ed。",
+          "collocations": [
+            {
+              "phrase": "subject to rules",
+              "meaningZh": "受规则约束"
+            },
+            {
+              "phrase": "subject to change",
+              "meaningZh": "可能更改，尚非最终确定"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "dependent on",
+          "comparisonZh": "谈事情受条件决定时，subject to与dependent on可接近，如取决于批准或资金。subject to常用于附条件的正式说明；dependent on还可说生活上依赖父母等长期依赖关系。两者介词不同，不能说dependent to或把所有依赖关系写成subject to。"
+        },
+        {
+          "word": "liable to",
+          "comparisonZh": "谈容易受某种不利影响时，subject to与liable to可接近。liable to还可接动词原形表示很可能做某事；subject to的to在这里是介词。谈“须经批准”时，subject to approval不能机械换成liable to approval，因为后者不是附条件的同义表达。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The offer is subject to certain conditions.",
+          "translationZh": "这项提议须满足某些条件才成立。",
+          "explanationZh": "is subject to说明这项提议带有先决条件，并非无条件有效；subject在此是形容词。"
+        },
+        {
+          "textEn": "all reports are subject to review",
+          "translationZh": "所有报告都须接受审查",
+          "explanationZh": "subject to review表示报告须接受审查这一要求，不表示这些报告的主题是审查。"
+        }
+      ],
+      "coreImageZh": "男孩准备去野餐，把手搭到篮柄上，却说能否出发还得看天气。外面开始下雨，他停下动作，松开篮柄，和母亲留在门廊里。野餐计划受天气制约，这就是 subject to the weather；这里的 subject 是形容词，指取决于某种条件、受其影响。"
+    },
+    {
+      "number": 7037,
+      "word": "subjugate",
+      "ipa": "/ˈsʌbdʒuɡeɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "征服，镇压",
+      "coreEn": "to conquer and bring under control or rule",
+      "mnemonics": [
+        {
+          "method": "SUB 在下久跪，SUBJUGATE 征服压服",
+          "textZh": "sub-可借 subway（地铁）的“在下”来记；后半 jugate /dʒuɡeɪt/ 借“久跪”的连读近音。想象胜者坐在高处，逼败者在下面久跪、听从命令。把前后的声音与压服的画面合起来：subjugate，征服、使人受控制。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUCH A GATE，败军低头过门：SUBJUGATE 征服",
+          "textZh": "想象胜者立了一道很低的门，逼败军一个个低头穿过，表示从此必须服从。“这样一道门”就是 SUCH A GATE，连读 /sʌtʃ ə ɡeɪt/，借整段近音记 subjugate /ˈsʌbdʒuɡeɪt/：征服并置于控制之下。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物：征服后置于统治或控制之下",
+          "explanationZh": "subjugate可直接接人民、地区或其他被压服的对象，强调让其失去自主、服从控制，不只是赢一场比赛。它较正式，常用于历史、政治或权力关系；被动形式be subjugated很常见。",
+          "collocations": [
+            {
+              "phrase": "subjugate a people",
+              "meaningZh": "征服并统治一个民族"
+            },
+            {
+              "phrase": "be subjugated by invaders",
+              "meaningZh": "被入侵者征服、控制"
+            }
+          ]
+        },
+        {
+          "senseZh": "subjugate A to B：把A压在B之下",
+          "explanationZh": "抽象用法可把个人愿望、利益等置于另一需要之下，使其失去优先地位。be subjugated to强调受压制或从属，不只是两个东西同时存在。-ate变过去式为-ated，-ing形式去末尾e：subjugating。",
+          "collocations": [
+            {
+              "phrase": "subjugate personal ambitions to family needs",
+              "meaningZh": "使个人抱负服从家庭需要"
+            },
+            {
+              "phrase": "subjugate individual interests to collective demands",
+              "meaningZh": "使个人利益从属于集体要求"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "vanquish",
+          "comparisonZh": "vanquish强调彻底打败，在战争或竞争中战胜对方；subjugate更突出把对方置于统治、压制之下。征服敌对群体时可重合，但赢得比赛并不等于取得对对手的支配。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "oppress",
+          "comparisonZh": "oppress突出残酷、不公平地压迫，尤其剥夺自由或权利；subjugate突出使对方服从、落入支配。被征服者可能进一步遭压迫，但oppress不一定包含先击败或征服这一过程。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The emperor's armies subjugated the surrounding lands.",
+          "translationZh": "皇帝的军队征服并控制了周边地区。",
+          "explanationZh": "subjugated直接接lands，不只表示军队经过，而是把这些地区置于统治之下。"
+        },
+        {
+          "textEn": "a subjugated people",
+          "translationZh": "一个被征服、受控制的民族",
+          "explanationZh": "people在这里作集合名词指一个民族；subjugated说明其处于被支配的状态。"
+        }
+      ],
+      "coreImageZh": "征服者占住城门，强硬地命令居民听从自己。原先挺直站着的居民先后低下头，不情愿地接受他的控制；征服者始终堵在通道前。subjugate 指征服并使人臣服，把对方置于自己的统治或控制之下，不是平等协商或礼貌致意。"
+    },
+    {
+      "number": 7038,
+      "word": "sublime",
+      "ipa": "/səˈblaɪm/",
+      "pos": "adj.",
+      "coreMeaningZh": "崇高的，庄严的",
+      "coreEn": "lofty or grand in thought, character, or beauty, inspiring admiration or awe",
+      "mnemonics": [
+        {
+          "method": "SOME CLIMB 登上峰顶，SUBLIME 群山令人敬畏",
+          "textZh": "有人向峰顶攀登：SOME CLIMB /sʌm klaɪm/。到顶时，连绵雪峰与云海使人肃然起敬。借这整句的近音记 sublime /səˈblaɪm/：不是仅仅“山很高”，而是景象庄严壮丽，令人震撼、敬畏。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SO BLAME ME：不推给无辜同伴，SUBLIME 崇高在担当",
+          "textZh": "队长不把责任推给无辜队员，宁愿自己承担严重后果，说：So blame me.（那么就责怪我吧。）SO BLAME 与 SUBLIME 整体形音相近，用这句勇于承担责任的话，记住 sublime：品格崇高、令人敬重。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "思想、品格或表达具有崇高价值",
+          "explanationZh": "sublime可形容思想、真理、精神或艺术表达在精神、智慧、道德上的高度，带有强烈赞赏和敬仰；不是仅指一个人表情严肃。它是较正式、带文学色彩的赞美词。",
+          "collocations": [
+            {
+              "phrase": "sublime truths",
+              "meaningZh": "崇高的真理"
+            },
+            {
+              "phrase": "sublime ideals",
+              "meaningZh": "崇高的理想"
+            }
+          ]
+        },
+        {
+          "senseZh": "景色或艺术庄严壮美，令人敬畏",
+          "explanationZh": "形容自然景观、音乐或美感时，sublime强调非凡的壮美使人震撼、肃然起敬。山高或建筑大本身还不够，重点是所引起的感受。日常也能泛指“绝妙”，但庄严壮美比单纯好看更能体现这里的核心义。",
+          "collocations": [
+            {
+              "phrase": "sublime beauty",
+              "meaningZh": "令人敬畏的壮美"
+            },
+            {
+              "phrase": "sublime music",
+              "meaningZh": "崇高动人的音乐"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "lofty",
+          "comparisonZh": "lofty形容理想、原则时也表示崇高，强调高标准或高尚；sublime还突出非凡价值或美引起的敬仰、震撼。lofty也能只说山或建筑高大，那时不一定具有sublime的崇高感。"
+        },
+        {
+          "word": "solemn",
+          "comparisonZh": "solemn强调严肃、郑重、不轻率，常说神情、誓言或仪式；与sublime在“庄严”的语境可重叠。sublime更强调崇高、壮美而令人敬畏；一张solemn的脸并不因此就是sublime。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He composed some of the most sublime symphonies in existence.",
+          "translationZh": "他创作了一些现存最为崇高动人的交响曲。",
+          "explanationZh": "sublime评价交响曲的非凡艺术境界及其带来的崇高感，不只是音量大或速度慢。"
+        },
+        {
+          "textEn": "the sublime beauty of the canyon",
+          "translationZh": "峡谷令人敬畏的壮美",
+          "explanationZh": "这里的beauty不只是悦目，而是宏伟自然景观带来的震撼与敬畏。"
+        }
+      ],
+      "coreImageZh": "男孩抬头发现层峦之上的巨大雪峰，举手指给母亲看，随后放下手，安静地仰望。山势雄伟、景象庄严，让人心生敬畏。这里的 sublime 指这种令人肃然的崇高壮丽，不只是一般的漂亮。"
+    },
+    {
+      "number": 7039,
+      "word": "subliminal",
+      "ipa": "/ˌsʌbˈlɪmɪnl/",
+      "pos": "adj.",
+      "coreMeaningZh": "下意识的，潜在意识的",
+      "coreEn": "below the threshold of conscious awareness or perception",
+      "mnemonics": [
+        {
+          "method": "SUB 在 LIMIT 察觉线下：SUBLIMINAL 阈下的",
+          "textZh": "先看熟悉的 limit（界限）：把“能有意识地察觉”画成一条 LIMIT 线。sub-像 subway（地铁）一样在下面；主体 limin-与 LIMIT 近形，末尾 -al 表示“……的”。整词 sub-limin-al：低于意识察觉的门槛，而非只是走神没留意。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "CRIMINAL 罪犯脸一闪，SUBLIMINAL 意识没察觉",
+          "textZh": "想象悬疑片把 criminal（罪犯）的脸极短地闪过银幕，短到观众没有意识到人脸出现。sub-提示“低于”；后半 liminal /ˈlɪmɪnl/ 借 criminal /ˈkrɪmɪnl/ 的大段近形近音来记。合起来 subliminal：刺激低于意识察觉门槛。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "刺激低于意识察觉的阈值",
+          "explanationZh": "subliminal的关键是“阈下”：刺激的强度或呈现条件不足以让人有意识地察觉。它不是泛指习惯动作、走神、忘记看，也不是已经看见却没理解。可形容视觉、听觉等刺激；是否产生其他作用还要另外验证。",
+          "collocations": [
+            {
+              "phrase": "subliminal stimuli",
+              "meaningZh": "低于意识察觉门槛的刺激"
+            },
+            {
+              "phrase": "subliminal perception",
+              "meaningZh": "阈下知觉"
+            }
+          ]
+        },
+        {
+          "senseZh": "subliminal message / advertising：未被意识察觉的信息",
+          "explanationZh": "这些搭配指被设计或声称在意识察觉门槛以下呈现的信息、广告。这个形容词本身不能证明宣传有效，更不表示能强迫人购买或服从。判断时要区分“信号是否被有意识地察觉”与“信号是否产生效果”。",
+          "collocations": [
+            {
+              "phrase": "a subliminal message",
+              "meaningZh": "低于意识察觉门槛的信息"
+            },
+            {
+              "phrase": "subliminal advertising",
+              "meaningZh": "阈下广告"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "subconscious",
+          "comparisonZh": "subconscious常形容自己没有意识到、却影响行为的欲望、恐惧或心理活动，范围较宽。subliminal更精确地强调意识察觉门槛以下；一个未被自己意识到的动机，并不等于存在一条阈下呈现的外来信息。"
+        },
+        {
+          "word": "imperceptible",
+          "comparisonZh": "imperceptible强调细微到无法看见或感觉到，可形容温差、变化、停顿等；与subliminal在“察觉不到”上相交。subliminal突出刺激或过程处于意识阈下，imperceptible不专指潜在意识，也不暗示某种心理作用。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "I am skeptical that subliminal advertising actually works.",
+          "translationZh": "我怀疑阈下广告是否真的有效。",
+          "explanationZh": "subliminal限定广告的呈现方式；skeptical和actually works说明其效果仍是被质疑的，不可把“阈下”读成“必然有效”。"
+        },
+        {
+          "textEn": "Rumours of a subliminal message in the song have never been proved.",
+          "translationZh": "关于这首歌含有阈下信息的传言从未得到证实。",
+          "explanationZh": "message是声称未被意识察觉的信息；句子明确说传言未证实，并没有确认歌曲确实含这种信息。"
+        }
+      ],
+      "coreImageZh": "老师按下按钮，说明声音非常微弱，询问男孩能否察觉。男孩清醒地专心听，仍回答自己没有察觉到声音。这个场景用来说明 subliminal：刺激低于有意识感知的阈限，不是因为人走神而没有留意；动画只是概念示意，不是实际的听觉测试。"
+    },
+    {
+      "number": 7040,
+      "word": "submerge",
+      "ipa": "/səbˈmɜːdʒ/",
+      "pos": "vt.",
+      "coreMeaningZh": "使淹没",
+      "coreEn": "to put under water or cover with water",
+      "mnemonics": [
+        {
+          "method": "SO MUCH 水太多，SUBMERGE 淹过整个小镇",
+          "textZh": "想象洪水不断上涨：SO MUCH water（水太多了），最后连小镇的屋顶都被盖住。借 SO MUCH /səʊ mʌtʃ/ 的整段近音记 submerge /səbˈmɜːdʒ/：使……淹没在水下。不是只把路面打湿，而是水面升到物体之上。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SOME MERGE 洪水汇合，SUBMERGE 淹没村庄",
+          "textZh": "MERGE 是“合并、汇合”。想象几股洪水汇到一起：Some merge.（有些汇合了。）水势涨过村庄屋顶。SOME MERGE 与 SUBMERGE 整体形音相近，后半 MERGE 完整相同；从洪水汇合后盖过村庄，记 submerge：使淹没。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "submerge something in water：使物体没入水下",
+          "explanationZh": "及物用法直接接被放入水中的对象，再用in说明液体；重点是物体位于水面之下，不等于溶解，也不意味着一定损坏或死亡。把食物、器材等浸入水里也可以用submerge。",
+          "collocations": [
+            {
+              "phrase": "submerge an object in water",
+              "meaningZh": "把一个物体浸到水下"
+            },
+            {
+              "phrase": "submerge the vegetables in ice water",
+              "meaningZh": "把蔬菜没入冰水中"
+            }
+          ]
+        },
+        {
+          "senseZh": "水淹没地方；be submerged by/in：被水覆盖",
+          "explanationZh": "洪水等可作主语，土地、房屋或城镇作宾语；被动句常用be submerged by floodwater。这里是水覆盖原来露出的物体或地点，不要求物体自己向下沉。submerged是过去式和过去分词；submerging去末尾e再加-ing。",
+          "collocations": [
+            {
+              "phrase": "floodwater submerges the fields",
+              "meaningZh": "洪水淹没田地"
+            },
+            {
+              "phrase": "be submerged by the flood",
+              "meaningZh": "被洪水淹没"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "immerse",
+          "comparisonZh": "immerse也表示使物体浸入液体，常侧重把东西放进去的动作，尤其是完全覆盖。submerge侧重进入水面下或被水盖住，也能说洪水淹没一座城；不是所有城镇受淹语境都自然改成immerse。"
+        },
+        {
+          "word": "flood",
+          "comparisonZh": "flood强调水涌进并覆盖地方，厨房进水也能说flood；submerge更聚焦对象处在水面以下。flood a room不必意味着水已高过整个房间，而submerge a car通常使人想到车被水盖住。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "After boiling the broccoli, submerge it in ice water to stop the cooking process.",
+          "translationZh": "西兰花煮过后，把它浸入冰水中，让它停止继续变熟。",
+          "explanationZh": "submerge it in ice water是明确的及物结构：it指西兰花，in引出使它没入的液体。"
+        },
+        {
+          "textEn": "The fields had been submerged by floodwater.",
+          "translationZh": "田地已被洪水淹没。",
+          "explanationZh": "被动句的fields是受淹对象，by floodwater交代造成淹没的水；不是田地自己下沉。"
+        }
+      ],
+      "coreImageZh": "男孩把同一块石头从水面上方慢慢放下：先触到水面，再没入一半，最后整块被水覆盖。他松手抽出手，石头留在盆底，顶端仍在水面以下。这里的 submerge 是及物动词，指使某物完全没入水中，不只是把表面弄湿。"
+    }
+  ]
+}

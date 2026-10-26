@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6896,
+      "word": "scowl",
+      "ipa": "/skaʊl/",
+      "pos": "vi.",
+      "coreMeaningZh": "皱眉（表现出不高兴）",
+      "coreEn": "to contract the brows and look angry or displeased",
+      "coreImageZh": "男孩穿着带泥的鞋回到家，轻松地向母亲打招呼。母亲看到地板上的泥脚印，皱紧眉头，不悦地看着他，并示意他先别继续往里走；男孩低头后才意识到自己弄脏了地面。scowl 表示皱眉显出恼怒或不满，母亲收拢的眉头和严肃的目光，把这种不高兴直接写在了脸上。",
+      "mnemonics": [
+        {
+          "method": "挨了 SCOLD，皱眉不高兴",
+          "textZh": "scowl 与 SCOLD（责骂）整体形近。孩子挨了责骂，不说话，眉头却越拧越紧；scowl 就是这样不高兴地皱眉。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SCHOOL 快开学了，皱起眉头",
+          "textZh": "把 scowl 的整词声音联想成 SCHOOL（学校）。想到假期结束又要返校，孩子眉头一皱，满脸不高兴：scowl，不悦地皱眉。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "皱着眉，显出恼怒或不满",
+          "explanationZh": "常用 scowl at somebody/something，表示朝某人或某物投去不高兴的神情。它主要描写脸部表情，尤其是皱眉，不要求出声责骂；单纯专注思考时皱眉，通常用更宽泛的 frown。",
+          "collocations": [
+            {
+              "phrase": "scowl at someone",
+              "meaningZh": "皱眉瞪着某人"
+            },
+            {
+              "phrase": "scowl angrily",
+              "meaningZh": "愤怒地皱眉"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词与动作形式",
+          "explanationZh": "还可以作名词，表示不悦的皱眉表情，如 a scowl。动词过去式 scowled，进行形式 scowling；说“朝某人皱眉”用 at 接对象，不直接说 scowl somebody。",
+          "collocations": [
+            {
+              "phrase": "give someone a scowl",
+              "meaningZh": "不悦地皱眉看某人"
+            },
+            {
+              "phrase": "a deep scowl",
+              "meaningZh": "紧紧皱起的不悦眉头"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "frown",
+          "comparisonZh": "都可以指皱眉。frown 范围更广，可能因为困惑、专注、担忧或不赞成；scowl 更明确地带着生气、阴沉或不高兴的神情。"
+        },
+        {
+          "word": "glower",
+          "comparisonZh": "在愤怒或不满地看人时接近。glower 更突出阴沉、敌意的目光；scowl 尤其突出眉头收紧、脸上露出的不悦，两种表情可以同时出现。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He scowled at the person who had taken his seat.",
+          "translationZh": "他不悦地皱眉瞪着占了他座位的人。",
+          "explanationZh": "scowled at 后接人，表情传达不满；句子并没有说他开口责骂。"
+        },
+        {
+          "textEn": "Her smile disappeared and was replaced by a scowl.",
+          "translationZh": "她的笑容消失了，脸上转而露出不悦的皱眉表情。",
+          "explanationZh": "a scowl 是名词，和前面的 smile 对照，写出表情从高兴转为不悦。"
+        }
+      ]
+    },
+    {
+      "number": 6897,
+      "word": "scrappy",
+      "ipa": "/ˈskræpi/",
+      "pos": "adj.",
+      "coreMeaningZh": "好斗的，好吵架的",
+      "coreEn": "ready to argue or fight, or showing a determined fighting spirit",
+      "coreImageZh": "男孩礼貌地问同伴能否留一点座位，对方却皱起眉头，站起来叉着腰，反问他是不是想吵架。男孩抬起手表示不愿争执，略向旁边退开。scrappy 在这里取好斗、好吵架的意思，同伴把一个可以好好商量的小请求，变成了挑起争吵的机会。",
+      "mnemonics": [
+        {
+          "method": "SCRATCH 开打：这小猫真好斗",
+          "textZh": "scrappy 的主干 scrap- 与 SCRATCH（抓挠）形音相近，再带形容词尾 -y。小猫刚被碰一下就亮爪准备抓挠开打：scrappy，好斗、爱吵架。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "CRAB 蟹钳一张，随时打架",
+          "textZh": "把 scrappy 的主要声音联想成 CRAB（螃蟹）再带 -y；漫画螃蟹对谁都挥钳子，一点小事就要打架，十分好斗。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "好争吵、好斗的",
+          "explanationZh": "可形容人、动物或争论方式，强调容易进入争辩、对抗状态。它不只等于生气，也不要求已经发生肢体打斗；在这里说的是愿意争、容易斗的脾气或表现。",
+          "collocations": [
+            {
+              "phrase": "a scrappy kid",
+              "meaningZh": "一个好斗的孩子"
+            },
+            {
+              "phrase": "a scrappy opponent",
+              "meaningZh": "一个好争斗的对手"
+            }
+          ]
+        },
+        {
+          "senseZh": "也可褒义：有拼劲、不轻易认输",
+          "explanationZh": "尤其在美式表达中，scrappy 还可赞赏资源或实力不占优势却顽强拼搏的人、队伍，未必是在批评爱吵架。另有“零碎的、拼凑的、不整齐的”意思，须看上下文，不能把 a scrappy team 一律解释成互相吵架的队伍。",
+          "collocations": [
+            {
+              "phrase": "a scrappy team",
+              "meaningZh": "一支顽强拼搏的队伍"
+            },
+            {
+              "phrase": "a scrappy underdog",
+              "meaningZh": "顽强拼搏、处于劣势的竞争者"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "quarrelsome",
+          "comparisonZh": "在容易争吵、爱与人争辩的意思上接近。quarrelsome 通常是负面评价；scrappy 还可指积极、有韧性的拼搏精神，那个用法不能换成 quarrelsome。"
+        },
+        {
+          "word": "pugnacious",
+          "comparisonZh": "在好斗、急于与人对抗时接近。pugnacious 较正式，往往更鲜明地带出挑衅和争斗倾向；scrappy 可较口语，也可能是在称赞不服输。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His scrappy manner turned a minor disagreement into a loud argument.",
+          "translationZh": "他动不动就争吵的态度，把一点小分歧变成了大声争执。",
+          "explanationZh": "scrappy manner 在这里是负面描述，后面的 argument 说明不是单纯积极努力，而是爱争吵。"
+        },
+        {
+          "textEn": "The scrappy team kept fighting for every point despite being far behind.",
+          "translationZh": "那支顽强的队伍虽然大比分落后，仍为每一分努力拼搏。",
+          "explanationZh": "这里的 fighting for every point 是比赛中的努力争取，scrappy 表达赞赏，并不表示队员在打架。"
+        }
+      ]
+    },
+    {
+      "number": 6898,
+      "word": "scrap",
+      "ipa": "/skræp/",
+      "pos": "vt.",
+      "coreMeaningZh": "废弃；放弃（计划等）",
+      "coreEn": "to discard something as no longer useful, or abandon a plan or method",
+      "coreImageZh": "母亲指出旧纸盒的底已经破了，不能再用。男孩于是把盒子从桌上拿起，放进旁边的废纸筐；最后桌面清空，坏盒留在筐里。scrap 表示把不再合用的东西废弃、弃用，画面中的纸盒不是暂时挪到别处收纳，而是因为失去了用途而被舍弃。",
+      "mnemonics": [
+        {
+          "method": "SCREW UP 搞砸了，计划作废",
+          "textZh": "把 scrap 的主要声音联想成 SCREW UP（搞砸）。整个计划被搞砸，已经无法继续，干脆放弃作废：scrap，废弃、放弃。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SCRATCH 掉整份计划",
+          "textZh": "scrap 与 SCRATCH（划掉）的主体 scra- 相同。预算根本行不通，就把整份计划划掉、放弃，不是只改一个小错误。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "把不再有用的东西弃用、废弃",
+          "explanationZh": "常用于旧设备、车辆、材料等，可能直接丢弃，也可能拆解后回收其中的材料。scrap 不表示所有零件都必须毫无价值，而是原来那件东西不再值得以原样保留或使用。",
+          "collocations": [
+            {
+              "phrase": "scrap an old car",
+              "meaningZh": "报废一辆旧车"
+            },
+            {
+              "phrase": "scrap obsolete equipment",
+              "meaningZh": "废弃过时的设备"
+            }
+          ]
+        },
+        {
+          "senseZh": "放弃计划、方法或制度",
+          "explanationZh": "还可直接接 plan、proposal、method 等，表示不再采用或实施。与 scotch a plan 有交集，scrap 更容易突出决定弃用某个方案；不只是推迟。过去式 scrapped，进行形式 scrapping，p 要双写；名词 scrap 另可指碎片、废料。",
+          "collocations": [
+            {
+              "phrase": "scrap a plan",
+              "meaningZh": "放弃一个计划"
+            },
+            {
+              "phrase": "scrap an outdated method",
+              "meaningZh": "弃用一种过时的方法"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "discard",
+          "comparisonZh": "在丢弃、弃用不再需要的东西时接近。discard 范围更广，不一定把物品视为废料；scrap 常涉及报废旧物，或因不再合用而放弃方案。"
+        },
+        {
+          "word": "abandon",
+          "comparisonZh": "在决定不再继续一个计划或方法时接近。abandon 还能指离开地点或遗弃人等；scrap 更集中于弃用物品、方案等，不能把这些意思一概互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The company scrapped the old machines and replaced them with safer equipment.",
+          "translationZh": "公司报废了那些旧机器，换上了更安全的设备。",
+          "explanationZh": "scrapped 接机器，表示不再按原用途保留使用，不只是暂时关机或把机器移走。"
+        },
+        {
+          "textEn": "We scrapped the original plan after discovering how much it would cost.",
+          "translationZh": "得知所需费用后，我们放弃了原来的计划。",
+          "explanationZh": "scrapped the original plan 表示不再实行这个方案；after 交代作出决定之前发现的问题。"
+        }
+      ]
+    },
+    {
+      "number": 6899,
+      "word": "scrawl",
+      "ipa": "/skrɔːl/",
+      "pos": "v.",
+      "coreMeaningZh": "乱涂，潦草地写",
+      "coreEn": "to write or draw hastily, awkwardly, or untidily",
+      "coreImageZh": "男孩急着写完，低头匆匆落笔，纸上留下挤在一起、歪斜难认的笔迹。母亲看后说字写得太乱，男孩便停下来，重新看自己的字。scrawl 表示草率、潦草地写或画，画面强调的是落笔仓促、字迹不整齐，而不是所写内容一定没有意义。",
+      "mnemonics": [
+        {
+          "method": "CRAWL 爬过纸面，字歪歪扭扭",
+          "textZh": "scrawl 中完整含着 CRAWL（爬）。笔尖像小虫在纸上乱爬，留下歪歪扭扭的字：scrawl，潦草地写、乱涂。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SCROLL 屏幕，笔下匆匆乱写",
+          "textZh": "scrawl 与 SCROLL（滚动屏幕）的整体形音接近。一边向下滚动网页，一边急着抄几笔，字迹写得歪歪扭扭：scrawl，潦草地写。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "字迹潦草、写得不整齐",
+          "explanationZh": "可以接写下的内容作宾语，再用 on、across、in 等说明写在哪里，如 scrawl a name on paper。它常突出草率的笔迹，可能难以辨认；字写得不好，不代表内容必定没有意义。",
+          "collocations": [
+            {
+              "phrase": "scrawl a signature",
+              "meaningZh": "潦草地签名"
+            },
+            {
+              "phrase": "scrawl a message on a wall",
+              "meaningZh": "在墙上潦草地写一条消息"
+            }
+          ]
+        },
+        {
+          "senseZh": "动词与名词",
+          "explanationZh": "可及物，也可不接直接宾语，如 scrawl across a page。还可作名词表示潦草的字迹；动作可以是匆忙写字，也可以是草草画出线条。不要把工整而快速的记录一概称为 scrawl。",
+          "collocations": [
+            {
+              "phrase": "an untidy scrawl",
+              "meaningZh": "潦草的字迹"
+            },
+            {
+              "phrase": "scrawl across the page",
+              "meaningZh": "在纸页上潦草地写"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "scribble",
+          "comparisonZh": "在草率、匆忙地写或画时高度接近，两者有很多可互换的场景。scrawl 常让人注意到大而乱、难认的字迹；scribble 也常用来写匆匆记笔记或随手涂画，不宜硬分成一个只写字、一个只画画。"
+        },
+        {
+          "word": "write untidily",
+          "comparisonZh": "在字迹不整齐的用法中可以解释 scrawl。write untidily 是较直白的描述；scrawl 往往还让人想到草率、笨拙或匆忙落笔。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He scrawled an address on the back of the envelope.",
+          "translationZh": "他在信封背面潦草地写下了一个地址。",
+          "explanationZh": "an address 是直接宾语，on the back of the envelope 说明落笔的位置；地址仍可能是有用的信息。"
+        },
+        {
+          "textEn": "I could barely read the scrawl at the bottom of the page.",
+          "translationZh": "我几乎认不出页底那潦草的字迹。",
+          "explanationZh": "the scrawl 是名词，barely read 突出字迹难认，不是说纸上完全没有内容。"
+        }
+      ]
+    },
+    {
+      "number": 6900,
+      "word": "scribble",
+      "ipa": "/ˈskrɪbəl/",
+      "pos": "v.",
+      "coreMeaningZh": "潦草地书写，乱写",
+      "coreEn": "to write quickly and carelessly, or to make casual, untidy marks and drawings",
+      "coreImageZh": "男孩闲坐在桌前，拿蓝色铅笔随手在纸上划来划去，留下松散的圈圈和弯线。母亲问他写的是什么，他笑着说没什么，只是在随手乱涂。scribble 可以表示潦草地写或随意涂画，这里表现的是不按明确内容落笔，让纸上积起杂乱笔痕的动作。",
+      "mnemonics": [
+        {
+          "method": "deSCRIBE 写，SCRIBBLE 乱写",
+          "textZh": "scribble 的 scrib- 与 DESCRIBE（描述）里的 scrib 相接，都连着“写”的词根。笔下写得随便、乱七八糟，便是 scribble：乱写乱画。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "iPad 的 SCRIBBLE：随手写",
+          "textZh": "iPad 上用 Apple Pencil 随手写字的功能，英文名就是 Scribble。记住笔尖直接在屏幕上写写画画的动作：scribble，潦草地写、乱写乱画。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "匆匆、草率地写下",
+          "explanationZh": "可接 note、name、number 等作宾语，也常用 scribble something down。常见情形是赶时间记录，字迹不工整；信息可以有意义，不能把所有 scribble 都解释成胡写废话。",
+          "collocations": [
+            {
+              "phrase": "scribble a note",
+              "meaningZh": "匆匆潦草地写一张便条"
+            },
+            {
+              "phrase": "scribble down a number",
+              "meaningZh": "匆匆记下一个号码"
+            }
+          ]
+        },
+        {
+          "senseZh": "随手乱画、涂出线条",
+          "explanationZh": "也可表示不按清楚文字或完整图形去随手涂画，常接 on、over 等说明涂在哪里。可作名词 scribble，复数 scribbles 指这些潦草字迹或涂画。这个用法与 scrawl 有交集，不只限于儿童。",
+          "collocations": [
+            {
+              "phrase": "scribble all over a page",
+              "meaningZh": "在一整页上乱涂"
+            },
+            {
+              "phrase": "a page of scribbles",
+              "meaningZh": "一页潦草字迹或涂画"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "scrawl",
+          "comparisonZh": "在匆忙、潦草地写或画时很接近。scrawl 常突出不整齐、难以辨认的笔迹，scribble 也可强调赶时间记下内容或随手涂画；二者并无“有意义”和“没意义”的绝对分界。"
+        },
+        {
+          "word": "jot down",
+          "comparisonZh": "在快速记下短信息时有交集。jot down 着重简短、迅速，字迹可以工整；scribble 更容易带出草率、潦草的书写方式，因此不总能替换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She scribbled down the address before the call ended.",
+          "translationZh": "电话结束前，她匆匆潦草地记下了地址。",
+          "explanationZh": "scribbled down 接 the address，说明快速写下有用信息，并不意味着写的内容没有意义。"
+        },
+        {
+          "textEn": "The child scribbled loops and lines across the page.",
+          "translationZh": "那个孩子在纸页上随手涂满了圈圈和线条。",
+          "explanationZh": "这里的 scribbled 是随手涂画，loops and lines 是画出的东西，across the page 交代位置。"
+        }
+      ]
+    }
+  ]
+}

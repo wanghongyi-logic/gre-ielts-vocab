@@ -1,6 +1,6 @@
 (() => {
   if (!('serviceWorker' in navigator) || location.protocol === 'file:' || location.hostname === 'app.local') return;
-  const build = '203-offline3300-v57';
+  const build = '204-offline3500-v60';
   const restoreKey='gre-update-position-v1';
   let registration,connecting,checking,inspecting,pendingBuild,applyTimer,retryTimer,hideTimer;
   let appReady=false,readingBlockedAt=null,recoveringReading=false,pendingController;

@@ -1,0 +1,413 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6841,
+      "word": "revere",
+      "ipa": "/rɪˈvɪr/",
+      "pos": "vt.",
+      "coreMeaningZh": "尊崇，深深敬重",
+      "coreEn": "to feel or show deep respect for someone or something",
+      "coreImageZh": "男孩双手把鲜花递给老教师，认真地说自己一直打心底敬重她。老师接过花束，他又轻轻躬身致意。revere 表示深深敬重、尊崇，这种敬意比普通礼貌更深，献花和郑重的举止表达了他对老师长久的敬重。",
+      "mnemonics": [
+        {
+          "method": "RE + VERE，深怀敬畏",
+          "textZh": "revere 来自表示“敬畏”的拉丁语词族，re- 在这里通常被解释为加强。记住主要部分 vere 的敬畏图景：面对品德高尚的长者，不只是喜欢，而是发自内心地深深敬重。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SEVERE 严而公正，REVERE 敬在心里",
+          "textZh": "revere 与 severe（严厉的）只差开头字母。老师虽然严格，却始终公正，也真心帮助学生；大家因此发自内心地敬重他：revere。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "深深敬重、尊崇",
+          "explanationZh": "及物动词，直接接受到敬重的人或事物，语气较正式、程度比一般的 respect 深。对象可以是前辈、杰出人物、传统或理想，并不限于神明。",
+          "collocations": [
+            {
+              "phrase": "revere a teacher",
+              "meaningZh": "深深敬重一位老师"
+            },
+            {
+              "phrase": "revere old traditions",
+              "meaningZh": "尊崇古老传统"
+            }
+          ]
+        },
+        {
+          "senseZh": "被尊为、因某事受到崇敬",
+          "explanationZh": "常用于被动结构。be revered as... 说明被尊为怎样的人物，be revered for... 则说明受到崇敬的原因；不能把 as 和 for 的作用混在一起。",
+          "collocations": [
+            {
+              "phrase": "be revered as a hero",
+              "meaningZh": "被尊为英雄"
+            },
+            {
+              "phrase": "be revered for one’s wisdom",
+              "meaningZh": "因智慧而受到崇敬"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "venerate",
+          "comparisonZh": "两词都强调深深尊敬；venerate 往往更有庄严、崇敬的色彩，常用于历史人物、传统或被视为神圣的对象，revere 也能表达对老师、前辈的深厚敬意。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "respect",
+          "comparisonZh": "都可表示尊敬；respect 使用范围更广，也可指尊重他人的权利、选择或规则，revere 更强调内心深厚的崇敬，不只是礼貌地尊重边界。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The family reveres old traditions.",
+          "translationZh": "这个家庭尊崇古老的传统。",
+          "explanationZh": "reveres 直接接 old traditions，说明崇敬的对象也可以是传统，而不一定是人。"
+        },
+        {
+          "textEn": "He is now revered as a national hero.",
+          "translationZh": "他如今被尊为民族英雄。",
+          "explanationZh": "is revered as... 是被动结构，as 引出人们尊崇他时赋予的身份。"
+        }
+      ]
+    },
+    {
+      "number": 6842,
+      "word": "revive",
+      "ipa": "/rɪˈvaɪv/",
+      "pos": "vi.；vt.",
+      "coreMeaningZh": "恢复生机，重新活跃",
+      "coreEn": "to become active, strong, or lively again, or to make someone or something do so",
+      "coreImageZh": "桌上的植物因缺水而叶片下垂，男孩给盆土浇水，放下水壶等待。过了一会儿，同一盆植物的叶子重新挺起，又有了精神。revive 在这里是不及物动词，表示恢复生机、重新活跃，植物从萎蔫的状态恢复过来。",
+      "mnemonics": [
+        {
+          "method": "RE + VIVE，重新活过来",
+          "textZh": "re- 是再一次，vive- 来自表示生命、活着的词根。花草浇水后重新挺立，原本死气沉沉的街区又热闹起来：从“重新活过来”记 revive，恢复生机。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "REVIEW 旧歌，REVIVE 热情",
+          "textZh": "revive 与 review（重温、回顾）整体字形相近。重温从前爱听的歌，已经淡下去的热情又活跃起来：review 旧歌，revive 热情。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不及物：恢复生机、重新活跃",
+          "explanationZh": "主语本身恢复活力，可说植物重新精神起来，也可说生意、经济或兴趣重新活跃。后面不需要直接宾语；不必意味着先前已经死亡。",
+          "collocations": [
+            {
+              "phrase": "begin to revive",
+              "meaningZh": "开始恢复活力"
+            },
+            {
+              "phrase": "the economy revives",
+              "meaningZh": "经济复苏"
+            },
+            {
+              "phrase": "interest in something revives",
+              "meaningZh": "对某事的兴趣重新升起"
+            }
+          ]
+        },
+        {
+          "senseZh": "及物：使恢复活力、使重新兴起",
+          "explanationZh": "及物用法直接接被恢复的人或事物。可指使人苏醒、使植物恢复精神，也可指重振兴趣、传统或计划；具体恢复的是什么，要看宾语。",
+          "collocations": [
+            {
+              "phrase": "revive interest in something",
+              "meaningZh": "重新唤起对某事的兴趣"
+            },
+            {
+              "phrase": "revive an old tradition",
+              "meaningZh": "使旧传统重新兴起"
+            },
+            {
+              "phrase": "revive the wilting flowers",
+              "meaningZh": "使萎蔫的花恢复生机"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "recover",
+          "comparisonZh": "在健康或状态恢复时接近；recover 更广泛地表示从疾病、损失或困难中恢复，revive 更突出活力、意识或活动重新回来。recover 还可指找回失物，这时不能换成 revive。"
+        },
+        {
+          "word": "revitalize",
+          "comparisonZh": "在使某物重新有活力时接近；revitalize 通常是及物动词，强调注入新的活力，revive 既可以及物，也可以表示事物自身重新活跃。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The store's business is beginning to revive.",
+          "translationZh": "这家商店的生意正开始复苏。",
+          "explanationZh": "revive 在这里是不及物动词，主语 business 自身重新活跃，没有直接宾语。"
+        },
+        {
+          "textEn": "Water revived the wilting flowers.",
+          "translationZh": "水使那些萎蔫的花恢复了生机。",
+          "explanationZh": "revived 是及物用法，直接接 the wilting flowers，表示水使它们重新恢复精神。"
+        }
+      ]
+    },
+    {
+      "number": 6843,
+      "word": "revoke",
+      "ipa": "/rɪˈvoʊk/",
+      "pos": "vt.",
+      "coreMeaningZh": "撤销，取消",
+      "coreEn": "to officially withdraw or cancel a previously granted right, permission, or decision",
+      "coreImageZh": "母亲告诉男孩，原先答应的游戏时间现在取消。男孩停下使用平板，把它放在桌上，母亲接管后，他确认自己已经不能继续玩了。revoke 表示撤回、取消先前给予的许可或决定，使它不再有效；这里被撤回的是玩游戏的许可。",
+      "mnemonics": [
+        {
+          "method": "RE + VOKE，把授权叫回来",
+          "textZh": "revoke 的历史图景是“叫回来”：re- 表示回，voke- 来自“呼叫”的词根。已经发出去的许可又被叫回来，原来的授权作废：revoke，撤销。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "REMOTE 遥控违规，REVOKE 许可",
+          "textZh": "revoke 与 remote（遥控的）整体字形相近。遥控飞机飞进禁飞区域，原有的飞行许可被取消：remote 操作违规，许可就被 revoke。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "撤销许可、权利或决定",
+          "explanationZh": "及物动词，常用于正式语境，强调已经授予或生效的许可、资格、权利等被撤回。不能仅凭把证件或钥匙拿回手中，就判断其资格已被正式取消。",
+          "collocations": [
+            {
+              "phrase": "revoke permission",
+              "meaningZh": "撤销许可"
+            },
+            {
+              "phrase": "revoke a licence",
+              "meaningZh": "吊销执照"
+            },
+            {
+              "phrase": "revoke somebody’s privileges",
+              "meaningZh": "取消某人的特权"
+            }
+          ]
+        },
+        {
+          "senseZh": "被撤销",
+          "explanationZh": "被动结构常用于说明资格的状态。have one’s licence revoked 中，执照持有人承受被吊销的结果；revoked 修饰许可等时，也表示其效力已经终止。",
+          "collocations": [
+            {
+              "phrase": "have one’s licence revoked",
+              "meaningZh": "被吊销执照"
+            },
+            {
+              "phrase": "a revoked permit",
+              "meaningZh": "已被撤销的许可证"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rescind",
+          "comparisonZh": "在正式取消决定、命令或协议时接近；rescind 更常搭配决定、协议等，revoke 特别常用于已授予的许可、执照、权利。要根据具体宾语选择。"
+        },
+        {
+          "word": "cancel",
+          "comparisonZh": "都可表示取消；cancel 使用很广，也可取消尚未举行的会议、旅行或订单，revoke 则通常强调把先前已经授予或生效的东西撤回。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Their privileges were revoked after they misbehaved.",
+          "translationZh": "他们行为不当后，特权被取消了。",
+          "explanationZh": "were revoked 是被动结构，after 引出撤销先前特权的原因背景。"
+        },
+        {
+          "textEn": "The club revoked his permission to use the workshop.",
+          "translationZh": "俱乐部撤销了他使用工作坊的许可。",
+          "explanationZh": "revoked 直接接 permission；to use the workshop 说明被撤销的是哪项许可。"
+        }
+      ]
+    },
+    {
+      "number": 6844,
+      "word": "revolt",
+      "ipa": "/rɪˈvoʊlt/",
+      "pos": "vt.；vi.",
+      "coreMeaningZh": "使厌恶；反叛",
+      "coreEn": "to cause strong disgust; as an intransitive verb, to rebel or refuse to obey authority",
+      "coreImageZh": "男孩打开饭盒，看到面包已经发霉，闻到气味后立刻皱起眉头，捂住鼻子向后避开，最后把盒盖合上。revolt 在这里是及物动词，表示使人厌恶、使人反感，发霉面包的样子和气味引起了他的强烈嫌恶。",
+      "mnemonics": [
+        {
+          "method": "RE + VOLT，厌恶得转身",
+          "textZh": "revolt 的词源图景是“转回去、转过来”：re- 加表示转动的 volt-。看到残酷的虐待，你厌恶得转过脸、不愿再看；这种令人反感的感觉，就是 revolt 的使厌恶义。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RE-VOTE？投票受阻便反叛",
+          "textZh": "把 revolt 的整体字形联到 re-vote（重新投票）：两者的主要字母与声音相近，但 revolt 多出清楚的 /l/。选民要求重新投票却遭镇压，于是起来反叛。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物：使人厌恶、反感",
+          "explanationZh": "这一义中，令人厌恶的事物或行为作主语，受到影响的人作宾语。被动 be revolted by... 表示某人因某事感到强烈厌恶；不等于这个人在发动反叛。",
+          "collocations": [
+            {
+              "phrase": "revolt somebody",
+              "meaningZh": "使某人厌恶"
+            },
+            {
+              "phrase": "be revolted by cruelty",
+              "meaningZh": "对残酷行为感到厌恶"
+            }
+          ]
+        },
+        {
+          "senseZh": "不及物：反叛、反抗",
+          "explanationZh": "这一义中，进行反抗的人作主语，常用 revolt against somebody/something 表示反抗的权威或规则。可指政治反叛，也可较宽泛地指公开不服从，不必每次都涉及武装行动。",
+          "collocations": [
+            {
+              "phrase": "revolt against the authorities",
+              "meaningZh": "反抗当局"
+            },
+            {
+              "phrase": "revolt against an unfair rule",
+              "meaningZh": "反抗不公的规定"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "disgust",
+          "comparisonZh": "在使人厌恶的及物用法中接近；revolt 往往突出强烈到想退缩、转开的反感，disgust 也可表达令人反胃或道德上的厌恶。二者不能代替 revolt 的反叛义。"
+        },
+        {
+          "word": "repulse",
+          "comparisonZh": "在使人强烈厌恶、想避开时接近；repulse 还可表示击退或冷淡拒绝，那些用法不能直接换成这里的 revolt。反叛义应另与 rebel 比较。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "All the violence revolted me.",
+          "translationZh": "那些暴力行为都令我厌恶。",
+          "explanationZh": "violence 是使人厌恶的原因，me 是受到影响的人；这里是及物用法，不是“我反叛”。"
+        },
+        {
+          "textEn": "The members revolted against the leader’s unfair rules.",
+          "translationZh": "成员们起来反抗负责人制定的不公规定。",
+          "explanationZh": "revolted 在这里是不及物用法，against 引出反抗的对象；主语 members 是采取反抗行动的人。"
+        }
+      ]
+    },
+    {
+      "number": 6845,
+      "word": "ribald",
+      "ipa": "/ˈrɪbəld/",
+      "pos": "adj.",
+      "coreMeaningZh": "粗俗下流的",
+      "coreEn": "using or containing crude, indecent humor, often with sexual suggestions",
+      "coreImageZh": "成人讲了一个夸张的放屁笑话，自己笑得很开心，男孩却皱眉举手，请他换一个不那么粗俗的笑话。ribald 形容粗俗不雅、带有粗鄙幽默的言语或玩笑，常涉及性或身体方面的不雅内容；这里表现的是粗俗的身体笑话。",
+      "mnemonics": [
+        {
+          "method": "REBEL 叛逆，RIBALD 说荤话",
+          "textZh": "ribald 的整体声音和 rebel（叛逆者）相近，ribald 末尾还多一个清楚的 /d/。想象一个爱挑衅的叛逆学生，故意用荤段子取笑人：说话粗俗下流，ribald。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RIDDLE 谜语，RIBALD 荤谜语",
+          "textZh": "把 ribald 近似联到 RIDDLE（谜语）：普通谜语让人猜物品，有人却故意出荤谜语，拿性开粗俗玩笑。这种下流的笑话，就是 ribald。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "粗俗而带幽默意味的",
+          "explanationZh": "常修饰笑话、评论、歌曲或语言，通常涉及粗俗或带性暗示的幽默。也可用于较轻的不雅笑话，但不能把所有失礼、凶恶或直白的话都称为 ribald。",
+          "collocations": [
+            {
+              "phrase": "ribald jokes",
+              "meaningZh": "粗俗下流的笑话"
+            },
+            {
+              "phrase": "ribald humour",
+              "meaningZh": "粗俗不雅的幽默"
+            },
+            {
+              "phrase": "ribald comments",
+              "meaningZh": "粗俗逗笑的评论"
+            }
+          ]
+        },
+        {
+          "senseZh": "说话或作品的风格",
+          "explanationZh": "强调逗笑内容带有不雅、粗俗的成分；某些人可能觉得有趣，另一些人会觉得冒犯。ribald laughter 常指对这类粗俗笑料发出的笑声，不是所有大声笑都属于这种笑。",
+          "collocations": [
+            {
+              "phrase": "a ribald song",
+              "meaningZh": "一首粗俗逗笑的歌"
+            },
+            {
+              "phrase": "a ribald sense of humour",
+              "meaningZh": "爱开粗俗玩笑的幽默风格"
+            },
+            {
+              "phrase": "ribald laughter",
+              "meaningZh": "因粗俗笑料而发出的笑声"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "bawdy",
+          "comparisonZh": "两词都可形容带不雅、性暗示意味的幽默，关系很近；bawdy 常带热闹、放肆的调笑色彩，ribald 也可形容较轻但仍粗俗的笑话。"
+        },
+        {
+          "word": "vulgar",
+          "comparisonZh": "都可能表示粗俗；vulgar 的范围更广，可形容举止、品味或语言，并不要求有幽默成分，ribald 常把粗俗与逗笑联系在一起。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The comedian was known for his ribald jokes.",
+          "translationZh": "这位喜剧演员以粗俗不雅的笑话闻名。",
+          "explanationZh": "ribald 修饰 jokes，指出笑料带有粗俗、不雅的成分，不只是说演员很幽默。"
+        },
+        {
+          "textEn": "Her ribald comments made some guests laugh and others uncomfortable.",
+          "translationZh": "她那些粗俗逗笑的评论让一些客人发笑，却让另一些人感到不自在。",
+          "explanationZh": "ribald comments 同时可能引出笑声与不适，体现这种幽默的粗俗色彩。"
+        }
+      ]
+    }
+  ]
+}

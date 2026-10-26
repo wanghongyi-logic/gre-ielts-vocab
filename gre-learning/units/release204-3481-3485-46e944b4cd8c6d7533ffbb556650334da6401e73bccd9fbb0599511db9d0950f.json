@@ -1,0 +1,400 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7101,
+      "word": "tenable",
+      "ipa": "/ˈtenəbl/",
+      "pos": "adj.",
+      "coreMeaningZh": "有据可依的，无懈可击的",
+      "coreEn": "capable of being defended; reasonable",
+      "mnemonics": [
+        {
+          "method": "ENABLE 能让我辩护，TENABLE 让论点站住",
+          "textZh": "在完整熟词 ENABLE（使能够）前加 T，就是 TENABLE。想象辩论时，对方追问“凭什么”；你拿出核实过的证据，这些证据 ENABLE 你为论点辩护，因此这个论点是 TENABLE，有依据、站得住脚。这是拼写联想，不按 enable 的读音读 tenable。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TEN＋ABLE：十轮质疑，仍能据理辩护",
+          "textZh": "把 TENABLE 连到 TEN（十）和 ABLE（能够）。答辩时，面对十轮质疑，你仍能逐一拿出可靠证据、讲清理由，为观点辩护——这样的观点是 tenable，站得住脚的。十轮只是记忆场景，关键是理由和证据。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "观点或解释有依据，经得起辩护",
+          "explanationZh": "常修饰 argument、theory、position 等。重点是能够提出理由支持、经得起质疑；原表“无懈可击的”不应被扩大成已经证明绝对正确或排除了所有别的解释。",
+          "collocations": [
+            {
+              "phrase": "a tenable argument",
+              "meaningZh": "站得住脚的论点"
+            },
+            {
+              "phrase": "a tenable position",
+              "meaningZh": "可辩护的立场"
+            }
+          ]
+        },
+        {
+          "senseZh": "原有观点不再站得住脚",
+          "explanationZh": "no longer tenable 表示原先的观点如今已难以继续辩护，可用于旧观念受到事实或理由挑战。说的是论证能否维持，不是说持有者没力气坚持。",
+          "collocations": [
+            {
+              "phrase": "no longer tenable",
+              "meaningZh": "不再站得住脚"
+            },
+            {
+              "phrase": "a tenable theory",
+              "meaningZh": "有理可据的理论"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "defensible",
+          "comparisonZh": "都可形容论点经得起辩护。defensible 直接突出“有理由可为之辩护”；tenable 常说某理论或立场能够维持。两者都不保证绝对正确。"
+        },
+        {
+          "word": "reasonable",
+          "comparisonZh": "都可表达有道理。reasonable 更广，也评价要求、判断等是否合乎情理；tenable 更聚焦某一观点能否在质疑下站住。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "a tenable argument",
+          "translationZh": "一个站得住脚的论点",
+          "explanationZh": "词典编辑短语，不是完整句。tenable 修饰 argument，强调可据理辩护。",
+          "sourceAttribution": "Merriam-Webster，tenable，Kids Definition 编辑例语：https://www.merriam-webster.com/dictionary/tenable"
+        },
+        {
+          "textEn": "The old idea that this work was not suitable for women was no longer tenable.",
+          "translationZh": "认为这项工作不适合女性的旧观念，再也站不住脚了。",
+          "explanationZh": "no longer tenable 否定旧观念的合理性；句子是在否定性别偏见，并非认同它。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary，tenable 义项 1 编辑例句：https://www.oxfordlearnersdictionaries.com/definition/english/tenable"
+        }
+      ],
+      "coreImageZh": "男孩看见桌上侧倒的杯子，杯口连着一摊水，提出水可能从杯中流出的解释。母亲查看这些现成线索，认为解释有根据、站得住脚。tenable 指可以合理辩护，不表示已经排除了所有其他可能。"
+    },
+    {
+      "number": 7102,
+      "word": "tender",
+      "ipa": "/ˈtendə/",
+      "pos": "vt./adj.",
+      "coreMeaningZh": "正式提出；考虑周到的，关心同情的",
+      "coreEn": "1. offer; 2. sympathy, consideration",
+      "mnemonics": [
+        {
+          "method": "EXTEND 伸出手，TENDER 正式递出申请",
+          "textZh": "从熟词 EXTEND（伸出、延伸）记 TENDER：两词中的 TEND 真正同源，都连着“伸展”。想象你伸出手，把辞职申请正式递给主管，请对方接受；由伸手提出，记 tender 作动词是“正式提出、提供”。这条词族只用于动词义，不用它解释关心同情的形容词义。",
+          "original": true,
+          "kind": "word_family",
+          "weak": false
+        },
+        {
+          "method": "SENDER 寄来关心，TENDER 体贴人心",
+          "textZh": "SENDER（寄信人）只把开头 S 换成 T，就成了 TENDER。朋友低落时，这位寄信人没有催促或责备，而是写信问候、体谅他的难处；这种顾及别人感受的态度，就是 tender：关心同情、温柔体贴。这是整词近形联想，不是词源，也不是说所有寄信人都体贴。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "vt. 正式提出、递交",
+          "explanationZh": "及物动词，直接接所提出或递交的内容，如辞职、道歉等；语气比普通 offer 正式。tender 表示提出供对方接受，本身不保证对方已经接受。这里不是 tender for a contract 的不及物投标结构。",
+          "collocations": [
+            {
+              "phrase": "tender one's resignation",
+              "meaningZh": "正式提出辞职"
+            },
+            {
+              "phrase": "tender an apology",
+              "meaningZh": "正式致歉"
+            }
+          ]
+        },
+        {
+          "senseZh": "adj. 考虑周到，关心同情",
+          "explanationZh": "形容待人的态度、眼神或关怀温柔体贴，顾及对方的感受。不是仅说办事计划周密；也不要把本条原义换成肉嫩、年幼或触碰疼痛。",
+          "collocations": [
+            {
+              "phrase": "tender care",
+              "meaningZh": "温柔体贴的照料"
+            },
+            {
+              "phrase": "a tender look",
+              "meaningZh": "温柔关切的目光"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "offer",
+          "comparisonZh": "动词义对应：两者都可指提出、提供。tender 更正式，突出把辞职、道歉等提出供接受；offer 用途更广，日常提供帮助也常用。此组不替代 tender 的形容词义。"
+        },
+        {
+          "word": "considerate",
+          "comparisonZh": "形容词义对应：都表示顾及别人。considerate 更强调考虑到他人的需要与感受；tender 还突出温柔、关爱或同情的情感色彩。此组不用于“正式提出”。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She quickly tendered her resignation.",
+          "translationZh": "她很快就正式提出了辞职。",
+          "explanationZh": "tendered 后直接接 her resignation，明确是及物动词“正式提出”；不表示辞职已经获准。",
+          "sourceAttribution": "Collins COBUILD，tender noun and verb uses 义项 3 编辑例句：https://www.collinsdictionary.com/dictionary/english/tender"
+        },
+        {
+          "textEn": "He gave her a tender look.",
+          "translationZh": "他温柔关切地看了她一眼。",
+          "explanationZh": "tender 修饰 look，是温柔关爱的形容词义；不是“提出”或“触痛”的意思。",
+          "sourceAttribution": "Merriam-Webster，tender，Examples of tender in a Sentence 的 Adjective 编辑例句：https://www.merriam-webster.com/dictionary/tender"
+        }
+      ],
+      "coreImageZh": "男孩双手拿着花园方案，向老师正式提出并请她审议，还把纸稍稍向前呈示。老师答应认真审议，但尚未批准。这里的 tender 是正式提出、提供给对方考虑或接受的动词义，不是形容柔软。"
+    },
+    {
+      "number": 7103,
+      "word": "terminology",
+      "ipa": "/ˌtɜːmɪˈnɒlədʒi/",
+      "pos": "n.",
+      "coreMeaningZh": "专业术语",
+      "coreEn": "the set of technical words or expressions used in a particular subject or field",
+      "mnemonics": [
+        {
+          "method": "TERM IN KNOWLEDGE：知识图里的一套专业术语",
+          "textZh": "把完整熟词 TERM（术语）、IN（在……里）、KNOWLEDGE（知识）连成一组近音提示。想象音乐老师画了一张乐理知识图，把“拍号”“调式”“和弦”这些专门名称逐一写进去：每个名称是一个 TERM，整个领域有一套专业用语。由 TERM IN KNOWLEDGE 联想到完整的 terminology：用来准确谈论某个专业的术语体系。这是声音和画面的联想，不是实际词源。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TECHNOLOGY 科技展：一开口，就是专业术语",
+          "textZh": "把完整熟词 TECHNOLOGY（科技、技术）与 terminology 作近形、近音联想。想象参观科技展，讲解员说起“内存”“带宽”等专门名称，听众便把它们整理成一张术语表。看见 TECHNOLOGY，联到科技讲解里那套 TERMINOLOGY：专业术语。技术是技术，术语是谈论技术时用的专门词语，并不是两个词意思一样。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "某个领域的整套专门用语：medical / technical terminology",
+          "explanationZh": "terminology 通常把某学科、职业或活动使用的专门词语看作一套系统，不是随便一个难词。泛指这类术语时常作不可数名词，可说 much terminology；单个术语通常说 a term。专业术语不一定故意让人听不懂，也不只限于科学。",
+          "collocations": [
+            {
+              "phrase": "medical terminology",
+              "meaningZh": "医学术语"
+            },
+            {
+              "phrase": "technical terminology",
+              "meaningZh": "技术领域的专门术语"
+            }
+          ]
+        },
+        {
+          "senseZh": "采用某套用语或区分不同体系：use terminology / new terminologies",
+          "explanationZh": "可以讨论某套术语的用法；比较不同领域或不同体系时，可用复数 terminologies 表示一套套术语。若只是在一套体系里数几个单独的词，通常说 terms，而不是用 terminologies 数词条。",
+          "collocations": [
+            {
+              "phrase": "a different use of terminology",
+              "meaningZh": "对术语的不同用法"
+            },
+            {
+              "phrase": "new terminologies",
+              "meaningZh": "新的术语体系"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "jargon",
+          "comparisonZh": "jargon 也指某职业或群体的专门用语，与 terminology 有很大交集；jargon 常强调外行难懂，并常带批评口吻。terminology 更中性，着眼于领域内成套的专门词语，不预设含糊、卖弄或不必要。"
+        },
+        {
+          "word": "vocabulary",
+          "comparisonZh": "vocabulary 范围更广，可以是某人认识的全部词汇，也可以是某领域使用的词语。terminology 专指某个领域的技术性或专门表达；日常词汇量很大不等于掌握了所有专业术语。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The article avoids using too much medical terminology.",
+          "translationZh": "这篇文章避免使用过多的医学术语。",
+          "explanationZh": "too much 后的 terminology 作不可数名词，指医学专门用语整体；文章少用术语，并不等于完全没有医学内容。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary — https://www.oxfordlearnersdictionaries.com/definition/english/terminology"
+        },
+        {
+          "textEn": "the terminology favored by sportscasters",
+          "translationZh": "体育播音员偏爱的专业用语",
+          "explanationZh": "这是一个名词短语，favored by sportscasters 修饰 terminology，说明哪一群人惯用这套词语；术语不仅存在于实验室，也用于体育播报。",
+          "sourceAttribution": "Merriam-Webster — https://www.merriam-webster.com/dictionary/terminology"
+        }
+      ],
+      "coreImageZh": "男孩询问“叶柄、叶脉”这些专门名称，老师结合桌上的叶片说明：它们是植物学术语，用来准确称呼叶的不同部分。terminology 指某个领域使用的专业词语，画中的植物提供所指，台词明确这些术语。"
+    },
+    {
+      "number": 7104,
+      "word": "terminus",
+      "ipa": "/ˈtɜːmɪnəs/",
+      "pos": "n.",
+      "coreMeaningZh": "终点，终点站",
+      "coreEn": "the end of a route or line, the station at that end, or the farthest point of something",
+      "mnemonics": [
+        {
+          "method": "TERMINAL 车站到了，TERMINUS 线路到头",
+          "textZh": "从完整熟词 TERMINAL（交通场站、航站楼）联到 terminus，两词确实属于同一个“端点”词族。想象坐长途巴士到达 BUS TERMINAL，司机宣布全体下车；再看线路图，线就在这座站画到头。这座站是这条线路的 TERMINUS：终点站。记住完整 TERMINAL 的声音和站房，再把目光落在线路的最后一点；不是每座航站楼、每个中途站都叫 terminus。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "TURN IN, BUS! 巴士拐进终点站，这趟到头了",
+          "textZh": "把完整 TURN IN（拐进去）和 BUS（巴士）连成一句近音呼唤。想象会听话的卡通巴士开到线路图最后一站，站长招手喊：“TURN IN, BUS!（巴士，拐进来吧！）”车子驶入站场，乘客全部下车，这趟路线走到头了。用这句完整呼唤联想 terminus：线路终点、终点站；不是巴士随便拐一次弯就到了终点。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "线路走到头的站点：railway terminus / terminus for trains",
+          "explanationZh": "交通语境中的 terminus 指一条火车线路或巴士路线的端点，也可指那里的车站。来回运行的线路两端都可能叫 terminus；它不是某位乘客提前下车的任意一站，也不要求公路或铁轨在物理上完全断掉。",
+          "collocations": [
+            {
+              "phrase": "railway terminus",
+              "meaningZh": "铁路终点站"
+            },
+            {
+              "phrase": "the terminus for trains",
+              "meaningZh": "列车的终点站"
+            }
+          ]
+        },
+        {
+          "senseZh": "事物延伸到头的位置：the terminus of something",
+          "explanationZh": "terminus 也可指一个延伸物的末端或终点，不只用于公共交通。比如冰川延伸到头的位置或 DNA 链的端部。它是可数名词，复数可用 termini，也可用 terminuses；不要把末端本身误解成整条冰川或整条链。",
+          "collocations": [
+            {
+              "phrase": "the terminus of a glacier",
+              "meaningZh": "冰川的末端"
+            },
+            {
+              "phrase": "the terminus of the DNA strand",
+              "meaningZh": "这条 DNA 链的末端"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "terminal",
+          "comparisonZh": "交通名词 terminal 可指旅程开始或结束的场站，在车站义上与 terminus 很接近。terminal 也常指机场航站楼或计算机终端；terminus 更突出路线或延伸物的端点，不能把 terminal 的每个用法都替成 terminus。"
+        },
+        {
+          "word": "end",
+          "comparisonZh": "end 是范围很广的普通词，可指一段时间、故事或物体的末尾。terminus 较正式，着重线路终点、终点站或延伸物的端部；不是凡有 end 的地方都自然改用 terminus。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It's the terminus for trains from the north.",
+          "translationZh": "这里是从北方开来的列车的终点站。",
+          "explanationZh": "for trains 说明哪些列车以这里为终点；from the north 表示列车来自北方，不是说这个站一定在线路的北端。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary — https://www.oxfordlearnersdictionaries.com/definition/english/terminus"
+        },
+        {
+          "textEn": "Geologists took samples from the terminus of the glacier.",
+          "translationZh": "地质学家从这条冰川的末端采集了样本。",
+          "explanationZh": "the terminus of the glacier 指冰川的末端这一位置，并不是交通站；原句只说取样，不暗示冰川已经全部消失。",
+          "sourceAttribution": "Merriam-Webster — https://www.merriam-webster.com/dictionary/terminus"
+        }
+      ],
+      "coreImageZh": "男孩站在安全的站台内侧，看见两条铁轨在挡车器处结束，后面没有继续延伸的轨道。站务员说明这里是这条铁路线的终点站。terminus 指线路尽头或那里的终点站，不是任意一个临时停靠处。"
+    },
+    {
+      "number": 7105,
+      "word": "tether",
+      "ipa": "/ˈteðə/",
+      "pos": "vt.",
+      "coreMeaningZh": "(用绳、铁链)栓系，束缚",
+      "coreEn": "fasten or restrain",
+      "mnemonics": [
+        {
+          "method": "WEATHER 起风，TETHER 系牢帐篷",
+          "textZh": "把 tether /ˈteðə/ 与熟词 WEATHER（天气）/ˈweðə/ 对照，两词读音只换了开头的辅音。想象天气转坏、风吹帐篷，露营者用绳把帐篷系在地钉上，不让它被吹走。由天气变化时的系绳动作，记 tether：用绳栓系、束缚。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        },
+        {
+          "method": "TOGETHER 连在一起，TETHER 用绳系住",
+          "textZh": "把 tether 近形联到完整熟词 TOGETHER（在一起）。一根绳把羊和木桩连接在一起，羊还能在绳长范围内走动，却不能独自走远：把它这样拴住，就是 tether。用“绳子把两端连在一起”记栓系，不必把动物捆得不能动。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "用绳或链栓系，使不能走远",
+          "explanationZh": "及物动词，常用 tether A to B，把 A 系在 B 上。关键是与固定点相连、限制活动范围，不要求绳始终绷紧，也不是把全部身体捆得不能动。",
+          "collocations": [
+            {
+              "phrase": "tether a horse to a tree",
+              "meaningZh": "把马拴在树上"
+            },
+            {
+              "phrase": "be tethered to a fence",
+              "meaningZh": "被拴在围栏上"
+            }
+          ]
+        },
+        {
+          "senseZh": "像被绳系住一样受到束缚",
+          "explanationZh": "可比喻人受工作或处境牵制，无法自由离开。说被工作拴在桌旁，不必真的有绳；仍保留受牵系、活动受限的核心。",
+          "collocations": [
+            {
+              "phrase": "feel tethered to a desk",
+              "meaningZh": "觉得自己被拴在办公桌旁"
+            },
+            {
+              "phrase": "tethered until the work is done",
+              "meaningZh": "受工作牵制，直到做完"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "tie",
+          "comparisonZh": "都可用于用绳系住。tie 范围更广，还可说系鞋带、打结；tether 通常强调把人、动物或物体系在固定点，使其不能走远。"
+        },
+        {
+          "word": "restrain",
+          "comparisonZh": "都可表达限制活动。restrain 不要求绳链，也可压住冲动或阻止行为；tether 更有被某物牵系、活动范围受到约束的意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He tethered his horse to a tree.",
+          "translationZh": "他把马拴在一棵树上。",
+          "explanationZh": "tethered A to B 明确两端：马被系在树上，不能自由走远。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary，tether verb 义项 1 编辑例句：https://www.oxfordlearnersdictionaries.com/definition/english/tether_1"
+        },
+        {
+          "textEn": "felt tethered to her desk until the work was done",
+          "translationZh": "觉得自己被拴在办公桌旁，直到工作做完",
+          "explanationZh": "词典编辑短语，原文未给主语，不补写成自创完整句。把工作对人的牵制比作系绳，不是真的绑在桌边。",
+          "sourceAttribution": "Merriam-Webster，tether transitive verb 释义下编辑例语：https://www.merriam-webster.com/dictionary/tether"
+        }
+      ],
+      "coreImageZh": "男孩收紧绕在木柱上的气球绳结，随后松开双手。气球仍由完整的绳子系在柱旁，不能自由飘走。tether 指用绳等拴住、限制活动范围，不只是把绳子拉紧。"
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6911,
+      "word": "segment",
+      "ipa": "n. /ˈseɡmənt/；vt. /ˈseɡˌment/（美）",
+      "pos": "vt.；n.",
+      "coreMeaningZh": "分割；部分",
+      "coreEn": "to divide into distinct parts; one distinct part of a whole",
+      "coreImageZh": "母亲拿着一个已经去皮、果瓣还合在一起的橘子，沿着自然的瓣界慢慢分开。分出的橘瓣一块块放进盘里，最后整个橘子成了可以分别拿取的几瓣。segment 作动词表示把整体分成各部分，作名词则可以指其中的一部分；画面里分开的动作和一瓣瓣果肉，分别对应这两层意思。",
+      "mnemonics": [
+        {
+          "method": "SEG + MENT：切出来的一部分",
+          "textZh": "seg- 连着“切”的词根，-ment 是名词结尾。把一根长绳切成几段，每一段都是一个 segment；作动词时就是分割。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "CEMENT 水泥路，一段段浇筑",
+          "textZh": "segment 的整体字形像 CEMENT（水泥）。水泥路分段浇筑，每次完成一段；分出来的每一部分就是一个 segment。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物动词：把整体分成部分",
+          "explanationZh": "常用 segment something into parts，说明把什么分成哪些部分。既可分割具体物体，也可按年龄、需求等标准划分人群或市场；分出的部分不必等大，也不一定要真的用刀切。",
+          "collocations": [
+            {
+              "phrase": "segment a market by age",
+              "meaningZh": "按年龄划分市场"
+            },
+            {
+              "phrase": "segment a long recording into shorter parts",
+              "meaningZh": "把一段长录音分成较短的部分"
+            }
+          ]
+        },
+        {
+          "senseZh": "可数名词：整体中的一段或一部分",
+          "explanationZh": "可指橘子的一瓣、节目的一段、路程的一段，也可指人群中的一个类别。重点是相对于一个整体可识别的部分，不是任意不相干的物件。名词复数为 segments。",
+          "collocations": [
+            {
+              "phrase": "a segment of the programme",
+              "meaningZh": "节目中的一段"
+            },
+            {
+              "phrase": "segments of an orange",
+              "meaningZh": "橘子的一瓣瓣"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "partition",
+          "comparisonZh": "作动词表示把整体分为若干部分时接近。partition 常强调按界限分隔空间或集合，segment 常强调分成可识别的段、块或群体。作名词时，partition 常指隔断或划分，不能一概替代表示一部分的 segment。",
+          "sources": [
+            "B"
+          ]
+        },
+        {
+          "word": "section",
+          "comparisonZh": "作名词表示整体中可区分的一部分时常接近，如一段路、一节内容。section 常用于章节或区域，segment 也常用于节目片段、橘瓣及人群中的一部分；具体搭配不保证处处可换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The researchers segmented the participants into three age groups.",
+          "translationZh": "研究人员把参与者划分为三个年龄组。",
+          "explanationZh": "segmented 是及物动词的过去式，participants 是被划分的对象，into three age groups 说明划分结果。"
+        },
+        {
+          "textEn": "The final segment of the programme focused on local history.",
+          "translationZh": "节目的最后一段聚焦当地历史。",
+          "explanationZh": "segment 是可数名词，of the programme 指明它属于哪个整体；并不是整档节目都只讲当地历史。"
+        }
+      ]
+    },
+    {
+      "number": 6912,
+      "word": "self-absorbed",
+      "ipa": "/ˌselfəbˈsɔːrbd/",
+      "pos": "adj.",
+      "coreMeaningZh": "只顾自己的，沉浸于自我的",
+      "coreEn": "so occupied with one’s own thoughts and interests that other people receive little attention",
+      "coreImageZh": "男孩心情难受，想请朋友听自己说说。朋友却只顾展示胸前的奖牌，把话题拉回自己又得了第一名，兴奋地说个不停；男孩没有得到回应，渐渐低下头，显得失落。self-absorbed 形容注意力过分沉浸在自己的事情里，以致忽略别人，这里并不是获奖本身有错，而是朋友的感受始终没有被听见。",
+      "mnemonics": [
+        {
+          "method": "SELF + ABSORBED：被自己吸住了",
+          "textZh": "SELF 是自己，ABSORBED 是被吸住、沉浸着。注意力全被“自己”吸走，别人的需要一点也看不见：self-absorbed，只顾自己的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SELF + ABSURD：自我中心到荒唐",
+          "textZh": "把 self-absorbed 的整体后半联想成 ABSURD（荒唐的），前面保留 SELF（自己）。聊天句句都绕回自己，连别人求助也听不见，这份自我沉浸真荒唐。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "关注自己而忽视别人",
+          "explanationZh": "通常带批评意味，侧重心思被自己的经历、感受或兴趣占据，以致没有留意别人的需要。它不要求当事人故意占别人便宜，也不一定表现为夸耀外貌；沉浸在自己的烦恼里，同样可能显得 self-absorbed。",
+          "collocations": [
+            {
+              "phrase": "a self-absorbed person",
+              "meaningZh": "只顾自己的人"
+            },
+            {
+              "phrase": "seem self-absorbed",
+              "meaningZh": "显得只沉浸于自己的事情"
+            }
+          ]
+        },
+        {
+          "senseZh": "与一般的专注区分",
+          "explanationZh": "be absorbed in a book 只是沉浸于读书，可以是中性的描述；self-absorbed 特别把关注范围收缩到自身。偶尔需要独处或认真完成任务，并不自动说明一个人只顾自己。这个词是日常行为描述，不是临床诊断。",
+          "collocations": [
+            {
+              "phrase": "too self-absorbed to notice others",
+              "meaningZh": "只顾自己而没有留意别人"
+            },
+            {
+              "phrase": "self-absorbed behaviour",
+              "meaningZh": "只顾自身的行为"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "self-centered",
+          "comparisonZh": "在以自身为中心、忽视他人时接近。self-centered 更直接突出把自己放在中心，self-absorbed 更突出注意力陷在自己的事情里；它们的实际用法有较大重叠。"
+        },
+        {
+          "word": "selfish",
+          "comparisonZh": "在只顾自己、不顾他人时有交集。selfish 更侧重优先满足自身利益或愿望，self-absorbed 更侧重没有把注意力分给别人，不必包含有意损害别人利益。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was too self-absorbed to notice that his friend was upset.",
+          "translationZh": "他只顾自己的事情，没有注意到朋友心情不好。",
+          "explanationZh": "too ... to ... 说明过度关注自己带来的结果；句子描述未留意朋友，不等于断定他故意伤害朋友。"
+        },
+        {
+          "textEn": "The self-absorbed guest kept turning the conversation back to her own achievements.",
+          "translationZh": "那位只顾自己的客人总把话题转回自己的成就。",
+          "explanationZh": "self-absorbed 修饰 guest，kept turning ... back 表明这种把关注拉回自己的行为反复发生。"
+        }
+      ]
+    },
+    {
+      "number": 6913,
+      "word": "sensation",
+      "ipa": "/senˈseɪʃən/",
+      "pos": "n.",
+      "coreMeaningZh": "轰动事件",
+      "coreEn": "an event, person, or thing that causes great public excitement or interest",
+      "coreImageZh": "一只格外大的南瓜在小镇展出，吸引了许多人围观议论。男孩好奇地问为什么这么多人来看，母亲告诉他，这件事已经成了全镇的轰动新闻。sensation 在这里指引起公众强烈兴趣、成为热议焦点的人或事；这个展出不只是让男孩吃惊，而是把许多人的注意力都吸引了过来。",
+      "mnemonics": [
+        {
+          "method": "SENS + ATION：让大家都感觉到了",
+          "textZh": "sens- 表示“感觉”，-ation 是名词结尾。一件事让全城都震动、人人议论，成了 sensation：轰动事件。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SEND + STATION：电视台争相报道",
+          "textZh": "把 sensation 的整段声音联想成 SEND + STATION（发送、电视台）。消息一传到各电视台，各台都抢着播出，全国都在议论这件轰动事件。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "引发热烈关注的人、事或作品",
+          "explanationZh": "常用 a sensation 指引起公众强烈兴趣的事件、人物或作品，尤其是突然受到广泛关注者。它可以令人赞叹，也可以因为争议或惊人消息而轰动，不保证内容一定优秀或真实。",
+          "collocations": [
+            {
+              "phrase": "become an overnight sensation",
+              "meaningZh": "一夜之间引起轰动"
+            },
+            {
+              "phrase": "an international sensation",
+              "meaningZh": "引起国际轰动的人或事物"
+            }
+          ]
+        },
+        {
+          "senseZh": "轰动反响与感觉义区分",
+          "explanationZh": "cause、create a sensation 表示引起轰动，着重公众兴奋、惊奇或热议的反应。sensation 还常表示身体的感觉，如 a burning sensation；判断时要看谈的是公众反响，还是身体感受。",
+          "collocations": [
+            {
+              "phrase": "cause a sensation",
+              "meaningZh": "引起轰动"
+            },
+            {
+              "phrase": "create a sensation in the art world",
+              "meaningZh": "在艺术界引起轰动"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stir",
+          "comparisonZh": "在 cause a stir 与 cause a sensation 中都可表示引起轰动或议论。stir 更突出兴奋、骚动或关注的反应；sensation 还可直接指引发这种反应的人或事，a sensation 不能在所有情况下换成 a stir。"
+        },
+        {
+          "word": "hit",
+          "comparisonZh": "当作品或表演大受欢迎时与 sensation 有交集。hit 主要强调成功、受欢迎，sensation 更突出强烈而广泛的关注；有些 sensation 是因争议而轰动，不一定是受欢迎的成功作品。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her first novel became an overnight sensation.",
+          "translationZh": "她的第一部小说一夜之间引起了轰动。",
+          "explanationZh": "a sensation 在这里指引发广泛关注的作品；overnight 强调走红迅速，不是小说里的身体感觉。"
+        },
+        {
+          "textEn": "The unexpected announcement caused a sensation throughout the town.",
+          "translationZh": "这项出人意料的宣布在全镇引起了轰动。",
+          "explanationZh": "caused a sensation 说明消息引发强烈关注；句子没有限定这种关注一定是赞赏。"
+        }
+      ]
+    },
+    {
+      "number": 6914,
+      "word": "showmanship",
+      "ipa": "/ˈʃoʊmənʃɪp/",
+      "pos": "n.",
+      "coreMeaningZh": "擅长表演、展示的技巧",
+      "coreEn": "skill in presenting a performance or display so that it attracts and holds an audience’s interest",
+      "coreImageZh": "男孩先用蓝布盖住自己的纸花作品，让母亲带着期待等待。随后，他自信地宣布惊喜揭晓，提开遮布，大方地展示彩色纸花，赢得了母亲的掌声。showmanship 指吸引观众、把内容呈现得精彩的本领；这里打动母亲的不只是纸花，还有留悬念、揭晓和展示的节奏。",
+      "mnemonics": [
+        {
+          "method": "SHOW + MAN + SHIP：展示者的本领",
+          "textZh": "SHOW 是展示，MAN 是人，-ship 可表示技能或本领。能把普通节目演得满场喝彩，这种善于表演、吸引观众的本领就是 showmanship。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SNOWMAN 一上场，就会表演",
+          "textZh": "showmanship 的主体 showman 很像 SNOWMAN（雪人），后接表示本领的 -ship。想象舞台上的雪人又唱又跳，还会逗笑观众，展示本领真高。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "吸引观众的呈现本领",
+          "explanationZh": "通常是不可数名词，可指舞台演出、主持、魔术等怎样组织动作、节奏和揭晓方式，让观众愿意看下去。技术熟练与 showmanship 可以同时具备，但仅仅完成一个难动作，不必然说明呈现方式很有吸引力。",
+          "collocations": [
+            {
+              "phrase": "a flair for showmanship",
+              "meaningZh": "善于吸引观众的表演天赋"
+            },
+            {
+              "phrase": "great showmanship",
+              "meaningZh": "出色的表演展示技巧"
+            }
+          ]
+        },
+        {
+          "senseZh": "也用于演讲、推介与展示",
+          "explanationZh": "可延伸到把人物、产品或主张展示得有吸引力的能力，不局限于剧场。语境可以褒扬，也可以批评只讲表面效果而缺乏实质；本词本身不等于欺骗。",
+          "collocations": [
+            {
+              "phrase": "a display of showmanship",
+              "meaningZh": "一次展示表演本领的举动"
+            },
+            {
+              "phrase": "more showmanship than substance",
+              "meaningZh": "表面展示多于实际内容"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "presentation skills",
+          "comparisonZh": "在把内容呈现得有吸引力的能力上接近。presentation skills 的范围较广，也包括清晰组织信息、解释内容；showmanship 更突出戏剧性、感染力和吸引观众注意的效果。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The magician turned a simple trick into a memorable performance through sheer showmanship.",
+          "translationZh": "魔术师凭出色的表演技巧，把一个简单戏法变成了令人难忘的演出。",
+          "explanationZh": "through sheer showmanship 说明打动观众的关键在呈现本领，而不一定在戏法本身有多复杂。"
+        },
+        {
+          "textEn": "The launch had plenty of showmanship but offered little useful information.",
+          "translationZh": "这场发布活动很会营造吸引人的展示效果，却没有提供多少有用信息。",
+          "explanationZh": "but 把展示效果与实际信息量对比，说明 showmanship 可以出色，而内容仍然不足。"
+        }
+      ]
+    },
+    {
+      "number": 6915,
+      "word": "sepulchral",
+      "ipa": "/səˈpʌlkrəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "墓穴般阴森的；丧葬的",
+      "coreEn": "like a tomb in its gloom or solemn stillness; relating to burial or a tomb",
+      "coreImageZh": "母子走进空荡的旧石厅，厚重的拱墙和大片阴影包围着他们，只有高窗透进少量光线。男孩觉得这里阴森得让人不自在，母亲也形容它像墓室一样毫无生气。sepulchral 表示墓穴般阴森、肃穆或死寂，画面中的沉暗空厅，带出的不只是安静，还有一种仿佛与墓葬相连的沉重气氛。",
+      "mnemonics": [
+        {
+          "method": "SEPULCHR + AL：像墓穴般阴森",
+          "textZh": "sepulchr- 是“坟墓”的词干，-al 表示“……的”。走进昏暗石室，寂静冰冷，好像进入墓穴：sepulchral，墓穴般阴森的，也可指丧葬的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "PULL、CRAWL：拉开墓门，爬进阴森处",
+          "textZh": "把 sepulchral 的重读主体联想成 PULL + CRAWL（拉、爬）。拉开沉重墓门，再低身爬进幽暗墓道，一股墓穴般的阴森感扑面而来。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "像墓穴一样阴森、肃穆或死寂",
+          "explanationZh": "可形容建筑环境、寂静、气氛，也可形容低沉肃穆的声音。它比一般的 gloomy 更强，带有墓穴或丧葬般的联想；安静的图书馆、普通阴天，都不因为安静或光线暗就必然是 sepulchral。",
+          "collocations": [
+            {
+              "phrase": "a sepulchral silence",
+              "meaningZh": "墓穴般的死寂"
+            },
+            {
+              "phrase": "a sepulchral voice",
+              "meaningZh": "低沉阴森的声音"
+            }
+          ]
+        },
+        {
+          "senseZh": "与墓葬、丧葬有关",
+          "explanationZh": "还可按字面形容墓葬铭文、纪念物等。这个义项说的是它们与埋葬或墓穴的关系，不必进一步断定它们的颜色暗、声音低或令人害怕。",
+          "collocations": [
+            {
+              "phrase": "sepulchral inscriptions",
+              "meaningZh": "墓葬铭文"
+            },
+            {
+              "phrase": "sepulchral monuments",
+              "meaningZh": "墓葬纪念物"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "funereal",
+          "comparisonZh": "在像葬礼般沉重、肃穆或阴郁时很接近。funereal 更直接令人想到葬礼，sepulchral 更容易带出墓穴的阴森或死寂；两者也都可有字面的丧葬相关义。"
+        },
+        {
+          "word": "somber",
+          "comparisonZh": "在阴沉、肃穆或缺乏欢乐时有交集。somber 更宽泛，可说严肃心情或暗淡色调；sepulchral 的墓穴般气氛更具体、更强，不宜把所有 somber 的场景都说成 sepulchral。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A sepulchral silence filled the empty hall.",
+          "translationZh": "空荡荡的大厅里弥漫着墓穴般的死寂。",
+          "explanationZh": "sepulchral 修饰 silence，营造阴森肃穆的氛围；大厅并不因此真的变成了墓穴。"
+        },
+        {
+          "textEn": "The archaeologists recorded the sepulchral inscriptions.",
+          "translationZh": "考古人员记录了那些墓葬铭文。",
+          "explanationZh": "这里是与墓葬有关的字面义，inscriptions 指铭文，不是在评价考古人员的情绪。"
+        }
+      ]
+    }
+  ]
+}

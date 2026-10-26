@@ -1,0 +1,403 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6996,
+      "word": "stammer",
+      "ipa": "/ˈstæmər/",
+      "pos": "vi.",
+      "coreMeaningZh": "口吃，结巴",
+      "coreEn": "to speak with involuntary stops and repeated sounds",
+      "mnemonics": [
+        {
+          "method": "HAMMER 敲同一点，STAMMER 卡同一音",
+          "textZh": "HAMMER（锤子）与 STAMMER 都有醒目的 AMMER。想象锤子反复敲同一点，嘴里的话也卡在同一个音上，重复几次才说下去：stammer，结结巴巴地说。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "“是……他……吗？”一句问话卡三次",
+          "textZh": "借“是……他……吗？”的近音记 stammer。问话的人不由自主地停住，重复“是、是……他……”，终于把一句话说完；这种卡顿、重复，就是口吃、结巴。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不及物动词：说话口吃、结巴",
+          "explanationZh": "描述说话时不由自主地停顿或重复声音、词语。可以是一贯的说话困难，也可以是某次话说得不顺；本词本身不表示说谎或胆小。",
+          "collocations": [
+            {
+              "phrase": "begin to stammer",
+              "meaningZh": "开始结结巴巴地说"
+            },
+            {
+              "phrase": "stammer badly",
+              "meaningZh": "口吃得很厉害"
+            }
+          ]
+        },
+        {
+          "senseZh": "及物动词：结结巴巴地说出内容",
+          "explanationZh": "可接直接引语，也可用 stammer something 或 stammer out something，表示费力地把话说出来。",
+          "collocations": [
+            {
+              "phrase": "stammer out an apology",
+              "meaningZh": "结结巴巴地道歉"
+            },
+            {
+              "phrase": "stammer an excuse",
+              "meaningZh": "结结巴巴地说出借口"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stutter",
+          "comparisonZh": "两者都指说话不由自主地停顿、重复音节，在“口吃、结巴”义上通常可以互换。stammer 更常见于英式表达，stutter 在美式表达中更常见。"
+        },
+        {
+          "word": "speak haltingly",
+          "comparisonZh": "都能描述话说得断断续续、不流畅。但 speak haltingly 也可能只是边想边说；stammer 更明确地涉及非自愿的卡顿或声音重复。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "“I d-don't know what you're talking about!” she stammered.",
+          "translationZh": "“我不、不知道你在说什么！”她结结巴巴地说。",
+          "explanationZh": "d-don't 直接呈现声音重复；stammered 描述说话方式。"
+        },
+        {
+          "textEn": "He stammered an excuse and fled.",
+          "translationZh": "他结结巴巴地说了个借口，然后匆匆离开。",
+          "explanationZh": "stammered 直接接 an excuse，表示把借口结结巴巴地说出来。"
+        }
+      ],
+      "coreImageZh": "男孩拿着蓝色书，想向朋友借阅，却断断续续地说：“我……我想借……”停了一会儿，他才接着说：“这……这本书，可以吗？”女孩安静地等他把话说完。stammer 指口吃、结巴，说话时会不由自主地停顿或重复声音。"
+    },
+    {
+      "number": 6997,
+      "word": "static",
+      "ipa": "/ˈstætɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "静态的，停滞的",
+      "coreEn": "not moving, changing, or developing",
+      "mnemonics": [
+        {
+          "method": "STAT + IC，站定不动，状态不变",
+          "textZh": "STAT- 的词源线索是“使站住”，-ic 是形容词结尾。把人和物都按下暂停，站定在原处：static，静态的；数字停在原处不再增长，就是停滞的。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STAY + TICK，时钟停在这一刻",
+          "textZh": "借 STAY（留在原处）和 TICK（滴答声）的近音记 static。想象对钟的指针说“留在这里”，连滴答声也停了，时钟保持原样不再走：static，静态的、停滞的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "物体或画面静止不动",
+          "explanationZh": "形容物体不移动，或画面只呈现固定状态。static 修饰名词时仍是形容词；这里不涉及名词“静电、杂音”。",
+          "collocations": [
+            {
+              "phrase": "a static subject",
+              "meaningZh": "静止的拍摄对象"
+            },
+            {
+              "phrase": "a static image",
+              "meaningZh": "静态图像"
+            }
+          ]
+        },
+        {
+          "senseZh": "数量、状态不变或停滞",
+          "explanationZh": "常用 remain static，表示一段时间里没有明显变化或发展；未必是永久不变，也不等于数量为零。",
+          "collocations": [
+            {
+              "phrase": "remain static",
+              "meaningZh": "保持不变；停滞不前"
+            },
+            {
+              "phrase": "a static population",
+              "meaningZh": "数量保持不变的人口"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stationary",
+          "comparisonZh": "在“静止、不移动”时可对应；stationary 也能表示状态不变，如人口数量稳定。两者在这些义项接近，但 static 的静电、无线电杂音等另义不等于 stationary。",
+          "sources": [
+            "B"
+          ]
+        },
+        {
+          "word": "invariable",
+          "comparisonZh": "在“不变化”这一义上相近。invariable 强调始终一样、不随时间或条件改变；static 可以只描述某一阶段停着不动或没有发展，不保证永远不变。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Both your pictures are of static subjects.",
+          "translationZh": "你的两张照片拍的都是静止的物体。",
+          "explanationZh": "static 修饰 subjects，指拍摄对象本身不动。"
+        },
+        {
+          "textEn": "The population remained more or less static.",
+          "translationZh": "人口数量基本保持不变。",
+          "explanationZh": "remained static 说的是数量没有明显变化，并不是人们都站着不动。"
+        }
+      ],
+      "coreImageZh": "男孩等了一会儿，又俯身观察，展台上的机车模型始终停在短轨道上，没有开动。讲解员告诉他，这是静态展品。static 在这里指静态的、不运动的；用来形容发展或数量时，也可表示保持不变、停滞不前。"
+    },
+    {
+      "number": 6998,
+      "word": "stature",
+      "ipa": "/ˈstætʃər/",
+      "pos": "n.",
+      "coreMeaningZh": "高度，身高；才干，水平",
+      "coreEn": "a person’s height; the standing earned through ability and achievement",
+      "mnemonics": [
+        {
+          "method": "STATUE 真人像，STATURE 人的身高",
+          "textZh": "STATUE（雕像）与 STATURE 几乎整个字形相同。想象一尊与真人等高的雕像立在身高尺旁：雕像有多高，那个人的 stature 就有多高，记住人的“身高”。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STATUS 地位升，STATURE 分量重",
+          "textZh": "STATUS（地位）与 STATURE 共有醒目的 STATU。学者凭多年研究赢得尊重，地位升高，在同行心中越来越有分量：stature，靠才干与成就获得的地位、声望。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "人的身高、身材高度",
+          "explanationZh": "stature 是较正式的不可数名词。small/short in stature 表示身材矮小，不是才能差；通常说人的身高，而非任意物体的尺寸。",
+          "collocations": [
+            {
+              "phrase": "small in stature",
+              "meaningZh": "身材矮小"
+            },
+            {
+              "phrase": "a person of tall stature",
+              "meaningZh": "身材高大的人"
+            }
+          ]
+        },
+        {
+          "senseZh": "由才干、成就带来的地位或分量",
+          "explanationZh": "原表“才干，水平”对应人的成就水准及其获得的尊重，常延伸为声望、地位；不宜把每一种具体技能直接叫 stature。",
+          "collocations": [
+            {
+              "phrase": "grow in stature",
+              "meaningZh": "声望或地位提高"
+            },
+            {
+              "phrase": "an artist of international stature",
+              "meaningZh": "具有国际声望的艺术家"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "height",
+          "comparisonZh": "在人的身体高度这一义上可对应。height 也用于山、楼、桌子等任何物体的高度；stature 的身高义较正式，主要用于人。"
+        },
+        {
+          "word": "standing",
+          "comparisonZh": "在地位、声望这一义上相近。stature 突出能力、成就带来的分量；standing 可泛指在群体或组织中的地位、名望，不一定突出重大成就。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He is small in stature.",
+          "translationZh": "他身材矮小。",
+          "explanationZh": "small in stature 只描述身体高度，不评价成就或能力。"
+        },
+        {
+          "textEn": "She was an actor of considerable stature.",
+          "translationZh": "她是一位颇有声望的演员。",
+          "explanationZh": "of considerable stature 表示在业内有分量、有地位，不是说她身材高大。"
+        }
+      ],
+      "coreImageZh": "男孩想踮起脚显得更高，妈妈提醒他把脚跟放下，再用水平的小书比到头顶。stature 在这里指一个人自然站直时的身高；踮脚后暂时抬高的位置，不是他的实际身高。"
+    },
+    {
+      "number": 6999,
+      "word": "steadfast",
+      "ipa": "/ˈstedfæst/",
+      "pos": "adj.",
+      "coreMeaningZh": "坚定的，忠诚的",
+      "coreEn": "firm and unwavering in belief, loyalty, or purpose",
+      "mnemonics": [
+        {
+          "method": "STEAD + FAST，守住位置，也守住承诺",
+          "textZh": "stead 的旧义是“位置”，fast 在这里是“牢固的”，不是“快”。牢牢守住自己的位置，困难来了仍守着朋友、不改承诺：steadfast，坚定的、忠诚的。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STEP FAST，每次求助都赶来",
+          "textZh": "借 STEP FAST（快步走）的近音记 steadfast。答应朋友“有困难我就来”，此后每次听到求助都赶过去，从不临时变卦。记住的不是速度快，而是始终守诺、忠实支持。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "坚定地保持信念、目标或决定",
+          "explanationZh": "常用 be/remain steadfast in something，表示没有因压力或困难改变立场；不是只在一时情绪激动时下决心。",
+          "collocations": [
+            {
+              "phrase": "remain steadfast in one’s belief",
+              "meaningZh": "始终坚持自己的信念"
+            },
+            {
+              "phrase": "steadfast determination",
+              "meaningZh": "坚定不移的决心"
+            }
+          ]
+        },
+        {
+          "senseZh": "始终忠实地支持人或事业",
+          "explanationZh": "可以修饰 supporter、support、loyalty、love 等。通常含赞许意味，强调支持持续、不动摇，而非行动速度快。",
+          "collocations": [
+            {
+              "phrase": "a steadfast supporter",
+              "meaningZh": "坚定的支持者"
+            },
+            {
+              "phrase": "steadfast loyalty",
+              "meaningZh": "始终不渝的忠诚"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "staunch",
+          "comparisonZh": "在“坚定支持、忠于某人或信念”这一义上接近。staunch 常突出抵抗外界影响的坚决；steadfast 更突出长时间保持同一立场、不动摇。",
+          "sources": [
+            "weichen_gre",
+            "B"
+          ]
+        },
+        {
+          "word": "unflinching",
+          "comparisonZh": "在压力面前坚定不动摇时可以对应。unflinching 更强调面对痛苦、危险或难堪也不退缩；steadfast 的忠诚与坚持不一定含这种危险场景。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was steadfast in his support of the governor's policies.",
+          "translationZh": "他坚定地支持州长的政策。",
+          "explanationZh": "steadfast in his support 表示支持立场始终不动摇。"
+        },
+        {
+          "textEn": "He remained steadfast in his determination to bring the killers to justice.",
+          "translationZh": "他始终决心要让凶手受到法律制裁。",
+          "explanationZh": "remained steadfast in his determination 强调决心持续，没有动摇。"
+        }
+      ],
+      "coreImageZh": "朋友抱着足球邀请男孩去玩，他却记着已经答应留下帮同伴种花。听完邀请，他仍转回苗床继续浇水，没有改变承诺。steadfast 指坚定、忠诚的，像这样始终守诺、支持同伴，不因另一个诱人的选择就动摇。"
+    },
+    {
+      "number": 7000,
+      "word": "stealth",
+      "ipa": "/stelθ/",
+      "pos": "adj.",
+      "coreMeaningZh": "秘密的",
+      "coreEn": "intended to avoid attracting attention or being detected",
+      "mnemonics": [
+        {
+          "method": "STEAL + TH，偷拿饼干不出声",
+          "textZh": "STEAL（偷）后接 TH，完整拼成 STEALTH，两词也确有词源联系。想象小手悄悄拿走饼干，不想被旁人发现；由偷拿时的隐蔽方式，记住 stealth：秘密进行、不引人注意的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "WEALTH 不露财，STEALTH 不露踪",
+          "textZh": "WEALTH（财富）和 STEALTH 的主要字形 EALTH 相同。富豪把一笔钱悄悄捐出去，活动不公开，也不引人注意：wealth 不露财，stealth 不露踪，记住“秘密的”。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "形容词：暗中进行、不引人注意的",
+          "explanationZh": "本条保留原表形容词。常放在 campaign、operation、mode 等名词前，强调避免引起注意；秘密行动未必违法，也不是所有保密信息都可直接用 stealth 修饰。",
+          "collocations": [
+            {
+              "phrase": "a stealth campaign",
+              "meaningZh": "暗中进行的活动"
+            },
+            {
+              "phrase": "in stealth mode",
+              "meaningZh": "以不公开、不引人注意的方式"
+            }
+          ]
+        },
+        {
+          "senseZh": "技术语境：降低被探测可能性的",
+          "explanationZh": "stealth aircraft/technology 指为了不易被雷达等探测而设计的飞机或技术，并非肉眼完全看不见。另有常见名词义“隐秘行动方式”，如 by stealth，但不是本条主词性。",
+          "collocations": [
+            {
+              "phrase": "stealth technology",
+              "meaningZh": "隐形技术；低可探测性技术"
+            },
+            {
+              "phrase": "a stealth aircraft",
+              "meaningZh": "隐形飞机"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "secret",
+          "comparisonZh": "在“非公开进行”时相近。secret 还可形容保密消息、秘密地点等；stealth 更突出有意不引人注意、避免被发现，通常用来修饰行动或手段。"
+        },
+        {
+          "word": "covert",
+          "comparisonZh": "两者都可形容隐蔽、非公开的行动。covert 常强调行动未公开承认或刻意隐藏；stealth 更强调不易察觉。涉及雷达隐形技术时，不能直接用 covert 替换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "… the company has operated in stealth mode until now.",
+          "translationZh": "……这家公司直到现在都一直秘密运营。",
+          "explanationZh": "in stealth mode 指刻意保持低调、不公开活动；这里保留词典原引文的省略号。"
+        },
+        {
+          "textEn": "The planes are equipped with stealth technology to help evade detection by radar.",
+          "translationZh": "这些飞机配备了隐形技术，以帮助避开雷达探测。",
+          "explanationZh": "stealth 修饰 technology，表示降低被探测可能性的技术，而非完全隐身。"
+        }
+      ],
+      "coreImageZh": "爸爸专心看书，男孩在他背后放轻脚步，把礼物悄悄放到小桌上，松开双手后仍没有引起爸爸注意。这次秘密准备惊喜的行动，就是 stealth 所强调的不引人注意、避免被察觉；它不一定与偷窃有关。"
+    }
+  ]
+}

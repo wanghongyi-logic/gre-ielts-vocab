@@ -1,0 +1,374 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6791,
+      "word": "rehearsal",
+      "ipa": "/rɪˈhɜːrsəl/",
+      "pos": "n.",
+      "coreMeaningZh": "排练，彩排",
+      "coreEn": "a practice session in preparation for a performance or event",
+      "coreImageZh": "正式演出还在明天，男孩和女孩先在空礼堂里练习上场、站定和鞠躬，老师在旁观察指导。做完一遍后，他们又准备重来。rehearsal 指正式表演之前的排练，通过反复练习熟悉动作与配合，而不是已经面对观众演出。",
+      "mnemonics": [
+        {
+          "method": "RE·HEARS·AL：反复过一遍",
+          "textZh": "rehearsal 的词源画面是“把地重新耙一遍”：re- 再来，hears 联系早期“耙地”的词，-al 表示动作。像把每一行土地反复耙过，演员也把每句台词、每个动作反复过一遍，这就是排练。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RE—HEAR—SELL，卖货前先排练",
+          "textZh": "正式 SELL（卖货）前，先把推销台词讲给搭档 HEAR（听），不顺的地方再来一遍。借 RE（再）、HEAR、SELL 三个声音提示，记 rehearsal：正式上场前的排练。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "排练，彩排",
+          "explanationZh": "可数时指一次排练或一系列排练，可用 have a rehearsal、rehearsals for a performance；不可数时指排练活动或过程，常用 in rehearsal。dress rehearsal 指按正式演出条件进行的彩排，不只是在试衣服。",
+          "collocations": [
+            {
+              "phrase": "a dress rehearsal",
+              "meaningZh": "正式演出前的彩排"
+            },
+            {
+              "phrase": "a rehearsal for the play",
+              "meaningZh": "为这出戏进行的排练"
+            },
+            {
+              "phrase": "be in rehearsal",
+              "meaningZh": "正在排练中"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "practice",
+          "comparisonZh": "都可指练习；practice 范围很广，rehearsal 通常是为即将进行的演出、仪式等预先练习。"
+        },
+        {
+          "word": "run-through",
+          "comparisonZh": "都可指演前试演；run-through 常强调把节目或流程从头到尾走一遍，rehearsal 也可以只练其中一小段。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "There are only three more rehearsals before the concert.",
+          "translationZh": "音乐会前只剩下三次排练了。",
+          "explanationZh": "rehearsals 用复数，three 计算排练的次数；before the concert 说明正式演出尚未开始。"
+        },
+        {
+          "textEn": "We only had six days of rehearsal.",
+          "translationZh": "我们只有六天的排练时间。",
+          "explanationZh": "rehearsal 在 days of 后作不可数名词，指排练这项活动，而非六次排练。"
+        }
+      ]
+    },
+    {
+      "number": 6792,
+      "word": "reign",
+      "ipa": "/reɪn/",
+      "pos": "n.; vi.",
+      "coreMeaningZh": "统治权；占统治地位，盛行",
+      "coreEn": "sovereign rule or authority; to be dominant or prevalent",
+      "coreImageZh": "老师提醒后，孩子们停止交谈，都低头读起自己的书，整个阅览室安静下来。reign 在这里表示某种状态普遍存在、占据主导；silence reigns 就是寂静笼罩四周，不是说寂静真的成了统治者。",
+      "mnemonics": [
+        {
+          "method": "RAIN 连日下雨，像在统治全城",
+          "textZh": "RAIN（雨）与 REIGN 同音。连日大雨决定了全城的生活：球赛取消、摊位收起、出门都得带伞。雨像在城里说了算，用这场“雨的统治”记 reign。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "REIN 控马，REIGN 治国",
+          "textZh": "REIN 是马的缰绳，与 REIGN 同音。国王手握缰绳控制马的方向，也掌握治理国家的权力：手里是 rein，国家处于他的 reign 之下。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "统治权；统治时期",
+          "explanationZh": "名词可表示君主的统治或统治权，也常指一位统治者在位的时期。可用 during somebody’s reign；引申可谈某人在一个领域保持领先的时期。",
+          "collocations": [
+            {
+              "phrase": "during the king’s reign",
+              "meaningZh": "在国王统治期间"
+            },
+            {
+              "phrase": "the reign of a monarch",
+              "meaningZh": "君主的统治"
+            }
+          ]
+        },
+        {
+          "senseZh": "占统治地位，盛行",
+          "explanationZh": "不及物，除了君主在位，也可描写某种力量、风气或气氛占据主导。reign supreme 表示占绝对优势；silence reigned 是寂静笼罩，而不是安静被某人统治。",
+          "collocations": [
+            {
+              "phrase": "reign supreme",
+              "meaningZh": "占绝对优势"
+            },
+            {
+              "phrase": "chaos reigns",
+              "meaningZh": "混乱占据局面"
+            },
+            {
+              "phrase": "silence reigned",
+              "meaningZh": "一片寂静"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rule",
+          "comparisonZh": "在统治义上接近；rule 常强调实际治理，reign 可指君主在位，并不总意味着亲自行使所有治理权。rule 还可直接接被统治对象，reign 通常不及物。"
+        },
+        {
+          "word": "prevail",
+          "comparisonZh": "在占上风、盛行时接近；prevail 强调某种力量或状况胜出、普遍存在，reign 可更形象地写成某种气氛仿佛统治了整个场面。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She was a popular ruler throughout her reign.",
+          "translationZh": "在整个统治期间，她都是一位受欢迎的统治者。",
+          "explanationZh": "her reign 是名词短语，throughout 表示这种情况贯穿整个在位时期。"
+        },
+        {
+          "textEn": "For a while, chaos and confusion reigned.",
+          "translationZh": "有一段时间，局面一片混乱。",
+          "explanationZh": "chaos and confusion 作主语，reigned 不接直接宾语，描写混乱占据了整个局面。"
+        }
+      ]
+    },
+    {
+      "number": 6793,
+      "word": "rejoice",
+      "ipa": "/rɪˈdʒɔɪs/",
+      "pos": "vi.",
+      "coreMeaningZh": "欣喜，喜悦",
+      "coreEn": "to feel or express great happiness",
+      "coreImageZh": "老师告诉男孩，他的画入选展览了。男孩笑得满脸欣喜，拍手说自己一直盼着这一天，听到好消息后的喜悦久久不散。rejoice 表示感到或表现出强烈的高兴，常用于为好事发生而欣喜。",
+      "mnemonics": [
+        {
+          "method": "RE·JOICE：满心欢喜",
+          "textZh": "joice 与 joy（喜悦）同源，主音也是 /dʒɔɪ/。rejoice 把这份喜悦表达出来：听到家人平安的好消息，满心欢喜，忍不住庆祝。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RE＋VOICE：欢呼声又起",
+          "textZh": "rejoice 整体像 re＋voice（声音再起）。支持的球队赢了，观众刚欢呼完又放声欢呼；这不断响起的喜悦声音，提醒 rejoice——欣喜、欢庆。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "欣喜，喜悦",
+          "explanationZh": "本义项不及物，常用 rejoice at、over 或 in 引出值得高兴的事，也可用 rejoice to do 或 rejoice that 从句。较正式，不要求一定大声欢呼，安静而深切的喜悦也可以用。",
+          "collocations": [
+            {
+              "phrase": "rejoice at the news",
+              "meaningZh": "听到消息而欣喜"
+            },
+            {
+              "phrase": "rejoice over a victory",
+              "meaningZh": "为胜利而欢欣"
+            },
+            {
+              "phrase": "rejoice to see somebody",
+              "meaningZh": "见到某人而高兴"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "delight",
+          "comparisonZh": "在感到欣喜时接近；delight 作动词常用 delight in，强调从某事中获得很大乐趣，rejoice 常是为喜讯、成功等感到高兴。"
+        },
+        {
+          "word": "exult",
+          "comparisonZh": "都可表现强烈的喜悦；exult 更容易带出胜利、成功后的扬眉吐气或欢腾，rejoice 不一定包含得胜、得意的意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We all rejoiced over our friend’s good luck.",
+          "translationZh": "我们都为朋友的好运而欣喜。",
+          "explanationZh": "rejoiced over 后接使大家高兴的事情，喜悦来自朋友的际遇。"
+        },
+        {
+          "textEn": "They rejoiced to see their son well again.",
+          "translationZh": "看到儿子又恢复了健康，他们满心欢喜。",
+          "explanationZh": "to see 说明高兴的缘由，well again 表示儿子重新恢复良好状态。"
+        }
+      ]
+    },
+    {
+      "number": 6794,
+      "word": "relapse",
+      "ipa": "/rɪˈlæps/",
+      "pos": "vi.",
+      "coreMeaningZh": "重蹈覆辙，再犯",
+      "coreEn": "to fall back into a former undesirable habit or state after an improvement",
+      "coreImageZh": "男孩说自己已经一周没再乱丢玩具，玩完后却又把小车留在收纳箱外。朋友一提醒，他才不好意思地发现旧习惯又回来了。relapse 在这里表示改善之后重新陷入原来的坏习惯或较差状态，强调已经好转过，却又退了回去。",
+      "mnemonics": [
+        {
+          "method": "RE·LAPSE：又滑回老毛病",
+          "textZh": "re- 表示“回去”，lapse 的词源是“滑落”。好不容易改掉旧毛病，却又滑回原来的坏习惯，这种好转之后再次犯，就是 relapse。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RELAX后RELAPSE：松懈又犯",
+          "textZh": "relapse 与 relax（放松）整词很像。刚戒掉熬夜就放松要求，relax 了警惕，又开始夜夜不睡；旧毛病再次出现，便是 relapse。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "重蹈覆辙，再犯",
+          "explanationZh": "本义项不及物，常用 relapse into 接旧习惯、不良行为或较差的状态。通常包含之前有所改善、后来又倒退的过程；并非任何第一次犯错都叫 relapse。另可表示疾病在好转后复发，但此处重点是重回旧习或旧状态。",
+          "collocations": [
+            {
+              "phrase": "relapse into old habits",
+              "meaningZh": "重染旧习"
+            },
+            {
+              "phrase": "relapse into bad ways",
+              "meaningZh": "又走回坏的老路"
+            },
+            {
+              "phrase": "relapse into chaos",
+              "meaningZh": "重新陷入混乱"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "backslide",
+          "comparisonZh": "都可指好转后重回不良行为；backslide 更常带有行为、道德或习惯退步的意味，relapse 也广泛用于状态或疾病复发。"
+        },
+        {
+          "word": "revert",
+          "comparisonZh": "都可表示回到原先状态；revert 可中性地回到旧方法，relapse 在本义中强调好转后又回到较差、令人不希望的状态。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She stayed out of trouble for a long time, but then she relapsed into her old ways.",
+          "translationZh": "她很长时间都没有惹麻烦，后来却又故态复萌。",
+          "explanationZh": "but then 标出转折，relapsed into her old ways 表示先有所改善、随后又回到旧行为。"
+        },
+        {
+          "textEn": "The country soon relapsed into chaos.",
+          "translationZh": "这个国家很快又陷入了混乱。",
+          "explanationZh": "relapsed into 表示重新落入先前的较差状态；chaos 是回到的状态，而不是动词直接支配的宾语。"
+        }
+      ]
+    },
+    {
+      "number": 6795,
+      "word": "relentless",
+      "ipa": "/rɪˈlentləs/",
+      "pos": "adj.",
+      "coreMeaningZh": "残酷无情的；不肯妥协的，毫不松懈的",
+      "coreEn": "refusing to soften, yield, or reduce severity or effort",
+      "coreImageZh": "男孩已经问过两次，仍请求把还书时间再宽限一天，管理员却始终坚持当天归还，明确表示不会让步。relentless 在这里形容态度坚定而不肯软化，即使别人反复请求，也不愿放松要求或作出妥协。",
+      "mnemonics": [
+        {
+          "method": "RELENT·LESS：绝不软下来",
+          "textZh": "relent 表示“态度缓和、心软”，-less 表示“没有”。别人再三求情，他也不肯软下来、不肯松口；这种毫不让步的态度，就是 relentless。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RENT＋LESS？一分也不让",
+          "textZh": "relentless 整体可以联到 rent（房租）＋less（更少）。租客希望少付一点房租，房东却一分也不肯减，再怎么求情都没用：这个毫不让步的房东很 relentless。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "残酷无情的；不肯妥协的",
+          "explanationZh": "可形容人、敌手、态度或追求目标的行为，强调不肯缓和、不愿退让或毫不松懈。用于追逼、攻击时可显得无情，但也可形容可贵的坚持，不必一概理解为恶毒。",
+          "collocations": [
+            {
+              "phrase": "a relentless opponent",
+              "meaningZh": "毫不退让的对手"
+            },
+            {
+              "phrase": "relentless criticism",
+              "meaningZh": "毫不留情的持续批评"
+            },
+            {
+              "phrase": "relentless in the pursuit of a goal",
+              "meaningZh": "追求目标毫不松懈"
+            }
+          ]
+        },
+        {
+          "senseZh": "不减弱的，持续不停的",
+          "explanationZh": "还可形容压力、风雨、工作等持续存在且强度不减，重点不是只持续很久，而是没有明显缓和。",
+          "collocations": [
+            {
+              "phrase": "relentless pressure",
+              "meaningZh": "不减的压力"
+            },
+            {
+              "phrase": "relentless rain",
+              "meaningZh": "持续不歇的雨"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ruthless",
+          "comparisonZh": "在无情、不留情面时接近；ruthless 更直接强调缺少怜悯、甚至不择手段，relentless 更突出不缓和、不松懈，也可用于褒义的坚持。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "implacable",
+          "comparisonZh": "都可形容不肯退让的敌意或强硬态度；implacable 更强调无法安抚、难以和解，relentless 还可强调行动持续、强度不减。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The hunter was relentless in pursuit of his prey.",
+          "translationZh": "猎人紧追猎物，毫不松懈。",
+          "explanationZh": "relentless in pursuit of 描写追逐过程不肯停歇、没有减弱，并不单凭这一词就能断定具体手段。"
+        },
+        {
+          "textEn": "The team kept up the relentless pressure in the second half.",
+          "translationZh": "这支队伍在下半场持续施加压力，丝毫没有松懈。",
+          "explanationZh": "kept up 与 relentless 一起强调压力得以维持，而不是逐渐减弱。"
+        }
+      ]
+    }
+  ]
+}

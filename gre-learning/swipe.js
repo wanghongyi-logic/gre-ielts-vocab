@@ -61,6 +61,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepare
   const pointers=new Set();
   let gesture=null,pointerId=null,phase='idle',timer=null,frame=null,pressTimer=null,suppressUntil=0,enterDirection=null;
   let pendingTurn=0;
+  let paperScrollX=0,paperScrollY=0;
   let paper=null,paperFace=null,paperFold=null,paperShadow=null,paperProgress=0,paperDirection=null,focusAfterTurn=false;
   const motionPreference=win.matchMedia?.('(prefers-reduced-motion: reduce)');
   const reduced=()=>Boolean(motionPreference?.matches);
@@ -93,6 +94,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepare
     const {left,top,width,height}=bounds;
     if(!width||!height)return;
     onTurnActivity(true);
+    paperScrollX=win.scrollX;paperScrollY=win.scrollY;
     paper=doc.createElement('div');paper.className='paper-turn';if(Number.isFinite(edgeLeft))paper.dataset.bookEdge='sculpted';
     paper.setAttribute('aria-hidden','true');paper.inert=true;paper.dataset.direction=direction;
     Object.assign(paper.style,{left:`${left}px`,top:`${top}px`,width:`${width}px`,height:`${height}px`});
@@ -317,7 +319,7 @@ export function installWordSwipe({surface,hintHost,picker,getNeighbor,getPrepare
   });
   listen(win,'blur',()=>{pointers.clear();reset();});listen(win,'pagehide',()=>{pointers.clear();reset();});
   const viewportChanged=()=>{syncSafeArea();reset();};
-  listen(win,'scroll',()=>{syncSafeArea();if(paper||gesture)reset();},{passive:true});
+  listen(win,'scroll',()=>{syncSafeArea();if(gesture||(paper&&(win.scrollX!==paperScrollX||win.scrollY!==paperScrollY)))reset();},{passive:true});
   listen(win,'resize',viewportChanged);listen(win,'orientationchange',viewportChanged);
   if(win.visualViewport?.addEventListener){listen(win.visualViewport,'resize',viewportChanged);listen(win.visualViewport,'scroll',viewportChanged);}
   if(motionPreference?.addEventListener)listen(motionPreference,'change',reset);

@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7066,
+      "word": "svelte",
+      "ipa": "/svelt/",
+      "pos": "adj.",
+      "coreMeaningZh": "(女人)体态苗条的，优雅的",
+      "coreEn": "slim and graceful in appearance",
+      "mnemonics": [
+        {
+          "method": "S 形线条，BELT 腰带勾出苗条身姿",
+          "textZh": "把 svelte 近形联到 S 形线条和完整的 BELT（腰带）。想象一位身姿优雅的舞者，腰间的腰带勾出纤细流畅的轮廓：不是戴上腰带就变瘦，而是这副苗条、优雅的体态让你记住 svelte。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SMELT 闻到香气，回头看见苗条身影",
+          "textZh": "把完整 SMELT（smell 的英式过去式，闻到了）与 svelte 近音联想：先闻到一缕香气，回头看见一位身形纤细、姿态优雅的舞者走过。用“闻到香气—看见苗条身影”这个短镜头，把 SMELT 连到 svelte 的苗条而优雅。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "形容体态：苗条，并带优雅美感",
+          "explanationZh": "svelte 带赞许意味，常修饰人的 figure 或整体体态，不只是中性地说“很瘦”。常用于女性，但并非只能形容女性；重点是纤细、流畅而有美感的外形。",
+          "collocations": [
+            {
+              "phrase": "a svelte figure",
+              "meaningZh": "苗条优雅的身形"
+            },
+            {
+              "phrase": "a svelte dancer",
+              "meaningZh": "身姿纤细优雅的舞者"
+            }
+          ]
+        },
+        {
+          "senseZh": "作表语：看起来或保持苗条优雅",
+          "explanationZh": "svelte 可以放在 look、stay 等词后，描述外形呈现或保持的状态。它评价体态的美感；不单独表示身体健康，也不是“体重轻”的机械同义词。",
+          "collocations": [
+            {
+              "phrase": "look svelte",
+              "meaningZh": "看起来身形苗条优雅"
+            },
+            {
+              "phrase": "stay svelte",
+              "meaningZh": "保持苗条优雅的体态"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "slim",
+          "comparisonZh": "在赞许身形苗条这一义上，slim 与 svelte 接近。slim 是更常见的普通表达；svelte 更突出线条流畅、姿态优雅的整体美感。slim 用来表示机会渺茫等其他义时，不能换成这里的 svelte。"
+        },
+        {
+          "word": "slender",
+          "comparisonZh": "形容人的纤细体态时，slender 与 svelte 高度重合。slender 也常形容手指等局部或物体细长；本义的 svelte 更着眼于整体体态的苗条、优雅。两者不是一瘦一胖，也不存在女性专用与男性专用的硬性区分。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She has a svelte figure.",
+          "translationZh": "她的身形苗条而优雅。",
+          "explanationZh": "svelte 作定语修饰 figure，赞许整体身形，而非仅仅报告体重。"
+        },
+        {
+          "textEn": "So how do you stay svelte?",
+          "translationZh": "那么，你是怎样保持苗条优雅的体态的？",
+          "explanationZh": "stay 后的 svelte 是形容词表语，表示保持这种体态；句子是在提问，不提供减重方法。"
+        }
+      ],
+      "coreImageZh": "男孩和母亲看着一位身形苗条的成年舞者。她舒展双臂，轻轻转身、调整站姿，动作从容而优雅，随后自然收势。svelte 描述苗条而优雅的体态，不只是动作快，也不意味着越瘦越好。"
+    },
+    {
+      "number": 7067,
+      "word": "swagger",
+      "ipa": "/ˈswæɡər/",
+      "pos": "vi.",
+      "coreMeaningZh": "自夸，吹嘘",
+      "coreEn": "boast loudly and arrogantly about oneself",
+      "mnemonics": [
+        {
+          "method": "“帅哥”自封：我最帅、我最强！",
+          "textZh": "把 swagger 整体近音联想成“帅哥”。别人还没开口，他就自封帅哥，接着大声说“我最帅、我最强，谁也比不上我！”记住的不是长得帅，而是这番把自己夸上天的 swagger：自夸、吹嘘。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SWEATER 毛衣才织一件，就吹自己最会织",
+          "textZh": "把完整熟词 SWEATER（毛衣）和 swagger 近形近音联想。一个人刚织好一件毛衣，就举着它大声吹嘘：“我的手艺天下第一，谁也比不上！”从整件 SWEATER 记住这副自吹自擂的 swagger，而不是把正常介绍作品叫吹嘘。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "自夸能力或成就：swagger about something",
+          "explanationZh": "这一不及物用法表示傲慢地吹嘘自己，常用 about 引出所夸耀的事情。它不只是平静陈述成绩，更带自以为了不起、想压过别人的口气。about 后是话题，不是 swagger 直接带的宾语。",
+          "collocations": [
+            {
+              "phrase": "swagger about one’s achievements",
+              "meaningZh": "夸耀自己的成就"
+            },
+            {
+              "phrase": "swagger about one’s job",
+              "meaningZh": "吹嘘自己的工作"
+            }
+          ]
+        },
+        {
+          "senseZh": "不说夸耀话题，也可单独表示自夸",
+          "explanationZh": "上下文已说明得意的缘由时，swagger 可以不带 about 短语，强调自我夸耀的姿态。它另有“趾高气扬地走”的常见用法；遇到 into the room 等路径词时，应辨认那一义，不能把所有 swagger 都机械译成开口吹牛。",
+          "collocations": [
+            {
+              "phrase": "swagger loudly",
+              "meaningZh": "大声自夸"
+            },
+            {
+              "phrase": "swagger arrogantly",
+              "meaningZh": "傲慢地吹嘘"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "boast",
+          "comparisonZh": "在自夸义上，boast 与 swagger 接近。boast 的范围较宽，可表示为成就感到自豪；swagger 更突出傲慢、盛气凌人地宣称自己优越。boast 另有及物的“拥有值得自豪之物”义，不能套到这里的不及物 swagger。"
+        },
+        {
+          "word": "brag",
+          "comparisonZh": "brag 也指得意地吹嘘，常带不赞许意味，和本义 swagger 很接近。brag 是较普通、偏口语的说法；swagger 更容易让人联想到说话者不可一世的姿态。两词都不要求所说的每件事一定是假的。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Kate is always swaggering about her job.",
+          "translationZh": "凯特总是吹嘘自己的工作。",
+          "explanationZh": "swaggering about 后接吹嘘的话题 her job，是自夸义，不是在工作地点走来走去。"
+        },
+        {
+          "textEn": "I, too, would swagger if I'd won first place in the bowling tournament.",
+          "translationZh": "要是我在保龄球比赛中得了第一名，我也会自夸一番。",
+          "explanationZh": "这里 swagger 不带直接宾语，由夺冠的条件说明得意缘由；它可包含自我夸耀、摆出得意架势，而不必狭窄理解为某一句具体谎话。"
+        }
+      ],
+      "coreImageZh": "男孩只搭起一座普通的三块积木小塔，就叉着腰夸口“谁都比不过我”。伙伴看着这座小塔，对他的夸口提出疑问；男孩随后放下双手，收敛了得意的神态。这里的 swagger 是自夸、吹嘘，不只是昂首走路。"
+    },
+    {
+      "number": 7068,
+      "word": "swear",
+      "ipa": "/swer/",
+      "pos": "vi./v.",
+      "coreMeaningZh": "咒骂；宣誓",
+      "coreEn": "use offensive language; make a solemn promise or declaration",
+      "mnemonics": [
+        {
+          "method": "SWEAT 一身汗，开口咒骂这鬼天气",
+          "textZh": "把完整熟词 SWEAT（汗水）与 SWEAR 近形联起来记。想象闷热的车厢里，一个人汗流满面，烦躁地骂起“这该死的天气”：身上是 sweat，嘴里咒骂是 swear。记住他骂出了粗话，不是把出汗本身当作咒骂。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SQUARE 方格中站好，举手郑重宣誓",
+          "textZh": "把完整 SQUARE（正方形）与 swear 近音联想。想象宣誓仪式的地面画着一个方格，轮到的人站进方格、举起手，郑重说“我发誓只讲真话”。从 SQUARE 方格里的这一幕，记住 swear 的宣誓义。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不及物：说粗话、咒骂",
+          "explanationZh": "表示用粗鲁或冒犯性语言，常因愤怒、疼痛或烦躁。针对某人时用 swear at somebody，不把人直接接在 swear 后当宾语。仅仅提高嗓门或表示不同意，不一定就是 swearing。",
+          "collocations": [
+            {
+              "phrase": "swear at somebody",
+              "meaningZh": "对某人骂粗话"
+            },
+            {
+              "phrase": "swear under one’s breath",
+              "meaningZh": "压低声音咒骂"
+            }
+          ]
+        },
+        {
+          "senseZh": "动词：宣誓或郑重保证",
+          "explanationZh": "宣誓、保证去做某事可用 swear to do something；保证一件事是真的可接 that 从句。正式场合也可用 swear an oath，表示立誓。这一义不是骂人；过去式是 swore，过去分词是 sworn。",
+          "collocations": [
+            {
+              "phrase": "swear to tell the truth",
+              "meaningZh": "宣誓说真话"
+            },
+            {
+              "phrase": "swear an oath",
+              "meaningZh": "立誓、宣誓"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "curse",
+          "comparisonZh": "在说粗话、咒骂这一义上，curse 与 swear 接近。curse 还可直接接被咒骂的人或事物，并可表示施加诅咒；swear 的本项不及物咒骂义通常用 at 引出对象，不能把它等同于施魔法。"
+        },
+        {
+          "word": "vow",
+          "comparisonZh": "在郑重许诺、发誓这一义上，vow 与 swear 接近，都可接 to do something。vow 本身不表示骂粗话；swear 还常用于发誓保证陈述真实。因此要先看语境，不能把 swear 的两个义都替成 vow。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She fell over and swore loudly.",
+          "translationZh": "她摔倒了，大声骂了起来。",
+          "explanationZh": "swore 是 swear 的过去式；摔倒后的咒骂使用不及物结构，不是宣誓。"
+        },
+        {
+          "textEn": "I do solemnly swear to tell the whole truth.",
+          "translationZh": "我郑重宣誓，毫无隐瞒地说出全部真相。",
+          "explanationZh": "do 加强语气，swear to tell 表示宣誓去做某事；whole truth 强调完整事实，不只是挑一部分真话说。"
+        }
+      ],
+      "coreImageZh": "桌上的铅笔已经断成两截，男孩懊恼地脱口说出“见鬼”。母亲示意他平静下来，他随后举起空手，认真说“我郑重发誓，不再咒骂”。前一次 swear 表示咒骂，后一次 swear 表示宣誓，同一件事串起两个词义。"
+    },
+    {
+      "number": 7069,
+      "word": "sweltering",
+      "ipa": "/ˈsweltərɪŋ/",
+      "pos": "adj.",
+      "coreMeaningZh": "酷热的",
+      "coreEn": "oppressively hot and uncomfortable",
+      "mnemonics": [
+        {
+          "method": "SHELTERING 躲进阴凉，外面酷热难耐",
+          "textZh": "把完整 SHELTERING（在遮蔽处躲避）与 sweltering 近形近音联想。烈日下热浪扑面，行人纷纷躲到树荫里：他们在 sheltering，正因为外面是 sweltering，酷热得让人受不了。记住避暑动作和逼人避暑的酷热天气。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SWEATER 毛衣捂得热，RING 戒指晒得烫",
+          "textZh": "借完整 SWEATER（毛衣）和 RING（戒指）的连读，近音联想 sweltering。想象一个酷热午后：身上穿着毛衣，捂得人赶紧脱下，窗台上晒着的戒指拿起来也烫手。用这两个熟悉物件的热感，记住 sweltering：整个环境热得难受。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "修饰天气、炎热或环境：热得难受",
+          "explanationZh": "sweltering 比普通 hot 更强调炎热造成的不适，常形容酷暑天气或高温环境。它不是舒服的温暖，也不要求一定存在阳光直晒；阴天、室内都可能 sweltering。",
+          "collocations": [
+            {
+              "phrase": "sweltering heat",
+              "meaningZh": "令人难受的酷热"
+            },
+            {
+              "phrase": "sweltering conditions",
+              "meaningZh": "酷热难耐的环境"
+            }
+          ]
+        },
+        {
+          "senseZh": "作表语：这里酷热难耐",
+          "explanationZh": "可用 it is sweltering 描述一个地方的整体热感，也可形容房间或办公室闷热得让人难受。这里用的是形容词，强调环境状态；不能见到 -ing 就一律当作正在做某个动作。",
+          "collocations": [
+            {
+              "phrase": "a sweltering office",
+              "meaningZh": "酷热难耐的办公室"
+            },
+            {
+              "phrase": "It is sweltering in here.",
+              "meaningZh": "这里热得让人受不了。"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "scorching",
+          "comparisonZh": "形容极热天气时，scorching 与 sweltering 很接近。scorching 更容易突出灼人的热感；sweltering 更突出身处高温环境时难受、闷热的感受。它们并不分别严格限定干热与湿热。"
+        },
+        {
+          "word": "stifling",
+          "comparisonZh": "形容房间热得透不过气时，stifling 与 sweltering 接近。stifling 还可因缺少新鲜空气而使人憋闷，也可比喻压抑、束缚；sweltering 的本义明确以酷热为核心。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "the air conditioning was broken, and it was sweltering in the office",
+          "translationZh": "空调坏了，办公室里酷热难耐。",
+          "explanationZh": "it was sweltering 描述办公室的酷热状态，sweltering 在这里作表语。"
+        },
+        {
+          "textEn": "The game was played in four quarters because of sweltering conditions.",
+          "translationZh": "由于天气酷热，这场比赛分为四节进行。",
+          "explanationZh": "sweltering 修饰 conditions，强调比赛环境热得让人难受。"
+        }
+      ],
+      "coreImageZh": "夏日庭院里，男孩和母亲只是站着就不断出汗，肩膀垂着，显得闷热难耐。男孩抬手扇风，母亲擦去额头的汗，天气却仍然酷热。sweltering 形容热得令人难受，而不是温暖舒适。"
+    },
+    {
+      "number": 7070,
+      "word": "swerve",
+      "ipa": "/swɜːrv/",
+      "pos": "vi.",
+      "coreMeaningZh": "突然改变方向",
+      "coreEn": "turn aside suddenly from a straight line or course",
+      "mnemonics": [
+        {
+          "method": "SERVE 端盘上菜，遇人猛转方向",
+          "textZh": "把完整 SERVE（上菜、服务）与 swerve 近形近音联想。服务员端着托盘往前走，面前突然有人站起来，他立刻向旁边一拐，避开碰撞。上菜是 serve，这一下突然改向就是 swerve。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "CURVE 弯线突然甩出：小车猛地改向",
+          "textZh": "把完整 CURVE（弯线）与 swerve 近音联想。想象小车本来沿直线前进，前方出现障碍，它突然拐向一边，在原来的直线旁甩出一道弯线。那道线是 curve，突然改变方向的动作是 swerve。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "人或车辆突然偏向：后接方向短语",
+          "explanationZh": "不及物 swerve 常以司机、车辆或其他移动物为主语，后接 to、into、off、across 等方向表达。重点是突然偏离原来的路线；它既可能是主动躲避，也可能是失控，不保证成功避开危险。",
+          "collocations": [
+            {
+              "phrase": "swerve to the left",
+              "meaningZh": "突然向左偏转"
+            },
+            {
+              "phrase": "swerve off the road",
+              "meaningZh": "突然偏出道路"
+            }
+          ]
+        },
+        {
+          "senseZh": "说明变向原因或用于球等移动物",
+          "explanationZh": "swerve to avoid something 中，to avoid 表示为躲避而突然转向的目的，不是被 swerve 直接支配的物体。球也可以 swerve，表示飞行方向突然偏转；本词不只用于驾驶。",
+          "collocations": [
+            {
+              "phrase": "swerve to avoid a collision",
+              "meaningZh": "为避免碰撞而突然转向"
+            },
+            {
+              "phrase": "swerve into the net",
+              "meaningZh": "改变方向飞入球网"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "veer",
+          "comparisonZh": "描述车辆突然改变方向时，veer 与 swerve 很接近。veer 更突出路线或方向发生偏移，swerve 常让人想到突然向一边闪转。两者都可能突然，不能硬说 veer 一定缓慢、swerve 一定是主动避险。"
+        },
+        {
+          "word": "turn aside",
+          "comparisonZh": "turn aside 是“转向一边、偏离原路”的普通表达，与本义方向变化相通。swerve 把突然性写进词义；单独 turn aside 不一定表示猛然一拐，需要语境或 suddenly、sharply 补出这种速度感。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He lost control of the car and swerved toward a tree.",
+          "translationZh": "他失去了对汽车的控制，突然转向一棵树。",
+          "explanationZh": "swerved 是不及物过去式，toward a tree 指偏转方向；这个例子说明 swerve 不保证是在成功躲避。"
+        },
+        {
+          "textEn": "The ball swerved into the net.",
+          "translationZh": "球突然改变方向，飞进了球网。",
+          "explanationZh": "主语 ball 自身改变飞行方向，into the net 表示改向后的去处；swerved 后没有直接宾语。"
+        }
+      ],
+      "coreImageZh": "男孩本来沿小路向右走，伙伴突然提醒前面有水坑。他赶紧改变行进方向，斜向迈到靠近镜头的干地上，避开水坑后站稳。swerve 指行进中突然转向或偏离原路线，不只是转头看旁边。"
+    }
+  ]
+}

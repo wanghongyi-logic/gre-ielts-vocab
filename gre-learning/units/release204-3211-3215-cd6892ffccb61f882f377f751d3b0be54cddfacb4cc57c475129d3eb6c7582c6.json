@@ -1,0 +1,382 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6831,
+      "word": "retaliate",
+      "ipa": "/rɪˈtælieɪt/",
+      "pos": "vi.",
+      "coreMeaningZh": "报复，反击",
+      "coreEn": "to do something harmful or hostile in return for an earlier injury or attack",
+      "coreImageZh": "朋友先嘲笑男孩的画难看，男孩受了冒犯，随即指着朋友的画，用同样的嘲笑回击。最后两人都抱着手臂，气氛变得僵硬。retaliate 表示报复、反击，重点是因为先受到攻击或冒犯，再对对方作出回击。",
+      "mnemonics": [
+        {
+          "method": "RETELL IT，把他的糗事讲回去",
+          "textZh": "retaliate 的整体声音接近 retell it（再讲一遍）。对方当众讲你的糗事，你便把他的糗事也讲出来回敬他：retell it，借此报复。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RE + TALI + ATE，以同样方式还击",
+          "textZh": "retaliate 的历史构词是“以同类东西回敬”：re- 带出回去，tali- 连到同样方式的回报，-ate 构成动词。对方怎样伤害你，你就怎样还击他——报复，retaliate。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "报复，还击",
+          "explanationZh": "现代常作不及物动词，强调因先受到伤害、攻击或不利对待而采取回应。用 against 引出对象，用 by doing 或 with 引出反击方式，用 for 引出引发报复的事。并不要求一定诉诸身体暴力。",
+          "collocations": [
+            {
+              "phrase": "retaliate against somebody",
+              "meaningZh": "报复某人"
+            },
+            {
+              "phrase": "retaliate for an insult",
+              "meaningZh": "因受辱而报复"
+            },
+            {
+              "phrase": "retaliate by cutting prices",
+              "meaningZh": "通过降价进行反击"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "avenge",
+          "comparisonZh": "都涉及对先前伤害作出报复；avenge 常为某人或某种伤害讨还，如 avenge an insult，retaliate 更突出受到攻击后作出还击，常接 against、by、with 等短语。"
+        },
+        {
+          "word": "requite",
+          "comparisonZh": "在回报伤害、报复的用法中接近；requite 还可以报答恩情、回应爱意，retaliate 通常指敌意或不利行为的回击，不用来表达普通的感恩报答。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He insulted his friend, who retaliated with an angry reply.",
+          "translationZh": "他侮辱了朋友，朋友愤怒地回嘴反击。",
+          "explanationZh": "retaliated with an angry reply 中 with 引出反击方式；前面的 insulted 交代先发生的冒犯。"
+        },
+        {
+          "textEn": "The company retaliated against its rival by lowering prices.",
+          "translationZh": "这家公司通过降价来反击竞争对手。",
+          "explanationZh": "against 引出反击对象，by lowering prices 引出方式；retaliate 表明这不是孤立的调价，而是对先前行动的回应。"
+        }
+      ]
+    },
+    {
+      "number": 6832,
+      "word": "retard",
+      "ipa": "/rɪˈtɑːrd/",
+      "pos": "vt.",
+      "coreMeaningZh": "减速，延迟",
+      "coreEn": "to slow the progress, development, or movement of something",
+      "coreImageZh": "男孩松开玩具车，让它从光滑的木坡滑下；小车进入粗糙的毡垫后，前进变慢，最后停在垫子上。老师指出，是粗糙表面减慢了车速。retard 作动词，表示使速度减慢、使进程延迟，这里是毡垫阻缓了小车的运动。",
+      "mnemonics": [
+        {
+          "method": "RESTART 又重启，RETARD 又耽搁",
+          "textZh": "retard 的整体字形和 restart（重新启动）相近。电脑忙到一半又要重启，工作只好停下来等：一次 restart，又把进度 retard，延迟了。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "REWARD 领奖，RETARD 队伍",
+          "textZh": "retard 和 reward（奖励）整体字形很近。出口临时发奖励，人人停下来领，队伍走得越来越慢：reward 让通行 retard，减速。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "使减慢，使延迟",
+          "explanationZh": "较正式的中性及物动词，重音在后面的 /tɑːrd/。常接进展、发展、增长或运动，表示阻慢其速度，不一定使它完全停止；日常表达往往用 slow down。",
+          "collocations": [
+            {
+              "phrase": "retard progress",
+              "meaningZh": "拖慢进展"
+            },
+            {
+              "phrase": "retard growth",
+              "meaningZh": "减缓增长"
+            },
+            {
+              "phrase": "retard the spread of fire",
+              "meaningZh": "延缓火势蔓延"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "delay",
+          "comparisonZh": "都可使事情变慢、变晚；delay 常强调开始、到达或完成的时间被推后，retard 更突出过程推进速度降低，不一定有完全停止的一段时间。"
+        },
+        {
+          "word": "hinder",
+          "comparisonZh": "都能表示阻碍进展；hinder 更广，强调增加困难或妨碍实现，retard 更集中于拖慢速度、延缓发展。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The chemical will retard the spread of fire.",
+          "translationZh": "这种化学物质会延缓火势蔓延。",
+          "explanationZh": "retard 后接 the spread of fire，说明被减慢的是蔓延过程，不表示火一定会被完全扑灭。"
+        },
+        {
+          "textEn": "The problems have retarded the progress of the program.",
+          "translationZh": "这些问题拖慢了该计划的进展。",
+          "explanationZh": "retarded 在这里是动词过去分词，与 have 构成现在完成时，宾语是 the progress of the program。"
+        }
+      ]
+    },
+    {
+      "number": 6833,
+      "word": "retort",
+      "ipa": "/rɪˈtɔːrt/",
+      "pos": "n.",
+      "coreMeaningZh": "（尤指机智或尖锐的）反驳，回嘴",
+      "coreEn": "a quick reply that answers criticism or an attack, often sharply or wittily",
+      "coreImageZh": "朋友讥讽男孩算得太慢，男孩立即指着朋友的作业反问：“算得快，可算错了有什么用？”朋友收起得意的神情，低头重新检查。retort 在这里作名词，指迅速而有锋芒的反驳，男孩这句机敏的回话正面回应了先前的嘲讽。",
+      "mnemonics": [
+        {
+          "method": "RE + TORT，把话拧回去",
+          "textZh": "retort 的词源图景是“扭回去”：re- 是回，tort- 是扭转。对方说你“只会问问题”，你立刻回一句“那你怎么一个也答不出？”把他的话锋扭回去，就是尖锐回嘴。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "REPORT 被挑刺，RETORT 顶回去",
+          "textZh": "report（报告）与 retort 只差一个字母。有人讥讽你的报告“只有问题”，你立刻回一句“那你倒是给个答案呀！”这一句机智的顶回去，就是 retort。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "机智或尖锐的反驳、回嘴",
+          "explanationZh": "本课是可数名词，常指针对批评、挖苦或冒犯迅速作出的回应，既可以幽默，也可以生气、尖锐；不是任何普通回答都适合叫 retort。",
+          "collocations": [
+            {
+              "phrase": "a sharp retort",
+              "meaningZh": "尖锐的回嘴"
+            },
+            {
+              "phrase": "make a witty retort",
+              "meaningZh": "作出机智的反驳"
+            },
+            {
+              "phrase": "bite back a retort",
+              "meaningZh": "忍住没有回嘴"
+            }
+          ]
+        },
+        {
+          "senseZh": "作动词：迅速反驳",
+          "explanationZh": "同形词也可作动词，常直接引出回话，或用 retort that... 接反驳内容；阅读时注意它是在说“一句回话”，还是“回嘴这一动作”。",
+          "collocations": [
+            {
+              "phrase": "retort angrily",
+              "meaningZh": "愤怒地反驳"
+            },
+            {
+              "phrase": "retort that...",
+              "meaningZh": "反驳说……"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "rejoinder",
+          "comparisonZh": "都可指针对前话的回应、反驳；rejoinder 较正式，可用于论辩中的答复，retort 更鲜明地带迅速、尖锐或机智地回击这一层意味。"
+        },
+        {
+          "word": "repartee",
+          "comparisonZh": "在机智应答时接近；repartee 更偏幽默敏捷的接话或一来一往的谈锋，retort 可以只是生气地顶回一句，并不一定幽默。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He was stung into an angry retort.",
+          "translationZh": "他受到刺激，愤怒地回嘴。",
+          "explanationZh": "an angry retort 是一个名词短语；was stung into 表示受刺激而作出这种反应。"
+        },
+        {
+          "textEn": "Her witty retort made everyone laugh.",
+          "translationZh": "她机智的反驳让大家都笑了。",
+          "explanationZh": "witty 表示这句回话巧妙、风趣；retort 是针对前面话语的回应，而不是孤立的笑话。"
+        }
+      ]
+    },
+    {
+      "number": 6834,
+      "word": "retouch",
+      "ipa": "/ˌriːˈtʌtʃ/",
+      "pos": "vt.",
+      "coreMeaningZh": "润饰，改进",
+      "coreEn": "to make small changes to an existing picture, photograph, or surface so that it looks better",
+      "coreImageZh": "红花绿叶的画已经基本完成，老师指出一片花瓣还漏了一点颜色。男孩用细笔局部补色、把花瓣颜色涂匀，随后收起笔欣赏完成的画。retouch 表示润饰、修整，通过小范围的修改让已有作品更完善，而不是从头重画。",
+      "mnemonics": [
+        {
+          "method": "RE + TOUCH，再补几笔",
+          "textZh": "re- 是再一次，touch 是触碰。画已经完成，再用画笔轻触几处，把细节修得更好：retouch，润饰。不是推倒重画，而是再加工一下。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RETEACH 前，RETOUCH 教案",
+          "textZh": "retouch 和 re-teach（重新教）整体字形相近，声音也只在重读元音上明显不同。准备重讲一堂课前，老师把原教案再润饰几处：re-teach 前先 retouch。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "润饰、修整局部",
+          "explanationZh": "通常及物，常接照片、画作等，强调在已经存在的作品上作小幅修改，使外观更理想，不等于从头创作或彻底重做。",
+          "collocations": [
+            {
+              "phrase": "retouch a photograph",
+              "meaningZh": "修饰照片"
+            },
+            {
+              "phrase": "retouch a painting",
+              "meaningZh": "润饰画作"
+            },
+            {
+              "phrase": "a digitally retouched image",
+              "meaningZh": "经过数字修饰的图像"
+            }
+          ]
+        },
+        {
+          "senseZh": "对表面补色、修饰",
+          "explanationZh": "也可用于已有颜色或表面的局部修整，例如补上新长出的发根颜色。重点仍是局部补修，而非笼统的全面改善。",
+          "collocations": [
+            {
+              "phrase": "retouch the paintwork",
+              "meaningZh": "局部修补漆面"
+            },
+            {
+              "phrase": "retouch the roots",
+              "meaningZh": "为新长出的发根补色"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "polish",
+          "comparisonZh": "在润饰作品、让成品更完善时接近；polish 可用于打磨文字、表演或技艺，retouch 更常指对图像或表面作局部外观修改，不能处处互换。"
+        },
+        {
+          "word": "refine",
+          "comparisonZh": "都可以通过细节调整来改进；refine 范围更广，可改进设计、方法或风格，retouch 更突出对已有作品补几处、修几笔。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The photo had been retouched to remove the wrinkles around his eyes.",
+          "translationZh": "这张照片经过修饰，去掉了他眼睛周围的皱纹。",
+          "explanationZh": "had been retouched 是被动形式；to remove... 说明修饰照片的目的，不是改变现实中人的外貌。"
+        },
+        {
+          "textEn": "She retouched the shadows in the painting before the exhibition.",
+          "translationZh": "展览前，她润饰了画中的阴影部分。",
+          "explanationZh": "retouched the shadows 说明只调整画中某些细节，整幅画在此之前已经存在。"
+        }
+      ]
+    },
+    {
+      "number": 6835,
+      "word": "retract",
+      "ipa": "/rɪˈtrækt/",
+      "pos": "vt.",
+      "coreMeaningZh": "收回，否认",
+      "coreEn": "to withdraw something previously said, claimed, offered, or promised",
+      "coreImageZh": "男孩找不到笔，断定是朋友拿走了；随后却从自己的书包里找到了那支红笔。他承认误会，明确说收回刚才的话。retract 表示撤回已经说出的话、声明或指责，男孩撤回的是先前对朋友的错误指责，而不只是道歉。",
+      "mnemonics": [
+        {
+          "method": "RE + TRACT，把话拉回来",
+          "textZh": "re- 是回来，tract- 是拉。retract 就像把已经说出口的话拉回来：“刚才那项指控，我收回。”从拉回接到收回声明、否认先前说法。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "REACT 太冲动，RETRACT 收回话",
+          "textZh": "retract 的整体字形很像 react（作出反应）。刚才反应太冲动，说出没有根据的指控，冷静后只好把话收回：先 react，后 retract。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "收回先前说法或承诺",
+          "explanationZh": "及物，较正式，常接 statement、claim、allegation、offer 等。重点是撤回自己先前说过、提出或答应的内容；不只是对别人的说法表示不同意。",
+          "collocations": [
+            {
+              "phrase": "retract a statement",
+              "meaningZh": "收回一项声明"
+            },
+            {
+              "phrase": "retract an allegation",
+              "meaningZh": "撤回一项指控"
+            },
+            {
+              "phrase": "retract an offer",
+              "meaningZh": "撤回提议或出价"
+            }
+          ]
+        },
+        {
+          "senseZh": "缩回、收回伸出的部分",
+          "explanationZh": "也可表示把伸出的部件拉回主体，可及物或不及物；这一具体动作有助于理解把已说出的话收回的抽象用法。",
+          "collocations": [
+            {
+              "phrase": "retract its claws",
+              "meaningZh": "收回爪子"
+            },
+            {
+              "phrase": "retract the landing gear",
+              "meaningZh": "收起起落架"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "recant",
+          "comparisonZh": "在撤回先前公开的说法、信念时接近；recant 常针对自己曾宣讲、坚持的观点，retract 还可接提议、承诺或指控，使用范围不同。"
+        },
+        {
+          "word": "withdraw",
+          "comparisonZh": "在收回声明、提议时接近；withdraw 更广，也可表示取款、撤离或退出，retract 在言语方面更集中于撤回原先作出的表达。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They tried to persuade me to retract my words.",
+          "translationZh": "他们试图说服我收回自己的话。",
+          "explanationZh": "retract my words 指不再坚持自己先前的说法；persuade somebody to do something 表示说服某人做某事。"
+        },
+        {
+          "textEn": "The newspaper retracted its false claim the next day.",
+          "translationZh": "这家报纸第二天撤回了不实说法。",
+          "explanationZh": "its false claim 说明撤回的是该报纸自己发表的说法，不是单纯批评另一方。"
+        }
+      ]
+    }
+  ]
+}

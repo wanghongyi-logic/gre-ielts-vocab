@@ -10,6 +10,12 @@ import {batchStatus,downloadLessons,optionalMediaGroups,readDownloadCheckpoint,m
 import {OFFLINE_EDITION,setMediaEdition,chooseVideoMode,videoMode} from './offline-preferences.js';
 import {configureVariantImport,importPack,inspectLibrary,cleanUnusedPacks,clearSavedResources,clearSavedWords,deletePack} from './offline-packs.js';
 const size=n=>(n/1024/1024).toFixed(1)+' MB';
+// Pure merge of original batchStatus results; no saved event is proof of availability.
+function reconcileVerifiedCachePaths(catalog,previousPaths,ids,verifiedPaths){
+ const selected=new Set(ids),affected=new Set();for(const entry of catalog.entries)if(selected.has(entry.number))for(const role of ['poster','video','staticPoster']){const ref=entry.storyMedia?.[role];if(ref)affected.add('gre-learning/'+ref.url);}
+ return [...new Set([...previousPaths.filter(path=>!affected.has(path)),...verifiedPaths.filter(path=>affected.has(path))])];
+}
+
 export function installOfflineManager(catalog){
  installVariantClientGate();
  configureVariantImport({catalogProvider:async()=>catalog,compatibleClients:compatibleVariantClients});
@@ -113,7 +119,7 @@ export function installOfflineManager(catalog){
  function paintSavedTotals(animate=false){host.querySelector('.library-eyebrow').textContent=savedInventoryFresh?'已保存':'上次记录 · 正在核对';bookmark.dataset.savedInventoryPending='false';savedSnapshot.save(savedReadyIds,savedGeneration);bookmark.querySelector('[role=progressbar]').removeAttribute('aria-busy');bookmark.dataset.progressMotion=animate?'download':'restore';const fraction=savedTotal?savedReadyIds.length/savedTotal:0;bookmark.style.setProperty('--saved-progress',String(fraction));bookmark.querySelector('.library-rail-label').textContent=`${savedReadyIds.length}/${savedTotal}`;bookmark.querySelector('[role=progressbar]').setAttribute('aria-valuenow',String(savedReadyIds.length));bookmark.querySelector('[role=progressbar]').setAttribute('aria-valuemax',String(savedTotal));bookmark.querySelector('[role=progressbar]').setAttribute('aria-valuetext',`已完整保存 ${savedReadyIds.length} / ${savedTotal} 词`);bookmark.title=`已保存 ${savedReadyIds.length} / ${savedTotal} 词，打开设置`;bookmark.setAttribute('aria-label',`已完整保存 ${savedReadyIds.length} / ${savedTotal} 词，打开设置`);host.querySelector('[data-saved-count]').textContent=savedReadyIds.length;host.querySelector('[data-total-count]').textContent=savedTotal;}
  function paintSavedPending(){savedInventoryFresh=false;bookmark.dataset.savedInventoryPending='true';savedReadyIds=null;bookmark.style.setProperty('--saved-progress','0');bookmark.querySelector('.library-rail-label').textContent='—';const bar=bookmark.querySelector('[role=progressbar]');bar.removeAttribute('aria-valuenow');bar.removeAttribute('aria-valuetext');bar.setAttribute('aria-busy','true');bookmark.title='本地保存进度，打开设置';bookmark.setAttribute('aria-label',bookmark.title);host.querySelector('[data-saved-count]').textContent='—';refreshDownloads();}
  const restoredIds=savedSnapshot.restore();if(restoredIds!==null){savedReadyIds=restoredIds;savedGeneration=savedSnapshot.generation();paintSavedTotals();host.querySelector('.library-eyebrow').textContent='上次记录 · 正在核对';bookmark.dataset.savedInventoryPending='true';bookmark.querySelector('[role=progressbar]').setAttribute('aria-busy','true');}
- async function readSavedInventory(){return batchStatus(catalog);}
+ async function readSavedInventory(ids){return batchStatus(catalog,ids?{ids}:{});}
  let inventoryFailures=0;
  function reportInventoryFailure(stage,error){
   const allowed=['C1','C2','CM','CQ','P1','P2','P3','C3'];
@@ -122,16 +128,19 @@ export function installOfflineManager(catalog){
   if(++inventoryFailures>=2)host.querySelector('[data-runtime-build]').textContent='v'+OFFLINE_EDITION.split('-')[0]+' · '+code;
  }
  function clearInventoryDiagnostic(){inventoryFailures=0;host.querySelector('[data-runtime-build]').textContent='v'+OFFLINE_EDITION.split('-')[0];}
- let refreshJob=null;
- function refresh(){refreshUsage();if(refreshJob)return refreshJob;const job=refreshInventory().finally(()=>{if(refreshJob===job)refreshJob=null;});refreshJob=job;return job;}
- async function refreshInventory(){
+ let refreshJob=null,refreshScopeIds=null,lastInventoryEnd=0;
+ // Background inventory scans are whole-catalog reads. Keep explicit actions
+ // immediate, but coalesce passive save/focus events until 30s after any scan.
+ const backgroundInventoryCooldownMs=30000;
+ function refresh(ids){refreshUsage();const scopeIds=Array.isArray(ids)?[...new Set(ids)]:null;if(refreshJob){if(scopeIds===null&&refreshScopeIds!==null)return refreshJob.then(()=>refresh());return refreshJob;}refreshScopeIds=scopeIds;const job=refreshInventory(scopeIds).finally(()=>{if(refreshJob===job){refreshJob=null;refreshScopeIds=null;if(scopeIds===null)lastInventoryEnd=Date.now();}});refreshJob=job;return job;}
+ async function refreshInventory(ids=null){
   if(usageRecorded)usageRecorded.stale=true;if(usageCache)usageCache.stale=true;paintUsage();
-  const epoch=++refreshEpoch;let paths=cachedPaths,stage='C1';
-  try{const before=await waitForLocal(()=>sharedControl.state());if(before.phase==='clearing'||before.phase==='selective-clearing')throw new Error('Inventory changing');{stage='C2';const cache=await readSavedInventory();if(cache.pending||cache.error)throw new Error('Inventory pending');paths=cache.readyPaths||[];usageCache={...recordedCache(paths,usageCacheIndex),stale:true};paintUsage();}stage='P1';const library=await inspectLibrary(catalog,{cachedPaths:paths});stage='C3';const after=await waitForLocal(()=>sharedControl.state());if(epoch!==refreshEpoch)return;if(after.generation!==before.generation||after.phase==='clearing'||after.phase==='selective-clearing'){queueSavedRefresh();return;}cachedPaths=paths;savedInventoryFresh=true;savedReadyIds=library.readyIds;savedGeneration=after.generation;savedTotal=library.total;refreshDownloads();list.replaceChildren();paintSavedTotals();host.querySelector('.library-packs').hidden=library.packs.length===0;
+  const epoch=++refreshEpoch;let paths=cachedPaths,stage='C1',fullScan=ids===null;
+  try{const before=await waitForLocal(()=>sharedControl.state());if(before.phase==='clearing'||before.phase==='selective-clearing')throw new Error('Inventory changing');const partial=ids!==null&&savedInventoryFresh&&savedGeneration===before.generation;fullScan=!partial;{stage='C2';const cache=await readSavedInventory(partial?ids:undefined);if(cache.pending||cache.error)throw new Error('Inventory pending');paths=partial?reconcileVerifiedCachePaths(catalog,cachedPaths,ids,cache.readyPaths||[]):cache.readyPaths||[];usageCache={...recordedCache(paths,usageCacheIndex),stale:true};paintUsage();}stage='P1';const library=await inspectLibrary(catalog,{cachedPaths:paths});stage='C3';const after=await waitForLocal(()=>sharedControl.state());if(epoch!==refreshEpoch)return;if(after.generation!==before.generation||after.phase==='clearing'||after.phase==='selective-clearing'){queueFullInventoryRefresh();return;}cachedPaths=paths;savedInventoryFresh=true;savedReadyIds=library.readyIds;savedGeneration=after.generation;savedTotal=library.total;refreshDownloads();list.replaceChildren();paintSavedTotals();host.querySelector('.library-packs').hidden=library.packs.length===0;
    for(const pack of library.packs){const li=document.createElement('li'),label=document.createElement('span'),button=document.createElement('button');const title=document.createElement('strong'),detail=document.createElement('span');title.textContent=`${pack.wordIds.length} 词`;detail.textContent=`${size(pack.bytes)} · ${pack.version}${pack.available===false?' · 文件缺失，请重新导入':pack.available===null?' · 当前范围未使用，未检查文件':pack.ownedCurrentAssets===0?' · 当前未使用':''}`;label.className='library-pack-label';label.append(title,detail);button.type='button';button.textContent='移除';button.setAttribute('aria-label',`删除 ${pack.wordIds.length} 词的本机资源包`);button.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating;button.onclick=async()=>{if(controller||clearingThisPage||changingMode||mutating)return;if(!confirm(`删除这份本机资源包（${pack.wordIds.length} 词）？「文件」里的原始 ZIP 和其他资源包不会受影响。`))return;mutating=true;syncMutationControls();try{await deletePack(pack.key);status.textContent='本机资源包已删除，重新打开阅读后生效';await refresh();}catch(error){status.textContent=error.message;}finally{mutating=false;syncMutationControls();}};li.append(label,button);list.append(li);}
    clean.hidden=!library.packs.some(p=>p.ownedCurrentAssets===0);clean.disabled=Boolean(controller)||clearingThisPage||changingMode||mutating;host.querySelector('[data-clear-all]').disabled=Boolean(controller)||clearingThisPage||changingMode||mutating;
    clearInventoryDiagnostic();retryStorage.hidden=true;inventoryStatus.textContent='';usageCache.stale=false;usageRecorded=recordedStorage(library);paintUsage();
-  }catch(error){if(epoch===refreshEpoch){savedInventoryFresh=false;host.querySelector('.library-eyebrow').textContent='上次记录 · 尚未核对';reportInventoryFailure(stage,error);retryStorage.hidden=false;inventoryStatus.textContent='已保存清单暂时无法刷新；不代表资源已丢失';paintUsage();if(savedReadyIds===null)paintSavedPending();else{bookmark.dataset.savedInventoryPending='true';bookmark.querySelector('[role=progressbar]').setAttribute('aria-busy','true');}}}
+  }catch(error){if(epoch===refreshEpoch){savedInventoryFresh=false;host.querySelector('.library-eyebrow').textContent='上次记录 · 尚未核对';reportInventoryFailure(stage,error);retryStorage.hidden=false;inventoryStatus.textContent='已保存清单暂时无法刷新；不代表资源已丢失';paintUsage();if(savedReadyIds===null)paintSavedPending();else{bookmark.dataset.savedInventoryPending='true';bookmark.querySelector('[role=progressbar]').setAttribute('aria-busy','true');}}}finally{if(fullScan)lastInventoryEnd=Date.now();}
  }
  const rangeSection=host.querySelector('[data-delete-range]');
  rangeDelete=bindSavedRange(rangeSection,catalog,{prefix:'range-delete',verb:'删除'});
@@ -228,19 +237,30 @@ export function installOfflineManager(catalog){
  }
  input.onchange=()=>{const file=input.files[0];if(file)return run('import',importTarget,options=>importPack(file,catalog,options));};
  host.querySelector('details').addEventListener('toggle',event=>{if(event.target.open)refresh();});
- let savedRefreshTimer,refreshingCache=false,refreshAgain=false;
- function queueSavedRefresh(){clearTimeout(savedRefreshTimer);savedRefreshTimer=setTimeout(refreshSaved,100);}
- window.addEventListener('storage',event=>{if(event.key===savedSnapshotKey){if(event.newValue===null){refreshEpoch++;paintSavedPending();}queueSavedRefresh();}});
- window.addEventListener('gre-library-updated',queueSavedRefresh);
+ let savedRefreshTimer,urgentRefreshTimer,refreshingCache=false,refreshAgain=false;
+ // Clear/import/corruption/generation invalidations bypass passive cooldown.
+ function queueFullInventoryRefresh(){clearTimeout(urgentRefreshTimer);urgentRefreshTimer=setTimeout(async()=>{const pending=refreshJob;if(pending)await pending;await refresh();},0);}
+ function queueSavedRefresh(delay=100){clearTimeout(savedRefreshTimer);const minimumDelay=typeof delay==='number'?delay:100;const wait=Math.max(minimumDelay,lastInventoryEnd+backgroundInventoryCooldownMs-Date.now());savedRefreshTimer=setTimeout(refreshSaved,wait);}
+ window.addEventListener('storage',event=>{if(event.key===savedSnapshotKey){if(event.newValue===null){refreshEpoch++;paintSavedPending();queueFullInventoryRefresh();}else queueSavedRefresh();}});
+ window.addEventListener('gre-library-updated',queueFullInventoryRefresh);
  window.addEventListener('focus',queueSavedRefresh);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)queueSavedRefresh();});
- navigator.serviceWorker?.addEventListener('message',event=>{if(event.data?.type==='SAVED_INVENTORY_CHANGED'){savedSnapshot.invalidate();refreshEpoch++;paintSavedPending();queueSavedRefresh();}});
+ navigator.serviceWorker?.addEventListener('message',event=>{if(event.data?.type==='SAVED_INVENTORY_CHANGED'){savedSnapshot.invalidate();refreshEpoch++;paintSavedPending();queueFullInventoryRefresh();}});
  // Catch browser eviction / changes made outside this tab without media reads.
  setInterval(()=>{if(!document.hidden&&!controller&&!mutating&&!clearingThisPage)queueSavedRefresh();},30000);
  queueSavedRefresh();
- async function refreshSaved(){if(refreshingCache){refreshAgain=true;return;}refreshingCache=true;try{await refresh(true);}finally{refreshingCache=false;if(refreshAgain){refreshAgain=false;savedRefreshTimer=setTimeout(refreshSaved,500);}}}
- window.addEventListener('gre-offline-asset',({detail})=>{if(detail.phase==='saved'){clearTimeout(savedRefreshTimer);savedRefreshTimer=setTimeout(refreshSaved,600);}});
- window.addEventListener('gre-offline-corrupt',()=>{savedSnapshot.invalidate();refreshEpoch++;paintSavedPending();status.textContent='有一份本机内容无法读取，请重新导入对应书包；文字仍可阅读';clearTimeout(savedRefreshTimer);savedRefreshTimer=setTimeout(refreshSaved,500);});
+ async function refreshSaved(){if(refreshingCache){refreshAgain=true;return;}if(Date.now()<lastInventoryEnd+backgroundInventoryCooldownMs){queueSavedRefresh();return;}refreshingCache=true;try{await refresh(true);}finally{refreshingCache=false;if(refreshAgain){refreshAgain=false;queueSavedRefresh();}}}
+ // Saved notifications are only hints: verify all three exact cache keys for
+ // the affected words, then use the same pack/epoch/generation commit as a full scan.
+ const savedIdsByPath=new Map();for(const entry of catalog.entries)for(const role of ['poster','video','staticPoster']){const ref=entry.storyMedia?.[role];if(ref){if(!savedIdsByPath.has(ref.url))savedIdsByPath.set(ref.url,new Set());savedIdsByPath.get(ref.url).add(entry.number);}}
+ const savedDirtyIds=new Set();let savedWordsTimer,savedWordsRunning=false;
+ async function refreshSavedWords(){
+  if(savedWordsRunning)return;savedWordsRunning=true;
+  try{if(refreshJob)await refreshJob;const ids=[...savedDirtyIds];savedDirtyIds.clear();if(ids.length)await refresh(ids);}
+  finally{savedWordsRunning=false;if(savedDirtyIds.size){clearTimeout(savedWordsTimer);savedWordsTimer=setTimeout(refreshSavedWords,600);}}
+ }
+ window.addEventListener('gre-offline-asset',({detail})=>{if(detail.phase!=='saved')return;for(const id of savedIdsByPath.get(detail.path)||[])savedDirtyIds.add(id);if(savedDirtyIds.size){clearTimeout(savedWordsTimer);savedWordsTimer=setTimeout(refreshSavedWords,600);}});
+ window.addEventListener('gre-offline-corrupt',()=>{savedSnapshot.invalidate();refreshEpoch++;paintSavedPending();status.textContent='有一份本机内容无法读取，请重新导入对应书包；文字仍可阅读';queueFullInventoryRefresh();});
  releaseDownloads=mountReleaseDownloads({host,catalog});
  savedExport=mountSavedExport({host,catalog,isBusy:()=>Boolean(controller)||clearingThisPage||changingMode||mutating||filePickerOpen,setBusy:value=>{mutating=value;syncMutationControls();}});
  const drawerSelectors=['.library-page','.library-pages-downloads','[data-release-browser]','.library-packs','[data-export-range]','[data-delete-range]'];
@@ -253,7 +273,7 @@ export function installOfflineManager(catalog){
   event.detail.waits.push(Promise.all([refresh(true),releaseReady]));
  });
  const sharedControl=createMediaControl(new URL('../',import.meta.url));
- sharedControl.subscribe(state=>{const settledSnapshot=state.initial&&savedSnapshot.matchesGeneration(state);if(!settledSnapshot&&(state.initial||state.paused||state.phase?.startsWith('selective-')||savedGeneration!==state.generation)){savedSnapshot.invalidate();refreshEpoch++;paintSavedPending();if(state.phase!=='clearing'&&state.phase!=='selective-clearing')queueSavedRefresh();}if(state.generation===0)return;if(state.phase?.startsWith('variants-')){if(state.phase==='variants-committed')queueSavedRefresh();return;}if(state.phase?.startsWith('selective-')){if(state.source==='external'){controller?.abort();if(state.phase==='selective-cleared'){const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-library-updated',{detail}));Promise.all(detail.waits).then(()=>refresh(true));}}return;}if(state.paused){releaseDownloads?.cancelPending();if(state.source==='external')controller?.abort();try{sessionStorage.setItem('gre-media-paused-after-clear','1');}catch{}modeButton.textContent='使用视频';host.querySelector('[data-mode-description]').textContent='纯文字 · 视频已暂停';}else{try{sessionStorage.removeItem('gre-media-paused-after-clear');}catch{}}if(state.source==='external'&&!clearingThisPage&&state.phase!=='clearing')location.reload();});sharedControl.state().catch(()=>{});
+ sharedControl.subscribe(state=>{const settledSnapshot=state.initial&&savedSnapshot.matchesGeneration(state);if(!settledSnapshot&&(state.initial||state.paused||state.phase?.startsWith('selective-')||savedGeneration!==state.generation)){savedSnapshot.invalidate();refreshEpoch++;paintSavedPending();if(state.phase!=='clearing'&&state.phase!=='selective-clearing')queueFullInventoryRefresh();}if(state.generation===0)return;if(state.phase?.startsWith('variants-')){if(state.phase==='variants-committed')queueFullInventoryRefresh();return;}if(state.phase?.startsWith('selective-')){if(state.source==='external'){controller?.abort();if(state.phase==='selective-cleared'){const detail={waits:[]};window.dispatchEvent(new CustomEvent('gre-library-updated',{detail}));Promise.all(detail.waits).then(()=>refresh(true));}}return;}if(state.paused){releaseDownloads?.cancelPending();if(state.source==='external')controller?.abort();try{sessionStorage.setItem('gre-media-paused-after-clear','1');}catch{}modeButton.textContent='使用视频';host.querySelector('[data-mode-description]').textContent='纯文字 · 视频已暂停';}else{try{sessionStorage.removeItem('gre-media-paused-after-clear');}catch{}}if(state.source==='external'&&!clearingThisPage&&state.phase!=='clearing')location.reload();});sharedControl.state().catch(()=>{});
  let readinessTimer;
  async function checkTextReady(){clearTimeout(readinessTimer);const target=navigator.serviceWorker?.controller;if(!target){welcome.querySelector('[data-text-ready]').textContent='文字正在准备，请保持联网';readinessTimer=setTimeout(checkTextReady,3000);return;}const channel=new MessageChannel();let settled=false;const timer=setTimeout(()=>{if(!settled){channel.port1.close();readinessTimer=setTimeout(checkTextReady,3000);}},6000);channel.port1.onmessage=({data})=>{settled=true;clearTimeout(timer);channel.port1.close();const ready=data.ready&&data.build===OFFLINE_EDITION;welcome.querySelector('[data-text-ready]').textContent=ready?'文字已可离线 · '+catalog.entries.length+' 词':'文字正在准备，请保持联网';if(!ready)readinessTimer=setTimeout(checkTextReady,3000);else refresh(true);};target.postMessage({type:'GET_TEXT_STATUS'},[channel.port2]);}
  checkTextReady();navigator.serviceWorker?.addEventListener('controllerchange',checkTextReady);

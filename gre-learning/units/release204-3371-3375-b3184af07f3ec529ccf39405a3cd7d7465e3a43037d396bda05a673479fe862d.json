@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6991,
+      "word": "squall",
+      "ipa": "/skwɔːl/",
+      "pos": "v.",
+      "coreMeaningZh": "尖叫",
+      "coreEn": "to cry out loudly and harshly",
+      "mnemonics": [
+        {
+          "method": "SQUEEZE + CALL，挤疼了尖叫",
+          "textZh": "借 SQUEEZE（挤压）的 SQU 和 CALL（喊叫）的 ALL，合成 SQUALL。手指被门缝挤疼，立刻尖着嗓子大喊：squall，尖叫、号哭。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SCHOOL 校门口，哭得全听见",
+          "textZh": "借 SCHOOL（学校）的近音记 squall。第一次到幼儿园，小孩不肯与妈妈分开，张大嘴哇哇哭叫，校门口都听得见：squall，响亮刺耳地哭喊。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不及物动词：尖叫、号哭",
+          "explanationZh": "常用于婴儿，也可形容动物发出刺耳的叫声。过去式和过去分词为 squalled，现在分词为 squalling。",
+          "collocations": [
+            {
+              "phrase": "a squalling baby",
+              "meaningZh": "一个大声啼哭的婴儿"
+            },
+            {
+              "phrase": "squall in pain",
+              "meaningZh": "因疼痛而尖叫"
+            }
+          ]
+        },
+        {
+          "senseZh": "及物动词：尖声喊出",
+          "explanationZh": "也可以接所喊的话，说明说话方式尖厉刺耳；不能把所有普通的说话都称为 squall。",
+          "collocations": [
+            {
+              "phrase": "squall a warning",
+              "meaningZh": "尖声喊出警告"
+            },
+            {
+              "phrase": "squall out a demand",
+              "meaningZh": "尖声提出要求"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "scream",
+          "comparisonZh": "都可表示尖叫。scream 范围较广，可因恐惧、疼痛或兴奋而发出；squall 常强调刺耳、吵闹的哭喊。"
+        },
+        {
+          "word": "shriek",
+          "comparisonZh": "都可表示尖厉的叫喊。shriek 更突出音调高而尖锐；squall 常让人想到婴儿持续、喧闹的啼哭。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "the baby squalled in pain",
+          "translationZh": "婴儿疼得大声啼哭。",
+          "explanationZh": "squalled 是过去式，in pain 说明哭叫的原因。"
+        },
+        {
+          "textEn": "There was an infant squalling in the back of the church.",
+          "translationZh": "教堂后面有个婴儿在大声啼哭。",
+          "explanationZh": "squalling 描写婴儿正在发出刺耳、吵闹的哭声。"
+        }
+      ],
+      "coreImageZh": "幼童坐在地毯上，伸手想要椅子上的小熊，张大嘴、流着泪大声哭叫。男孩听见后伸手安抚，他仍哭得很响。squall 在这里指尖声哭喊、号哭，强调声音刺耳又响亮，不是普通地说话。"
+    },
+    {
+      "number": 6992,
+      "word": "squat",
+      "ipa": "/skwɒt/",
+      "pos": "adj.",
+      "coreMeaningZh": "又矮又胖的",
+      "coreEn": "short and broad in shape",
+      "mnemonics": [
+        {
+          "method": "SQUAT DOWN 蹲下来，轮廓矮又宽",
+          "textZh": "squat down 是蹲下。人一蹲，轮廓就从高长变得低矮紧凑；把这个形状移到罐子上：squat 作形容词，指矮而宽厚，不是说罐子正在蹲。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SQUARE + FAT：方胖的小墩子",
+          "textZh": "借 SQUARE（方方的）和 FAT（胖的）的主要字形联想 SQUAT。陶罐不往高处长，而是又宽又矮，像个方胖小墩子：squat，矮胖、低矮宽厚的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "形容人：矮而粗壮",
+          "explanationZh": "描写身材短而宽，常带不够修长的评价；不是单说个子矮，也不等于所有胖人。",
+          "collocations": [
+            {
+              "phrase": "a squat man",
+              "meaningZh": "一个矮壮的男人"
+            },
+            {
+              "phrase": "a short, squat figure",
+              "meaningZh": "一个矮胖的身影"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容物体：低矮宽厚",
+          "explanationZh": "可修饰建筑、容器等，描述高度小、横向宽的比例，不是说物体会蹲下。",
+          "collocations": [
+            {
+              "phrase": "a squat building",
+              "meaningZh": "一栋低矮宽厚的建筑"
+            },
+            {
+              "phrase": "a squat jar",
+              "meaningZh": "一个矮胖的罐子"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "stocky",
+          "comparisonZh": "形容人时都可指矮壮。stocky 常强调结实、肌肉发达；squat 更强调高度与宽度的比例，有时带不够匀称的意味。"
+        },
+        {
+          "word": "stumpy",
+          "comparisonZh": "都可形容短而粗。stumpy 常使人想到短粗的树桩或肢体；squat 可用于人的整体身形，也常描述低矮宽厚的物体。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Eddie was a short squat fellow in his forties with thinning hair.",
+          "translationZh": "埃迪是个四十多岁、头发渐稀的矮胖男人。",
+          "explanationZh": "short squat 连用，强调他身材不高且宽厚。"
+        },
+        {
+          "textEn": "Mickey was a squat, dark man with a ragged beard.",
+          "translationZh": "米奇是个矮壮、肤色黝黑、胡须蓬乱的男人。",
+          "explanationZh": "squat 是形容身材的形容词，不是“蹲下”的动作。"
+        }
+      ],
+      "coreImageZh": "桌上两个陶罐并排放着：左边细长高挑，右边却矮矮的，罐身向两侧宽宽地鼓起。男孩和母亲一比较，就看出右边罐子又矮又胖。squat 在这里是形容词，指低矮而宽厚的形状，不是单纯小一号，也不是“蹲下”的动作。"
+    },
+    {
+      "number": 6993,
+      "word": "squelch",
+      "ipa": "/skweltʃ/",
+      "pos": "vt.",
+      "coreMeaningZh": "压制，镇压(运动)",
+      "coreEn": "to forcefully stop or suppress something",
+      "mnemonics": [
+        {
+          "method": "SQUEEZE 把气挤掉，SQUELCH 把声压掉",
+          "textZh": "SQUEEZE（挤压）和 SQUELCH 的前半段形近。想象反对声像鼓起的气球，被负责人一把挤瘪、不准再响：由挤压连到 squelch，把反对势头强硬压下去。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SQUELCH：一脚“噗叽”，势头踩下去",
+          "textZh": "squelch /skweltʃ/ 也指踩湿泥时的噗叽声。把完整读音连到一脚踩平软泥的声音，再想象反对势头也被这样压下去：squelch，压制、镇压。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "压制反对、使人不再发声",
+          "explanationZh": "作及物动词时，可直接接 opposition、protests 等，强调把反对势头强硬压下去；也可接人，表示使其不敢再反对。",
+          "collocations": [
+            {
+              "phrase": "squelch opposition",
+              "meaningZh": "压制反对"
+            },
+            {
+              "phrase": "squelch protests",
+              "meaningZh": "压制抗议"
+            }
+          ]
+        },
+        {
+          "senseZh": "制止传言继续传播",
+          "explanationZh": "也可说 squelch rumours，指把流传的说法制止住；手段可以是澄清、证据或强硬行动，不必每次都是动用武力。",
+          "collocations": [
+            {
+              "phrase": "squelch rumours",
+              "meaningZh": "制止传言"
+            },
+            {
+              "phrase": "squelch speculation",
+              "meaningZh": "制止猜测继续传播"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "suppress",
+          "comparisonZh": "两者在阻止言论、反对活动或某种势头时可以对应。suppress 使用范围较广；squelch 更有一下子把它强硬压住、不让继续的意味。"
+        },
+        {
+          "word": "silence",
+          "comparisonZh": "在“使人不再发声或反对”这一义上相近。silence 着重结果是安静下来；squelch 还突出压制、挫败对方的力量，不只是把音量调低。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The President wants to squelch any opposition.",
+          "translationZh": "总统想压制一切反对。",
+          "explanationZh": "squelch 直接接 any opposition，表示把反对势头压下去。"
+        },
+        {
+          "textEn": "his irritated glare squelched any other potential objectors",
+          "translationZh": "他恼怒地一瞪，让其他可能提出异议的人都不敢开口了。",
+          "explanationZh": "squelched 的对象是 objectors；这里不是身体挤压，而是以威吓的神情压下异议。"
+        }
+      ],
+      "coreImageZh": "两盘蜡笔分得很不均匀，男孩和女孩提出异议，负责人却抬手强硬制止：“不许反对，就这么定了！”两个孩子只好闭嘴，低着头不再争辩。squelch 在这里指压制，把反对意见强行压下去，而不是让人心服口服地赞同。"
+    },
+    {
+      "number": 6994,
+      "word": "secede",
+      "ipa": "/sɪˈsiːd/",
+      "pos": "vi.",
+      "coreMeaningZh": "脱离，退出(组织，团体，联盟等)",
+      "coreEn": "to formally withdraw from an organization or larger political group",
+      "mnemonics": [
+        {
+          "method": "SE + CEDE，分开走，退出组织",
+          "textZh": "se- 表示“分开”，-cede 来自表示“走”的拉丁词根。原本同属一个组织的人决定分开走，交回会员证：secede，正式退出组织。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SEE + SEED，看种子选手退会",
+          "textZh": "把 SEE（看）和 SEED（种子选手）前轻后重地连读，近似 secede。看，那位种子选手交回会员证，宣布退出协会，从此不再是该组织成员。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "正式退出组织或联盟",
+          "explanationZh": "secede 通常是不及物动词，用 from 引出所退出的组织；重点是结束成员关系，不是暂时离开会场。",
+          "collocations": [
+            {
+              "phrase": "secede from an organization",
+              "meaningZh": "退出一个组织"
+            },
+            {
+              "phrase": "secede from a political alliance",
+              "meaningZh": "脱离政治联盟"
+            }
+          ]
+        },
+        {
+          "senseZh": "地区脱离更大的政治实体",
+          "explanationZh": "常用于州、地区或国家脱离原属的国家、联邦等，成为独立实体。seceded 是过去式，seceding 是现在分词。",
+          "collocations": [
+            {
+              "phrase": "secede from the union",
+              "meaningZh": "脱离联邦"
+            },
+            {
+              "phrase": "vote to secede",
+              "meaningZh": "投票决定脱离"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "withdraw from",
+          "comparisonZh": "都能表示退出一个组织。withdraw from 的范围更广，还可指撤离某处或退出比赛；secede 更明确地指正式结束原有的成员或政治隶属关系。"
+        },
+        {
+          "word": "break away from",
+          "comparisonZh": "在“脱离原有团体、另行独立”时意义相近。break away from 也可指挣脱实物或摆脱习惯；secede 专注于组织、联盟或政治实体的脱离。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "South Carolina seceded from the Union in 1860.",
+          "translationZh": "南卡罗来纳州于1860年脱离了联邦。",
+          "explanationZh": "seceded from the Union 表示结束原有的政治隶属关系。"
+        },
+        {
+          "textEn": "The Republic of Panama seceded from Colombia in 1903.",
+          "translationZh": "巴拿马共和国于1903年脱离哥伦比亚。",
+          "explanationZh": "from 引出原来所属的政治实体；这里的脱离不是一次普通迁居。"
+        }
+      ],
+      "coreImageZh": "男孩宣布正式退出社团，把自己的蓝色成员徽章放进碟子里。负责人确认他不再是成员，他便空着手离开；另外两人仍戴着徽章留在社团。secede 指脱离、退出原属的组织、团体或联盟，重点是结束成员关系，不是暂时到门外走一走。"
+    },
+    {
+      "number": 6995,
+      "word": "stamina",
+      "ipa": "/ˈstæmɪnə/",
+      "pos": "n.",
+      "coreMeaningZh": "耐力",
+      "coreEn": "the physical or mental strength to keep going for a long time",
+      "mnemonics": [
+        {
+          "method": "STEAM IN A train，蒸汽撑完全程",
+          "textZh": "老式火车里的蒸汽，steam in a train，持续推动火车，一站接一站跑下去。把 STEAM IN A 的近整词字形连到 STAMINA：动力持续不尽，才能有撑完全程的耐力。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STAMIN 生命之线，撑到终点不断",
+          "textZh": "STAMIN- 是拉丁语“线”的词干，stamina 在拉丁语中是“线”的复数形式。借命运女神纺出生命线的历史意象，想象一根坚韧不断的生命线，支撑自己一直走到终点：stamina，耐力。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "身体耐力",
+          "explanationZh": "stamina 是不可数名词，常说 have、build 或 improve stamina。重点在能坚持多久，不是瞬间能用多大力。",
+          "collocations": [
+            {
+              "phrase": "build stamina",
+              "meaningZh": "增强耐力"
+            },
+            {
+              "phrase": "have the stamina to finish",
+              "meaningZh": "有坚持完成的耐力"
+            }
+          ]
+        },
+        {
+          "senseZh": "精神、脑力的持久性",
+          "explanationZh": "也能指长时间集中注意力、坚持费力工作所需的精力，不只用于运动。原词并不等于单纯的道德品质。",
+          "collocations": [
+            {
+              "phrase": "mental stamina",
+              "meaningZh": "精神耐力；持久的脑力"
+            },
+            {
+              "phrase": "a test of stamina",
+              "meaningZh": "对耐力的考验"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "endurance",
+          "comparisonZh": "两者都表示承受疲劳、长时间坚持的能力。stamina 常突出持续做事所需的体力或精力；endurance 还常用于忍受痛苦、艰难条件。"
+        },
+        {
+          "word": "staying power",
+          "comparisonZh": "两者都抓住“能坚持下去、不很快耗尽”这一点。staying power 也可形容作品或产品经久不衰；stamina 更常用于人或动物的持续体力、精力。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "It takes a lot of stamina to run a marathon.",
+          "translationZh": "跑马拉松需要很强的耐力。",
+          "explanationZh": "马拉松考验的是长时间持续跑下去，正好体现 stamina 的持久性。"
+        },
+        {
+          "textEn": "Do you have the stamina to finish the job?",
+          "translationZh": "你有足够的精力把这项工作坚持做完吗？",
+          "explanationZh": "have the stamina to do something 表示有完成某事所需的持久精力。"
+        }
+      ],
+      "coreImageZh": "山路已经走了很久，同伴坐在木凳上歇息，男孩也出了汗，却仍背着包稳稳地向前走。他还有体力继续下一段路。stamina 指耐力，重点是长时间活动之后仍能坚持下去，而不是一瞬间跑得多快或力气多大。"
+    }
+  ]
+}

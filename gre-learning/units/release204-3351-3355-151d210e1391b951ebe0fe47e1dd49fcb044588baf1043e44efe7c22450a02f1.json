@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6971,
+      "word": "somnolence",
+      "ipa": "/ˈsɑːmnələns/",
+      "pos": "n. 不可数，正式",
+      "coreMeaningZh": "困倦；昏昏欲睡",
+      "coreEn": "drowsiness; the state of feeling ready to fall asleep",
+      "mnemonics": [
+        {
+          "method": "SOMNOL + ENCE，困倦的状态",
+          "textZh": "somnol- 连到“睡眠、困倦”的词源，-ence 构成状态名词。还听得见讲话，却一再打哈欠、眼皮往下沉：这阵困意，就是 somnolence，困倦、昏昏欲睡。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SOME—NO—LENS，困得只想闭眼",
+          "textZh": "借 SOME（一些）、NO（不）、LENS（镜头）的三拍声音记 somnolence。摄影课上，有些学生困得连连打哈欠，摇头说“No”，不想接老师递来的镜头，只想闭眼打个盹：somnolence，昏昏欲睡。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "人的困倦状态",
+          "explanationZh": "比 sleepiness 更正式，描述想睡、难以保持清醒的状态。daytime somnolence 指白天的困倦；词本身不说明原因，也不等于已经进入睡眠。",
+          "collocations": [
+            {
+              "phrase": "daytime somnolence",
+              "meaningZh": "白天困倦"
+            },
+            {
+              "phrase": "excessive somnolence",
+              "meaningZh": "过度困倦"
+            }
+          ]
+        },
+        {
+          "senseZh": "让人昏昏欲睡的反应或氛围",
+          "explanationZh": "可用于谈读物、讲演或场景引起的困意，也可借来写地方缺乏活力。要靠上下文判断是在描述人的困倦，还是以睡意形容迟缓、沉寂的气氛。",
+          "collocations": [
+            {
+              "phrase": "induce somnolence",
+              "meaningZh": "引起困倦"
+            },
+            {
+              "phrase": "a feeling of somnolence",
+              "meaningZh": "一种昏昏欲睡的感觉"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "drowsiness",
+          "comparisonZh": "表示昏昏欲睡时意义很接近。drowsiness 更常用；somnolence 较正式。两者都可以描述还未睡着、但清醒程度下降的状态。"
+        },
+        {
+          "word": "lethargy",
+          "comparisonZh": "两者可在迟钝、困乏的语境中接近。somnolence 更直接指想睡；lethargy 还强调没精神、不愿活动，即使并不想睡也可使用。",
+          "sources": [
+            "B"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The patients did not report daytime somnolence.",
+          "translationZh": "这些患者没有报告白天困倦的情况。",
+          "explanationZh": "daytime somnolence 指白天想睡、难以保持清醒，并不是说白天一定实际睡着了。"
+        },
+        {
+          "textEn": "somnolence is likely to be the most typical and telling reaction to this novel",
+          "translationZh": "读这部小说，最典型也最能说明问题的反应恐怕就是昏昏欲睡。",
+          "explanationZh": "用读者的困意评价小说，带有讽刺意味；不是说小说本身正在睡觉。"
+        }
+      ],
+      "coreImageZh": "男孩看书时眼皮越来越沉，向母亲说自己困得快撑不住，接着忍不住掩嘴打了个哈欠。听到休息的建议，他合上书，靠着椅背休息。somnolence 指困倦、昏昏欲睡的状态；前面的半垂眼皮和哈欠表现出浓浓睡意，并不要求这个词只用于已经熟睡的人。"
+    },
+    {
+      "number": 6972,
+      "word": "sop",
+      "ipa": "/sɑːp/",
+      "pos": "n.；v.",
+      "coreMeaningZh": "安抚性的小恩惠或让步；浸湿",
+      "coreEn": "a small concession or gift meant to placate; to soak thoroughly",
+      "mnemonics": [
+        {
+          "method": "STOP → SOP，小恩惠堵抱怨",
+          "textZh": "STOP 去掉 t，就是 sop。顾客不断抱怨，店员不解决主要问题，只给小额优惠券，想让抱怨 stop：这点安抚性的小恩惠，就是 a sop。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SOAP → SOP，海绵吸透肥皂水",
+          "textZh": "SOAP（肥皂）去掉 a，就是 sop。海绵浸进肥皂水，孔隙里全吸满水，再拿来擦洗：sop，浸湿、使湿透。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "为了安抚而给的小恩惠或象征性让步",
+          "explanationZh": "常用 a sop to somebody，表示让愤怒或失望的人暂时满意的好处、措施或让步，往往暗示力度有限，没有真正满足主要诉求；不一定涉及违法贿赂。",
+          "collocations": [
+            {
+              "phrase": "a sop to critics",
+              "meaningZh": "安抚批评者的小让步"
+            },
+            {
+              "phrase": "offer something as a sop",
+              "meaningZh": "把某事物作为安抚性补偿给出"
+            }
+          ]
+        },
+        {
+          "senseZh": "浸湿、吸起液体",
+          "explanationZh": "作动词可指把东西浸入液体、使湿透；sop up 则常用布、海绵或面包等把液体吸起。过去式、过去分词 sopped，现在分词 sopping，都要双写 p。",
+          "collocations": [
+            {
+              "phrase": "sop a sponge with water",
+              "meaningZh": "用水浸湿海绵"
+            },
+            {
+              "phrase": "sop up the gravy",
+              "meaningZh": "蘸吸肉汁"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "token concession",
+          "comparisonZh": "都可指有限、象征性的让步。token concession 侧重让步幅度小；sop 更强调它是拿来安抚对方的，常带“给点甜头”的批评意味。"
+        },
+        {
+          "word": "soak",
+          "comparisonZh": "作动词表示浸湿时接近 sop。soak 更常用，也可指长时间浸泡；sop up 则强调吸起液体，不能在所有情况下机械换成 soak。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The move was seen as another sop to the moderates in the party.",
+          "translationZh": "这一举措被看作又一次安抚党内温和派的小让步。",
+          "explanationZh": "a sop to 指措施是为了让这一群体暂时满意，语气中带有“让步有限”的评价。"
+        },
+        {
+          "textEn": "sopped the sponge with the detergent and began scrubbing the floor vigorously",
+          "translationZh": "把海绵用洗涤剂浸透后，便开始用力擦洗地板",
+          "explanationZh": "sopped 描述海绵被液体浸透，随后才拿来擦洗；这是词典省略主语的例句片段。"
+        }
+      ],
+      "coreImageZh": "哥哥弄坏了男孩的小车，拿出一颗糖想让他别再生气。男孩没有接糖，仍指着缺了轮子的小车，提醒哥哥问题还没解决。sop 在这里是为了安抚、平息不满而给的小礼物或让步；糖果想让抱怨停下来，却没有替代修好玩具这件事。"
+    },
+    {
+      "number": 6973,
+      "word": "soporific",
+      "ipa": "/ˌsɑːpəˈrɪfɪk/",
+      "pos": "adj.；n.",
+      "coreMeaningZh": "催眠的，令人昏昏欲睡的；催眠剂",
+      "coreEn": "sleep-inducing; a substance that induces sleep",
+      "mnemonics": [
+        {
+          "method": "SOPOR + IFIC，使人入睡",
+          "textZh": "sopor 表示“深睡”，-ific 表示“产生……的”。SOPOR + IFIC 拼成 soporific：摇篮曲带来睡意，使人昏昏欲睡。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SO POOR，演讲差到催眠",
+          "textZh": "SO POOR 是“太差劲了”，近音提醒 SOPOR，再接形容词结尾 -IFIC。演讲内容空洞、语调平板，听众纷纷打哈欠：“So poor，简直催眠。”soporific，令人昏昏欲睡的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "使人困倦、想睡",
+          "explanationZh": "可形容声音、热气、音乐或单调的演讲，强调带来的睡意，并不只用于药物。修饰事物时常含“催眠般无聊”的评价。",
+          "collocations": [
+            {
+              "phrase": "a soporific effect",
+              "meaningZh": "催眠效果"
+            },
+            {
+              "phrase": "a soporific voice",
+              "meaningZh": "让人昏昏欲睡的声音"
+            }
+          ]
+        },
+        {
+          "senseZh": "催眠剂",
+          "explanationZh": "作可数名词，指能够促使睡眠的物质，尤其指催眠药剂；复数为 soporifics。",
+          "collocations": [
+            {
+              "phrase": "a soporific",
+              "meaningZh": "一种催眠剂"
+            },
+            {
+              "phrase": "take a soporific",
+              "meaningZh": "服用催眠剂"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "somnolent",
+          "comparisonZh": "在“使人昏昏欲睡的”这一义项可以接近 soporific，例如闷热的午后。somnolent 也常描写人本身困倦，soporific 更常强调某物催人入睡的效果。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "sleep-inducing",
+          "comparisonZh": "直接表达“引起睡眠的”，可解释 soporific 的核心义。soporific 也能评价演讲等无聊得让人想睡，语气更书面。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The warmth of the room and the monotony of the speaker's voice grew soporific.",
+          "translationZh": "房间的暖意加上讲话者单调的声音，渐渐让人昏昏欲睡。",
+          "explanationZh": "温暖与单调共同产生睡意，soporific 描写的是这些因素的作用。"
+        },
+        {
+          "textEn": "the soporific effect of the sun",
+          "translationZh": "阳光令人昏昏欲睡的作用",
+          "explanationZh": "effect 指带来的效果；这是一条名词短语例证。"
+        }
+      ],
+      "coreImageZh": "母亲轻轻哼着摇篮曲，男孩起初还睁着明亮的眼睛听，随后开始打哈欠、眼皮发沉，还说自己一听这曲子就想睡。soporific 在这里形容使人困倦、催人入睡的；重点是曲调带来的睡意，而不是只说男孩本来就困，也不一定涉及药物。"
+    },
+    {
+      "number": 6974,
+      "word": "sparse",
+      "ipa": "/spɑːrs/",
+      "pos": "adj.",
+      "coreMeaningZh": "稀疏的；稀少的",
+      "coreEn": "few in number or amount, often spread thinly",
+      "mnemonics": [
+        {
+          "method": "SPARE → SPARSE，空座位多",
+          "textZh": "SPARE 是空余的，r 后添 s 就是 sparse。礼堂 spare seats 很多，观众这里一个、那里两个：sparse audience，稀稀落落的观众。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SPACE → SPARSE，树间空隙大",
+          "textZh": "SPACE 是空间。大片地上只几棵树，树间留出很大 space：稀疏，sparse。把 SPACE 的 c 换成 rs，便能回写整个词。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "数量少且分布不密",
+          "explanationZh": "常用于人口、植被、头发或观众，强调零星、疏落的分布。比较级 sparser，最高级 sparsest；副词 sparsely。",
+          "collocations": [
+            {
+              "phrase": "sparse vegetation",
+              "meaningZh": "稀疏的植被"
+            },
+            {
+              "phrase": "a sparsely populated area",
+              "meaningZh": "人口稀少的地区"
+            }
+          ]
+        },
+        {
+          "senseZh": "资料、证据等不多",
+          "explanationZh": "也可以表示抽象信息不足或零星，不必真的占据一片物理空间。",
+          "collocations": [
+            {
+              "phrase": "sparse information",
+              "meaningZh": "零星、不多的信息"
+            },
+            {
+              "phrase": "sparse evidence",
+              "meaningZh": "寥寥的证据"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "scarce",
+          "comparisonZh": "都能表示少。scarce 常突出需要的东西难以获得；sparse 常突出数量不多、分布疏落。水资源短缺常用 scarce，树木稀疏常用 sparse。"
+        },
+        {
+          "word": "scattered",
+          "comparisonZh": "都可描写分散。scattered 主要说分布在不同地点，未必总量少；sparse 同时着重数量少或密度低。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Vegetation becomes sparse higher up the mountains.",
+          "translationZh": "越往山上走，植被越稀疏。",
+          "explanationZh": "sparse 描写植物数量减少、覆盖不再密集。"
+        },
+        {
+          "textEn": "The information available on the subject is sparse.",
+          "translationZh": "关于这个问题，能得到的信息很少。",
+          "explanationZh": "这里形容资料少而零星，是 sparse 的抽象用法。"
+        }
+      ],
+      "coreImageZh": "宽宽的菜畦里只长着零星几株幼苗，苗与苗之间留着大片裸土。男孩问为什么这么大块地只有几株，园丁也说它们长得稀、隔得远。sparse 形容稀疏、稀少；这里不仅苗的数量少，分布也很疏落，并不是整块地完全没有植物。"
+    },
+    {
+      "number": 6975,
+      "word": "spat",
+      "ipa": "/spæt/",
+      "pos": "n.",
+      "coreMeaningZh": "小争吵；口角",
+      "coreEn": "a brief, minor quarrel",
+      "mnemonics": [
+        {
+          "method": "SPOT → SPAT，小污点小争吵",
+          "textZh": "SPOT 是小斑点，o 换成 a 就是 spat。朋友溅脏你的衣服，你埋怨一句，他回嘴一句，很快和好：为一个小 spot 闹一场小 spat。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SPIT → SPAT，一场口水仗",
+          "textZh": "SPIT 是吐出，过去式可写 spat。借“吐”想到你一句、我一句吐气话，打一小场口水仗：a spat，一次短暂的口角。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "短暂的小争吵",
+          "explanationZh": "可数名词，常指朋友、情侣或同事之间因小事争执；通常比长期的纠纷轻。也可用于国家或机构之间的一次争执。",
+          "collocations": [
+            {
+              "phrase": "have a spat with somebody",
+              "meaningZh": "与某人发生小口角"
+            },
+            {
+              "phrase": "a spat over something",
+              "meaningZh": "为某事发生的小争执"
+            }
+          ]
+        },
+        {
+          "senseZh": "同形词辨认",
+          "explanationZh": "a spat / their spats 中是名词“口角”；spat out 中常是 spit 的过去式“吐出”。同样的拼写要看句子结构判断。",
+          "collocations": [
+            {
+              "phrase": "a lovers’ spat",
+              "meaningZh": "情侣间的小口角"
+            },
+            {
+              "phrase": "spat out the food",
+              "meaningZh": "吐出了食物"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "squabble",
+          "comparisonZh": "都常指为了小事吵嘴。squabble 可更突出争吵琐碎、吵吵嚷嚷；spat 常让人想到一次短暂的口角。"
+        },
+        {
+          "word": "quarrel",
+          "comparisonZh": "范围更宽，可大可小，也可指双方关系恶化后的争吵；spat 通常把事情说得较轻、较短暂。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "like any couple, they have their spats",
+          "translationZh": "像任何一对伴侣一样，他们也会闹些小口角。",
+          "explanationZh": "their spats 是名词复数，把偶尔吵嘴当作共同生活中的小摩擦。"
+        },
+        {
+          "textEn": "...a spat between America and Germany over interest rates and currencies.",
+          "translationZh": "……美国与德国之间围绕利率和货币的一次争执。",
+          "explanationZh": "between 指争执双方，over 引出争论的问题；spat 也可以用于国家之间。"
+        }
+      ],
+      "coreImageZh": "两个孩子都想用红蜡笔，男孩说自己还没画完，女孩抱怨他已经用了很久，两人为先后顺序拌了几句嘴。随后蜡笔放回桌上，两人神情缓和，露出不好意思的笑。spat 是一次短暂的小争吵；这里争的是一件小事，没有发展成长久的冲突。"
+    }
+  ]
+}

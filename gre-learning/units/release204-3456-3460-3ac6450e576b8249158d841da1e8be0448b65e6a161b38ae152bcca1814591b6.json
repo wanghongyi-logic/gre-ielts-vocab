@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7076,
+      "word": "symbiosis",
+      "ipa": "/ˌsɪmbaɪˈoʊsɪs/",
+      "pos": "n.",
+      "coreMeaningZh": "共生关系",
+      "coreEn": "a close continuing association between different organisms, or an interdependent relationship between people or groups",
+      "mnemonics": [
+        {
+          "method": "“Swim by, oh sis!” 姐妹相伴游，互相依靠",
+          "textZh": "想象妹妹坐在浮板上负责认路，朝负责推动浮板的姐姐喊：“Swim by, oh sis!”——“从旁边游过呀，姐姐！”这对长期搭档靠对方才能完成行程。把这句呼唤整句连读，近音联想 symbiosis，共生、相互依存的关系。sis 是 sister 的口语称呼。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SOME BUY ROSES：有人买玫瑰，花店花农相依存",
+          "textZh": "把自然短句 SOME BUY ROSES（有些人买玫瑰）的整段声音，近音联想 symbiosis。想象一家花店与一户花农长期搭档：花店靠花农不断供花，花农靠花店把花卖出去，少了对方各自的生意都难继续。这种紧密相互依靠的合作，就是人们所说的 symbiosis，共生关系。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "生物学共生：紧密共同生活，不保证双方都获利",
+          "explanationZh": "广义 symbiosis 指不同种生物持续、密切的共同生活关系，可包括互利共生、偏利共生和寄生。日常说明也常把它用在双方受益的狭义互利关系上，要看上下文；不是只要住在同一片树林或池塘，就一定构成共生。",
+          "collocations": [
+            {
+              "phrase": "live in symbiosis with",
+              "meaningZh": "与……共同生活，形成共生关系"
+            },
+            {
+              "phrase": "mutualistic symbiosis",
+              "meaningZh": "互利共生，双方都受益的共生形式"
+            }
+          ]
+        },
+        {
+          "senseZh": "人际或机构比喻：相互依赖、相互支持的关系",
+          "explanationZh": "也可把长期互相依赖或相互支持的人、机构、行业关系称为 symbiosis，常暗示双方获益，而不只是偶然合作一次。通常作不可数名词；指一种具体关系时也可说 a symbiosis，复数为 symbioses。",
+          "collocations": [
+            {
+              "phrase": "a symbiosis between A and B",
+              "meaningZh": "A 与 B 之间相互依存的关系"
+            },
+            {
+              "phrase": "professional symbiosis",
+              "meaningZh": "工作或职业上的互相依存关系"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "mutualism",
+          "comparisonZh": "mutualism 明确指不同生物双方都受益的互利关系。在 symbiosis 的狭义互利用法中两者很接近；广义 symbiosis 还包括一方受益、另一方受损的寄生等，因此不能把所有共生都换成 mutualism。"
+        },
+        {
+          "word": "interdependence",
+          "comparisonZh": "在人与机构相互依靠的比喻义上，interdependence 与 symbiosis 接近。interdependence 直接强调彼此依赖，可用于经济、系统部件等；symbiosis 更有密切共存、合作关系的形象。广义生物共生未必要求双方同等依赖或双方获利。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The birds live in symbiosis with the cattle, picking insects from their skin to eat.",
+          "translationZh": "这些鸟与牛形成共生关系，啄食牛皮肤上的昆虫。",
+          "explanationZh": "live in symbiosis with 表示与……共生；这个例子是鸟获得食物、牛身上的虫被清除的互利情形，不代表所有 symbiosis 都是互利。"
+        },
+        {
+          "textEn": "Their professional association was one of symbiosis.",
+          "translationZh": "他们的职业合作是一种相互依存的关系。",
+          "explanationZh": "professional association 把共生比喻用于工作关系；one 指一种关系，而不是一种生物。"
+        }
+      ],
+      "coreImageZh": "男孩观察靠近海葵生活的小丑鱼，讲解员解释这是一个互利共生的例子：海葵为鱼提供保护，鱼也帮助海葵清洁。symbiosis 指不同种生物共同生活形成的密切关系；这个例子双方受益，但广义共生不一定都互利。"
+    },
+    {
+      "number": 7077,
+      "word": "symmetry",
+      "ipa": "/ˈsɪmətri/",
+      "pos": "n.",
+      "coreMeaningZh": "对称",
+      "coreEn": "correspondence in size, shape and arrangement around a line, point or axis",
+      "mnemonics": [
+        {
+          "method": "SEE MY TREE：看我的纸树，左右完全对称",
+          "textZh": "把 SEE MY TREE（看我的树）整句连读，近音联想 symmetry。想象你把纸对折，剪出半棵树，再展开给同学看：“See my tree!”树干是中线，两边枝叶一一对应，沿中线对折又完全重合。这种左右对应的性质，就是 symmetry，对称。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "“新木梯”：两根立柱，左右对称",
+          "textZh": "用完整中文“新木梯”近音联想 symmetry。木匠把一把新木梯立在面前：两根立柱一样长，横档以正中线为界，左右两边的大小、位置正好对应。记住这把左右对应的新木梯，就记住 symmetry，对称。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "形状和布局的对称：对应部分匹配",
+          "explanationZh": "symmetry 是名词，常指物体、建筑或图案相应部分在大小、形状和位置上对应。左右镜像是常见的轴对称；围绕中心旋转后仍相合，也是一种对称，不必都能沿一条线对折。常作不可数名词。",
+          "collocations": [
+            {
+              "phrase": "a line of symmetry",
+              "meaningZh": "对称轴"
+            },
+            {
+              "phrase": "perfect symmetry",
+              "meaningZh": "完全对称"
+            }
+          ]
+        },
+        {
+          "senseZh": "抽象的对等对应：双方规则或结构相称",
+          "explanationZh": "也可说角色、制度、力量或双方关系具有 symmetry，强调相应部分相似或对等。例如双方承担相应义务，或两种制度有相互对应的结构。这里不必画出左右两半，也不是说双方互相依靠。",
+          "collocations": [
+            {
+              "phrase": "symmetry between A and B",
+              "meaningZh": "A 与 B 之间的对等或对应"
+            },
+            {
+              "phrase": "break the symmetry",
+              "meaningZh": "打破原有的对称或对等结构"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "balance",
+          "comparisonZh": "谈布局匀称、双方均衡时，balance 与 symmetry 接近。balance 更强调分量或视觉上的均衡，不要求形状、位置严格对应；不对称的设计也可能显得平衡。symmetry 的几何义则突出可按轴、中心等相互对应。"
+        },
+        {
+          "word": "proportion",
+          "comparisonZh": "在比例匀称、美观和谐的语境里，proportion 与 symmetry 有交集。proportion 主要谈各部分大小或数量的比例关系；比例合适不等于对称，而 symmetry 还关心相应部分的安排和位置。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The trees break the symmetry of the painting.",
+          "translationZh": "这些树破坏了画面的对称性。",
+          "explanationZh": "break the symmetry 表示打破原有对称布局；树在画面中的安排打破了原有对称布局，不是在说所有树都必须对称。"
+        },
+        {
+          "textEn": "The building has perfect symmetry.",
+          "translationZh": "这座建筑完全对称。",
+          "explanationZh": "have symmetry 用名词说明建筑具有对称性；perfect 强调各对应部分匹配得完整。"
+        }
+      ],
+      "coreImageZh": "老师引导男孩观察蝴蝶纸模型：以中间的身体为轴，左上翼与右上翼、左下翼与右下翼的形状和大小分别对应。这种同一轴两侧的对应关系就是 symmetry，对称；不是仅仅说两个东西看起来相似。"
+    },
+    {
+      "number": 7078,
+      "word": "synchronous",
+      "ipa": "/ˈsɪŋkrənəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "同时期的，同步的",
+      "coreEn": "happening at the same time or operating in coordinated timing",
+      "mnemonics": [
+        {
+          "method": "“Sink, runners!” 跑者听口令，同一拍蹲下",
+          "textZh": "想象跑步队排成一行做热身，听到一句口令：“Sink, runners!”——“跑步的同学，身子沉下去！”所有人同一刻屈膝下蹲，动作整齐地发生在同一拍。把整句口令连读，近音联想 synchronous：同时发生的、同步的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SING + CHRISTMAS：圣诞合唱，同一拍开口",
+          "textZh": "借完整 SING（唱歌）与 CHRISTMAS（圣诞节）的整段声音，近音联想 synchronous。想象圣诞合唱队看着指挥，同一拍开口、同一拍停声，每个节奏都对齐。记住这场整齐的圣诞合唱：动作在时间上同步，就是 synchronous。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "同一时间发生：时间上对应的事件或动作",
+          "explanationZh": "synchronous 修饰同时发生或在时间上对应的事件、变化与动作，语气较正式。重点是时间对上，不只是内容相似、目标一致；两个动作做得一模一样但先后错开，就不能据此说它们同步。",
+          "collocations": [
+            {
+              "phrase": "synchronous events",
+              "meaningZh": "同时发生的事件"
+            },
+            {
+              "phrase": "synchronous movements",
+              "meaningZh": "同步动作"
+            }
+          ]
+        },
+        {
+          "senseZh": "持续或反复同步：节奏与运行时点协调",
+          "explanationZh": "也常用于钟表、周期动作和设备，表示反复活动按相同节奏、对应时点运行。技术语境可涉及相同周期或相位；只看速度相近，不足以判断是否同步。",
+          "collocations": [
+            {
+              "phrase": "synchronous timepieces",
+              "meaningZh": "同步运行的钟表"
+            },
+            {
+              "phrase": "synchronous operation",
+              "meaningZh": "同步运行"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "simultaneous",
+          "comparisonZh": "表示同一时刻发生时，simultaneous 与 synchronous 很接近。simultaneous 常直接突出事件在某个时刻同时发生；synchronous 还常强调持续、反复活动在时间或周期上的对应。不能把所有 simultaneous 事件都理解为长期同步运行。"
+        },
+        {
+          "word": "concurrent",
+          "comparisonZh": "concurrent 也指同时存在或进行，常容许一段时间内重叠，例如两个项目并行。synchronous 更强调时间对应或节奏协调；两个 concurrent 过程不一定在每一步都同步，也不一定完全同时开始和结束。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "synchronous timepieces",
+          "translationZh": "同步运行的钟表。",
+          "explanationZh": "synchronous 修饰 timepieces，强调钟表的计时相互对应，而不只是外形相同。"
+        },
+        {
+          "textEn": "the synchronous flapping of a bird's wings",
+          "translationZh": "鸟的双翼同步拍动。",
+          "explanationZh": "这里的同步体现为两翼拍动的节奏和时点相互对应，修饰的是 flapping 这个动作过程。"
+        }
+      ],
+      "coreImageZh": "男孩和女孩一起做抬臂练习：双臂同时从低处抬到肩高，又同时下降、放回身侧。两人在这一次起落中始终处于相应阶段，表现 synchronous 的同步，而不只是站在同一个房间里。"
+    },
+    {
+      "number": 7079,
+      "word": "synergic",
+      "ipa": "/sɪˈnɜːdʒɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "合作的，1+1>2的",
+      "coreEn": "working together, often with an enhanced combined effect",
+      "mnemonics": [
+        {
+          "method": "“新耳机”：芯片喇叭配合，才奏得出歌",
+          "textZh": "把 synergic 的整段读音近音联想为“新耳机”。想象组装一副新耳机：芯片单独放着不唱歌，喇叭单独放着也不唱歌；在完整耳机里，芯片处理信号、喇叭把信号变成声音，部件配合才让音乐响起来。记住“各自办不到，合作有新效果”：synergic 是合作的、产生协同效果的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SEE + MAGIC：两人合作，变出单人办不到的魔术",
+          "textZh": "借完整 SEE（看）和 MAGIC（魔术）的三拍声音，近音联想 synergic。想象台上一人举幕布遮挡，另一人趁机移动道具，两人配合才让大箱子“凭空消失”；少了任何一人，这个设计就演不成。把“看魔术”连到合作产生的额外效果，记住 synergic。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "共同起作用：组成部分相互配合",
+          "explanationZh": "synergic 是较正式的形容词，可描述肌肉、组织或其他组成部分共同起作用。重点在配合完成某种作用，不只是几样东西恰好放在一起；这个较宽的合作义不要求每次都给出量化的增效数字。",
+          "collocations": [
+            {
+              "phrase": "synergic muscles",
+              "meaningZh": "相互协作的肌肉"
+            },
+            {
+              "phrase": "synergic muscle contraction",
+              "meaningZh": "协同的肌肉收缩"
+            }
+          ]
+        },
+        {
+          "senseZh": "协同增效：组合产生额外效果",
+          "explanationZh": "用于团队或组织时，可强调结合、合作后比各自为政更有效率或更有成效。“1+1>2”是协同增效的形象说法，不是把日常算术改写，也不是只要合并就保证成功。",
+          "collocations": [
+            {
+              "phrase": "synergic effects",
+              "meaningZh": "协同效应"
+            },
+            {
+              "phrase": "synergic cooperation",
+              "meaningZh": "产生协同效果的合作"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "cooperative",
+          "comparisonZh": "在“共同协作”这一层，cooperative 与 synergic 接近，但 cooperative 也可指某人愿意配合、肯帮忙。synergic 侧重多个部分共同起作用，常带组合增效的意味；不能把某人听话配合这一义直接移过来。"
+        },
+        {
+          "word": "synergistic",
+          "comparisonZh": "synergistic 是更常见的近义形容词，也可表示协同作用或组合增效；synergic 相对少见。两者在协同效果语境中常可互换，具体含义仍要看所修饰的动作或效果。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "synergic muscles",
+          "translationZh": "协同工作的肌肉。",
+          "explanationZh": "synergic 修饰 muscles，说明这些肌肉配合起作用；短语本身没有宣称某项效果必定超出一个量化总和。"
+        },
+        {
+          "textEn": "synergic muscle contraction",
+          "translationZh": "协同的肌肉收缩。",
+          "explanationZh": "synergic 修饰 muscle contraction，重点是收缩活动的协作关系，不是单纯力量大或发生得快。"
+        }
+      ],
+      "coreImageZh": "两人各自都没能拧开的罐子，换成分工配合：男孩双手稳住罐身，女孩旋动盖子，随后把盖提开。稳住与旋开两种作用互相补足，配合后取得单独尝试没达到的结果，表现 synergic 的协同增效；这里不是在做数值实验。"
+    },
+    {
+      "number": 7080,
+      "word": "tacit",
+      "ipa": "/ˈtæsɪt/",
+      "pos": "adj.",
+      "coreMeaningZh": "暗示的",
+      "coreEn": "understood or indicated without being directly stated",
+      "mnemonics": [
+        {
+          "method": "TASTE IT：嘴里正尝着，点头表示赞许",
+          "textZh": "把整句 TASTE IT（尝尝它）的声音近音联想为 tacit。想象你刚尝了一口蛋糕，嘴里还嚼着，没有说“好吃”，只是笑着点头；做蛋糕的人已经明白你的赞许。记住这份没用话说出的认可：tacit，暗示的、默示的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "心里 TAX IT，只点头默许征税",
+          "textZh": "把完整 TAX IT（对它征税）的两拍声音近音联想为 tacit。想象桌游里的国王看见一车货，心里想“TAX IT”，却没开口，只向收税人点点头；收税人会意，拿起账簿。这份许可没有明说，而是用动作传达：tacit。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "默示的赞同或许可：态度没有直接说出",
+          "explanationZh": "tacit 常放在名词前，形容由动作、神情或具体情境传达、没有直接说出的态度。tacit approval 是默许，tacit support 是未公开明说的支持；不能不看情境，就把一切沉默都解释为同意。",
+          "collocations": [
+            {
+              "phrase": "tacit approval",
+              "meaningZh": "默示的赞同；默许"
+            },
+            {
+              "phrase": "tacit support",
+              "meaningZh": "未明说的支持"
+            }
+          ]
+        },
+        {
+          "senseZh": "心照不宣或含而未说：彼此理解的意思",
+          "explanationZh": "tacit agreement 指没有明文或口头说定、却彼此理解的默契；tacit admission 则指没有直说、但从言行中已经流露的承认。重点是那层意思未被直接表达，不要求人在整个过程中一句话也不说，也不是形容人性格寡言。",
+          "collocations": [
+            {
+              "phrase": "tacit agreement",
+              "meaningZh": "心照不宣的约定；默契"
+            },
+            {
+              "phrase": "tacit admission",
+              "meaningZh": "默示的承认"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "implicit",
+          "comparisonZh": "implicit 在“含而未明说”的意义上与 tacit 很接近，可指话语或文字中隐含的假设、批评；tacit 尤其常与赞同、支持、协议等搭配，突出默示或心照不宣。implicit trust 还可表示完全的信任，那个义项不能换成 tacit。"
+        },
+        {
+          "word": "unspoken",
+          "comparisonZh": "unspoken agreement 与 tacit agreement 都可指没有说出口的默契。unspoken 直截了当地突出未说出，tacit 较正式，常强调态度或意思已经由行为、情境体现或被理解；两者不等于一段声音很小的话。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "By tacit agreement, the subject was never mentioned again.",
+          "translationZh": "大家心照不宣，此后再也没有提起那个话题。",
+          "explanationZh": "by tacit agreement 表示出于未明说的默契，不是已经正式口头约定后再保持沉默。"
+        },
+        {
+          "textEn": "The question was a tacit admission that a mistake had indeed been made.",
+          "translationZh": "这个问题等于含蓄地承认，确实曾经犯过一个错误。",
+          "explanationZh": "问题可以被说出口，但其中“曾经犯错”这层承认并未直接说出；tacit 修饰的是 admission，不是在说提问者完全没有讲话。"
+        }
+      ],
+      "coreImageZh": "男孩问可不可以坐在长凳上，父亲没有开口，只轻轻点头。母亲说明，爸爸用点头表示了默许。tacit 指没有明说、却从行为或情境中传达出来的意思；这里有点头这个明确线索，不是说任何沉默都等于同意。"
+    }
+  ]
+}

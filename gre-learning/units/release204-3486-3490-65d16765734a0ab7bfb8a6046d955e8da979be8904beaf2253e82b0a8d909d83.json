@@ -1,0 +1,403 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7106,
+      "word": "theatrical",
+      "ipa": "/θiˈætrɪkl/",
+      "pos": "adj.",
+      "coreMeaningZh": "做作的，夸张的，矫揉造作的",
+      "coreEn": "exaggerated, unnatural",
+      "mnemonics": [
+        {
+          "method": "THEATRE 搬进日常：演得太夸张",
+          "textZh": "从熟词 THEATRE（剧院）记 theatrical 的真实词族关系。想象生活里一点小事，有人却像站在大剧院里，扬手、拖长声调，刻意把反应演给别人看：这里的 theatrical 就是做作、夸张的。重点是日常表现不自然，不是说戏剧表演本身都虚假。",
+          "original": true,
+          "kind": "etymology",
+          "weak": false
+        },
+        {
+          "method": "SEE A TRICK：看穿夸张的表演",
+          "textZh": "把 theatrical 的主体读音近音联到 SEE A TRICK（看见一个把戏）。只是铅笔断了，有人却捂胸、拖长叹息，非要大家都看他；旁人一看，就看出这场刻意的表演。用这个声音和画面，记 theatrical：做作、夸张的。",
+          "original": true,
+          "kind": "invented_association",
+          "weak": false
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "动作、反应夸张做作的",
+          "explanationZh": "常带批评意味：表现像刻意演给别人看，显得不自然。不是动作幅度一大就必然做作，关键是为了效果或吸引注意而夸大反应。",
+          "collocations": [
+            {
+              "phrase": "a theatrical gesture",
+              "meaningZh": "一个做作夸张的手势"
+            },
+            {
+              "phrase": "a theatrical sigh",
+              "meaningZh": "一声故作夸张的叹息"
+            }
+          ]
+        },
+        {
+          "senseZh": "说话方式刻意追求戏剧效果的",
+          "explanationZh": "可说一个人的声调、说话方式过于表演化。这里评价表达方式，不等于断定说话内容全是假话；另有中性的戏剧相关义，但不是原表选定的意思。",
+          "collocations": [
+            {
+              "phrase": "a theatrical manner of speaking",
+              "meaningZh": "一种做作夸张的说话方式"
+            },
+            {
+              "phrase": "a theatrical tone",
+              "meaningZh": "一种故作戏剧效果的语调"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "histrionic",
+          "comparisonZh": "两者都可批评手势、言语或反应做作夸张。histrionic 更直接强调刻意表露情绪、装腔作势；theatrical 还可中性地表示与戏剧有关，不能在那种用法里直接互换。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "dramatic",
+          "comparisonZh": "两者都可描述富有戏剧效果的表达。dramatic 可强调强烈、动人或引人注意，并不必然做作；theatrical 用于日常行为时更容易暗示夸张、不自然。dramatic change 里的显著变化不能直接换成 theatrical change。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "In a theatrical gesture, Glass clamped his hand over his eyes.",
+          "translationZh": "格拉斯做了个夸张的动作，用手紧紧遮住双眼。",
+          "explanationZh": "theatrical 修饰 gesture，评价这个动作带有刻意表演的效果，不是说它发生在剧场。",
+          "sourceAttribution": "Collins，theatrical 义项 2 编辑例句：https://www.collinsdictionary.com/dictionary/english/theatrical"
+        },
+        {
+          "textEn": "a politician who has a highly theatrical manner of speaking",
+          "translationZh": "一位说话方式十分做作夸张的政治人物",
+          "explanationZh": "词典编辑例语，原文是名词短语，不补写成自创完整句。评价说话方式过分表演化，而不是把政治职业本身当成做作。",
+          "sourceAttribution": "Merriam-Webster，theatrical 编辑例语（新闻例句之前）：https://www.merriam-webster.com/dictionary/theatrical"
+        }
+      ],
+      "coreImageZh": "只是一块积木掉在地上，男孩却捂胸、仰头、用手背搭着额头，像在演一出悲剧。女孩平静地指出他反应夸张，他才收起表演。theatrical 在这里形容做作、刻意夸张，不是在说真的受伤或只是与剧院有关。"
+    },
+    {
+      "number": 7107,
+      "word": "therapeutic",
+      "ipa": "/ˌθerəˈpjuːtɪk/",
+      "pos": "adj.",
+      "coreMeaningZh": "治疗的，有疗效的",
+      "coreEn": "relating to treatment or helping to improve physical or mental health",
+      "mnemonics": [
+        {
+          "method": "THERAPY 是治疗，THERAPEUTIC 是治疗的、有疗效的",
+          "textZh": "从完整熟词 THERAPY（治疗、疗法）联到同词族的 therapeutic。想象一张康复记录：原来抬手疼的人经过一段 THERAPY，抬手喝水轻松了些；这段治疗对他有帮助，便可用 THERAPEUTIC 来描述。THERAPY 是治疗这件事，THERAPEUTIC 是“治疗的、有疗效的”；有帮助不等于已经完全治愈。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "THE RAP YOU PICK：你选的说唱，让心情舒缓些",
+          "textZh": "把完整短语 THE RAP YOU PICK（你选的那首说唱）与 therapeutic 作近音联想。想象心里烦闷时，你选了一首喜欢的说唱，边听边跟着节奏把憋着的话说出来，情绪慢慢放松。由 THE RAP YOU PICK 的整段声音，联到音乐带来的舒缓感，记住 therapeutic：有助于身心好转的、有疗效的。这是日常“舒缓身心”的用法，不是说一首歌就能治好疾病。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "用于治疗或有治疗作用：therapeutic effect / therapeutic drugs",
+          "explanationZh": "医学语境中常放在名词前，表示与治疗有关、用于治疗或能产生治疗作用。therapeutic effect 着眼于治疗效果，therapeutic drugs 着眼于药物的治疗用途；这个形容词本身不承诺对每个人都有效，也不保证彻底根治。",
+          "collocations": [
+            {
+              "phrase": "therapeutic effect",
+              "meaningZh": "治疗效果"
+            },
+            {
+              "phrase": "therapeutic drugs",
+              "meaningZh": "治疗性药物"
+            }
+          ]
+        },
+        {
+          "senseZh": "让身心舒缓、有益：find something therapeutic / be therapeutic",
+          "explanationZh": "日常也可形容园艺、绘画等活动让人放松、感觉好一些；可说某项活动 is therapeutic，或 find it therapeutic。这种说法通常表达舒缓身心的体验，不等于把爱好认定为能替代专业治疗的疗法。",
+          "collocations": [
+            {
+              "phrase": "find listening to music very therapeutic",
+              "meaningZh": "觉得听音乐很能舒缓心情"
+            },
+            {
+              "phrase": "be very therapeutic",
+              "meaningZh": "很能舒缓身心"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "curative",
+          "comparisonZh": "curative 更直接突出治愈疾病的能力或作用。therapeutic 范围较宽，可以只是与治疗有关，或有助于缓解症状、放松身心；有 therapeutic benefit 不必意味着已经治愈。"
+        },
+        {
+          "word": "medicinal",
+          "comparisonZh": "medicinal 常用于有治病用途或药用性质的植物、物质等，在治疗义上与 therapeutic 相近。therapeutic 还很自然地用于让人舒缓的活动或体验；觉得画画 therapeutic，不必把画画叫作 medicinal。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "studies of the therapeutic effect of bed rest",
+          "translationZh": "关于卧床休息治疗效果的研究",
+          "explanationZh": "这是名词短语，therapeutic 修饰 effect；原文说研究这种效果，并没有保证卧床休息适用于所有疾病。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary — https://www.oxfordlearnersdictionaries.com/definition/english/therapeutic"
+        },
+        {
+          "textEn": "Gardening can be very therapeutic.",
+          "translationZh": "园艺活动可以很有益于舒缓身心。",
+          "explanationZh": "can 保留“可以”的可能性，therapeutic 作表语，强调这种活动能让人放松或感觉好些；不是说每个人做园艺都会治好疾病。",
+          "sourceAttribution": "Merriam-Webster — https://www.merriam-webster.com/dictionary/therapeutic"
+        }
+      ],
+      "coreImageZh": "男孩因肩膀活动不便，在治疗师监督下坐着做一段温和的抬臂活动，随后把手放回腿上。治疗师说明，这是帮助逐步恢复活动的康复治疗。therapeutic 在这里指用于治疗、促进恢复的，不表示做一下就已经痊愈。"
+    },
+    {
+      "number": 7108,
+      "word": "thorny",
+      "ipa": "/ˈθɔːni/",
+      "pos": "adj.",
+      "coreMeaningZh": "棘手的",
+      "coreEn": "difficult to deal with or solve, often because of complications or disagreement",
+      "mnemonics": [
+        {
+          "method": "THIRTY 三十道手续互相卡，问题真棘手",
+          "textZh": "把完整熟词 THIRTY（三十）与 thorny 作近形、近音联想。想象办一件事要跑三十道手续：这一处要求先拿到那一处的证明，那一处又反过来等这里批准，来回卡住，怎么安排都难办。由 THIRTY 联到这团麻烦，记住 THORNY：棘手的。不是三十这个数字本身难，而是这些要求相互牵制，解决起来很费心。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "THORN 刺扎手，THORNY 问题很棘手",
+          "textZh": "想象一根长满刺的枝条：抓左边扎左手，抓右边扎右手，想处理它却不知道从哪里下手。植物上的尖刺叫 THORN；加上形容词后缀 -y，成为 THORNY，字面是“多刺的”。把这根到处扎手的枝条联到一个难处理的问题，就记住 thorny 的比喻义：棘手的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "难处理、难协调的议题：thorny question / thorny issue",
+          "explanationZh": "thorny 常放在 problem、question、issue 等名词前，表示事情复杂难办，或牵涉容易引起分歧的因素。它不只是“有一点不方便”，也不要求问题永远无解；说一个问题 thorny，是强调处理时需要费心。",
+          "collocations": [
+            {
+              "phrase": "thorny questions",
+              "meaningZh": "棘手的问题"
+            },
+            {
+              "phrase": "the thorny issue",
+              "meaningZh": "这个棘手的议题"
+            }
+          ]
+        },
+        {
+          "senseZh": "着手处理棘手问题：tackle a thorny problem",
+          "explanationZh": "tackle 与 thorny problem 连用，表示开始面对并设法处理难题，不等于问题已经解决。thorny 还有“多刺的”字面义；这里的问题没有真的长刺，而是借“碰起来扎手”的感觉说难处理。",
+          "collocations": [
+            {
+              "phrase": "tackle this thorny problem",
+              "meaningZh": "着手处理这个棘手的问题"
+            },
+            {
+              "phrase": "solution to a thorny problem",
+              "meaningZh": "一个棘手问题的解决办法"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "difficult",
+          "comparisonZh": "difficult 是普通而宽泛的“困难的”，可说题难、路难走、动作难做。thorny 更常描写难处理的议题或情形，尤其有复杂因素或意见冲突时；一段单纯费体力的路不必叫 thorny。"
+        },
+        {
+          "word": "problematic",
+          "comparisonZh": "problematic 也可指问题很多、难处理，与 thorny 接近；它还可强调结果不确定、是否可行成疑。thorny 更突出一个具体难题让人难以下手或难协调，不只是泛泛表示有疑问。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "There are still some thorny questions to be answered.",
+          "translationZh": "还有一些棘手的问题需要回答。",
+          "explanationZh": "still 表示这些问题仍待处理；to be answered 说明需要回答，并没有说它们绝对不可能得到答案。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary — https://www.oxfordlearnersdictionaries.com/definition/english/thorny"
+        },
+        {
+          "textEn": "It is essential that we tackle this thorny problem.",
+          "translationZh": "我们必须着手处理这个棘手的问题。",
+          "explanationZh": "essential 强调处理此事很有必要；tackle 表示面对并设法处理，不是已经解决。thorny 修饰 problem，指复杂难办的问题。",
+          "sourceAttribution": "Collins COBUILD Advanced Learner’s Dictionary — https://www.collinsdictionary.com/dictionary/english/thorny"
+        }
+      ],
+      "coreImageZh": "老师和两个孩子商量活动时间：选周二会碰上女孩考试，选周四又碰上男孩比赛。两个备选时间各有冲突，三人仍在认真权衡。thorny 在这里指问题棘手、难处理，并不表示永远没有解决办法。"
+    },
+    {
+      "number": 7109,
+      "word": "threadbare",
+      "ipa": "/ˈθredbeə(r)/",
+      "pos": "adj.",
+      "coreMeaningZh": "陈腐的",
+      "coreEn": "overused and no longer fresh or interesting",
+      "mnemonics": [
+        {
+          "method": "THREAD + BARE：老话磨得露了线",
+          "textZh": "布面磨久了，表层绒毛掉光，底下的线 THREAD 裸露出来，变得 BARE。THREADBARE 本来就描写这种磨薄露线的旧布；把同一画面移到一句反复讲的老话上：说得连新意都磨光了，就是“陈腐的”。记住整段 THREAD + BARE，不必把单词拆成零碎字母。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RED BEAR：又是红熊那段老故事",
+          "textZh": "把 threadbare 的主体声音联到 RED BEAR（红熊）。想象每天睡前都听同一个红熊故事：刚听见开头，就能接着背出结尾，再也觉得不新鲜。又是 RED BEAR 那一套，已经讲得 threadbare——陈腐乏味了。这是近音联想；读目标词时别漏掉开头的 /θ/。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "陈旧乏味的说法、故事或情节",
+          "explanationZh": "用在 joke、plot、argument 等名词前，强调同一套东西被反复使用，新鲜感已经磨光。不是凡年代久远的东西都叫 threadbare；一个老故事如果仍有新意，就不一定适用。",
+          "collocations": [
+            {
+              "phrase": "threadbare jokes",
+              "meaningZh": "讲滥了的笑话"
+            },
+            {
+              "phrase": "a threadbare plot",
+              "meaningZh": "老套的情节"
+            }
+          ]
+        },
+        {
+          "senseZh": "论点逐渐显得陈腐：get / become threadbare",
+          "explanationZh": "也可放在系动词后，评价某个论点被反复讲述后的状态。它常带“已经说服不了人”的贬意，但不等于论点必定错误；陈旧与真假是两回事。字面上的磨薄旧布是另一个用法，这里保留原表的抽象义。",
+          "collocations": [
+            {
+              "phrase": "threadbare arguments",
+              "meaningZh": "陈词滥调式的论点"
+            },
+            {
+              "phrase": "the argument is getting threadbare",
+              "meaningZh": "这个论点逐渐显得陈旧乏味"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hackneyed",
+          "comparisonZh": "形容老套的故事、比喻或论点时，两者常可替换：hackneyed 更直接强调用得太多而俗套；threadbare 借磨损意象强调新意几乎耗尽。这里都是形容词，不把 hackneyed 当作旧衣磨薄的等价词。"
+        },
+        {
+          "word": "trite",
+          "comparisonZh": "trite 也可形容让人听熟了的说法或想法，常与 threadbare 同指陈腐。trite 偏重熟滥、缺少新意；threadbare 更突出反复使用后的耗尽感。它们都不自动等于 false，也不能用 trite 替换字面上磨薄的 threadbare clothes。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "To say the least, his arguments were threadbare.",
+          "translationZh": "至少可以说，他的那些论点都是陈词滥调。",
+          "explanationZh": "threadbare 在 were 后评价 arguments，带批评意味；to say the least 表示这已经是保守的说法，并非赞扬。",
+          "sourceAttribution": "UK Parliament, Hansard — John Sever, 16 April 1980, col.1295 — https://api.parliament.uk/historic-hansard/commons/1980/apr/16/housing-bill-allocation-of-time"
+        },
+        {
+          "textEn": "The argument is getting a little threadbare to-day, but it is a good argument that will stand repetition.",
+          "translationZh": "这个论点如今有些老生常谈了，但它仍是一个值得反复讲的好论点。",
+          "explanationZh": "getting threadbare 指反复讨论后失去新鲜感；but 后明确仍称其为好论点，说明陈腐并不必然等于错误。to-day 是原记录的旧式拼写，保留不改。",
+          "sourceAttribution": "UK Parliament, Hansard — Mr Maclay, 1 March 1932, col.1054 — https://api.parliament.uk/historic-hansard/commons/1932/mar/01/wheat-bill"
+        }
+      ],
+      "coreImageZh": "男孩又准备讲同一个老笑话，女孩听到后垂下眼睑，显得没兴趣，并说它已经讲过好多遍、早没新意。threadbare 在这里形容话语或想法反复用得陈腐，不是说两人的衣服破旧。"
+    },
+    {
+      "number": 7110,
+      "word": "throng",
+      "ipa": "/θrɒŋ/",
+      "pos": "v./n.",
+      "coreMeaningZh": "大量聚集",
+      "coreEn": "to gather or fill a place in large numbers; a large crowd of people",
+      "mnemonics": [
+        {
+          "method": "STRONG 人多力量大，THRONG 聚成群",
+          "textZh": "把 STRONG（强壮的、有力量的）与 THRONG 作近音联想。想象一辆重车陷住，一个人推不动，周围许多人纷纷聚拢，一起推，合起来的力量才够强。STRONG 提醒“人多力量大”，THRONG 记住这些人“大量聚集”，也可指聚成的“一大群人”。两词开头声音不同，不是同一个词。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "THROW 抛捧花，THRONG 人群围来",
+          "textZh": "看见 THRONG，联想完整熟词 THROW（抛）。婚礼上新娘正要抛捧花，原来分散的来宾纷纷围拢，聚成一大群，等着接花。由 THROW 的抛花画面记住 THRONG：大量聚集。拼写前四字母 THRO 相同，但目标词以 NG 收尾；这是近形联想，不是说两词同源或读音完全一样。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "动词：人们蜂拥而至，或大量聚在某处",
+          "explanationZh": "强调人很多，可用 throng into / around 等说明去向，也可以直接接地点作宾语，表示许多人聚满那里；不只等于几个熟人碰面。throng 比日常的 crowd 更有书面叙述感，并不一定含暴力或失控。",
+          "collocations": [
+            {
+              "phrase": "throng into the hall",
+              "meaningZh": "成群涌进大厅"
+            },
+            {
+              "phrase": "throng the streets",
+              "meaningZh": "大量聚集在街道上"
+            }
+          ]
+        },
+        {
+          "senseZh": "名词：聚在一起的一大群人",
+          "explanationZh": "a throng 指聚集的人群；a throng of 后可接具体的人群身份。in / through the throng 描写置身或穿过人群。作名词时不是“聚集”这个动作的时间或次数，原表的动词/名词两用都保留。",
+          "collocations": [
+            {
+              "phrase": "a throng of journalists",
+              "meaningZh": "一大群记者"
+            },
+            {
+              "phrase": "through the throng",
+              "meaningZh": "穿过密集的人群"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "crowd",
+          "comparisonZh": "同作名词时，crowd 是更日常的人群说法，throng 更有书面叙述和人多拥挤的画面感；through the crowd / throng 都自然。同作动词可描述人挤满街道，但 crowd 还有让空间或头脑充塞的其他用法，不能把所有 crowd 一律换成 throng。"
+        },
+        {
+          "word": "flock",
+          "comparisonZh": "这里对应动词“成群前往、聚集”：人们 flock to a place 与 throng to a place 都可表示大批前往；throng 更突出大量人拥在一起。flock 通常不及物，需 to / into 等带地点，不能照搬 throng the mall 而写 flock the mall。本项不把 flock 的鸟群名词义当成人群名词的普遍替代。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Shoppers thronged the mall for the sales.",
+          "translationZh": "顾客们涌进商场抢购打折商品。",
+          "explanationZh": "thronged 是过去式，直接接地点 the mall；for the sales 说明人群大量前来的目的，不是商场本身在移动。",
+          "sourceAttribution": "Merriam-Webster Dictionary — https://www.merriam-webster.com/dictionary/throng"
+        },
+        {
+          "textEn": "We pushed our way through the throng.",
+          "translationZh": "我们挤着穿过了人群。",
+          "explanationZh": "the throng 是名词人群；pushed our way through 表明要从拥挤的人群中挤过去，不表示推倒或伤害某个具体的人。",
+          "sourceAttribution": "Oxford Advanced Learner’s Dictionary — https://www.oxfordlearnersdictionaries.com/definition/english/throng_1"
+        }
+      ],
+      "coreImageZh": "展台周围原先较分散的游客向鲸鱼雕塑靠拢，随后聚成一群继续观看。throng 作动词可指人们大量聚集，作名词可指聚集的人群；画中不是只有母子两人，也没有推搡踩踏。"
+    }
+  ]
+}

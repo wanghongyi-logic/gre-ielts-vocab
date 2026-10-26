@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7056,
+      "word": "summit",
+      "ipa": "/ˈsʌmɪt/",
+      "pos": "n.",
+      "coreMeaningZh": "顶点",
+      "coreEn": "the highest point or highest attainable level",
+      "mnemonics": [
+        {
+          "method": "SUM IT 算完每段上升，抵达最高点",
+          "textZh": "SUM 是求和，IT 是它；把 SUM IT /sʌm ɪt/ 连读，就抓住 summit /ˈsʌmɪt/ 的完整声音。想象沿着登山阶梯不断上升，把每一段上升的高度加起来；算到最后一段，脚下已是整座山的最高点——summit，顶点。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SOME MEAT 留到峰顶吃，最高处才开餐",
+          "textZh": "SOME MEAT 是“一些肉”。把整段 SOME MEAT 的声音连起来，借近音记 summit /ˈsʌmɪt/。登山者把几块肉留作登顶奖励，一路不打开饭盒，直到站上山的最高处才吃；那个最高点，就是 summit。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "山或其他事物的最高处",
+          "explanationZh": "summit 是名词，常指山顶这一最高点。reach the summit 是抵达顶点；at/on the summit 表示在顶上。登到半山腰或一块普通高地，还不能因此称为抵达 summit。",
+          "collocations": [
+            {
+              "phrase": "reach the summit",
+              "meaningZh": "抵达顶点或峰顶"
+            },
+            {
+              "phrase": "at the summit of a mountain",
+              "meaningZh": "在一座山的最高处"
+            }
+          ]
+        },
+        {
+          "senseZh": "成就、地位或发展所达到的巅峰",
+          "explanationZh": "可比喻某人事业、声望或某种发展达到的最高水平，常用 the summit of。这里仍保留“最高点”的核心，不只是一个普通的阶段或一次进步。",
+          "collocations": [
+            {
+              "phrase": "the summit of one’s career",
+              "meaningZh": "事业的巅峰"
+            },
+            {
+              "phrase": "the summit of human fame",
+              "meaningZh": "声望的最高点"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "peak",
+          "comparisonZh": "都可指山顶，也可指成就或状态的高峰。peak 还可指尖顶的山峰本身，或数据曲线中的一个峰值；summit 更直接强调某座山或某种发展所能达到的最高处。"
+        },
+        {
+          "word": "zenith",
+          "comparisonZh": "在事业、能力或声望达到最高水平时可与 summit 接近，zenith 语气更正式。zenith 的天文学义指天顶，不能把普通山顶直接换成这一义；说地形上的峰顶通常用 summit。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We reached the summit at noon.",
+          "translationZh": "我们在中午抵达了峰顶。",
+          "explanationZh": "reach 后直接接 the summit，说明到达了山的最高处。"
+        },
+        {
+          "textEn": "the summit of human fame",
+          "translationZh": "人所能达到的声望顶点",
+          "explanationZh": "of 后的 human fame 说明“最高点”所涉及的领域，是比喻用法。"
+        }
+      ],
+      "coreImageZh": "男孩和母亲已经站在山上宽缓的最高处。来时的小路从低处延伸上来，两边的草坡从脚下向下展开，远处山谷也在下面。母亲让他观察周围地形，他认出这里就是这座山的 summit：顶点、山顶。画面展示的是最高位置，不是登山过程。"
+    },
+    {
+      "number": 7057,
+      "word": "summon",
+      "ipa": "/ˈsʌmən/",
+      "pos": "vt.",
+      "coreMeaningZh": "召集，召唤",
+      "coreEn": "call or order someone to come; call people together",
+      "mnemonics": [
+        {
+          "method": "SALMON 三文鱼要上桌，按铃召来服务员",
+          "textZh": "用完整的 SALMON（三文鱼，/ˈsæmən/）近音记 SUMMON /ˈsʌmən/。三文鱼准备上桌，客人按铃，把服务员叫到身边准备上菜：这样召唤某人前来，就是 summon。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "“锁门”前先召齐人，到门口集合",
+          "textZh": "把 summon /ˈsʌmən/ 借听成完整的中文“锁门”。负责人准备锁门离开，先高声叫屋里的所有人到门口集合；这一声把人召来、召集起来，就是 summon。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "叫某人前来，常带正式要求或权威口吻",
+          "explanationZh": "summon somebody 是召某人来；可接 to + 地点，也可用 summon somebody to do something 表示要求某人来做某事。常含正式或较强的要求，但不一定是法院传唤，也可指叫来服务员或医生。",
+          "collocations": [
+            {
+              "phrase": "summon somebody to the office",
+              "meaningZh": "把某人召到办公室"
+            },
+            {
+              "phrase": "summon a doctor",
+              "meaningZh": "召来医生"
+            }
+          ]
+        },
+        {
+          "senseZh": "召集会议，或呼唤援助前来",
+          "explanationZh": "summon a meeting 指召集会议；summon help/assistance 指发出求援、把援助叫来。这里强调安排召集或发出呼叫，不表示被召的人已经全部到齐，也不等于一般的邀请闲聊。",
+          "collocations": [
+            {
+              "phrase": "summon a meeting",
+              "meaningZh": "召集会议"
+            },
+            {
+              "phrase": "summon help",
+              "meaningZh": "呼唤援助"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "call",
+          "comparisonZh": "在“叫某人来”时可与 summon 接近，call 更日常、范围更广。summon 常带正式要求或权威意味；call 的打电话、命名等义不能都换成 summon。"
+        },
+        {
+          "word": "convene",
+          "comparisonZh": "在召集正式会议时可与 summon 接近。convene 突出组织人们聚在一起开会，也可不及物地表示会议或委员会召开；summon 还可把一个人叫来或呼唤援助，不要求一定组成会议。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She summoned the waiter.",
+          "translationZh": "她把服务员叫了过来。",
+          "explanationZh": "服务员是被召来的人，说明 summon 并非只用于司法传唤。"
+        },
+        {
+          "textEn": "The queen summoned him back to the palace.",
+          "translationZh": "女王把他召回了宫中。",
+          "explanationZh": "back to the palace 表示召他返回的地点，语境带明显权威口吻。"
+        }
+      ],
+      "coreImageZh": "老师先抬起空手，明确叫男孩过来听任务安排。男孩随后迈步走近，在她面前站稳，回应“老师，我来了”。summon 是把人叫来、召唤或召集到场，不只是远远打个招呼。"
+    },
+    {
+      "number": 7058,
+      "word": "sumptuous",
+      "ipa": "/ˈsʌmptʃuəs/",
+      "pos": "adj.",
+      "coreMeaningZh": "豪华的，奢侈的",
+      "coreEn": "very costly, rich, and impressive in appearance or provision",
+      "mnemonics": [
+        {
+          "method": "SOME 山珍、CHEW 慢嚼、US 享用，一桌极尽奢华",
+          "textZh": "把 SOME（一些）、CHEW（咀嚼）、US（我们）三个完整声音块连起来，近音提示 sumptuous /ˈsʌmptʃuəs/：一些山珍海味，放在银盘中，让我们慢慢享用。这不是普通小吃，而是一场陈设与食物都十分奢华的宴席。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "JUMP TO US，跳上我们的奢华游艇",
+          "textZh": "把 JUMP TO US（跳到我们这边来）整句连读，近音提示 sumptuous /ˈsʌmptʃuəs/。泊在岸边的游艇上，主人招手喊你过去；一上船，金边扶手、丝绒座椅、水晶灯处处华丽。这种极其奢华的陈设，就是 sumptuous。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "饭菜或宴席极其丰盛奢华",
+          "explanationZh": "sumptuous 常修饰 meal、banquet、feast，强调食物精美丰盛、招待排场奢华，而不只是味道不错或份量很大。它是较正式的形容词。",
+          "collocations": [
+            {
+              "phrase": "a sumptuous meal",
+              "meaningZh": "极其丰盛奢华的一餐"
+            },
+            {
+              "phrase": "a sumptuous banquet",
+              "meaningZh": "豪华盛宴"
+            }
+          ]
+        },
+        {
+          "senseZh": "房间、陈设或装饰富丽堂皇",
+          "explanationZh": "修饰 surroundings、interior、furnishings 时，sumptuous 突出贵重、华美和令人赞叹的外观。仅仅物品价高或房间面积大，不一定就呈现这种奢华感。",
+          "collocations": [
+            {
+              "phrase": "sumptuous surroundings",
+              "meaningZh": "富丽堂皇的环境"
+            },
+            {
+              "phrase": "sumptuous furnishings",
+              "meaningZh": "豪华的家具陈设"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "luxurious",
+          "comparisonZh": "两词都可形容奢华的房间、设施或享受。luxurious 更突出昂贵事物带来的舒适与享受；sumptuous 更突出丰盛华美、排场或视觉上的富丽堂皇。"
+        },
+        {
+          "word": "lavish",
+          "comparisonZh": "在昂贵丰盛的宴席、款待或装饰上，形容词 lavish 可与 sumptuous 接近。lavish 还强调给予或花费毫不吝惜，能修饰大量赞美；sumptuous 通常不把普通的“赞美很多”称为奢华。这里不比较 lavish 的动词用法。",
+          "sources": [
+            "zhangwei_original3000"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "We dined in sumptuous surroundings.",
+          "translationZh": "我们在富丽堂皇的环境中用餐。",
+          "explanationZh": "sumptuous 修饰 surroundings，描述环境的奢华，不只是饭菜好吃。"
+        },
+        {
+          "textEn": "a sumptuous residence",
+          "translationZh": "一处豪华宅邸",
+          "explanationZh": "residence 是住所；sumptuous 描述其豪华气派，而不只表示住处很大。"
+        }
+      ],
+      "coreImageZh": "酒红丝绒座椅配着精细金色雕花，厚地毯铺满会客厅，上方悬着晶莹的水晶吊灯。男孩和讲解员环顾这些华贵的陈设。sumptuous 描述这间房间及其布置的豪华、奢侈，不只是面积大或看起来整洁。"
+    },
+    {
+      "number": 7059,
+      "word": "sunder",
+      "ipa": "/ˈsʌndər/",
+      "pos": "vt.",
+      "coreMeaningZh": "分裂，分离",
+      "coreEn": "break or force apart things or people that were joined",
+      "mnemonics": [
+        {
+          "method": "THUNDER 雷声滚过，闪电把树劈成两半",
+          "textZh": "用完整 THUNDER（雷声，/ˈθʌndər/）近音记 SUNDER /ˈsʌndər/。雷暴中，一道闪电把整棵树的树干劈成两半，随后雷声滚过；这种把原本连在一起的东西强行分开的动作，就是 sunder。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SUNDAY 那页日历，被一把撕成两半",
+          "textZh": "把完整 SUNDAY（星期日，/ˈsʌndeɪ/）与 SUNDER /ˈsʌndər/ 连起来记：一页印着 SUNDAY 的日历被双手猛地撕成两半，原来相连的纸被分开了。记住这个撕开、分离的动作，就是 sunder。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "把相连的东西强行分开",
+          "explanationZh": "sunder 是正式或文学性较强的用词，常带劈开、撕裂或强行分离的意味。及物用法把被分开的东西或人作宾语；sunder A from B 表示把 A 与 B 分离。",
+          "collocations": [
+            {
+              "phrase": "sunder one thing from another",
+              "meaningZh": "把一样东西与另一样分离"
+            },
+            {
+              "phrase": "sunder the two parts",
+              "meaningZh": "把相连的两部分分开"
+            }
+          ]
+        },
+        {
+          "senseZh": "冲突等使家庭、群体或城市分裂",
+          "explanationZh": "sunder 也可用于抽象关系：丑闻、敌意或冲突把本来相连的人群撕裂。常见被动 be sundered by，by 后指出造成分裂的力量；不是普通地把物品分类摆放。",
+          "collocations": [
+            {
+              "phrase": "be sundered by conflict",
+              "meaningZh": "被冲突撕裂"
+            },
+            {
+              "phrase": "a sundered family",
+              "meaningZh": "一个被拆散的家庭"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "split",
+          "comparisonZh": "两词都可指把整体分开。split 更常用、范围更广，也能指中性地分组；sunder 较正式或文学化，常突出原本相连者被强行撕开或隔离。"
+        },
+        {
+          "word": "sever",
+          "comparisonZh": "两词都可指强行分开，也可描述关系断裂。sever 常突出切断、截去某一部分，或完全中断联系；sunder 更突出原来的整体或相联双方被撕裂分开。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "a family sundered by scandal",
+          "translationZh": "一个因丑闻而分裂的家庭",
+          "explanationZh": "过去分词短语说明家庭被丑闻撕裂，by 引出造成分裂的原因。"
+        },
+        {
+          "textEn": "The city is being sundered by racial tension.",
+          "translationZh": "种族关系的紧张正在使这座城市分裂。",
+          "explanationZh": "is being sundered 是进行时的被动结构，表现群体之间正在发生的撕裂。"
+        }
+      ],
+      "coreImageZh": "男孩原本双手拿着同一张完整的纸。他向两侧拉开，纸中央出现裂口，底部还暂时相连；接着最后的连接也断开，两半纸分别握在两手中，中间留下空隙。这个把原先相连的整体撕开、分离的动作，就是 sunder。"
+    },
+    {
+      "number": 7060,
+      "word": "supine",
+      "ipa": "/ˈsuːpaɪn/",
+      "pos": "adj.",
+      "coreMeaningZh": "懒散的，倦怠的，消极的，漠不关心的",
+      "coreEn": "passive and unwilling to act or resist because of laziness, indifference, or weakness",
+      "mnemonics": [
+        {
+          "method": "SOUP 汤有 NINE 九碗，放凉也懒得端",
+          "textZh": "把 SOUP（汤）与 NINE（九）两个完整熟词连起来，近音提醒 supine /ˈsuːpaɪn/。九碗热汤等着上桌，服务员明明有空，却懒得动手，任它们放凉。该行动却消极不动，这种懒散态度就是 supine。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "“输牌呢”，明知有人作弊也懒得反对",
+          "textZh": "把 supine /ˈsuːpaɪn/ 借听成完整的“输牌呢”。他看见对手作弊，自己一局局输，却仍摆摆手，懒得提出异议，也不想改变局面。明明应当行动却消极听任，就是这里的 supine。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "该采取行动却懒散、消极不动",
+          "explanationZh": "这里的 supine 是正式且带批评意味的形容词：因为懒散、漠不关心或缺乏意志，放任事情发生，不去采取应有行动。可修饰 attitude、inaction；不只是工作后感到身体疲倦。",
+          "collocations": [
+            {
+              "phrase": "a supine attitude",
+              "meaningZh": "消极懒散的态度"
+            },
+            {
+              "phrase": "supine inaction",
+              "meaningZh": "懒散而消极的不作为"
+            }
+          ]
+        },
+        {
+          "senseZh": "缺乏反对或抵抗的意愿，听任别人支配",
+          "explanationZh": "supine 也可批评一个人或机构软弱地顺从，不愿提出异议、影响事态。它不要求身体躺着；其另一个“仰卧”义描述姿势，本身不含这里的消极态度。",
+          "collocations": [
+            {
+              "phrase": "supine obedience",
+              "meaningZh": "消极软弱的服从"
+            },
+            {
+              "phrase": "a supine executive",
+              "meaningZh": "软弱不作为的管理者"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "passive",
+          "comparisonZh": "在不主动行动、不尝试改变或反对事情时，两词接近。passive 范围更广，可中性描述被动角色或活动；supine 在此义通常带批评，突出懒散、冷漠或软弱造成的听任不作为。"
+        },
+        {
+          "word": "apathetic",
+          "comparisonZh": "两词可重叠于漠不关心而不行动。apathetic 重点是缺乏兴趣和热情；supine 更着眼于本该行动或反对却消极听任，原因也可能是软弱而不只是不感兴趣。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "the supine attitude of some of our politicians",
+          "translationZh": "我们某些政客的消极软弱态度",
+          "explanationZh": "supine 评价态度，带批评意味，不是在描述政客的身体姿势。"
+        },
+        {
+          "textEn": "supine inaction",
+          "translationZh": "懒散而消极的不作为",
+          "explanationZh": "supine 修饰 inaction，批评消极懒散的不作为。"
+        }
+      ],
+      "coreImageZh": "同伴请男孩一起收好桌上的书，他明明清醒听懂了，却松垮地靠在椅背上，摊开空手说“放着吧，我懒得管”。直到最后，三本书仍散放在桌上，收纳盒还是空的。这里的 supine 描写懒散、消极而漠不关心的态度，不是指仰卧姿势，也不是在批评生病或正常休息。"
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7011,
+      "word": "stock",
+      "ipa": "/stɑːk/",
+      "pos": "adj.",
+      "coreMeaningZh": "普通的，常备的",
+      "coreEn": "standard or commonly used; regularly kept available",
+      "mnemonics": [
+        {
+          "method": "SOCK 普通白袜，STOCK 常备款",
+          "textZh": "看到 STOCK，联想形音接近的 SOCK（袜子）：进店买普通白袜，不挑限量花样，也不用专门定做，架上一直备着这款，拿了就走。stock，常规的、常备的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STACK 一摞同款，STOCK 随时可拿",
+          "textZh": "STACK（一摞）和 STOCK 整体形音接近。货架上一摞摞同款白T恤，都是平日常备的标准款，顾客不用等定制：这些 stock 款，普通又现成。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "惯常使用的说法、人物或做法",
+          "explanationZh": "stock 通常放在名词前，如 stock answer/response/character，表示经常拿来用的现成套路，可能带“缺乏新意”的批评。它不是说回答平凡无价值，也不能把所有普通的人都叫 stock people。",
+          "collocations": [
+            {
+              "phrase": "a stock response",
+              "meaningZh": "惯常的套话式回应"
+            },
+            {
+              "phrase": "a stock character",
+              "meaningZh": "类型化的常见角色"
+            }
+          ]
+        },
+        {
+          "senseZh": "日常备有的标准款，不是定制品",
+          "explanationZh": "形容商品尺寸、型号等时，stock 表示常规生产、平时备有的，而非特别订做。stock sizes 是常规尺码；in stock 的 stock 是“库存”名词，虽相关，却不是本条形容词用法。",
+          "collocations": [
+            {
+              "phrase": "stock sizes",
+              "meaningZh": "常备的标准尺码"
+            },
+            {
+              "phrase": "a stock model",
+              "meaningZh": "常规现成的型号"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "standard",
+          "comparisonZh": "在常规、标准款时接近，如 stock/standard sizes。standard 还可强调符合某项统一规范，不保证店里一直有货；stock 更突出常备现成，也可形容反复使用的套话。"
+        },
+        {
+          "word": "conventional",
+          "comparisonZh": "在惯常、缺乏新意时接近。conventional 常说遵循社会惯例或传统方式；stock 侧重现成的惯用套路或标准货品。conventional clothing 不一定就是店里常备的 stock items。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She gave a stock answer to the reporter's question.",
+          "translationZh": "她用一套惯常的回答应付记者的问题。",
+          "explanationZh": "stock answer 是反复拿来用的现成答法，不是有关股票的回答。"
+        },
+        {
+          "textEn": "That item is a stock model.",
+          "translationZh": "那件商品是常备的标准型号。",
+          "explanationZh": "stock 在 model 前作形容词，说明不是特别定制的款式。"
+        }
+      ],
+      "coreImageZh": "店里摆着三只同款普通木凳，店员介绍这是平时常备的款式，不用订做。男孩当场坐下试用，决定就选这种普通款。stock 在这里作形容词，表示常规、现成备有的，而不是特别定制的。"
+    },
+    {
+      "number": 7012,
+      "word": "sectarian",
+      "ipa": "/sekˈteriən/",
+      "pos": "adj.",
+      "coreMeaningZh": "狭隘的",
+      "coreEn": "narrow-minded or limited by attachment to a particular group or set of views",
+      "mnemonics": [
+        {
+          "method": "SECTARI-AN，只让本派声音进门",
+          "textZh": "sectarian 来自旧词 sectary“宗派成员”加 -an；词基写成 SECTARI-。想象一个只听本派的讨论圈：别人的理由还没听，就被挡在门外。由这种受派别局限的态度，记 sectarian，狭隘的。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SECRETARY 只收本派建议",
+          "textZh": "看到 SECTARIAN，借近形的 SECRETARY（秘书）联想：秘书收到建议，先看是不是自己一派；不是，就连内容也不读。只认圈内、不肯听别人意见，这种态度就是 sectarian，狭隘的。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "思想受自己一派局限，拒绝别的观点",
+          "explanationZh": "sectarian 可批评思想、态度或立场狭隘，只考虑自己群体的看法或利益。常修饰 mind、attitude、positions；不是说道路窄、屋子小，也不等于一个人单纯兴趣少。",
+          "collocations": [
+            {
+              "phrase": "a sectarian mind",
+              "meaningZh": "狭隘而排斥异见的头脑"
+            },
+            {
+              "phrase": "sectarian positions",
+              "meaningZh": "受派别局限的立场"
+            }
+          ]
+        },
+        {
+          "senseZh": "狭隘义与宗派义分开读",
+          "explanationZh": "sectarian 另可中性描述宗派相关，也常用于宗派冲突。不能仅因某人属于某个宗派，就断定其思想狭隘；本条“狭隘”须有封闭、排他或不顾其他观点的语境。",
+          "collocations": [
+            {
+              "phrase": "a sectarian attitude",
+              "meaningZh": "狭隘排他的态度"
+            },
+            {
+              "phrase": "sectarian interests",
+              "meaningZh": "局限于本派的利益"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "narrow-minded",
+          "comparisonZh": "表示不愿听取别人的想法时接近。narrow-minded 范围更宽，不必涉及某个派别；sectarian 常带只认本群体、本派立场的色彩，不宜把它泛化为所有保守或见识少。"
+        },
+        {
+          "word": "insular",
+          "comparisonZh": "在封闭、只关心自己圈内时接近。insular 更强调与外界隔绝或缺少兴趣；sectarian 更容易突出派别偏见和排斥异见。insular 另有岛屿义，这一义不能替换。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "there are people on both the left and the right who have staked out unyielding sectarian positions in this debate",
+          "translationZh": "在这场辩论中，左派和右派都有人坚持僵硬而狭隘的派别立场。",
+          "explanationZh": "sectarian positions 指被派别局限的立场；unyielding 强调不肯让步。"
+        },
+        {
+          "textEn": "a sectarian mind",
+          "translationZh": "狭隘而不愿考虑其他观点的头脑",
+          "explanationZh": "mind 说明“狭隘”指思想，不是空间窄。"
+        }
+      ],
+      "coreImageZh": "男孩指着别组的桥梁方案，提议一起试试；同学却抱起双臂、转过脸去，说“不是我们组的，再好也不听”。她只因想法来自别组就拒绝考虑，表现出 sectarian 的狭隘排他，而不是在认真比较方案好坏。"
+    },
+    {
+      "number": 7013,
+      "word": "stodgy",
+      "ipa": "/ˈstɑːdʒi/",
+      "pos": "adj.",
+      "coreMeaningZh": "平庸的，乏味的",
+      "coreEn": "dull, uninteresting, and often excessively conventional",
+      "mnemonics": [
+        {
+          "method": "STODG + Y，像厚面团一样沉闷",
+          "textZh": "stodgy 来自 stodge，指厚实、容易让人撑饱的食物，加 -y 成形容词。把文章想成一大团密实的面：材料塞了不少，却没有一点轻快、活泼的味道。由食物的厚重，记文章或人的沉闷乏味。",
+          "kind": "word_components",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STORY 老套路，STODGY 没趣味",
+          "textZh": "看到 STODGY，借近形的 STORY（故事）来记：刚听开头就猜到结尾，人物也只会重复老台词。这个 story 毫无新意，平庸又乏味，就是 stodgy。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "文章、活动或人沉闷，缺乏趣味",
+          "explanationZh": "stodgy 常带批评意味，可说文章太板滞、节目没新意、人的作风太拘谨。这里的“平庸”着眼沉闷、缺乏活力，不是泛指成绩处于平均水平。",
+          "collocations": [
+            {
+              "phrase": "a stodgy article",
+              "meaningZh": "沉闷乏味的文章"
+            },
+            {
+              "phrase": "a stodgy style",
+              "meaningZh": "板滞乏味的风格"
+            }
+          ]
+        },
+        {
+          "senseZh": "常含老派、拘泥惯例的色彩",
+          "explanationZh": "形容机构或形象时，stodgy 往往不只说无聊，还嫌它过于传统、不够活泼。这个词另可形容食物厚重、容易撑饱；用于文字或态度时，不是说它们真的难消化。",
+          "collocations": [
+            {
+              "phrase": "a stodgy image",
+              "meaningZh": "老派沉闷的形象"
+            },
+            {
+              "phrase": "a stodgy institution",
+              "meaningZh": "作风僵旧乏味的机构"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "dull",
+          "comparisonZh": "表示乏味、不吸引人时相近。dull 范围更广，只要缺乏趣味就可使用；stodgy 往往还带板滞、过分传统或缺少活力的感觉。dull 的昏暗、钝等义不能替换为 stodgy。"
+        },
+        {
+          "word": "pedestrian",
+          "comparisonZh": "形容作品、表达平庸而缺少想象力时相近。pedestrian 更突出创意和表现不出众；stodgy 更突出沉闷、拘谨或老派。pedestrian 作“行人”名词时与这里无关。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The article was rather stodgy—too many facts.",
+          "translationZh": "这篇文章相当沉闷——事实材料堆得太多。",
+          "explanationZh": "too many facts 说明材料虽多，表达却不活泼；stodgy 评价的是文章的阅读感受。"
+        },
+        {
+          "textEn": "The party needs to modernize its stodgy, doctrinaire image.",
+          "translationZh": "这个政党需要让自己沉闷、教条的形象变得现代一些。",
+          "explanationZh": "modernize 与 stodgy 对照，点出这种乏味还带僵旧、不够鲜活的色彩。"
+        }
+      ],
+      "coreImageZh": "男孩起初兴致勃勃地听故事，讲述者却反复说那个人又走了一段路。他渐渐失去兴趣，掩嘴打了个哈欠，抱怨“又是走路，这故事真没意思”。stodgy 形容这类平淡、缺乏活力而令人乏味的故事，不是单说听众困了。"
+    },
+    {
+      "number": 7014,
+      "word": "stoke",
+      "ipa": "/stoʊk/",
+      "pos": "vt.",
+      "coreMeaningZh": "增大，促进",
+      "coreEn": "to make a feeling stronger or cause something to increase or develop faster",
+      "mnemonics": [
+        {
+          "method": "STOVE 添柴，STOKE 把火势推旺",
+          "textZh": "STOKE 与 STOVE（炉子）整体近形。给炉子添一块柴，火势就更旺；给一种情绪或事态“添柴”，让它更强、更快发展，也是 stoke。由 stove 记住这个推旺、促进的动作。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SMOKE 烟团变大，STOKE 再添一把火",
+          "textZh": "看到 STOKE，联想整体形音接近的 SMOKE（烟）。把谣言画成一缕 smoke：又有人添一句无根据的猜测，烟团越滚越大。这样给事态添火、使它增强，就是 stoke。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "使情绪、兴趣或担忧更强烈",
+          "explanationZh": "stoke 是及物动词，直接接被加强的感受，常用 stoke something 或 stoke something up。它既可激发兴趣，也可加深恐惧、嫉妒，并非只用于好事。",
+          "collocations": [
+            {
+              "phrase": "stoke interest",
+              "meaningZh": "激发、增强兴趣"
+            },
+            {
+              "phrase": "stoke fears",
+              "meaningZh": "加深担忧"
+            }
+          ]
+        },
+        {
+          "senseZh": "推动事态加剧或加快发展",
+          "explanationZh": "可说 stoke inflation、stoke a crisis，表示使通胀或危机更严重；也能用于促进某种繁荣。这个比喻来自添燃料使火更旺，不表示把物体的长宽尺寸直接放大。",
+          "collocations": [
+            {
+              "phrase": "stoke inflation",
+              "meaningZh": "推高通胀"
+            },
+            {
+              "phrase": "stoke a boom",
+              "meaningZh": "助长繁荣势头"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "fuel",
+          "comparisonZh": "在使情绪或事态增强时很接近，两词都可借“添燃料”表达助长，如 fuel/stoke fears。fuel 的字面义还广泛用于供给燃料、给车辆加油；stoke 的字面图景更具体地连着给火炉添燃料。"
+        },
+        {
+          "word": "stimulate",
+          "comparisonZh": "在激发兴趣、促进增长时接近。stimulate 更强调使活动活跃起来、推动发展；stoke 常突出继续添火，使某种情绪或趋势更强，也很常见于恐惧、危机等负面事态。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The publicity was intended to stoke up interest in her music.",
+          "translationZh": "这些宣传是为了激发人们对她音乐的兴趣。",
+          "explanationZh": "stoke up interest 把宣传比作添柴，让兴趣升温。"
+        },
+        {
+          "textEn": "The measures would stoke up inflation.",
+          "translationZh": "这些措施会推高通胀。",
+          "explanationZh": "stoke up 直接作用于 inflation，说明“促进”也可以是不利的加剧。"
+        }
+      ],
+      "coreImageZh": "男孩原本平静地搭积木，同伴一句“能搭得比昨天还高”让他更有干劲。他兴奋地举起手中的方块，放稳在塔顶，还说“听你一说，我更有劲儿了”。stoke 在这里指增强、激起已有的热情，关键是鼓励使兴致更旺，不只是积木塔变高。"
+    },
+    {
+      "number": 7015,
+      "word": "stolid",
+      "ipa": "/ˈstɑːlɪd/",
+      "pos": "adj.",
+      "coreMeaningZh": "无动于衷的，感情麻木的",
+      "coreEn": "showing little emotion or interest and not easily reacting",
+      "mnemonics": [
+        {
+          "method": "SOLID 石头脸，STOLID 不动情",
+          "textZh": "看到 STOLID，联想整体形音接近的 SOLID（坚实的）：一张像 solid 石块一样凝住的脸，旁人欢呼，他不笑；旁人争吵，他也不显怒色。由坚实不动的石块，记 stolid 的无动于衷。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "STOP IT! 喊出声，STOLID 不动容",
+          "textZh": "借 STOP IT!（停下！）的两拍近音记 stolid。身旁的人从欢笑变成争吵，又有人朝争吵者喊“Stop it!”，他却始终一张平淡的脸。喜怒都难激起，这种无动于衷就是 stolid。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "人或表情不显喜怒，对刺激反应少",
+          "explanationZh": "常形容人、脸或神情，也可作表语，如 remain stolid。它强调情感和兴趣难被激起，而不只是身体一动不动；感到吃惊却暂时站住，不一定就是 stolid。",
+          "collocations": [
+            {
+              "phrase": "a stolid face",
+              "meaningZh": "没有多少感情变化的脸"
+            },
+            {
+              "phrase": "remain stolid",
+              "meaningZh": "依旧无动于衷"
+            }
+          ]
+        },
+        {
+          "senseZh": "常带迟钝冷淡感，不等于坚忍有自制",
+          "explanationZh": "stolid 往往让人觉得木讷、少有热情，通常不是赞扬勇敢忍痛。它可描述外显反应很少，不能仅凭这个词断定一个人没有内心感受，也不表示智力低下。",
+          "collocations": [
+            {
+              "phrase": "stolid indifference",
+              "meaningZh": "木然的冷淡"
+            },
+            {
+              "phrase": "a stolid response",
+              "meaningZh": "平淡而少有情绪的回应"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "impassive",
+          "comparisonZh": "表示面无表情时很接近。impassive 主要说外在看不出情绪，不说明内心是否波动；stolid 更常暗示一贯少有兴趣或反应、难被打动，往往带木讷感。"
+        },
+        {
+          "word": "stoic",
+          "comparisonZh": "两者都可能表现得不动声色。stoic 常强调面对痛苦或困难有意克制、默默承受；stolid 更强调不易激起情绪或反应，未必包含主动忍耐的自律。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Mark sat stolid and silent.",
+          "translationZh": "马克木然地坐着，一声不吭。",
+          "explanationZh": "stolid 描述他少有情绪反应；silent 另说明他没有说话。"
+        },
+        {
+          "textEn": "She remained stolid during the trial.",
+          "translationZh": "庭审期间，她始终不动声色。",
+          "explanationZh": "remained stolid 表示整个过程中没有明显的情绪变化。"
+        }
+      ],
+      "coreImageZh": "同伴捧着奖杯，兴奋地宣布他们得了第一名；男孩面对她，却始终神情平淡，没有明显的惊喜。同伴不解地问他为什么一点也不激动。stolid 表示少有或少表露感情、难被激起情绪，不等于故意忍住喜怒，也不能据此判断他没有内心感受。"
+    }
+  ]
+}

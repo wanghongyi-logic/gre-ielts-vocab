@@ -1,0 +1,416 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6931,
+      "word": "shroud",
+      "ipa": "/ʃraʊd/",
+      "pos": "vt.",
+      "coreMeaningZh": "遮蔽，笼罩",
+      "coreEn": "to cover or surround so as to hide from view or make unclear",
+      "mnemonics": [
+        {
+          "method": "CLOUD，罩住山顶",
+          "textZh": "CLOUD（云）与 shroud 都收在 /aʊd/。低云像罩子一样包住山顶，山还在那里，轮廓却看不见了：shroud，遮蔽、笼罩。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "纱绕着，遮住了",
+          "textZh": "借“纱绕”的近音记 shroud。雕像外绕着一层厚纱，五官和轮廓全被遮住：纱绕住了，shroud，笼罩、遮蔽。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物动词：遮住视线、笼罩",
+          "explanationZh": "主语常是雾、烟、黑暗或遮盖物，后面直接接受到遮蔽的事物。也常用 be shrouded in 表示被某种东西笼罩；重点是看不清或看不到，不一定是物体真的消失。",
+          "collocations": [
+            {
+              "phrase": "fog shrouds the hills",
+              "meaningZh": "雾笼罩着群山"
+            },
+            {
+              "phrase": "be shrouded in darkness",
+              "meaningZh": "笼罩在黑暗中"
+            }
+          ]
+        },
+        {
+          "senseZh": "比喻义：使真相难以知晓",
+          "explanationZh": "事情可以被秘密、谜团或不确定性笼罩。这个用法强调信息不清楚或被掩盖，既可能是有人刻意保密，也可能只是尚未查明，不能一概认定有人撒谎。",
+          "collocations": [
+            {
+              "phrase": "be shrouded in mystery",
+              "meaningZh": "笼罩在谜团之中"
+            },
+            {
+              "phrase": "shroud something in secrecy",
+              "meaningZh": "使某事秘而不宣"
+            }
+          ]
+        },
+        {
+          "senseZh": "同形名词",
+          "explanationZh": "shroud 作名词可指遮盖物，也有裹尸布的专门意义。动词描写雾气或黑暗时，不需要带入死亡或葬礼场景。",
+          "collocations": [
+            {
+              "phrase": "a shroud of mist",
+              "meaningZh": "一层笼罩着的薄雾"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "veil",
+          "comparisonZh": "作动词、表示遮盖使人看不清或难以了解时，与 shroud 接近。veil 常让人想到蒙上一层面纱般的遮挡；shroud 更容易带出从外面包住、笼罩住的画面，两者都可用于实物或信息。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "obscure",
+          "comparisonZh": "作动词、表示遮住或使不清楚时有交集。obscure 适用范围较广，也可指解释含混而难以理解；shroud 更突出一层雾、黑暗或秘密般的笼罩。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Dense fog shrouded the village at dawn.",
+          "translationZh": "黎明时，浓雾笼罩着村庄。",
+          "explanationZh": "fog 作主语，village 是被遮蔽的对象；shrouded 表示村庄被雾包围而难以看清。"
+        },
+        {
+          "textEn": "The reasons for his sudden departure remain shrouded in mystery.",
+          "translationZh": "他突然离开的原因仍笼罩在谜团中。",
+          "explanationZh": "remain shrouded in mystery 表示原因仍不明朗，并没有断言离开的人一定在故意隐瞒。"
+        }
+      ],
+      "coreImageZh": "母子站在草地上远望群山，灰白的雾逐渐遮住山坡，原本清楚的轮廓变得模糊。男孩好奇地发问，母亲指向远山，解释是雾挡住了视线。shroud 表示遮蔽、笼罩，山仍在原处，只是许多部分藏进雾中，难以看清；这层遮住景物的雾，直观呈现了这个词的含义。"
+    },
+    {
+      "number": 6932,
+      "word": "shrug",
+      "ipa": "/ʃrʌɡ/",
+      "pos": "v.",
+      "coreMeaningZh": "（常与 off 连用）不予理会，忽略",
+      "coreEn": "usually with off: to dismiss as unimportant; shrug alone commonly means to raise the shoulders",
+      "mnemonics": [
+        {
+          "method": "DRUG 广告，耸肩不信",
+          "textZh": "DRUG（药物）的 /d/ 换成 /ʃ/，读到 shrug。广告把药效吹得无所不能，你耸耸肩：“又吹牛。”shrug off the claims，不把这些说法当回事。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "耍酷，耸耸肩不理",
+          "textZh": "借“耍酷”的近音记 shrug。同伴取笑你的失误，你只耸耸肩：“随你说。”把闲话轻轻带过，shrug it off。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "shrug off：不予理会、不当回事",
+          "explanationZh": "表示忽略批评、质疑、担忧或困难时，常用完整的 shrug off。它强调把事情看得不重要、不让它影响自己；可能是沉着地应对无谓批评，也可能是不当地忽视认真提醒，要由语境判断。",
+          "collocations": [
+            {
+              "phrase": "shrug off criticism",
+              "meaningZh": "不把批评放在心上"
+            },
+            {
+              "phrase": "shrug off a warning",
+              "meaningZh": "对警告不以为意"
+            },
+            {
+              "phrase": "shrug it off",
+              "meaningZh": "不把它当回事"
+            }
+          ]
+        },
+        {
+          "senseZh": "shrug：耸肩这一动作",
+          "explanationZh": "单独用 shrug 常表示耸肩，也可以说 shrug one’s shoulders。耸肩可能传达不在意，也可能表示不知道、无奈或不确定，因此不能只看见这个动作就断定某人在忽略别人。",
+          "collocations": [
+            {
+              "phrase": "shrug one’s shoulders",
+              "meaningZh": "耸耸肩"
+            },
+            {
+              "phrase": "give a shrug",
+              "meaningZh": "耸一下肩"
+            }
+          ]
+        },
+        {
+          "senseZh": "词形与宾语位置",
+          "explanationZh": "过去式和过去分词为 shrugged，现在分词为 shrugging，写成这些形式时要双写 g。shrug off 后可接名词；宾语是 it、them 等代词时，通常放在 shrug 和 off 之间。",
+          "collocations": [
+            {
+              "phrase": "shrugged the criticism off",
+              "meaningZh": "没把批评放在心上"
+            },
+            {
+              "phrase": "shrugging it off",
+              "meaningZh": "正把它当作无关紧要的事"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "dismiss",
+          "comparisonZh": "在不予理会、把某种说法或担忧看得不重要时，与 shrug off 接近。dismiss 更突出不接受或不再考虑，shrug off 更容易带出毫不在意、轻轻带过的态度；dismiss 的解雇等义不能这样替换。"
+        },
+        {
+          "word": "disregard",
+          "comparisonZh": "在不理会警告、建议或批评时，与 shrug off 有交集。disregard 强调不加理会，shrug off 往往进一步表现为觉得无关紧要、没有受到影响；两者都不要求真的做出耸肩动作。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She shrugged off the unfair criticism and continued her work.",
+          "translationZh": "她没把那些不公正的批评放在心上，继续做自己的工作。",
+          "explanationZh": "shrugged off 是完整短语，宾语为 the unfair criticism；继续工作体现她没有被这番批评干扰。"
+        },
+        {
+          "textEn": "He heard the warning but shrugged it off as unnecessary.",
+          "translationZh": "他听到了警告，却认为那是多余的，没有放在心上。",
+          "explanationZh": "it 代替 the warning，放在 shrugged 与 off 中间；as unnecessary 表明这是他的判断，不代表警告客观上没有必要。"
+        }
+      ],
+      "coreImageZh": "母亲告诉男孩，有人说他的画不好看。他轻松地摊了摊手，回答“随他们说，我继续画”，随后又低头画起那朵花。shrug off 表示不把某事放在心上、不予理会；男孩没有争辩，也没有因此停下，让这句负面评价轻轻过去，正体现了这种不当回事的态度。"
+    },
+    {
+      "number": 6933,
+      "word": "simpleton",
+      "ipa": "/ˈsɪmpəltən/",
+      "pos": "n.",
+      "coreMeaningZh": "（缺乏常识的）笨蛋",
+      "coreEn": "a person regarded as lacking common sense; a disapproving name for a foolish person",
+      "mnemonics": [
+        {
+          "method": "SIMPLE + TON，简单想过头",
+          "textZh": "SIMPLE 是简单；记 SIMPLE + TON，拼出 simpleton。听说种子入土会长大，他竟把硬币也埋下，等着长钱树：把事情想得太简单，缺乏常识的笨蛋。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SINGLE TON，一吨还比轻重",
+          "textZh": "借 SINGLE TON（仅一吨）的近音记 simpleton。一吨棉花和一吨铁，有人却坚持铁更重：两边明明都是一吨，还做出这样的傻判断。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "可数名词，带贬义",
+          "explanationZh": "称某人为 a simpleton，是在说对方缺乏常识、容易受骗或判断愚笨，含有贬低甚至侮辱意味，不是中性的能力测量。不能根据外貌、残疾、年纪或一次不熟悉的操作来判断一个人。",
+          "collocations": [
+            {
+              "phrase": "treat someone like a simpleton",
+              "meaningZh": "把某人当笨蛋对待"
+            },
+            {
+              "phrase": "take someone for a simpleton",
+              "meaningZh": "把某人看作笨蛋"
+            }
+          ]
+        },
+        {
+          "senseZh": "与 simple 的区别",
+          "explanationZh": "simple 可以正面表示简单明了、朴素，simpleton 却是贬义的人物称呼，不能用来赞美某人生活简朴。be no simpleton 是否定这个称呼，常用来强调某人并不傻、不会轻易上当。",
+          "collocations": [
+            {
+              "phrase": "be no simpleton",
+              "meaningZh": "并不是笨蛋"
+            },
+            {
+              "phrase": "feel like a simpleton",
+              "meaningZh": "觉得自己像个傻瓜"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "fool",
+          "comparisonZh": "在称呼缺乏明智判断的人时与 simpleton 接近，二者都可能冒犯人。fool 的范围更广，也可用于一时做傻事或受骗的人；simpleton 更像给人贴上缺乏常识、头脑简单的标签。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She objected to being treated like a simpleton.",
+          "translationZh": "她反对别人把她当笨蛋对待。",
+          "explanationZh": "like a simpleton 表示被看作缺乏判断能力的人；objected to 表明她不接受这种贬低。"
+        },
+        {
+          "textEn": "He was no simpleton; he checked every figure before signing.",
+          "translationZh": "他可不是笨蛋；签字前，他核对了每一个数字。",
+          "explanationZh": "was no simpleton 否定了容易上当、缺乏常识的评价，后面的谨慎核对给出了具体依据。"
+        }
+      ],
+      "coreImageZh": "男子认真地把一枚硬币放到花盆土面上，满怀期待地说，种下去就能长出钱。男孩指出硬币不是种子，他这才不好意思地摸摸头。simpleton 是带贬义的名词，指缺乏常识、头脑过于简单的人；男子只想到“种下去会长大”，却没分清硬币和种子，闹出的这个笑话正体现了这种常识上的糊涂。"
+    },
+    {
+      "number": 6934,
+      "word": "simulate",
+      "ipa": "/ˈsɪmjəleɪt/",
+      "pos": "vt.",
+      "coreMeaningZh": "假装，模仿",
+      "coreEn": "to imitate the appearance or effect of something; to reproduce conditions in a model",
+      "mnemonics": [
+        {
+          "method": "SIMILAR → SIMULATE，做出相似效果",
+          "textZh": "SIMILAR（相似的）与 simulate 同源。飞行训练室把天空变暗、座椅摇晃，做出和暴风雨相似的效果：simulate，模拟。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SEE ME LATER，待会儿见演员",
+          "textZh": "借 SEE ME LATER（待会儿来见我）的近音记 simulate。演员这样约朋友；见面时他已经戴上纸王冠，模仿国王的威严口气：simulate，把某种样子演出来。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "假装、模仿外表或反应",
+          "explanationZh": "simulate 后面通常直接接所模仿的情绪、状态或效果，如 surprise、interest、illness。它强调把某种样子表现得像真的；在某些场景中为了欺骗，在表演等场景中则未必有恶意。",
+          "collocations": [
+            {
+              "phrase": "simulate surprise",
+              "meaningZh": "装出惊讶的样子"
+            },
+            {
+              "phrase": "simulate interest",
+              "meaningZh": "装出感兴趣的样子"
+            }
+          ]
+        },
+        {
+          "senseZh": "模拟条件、过程或系统",
+          "explanationZh": "用于训练、研究或设计时，表示通过模型、设备或程序再现某些条件与效果。模拟并不等于真实事件正在发生，也不是承诺模型能完全复现所有细节。",
+          "collocations": [
+            {
+              "phrase": "simulate an earthquake",
+              "meaningZh": "模拟地震"
+            },
+            {
+              "phrase": "simulate real-world conditions",
+              "meaningZh": "模拟现实条件"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "mimic",
+          "comparisonZh": "在模仿声音、动作或某种效果时与 simulate 接近。mimic 常突出照着某人或某物的表现去模仿；simulate 还广泛用于模拟环境、系统和过程，不限于模仿一个人的举止。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "feign",
+          "comparisonZh": "在假装某种感受或状态时接近，如 feign interest 与 simulate interest。feign 突出本来没有却装作有；simulate 更侧重把外在表现做得像真的，也有中性的技术模拟义。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The actor simulated surprise when the door opened.",
+          "translationZh": "门打开时，演员装出惊讶的样子。",
+          "explanationZh": "simulated 直接接 surprise，表示呈现惊讶的外在反应；演员未必真的感到意外。"
+        },
+        {
+          "textEn": "The program simulates heavy traffic so engineers can test the design.",
+          "translationZh": "这个程序模拟繁忙的交通状况，让工程师能够测试设计。",
+          "explanationZh": "simulates 描述程序再现某些交通条件，用于测试；句子没有说道路上真的出现了这些车辆。"
+        }
+      ],
+      "coreImageZh": "母亲请男孩表演很冷的样子，他便抱住上臂、缩起身体，装出受冻的姿态，随后笑着说明自己其实并不冷，最后又恢复放松。simulate 表示模仿、模拟某种状态或表现；房间没有变冷，男孩只是把寒冷的外在样子演了出来，让人看见“表现得像真的”和“实际如此”的区别。"
+    },
+    {
+      "number": 6935,
+      "word": "sensuality",
+      "ipa": "/ˌsenʃuˈæləti/",
+      "pos": "n.",
+      "coreMeaningZh": "感官享乐",
+      "coreEn": "enjoyment of bodily or sensory pleasures, often with sexual associations",
+      "mnemonics": [
+        {
+          "method": "SENSUAL + ITY，感官享受",
+          "textZh": "sense 是“感官、感觉”；同源的 sensual 表示“感官享乐的”。接 -ity 成 sensuality：慢慢闻面包香、尝酥脆外皮、享受柔软触感，重在身体感官的愉悦。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SENS(E) + (Q)UALITY，享受感官品质",
+          "textZh": "把 SENSE（感官）的 SENS 和 QUALITY（品质）的 UALITY 接起来，正好拼成 SENSUALITY。选柔软丝绸、闻浓郁香气、细品食物，享受感官带来的舒适与愉悦。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "感官与身体带来的享受",
+          "explanationZh": "可以指对食物香味、口感、触感等身体愉悦的喜爱与沉浸，常作为抽象名词使用。它不是单纯接收感觉信息，也不等同于任何一种快乐，例如解出难题的成就感就不一定属于 sensuality。",
+          "collocations": [
+            {
+              "phrase": "the sensuality of food",
+              "meaningZh": "食物带来的感官享受"
+            },
+            {
+              "phrase": "a love of sensuality",
+              "meaningZh": "对感官享乐的喜爱"
+            }
+          ]
+        },
+        {
+          "senseZh": "常见的性意味与语境色彩",
+          "explanationZh": "sensuality 常有性欲、身体魅力或性吸引的意味，不能只理解成无性意味的美食享受。它可以带有欣赏性感魅力的色彩，也可能在批评沉溺肉欲的语境中出现；褒贬取决于上下文，不能一见这个词就认定行为不道德。",
+          "collocations": [
+            {
+              "phrase": "express sensuality",
+              "meaningZh": "表现性感魅力"
+            },
+            {
+              "phrase": "unrestrained sensuality",
+              "meaningZh": "无节制的感官享乐"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "sensuousness",
+          "comparisonZh": "二者都可涉及感官带来的愉悦。sensuousness 较强调声音、色彩、触感等感官美感；sensuality 更容易强调身体欲望的满足，并常有性意味，不能在所有语境中完全互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The rich descriptions of food give the novel a sense of sensuality.",
+          "translationZh": "细腻丰富的食物描写，使这部小说充满感官享受的气息。",
+          "explanationZh": "sensuality 在这里由食物描写带出，强调香味、口感等身体愉悦，不是在说小说仅提供食物知识。"
+        },
+        {
+          "textEn": "The performance combined elegance with sensuality.",
+          "translationZh": "这场表演兼具优雅与性感的魅力。",
+          "explanationZh": "sensuality 在这里带有身体魅力和性吸引的意味，不能机械地译成一般的快乐。"
+        }
+      ],
+      "coreImageZh": "母亲舒舒服服地坐着，拿着一小块糕点，闭眼微笑，慢慢回味。男孩问她为何吃得这么慢，她说自己就喜欢享受这份香甜。sensuality 指对身体与感官愉悦的享受；这里表现的是沉浸于食物的香气和滋味，而不只是为了填饱肚子。"
+    }
+  ]
+}

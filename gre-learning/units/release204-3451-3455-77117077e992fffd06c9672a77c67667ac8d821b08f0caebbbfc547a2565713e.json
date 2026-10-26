@@ -1,0 +1,393 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 7071,
+      "word": "swindle",
+      "ipa": "/ˈswɪndl/",
+      "pos": "vt.",
+      "coreMeaningZh": "欺骗，骗取",
+      "coreEn": "cheat someone in order to obtain money or other valuables",
+      "mnemonics": [
+        {
+          "method": "SWIM + DEAL：假泳池卖年卡，专门骗钱",
+          "textZh": "用完整 SWIM（游泳）与 DEAL（交易）连读，近音联想 swindle。有人声称办了游泳馆，大卖年卡，实际上根本没有泳池，收完钱就跑。这不是普通游泳交易，而是靠假承诺 swindle，欺骗顾客、骗取钱财。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SANDAL 假冒真皮凉鞋，骗你掏高价",
+          "textZh": "把完整 SANDAL（凉鞋）与 swindle 近音联想。骗子把廉价塑料凉鞋故意说成名牌真皮，按真品价格收钱。凉鞋是 sandal，靠明知虚假的介绍欺骗买家、骗取钱财，就是 swindle。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "swindle somebody out of something：骗走某人的财物",
+          "explanationZh": "把受害者放在 swindle 后，out of 后写被骗走的东西，常见的是钱或积蓄。重点是通过虚假承诺、诡计等使人失去财物，不是任何一句无关利益的谎话，也不是单纯偷偷拿走。",
+          "collocations": [
+            {
+              "phrase": "swindle somebody out of money",
+              "meaningZh": "骗走某人的钱"
+            },
+            {
+              "phrase": "swindle investors",
+              "meaningZh": "欺骗投资者以骗取财物"
+            }
+          ]
+        },
+        {
+          "senseZh": "swindle something out of somebody：把被骗取的钱作宾语",
+          "explanationZh": "也可以把金额或财物直接放在 swindle 后，再用 out of 指出从谁那里骗得。这样强调骗取了什么；受骗来源既可以是个人，也可以是公司。金额大小不是这个动词成立的必要条件。",
+          "collocations": [
+            {
+              "phrase": "swindle money out of somebody",
+              "meaningZh": "从某人那里骗取钱财"
+            },
+            {
+              "phrase": "swindle money out of a company",
+              "meaningZh": "从一家公司骗取钱财"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "defraud",
+          "comparisonZh": "表示以欺骗手段使人损失钱财时，defraud 与 swindle 很接近。defraud 较正式，也可涉及本来应得的权利或利益；swindle 常突出实际设骗局骗取财物。常用搭配分别是 defraud somebody of something 和 swindle somebody out of something。",
+          "sources": [
+            "B"
+          ]
+        },
+        {
+          "word": "cheat",
+          "comparisonZh": "cheat someone out of money 可与 swindle somebody out of money 对应。cheat 范围更广，还可以指考试、比赛作弊或以不诚实手段取得优势；swindle 的本义更具体，重在欺骗他人以得到钱财等东西。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They swindled him out of hundreds of dollars.",
+          "translationZh": "他们骗走了他几百美元。",
+          "explanationZh": "him 是受害者宾语，out of hundreds of dollars 写出被骗走的财物；swindled 是过去式。"
+        },
+        {
+          "textEn": "An oil executive swindled £250,000 out of his firm.",
+          "translationZh": "一名石油业高管从自己的公司骗取了25万英镑。",
+          "explanationZh": "£250,000 是 swindled 的直接宾语，out of his firm 指明钱的来源，体现“骗取某物”的结构。"
+        }
+      ],
+      "coreImageZh": "卖家已经收下男孩的钱，还声称答应的玩具车就在盒里。男孩低头查看，发现盒子空空，便指出卖家骗走了自己的钱。swindle 是用欺骗手段骗取财物；这里的付款发生在片段开始前，不是单纯嫌价格太高。"
+    },
+    {
+      "number": 7072,
+      "word": "sybarite",
+      "ipa": "/ˈsɪbəraɪt/",
+      "pos": "n.",
+      "coreMeaningZh": "沉溺于奢侈逸乐者，酒色之徒",
+      "coreEn": "a person devoted to luxury and sensual pleasures",
+      "mnemonics": [
+        {
+          "method": "SIT + A RIGHT：坐享奢华，当成天经地义的权利",
+          "textZh": "把完整 SIT（坐）和 A RIGHT（一项权利）串成近音记忆线，联想 sybarite。想象一个人整天坐在豪华软椅里，只盘算珍馐美酒和昂贵玩乐，还说“坐享这一切，是我的权利！”这位把奢侈享乐当成人生头等事的人，就是 sybarite。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "CIGARETTE 要最贵的，生活只剩奢华享乐",
+          "textZh": "把完整 CIGARETTE（香烟）与 sybarite 近音联想。想象一个人连香烟都只要最昂贵的，天天在豪华套房里吃喝玩乐，生活的全部追求就是满足感官享受。这种沉溺奢侈逸乐的人是 sybarite；关键是整天只追逐奢华享乐，而不是抽烟这个动作。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "可数名词：把奢侈享乐当生活重心的人",
+          "explanationZh": "sybarite 指人，单数通常用 a sybarite，复数是 sybarites。这个词偏正式，着重描写某人迷恋奢华舒适与感官享受的生活方式，不是把所有有钱人都这样称呼。",
+          "collocations": [
+            {
+              "phrase": "a self-indulgent sybarite",
+              "meaningZh": "一个放纵自己、沉溺奢华享乐的人"
+            },
+            {
+              "phrase": "call someone a sybarite",
+              "meaningZh": "称某人为贪图奢侈享乐的人"
+            }
+          ]
+        },
+        {
+          "senseZh": "语气常含沉溺、放纵，不要求同时有酒和色",
+          "explanationZh": "它常带批评或调侃，突出对享乐的过度投入。美食、美酒、奢华住宿等都可以成为这种追求；“酒色之徒”是较强的概括，不表示使用此词就必须证明某人既酗酒又好色。偶尔享受一次好饭或休假也不足以体现这种生活倾向。",
+          "collocations": [
+            {
+              "phrase": "live like a sybarite",
+              "meaningZh": "像一个贪图奢侈享乐的人那样生活"
+            },
+            {
+              "phrase": "a pleasure-loving sybarite",
+              "meaningZh": "一个沉迷奢侈享乐的人"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "hedonist",
+          "comparisonZh": "hedonist 与 sybarite 都可指以享乐为生活中心的人。hedonist 更广，强调把快乐看得最重要，并不一定追求昂贵生活；sybarite 尤其让人想到奢华舒适和感官满足，常有放纵意味。"
+        },
+        {
+          "word": "voluptuary",
+          "comparisonZh": "指把奢华和满足感官欲望当主要追求的人时，voluptuary 与 sybarite 非常接近，都是较正式的称呼。voluptuary 更直接突出感官欲望的满足，sybarite 常同时唤起奢华生活画面；不必人为规定两者互不相容的对象。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "the prince was remembered as a self-indulgent sybarite, not as a statesman or warrior",
+          "translationZh": "人们记得这位王子是个放纵自己、沉溺享乐的人，而不是政治家或武士。",
+          "explanationZh": "a self-indulgent sybarite 是对王子的身份评价；与 statesman、warrior 对照，强调他留下的是贪图享乐的名声。"
+        },
+        {
+          "textEn": "If you know someone who's totally addicted to luxurious things and all of life's pleasures, call her a sybarite.",
+          "translationZh": "如果你认识一个完全沉迷于奢华之物和人生各种享乐的人，就可以称她为贪图奢侈享乐者。",
+          "explanationZh": "call her a sybarite 中，a sybarite 是宾语 her 的补语，用来说明这个人的生活倾向。"
+        }
+      ],
+      "coreImageZh": "成年男子安逸地靠在丝绒扶手椅上，身旁摆着精致点心和茶。男孩问他是否每天都讲究这些享受，他坦言奢华享受才是自己最在意的。sybarite 指沉溺于奢侈逸乐的人，重点是人的嗜好与态度，不是单指房间豪华或偶尔吃一次点心。"
+    },
+    {
+      "number": 7073,
+      "word": "sycophant",
+      "ipa": "/ˈsɪkəfænt/",
+      "pos": "n.",
+      "coreMeaningZh": "马屁精",
+      "coreEn": "a person who flatters powerful people insincerely to gain favor",
+      "mnemonics": [
+        {
+          "method": "SICK OF AUNT：心里烦姑妈，嘴上却为钱拍马屁",
+          "textZh": "把 SICK OF（厌烦）和完整 AUNT（姑妈）连读，近音联想 sycophant。一个人心里明明烦透了姑妈，为了多拿零花钱，嘴上却不停夸她“天下最聪明，做什么都对”。这种言不由衷、只为讨好拿好处的人，就是 sycophant，马屁精。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SILK + A FAN：丝绸扇子扇老板，满嘴好话求升职",
+          "textZh": "借完整 SILK（丝绸）和 A FAN（一把扇子）的声音，近音联想 sycophant。想象有人拿丝绸扇子给老板扇风，老板随便说什么，他都夸得天花乱坠，只盼老板给自己升职。记住的不是普通扇风服务，而是这个为好处一味奉承的马屁精。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "可数名词：为讨好有权势者而奉承的人",
+          "explanationZh": "sycophant 指人，单数 a sycophant，复数 sycophants。重点是过分、言不由衷地夸赞有影响力的人，以赢得认可或利益；它是带贬义的较正式称呼，不是普通真诚赞美者。",
+          "collocations": [
+            {
+              "phrase": "a fawning sycophant",
+              "meaningZh": "一个卑躬屈膝的马屁精"
+            },
+            {
+              "phrase": "a group of sycophants",
+              "meaningZh": "一群阿谀奉承的人"
+            }
+          ]
+        },
+        {
+          "senseZh": "权力周围的奉承圈：与真正朋友、坦诚意见对照",
+          "explanationZh": "常说某位掌权者身边围着 sycophants，强调周围的人只讲他愿意听的话，不肯坦诚指出问题。马屁精可能表现得亲热忠诚，却把讨好和自身利益放在真实意见之前。",
+          "collocations": [
+            {
+              "phrase": "be surrounded by sycophants",
+              "meaningZh": "身边围着一群马屁精"
+            },
+            {
+              "phrase": "mistake sycophants for true friends",
+              "meaningZh": "把马屁精误认为真朋友"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "flatterer",
+          "comparisonZh": "flatterer 指爱说奉承话、讨人欢心的人，与 sycophant 的“马屁精”义很接近。flatterer 本身不那么突出奉承对象的权势；sycophant 更强烈暗示向有地位、有影响力的人献媚，以求认可或好处。"
+        },
+        {
+          "word": "yes-man",
+          "comparisonZh": "yes-man 与 sycophant 都可指为取得权势者欢心而迎合的人。yes-man 着重“你说什么我都同意”，sycophant 更突出阿谀赞美、献媚；一味附和和大力吹捧常同时出现，但不是同一种表达动作。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "be careful not to mistake sycophants for true friends",
+          "translationZh": "当心，别把马屁精当作真朋友。",
+          "explanationZh": "mistake A for B 表示把 A 误认为 B；复数 sycophants 与 true friends 对照，突出虚假奉承不是可靠友谊。"
+        },
+        {
+          "textEn": "...a dictator surrounded by sycophants, frightened to tell him what he may not like.",
+          "translationZh": "……一个独裁者，身边围着一群不敢讲他不爱听的话的马屁精。",
+          "explanationZh": "surrounded by sycophants 修饰 dictator；后面的 frightened 描写那些不敢直言的奉承者。这是一个名词短语片段。"
+        }
+      ],
+      "coreImageZh": "男孩殷勤地凑向老师，夸她“说什么都对”，紧接着请求免掉自己的值日。老师抬手拒绝这种特殊照顾。sycophant 指为了自身利益而奉承有权者的人，不是普通地表达礼貌或赞美。"
+    },
+    {
+      "number": 7074,
+      "word": "syllabus",
+      "ipa": "/ˈsɪləbəs/",
+      "pos": "n.",
+      "coreMeaningZh": "提纲，摘要；课文，演讲或研究课题的概要或提纲",
+      "coreEn": "an outline of topics or main points, especially for a course of study",
+      "mnemonics": [
+        {
+          "method": "SILLY BUS 搞笑巴士：站牌写的是课程提纲",
+          "textZh": "把完整 SILLY（傻气、搞笑的）与 BUS（巴士）连读，近音联想 syllabus。想象一辆搞笑教学巴士，站牌不写街道名，却列着本学期要学的语法、阅读、写作。上车前先看这份学习要点清单：它就是 syllabus，课程提纲。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SYLLABLE 先看音节，SYLLABUS 先看课程提纲",
+          "textZh": "借完整 SYLLABLE（音节）与 syllabus 的近形近音联想。一门发音课要学单音节、多音节和重音，老师先把这些内容列成提纲发下来。SYLLABLE 提醒你词里的音节，SYLLABUS 则告诉你这门课要学哪些内容：课程概要、学习提纲。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "课程大纲：列出要学的主题和要求",
+          "explanationZh": "现在最常见的是某门课程或科目的内容提纲，列出要学的主题、书目，有时还包括考核要求。它回答主要学什么、学到什么范围，不只是标明星期几几点上课的时间表。复数可用 syllabuses，也可用 syllabi。",
+          "collocations": [
+            {
+              "phrase": "a course syllabus",
+              "meaningZh": "一门课的教学大纲"
+            },
+            {
+              "phrase": "on the syllabus",
+              "meaningZh": "列入课程大纲，属于学习范围"
+            }
+          ]
+        },
+        {
+          "senseZh": "较广的概要义：概括文本、演讲或研究内容",
+          "explanationZh": "syllabus 也可指演讲、论著或学习计划等主要内容的概要。这种用法着重有条理地列出要点，不是原课文或讲稿全文；在一般日常表达中，outline 或 summary 常更容易理解。",
+          "collocations": [
+            {
+              "phrase": "a syllabus of lectures",
+              "meaningZh": "一系列讲座的内容提纲"
+            },
+            {
+              "phrase": "a syllabus of a course of study",
+              "meaningZh": "一项学习课程的概要"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "outline",
+          "comparisonZh": "表示内容提纲时，outline 与 syllabus 很接近。outline 适用范围更广，可用于故事、计划、报告等；syllabus 尤其常用于课程和考试范围。outline 另有外形轮廓义，不能在那种用法中换成 syllabus。"
+        },
+        {
+          "word": "curriculum",
+          "comparisonZh": "谈教学内容时，curriculum 与 syllabus 有交集。curriculum 常强调一门专业、一所学校或某学习项目的课程设置和内容体系；syllabus 常是具体科目的要点、书目和要求。不是绝对“一门对多门”，应按具体语境区分课程体系与列出的内容提纲。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "American history will be on the syllabus next term.",
+          "translationZh": "下学期的课程大纲将包括美国历史。",
+          "explanationZh": "on the syllabus 表示列入该学期的学习范围，强调学习内容，不是美国历史课的具体上课钟点。"
+        },
+        {
+          "textEn": "...the GCSE history syllabus.",
+          "translationZh": "……英国普通中等教育证书（GCSE）历史科目的课程大纲。",
+          "explanationZh": "history 修饰 syllabus，指历史科目的学习内容提纲；这是一个名词短语片段。"
+        }
+      ],
+      "coreImageZh": "老师展示一页叶、花、根的简要图示，说明它只列出这场讲解的几个要点，并不是完整讲稿。syllabus 在这里指概要或提纲，让人先了解将要讲解的主要内容。"
+    },
+    {
+      "number": 7075,
+      "word": "syllogism",
+      "ipa": "/ˈsɪlədʒɪzəm/",
+      "pos": "n.",
+      "coreMeaningZh": "由一般到个别的推理，演绎",
+      "coreEn": "a form of deductive reasoning with two premises and a conclusion",
+      "mnemonics": [
+        {
+          "method": "SEE + LOGIC + SUM：看两条前提，合推一个结论",
+          "textZh": "借 SEE（看）、完整 LOGIC（逻辑）和 SUM（和、合计）的整段声音，近音联想 syllogism。看黑板：所有鸟都是动物；所有麻雀都是鸟；所以所有麻雀都是动物。把两条前提按逻辑合起来，推出一条结论，这就是典型的三段论。SUM 只帮你记“合起来”，不是把推理当数字相加。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "“思路几层？”两条前提，推出一条结论",
+          "textZh": "把完整中文问句“思路几层？”近音联想 syllogism。老师把一段推理摆成三层：第一条前提，第二条前提，最下面是由两者推出的结论。记住这幅“两个前提推出一个结论”的思路结构，就是 syllogism，三段论式的演绎。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "典型三段论：两个前提和一个结论",
+          "explanationZh": "syllogism 通常指三段论这种推理形式，典型结构是大前提、小前提、结论。有效的三段论把前提与结论按逻辑连接起来；前提都为真时，结论不可能为假。三个句子随便放在一起，并不自动构成有效推理。",
+          "collocations": [
+            {
+              "phrase": "a valid syllogism",
+              "meaningZh": "一个逻辑形式有效的三段论"
+            },
+            {
+              "phrase": "the premises of a syllogism",
+              "meaningZh": "一个三段论的前提"
+            }
+          ]
+        },
+        {
+          "senseZh": "演绎的范围不只“一般到个别”",
+          "explanationZh": "syllogism 也可较宽泛地指演绎推理。“一般规则加具体情况，推出结论”是一种常见形式，但不是所有演绎都从一般到个别。例如条件链“若 P 则 Q；若 Q 则 R；所以若 P 则 R”，也可形成三段论式推理。",
+          "collocations": [
+            {
+              "phrase": "a hypothetical syllogism",
+              "meaningZh": "假言三段论，以条件命题构成的推理"
+            },
+            {
+              "phrase": "deductive reasoning",
+              "meaningZh": "演绎推理；范围比典型三段论更广"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "deduction",
+          "comparisonZh": "在演绎推理义上，deduction 与 syllogism 接近。deduction 是较宽的推理类别；syllogism 通常强调两个前提推出一个结论的形式，不是所有演绎证明都只有这三部分。deduction 的扣款、减除义与这里无关。"
+        },
+        {
+          "word": "inference",
+          "comparisonZh": "inference 可指依据已知信息作出的推断，也可指推断过程，范围比 syllogism 更广。一个有效三段论能产生逻辑推断，但一般 inference 未必使用两个前提，也未必具有演绎的必然性；不能看到“推断”就一律替换成 syllogism。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "An example of a syllogism is: “All men are human; all humans are mortal; therefore all men are mortal.”",
+          "translationZh": "三段论的一个例子是：“所有男人都是人；所有人都会死；所以所有男人都会死。”",
+          "explanationZh": "前两个命题充当前提，therefore 引出结论。这是按类别关系推出另一类别判断，并不是从一般规律落到某一个具体人的唯一形式。"
+        },
+        {
+          "textEn": "the hypothetical syllogism",
+          "translationZh": "假言三段论。",
+          "explanationZh": "hypothetical 指用条件命题构成的推理，例如“若 P 则 Q；若 Q 则 R；所以若 P 则 R”。这里是这种推理形式的名称短语。"
+        }
+      ],
+      "coreImageZh": "老师给出两个前提：正方形都有四条边，这块蓝木片是正方形。男孩据此推出：这块蓝木片有四条边。这个例子用一般规则和对具体对象的归类，得出相应结论，展示了三段论式的演绎推理。"
+    }
+  ]
+}

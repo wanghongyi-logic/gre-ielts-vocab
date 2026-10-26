@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6986,
+      "word": "splice",
+      "ipa": "/splaɪs/",
+      "pos": "vt.",
+      "coreMeaningZh": "接合，叠接",
+      "coreEn": "to join two ends into one continuous piece",
+      "mnemonics": [
+        {
+          "method": "SLICE → SPLICE，切开再接上",
+          "textZh": "SLICE 是切开，在 s 后添 p 就是 splice。剪辑师先把胶片 slice 成两段，再把两头 splice 回去：一切、一接，记 splice 的接合。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SPICE 标签，SPLICE 接回去",
+          "textZh": "SPICE（香料）在 p 后加 l，就得到 SPLICE。写着 SPICE 的长纸标签断成两截，厨师把两头拼接、贴牢：splice，接合。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "接合绳索、胶片等的两端",
+          "explanationZh": "通常是及物动词，可接材料名，也可用 splice A and B together。绳索常靠绳股交织，胶片则把端部接牢。",
+          "collocations": [
+            {
+              "phrase": "splice two ropes together",
+              "meaningZh": "把两根绳接起来"
+            },
+            {
+              "phrase": "splice film",
+              "meaningZh": "拼接胶片"
+            }
+          ]
+        },
+        {
+          "senseZh": "把片段拼入另一整体",
+          "explanationZh": "splice something into something 表示把一个片段接入已有整体，常用于影像、声音片段，也可见于基因语境。",
+          "collocations": [
+            {
+              "phrase": "splice a scene into a film",
+              "meaningZh": "把一个场景接入影片"
+            },
+            {
+              "phrase": "splice pieces of DNA",
+              "meaningZh": "拼接DNA片段"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "join",
+          "comparisonZh": "都可表示连接。join 适用范围最广；splice 更具体，常强调把材料的两端接成连续的一段。"
+        },
+        {
+          "word": "connect",
+          "comparisonZh": "都可使两者相连。connect 可用于线路、地点或抽象关系；splice 通常涉及实际端部或片段的接合。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He taught me to edit and splice film.",
+          "translationZh": "他教我剪辑和拼接胶片。",
+          "explanationZh": "splice film 指把选好的胶片片段接合起来。"
+        },
+        {
+          "textEn": "Scientists have discovered how to splice pieces of DNA.",
+          "translationZh": "科学家们发现了拼接DNA片段的方法。",
+          "explanationZh": "这里将接合片段的意思用于DNA，不是仅把两个样本放在一起。"
+        }
+      ],
+      "coreImageZh": "桌上原本分开的两段胶片，经过母亲对齐端部、叠接并用透明胶带压牢，连成了一条连续的胶片。男孩看到接合处，高兴地说已经接好了，最后母亲收回双手，胶片仍完整地留在桌上。splice 指把材料的端部接合起来；这里是把两段胶片接成一条，不是仅仅并排摆放。"
+    },
+    {
+      "number": 6987,
+      "word": "spoof",
+      "ipa": "/spuːf/",
+      "pos": "n.",
+      "coreMeaningZh": "轻松幽默的模仿，小恶搞",
+      "coreEn": "a playful, humorous imitation",
+      "mnemonics": [
+        {
+          "method": "SPOON → SPOOF，拿勺子学大厨",
+          "textZh": "SPOON 是勺子，把 n 换成 f 就是 spoof。拿着勺子模仿名厨品汤，故意严肃得过分，把大家逗笑：spoof，幽默模仿、小恶搞。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SPOOKY → SPOOF，把恐怖片演搞笑",
+          "textZh": "SPOOKY 是阴森吓人的，与 spoof 共用 /spuː/ 这一大段声音。照着恐怖片扮鬼，却用夸张动作演得大家捧腹：spoof，搞笑的模仿。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "可数名词：幽默戏仿作品",
+          "explanationZh": "a spoof of/on something 表示对某种作品或风格的滑稽模仿；重点是可认出的模仿加喜剧效果，不只是一般笑话。",
+          "collocations": [
+            {
+              "phrase": "a spoof of a horror film",
+              "meaningZh": "对恐怖片的搞笑模仿"
+            },
+            {
+              "phrase": "a spoof on a news programme",
+              "meaningZh": "对新闻节目的戏仿"
+            }
+          ]
+        },
+        {
+          "senseZh": "放在名词前：戏仿式的",
+          "explanationZh": "spoof 可用于另一个名词前，说明这部作品故意模仿某种类型并制造喜剧效果。这里不采用冒充身份或诈骗的其他义项。",
+          "collocations": [
+            {
+              "phrase": "a spoof film",
+              "meaningZh": "戏仿电影"
+            },
+            {
+              "phrase": "a spoof documentary",
+              "meaningZh": "恶搞式纪录片"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "parody",
+          "comparisonZh": "两者都指模仿某作品或风格来制造喜剧效果。spoof 通常较轻松、玩笑性质更强；parody 也可带更明显的讽刺或批评。"
+        },
+        {
+          "word": "lampoon",
+          "comparisonZh": "都可能通过夸张模仿取笑对象。lampoon 通常讽刺性更强，常针对具体人物或制度；spoof 可以只是友善、轻松的搞笑模仿。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "They did a spoof on/of the Nine O'Clock News.",
+          "translationZh": "他们对《九点新闻》做了一段滑稽模仿。",
+          "explanationZh": "a spoof on/of 引出被模仿的节目；on 和 of 都可用。"
+        },
+        {
+          "textEn": "It was a spoof cowboy film.",
+          "translationZh": "那是一部戏仿牛仔电影的喜剧片。",
+          "explanationZh": "spoof 放在 cowboy film 前，说明它以模仿西部片的套路制造笑料。"
+        }
+      ],
+      "coreImageZh": "母亲拿勺子认真品汤，男孩先观察，再说要学她这位大厨。他举起自己的勺子，把品汤时的表情和姿态故意演得格外夸张，母亲被逗笑，最后两人一起笑起来。spoof 在这里指轻松幽默的模仿、戏仿：既能认出他在学谁，又加入了滑稽的夸张，不是单纯做鬼脸或假冒身份。"
+    },
+    {
+      "number": 6988,
+      "word": "sprawl",
+      "ipa": "/sprɔːl/",
+      "pos": "v.",
+      "coreMeaningZh": "杂乱无序地发展，蔓生，蔓延",
+      "coreEn": "to spread or develop in an irregular, uncontrolled way",
+      "mnemonics": [
+        {
+          "method": "SPREAD + CRAWL，铺开又乱爬",
+          "textZh": "把 SPREAD（向外铺开）与 CRAWL（爬）合在一起联想 SPRAWL。藤蔓贴地向外乱爬，爬出花床又铺上小路：sprawl，杂乱地蔓延。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SPRAY，喷漆沿墙乱铺开",
+          "textZh": "SPRAY 是喷洒，和 SPRAWL 共有主要开头 SPRA。喷漆沿墙向四周溅开，东一块、西一片；城镇也这样无规划地向外扩张：sprawl，杂乱蔓延。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "植物、城市等：不规则地向外扩展",
+          "explanationZh": "常作不及物动词，搭配 along、across、over 等表示蔓延方向或范围；比一般 spread 更强调散乱、缺少控制。",
+          "collocations": [
+            {
+              "phrase": "sprawl along the road",
+              "meaningZh": "沿道路杂乱蔓生"
+            },
+            {
+              "phrase": "sprawl across the countryside",
+              "meaningZh": "向乡间无序扩展"
+            }
+          ]
+        },
+        {
+          "senseZh": "sprawling：范围大而布局散乱",
+          "explanationZh": "现在分词常作定语或形容词，修饰城市、郊区，也可比喻叙事铺得很开、结构松散。",
+          "collocations": [
+            {
+              "phrase": "sprawling suburbs",
+              "meaningZh": "无序扩展的郊区"
+            },
+            {
+              "phrase": "a sprawling narrative",
+              "meaningZh": "铺陈广而结构松散的叙事"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "spread",
+          "comparisonZh": "都可表示向外扩展。spread 较中性，可以整齐或受控；sprawl 常暗示扩张散乱、范围过大或缺少规划。"
+        },
+        {
+          "word": "extend",
+          "comparisonZh": "都能说明空间范围向外延伸。extend 不一定有杂乱或失控意味；sprawl 更突出向多处不规则伸展。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The city sprawls along the coastline.",
+          "translationZh": "这座城市沿着海岸线绵延扩展。",
+          "explanationZh": "sprawls 不只是指城市很长，还带有向外铺展、布局分散的意味。"
+        },
+        {
+          "textEn": "The bushes were sprawling along the road.",
+          "translationZh": "灌木沿着道路杂乱地蔓生。",
+          "explanationZh": "were sprawling 描写植物向外不规则伸展的状态。"
+        }
+      ],
+      "coreImageZh": "藤蔓从花床伸出来，弯弯曲曲地向四周蔓生，连石板小路也被枝叶占去不少地方。男孩指给母亲看，母亲说明一直没有修整，已经蔓得到处都是。sprawl 在这里指不规则地向外伸展、蔓延；画面展示的是长期生长后的杂乱状态，不是植物在几秒内突然长大。"
+    },
+    {
+      "number": 6989,
+      "word": "sprightly",
+      "ipa": "/ˈspraɪtli/",
+      "pos": "adj.",
+      "coreMeaningZh": "活泼的，充满活力的",
+      "coreEn": "lively and full of energy",
+      "mnemonics": [
+        {
+          "method": "SPRITE 小精灵，SPRIGHTLY 有活力",
+          "textZh": "SPRITE 是雪碧瓶身上的英文名，也可指童话里的小精灵。它的旧拼法 SPRIGHT 加上 -ly，形成 sprightly；想象小精灵轻快蹦跳，满是活力。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "BRIGHTLY 眼里亮，SPRIGHTLY 精神足",
+          "textZh": "BRIGHTLY（明亮地）与 SPRIGHTLY 整体形音接近。老人眼睛亮亮的，笑容灿烂，迈着轻快步子去跳舞：明亮神采，带出 sprightly 的活泼、有精神。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "形容人：活泼、精神矍铄",
+          "explanationZh": "常用于年长者，赞赏其仍有活力、行动轻快；也可形容年轻人，并不专指年龄。",
+          "collocations": [
+            {
+              "phrase": "a sprightly old man",
+              "meaningZh": "一位精神矍铄的老人"
+            },
+            {
+              "phrase": "look sprightly",
+              "meaningZh": "显得很有精神"
+            }
+          ]
+        },
+        {
+          "senseZh": "形容步态或表演：轻快有生气",
+          "explanationZh": "用于音乐、表演或步伐时，强调轻盈、欢快而有活力，不只是速度快。",
+          "collocations": [
+            {
+              "phrase": "a sprightly step",
+              "meaningZh": "轻快的步伐"
+            },
+            {
+              "phrase": "a sprightly performance",
+              "meaningZh": "轻快活泼的表演"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "lively",
+          "comparisonZh": "都可表示活泼、有生气。lively 使用范围广；sprightly 更突出轻快、灵动的活力，常用于精神很好的老人。"
+        },
+        {
+          "word": "energetic",
+          "comparisonZh": "都能表示精力充沛。energetic 更强调能量充足、做事有劲；sprightly 还强调动作和神态的轻快活泼。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "a sprightly child who often claims to be too tired to move when it's time to do chores",
+          "translationZh": "一个平时活泼，却常在该做家务时声称累得动不了的孩子",
+          "explanationZh": "sprightly 与借口 too tired 形成反差，说明孩子本来很有活力。"
+        },
+        {
+          "textEn": "She’s very sprightly for her age.",
+          "translationZh": "以她的年龄来说，她非常有精神。",
+          "explanationZh": "for her age 表示相对于她的年龄，仍显得格外有活力。"
+        }
+      ],
+      "coreImageZh": "阳光下，外婆笑着跳起轻快的小舞步，男孩在旁边开心鼓掌。男孩夸她有精神，她还兴致勃勃地想接着跳。sprightly 指活泼、充满活力的，重点是轻快的动作和精神十足的神态。"
+    },
+    {
+      "number": 6990,
+      "word": "squalid",
+      "ipa": "/ˈskwɒlɪd/",
+      "pos": "adj.",
+      "coreMeaningZh": "污秽的，肮脏的",
+      "coreEn": "filthy and neglected",
+      "mnemonics": [
+        {
+          "method": "SQUAL + ID：污垢积满屋",
+          "textZh": "squal- 来自表示肮脏、积着污垢的拉丁词，-id 是形容词结尾。久未打扫的房间，污垢层层积起，角落堆满垃圾：squalid，污秽、肮脏的。",
+          "kind": "etymology",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SQUARE LID：方盖子积满污垢",
+          "textZh": "借 SQUARE LID（方盖子）的连读声音记 squalid。垃圾箱的方盖长期没人擦，污垢糊住边角，一掀开满是脏污：squalid，污秽不堪。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "环境：肮脏、破败",
+          "explanationZh": "常形容住所或生活环境因长期缺乏照料而污秽不堪；比一般 dirty 更强调脏乱、失修的状态。",
+          "collocations": [
+            {
+              "phrase": "squalid conditions",
+              "meaningZh": "污秽不堪的环境"
+            },
+            {
+              "phrase": "a squalid room",
+              "meaningZh": "肮脏破败的房间"
+            }
+          ]
+        },
+        {
+          "senseZh": "行为：卑劣、污浊",
+          "explanationZh": "也可用于行为或交易，表达强烈厌恶；此时说的是道德上的污浊，不是物理灰尘。",
+          "collocations": [
+            {
+              "phrase": "a squalid affair",
+              "meaningZh": "一桩卑劣的勾当"
+            },
+            {
+              "phrase": "squalid motives",
+              "meaningZh": "卑劣的动机"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "filthy",
+          "comparisonZh": "都可表示非常肮脏。filthy 强调污垢严重、令人厌恶；squalid 还常带长期缺乏照料、环境破败的意味。"
+        },
+        {
+          "word": "dirty",
+          "comparisonZh": "都表示不干净。dirty 可只是沾了泥或灰；squalid 往往是整体环境脏乱、失修，程度和贬义更强。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The family lived in squalid conditions.",
+          "translationZh": "这家人住在污秽不堪的环境中。",
+          "explanationZh": "squalid conditions 指整体居住环境脏乱恶劣。"
+        },
+        {
+          "textEn": "He followed her up a rickety staircase to a squalid bedsit.",
+          "translationZh": "他跟着她走上一段摇摇晃晃的楼梯，来到一间肮脏的小单间。",
+          "explanationZh": "squalid 修饰 bedsit，指兼作卧室和起居室的脏乱小住所。"
+        }
+      ],
+      "coreImageZh": "储物间里积着厚厚的灰尘，墙角结满蛛网，地上散落废纸和空罐，污渍也一直没有清理。男孩和母亲站在门外，看着这间久未打扫的屋子。squalid 指污秽、肮脏的，画面的重点不只是东西摆乱了，而是长期疏于清理后的脏污。"
+    }
+  ]
+}

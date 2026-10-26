@@ -1,0 +1,396 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6906,
+      "word": "secrete",
+      "ipa": "/sɪˈkriːt/",
+      "pos": "vt.",
+      "coreMeaningZh": "隐藏；分泌",
+      "coreEn": "to put something in a hiding place; to produce and release a substance",
+      "coreImageZh": "男孩想把给爸爸的礼物先藏好，不让惊喜提前被发现。他把橙色礼物盒放进抽屉，听了母亲的提醒后将抽屉推合；木柜关闭，礼物便看不见了。secrete 在这里表示把物品藏到隐蔽处，礼物仍在抽屉里，只是被柜面遮住、暂时不让别人看见。",
+      "mnemonics": [
+        {
+          "method": "SECRET 藏好，就是 SECRETE",
+          "textZh": "secrete 的整体字形几乎就是 SECRET（秘密）。把秘密文件藏进抽屉暗格，不让人发现：这里 secrete 表示隐藏。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SEA CREATE：海里分泌造珍珠",
+          "textZh": "把 secrete 的主要声音联想成 SEA CREATE（海里创造）。海里的珍珠贝不断分泌珍珠质，逐层包裹形成珍珠：secrete 在这里是分泌。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "把东西藏到隐蔽处",
+          "explanationZh": "隐藏义是及物动词，常说 secrete something in、under 或 behind 某处，突出有意把东西放到不容易被发现的位置。它比 hide 更正式，也更容易让人想到具体藏匿的动作。",
+          "collocations": [
+            {
+              "phrase": "secrete a letter in a drawer",
+              "meaningZh": "把信藏在抽屉里"
+            },
+            {
+              "phrase": "money secreted under the floorboards",
+              "meaningZh": "藏在地板下的钱"
+            }
+          ]
+        },
+        {
+          "senseZh": "生物体分泌物质",
+          "explanationZh": "分泌义常以腺体、细胞等为主语，以唾液、激素、酶等为宾语。分泌的物质可以释放到体表、管腔或体内其他部位，不等于一律排到体外；与 excrete 排出废物等的侧重点不同。",
+          "collocations": [
+            {
+              "phrase": "secrete saliva",
+              "meaningZh": "分泌唾液"
+            },
+            {
+              "phrase": "secrete hormones",
+              "meaningZh": "分泌激素"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "conceal",
+          "comparisonZh": "在有意隐藏时接近。conceal 的范围更广，可隐藏物品，也可隐瞒事实或感情；secrete 的隐藏义常突出把物品放进一个隐蔽地点。"
+        },
+        {
+          "word": "release",
+          "comparisonZh": "在分泌的语境中，release 可表达把物质释放出来这一环节；secrete 还包含细胞或腺体产生分泌物的专门过程，不能把任意释放动作都换成 secrete。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She secreted the birthday present in a cupboard.",
+          "translationZh": "她把生日礼物藏进了一个柜子。",
+          "explanationZh": "secreted 是隐藏义的过去式；in a cupboard 说明礼物被放到哪里，不是在描述生物分泌。"
+        },
+        {
+          "textEn": "Salivary glands secrete saliva into the mouth.",
+          "translationZh": "唾液腺把唾液分泌到口腔中。",
+          "explanationZh": "主语 Salivary glands 指唾液腺，saliva 是分泌物，into the mouth 指它被释放到的位置。"
+        }
+      ]
+    },
+    {
+      "number": 6907,
+      "word": "sedate",
+      "ipa": "/sɪˈdeɪt/",
+      "pos": "adj.",
+      "coreMeaningZh": "淡定的，安静的",
+      "coreEn": "calm and composed in manner, or quiet and unhurried in pace",
+      "coreImageZh": "水杯碰倒，清水洒在桌上，男孩一下有些慌张。母亲却保持平静，轻轻示意他别着急，告诉他拿布擦干就好；男孩听后也放松下来。sedate 形容举止安静、态度沉着，母亲面对小意外仍不急不乱，正体现了这种稳定从容的神态。",
+      "mnemonics": [
+        {
+          "method": "SED + ATE：坐定，安静下来",
+          "textZh": "sed- 连着“坐”的词根，sedate 来自“使安定、使平静”。想象人稳稳坐定，不慌不忙，神情平静沉着。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SEE DATE：看到日期，不慌张",
+          "textZh": "把 sedate 的整段声音联想成 SEE DATE（看日期）。别人以为今天就截止，急得团团转；他看清日期还有一周，仍然平静镇定。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "神态安静沉稳",
+          "explanationZh": "可形容人的举止、神情或性情，强调平静、克制，不显得急躁或轻浮。它不等于沉默不说话，也不意味着难过；一个人可以边交谈边保持 sedate 的神态。",
+          "collocations": [
+            {
+              "phrase": "a sedate manner",
+              "meaningZh": "沉静稳重的举止"
+            },
+            {
+              "phrase": "remain sedate",
+              "meaningZh": "保持平静沉着"
+            }
+          ]
+        },
+        {
+          "senseZh": "节奏平缓，不匆忙",
+          "explanationZh": "也可形容速度、生活或场合安稳而不热烈。at a sedate pace 指以缓慢从容的步调；sedate 是形容词，修饰动作的副词形式是 sedately。同形动词还有施用镇静药的意思，与形容性情或节奏的结构不同。",
+          "collocations": [
+            {
+              "phrase": "at a sedate pace",
+              "meaningZh": "以从容平缓的速度"
+            },
+            {
+              "phrase": "a sedate life",
+              "meaningZh": "安静平稳的生活"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "composed",
+          "comparisonZh": "形容人在压力下镇定沉着时很接近。composed 更突出情绪受到控制、没有慌乱；sedate 还常带安静稳重的气质，也能修饰平缓的速度或生活。"
+        },
+        {
+          "word": "calm",
+          "comparisonZh": "在平静、不激动时接近。calm 范围更广，可以说天气、海面或局势平静；sedate 更常形容人的举止以及生活、活动的平稳节奏，不能在所有 calm 的语境中互换。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "She remained sedate while the others argued.",
+          "translationZh": "其他人争论时，她仍然保持沉着。",
+          "explanationZh": "remained 后用形容词 sedate 描述她的状态；对比 others argued，突出了她没有跟着激动起来。"
+        },
+        {
+          "textEn": "The procession moved through the square at a sedate pace.",
+          "translationZh": "队伍以从容缓慢的步调穿过广场。",
+          "explanationZh": "sedate 修饰 pace，整段 at a sedate pace 说明行进速度，不表示队伍完全停着不动。"
+        }
+      ]
+    },
+    {
+      "number": 6908,
+      "word": "sedentary",
+      "ipa": "/ˈsedənteri/",
+      "pos": "adj.",
+      "coreMeaningZh": "不迁徙的，定居的",
+      "coreEn": "remaining in one area rather than migrating or moving from place to place",
+      "coreImageZh": "男孩来到乡间一家人的院子，好奇地问他们冬天是否也住在这里。居民指着自家的房屋，说明一家人四季常住，不随季节迁走，随后仍轻松地在院中走动。sedentary 在这里表示不迁徙、定居的生活方式，固定的是长期居住的地方，并不是人的身体不能活动。",
+      "mnemonics": [
+        {
+          "method": "SEDENT + ARY：坐定在一处",
+          "textZh": "sedent- 来自“坐着、留在原处”，-ary 是形容词结尾。不再四处迁移，而是在一个地方住定，便是 sedentary 的定居义。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "“谁等他来？”定居家中等",
+          "textZh": "把 sedentary 的整段声音联想成“谁等他来？”远行的人还在路上，家人已经定居下来，在固定的家里等他回来。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "不迁徙，长期定居一地",
+          "explanationZh": "可形容鸟类等不进行季节性迁徙，也可形容人群在固定地区定居而非不断迁居。它描述的是居住或迁移模式，不是身体完全不动：不迁徙的鸟仍会飞行觅食，定居的人也会正常出行。",
+          "collocations": [
+            {
+              "phrase": "sedentary birds",
+              "meaningZh": "不迁徙的鸟类"
+            },
+            {
+              "phrase": "sedentary communities",
+              "meaningZh": "定居的群体"
+            }
+          ]
+        },
+        {
+          "senseZh": "常见的久坐义另有侧重",
+          "explanationZh": "日常也常见 sedentary job、sedentary lifestyle，指工作需要长时间坐着，或生活中身体活动较少。这个义项关乎活动量，不能因为某人常住一个城市，就推断他的生活一定久坐少动。",
+          "collocations": [
+            {
+              "phrase": "a sedentary job",
+              "meaningZh": "需要长时间坐着的工作"
+            },
+            {
+              "phrase": "a sedentary lifestyle",
+              "meaningZh": "久坐少动的生活方式"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "nonmigratory",
+          "comparisonZh": "描述鸟类或其他动物不迁徙时很接近，nonmigratory 直接与 migratory 相对。它不包含 sedentary 描述人久坐少动的常见义项。"
+        },
+        {
+          "word": "settled",
+          "comparisonZh": "描述人群已经定居、有固定居所时接近。settled 还可指问题已解决、安排已确定等；sedentary 在定居义中强调不再以迁移为生活方式，不用于那些问题解决的语境。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "These birds are sedentary and remain in the same region throughout the year.",
+          "translationZh": "这些鸟不迁徙，全年都留在同一地区。",
+          "explanationZh": "throughout the year 说明不随季节迁往别处；sedentary 并没有否定鸟在本地飞行和觅食。"
+        },
+        {
+          "textEn": "The community became sedentary and built permanent homes beside the river.",
+          "translationZh": "这个群体开始定居，在河边建起了永久性住宅。",
+          "explanationZh": "became sedentary 表示从迁居生活转为定居，permanent homes 说明稳定居所，不是在说居民整天坐着。"
+        }
+      ]
+    },
+    {
+      "number": 6909,
+      "word": "seduce",
+      "ipa": "/sɪˈdjuːs/；美 /sɪˈduːs/",
+      "pos": "vt.",
+      "coreMeaningZh": "诱使偏离正道；引诱",
+      "coreEn": "to entice someone away from proper conduct or a commitment, often by persuasion or attractive promises",
+      "coreImageZh": "男孩原本坐在桌前写作业，同伴抱着足球来劝他别写了，一起出去玩。男孩看着球动了心，放下铅笔，答应先不管作业，随后把未完成的本子留在桌上跟着走了。seduce 在这里表示借诱惑使人偏离原本应做的事，出去玩球的吸引力，让男孩放弃了眼前的责任。",
+      "mnemonics": [
+        {
+          "method": "SE + DUC + E：引离正道",
+          "textZh": "se- 表示“离开”，duc- 表示“引导”。不是把人引上正路，而是用诱惑把人引离正道：seduce，诱使误入歧途。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "REDUCE 底线，被诱离正道",
+          "textZh": "seduce 与 REDUCE（减少、降低）整体只差开头。诱惑一点点降低他的底线，最后把他带离原来的正道。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "以诱惑使人偏离原则或责任",
+          "explanationZh": "常说 seduce someone into doing something，或 seduce someone away from 某种责任、信念。这里不只是让人同意，而是借诱惑、劝说或美好许诺，使其偏离原来的正当立场。正常商量休息、诚实提出建议，并不因此都叫 seduce。",
+          "collocations": [
+            {
+              "phrase": "seduce someone into cheating",
+              "meaningZh": "诱使某人作弊"
+            },
+            {
+              "phrase": "seduce someone away from their duties",
+              "meaningZh": "引诱某人抛开职责"
+            }
+          ]
+        },
+        {
+          "senseZh": "语境决定具体的引诱义",
+          "explanationZh": "还可表示以魅力吸引，也常有性引诱的意思；不能看到这个词就一律按同一种情境理解。be seduced by a promise of easy success 说的是被轻易成功的许诺吸引，重点在诱人的许诺及其影响。",
+          "collocations": [
+            {
+              "phrase": "be seduced by promises of easy money",
+              "meaningZh": "受轻松赚钱的许诺诱惑"
+            },
+            {
+              "phrase": "seduce with attractive promises",
+              "meaningZh": "用诱人的许诺引诱"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "lure",
+          "comparisonZh": "在用诱惑把人引向某处或某种行为时接近。lure 常突出诱饵般的吸引，有时涉及危险或陷阱；seduce 在诱离正道的用法中更突出劝说、魅力或许诺让人动摇，也另有性引诱义。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "tempt",
+          "comparisonZh": "都可指诱惑，但 tempt 可以只表示使人产生欲望，并不保证对方付诸行动；seduce someone into doing something 通常表明诱导已经使其采取所说的行动。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The promise of easy money seduced him into breaking the rules.",
+          "translationZh": "轻松赚钱的许诺诱使他违反了规则。",
+          "explanationZh": "seduced him into 后接 breaking，说明诱惑导致的行为；主语 The promise of easy money 交代了诱因。"
+        },
+        {
+          "textEn": "She refused to be seduced away from her duties by promises of a reward.",
+          "translationZh": "她不肯受奖励的许诺引诱而抛开自己的职责。",
+          "explanationZh": "refused to 表明诱导没有成功；away from her duties 指被引离的责任，而不是一般休息。"
+        }
+      ]
+    },
+    {
+      "number": 6910,
+      "word": "sedulous",
+      "ipa": "/ˈsedʒələs/",
+      "pos": "adj.",
+      "coreMeaningZh": "勤奋认真的",
+      "coreEn": "showing sustained, painstaking effort and careful perseverance",
+      "coreImageZh": "男孩坐在桌前练画小花，纸上已经留下几次尝试。母亲说他练了好几遍，他仍认真查看线条，表示还想再画一次，把细节画好，随后又耐心地继续描画。sedulous 形容勤奋而认真的投入，既有不轻易敷衍的坚持，也有对细节持续用心的态度。",
+      "mnemonics": [
+        {
+          "method": "SCHEDULE 排好，认真执行",
+          "textZh": "sedulous 的主体声音可以联想 SCHEDULE（时间表）。时间表排好后，不敷衍、不偷懒，每一项都认真完成：sedulous，勤奋认真的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SET—YOUR—LIST：清单逐项做完",
+          "textZh": "借 SET（安排）、YOUR（你的）、LIST（清单）三个声音提示记 sedulous。他列好要做的事后，认真逐项完成，不偷懒、不敷衍：sedulous，勤奋又尽心。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "认真且持续地投入",
+          "explanationZh": "可形容人，也可形容研究、照料、练习等所付出的努力，强调细致和坚持，而不只是看起来很忙。短暂的热情或一次碰巧成功，都不足以体现 sedulous 所强调的持续用功。这个词较正式。",
+          "collocations": [
+            {
+              "phrase": "a sedulous student",
+              "meaningZh": "勤奋认真的学生"
+            },
+            {
+              "phrase": "sedulous attention to detail",
+              "meaningZh": "对细节持续而细致的关注"
+            }
+          ]
+        },
+        {
+          "senseZh": "接所投入的事情",
+          "explanationZh": "可用 sedulous in 加名词或动名词，说明在哪件事上认真尽力；副词是 sedulously。它描述投入的方式，不保证一定成功，也不自动证明所追求的目标正当。",
+          "collocations": [
+            {
+              "phrase": "sedulous in checking the facts",
+              "meaningZh": "认真不懈地核查事实"
+            },
+            {
+              "phrase": "sedulous research",
+              "meaningZh": "细致而坚持不懈的研究"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "assiduous",
+          "comparisonZh": "在勤奋、细致而不间断地投入时很接近。assiduous 强调持续认真地用功，sedulous 也突出不怕费力、耐心坚持；两者都比单纯的 busy 更能体现用心。",
+          "sources": [
+            "weichen_gre"
+          ]
+        },
+        {
+          "word": "diligent",
+          "comparisonZh": "都能表示勤奋认真的。diligent 更常见，侧重认真尽责地完成工作；sedulous 较正式，尤其让人想到细致而不懈的投入。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her sedulous research uncovered several errors in the report.",
+          "translationZh": "她细致而不懈的研究找出了报告中的几处错误。",
+          "explanationZh": "sedulous 修饰 research，强调研究过程认真、持续；找出错误是这次研究的结果，不是单词本身保证的结果。"
+        },
+        {
+          "textEn": "He was sedulous in checking every name against the original list.",
+          "translationZh": "他认真细致地把每个名字与原始名单逐一核对。",
+          "explanationZh": "sedulous in 后接 checking，against the original list 表示核对所依据的名单，every name 突出逐项检查。"
+        }
+      ]
+    }
+  ]
+}

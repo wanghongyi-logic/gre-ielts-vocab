@@ -1,0 +1,400 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6921,
+      "word": "serpentine",
+      "ipa": "/ˈsɜːrpənˌtiːn/，亦 /ˈsɜːrpənˌtaɪn/",
+      "pos": "adj.",
+      "coreMeaningZh": "蜿蜒的，蛇行般弯曲的",
+      "coreEn": "winding from side to side like a snake",
+      "mnemonics": [
+        {
+          "method": "蛇盘藤，一弯接一弯",
+          "textZh": "借“蛇盘藤”的近音记 serpentine：蛇盘在长藤上，身体一弯接一弯。河道也像这条蛇，左右蜿蜒。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SERPENT + INE，像蛇般蜿蜒",
+          "textZh": "serpent 是“蛇”，-ine 表示“像……的”：SERPENT + INE 正好拼成 serpentine。把蛇弯来绕去的身体画成一条山路，就记住“蜿蜒的”。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "路线像蛇身一样蜿蜒",
+          "explanationZh": "常描写道路、河流、小径等左右回转、曲折延伸的形状。它比一般 curved 更容易使人想到连续的弯曲，不只是直线上出现一个轻微弧度。",
+          "collocations": [
+            {
+              "phrase": "a serpentine road",
+              "meaningZh": "蜿蜒曲折的道路"
+            },
+            {
+              "phrase": "a serpentine river",
+              "meaningZh": "蛇行般弯曲的河流"
+            }
+          ]
+        },
+        {
+          "senseZh": "也可描写移动或排列的轨迹",
+          "explanationZh": "可用于行进路线、排队形成的弯曲队形或装饰线条，关键仍是曲折形状。路线蜿蜒不必然意味着危险、难走或走错方向。",
+          "collocations": [
+            {
+              "phrase": "a serpentine path through the garden",
+              "meaningZh": "穿过花园的蜿蜒小径"
+            },
+            {
+              "phrase": "a serpentine queue",
+              "meaningZh": "蜿蜒排开的长队"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "winding",
+          "comparisonZh": "描写路线曲折、不断转弯时接近。winding 是较通用的说法；serpentine 更突出像蛇身般来回蜿蜒的形状。"
+        },
+        {
+          "word": "tortuous",
+          "comparisonZh": "在道路或路线弯曲盘绕的意义上接近。tortuous 还可形容论证、过程复杂曲折，常有费解或难以应付的意味；serpentine 的路线义主要突出形状，不自动包含这种评价。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A serpentine road connected the two mountain villages.",
+          "translationZh": "一条蜿蜒曲折的道路连接着这两个山村。",
+          "explanationZh": "serpentine 修饰 road，强调道路不断转弯的形状，不是说道路上一定有蛇。"
+        },
+        {
+          "textEn": "The visitors formed a serpentine queue outside the museum.",
+          "translationZh": "参观者在博物馆外排成了一条蜿蜒的长队。",
+          "explanationZh": "serpentine queue 描写队伍弯来绕去的整体形状，并不表示排队的人不守秩序。"
+        }
+      ],
+      "coreImageZh": "母子沿公园小路散步，前方的路一会儿向左，一会儿向右，连续绕出好几道弯。男孩好奇地问它为何拐来拐去，母亲说这条路像蛇一样弯绕。serpentine 形容蛇行般蜿蜒、不断转折的形状，画面中连续延伸的曲线，比单独一个拐角更能体现这种弯曲。"
+    },
+    {
+      "number": 6922,
+      "word": "serried",
+      "ipa": "/ˈserid/",
+      "pos": "adj.",
+      "coreMeaningZh": "密集的",
+      "coreEn": "closely packed or pressed together, often in rows or ranks",
+      "mnemonics": [
+        {
+          "method": "MARRIED 合影，排得密密",
+          "textZh": "serried 与 MARRIED（结婚的）后面的 RRIED 相同。婚礼合影时，亲友一排紧挨一排，肩膀贴着肩膀：serried，密集排列的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "CHERRIES 挤成密密几排",
+          "textZh": "借 CHERRIES（樱桃）的近音记 serried。盒里的樱桃排得颗颗相贴，连手指都伸不进空隙：紧密排列，serried。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "紧挨着、密密排列",
+          "explanationZh": "常用来描写人或物挤在一起、间隔很小的状态，尤其常见于 rows、ranks 等表示一排排队列的词前。重点是紧密程度，不仅是总数量大；很多物体若分散得很远，就不适合用 serried。",
+          "collocations": [
+            {
+              "phrase": "serried ranks",
+              "meaningZh": "密集的队列"
+            },
+            {
+              "phrase": "serried rows of houses",
+              "meaningZh": "紧密排列的一排排房屋"
+            }
+          ]
+        },
+        {
+          "senseZh": "人群与物体都可使用",
+          "explanationZh": "可以描述士兵、观众，也可以描述房屋、座椅或花木。它可以带整齐成排的画面感，但定义的核心仍是挨得紧、间隙小，不要求每个例子都像军队一样整齐。",
+          "collocations": [
+            {
+              "phrase": "a serried crowd",
+              "meaningZh": "密集的人群"
+            },
+            {
+              "phrase": "serried rows of chairs",
+              "meaningZh": "紧挨排列的一排排椅子"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "closely packed",
+          "comparisonZh": "在彼此紧挨、少有空隙的意义上直接接近。closely packed 是通用说法；serried 尤其容易使人想到成排、成列的密集排列。"
+        },
+        {
+          "word": "dense",
+          "comparisonZh": "形容人群或排列密集时可接近，但 dense 的范围更广，也能形容浓雾、难懂的文字等；serried 通常着重可辨认的人或物紧靠在一起。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The audience sat in serried rows of chairs.",
+          "translationZh": "观众坐在紧密排列的一排排椅子上。",
+          "explanationZh": "serried 修饰 rows，强调排布紧密，不能只理解成椅子的数量很多。"
+        },
+        {
+          "textEn": "We could hardly move through the serried crowd at the entrance.",
+          "translationZh": "入口处人群密集，我们几乎穿行不过去。",
+          "explanationZh": "hardly move through 表现出人与人之间空隙很小；这里不要求人群排成整齐的队列。"
+        }
+      ],
+      "coreImageZh": "母子来到书架旁，男孩想把手中的红书放回去，却发现一排排书紧紧挨在一起，几乎没有空隙。他说书挤得太紧，放不进去，母亲也指出每排都塞得满满的。serried 形容事物排列得密集紧凑，画面中并排挤满书架的书，正体现了这种密集的状态。"
+    },
+    {
+      "number": 6923,
+      "word": "servile",
+      "ipa": "/ˈsɜːrvaɪl/，亦 /ˈsɜːrvəl/",
+      "pos": "adj.",
+      "coreMeaningZh": "卑屈的，过分顺从的",
+      "coreEn": "excessively submissive or eager to please, at the expense of independence or dignity",
+      "mnemonics": [
+        {
+          "method": "SERVE 不等于 SERVILE",
+          "textZh": "serve 是“服务”，与 servile 同源。认真服务仍能提出不同意见；servile 却连明显的错话也赶紧点头，低声下气地讨好。抓住 SERV，再接 -ILE，记“卑屈顺从的”。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SURVIVE，为保位置只会点头",
+          "textZh": "把 servile 整体近形联到 SURVIVE（生存）。为了在权势圈里混下去，他对上司再荒唐的话也连连点头：只求 survive，表现得 servile，卑躬屈膝。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "卑屈而过分顺从",
+          "explanationZh": "这是带贬义的形容词，通常评价某种态度、行为或奉承，强调为了迎合、讨好而缺乏独立立场。它不是普通礼貌、合作或遵守合理安排的同义词。",
+          "collocations": [
+            {
+              "phrase": "a servile attitude",
+              "meaningZh": "卑屈顺从的态度"
+            },
+            {
+              "phrase": "servile flattery",
+              "meaningZh": "卑躬屈膝的奉承"
+            }
+          ]
+        },
+        {
+          "senseZh": "评价行为，不按职业判断",
+          "explanationZh": "可用来批评一个人对有权势者唯唯诺诺，但不能只因某人从事服务工作或处于下属职位就称其 servile。专业服务可以很有尊严；这个词批评的是过度屈从的方式。",
+          "collocations": [
+            {
+              "phrase": "servile obedience",
+              "meaningZh": "卑屈的服从"
+            },
+            {
+              "phrase": "a servile manner",
+              "meaningZh": "卑躬屈膝的举止"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "obsequious",
+          "comparisonZh": "在讨好、奉承、过分顺从的行为上接近。obsequious 更突出殷勤逢迎和夸张的恭敬；servile 更强调放低姿态、缺乏独立性的卑屈顺从。"
+        },
+        {
+          "word": "submissive",
+          "comparisonZh": "两者都可表示顺从，但 submissive 不一定带同样强的鄙视意味。servile 通常明确批评顺从过头、失去独立立场，不能把一般服从都等同于 servile。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He adopted a servile manner whenever the director entered the room.",
+          "translationZh": "主任一进屋，他就摆出一副卑躬屈膝的样子。",
+          "explanationZh": "a servile manner 评价的是他迎合权势者的举止，不是在说明他的职业身份。"
+        },
+        {
+          "textEn": "Professional courtesy does not require servile agreement with every demand.",
+          "translationZh": "专业礼貌并不要求对每一个要求都卑屈地附和。",
+          "explanationZh": "does not require 区分礼貌与过分顺从；servile agreement 带有放弃独立判断的负面评价。"
+        }
+      ],
+      "coreImageZh": "桌边的同伴把活一股脑推给男孩，要求他全部照办。男孩弯着腰，满脸讨好，连声答应；同伴抱起双臂，他仍低头顺从。servile 形容为了迎合别人而显得卑屈、过分顺从，男孩面对不合理的使唤也一味讨好的态度，正体现了这种卑躬屈膝。"
+    },
+    {
+      "number": 6924,
+      "word": "shifty",
+      "ipa": "/ˈʃɪfti/",
+      "pos": "adj.",
+      "coreMeaningZh": "（显得）狡诈的，（显得）欺诈的",
+      "coreEn": "dishonest or evasive, or giving an impression of being untrustworthy",
+      "mnemonics": [
+        {
+          "method": "SHIFT 借口，躲避事实",
+          "textZh": "SHIFT 是“改变”；加 -y 成 shifty。监控没出现时他说“没拿”，录像一出来又说“借一下”：借口不停 shift，显得狡诈、不可信。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "FIFTY，偷偷改成一百",
+          "textZh": "借 FIFTY（五十）的近音记 shifty。明明谈好 fifty，卖家却偷改单据成一百，还否认报过五十：这样的欺骗行为很 shifty。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "行为狡诈、说法躲闪",
+          "explanationZh": "可形容一个人或其做法不诚实、善于回避事实，让人难以信任。判断这一用法，应有反复改口、掩藏或欺骗等语境，而不是把聪明、反应快本身当成狡诈。",
+          "collocations": [
+            {
+              "phrase": "a shifty dealer",
+              "meaningZh": "狡诈的商贩"
+            },
+            {
+              "phrase": "shifty behavior",
+              "meaningZh": "鬼祟不诚实的行为"
+            }
+          ]
+        },
+        {
+          "senseZh": "看起来不可信的印象",
+          "explanationZh": "也可描写让人觉得躲闪、不坦诚的神情或举止。这样的描述表达观察者的印象，并不单凭眼神就证明某人撒谎；没有对视可能有很多原因。",
+          "collocations": [
+            {
+              "phrase": "a shifty look",
+              "meaningZh": "躲闪、显得不坦诚的神色"
+            },
+            {
+              "phrase": "seem shifty",
+              "meaningZh": "显得不太可信"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "deceitful",
+          "comparisonZh": "在故意欺骗、不诚实的意义上接近。deceitful 更直接说明有欺骗性；shifty 常同时带机巧躲闪、不容易信任的感觉，也可以只描述这种外在印象。"
+        },
+        {
+          "word": "evasive",
+          "comparisonZh": "在回答躲闪、避开问题时有交集。但 evasive 可以出于谨慎或保留隐私，并不总是欺诈；shifty 通常带更强的不诚实、不可信的负面意味。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The dealer grew shifty when I asked why he had changed the receipt.",
+          "translationZh": "我问商贩为什么改动收据时，他变得躲躲闪闪。",
+          "explanationZh": "grew shifty 描写他面对具体问题时显得不坦诚；前后语境中的收据改动提供了怀疑的依据。"
+        },
+        {
+          "textEn": "His story kept changing, and the whole arrangement seemed shifty.",
+          "translationZh": "他的说法不断变化，整个安排显得很不可信。",
+          "explanationZh": "seemed shifty 表达观察者对安排的怀疑；不断改口是这一判断的语境线索，不是对眼睛外形的评价。"
+        }
+      ],
+      "coreImageZh": "同伴到处寻找小汽车，男孩却把红车藏进口袋。被问到是不是他拿的，他摊开双手，笑着否认，口袋里露出的红车却泄露了真相。shifty 形容显得狡猾、不诚实、让人难以信任，男孩一边藏着别人的东西，一边装作毫不知情，这种遮掩和推脱正体现了这个词。"
+    },
+    {
+      "number": 6925,
+      "word": "shadow",
+      "ipa": "/ˈʃædoʊ/",
+      "pos": "vt.；vi.",
+      "coreMeaningZh": "偷偷尾随；遮蔽，（使）变暗",
+      "coreEn": "to follow someone secretly; to cover with shadow or become darker",
+      "mnemonics": [
+        {
+          "method": "吓到：怎么一直跟着我？",
+          "textZh": "借“吓到”的近音记 shadow。走过几条街，回头仍是同一个陌生人，才发现自己被悄悄尾随，吓了一跳：shadow somebody，暗中跟着某人。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SHADE → SHADOW，阴影罩下来",
+          "textZh": "SHADE（阴凉、遮光）与 shadow 同源。树冠挡住太阳，窗台落入阴影：从 shade 的遮光想到 shadow 作动词的“遮蔽、使变暗”。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "及物动词：暗中跟踪、尾随",
+          "explanationZh": "可以直接接被跟踪的人作宾语，不需要再加 after。这个义项通常强调悄悄地跟随观察，不等于公开陪同，也不一定意味着追上或抓住对方。",
+          "collocations": [
+            {
+              "phrase": "shadow a suspect",
+              "meaningZh": "暗中跟踪嫌疑人"
+            },
+            {
+              "phrase": "be shadowed by someone",
+              "meaningZh": "被某人悄悄尾随"
+            }
+          ]
+        },
+        {
+          "senseZh": "及物或不及物动词：投下阴影、变暗",
+          "explanationZh": "作及物动词时，主语可以是树木、建筑等，表示给某处投下阴影，使它暗下来；不及物用法可表示自身变暗。也能比喻忧虑等使神情或生活蒙上阴影。",
+          "collocations": [
+            {
+              "phrase": "trees shadowing the path",
+              "meaningZh": "给小路投下阴影的树木"
+            },
+            {
+              "phrase": "a face shadowed by worry",
+              "meaningZh": "因忧虑而显得阴郁的脸"
+            }
+          ]
+        },
+        {
+          "senseZh": "跟岗观察的另一个用法",
+          "explanationZh": "在工作或学习场景中，shadow someone 也可指陪同某人观察其工作、进行跟岗学习。这通常是公开安排，不应仅凭这个词就理解为秘密监视。",
+          "collocations": [
+            {
+              "phrase": "shadow an experienced colleague",
+              "meaningZh": "跟岗观察一位有经验的同事"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "tail",
+          "comparisonZh": "作动词、表示暗中尾随某人时与 shadow 接近，常见于侦探或调查语境。两者都可以含秘密跟踪的意思，但 tail 不能因此代替 shadow 的遮光、变暗义。"
+        },
+        {
+          "word": "shade",
+          "comparisonZh": "在遮挡光线、给某处投下阴影的用法中接近。shade 常突出为某处遮阳，shadow 更突出阴影覆盖或暗下来；shade 不对应秘密尾随人的那个义项。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "The detective shadowed the suspect for several days.",
+          "translationZh": "侦探暗中跟踪了这名嫌疑人好几天。",
+          "explanationZh": "shadowed 直接接 the suspect 作宾语，表示尾随观察；句子没有说嫌疑人已经被抓获。"
+        },
+        {
+          "textEn": "Tall trees shadowed the narrow path.",
+          "translationZh": "高大的树木给狭窄的小路投下了阴影。",
+          "explanationZh": "trees 是投下阴影的事物，the narrow path 是受到遮蔽的地方，这里不是跟踪人的意思。"
+        }
+      ],
+      "coreImageZh": "父亲沿公园小路往前走，男孩落后几步，悄悄跟着，还小声提醒自己别被爸爸发现。父亲回头察觉了他，男孩不好意思地笑起来。shadow 在这里作动词，表示暗中尾随；男孩始终留意父亲的去向，又不愿让对方察觉，把这种偷偷跟随的动作表现了出来。"
+    }
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "number": 6856,
+      "word": "rouse",
+      "ipa": "/raʊz/",
+      "pos": "vt.",
+      "coreMeaningZh": "激起，煽动；唤醒",
+      "coreEn": "to wake someone from sleep or stir a person into feeling or action",
+      "coreImageZh": "男孩靠在扶手椅里打盹，母亲轻声叫他出门，并轻轻碰了碰他的肩。男孩睁开眼睛，回应自己醒了，随后站起来。rouse 表示唤醒、使人从不活跃的状态中振作起来，画面中是母亲把正在小睡的男孩叫醒。",
+      "mnemonics": [
+        {
+          "method": "RISE 站起来，ROUSE 热情起来",
+          "textZh": "rouse 与 rise（起身、上升）首尾声音相同。原本无精打采的人听到鼓舞的话，纷纷站起来，愿意马上行动：身体 rise，热情也被 rouse，激起。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "MOUSE 惊动猫，ROUSE 唤醒",
+          "textZh": "rouse 与 mouse（老鼠）只差第一个字母。老鼠从睡猫面前窜过，猫立刻睁眼跳起来：mouse 把猫 rouse，唤醒。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "把人从睡眠或休息中唤醒",
+          "explanationZh": "及物动词，接被唤醒的人，常用 rouse somebody from sleep。比 wake somebody up 较正式，常写较深的睡眠或由静止状态转为清醒。",
+          "collocations": [
+            {
+              "phrase": "rouse somebody from sleep",
+              "meaningZh": "把某人从睡梦中唤醒"
+            },
+            {
+              "phrase": "rouse somebody from bed",
+              "meaningZh": "把某人从床上叫起来"
+            },
+            {
+              "phrase": "rouse oneself",
+              "meaningZh": "使自己清醒或振作起来"
+            }
+          ]
+        },
+        {
+          "senseZh": "激起情绪，鼓动行动",
+          "explanationZh": "可直接接 anger、enthusiasm 等情绪，也可接人，再用 to action 或 to do something 说明被鼓动去做的事。可以激发积极热情，也可激起愤怒，并不总是负面的煽动。",
+          "collocations": [
+            {
+              "phrase": "rouse enthusiasm",
+              "meaningZh": "激起热情"
+            },
+            {
+              "phrase": "rouse somebody’s anger",
+              "meaningZh": "激起某人的怒气"
+            },
+            {
+              "phrase": "rouse somebody to action",
+              "meaningZh": "鼓动某人行动起来"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "awaken",
+          "comparisonZh": "在使人醒来时很接近，两词都比日常的 wake up 稍正式；awaken 也可比喻唤起意识，rouse 另外常突出把不活跃的人鼓动起来或激起强烈情绪。"
+        },
+        {
+          "word": "galvanize",
+          "comparisonZh": "在激起劲头、促使人行动时接近；galvanize 常突出突然受到强烈刺激而振奋行动，不能直接代替把熟睡的人叫醒这一义项的 rouse。",
+          "sources": [
+            "zhangwei_original3000"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "A knock at the door roused him from a deep sleep.",
+          "translationZh": "敲门声把他从熟睡中唤醒。",
+          "explanationZh": "roused him from a deep sleep 中，him 是被唤醒的人，from 引出原来的睡眠状态。"
+        },
+        {
+          "textEn": "She was roused to anger by their indifference.",
+          "translationZh": "他们的冷漠激起了她的怒气。",
+          "explanationZh": "was roused 是被动结构，to anger 表示被激起的情绪，by their indifference 说明原因。"
+        }
+      ]
+    },
+    {
+      "number": 6857,
+      "word": "royalty",
+      "ipa": "/ˈrɔɪəlti/",
+      "pos": "n.",
+      "coreMeaningZh": "皇室身份；皇室成员；版税，专利使用费",
+      "coreEn": "royal status or members of a royal family; a payment for the use or sale of a protected work or invention",
+      "coreImageZh": "男孩来到王宫，礼貌地询问面前的女士是否就是女王。她确认身份并欢迎他，男孩轻轻躬身致意。royalty 在这里指皇室身份或皇室成员，女王本身属于王室，王冠和王宫只是帮助辨认这一身份的线索。",
+      "mnemonics": [
+        {
+          "method": "ROYAL + TY，王室的身份",
+          "textZh": "royal 是王室的，royalty 把这层身份变成名词。戴王冠、拥有王室身份的人，是 royalty；这个词也可整体指皇室成员。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "LOYALTY 买正版，ROYALTY 有版税",
+          "textZh": "royalty 与 loyalty（忠诚）只差第一个字母。忠实读者每次都买作者的新书，销量带来版税：读者的 loyalty，让作者收到 royalty。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "皇室身份或皇室成员",
+          "explanationZh": "表示皇室身份时通常不可数，也常集合地指一位或多位皇室成员。be treated like royalty 是受到贵宾般礼遇的比喻，不表示当事人真的取得皇室身份。",
+          "collocations": [
+            {
+              "phrase": "royalty and nobility",
+              "meaningZh": "皇室成员和贵族"
+            },
+            {
+              "phrase": "in the presence of royalty",
+              "meaningZh": "在皇室成员面前"
+            },
+            {
+              "phrase": "be treated like royalty",
+              "meaningZh": "受到贵宾般的礼遇"
+            }
+          ]
+        },
+        {
+          "senseZh": "版税、专利使用费",
+          "explanationZh": "这一义项可数，常用复数 royalties，指因他人使用、销售作品或使用专利等而付给权利人的报酬，具体计算方式依约定。它不是通常意义上向政府缴纳的税。",
+          "collocations": [
+            {
+              "phrase": "pay royalties",
+              "meaningZh": "支付版税或使用费"
+            },
+            {
+              "phrase": "earn royalties from a book",
+              "meaningZh": "从一本书获得版税"
+            },
+            {
+              "phrase": "a royalty payment",
+              "meaningZh": "一笔版税或使用费"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "royal family",
+          "comparisonZh": "在指皇室成员时接近；royal family 明确指某个皇室家族，royalty 可集合地指一位或多位皇室成员，也可表示皇室身份本身。"
+        },
+        {
+          "word": "licensing fee",
+          "comparisonZh": "在授权使用的付费义上有重叠；licensing fee 是较宽的许可费用，可一次性支付，royalty 常随作品销量、使用量或其他约定标准计算。两者不在所有合同语境下完全相同。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "On our wedding day, we were treated like royalty.",
+          "translationZh": "婚礼那天，我们受到了贵宾般的礼遇。",
+          "explanationZh": "like royalty 是比喻，强调被郑重、周到地款待，不是说新人真的成了皇室成员。"
+        },
+        {
+          "textEn": "The author receives royalties on every copy sold.",
+          "translationZh": "这位作者每售出一本书都会收到相应的版税。",
+          "explanationZh": "royalties 用复数表示版税收入，on every copy sold 说明这里按每一本售出的书计算。"
+        }
+      ]
+    },
+    {
+      "number": 6858,
+      "word": "rubicund",
+      "ipa": "/ˈruːbɪkənd/",
+      "pos": "adj.",
+      "coreMeaningZh": "（脸色）红润的",
+      "coreEn": "having a rosy or reddish complexion, especially one that looks healthy",
+      "coreImageZh": "男孩和刚散步回来的爷爷聊天，注意到爷爷双颊红扑扑的。爷爷笑着回应，两人随后沿小路继续散步。rubicund 形容脸色红润，画面中爷爷暖红的面颊就是这个词描写的外貌特征。",
+      "mnemonics": [
+        {
+          "method": "RUBY 红宝石，RUBICUND 红脸",
+          "textZh": "rubicund 的主要开头 rubi- 和 ruby（红宝石）的声音相近，两词也确实出自表示红色的词族。把红宝石那种鲜红映到脸颊上：rubicund，脸色红润的。",
+          "kind": "word_family",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "RUB ICON，揉红小脸图标",
+          "textZh": "把 rubicund 的整体声音近似联到 rub icon（揉一揉图标）。想象屏幕上有张可互动的小脸，你揉它的脸颊，小脸便红扑扑的：rubicund，脸色红润的。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "描写红润的脸色",
+          "explanationZh": "较文学化的形容词，通常描写人的脸、双颊或肤色，也可直接描写一个人红润的外貌。强调带红色的气色，不是给任意红色物体使用的通用颜色词。",
+          "collocations": [
+            {
+              "phrase": "a rubicund face",
+              "meaningZh": "红润的脸"
+            },
+            {
+              "phrase": "rubicund cheeks",
+              "meaningZh": "红润的双颊"
+            },
+            {
+              "phrase": "a rubicund complexion",
+              "meaningZh": "红润的面色"
+            }
+          ]
+        },
+        {
+          "senseZh": "外观上的健康气色",
+          "explanationZh": "常带“看上去气色不错”的意味，描述的是可见的红润外观。不要把它直接用作一般的“身体健康的”；外貌描写本身不能确定一个人的实际健康状况。",
+          "collocations": [
+            {
+              "phrase": "a rubicund old man",
+              "meaningZh": "一位脸色红润的老人"
+            },
+            {
+              "phrase": "look rubicund",
+              "meaningZh": "显得脸色红润"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "ruddy",
+          "comparisonZh": "在形容红润脸色时很接近；ruddy 比 rubicund 更常用，还能泛指其他东西带红色，rubicund 更偏文学描写，通常落在人的面色上。"
+        },
+        {
+          "word": "rosy",
+          "comparisonZh": "在形容双颊红润时接近；rosy 更常用，也可形容玫瑰色的东西或比喻前景乐观，rubicund 通常没有“前景美好”的比喻义。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "His rubicund face stood out above the white scarf.",
+          "translationZh": "白围巾上方，他红润的脸格外显眼。",
+          "explanationZh": "rubicund 直接修饰 face，通过面色与白围巾的对比描写外貌。"
+        },
+        {
+          "textEn": "After the long walk, she had a rubicund complexion.",
+          "translationZh": "走了很长一段路后，她的面色红润起来。",
+          "explanationZh": "rubicund complexion 指观察到的红润面色，after the long walk 交代出现这种外观的时间背景。"
+        }
+      ]
+    },
+    {
+      "number": 6859,
+      "word": "ruffle",
+      "ipa": "/ˈrʌfəl/",
+      "pos": "vt.",
+      "coreMeaningZh": "弄乱；扰乱，使烦躁",
+      "coreEn": "to disturb the smoothness or neatness of something, or to make someone annoyed or upset",
+      "coreImageZh": "男孩刚把头发理顺，父亲笑着在他头顶轻轻揉了一下。几绺头发随即翘向不同方向，父亲收回手后，乱发仍没有恢复整齐，男孩无奈地摸了摸头。ruffle 表示把原本平整、服帖的东西弄乱，这里是轻揉头发使发丝失去原来的排列。",
+      "mnemonics": [
+        {
+          "method": "ROUGH 揉一把，RUFFLE 头发乱",
+          "textZh": "rough（粗鲁的）的 /rʌf/ 正好接上 ruffle 的主要声音。刚梳好的头发，被人粗手粗脚揉一把就乱了：rough 的动作把头发 ruffle，弄乱。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "SHUFFLE 卡片乱，RUFFLE 心也乱",
+          "textZh": "ruffle 与 shuffle（洗牌、打乱）整体形音接近。排好的卡片被人像洗牌一样弄乱，主人也烦躁起来：卡片被 shuffle，心情被 ruffle，扰乱了。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "弄乱原本平整、服帖的东西",
+          "explanationZh": "及物动词，常接 hair、feathers 等，也可描写风使水面起波纹。强调原有的平整或整齐受到扰动，不一定造成破损。",
+          "collocations": [
+            {
+              "phrase": "ruffle somebody’s hair",
+              "meaningZh": "弄乱某人的头发"
+            },
+            {
+              "phrase": "ruffle feathers",
+              "meaningZh": "使羽毛蓬起、凌乱"
+            },
+            {
+              "phrase": "ruffle the surface of the water",
+              "meaningZh": "使水面起波纹"
+            }
+          ]
+        },
+        {
+          "senseZh": "使人烦躁、不安",
+          "explanationZh": "直接接人，常用被动或 ruffled 描写情绪被扰乱。ruffle somebody’s feathers 是惹人不快的习语，不是说人真的长着羽毛。",
+          "collocations": [
+            {
+              "phrase": "be ruffled by a question",
+              "meaningZh": "因一个问题而感到不安或不快"
+            },
+            {
+              "phrase": "ruffle somebody’s feathers",
+              "meaningZh": "惹恼某人"
+            },
+            {
+              "phrase": "remain unruffled",
+              "meaningZh": "保持镇定"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "tousle",
+          "comparisonZh": "在弄乱头发时接近；tousle 常描写把头发或衣物弄得蓬乱，ruffle 还可用于羽毛、水面及情绪，范围并不完全相同。"
+        },
+        {
+          "word": "irk",
+          "comparisonZh": "在使人烦恼、不快时接近；irk 通常侧重令人厌烦的事情持续惹人不快，ruffle 常突出平静受到扰乱。irk 不能替代弄乱头发或使水面起波纹的 ruffle。",
+          "sources": [
+            "weichen_gre"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "Her hair was ruffled by the wind.",
+          "translationZh": "风把她的头发吹乱了。",
+          "explanationZh": "was ruffled 是被动结构，hair 是原本整齐却被扰乱的对象，by the wind 说明原因。"
+        },
+        {
+          "textEn": "He never gets ruffled, even under pressure.",
+          "translationZh": "即使承受压力，他也从不慌乱。",
+          "explanationZh": "gets ruffled 描写变得烦躁或不安；never 与 even under pressure 突出他一直保持镇定。"
+        }
+      ]
+    },
+    {
+      "number": 6860,
+      "word": "rumple",
+      "ipa": "/ˈrʌmpəl/",
+      "pos": "vt.；vi.",
+      "coreMeaningZh": "揉皱，弄乱",
+      "coreEn": "to make cloth, paper, hair, or clothing wrinkled or untidy, or to become wrinkled",
+      "coreImageZh": "男孩把桌上原本平整的浅蓝棉布揉成一团，再重新展开。布仍是同一整块，但表面留下了许多不规则褶皱，松手后也不再平整。rumple 表示揉皱、弄乱，画面中的动作破坏了布原来的平整状态，留下皱巴巴的外观。",
+      "mnemonics": [
+        {
+          "method": "CRUMPLE 少个 C，还是皱巴巴",
+          "textZh": "rumple 的整个字形都在 crumple（揉皱）里面。看到揉成一团、满是褶皱的衬衫，从 crumple 的整体外形认回 rumple：揉皱、弄乱。",
+          "kind": "invented_association",
+          "weak": false,
+          "original": true
+        },
+        {
+          "method": "JUMP 跳上床，RUMPLE 床单皱",
+          "textZh": "rumple 的主要部分 rump 和 jump（跳）形音接近。孩子在铺好的床上跳来跳去，刚平整的床单很快被弄皱：jump 把床单 rumple。",
+          "kind": "invented_association",
+          "weak": true,
+          "original": true
+        }
+      ],
+      "usage": [
+        {
+          "senseZh": "揉皱纸张、衣物，弄乱头发",
+          "explanationZh": "及物动词，直接接被弄皱或弄乱的对象。通常能看到皱褶、蓬乱等外观变化，不只是把物品从一个位置移到另一个位置。",
+          "collocations": [
+            {
+              "phrase": "rumple a shirt",
+              "meaningZh": "把衬衫弄皱"
+            },
+            {
+              "phrase": "rumple the sheets",
+              "meaningZh": "把床单弄皱"
+            },
+            {
+              "phrase": "rumple somebody’s hair",
+              "meaningZh": "弄乱某人的头发"
+            }
+          ]
+        },
+        {
+          "senseZh": "变皱；呈凌乱状态",
+          "explanationZh": "也可不及物，表示衣物等变皱；rumpled 作形容词时常描写衣着、头发等不整齐的样子，不一定表示脏或破损。",
+          "collocations": [
+            {
+              "phrase": "clothes rumple",
+              "meaningZh": "衣服变皱"
+            },
+            {
+              "phrase": "a rumpled jacket",
+              "meaningZh": "皱巴巴的夹克"
+            },
+            {
+              "phrase": "rumpled hair",
+              "meaningZh": "凌乱的头发"
+            }
+          ]
+        }
+      ],
+      "equivalents": [
+        {
+          "word": "crumple",
+          "comparisonZh": "在把纸、布等揉皱时很接近；crumple 更容易突出挤压、揉成一团或使形状塌掉，rumple 可以只是弄出皱褶、弄乱，并不一定压成团。"
+        },
+        {
+          "word": "wrinkle",
+          "comparisonZh": "都可表示使起皱、变皱；wrinkle 更直接强调产生皱纹或皱褶，rumple 还常包含整体被弄乱、不整齐的感觉，也可以用来描写头发。"
+        }
+      ],
+      "examples": [
+        {
+          "textEn": "He rumpled her hair affectionately.",
+          "translationZh": "他亲昵地揉乱了她的头发。",
+          "explanationZh": "rumpled her hair 是及物结构，affectionately 说明动作带着亲昵，并不表示伤害或责备。"
+        },
+        {
+          "textEn": "The clothes rumpled in the basket.",
+          "translationZh": "衣服放在篮子里变皱了。",
+          "explanationZh": "rumpled 在这里是不及物动词，clothes 是发生变化的主语，句中没有被弄皱的宾语。"
+        }
+      ]
+    }
+  ]
+}
